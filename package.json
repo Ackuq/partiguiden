@@ -1,0 +1,26 @@
+{
+  "name": "partiguiden-server",
+  "version": "1.0.0",
+  "description": "Partiguiden Server Rendered",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "author": "Axel Pettersson",
+  "license": "ISC",
+  "dependencies": {
+    "@zeit/next-css": "^1.0.1",
+    "@zeit/next-sass": "^1.0.1",
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.3.1",
+    "next": "^8.0.1",
+    "node-sass": "^4.11.0",
+    "react": "^16.8.1",
+    "react-bootstrap": "^1.0.0-beta.5",
+    "react-dom": "^16.8.1",
+    "react-typed": "^1.1.0"
+  }
+}

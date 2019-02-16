@@ -1,20 +1,11 @@
-import ButtonBase from "@material-ui/core/ButtonBase";
 import "../styles/Styles.scss";
 
 import Head from "next/head";
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
-import Nav from "react-bootstrap/Nav";
 import Link from "next/link";
 import React from "react";
-
-function getPages() {
-  return [
-    { id: "/", title: "Hem" },
-    { id: "/partiernas-standpunkter", title: "Partiernas Ståndpunkter" },
-    { id: "/om-oss", title: "Om oss" }
-  ];
-}
+import NavLink from "./NavLink";
 
 class Header extends React.Component {
   constructor(props) {
@@ -48,19 +39,7 @@ class Header extends React.Component {
           </Link>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="mr-auto">
-              {getPages().map(page => (
-                <ButtonBase
-                  key={`${page.id}`}
-                  onClick={this.closeNav}
-                  className="menu-btn btn-secondary"
-                >
-                  <Link href={`${page.id}`}>
-                    <a className="custom-nav-link">{page.title}</a>
-                  </Link>
-                </ButtonBase>
-              ))}
-            </Nav>
+            <NavLink closeNav={this.closeNav} />
           </Navbar.Collapse>
         </Container>
       </Navbar>

@@ -1,20 +1,22 @@
-@import url('https://fonts.googleapis.com/css?family=Comfortaa:300,400');
+@import url("https://fonts.googleapis.com/css?family=Comfortaa:300,400");
 
 nav {
   background: $primary;
-  box-shadow: 0 0 #FFFFFF inset, 0 1px 3px rgba(34, 25, 25, 0.4);
+  box-shadow: 0 0 #ffffff inset, 0 1px 3px rgba(34, 25, 25, 0.4);
   top: 0;
   color: theme-color("light");
 }
 
-nav{
-  .navbar-brand{
-    font-family: 'Comfortaa', cursive;
+nav {
+  .navbar-brand {
+    font-family: "Comfortaa", cursive;
+  }
+  .menu-btn.active {
+    background-color: #007065;
   }
   .menu-btn {
     padding: 0;
     font-size: 1rem;
-    border-radius: 30px;
     color: inherit;
     background: inherit;
     border: 0;
@@ -32,56 +34,51 @@ nav{
   .navbar-brand {
     font-size: 1.75rem;
   }
-  .navbar-toggler-icon{
+  .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
   }
-  .navbar-collapse{
+  .navbar-collapse {
     left: 0;
   }
   .custom-nav-link:hover,
-  .custom-nav-link:focus{
+  .custom-nav-link:focus {
     text-decoration: none;
     color: inherit;
   }
 }
 @media (max-width: 767px) {
-  nav{
+  nav {
     padding: 5px;
   }
   nav {
     .custom-nav-link {
-        padding: 10px 15px;
-        display: block;
-        position: relative;
-        font-size: 16px;
-        color: inherit;
-        width: 100%;
-    }
-    .active a{
-        font-weight: bold;
+      padding: 10px 15px;
+      display: block;
+      position: relative;
+      font-size: 16px;
+      color: inherit;
+      width: 100%;
     }
     .navbar-collapse.collapse,
     .navbar-collapse.collapsing {
-        position: absolute;
-        background-color: theme-color("primary");
-        width: 100%;
-        top: 0;
-        z-index: 100;
+      position: absolute;
+      background-color: theme-color("primary");
+      width: 100%;
+      top: 0;
+      z-index: 100;
     }
   }
 }
 @media (min-width: 768px) {
   nav {
-    .container{
-      width:90%;
+    .menu-btn {
+      border-radius: 30px;
     }
-    .active>a{
-        color: #555 !important;
-        background-color: #e7e7e7;
+    .container {
+      width: 90%;
     }
-    .custom-nav-link{
-      margin: 7px;
-      padding: 3px 10px;
+    .custom-nav-link {
+      padding: 10px 17px;
       font-size: 1rem;
       color: inherit;
     }

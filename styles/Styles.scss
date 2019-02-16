@@ -13,7 +13,11 @@ html{
   height: 100vh;
 }
 html {
+  h1 {
+    font-weight: 300;
+  }
   main {
+    padding-top: 2rem;
     flex-grow: 1;
   }
   #__next {
@@ -35,7 +39,7 @@ html {
     }
   }
   p {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: 300;
   }
   a {

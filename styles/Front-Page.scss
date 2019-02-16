@@ -5,11 +5,16 @@
   color: theme-color("light");
   text-align: center;
 }
+.jumbotron h3 {
+  text-align: center;
+  font-weight: 300;
+}
 main {
   .featured{
     width: 100%;
     border: 1px solid;
     margin: 0.5rem 0;
+    padding: 1rem;
     border-color: theme-color("secondary");
   }
 }

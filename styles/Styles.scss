@@ -1,0 +1,44 @@
+$font-stack:    Roboto, sans-serif;
+
+$primary: #00796B;
+$secondary: #009688;
+
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "Front-Page";
+@import "Navigation";
+@import "Footer";
+
+
+html{
+  height: 100vh;
+}
+html {
+  main {
+    flex-grow: 1;
+  }
+  #__next {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    align-items: stretch;
+  }
+  @media (max-width: 767px) {
+    body {
+      height: calc(100% - 68px);
+      margin-top: 68px;
+    }
+  }
+  @media (min-width: 768px) {
+    body {
+      height: calc(100% - 68px);
+      margin-top: 68px;
+    }
+  }
+  p {
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+  a {
+    transition: color 0.15s ease-in-out;
+  }
+}

@@ -1,0 +1,15 @@
+.jumbotron {
+  border-radius: 0;
+  box-shadow: 0 0 #FFFFFF inset, 0 1px 3px rgba(34, 25, 25, 0.4);
+  background-color: theme-color("secondary");
+  color: theme-color("light");
+  text-align: center;
+}
+main {
+  .featured{
+    width: 100%;
+    border: 1px solid;
+    margin: 0.5rem 0;
+    border-color: theme-color("secondary");
+  }
+}

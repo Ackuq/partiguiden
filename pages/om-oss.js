@@ -1,14 +1,6 @@
-import Layout from '../components/Default.js'
+import Container from 'react-bootstrap/Container';
 
-
-function AboutUs()  {
-  return(
-  <Layout>
-    <p>Asd</p>
-    <p>Hello Next.js</p>
-  </Layout>
-  )
-}
-
-
-export default AboutUs
+export default () => (
+  <div>
+  </div>
+)

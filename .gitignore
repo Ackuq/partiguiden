@@ -1,2 +1,13 @@
+## Next build
 .next/*
+
+## Enviroment variables
+.env
+
+
+## Node modules
 node_modules/*
+
+
+## Google cloud files
+.gcloudignore

@@ -1,13 +1,3 @@
-import Layout from '../components/Default.js';
-import Type from '../components/Typed';
+import FrontPage from '../components/Views/FrontPage';
 
-function Index()  {
-  return(
-  <Layout>
-    <Type />
-  </Layout>
-  )
-}
-
-
-export default Index
+export default FrontPage;

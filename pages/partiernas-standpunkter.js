@@ -1,6 +1,6 @@
 import Container from "react-bootstrap/Container";
 import { loadFirebase } from "../lib/db.js";
-import Link from "next/link";
+import { Link } from "../lib/routes";
 import Head from "next/head";
 
 export default class Standpunkter extends React.Component {
@@ -41,10 +41,7 @@ export default class Standpunkter extends React.Component {
           <ul>
             {data.map(subject => (
               <li key={`${subject.id}`}>
-                <Link
-                  as={`/subject/${subject.id}`}
-                  href={`/subject?title=${subject.id}`}
-                >
+                <Link route="subject" params={{ id: `${subject.id}` }} passHref>
                   <a>{subject.name}</a>
                 </Link>
               </li>

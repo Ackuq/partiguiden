@@ -1,0 +1,128 @@
+@charset "utf-8";
+
+$S: #c0392b;
+$M: #3a539b;
+$SD: #f4d03f;
+$MP: #26a65b;
+$C: #1e824c;
+$L: #5c97bf;
+$KD: #22a7f0;
+$V: #cf000f;
+
+#Socialdemokraterna {
+  li:before {
+    background: $S !important;
+  }
+  a {
+    color: $S;
+  }
+  .opinion_box {
+    border-bottom-color: $S;
+  }
+  .partititle {
+    border: solid 2px $S;
+  }
+}
+
+#Moderaterna {
+  li:before {
+    background: $M !important;
+  }
+  a {
+    color: $M;
+  }
+  .opinion_box {
+    border-bottom-color: $M;
+  }
+  .partititle {
+    border: solid 2px $M;
+  }
+}
+
+#Sverigedemokraterna {
+  li:before {
+    background: $SD !important;
+  }
+  a {
+    color: $SD;
+  }
+  .opinion_box {
+    border-bottom-color: $SD;
+  }
+  .partititle {
+    border: solid 2px $SD;
+  }
+}
+
+#Miljöpartiet {
+  li:before {
+    background: $MP !important;
+  }
+  a {
+    color: $MP;
+  }
+  .opinion_box {
+    border-bottom-color: $MP;
+  }
+  .partititle {
+    border: solid 2px $MP;
+  }
+}
+
+#Centerpartiet {
+  li:before {
+    background: $C !important;
+  }
+  a {
+    color: $C;
+  }
+  .opinion_box {
+    border-bottom-color: $C;
+  }
+  .partititle {
+    border: solid 2px $C;
+  }
+}
+#Liberalerna {
+  li:before {
+    background: $L !important;
+  }
+  a {
+    color: $L;
+  }
+  .opinion_box {
+    border-bottom-color: $L;
+  }
+  .partititle {
+    border: solid 2px $L;
+  }
+}
+
+#Kristdemokraterna {
+  li:before {
+    background: $KD !important;
+  }
+  a {
+    color: $KD;
+  }
+  .opinion_box {
+    border-bottom-color: $KD;
+  }
+  .partititle {
+    border: solid 2px $KD;
+  }
+}
+#Vänsterpartiet {
+  li:before {
+    background: $V !important;
+  }
+  a {
+    color: $V;
+  }
+  .opinion_box {
+    border-bottom-color: $V;
+  }
+  .partititle {
+    border: solid 2px $V;
+  }
+}

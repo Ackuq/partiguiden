@@ -1,15 +1,16 @@
-$font-stack:    Roboto, sans-serif;
+$font-stack: Roboto, sans-serif;
 
-$primary: #00796B;
+$primary: #00796b;
 $secondary: #009688;
 
 @import "node_modules/bootstrap/scss/bootstrap";
 @import "Front-Page";
 @import "Navigation";
 @import "Footer";
+@import "Subjects";
+@import "Party-color";
 
-
-html{
+html {
   height: 100vh;
 }
 html {

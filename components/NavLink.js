@@ -10,9 +10,12 @@ export default class NavLink extends React.Component {
   }
   getPages() {
     return [
-      { id: "/", title: "Hem" },
-      { id: "/partiernas-standpunkter", title: "Partiernas Ståndpunkter" },
-      { id: "/om-oss", title: "Om oss" }
+      { href: "/", title: "Hem" },
+      {
+        href: "/partiernas-standpunkter",
+        title: "Partiernas Ståndpunkter"
+      },
+      { href: "/om-oss", title: "Om oss" }
     ];
   }
 
@@ -20,8 +23,8 @@ export default class NavLink extends React.Component {
     return (
       <ActiveLink
         activeClassName="active"
-        href={`${props.id}`}
-        key={`${props.id}`}
+        href={`${props.href}`}
+        key={`${props.href}`}
         onClick={this.props.closeNav}
         className="menu-btn btn-secondary"
         title={`${props.title}`}

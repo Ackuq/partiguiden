@@ -3,7 +3,7 @@ import "../styles/Styles.scss";
 import Head from "next/head";
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
-import Link from "next/link";
+import { Link } from "../lib/routes";
 import React from "react";
 import NavLink from "./NavLink";
 
@@ -31,7 +31,7 @@ class Header extends React.Component {
         onToggle={this.setNavExpanded}
       >
         <Container>
-          <Link href="/">
+          <Link route="/">
             <a className="navbar-brand text-light">
               <span className="font-weight-normal">Partiguiden</span>
               <span className="font-weight-light">.nu 2.0</span>

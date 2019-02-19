@@ -3,23 +3,22 @@ const next = require("next");
 
 const dev = process.env.NODE_ENV !== "production";
 const app = next({ dev });
-const handle = app.getRequestHandler();
+
+// Routing
+const routes = require("./routes");
+const handler = routes.getRequestHandler(app);
 
 app
   .prepare()
   .then(() => {
-    const server = express();
+    server = express().use(handler);
 
     server.get("/subject/:id", (req, res) => {
       const actualPage = "/subject";
       const queryParams = {
-        title: req.params.id
+        id: req.params.id
       };
       app.render(req, res, actualPage, queryParams);
-    });
-
-    server.get("*", (req, res) => {
-      return handle(req, res);
     });
 
     server.listen(3000, err => {

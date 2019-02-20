@@ -5,7 +5,7 @@ const dev = process.env.NODE_ENV !== "production";
 const app = next({ dev });
 
 // Routing
-const routes = require("./routes");
+const routes = require("./lib/routes");
 const handler = routes.getRequestHandler(app);
 
 app

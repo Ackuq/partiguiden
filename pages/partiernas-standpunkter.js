@@ -6,7 +6,6 @@ import Head from "next/head";
 export default class Standpunkter extends React.Component {
   static async getInitialProps() {
     let firebase = await loadFirebase();
-
     let result = await new Promise((resolve, reject) => {
       firebase
         .firestore()

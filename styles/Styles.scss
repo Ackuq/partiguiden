@@ -14,6 +14,9 @@ html {
   height: 100vh;
 }
 html {
+  a:hover {
+    text-decoration: none;
+  }
   h1 {
     font-weight: 300;
   }
@@ -35,8 +38,8 @@ html {
   }
   @media (min-width: 768px) {
     body {
-      height: calc(100% - 68px);
-      margin-top: 68px;
+      height: calc(100% - 120px);
+      margin-top: 120px;
     }
   }
   p {

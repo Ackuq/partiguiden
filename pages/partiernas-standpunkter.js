@@ -1,7 +1,7 @@
 import Container from "react-bootstrap/Container";
 import { loadFirebase } from "../lib/db.js";
-import { Link } from "../lib/routes";
 import Head from "next/head";
+import ListObject from "../components/ListObject";
 
 export default class Standpunkter extends React.Component {
   static async getInitialProps() {
@@ -27,25 +27,42 @@ export default class Standpunkter extends React.Component {
           reject([]);
         });
     });
-    return { data: result };
+    let sorted = result.sort(function(a, b) {
+      if (a.name < b.name) {
+        return -1;
+      }
+      if (a.name > b.name) {
+        return 1;
+      }
+      return 0;
+    });
+    let dict = sorted.reduce((a, c) => {
+      // c[0] should be the first letter of an entry
+      let k = c.name.charAt(0).toLocaleUpperCase();
+
+      // either push to an existing dict entry or create one
+      if (a[k]) a[k].push(c);
+      else a[k] = [c];
+
+      return a;
+    }, {});
+    return { data: dict };
   }
   render() {
     const data = this.props.data;
+    console;
     return (
       <Container>
         <Head>
           <title>Partiernas ståndpunkter | Partiguiden.nu 2.0</title>
         </Head>
-        <div>
-          <ul>
-            {data.map(subject => (
-              <li key={`${subject.id}`}>
-                <Link route="subject" params={{ id: `${subject.id}` }} passHref>
-                  <a>{subject.name}</a>
-                </Link>
-              </li>
-            ))}
-          </ul>
+        <div className="font-weight-light">
+          <h1>Partiernas ståndpunkter</h1>
+        </div>
+        <div className="subject-list">
+          {Object.keys(data).map(key => (
+            <ListObject letter={key} subjects={data[key]} key={`${key}`} />
+          ))}
         </div>
       </Container>
     );

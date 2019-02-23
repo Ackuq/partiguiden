@@ -3,8 +3,8 @@ import App, { Container } from "next/app";
 
 import { loadFirebase } from "../lib/db.js";
 import Header from "../components/Header";
-import Meta from "../components/Meta";
 import Footer from "../components/Footer";
+import Meta from "../components/Meta";
 
 class Layout extends React.Component {
   static async getInitialProps(ctx) {

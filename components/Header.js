@@ -42,14 +42,18 @@ class Header extends React.Component {
               </a>
             </Link>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <div id="search-desktop">
-              <SearchBar id="desktop" searchData={this.props.searchData} />
-            </div>
+            <SearchBar
+              closeNav={this.closeNav}
+              id="desktop"
+              searchData={this.props.searchData}
+            />
           </div>
           <Navbar.Collapse id="basic-navbar-nav">
-            <div id="search-phone">
-              <SearchBar id="phone" searchData={this.props.searchData} />
-            </div>
+            <SearchBar
+              closeNav={this.closeNav}
+              id="phone"
+              searchData={this.props.searchData}
+            />
             <NavLink closeNav={this.closeNav} />
           </Navbar.Collapse>
         </div>

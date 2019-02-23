@@ -1,86 +1,114 @@
-.slidetoggle li:before{
-    content: "";
-    position: absolute;
-    left: -10px;
-    top: 10px;
-    -khtml-transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
-    transform: translate(-50%,-50%);
-    width: 6px;
-    height: 6px;
-}
-.opinion_box{
-    border-bottom: 2px solid #00796B;
-}
-.slidetoggle li{
+/* List stylesparty-standpoint */
+.party-standpoint {
+  li {
+    font-size: 1.125rem;
     list-style: none;
     position: relative;
-}
-.slidetoggle li+li{
-    margin-top: 10px;
-}
-.partititle{
-    background: #fbfbfb;
-    cursor: pointer;
-    box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
-}
-.partititle:hover,
-.partititle:focus{
-    background-color: #f1f2f6;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
-}
-.amneList{
-    background-color: #f6f6f6;
-}
-.listobjekt > a:hover > span{
-    background-position:left bottom;
-    color: #fff;
-}
-.listobjekt > a{
-    background-color: #f6f6f6;
-}
-.listobjekt > a > span{
-    line-height: 50px;
-    background: linear-gradient(to left, #f6f6f6 50%, #00796B 50%);
-    background-size: 202% 100%;
-    background-position: right bottom;
-    background-repeat: no-repeat;
-    -webkit-transition: all 0.3s ease;
-       -moz-transition: all 0.3s ease;
-        -ms-transition: all 0.3s ease;
-         -o-transition: all 0.3s ease;
-            transition: all 0.3s ease;
-}
-.listobjekt:nth-child(2n+1){
-    border-left: solid 4px #00796B;
+  }
+  li:before {
+    content: "";
+    position: absolute;
+    left: -0.75rem;
+    top: 0.75rem;
+    width: 6px;
+    height: 6px;
+  }
+  li + li {
+    margin-top: 0.75rem;
+  }
+  ul {
+    padding-left: 1rem;
+  }
+  button {
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem 0;
+    background-color: theme-color("light");
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.4s ease-in-out;
+  }
+  button:hover {
+    background-color: rgba(0, 0, 0, 0.08);
+  }
+  h3 {
+    margin-top: 0.5rem;
+  }
+  h4 {
+    margin: 0.5rem 0;
+  }
+  .standpoints {
+    border-bottom: 2px solid theme-color("primary");
+  }
 }
 
-@media (max-width:767px){
-    .listobjekt{
-        width:100%;
+.subject-list {
+  background-color: #f6f6f6;
+
+  .list {
+    display: flex;
+
+    .empty-col {
+      border-left: solid 4px theme-color("primary");
     }
-    .listline{
-        display: none;
+
+    .list-object {
+      a:hover span {
+        background-position: left bottom;
+        color: theme-color("light");
+      }
+
+      a {
+        border-left: solid 4px theme-color("primary");
+
+        display: flex;
+        flex-grow: 1;
+        background-color: #f6f6f6;
+      }
+
+      a span {
+        display: inline-flex;
+        line-height: 50px;
+        background: linear-gradient(
+          to left,
+          theme-color("light") 50%,
+          theme-color("primary") 50%
+        );
+        background-size: 202% 100%;
+        background-position: right bottom;
+        background-repeat: no-repeat;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+      }
     }
-    .listobjekt:nth-child(2n){
-        border-left: solid 4px #00796B;
-    }
-}
-@media (min-width:768px){
-    .listobjekt:nth-child(2n){
-        border-left: solid 2px #00796B;
-    }
-    .listobjekt:nth-child(2n+1){
-        border-right: solid 2px #00796B;
-    }
-    .listobjekt > a:hover{
-        color: #000;
-    }
-    .listobjekt{
-        width: 50%;
-    }
-}
-.bokstav{
-    background-color: #049372;
+  }
+  .letter {
+    background-color: theme-color("secondary");
     font-size: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .list {
+    flex-direction: column;
+
+    .list-object {
+      width: 100%;
+    }
+    .empty-col {
+      display: none;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .list {
+    .list-object:nth-child(2n + 1) {
+      width: calc(50% - 2px);
+    }
+    .list-object:nth-child(2n) {
+      width: calc(50% + 2px);
+    }
+  }
 }

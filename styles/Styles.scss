@@ -9,11 +9,17 @@ $secondary: #009688;
 @import "Footer";
 @import "Subjects";
 @import "Party-color";
+@import "Search";
 
 html {
   height: 100vh;
 }
 html {
+  body,
+  h3,
+  h4 {
+    font-weight: 300;
+  }
   a:hover {
     text-decoration: none;
   }

@@ -1,20 +1,21 @@
-.jumbotron {
-  border-radius: 0;
-  box-shadow: 0 0 #FFFFFF inset, 0 1px 3px rgba(34, 25, 25, 0.4);
-  background-color: theme-color("secondary");
-  color: theme-color("light");
-  text-align: center;
-}
-.jumbotron h3 {
-  text-align: center;
-  font-weight: 300;
-}
 main {
-  .featured{
+  .featured {
     width: 100%;
     border: 1px solid;
     margin: 0.5rem 0;
     padding: 1rem;
     border-color: theme-color("secondary");
+  }
+  .jumbotron {
+    border-radius: 0;
+    box-shadow: 0 0 #ffffff inset, 0 1px 3px rgba(34, 25, 25, 0.4);
+    background-color: theme-color("secondary");
+    color: theme-color("light");
+    text-align: center;
+
+    h3 {
+      text-align: center;
+      font-weight: 300;
+    }
   }
 }

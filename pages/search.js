@@ -4,7 +4,6 @@ import Head from "next/head";
 import { Link } from "../lib/routes";
 import Autosuggest from "react-autosuggest";
 
-import AutosuggestTheme from "../styles/AutosuggestTheme.css";
 import Container from "react-bootstrap/Container";
 
 const getSuggestions = (value, data) => {
@@ -36,15 +35,20 @@ export default withRouter(
   class SearchEngine extends React.Component {
     constructor(props) {
       super(props);
-      this.state = {
-        value: "",
-        suggestions: []
-      };
+      let val = props.router.query.query;
+      if (val) {
+        this.state = {
+          value: val,
+          suggestions: getSuggestions(val, props.data)
+        };
+      } else {
+        this.state = {
+          value: "",
+          suggestions: []
+        };
+      }
       this.onChange = this.onChange.bind(this);
       this.onSuggestionsFetchRequested = this.onSuggestionsFetchRequested.bind(
-        this
-      );
-      this.onSuggestionsClearRequested = this.onSuggestionsClearRequested.bind(
         this
       );
     }
@@ -81,12 +85,7 @@ export default withRouter(
         suggestions: getSuggestions(value, this.props.data)
       });
     };
-    // Autosuggest will call this function every time you need to clear suggestions.
-    onSuggestionsClearRequested = () => {
-      this.setState({
-        suggestions: []
-      });
-    };
+
     onChange = (event, { newValue }) => {
       this.setState({
         value: newValue
@@ -104,15 +103,17 @@ export default withRouter(
       return (
         <Container>
           <Head>Sök | Partiguiden.nu</Head>
-          <Autosuggest
-            theme={AutosuggestTheme}
-            suggestions={suggestions}
-            onSuggestionsFetchRequested={this.onSuggestionsFetchRequested}
-            onSuggestionsClearRequested={this.onSuggestionsClearRequested}
-            getSuggestionValue={getSuggestValue}
-            renderSuggestion={renderSuggestion}
-            inputProps={inputProps}
-          />
+          <form id="search-page">
+            <Autosuggest
+              id="search-page"
+              suggestions={suggestions}
+              onSuggestionsFetchRequested={this.onSuggestionsFetchRequested}
+              getSuggestionValue={getSuggestValue}
+              renderSuggestion={renderSuggestion}
+              inputProps={inputProps}
+              alwaysRenderSuggestions={true}
+            />
+          </form>
         </Container>
       );
     }

@@ -1,7 +1,8 @@
 import { loadFirebase } from "../lib/db.js";
 import Autosuggest from "react-autosuggest";
-import { AutosuggestTheme } from "../styles/AutosuggestTheme.css";
-import { Link } from "../lib/routes";
+import { Link, Router } from "../lib/routes";
+
+import SearchIcon from "@material-ui/icons/Search";
 
 const getSuggestions = (value, data) => {
   const inputValue = value.trim().toLowerCase();
@@ -29,7 +30,7 @@ function renderSuggestionsContainer({ containerProps, children, query }) {
     <div {...containerProps}>
       {children}
       <div>
-        Press Enter to search <strong>{query}</strong>
+        <strong>{query}</strong>
       </div>
     </div>
   );
@@ -50,6 +51,7 @@ export default class SearchEngine extends React.Component {
     this.onSuggestionsClearRequested = this.onSuggestionsClearRequested.bind(
       this
     );
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   onSuggestionsFetchRequested = ({ value }) => {
@@ -69,6 +71,27 @@ export default class SearchEngine extends React.Component {
     });
   };
 
+  handleSubmit = e => {
+    this.props.closeNav();
+
+    e.preventDefault();
+    let val = this.state.value;
+    let suggestions = this.props.searchData;
+    var id;
+    /* Check if found equals one of the suggestions  */
+    let found = suggestions.some(function(el) {
+      if (el.name.toLowerCase() === val.toLowerCase()) {
+        id = el.id;
+        return true;
+      }
+    });
+    if (found) {
+      Router.pushRoute(`/subject/${id}`);
+    } else {
+      Router.pushRoute(`/search?query=${val}`);
+    }
+  };
+
   render() {
     const data = this.props.searchData;
     const { value, suggestions } = this.state;
@@ -78,16 +101,20 @@ export default class SearchEngine extends React.Component {
       onChange: this.onChange
     };
     return (
-      <Autosuggest
-        theme={AutosuggestTheme}
-        suggestions={suggestions}
-        onSuggestionsFetchRequested={this.onSuggestionsFetchRequested}
-        onSuggestionsClearRequested={this.onSuggestionsClearRequested}
-        highlightFirstSuggestion={true}
-        getSuggestionValue={getSuggestValue}
-        renderSuggestion={renderSuggestion}
-        inputProps={inputProps}
-      />
+      <form id={`search-${this.props.id}`} onSubmit={this.handleSubmit}>
+        <Autosuggest
+          id={this.props.id}
+          suggestions={suggestions}
+          onSuggestionsFetchRequested={this.onSuggestionsFetchRequested}
+          onSuggestionsClearRequested={this.onSuggestionsClearRequested}
+          getSuggestionValue={getSuggestValue}
+          renderSuggestion={renderSuggestion}
+          inputProps={inputProps}
+        />
+        <button className="search-button">
+          <SearchIcon />
+        </button>
+      </form>
     );
   }
 }

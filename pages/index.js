@@ -26,7 +26,7 @@ export default () => (
       <p>
         Klicka{" "}
         <Link href="/partiernas-standpunkter">
-          <a className="text-info">här</a>
+          <a className="text-primary">här</a>
         </Link>{" "}
         eller på fliken "Partiernas ståndpunkter" för att börja jämföra vad
         partierna har för åsikter i just de frågorna som du har nära till

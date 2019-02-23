@@ -1,32 +1,13 @@
-const express = require("express");
-const next = require("next");
-
-const dev = process.env.NODE_ENV !== "production";
-const app = next({ dev });
-
 // Routing
+const next = require("next");
 const routes = require("./lib/routes");
+const app = next({ dev: process.env.NODE_ENV !== "production" });
 const handler = routes.getRequestHandler(app);
 
-app
-  .prepare()
-  .then(() => {
-    server = express().use(handler);
-
-    server.get("/subject/:id", (req, res) => {
-      const actualPage = "/subject";
-      const queryParams = {
-        id: req.params.id
-      };
-      app.render(req, res, actualPage, queryParams);
-    });
-
-    server.listen(3000, err => {
-      if (err) throw err;
-      console.log("> Ready on http://localhost:3000");
-    });
-  })
-  .catch(ex => {
-    console.error(ex.stack);
-    process.exit(1);
-  });
+// Use express
+const express = require("express");
+app.prepare().then(() => {
+  express()
+    .use(handler)
+    .listen(3000);
+});

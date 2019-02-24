@@ -4,6 +4,8 @@ import Head from "next/head";
 import { Link } from "../lib/routes";
 import Autosuggest from "react-autosuggest";
 
+import Input from "@material-ui/core/Input";
+import ButtonBase from "@material-ui/core/ButtonBase";
 import Container from "react-bootstrap/Container";
 
 const getSuggestions = (value, data) => {
@@ -23,13 +25,19 @@ const getSuggestValue = suggestion => {
 
 const renderSuggestion = suggestion => {
   return (
-    <div>
-      <Link route="subject" params={{ id: `${suggestion.id}` }}>
-        <a className="custom-nav-link">{suggestion.name}</a>
-      </Link>
+    <div className="list">
+      <ButtonBase className="list-object">
+        <Link route="subject" params={{ id: `${suggestion.id}` }}>
+          <a className="text-dark">
+            <span>{suggestion.name}</span>
+          </a>
+        </Link>
+      </ButtonBase>
     </div>
   );
 };
+
+const renderInputComponent = inputProps => <Input {...inputProps} />;
 
 export default withRouter(
   class SearchEngine extends React.Component {
@@ -54,12 +62,11 @@ export default withRouter(
     }
     static async getInitialProps() {
       let firebase = await loadFirebase();
-
       let result = await new Promise((resolve, reject) => {
         firebase
           .firestore()
           .collection("Pages")
-          .get()
+          .get({ source: "cache" })
           .then(snapshot => {
             let data = [];
             snapshot.forEach(doc => {
@@ -94,6 +101,7 @@ export default withRouter(
 
     render() {
       const data = this.props.data;
+
       const { value, suggestions } = this.state;
       const inputProps = {
         placeholder: "Sök här...",
@@ -110,6 +118,7 @@ export default withRouter(
               onSuggestionsFetchRequested={this.onSuggestionsFetchRequested}
               getSuggestionValue={getSuggestValue}
               renderSuggestion={renderSuggestion}
+              renderInputComponent={renderInputComponent}
               inputProps={inputProps}
               alwaysRenderSuggestions={true}
             />

@@ -7,6 +7,9 @@ nav {
   top: 0;
   color: theme-color("light");
 
+  .container {
+    flex-wrap: wrap !important;
+  }
   .navbar-brand {
     max-width: 75%;
     font-family: "Comfortaa", cursive;

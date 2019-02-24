@@ -3,7 +3,27 @@ $font-stack: Roboto, sans-serif;
 $primary: #00796b;
 $secondary: #009688;
 
-@import "node_modules/bootstrap/scss/bootstrap";
+// Bootstrap
+
+// Required
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+// Optional
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/type";
+@import "../node_modules/bootstrap/scss/grid";
+@import "../node_modules/bootstrap/scss/navbar";
+@import "../node_modules/bootstrap/scss/nav";
+@import "../node_modules/bootstrap/scss/transitions";
+
+// Utilites
+@import "../node_modules/bootstrap/scss/utilities/position";
+@import "../node_modules/bootstrap/scss/utilities/text";
+@import "../node_modules/bootstrap/scss/utilities/spacing";
+
+// Custom sass
 @import "Front-Page";
 @import "Navigation";
 @import "Footer";

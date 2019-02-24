@@ -1,6 +1,9 @@
-import { loadFirebase } from "../lib/db.js";
 import Autosuggest from "react-autosuggest";
 import { Link, Router } from "../lib/routes";
+
+import Input from "@material-ui/core/Input";
+import InputAdornment from "@material-ui/core/InputAdornment";
+import ButtonBase from "@material-ui/core/ButtonBase";
 
 import SearchIcon from "@material-ui/icons/Search";
 
@@ -35,6 +38,10 @@ function renderSuggestionsContainer({ containerProps, children, query }) {
     </div>
   );
 }
+
+const renderInputComponent = inputProps => (
+  <Input fullWidth={true} {...inputProps} />
+);
 
 export default class SearchEngine extends React.Component {
   constructor(props) {
@@ -98,7 +105,14 @@ export default class SearchEngine extends React.Component {
     const inputProps = {
       placeholder: "Sök här...",
       value,
-      onChange: this.onChange
+      onChange: this.onChange,
+      endAdornment: (
+        <InputAdornment position="end">
+          <button className="search-button">
+            <SearchIcon />
+          </button>
+        </InputAdornment>
+      )
     };
     return (
       <form id={`search-${this.props.id}`} onSubmit={this.handleSubmit}>
@@ -109,11 +123,9 @@ export default class SearchEngine extends React.Component {
           onSuggestionsClearRequested={this.onSuggestionsClearRequested}
           getSuggestionValue={getSuggestValue}
           renderSuggestion={renderSuggestion}
+          renderInputComponent={renderInputComponent}
           inputProps={inputProps}
         />
-        <button className="search-button">
-          <SearchIcon />
-        </button>
       </form>
     );
   }

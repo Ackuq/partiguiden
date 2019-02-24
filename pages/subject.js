@@ -15,44 +15,41 @@ export default withRouter(
       let result = await new Promise((resolve, reject) => {
         db.collection("Pages")
           .doc(id)
-          .get()
-          .then(doc => {
-            let data = doc.data();
-            resolve(data);
-          })
-          .catch(error => {
-            reject([]);
+          .onSnapshot({ includeMetadataChanges: true }, function(doc) {
+            resolve(doc.data());
           });
+      }).catch(error => {
+        reject([]);
       });
 
       let parties = ["Centerpartiet", "Liberalerna"];
       let output = [];
       await Promise.all(
         parties.map(async party => {
-          let data = [];
+          let subjectData = [];
           await Promise.all(
             result.tags.map(async tag => {
-              await db
-                .collection(party)
-                .where("name", "==", tag)
-                .get()
-                .then(snapshot => {
-                  if (!snapshot.empty) {
-                    snapshot.forEach(doc => {
-                      data.push(doc.data());
+              let partySubject = await new Promise(resolve => {
+                db.collection(party)
+                  .where("name", "==", tag)
+                  .onSnapshot({ includeMetadataChanges: true }, function(
+                    snapshot
+                  ) {
+                    var data;
+                    snapshot.docChanges().forEach(function(change) {
+                      data = change.doc.data();
                     });
-                  }
-                });
+                    resolve(data);
+                  });
+              });
+              if (partySubject) subjectData.push(partySubject);
             })
           );
-          if (data.length > 0) output.push({ name: party, subjects: data });
+          if (subjectData.length > 0)
+            output.push({ name: party, subjects: subjectData });
         })
       );
       return { data: result, partydata: output };
-    }
-
-    async queryData(tags) {
-      let firebase = await loadFirebase();
     }
 
     render() {

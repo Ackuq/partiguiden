@@ -43,51 +43,52 @@
 
 .subject-list {
   background-color: #f6f6f6;
+}
+.list {
+  display: flex;
+  flex-wrap: wrap;
 
-  .list {
-    display: flex;
+  .empty-col {
+    border-left: solid 4px theme-color("primary");
+  }
 
-    .empty-col {
+  .list-object {
+    a:hover span {
+      background-position: left bottom;
+      color: theme-color("light");
+    }
+
+    a {
       border-left: solid 4px theme-color("primary");
+
+      display: flex;
+      flex-grow: 1;
+      background-color: #f6f6f6;
     }
 
-    .list-object {
-      a:hover span {
-        background-position: left bottom;
-        color: theme-color("light");
-      }
-
-      a {
-        border-left: solid 4px theme-color("primary");
-
-        display: flex;
-        flex-grow: 1;
-        background-color: #f6f6f6;
-      }
-
-      a span {
-        display: inline-flex;
-        line-height: 50px;
-        background: linear-gradient(
-          to left,
-          theme-color("light") 50%,
-          theme-color("primary") 50%
-        );
-        background-size: 202% 100%;
-        background-position: right bottom;
-        background-repeat: no-repeat;
-        -webkit-transition: all 0.3s ease;
-        -moz-transition: all 0.3s ease;
-        -ms-transition: all 0.3s ease;
-        -o-transition: all 0.3s ease;
-        transition: all 0.3s ease;
-      }
+    a span {
+      display: inline-flex;
+      line-height: 50px;
+      padding: 0 0.5rem;
+      background: linear-gradient(
+        to left,
+        theme-color("light") 50%,
+        theme-color("primary") 50%
+      );
+      background-size: 202% 100%;
+      background-position: right bottom;
+      background-repeat: no-repeat;
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -ms-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease;
     }
   }
-  .letter {
-    background-color: theme-color("secondary");
-    font-size: 20px;
-  }
+}
+.letter {
+  background-color: theme-color("secondary");
+  font-size: 20px;
 }
 
 @media (max-width: 767px) {
@@ -104,10 +105,10 @@
 }
 @media (min-width: 768px) {
   .list {
-    .list-object:nth-child(2n + 1) {
+    .list-object.standpoint-subject:nth-child(2n + 1) {
       width: calc(50% - 2px);
     }
-    .list-object:nth-child(2n) {
+    .list-object.standpoint-subject:nth-child(2n) {
       width: calc(50% + 2px);
     }
   }

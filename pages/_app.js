@@ -7,33 +7,6 @@ import Footer from "../components/Footer";
 import Meta from "../components/Meta";
 
 class Layout extends React.Component {
-  static async getInitialProps(ctx) {
-    console.log(ctx);
-    let firebase = await loadFirebase();
-    let result = await new Promise((resolve, reject) => {
-      firebase
-        .firestore()
-        .collection("Pages")
-        .get()
-        .then(snapshot => {
-          let data = [];
-          snapshot.forEach(doc => {
-            data.push(
-              Object.assign({
-                id: doc.id,
-                name: doc.data().name
-              })
-            );
-          });
-          resolve(data);
-        })
-        .catch(error => {
-          reject([]);
-        });
-    });
-    return { data: result };
-  }
-
   render() {
     return (
       <React.Fragment>
@@ -53,25 +26,21 @@ class Layout extends React.Component {
 export default class MyApp extends App {
   static async getInitialProps({ Component, router, ctx }) {
     let firebase = await loadFirebase();
-    let result = await new Promise((resolve, reject) => {
+    let result = await new Promise(resolve => {
       firebase
         .firestore()
         .collection("Pages")
-        .get()
-        .then(snapshot => {
-          let data = [];
-          snapshot.forEach(doc => {
+        .onSnapshot({ includeMetadataChanges: true }, function(snapshot) {
+          var data = [];
+          snapshot.docChanges().forEach(function(change) {
             data.push(
               Object.assign({
-                id: doc.id,
-                name: doc.data().name
+                id: change.doc.id,
+                name: change.doc.data().name
               })
             );
           });
           resolve(data);
-        })
-        .catch(error => {
-          reject([]);
         });
     });
     let pageProps = {};

@@ -13,10 +13,13 @@ export default class ListObject extends React.Component {
         </div>
         <div className="list">
           {subjects.map(subject => (
-            <ButtonBase className="list-object" key={`{${subject.id}}`}>
+            <ButtonBase
+              className="list-object standpoint-subject"
+              key={`{${subject.id}}`}
+            >
               <Link route="subject" params={{ id: `${subject.id}` }} passHref>
                 <a className="text-dark">
-                  <span className="px-2">{subject.name}</span>
+                  <span>{subject.name}</span>
                 </a>
               </Link>
             </ButtonBase>

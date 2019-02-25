@@ -2,14 +2,15 @@
   "name": "partiguiden-server",
   "version": "1.0.0",
   "description": "Partiguiden Server Rendered",
-  "main": "pages/index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "node server.js",
     "build": "next build",
     "start": "NODE_ENV=production node server.js",
-    "export": "npm run build && next export",
-    "analyze": "cross-env ANALYZE=1 next build"
+    "deploy": "npm run build && gcloud app deploy"
+  },
+  "enginges": {
+    "node": "10.15.1"
   },
   "author": "Axel Pettersson",
   "license": "ISC",
@@ -23,8 +24,9 @@
     "dotenv": "^6.2.0",
     "express": "^4.16.4",
     "firebase": "^5.8.4",
-    "next": "^8.0.3",
+    "next": "^8.0.4-canary.1",
     "next-routes": "^1.4.2",
+    "next-server": "^8.0.3",
     "node-sass": "^4.11.0",
     "react": "^16.8.3",
     "react-autosuggest": "^9.4.3",

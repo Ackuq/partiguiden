@@ -4,13 +4,11 @@ import App, { Container } from "next/app";
 import { loadFirebase } from "../lib/db.js";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import Meta from "../components/Meta";
 
 class Layout extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <Meta />
         <header>
           <Header searchData={this.props.searchData} />
         </header>

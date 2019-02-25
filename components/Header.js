@@ -1,6 +1,5 @@
 import "../styles/Styles.scss";
 
-import Head from "next/head";
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import { Link } from "../lib/routes";

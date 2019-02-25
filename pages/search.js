@@ -37,17 +37,22 @@ const renderSuggestion = suggestion => {
   );
 };
 
-const renderInputComponent = inputProps => <Input {...inputProps} />;
+const renderInputComponent = inputProps => {
+  const { ref, ...other } = inputProps;
+
+  return <Input {...other} inputRef={ref} />;
+};
 
 export default withRouter(
   class SearchEngine extends React.Component {
     constructor(props) {
       super(props);
-      let val = props.router.query.query;
+
+      let val = this.props.router.query.query;
       if (val) {
         this.state = {
           value: val,
-          suggestions: getSuggestions(val, props.data)
+          suggestions: getSuggestions(val, this.props.data)
         };
       } else {
         this.state = {
@@ -55,6 +60,7 @@ export default withRouter(
           suggestions: []
         };
       }
+
       this.onChange = this.onChange.bind(this);
       this.onSuggestionsFetchRequested = this.onSuggestionsFetchRequested.bind(
         this
@@ -101,17 +107,17 @@ export default withRouter(
 
     render() {
       const data = this.props.data;
-
       const { value, suggestions } = this.state;
       const inputProps = {
         placeholder: "Sök här...",
         value,
         onChange: this.onChange
       };
+
       return (
         <Container>
           <Head>Sök | Partiguiden.nu</Head>
-          <form id="search-page">
+          <div id="search-page">
             <Autosuggest
               id="search-page"
               suggestions={suggestions}
@@ -122,7 +128,7 @@ export default withRouter(
               inputProps={inputProps}
               alwaysRenderSuggestions={true}
             />
-          </form>
+          </div>
         </Container>
       );
     }

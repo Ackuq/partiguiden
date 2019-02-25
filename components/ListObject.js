@@ -15,9 +15,9 @@ export default class ListObject extends React.Component {
           {subjects.map(subject => (
             <ButtonBase
               className="list-object standpoint-subject"
-              key={`{${subject.id}}`}
+              key={`${subject.id}`}
             >
-              <Link route="subject" params={{ id: `${subject.id}` }} passHref>
+              <Link route="subject" params={{ id: `${subject.id}` }}>
                 <a className="text-dark">
                   <span>{subject.name}</span>
                 </a>

@@ -24,6 +24,7 @@ $secondary: #009688;
 @import "../node_modules/bootstrap/scss/utilities/spacing";
 
 // Custom sass
+@import "Tabs";
 @import "Front-Page";
 @import "Navigation";
 @import "Footer";
@@ -58,14 +59,12 @@ html {
   }
   @media (max-width: 767px) {
     body {
-      height: calc(100% - 68px);
-      margin-top: 68px;
+      height: 100%;
     }
   }
   @media (min-width: 768px) {
     body {
-      height: calc(100% - 120px);
-      margin-top: 120px;
+      height: 100%;
     }
   }
   p {

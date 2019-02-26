@@ -1,8 +1,15 @@
+/* bootstrap container */
 import Container from "react-bootstrap/Container";
+/* Import icon */
 import InfoIcon from "@material-ui/icons/Info";
+/* Next.js Head component */
+import Head from "next/head";
 
 export default () => (
   <Container>
+    <Head>
+      <title>Om oss | Partiguiden.nu</title>
+    </Head>
     <div className="text-center font-weight-light">
       <InfoIcon style={{ fontSize: "2.5rem" }} />
       <h1>Om oss</h1>

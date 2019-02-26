@@ -1,12 +1,17 @@
-import { withRouter } from "next/router";
-import Autosuggest from "react-autosuggest";
+/* Routing */
 import { Link, Router } from "../lib/routes";
+import { withRouter } from "next/router";
 
-import Input from "@material-ui/core/Input";
+/* Autosuggest */
+import Autosuggest from "react-autosuggest";
+
+/* Material UI components */
+import InputBase from "@material-ui/core/InputBase";
 import InputAdornment from "@material-ui/core/InputAdornment";
 import ButtonBase from "@material-ui/core/ButtonBase";
-
 import SearchIcon from "@material-ui/icons/Search";
+import Paper from "@material-ui/core/Paper";
+import MenuItem from "@material-ui/core/MenuItem";
 
 const getSuggestions = (value, data) => {
   const inputValue = value.trim().toLowerCase();
@@ -22,20 +27,20 @@ const getSuggestions = (value, data) => {
 const getSuggestValue = suggestion => {
   return suggestion.name;
 };
-const renderSuggestion = suggestion => {
+const renderSuggestion = (suggestion, { isHighlighted }) => {
   return (
-    <Link route="subject" params={{ id: `${suggestion.id}` }}>
-      <a className="search-result">{suggestion.name}</a>
-    </Link>
+    <MenuItem selected={isHighlighted} component="div" disableGutters={true}>
+      <Link route="subject" params={{ id: `${suggestion.id}` }}>
+        <a className="search-result">{suggestion.name}</a>
+      </Link>
+    </MenuItem>
   );
 };
 function renderSuggestionsContainer({ containerProps, children, query }) {
   return (
     <div {...containerProps}>
       {children}
-      <div>
-        <strong>{query}</strong>
-      </div>
+      <div>{query}</div>
     </div>
   );
 }
@@ -43,18 +48,18 @@ function renderSuggestionsContainer({ containerProps, children, query }) {
 const renderInputComponent = inputProps => {
   const { ref, ...other } = inputProps;
 
-  return <Input {...other} inputRef={ref} />;
+  return <InputBase className="input-field-header" {...other} inputRef={ref} />;
 };
 
 export default withRouter(
-  class SearchEngine extends React.Component {
+  class SearchBar extends React.Component {
     constructor(props) {
       super(props);
       this.state = {
         value: "",
         suggestions: []
       };
-      this.onChange = this.onChange.bind(this);
+      this.handleChange = this.handleChange.bind(this);
       this.onSuggestionsFetchRequested = this.onSuggestionsFetchRequested.bind(
         this
       );
@@ -75,15 +80,13 @@ export default withRouter(
         suggestions: []
       });
     };
-    onChange = (event, { newValue }) => {
+    handleChange = (event, { newValue }) => {
       this.setState({
         value: newValue
       });
     };
 
     handleSubmit = e => {
-      this.props.closeNav();
-
       e.preventDefault();
       let val = this.state.value;
       let suggestions = this.props.searchData;
@@ -108,7 +111,8 @@ export default withRouter(
       const inputProps = {
         placeholder: "Sök här...",
         value,
-        onChange: this.onChange,
+        variant: "filled",
+        onChange: this.handleChange,
         endAdornment: (
           <InputAdornment position="end">
             <button className="search-button">
@@ -117,6 +121,7 @@ export default withRouter(
           </InputAdornment>
         )
       };
+
       return (
         <form id={`search-${this.props.id}`} onSubmit={this.handleSubmit}>
           <Autosuggest
@@ -125,6 +130,9 @@ export default withRouter(
             onSuggestionsFetchRequested={this.onSuggestionsFetchRequested}
             onSuggestionsClearRequested={this.onSuggestionsClearRequested}
             getSuggestionValue={getSuggestValue}
+            renderSuggestionsContainer={option => (
+              <Paper {...option.containerProps}>{option.children}</Paper>
+            )}
             renderSuggestion={renderSuggestion}
             renderInputComponent={renderInputComponent}
             inputProps={inputProps}

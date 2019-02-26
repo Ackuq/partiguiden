@@ -1,0 +1,14 @@
+header.nav-app-bar {
+  background-color: $primary;
+  .app-tabs {
+    .nav-tab:focus {
+      color: $white;
+    }
+    .nav-tab:hover {
+      color: $gray-500;
+    }
+    .nav-indicator {
+      background-color: theme-color("secondary");
+    }
+  }
+}

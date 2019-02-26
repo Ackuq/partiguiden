@@ -48,19 +48,7 @@ export default withRouter(
     constructor(props) {
       super(props);
 
-      let val = this.props.router.query.query;
-      if (val) {
-        this.state = {
-          value: val,
-          suggestions: getSuggestions(val, this.props.data)
-        };
-      } else {
-        this.state = {
-          value: "",
-          suggestions: []
-        };
-      }
-
+      this.getInitialValues = this.getInitialValues.bind(this);
       this.onChange = this.onChange.bind(this);
       this.onSuggestionsFetchRequested = this.onSuggestionsFetchRequested.bind(
         this
@@ -105,7 +93,23 @@ export default withRouter(
       });
     };
 
+    getInitialValues = () => {
+      let val = this.props.router.query.query;
+      if (val) {
+        this.state = {
+          value: val,
+          suggestions: getSuggestions(val, this.props.data)
+        };
+      } else {
+        this.state = {
+          value: "",
+          suggestions: []
+        };
+      }
+    };
+
     render() {
+      this.getInitialValues();
       const data = this.props.data;
       const { value, suggestions } = this.state;
       const inputProps = {
@@ -116,7 +120,9 @@ export default withRouter(
 
       return (
         <Container>
-          <Head>Sök | Partiguiden.nu</Head>
+          <Head>
+            <title>Sök | Partiguiden.nu</title>
+          </Head>
           <div id="search-page">
             <Autosuggest
               id="search-page"

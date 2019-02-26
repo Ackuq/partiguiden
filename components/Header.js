@@ -26,37 +26,39 @@ class Header extends React.Component {
   }
   render() {
     return (
-      <Navbar
-        fixed="top"
-        expand="md"
-        expanded={this.state.navExpanded}
-        onToggle={this.setNavExpanded}
-      >
-        <div className="container flex-wrap">
-          <div className="navbar-header">
-            <Link route="/">
-              <a className="navbar-brand text-light">
-                <span className="font-weight-normal">Partiguiden</span>
-                <span className="font-weight-light">.nu 2.0</span>
-              </a>
-            </Link>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <SearchBar
-              closeNav={this.closeNav}
-              id="desktop"
-              searchData={this.props.searchData}
-            />
+      <header>
+        <Navbar
+          fixed="top"
+          expand="md"
+          expanded={this.state.navExpanded}
+          onToggle={this.setNavExpanded}
+        >
+          <div className="container flex-wrap">
+            <div className="navbar-header">
+              <Link route="/">
+                <a className="navbar-brand text-light">
+                  <span className="font-weight-normal">Partiguiden</span>
+                  <span className="font-weight-light">.nu 2.0</span>
+                </a>
+              </Link>
+              <Navbar.Toggle aria-controls="basic-navbar-nav" />
+              <SearchBar
+                closeNav={this.closeNav}
+                id="desktop"
+                searchData={this.props.searchData}
+              />
+            </div>
+            <Navbar.Collapse id="basic-navbar-nav">
+              <SearchBar
+                closeNav={this.closeNav}
+                id="phone"
+                searchData={this.props.searchData}
+              />
+              <NavLink closeNav={this.closeNav} />
+            </Navbar.Collapse>
           </div>
-          <Navbar.Collapse id="basic-navbar-nav">
-            <SearchBar
-              closeNav={this.closeNav}
-              id="phone"
-              searchData={this.props.searchData}
-            />
-            <NavLink closeNav={this.closeNav} />
-          </Navbar.Collapse>
-        </div>
-      </Navbar>
+        </Navbar>
+      </header>
     );
   }
 }

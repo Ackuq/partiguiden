@@ -1,16 +1,20 @@
+/* Custom components */
 import Type from "../components/Typed";
-import Container from "react-bootstrap/Container";
-import Col from "react-bootstrap/Col";
-import Row from "react-bootstrap/Row";
-import ButtonBase from "@material-ui/core/ButtonBase";
-import Head from "next/head";
 
+/* Bootstrap imports */
+import { Container, Col, Row } from "react-bootstrap";
+
+/* Material UI import */
+import ButtonBase from "@material-ui/core/ButtonBase";
+
+/* Next-js imports */
+import Head from "next/head";
 import Link from "next/link";
 
 export default () => (
   <div style={{ marginTop: "-2rem" }}>
     <Head>
-      <title>Partiguiden.nu 2.0</title>
+      <title>Partiguiden.nu | Rösta rätt</title>
     </Head>
     <Type />
     <Container>

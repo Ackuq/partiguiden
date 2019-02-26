@@ -18,5 +18,9 @@ main {
       text-align: center;
       font-weight: 300;
     }
+
+    span::after {
+      height: 100%;
+    }
   }
 }

@@ -12,6 +12,10 @@
   "enginges": {
     "node": "10.15.1"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ackuq/Partiguiden-2.0.git"
+  },
   "author": "Axel Pettersson",
   "license": "ISC",
   "dependencies": {
@@ -24,7 +28,7 @@
     "dotenv": "^6.2.0",
     "express": "^4.16.4",
     "firebase": "^5.8.4",
-    "next": "^8.0.4-canary.1",
+    "next": "^8.0.3",
     "next-routes": "^1.4.2",
     "next-server": "^8.0.3",
     "node-sass": "^4.11.0",

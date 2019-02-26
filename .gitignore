@@ -1,5 +1,13 @@
+## Next build
 .next/*
-node_modules/*
-out/*
+
+## Enviroment variables
 .env
-.netlify/*
+
+
+## Node modules
+node_modules/*
+
+
+## Google cloud files
+.gcloudignore

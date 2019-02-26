@@ -1,29 +1,18 @@
 import React from "react";
 import App, { Container } from "next/app";
 
+import Head from "next/head";
+
 import { loadFirebase } from "../lib/db.js";
+
+/* Header and footer components*/
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-
-class Layout extends React.Component {
-  render() {
-    return (
-      <React.Fragment>
-        <header>
-          <Header searchData={this.props.searchData} />
-        </header>
-        <main>{this.props.children}</main>
-        <footer className="py-4 mt-3 text-light">
-          <Footer />
-        </footer>
-      </React.Fragment>
-    );
-  }
-}
 
 export default class MyApp extends App {
   static async getInitialProps({ Component, router, ctx }) {
     let firebase = await loadFirebase();
+
     let result = await new Promise(resolve => {
       firebase
         .firestore()
@@ -41,19 +30,25 @@ export default class MyApp extends App {
           resolve(data);
         });
     });
+
     let pageProps = {};
+
     if (Component.getInitialProps) {
       pageProps = await Component.getInitialProps(ctx);
     }
+
     return { pageProps, result };
   }
   render() {
-    const { Component, pageProps } = this.props;
+    const { Component, pageProps, result } = this.props;
+
     return (
       <Container>
-        <Layout searchData={this.props.result}>
+        <Header searchData={result} />
+        <main>
           <Component {...pageProps} />
-        </Layout>
+        </main>
+        <Footer />
       </Container>
     );
   }

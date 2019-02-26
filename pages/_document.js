@@ -1,11 +1,16 @@
-import Document, { Head, Main, NextScript } from "next/document";
+/* Import necessary stuff */
+import Document, { Html, Head, Main, NextScript } from "next/document";
 
 export default class MyDocument extends Document {
+  static async getInitialProps(ctx) {
+    const initialProps = await Document.getInitialProps(ctx);
+    return { ...initialProps };
+  }
+
   render() {
     return (
-      <html lang="sv">
+      <Html lang="sv">
         <Head>
-          <meta name="theme-color" content="#ffffff" />
           <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -31,13 +36,13 @@ export default class MyDocument extends Document {
             href="/static/icons/safari-pinned-tab.svg"
             color="#5bbad5"
           />
-          <meta name="theme-color" content="#00796B" />
+          <meta name="theme-color" content="#00796b" />
         </Head>
         <body>
           <Main />
           <NextScript />
         </body>
-      </html>
+      </Html>
     );
   }
 }

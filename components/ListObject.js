@@ -8,7 +8,7 @@ export default class ListObject extends React.Component {
     let oddNumber = subjects.length % 2;
     return (
       <React.Fragment>
-        <div className="letter text-white text-center w-100">
+        <div className="letter text-light text-center w-100">
           <header>{letter}</header>
         </div>
         <div className="list">

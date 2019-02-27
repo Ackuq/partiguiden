@@ -1,4 +1,3 @@
-import Container from "react-bootstrap/Container";
 import { loadFirebase } from "../lib/db.js";
 import Head from "next/head";
 import ListObject from "../components/ListObject";
@@ -48,11 +47,11 @@ export default class Standpunkter extends React.Component {
     const data = this.props.data;
     console;
     return (
-      <Container>
+      <div className="container">
         <Head>
           <title>Partiernas ståndpunkter | Partiguiden.nu 2.0</title>
         </Head>
-        <div className="font-weight-light">
+        <div>
           <h1>Partiernas ståndpunkter</h1>
         </div>
         <div className="subject-list">
@@ -60,7 +59,7 @@ export default class Standpunkter extends React.Component {
             <ListObject letter={key} subjects={data[key]} key={`${key}`} />
           ))}
         </div>
-      </Container>
+      </div>
     );
   }
 }

@@ -4,7 +4,6 @@ import Head from "next/head";
 import Link from "next/link";
 
 import PartyComponent from "../components/PartyComponent";
-import Container from "react-bootstrap/Container";
 
 export default withRouter(
   class Subject extends React.Component {
@@ -62,7 +61,7 @@ export default withRouter(
       const data = this.props.data;
       const partydata = this.props.partydata;
       return (
-        <Container>
+        <div className="container">
           <Head>
             <title>{data.name} | Partiguiden.nu</title>
           </Head>
@@ -71,7 +70,7 @@ export default withRouter(
             partydata.map(party => (
               <PartyComponent key={party.name} party={party} />
             ))}
-        </Container>
+        </div>
       );
     }
   }

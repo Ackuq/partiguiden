@@ -6,6 +6,7 @@ import { withRouter } from "next/router";
 import Autosuggest from "react-autosuggest";
 
 /* Material UI components */
+import InputLabel from "@material-ui/core/InputLabel";
 import InputBase from "@material-ui/core/InputBase";
 import InputAdornment from "@material-ui/core/InputAdornment";
 import ButtonBase from "@material-ui/core/ButtonBase";
@@ -47,8 +48,19 @@ function renderSuggestionsContainer({ containerProps, children, query }) {
 
 const renderInputComponent = inputProps => {
   const { ref, ...other } = inputProps;
-
-  return <InputBase className="input-field-header" {...other} inputRef={ref} />;
+  return (
+    <React.Fragment>
+      <InputLabel>
+        <InputBase
+          className="input-field-header"
+          {...other}
+          inputRef={node => {
+            ref(node);
+          }}
+        />
+      </InputLabel>
+    </React.Fragment>
+  );
 };
 
 export default withRouter(
@@ -106,16 +118,16 @@ export default withRouter(
     };
 
     render() {
-      const data = this.props.searchData;
       const { value, suggestions } = this.state;
       const inputProps = {
         placeholder: "Sök här...",
         value,
         variant: "filled",
         onChange: this.handleChange,
+        id: "search-bar",
         endAdornment: (
           <InputAdornment position="end">
-            <button className="search-button">
+            <button className="search-button" aria-label="Search">
               <SearchIcon />
             </button>
           </InputAdornment>
@@ -131,7 +143,9 @@ export default withRouter(
             onSuggestionsClearRequested={this.onSuggestionsClearRequested}
             getSuggestionValue={getSuggestValue}
             renderSuggestionsContainer={option => (
-              <Paper {...option.containerProps}>{option.children}</Paper>
+              <Paper square {...option.containerProps}>
+                {option.children}
+              </Paper>
             )}
             renderSuggestion={renderSuggestion}
             renderInputComponent={renderInputComponent}

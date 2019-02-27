@@ -1,32 +1,22 @@
 $font-stack: Roboto, sans-serif;
 
-$primary: #00796b;
-$secondary: #009688;
-
 // Bootstrap
+@import "bootstrap/functions";
+@import "bootstrap/colors";
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+@import "bootstrap/rfs";
 
-// Required
-@import "../node_modules/bootstrap/scss/functions";
-@import "../node_modules/bootstrap/scss/variables";
-@import "../node_modules/bootstrap/scss/mixins";
-
-// Optional
-@import "../node_modules/bootstrap/scss/reboot";
-@import "../node_modules/bootstrap/scss/type";
-@import "../node_modules/bootstrap/scss/grid";
-@import "../node_modules/bootstrap/scss/navbar";
-@import "../node_modules/bootstrap/scss/nav";
-@import "../node_modules/bootstrap/scss/transitions";
-
-// Utilites
-@import "../node_modules/bootstrap/scss/utilities/position";
-@import "../node_modules/bootstrap/scss/utilities/text";
-@import "../node_modules/bootstrap/scss/utilities/spacing";
+@import "bootstrap/containers";
+@import "bootstrap/borders";
+@import "bootstrap/transitions";
+@import "bootstrap/Reboot";
+@import "bootstrap/text";
+@import "bootstrap/spacing";
 
 // Custom sass
 @import "Tabs";
 @import "Front-Page";
-@import "Navigation";
 @import "Footer";
 @import "Subjects";
 @import "Party-color";
@@ -50,6 +40,9 @@ html {
   main {
     padding-top: 2rem;
     flex-grow: 1;
+  }
+  .shadow-sm {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
   }
   #__next {
     display: flex;

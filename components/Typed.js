@@ -1,8 +1,7 @@
-import Jumbotron from "react-bootstrap/Jumbotron";
 import Typed from "react-typed";
 
 const typed = () => (
-  <Jumbotron>
+  <div className="jumbotron">
     <h3>Hur vill Sveriges partier förbättra</h3>
     <h3>
       <Typed
@@ -12,7 +11,7 @@ const typed = () => (
       />
       &nbsp;
     </h3>
-  </Jumbotron>
+  </div>
 );
 
 export default typed;

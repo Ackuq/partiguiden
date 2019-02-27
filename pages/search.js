@@ -6,7 +6,6 @@ import Autosuggest from "react-autosuggest";
 
 import Input from "@material-ui/core/Input";
 import ButtonBase from "@material-ui/core/ButtonBase";
-import Container from "react-bootstrap/Container";
 
 const getSuggestions = (value, data) => {
   const inputValue = value.trim().toLowerCase();
@@ -47,14 +46,25 @@ export default withRouter(
   class SearchEngine extends React.Component {
     constructor(props) {
       super(props);
-
-      this.getInitialValues = this.getInitialValues.bind(this);
       this.onChange = this.onChange.bind(this);
       this.onSuggestionsFetchRequested = this.onSuggestionsFetchRequested.bind(
         this
       );
+
+      let val = props.router.query.query;
+      if (val) {
+        this.state = {
+          value: val,
+          suggestions: getSuggestions(val, this.props.data)
+        };
+      } else {
+        this.state = {
+          value: "",
+          suggestions: []
+        };
+      }
     }
-    static async getInitialProps() {
+    static async getInitialProps({ query }) {
       let firebase = await loadFirebase();
       let result = await new Promise((resolve, reject) => {
         firebase
@@ -93,23 +103,7 @@ export default withRouter(
       });
     };
 
-    getInitialValues = () => {
-      let val = this.props.router.query.query;
-      if (val) {
-        this.state = {
-          value: val,
-          suggestions: getSuggestions(val, this.props.data)
-        };
-      } else {
-        this.state = {
-          value: "",
-          suggestions: []
-        };
-      }
-    };
-
     render() {
-      this.getInitialValues();
       const data = this.props.data;
       const { value, suggestions } = this.state;
       const inputProps = {
@@ -119,7 +113,7 @@ export default withRouter(
       };
 
       return (
-        <Container>
+        <div className="container">
           <Head>
             <title>Sök | Partiguiden.nu</title>
           </Head>
@@ -135,7 +129,7 @@ export default withRouter(
               alwaysRenderSuggestions={true}
             />
           </div>
-        </Container>
+        </div>
       );
     }
   }

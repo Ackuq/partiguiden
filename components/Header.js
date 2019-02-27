@@ -10,9 +10,7 @@ class Header extends React.Component {
       <React.Fragment>
         <div className="banner">
           <Link route="/">
-            <a>
-              <span className="brand">Partiguiden.nu</span>
-            </a>
+            <a className="brand">Partiguiden.nu</a>
           </Link>
           <SearchBar id="header" searchData={this.props.searchData} />
         </div>

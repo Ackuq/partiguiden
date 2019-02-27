@@ -30,6 +30,10 @@
 
     input {
       color: theme-color("light");
+      background-color: theme-color("secondary");
+    }
+    input::placeholder {
+      color: theme-color("light");
     }
   }
   .react-autosuggest__input--focused {
@@ -63,13 +67,11 @@
     }
   }
 }
-
 #search-page {
   display: flex;
   justify-content: space-between;
 
   .react-autosuggest__input {
-    height: 100%;
     margin-bottom: 1rem;
     width: 100%;
   }

@@ -135,7 +135,11 @@ export default withRouter(
       };
 
       return (
-        <form id={`search-${this.props.id}`} onSubmit={this.handleSubmit}>
+        <form
+          id={`search-${this.props.id}`}
+          onSubmit={this.handleSubmit}
+          className="text-center"
+        >
           <Autosuggest
             id={this.props.id}
             suggestions={suggestions}
@@ -143,9 +147,7 @@ export default withRouter(
             onSuggestionsClearRequested={this.onSuggestionsClearRequested}
             getSuggestionValue={getSuggestValue}
             renderSuggestionsContainer={option => (
-              <Paper square {...option.containerProps}>
-                {option.children}
-              </Paper>
+              <Paper {...option.containerProps}>{option.children}</Paper>
             )}
             renderSuggestion={renderSuggestion}
             renderInputComponent={renderInputComponent}

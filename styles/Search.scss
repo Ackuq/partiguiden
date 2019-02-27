@@ -13,16 +13,13 @@
   .brand {
     padding-left: 0.5rem;
     color: theme-color("light");
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
 #search-header {
   padding: 0.5rem;
-  display: flex;
-  justify-content: center;
   .react-autosuggest__input {
-    float: right;
-    width: 75%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
     transition: width 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
     background-color: theme-color("secondary");
     border-radius: 4px;
@@ -35,9 +32,6 @@
     input::placeholder {
       color: theme-color("light");
     }
-  }
-  .react-autosuggest__input--focused {
-    width: 100%;
   }
   /* Sugestion */
 
@@ -104,10 +98,23 @@
     }
   }
 }
-@media (max-width: 540px) {
+@media (max-width: 767px) {
+  #search-page {
+    .react-autosuggest__container {
+      width: 100%;
+    }
+  }
+
   .banner {
     .brand {
       display: none;
+    }
+    .align {
+      display: none;
+    }
+    .search-bar {
+      flex-basis: 100%;
+      max-width: 100%;
     }
   }
   #search-header {
@@ -120,18 +127,8 @@
     }
   }
 }
-@media (max-width: 767px) {
-  #search-page {
-    .react-autosuggest__container {
-      width: 100%;
-    }
-  }
-}
 
 @media (min-width: 768px) {
-  .banner {
-    padding: 0 10%;
-  }
   #search-page {
     .react-autosuggest__container {
       width: 75%;

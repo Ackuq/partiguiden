@@ -109,14 +109,8 @@ strong {
 //
 
 a {
-  color: $link-color;
-  text-decoration: $link-decoration;
+  text-decoration: none;
   background-color: transparent; // Remove the gray background on active links in IE 10.
-
-  @include hover {
-    color: $link-hover-color;
-    text-decoration: $link-hover-decoration;
-  }
 }
 
 // And undo these styles for placeholder links/named anchors (without href)

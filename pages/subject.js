@@ -23,7 +23,7 @@ export default withRouter(
             });
         });
 
-        let parties = ["Centerpartiet", "Liberalerna"];
+        let parties = ["Centerpartiet", "Liberalerna", "Socialdemokraterna"];
         output = [];
         await Promise.all(
           parties.map(async party => {

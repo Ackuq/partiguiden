@@ -1,6 +1,7 @@
 /* Routing */
 import { Link, Router } from "../lib/routes";
 import { withRouter } from "next/router";
+import { withTheme } from "@material-ui/core/styles";
 
 /* Autosuggest */
 import Autosuggest from "react-autosuggest";
@@ -49,102 +50,98 @@ function renderSuggestionsContainer({ containerProps, children, query }) {
 const renderInputComponent = inputProps => {
   const { ref, ...other } = inputProps;
   return (
-    <React.Fragment>
-      <InputLabel>
-        <InputBase
-          className="input-field-header"
-          {...other}
-          inputRef={node => {
-            ref(node);
-          }}
-        />
-      </InputLabel>
-    </React.Fragment>
+    <InputLabel>
+      <InputBase
+        className="input-field-header"
+        {...other}
+        inputRef={node => {
+          ref(node);
+        }}
+      />
+    </InputLabel>
   );
 };
 
-export default withRouter(
-  class SearchBar extends React.Component {
-    constructor(props) {
-      super(props);
-      this.state = {
-        value: "",
-        suggestions: []
-      };
-      this.handleChange = this.handleChange.bind(this);
-      this.onSuggestionsFetchRequested = this.onSuggestionsFetchRequested.bind(
-        this
-      );
-      this.onSuggestionsClearRequested = this.onSuggestionsClearRequested.bind(
-        this
-      );
-      this.handleSubmit = this.handleSubmit.bind(this);
-    }
-
-    onSuggestionsFetchRequested = ({ value }) => {
-      this.setState({
-        suggestions: getSuggestions(value, this.props.searchData)
-      });
-    };
-    // Autosuggest will call this function every time you need to clear suggestions.
-    onSuggestionsClearRequested = () => {
-      this.setState({
-        suggestions: []
-      });
-    };
-    handleChange = (event, { newValue }) => {
-      this.setState({
-        value: newValue
-      });
-    };
-
-    handleSubmit = e => {
-      e.preventDefault();
-      let val = this.state.value;
-      let suggestions = this.props.searchData;
-      var id;
-      /* Check if found equals one of the suggestions  */
-      let found = suggestions.some(function(el) {
-        if (el.name.toLowerCase() === val.toLowerCase()) {
-          id = el.id;
-          return true;
-        }
-      });
-      if (found) {
-        Router.pushRoute(`/subject/${id}`);
-      } else {
-        Router.pushRoute(`/search?query=${val}`);
+export default withTheme()(
+  withRouter(
+    class SearchBar extends React.Component {
+      constructor(props) {
+        super(props);
+        this.state = {
+          value: "",
+          suggestions: []
+        };
+        this.handleChange = this.handleChange.bind(this);
+        this.onSuggestionsFetchRequested = this.onSuggestionsFetchRequested.bind(
+          this
+        );
+        this.onSuggestionsClearRequested = this.onSuggestionsClearRequested.bind(
+          this
+        );
+        this.handleSubmit = this.handleSubmit.bind(this);
       }
-    };
 
-    render() {
-      const { value, suggestions } = this.state;
-      const inputProps = {
-        placeholder: "Sök här...",
-        value,
-        variant: "filled",
-        onChange: this.handleChange,
-        id: "search-bar",
-        endAdornment: (
-          <InputAdornment position="end">
-            <button className="search-button" aria-label="Search">
-              <SearchIcon />
-            </button>
-          </InputAdornment>
-        )
+      onSuggestionsFetchRequested = ({ value }) => {
+        this.setState({
+          suggestions: getSuggestions(value, this.props.searchData)
+        });
+      };
+      // Autosuggest will call this function every time you need to clear suggestions.
+      onSuggestionsClearRequested = () => {
+        this.setState({
+          suggestions: []
+        });
+      };
+      handleChange = (event, { newValue }) => {
+        this.setState({
+          value: newValue
+        });
       };
 
-      return (
-        <form
-          id={`search-${this.props.id}`}
-          onSubmit={this.handleSubmit}
-          className="text-center"
-        >
+      handleSubmit = e => {
+        e.preventDefault();
+        console.log("event");
+        let val = this.state.value;
+        let suggestions = this.props.searchData;
+        var id;
+        /* Check if found equals one of the suggestions  */
+        let found = suggestions.some(function(el) {
+          if (el.name.toLowerCase() === val.toLowerCase()) {
+            id = el.id;
+            return true;
+          }
+        });
+        if (found) {
+          Router.pushRoute(`/subject/${id}`);
+        }
+      };
+
+      render() {
+        const { value, suggestions } = this.state;
+        const inputProps = {
+          placeholder: "Sök här...",
+          value,
+          inputProps: {
+            label: "searchbar"
+          },
+          variant: "filled",
+          color: "primary",
+          onChange: this.handleChange,
+          id: "search-bar",
+          endAdornment: (
+            <InputAdornment position="end">
+              <SearchIcon nativeColor="#ffffff" />
+            </InputAdornment>
+          )
+        };
+
+        return (
           <Autosuggest
             id={this.props.id}
             suggestions={suggestions}
             onSuggestionsFetchRequested={this.onSuggestionsFetchRequested}
             onSuggestionsClearRequested={this.onSuggestionsClearRequested}
+            onSuggestionSelected={this.handleSubmit}
             getSuggestionValue={getSuggestValue}
             renderSuggestionsContainer={option => (
               <Paper {...option.containerProps}>{option.children}</Paper>
@@ -153,8 +150,8 @@ export default withRouter(
             renderInputComponent={renderInputComponent}
             inputProps={inputProps}
           />
-        </form>
-      );
+        );
+      }
     }
-  }
+  )
 );

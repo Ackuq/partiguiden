@@ -11,7 +11,7 @@ class Header extends React.Component {
           <Grid item xs={4} className="text-center">
             <span>
               <Link route="/">
-                <a className="brand">Partiguiden.nu</a>
+                <a className="brand text-light">Partiguiden.nu</a>
               </Link>
             </span>
           </Grid>

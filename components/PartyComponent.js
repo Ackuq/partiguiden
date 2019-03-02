@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Collapse from "@material-ui/core/Collapse";
 import ButtonBase from "@material-ui/core/ButtonBase";
+
 export default class extends React.Component {
   constructor(props) {
     super(props);
@@ -14,6 +15,26 @@ export default class extends React.Component {
     });
   }
 
+  renderInfo(data) {
+    return (
+      <div className="standpoints" key={`${this.props.party.name}${data.name}`}>
+        <h4>{data.name}</h4>
+        <ul>
+          {data.opinions.map((opinion, index) => (
+            <li key={`${this.props.party.name}${data.name}${index}`}>
+              {opinion}
+            </li>
+          ))}
+        </ul>
+        <Link href={`${data.url}`}>
+          <a target="_blank" className="d-flex p-1 m-1">
+            Läs mer på partiets hemsida
+          </a>
+        </Link>
+      </div>
+    );
+  }
+
   render() {
     return (
       <div
@@ -25,26 +46,7 @@ export default class extends React.Component {
           <h3>{this.props.party.name}</h3>
         </ButtonBase>
         <Collapse in={this.state.visible}>
-          {this.props.party.subjects.map(subject => (
-            <div
-              key={`${this.props.party.name}${subject.name}`}
-              className="standpoints"
-            >
-              <h4>{subject.name}</h4>
-              <ul>
-                {subject.opinions.map((opinion, index) => (
-                  <li key={`${this.props.party.name}${subject.name}${index}`}>
-                    {opinion}
-                  </li>
-                ))}
-              </ul>
-              <Link href={`${subject.address}`}>
-                <a target="_blank" className="d-flex p-1 m-1">
-                  Läs mer på partiets hemsida
-                </a>
-              </Link>
-            </div>
-          ))}
+          {this.props.party.subjects.map(subject => this.renderInfo(subject))}
         </Collapse>
       </div>
     );

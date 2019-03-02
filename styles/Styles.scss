@@ -15,7 +15,6 @@ $font-stack: Roboto, sans-serif;
 @import "bootstrap/spacing";
 
 // Custom sass
-@import "Tabs";
 @import "Front-Page";
 @import "Footer";
 @import "Subjects";
@@ -24,15 +23,13 @@ $font-stack: Roboto, sans-serif;
 
 html {
   height: 100vh;
-}
-html {
+  body {
+    height: 100%;
+  }
   body,
   h3,
   h4 {
     font-weight: 300;
-  }
-  a:hover {
-    text-decoration: none;
   }
   h1 {
     font-weight: 300;
@@ -50,21 +47,8 @@ html {
     min-height: 100%;
     align-items: stretch;
   }
-  @media (max-width: 767px) {
-    body {
-      height: 100%;
-    }
-  }
-  @media (min-width: 768px) {
-    body {
-      height: 100%;
-    }
-  }
   p {
     font-size: 1.25rem;
     font-weight: 300;
-  }
-  a {
-    transition: color 0.15s ease-in-out;
   }
 }

@@ -20,3 +20,10 @@ node_modules/
 LICENSE
 README.md
 CODE_OF_CONDUCT.md
+faviconData.json
+faviconDescription.json
+
+#Source-code
+/pages/
+/components/
+/styles/

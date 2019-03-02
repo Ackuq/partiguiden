@@ -28,11 +28,7 @@ export default () => (
             sympatiserar mest med. Gör rätt val i valet 2018.
           </p>
           <p>
-            Klicka{" "}
-            <Link href="/partiernas-standpunkter">
-              <a className="text-primary">här</a>
-            </Link>{" "}
-            eller på fliken "Partiernas ståndpunkter" för att börja jämföra vad
+            Klicka på fliken "Partiernas ståndpunkter" för att börja jämföra vad
             partierna har för åsikter i just de frågorna som du har nära till
             hjärtat!
           </p>

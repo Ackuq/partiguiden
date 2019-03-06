@@ -1,5 +1,3 @@
-$font-stack: Roboto, sans-serif;
-
 // Bootstrap
 @import "bootstrap/functions";
 @import "bootstrap/colors";
@@ -8,21 +6,36 @@ $font-stack: Roboto, sans-serif;
 @import "bootstrap/rfs";
 
 @import "bootstrap/containers";
-@import "bootstrap/borders";
-@import "bootstrap/transitions";
 @import "bootstrap/Reboot";
 @import "bootstrap/text";
-@import "bootstrap/spacing";
-
 // Custom sass
-@import "Tabs";
-@import "Front-Page";
-@import "Footer";
-@import "Subjects";
 @import "Party-color";
-@import "Search";
+
+.list-title {
+  box-shadow: 0 0 #ffffff inset, 0 1px 3px rgba(34, 25, 25, 0.4);
+  min-height: 5rem;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #009688;
+  color: #f8f9fa;
+}
 
 html {
+  .standpoints {
+    border-bottom: 2px solid;
+  }
+  .partyOpinions:before {
+    content: "";
+    position: absolute;
+    left: -0.75rem;
+    top: 0.75rem;
+    width: 6px;
+    height: 6px;
+  }
   height: 100vh;
   body {
     height: 100%;

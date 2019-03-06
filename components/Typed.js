@@ -1,7 +1,7 @@
 import Typed from "react-typed";
 
 const typed = () => (
-  <div className="jumbotron">
+  <div className="list-title">
     <h3>Hur vill Sveriges partier förbättra</h3>
     <h3>
       <Typed

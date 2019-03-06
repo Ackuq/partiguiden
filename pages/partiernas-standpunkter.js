@@ -57,9 +57,13 @@ export default class Standpunkter extends React.Component {
           <NoteIcon style={{ fontSize: "2.5rem" }} />
           <h1>Partiernas ståndpunkter</h1>
         </div>
-        <Grid container className="container subject-list">
+        <Grid
+          container
+          className="container subject-list"
+          style={{ marginTop: "-1rem", marginBottom: "1rem", padding: "0" }}
+        >
           {Object.keys(data).map(key => (
-            <ListObject letter={key} subjects={data[key]} key={`${key}`} />
+            <ListObject subjects={data[key]} key={`${key}`} />
           ))}
         </Grid>
       </div>

@@ -1,7 +1,7 @@
 /* Routing */
 import { Link, Router } from "../lib/routes";
 import { withRouter } from "next/router";
-import { withTheme } from "@material-ui/core/styles";
+import { withStyles } from "@material-ui/core/styles";
 
 /* Autosuggest */
 import Autosuggest from "react-autosuggest";
@@ -29,15 +29,6 @@ const getSuggestions = (value, data) => {
 const getSuggestValue = suggestion => {
   return suggestion.name;
 };
-const renderSuggestion = (suggestion, { isHighlighted }) => {
-  return (
-    <MenuItem selected={isHighlighted} component="div" disableGutters={true}>
-      <Link route="subject" params={{ id: `${suggestion.id}` }}>
-        <a className="search-result">{suggestion.name}</a>
-      </Link>
-    </MenuItem>
-  );
-};
 function renderSuggestionsContainer({ containerProps, children, query }) {
   return (
     <div {...containerProps}>
@@ -47,22 +38,64 @@ function renderSuggestionsContainer({ containerProps, children, query }) {
   );
 }
 
-const renderInputComponent = inputProps => {
-  const { ref, ...other } = inputProps;
-  return (
-    <InputLabel htmlFor="search-bar">
-      <InputBase
-        className="input-field-header"
-        {...other}
-        inputRef={node => {
-          ref(node);
-        }}
-      />
-    </InputLabel>
-  );
-};
+const searchStyles = theme => ({
+  inputRoot: {
+    [theme.breakpoints.down("sm")]: {
+      width: "100%"
+    },
+    [theme.breakpoints.up("md")]: {
+      width: "75%"
+    },
+    float: "right",
+    boxShadow: "0 1px 3px rgba(0, 0, 0, 0.12)",
+    transition: "width 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms",
+    "-webkit-transition": "width 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms",
+    "-moz-transition": "width 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms",
+    "-ms-transition": "width 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms",
+    "-o-transition": "width 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms",
+    backgroundColor: "#009688",
+    borderRadius: "4px",
+    padding: "0.25rem 0.5rem"
+  },
+  inputComp: {
+    color: "#ffffff",
+    backgroundColor: "#009688",
+    "&::placeholder": {
+      opacity: "0.8"
+    }
+  },
+  menuItem: {
+    width: "100%"
+  },
+  container: {
+    [theme.breakpoints.down("sm")]: {
+      width: "100%"
+    }
+  },
+  suggestionsContainerOpen: {
+    [theme.breakpoints.down("sm")]: {
+      width: "calc(100% - 1rem)"
+    },
+    position: "absolute",
+    top: "56px",
+    width: "230px"
+  },
+  suggestionsList: {
+    margin: "0",
+    padding: "0",
+    fontSize: "1rem"
+  },
+  suggestion: {
+    display: "flex",
+    "& a": {
+      color: "#212121",
+      width: "100%",
+      padding: "0.75rem 1rem"
+    }
+  }
+});
 
-export default withTheme()(
+export default withStyles(searchStyles)(
   withRouter(
     class SearchBar extends React.Component {
       constructor(props) {
@@ -79,7 +112,42 @@ export default withTheme()(
           this
         );
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleSubmit = this.renderInputComponent.bind(this);
       }
+
+      renderInputComponent = inputProps => {
+        const { ref, ...other } = inputProps;
+        const { inputRoot } = this.props.classes;
+        return (
+          <InputBase
+            classes={{
+              root: this.props.classes.inputRoot,
+              input: this.props.classes.inputComp
+            }}
+            {...other}
+            inputRef={node => {
+              ref(node);
+            }}
+          />
+        );
+      };
+
+      renderSuggestion = (suggestion, { isHighlighted }) => {
+        return (
+          <MenuItem
+            classes={{
+              root: this.props.classes.menuItem
+            }}
+            selected={isHighlighted}
+            component="div"
+            disableGutters={true}
+          >
+            <Link route="subject" params={{ id: `${suggestion.id}` }}>
+              <a className="search-result">{suggestion.name}</a>
+            </Link>
+          </MenuItem>
+        );
+      };
 
       onSuggestionsFetchRequested = ({ value }) => {
         this.setState({
@@ -133,10 +201,16 @@ export default withTheme()(
             </InputAdornment>
           )
         };
-
+        const classes = this.props.classes;
         return (
           <Autosuggest
             id={this.props.id}
+            theme={{
+              container: classes.container,
+              suggestionsContainerOpen: classes.suggestionsContainerOpen,
+              suggestionsList: classes.suggestionsList,
+              suggestion: classes.suggestion
+            }}
             suggestions={suggestions}
             onSuggestionsFetchRequested={this.onSuggestionsFetchRequested}
             onSuggestionsClearRequested={this.onSuggestionsClearRequested}
@@ -145,8 +219,8 @@ export default withTheme()(
             renderSuggestionsContainer={option => (
               <Paper {...option.containerProps}>{option.children}</Paper>
             )}
-            renderSuggestion={renderSuggestion}
-            renderInputComponent={renderInputComponent}
+            renderSuggestion={this.renderSuggestion}
+            renderInputComponent={this.renderInputComponent}
             inputProps={inputProps}
           />
         );

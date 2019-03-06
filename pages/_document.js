@@ -36,6 +36,10 @@ class MyDocument extends Document {
             color="#5bbad5"
           />
           <link rel="manifest" href="/static/manifest.json" />
+          <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"
+          />
           <meta name="theme-color" content="#00796b" />
         </Head>
         <body>

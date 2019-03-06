@@ -1,35 +1,93 @@
 import { Link } from "../lib/routes";
 import ButtonBase from "@material-ui/core/ButtonBase";
 import Grid from "@material-ui/core/Grid";
+import { withStyles } from "@material-ui/core/styles";
+import grey from "@material-ui/core/colors/grey";
 
-export default class ListObject extends React.Component {
-  renderSubject(subject) {
-    return (
-      <Grid
-        item
-        xs={12}
-        md={6}
-        key={`${subject.id}`}
-        className="list-object standpoint-subject"
-      >
-        <ButtonBase>
-          <Link route="subject" params={{ id: `${subject.id}` }}>
-            <a className="text-dark">
-              <span>{subject.name}</span>
-            </a>
-          </Link>
-        </ButtonBase>
-      </Grid>
-    );
-  }
+const listTheme = theme => ({
+  button: {
+    width: "100%",
+    "& a": {
+      display: "flex",
+      flexGrow: "1",
+      color: grey[900],
+      "& span": {
+        width: "100%",
+        lineHeight: "50px",
+        padding: "0 0.5rem",
+        "-webkit-transition": "all 0.4s ease-in-out",
+        "-moz-transition": "all 0.4s ease-in-out",
+        "-ms-transition": "all 0.4s ease-in-out",
+        "-o-transition": "all 0.4s ease-in-out",
+        transition: "all 0.4s ease-in-out",
+        background: "linear-gradient( to left, transparent 50%, #00796b 50% )",
+        backgroundSize: "202% 100%",
+        backgroundPosition: "right bottom",
+        backgroundRepeat: "no-repeat"
+      },
+      "&:hover span": {
+        backgroundPosition: "left bottom",
+        color: grey[100]
+      }
+    }
+  },
 
-  render() {
-    let subjects = this.props.subjects;
-    let letter = this.props.letter;
-    return (
-      <React.Fragment>
-        {subjects.map(subject => this.renderSubject(subject))}
-      </React.Fragment>
-    );
+  item: {
+    [theme.breakpoints.down("sm")]: {
+      borderColor: theme.palette.primary.main,
+      borderLeft: "solid 2px"
+    },
+    [theme.breakpoints.up("md")]: {
+      "&:nth-child(2n + 1)": {
+        borderColor: theme.palette.primary.main,
+        borderLeft: "solid 2px"
+      },
+      "&:nth-child(2n)": {
+        borderRight: "solid 2px",
+        borderColor: theme.palette.primary.main
+      }
+    },
+    "&:nth-child(3n) a": {
+      backgroundColor: grey[50]
+    },
+    "&:nth-child(3n + 1) a": {
+      backgroundColor: grey[100]
+    },
+    "&:nth-child(3n + 2) a": {
+      backgroundColor: grey[200]
+    }
   }
-}
+});
+
+export default withStyles(listTheme)(
+  class ListObject extends React.Component {
+    renderSubject(subject) {
+      return (
+        <Grid
+          item
+          xs={12}
+          md={6}
+          key={`${subject.id}`}
+          className={this.props.classes.item}
+        >
+          <ButtonBase className={this.props.classes.button}>
+            <Link route="subject" params={{ id: `${subject.id}` }}>
+              <a>
+                <span>{subject.name}</span>
+              </a>
+            </Link>
+          </ButtonBase>
+        </Grid>
+      );
+    }
+
+    render() {
+      let subjects = this.props.subjects;
+      return (
+        <React.Fragment>
+          {subjects.map(subject => this.renderSubject(subject))}
+        </React.Fragment>
+      );
+    }
+  }
+);

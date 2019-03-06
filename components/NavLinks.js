@@ -1,30 +1,33 @@
 import routes, { Router } from "../lib/routes";
 
 import { withRouter } from "next/router";
-import { withTheme } from "@material-ui/core/styles";
-
+import { withStyles } from "@material-ui/core/styles";
 // Tabs
 import AppBar from "@material-ui/core/AppBar";
 import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 
-function handleNav(event, href) {
-  event.preventDefault();
-  Router.pushRoute(href).then(() => window.scrollTo(0, 0));
-}
+const tabTheme = theme => ({
+  [theme.breakpoints.up("sm")]: {
+    navTab: {
+      flexGrow: 1,
+      maxWidth: "none",
+      transition: "opacity 0.3s ease",
+      "-webkit-transition": "opacity 0.4s ease",
+      "-moz-transition": "opacity 0.3s ease",
+      "-ms-transition": "opacity 0.3s ease-in-out",
+      "-o-transition": "opacity 0.3s ease-in-out",
+      "&:hover": {
+        opacity: 1
+      }
+    },
+    scrollButton: {
+      display: "none"
+    }
+  }
+});
 
-function LinkTab(props) {
-  return (
-    <Tab
-      className="nav-tab"
-      component="a"
-      onClick={event => handleNav(event, props.href)}
-      {...props}
-    />
-  );
-}
-
-export default withTheme()(
+export default withStyles(tabTheme)(
   withRouter(
     class NavLinks extends React.Component {
       constructor(props) {
@@ -57,12 +60,17 @@ export default withTheme()(
       }
 
       handleChange = (event, value) => {
+        event.preventDefault();
         this.setState({ value });
+        Router.pushRoute(this.getPages()[value].href).then(() =>
+          window.scrollTo(0, 0)
+        );
       };
 
       renNavlink(props) {
         return (
-          <LinkTab
+          <Tab
+            classes={{ root: this.props.classes.navTab }}
             key={`${props.title}`}
             label={`${props.title}`}
             href={`${props.href}`}
@@ -71,14 +79,13 @@ export default withTheme()(
       }
 
       render() {
+        const classes = this.props.classes;
         return (
           <AppBar position="sticky" className="nav-app-bar">
             <Tabs
               variant="scrollable"
               classes={{
-                root: "app-tabs",
-                indicator: "nav-indicator",
-                scrollButtons: "scroll-button"
+                scrollButtons: classes.scrollButton
               }}
               value={this.state.value}
               onChange={this.handleChange}

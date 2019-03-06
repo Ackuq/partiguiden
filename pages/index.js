@@ -10,7 +10,7 @@ import Head from "next/head";
 import Link from "next/link";
 
 export default () => (
-  <div style={{ marginTop: "-2rem" }}>
+  <div className="page-content">
     <Head>
       <title>Partiguiden.nu | Rösta rätt</title>
     </Head>
@@ -40,17 +40,17 @@ export default () => (
             Relevanta frågor i riksdagsvalet 2018
           </h3>
         </Grid>
-        <Grid item xs={6}>
+        <Grid item xs={12} md={6}>
           <ButtonBase className="featured shadow-sm">Hej</ButtonBase>
         </Grid>
-        <Grid item xs={6}>
+        <Grid item xs={12} md={6}>
           <ButtonBase className="featured shadow-sm">Hej</ButtonBase>
         </Grid>
 
-        <Grid item xs={6}>
+        <Grid item xs={12} md={6}>
           <ButtonBase className="featured shadow-sm">Hej</ButtonBase>
         </Grid>
-        <Grid item xs={6}>
+        <Grid item xs={12} md={6}>
           <ButtonBase className="featured shadow-sm">Hej</ButtonBase>
         </Grid>
       </Grid>

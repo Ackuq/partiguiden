@@ -1,1 +1,5 @@
 runtime: nodejs10
+
+handlers:
+  - url: /.*
+    secure: always

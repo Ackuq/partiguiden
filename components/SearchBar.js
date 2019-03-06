@@ -50,7 +50,7 @@ function renderSuggestionsContainer({ containerProps, children, query }) {
 const renderInputComponent = inputProps => {
   const { ref, ...other } = inputProps;
   return (
-    <InputLabel>
+    <InputLabel htmlFor="search-bar">
       <InputBase
         className="input-field-header"
         {...other}
@@ -100,7 +100,6 @@ export default withTheme()(
 
       handleSubmit = e => {
         e.preventDefault();
-        console.log("event");
         let val = this.state.value;
         let suggestions = this.props.searchData;
         var id;

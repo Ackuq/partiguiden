@@ -5,7 +5,7 @@ const typed = () => (
     <h3>Hur vill Sveriges partier förbättra</h3>
     <h3>
       <Typed
-        strings={["jämlikhet.", "vården"]}
+        strings={["miljön?", "jämlikheten?", "vården?", "Sverige?"]}
         typeSpeed={100}
         showCursor={false}
       />

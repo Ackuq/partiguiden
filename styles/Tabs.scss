@@ -1,0 +1,11 @@
+@media (min-width: 960px) {
+  .app-tabs {
+    .nav-tab {
+      flex-grow: 1;
+      max-width: none;
+    }
+    .scroll-button {
+      display: none;
+    }
+  }
+}

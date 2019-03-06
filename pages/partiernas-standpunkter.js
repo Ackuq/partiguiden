@@ -1,6 +1,8 @@
 import { loadFirebase } from "../lib/db.js";
 import Head from "next/head";
 import ListObject from "../components/ListObject";
+import Grid from "@material-ui/core/Grid";
+import NoteIcon from "@material-ui/icons/Note";
 
 export default class Standpunkter extends React.Component {
   static async getInitialProps() {
@@ -47,18 +49,19 @@ export default class Standpunkter extends React.Component {
     const data = this.props.data;
     console;
     return (
-      <div className="container">
+      <div className="page-content">
         <Head>
           <title>Partiernas ståndpunkter | Partiguiden.nu 2.0</title>
         </Head>
-        <div>
+        <div className="list-title text-center">
+          <NoteIcon style={{ fontSize: "2.5rem" }} />
           <h1>Partiernas ståndpunkter</h1>
         </div>
-        <div className="subject-list">
+        <Grid container className="container subject-list">
           {Object.keys(data).map(key => (
             <ListObject letter={key} subjects={data[key]} key={`${key}`} />
           ))}
-        </div>
+        </Grid>
       </div>
     );
   }

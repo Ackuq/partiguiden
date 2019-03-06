@@ -51,6 +51,7 @@ export default withTheme()(
             href: "/partiernas-standpunkter",
             title: "Partiernas Ståndpunkter"
           },
+          { href: "/riksdagsguiden", title: "Riksdagsguiden" },
           { href: "/om-oss", title: "Om oss" }
         ];
       }
@@ -73,8 +74,12 @@ export default withTheme()(
         return (
           <AppBar position="sticky" className="nav-app-bar">
             <Tabs
-              variant="fullWidth"
-              classes={{ root: "app-tabs", indicator: "nav-indicator" }}
+              variant="scrollable"
+              classes={{
+                root: "app-tabs",
+                indicator: "nav-indicator",
+                scrollButtons: "scroll-button"
+              }}
               value={this.state.value}
               onChange={this.handleChange}
             >

@@ -61,15 +61,19 @@ export default withRouter(
       const data = this.props.data;
       const partydata = this.props.partydata;
       return (
-        <div className="container">
+        <div>
           <Head>
             <title>{data.name} | Partiguiden.nu</title>
           </Head>
-          <h1>{data.name}</h1>
-          {partydata &&
-            partydata.map(party => (
-              <PartyComponent key={party.name} party={party} />
-            ))}
+          <div className="list-title text-center">
+            <h1>{data.name}</h1>
+          </div>
+          <div className="container" style={{ marginTop: "1rem" }}>
+            {partydata &&
+              partydata.map(party => (
+                <PartyComponent key={party.name} party={party} />
+              ))}
+          </div>
         </div>
       );
     }

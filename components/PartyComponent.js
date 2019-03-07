@@ -79,19 +79,26 @@ export default withStyles(subjectStyles)(
     }
 
     render() {
+      const data = this.props.party.data;
       return (
-        <div
-          key={`${this.props.party.name}`}
-          id={`${this.props.party.name}`}
-          className={this.props.classes.partyStandpoint}
-        >
-          <ButtonBase onClick={this.handleClick}>
-            <h3>{this.props.party.name}</h3>
-          </ButtonBase>
-          <Collapse in={this.state.visible}>
-            {this.props.party.subjects.map(subject => this.renderInfo(subject))}
-          </Collapse>
-        </div>
+        <React.Fragment>
+          {data ? (
+            <div
+              key={`${this.props.party.name}`}
+              id={`${this.props.party.name}`}
+              className={this.props.classes.partyStandpoint}
+            >
+              <ButtonBase onClick={this.handleClick}>
+                <h3>{this.props.party.name}</h3>
+              </ButtonBase>
+              <Collapse in={this.state.visible}>
+                {this.props.party.data.map(subject => this.renderInfo(subject))}
+              </Collapse>
+            </div>
+          ) : (
+            <div />
+          )}
+        </React.Fragment>
       );
     }
   }

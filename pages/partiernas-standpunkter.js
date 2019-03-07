@@ -47,7 +47,6 @@ export default class Standpunkter extends React.Component {
   }
   render() {
     const data = this.props.data;
-    console;
     return (
       <div className="page-content">
         <Head>

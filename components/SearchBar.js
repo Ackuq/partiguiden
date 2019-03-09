@@ -2,6 +2,7 @@
 import { Link, Router } from "../lib/routes";
 import { withRouter } from "next/router";
 import { withStyles } from "@material-ui/core/styles";
+import { loadFirebase } from "../lib/db.js";
 
 /* Autosuggest */
 import Autosuggest from "react-autosuggest";
@@ -102,7 +103,8 @@ export default withStyles(searchStyles)(
         super(props);
         this.state = {
           value: "",
-          suggestions: []
+          suggestions: [],
+          data: []
         };
         this.handleChange = this.handleChange.bind(this);
         this.onSuggestionsFetchRequested = this.onSuggestionsFetchRequested.bind(
@@ -112,7 +114,36 @@ export default withStyles(searchStyles)(
           this
         );
         this.handleSubmit = this.handleSubmit.bind(this);
-        this.handleSubmit = this.renderInputComponent.bind(this);
+        this.renderInputComponent = this.renderInputComponent.bind(this);
+        this.getInitialData = this.getInitialData.bind(this);
+      }
+
+      componentDidMount() {
+        this.getInitialData();
+      }
+
+      async getInitialData() {
+        let firebase = await loadFirebase();
+
+        let result = await new Promise(resolve => {
+          firebase
+            .firestore()
+            .collection("Data")
+            .doc("Pages")
+            .onSnapshot({ includeMetadataChanges: true }, function(snapshot) {
+              var data = [];
+              Object.keys(snapshot.data()).forEach(map => {
+                data.push(
+                  Object.assign({
+                    id: map,
+                    name: snapshot.data()[map].name
+                  })
+                );
+              });
+              resolve(data);
+            });
+        });
+        this.setState({ data: result });
       }
 
       renderInputComponent = inputProps => {
@@ -151,7 +182,7 @@ export default withStyles(searchStyles)(
 
       onSuggestionsFetchRequested = ({ value }) => {
         this.setState({
-          suggestions: getSuggestions(value, this.props.searchData)
+          suggestions: getSuggestions(value, this.state.data)
         });
       };
       // Autosuggest will call this function every time you need to clear suggestions.
@@ -166,10 +197,16 @@ export default withStyles(searchStyles)(
         });
       };
 
+      onKeyDown = event => {
+        if (event.key == "Enter") {
+          this.handleSubmit(event);
+        }
+      };
+
       handleSubmit = e => {
         e.preventDefault();
         let val = this.state.value;
-        let suggestions = this.props.searchData;
+        let suggestions = this.state.data;
         var id;
         /* Check if found equals one of the suggestions  */
         let found = suggestions.some(function(el) {
@@ -193,6 +230,7 @@ export default withStyles(searchStyles)(
           },
           variant: "filled",
           color: "primary",
+          onKeyDown: this.onKeyDown,
           onChange: this.handleChange,
           id: "search-bar",
           endAdornment: (

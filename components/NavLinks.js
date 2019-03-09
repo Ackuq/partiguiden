@@ -23,6 +23,9 @@ const tabTheme = theme => ({
     },
     scrollButton: {
       display: "none"
+    },
+    scrollTab: {
+      overflow: "hidden"
     }
   }
 });
@@ -81,11 +84,12 @@ export default withStyles(tabTheme)(
       render() {
         const classes = this.props.classes;
         return (
-          <AppBar position="sticky" className="nav-app-bar">
+          <AppBar position="sticky">
             <Tabs
               variant="scrollable"
               classes={{
-                scrollButtons: classes.scrollButton
+                scrollButtons: classes.scrollButton,
+                scroller: classes.scrollTab
               }}
               value={this.state.value}
               onChange={this.handleChange}

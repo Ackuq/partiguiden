@@ -3,6 +3,7 @@ import SearchBar from "./SearchBar";
 import NavLinks from "./NavLinks";
 import Grid from "@material-ui/core/Grid";
 import { withStyles } from "@material-ui/core/styles";
+import { loadFirebase } from "../lib/db.js";
 
 const headerStyles = theme => ({
   banner: {
@@ -56,7 +57,7 @@ class Header extends React.Component {
           <Grid item xs={3} className={this.props.classes.aligner} />
           <Grid item xs={3} className={this.props.classes.aligner} />
           <Grid item xs={3} className={this.props.classes.searchBar}>
-            <SearchBar id="header" searchData={this.props.searchData} />
+            <SearchBar id="header" />
           </Grid>
         </Grid>
         <NavLinks />

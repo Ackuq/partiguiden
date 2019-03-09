@@ -10,14 +10,16 @@ export default class Standpunkter extends React.Component {
     let result = await new Promise(resolve => {
       firebase
         .firestore()
-        .collection("Pages")
+        .collection("Data")
+        .doc("Pages")
         .onSnapshot({ includeMetadataChanges: true }, function(snapshot) {
           var data = [];
-          snapshot.docChanges().forEach(function(change) {
+          console.log(snapshot.metadata);
+          Object.keys(snapshot.data()).forEach(map => {
             data.push(
               Object.assign({
-                id: change.doc.id,
-                name: change.doc.data().name
+                id: map,
+                name: snapshot.data()[map].name
               })
             );
           });

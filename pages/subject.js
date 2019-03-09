@@ -22,10 +22,6 @@ export default withStyles(subjectTheme)(
     class Subject extends React.Component {
       constructor(props) {
         super(props);
-        this.getData = this.getData.bind(this);
-        this.getPartyOpinions = this.getPartyOpinions.bind(this);
-        this.fetchFromDatabase = this.fetchFromDatabase.bind(this);
-        this.getIndex = this.getIndex.bind(this);
 
         this.state = {
           loading: true,
@@ -44,59 +40,44 @@ export default withStyles(subjectTheme)(
             }
           ]
         };
-        this.getData();
       }
 
       getIndex() {
         return ["Socialdemokraterna", "Liberalerna", "Centerpartiet"];
       }
 
-      async fetchFromDatabase(tag, party) {
+      async fetchFromDatabase(party) {
+        let tags = this.props.data.opinions;
         let firebase = await loadFirebase();
         let db = firebase.firestore();
 
+        let da;
         let subject = await new Promise((resolve, reject) => {
-          db.collection(party)
-            .where("name", "==", tag)
+          db.collection("Parties")
+            .doc(party)
             .onSnapshot({ includeMetadataChanges: true }, function(snapshot) {
-              if (snapshot.docChanges().length > 0) {
-                snapshot.docChanges().forEach(function(change) {
-                  resolve(change.doc.data());
-                });
-              } else {
-                reject();
-              }
+              var data = [];
+              Object.keys(snapshot.data()).forEach(map => {
+                if (tags.indexOf(snapshot.data()[map].name) != -1) {
+                  data.push(snapshot.data()[map]);
+                }
+              });
+              resolve(data);
             });
         }).catch(err => {
           // No data found
         });
+        let index = this.getIndex().indexOf(party);
+        this.state.partydata[index].data = subject;
         return subject;
       }
 
-      async getPartyOpinions(party) {
-        let result = this.props.data;
-
-        let res = new Array();
-        let index = this.getIndex().indexOf(party);
-        await new Promise(resolve => {
-          const req = result.tags.map(async tag => {
-            return this.fetchFromDatabase(tag, party).then(data => {
-              if (data) res.push(data);
-            });
-          });
-          Promise.all(req).then(() => {
-            this.state.partydata[index].data = res;
-            resolve(res);
-          });
-        });
-      }
-
       async getData() {
-        let parties = ["Centerpartiet", "Liberalerna", "Socialdemokraterna"];
+        let parties = ["Centerpartiet"];
         var output = [];
 
         const req = parties.map(async party => {
-          await this.getPartyOpinions(party);
+          await this.fetchFromDatabase(party);
         });
 
         Promise.all(req).then(() => {
@@ -106,6 +87,9 @@ export default withStyles(subjectTheme)(
         });
       }
 
+      componentDidMount() {
+        this.getData();
+      }
       static async getInitialProps({ ...props }) {
         const id = props.query.id;
         var result = [];
@@ -114,10 +98,11 @@ export default withStyles(subjectTheme)(
         let db = firebase.firestore();
 
         result = await new Promise((resolve, reject) => {
-          db.collection("Pages")
-            .doc(id)
-            .onSnapshot({ includeMetadataChanges: true }, function(doc) {
-              resolve(doc.data());
+          db.collection("Data")
+            .doc("Pages")
+            .onSnapshot({ includeMetadataChanges: true }, function(snapshot) {
+              console.log(snapshot.metadata);
+              resolve(snapshot.data()[id]);
             });
         });
         return { data: result };

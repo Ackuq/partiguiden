@@ -10,36 +10,33 @@ h6,
 .h4,
 .h5,
 .h6 {
-  margin-bottom: $headings-margin-bottom;
-  font-family: $headings-font-family;
-  font-weight: $headings-font-weight;
-  line-height: $headings-line-height;
-  color: $headings-color;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
 }
 
 h1,
 .h1 {
-  @include font-size($h1-font-size);
+  font-size: 2.5rem;
 }
 h2,
 .h2 {
-  @include font-size($h2-font-size);
+  font-size: 2rem;
 }
 h3,
 .h3 {
-  @include font-size($h3-font-size);
+  font-size: 1.75rem;
 }
 h4,
 .h4 {
-  @include font-size($h4-font-size);
+  font-size: 1.5rem;
 }
 h5,
 .h5 {
-  @include font-size($h5-font-size);
+  font-size: 1.25rem;
 }
 h6,
 .h6 {
-  @include font-size($h6-font-size);
+  font-size: 1rem;
 }
 
 // Transformation
@@ -54,64 +51,7 @@ h6,
   text-transform: capitalize !important;
 }
 
-// Weight and italics
-
-.font-weight-light {
-  font-weight: $font-weight-light !important;
-}
-.font-weight-lighter {
-  font-weight: $font-weight-lighter !important;
-}
-.font-weight-normal {
-  font-weight: $font-weight-normal !important;
-}
-.font-weight-bold {
-  font-weight: $font-weight-bold !important;
-}
-.font-weight-bolder {
-  font-weight: $font-weight-bolder !important;
-}
-.font-italic {
-  font-style
-  // Contextual colors
-
-.text-white {
-    color: $white !important;
-  }
-}
-
-@each $color, $value in $theme-colors {
-  @include text-emphasis-variant(".text-#{$color}", $value);
-}
-
-.text-body {
-  color: $body-color !important;
-}
-.text-muted {
-  color: $text-muted !important;
-}
-
-.text-black-50 {
-  color: rgba($black, 0.5) !important;
-}
-.text-white-50 {
-  color: rgba($white, 0.5) !important;
-}
-
 // Responsive alignment
-
-@each $breakpoint in map-keys($grid-breakpoints) {
-  @include media-breakpoint-up($breakpoint) {
-    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
-
-    .text#{$infix}-left {
-      text-align: left !important;
-    }
-    .text#{$infix}-right {
-      text-align: right !important;
-    }
-    .text#{$infix}-center {
-      text-align: center !important;
-    }
-  }
+.text-center {
+  text-align: center;
 }

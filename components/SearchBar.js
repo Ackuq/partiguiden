@@ -2,7 +2,7 @@
 import { Link, Router } from "../lib/routes";
 import { withRouter } from "next/router";
 import { withStyles } from "@material-ui/core/styles";
-import { loadFirebase } from "../lib/db.js";
+import firebase from "../lib/db.js";
 
 /* Autosuggest */
 import Autosuggest from "react-autosuggest";
@@ -123,8 +123,6 @@ export default withStyles(searchStyles)(
       }
 
       async getInitialData() {
-        let firebase = await loadFirebase();
-
         let result = await new Promise(resolve => {
           firebase
             .firestore()

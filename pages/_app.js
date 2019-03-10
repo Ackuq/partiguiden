@@ -1,7 +1,9 @@
+/* Custom css */
 import "../styles/Styles.scss";
+
+/* Next js and React*/
 import React from "react";
 import App, { Container } from "next/app";
-
 import Head from "next/head";
 
 /* For server side css */

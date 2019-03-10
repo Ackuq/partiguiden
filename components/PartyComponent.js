@@ -1,4 +1,6 @@
 import Link from "next/link";
+
+/* Material UI components */
 import Collapse from "@material-ui/core/Collapse";
 import ButtonBase from "@material-ui/core/ButtonBase";
 import { withStyles } from "@material-ui/core/styles";

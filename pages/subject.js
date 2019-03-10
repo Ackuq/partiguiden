@@ -1,11 +1,17 @@
+/* Database */
+import firebase from "../lib/db.js";
+
+/* Next js components */
 import { withRouter } from "next/router";
-import { loadFirebase } from "../lib/db.js";
 import Head from "next/head";
 import Link from "next/link";
 
+/* Custom components */
+import PartyComponent from "../components/PartyComponent";
+
+/* Material ui components */
 import { withStyles } from "@material-ui/core/styles";
 import CircularProgress from "@material-ui/core/CircularProgress";
-import PartyComponent from "../components/PartyComponent";
 
 const subjectTheme = theme => ({
   circleContainer: {
@@ -31,7 +37,7 @@ export default withStyles(subjectTheme)(
               data: []
             },
             {
-              name: "Liberalerna",
+              name: "Sverigedemokraterna",
               data: []
             },
             {
@@ -43,17 +49,15 @@ export default withStyles(subjectTheme)(
       }
 
       getIndex() {
-        return ["Socialdemokraterna", "Liberalerna", "Centerpartiet"];
+        return ["Socialdemokraterna", "Sverigedemokraterna", "Centerpartiet"];
       }
 
-      async fetchFromDatabase(party) {
+      async fetchFromDatabase(party, index) {
         let tags = this.props.data.opinions;
-        let firebase = await loadFirebase();
-        let db = firebase.firestore();
-
-        let da;
         let subject = await new Promise((resolve, reject) => {
-          db.collection("Parties")
+          firebase
+            .firestore()
+            .collection("Parties")
             .doc(party)
             .onSnapshot({ includeMetadataChanges: true }, function(snapshot) {
               var data = [];
@@ -67,17 +71,16 @@ export default withStyles(subjectTheme)(
         }).catch(err => {
           // No data found
         });
-        let index = this.getIndex().indexOf(party);
         this.state.partydata[index].data = subject;
         return subject;
       }
 
       async getData() {
-        let parties = ["Centerpartiet"];
+        let parties = this.getIndex();
         var output = [];
 
-        const req = parties.map(async party => {
-          await this.fetchFromDatabase(party);
+        const req = parties.map(async (party, index) => {
+          await this.fetchFromDatabase(party, index);
         });
 
         Promise.all(req).then(() => {
@@ -94,14 +97,12 @@ export default withStyles(subjectTheme)(
         const id = props.query.id;
         var result = [];
         var output = [];
-        let firebase = await loadFirebase();
-        let db = firebase.firestore();
-
         result = await new Promise((resolve, reject) => {
-          db.collection("Data")
+          firebase
+            .firestore()
+            .collection("Data")
             .doc("Pages")
             .onSnapshot({ includeMetadataChanges: true }, function(snapshot) {
-              console.log(snapshot.metadata);
               resolve(snapshot.data()[id]);
             });
         });

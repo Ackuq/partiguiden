@@ -1,4 +1,6 @@
 import { Link } from "../lib/routes";
+
+/* Material UI components */
 import ButtonBase from "@material-ui/core/ButtonBase";
 import Grid from "@material-ui/core/Grid";
 import { withStyles } from "@material-ui/core/styles";
@@ -61,32 +63,17 @@ const listTheme = theme => ({
 
 export default withStyles(listTheme)(
   class ListObject extends React.Component {
-    renderSubject(subject) {
+    render() {
       return (
-        <Grid
-          item
-          xs={12}
-          md={6}
-          key={`${subject.id}`}
-          className={this.props.classes.item}
-        >
+        <Grid item xs={12} md={6} className={this.props.classes.item}>
           <ButtonBase className={this.props.classes.button}>
-            <Link route="subject" params={{ id: `${subject.id}` }}>
+            <Link route="subject" params={{ id: `${this.props.subject.id}` }}>
               <a>
-                <span>{subject.name}</span>
+                <span>{this.props.subject.name}</span>
               </a>
             </Link>
           </ButtonBase>
         </Grid>
-      );
-    }
-
-    render() {
-      let subjects = this.props.subjects;
-      return (
-        <React.Fragment>
-          {subjects.map(subject => this.renderSubject(subject))}
-        </React.Fragment>
       );
     }
   }

@@ -1,9 +1,11 @@
+/* Custom components */
 import { Link } from "../lib/routes";
 import SearchBar from "./SearchBar";
 import NavLinks from "./NavLinks";
+
+/* Material UI components */
 import Grid from "@material-ui/core/Grid";
 import { withStyles } from "@material-ui/core/styles";
-import { loadFirebase } from "../lib/db.js";
 
 const headerStyles = theme => ({
   banner: {

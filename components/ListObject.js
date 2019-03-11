@@ -8,6 +8,7 @@ import grey from "@material-ui/core/colors/grey";
 
 const listTheme = theme => ({
   button: {
+    textAlign: "center",
     width: "100%",
     "& a": {
       display: "flex",
@@ -66,7 +67,7 @@ export default withStyles(listTheme)(
     render() {
       return (
         <Grid item xs={12} md={6} className={this.props.classes.item}>
-          <ButtonBase className={this.props.classes.button}>
+          <ButtonBase className={this.props.classes.button} component="div">
             <Link route="subject" params={{ id: `${this.props.subject.id}` }}>
               <a>
                 <span>{this.props.subject.name}</span>

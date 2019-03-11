@@ -37,19 +37,7 @@ export default withStyles(tabTheme)(
         super(props);
         this.handleChange = this.handleChange.bind(this);
         this.getPages = this.getPages.bind(this);
-
-        var index = this.getPages().findIndex(
-          x => x.href == props.router.asPath
-        );
-        if (index < 0) {
-          if (props.router.route == "/subject") index = 1;
-          else index = 0;
-        }
-        this.state = {
-          value: index
-        };
       }
-
       getPages() {
         return [
           { href: "/", title: "Hem" },
@@ -80,12 +68,23 @@ export default withStyles(tabTheme)(
           />
         );
       }
-
+      getStateValue() {
+        var index = this.getPages().findIndex(
+          x => x.href == this.props.router.asPath
+        );
+        if (index < 0) {
+          if (this.props.router.route == "/subject") index = 1;
+          else index = 0;
+        }
+        this.state = { value: index };
+      }
       render() {
+        this.getStateValue();
         const classes = this.props.classes;
         return (
           <AppBar position="sticky">
             <Tabs
+              action={this.test}
               variant="scrollable"
               classes={{
                 scrollButtons: classes.scrollButton,

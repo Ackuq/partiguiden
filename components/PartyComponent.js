@@ -31,10 +31,8 @@ const subjectStyles = theme => ({
       textAlign: "center",
       padding: "0.5rem 0",
       backgroundColor: theme.palette.primary.textContrast,
-      boxShadow: "0px 1px 3px rgba(0, 0, 0, 0.2)",
-      transition: "background-color 0.4s ease-in-out",
       "&:hover": {
-        backgroundColor: "rgba(0, 0, 0, 0.08)"
+        backgroundColor: "#eeeeee"
       }
     }
   }

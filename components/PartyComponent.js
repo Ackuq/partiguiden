@@ -27,6 +27,7 @@ const subjectStyles = theme => ({
       paddingLeft: "1rem"
     },
     "& button": {
+      borderRadius: "3rem",
       width: "100%",
       textAlign: "center",
       padding: "0.5rem 0",
@@ -35,6 +36,10 @@ const subjectStyles = theme => ({
         backgroundColor: "#eeeeee"
       }
     }
+  },
+  collapse: {
+    paddingLeft: "0.5rem",
+    paddingRight: "0.5rem"
   }
 });
 
@@ -91,7 +96,10 @@ export default withStyles(subjectStyles)(
               <ButtonBase onClick={this.handleClick}>
                 <h3>{this.props.party.name}</h3>
               </ButtonBase>
-              <Collapse in={this.state.visible}>
+              <Collapse
+                in={this.state.visible}
+                classes={{ container: this.props.classes.collapse }}
+              >
                 {this.props.party.data.map(subject => this.renderInfo(subject))}
               </Collapse>
             </div>

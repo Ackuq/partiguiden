@@ -3,6 +3,7 @@ import Type from "../components/Typed";
 import Featured from "../components/Featured";
 /* Material UI import */
 import Grid from "@material-ui/core/Grid";
+import Typography from "@material-ui/core/Typography";
 
 /* Next-js imports */
 import Head from "next/head";
@@ -18,6 +19,9 @@ export default class Index extends React.Component {
         <div className="container">
           <Grid container>
             <Grid item xs style={{ marginBottom: "1rem" }}>
+              <Typography variant="h4" gutterBottom align={"center"}>
+                Vilket parti ska man rösta på?
+              </Typography>
               <p>
                 Vet du inte vad du ska rösta på till valet 2018? Vet du inte vad
                 Sveriges partier har för åsikter i olika sakfrågor? Känn dig

@@ -17,8 +17,9 @@ const featuredStyles = theme => ({
   featured: {
     width: "100%",
     textAlign: "center",
-    border: "1px solid",
+    border: "2px solid",
     borderColor: theme.palette.secondary.main,
+    borderRadius: "3rem",
     "&:hover": {
       backgroundColor: grey[100]
     },
@@ -61,7 +62,7 @@ export default withStyles(featuredStyles)(
       return (
         <Grid container spacing={16} className={this.props.classes.borderTop}>
           <Grid item xs={12}>
-            <Typography variant="h4" gutterBottom>
+            <Typography variant="h4" gutterBottom align={"center"}>
               Relevanta frågor i riksdagsvalet 2018
             </Typography>
           </Grid>

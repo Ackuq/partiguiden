@@ -4,18 +4,18 @@
 
 // For each breakpoint, define the maximum width of the container in a media query
 $container-max-widths: (
-  sm: 540px,
-  md: 720px,
-  lg: 960px,
-  xl: 1140px
+  sm: 100%,
+  md: 90%,
+  lg: 75%,
+  xl: 70%
 ) !default;
 
 $grid-breakpoints: (
   xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px
+  sm: 600px,
+  md: 960px,
+  lg: 1280px,
+  xl: 1920px
 ) !default;
 
 // Minimum breakpoint width. Null for the smallest (first) breakpoint.
@@ -53,8 +53,8 @@ $grid-breakpoints: (
 
 .container {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
   margin-right: auto;
   margin-left: auto;
 
@@ -68,8 +68,8 @@ $grid-breakpoints: (
 
 .container-fluid {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 0.25rem;
+  padding-left: 0.25rem;
   margin-right: auto;
   margin-left: auto;
 }

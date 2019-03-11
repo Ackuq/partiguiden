@@ -20,20 +20,6 @@ const subjectTheme = theme => ({
     height: "50vh",
     alignItems: "center",
     flexDirection: "column"
-  },
-  contain: {
-    padding: "0 0.25rem",
-    marginLeft: "auto",
-    marginRight: "auto",
-    [theme.breakpoints.up("md")]: {
-      maxWidth: "90%"
-    },
-    [theme.breakpoints.up("lg")]: {
-      maxWidth: "70%"
-    },
-    [theme.breakpoints.up("xl")]: {
-      maxWidth: "60%"
-    }
   }
 });
 
@@ -42,7 +28,6 @@ export default withStyles(subjectTheme)(
     class Subject extends React.Component {
       constructor(props) {
         super(props);
-
         this.state = {
           loading: true,
           partydata: [
@@ -145,7 +130,7 @@ export default withStyles(subjectTheme)(
                 <CircularProgress size={100} />
               </div>
             ) : (
-              <div className={this.props.classes.contain}>
+              <div className="container">
                 {partydata.map(party => this.renderPartyComponent(party))}
               </div>
             )}

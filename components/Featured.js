@@ -9,11 +9,6 @@ import { withStyles } from "@material-ui/core/styles";
 import { Link } from "../lib/routes";
 
 const featuredStyles = theme => ({
-  borderTop: {
-    borderColor: theme.palette.primary.main,
-    borderTop: "solid 1px",
-    paddingTop: "0.5rem"
-  },
   featured: {
     width: "100%",
     textAlign: "center",
@@ -24,6 +19,7 @@ const featuredStyles = theme => ({
       backgroundColor: grey[100]
     },
     "& a": {
+      fontWeight: "400",
       padding: "1rem",
       display: "flex",
       flexGrow: "1",
@@ -60,12 +56,7 @@ export default withStyles(featuredStyles)(
     }
     render() {
       return (
-        <Grid container spacing={16} className={this.props.classes.borderTop}>
-          <Grid item xs={12}>
-            <Typography variant="h4" gutterBottom align={"center"}>
-              Relevanta frågor i riksdagsvalet 2018
-            </Typography>
-          </Grid>
+        <Grid container spacing={16}>
           {this.getFeatured().map(obj => this.renderFeatured(obj))}
         </Grid>
       );

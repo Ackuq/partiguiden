@@ -16,6 +16,9 @@ import getPageContext from "../lib/getPageContext";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
+/* Scroll up button */
+import ToTopButton from "../components/ToTopButton";
+
 export default class MyApp extends App {
   constructor() {
     super();
@@ -51,6 +54,7 @@ export default class MyApp extends App {
               <Component pageContext={this.pageContext} {...pageProps} />
             </main>
             <Footer />
+            <ToTopButton />
           </MuiThemeProvider>
         </JssProvider>
       </Container>

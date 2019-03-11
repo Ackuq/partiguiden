@@ -4,7 +4,7 @@ import InfoIcon from "@material-ui/icons/Info";
 import Head from "next/head";
 
 export default () => (
-  <div className="page-content">
+  <React.Fragment>
     <Head>
       <title>Om oss | Partiguiden.nu</title>
     </Head>
@@ -29,5 +29,5 @@ export default () => (
         partiernas egna hemsidor.
       </p>
     </div>
-  </div>
+  </React.Fragment>
 );

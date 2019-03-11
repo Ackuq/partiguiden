@@ -2,7 +2,12 @@ import Link from "next/link";
 
 /* Material UI components */
 import Collapse from "@material-ui/core/Collapse";
+import Button from "@material-ui/core/Button";
 import ButtonBase from "@material-ui/core/ButtonBase";
+import Grid from "@material-ui/core/Grid";
+import Card from "@material-ui/core/Card";
+import CardContent from "@material-ui/core/CardContent";
+import Typography from "@material-ui/core/Typography";
 import { withStyles } from "@material-ui/core/styles";
 
 const subjectStyles = theme => ({
@@ -11,9 +16,6 @@ const subjectStyles = theme => ({
     marginTop: "0.5rem",
     "& h3": {
       marginTop: "0.5rem"
-    },
-    "& h4": {
-      margin: "0.5rem 0"
     },
     "& li": {
       fontSize: "1.125rem",
@@ -25,16 +27,16 @@ const subjectStyles = theme => ({
     },
     "& ul": {
       paddingLeft: "1rem"
-    },
-    "& button": {
-      borderRadius: "3rem",
-      width: "100%",
-      textAlign: "center",
-      padding: "0.5rem 0",
-      backgroundColor: theme.palette.primary.textContrast,
-      "&:hover": {
-        backgroundColor: "#eeeeee"
-      }
+    }
+  },
+  partyTitle: {
+    width: "100%",
+    borderRadius: "3rem",
+    textAlign: "center",
+    padding: "0.5rem 0",
+    backgroundColor: "#ffffff",
+    "&:hover": {
+      backgroundColor: "rgba(0, 0, 0, 0.08)"
     }
   },
   collapse: {
@@ -59,27 +61,32 @@ export default withStyles(subjectStyles)(
 
     renderInfo(data) {
       return (
-        <div
-          className="standpoints"
-          key={`${this.props.party.name}${data.name}`}
-        >
-          <h4>{data.name}</h4>
-          <ul>
-            {data.opinions.map((opinion, index) => (
-              <li
-                className="partyOpinions"
-                key={`${this.props.party.name}${data.name}${index}`}
-              >
-                {opinion}
-              </li>
-            ))}
-          </ul>
-          <Link href={`${data.url}`}>
-            <a target="_blank" className="d-flex p-1 m-1">
-              Läs mer på partiets hemsida
-            </a>
-          </Link>
-        </div>
+        <Grid item xs={12} key={`${this.props.party.name}${data.name}`}>
+          <Card>
+            <CardContent>
+              <Typography variant="h5" color="textSecondary" gutterBottom>
+                {data.name}
+              </Typography>
+              <ul>
+                {data.opinions.map((opinion, index) => (
+                  <li
+                    className="partyOpinions"
+                    key={`${this.props.party.name}${data.name}${index}`}
+                  >
+                    <Typography variant="body1">{opinion}</Typography>
+                  </li>
+                ))}
+              </ul>
+              <Button component="div">
+                <Link href={`${data.url}`}>
+                  <a target="_blank" className="d-flex p-1 m-1">
+                    Läs mer på partiets hemsida
+                  </a>
+                </Link>
+              </Button>
+            </CardContent>
+          </Card>
+        </Grid>
       );
     }
 
@@ -87,24 +94,29 @@ export default withStyles(subjectStyles)(
       const data = this.props.party.data;
       return (
         <React.Fragment>
-          {data ? (
+          {data && (
             <div
               key={`${this.props.party.name}`}
               id={`${this.props.party.name}`}
               className={this.props.classes.partyStandpoint}
             >
-              <ButtonBase onClick={this.handleClick}>
+              <ButtonBase
+                onClick={this.handleClick}
+                classes={{ root: this.props.classes.partyTitle }}
+              >
                 <h3>{this.props.party.name}</h3>
               </ButtonBase>
               <Collapse
                 in={this.state.visible}
                 classes={{ container: this.props.classes.collapse }}
               >
-                {this.props.party.data.map(subject => this.renderInfo(subject))}
+                <Grid container spacing={16} style={{ marginTop: "0.5rem" }}>
+                  {this.props.party.data.map(subject =>
+                    this.renderInfo(subject)
+                  )}
+                </Grid>
               </Collapse>
             </div>
-          ) : (
-            <div />
           )}
         </React.Fragment>
       );

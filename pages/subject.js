@@ -20,6 +20,20 @@ const subjectTheme = theme => ({
     height: "50vh",
     alignItems: "center",
     flexDirection: "column"
+  },
+  contain: {
+    padding: "0 0.25rem",
+    marginLeft: "auto",
+    marginRight: "auto",
+    [theme.breakpoints.up("md")]: {
+      maxWidth: "90%"
+    },
+    [theme.breakpoints.up("lg")]: {
+      maxWidth: "70%"
+    },
+    [theme.breakpoints.up("xl")]: {
+      maxWidth: "60%"
+    }
   }
 });
 
@@ -118,7 +132,7 @@ export default withStyles(subjectTheme)(
         const data = this.props.data;
         let partydata = this.state.partydata;
         return (
-          <div>
+          <React.Fragment>
             <Head>
               <title>{data.name} | Partiguiden.nu</title>
             </Head>
@@ -126,18 +140,16 @@ export default withStyles(subjectTheme)(
               <h1>{data.name}</h1>
             </div>
 
-            <div className="container" style={{ marginTop: "1rem" }}>
-              {this.state.loading ? (
-                <div className={this.props.classes.circleContainer}>
-                  <CircularProgress size={100} />
-                </div>
-              ) : (
-                <React.Fragment>
-                  {partydata.map(party => this.renderPartyComponent(party))}
-                </React.Fragment>
-              )}
-            </div>
-          </div>
+            {this.state.loading ? (
+              <div className={this.props.classes.circleContainer}>
+                <CircularProgress size={100} />
+              </div>
+            ) : (
+              <div className={this.props.classes.contain}>
+                {partydata.map(party => this.renderPartyComponent(party))}
+              </div>
+            )}
+          </React.Fragment>
         );
       }
     }

@@ -2,7 +2,7 @@
 import Head from "next/head";
 
 export default () => (
-  <div className="page-content">
+  <React.Fragment>
     <Head>
       <title>Riksdagsguiden | Partiguiden.nu</title>
     </Head>
@@ -10,5 +10,5 @@ export default () => (
       <h1>Riksdagsguiden</h1>
     </div>
     <div className="container" />
-  </div>
+  </React.Fragment>
 );

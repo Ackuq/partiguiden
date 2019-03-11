@@ -16,10 +16,8 @@ $V: #cf000f;
   a {
     color: $S;
   }
-  .standpoints {
-    border-bottom-color: $S;
-  }
-  button {
+
+  > button {
     border: solid 2px $S;
   }
 }
@@ -31,10 +29,8 @@ $V: #cf000f;
   a {
     color: $M;
   }
-  .standpoints {
-    border-bottom-color: $M;
-  }
-  button {
+
+  > button {
     border: solid 2px $M;
   }
 }
@@ -46,10 +42,8 @@ $V: #cf000f;
   a {
     color: $SD;
   }
-  .standpoints {
-    border-bottom-color: $SD;
-  }
-  button {
+
+  > button {
     border: solid 2px $SD;
   }
 }
@@ -61,10 +55,8 @@ $V: #cf000f;
   a {
     color: $MP;
   }
-  .standpoints {
-    border-bottom-color: $MP;
-  }
-  button {
+
+  > button {
     border: solid 2px $MP;
   }
 }
@@ -76,10 +68,8 @@ $V: #cf000f;
   a {
     color: $C;
   }
-  .standpoints {
-    border-bottom-color: $C;
-  }
-  button {
+
+  > button {
     border: solid 2px $C;
   }
 }
@@ -90,10 +80,8 @@ $V: #cf000f;
   a {
     color: $L;
   }
-  .standpoints {
-    border-bottom-color: $L;
-  }
-  button {
+
+  > button {
     border: solid 2px $L;
   }
 }
@@ -105,10 +93,8 @@ $V: #cf000f;
   a {
     color: $KD;
   }
-  .standpoints {
-    border-bottom-color: $KD;
-  }
-  button {
+
+  > button {
     border: solid 2px $KD;
   }
 }
@@ -119,10 +105,8 @@ $V: #cf000f;
   a {
     color: $V;
   }
-  .standpoints {
-    border-bottom-color: $V;
-  }
-  button {
+
+  > button {
     border: solid 2px $V;
   }
 }

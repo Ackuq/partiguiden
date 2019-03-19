@@ -68,7 +68,7 @@ export default withStyles(listTheme)(
       return (
         <Grid item xs={12} md={6} className={this.props.classes.item}>
           <ButtonBase className={this.props.classes.button} component="div">
-            <Link route="subject" params={{ id: `${this.props.subject.id}` }}>
+            <Link route="subject" params={{ id: this.props.subject.id }}>
               <a>
                 <span>{this.props.subject.name}</span>
               </a>

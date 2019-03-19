@@ -52,7 +52,9 @@ class Header extends React.Component {
           <Grid item xs={3} className={this.props.classes.brand}>
             <span>
               <Link route="/">
-                <a>Partiguiden.nu</a>
+                <a>
+                  <strong>Partiguiden</strong>.nu
+                </a>
               </Link>
             </span>
           </Grid>

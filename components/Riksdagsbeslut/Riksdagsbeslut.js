@@ -36,6 +36,11 @@ const beslut = theme => ({
       fontSize: "1rem"
     }
   },
+  buttonContainer: {
+    margin: "auto 0",
+    padding: "0.25rem",
+    borderRadius: "2rem"
+  },
   arrow: {
     "-webkit-transition": "transform 0.25s ease-in-out",
     transition: "transform 0.25s ease-in-out",
@@ -81,11 +86,15 @@ export default withStyles(beslut)(
               >
                 {this.props.beslut.notisrubrik}
               </Typography>
+
               <ButtonBase
+                className={this.props.classes.buttonContainer}
                 onClick={() => this.setState({ visible: !this.state.visible })}
               >
                 <ArrowDownRounded
-                  classes={{ root: `${this.props.classes.arrow} ${btnclass}` }}
+                  classes={{
+                    root: `${this.props.classes.arrow} ${btnclass}`
+                  }}
                 />
               </ButtonBase>
             </div>

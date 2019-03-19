@@ -58,9 +58,9 @@ const parseData = data => {
   }
   let total;
   if (yesTotal > noTotal) {
-    total = "yes";
+    total = 1;
   } else {
-    total = "no";
+    total = 0;
   }
   return [result, total];
 };
@@ -110,7 +110,7 @@ export default withStyles(votering)(
       let title = this.props.votering.titel.split("Omröstning: betänkande ")[1];
       title = title.substr(title.indexOf(" ") + 1);
       return (
-        <Card>
+        <Card elevation={1}>
           <CardContent>
             <Link
               route="votering"

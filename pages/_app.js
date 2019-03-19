@@ -8,7 +8,6 @@ import Head from "next/head";
 
 /* For server side css */
 import { MuiThemeProvider } from "@material-ui/core/styles";
-import CssBaseline from "@material-ui/core/CssBaseline";
 import JssProvider from "react-jss/lib/JssProvider";
 import getPageContext from "../lib/getPageContext";
 
@@ -47,8 +46,6 @@ export default class MyApp extends App {
             theme={this.pageContext.theme}
             sheetsManager={this.pageContext.sheetsManager}
           >
-            <CssBaseline />
-
             <Header />
             <main>
               <Component pageContext={this.pageContext} {...pageProps} />

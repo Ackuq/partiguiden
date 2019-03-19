@@ -12,9 +12,10 @@ import { withStyles } from "@material-ui/core/styles";
 
 const subjectStyles = theme => ({
   partyStandpoint: {
-    marginBottom: "1.5rem",
+    marginBottom: "0.5rem",
     marginTop: "0.5rem",
     "& h3": {
+      marginBottom: "0.5rem",
       marginTop: "0.5rem"
     },
     "& li": {
@@ -34,7 +35,7 @@ const subjectStyles = theme => ({
     borderRadius: "3rem",
     textAlign: "center",
     padding: "0.5rem 0",
-    backgroundColor: "#ffffff",
+    backgroundColor: "#ecf0f1",
     "&:hover": {
       backgroundColor: "rgba(0, 0, 0, 0.08)"
     }

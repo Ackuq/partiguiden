@@ -11,10 +11,9 @@ const tabTheme = theme => ({
   [theme.breakpoints.up("sm")]: {
     navTab: {
       flexGrow: 1,
-      maxWidth: "none",
-      transition: "opacity 0.3s ease",
-      "-webkit-transition": "opacity 0.4s ease",
-      "-moz-transition": "opacity 0.3s ease",
+      transition: "opacity 0.3s ease-in-out",
+      "-webkit-transition": "opacity 0.4s ease-in-out",
+      "-moz-transition": "opacity 0.3s ease-in-out",
       "-ms-transition": "opacity 0.3s ease-in-out",
       "-o-transition": "opacity 0.3s ease-in-out",
       "&:hover": {
@@ -45,7 +44,8 @@ export default withStyles(tabTheme)(
             href: "/partiernas-standpunkter",
             title: "Partiernas Ståndpunkter"
           },
-          { href: "/riksdagsguiden", title: "Riksdagsguiden" },
+          { href: "/riksdagsbeslut", title: "Riksdagsbeslut" },
+          { href: "/voteringar", title: "Voteringar" },
           { href: "/om-oss", title: "Om oss" }
         ];
       }
@@ -70,10 +70,12 @@ export default withStyles(tabTheme)(
       }
       getStateValue() {
         var index = this.getPages().findIndex(
-          x => x.href == this.props.router.asPath
+          x => x.href == this.props.router.pathname
         );
         if (index < 0) {
           if (this.props.router.route == "/subject") index = 1;
+          else if (this.props.router.route == "/beslut") index = 2;
+          else if (this.props.router.route == "/votering") index = 3;
           else index = 0;
         }
         this.state = { value: index };

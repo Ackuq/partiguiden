@@ -39,7 +39,7 @@ export default withStyles(riksdagsbeslutList)(
     };
 
     componentDidMount() {
-      var url = `http://data.riksdagen.se/dokumentlista/?u17=22%2c22&avd=dokument&doktyp=bet&beslutad=1&sort=beslutsdag&sortorder=desc&utformat=json&p=${
+      var url = `https://data.riksdagen.se/dokumentlista/?u17=22%2c22&avd=dokument&doktyp=bet&beslutad=1&sort=beslutsdag&sortorder=desc&utformat=json&p=${
         this.props.page
       }`;
       this.getPage(url);

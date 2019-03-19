@@ -86,6 +86,7 @@ export default withStyles(votering)(
     }
 
     async getDocument(page) {
+      page = "https:" + page;
       var request = new XMLHttpRequest();
       request.open("GET", page, true);
       var data;

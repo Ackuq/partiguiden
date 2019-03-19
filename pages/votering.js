@@ -27,9 +27,13 @@ export default withRouter(
         method: "get",
         url: `https://data.riksdagen.se/votering/${id}.json`
       }).then(response => {
+        let url = response.data.votering.dokument.dokumentstatus_url_xml.replace(
+          "http",
+          "https"
+        );
         axios({
           method: "get",
-          url: response.data.votering.dokument.dokumentstatus_url_xml + ".json"
+          url: url + ".json"
         }).then(res => {
           let dokumentStatus = res.data.dokumentstatus;
 

@@ -39,7 +39,7 @@ export default withStyles(voteringarStyles)(
     };
 
     componentDidMount() {
-      let url = `http://data.riksdagen.se/dokumentlista/?u17=22&doktyp=votering&sort=datum&sortorder=desc&rapport=&utformat=json&a=s&p=${
+      let url = `https://data.riksdagen.se/dokumentlista/?u17=22&doktyp=votering&sort=datum&sortorder=desc&rapport=&utformat=json&a=s&p=${
         this.props.page
       }`;
       this.getPage(url);

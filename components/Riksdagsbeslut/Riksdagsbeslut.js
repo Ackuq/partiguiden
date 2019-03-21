@@ -7,6 +7,7 @@ import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
 import ArrowDownRounded from "@material-ui/icons/KeyboardArrowDownRounded";
 import ButtonBase from "@material-ui/core/ButtonBase";
+import Link from "@material-ui/core/Link";
 
 /* HTML parser */
 import ReactHtmlParser, { convertNodeToElement } from "react-html-parser";
@@ -16,16 +17,6 @@ const beslut = theme => ({
     display: "flex",
     justifyContent: "space-between",
     marginBottom: "1rem"
-  },
-  titel: {
-    transition: "color 0.3s ease-in-out",
-    "-webkit-transition": "color 0.4s ease-in-out",
-    "-moz-transition": "color 0.3s ease-in-out",
-    "-ms-transition": "color 0.3s ease-in-out",
-    "-o-transition": "color 0.3s ease-in-out",
-    "&:hover": {
-      color: "#34495e"
-    }
   },
   shown: {
     "-webkit-transform": "rotate(180deg)",
@@ -78,12 +69,7 @@ export default withStyles(beslut)(
         <Card>
           <CardContent>
             <div className={this.props.classes.titleContainer}>
-              <Typography
-                className={this.props.classes.titel}
-                variant="h6"
-                color="textSecondary"
-                gutterBottom
-              >
+              <Typography variant="h6" color="textSecondary" gutterBottom>
                 {this.props.beslut.notisrubrik}
               </Typography>
 
@@ -103,6 +89,15 @@ export default withStyles(beslut)(
               in={this.state.visible}
             >
               {ReactHtmlParser(this.props.beslut.notis, options)}
+              <Typography>
+                <Link
+                  href={this.props.beslut.dokument_url_html}
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Läs mer om beslutet
+                </Link>
+              </Typography>
             </Collapse>
           </CardContent>
         </Card>

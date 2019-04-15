@@ -1,4 +1,4 @@
-import { Link } from "../lib/routes";
+import { Link } from "../../lib/routes";
 
 /* Material UI components */
 import ButtonBase from "@material-ui/core/ButtonBase";

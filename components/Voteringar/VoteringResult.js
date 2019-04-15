@@ -5,13 +5,19 @@ import Grid from "@material-ui/core/Grid";
 
 const voteringResult = theme => ({
   votering: {
-    display: "flex"
+    display: "flex",
+    "& .box": {
+      padding: "0.25rem"
+    }
   },
   parties: {
     display: "flex",
     justifyContent: "center",
     "& h6": {
       padding: "0.25rem"
+    },
+    "& img": {
+      height: "50px"
     }
   }
 });
@@ -51,7 +57,7 @@ export default withStyles(voteringResult)(
 
           <Grid item sm={6} xs={12}>
             <Card className="box" style={bgYes}>
-              <Typography align="center" variant="h5">
+              <Typography align="center" variant="h5" gutterBottom>
                 JA
               </Typography>
               <div className={this.props.classes.parties}>
@@ -61,7 +67,7 @@ export default withStyles(voteringResult)(
                     color="textSecondary"
                     key={`${votering.titel}${party}`}
                   >
-                    {party}
+                    <img src={`../static/images/party-logos/${party}.svg`} />
                   </Typography>
                 ))}
               </div>
@@ -70,7 +76,7 @@ export default withStyles(voteringResult)(
 
           <Grid item sm={6} xs={12}>
             <Card className="box" style={bgNo}>
-              <Typography align="center" variant="h5">
+              <Typography align="center" variant="h5" gutterBottom>
                 NEJ
               </Typography>
               <div className={this.props.classes.parties}>
@@ -80,7 +86,7 @@ export default withStyles(voteringResult)(
                     color="textSecondary"
                     key={`${votering.titel}${party}`}
                   >
-                    {party}
+                    <img src={`../static/images/party-logos/${party}.svg`} />
                   </Typography>
                 ))}
               </div>

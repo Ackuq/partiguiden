@@ -12,11 +12,11 @@ import JssProvider from "react-jss/lib/JssProvider";
 import getPageContext from "../lib/getPageContext";
 
 /* Header and footer components*/
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import Header from "../components/LayoutComponents/Header";
+import Footer from "../components/LayoutComponents/Footer";
 
 /* Scroll up button */
-import ToTopButton from "../components/ToTopButton";
+import ToTopButton from "../components/LayoutComponents/ToTopButton";
 
 export default class MyApp extends App {
   constructor() {

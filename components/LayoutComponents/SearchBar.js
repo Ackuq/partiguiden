@@ -1,8 +1,8 @@
 /* Routing */
-import { Link, Router } from "../lib/routes";
+import { Link, Router } from "../../lib/routes";
 import { withRouter } from "next/router";
 import { withStyles } from "@material-ui/core/styles";
-import firebase from "../lib/db.js";
+import firebase from "../../lib/db.js";
 
 /* Autosuggest */
 import Autosuggest from "react-autosuggest";

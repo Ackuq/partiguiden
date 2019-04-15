@@ -1,4 +1,4 @@
-import routes, { Router } from "../lib/routes";
+import routes, { Router } from "../../lib/routes";
 
 import { withRouter } from "next/router";
 import { withStyles } from "@material-ui/core/styles";

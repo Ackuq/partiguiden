@@ -6,7 +6,7 @@ import grey from "@material-ui/core/colors/grey";
 
 import { withStyles } from "@material-ui/core/styles";
 
-import { Link } from "../lib/routes";
+import { Link } from "../../lib/routes";
 
 const featuredStyles = theme => ({
   featured: {

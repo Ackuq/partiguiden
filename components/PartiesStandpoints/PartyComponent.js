@@ -12,8 +12,8 @@ import { withStyles } from "@material-ui/core/styles";
 
 const subjectStyles = theme => ({
   partyStandpoint: {
-    marginBottom: "0.5rem",
-    marginTop: "0.5rem",
+    marginBottom: "1rem",
+    marginTop: "1rem",
     "& h3": {
       marginBottom: "0.5rem",
       marginTop: "0.5rem"

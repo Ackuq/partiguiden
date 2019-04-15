@@ -4,7 +4,7 @@ import firebase from "../lib/db.js";
 import Head from "next/head";
 
 /* Custom Component */
-import ListObject from "../components/ListObject";
+import ListObject from "../components/PartiesStandpoints/ListObject";
 
 /* Material UI components*/
 import Grid from "@material-ui/core/Grid";

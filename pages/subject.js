@@ -7,7 +7,7 @@ import Head from "next/head";
 import Link from "next/link";
 
 /* Custom components */
-import PartyComponent from "../components/PartyComponent";
+import PartyComponent from "../components/PartiesStandpoints/PartyComponent";
 import LoadCircle from "../components/LoadCircle";
 
 export default withRouter(
@@ -22,11 +22,31 @@ export default withRouter(
             data: []
           },
           {
+            name: "Moderaterna",
+            data: []
+          },
+          {
             name: "Sverigedemokraterna",
             data: []
           },
           {
             name: "Centerpartiet",
+            data: []
+          },
+          {
+            name: "Vänsterpartiet",
+            data: []
+          },
+          {
+            name: "Kristdemokraterna",
+            data: []
+          },
+          {
+            name: "Liberalerna",
+            data: []
+          },
+          {
+            name: "Miljöpartiet",
             data: []
           }
         ]
@@ -34,7 +54,15 @@ export default withRouter(
     }
 
     getIndex() {
-      return ["Socialdemokraterna", "Sverigedemokraterna", "Centerpartiet"];
+      return [
+        "Socialdemokraterna",
+        "Moderaterna",
+        "Sverigedemokraterna",
+        "Centerpartiet",
+        "Vänsterpartiet",
+        "Kristdemokraterna",
+        "Miljöpartiet"
+      ];
     }
 
     async fetchFromDatabase(party, index) {

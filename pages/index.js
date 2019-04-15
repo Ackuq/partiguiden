@@ -1,6 +1,3 @@
-/* Custom components */
-import Type from "../components/Typed";
-import Featured from "../components/Featured";
 /* Material UI import */
 import Typography from "@material-ui/core/Typography";
 import Card from "@material-ui/core/Card";
@@ -9,6 +6,10 @@ import Grid from "@material-ui/core/Grid";
 
 /* Next-js imports */
 import Head from "next/head";
+
+/* Custom components */
+import Type from "../components/FrontPage/Typed";
+import Featured from "../components/FrontPage/Featured";
 
 export default class Index extends React.Component {
   render() {

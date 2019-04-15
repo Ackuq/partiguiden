@@ -1,5 +1,5 @@
 /* Custom components */
-import { Link } from "../lib/routes";
+import { Link } from "../../lib/routes";
 import SearchBar from "./SearchBar";
 import NavLinks from "./NavLinks";
 

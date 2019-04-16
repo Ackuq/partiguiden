@@ -8,7 +8,6 @@ import firebase from "../../lib/db.js";
 import Autosuggest from "react-autosuggest";
 
 /* Material UI components */
-import InputLabel from "@material-ui/core/InputLabel";
 import InputBase from "@material-ui/core/InputBase";
 import InputAdornment from "@material-ui/core/InputAdornment";
 import ButtonBase from "@material-ui/core/ButtonBase";
@@ -54,7 +53,7 @@ const searchStyles = theme => ({
     "-moz-transition": "width 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms",
     "-ms-transition": "width 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms",
     "-o-transition": "width 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms",
-    backgroundColor: "#009688",
+    backgroundColor: "#00675b",
     borderRadius: "4px",
     padding: "0.25rem 0.5rem"
   },
@@ -223,7 +222,7 @@ export default withStyles(searchStyles)(
           placeholder: "Sök här...",
           value,
           inputProps: {
-            label: "searchbar"
+            "aria-label": "search bar"
           },
           variant: "filled",
           color: "primary",

@@ -11,6 +11,10 @@ export default () => (
   <React.Fragment>
     <Head>
       <title>Om oss | Partiguiden.nu</title>
+      <meta
+        name="description"
+        content="Partiguiden.nu erbjuder en platform där du kan jämföra vad olika partier tycker i sakfrågor för att det ska bli lättare att hitta det parti du sympatiserar med mest."
+      />
     </Head>
     <div className="list-title text-center">
       <InfoIcon style={{ fontSize: "2.5rem" }} />

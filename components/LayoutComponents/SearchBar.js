@@ -60,7 +60,6 @@ const searchStyles = theme => ({
   },
   inputComp: {
     color: "#ffffff",
-    backgroundColor: "#009688",
     "&::placeholder": {
       opacity: "0.8"
     }

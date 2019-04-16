@@ -25,6 +25,10 @@ export default class Riksdagsguiden extends React.Component {
       <React.Fragment>
         <Head>
           <title>Riksdagsguiden | Partiguiden.nu</title>
+          <meta
+            name="description"
+            content="Vad tar riksdagen för beslut? Här hittar du en sammanfattning på de senaste besluten som tas upp i riksdagen."
+          />
         </Head>
         <div className="list-title text-center">
           <h1>Riksdagsguiden</h1>

@@ -134,6 +134,12 @@ export default withRouter(
         <React.Fragment>
           <Head>
             <title>{data.name} | Partiguiden.nu</title>
+            <meta
+              name="description"
+              content={`Vad tar Sveriges partier för ståndpunkter inom ämnet ${
+                data.name
+              } Här hittar du informationen du behöver för att kunna jämföra och hitta det parti du sympatiserar med mest! `}
+            />
           </Head>
           <div className="list-title text-center">
             <h1>{data.name}</h1>

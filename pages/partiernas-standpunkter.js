@@ -58,6 +58,10 @@ export default withStyles(listStyles)(
         <React.Fragment>
           <Head>
             <title>Partiernas ståndpunkter | Partiguiden.nu 2.0</title>
+            <meta
+              name="description"
+              content="Vad tar Sveriges partier för ståndpunkter i olika ämnen och sakfrågor? Jämför Sveriges partier politik och hitta det parti du sympatiserar mest med nu!"
+            />
           </Head>
           <div className="list-title">
             <NoteIcon style={{ fontSize: "2.5rem" }} />

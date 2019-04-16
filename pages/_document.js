@@ -35,8 +35,12 @@ class MyDocument extends Document {
             href="/static/icons/safari-pinned-tab.svg"
             color="#5bbad5"
           />
-          <link rel="manifest" href="/static/manifest.json" />
-          <meta name="theme-color" content="#00796b" />
+          <link rel="manifest" href="static/manifest.json" />
+          <meta name="theme-color" content="#00796B" />
+          <meta
+            property="og:image"
+            content="/static/images/partiguiden_logo.svg"
+          />
         </Head>
         <body>
           <Main />

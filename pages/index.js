@@ -17,6 +17,10 @@ export default class Index extends React.Component {
       <React.Fragment>
         <Head>
           <title>Partiguiden.nu | Rösta rätt</title>
+          <meta
+            name="description"
+            content="Vad tar Sveriges partier för ståndpunkter i sakfrågor? På Partiguiden kan du hitta och jämföra vad partierns åsikter för att hitta det parti du sympatiserar mest med."
+          />
         </Head>
         <Type />
         <div className="container">

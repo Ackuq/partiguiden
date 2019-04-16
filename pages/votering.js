@@ -69,6 +69,12 @@ export default withRouter(
             <title>
               {this.state.dokument.titel} | Votering | Partiguiden.nu
             </title>
+            <meta
+              name="description"
+              content={`Hur har partiernat röstat i voteringen om ${
+                this.state.dokument.titel
+              }`}
+            />
           </Head>
           <div className="list-title text-center">
             <h2>

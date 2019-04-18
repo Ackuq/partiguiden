@@ -36,7 +36,9 @@ export default withStyles(tabTheme)(
         super(props);
         this.handleChange = this.handleChange.bind(this);
         this.getPages = this.getPages.bind(this);
+        this.state = { value: 0 };
       }
+
       getPages() {
         return [
           { href: "/", title: "Hem" },
@@ -68,21 +70,25 @@ export default withStyles(tabTheme)(
           />
         );
       }
+
       getStateValue() {
+        const { pathname, route } = this.props.router;
+
         var index = this.getPages().findIndex(
           x => x.href == this.props.router.pathname
         );
         if (index < 0) {
-          if (this.props.router.route == "/subject") index = 1;
-          else if (this.props.router.route == "/beslut") index = 2;
-          else if (this.props.router.route == "/votering") index = 3;
-          else index = 0;
+          if (route == "/subject") index = 1;
+          else if (route == "/beslut") index = 2;
+          else if (route == "/votering") index = 3;
+          else index = this.state.value;
         }
         this.state = { value: index };
       }
       render() {
         this.getStateValue();
-        const classes = this.props.classes;
+        const { classes } = this.props;
+        const { value } = this.state;
         return (
           <AppBar position="sticky">
             <Tabs
@@ -92,7 +98,7 @@ export default withStyles(tabTheme)(
                 scrollButtons: classes.scrollButton,
                 scroller: classes.scrollTab
               }}
-              value={this.state.value}
+              value={value}
               onChange={this.handleChange}
             >
               {this.getPages().map(page => this.renNavlink(page))}

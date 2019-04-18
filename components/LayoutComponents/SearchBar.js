@@ -14,6 +14,7 @@ import ButtonBase from "@material-ui/core/ButtonBase";
 import SearchIcon from "@material-ui/icons/Search";
 import Paper from "@material-ui/core/Paper";
 import MenuItem from "@material-ui/core/MenuItem";
+import grey from "@material-ui/core/colors/grey";
 
 const getSuggestions = (value, data) => {
   const inputValue = value.trim().toLowerCase();
@@ -48,11 +49,11 @@ const searchStyles = theme => ({
     },
     float: "right",
     boxShadow: "0 1px 3px rgba(0, 0, 0, 0.12)",
-    transition: "width 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms",
-    "-webkit-transition": "width 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms",
-    "-moz-transition": "width 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms",
-    "-ms-transition": "width 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms",
-    "-o-transition": "width 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms",
+    "-webkit-transition": "300ms ease-in-out",
+    "-moz-transition": "300ms ease-in-out",
+    "-ms-transition": "300ms ease-in-out",
+    "-o-transition": "300ms ease-in-out",
+    transition: "300ms ease-in-out",
     backgroundColor: "#00675b",
     borderRadius: "4px",
     padding: "0.25rem 0.5rem"
@@ -61,6 +62,12 @@ const searchStyles = theme => ({
     color: "#ffffff",
     "&::placeholder": {
       opacity: "0.8"
+    }
+  },
+  inputFocused: {
+    backgroundColor: grey[50],
+    "& input, & svg": {
+      color: grey[800]
     }
   },
   menuItem: {
@@ -77,7 +84,7 @@ const searchStyles = theme => ({
     },
     position: "absolute",
     top: "56px",
-    width: "230px"
+    width: "250px"
   },
   suggestionsList: {
     margin: "0",
@@ -142,40 +149,6 @@ export default withStyles(searchStyles)(
         this.setState({ data: result });
       }
 
-      renderInputComponent = inputProps => {
-        const { ref, ...other } = inputProps;
-        const { inputRoot } = this.props.classes;
-        return (
-          <InputBase
-            classes={{
-              root: this.props.classes.inputRoot,
-              input: this.props.classes.inputComp
-            }}
-            {...other}
-            inputRef={node => {
-              ref(node);
-            }}
-          />
-        );
-      };
-
-      renderSuggestion = (suggestion, { isHighlighted }) => {
-        return (
-          <MenuItem
-            classes={{
-              root: this.props.classes.menuItem
-            }}
-            selected={isHighlighted}
-            component="div"
-            disableGutters={true}
-          >
-            <Link route="subject" params={{ id: `${suggestion.id}` }}>
-              <a className="search-result">{suggestion.name}</a>
-            </Link>
-          </MenuItem>
-        );
-      };
-
       onSuggestionsFetchRequested = ({ value }) => {
         this.setState({
           suggestions: getSuggestions(value, this.state.data)
@@ -214,6 +187,41 @@ export default withStyles(searchStyles)(
         if (found) {
           Router.pushRoute(`/subject/${id}`);
         }
+      };
+
+      renderInputComponent = inputProps => {
+        const { ref, ...other } = inputProps;
+        const { inputRoot } = this.props.classes;
+        return (
+          <InputBase
+            classes={{
+              root: this.props.classes.inputRoot,
+              input: this.props.classes.inputComp,
+              focused: this.props.classes.inputFocused
+            }}
+            {...other}
+            inputRef={node => {
+              ref(node);
+            }}
+          />
+        );
+      };
+
+      renderSuggestion = (suggestion, { isHighlighted }) => {
+        return (
+          <MenuItem
+            classes={{
+              root: this.props.classes.menuItem
+            }}
+            selected={isHighlighted}
+            component="div"
+            disableGutters={true}
+          >
+            <Link route="subject" params={{ id: `${suggestion.id}` }}>
+              <a className="search-result">{suggestion.name}</a>
+            </Link>
+          </MenuItem>
+        );
       };
 
       render() {

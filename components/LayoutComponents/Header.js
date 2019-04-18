@@ -4,6 +4,7 @@ import SearchBar from "./SearchBar";
 import NavLinks from "./NavLinks";
 
 /* Material UI components */
+import ButtonBase from "@material-ui/core/ButtonBase";
 import Grid from "@material-ui/core/Grid";
 import { withStyles } from "@material-ui/core/styles";
 
@@ -14,11 +15,13 @@ const headerStyles = theme => ({
   },
   brand: {
     textAlign: "center",
-    fontSize: "2rem",
     [theme.breakpoints.down("sm")]: {
       display: "none"
     },
     "& a": {
+      fontSize: "2rem",
+      paddingLeft: "0.25rem",
+      paddingRight: "0.25rem",
       color: theme.palette.primary.contrastText
     }
   },
@@ -50,13 +53,13 @@ class Header extends React.Component {
           className={this.props.classes.banner}
         >
           <Grid item xs={3} className={this.props.classes.brand}>
-            <span>
+            <ButtonBase component="div">
               <Link route="/">
                 <a>
                   <strong>Partiguiden</strong>.nu
                 </a>
               </Link>
-            </span>
+            </ButtonBase>
           </Grid>
           <Grid item xs={3} className={this.props.classes.aligner} />
           <Grid item xs={3} className={this.props.classes.aligner} />

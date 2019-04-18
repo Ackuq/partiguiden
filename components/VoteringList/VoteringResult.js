@@ -17,7 +17,7 @@ const voteringResult = theme => ({
       padding: "0.25rem"
     },
     "& img": {
-      height: "50px"
+      height: "30px"
     }
   }
 });

@@ -4,7 +4,7 @@ import Head from "next/head";
 import { Link } from "../lib/routes";
 import axios from "axios";
 
-import RiksdagsbeslutListContainer from "../components/Riksdagsbeslut/RiksdagsbeslutListContainer";
+import RiksdagsbeslutListContainer from "../components/RiksdagsbeslutList/RiksdagsbeslutListContainer";
 
 export default class Riksdagsguiden extends React.Component {
   renderBeslut(beslut) {
@@ -24,7 +24,7 @@ export default class Riksdagsguiden extends React.Component {
     return (
       <React.Fragment>
         <Head>
-          <title>Riksdagsguiden | Partiguiden.nu</title>
+          <title>Riksdagsbeslut | Partiguiden.nu</title>
           <meta
             name="description"
             content="Vad tar riksdagen för beslut? Här hittar du en sammanfattning på de senaste besluten som tas upp i riksdagen."

@@ -1,29 +1,73 @@
 import { withRouter } from "next/router";
 import LoadCircle from "../components/LoadCircle";
 
-/* Material UI */
-import Card from "@material-ui/core/Card";
-import CardContent from "@material-ui/core/CardContent";
-import Typography from "@material-ui/core/Typography";
-import Link from "@material-ui/core/Link";
+import VoteringComponent from "../components/VoteringComponent";
 
 import Head from "next/head";
 
 import axios from "axios";
 
-export default withRouter(
-  class Riksdagsguiden extends React.Component {
-    state = {
-      beslut: {},
-      bilaga: [],
-      voteringar: [],
-      dokument: [],
-      forslag: "",
-      loading: true
+const getMatches = (forslag, referens) => {
+  forslag = forslag.replace(/(<br>)|<BR(\/)>/gm, "");
+
+  let matches = forslag.matchAll(
+    /\b([0-9][0-9][0-9][0-9]\/[0-9][0-9]):(\S+).*/gm
+  );
+  matches = [...matches];
+
+  for (let i = 0; i < matches.length; i++) {
+    forslag = forslag.replace(matches[i][0], "[" + i + "]");
+  }
+
+  for (let i = 0; i < matches.length; i++) {
+    for (let j = 0; j < referens.length; j++) {
+      if (
+        matches[i][1] === referens[j].ref_dok_rm &&
+        matches[i][2] === referens[j].ref_dok_bet
+      ) {
+        matches[i][3] = referens[j].ref_dok_id;
+      }
+    }
+  }
+
+  return { matches, forslag };
+};
+
+const getVotes = row => {
+  let voting = {};
+  for (let i = 2; i < row.length - 1; i++) {
+    const { td } = row[i];
+    const partyVotes = {
+      ja: td[1],
+      nej: td[2],
+      avstaende: td[3],
+      franvarande: td[4]
     };
+    voting[td[0]] = partyVotes;
+  }
+  return voting;
+};
+
+export default withRouter(
+  class Votering extends React.Component {
+    constructor(props) {
+      super(props);
+      const { id, bet } = props.router.query;
+
+      this.state = {
+        bet: bet,
+        id: id,
+        beslut: {},
+        bilaga: [],
+        voteringar: [],
+        dokument: [],
+        behandladeDokument: [],
+        forslag: "",
+        loading: true
+      };
+    }
     componentDidMount() {
-      let id = this.props.router.query.id;
-      let bet = this.props.router.query.bet;
+      const { bet, id } = this.state;
 
       axios({
         method: "get",
@@ -37,25 +81,36 @@ export default withRouter(
           method: "get",
           url: url + ".json"
         }).then(res => {
-          let dokumentStatus = res.data.dokumentstatus;
+          const { dokumentstatus } = res.data;
 
-          let forslag = dokumentStatus.dokutskottsforslag.utskottsforslag;
+          const utskottsforslag = Array.isArray(
+            dokumentstatus.dokutskottsforslag.utskottsforslag
+          )
+            ? dokumentstatus.dokutskottsforslag.utskottsforslag[bet - 1]
+            : dokumentstatus.dokutskottsforslag.utskottsforslag;
 
-          if (Array.isArray(forslag)) {
-            forslag = forslag[bet - 1];
-          }
-          let beslut = dokumentStatus.dokuppgift.uppgift.find(el => {
+          const beslut = dokumentstatus.dokuppgift.uppgift.find(el => {
             return el.kod === "rdbeslut";
           });
-          let bilaga = dokumentStatus.dokbilaga.bilaga[0];
-          console.log(bilaga);
 
+          const bilaga = dokumentstatus.dokbilaga
+            ? dokumentstatus.dokbilaga.bilaga[0]
+            : null;
+
+          const { matches, forslag } = getMatches(
+            utskottsforslag.forslag,
+            dokumentstatus.dokreferens.referens
+          );
+          const voting = getVotes(
+            utskottsforslag.votering_sammanfattning_html.table.tr
+          );
           this.setState({
-            forslag: forslag.forslag.replace(/(<br>)|<BR(\/)>/gm, ""),
-            dokForslag: forslag,
-            dokument: dokumentStatus.dokument,
+            forslag: forslag,
+            behandladeDokument: matches,
+            dokument: dokumentstatus.dokument,
             bilaga: bilaga,
             beslut: beslut.text,
+            voting: voting,
             loading: false
           });
         });
@@ -63,64 +118,44 @@ export default withRouter(
     }
 
     render() {
+      const {
+        dokument,
+        beslut,
+        forslag,
+        behandladeDokument,
+        bilaga,
+        loading,
+        bet,
+        voting
+      } = this.state;
+
       return (
         <React.Fragment>
           <Head>
-            <title>
-              {this.state.dokument.titel} | Votering | Partiguiden.nu
-            </title>
+            <title>{dokument.titel} | Votering | Partiguiden.nu</title>
             <meta
               name="description"
               content={`Hur har partiernat röstat i voteringen om ${
-                this.state.dokument.titel
+                dokument.titel
               }`}
             />
           </Head>
           <div className="list-title text-center">
             <h2>
-              {this.state.dokument.titel} forslagspunkt{" "}
-              {this.props.router.query.bet}
+              {dokument.titel} forslagspunkt {bet}
             </h2>
           </div>
-          {this.state.loading ? (
+          {loading ? (
             <LoadCircle />
           ) : (
-            <div className="container">
-              <Card>
-                <CardContent>
-                  <Typography variant="h5" gutterBottom>
-                    Förslagspunkt {this.props.router.query.bet}:{" "}
-                    {this.state.dokForslag.rubrik}
-                  </Typography>
-                  <Typography variant="h6" gutterBottom>
-                    Utskottets förslag:
-                  </Typography>
-                  <Typography
-                    variant="body1"
-                    paragraph
-                    style={{ whiteSpace: "pre-line" }}
-                  >
-                    {this.state.forslag}
-                  </Typography>
-                  <Typography variant="h6" gutterBottom>
-                    Beslut:
-                  </Typography>
-                  <Typography variant="body1">{this.state.beslut}</Typography>
-                  <Typography variant="h6" gutterBottom>
-                    Bilaga:
-                  </Typography>
-                  <Typography variant="body1">
-                    <Link
-                      href={this.state.bilaga.fil_url}
-                      target="_blank"
-                      rel="noopener"
-                    >
-                      {this.state.bilaga.titel}
-                    </Link>
-                  </Typography>
-                </CardContent>
-              </Card>
-            </div>
+            <VoteringComponent
+              beslut={beslut}
+              forslag={forslag}
+              bilaga={bilaga}
+              behandladeDokument={behandladeDokument}
+              voting={voting}
+              beslut={beslut}
+            />
           )}
         </React.Fragment>
       );

@@ -1,7 +1,7 @@
 /* Next.js Head component */
 import Head from "next/head";
 
-import VoteringListContainer from "../components/Voteringar/VoteringListContainer";
+import VoteringListContainer from "../components/VoteringList/VoteringListContainer";
 
 import axios from "axios";
 

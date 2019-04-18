@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import { withStyles } from "@material-ui/core/styles";
 
 /* Material UI */
@@ -7,7 +9,7 @@ import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
 import ArrowDownRounded from "@material-ui/icons/KeyboardArrowDownRounded";
 import ButtonBase from "@material-ui/core/ButtonBase";
-import Link from "@material-ui/core/Link";
+import Button from "@material-ui/core/Button";
 
 /* HTML parser */
 import ReactHtmlParser, { convertNodeToElement } from "react-html-parser";
@@ -15,8 +17,7 @@ import ReactHtmlParser, { convertNodeToElement } from "react-html-parser";
 const beslut = theme => ({
   titleContainer: {
     display: "flex",
-    justifyContent: "space-between",
-    marginBottom: "1rem"
+    justifyContent: "space-between"
   },
   shown: {
     "-webkit-transform": "rotate(180deg)",
@@ -25,6 +26,9 @@ const beslut = theme => ({
   paragraphContainer: {
     "& .beslutsParagraph": {
       fontSize: "1rem"
+    },
+    "& a": {
+      color: "#212121"
     }
   },
   buttonContainer: {
@@ -89,15 +93,13 @@ export default withStyles(beslut)(
               in={this.state.visible}
             >
               {ReactHtmlParser(this.props.beslut.notis, options)}
-              <Typography>
-                <Link
-                  href={this.props.beslut.dokument_url_html}
-                  target="_blank"
-                  rel="noopener"
-                >
-                  Läs mer om beslutet
+              <Button component="div">
+                <Link href={this.props.beslut.dokument_url_html}>
+                  <a target="_blank" rel="noopener">
+                    Läs mer om beslutet
+                  </a>
                 </Link>
-              </Typography>
+              </Button>
             </Collapse>
           </CardContent>
         </Card>

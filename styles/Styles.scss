@@ -4,7 +4,8 @@
 @import "bootstrap/containers";
 @import "bootstrap/text";
 // Custom sass
-@import "party-color";
+@import "partyColor";
+@import "dokumentStyles";
 
 .list-title {
   -webkit-box-shadow: 0 0 #ffffff inset, 0 1px 3px rgba(34, 25, 25, 0.4);
@@ -67,7 +68,6 @@ html {
     align-items: stretch;
   }
   p {
-    font-size: 1.25rem;
     font-weight: 300;
   }
 }

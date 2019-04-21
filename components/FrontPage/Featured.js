@@ -41,23 +41,24 @@ export default withStyles(featuredStyles)(
         { id: "migration-och-integration", name: "Migration och integration" }
       ];
     }
-    renderFeatured(obj) {
-      return (
-        <Grid key={`${obj.id}`} item xs={12} md={6}>
-          <ButtonBase className={this.props.classes.featured} component="div">
-            <Link route="subject" params={{ id: obj.id }}>
-              <a>
-                <span>{obj.name}</span>
-              </a>
-            </Link>
-          </ButtonBase>
-        </Grid>
-      );
-    }
+
     render() {
       return (
         <Grid container spacing={16}>
-          {this.getFeatured().map(obj => this.renderFeatured(obj))}
+          {this.getFeatured().map(obj => (
+            <Grid key={`${obj.id}`} item xs={12} md={6}>
+              <ButtonBase
+                className={this.props.classes.featured}
+                component="div"
+              >
+                <Link route="subject" params={{ id: obj.id }}>
+                  <a>
+                    <span>{obj.name}</span>
+                  </a>
+                </Link>
+              </ButtonBase>
+            </Grid>
+          ))}
         </Grid>
       );
     }

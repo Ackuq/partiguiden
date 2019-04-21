@@ -2,7 +2,7 @@
 import Head from "next/head";
 import { withRouter } from "next/router";
 
-import DokumentComponent from "../components/DokumentComponent";
+import LoadCircle from "../components/LoadCircle";
 
 // ES Modules
 import parse from "html-react-parser";
@@ -38,7 +38,6 @@ export default withRouter(
             break;
           }
         }
-
         this.setState({ body: body });
       });
     }
@@ -50,7 +49,16 @@ export default withRouter(
           <Head>
             <title>Dokument {id} | Partiguiden.nu</title>
           </Head>
-          {body && <DokumentComponent body={body} />}
+          {body ? (
+            <div
+              className="container dokumentBody"
+              style={{ paddingTop: "1.5rem" }}
+            >
+              {body}
+            </div>
+          ) : (
+            <LoadCircle />
+          )}
         </React.Fragment>
       );
     }

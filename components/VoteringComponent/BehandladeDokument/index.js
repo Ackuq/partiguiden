@@ -1,11 +1,12 @@
-import { Link } from "../../lib/routes";
+import { Link } from "../../../lib/routes";
 import Typography from "@material-ui/core/Typography";
 
 import Collapse from "@material-ui/core/Collapse";
 import ButtonBase from "@material-ui/core/ButtonBase";
 import { withStyles } from "@material-ui/core/styles";
+import ArrowDownRounded from "@material-ui/icons/KeyboardArrowDownRounded";
 
-import VotingStyles from "./VotingStyles";
+import VotingStyles from "./../VotingStyles";
 
 export default withStyles(VotingStyles)(
   class BehandladeDokument extends React.Component {
@@ -15,15 +16,23 @@ export default withStyles(VotingStyles)(
     render() {
       const { visible } = this.state;
       const { behandladeDokument, classes } = this.props;
+
+      const btnclass = visible ? classes.arrowVisible : "";
+
       return (
         <div className={classes.contentContainer}>
           <ButtonBase
             onClick={() => this.setState({ visible: !visible })}
             classes={{ root: classes.button }}
           >
-            <Typography variant="h4" color="inherit">
+            <Typography variant="h5" color="inherit">
               Behandlade dokument
             </Typography>
+            <ArrowDownRounded
+              classes={{
+                root: `${classes.arrow} ${btnclass}`
+              }}
+            />
           </ButtonBase>
           <Collapse in={visible}>
             <div style={{ marginTop: "1.25rem" }}>

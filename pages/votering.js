@@ -6,6 +6,7 @@ import VoteringComponent from "../components/VoteringComponent";
 import Head from "next/head";
 
 import axios from "axios";
+import getVotes from "../lib/getVotes";
 
 const getMatches = (forslag, referens) => {
   forslag = forslag.replace(/(<br>)|<BR(\/)>/gm, "");
@@ -31,21 +32,6 @@ const getMatches = (forslag, referens) => {
   }
 
   return { matches, forslag };
-};
-
-const getVotes = row => {
-  let voting = {};
-  for (let i = 2; i < row.length - 1; i++) {
-    const { td } = row[i];
-    const partyVotes = {
-      ja: td[1],
-      nej: td[2],
-      avstaende: td[3],
-      franvarande: td[4]
-    };
-    voting[td[0]] = partyVotes;
-  }
-  return voting;
 };
 
 export default withRouter(
@@ -89,8 +75,15 @@ export default withRouter(
             ? dokumentstatus.dokutskottsforslag.utskottsforslag[bet - 1]
             : dokumentstatus.dokutskottsforslag.utskottsforslag;
 
-          const beslut = dokumentstatus.dokuppgift.uppgift.find(el => {
+          const { uppgift } = dokumentstatus.dokuppgift;
+          const beslut = uppgift.find(el => {
             return el.kod === "rdbeslut";
+          });
+          const notisBeskrivning = uppgift.find(el => {
+            return el.kod === "notis";
+          });
+          const notisRubrik = uppgift.find(el => {
+            return el.kod === "notisrubrik";
           });
 
           const bilaga = dokumentstatus.dokbilaga
@@ -101,9 +94,14 @@ export default withRouter(
             utskottsforslag.forslag,
             dokumentstatus.dokreferens.referens
           );
-          const voting = getVotes(
-            utskottsforslag.votering_sammanfattning_html.table.tr
-          );
+
+          const { table } = utskottsforslag.votering_sammanfattning_html;
+          const tableRow = Array.isArray(table)
+            ? table[table.length - 1].tr
+            : table.tr;
+
+          const voting = getVotes(tableRow);
+
           this.setState({
             forslag: forslag,
             behandladeDokument: matches,
@@ -111,7 +109,9 @@ export default withRouter(
             bilaga: bilaga,
             beslut: beslut.text,
             voting: voting,
-            loading: false
+            loading: false,
+            notisRubrik: notisRubrik,
+            notisBeskrivning: notisBeskrivning
           });
         });
       });
@@ -126,7 +126,9 @@ export default withRouter(
         bilaga,
         loading,
         bet,
-        voting
+        voting,
+        notisRubrik,
+        notisBeskrivning
       } = this.state;
 
       return (
@@ -155,6 +157,8 @@ export default withRouter(
               behandladeDokument={behandladeDokument}
               voting={voting}
               beslut={beslut}
+              notisRubrik={notisRubrik.text}
+              notisBeskrivning={notisBeskrivning.text}
             />
           )}
         </React.Fragment>

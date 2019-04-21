@@ -3,6 +3,7 @@ import Typography from "@material-ui/core/Typography";
 import Collapse from "@material-ui/core/Collapse";
 import ButtonBase from "@material-ui/core/ButtonBase";
 import { withStyles } from "@material-ui/core/styles";
+import ArrowDownRounded from "@material-ui/icons/KeyboardArrowDownRounded";
 
 import {
   BarChart,
@@ -16,7 +17,9 @@ import {
   ResponsiveContainer
 } from "recharts";
 
-import VotingStyles from "./VotingStyles";
+import CustomizedTick from "./CustomizedTick";
+
+import VotingStyles from "./../VotingStyles";
 
 const createData = voting => [
   {
@@ -78,7 +81,7 @@ const createData = voting => [
 ];
 
 export default withStyles(VotingStyles)(
-  class PartiRoster extends React.Component {
+  class RostFordelning extends React.Component {
     state = {
       data: null,
       visible: false
@@ -91,23 +94,34 @@ export default withStyles(VotingStyles)(
     render() {
       const { data, visible } = this.state;
       const { classes } = this.props;
+      const btnclass = visible ? classes.arrowVisible : "";
+
       return (
         <div className={classes.contentContainer}>
           <ButtonBase
             onClick={() => this.setState({ visible: !visible })}
             classes={{ root: classes.button }}
           >
-            <Typography variant="h4" color="inherit">
-              Votering
+            <Typography variant="h5" color="inherit">
+              Röstfördelning
             </Typography>
+            <ArrowDownRounded
+              classes={{
+                root: `${classes.arrow} ${btnclass}`
+              }}
+            />
           </ButtonBase>
           <Collapse in={visible}>
             <ResponsiveContainer height={500} className={classes.chart}>
               {data ? (
-                <BarChart data={data}>
+                <BarChart data={data} layout="vertical">
                   <CartesianGrid strokeDasharray="3 3" />
-                  <XAxis dataKey="name" />
-                  <YAxis />
+                  <XAxis type="number" />
+                  <YAxis
+                    type="category"
+                    dataKey="name"
+                    tick={<CustomizedTick />}
+                  />
                   <Tooltip />
                   <Legend />
                   <Bar dataKey="Ja" stackId="a" fill="#16a085" />

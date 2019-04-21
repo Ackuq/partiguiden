@@ -3,19 +3,36 @@ import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
 
+import TotalVote from "./TotalVote";
 import BehandladeDokument from "./BehandladeDokument";
 import Bilaga from "./Bilaga";
-import PartiRoster from "./PartiRoster";
+import RostFordelning from "./RostFordelning";
 import Beslut from "./Beslut";
 
 export default class Votering extends React.Component {
   render() {
-    const { forslag, bilaga, behandladeDokument, beslut, voting } = this.props;
+    const {
+      forslag,
+      bilaga,
+      behandladeDokument,
+      beslut,
+      voting,
+      notisRubrik,
+      notisBeskrivning
+    } = this.props;
     return (
       <div className="container">
         <Card>
           <CardContent>
-            <Typography variant="h6" gutterBottom>
+            <TotalVote voting={voting.Totalt} />
+            <Typography
+              variant="h5"
+              style={{ marginBottom: "1rem" }}
+              color="textSecondary"
+            >
+              {notisRubrik}
+            </Typography>
+            <Typography variant="h5" gutterBottom>
               Utskottets förslag
             </Typography>
             <Typography variant="body1" paragraph>
@@ -24,8 +41,8 @@ export default class Votering extends React.Component {
             {behandladeDokument && (
               <BehandladeDokument behandladeDokument={behandladeDokument} />
             )}
-            <PartiRoster voting={voting} />
-            <Beslut beslut={beslut} />
+            <RostFordelning voting={voting} />
+            <Beslut beslut={beslut} notisBeskrivning={notisBeskrivning} />
             {bilaga && <Bilaga bilaga={bilaga} />}
           </CardContent>
         </Card>

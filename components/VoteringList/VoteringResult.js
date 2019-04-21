@@ -1,5 +1,4 @@
 import { withStyles } from "@material-ui/core/styles";
-import Card from "@material-ui/core/Card";
 import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
 
@@ -23,74 +22,56 @@ const voteringResult = theme => ({
 });
 
 export default withStyles(voteringResult)(
-  class Votering extends React.Component {
-    state = {
-      total: 0,
-      ja: [],
-      nej: []
-    };
-
-    renderParty(key) {
-      if (this.props.data[key]) {
-        this.state.ja.push(key);
-      } else {
-        this.state.nej.push(key);
-      }
-    }
-
+  class VoteringResult extends React.Component {
     render() {
-      let votering = this.props.votering;
-      const bgYes = this.props.total
+      const { votes, classes } = this.props;
+
+      const bgYes = votes.total
         ? { backgroundColor: "#c8e6c9" }
         : { backgroundColor: "#e0e0e0" };
 
-      const bgNo = this.props.total
+      const bgNo = votes.total
         ? { backgroundColor: "#e0e0e0" }
         : { backgroundColor: "#ffcdd2" };
-      return (
-        <Grid
-          container
-          spacing={16}
-          className={`${this.props.classes.votering} ${this.props.total}`}
-        >
-          {Object.keys(this.props.data).forEach(key => this.renderParty(key))}
 
+      return (
+        <Grid container className={`${classes.votering}`}>
           <Grid item sm={6} xs={12}>
-            <Card className="box" style={bgYes}>
+            <div className="box" style={bgYes}>
               <Typography align="center" variant="h5" gutterBottom>
                 JA
               </Typography>
-              <div className={this.props.classes.parties}>
-                {this.state.ja.map(party => (
+              <div className={classes.parties}>
+                {votes.ja.map(party => (
                   <Typography
                     variant="h6"
                     color="textSecondary"
-                    key={`${votering.titel}${party}`}
+                    key={`${party}`}
                   >
-                    <img src={`../static/images/party-logos/${party}.svg`} />
+                    <img src={`/static/images/party-logos/${party}.svg`} />
                   </Typography>
                 ))}
               </div>
-            </Card>
+            </div>
           </Grid>
 
           <Grid item sm={6} xs={12}>
-            <Card className="box" style={bgNo}>
+            <div className="box" style={bgNo}>
               <Typography align="center" variant="h5" gutterBottom>
                 NEJ
               </Typography>
-              <div className={this.props.classes.parties}>
-                {this.state.nej.map(party => (
+              <div className={classes.parties}>
+                {votes.nej.map(party => (
                   <Typography
                     variant="h6"
                     color="textSecondary"
-                    key={`${votering.titel}${party}`}
+                    key={`${party}`}
                   >
-                    <img src={`../static/images/party-logos/${party}.svg`} />
+                    <img src={`/static/images/party-logos/${party}.svg`} />
                   </Typography>
                 ))}
               </div>
-            </Card>
+            </div>
           </Grid>
         </Grid>
       );

@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { Link } from "../../lib/routes";
 
 import { withStyles } from "@material-ui/core/styles";
 
@@ -6,48 +6,68 @@ import { withStyles } from "@material-ui/core/styles";
 import Collapse from "@material-ui/core/Collapse";
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
+import CardHeader from "@material-ui/core/CardHeader";
 import Typography from "@material-ui/core/Typography";
 import ArrowDownRounded from "@material-ui/icons/KeyboardArrowDownRounded";
 import ButtonBase from "@material-ui/core/ButtonBase";
 import Button from "@material-ui/core/Button";
 
 /* HTML parser */
-import ReactHtmlParser, { convertNodeToElement } from "react-html-parser";
+import parse from "html-react-parser";
+
+/* Axios */
+import axios from "axios";
+
+import getOrganInfo from "./../../lib/authorityTable";
+import checkVote from "./checkVote";
 
 const beslut = theme => ({
-  titleContainer: {
-    display: "flex",
-    justifyContent: "space-between"
-  },
   shown: {
     "-webkit-transform": "rotate(180deg)",
     transform: "rotate(180deg)"
   },
   paragraphContainer: {
-    "& .beslutsParagraph": {
-      fontSize: "1rem"
-    },
     "& a": {
       color: "#212121"
+    },
+    "& .paragraph p": {
+      fontSize: "1rem"
     }
   },
+  title: {
+    fontSize: "1.125rem",
+    lineHeight: 1.3,
+    color: theme.palette.primary.dark
+  },
+  subtitle: {
+    fontSize: "1rem",
+    lineHeight: 1.25
+  },
   buttonContainer: {
-    margin: "auto 0",
-    padding: "0.25rem",
-    borderRadius: "2rem"
+    display: "block",
+    width: "100%"
   },
   arrow: {
     "-webkit-transition": "transform 0.25s ease-in-out",
     transition: "transform 0.25s ease-in-out",
-    fontSize: "2.5rem",
+    fontSize: "2rem",
     color: theme.palette.primary.dark
+  },
+  cardContent: {
+    display: "flex",
+    justifyContent: "space-between",
+    padding: "0.5rem 1rem "
+  },
+  headerTitle: {
+    fontSize: "1.15rem",
+    color: "#ffffff"
+  },
+  headerRoot: {
+    width: "100%",
+    textAlign: "left",
+    padding: "0.25rem 1rem"
   }
 });
-
-const equals = (nextState, currState) => {
-  if (nextState.data === currState.data) return true;
-  else return false;
-};
 
 function transform(node, index) {
   if (node.type === "tag" && node.name === "p") {
@@ -56,53 +76,110 @@ function transform(node, index) {
   }
 }
 
-const options = {
-  decodeEntities: true,
-  transform
-};
-
 export default withStyles(beslut)(
   class Riksdagsbeslut extends React.Component {
     state = {
-      visible: false
+      visible: false,
+      organ: null,
+      voteringarExist: false
     };
 
-    render() {
-      let btnclass = this.state.visible ? this.props.classes.shown : "";
-      return (
-        <Card>
-          <CardContent>
-            <div className={this.props.classes.titleContainer}>
-              <Typography variant="h6" color="textSecondary" gutterBottom>
-                {this.props.beslut.notisrubrik}
-              </Typography>
+    componentDidMount() {
+      const { beslut } = this.props;
+      let { dokumentstatus_url_xml } = beslut;
+      dokumentstatus_url_xml = dokumentstatus_url_xml.replace(".xml", ".json");
+      axios({ method: "get", url: "https:" + dokumentstatus_url_xml }).then(
+        response => {
+          if (typeof response.data === "string") return;
+          const { dokumentstatus } = response.data;
+          const { organ } = dokumentstatus.dokument;
+          const { utskottsforslag } = dokumentstatus.dokutskottsforslag;
+          const organInfo = getOrganInfo(organ);
+          const voteringarExist = checkVote(utskottsforslag);
+          this.setState({
+            organ: organInfo,
+            voteringarExist: voteringarExist
+          });
+        }
+      );
+    }
 
+    render() {
+      const { visible, organ, voteringarExist } = this.state;
+      const { classes, beslut } = this.props;
+      const btnclass = visible ? classes.shown : "";
+      return (
+        <React.Fragment>
+          {organ && (
+            <Card>
               <ButtonBase
-                className={this.props.classes.buttonContainer}
-                onClick={() => this.setState({ visible: !this.state.visible })}
+                className={classes.buttonContainer}
+                onClick={() => this.setState({ visible: !visible })}
               >
-                <ArrowDownRounded
+                <CardHeader
+                  title={organ.desc}
+                  style={{ background: organ.color }}
                   classes={{
-                    root: `${this.props.classes.arrow} ${btnclass}`
+                    title: classes.headerTitle,
+                    root: classes.headerRoot
                   }}
                 />
+
+                <CardContent classes={{ root: classes.cardContent }}>
+                  <div>
+                    <Typography
+                      variant="h3"
+                      align="left"
+                      gutterBottom
+                      classes={{ h3: classes.title }}
+                    >
+                      {beslut.notisrubrik}
+                    </Typography>
+                    <Typography
+                      variant="h6"
+                      color="textSecondary"
+                      align="left"
+                      classes={{ h6: classes.subtitle }}
+                    >
+                      {beslut.titel}
+                    </Typography>
+                  </div>
+                  <ArrowDownRounded
+                    classes={{
+                      root: `${classes.arrow} ${btnclass}`
+                    }}
+                  />
+                </CardContent>
               </ButtonBase>
-            </div>
-            <Collapse
-              className={this.props.classes.paragraphContainer}
-              in={this.state.visible}
-            >
-              {ReactHtmlParser(this.props.beslut.notis, options)}
-              <Button component="div">
-                <Link href={this.props.beslut.dokument_url_html}>
-                  <a target="_blank" rel="noopener">
-                    Läs mer om beslutet
-                  </a>
-                </Link>
-              </Button>
-            </Collapse>
-          </CardContent>
-        </Card>
+
+              <CardContent>
+                <Collapse className={classes.paragraphContainer} in={visible}>
+                  <div className="paragraph">{parse(beslut.notis)}</div>
+                  <Button component="div">
+                    <Link route="dokument" params={{ id: beslut.id }}>
+                      <a>Läs mer om betänkandet</a>
+                    </Link>
+                  </Button>
+                  {voteringarExist && (
+                    <Button component="div">
+                      <Link
+                        route="voteringar"
+                        params={{
+                          rm: beslut.rm,
+                          bet: beslut.beteckning,
+                          num: beslut.nummer,
+                          org: `${organ.code}`
+                        }}
+                      >
+                        <a>Läs mer om voteringarna</a>
+                      </Link>
+                    </Button>
+                  )}
+                </Collapse>
+              </CardContent>
+            </Card>
+          )}
+        </React.Fragment>
       );
     }
   }

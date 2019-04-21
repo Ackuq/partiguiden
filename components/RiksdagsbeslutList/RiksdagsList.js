@@ -4,7 +4,7 @@ import CircularProgress from "@material-ui/core/CircularProgress";
 import ButtonBase from "@material-ui/core/ButtonBase";
 import Grid from "@material-ui/core/Grid";
 
-import RiksdagsListContainer from "./RiksdagsbeslutListContainer";
+import RiksdagsListContainer from "./index";
 import Riksdagsbeslut from "./Riksdagsbeslut";
 import LoadCircle from "../LoadCircle";
 
@@ -31,63 +31,86 @@ const riksdagsbeslutList = theme => ({
 
 export default withStyles(riksdagsbeslutList)(
   class RiksdagsList extends React.Component {
-    state = {
-      beslut: [],
-      loading: true,
-      next: false,
-      nextPage: -1
-    };
+    constructor(props) {
+      super(props);
 
-    componentDidMount() {
-      var url = `https://data.riksdagen.se/dokumentlista/?u17=22%2c22&avd=dokument&doktyp=bet&beslutad=1&sort=beslutsdag&sortorder=desc&utformat=json&p=${
-        this.props.page
-      }`;
-      this.getPage(url);
+      this.state = {
+        beslut: [],
+        loading: true,
+        next: false,
+        lastPage: true,
+        nextPage: props.page + 1,
+        page: props.page,
+        query: props.query,
+        asPath: props.asPath
+      };
     }
 
-    getPage(url) {
+    componentDidUpdate(prevProps, prevState) {
+      if (prevState.asPath !== this.state.asPath) {
+        this.getPage();
+      }
+    }
+
+    static getDerivedStateFromProps(nextProps, prevState) {
+      if (nextProps.asPath !== prevState.asPath) {
+        return { asPath: nextProps.asPath, query: nextProps.query, page: 1 };
+      } else return null;
+    }
+
+    componentDidMount() {
+      this.getPage();
+    }
+
+    getPage() {
+      const { page } = this.state;
+      const url = `https://data.riksdagen.se/dokumentlista/?u17=22%2c22&avd=dokument&doktyp=bet&beslutad=1&sort=beslutsdag&sortorder=desc&utformat=json&p=${page}`;
+
       axios({
         method: "get",
         url: url
       }).then(response => {
+        const { dokumentlista } = response.data;
+        const lastPage = page == dokumentlista["@sidor"] ? true : false;
         this.setState({
-          beslut: response.data.dokumentlista.dokument,
+          beslut: dokumentlista.dokument,
           loading: false,
-          nextPage: this.props.page + 1
+          lastPage: lastPage
         });
       });
     }
 
     render() {
+      const { loading, beslut, next, nextPage, lastPage } = this.state;
+      const { classes } = this.props;
       return (
         <React.Fragment>
-          {this.state.loading ? (
+          {loading ? (
             <LoadCircle />
           ) : (
             <React.Fragment>
-              <Grid
-                className={this.props.classes.listContainer}
-                container
-                spacing={16}
-              >
-                {this.state.beslut.map(beslut => (
+              <Grid className={classes.listContainer} container spacing={16}>
+                {beslut.map(beslut => (
                   <Grid item xs={12} key={beslut.notisrubrik}>
                     <Riksdagsbeslut beslut={beslut} />
                   </Grid>
                 ))}
               </Grid>
-
-              {this.state.next ? (
-                <RiksdagsListContainer page={this.state.nextPage} />
-              ) : (
-                <div className={this.props.classes.buttonContainer}>
-                  <ButtonBase
-                    className={this.props.classes.loadMore}
-                    onClick={() => this.setState({ next: true })}
-                  >
-                    Ladda mer
-                  </ButtonBase>
-                </div>
+              {!lastPage && (
+                <React.Fragment>
+                  {next ? (
+                    <RiksdagsListContainer page={nextPage} />
+                  ) : (
+                    <div className={classes.buttonContainer}>
+                      <ButtonBase
+                        className={classes.loadMore}
+                        onClick={() => this.setState({ next: true })}
+                      >
+                        Ladda mer
+                      </ButtonBase>
+                    </div>
+                  )}
+                </React.Fragment>
               )}
             </React.Fragment>
           )}

@@ -54,6 +54,7 @@ export default withStyles(listStyles)(
       return { data: result };
     }
     render() {
+      const { data, classes } = this.props;
       return (
         <React.Fragment>
           <Head>
@@ -67,11 +68,8 @@ export default withStyles(listStyles)(
             <NoteIcon style={{ fontSize: "2.5rem" }} />
             <h1>Partiernas ståndpunkter</h1>
           </div>
-          <Grid
-            container
-            classes={{ container: this.props.classes.subjectList }}
-          >
-            {this.props.data.map(subject => (
+          <Grid container classes={{ container: classes.subjectList }}>
+            {data.map(subject => (
               <ListObject subject={subject} key={`${subject.id}`} />
             ))}
           </Grid>

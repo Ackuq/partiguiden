@@ -35,8 +35,12 @@ export default () => (
             att utveckla kunskaper inom webbutveckling.
           </Typography>
           <Typography variant="subtitle1" paragraph>
-            Informationen som presenteras på sidan är utvald information från
-            partiernas egna hemsidor.
+            Informationen som presenteras på sidan är information från
+            partiernas egna hemsidor samt information från Riksdagens öppna API,
+            som finns på{" "}
+            <a target="_blank" href="https://data.riksdagen.se/">
+              https://data.riksdagen.se/
+            </a>
           </Typography>
         </CardContent>
       </Card>

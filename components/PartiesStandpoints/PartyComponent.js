@@ -61,31 +61,31 @@ export default withStyles(subjectStyles)(
     }
 
     render() {
-      const { data, name } = this.props.party;
+      const { party, classes } = this.props;
       return (
         <React.Fragment>
-          {data && (
+          {party.data && (
             <div
-              key={`${name}`}
-              id={`${name}`}
-              className={this.props.classes.partyStandpoint}
+              key={`${party.name}`}
+              id={`${party.name}`}
+              className={classes.partyStandpoint}
             >
               <ButtonBase
                 onClick={this.handleClick}
-                classes={{ root: this.props.classes.partyTitle }}
+                classes={{ root: classes.partyTitle }}
               >
-                <h3>{name}</h3>
+                <h3>{party.name}</h3>
               </ButtonBase>
               <Collapse
                 in={this.state.visible}
-                classes={{ container: this.props.classes.collapse }}
+                classes={{ container: classes.collapse }}
               >
                 <Grid container spacing={16} style={{ marginTop: "0.5rem" }}>
-                  {data.map(subject => (
+                  {party.data.map(subject => (
                     <PartyOpinion
                       subject={subject}
-                      partyName={name}
-                      key={`${name}${subject.name}`}
+                      partyName={party.name}
+                      key={`${party.name}${subject.name}`}
                     />
                   ))}
                 </Grid>

@@ -65,12 +65,13 @@ const listTheme = theme => ({
 export default withStyles(listTheme)(
   class ListObject extends React.Component {
     render() {
+      const { classes, subject } = this.props;
       return (
-        <Grid item xs={12} md={6} className={this.props.classes.item}>
-          <ButtonBase className={this.props.classes.button} component="div">
-            <Link route="subject" params={{ id: this.props.subject.id }}>
+        <Grid item xs={12} md={6} className={classes.item}>
+          <ButtonBase className={classes.button} component="div">
+            <Link route="subject" params={{ id: subject.id }}>
               <a>
-                <span>{this.props.subject.name}</span>
+                <span>{subject.name}</span>
               </a>
             </Link>
           </ButtonBase>

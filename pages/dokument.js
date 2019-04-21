@@ -8,31 +8,43 @@ import DokumentComponent from "../components/DokumentComponent";
 import parse from "html-react-parser";
 import axios from "axios";
 
-const replace = ({ attribs, children }) => {
-  if (attribs && attribs.style) attribs.style = null;
-};
-
 export default withRouter(
   class Dokument extends React.Component {
-    state = {
-      body: null
-    };
+    constructor(props) {
+      super(props);
+      this.state = {
+        body: null,
+        id: props.router.query.id
+      };
+    }
+
     componentDidMount() {
-      const { id } = this.props.router.query;
+      this.getDoc();
+    }
+
+    getDoc() {
+      const { id } = this.state;
       const url = `https://data.riksdagen.se/dokument/${id}`;
+
       axios({
         method: "get",
         url: url
       }).then(response => {
-        const body = parse(response.data, {
-          replace: replace
-        })[1];
+        const html = parse(response.data);
+        let body;
+        for (let i = 0; i < html.length; i++) {
+          if (html[i].type && html[i].type === "div") {
+            body = html[i];
+            break;
+          }
+        }
+
         this.setState({ body: body });
       });
     }
+
     render() {
-      const { body } = this.state;
-      const { id } = this.props.router.query;
+      const { body, id } = this.state;
       return (
         <React.Fragment>
           <Head>

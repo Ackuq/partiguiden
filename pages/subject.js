@@ -106,6 +106,7 @@ export default withRouter(
     componentDidMount() {
       this.getData();
     }
+
     static async getInitialProps({ ...props }) {
       const id = props.query.id;
       var result = [];

@@ -20,13 +20,16 @@ import ReactGA from "react-ga";
 /* Scroll up button */
 import ToTopButton from "../components/LayoutComponents/ToTopButton";
 
-export default class MyApp extends App {
-  constructor() {
-    super();
+import withReduxStore from "../lib/with-redux-store";
+import { Provider } from "react-redux";
+
+class MyApp extends App {
+  pageContext = null;
+
+  constructor(props) {
+    super(props);
     this.pageContext = getPageContext();
   }
-
-  pageContext = null;
 
   initReactGA() {
     ReactGA.initialize("UA-111642551-2");
@@ -43,26 +46,30 @@ export default class MyApp extends App {
   }
 
   render() {
-    const { Component, pageProps, result } = this.props;
+    const { Component, pageProps, reduxStore } = this.props;
     return (
       <Container>
-        <JssProvider
-          registry={this.pageContext.sheetsRegistry}
-          generateClassName={this.pageContext.generateClassName}
-        >
-          <MuiThemeProvider
-            theme={this.pageContext.theme}
-            sheetsManager={this.pageContext.sheetsManager}
+        <Provider store={reduxStore}>
+          <JssProvider
+            registry={this.pageContext.sheetsRegistry}
+            generateClassName={this.pageContext.generateClassName}
           >
-            <Header />
-            <main>
-              <Component pageContext={this.pageContext} {...pageProps} />
-            </main>
-            <Footer />
-            <ToTopButton />
-          </MuiThemeProvider>
-        </JssProvider>
+            <MuiThemeProvider
+              theme={this.pageContext.theme}
+              sheetsManager={this.pageContext.sheetsManager}
+            >
+              <Header />
+              <main>
+                <Component pageContext={this.pageContext} {...pageProps} />
+              </main>
+              <Footer />
+              <ToTopButton />
+            </MuiThemeProvider>
+          </JssProvider>
+        </Provider>
       </Container>
     );
   }
 }
+
+export default withReduxStore(MyApp);

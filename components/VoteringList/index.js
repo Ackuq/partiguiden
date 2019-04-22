@@ -1,7 +1,31 @@
-import VoteringList from "./VoteringList";
+import { connect } from "react-redux";
+import { bindActionCreators } from "redux";
+import VoteringListContainer from "./VoteringListContainer";
+import { updateFilter } from "./../../lib/store";
+import Filter from "../Filter";
 
-export default class VoteringListContainer extends React.Component {
+class VoteringList extends React.Component {
   render() {
-    return <VoteringList {...this.props} />;
+    return (
+      <React.Fragment>
+        <div className="container">
+          <VoteringListContainer {...this.props} />
+        </div>
+        <Filter {...this.props} />
+      </React.Fragment>
+    );
   }
 }
+
+function mapStateToProps(state) {
+  const { filter } = state;
+  return { filter };
+}
+
+const mapDispatchToProps = dispatch =>
+  bindActionCreators({ updateFilter }, dispatch);
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(VoteringList);

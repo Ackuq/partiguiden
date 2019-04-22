@@ -226,6 +226,8 @@ export default withStyles(searchStyles)(
 
       render() {
         const { value, suggestions } = this.state;
+        const { classes } = this.props;
+
         const inputProps = {
           placeholder: "Sök här...",
           value,
@@ -243,7 +245,7 @@ export default withStyles(searchStyles)(
             </InputAdornment>
           )
         };
-        const classes = this.props.classes;
+
         return (
           <Autosuggest
             id={this.props.id}

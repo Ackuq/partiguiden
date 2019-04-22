@@ -4,7 +4,7 @@ import CircularProgress from "@material-ui/core/CircularProgress";
 import ButtonBase from "@material-ui/core/ButtonBase";
 import Grid from "@material-ui/core/Grid";
 
-import VoteringListContainer from "./index.js";
+import VoteringListContainer from "./VoteringListContainer";
 import Votering from "./Votering";
 import LoadCircle from "../LoadCircle";
 

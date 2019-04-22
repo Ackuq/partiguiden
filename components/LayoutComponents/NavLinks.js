@@ -35,7 +35,6 @@ export default withStyles(tabTheme)(
       constructor(props) {
         super(props);
         this.handleChange = this.handleChange.bind(this);
-        this.getPages = this.getPages.bind(this);
         this.state = { value: 0 };
       }
 

@@ -2,7 +2,7 @@
 import Head from "next/head";
 import { withRouter } from "next/router";
 
-import VoteringListContainer from "../components/VoteringList";
+import VoteringList from "../components/VoteringList";
 
 import axios from "axios";
 
@@ -28,7 +28,7 @@ export default withRouter(
     render() {
       const { query, asPath } = this.state;
       return (
-        <div>
+        <React.Fragment>
           <Head>
             <title>Voteringar | Partiguiden.nu</title>
             <meta
@@ -39,10 +39,13 @@ export default withRouter(
           <div className="list-title text-center">
             <h1>Voteringar</h1>
           </div>
-          <div className="container">
-            <VoteringListContainer query={query} asPath={asPath} page={1} />
-          </div>
-        </div>
+          <VoteringList
+            query={query}
+            asPath={asPath}
+            {...this.props}
+            page={1}
+          />
+        </React.Fragment>
       );
     }
   }

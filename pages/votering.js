@@ -53,6 +53,10 @@ export default withRouter(
       };
     }
     componentDidMount() {
+      this.getPage();
+    }
+
+    getPage() {
       const { bet, id } = this.state;
 
       axios({

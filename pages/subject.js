@@ -65,6 +65,26 @@ export default withRouter(
       ];
     }
 
+    componentDidMount() {
+      this.getData();
+    }
+
+    static async getInitialProps({ ...props }) {
+      const id = props.query.id;
+      var result = [];
+      var output = [];
+      result = await new Promise((resolve, reject) => {
+        firebase
+          .firestore()
+          .collection("Data")
+          .doc("Pages")
+          .onSnapshot({ includeMetadataChanges: true }, function(snapshot) {
+            resolve(snapshot.data()[id]);
+          });
+      });
+      return { data: result };
+    }
+
     async fetchFromDatabase(party, index) {
       let tags = this.props.data.opinions;
       let subject = await new Promise((resolve, reject) => {
@@ -103,34 +123,9 @@ export default withRouter(
       });
     }
 
-    componentDidMount() {
-      this.getData();
-    }
-
-    static async getInitialProps({ ...props }) {
-      const id = props.query.id;
-      var result = [];
-      var output = [];
-      result = await new Promise((resolve, reject) => {
-        firebase
-          .firestore()
-          .collection("Data")
-          .doc("Pages")
-          .onSnapshot({ includeMetadataChanges: true }, function(snapshot) {
-            resolve(snapshot.data()[id]);
-          });
-      });
-      return { data: result };
-    }
-    renderPartyComponent(party) {
-      if (party.data.length > 0) {
-        return <PartyComponent key={party.name} party={party} />;
-      }
-    }
-
     render() {
-      const data = this.props.data;
-      let partydata = this.state.partydata;
+      const { data } = this.props;
+      const { partydata } = this.state;
       return (
         <React.Fragment>
           <Head>
@@ -150,7 +145,11 @@ export default withRouter(
             <LoadCircle />
           ) : (
             <div className="container">
-              {partydata.map(party => this.renderPartyComponent(party))}
+              {partydata.map(party => {
+                if (party.data.length > 0) {
+                  return <PartyComponent key={party.name} party={party} />;
+                }
+              })}
             </div>
           )}
         </React.Fragment>

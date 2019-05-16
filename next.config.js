@@ -1,8 +1,9 @@
-const withCSS = require("@zeit/next-css");
-const withSass = require("@zeit/next-sass");
-const webpack = require("webpack");
+const withCSS = require('@zeit/next-css');
+const withSass = require('@zeit/next-sass');
+// eslint-disable-next-line import/no-extraneous-dependencies
+const webpack = require('webpack');
 
-require("dotenv").config();
+require('dotenv').config();
 
 module.exports = withCSS(
   withSass({

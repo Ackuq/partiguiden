@@ -5,7 +5,7 @@ import { withStyles } from '@material-ui/core/styles';
 import parse from 'html-react-parser';
 import styles from '../../styles';
 
-export default withStyles(styles)(({ beslut, notisBeskrivning, classes }) => (
+const Beslut = ({ beslut, notisBeskrivning, classes }) => (
   <div className={classes.contentContainer}>
     <Typography variant="h5" color="inherit" gutterBottom>
       Beslut
@@ -16,4 +16,6 @@ export default withStyles(styles)(({ beslut, notisBeskrivning, classes }) => (
     </Typography>
     {parse(notisBeskrivning)}
   </div>
-));
+);
+
+export default withStyles(styles)(Beslut);

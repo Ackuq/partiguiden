@@ -37,7 +37,10 @@ export default withStyles(voteringResult)(({ votes, classes }) => {
           <div className={classes.parties}>
             {votes.ja.map(party => (
               <Typography variant="h6" color="textSecondary" key={`${party}`}>
-                <img src={`/static/images/party-logos/${party}.svg`} alt="party logo" />
+                <img
+                  src={`/static/images/party-logos/${party.toUpperCase()}.svg`}
+                  alt="party logo"
+                />
               </Typography>
             ))}
           </div>
@@ -52,7 +55,10 @@ export default withStyles(voteringResult)(({ votes, classes }) => {
           <div className={classes.parties}>
             {votes.nej.map(party => (
               <Typography variant="h6" color="textSecondary" key={`${party}`}>
-                <img src={`/static/images/party-logos/${party}.svg`} alt="party logo" />
+                <img
+                  src={`/static/images/party-logos/${party.toUpperCase()}.svg`}
+                  alt="party logo"
+                />
               </Typography>
             ))}
           </div>

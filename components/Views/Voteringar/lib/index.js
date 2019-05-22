@@ -1,3 +1,4 @@
 import getMaxVotes from './getMaxVotes';
+import getVotes from './getVotes';
 
-export default getMaxVotes;
+export { getMaxVotes, getVotes };

@@ -9,28 +9,38 @@ import { useStateValue } from '../../../../lib/stateProvider';
 
 import styles from './styles';
 
-const FilterCategories = ({ classes }) => {
+const FilterCategories = ({ classes, loadAll }) => {
   const [{ filter }, dispatch] = useStateValue();
+
+  const renderCheckBox = object => (
+    <FormControlLabel
+      key={object}
+      classes={{ root: classes.checkBox }}
+      control={
+        <Checkbox
+          color="primary"
+          checked={filter.org.includes(object)}
+          onChange={event => {
+            if (event.target.checked) dispatch({ type: 'ADD_ORG_TO_FILTER', org: object });
+            else dispatch({ type: 'REMOVE_ORG_FROM_FILTER', org: object });
+          }}
+        />
+      }
+      label={table[object].desc}
+    />
+  );
+
   return (
     <div className={classes.catergoryContainer}>
-      <FormGroup>
-        {table.map(object => (
-          <FormControlLabel
-            key={object.code}
-            control={
-              <Checkbox
-                color="primary"
-                checked={filter.org.includes(object.code)}
-                onChange={event => {
-                  if (event.target.checked)
-                    dispatch({ type: 'ADD_ORG_TO_FILTER', org: object.code });
-                  else dispatch({ type: 'REMOVE_ORG_FROM_FILTER', org: object.code });
-                }}
-              />
-            }
-            label={object.desc}
-          />
-        ))}
+      <FormGroup classes={{ root: classes.formGroupRoot }}>
+        {Object.keys(table)
+          .slice(0, 5)
+          .map(object => renderCheckBox(object))}
+
+        {loadAll &&
+          Object.keys(table)
+            .slice(5, table.length)
+            .map(object => renderCheckBox(object))}
       </FormGroup>
     </div>
   );

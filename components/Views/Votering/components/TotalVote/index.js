@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import CircularProgress from '@material-ui/core/CircularProgress';
 import { withStyles } from '@material-ui/core/styles';
 import { PieChart, Pie, Cell, ResponsiveContainer } from 'recharts';
@@ -49,46 +49,35 @@ const renderCustomizedLabel = ({
   );
 };
 
-export default withStyles(styles)(
-  class TotalVote extends React.Component {
-    state = {
-      data: null
-    };
+const TotalVote = ({ voting, classes }) => {
+  const data = useState(createData(voting))[0];
 
-    componentDidMount() {
-      const { voting } = this.props;
-      this.setState({ data: createData(voting) });
-    }
+  return (
+    <React.Fragment>
+      {data ? (
+        <ResponsiveContainer height={300} className={classes.pieChartContainer}>
+          <PieChart>
+            <Pie
+              data={data}
+              fill="#8884d8"
+              dataKey="value"
+              paddingAngle={5}
+              innerRadius={60}
+              outerRadius={80}
+              label={renderCustomizedLabel}
+              labelLine={false}
+            >
+              {data.map((entry, index) => (
+                <Cell key={`cell-${entry}`} fill={COLORS[index % COLORS.length]} />
+              ))}
+            </Pie>
+          </PieChart>
+        </ResponsiveContainer>
+      ) : (
+        <CircularProgress />
+      )}
+    </React.Fragment>
+  );
+};
 
-    render() {
-      const { classes } = this.props;
-      const { data } = this.state;
-      return (
-        <React.Fragment>
-          {data ? (
-            <ResponsiveContainer height={300} className={classes.pieChartContainer}>
-              <PieChart>
-                <Pie
-                  data={data}
-                  fill="#8884d8"
-                  dataKey="value"
-                  paddingAngle={5}
-                  innerRadius={60}
-                  outerRadius={80}
-                  label={renderCustomizedLabel}
-                  labelLine={false}
-                >
-                  {data.map((entry, index) => (
-                    <Cell key={`cell-${entry}`} fill={COLORS[index % COLORS.length]} />
-                  ))}
-                </Pie>
-              </PieChart>
-            </ResponsiveContainer>
-          ) : (
-            <CircularProgress />
-          )}
-        </React.Fragment>
-      );
-    }
-  }
-);
+export default withStyles(styles)(TotalVote);

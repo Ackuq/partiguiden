@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 /* Material ui components */
 import { withStyles } from '@material-ui/core/styles';
 import ButtonBase from '@material-ui/core/ButtonBase';
@@ -10,96 +10,72 @@ import RiksdagsListContainer from './RiksdagsbeslutListContainer';
 import Riksdagsbeslut from '../Riksdagsbeslut/Riksdagsbeslut';
 import LoadCircle from '../../../../LoadCircle';
 
+import { useStateValue } from '../../../../../lib/stateProvider';
+
 import styles from './styles';
 
-export default withStyles(styles)(
-  class RiksdagsList extends React.Component {
-    constructor(props) {
-      super(props);
+const RiksdagsList = ({ classes, page }) => {
+  const [beslut, setBeslut] = useState([]);
+  const [loading, setLoading] = useState(false);
+  const [lastPage, setLastPage] = useState(true);
+  const [next, setNext] = useState(false);
+  const { filter } = useStateValue()[0];
 
-      this.state = {
-        beslut: [],
-        loading: true,
-        next: false,
-        lastPage: true,
-        nextPage: props.page + 1,
-        page: props.page,
-        query: props.query,
-        asPath: props.asPath
-      };
-    }
+  const getPage = () => {
+    const { rm, search } = filter;
 
-    static getDerivedStateFromProps(nextProps, prevState) {
-      if (nextProps.asPath !== prevState.asPath) {
-        return { asPath: nextProps.asPath, query: nextProps.query, page: 1 };
-      }
-      return null;
-    }
+    const org = filter.org.join('&org=');
 
-    componentDidMount() {
-      this.getPage();
-    }
+    const url = `https://data.riksdagen.se/dokumentlista/?sok=${search}&doktyp=bet&org=${org}&rm=${rm}&dokstat=beslutade&sort=beslutsdag&sortorder=desc&utformat=json&p=${page}`;
 
-    componentDidUpdate(prevProps, prevState) {
-      if (prevState.asPath !== this.state.asPath) {
-        this.getPage();
-      }
-    }
+    axios({
+      method: 'get',
+      url
+    }).then(response => {
+      const { dokumentlista } = response.data;
 
-    getPage() {
-      const { page } = this.state;
-      const url = `https://data.riksdagen.se/dokumentlista/?u17=22%2c22&avd=dokument&doktyp=bet&beslutad=1&sort=beslutsdag&sortorder=desc&utformat=json&p=${page}`;
+      const pages = parseInt(dokumentlista['@sidor'], 10);
 
-      axios({
-        method: 'get',
-        url
-      }).then(response => {
-        const { dokumentlista } = response.data;
-        const lastPage = page === dokumentlista['@sidor'];
-        this.setState({
-          beslut: dokumentlista.dokument,
-          loading: false,
-          lastPage
-        });
-      });
-    }
+      // eslint-disable-next-line eqeqeq
+      setLastPage(parseInt(page, 10) === pages || pages === 0);
+      setBeslut(dokumentlista.dokument);
+      setLoading(false);
+    });
+  };
 
-    render() {
-      const { loading, beslut, next, nextPage, lastPage } = this.state;
-      const { classes } = this.props;
-      return (
+  useEffect(() => getPage(), [filter]);
+
+  return (
+    <React.Fragment>
+      {loading ? (
+        <LoadCircle />
+      ) : (
         <React.Fragment>
-          {loading ? (
-            <LoadCircle />
-          ) : (
+          <Grid className={classes.listContainer} container spacing={16}>
+            {beslut &&
+              beslut.map(beslutObject => (
+                <Grid item xs={12} key={beslutObject.dok_id}>
+                  <Riksdagsbeslut beslut={beslutObject} />
+                </Grid>
+              ))}
+          </Grid>
+          {!lastPage && (
             <React.Fragment>
-              <Grid className={classes.listContainer} container spacing={16}>
-                {beslut.map(beslutObject => (
-                  <Grid item xs={12} key={beslutObject.notisrubrik}>
-                    <Riksdagsbeslut beslut={beslutObject} />
-                  </Grid>
-                ))}
-              </Grid>
-              {!lastPage && (
-                <React.Fragment>
-                  {next ? (
-                    <RiksdagsListContainer page={nextPage} />
-                  ) : (
-                    <div className={classes.buttonContainer}>
-                      <ButtonBase
-                        className={classes.loadMore}
-                        onClick={() => this.setState({ next: true })}
-                      >
-                        Ladda mer
-                      </ButtonBase>
-                    </div>
-                  )}
-                </React.Fragment>
+              {next ? (
+                <RiksdagsListContainer page={page + 1} />
+              ) : (
+                <div className={classes.buttonContainer}>
+                  <ButtonBase className={classes.loadMore} onClick={() => setNext(true)}>
+                    Ladda mer
+                  </ButtonBase>
+                </div>
               )}
             </React.Fragment>
           )}
         </React.Fragment>
-      );
-    }
-  }
-);
+      )}
+    </React.Fragment>
+  );
+};
+
+export default withStyles(styles)(RiksdagsList);

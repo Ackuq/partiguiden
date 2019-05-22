@@ -1,12 +1,13 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { withRouter } from 'next/router';
 import Head from 'next/head';
 import axios from 'axios';
-import LoadCircle from '../../LoadCircle';
+import { parseString } from 'xml2js';
 
+import LoadCircle from '../../LoadCircle';
 import Votering from './Votering';
 
-import getVotes from './lib';
+import { getVotes } from '../Voteringar/lib';
 
 const getMatches = (forslag, referens) => {
   let newForslag = forslag.replace(/(<br>)|<BR(\/)>/gm, '');
@@ -20,8 +21,12 @@ const getMatches = (forslag, referens) => {
 
   for (let i = 0; i < matches.length; i += 1) {
     for (let j = 0; j < referens.length; j += 1) {
-      if (matches[i][1] === referens[j].ref_dok_rm && matches[i][2] === referens[j].ref_dok_bet) {
-        matches[i][3] = referens[j].ref_dok_id;
+      if (
+        matches[i][1] === referens[j].ref_dok_rm[0] &&
+        matches[i][2] === referens[j].ref_dok_bet[0]
+      ) {
+        // eslint-disable-next-line prefer-destructuring
+        matches[i][3] = referens[j].ref_dok_id[0];
       }
     }
   }
@@ -29,126 +34,104 @@ const getMatches = (forslag, referens) => {
   return { matches, newForslag };
 };
 
-export default withRouter(
-  class VoteringContainer extends React.Component {
-    constructor(props) {
-      super(props);
-      const { id, bet } = props.router.query;
+const VoteringContainer = ({ router }) => {
+  const [votering, setVotering] = useState({
+    bet: router.query.bet,
+    id: router.query.id,
+    dokument: {}
+  });
+  const [loading, setLoading] = useState(true);
 
-      this.state = {
-        bet,
-        id,
-        beslut: {},
-        bilaga: [],
-        dokument: [],
-        behandladeDokument: [],
-        forslag: '',
-        loading: true
-      };
-    }
-
-    componentDidMount() {
-      this.getPage();
-    }
-
-    getPage() {
-      const { bet, id } = this.state;
-
-      axios({
-        method: 'get',
-        url: `https://data.riksdagen.se/votering/${id}.json`
-      }).then(response => {
+  useEffect(() => {
+    axios({
+      method: 'get',
+      url: `https://data.riksdagen.se/votering/${votering.id}.json`
+    })
+      .then(response => {
         const url = response.data.votering.dokument.dokumentstatus_url_xml.replace('http', 'https');
         axios({
           method: 'get',
-          url: `${url}.json`
+          url: `${url}.xml`
         }).then(res => {
-          const { dokumentstatus } = res.data;
+          parseString(res.data, (err, result) => {
+            const { dokumentstatus } = result;
+            const { utskottsforslag } = dokumentstatus.dokutskottsforslag[0];
+            const currUtskottsforslag = Array.isArray(utskottsforslag)
+              ? utskottsforslag[votering.bet - 1]
+              : utskottsforslag;
 
-          const utskottsforslag = Array.isArray(dokumentstatus.dokutskottsforslag.utskottsforslag)
-            ? dokumentstatus.dokutskottsforslag.utskottsforslag[bet - 1]
-            : dokumentstatus.dokutskottsforslag.utskottsforslag;
+            const { matches, newForslag } = getMatches(
+              currUtskottsforslag.forslag[0],
+              dokumentstatus.dokreferens[0].referens
+            );
 
-          const { uppgift } = dokumentstatus.dokuppgift;
-          const beslut = uppgift.find(el => {
-            return el.kod === 'rdbeslut';
-          });
-          const notisBeskrivning = uppgift.find(el => {
-            return el.kod === 'notis';
-          });
-          const notisRubrik = uppgift.find(el => {
-            return el.kod === 'notisrubrik';
-          });
+            const { uppgift } = dokumentstatus.dokuppgift[0];
 
-          const bilaga = dokumentstatus.dokbilaga ? dokumentstatus.dokbilaga.bilaga[0] : null;
+            const beslut = uppgift.find(el => {
+              return el.kod[0] === 'rdbeslut';
+            });
 
-          const { matches, newForslag } = getMatches(
-            utskottsforslag.forslag,
-            dokumentstatus.dokreferens.referens
-          );
+            const notisBeskrivning = uppgift.find(el => {
+              return el.kod[0] === 'notis';
+            });
 
-          const { table } = utskottsforslag.votering_sammanfattning_html;
-          const tableRow = Array.isArray(table) ? table[table.length - 1].tr : table.tr;
+            const notisRubrik = uppgift.find(el => {
+              return el.kod[0] === 'notisrubrik';
+            });
 
-          const voting = getVotes(tableRow);
+            const { table } = currUtskottsforslag.votering_sammanfattning_html[0];
+            const tableRow = Array.isArray(table) ? table[table.length - 1].tr : table.tr;
+            setVotering({
+              ...votering,
+              forslag: newForslag,
+              behandladeDokument: matches,
+              dokument: dokumentstatus.dokument[0],
+              bilaga: dokumentstatus.dokbilaga[0] ? dokumentstatus.dokbilaga[0].bilaga[0] : null,
+              beslut: beslut ? beslut.text[0] : '',
+              voting: getVotes(tableRow),
+              notisRubrik,
+              notisBeskrivning
+            });
 
-          this.setState({
-            forslag: newForslag,
-            behandladeDokument: matches,
-            dokument: dokumentstatus.dokument,
-            bilaga,
-            beslut: beslut ? beslut.text : '',
-            voting,
-            loading: false,
-            notisRubrik,
-            notisBeskrivning
+            setLoading(false);
           });
         });
+      })
+      .catch(thrown => {
+        // eslint-disable-next-line no-console
+        if (axios.isCancel(thrown)) console.log('Request canceled', thrown.message);
       });
-    }
+  }, []);
 
-    render() {
-      const {
-        dokument,
-        beslut,
-        forslag,
-        behandladeDokument,
-        bilaga,
-        loading,
-        bet,
-        voting,
-        notisRubrik,
-        notisBeskrivning
-      } = this.state;
-      return (
-        <React.Fragment>
-          <Head>
-            <title>{dokument.titel} | Votering | Partiguiden.nu</title>
-            <meta
-              name="description"
-              content={`Hur har partiernat röstat i voteringen om ${dokument.titel}`}
-            />
-          </Head>
-          <div className="list-title text-center">
-            <h2>
-              {dokument.titel} forslagspunkt {bet}
-            </h2>
-          </div>
-          {loading ? (
-            <LoadCircle />
-          ) : (
-            <Votering
-              beslut={beslut}
-              forslag={forslag}
-              bilaga={bilaga}
-              behandladeDokument={behandladeDokument}
-              voting={voting}
-              notisRubrik={notisRubrik.text}
-              notisBeskrivning={notisBeskrivning.text}
-            />
-          )}
-        </React.Fragment>
-      );
-    }
-  }
-);
+  return (
+    <React.Fragment>
+      <Head>
+        <title>{votering.dokument.titel} | Votering | Partiguiden.nu</title>
+        <meta
+          name="description"
+          content={`Hur har partiernat röstat i voteringen om ${votering.dokument.titel}`}
+        />
+      </Head>
+      <div className="list-title text-center">
+        <h2>
+          {votering.dokument.titel} förslagspunkt {votering.bet}
+        </h2>
+      </div>
+      {loading ? (
+        <LoadCircle />
+      ) : (
+        <Votering
+          beslut={votering.beslut}
+          forslag={votering.forslag}
+          bilaga={votering.bilaga}
+          behandladeDokument={votering.behandladeDokument}
+          voting={votering.voting}
+          notisRubrik={votering.notisRubrik.text[0]}
+          notisBeskrivning={votering.notisBeskrivning.text[0]}
+        />
+      )}
+    </React.Fragment>
+  );
+};
+
+export default withRouter(VoteringContainer);

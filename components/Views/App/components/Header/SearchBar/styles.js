@@ -8,6 +8,7 @@ const styles = theme => ({
     [theme.breakpoints.up('md')]: {
       width: '75%'
     },
+
     float: 'right',
     boxShadow: '0 1px 3px rgba(0, 0, 0, 0.12)',
     '-webkit-transition': '300ms ease-in-out',
@@ -26,6 +27,7 @@ const styles = theme => ({
     }
   },
   inputFocused: {
+    width: '100%',
     backgroundColor: grey[50],
     '& input, & svg': {
       color: grey[800]

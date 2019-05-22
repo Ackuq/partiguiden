@@ -1,6 +1,6 @@
 const styles = theme => ({
   arrow: {
-    fontSize: '3.5rem',
+    fontSize: '4rem',
     color: theme.palette.primary.dark
   },
   circleButton: {

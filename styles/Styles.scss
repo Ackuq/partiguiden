@@ -1,11 +1,10 @@
 // Roboto
-@import "roboto";
+@import 'roboto';
 // Bootstrap
-@import "bootstrap/containers";
-@import "bootstrap/text";
+@import 'bootstrap/containers';
+@import 'bootstrap/text';
 // Custom sass
-@import "partyColor";
-@import "dokumentStyles";
+@import 'partyColor';
 
 .list-title {
   -webkit-box-shadow: 0 0 #ffffff inset, 0 1px 3px rgba(34, 25, 25, 0.4);
@@ -31,12 +30,17 @@
   color: #f8f9fa;
 }
 
+.responsive-ad iframe {
+  display: flex;
+  margin: auto;
+}
+
 html {
   .standpoints {
     border-bottom: 2px solid;
   }
   .partyOpinions:before {
-    content: "";
+    content: '';
     position: absolute;
     left: -0.75rem;
     top: 0.5rem;
@@ -94,7 +98,7 @@ main {
 body {
   height: 100%;
   margin: 0; // 1
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;

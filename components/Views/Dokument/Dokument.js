@@ -8,6 +8,8 @@ import parse from 'html-react-parser';
 import axios from 'axios';
 import LoadCircle from '../../LoadCircle';
 
+import './styles.scss';
+
 const Dokument = ({ router }) => {
   const [body, setBody] = useState(null);
 
@@ -23,12 +25,13 @@ const Dokument = ({ router }) => {
       for (let i = 0; i < html.length; i += 1) {
         if (html[i].type && html[i].type === 'div') {
           initialBody = html[i];
+          console.log(html[i]);
           break;
         }
       }
       setBody(initialBody);
     });
-  });
+  }, []);
 
   return (
     <React.Fragment>

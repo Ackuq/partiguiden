@@ -9,7 +9,7 @@ import ButtonBase from '@material-ui/core/ButtonBase';
 import styles from './styles';
 
 const ToTopButton = ({ classes }) => (
-  <ScrollUp showUnder={500} style={{ bottom: 15, right: '5%' }}>
+  <ScrollUp showUnder={500} style={{ bottom: '1rem', left: '5%', right: '95%' }}>
     <ButtonBase classes={{ root: classes.circleButton }}>
       <ArrowUpRounded classes={{ root: classes.arrow }} />
     </ButtonBase>

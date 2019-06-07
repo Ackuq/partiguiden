@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Typography from '@material-ui/core/Typography';
 
 import Collapse from '@material-ui/core/Collapse';
@@ -9,51 +9,39 @@ import { Link } from '../../../../../lib/routes';
 
 import styles from '../../styles';
 
-export default withStyles(styles)(
-  class BehandladeDokument extends React.Component {
-    state = {
-      visible: false
-    };
+const BehandladeDokument = ({ classes, behandladeDokument }) => {
+  const [visible, setVisible] = useState(false);
 
-    render() {
-      const { visible } = this.state;
-      const { behandladeDokument, classes } = this.props;
-
-      const btnclass = visible ? classes.arrowVisible : '';
-
-      return (
-        <div className={classes.contentContainer}>
-          <ButtonBase
-            onClick={() => this.setState({ visible: !visible })}
-            classes={{ root: classes.button }}
-          >
-            <Typography variant="h5" color="inherit">
-              Behandlade dokument
-            </Typography>
-            <ArrowDownRounded
-              classes={{
-                root: `${classes.arrow} ${btnclass}`
-              }}
-            />
-          </ButtonBase>
-          <Collapse in={visible}>
-            <div style={{ marginTop: '1.25rem' }}>
-              {behandladeDokument.map((dokument, index) => (
-                <React.Fragment key={dokument[3]}>
-                  <Link route="dokument" params={{ id: dokument[3] }}>
-                    <a>
-                      <Typography variant="body1" color="primary">
-                        [{index}] {dokument[0]}
-                      </Typography>
-                    </a>
-                  </Link>
-                  <br />
-                </React.Fragment>
-              ))}
-            </div>
-          </Collapse>
+  return (
+    <div className={classes.contentContainer}>
+      <ButtonBase onClick={() => setVisible(!visible)} classes={{ root: classes.button }}>
+        <Typography variant="h5" color="inherit">
+          Behandlade dokument
+        </Typography>
+        <ArrowDownRounded
+          classes={{
+            root: `${classes.arrow} ${visible ? classes.arrowVisible : ''}`
+          }}
+        />
+      </ButtonBase>
+      <Collapse in={visible}>
+        <div style={{ marginTop: '1.25rem' }}>
+          {behandladeDokument.map((dokument, index) => (
+            <React.Fragment key={dokument[3]}>
+              <Link route="dokument" params={{ id: dokument[3] }}>
+                <a>
+                  <Typography variant="body1" color="primary">
+                    [{index}] {dokument[0]}
+                  </Typography>
+                </a>
+              </Link>
+              <br />
+            </React.Fragment>
+          ))}
         </div>
-      );
-    }
-  }
-);
+      </Collapse>
+    </div>
+  );
+};
+
+export default withStyles(styles)(BehandladeDokument);

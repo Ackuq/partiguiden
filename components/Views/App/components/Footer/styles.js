@@ -1,6 +1,5 @@
 const styles = theme => ({
   root: {
-    marginTop: '1rem',
     padding: '1.5rem 0',
     color: theme.palette.primary.contrastText,
     background: theme.palette.primary.main,

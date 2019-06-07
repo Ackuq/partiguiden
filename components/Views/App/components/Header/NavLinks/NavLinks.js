@@ -9,6 +9,8 @@ import { Router } from '../../../../../../lib/routes';
 
 import styles from './styles';
 
+import { useStateValue } from '../../../../../../lib/stateProvider';
+
 const getPages = () => [
   { href: '/', title: 'Hem' },
   {
@@ -22,11 +24,13 @@ const getPages = () => [
 
 const NavLinks = ({ classes, router }) => {
   const [value, setValue] = useState(0);
+  const dispatch = useStateValue()[1];
 
   useEffect(() => {
     const { route } = router;
 
     let index = getPages().findIndex(x => x.href === router.pathname);
+
     if (index < 0) {
       if (route === '/subject') index = 1;
       else if (route === '/beslut') index = 2;
@@ -48,6 +52,14 @@ const NavLinks = ({ classes, router }) => {
   const handleChange = (event, newValue) => {
     event.preventDefault();
     setValue(newValue);
+
+    if (
+      getPages()[newValue].title === 'Voteringar' ||
+      getPages()[newValue].title === 'Riksdagsbeslut'
+    ) {
+      dispatch({ type: 'RESET_FILTER' });
+    }
+
     Router.pushRoute(getPages()[newValue].href).then(() => window.scrollTo(0, 0));
   };
 

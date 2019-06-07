@@ -11,7 +11,7 @@ export default ({ payload, x, y }) => {
     <image
       x={`${X}`}
       y={`${Y}`}
-      href={`../../static/images/party-logos/${value}.svg`}
+      href={`../../static/images/party-logos/${value.toUpperCase()}.svg`}
       width="30"
       height="30"
     />

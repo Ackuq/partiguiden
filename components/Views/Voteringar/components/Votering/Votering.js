@@ -9,13 +9,13 @@ import Typography from '@material-ui/core/Typography';
 
 /* Custom components */
 import axios from 'axios';
+import { parseString } from 'xml2js';
 // eslint-disable-next-line import/no-cycle
 import { VoteringResult } from '..';
 
 /* Functions */
 import getOrganInfo from '../../../../../lib/authorityTable';
-import getVotes from '../../../Votering/lib/getVotes';
-import getMaxVotes from '../../lib';
+import { getMaxVotes, getVotes } from '../../lib';
 
 import { Link } from '../../../../../lib/routes';
 
@@ -28,28 +28,36 @@ const Votering = ({ classes, votering: { id, beteckning, kall_id, tempbeteckning
   const [rubrik, setRubrik] = useState('');
 
   useEffect(() => {
-    const bet = `${id.substring(0, 2)}01${beteckning}`;
+    const newBet = beteckning.split('p')[0];
+
+    const bet = `${id.substring(0, 2)}01${newBet}`;
+
     const fetchData = async () => {
       axios({
         method: 'get',
-        url: `https://data.riksdagen.se/dokumentstatus/${bet}.json`
-      }).then(response => {
-        if (typeof response.data === 'string') return;
+        url: `https://data.riksdagen.se/dokumentstatus/${bet}.xml`
+      })
+        .then(response => {
+          parseString(response.data, (err, result) => {
+            const { dokumentstatus } = result;
+            const { utskottsforslag } = dokumentstatus.dokutskottsforslag[0];
+            const voteringObject = Array.isArray(utskottsforslag)
+              ? utskottsforslag[tempbeteckning - 1]
+              : utskottsforslag;
+            const { table } = voteringObject.votering_sammanfattning_html[0];
+            const tableRow = Array.isArray(table) ? table[table.length - 1].tr : table.tr;
 
-        const { dokumentstatus } = response.data;
-        const { utskottsforslag } = dokumentstatus.dokutskottsforslag;
-
-        const voteringObject = Array.isArray(utskottsforslag)
-          ? utskottsforslag[tempbeteckning - 1]
-          : utskottsforslag;
-
-        const { table } = voteringObject.votering_sammanfattning_html;
-        const tableRow = Array.isArray(table) ? table[table.length - 1].tr : table.tr;
-
-        setRubrik(voteringObject.rubrik);
-        setVotes(getMaxVotes(getVotes(tableRow)));
-        setOrgan(getOrganInfo(dokumentstatus.dokument.organ));
-      });
+            setRubrik(voteringObject.rubrik[0]);
+            setVotes(getMaxVotes(getVotes(tableRow)));
+            setOrgan(getOrganInfo(dokumentstatus.dokument[0].organ[0]));
+          });
+        })
+        .catch(thrown => {
+          if (axios.isCancel(thrown)) {
+            // eslint-disable-next-line no-console
+            console.log('Request canceled', thrown.message);
+          }
+        });
     };
     fetchData();
   }, []);

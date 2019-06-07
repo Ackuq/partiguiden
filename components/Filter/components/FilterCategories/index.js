@@ -1,3 +1,4 @@
 import FilterCategories from './FilterCategories';
+import FilterCategoriesButtons from './Buttons';
 
-export default FilterCategories;
+export { FilterCategories, FilterCategoriesButtons };

@@ -1,13 +1,11 @@
 import React from 'react';
 import App, { Container } from 'next/app';
-
 import { MuiThemeProvider } from '@material-ui/core/styles';
 import JssProvider from 'react-jss/lib/JssProvider';
 import ReactGA from 'react-ga';
+
 import getPageContext from '../../../lib/getPageContext';
-
-import { Footer, Header, ToTopButton } from './components';
-
+import { Footer, Header, ToTopButton, CookieBanner } from './components';
 import { StateProvider } from '../../../lib/stateProvider';
 import { initialState, reducer } from '../../../lib/store';
 
@@ -54,6 +52,7 @@ class MyApp extends App {
               </main>
               <Footer />
               <ToTopButton />
+              <CookieBanner />
             </StateProvider>
           </MuiThemeProvider>
         </JssProvider>

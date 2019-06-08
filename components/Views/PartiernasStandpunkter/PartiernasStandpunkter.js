@@ -47,7 +47,7 @@ const PartiernasStandpunkter = ({ classes }) => {
                 id: subject.id,
                 name: subject.name
               })}
-              key={`${subject}`}
+              key={`${subject.id}`}
             />
           ))}
         </Grid>

@@ -21,7 +21,6 @@
   "dependencies": {
     "@material-ui/core": "^3.9.3",
     "@material-ui/icons": "^3.0.2",
-    "@zeit/next-css": "^1.0.1",
     "@zeit/next-sass": "^1.0.1",
     "html-react-parser": "^0.7.0",
     "isomorphic-unfetch": "^3.0.0",
@@ -40,6 +39,7 @@
     "react-themeable": "^1.1.0",
     "react-typed": "^1.1.2",
     "recharts": "^1.5.0",
+    "universal-cookie": "^4.0.0",
     "xml2js": "^0.4.19"
   },
   "devDependencies": {

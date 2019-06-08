@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import fetch from 'isomorphic-unfetch';
 import { withStyles } from '@material-ui/core/styles';
 
 /* Material UI */
@@ -8,7 +9,6 @@ import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 
 /* Custom components */
-import axios from 'axios';
 import { parseString } from 'xml2js';
 // eslint-disable-next-line import/no-cycle
 import { VoteringResult } from '..';
@@ -33,12 +33,10 @@ const Votering = ({ classes, votering: { id, beteckning, kall_id, tempbeteckning
     const bet = `${id.substring(0, 2)}01${newBet}`;
 
     const fetchData = async () => {
-      axios({
-        method: 'get',
-        url: `https://data.riksdagen.se/dokumentstatus/${bet}.xml`
-      })
-        .then(response => {
-          parseString(response.data, (err, result) => {
+      fetch(`https://data.riksdagen.se/dokumentstatus/${bet}.xml`)
+        .then(res => res.text())
+        .then(xml =>
+          parseString(xml, (err, result) => {
             const { dokumentstatus } = result;
             const { utskottsforslag } = dokumentstatus.dokutskottsforslag[0];
             const voteringObject = Array.isArray(utskottsforslag)
@@ -50,14 +48,8 @@ const Votering = ({ classes, votering: { id, beteckning, kall_id, tempbeteckning
             setRubrik(voteringObject.rubrik[0]);
             setVotes(getMaxVotes(getVotes(tableRow)));
             setOrgan(getOrganInfo(dokumentstatus.dokument[0].organ[0]));
-          });
-        })
-        .catch(thrown => {
-          if (axios.isCancel(thrown)) {
-            // eslint-disable-next-line no-console
-            console.log('Request canceled', thrown.message);
-          }
-        });
+          })
+        );
     };
     fetchData();
   }, []);

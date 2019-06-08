@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
+import fetch from 'isomorphic-unfetch';
 /* Material ui components */
 import { withStyles } from '@material-ui/core/styles';
 import ButtonBase from '@material-ui/core/ButtonBase';
 import Grid from '@material-ui/core/Grid';
 
-import axios from 'axios';
 import Ad from 'react-google-publisher-tag';
 
 // eslint-disable-next-line import/no-cycle
@@ -45,17 +45,16 @@ const Voteringar = ({ classes, asPath, query, page }) => {
     const org = filter.org.join('&org=');
     const url = `https://data.riksdagen.se/dokumentlista/?sok=${search}&doktyp=votering&rm=${rm}&bet=${bet}&nr=${num}&org=${org}&sort=datum&sortorder=desc&utformat=json&a=s&p=${page}`;
 
-    axios({
-      method: 'get',
-      url
-    }).then(async response => {
-      const { dokumentlista } = response.data;
-      const pages = parseInt(dokumentlista['@sidor'], 10);
+    fetch(url)
+      .then(res => res.json())
+      .then(data => {
+        const { dokumentlista } = data;
+        const pages = parseInt(dokumentlista['@sidor'], 10);
 
-      setLastPage(parseInt(page, 10) === pages || pages === 0);
-      loadVoteringar(dokumentlista.dokument);
-      await setLoading(false);
-    });
+        setLastPage(parseInt(page, 10) === pages || pages === 0);
+        loadVoteringar(dokumentlista.dokument);
+        setLoading(false);
+      });
   };
 
   useEffect(getPage, [filter]);

@@ -41,11 +41,11 @@ const PartiernasStandpunkter = ({ classes }) => {
       </div>
       {subjects ? (
         <Grid container classes={{ container: classes.subjectList }}>
-          {Object.keys(subjects).map(subject => (
+          {subjects.map(subject => (
             <ListObject
               subject={Object.assign({
-                id: subject,
-                name: subjects[subject].name
+                id: subject.id,
+                name: subject.name
               })}
               key={`${subject}`}
             />

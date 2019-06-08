@@ -1,4 +1,4 @@
-# Partiguiden.nu 2.0 server rendered
+# Partiguiden.nu 2.0
 
 This is the new version of the website partiguiden.nu.
 

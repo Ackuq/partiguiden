@@ -39,8 +39,8 @@ const SearchBar = ({ classes, id }) => {
   useEffect(() => {
     subjectData.then(result => {
       const temp = [];
-      Object.keys(result).forEach(key => {
-        temp.push({ id: key, name: result[key].name });
+      result.forEach(obj => {
+        temp.push({ id: obj.id, name: obj.name });
       });
       setData(temp);
     });

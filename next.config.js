@@ -3,10 +3,9 @@ const withSass = require('@zeit/next-sass');
 // eslint-disable-next-line import/no-extraneous-dependencies
 const webpack = require('webpack');
 
-require('dotenv').config();
-
 module.exports = withCSS(
   withSass({
+    target: 'serverless',
     webpack(config) {
       const env = Object.keys(process.env).reduce((acc, curr) => {
         acc[`process.env.${curr}`] = JSON.stringify(process.env[curr]);

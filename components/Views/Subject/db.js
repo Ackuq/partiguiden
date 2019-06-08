@@ -1,4 +1,4 @@
-import firebase from '../../../lib/db';
+import fetch from 'isomorphic-unfetch';
 
 const getIndex = [
   'Socialdemokraterna',
@@ -12,16 +12,13 @@ const getIndex = [
 
 const getPartyDataFromDB = async (party, tags) =>
   new Promise(resolve => {
-    firebase
-      .firestore()
-      .collection('Parties')
-      .doc(party)
-      .onSnapshot({ includeMetadataChanges: true }, snapshot => {
+    const url = `https://partiguiden-c31f9.appspot.com/party?party=${party}`;
+    fetch(url)
+      .then(res => res.json())
+      .then(data => {
         const temp = [];
-        Object.keys(snapshot.data()).forEach(map => {
-          if (tags.indexOf(snapshot.data()[map].name) !== -1) {
-            temp.push(snapshot.data()[map]);
-          }
+        Object.keys(data).forEach(id => {
+          if (tags.indexOf(data[id].name) > -1) temp.push(data[id]);
         });
         resolve(temp);
       });

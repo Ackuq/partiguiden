@@ -20,8 +20,9 @@ const Subject = ({ router }) => {
 
   useEffect(() => {
     subjectData.then(data => {
-      setName(data[id].name);
-      getData(data[id].opinions).then(opinionData => {
+      const subject = data.find(el => el.id === id);
+      setName(subject.name);
+      getData(subject.opinions).then(opinionData => {
         const filtered = opinionData.filter(party => party !== undefined);
         setPartyData(filtered);
         setLoading(false);

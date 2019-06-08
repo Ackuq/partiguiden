@@ -4,10 +4,8 @@
 ## Enviroment variables
 .env
 
-
 ## Node modules
 node_modules/*
 
-
-## Google cloud files
-.gcloudignore
+## HTTPS certificates
+certificates/

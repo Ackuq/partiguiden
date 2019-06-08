@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
+import fetch from 'isomorphic-unfetch';
 import { withRouter } from 'next/router';
 import Head from 'next/head';
-import axios from 'axios';
 import { parseString } from 'xml2js';
 
 import LoadCircle from '../../LoadCircle';
@@ -43,63 +43,56 @@ const VoteringContainer = ({ router }) => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    axios({
-      method: 'get',
-      url: `https://data.riksdagen.se/votering/${votering.id}.json`
-    })
-      .then(response => {
-        const url = response.data.votering.dokument.dokumentstatus_url_xml.replace('http', 'https');
-        axios({
-          method: 'get',
-          url: `${url}.xml`
-        }).then(res => {
-          parseString(res.data, (err, result) => {
-            const { dokumentstatus } = result;
-            const { utskottsforslag } = dokumentstatus.dokutskottsforslag[0];
-            const currUtskottsforslag = Array.isArray(utskottsforslag)
-              ? utskottsforslag[votering.bet - 1]
-              : utskottsforslag;
+    fetch(`https://data.riksdagen.se/votering/${votering.id}.json`)
+      .then(res => res.json())
+      .then(data => {
+        const url = data.votering.dokument.dokumentstatus_url_xml.replace('http', 'https');
+        fetch(url)
+          .then(res => res.text())
+          .then(xml =>
+            parseString(xml, (err, result) => {
+              const { dokumentstatus } = result;
+              const { utskottsforslag } = dokumentstatus.dokutskottsforslag[0];
+              const currUtskottsforslag = Array.isArray(utskottsforslag)
+                ? utskottsforslag[votering.bet - 1]
+                : utskottsforslag;
 
-            const { matches, newForslag } = getMatches(
-              currUtskottsforslag.forslag[0],
-              dokumentstatus.dokreferens[0].referens
-            );
+              const { matches, newForslag } = getMatches(
+                currUtskottsforslag.forslag[0],
+                dokumentstatus.dokreferens[0].referens
+              );
 
-            const { uppgift } = dokumentstatus.dokuppgift[0];
+              const { uppgift } = dokumentstatus.dokuppgift[0];
 
-            const beslut = uppgift.find(el => {
-              return el.kod[0] === 'rdbeslut';
-            });
+              const beslut = uppgift.find(el => {
+                return el.kod[0] === 'rdbeslut';
+              });
 
-            const notisBeskrivning = uppgift.find(el => {
-              return el.kod[0] === 'notis';
-            });
+              const notisBeskrivning = uppgift.find(el => {
+                return el.kod[0] === 'notis';
+              });
 
-            const notisRubrik = uppgift.find(el => {
-              return el.kod[0] === 'notisrubrik';
-            });
+              const notisRubrik = uppgift.find(el => {
+                return el.kod[0] === 'notisrubrik';
+              });
 
-            const { table } = currUtskottsforslag.votering_sammanfattning_html[0];
-            const tableRow = Array.isArray(table) ? table[table.length - 1].tr : table.tr;
-            setVotering({
-              ...votering,
-              forslag: newForslag,
-              behandladeDokument: matches,
-              dokument: dokumentstatus.dokument[0],
-              bilaga: dokumentstatus.dokbilaga[0] ? dokumentstatus.dokbilaga[0].bilaga[0] : null,
-              beslut: beslut ? beslut.text[0] : '',
-              voting: getVotes(tableRow),
-              notisRubrik,
-              notisBeskrivning
-            });
+              const { table } = currUtskottsforslag.votering_sammanfattning_html[0];
+              const tableRow = Array.isArray(table) ? table[table.length - 1].tr : table.tr;
+              setVotering({
+                ...votering,
+                forslag: newForslag,
+                behandladeDokument: matches,
+                dokument: dokumentstatus.dokument[0],
+                bilaga: dokumentstatus.dokbilaga[0] ? dokumentstatus.dokbilaga[0].bilaga[0] : null,
+                beslut: beslut ? beslut.text[0] : '',
+                voting: getVotes(tableRow),
+                notisRubrik,
+                notisBeskrivning
+              });
 
-            setLoading(false);
-          });
-        });
-      })
-      .catch(thrown => {
-        // eslint-disable-next-line no-console
-        if (axios.isCancel(thrown)) console.log('Request canceled', thrown.message);
+              setLoading(false);
+            })
+          );
       });
   }, []);
 

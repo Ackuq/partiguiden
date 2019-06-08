@@ -1,5 +1,6 @@
 /* eslint-disable camelcase */
 import React, { useState, useEffect } from 'react';
+import fetch from 'isomorphic-unfetch';
 import { withStyles } from '@material-ui/core/styles';
 
 /* Material UI */
@@ -15,8 +16,6 @@ import Button from '@material-ui/core/Button';
 /* HTML parser */
 import parse from 'html-react-parser';
 
-/* Axios */
-import axios from 'axios';
 import { Link, Router } from '../../../../../lib/routes';
 
 import getOrganInfo from '../../../../../lib/authorityTable';
@@ -35,16 +34,19 @@ const Riksdagsbeslut = ({ beslut, classes }) => {
   useEffect(() => {
     let { dokumentstatus_url_xml } = beslut;
     dokumentstatus_url_xml = dokumentstatus_url_xml.replace('.xml', '.json');
-    axios({ method: 'get', url: `https:${dokumentstatus_url_xml}` }).then(response => {
-      if (typeof response.data === 'string') return;
-      const { dokumentstatus } = response.data;
 
-      setOrgan(getOrganInfo(dokumentstatus.dokument.organ));
+    fetch(dokumentstatus_url_xml)
+      .then(res => res.json())
+      .then(data => {
+        if (typeof data === 'string') return;
+        const { dokumentstatus } = data;
 
-      if (dokumentstatus.dokutskottsforslag) {
-        setVoteringarExist(checkVote(dokumentstatus.dokutskottsforslag.utskottsforslag));
-      }
-    });
+        setOrgan(getOrganInfo(dokumentstatus.dokument.organ));
+
+        if (dokumentstatus.dokutskottsforslag) {
+          setVoteringarExist(checkVote(dokumentstatus.dokutskottsforslag.utskottsforslag));
+        }
+      });
   }, []);
 
   const btnclass = visible ? classes.shown : '';

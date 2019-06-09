@@ -12,7 +12,7 @@ const getIndex = [
 
 const getPartyDataFromDB = async (party, tags) =>
   new Promise(resolve => {
-    const url = `https://partiguiden-c31f9.appspot.com/party?party=${party}`;
+    const url = `https://api.partiguiden.nu/party?party=${party}`;
     fetch(url)
       .then(res => res.json())
       .then(data => {
@@ -21,6 +21,11 @@ const getPartyDataFromDB = async (party, tags) =>
           if (tags.indexOf(data[id].name) > -1) temp.push(data[id]);
         });
         resolve(temp);
+      })
+      .catch(err => {
+        // eslint-disable-next-line no-console
+        console.log(err.message);
+        resolve([]);
       });
   });
 

@@ -1,5 +1,6 @@
 /* eslint-disable camelcase */
 import React, { useState, useEffect } from 'react';
+import fetch from 'isomorphic-unfetch';
 import { withStyles } from '@material-ui/core/styles';
 
 /* Material UI */
@@ -15,31 +16,37 @@ import Button from '@material-ui/core/Button';
 /* HTML parser */
 import parse from 'html-react-parser';
 
-/* Axios */
-import axios from 'axios';
-import { Link } from '../../../../../lib/routes';
+import { Link, Router } from '../../../../../lib/routes';
 
 import getOrganInfo from '../../../../../lib/authorityTable';
 import { checkVote } from '../../lib';
 
 import styles from './styles';
 
+import { useStateValue } from '../../../../../lib/stateProvider';
+
 const Riksdagsbeslut = ({ beslut, classes }) => {
   const [voteringarExist, setVoteringarExist] = useState(false);
   const [visible, setVisible] = useState(false);
   const [organ, setOrgan] = useState(null);
+  const dispatch = useStateValue()[1];
 
   useEffect(() => {
     let { dokumentstatus_url_xml } = beslut;
     dokumentstatus_url_xml = dokumentstatus_url_xml.replace('.xml', '.json');
-    axios({ method: 'get', url: `https:${dokumentstatus_url_xml}` }).then(response => {
-      if (typeof response.data === 'string') return;
-      const { dokumentstatus } = response.data;
-      const { utskottsforslag } = dokumentstatus.dokutskottsforslag;
 
-      setOrgan(getOrganInfo(dokumentstatus.dokument.organ));
-      setVoteringarExist(checkVote(utskottsforslag));
-    });
+    fetch(dokumentstatus_url_xml)
+      .then(res => res.json())
+      .then(data => {
+        if (typeof data === 'string') return;
+        const { dokumentstatus } = data;
+
+        setOrgan(getOrganInfo(dokumentstatus.dokument.organ));
+
+        if (dokumentstatus.dokutskottsforslag) {
+          setVoteringarExist(checkVote(dokumentstatus.dokutskottsforslag.utskottsforslag));
+        }
+      });
   }, []);
 
   const btnclass = visible ? classes.shown : '';
@@ -88,18 +95,17 @@ const Riksdagsbeslut = ({ beslut, classes }) => {
                 </Link>
               </Button>
               {voteringarExist && (
-                <Button component="div">
-                  <Link
-                    route="voteringar"
-                    params={{
-                      rm: beslut.rm,
-                      bet: beslut.beteckning,
-                      num: beslut.nummer,
-                      org: `${organ.code}`
-                    }}
-                  >
-                    <a>Läs mer om voteringarna</a>
-                  </Link>
+                <Button
+                  component="div"
+                  onClick={() => {
+                    dispatch({ type: 'SET_ORG', org: organ.code });
+                    dispatch({ type: 'SET_NUM', num: beslut.nummer });
+                    dispatch({ type: 'SET_BET', bet: beslut.beteckning });
+                    dispatch({ type: 'SET_RM', rm: beslut.rm });
+                    Router.pushRoute('/voteringar');
+                  }}
+                >
+                  Läs mer om voteringarna
                 </Button>
               )}
             </Collapse>

@@ -1,15 +1,19 @@
 import React from 'react';
+import { withStyles } from '@material-ui/core/styles';
+
 // eslint-disable-next-line import/no-cycle
 import VoteringListContainer from './VoteringListContainer';
 import Filter from '../../../../Filter';
 
-const VoteringList = props => (
-  <React.Fragment>
-    <div className="container">
+import styles from './styles';
+
+const VoteringList = ({ classes, ...props }) => (
+  <div className={`container ${classes.VoteringListContainer}`}>
+    <div className={`VoteringPage ${classes.voteringarPageContainer}`}>
       <VoteringListContainer {...props} />
     </div>
-    <Filter {...props} />
-  </React.Fragment>
+    <Filter />
+  </div>
 );
 
-export default VoteringList;
+export default withStyles(styles)(VoteringList);

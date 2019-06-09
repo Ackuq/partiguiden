@@ -39,8 +39,8 @@ const SearchBar = ({ classes, id }) => {
   useEffect(() => {
     subjectData.then(result => {
       const temp = [];
-      Object.keys(result).forEach(key => {
-        temp.push({ id: key, name: result[key].name });
+      result.forEach(obj => {
+        temp.push({ id: obj.id, name: obj.name });
       });
       setData(temp);
     });
@@ -153,98 +153,3 @@ const SearchBar = ({ classes, id }) => {
 };
 
 export default withStyles(styles)(withRouter(SearchBar));
-
-/*
-export default withStyles(styles)(
-  withRouter(
-    class SearchBar extends React.Component {
-      constructor(props) {
-        super(props);
-        this.state = {
-          value: '',
-          suggestions: [],
-          data: []
-        };
-        this.handleChange = this.handleChange.bind(this);
-        this.onSuggestionsFetchRequested = this.onSuggestionsFetchRequested.bind(this);
-        this.onSuggestionsClearRequested = this.onSuggestionsClearRequested.bind(this);
-        this.handleSubmit = this.handleSubmit.bind(this);
-        this.renderInputComponent = this.renderInputComponent.bind(this);
-        this.getInitialData = this.getInitialData.bind(this);
-      }
-
-      componentDidMount() {
-        this.getInitialData();
-      }
-
-      async getInitialData() {
-        const result = await new Promise(resolve => {
-          firebase
-            .firestore()
-            .collection('Data')
-            .doc('Pages')
-            .onSnapshot({ includeMetadataChanges: true }, snapshot => {
-              const data = [];
-              Object.keys(snapshot.data()).forEach(map => {
-                data.push(
-                  Object.assign({
-                    id: map,
-                    name: snapshot.data()[map].name
-                  })
-                );
-              });
-              resolve(data);
-            });
-        });
-        this.setState({ data: result });
-      }
-
-      render() {
-        const { value, suggestions } = this.state;
-        const { classes } = this.props;
-
-        const inputProps = {
-          placeholder: 'Sök här...',
-          value,
-          inputProps: {
-            'aria-label': 'search bar'
-          },
-          variant: 'filled',
-          color: 'primary',
-          onKeyDown: this.onKeyDown,
-          onChange: this.handleChange,
-          id: 'search-bar',
-          endAdornment: (
-            <InputAdornment position="end">
-              <SearchIcon nativeColor="#ffffff" />
-            </InputAdornment>
-          )
-        };
-
-        return (
-          <Autosuggest
-            id={this.props.id}
-            theme={{
-              container: classes.container,
-              suggestionsContainerOpen: classes.suggestionsContainerOpen,
-              suggestionsList: classes.suggestionsList,
-              suggestion: classes.suggestion
-            }}
-            suggestions={suggestions}
-            onSuggestionsFetchRequested={this.onSuggestionsFetchRequested}
-            onSuggestionsClearRequested={this.onSuggestionsClearRequested}
-            onSuggestionSelected={this.handleSubmit}
-            getSuggestionValue={getSuggestValue}
-            renderSuggestionsContainer={option => (
-              <Paper {...option.containerProps}>{option.children}</Paper>
-            )}
-            renderSuggestion={this.renderSuggestion}
-            renderInputComponent={this.renderInputComponent}
-            inputProps={inputProps}
-          />
-        );
-      }
-    }
-  )
-);
-*/

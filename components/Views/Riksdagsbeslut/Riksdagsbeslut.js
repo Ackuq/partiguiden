@@ -1,11 +1,15 @@
 import React from 'react';
 /* Next.js Head component */
 import Head from 'next/head';
-import { withRouter } from 'next/router';
+
+import { withStyles } from '@material-ui/core/styles';
+import Filter from '../../Filter';
 
 import RiksdagsbeslutListContainer from './components/RiksdagsbeslutList';
 
-const Riksdagsbeslut = ({ router }) => (
+import styles from './styles';
+
+const Riksdagsbeslut = ({ classes }) => (
   <React.Fragment>
     <Head>
       <title>Riksdagsbeslut | Partiguiden.nu</title>
@@ -17,10 +21,13 @@ const Riksdagsbeslut = ({ router }) => (
     <div className="list-title text-center">
       <h1>Riksdagsbeslut</h1>
     </div>
-    <div className="container">
-      <RiksdagsbeslutListContainer query={router.query} asPath={router.asPath} page={1} />
+    <div className={`container ${classes.beslutListContainer}`}>
+      <div className={classes.beslutPageContainer}>
+        <RiksdagsbeslutListContainer page={1} />
+      </div>
+      <Filter />
     </div>
   </React.Fragment>
 );
 
-export default withRouter(Riksdagsbeslut);
+export default withStyles(styles)(Riksdagsbeslut);

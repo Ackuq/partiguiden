@@ -20,6 +20,22 @@ class MyDocument extends Document {
           <link rel="manifest" href="/static/manifest.json" />
           <meta name="theme-color" content="#00796B" />
           <meta property="og:image" content="/static/images/partiguiden_logo.svg" />
+          {process.env.NODE_ENV === 'production' && (
+            <React.Fragment>
+              <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" />
+              <script
+                // eslint-disable-next-line react/no-danger
+                dangerouslySetInnerHTML={{
+                  __html: `
+                  (adsbygoogle = window.adsbygoogle || []).push({
+                    google_ad_client: "ca-pub-3248338512924345",
+                    enable_page_level_ads: true
+              });       
+              `
+                }}
+              />
+            </React.Fragment>
+          )}
         </Head>
         <body>
           <Main />

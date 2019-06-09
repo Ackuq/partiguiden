@@ -1,0 +1,9 @@
+
+## Next builds
+.next
+
+## Lock file
+yarn.lock
+
+## Node modules
+node_modules

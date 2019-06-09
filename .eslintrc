@@ -1,4 +1,9 @@
 {
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
   "extends": ["airbnb", "prettier", "prettier/react"],
   "plugins": ["prettier"],
   "rules": {
@@ -9,7 +14,6 @@
       }
     ],
     "jsx-a11y/anchor-is-valid": "off",
-
     "prettier/prettier": ["error"],
     "react/forbid-prop-types": 0,
     "react/destructuring-assignment": 0,
@@ -21,12 +25,8 @@
   "globals": {
     "window": true,
     "document": true,
-    "React": true,
-    "localStorage": true,
-    "FormData": true,
-    "FileReader": true,
-    "Blob": true,
-    "navigator": true
+    "process": true,
+    "fetch": false
   },
   "parser": "babel-eslint"
 }

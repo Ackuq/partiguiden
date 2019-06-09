@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "alias": "partiguiden",
+  "alias": ["beta.partiguiden.nu"],
   "name": "partiguiden-app",
   "builds": [{ "src": "next.config.js", "use": "@now/next" }],
   "routes": [
+    { "src": "^/", "dest": "/index" },
     { "src": "^/dokument/(?<id>[^/]+)", "dest": "/dokument?id=$id" },
     { "src": "^/beslut/(?<id>[^/]+)", "dest": "/beslut?id=$id" },
     { "src": "^/subject/(?<id>[^/]+)", "dest": "/subject?id=$id" },

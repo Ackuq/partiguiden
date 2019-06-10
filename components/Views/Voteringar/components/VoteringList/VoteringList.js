@@ -30,7 +30,7 @@ const Voteringar = ({ classes, asPath, query, page }) => {
     getVoteringList({ page, url }).then(result => {
       if (mounted) {
         setLastPage(result.lastPage);
-        setVoteringar(result.voteringar);
+        setVoteringar(result.voteringar || []);
         setLoading(false);
       }
     });

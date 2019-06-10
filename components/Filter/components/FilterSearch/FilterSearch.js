@@ -11,12 +11,16 @@ import { useStateValue } from '../../../../lib/stateProvider';
 import styles from './styles';
 
 const FilterSearch = ({ classes }) => {
-  const dispatch = useStateValue()[1];
+  const [{ filter }, dispatch] = useStateValue();
 
   return (
     <div className={classes.filterSearch}>
       <Input
-        onChange={event => dispatch({ type: 'SET_SEARCH', searchInput: event.target.value })}
+        value={filter.search}
+        onChange={event => {
+          window.scrollTo(0, 0);
+          dispatch({ type: 'SET_SEARCH', searchInput: event.target.value });
+        }}
         fullWidth
         placeholder="Sök..."
         endAdornment={

@@ -4,7 +4,7 @@
   "description": "Partiguiden Server Rendered",
   "main": "next.config.js",
   "scripts": {
-    "dev": "now dev",
+    "start": "now dev",
     "build": "next build",
     "now-build": "next build",
     "lint": "eslint ."
@@ -39,8 +39,8 @@
     "react-themeable": "^1.1.0",
     "react-typed": "^1.1.2",
     "recharts": "^1.5.0",
-    "universal-cookie": "^4.0.0",
-    "xml2js": "^0.4.19"
+    "strip-json-comments": "^3.0.1",
+    "universal-cookie": "^4.0.0"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",

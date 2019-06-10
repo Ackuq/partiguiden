@@ -1,5 +1,3 @@
-import fetch from 'isomorphic-unfetch';
-
 const getIndex = [
   'Socialdemokraterna',
   'Moderaterna',
@@ -10,7 +8,7 @@ const getIndex = [
   'Miljöpartiet'
 ];
 
-const getPartyDataFromDB = async (party, tags) =>
+const getPartyData = async (party, tags) =>
   new Promise(resolve => {
     const url = `https://api.partiguiden.nu/party?party=${party}`;
     fetch(url)
@@ -29,12 +27,12 @@ const getPartyDataFromDB = async (party, tags) =>
       });
   });
 
-const getData = async tags =>
+const getSubjectData = async tags =>
   Promise.all(
     getIndex.map(
       party =>
         new Promise(resolve =>
-          getPartyDataFromDB(party, tags).then(data => {
+          getPartyData(party, tags).then(data => {
             if (data.length > 0) resolve({ name: party, data });
             resolve();
           })
@@ -42,5 +40,4 @@ const getData = async tags =>
     )
   );
 
-// eslint-disable-next-line import/prefer-default-export
-export { getData };
+export default getSubjectData;

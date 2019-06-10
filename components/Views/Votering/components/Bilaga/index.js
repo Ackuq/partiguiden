@@ -7,13 +7,15 @@ const Bilaga = ({ bilaga }) => (
     <Typography variant="h5" color="inherit" gutterBottom>
       Bilaga
     </Typography>
-    <Link href={bilaga.fil_url[0]}>
-      <a target="_blank" rel="noopener">
-        <Typography variant="body1" color="primary">
-          {bilaga.titel[0]} {bilaga.dok_id[0]}
-        </Typography>
-      </a>
-    </Link>
+    {bilaga.map(curr => (
+      <Link href={curr.fil_url} key={curr.fil_url}>
+        <a target="_blank" rel="noopener">
+          <Typography variant="body1" color="primary">
+            {curr.titel} {curr.dok_id}
+          </Typography>
+        </a>
+      </Link>
+    ))}
   </div>
 );
 

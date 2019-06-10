@@ -1,3 +1,4 @@
-import getVotes from './getVotes';
+import getVotering from './getVotering';
 
-export default getVotes;
+// eslint-disable-next-line import/prefer-default-export
+export { getVotering };

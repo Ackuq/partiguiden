@@ -1,5 +1,5 @@
+/* eslint-disable camelcase */
 import React, { useState, useEffect } from 'react';
-import fetch from 'isomorphic-unfetch';
 import { withStyles } from '@material-ui/core/styles';
 
 /* Material UI */
@@ -8,67 +8,53 @@ import CardHeader from '@material-ui/core/CardHeader';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 
-/* Custom components */
-import { parseString } from 'xml2js';
 // eslint-disable-next-line import/no-cycle
 import { VoteringResult } from '..';
 
-/* Functions */
+import { getVotering } from '../../lib';
 import getOrganInfo from '../../../../../lib/authorityTable';
-import { getMaxVotes, getVotes } from '../../lib';
-
 import { Link } from '../../../../../lib/routes';
-
 import styles from './styles';
 
 // eslint-disable-next-line camelcase
-const Votering = ({ classes, votering: { id, beteckning, kall_id, tempbeteckning, titel } }) => {
-  const [organ, setOrgan] = useState(null);
+const Votering = ({ classes, votering: { id, beteckning, tempbeteckning, titel, organ } }) => {
+  const [loading, setLoading] = useState(true);
   const [votes, setVotes] = useState({});
   const [rubrik, setRubrik] = useState('');
 
+  const organObject = getOrganInfo(organ);
+  const dokId = `${id.substring(0, 2)}01${beteckning}`;
+
+  let mounted = true;
+
   useEffect(() => {
-    const newBet = beteckning.split('p')[0];
-
-    const bet = `${id.substring(0, 2)}01${newBet}`;
-
-    const fetchData = async () => {
-      fetch(`https://data.riksdagen.se/dokumentstatus/${bet}.xml`)
-        .then(res => res.text())
-        .then(xml =>
-          parseString(xml, (err, result) => {
-            const { dokumentstatus } = result;
-            const { utskottsforslag } = dokumentstatus.dokutskottsforslag[0];
-            const voteringObject = Array.isArray(utskottsforslag)
-              ? utskottsforslag[tempbeteckning - 1]
-              : utskottsforslag;
-            const { table } = voteringObject.votering_sammanfattning_html[0];
-            const tableRow = Array.isArray(table) ? table[table.length - 1].tr : table.tr;
-
-            setRubrik(voteringObject.rubrik[0]);
-            setVotes(getMaxVotes(getVotes(tableRow)));
-            setOrgan(getOrganInfo(dokumentstatus.dokument[0].organ[0]));
-          })
-        );
+    getVotering({ dokId, tempbeteckning }).then(result => {
+      if (mounted && result) {
+        setVotes(result.maxVotes);
+        setRubrik(result.rubrik);
+        setLoading(false);
+      }
+    });
+    return () => {
+      mounted = false;
     };
-    fetchData();
   }, []);
 
   return (
     <React.Fragment>
-      {organ && (
+      {!loading && (
         <Card elevation={1}>
           <Link
             route="votering"
             params={{
-              id: kall_id,
+              id: dokId,
               bet: tempbeteckning
             }}
           >
             <a>
               <CardHeader
-                title={organ.desc}
-                style={{ background: organ.color }}
+                title={organObject.desc}
+                style={{ background: organObject.color }}
                 classes={{
                   title: classes.headerTitle,
                   root: classes.headerRoot

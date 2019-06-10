@@ -1,4 +1,4 @@
-import getMaxVotes from './getMaxVotes';
-import getVotes from './getVotes';
+import getVotering from './getVotering';
+import getVoteringList from './getVoteringList';
 
-export { getMaxVotes, getVotes };
+export { getVotering, getVoteringList };

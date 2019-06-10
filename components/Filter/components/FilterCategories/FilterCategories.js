@@ -21,6 +21,7 @@ const FilterCategories = ({ classes, loadAll }) => {
           color="primary"
           checked={filter.org.includes(object)}
           onChange={event => {
+            window.scrollTo(0, 0);
             if (event.target.checked) dispatch({ type: 'ADD_ORG_TO_FILTER', org: object });
             else dispatch({ type: 'REMOVE_ORG_FROM_FILTER', org: object });
           }}

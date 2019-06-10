@@ -1,4 +1,4 @@
-import checkVote from './checkVote';
+import getRiksdagsBeslutList from './getRiksdagsBeslutList';
+import checkIfVotesExist from './checkIfVotesExist';
 
-// eslint-disable-next-line import/prefer-default-export
-export { checkVote };
+export { getRiksdagsBeslutList, checkIfVotesExist };

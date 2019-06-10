@@ -8,7 +8,7 @@ import PartyComponent from './components/PartyComponent';
 import LoadCircle from '../../LoadCircle';
 
 import { useStateValue } from '../../../lib/stateProvider';
-import { getData } from './db';
+import getData from './lib/getSubjectData';
 
 const Subject = ({ router }) => {
   const { id } = router.query;

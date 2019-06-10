@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import fetch from 'isomorphic-unfetch';
 /* Material ui components */
 import { withStyles } from '@material-ui/core/styles';
 import ButtonBase from '@material-ui/core/ButtonBase';
@@ -9,7 +8,7 @@ import Grid from '@material-ui/core/Grid';
 import RiksdagsListContainer from './RiksdagsbeslutListContainer';
 import Riksdagsbeslut from '../Riksdagsbeslut/Riksdagsbeslut';
 import LoadCircle from '../../../../LoadCircle';
-
+import { getRiksdagsBeslutList } from '../../lib';
 import { useStateValue } from '../../../../../lib/stateProvider';
 
 import styles from './styles';
@@ -21,28 +20,23 @@ const RiksdagsList = ({ classes, page }) => {
   const [next, setNext] = useState(false);
   const { filter } = useStateValue()[0];
 
-  const getPage = () => {
-    const { rm, search } = filter;
-
+  useEffect(() => {
+    let mounted = true;
+    const { search } = filter;
     const org = filter.org.join('&org=');
+    const url = `https://data.riksdagen.se/dokumentlista/?sok=${search}&doktyp=bet&org=${org}&dokstat=beslutade&sort=datum&sortorder=desc&utformat=json&p=${page}`;
 
-    const url = `https://data.riksdagen.se/dokumentlista/?sok=${search}&doktyp=bet&org=${org}&rm=${rm}&dokstat=beslutade&sort=beslutsdag&sortorder=desc&utformat=json&p=${page}`;
-
-    fetch(url)
-      .then(res => res.json())
-      .then(data => {
-        const { dokumentlista } = data;
-
-        const pages = parseInt(dokumentlista['@sidor'], 10);
-
-        // eslint-disable-next-line eqeqeq
-        setLastPage(parseInt(page, 10) === pages || pages === 0);
-        setBeslut(dokumentlista.dokument);
+    getRiksdagsBeslutList({ url, page }).then(res => {
+      if (mounted) {
+        setBeslut(res.beslut);
+        setLastPage(res.lastPage);
         setLoading(false);
-      });
-  };
-
-  useEffect(() => getPage(), [filter]);
+      }
+    });
+    return () => {
+      mounted = false;
+    };
+  }, [filter]);
 
   return (
     <React.Fragment>

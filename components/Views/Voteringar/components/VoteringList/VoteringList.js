@@ -49,15 +49,19 @@ const Voteringar = ({ classes }) => {
 
   return (
     <React.Fragment>
-      <div className="responsive-ad">
-        <Ad canBeLower={false} path="/21821978280/responsive-ad" />
-      </div>
       <Grid className={classes.listContainer} container spacing={16}>
         {voteringar &&
-          voteringar.map(votering => (
-            <Grid item xs={12} key={votering.id}>
-              <Votering votering={votering} />
-            </Grid>
+          voteringar.map((votering, index) => (
+            <React.Fragment>
+              {!(index % 15) && (
+                <div className="responsive-ad">
+                  <Ad canBeLower={false} path="/21821978280/responsive-ad" />
+                </div>
+              )}
+              <Grid item xs={12} key={votering.id}>
+                <Votering votering={votering} />
+              </Grid>
+            </React.Fragment>
           ))}
       </Grid>
       {loading ? (

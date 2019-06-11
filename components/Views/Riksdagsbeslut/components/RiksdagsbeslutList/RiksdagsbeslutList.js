@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import ButtonBase from '@material-ui/core/ButtonBase';
+import Ad from 'react-google-publisher-tag';
 
 import Riksdagsbeslut from '../Riksdagsbeslut/Riksdagsbeslut';
 import LoadCircle from '../../../../LoadCircle';
@@ -51,10 +52,17 @@ const RiksdagsList = ({ classes }) => {
     <React.Fragment>
       <Grid className={classes.listContainer} container spacing={16}>
         {beslut &&
-          beslut.map(beslutObject => (
-            <Grid item xs={12} key={beslutObject.dok_id}>
-              <Riksdagsbeslut beslut={beslutObject} />
-            </Grid>
+          beslut.map((beslutObject, index) => (
+            <React.Fragment>
+              {!(index % 15) && (
+                <div className="responsive-ad">
+                  <Ad canBeLower={false} path="/21821978280/responsive-ad" />
+                </div>
+              )}
+              <Grid item xs={12} key={beslutObject.dok_id}>
+                <Riksdagsbeslut beslut={beslutObject} />
+              </Grid>
+            </React.Fragment>
           ))}
       </Grid>
       {loading ? (

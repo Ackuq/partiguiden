@@ -7,11 +7,9 @@ const getMatches = (forslag, referens) => {
 
   let matches = newForslag.matchAll(/\b([0-9][0-9][0-9][0-9]\/[0-9][0-9]):(\S+).*/gm);
   matches = [...matches];
-
   for (let i = 0; i < matches.length; i += 1) {
-    newForslag = newForslag.replace(matches[i], `[${i}]`);
+    newForslag = newForslag.replace(matches[i][0], `[${i}]`);
   }
-
   for (let i = 0; i < matches.length; i += 1) {
     for (let j = 0; j < referens.length; j += 1) {
       if (matches[i][1] === referens[j].ref_dok_rm && matches[i][2] === referens[j].ref_dok_bet) {

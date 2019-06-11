@@ -15,16 +15,6 @@ const styles = theme => ({
   listContainer: {
     marginTop: '0.5rem',
     marginBottom: '0.5rem'
-  },
-  [theme.breakpoints.up('sm')]: {
-    VoteringListContainer: {
-      display: 'flex'
-    }
-  },
-  voteringarPageContainer: {
-    display: 'flex',
-    flexDirection: 'column',
-    flex: 1
   }
 });
 export default styles;

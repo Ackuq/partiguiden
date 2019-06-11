@@ -6,7 +6,7 @@ import Typography from '@material-ui/core/Typography';
 
 import { TotalVote, BehandladeDokument, Bilaga, RostFordelning, Beslut } from './components';
 
-export default ({
+const Votering = ({
   forslag,
   bilaga,
   behandladeDokument,
@@ -36,3 +36,5 @@ export default ({
     </Card>
   </div>
 );
+
+export default Votering;

@@ -1,11 +1,14 @@
 import React from 'react';
 /* Next.js Head component */
 import Head from 'next/head';
-import { withRouter } from 'next/router';
+import { withStyles } from '@material-ui/core/styles';
 
-import { VoteringList } from './components';
+import VoteringList from './components/VoteringList';
+import Filter from '../../Filter';
 
-const Voteringar = ({ router, ...rest }) => (
+import styles from './styles';
+
+const Voteringar = ({ classes }) => (
   <React.Fragment>
     <Head>
       <title>Voteringar | Partiguiden.nu</title>
@@ -17,8 +20,13 @@ const Voteringar = ({ router, ...rest }) => (
     <div className="list-title text-center">
       <h1>Voteringar</h1>
     </div>
-    <VoteringList query={router.query} asPath={router.asPath} {...rest} page={1} />
+    <div className={`container ${classes.VoteringListContainer}`}>
+      <div className={`VoteringPage ${classes.voteringarPageContainer}`}>
+        <VoteringList />
+      </div>
+      <Filter />
+    </div>
   </React.Fragment>
 );
 
-export default withRouter(Voteringar);
+export default withStyles(styles)(Voteringar);

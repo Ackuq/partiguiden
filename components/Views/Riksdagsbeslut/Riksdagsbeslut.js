@@ -5,7 +5,7 @@ import Head from 'next/head';
 import { withStyles } from '@material-ui/core/styles';
 import Filter from '../../Filter';
 
-import RiksdagsbeslutListContainer from './components/RiksdagsbeslutList';
+import RiksdagsbeslutList from './components/RiksdagsbeslutList';
 
 import styles from './styles';
 
@@ -22,8 +22,8 @@ const Riksdagsbeslut = ({ classes }) => (
       <h1>Riksdagsbeslut</h1>
     </div>
     <div className={`container ${classes.beslutListContainer}`}>
-      <div className={classes.beslutPageContainer}>
-        <RiksdagsbeslutListContainer page={1} />
+      <div className={classes.beslutPageContainer} id="beslut-container">
+        <RiksdagsbeslutList />
       </div>
       <Filter />
     </div>

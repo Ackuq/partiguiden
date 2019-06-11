@@ -1,4 +1,3 @@
-// eslint-disable-next-line import/no-cycle
-import RiksdagsbeslutListContainer from './RiksdagsbeslutListContainer';
+import RiksdagsbeslutList from './RiksdagsbeslutList';
 
-export default RiksdagsbeslutListContainer;
+export default RiksdagsbeslutList;

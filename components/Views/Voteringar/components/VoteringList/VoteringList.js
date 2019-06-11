@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import ButtonBase from '@material-ui/core/ButtonBase';
-import Grid from '@material-ui/core/Grid';
 import Ad from 'react-google-publisher-tag';
 
 import Votering from '../Votering';
@@ -49,7 +48,7 @@ const Voteringar = ({ classes }) => {
 
   return (
     <React.Fragment>
-      <Grid className={classes.listContainer} container spacing={16}>
+      <div className={classes.listContainer}>
         {voteringar &&
           voteringar.map((votering, index) => (
             <React.Fragment>
@@ -58,12 +57,12 @@ const Voteringar = ({ classes }) => {
                   <Ad canBeLower={false} path="/21821978280/responsive-ad" />
                 </div>
               )}
-              <Grid item xs={12} key={votering.id}>
+              <div>
                 <Votering votering={votering} />
-              </Grid>
+              </div>
             </React.Fragment>
           ))}
-      </Grid>
+      </div>
       {loading ? (
         <LoadCircle />
       ) : (

@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 /* Material ui components */
 import { withStyles } from '@material-ui/core/styles';
-import Grid from '@material-ui/core/Grid';
 import ButtonBase from '@material-ui/core/ButtonBase';
 import Ad from 'react-google-publisher-tag';
 
@@ -50,21 +49,21 @@ const RiksdagsList = ({ classes }) => {
 
   return (
     <React.Fragment>
-      <Grid className={classes.listContainer} container spacing={16}>
+      <div className={classes.listContainer}>
         {beslut &&
           beslut.map((beslutObject, index) => (
-            <React.Fragment>
+            <React.Fragment key={beslutObject.dok_id}>
               {!(index % 15) && (
                 <div className="responsive-ad">
                   <Ad canBeLower={false} path="/21821978280/responsive-ad" />
                 </div>
               )}
-              <Grid item xs={12} key={beslutObject.dok_id}>
+              <div>
                 <Riksdagsbeslut beslut={beslutObject} />
-              </Grid>
+              </div>
             </React.Fragment>
           ))}
-      </Grid>
+      </div>
       {loading ? (
         <LoadCircle />
       ) : (

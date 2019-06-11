@@ -3,7 +3,6 @@ import grey from '@material-ui/core/colors/grey';
 const styles = () => ({
   partyStandpoint: {
     marginBottom: '2rem',
-    marginTop: '2rem',
     '& h3': {
       marginBottom: '0.5rem',
       marginTop: '0.5rem'

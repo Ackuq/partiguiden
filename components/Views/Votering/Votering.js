@@ -15,26 +15,24 @@ const Votering = ({
   notisRubrik,
   notisBeskrivning
 }) => (
-  <div className="container">
-    <Card>
-      <CardContent>
-        <TotalVote voting={voting.Totalt} />
-        <Typography variant="h5" style={{ marginBottom: '1rem' }} color="textSecondary">
-          {notisRubrik}
-        </Typography>
-        <Typography variant="h5" gutterBottom>
-          Utskottets förslag
-        </Typography>
-        <Typography variant="body1" paragraph>
-          {forslag}
-        </Typography>
-        {behandladeDokument && <BehandladeDokument behandladeDokument={behandladeDokument} />}
-        <RostFordelning voting={voting} />
-        <Beslut beslut={beslut} notisBeskrivning={notisBeskrivning} />
-        {bilaga && <Bilaga bilaga={bilaga} />}
-      </CardContent>
-    </Card>
-  </div>
+  <Card>
+    <CardContent>
+      <TotalVote voting={voting.Totalt} />
+      <Typography variant="h5" style={{ marginBottom: '1rem' }} color="textSecondary">
+        {notisRubrik}
+      </Typography>
+      <Typography variant="h5" gutterBottom>
+        Utskottets förslag
+      </Typography>
+      <Typography variant="body1" paragraph>
+        {forslag}
+      </Typography>
+      {behandladeDokument && <BehandladeDokument behandladeDokument={behandladeDokument} />}
+      <RostFordelning voting={voting} />
+      <Beslut beslut={beslut} notisBeskrivning={notisBeskrivning} />
+      {bilaga && <Bilaga bilaga={bilaga} />}
+    </CardContent>
+  </Card>
 );
 
 export default Votering;

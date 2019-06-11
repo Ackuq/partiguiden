@@ -86,13 +86,13 @@ const Riksdagsbeslut = ({ beslut, classes }) => {
                 <Button
                   component="div"
                   onClick={() => {
+                    Router.pushRoute('/voteringar');
+                    window.scrollTo(0, 0);
                     dispatch({ type: 'RESET_FILTER' });
                     dispatch({
                       type: 'SET_SEARCH',
                       searchInput: `${beslut.rm}:${beslut.beteckning}`
                     });
-
-                    Router.pushRoute('/voteringar');
                   }}
                 >
                   Läs mer om voteringarna

@@ -1,3 +1,3 @@
-import VoteringContainer from './VoteringContainer';
+import Votering from './Votering';
 
-export default VoteringContainer;
+export default Votering;

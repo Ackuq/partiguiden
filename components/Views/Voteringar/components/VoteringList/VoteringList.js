@@ -51,7 +51,7 @@ const Voteringar = ({ classes }) => {
       <div className={classes.listContainer}>
         {voteringar &&
           voteringar.map((votering, index) => (
-            <React.Fragment>
+            <React.Fragment key={votering.id + votering.beteckning}>
               {!(index % 15) && (
                 <div className="responsive-ad">
                   <Ad canBeLower={false} path="/21821978280/responsive-ad" />

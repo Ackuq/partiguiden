@@ -13,8 +13,10 @@ const styles = theme => ({
     padding: '0 2rem'
   },
   listContainer: {
-    marginTop: '0.5rem',
-    marginBottom: '0.5rem'
+    marginBottom: '0.5rem',
+    '& > div': {
+      padding: '8px'
+    }
   }
 });
 export default styles;

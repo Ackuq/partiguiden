@@ -7,10 +7,11 @@ const getRiksdagsBeslutList = ({ url, page }) =>
       const { dokumentlista } = data;
 
       const pages = parseInt(dokumentlista['@sidor'], 10);
+      const lastPage = parseInt(page, 10) === pages || pages === 0;
 
       return {
         beslut: dokumentlista.dokument,
-        lastPage: parseInt(page, 10) === pages || pages === 0
+        lastPage
       };
     });
 export default getRiksdagsBeslutList;

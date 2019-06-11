@@ -4,72 +4,80 @@ import ButtonBase from '@material-ui/core/ButtonBase';
 import Grid from '@material-ui/core/Grid';
 import Ad from 'react-google-publisher-tag';
 
-// eslint-disable-next-line import/no-cycle
-import VoteringListContainer from './VoteringListContainer';
-// eslint-disable-next-line import/no-cycle
-import { Votering } from '..';
-import PlaceholderCards from '../../../../PlaceholderCards';
+import Votering from '../Votering';
+import LoadCircle from '../../../../LoadCircle';
 import { useStateValue } from '../../../../../lib/stateProvider';
 import { getVoteringList } from '../../lib';
 
 import styles from './styles';
 
-const Voteringar = ({ classes, asPath, query, page }) => {
-  const [next, setNext] = useState(false);
+const Voteringar = ({ classes }) => {
+  const [page, setPage] = useState(1);
   const [loading, setLoading] = useState(true);
   const [lastPage, setLastPage] = useState(true);
   const [voteringar, setVoteringar] = useState([]);
   const { filter } = useStateValue()[0];
 
-  useEffect(() => {
-    let mounted = true;
-    setLoading(true);
+  const url = () => {
     const { search } = filter;
     const org = filter.org.join('&org=');
-    const url = `https://data.riksdagen.se/dokumentlista/?sok=${search}&doktyp=votering&org=${org}&sort=datum&sortorder=desc&utformat=json&a=s&p=${page}`;
-    getVoteringList({ page, url }).then(result => {
-      if (mounted) {
-        setLastPage(result.lastPage);
-        setVoteringar(result.voteringar || []);
+    return `https://data.riksdagen.se/dokumentlista/?sok=${search}&doktyp=votering&org=${org}&sort=${
+      search ? 'rel' : 'datum'
+    }&sortorder=desc&utformat=json&a=s&p=${page}`;
+  };
+
+  useEffect(() => {
+    setLoading(true);
+    let isMounted = true;
+    getVoteringList({ page, url: url() }).then(res => {
+      if (isMounted) {
+        setLastPage(res.lastPage);
+        if (res.voteringar) setVoteringar(voteringar.concat(...res.voteringar));
         setLoading(false);
       }
     });
-
     return () => {
-      mounted = false;
+      isMounted = false;
     };
+  }, [page]);
+
+  useEffect(() => {
+    setVoteringar([]);
+    // eslint-disable-next-line no-new-wrappers
+    setPage(new Number(1));
   }, [filter]);
 
   return (
     <React.Fragment>
+      <div className="responsive-ad">
+        <Ad canBeLower={false} path="/21821978280/responsive-ad" />
+      </div>
+      <Grid className={classes.listContainer} container spacing={16}>
+        {voteringar &&
+          voteringar.map(votering => (
+            <Grid item xs={12} key={votering.id}>
+              <Votering votering={votering} />
+            </Grid>
+          ))}
+      </Grid>
       {loading ? (
-        <PlaceholderCards />
+        <LoadCircle />
       ) : (
-        <React.Fragment>
-          <div className="responsive-ad">
-            <Ad canBeLower={false} path="/21821978280/responsive-ad" />
-          </div>
-          <Grid className={classes.listContainer} container spacing={16}>
-            {voteringar.map(votering => (
-              <Grid item xs={12} key={votering.id}>
-                <Votering votering={votering} />
-              </Grid>
-            ))}
-          </Grid>
-          {!lastPage && (
-            <React.Fragment>
-              {next ? (
-                <VoteringListContainer query={query} asPath={asPath} page={page + 1} />
-              ) : (
-                <div className={classes.buttonContainer}>
-                  <ButtonBase className={classes.loadMore} onClick={() => setNext(true)}>
-                    Ladda mer
-                  </ButtonBase>
-                </div>
-              )}
-            </React.Fragment>
-          )}
-        </React.Fragment>
+        !lastPage && (
+          <React.Fragment>
+            <div className={classes.buttonContainer}>
+              <ButtonBase
+                className={classes.loadMore}
+                onClick={() => {
+                  setLastPage(true);
+                  setPage(curr => curr + 1);
+                }}
+              >
+                Ladda mer
+              </ButtonBase>
+            </div>
+          </React.Fragment>
+        )
       )}
     </React.Fragment>
   );

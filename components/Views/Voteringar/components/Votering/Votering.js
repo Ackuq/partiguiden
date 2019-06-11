@@ -9,7 +9,7 @@ import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 
 // eslint-disable-next-line import/no-cycle
-import { VoteringResult } from '..';
+import VoteringResult from '../VoteringResult';
 
 import { getVotering } from '../../lib';
 import getOrganInfo from '../../../../../lib/authorityTable';
@@ -23,7 +23,7 @@ const Votering = ({ classes, votering: { id, beteckning, tempbeteckning, titel, 
   const [rubrik, setRubrik] = useState('');
 
   const organObject = getOrganInfo(organ);
-  const dokId = `${id.substring(0, 2)}01${beteckning}`;
+  const dokId = `${id.substring(0, 2)}01${beteckning.split('p')[0]}`;
 
   let mounted = true;
 
@@ -42,7 +42,7 @@ const Votering = ({ classes, votering: { id, beteckning, tempbeteckning, titel, 
 
   return (
     <React.Fragment>
-      {!loading && (
+      {!loading && organObject && (
         <Card elevation={1}>
           <Link
             route="votering"

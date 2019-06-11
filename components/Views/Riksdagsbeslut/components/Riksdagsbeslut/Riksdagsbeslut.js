@@ -40,66 +40,68 @@ const Riksdagsbeslut = ({ beslut, classes }) => {
   const btnclass = visible ? classes.shown : '';
   return (
     <React.Fragment>
-      <Card>
-        <ButtonBase className={classes.buttonContainer} onClick={() => setVisible(!visible)}>
-          <CardHeader
-            title={organ && organ.desc}
-            style={{ background: organ && organ.color }}
-            classes={{
-              title: classes.headerTitle,
-              root: classes.headerRoot
-            }}
-          />
-
-          <CardContent classes={{ root: classes.cardContent }}>
-            <div>
-              <Typography variant="h3" align="left" gutterBottom classes={{ h3: classes.title }}>
-                {beslut.notisrubrik}
-              </Typography>
-              <Typography
-                variant="h6"
-                color="textSecondary"
-                align="left"
-                classes={{ h6: classes.subtitle }}
-              >
-                {beslut.titel}
-              </Typography>
-            </div>
-            <ArrowDownRounded
+      {organ && (
+        <Card>
+          <ButtonBase className={classes.buttonContainer} onClick={() => setVisible(!visible)}>
+            <CardHeader
+              title={organ.desc}
+              style={{ background: organ.color }}
               classes={{
-                root: `${classes.arrow} ${btnclass}`
+                title: classes.headerTitle,
+                root: classes.headerRoot
               }}
             />
-          </CardContent>
-        </ButtonBase>
 
-        <CardContent>
-          <Collapse className={classes.paragraphContainer} in={visible}>
-            <div className="paragraph">{beslut.notis && parse(beslut.notis)}</div>
-            <Button component="div">
-              <Link route="dokument" params={{ id: beslut.id }}>
-                <a>Läs mer om betänkandet</a>
-              </Link>
-            </Button>
-            {voteringarExist && (
-              <Button
-                component="div"
-                onClick={() => {
-                  dispatch({ type: 'RESET_FILTER' });
-                  dispatch({
-                    type: 'SET_SEARCH',
-                    searchInput: `${beslut.rm}:${beslut.beteckning}`
-                  });
-
-                  Router.pushRoute('/voteringar');
+            <CardContent classes={{ root: classes.cardContent }}>
+              <div>
+                <Typography variant="h3" align="left" gutterBottom classes={{ h3: classes.title }}>
+                  {beslut.notisrubrik}
+                </Typography>
+                <Typography
+                  variant="h6"
+                  color="textSecondary"
+                  align="left"
+                  classes={{ h6: classes.subtitle }}
+                >
+                  {beslut.titel}
+                </Typography>
+              </div>
+              <ArrowDownRounded
+                classes={{
+                  root: `${classes.arrow} ${btnclass}`
                 }}
-              >
-                Läs mer om voteringarna
+              />
+            </CardContent>
+          </ButtonBase>
+
+          <CardContent>
+            <Collapse className={classes.paragraphContainer} in={visible}>
+              <div className="paragraph">{beslut.notis && parse(beslut.notis)}</div>
+              <Button component="div">
+                <Link route="dokument" params={{ id: beslut.id }}>
+                  <a>Läs mer om betänkandet</a>
+                </Link>
               </Button>
-            )}
-          </Collapse>
-        </CardContent>
-      </Card>
+              {voteringarExist && (
+                <Button
+                  component="div"
+                  onClick={() => {
+                    dispatch({ type: 'RESET_FILTER' });
+                    dispatch({
+                      type: 'SET_SEARCH',
+                      searchInput: `${beslut.rm}:${beslut.beteckning}`
+                    });
+
+                    Router.pushRoute('/voteringar');
+                  }}
+                >
+                  Läs mer om voteringarna
+                </Button>
+              )}
+            </Collapse>
+          </CardContent>
+        </Card>
+      )}
     </React.Fragment>
   );
 };

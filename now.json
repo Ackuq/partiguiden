@@ -6,6 +6,7 @@
   "routes": [
     { "src": "static/icons/.+", "headers": { "cache-control": "s-maxage=604800" } },
     { "src": "static/images/.+", "headers": { "cache-control": "s-maxage=604800" } },
+    { "src": "^/ads.txt", "dest": "/static/ads.txt" },
     { "src": "^/dokument/(?<id>[^/]+)", "dest": "/dokument?id=$id" },
     { "src": "^/beslut/(?<id>[^/]+)", "dest": "/beslut?id=$id" },
     { "src": "^/subject/(?<id>[^/]+)", "dest": "/subject?id=$id" },

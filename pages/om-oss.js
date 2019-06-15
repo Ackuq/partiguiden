@@ -2,7 +2,7 @@ import React from 'react';
 import InfoIcon from '@material-ui/icons/Info';
 import Head from 'next/head';
 
-import OmOss from '../components/Views/OmOss';
+import OmOss from '../src/containers/OmOss';
 
 const OmOssContainer = () => (
   <React.Fragment>

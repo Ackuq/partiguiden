@@ -1,7 +1,7 @@
 import React from 'react';
 import AnnouncementIcon from '@material-ui/icons/Announcement';
 import Head from 'next/head';
-import CookiePolicy from '../components/Views/CookiePolicy';
+import CookiePolicy from '../src/containers/CookiePolicy';
 
 const CookiePolicyContainer = () => (
   <React.Fragment>

@@ -2,7 +2,7 @@ import React from 'react';
 import Head from 'next/head';
 import PeopleIcon from '@material-ui/icons/People';
 
-import Members from '../components/Views/Members';
+import Members from '../src/containers/Members';
 
 const LedamoterContainer = () => (
   <React.Fragment>

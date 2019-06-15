@@ -1,8 +1,8 @@
 import React from 'react';
 import Head from 'next/head';
 
-import FrontPage from '../components/Views/FrontPage';
-import { Typed } from '../components/Views/FrontPage/components';
+import FrontPage from '../src/containers/FrontPage';
+import { Typed } from '../src/containers/FrontPage/components';
 
 const FrontPageContainer = () => (
   <React.Fragment>

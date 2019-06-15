@@ -2,7 +2,7 @@ import React from 'react';
 import Head from 'next/head';
 import GavelIcon from '@material-ui/icons/GavelRounded';
 
-import Riksdagsbeslut from '../components/Views/Riksdagsbeslut';
+import Riksdagsbeslut from '../src/containers/Riksdagsbeslut';
 
 const RiksdagsbeslutContainer = () => (
   <React.Fragment>

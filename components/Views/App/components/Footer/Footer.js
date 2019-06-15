@@ -2,6 +2,7 @@ import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import { withStyles } from '@material-ui/core/styles';
 import Ad from 'react-google-publisher-tag';
+import Typography from '@material-ui/core/Typography';
 
 import styles from './styles';
 
@@ -13,14 +14,16 @@ const Footer = ({ classes }) => (
       </div>
     )}
     <footer className={classes.root}>
-      <Grid direction="column" justify="center" container className="text-center">
+      <Grid direction="column" justify="center" container>
         <Grid item>
-          <span>© Axel Pettersson 2019</span>
+          <Typography align="center" color="inherit" variant="subtitle1">
+            © Axel Pettersson 2019
+          </Typography>
         </Grid>
         <Grid item>
-          <span>
+          <Typography align="center" color="inherit" variant="subtitle1">
             <a href="mailto:contact@partiguiden.nu">contact@partiguiden.nu</a>
-          </span>
+          </Typography>
         </Grid>
       </Grid>
     </footer>

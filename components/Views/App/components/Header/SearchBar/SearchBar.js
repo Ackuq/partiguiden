@@ -7,11 +7,8 @@ import { withStyles } from '@material-ui/core/styles';
 import Autosuggest from 'react-autosuggest';
 
 /* Material UI components */
-import InputBase from '@material-ui/core/InputBase';
-import InputAdornment from '@material-ui/core/InputAdornment';
+import { InputBase, InputAdornment, Paper, MenuItem } from '@material-ui/core';
 import SearchIcon from '@material-ui/icons/Search';
-import Paper from '@material-ui/core/Paper';
-import MenuItem from '@material-ui/core/MenuItem';
 import { Link, Router } from '../../../../../../lib/routes';
 
 import { useStateValue } from '../../../../../../lib/stateProvider';

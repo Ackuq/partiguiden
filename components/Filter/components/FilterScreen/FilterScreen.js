@@ -4,7 +4,6 @@ import { withStyles } from '@material-ui/core/styles';
 import styles from './styles';
 import { FilterCategories, FilterCategoriesButtons } from '../FilterCategories';
 import FilterSearch from '../FilterSearch';
-
 import useOnClickOutside from '../../lib/useOnClickOutside';
 
 const FilterScreen = ({ classes, show, handleClick }) => {

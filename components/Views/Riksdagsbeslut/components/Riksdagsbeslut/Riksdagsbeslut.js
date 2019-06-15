@@ -1,13 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { withStyles } from '@material-ui/core/styles';
-import Collapse from '@material-ui/core/Collapse';
-import Card from '@material-ui/core/Card';
-import CardContent from '@material-ui/core/CardContent';
-import CardHeader from '@material-ui/core/CardHeader';
-import Typography from '@material-ui/core/Typography';
+import {
+  Collapse,
+  Card,
+  CardContent,
+  CardHeader,
+  Typography,
+  ButtonBase,
+  Button
+} from '@material-ui/core';
 import ArrowDownRounded from '@material-ui/icons/KeyboardArrowDownRounded';
-import ButtonBase from '@material-ui/core/ButtonBase';
-import Button from '@material-ui/core/Button';
 import parse from 'html-react-parser';
 
 import { checkIfVotesExist } from '../../lib';

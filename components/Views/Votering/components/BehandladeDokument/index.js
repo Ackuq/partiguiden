@@ -1,12 +1,9 @@
 import React, { useState } from 'react';
-import Typography from '@material-ui/core/Typography';
-
-import Collapse from '@material-ui/core/Collapse';
-import ButtonBase from '@material-ui/core/ButtonBase';
+import { Typography, Collapse, ButtonBase } from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
 import ArrowDownRounded from '@material-ui/icons/KeyboardArrowDownRounded';
-import { Link } from '../../../../../lib/routes';
 
+import { Link } from '../../../../../lib/routes';
 import styles from '../../styles';
 
 const BehandladeDokument = ({ classes, behandladeDokument }) => {

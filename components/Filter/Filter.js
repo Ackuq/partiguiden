@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 import { withStyles } from '@material-ui/core/styles';
-
-import Button from '@material-ui/core/Button';
-import Card from '@material-ui/core/Card';
+import { Button, Card } from '@material-ui/core';
 import FilterIcon from '@material-ui/icons/Tune';
+
 import styles from './styles';
 
 import FilterScreen from './components/FilterScreen';

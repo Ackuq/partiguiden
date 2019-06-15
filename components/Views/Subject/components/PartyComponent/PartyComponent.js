@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 /* Material UI components */
-import Collapse from '@material-ui/core/Collapse';
-import ButtonBase from '@material-ui/core/ButtonBase';
-import Grid from '@material-ui/core/Grid';
+import { Collapse, ButtonBase, Grid } from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
 
 /* Custom components */

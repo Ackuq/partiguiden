@@ -1,9 +1,5 @@
 import React from 'react';
-/* Material UI import */
-import Typography from '@material-ui/core/Typography';
-import Card from '@material-ui/core/Card';
-import CardContent from '@material-ui/core/CardContent';
-import Grid from '@material-ui/core/Grid';
+import { Grid, Card, CardContent, Typography } from '@material-ui/core';
 
 /* Custom components */
 import { Featured } from './components';
@@ -16,7 +12,7 @@ const FrontPage = () => (
           <Typography variant="h4" paragraph align="center">
             Vilket parti ska man rösta på?
           </Typography>
-          <Typography variant="body1" paragraph style={{ fontSize: '1.25rem' }}>
+          <Typography variant="body1" paragraph>
             Vilket parti ska man rösta på? Och vad tycker partierna egentligen? På Partiguiden.nu
             kan du läsa om vad partierna tycker enligt sina partiprogram och samt se hur de röstar i
             riksdagsvoteringar.

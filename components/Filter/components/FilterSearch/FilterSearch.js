@@ -1,13 +1,9 @@
 import React from 'react';
-
 import { withStyles } from '@material-ui/core/styles';
-
-import Input from '@material-ui/core/Input';
-import InputAdornment from '@material-ui/core/InputAdornment';
+import { Input, InputAdornment } from '@material-ui/core';
 import SearchIcon from '@material-ui/icons/Search';
 
 import { useStateValue } from '../../../../lib/stateProvider';
-
 import styles from './styles';
 
 const FilterSearch = ({ classes }) => {

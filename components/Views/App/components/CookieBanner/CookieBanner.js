@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { withStyles } from '@material-ui/core/styles';
-import Paper from '@material-ui/core/Paper';
-import Button from '@material-ui/core/Button';
+import { Paper, Button, Slide } from '@material-ui/core';
 import Cookies from 'universal-cookie';
-import Slide from '@material-ui/core/Slide';
 
 import { Link } from '../../../../../lib/routes';
 import styles from './styles';

@@ -1,7 +1,6 @@
 import React from 'react';
 /* Custom components */
-import ButtonBase from '@material-ui/core/ButtonBase';
-import Grid from '@material-ui/core/Grid';
+import { Grid, ButtonBase } from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
 import { Link } from '../../../../../lib/routes';
 import SearchBar from './SearchBar';

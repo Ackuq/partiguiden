@@ -1,8 +1,5 @@
 import React, { useState } from 'react';
-import CircularProgress from '@material-ui/core/CircularProgress';
-import Typography from '@material-ui/core/Typography';
-import Collapse from '@material-ui/core/Collapse';
-import ButtonBase from '@material-ui/core/ButtonBase';
+import { CircularProgress, Typography, Collapse, ButtonBase } from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
 import ArrowDownRounded from '@material-ui/icons/KeyboardArrowDownRounded';
 

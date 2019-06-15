@@ -1,7 +1,6 @@
 import React from 'react';
 /* Material UI import */
-import ButtonBase from '@material-ui/core/ButtonBase';
-import Grid from '@material-ui/core/Grid';
+import { Grid, ButtonBase } from '@material-ui/core';
 import grey from '@material-ui/core/colors/grey';
 
 import { withStyles } from '@material-ui/core/styles';

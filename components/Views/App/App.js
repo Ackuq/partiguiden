@@ -47,9 +47,7 @@ class MyApp extends App {
           >
             <StateProvider initialState={initialState} reducer={reducer}>
               <Header />
-              <main>
-                <Component pageContext={this.pageContext} {...pageProps} />
-              </main>
+              <Component pageContext={this.pageContext} {...pageProps} />
               <Footer />
               <ToTopButton />
               <CookieBanner />

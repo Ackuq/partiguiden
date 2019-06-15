@@ -1,16 +1,9 @@
 /* eslint-disable camelcase */
 import React, { useState, useEffect } from 'react';
 import { withStyles } from '@material-ui/core/styles';
+import { Card, CardContent, CardHeader, Typography } from '@material-ui/core';
 
-/* Material UI */
-import Card from '@material-ui/core/Card';
-import CardHeader from '@material-ui/core/CardHeader';
-import CardContent from '@material-ui/core/CardContent';
-import Typography from '@material-ui/core/Typography';
-
-// eslint-disable-next-line import/no-cycle
 import VoteringResult from '../VoteringResult';
-
 import { getVotering } from '../../lib';
 import getOrganInfo from '../../../../../lib/authorityTable';
 import { Link } from '../../../../../lib/routes';

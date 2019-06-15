@@ -1,5 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
+import Container from '@material-ui/core/Container';
 
 import FrontPage from '../src/containers/FrontPage';
 import { Typed } from '../src/containers/FrontPage/components';
@@ -14,9 +15,9 @@ const FrontPageContainer = () => (
       />
     </Head>
     <Typed />
-    <main className="container">
+    <Container>
       <FrontPage />
-    </main>
+    </Container>
   </React.Fragment>
 );
 

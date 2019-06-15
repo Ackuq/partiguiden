@@ -9,8 +9,6 @@ import { StateProvider } from '../src/lib/stateProvider';
 import { initialState, reducer } from '../src/lib/store';
 import theme from '../src/lib/theme';
 
-import '../src/styles/Styles.scss';
-
 const initReactGA = () => {
   ReactGA.initialize('UA-111642551-2');
   ReactGA.pageview(window.location.pathname);
@@ -34,7 +32,16 @@ class MyApp extends App {
           <StateProvider initialState={initialState} reducer={reducer}>
             <CssBaseline />
             <Header />
-            <Component pageContext={this.pageContext} {...pageProps} />
+            <main
+              style={{
+                marginBottom: '1rem',
+                display: 'flex',
+                flexDirection: 'column',
+                flexGrow: 1
+              }}
+            >
+              <Component pageContext={this.pageContext} {...pageProps} />
+            </main>
             <Footer />
             <ToTopButton />
             <CookieBanner />

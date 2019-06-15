@@ -1,22 +1,27 @@
 import React from 'react';
 import Typography from '@material-ui/core/Typography';
-import { Link } from '../../../../lib/routes';
+import Link from '@material-ui/core/Link';
 
 const Bilaga = ({ bilaga }) => (
-  <div>
+  <React.Fragment>
     <Typography variant="h5" color="inherit" gutterBottom>
       Bilaga
     </Typography>
-    {bilaga.map(curr => (
-      <Link href={curr.fil_url} key={curr.fil_url}>
-        <a target="_blank" rel="noopener">
-          <Typography variant="body1" color="primary">
-            {curr.titel} {curr.dok_id}
-          </Typography>
-        </a>
-      </Link>
-    ))}
-  </div>
+    <div style={{ display: 'flex', flexDirection: 'column' }}>
+      {bilaga.map(curr => (
+        <Link
+          href={curr.fil_url}
+          key={curr.fil_url}
+          target="_blank"
+          rel="noopener"
+          variant="body1"
+          color="primary"
+        >
+          {curr.titel} {curr.dok_id}
+        </Link>
+      ))}
+    </div>
+  </React.Fragment>
 );
 
 export default Bilaga;

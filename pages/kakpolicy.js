@@ -1,6 +1,8 @@
 import React from 'react';
 import AnnouncementIcon from '@material-ui/icons/Announcement';
 import Head from 'next/head';
+import Container from '@material-ui/core/Container';
+
 import CookiePolicy from '../src/containers/CookiePolicy';
 
 const CookiePolicyContainer = () => (
@@ -16,9 +18,9 @@ const CookiePolicyContainer = () => (
       <AnnouncementIcon style={{ fontSize: '2.5rem' }} />
       <h1>Kakpolicy</h1>
     </div>
-    <main className="container">
+    <Container>
       <CookiePolicy />
-    </main>
+    </Container>
   </React.Fragment>
 );
 

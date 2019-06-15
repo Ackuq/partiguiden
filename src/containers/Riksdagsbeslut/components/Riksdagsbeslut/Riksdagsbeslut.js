@@ -13,7 +13,7 @@ import ArrowDownRounded from '@material-ui/icons/KeyboardArrowDownRounded';
 import parse from 'html-react-parser';
 
 import { checkIfVotesExist } from '../../lib';
-import { Link, Router } from '../../../../lib/routes';
+import { Router } from '../../../../lib/routes';
 import getOrganInfo from '../../../../lib/authorityTable';
 import styles from './styles';
 import { useStateValue } from '../../../../lib/stateProvider';
@@ -79,10 +79,11 @@ const Riksdagsbeslut = ({ beslut, classes }) => {
           <CardContent>
             <Collapse className={classes.paragraphContainer} in={visible}>
               <div className="paragraph">{beslut.notis && parse(beslut.notis)}</div>
-              <Button component="div">
-                <Link route="dokument" params={{ id: beslut.id }}>
-                  <a>Läs mer om betänkandet</a>
-                </Link>
+              <Button
+                component="div"
+                onClick={() => Router.pushRoute('dokument', { id: beslut.id })}
+              >
+                Läs mer om betänkandet
               </Button>
               {voteringarExist && (
                 <Button

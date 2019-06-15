@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { withRouter } from 'next/router';
 import Head from 'next/head';
+import Container from '@material-ui/core/Container';
 
+import PageTitle from '../src/components/PageTitle';
 import Subject from '../src/containers/Subject';
 import getData from '../src/containers/Subject/lib/getSubjectData';
 import { useStateValue } from '../src/lib/stateProvider';
@@ -24,7 +26,7 @@ const SubjectContainer = ({ router }) => {
         setLoading(false);
       });
     });
-  }, []);
+  }, [id]);
 
   return (
     <React.Fragment>
@@ -35,12 +37,10 @@ const SubjectContainer = ({ router }) => {
           content={`Vad tar Sveriges partier för ståndpunkter inom ämnet ${name} Här hittar du informationen du behöver för att kunna jämföra och hitta det parti du sympatiserar med mest! `}
         />
       </Head>
-      <div className="list-title text-center">
-        <h1>{name}</h1>
-      </div>
-      <main className="container">
+      <PageTitle title={name} />
+      <Container>
         <Subject partyData={partyData} loading={loading} />
-      </main>
+      </Container>
     </React.Fragment>
   );
 };

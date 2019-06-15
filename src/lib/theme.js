@@ -5,7 +5,7 @@ const theme = createMuiTheme({
     primary: {
       main: '#00796b',
       dark: '#004c40',
-      light: '#48a999',
+      light: '#009688',
       contrastText: '#f8f9fa'
     },
     secondary: {
@@ -20,8 +20,24 @@ const theme = createMuiTheme({
   },
   overrides: {
     MuiTypography: {
+      h1: {
+        fontSize: '2.5rem'
+      },
+      h2: {
+        fontSize: '2rem'
+      },
+      h3: {
+        fontSize: '1.75rem'
+      },
       h4: {
+        fontSize: '1.5rem',
         fontWeight: '300'
+      },
+      h5: {
+        fontSize: '1.25rem'
+      },
+      h6: {
+        fontSize: '1rem'
       }
     },
     MuiButtonBase: {

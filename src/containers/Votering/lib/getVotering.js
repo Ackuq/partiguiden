@@ -4,9 +4,15 @@ import { getVotes } from '../../../lib/votingHelpers';
 
 const getMatches = (forslag, referens) => {
   let newForslag = forslag.replace(/(<br>)|<BR(\/)>/gm, '');
+  const re = /\b([0-9][0-9][0-9][0-9]\/[0-9][0-9]):(\S+).*/gm;
+  const matches = [];
+  let match;
 
-  let matches = newForslag.matchAll(/\b([0-9][0-9][0-9][0-9]\/[0-9][0-9]):(\S+).*/gm);
-  matches = [...matches];
+  do {
+    match = re.exec(newForslag);
+    if (match) matches.push(match);
+  } while (match);
+
   for (let i = 0; i < matches.length; i += 1) {
     newForslag = newForslag.replace(matches[i][0], `[${i}]`);
   }

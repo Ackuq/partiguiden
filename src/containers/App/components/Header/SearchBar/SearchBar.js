@@ -1,18 +1,11 @@
 import React, { useState, useEffect } from 'react';
-/* Routing */
-import { withRouter } from 'next/router';
 import { withStyles } from '@material-ui/core/styles';
-
-/* Autosuggest */
 import Autosuggest from 'react-autosuggest';
-
-/* Material UI components */
 import { InputBase, InputAdornment, Paper, MenuItem } from '@material-ui/core';
 import SearchIcon from '@material-ui/icons/Search';
-import { Link, Router } from '../../../../../lib/routes';
 
+import { Router } from '../../../../../lib/routes';
 import { useStateValue } from '../../../../../lib/stateProvider';
-
 import styles from './styles';
 
 const getSuggestions = (value, data) => {
@@ -87,10 +80,9 @@ const SearchBar = ({ classes, id }) => {
       selected={isHighlighted}
       component="div"
       disableGutters
+      onClick={() => Router.pushRoute('subject', { id: suggestion.id })}
     >
-      <Link route="subject" params={{ id: `${suggestion.id}` }}>
-        <a className="search-result">{suggestion.name}</a>
-      </Link>
+      {suggestion.name}
     </MenuItem>
   );
 
@@ -131,8 +123,12 @@ const SearchBar = ({ classes, id }) => {
       theme={{
         container: classes.container,
         suggestionsContainerOpen: classes.suggestionsContainerOpen,
-        suggestionsList: classes.suggestionsList,
-        suggestion: classes.suggestion
+        suggestionsList: {
+          margin: '0',
+          padding: '0',
+          fontSize: '1rem'
+        },
+        suggestion: { display: 'flex' }
       }}
       suggestions={suggestions}
       onSuggestionsFetchRequested={onSuggestionsFetchRequested}
@@ -149,4 +145,4 @@ const SearchBar = ({ classes, id }) => {
   );
 };
 
-export default withStyles(styles)(withRouter(SearchBar));
+export default withStyles(styles)(SearchBar);

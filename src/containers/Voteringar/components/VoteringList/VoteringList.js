@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import ButtonBase from '@material-ui/core/ButtonBase';
-import Ad from 'react-google-publisher-tag';
+import Ad from '../../../../components/Ad';
 
 import Votering from '../Votering';
 import LoadCircle from '../../../../components/LoadCircle';
@@ -52,11 +52,7 @@ const Voteringar = ({ classes }) => {
         {voteringar &&
           voteringar.map((votering, index) => (
             <React.Fragment key={votering.id + votering.beteckning}>
-              {!(index % 15) && (
-                <div className="responsive-ad">
-                  <Ad canBeLower={false} path="/21821978280/responsive-ad" />
-                </div>
-              )}
+              {!(index % 15) && <Ad canBeLower={false} />}
               <div>
                 <Votering votering={votering} />
               </div>

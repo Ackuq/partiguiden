@@ -6,7 +6,7 @@ import Filter from '../../components/Filter';
 import styles from './styles';
 
 const Voteringar = ({ classes }) => (
-  <div className={`container ${classes.VoteringListContainer}`}>
+  <div className={classes.VoteringListContainer}>
     <div className={`VoteringPage ${classes.voteringarPageContainer}`}>
       <VoteringList />
     </div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
+import VoteIcon from '@material-ui/icons/HowToVoteRounded';
 
 import Voteringar from '../components/Views/Voteringar';
 
@@ -13,6 +14,7 @@ const VoteringarContainer = () => (
       />
     </Head>
     <div className="list-title text-center">
+      <VoteIcon style={{ fontSize: '2.5rem' }} />
       <h1>Voteringar</h1>
     </div>
     <main>

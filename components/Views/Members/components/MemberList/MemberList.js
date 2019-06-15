@@ -1,27 +1,14 @@
 import React from 'react';
-import { withStyles } from '@material-ui/core/styles';
-import withWidth, { isWidthUp } from '@material-ui/core/withWidth';
-import GridList from '@material-ui/core/GridList';
-import GridListTile from '@material-ui/core/GridListTile';
-import GridListTileBar from '@material-ui/core/GridListTileBar';
+import Grid from '@material-ui/core/Grid';
 
-import styles from './styles';
+import Member from '../Member';
 
-const MemberList = ({ classes, members, width }) => (
-  <GridList cellHeight={200} spacing={isWidthUp('sm', width) ? 10 : 20} cols={3}>
+const MemberList = ({ members, showLetter = true }) => (
+  <Grid container spacing={16} justify="center">
     {members.map(member => (
-      <GridListTile
-        classes={{ tile: classes.tile, imgFullWidth: classes.fullHeight }}
-        cols={isWidthUp('sm', width) ? 1 : 3}
-      >
-        <img src={member.bild_url_192} alt="Bild på ledamot" />
-        <GridListTileBar
-          title={`${member.tilltalsnamn} ${member.efternamn}`}
-          classes={{ title: classes.tileTitle }}
-        />
-      </GridListTile>
+      <Member member={member} key={member.intressent_id} />
     ))}
-  </GridList>
+  </Grid>
 );
 
-export default withWidth()(withStyles(styles)(MemberList));
+export default MemberList;

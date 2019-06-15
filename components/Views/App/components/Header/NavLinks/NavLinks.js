@@ -24,10 +24,7 @@ const getPages = () => [
 ];
 
 const NavLinks = ({ classes, router }) => {
-  const [value, setValue] = useState(0);
-  const dispatch = useStateValue()[1];
-
-  useEffect(() => {
+  const getInitialIndex = () => {
     const { route } = router;
 
     let index = getPages().findIndex(x => x.href === router.pathname);
@@ -36,10 +33,17 @@ const NavLinks = ({ classes, router }) => {
       if (route === '/subject') index = 1;
       else if (route === '/beslut') index = 2;
       else if (route === '/votering') index = 3;
-      else return;
+      else if (route === '/ledamot') index = 4;
     }
-    setValue(index);
-  });
+    return index;
+  };
+
+  const [value, setValue] = useState(getInitialIndex());
+  const dispatch = useStateValue()[1];
+
+  useEffect(() => {
+    setValue(getInitialIndex());
+  }, []);
 
   const renNavlink = props => (
     <Tab

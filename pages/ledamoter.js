@@ -1,5 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
+import PeopleIcon from '@material-ui/icons/People';
+
 import Members from '../components/Views/Members';
 
 const LedamoterContainer = () => (
@@ -9,6 +11,7 @@ const LedamoterContainer = () => (
       <meta name="description" content="" />
     </Head>
     <div className="list-title text-center">
+      <PeopleIcon style={{ fontSize: '2.5rem' }} />
       <h2>Riksdagsledamöter</h2>
     </div>
     <main className="container">

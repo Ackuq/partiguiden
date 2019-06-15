@@ -7,9 +7,11 @@ import styles from './styles';
 
 const Footer = ({ classes }) => (
   <React.Fragment>
-    <div className="responsive-ad">
-      <Ad canBeLower={false} id="footer-ad" path="/21821978280/responsive-ad" />
-    </div>
+    {process.env.NODE_ENV === 'production' && (
+      <div className="responsive-ad">
+        <Ad canBeLower={false} id="footer-ad" path="/21821978280/responsive-ad" />
+      </div>
+    )}
     <footer className={classes.root}>
       <Grid direction="column" justify="center" container className="text-center">
         <Grid item>

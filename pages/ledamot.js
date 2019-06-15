@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { withRouter } from 'next/router';
 import Head from 'next/head';
 
-import LoadCircle from '../components/LoadCircle';
-import Member from '../components/Views/Member';
-import getMemberInformation from '../components/Views/Member/lib/getMemberInformation';
+import LoadCircle from '../src/components/LoadCircle';
+import Member from '../src/containers/Member';
+import getMemberInformation from '../src/containers/Member/lib/getMemberInformation';
 
 const LedamotContainer = ({ router }) => {
   const [member, setMember] = useState(null);

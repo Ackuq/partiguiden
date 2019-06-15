@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 /* Material ui components */
 import { withStyles } from '@material-ui/core/styles';
 import ButtonBase from '@material-ui/core/ButtonBase';
-import Ad from 'react-google-publisher-tag';
 
+import Ad from '../../../../components/Ad';
 import Riksdagsbeslut from '../Riksdagsbeslut/Riksdagsbeslut';
 import LoadCircle from '../../../../components/LoadCircle';
 import { getRiksdagsBeslutList } from '../../lib';
@@ -53,11 +53,7 @@ const RiksdagsList = ({ classes }) => {
         {beslut &&
           beslut.map((beslutObject, index) => (
             <React.Fragment key={beslutObject.dok_id}>
-              {!(index % 15) && (
-                <div className="responsive-ad">
-                  <Ad canBeLower={false} path="/21821978280/responsive-ad" />
-                </div>
-              )}
+              {!(index % 15) && <Ad />}
               <div>
                 <Riksdagsbeslut beslut={beslutObject} />
               </div>

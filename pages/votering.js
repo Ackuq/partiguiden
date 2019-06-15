@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { withRouter } from 'next/router';
 import Head from 'next/head';
+import Container from '@material-ui/core/Container';
 
+import PageTitle from '../src/components/PageTitle';
 import LoadCircle from '../src/components/LoadCircle';
 import Votering from '../src/containers/Votering';
 import { getVotering } from '../src/containers/Votering/lib';
@@ -10,7 +12,7 @@ const VoteringContainer = ({ router }) => {
   const [votering, setVotering] = useState({
     bet: router.query.bet,
     id: router.query.id,
-    dokument: {}
+    dokument: { titel: '' }
   });
   const [loading, setLoading] = useState(true);
 
@@ -37,12 +39,8 @@ const VoteringContainer = ({ router }) => {
           content={`Hur har partiernat röstat i voteringen om ${votering.dokument.titel}`}
         />
       </Head>
-      <div className="list-title text-center">
-        <h2>
-          {votering.dokument.titel} förslagspunkt {votering.bet}
-        </h2>
-      </div>
-      <main className="container">
+      <PageTitle title={`${votering.dokument.titel} förslagspunkt ${votering.bet}`} variant="h3" />
+      <Container>
         {loading ? (
           <LoadCircle />
         ) : (
@@ -56,7 +54,7 @@ const VoteringContainer = ({ router }) => {
             notisBeskrivning={votering.notisBeskrivning.text}
           />
         )}
-      </main>
+      </Container>
     </React.Fragment>
   );
 };

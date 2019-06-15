@@ -12,7 +12,7 @@ const FilterCategories = ({ classes, loadAll }) => {
   const renderCheckBox = object => (
     <FormControlLabel
       key={object}
-      classes={{ root: classes.checkBox }}
+      classes={{ root: classes.checkBox, label: classes.label }}
       control={
         <Checkbox
           color="primary"

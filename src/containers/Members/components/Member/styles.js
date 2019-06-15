@@ -3,7 +3,8 @@ const styles = theme => ({
     display: 'flex',
     padding: '0.5rem 1rem',
     justifyContent: 'space-between',
-    position: 'relative'
+    position: 'relative',
+    cursor: 'pointer'
   },
 
   memberImage: {

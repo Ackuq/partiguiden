@@ -20,7 +20,7 @@ const LedamotContainer = ({ router }) => {
       <Head>
         <title>Ledamot | Partiguiden.nu</title>
       </Head>
-      <main>{member ? <Member member={member} /> : <LoadCircle />}</main>
+      {member ? <Member member={member} /> : <LoadCircle />}
     </React.Fragment>
   );
 };

@@ -6,14 +6,12 @@ import RiksdagsbeslutList from './components/RiksdagsbeslutList';
 import styles from './styles';
 
 const Riksdagsbeslut = ({ classes }) => (
-  <React.Fragment>
-    <div className={`container ${classes.beslutListContainer}`}>
-      <div className={classes.beslutPageContainer} id="beslut-container">
-        <RiksdagsbeslutList />
-      </div>
-      <Filter />
+  <div className={classes.beslutListContainer}>
+    <div className={classes.beslutPageContainer} id="beslut-container">
+      <RiksdagsbeslutList />
     </div>
-  </React.Fragment>
+    <Filter />
+  </div>
 );
 
 export default withStyles(styles)(Riksdagsbeslut);

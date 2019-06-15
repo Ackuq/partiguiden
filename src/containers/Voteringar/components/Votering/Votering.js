@@ -6,7 +6,7 @@ import { Card, CardContent, CardHeader, Typography } from '@material-ui/core';
 import VoteringResult from '../VoteringResult';
 import { getVotering } from '../../lib';
 import getOrganInfo from '../../../../lib/authorityTable';
-import { Link } from '../../../../lib/routes';
+import { Router } from '../../../../lib/routes';
 import styles from './styles';
 
 // eslint-disable-next-line camelcase
@@ -36,44 +36,43 @@ const Votering = ({ classes, votering: { id, beteckning, tempbeteckning, titel, 
   return (
     <React.Fragment>
       {!loading && organObject && (
-        <Card elevation={1}>
-          <Link
-            route="votering"
-            params={{
+        <Card
+          elevation={1}
+          style={{ cursor: 'pointer' }}
+          onClick={() =>
+            Router.pushRoute('votering', {
               id: dokId,
               bet: tempbeteckning
+            })
+          }
+        >
+          <CardHeader
+            title={organObject.desc}
+            style={{ background: organObject.color }}
+            classes={{
+              title: classes.headerTitle,
+              root: classes.headerRoot
             }}
-          >
-            <a>
-              <CardHeader
-                title={organObject.desc}
-                style={{ background: organObject.color }}
-                classes={{
-                  title: classes.headerTitle,
-                  root: classes.headerRoot
-                }}
-              />
+          />
 
-              <CardContent>
-                <Typography
-                  variant="h3"
-                  color="textSecondary"
-                  gutterBottom
-                  classes={{ h3: classes.title }}
-                >
-                  {titel}
-                </Typography>
-                <Typography
-                  variant="h6"
-                  color="textSecondary"
-                  align="left"
-                  classes={{ h6: classes.subtitle }}
-                >
-                  {rubrik}
-                </Typography>
-              </CardContent>
-            </a>
-          </Link>
+          <CardContent>
+            <Typography
+              variant="h3"
+              color="textSecondary"
+              gutterBottom
+              classes={{ h3: classes.title }}
+            >
+              {titel}
+            </Typography>
+            <Typography
+              variant="h6"
+              color="textSecondary"
+              align="left"
+              classes={{ h6: classes.subtitle }}
+            >
+              {rubrik}
+            </Typography>
+          </CardContent>
           <VoteringResult votes={votes} />
         </Card>
       )}

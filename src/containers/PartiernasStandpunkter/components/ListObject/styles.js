@@ -2,30 +2,25 @@ import grey from '@material-ui/core/colors/grey';
 
 const styles = theme => ({
   button: {
-    textAlign: 'center',
     width: '100%',
-    '& a': {
-      fontWeight: '400',
-      display: 'flex',
-      flexGrow: '1',
+    fontWeight: '400',
+    display: 'flex',
+    flexGrow: '1',
+    justifyContent: 'flex-start',
+    '& p': {
+      margin: 0,
+      background: `linear-gradient( to left, transparent 50%, ${theme.palette.primary.main} 50% )`,
+      backgroundSize: '202% 100%',
+      backgroundPosition: 'right bottom',
+      backgroundRepeat: 'no-repeat',
       color: grey[900],
-      '& span': {
-        lineHeight: '50px',
-        padding: '0 0.5rem',
-        '-webkit-transition': 'all 0.2s ease-in-out',
-        '-moz-transition': 'all 0.2s ease-in-out',
-        '-ms-transition': 'all 0.2s ease-in-out',
-        '-o-transition': 'all 0.2s ease-in-out',
-        transition: 'all 0.2s ease-in-out',
-        background: 'linear-gradient( to left, transparent 50%, #00796b 50% )',
-        backgroundSize: '202% 100%',
-        backgroundPosition: 'right bottom',
-        backgroundRepeat: 'no-repeat'
-      },
-      '&:hover span': {
-        backgroundPosition: 'left bottom',
-        color: grey[100]
-      }
+      lineHeight: '50px',
+      padding: '0 0.5rem',
+      transition: 'all 0.2s ease-in-out'
+    },
+    '&:hover p': {
+      backgroundPosition: 'left bottom',
+      color: grey[100]
     }
   },
 
@@ -44,13 +39,13 @@ const styles = theme => ({
         borderColor: theme.palette.primary.main
       }
     },
-    '&:nth-child(3n) a': {
+    '&:nth-child(3n)': {
       backgroundColor: grey[50]
     },
-    '&:nth-child(3n + 1) a': {
+    '&:nth-child(3n + 1)': {
       backgroundColor: grey[100]
     },
-    '&:nth-child(3n + 2) a': {
+    '&:nth-child(3n + 2)': {
       backgroundColor: grey[200]
     }
   }

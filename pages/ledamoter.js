@@ -1,7 +1,9 @@
 import React from 'react';
 import Head from 'next/head';
+import Container from '@material-ui/core/Container';
 import PeopleIcon from '@material-ui/icons/People';
 
+import PageTitle from '../src/components/PageTitle';
 import Members from '../src/containers/Members';
 
 const LedamoterContainer = () => (
@@ -10,13 +12,10 @@ const LedamoterContainer = () => (
       <title>Riksdagsledamöter | Partiguiden.nu</title>
       <meta name="description" content="" />
     </Head>
-    <div className="list-title text-center">
-      <PeopleIcon style={{ fontSize: '2.5rem' }} />
-      <h2>Riksdagsledamöter</h2>
-    </div>
-    <main className="container">
+    <PageTitle title="Riksdagsledamöter" Icon={PeopleIcon} />
+    <Container>
       <Members />
-    </main>
+    </Container>
   </React.Fragment>
 );
 

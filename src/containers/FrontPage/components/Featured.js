@@ -1,11 +1,10 @@
 import React from 'react';
 /* Material UI import */
 import { Grid, ButtonBase } from '@material-ui/core';
-import grey from '@material-ui/core/colors/grey';
-
+import { grey } from '@material-ui/core/colors';
 import { withStyles } from '@material-ui/core/styles';
 
-import { Link } from '../../../lib/routes';
+import { Router } from '../../../lib/routes';
 
 const featuredStyles = theme => ({
   featured: {
@@ -14,18 +13,13 @@ const featuredStyles = theme => ({
     border: '2px solid',
     borderColor: theme.palette.secondary.main,
     borderRadius: '3rem',
+    fontWeight: '400',
+    padding: '1rem',
+    display: 'flex',
+    flexGrow: '1',
+    color: grey[900],
     '&:hover': {
       backgroundColor: grey[100]
-    },
-    '& a': {
-      fontWeight: '400',
-      padding: '1rem',
-      display: 'flex',
-      flexGrow: '1',
-      color: grey[900],
-      '& span': {
-        width: '100%'
-      }
     }
   }
 });
@@ -41,12 +35,12 @@ export default withStyles(featuredStyles)(({ classes }) => (
   <Grid container spacing={3}>
     {getFeatured().map(obj => (
       <Grid key={`${obj.id}`} item xs={12} md={6}>
-        <ButtonBase className={classes.featured} component="div">
-          <Link route="subject" params={{ id: obj.id }}>
-            <a>
-              <span>{obj.name}</span>
-            </a>
-          </Link>
+        <ButtonBase
+          className={classes.featured}
+          component="div"
+          onClick={() => Router.pushRoute('subject', { id: obj.id })}
+        >
+          <span>{obj.name}</span>
         </ButtonBase>
       </Grid>
     ))}

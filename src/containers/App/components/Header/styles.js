@@ -9,6 +9,7 @@ const styles = theme => ({
       display: 'none'
     },
     '& a': {
+      textDecoration: 'none',
       fontSize: '2rem',
       paddingLeft: '0.25rem',
       paddingRight: '0.25rem',

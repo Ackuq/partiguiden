@@ -1,6 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import NoteIcon from '@material-ui/icons/Note';
+import PageTitle from '../src/components/PageTitle';
 
 import PartiernasStandpunkter from '../src/containers/PartiernasStandpunkter';
 
@@ -13,13 +14,8 @@ const PartiernasStandpunkterContainer = () => (
         content="Vad tar Sveriges partier för ståndpunkter i olika ämnen och sakfrågor? Jämför Sveriges partier politik och hitta det parti du sympatiserar mest med nu!"
       />
     </Head>
-    <div className="list-title">
-      <NoteIcon style={{ fontSize: '2.5rem' }} />
-      <h1>Partiernas ståndpunkter</h1>
-    </div>
-    <main>
-      <PartiernasStandpunkter />
-    </main>
+    <PageTitle title="Partiernas ståndpunkter" Icon={NoteIcon} />
+    <PartiernasStandpunkter />
   </React.Fragment>
 );
 

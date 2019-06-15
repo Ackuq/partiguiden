@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import fetch from 'isomorphic-unfetch';
-// ES Modules
 import parse from 'html-react-parser';
+import { withStyles } from '@material-ui/styles';
 import LoadCircle from '../../components/LoadCircle';
 
-import './styles.scss';
+import styles from './styles';
 
-const Dokument = ({ id }) => {
+const Dokument = ({ id, classes }) => {
   const [body, setBody] = useState(null);
 
   useEffect(() => {
@@ -29,7 +29,7 @@ const Dokument = ({ id }) => {
       });
   }, []);
 
-  return <React.Fragment>{body || <LoadCircle />}</React.Fragment>;
+  return <div className={classes.dokumentBody}>{body || <LoadCircle />}</div>;
 };
 
-export default Dokument;
+export default withStyles(styles)(Dokument);

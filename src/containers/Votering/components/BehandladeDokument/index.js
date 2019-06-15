@@ -26,7 +26,7 @@ const BehandladeDokument = ({ classes, behandladeDokument }) => {
           {behandladeDokument.map((dokument, index) => (
             <React.Fragment key={dokument[3]}>
               <Link route="dokument" params={{ id: dokument[3] }}>
-                <a>
+                <a style={{ textDecoration: 'none' }}>
                   <Typography variant="body1" color="primary">
                     [{index}] {dokument[0]}
                   </Typography>

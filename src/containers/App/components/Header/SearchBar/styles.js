@@ -33,33 +33,21 @@ const styles = theme => ({
     }
   },
   menuItem: {
-    width: '100%'
+    width: '100%',
+    color: '#212121',
+    padding: '0.75rem 1rem'
   },
   container: {
-    [theme.breakpoints.down('sm')]: {
-      width: '100%'
+    width: '100%',
+    position: 'relative',
+    [theme.breakpoints.up('md')]: {
+      marginRight: '1rem'
     }
   },
   suggestionsContainerOpen: {
-    [theme.breakpoints.down('sm')]: {
-      width: 'calc(100% - 1rem)'
-    },
     position: 'absolute',
     top: '56px',
-    width: '250px'
-  },
-  suggestionsList: {
-    margin: '0',
-    padding: '0',
-    fontSize: '1rem'
-  },
-  suggestion: {
-    display: 'flex',
-    '& a': {
-      color: '#212121',
-      width: '100%',
-      padding: '0.75rem 1rem'
-    }
+    width: '100%'
   }
 });
 

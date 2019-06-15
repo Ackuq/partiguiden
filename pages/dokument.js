@@ -2,7 +2,7 @@ import React from 'react';
 import { withRouter } from 'next/router';
 import Head from 'next/head';
 
-import Dokument from '../components/Views/Dokument';
+import Dokument from '../src/containers/Dokument';
 
 const DokumentContainer = ({ router }) => (
   <React.Fragment>

@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { withRouter } from 'next/router';
 import Head from 'next/head';
 
-import LoadCircle from '../components/LoadCircle';
-import Votering from '../components/Views/Votering';
-import { getVotering } from '../components/Views/Votering/lib';
+import LoadCircle from '../src/components/LoadCircle';
+import Votering from '../src/containers/Votering';
+import { getVotering } from '../src/containers/Votering/lib';
 
 const VoteringContainer = ({ router }) => {
   const [votering, setVotering] = useState({

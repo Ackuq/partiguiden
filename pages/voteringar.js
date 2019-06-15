@@ -2,7 +2,7 @@ import React from 'react';
 import Head from 'next/head';
 import VoteIcon from '@material-ui/icons/HowToVoteRounded';
 
-import Voteringar from '../components/Views/Voteringar';
+import Voteringar from '../src/containers/Voteringar';
 
 const VoteringarContainer = () => (
   <React.Fragment>

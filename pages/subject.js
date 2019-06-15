@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { withRouter } from 'next/router';
 import Head from 'next/head';
 
-import Subject from '../components/Views/Subject';
-import getData from '../components/Views/Subject/lib/getSubjectData';
-import { useStateValue } from '../lib/stateProvider';
+import Subject from '../src/containers/Subject';
+import getData from '../src/containers/Subject/lib/getSubjectData';
+import { useStateValue } from '../src/lib/stateProvider';
 
 const SubjectContainer = ({ router }) => {
   const { id } = router.query;

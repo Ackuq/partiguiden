@@ -2,7 +2,7 @@ import React from 'react';
 import Head from 'next/head';
 import NoteIcon from '@material-ui/icons/Note';
 
-import PartiernasStandpunkter from '../components/Views/PartiernasStandpunkter';
+import PartiernasStandpunkter from '../src/containers/PartiernasStandpunkter';
 
 const PartiernasStandpunkterContainer = () => (
   <React.Fragment>

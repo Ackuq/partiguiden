@@ -5,15 +5,14 @@ const styles = theme => ({
     filterScreenContainer: {
       position: 'fixed',
       zIndex: 9999,
-      padding: '0 1rem',
+      padding: '40px 0.5rem 0.25rem 0.5rem',
       height: '100%',
       minWidth: '50%',
       maxWidth: '75%',
       top: 0,
       right: '-100%',
       transition: 'all 0.3s ease-in-out',
-      boxShadow:
-        '0px 1px 3px 0px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 2px 1px -1px rgba(0,0,0,0.12)'
+      boxShadow: theme.shadows[5]
     },
     showFilterScreen: {
       right: 0
@@ -38,7 +37,7 @@ const styles = theme => ({
       fontSize: '3rem'
     },
     filterOverlay: {
-      transition: 'background 0.2s ease-in-out'
+      transition: 'backround 0.2s ease-in-out'
     },
     filterOverlayShow: {
       zIndex: 9999,
@@ -54,6 +53,7 @@ const styles = theme => ({
     filterButtonContainer: {
       display: 'none'
     },
+
     filterOverlay: {
       minWidth: '25%',
       marginLeft: '1rem',

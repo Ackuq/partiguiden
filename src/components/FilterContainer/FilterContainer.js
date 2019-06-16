@@ -1,17 +1,26 @@
 import React, { useState } from 'react';
-import { withStyles } from '@material-ui/core/styles';
+import { withStyles, styled } from '@material-ui/core/styles';
 import { Button, Card } from '@material-ui/core';
-import FilterIcon from '@material-ui/icons/Tune';
+import IconButton from '@material-ui/core/IconButton';
+import { Tune as FilterIcon, CloseRounded as CloseIcon } from '@material-ui/icons';
 import ClickAwayListener from '@material-ui/core/ClickAwayListener';
 
 import styles from './styles';
+
+const CloseButton = styled(IconButton)(({ theme }) => ({
+  [theme.breakpoints.up('md')]: {
+    display: 'none'
+  },
+  padding: '0.35rem',
+  position: 'absolute',
+  top: '5px',
+  right: '15px'
+}));
 
 const Filter = ({ classes, children }) => {
   const [showFilterScreen, setShowFilterScreen] = useState(false);
 
   const showClass = showFilterScreen ? classes.showFilterScreen : '';
-
-  const handleClick = () => showClass && setShowFilterScreen(false);
 
   return (
     <React.Fragment>
@@ -28,8 +37,20 @@ const Filter = ({ classes, children }) => {
           showFilterScreen ? classes.filterOverlayShow : classes.filterOverlayHidden
         }`}
       >
-        <ClickAwayListener onClickAway={handleClick}>
-          <div className={`${classes.filterScreenContainer} ${showClass}`}>{children}</div>
+        <ClickAwayListener
+          onClickAway={event => {
+            if (showClass) {
+              event.preventDefault();
+              setShowFilterScreen(false);
+            }
+          }}
+        >
+          <div className={`${classes.filterScreenContainer} ${showClass}`}>
+            <CloseButton aria-label="Close" onClick={() => setShowFilterScreen(false)}>
+              <CloseIcon />
+            </CloseButton>
+            {children}
+          </div>
         </ClickAwayListener>
       </div>
     </React.Fragment>

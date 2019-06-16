@@ -8,7 +8,7 @@ const FilterSearch = () => {
   const [{ filter }, dispatch] = useStateValue();
 
   return (
-    <div style={{ margin: '0.5rem 1rem' }}>
+    <div style={{ margin: '0.5rem 0.75rem' }}>
       <Input
         value={filter.search}
         onChange={event => {
@@ -17,7 +17,7 @@ const FilterSearch = () => {
         }}
         fullWidth
         placeholder="Sök..."
-        endAdornment={
+        startAdornment={
           <InputAdornment position="start">
             <SearchIcon />
           </InputAdornment>

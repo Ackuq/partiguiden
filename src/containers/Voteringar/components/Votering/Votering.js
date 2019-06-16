@@ -5,7 +5,7 @@ import { Card, CardContent, CardHeader, Typography } from '@material-ui/core';
 
 import VoteringResult from '../VoteringResult';
 import { getVotering } from '../../lib';
-import getOrganInfo from '../../../../lib/authorityTable';
+import getOrganInfo from '../../../../utils/authorityTable';
 import { Router } from '../../../../lib/routes';
 import styles from './styles';
 

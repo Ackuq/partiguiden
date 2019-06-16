@@ -3,7 +3,7 @@ import Grid from '@material-ui/core/Grid';
 
 import Member from '../Member';
 
-const MemberList = ({ members, showLetter = true }) => (
+const MemberList = ({ members }) => (
   <Grid container spacing={3} justify="center">
     {members.map(member => (
       <Member member={member} key={member.intressent_id} />

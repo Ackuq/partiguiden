@@ -14,7 +14,7 @@ import parse from 'html-react-parser';
 
 import { checkIfVotesExist } from '../../lib';
 import { Router } from '../../../../lib/routes';
-import getOrganInfo from '../../../../lib/authorityTable';
+import getOrganInfo from '../../../../utils/authorityTable';
 import styles from './styles';
 import { useStateValue } from '../../../../lib/stateProvider';
 

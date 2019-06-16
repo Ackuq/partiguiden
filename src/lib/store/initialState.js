@@ -5,6 +5,9 @@ const initialState = {
   filter: {
     search: '',
     org: []
+  },
+  memberFilter: {
+    party: ''
   }
 };
 

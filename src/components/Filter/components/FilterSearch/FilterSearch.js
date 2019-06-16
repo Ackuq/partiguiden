@@ -1,16 +1,14 @@
 import React from 'react';
-import { withStyles } from '@material-ui/core/styles';
 import { Input, InputAdornment } from '@material-ui/core';
 import SearchIcon from '@material-ui/icons/Search';
 
 import { useStateValue } from '../../../../lib/stateProvider';
-import styles from './styles';
 
-const FilterSearch = ({ classes }) => {
+const FilterSearch = () => {
   const [{ filter }, dispatch] = useStateValue();
 
   return (
-    <div className={classes.filterSearch}>
+    <div style={{ margin: '0.5rem 1rem' }}>
       <Input
         value={filter.search}
         onChange={event => {
@@ -29,4 +27,4 @@ const FilterSearch = ({ classes }) => {
   );
 };
 
-export default withStyles(styles)(FilterSearch);
+export default FilterSearch;

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Container } from '@material-ui/core';
 
-import { ProfilePicture, VoteAbscence } from './components';
+import { ProfilePicture, Information } from './components';
 import { getMemberDocuments } from './lib';
 
 const Member = ({ member }) => {
@@ -25,7 +25,7 @@ const Member = ({ member }) => {
         status={member.status}
       />
       <Container>
-        <VoteAbscence id={member.intressent_id} documentCount={documents.count} />
+        <Information id={member.intressent_id} documentCount={documents.count} />
       </Container>
     </React.Fragment>
   );

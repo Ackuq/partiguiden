@@ -12,7 +12,7 @@ const LedamoterContainer = () => (
       <title>Riksdagsledamöter | Partiguiden.nu</title>
       <meta name="description" content="" />
     </Head>
-    <PageTitle title="Riksdagsledamöter" Icon={PeopleIcon} />
+    <PageTitle title="Riksdagsledamöter" Icon={PeopleIcon} variant="h2" />
     <Container>
       <Members />
     </Container>

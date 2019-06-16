@@ -1,6 +1,6 @@
 import stripJsonComments from 'strip-json-comments';
 
-import { getVotes } from '../../../lib/votingHelpers';
+import { getVotes } from '../../../utils/votingHelpers';
 
 const getMatches = (forslag, referens) => {
   let newForslag = forslag.replace(/(<br>)|<BR(\/)>/gm, '');

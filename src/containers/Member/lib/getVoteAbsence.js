@@ -8,7 +8,9 @@ const getVoteAbsence = ({ url }) =>
         (parseInt(data.Nej, 10) || 0) +
         (parseInt(data.Frånvarande, 10) || 0) +
         (parseInt(data.Avstår, 10) || 0);
-      return { absence: Math.round((1 - parseInt(data.Frånvarande, 10) / total) * 1000) / 10 };
+      return {
+        absence: Math.round((1 - (parseInt(data.Frånvarande, 10) || 0) / total) * 1000) / 10
+      };
     });
 
 export default getVoteAbsence;

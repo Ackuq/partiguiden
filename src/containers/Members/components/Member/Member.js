@@ -33,7 +33,7 @@ const Member = ({ member, classes, show }) => (
       </div>
       <div
         alt="Bild på ledamot"
-        style={{ background: `url(${member.bild_url_192}) 50% 50% no-repeat` }}
+        style={{ background: `url(${member.bild_url_192}) 50% 25% no-repeat` }}
         className={classes.memberImage}
       >
         {member.parti !== '-' && (

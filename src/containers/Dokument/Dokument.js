@@ -15,21 +15,23 @@ const Dokument = ({ id, classes }) => {
     fetch(url)
       .then(res => res.text())
       .then(data => {
-        const html = parse(data);
-        let initialBody;
-        if (Array.isArray(html)) {
-          for (let i = 0; i < html.length; i += 1) {
-            if (html[i].type && html[i].type === 'div') {
-              initialBody = html[i];
-              break;
-            }
-          }
-        } else initialBody = html;
-        setBody(initialBody);
+        let html = parse(data);
+        if (!Array.isArray(html)) {
+          html = [html];
+        }
+        setBody(html);
       });
   }, []);
 
-  return <div className={classes.dokumentBody}>{body || <LoadCircle />}</div>;
+  return (
+    <div className={classes.dokumentBody}>
+      {body ? (
+        body.map(el => <React.Fragment key={el.key || el}>{el}</React.Fragment>)
+      ) : (
+        <LoadCircle />
+      )}
+    </div>
+  );
 };
 
 export default withStyles(styles)(Dokument);

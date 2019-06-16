@@ -12,7 +12,6 @@ const styles = () => ({
     marginLeft: 0
   },
   label: {
-    lineHeight: 0,
     fontSize: '1em'
   }
 });

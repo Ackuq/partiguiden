@@ -1,12 +1,4 @@
-const getIndex = [
-  'Socialdemokraterna',
-  'Moderaterna',
-  'Sverigedemokraterna',
-  'Centerpartiet',
-  'Vänsterpartiet',
-  'Kristdemokraterna',
-  'Miljöpartiet'
-];
+import getParties from '../../../utils/getParties';
 
 const getPartyData = async (party, tags) =>
   new Promise(resolve => {
@@ -29,11 +21,11 @@ const getPartyData = async (party, tags) =>
 
 const getSubjectData = async tags =>
   Promise.all(
-    getIndex.map(
+    getParties.map(
       party =>
         new Promise(resolve =>
-          getPartyData(party, tags).then(data => {
-            if (data.length > 0) resolve({ name: party, data });
+          getPartyData(party.name, tags).then(data => {
+            if (data.length > 0) resolve({ name: party.name, data });
             resolve();
           })
         )

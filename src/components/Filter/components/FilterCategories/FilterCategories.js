@@ -6,7 +6,7 @@ import { table } from '../../../../utils/authorityTable';
 import { useStateValue } from '../../../../lib/stateProvider';
 import styles from './styles';
 
-const FilterCategories = ({ classes, loadAll }) => {
+const FilterCategories = ({ classes }) => {
   const [{ filter }, dispatch] = useStateValue();
 
   const renderCheckBox = object => (
@@ -31,14 +31,7 @@ const FilterCategories = ({ classes, loadAll }) => {
   return (
     <div className={classes.catergoryContainer}>
       <FormGroup classes={{ root: classes.formGroupRoot }}>
-        {Object.keys(table)
-          .slice(0, 5)
-          .map(object => renderCheckBox(object))}
-
-        {loadAll &&
-          Object.keys(table)
-            .slice(5, table.length)
-            .map(object => renderCheckBox(object))}
+        {Object.keys(table).map(object => renderCheckBox(object))}
       </FormGroup>
     </div>
   );

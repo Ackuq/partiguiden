@@ -5,8 +5,8 @@ import { Grid, Paper } from '@material-ui/core';
 import { Router } from '../../../../lib/routes';
 import styles from './styles';
 
-const Member = ({ member, classes }) => (
-  <Grid item xs={12} sm={6}>
+const Member = ({ member, classes, show }) => (
+  <Grid item xs={12} sm={6} style={show ? null : { display: 'none' }}>
     <Paper
       elevation={2}
       classes={{ root: classes.memberCard }}
@@ -36,11 +36,13 @@ const Member = ({ member, classes }) => (
         style={{ background: `url(${member.bild_url_192}) 50% 50% no-repeat` }}
         className={classes.memberImage}
       >
-        <img
-          className={classes.partySymbol}
-          src={`../../static/images/party-logos/${member.parti.toUpperCase()}.svg`}
-          alt="Partisymbol"
-        />
+        {member.parti !== '-' && (
+          <img
+            className={classes.partySymbol}
+            src={`../../static/images/party-logos/${member.parti.toUpperCase()}.svg`}
+            alt="Partisymbol"
+          />
+        )}
       </div>
       <div className={classes.textContainer}>
         <span className={classes.name}>

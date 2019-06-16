@@ -5,10 +5,10 @@ const styles = theme => ({
     filterScreenContainer: {
       position: 'fixed',
       zIndex: 9999,
-      maxHeight: '100%',
       padding: '0 1rem',
-      minHeight: '100%',
+      height: '100%',
       minWidth: '50%',
+      maxWidth: '75%',
       top: 0,
       right: '-100%',
       transition: 'all 0.3s ease-in-out',

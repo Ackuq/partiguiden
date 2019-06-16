@@ -3,7 +3,7 @@ import { Collapse, ButtonBase, Grid, Typography } from '@material-ui/core';
 import { withStyles, styled } from '@material-ui/core/styles';
 import { grey } from '@material-ui/core/colors';
 
-import getPartyColor from '../../../../utils/getPartyColor';
+import { getPartyColor } from '../../../../utils/getParties';
 import PartyOpinion from '../PartyOpinion';
 import styles from './styles';
 

@@ -1,26 +1,24 @@
-import React, { useState, useRef } from 'react';
+import React, { useState } from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import { Button, Card } from '@material-ui/core';
 import FilterIcon from '@material-ui/icons/Tune';
+import ClickAwayListener from '@material-ui/core/ClickAwayListener';
 
-import useOnClickOutside from '../Filter/lib/useOnClickOutside';
 import styles from './styles';
 
 const Filter = ({ classes, children }) => {
   const [showFilterScreen, setShowFilterScreen] = useState(false);
+
   const showClass = showFilterScreen ? classes.showFilterScreen : '';
-  const ref = useRef();
 
-  const handleClick = () => showFilterScreen && setShowFilterScreen(false);
-
-  useOnClickOutside(ref, handleClick);
+  const handleClick = () => showClass && setShowFilterScreen(false);
 
   return (
     <React.Fragment>
       <Card classes={{ root: classes.filterButtonContainer }}>
         <Button
           classes={{ root: classes.buttonContainer }}
-          onClick={() => setShowFilterScreen(!showFilterScreen)}
+          onClick={() => setShowFilterScreen(true)}
         >
           <FilterIcon className={classes.icon} />
         </Button>
@@ -30,9 +28,9 @@ const Filter = ({ classes, children }) => {
           showFilterScreen ? classes.filterOverlayShow : classes.filterOverlayHidden
         }`}
       >
-        <div ref={ref} className={`${classes.filterScreenContainer} ${showClass}`}>
-          {children}
-        </div>
+        <ClickAwayListener onClickAway={handleClick}>
+          <div className={`${classes.filterScreenContainer} ${showClass}`}>{children}</div>
+        </ClickAwayListener>
       </div>
     </React.Fragment>
   );

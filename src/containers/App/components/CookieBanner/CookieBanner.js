@@ -3,7 +3,7 @@ import { withStyles } from '@material-ui/core/styles';
 import { Paper, Button, Slide } from '@material-ui/core';
 import Cookies from 'universal-cookie';
 
-import { Link } from '../../../../lib/routes';
+import { Router } from '../../../../lib/routes';
 import styles from './styles';
 
 const cookies = new Cookies();
@@ -25,10 +25,12 @@ const CookieBanner = ({ classes }) => {
               hemsidan.
             </h4>
             <div style={{ display: 'flex', justifyContent: 'center' }}>
-              <Button color="inherit" variant="outlined">
-                <Link route="kakpolicy">
-                  <a style={{ color: 'inherit' }}>Läs mer</a>
-                </Link>
+              <Button
+                color="inherit"
+                variant="outlined"
+                onClick={() => Router.pushRoute('kakpolicy')}
+              >
+                Läs mer
               </Button>
               <Button
                 color="inherit"

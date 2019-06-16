@@ -4,14 +4,12 @@ import LoadCircle from '../../components/LoadCircle';
 import FilterMembers from './components/FilterMembers';
 import MemberList from './components/MemberList';
 import getAllMembers from './lib/getAllMembers';
-import { useStateValue } from '../../lib/stateProvider';
 
 const Ledamoter = () => {
   const [loading, setLoading] = useState(true);
   const [members, setMembers] = useState({});
-  const { memberFilter } = useStateValue()[0];
 
-  const url = `https://data.riksdagen.se/personlista/?utformat=json&parti=${memberFilter.party}`;
+  const url = `https://data.riksdagen.se/personlista/?utformat=json`;
 
   useEffect(() => {
     getAllMembers({ url }).then(data => {
@@ -24,7 +22,7 @@ const Ledamoter = () => {
       setMembers(personer);
       setLoading(false);
     });
-  }, [memberFilter]);
+  }, []);
 
   return (
     <div

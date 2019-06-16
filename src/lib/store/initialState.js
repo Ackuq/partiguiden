@@ -7,7 +7,7 @@ const initialState = {
     org: []
   },
   memberFilter: {
-    party: ''
+    parties: []
   }
 };
 

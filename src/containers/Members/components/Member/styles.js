@@ -1,7 +1,7 @@
 const styles = theme => ({
   memberCard: {
     display: 'flex',
-    padding: '0.5rem 1rem',
+    padding: '0.5rem 1rem 1.5rem 0.5rem',
     justifyContent: 'space-between',
     position: 'relative',
     cursor: 'pointer'
@@ -9,8 +9,8 @@ const styles = theme => ({
 
   memberImage: {
     borderRadius: '10rem',
-    width: '200px',
-    height: '200px'
+    minWidth: '175px',
+    minHeight: '175px'
   },
 
   partySymbol: {
@@ -25,10 +25,10 @@ const styles = theme => ({
   memberInfo: {
     color: theme.palette.primary.dark,
     '& > div:first-child': {
-      marginBottom: '1rem'
+      marginBottom: '0.5rem'
     },
     '& > div:last-child': {
-      marginTop: '1rem'
+      marginTop: '0.5rem'
     }
   },
 

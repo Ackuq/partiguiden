@@ -4,10 +4,10 @@ const getVoteAbsence = ({ url }) =>
     .then(json => {
       const data = json.voteringlista.votering;
       const total =
-        parseInt(data.Ja, 10) +
-        parseInt(data.Nej, 10) +
-        parseInt(data.Frånvarande, 10) +
-        parseInt(data.Avstår, 10);
+        (parseInt(data.Ja, 10) || 0) +
+        (parseInt(data.Nej, 10) || 0) +
+        (parseInt(data.Frånvarande, 10) || 0) +
+        (parseInt(data.Avstår, 10) || 0);
       return { absence: Math.round((1 - parseInt(data.Frånvarande, 10) / total) * 1000) / 10 };
     });
 

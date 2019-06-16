@@ -21,9 +21,10 @@ const reducer = (state, action) => {
       return { ...state, filter: { ...state.filter, org: [...state.filter.org, action.org] } };
 
     case 'REMOVE_MEMBER_PARTY':
+      state.memberFilter.parties.splice(state.memberFilter.parties.indexOf(action.party), 1);
       return {
         ...state,
-        memberFilter: { ...state.memberFilter, party: '' }
+        memberFilter: { ...state.memberFilter, parties: state.memberFilter.parties }
       };
 
     case 'SET_MEMBER_PARTY':
@@ -31,7 +32,7 @@ const reducer = (state, action) => {
         ...state,
         memberFilter: {
           ...state.memberFilter,
-          party: action.party
+          parties: [...state.memberFilter.parties, action.party]
         }
       };
     default:

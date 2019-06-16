@@ -3,6 +3,7 @@ import AnnouncementIcon from '@material-ui/icons/Announcement';
 import Head from 'next/head';
 import Container from '@material-ui/core/Container';
 
+import PageTitle from '../src/components/PageTitle';
 import CookiePolicy from '../src/containers/CookiePolicy';
 
 const CookiePolicyContainer = () => (
@@ -14,10 +15,7 @@ const CookiePolicyContainer = () => (
         content="Partiguiden.nu erbjuder en platform där du kan jämföra vad olika partier tycker i sakfrågor för att det ska bli lättare att hitta det parti du sympatiserar med mest."
       />
     </Head>
-    <div className="list-title text-center">
-      <AnnouncementIcon style={{ fontSize: '2.5rem' }} />
-      <h1>Kakpolicy</h1>
-    </div>
+    <PageTitle title="Kakpolicy" Icon={AnnouncementIcon} />
     <Container>
       <CookiePolicy />
     </Container>

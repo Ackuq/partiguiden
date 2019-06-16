@@ -20,7 +20,7 @@ const VoteAbsence = ({ id, documentCount }) => {
             {absence} %
           </Typography>
           <Typography variant="body2" align="center">
-            Voteringsfråvaro
+            Voteringsnärvaro
           </Typography>
         </Paper>
       </Grid>

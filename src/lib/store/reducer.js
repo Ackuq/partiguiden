@@ -18,8 +18,22 @@ const reducer = (state, action) => {
       return { ...state, filter: { ...state.filter, org: state.filter.org } };
 
     case 'ADD_ORG_TO_FILTER':
-      return { ...state, filter: { ...state.filter, org: state.filter.org.concat(action.org) } };
+      return { ...state, filter: { ...state.filter, org: [...state.filter.org, action.org] } };
 
+    case 'REMOVE_MEMBER_PARTY':
+      return {
+        ...state,
+        memberFilter: { ...state.memberFilter, party: '' }
+      };
+
+    case 'SET_MEMBER_PARTY':
+      return {
+        ...state,
+        memberFilter: {
+          ...state.memberFilter,
+          party: action.party
+        }
+      };
     default:
       return state;
   }

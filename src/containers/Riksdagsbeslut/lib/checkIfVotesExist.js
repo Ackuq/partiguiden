@@ -1,5 +1,5 @@
 import stripJsonComments from 'strip-json-comments';
-import { checkVote } from '../../../lib/votingHelpers';
+import { checkVote } from '../../../utils/votingHelpers';
 
 const checkIfVotesExist = ({ url }) =>
   fetch(url)

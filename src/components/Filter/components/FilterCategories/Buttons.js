@@ -1,21 +1,18 @@
 import React from 'react';
-import { withStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 
-import styles from './styles';
-
-const Buttons = ({ classes, loadAll, setLoadAll }) => (
+const Buttons = ({ loadAll, setLoadAll }) => (
   <React.Fragment>
     {loadAll ? (
-      <Button onClick={() => setLoadAll(false)} classes={{ root: classes.showMoreButton }}>
+      <Button onClick={() => setLoadAll(false)} style={{ borderRadius: 0 }}>
         Visa mindre
       </Button>
     ) : (
-      <Button onClick={() => setLoadAll(true)} classes={{ root: classes.showMoreButton }}>
+      <Button onClick={() => setLoadAll(true)} style={{ borderRadius: 0 }}>
         Visa mer
       </Button>
     )}
   </React.Fragment>
 );
 
-export default withStyles(styles)(Buttons);
+export default Buttons;

@@ -1,4 +1,3 @@
-const getAllMembers = () =>
-  fetch('https://data.riksdagen.se/personlista/?utformat=json').then(res => res.json());
+const getAllMembers = ({ url }) => fetch(url).then(res => res.json());
 
 export default getAllMembers;

@@ -1,7 +1,7 @@
 import fetch from 'isomorphic-unfetch';
 import stripJsonComments from 'strip-json-comments';
 
-import { getVotes, getMaxVotes } from '../../../lib/votingHelpers';
+import { getVotes, getMaxVotes } from '../../../utils/votingHelpers';
 
 const getVotering = ({ dokId, tempbeteckning }) =>
   fetch(`https://data.riksdagen.se/dokumentstatus/${dokId}.json`)

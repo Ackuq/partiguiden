@@ -2,7 +2,7 @@ import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import { FormGroup, FormControlLabel, Checkbox } from '@material-ui/core';
 
-import { table } from '../../../../lib/authorityTable';
+import { table } from '../../../../utils/authorityTable';
 import { useStateValue } from '../../../../lib/stateProvider';
 import styles from './styles';
 

@@ -1,4 +1,4 @@
 import ProfilePicture from './ProfilePicture';
-import VoteAbscence from './VoteAbsence';
+import Information from './Information';
 
-export { ProfilePicture, VoteAbscence };
+export { ProfilePicture, Information };

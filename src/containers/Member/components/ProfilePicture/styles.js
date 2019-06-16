@@ -16,8 +16,7 @@ const styles = ({ palette, shadows }) => ({
   },
 
   nameContainer: {
-    display: 'flex',
-    justifyContent: 'center',
+    textAlign: 'center',
     paddingTop: '1rem',
     paddingBottom: '1rem'
   }

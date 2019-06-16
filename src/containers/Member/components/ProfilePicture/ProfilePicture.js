@@ -1,9 +1,10 @@
 import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
+import { Typography } from '@material-ui/core';
 
 import styles from './styles';
 
-const ProfilePicture = ({ src, classes, name }) => (
+const ProfilePicture = ({ src, classes, name, status }) => (
   <React.Fragment>
     <div className={classes.pictureContainer}>
       <div
@@ -12,7 +13,8 @@ const ProfilePicture = ({ src, classes, name }) => (
       />
     </div>
     <div className={classes.nameContainer}>
-      <h3>{name}</h3>
+      <Typography variant="h4">{name}</Typography>
+      <Typography variant="h6">{status}</Typography>
     </div>
   </React.Fragment>
 );

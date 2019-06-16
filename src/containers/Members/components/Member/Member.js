@@ -14,6 +14,9 @@ const Member = ({ member, classes }) => (
     >
       <div className={classes.memberInfo}>
         <div>
+          <span>{member.status}</span>
+        </div>
+        <div>
           <b>
             <span>Valkrets</span>
           </b>

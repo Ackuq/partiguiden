@@ -4,7 +4,7 @@ import Head from 'next/head';
 
 import LoadCircle from '../src/components/LoadCircle';
 import Member from '../src/containers/Member';
-import getMemberInformation from '../src/containers/Member/lib/getMemberInformation';
+import { getMemberInformation } from '../src/containers/Member/lib';
 
 const LedamotContainer = ({ router }) => {
   const [member, setMember] = useState(null);

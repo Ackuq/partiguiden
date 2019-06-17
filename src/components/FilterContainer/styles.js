@@ -63,7 +63,7 @@ const styles = theme => ({
       maxWidth: '100%',
       position: 'sticky',
       top: '55px',
-      maxHeight: 'calc(100vh - 100px)',
+      maxHeight: 'calc(100vh - 75px)',
       borderRadius: '4px',
       boxShadow:
         '0px 1px 3px 0px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 2px 1px -1px rgba(0,0,0,0.12)'

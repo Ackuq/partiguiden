@@ -1,4 +1,2 @@
 User-agent: *
-Disallow: /subject/
-Disallow: /dokument/
-Disallow: /votering/
+Allow: /

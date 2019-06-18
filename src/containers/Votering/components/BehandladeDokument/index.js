@@ -1,12 +1,16 @@
 import React, { useState } from 'react';
 import { Typography, Collapse, ButtonBase } from '@material-ui/core';
-import { withStyles } from '@material-ui/core/styles';
+import { makeStyles } from '@material-ui/styles';
 import ArrowDownRounded from '@material-ui/icons/KeyboardArrowDownRounded';
 
+import { array } from 'prop-types';
 import { Link } from '../../../../lib/routes';
 import styles from '../../styles';
 
-const BehandladeDokument = ({ classes, behandladeDokument }) => {
+const useStyles = makeStyles(styles);
+
+const BehandladeDokument = ({ behandladeDokument }) => {
+  const classes = useStyles();
   const [visible, setVisible] = useState(false);
 
   return (
@@ -41,4 +45,8 @@ const BehandladeDokument = ({ classes, behandladeDokument }) => {
   );
 };
 
-export default withStyles(styles)(BehandladeDokument);
+BehandladeDokument.propTypes = {
+  behandladeDokument: array.isRequired
+};
+
+export default BehandladeDokument;

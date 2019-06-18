@@ -1,11 +1,20 @@
 import React, { createContext, useContext, useReducer } from 'react';
+import { func, node, oneOfType, object } from 'prop-types';
 
-export const StateContext = createContext();
+const StateContext = createContext();
 
-export const StateProvider = ({ reducer, initialState, children }) => (
+const StateProvider = ({ reducer, initialState, children }) => (
   <StateContext.Provider value={useReducer(reducer, initialState)}>
     {children}
   </StateContext.Provider>
 );
 
-export const useStateValue = () => useContext(StateContext);
+StateProvider.propTypes = {
+  reducer: func.isRequired,
+  children: oneOfType([node, func]).isRequired,
+  initialState: object.isRequired
+};
+
+const useStateValue = () => useContext(StateContext);
+
+export { StateContext, StateProvider, useStateValue };

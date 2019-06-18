@@ -1,5 +1,6 @@
 import React from 'react';
 import { Card, CardContent, Typography } from '@material-ui/core';
+import PropTypes from 'prop-types';
 
 import { TotalVote, BehandladeDokument, Bilaga, RostFordelning, Beslut } from './components';
 
@@ -31,5 +32,20 @@ const Votering = ({
     </CardContent>
   </Card>
 );
+
+Votering.propTypes = {
+  forslag: PropTypes.string.isRequired,
+  bilaga: PropTypes.array,
+  behandladeDokument: PropTypes.array,
+  beslut: PropTypes.string.isRequired,
+  notisBeskrivning: PropTypes.string.isRequired,
+  voting: PropTypes.object.isRequired,
+  notisRubrik: PropTypes.string.isRequired
+};
+
+Votering.defaultProps = {
+  bilaga: null,
+  behandladeDokument: null
+};
 
 export default Votering;

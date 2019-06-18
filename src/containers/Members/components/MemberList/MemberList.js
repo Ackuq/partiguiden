@@ -1,5 +1,6 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
+import PropTypes from 'prop-types';
 
 import Member from '../Member';
 import { useStateValue } from '../../../../lib/stateProvider';
@@ -17,6 +18,10 @@ const MemberList = ({ members }) => {
       ))}
     </Grid>
   );
+};
+
+MemberList.propTypes = {
+  members: PropTypes.array.isRequired
 };
 
 export default MemberList;

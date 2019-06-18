@@ -1,29 +1,15 @@
 import React from 'react';
-import { withStyles } from '@material-ui/core/styles';
+import { makeStyles } from '@material-ui/styles';
 import { Typography, Grid } from '@material-ui/core';
+import { object } from 'prop-types';
 
-const voteringResult = () => ({
-  votering: {
-    display: 'flex',
-    '& .box': {
-      padding: '0.25rem'
-    }
-  },
-  parties: {
-    display: 'flex',
-    justifyContent: 'center',
-    '& h6': {
-      padding: '0.25rem'
-    },
-    '& img': {
-      height: '30px'
-    }
-  }
-});
+import styles from './styles';
 
-export default withStyles(voteringResult)(({ votes, classes }) => {
+const useStyles = makeStyles(styles);
+
+const VoteringResult = ({ votes }) => {
+  const classes = useStyles();
   const bgYes = votes.total ? { backgroundColor: '#c8e6c9' } : { backgroundColor: '#e0e0e0' };
-
   const bgNo = votes.total ? { backgroundColor: '#e0e0e0' } : { backgroundColor: '#ffcdd2' };
 
   return (
@@ -65,4 +51,10 @@ export default withStyles(voteringResult)(({ votes, classes }) => {
       </Grid>
     </Grid>
   );
-});
+};
+
+VoteringResult.propTypes = {
+  votes: object.isRequired
+};
+
+export default VoteringResult;

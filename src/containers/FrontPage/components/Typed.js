@@ -13,7 +13,7 @@ const PageTitleContainer = styled(Paper)(({ theme }) => ({
   minHeight: '5rem'
 }));
 
-const typed = () => (
+const TypedComponent = () => (
   <PageTitleContainer square>
     <Typography variant="h4" paragraph>
       Hur vill Sveriges partier förbättra
@@ -29,4 +29,4 @@ const typed = () => (
   </PageTitleContainer>
 );
 
-export default typed;
+export default TypedComponent;

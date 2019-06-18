@@ -1,6 +1,7 @@
 import React from 'react';
-import { withStyles } from '@material-ui/core/styles';
+import { withStyles } from '@material-ui/styles';
 import { Typography } from '@material-ui/core';
+import PropTypes from 'prop-types';
 
 import styles from './styles';
 
@@ -21,5 +22,13 @@ const ProfilePicture = ({ src, classes, name, status, age }) => (
     </div>
   </React.Fragment>
 );
+
+ProfilePicture.propTypes = {
+  src: PropTypes.string.isRequired,
+  classes: PropTypes.object.isRequired,
+  name: PropTypes.string.isRequired,
+  status: PropTypes.string.isRequired,
+  age: PropTypes.number.isRequired
+};
 
 export default withStyles(styles)(ProfilePicture);

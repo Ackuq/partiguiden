@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Grid from '@material-ui/core/Grid';
 
-import { withStyles } from '@material-ui/core/styles';
+import { makeStyles } from '@material-ui/styles';
 import ListObject from './components/ListObject';
 import LoadCircle from '../../components/LoadCircle';
 
@@ -9,7 +9,10 @@ import { useStateValue } from '../../lib/stateProvider';
 
 import styles from './styles';
 
-const PartiernasStandpunkter = ({ classes }) => {
+const useStyles = makeStyles(styles);
+
+const PartiernasStandpunkter = () => {
+  const classes = useStyles();
   const [subjects, setSubjects] = useState(null);
   const { subjectData } = useStateValue()[0];
 
@@ -40,4 +43,4 @@ const PartiernasStandpunkter = ({ classes }) => {
   );
 };
 
-export default withStyles(styles)(PartiernasStandpunkter);
+export default PartiernasStandpunkter;

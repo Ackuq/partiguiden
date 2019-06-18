@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import { CircularProgress, Typography, Collapse, ButtonBase } from '@material-ui/core';
-import { withStyles } from '@material-ui/core/styles';
+import { makeStyles } from '@material-ui/styles';
 import ArrowDownRounded from '@material-ui/icons/KeyboardArrowDownRounded';
-
 import {
   BarChart,
   Bar,
@@ -13,14 +12,17 @@ import {
   Legend,
   ResponsiveContainer
 } from 'recharts';
+import PropTypes from 'prop-types';
 
 import CustomizedTick from './CustomizedTick';
+import createData from './createData';
 
 import styles from '../../styles';
 
-import createData from './createData';
+const useStyles = makeStyles(styles);
 
-const RostFordelning = ({ voting, classes }) => {
+const RostFordelning = ({ voting }) => {
+  const classes = useStyles();
   const [visible, setVisible] = useState(false);
 
   const data = createData(voting);
@@ -60,4 +62,8 @@ const RostFordelning = ({ voting, classes }) => {
   );
 };
 
-export default withStyles(styles)(RostFordelning);
+RostFordelning.propTypes = {
+  voting: PropTypes.object.isRequired
+};
+
+export default RostFordelning;

@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import CircularProgress from '@material-ui/core/CircularProgress';
-import { withStyles } from '@material-ui/core/styles';
+import { makeStyles } from '@material-ui/styles';
 import { PieChart, Pie, Cell, ResponsiveContainer } from 'recharts';
+import { number, object, string } from 'prop-types';
 
 import styles from '../../styles';
 
@@ -49,7 +50,21 @@ const renderCustomizedLabel = ({
   );
 };
 
-const TotalVote = ({ voting, classes }) => {
+renderCustomizedLabel.propTypes = {
+  cx: number.isRequired,
+  cy: number.isRequired,
+  midAngle: number.isRequired,
+  outerRadius: number.isRequired,
+  payload: object.isRequired,
+  fill: string.isRequired,
+  value: string.isRequired,
+  percent: number.isRequired
+};
+
+const useStyles = makeStyles(styles);
+
+const TotalVote = ({ voting }) => {
+  const classes = useStyles();
   const data = useState(createData(voting))[0];
 
   return (
@@ -80,4 +95,8 @@ const TotalVote = ({ voting, classes }) => {
   );
 };
 
-export default withStyles(styles)(TotalVote);
+TotalVote.propTypes = {
+  voting: object.isRequired
+};
+
+export default TotalVote;

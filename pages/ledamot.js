@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { withRouter } from 'next/router';
 import Head from 'next/head';
+import PropTypes from 'prop-types';
 
 import LoadCircle from '../src/components/LoadCircle';
 import Member from '../src/containers/Member';
@@ -23,6 +24,10 @@ const LedamotContainer = ({ router }) => {
       {member ? <Member member={member} /> : <LoadCircle />}
     </React.Fragment>
   );
+};
+
+LedamotContainer.propTypes = {
+  router: PropTypes.object.isRequired
 };
 
 export default withRouter(LedamotContainer);

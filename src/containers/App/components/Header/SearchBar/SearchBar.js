@@ -1,12 +1,15 @@
 import React, { useState, useEffect } from 'react';
-import { withStyles } from '@material-ui/core/styles';
+import { makeStyles } from '@material-ui/styles';
 import Autosuggest from 'react-autosuggest';
 import { InputBase, InputAdornment, Paper, MenuItem } from '@material-ui/core';
 import SearchIcon from '@material-ui/icons/Search';
 
+import { func, string } from 'prop-types';
 import { Router } from '../../../../../lib/routes';
 import { useStateValue } from '../../../../../lib/stateProvider';
 import styles from './styles';
+
+const useStyles = makeStyles(styles);
 
 const getSuggestions = (value, data) => {
   const inputValue = value.trim().toLowerCase();
@@ -20,7 +23,8 @@ const getSuggestValue = suggestion => {
   return suggestion.name;
 };
 
-const SearchBar = ({ classes, id }) => {
+const SearchBar = ({ id }) => {
+  const classes = useStyles();
   const [inputValue, setInputValue] = useState('');
   const [suggestions, setSuggestions] = useState([]);
   const [data, setData] = useState([]);
@@ -100,6 +104,10 @@ const SearchBar = ({ classes, id }) => {
     />
   );
 
+  renderInputComponent.propTypes = {
+    ref: func.isRequired
+  };
+
   const inputProps = {
     placeholder: 'Sök här...',
     value: inputValue,
@@ -145,4 +153,8 @@ const SearchBar = ({ classes, id }) => {
   );
 };
 
-export default withStyles(styles)(SearchBar);
+SearchBar.propTypes = {
+  id: string.isRequired
+};
+
+export default SearchBar;

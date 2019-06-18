@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { withStyles } from '@material-ui/core/styles';
+import { makeStyles } from '@material-ui/styles';
 import {
   Collapse,
   Card,
@@ -11,6 +11,7 @@ import {
 } from '@material-ui/core';
 import ArrowDownRounded from '@material-ui/icons/KeyboardArrowDownRounded';
 import parse from 'html-react-parser';
+import PropTypes from 'prop-types';
 
 import { checkIfVotesExist } from '../../lib';
 import { Router } from '../../../../lib/routes';
@@ -18,7 +19,10 @@ import getOrganInfo from '../../../../utils/authorityTable';
 import styles from './styles';
 import { useStateValue } from '../../../../lib/stateProvider';
 
-const Riksdagsbeslut = ({ beslut, classes }) => {
+const useStyles = makeStyles(styles);
+
+const Riksdagsbeslut = ({ beslut }) => {
+  const classes = useStyles();
   const [voteringarExist, setVoteringarExist] = useState(false);
   const [visible, setVisible] = useState(false);
   const dispatch = useStateValue()[1];
@@ -109,4 +113,8 @@ const Riksdagsbeslut = ({ beslut, classes }) => {
   );
 };
 
-export default withStyles(styles)(Riksdagsbeslut);
+Riksdagsbeslut.propTypes = {
+  beslut: PropTypes.object.isRequired
+};
+
+export default Riksdagsbeslut;

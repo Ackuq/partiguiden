@@ -2,11 +2,11 @@ import React from 'react';
 /* Material UI import */
 import { Grid, ButtonBase } from '@material-ui/core';
 import { grey } from '@material-ui/core/colors';
-import { withStyles } from '@material-ui/core/styles';
+import { makeStyles } from '@material-ui/styles';
 
 import { Router } from '../../../lib/routes';
 
-const featuredStyles = theme => ({
+const styles = theme => ({
   featured: {
     width: '100%',
     textAlign: 'center',
@@ -31,18 +31,25 @@ const getFeatured = () => [
   { id: 'migration-och-integration', name: 'Migration och integration' }
 ];
 
-export default withStyles(featuredStyles)(({ classes }) => (
-  <Grid container spacing={3}>
-    {getFeatured().map(obj => (
-      <Grid key={`${obj.id}`} item xs={12} md={6}>
-        <ButtonBase
-          className={classes.featured}
-          component="div"
-          onClick={() => Router.pushRoute('subject', { id: obj.id })}
-        >
-          <span>{obj.name}</span>
-        </ButtonBase>
-      </Grid>
-    ))}
-  </Grid>
-));
+const useStyles = makeStyles(styles);
+
+const Featured = () => {
+  const classes = useStyles();
+  return (
+    <Grid container spacing={3}>
+      {getFeatured().map(obj => (
+        <Grid key={`${obj.id}`} item xs={12} md={6}>
+          <ButtonBase
+            className={classes.featured}
+            component="div"
+            onClick={() => Router.pushRoute('subject', { id: obj.id })}
+          >
+            <span>{obj.name}</span>
+          </ButtonBase>
+        </Grid>
+      ))}
+    </Grid>
+  );
+};
+
+export default Featured;

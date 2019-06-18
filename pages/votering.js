@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { withRouter } from 'next/router';
 import Head from 'next/head';
 import Container from '@material-ui/core/Container';
+import PropTypes from 'prop-types';
 
 import PageTitle from '../src/components/PageTitle';
 import LoadCircle from '../src/components/LoadCircle';
@@ -57,6 +58,10 @@ const VoteringContainer = ({ router }) => {
       </Container>
     </React.Fragment>
   );
+};
+
+VoteringContainer.propTypes = {
+  router: PropTypes.object.isRequired
 };
 
 export default withRouter(VoteringContainer);

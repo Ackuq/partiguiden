@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
-/* Material ui components */
-import { withStyles } from '@material-ui/core/styles';
+import { makeStyles } from '@material-ui/styles';
 import ButtonBase from '@material-ui/core/ButtonBase';
 
 import Ad from '../../../../components/Ad';
@@ -11,7 +10,10 @@ import { useStateValue } from '../../../../lib/stateProvider';
 
 import styles from './styles';
 
-const RiksdagsList = ({ classes }) => {
+const useStyles = makeStyles(styles);
+
+const RiksdagsList = () => {
+  const classes = useStyles();
   const [page, setPage] = useState(1);
   const [beslut, setBeslut] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -81,4 +83,4 @@ const RiksdagsList = ({ classes }) => {
   );
 };
 
-export default withStyles(styles)(RiksdagsList);
+export default RiksdagsList;

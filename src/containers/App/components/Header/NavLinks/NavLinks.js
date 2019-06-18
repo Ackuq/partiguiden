@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { withRouter } from 'next/router';
-import { withStyles } from '@material-ui/core/styles';
-// Tabs
+import { makeStyles } from '@material-ui/styles';
 import { AppBar, Tabs, Tab } from '@material-ui/core';
+
+import { string, object } from 'prop-types';
 import { Router } from '../../../../../lib/routes';
-
 import styles from './styles';
-
 import { useStateValue } from '../../../../../lib/stateProvider';
+
+const useStyles = makeStyles(styles);
 
 const getPages = () => [
   { href: '/', title: 'Hem' },
@@ -21,7 +22,8 @@ const getPages = () => [
   { href: '/om-oss', title: 'Om oss' }
 ];
 
-const NavLinks = ({ classes, router }) => {
+const NavLinks = ({ router }) => {
+  const classes = useStyles();
   const dispatch = useStateValue()[1];
 
   const getInitialIndex = val => {
@@ -45,14 +47,14 @@ const NavLinks = ({ classes, router }) => {
     setValue(getInitialIndex(value));
   }, [router.pathname]);
 
-  const renNavlink = props => (
-    <Tab
-      classes={{ root: classes.navTab }}
-      key={`${props.title}`}
-      label={`${props.title}`}
-      href={`${props.href}`}
-    />
+  const renNavlink = ({ title, href }) => (
+    <Tab classes={{ root: classes.navTab }} key={title} label={title} href={href} />
   );
+
+  renNavlink.propTypes = {
+    title: string.isRequired,
+    href: string.isRequired
+  };
 
   const handleChange = (event, newValue) => {
     event.preventDefault();
@@ -85,4 +87,8 @@ const NavLinks = ({ classes, router }) => {
   );
 };
 
-export default withStyles(styles)(withRouter(NavLinks));
+NavLinks.propTypes = {
+  router: object.isRequired
+};
+
+export default withRouter(NavLinks);

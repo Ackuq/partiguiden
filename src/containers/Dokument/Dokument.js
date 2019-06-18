@@ -1,12 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import fetch from 'isomorphic-unfetch';
 import parse from 'html-react-parser';
-import { withStyles } from '@material-ui/styles';
+import { makeStyles } from '@material-ui/styles';
+import PropTypes from 'prop-types';
 import LoadCircle from '../../components/LoadCircle';
 
 import styles from './styles';
 
-const Dokument = ({ id, classes }) => {
+const useStyles = makeStyles(styles);
+
+const Dokument = ({ id }) => {
+  const classes = useStyles();
+
   const [body, setBody] = useState(null);
 
   useEffect(() => {
@@ -34,4 +39,8 @@ const Dokument = ({ id, classes }) => {
   );
 };
 
-export default withStyles(styles)(Dokument);
+Dokument.propTypes = {
+  id: PropTypes.string.isRequired
+};
+
+export default Dokument;

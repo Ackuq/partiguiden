@@ -1,13 +1,15 @@
 import React from 'react';
-import { withStyles } from '@material-ui/core/styles';
+import { styled } from '@material-ui/styles';
 import CircularProgress from '@material-ui/core/CircularProgress';
 
-import styles from './styles';
+const FullLoadCircle = styled(CircularProgress)({
+  display: 'flex',
+  margin: 'auto',
+  justifyContent: 'center',
+  flex: 1,
+  flexDirection: 'column'
+});
 
-const LoadCircle = ({ classes }) => (
-  <div className={classes.circleContainer}>
-    <CircularProgress size={100} />
-  </div>
-);
+const LoadCircle = () => <FullLoadCircle size={100} />;
 
-export default withStyles(styles)(LoadCircle);
+export default LoadCircle;

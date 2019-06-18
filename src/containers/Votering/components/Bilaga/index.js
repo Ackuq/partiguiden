@@ -1,6 +1,7 @@
 import React from 'react';
 import Typography from '@material-ui/core/Typography';
 import Link from '@material-ui/core/Link';
+import { array } from 'prop-types';
 
 const Bilaga = ({ bilaga }) => (
   <React.Fragment>
@@ -23,5 +24,9 @@ const Bilaga = ({ bilaga }) => (
     </div>
   </React.Fragment>
 );
+
+Bilaga.propTypes = {
+  bilaga: array.isRequired
+};
 
 export default Bilaga;

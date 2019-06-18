@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { withStyles } from '@material-ui/core/styles';
+import { makeStyles } from '@material-ui/styles';
 import ButtonBase from '@material-ui/core/ButtonBase';
-import Ad from '../../../../components/Ad';
 
+import Ad from '../../../../components/Ad';
 import Votering from '../Votering';
 import LoadCircle from '../../../../components/LoadCircle';
 import { useStateValue } from '../../../../lib/stateProvider';
@@ -10,7 +10,10 @@ import { getVoteringList } from '../../lib';
 
 import styles from './styles';
 
-const Voteringar = ({ classes }) => {
+const useStyles = makeStyles(styles);
+
+const Voteringar = () => {
+  const classes = useStyles();
   const [page, setPage] = useState(1);
   const [loading, setLoading] = useState(true);
   const [lastPage, setLastPage] = useState(true);
@@ -82,4 +85,4 @@ const Voteringar = ({ classes }) => {
   );
 };
 
-export default withStyles(styles)(Voteringar);
+export default Voteringar;

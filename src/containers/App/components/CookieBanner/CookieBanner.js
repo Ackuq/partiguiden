@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { withStyles } from '@material-ui/core/styles';
+import { makeStyles } from '@material-ui/styles';
 import { Paper, Button, Slide } from '@material-ui/core';
 import Cookies from 'universal-cookie';
 
@@ -8,7 +8,10 @@ import styles from './styles';
 
 const cookies = new Cookies();
 
-const CookieBanner = ({ classes }) => {
+const useStyles = makeStyles(styles);
+
+const CookieBanner = () => {
+  const classes = useStyles();
   const [cookieConsent, setCookieConsent] = useState(true);
 
   useEffect(() => {
@@ -51,4 +54,4 @@ const CookieBanner = ({ classes }) => {
   );
 };
 
-export default withStyles(styles)(CookieBanner);
+export default CookieBanner;

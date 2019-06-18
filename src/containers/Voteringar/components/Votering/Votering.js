@@ -1,7 +1,8 @@
 /* eslint-disable camelcase */
 import React, { useState, useEffect } from 'react';
-import { withStyles } from '@material-ui/core/styles';
+import { makeStyles } from '@material-ui/styles';
 import { Card, CardContent, CardHeader, Typography } from '@material-ui/core';
+import { shape, string } from 'prop-types';
 
 import VoteringResult from '../VoteringResult';
 import { getVotering } from '../../lib';
@@ -9,8 +10,10 @@ import getOrganInfo from '../../../../utils/authorityTable';
 import { Router } from '../../../../lib/routes';
 import styles from './styles';
 
-// eslint-disable-next-line camelcase
-const Votering = ({ classes, votering: { id, beteckning, tempbeteckning, titel, organ } }) => {
+const useStyles = makeStyles(styles);
+
+const Votering = ({ votering: { id, beteckning, tempbeteckning, titel, organ } }) => {
+  const classes = useStyles();
   const [loading, setLoading] = useState(true);
   const [votes, setVotes] = useState({});
   const [rubrik, setRubrik] = useState('');
@@ -80,4 +83,14 @@ const Votering = ({ classes, votering: { id, beteckning, tempbeteckning, titel, 
   );
 };
 
-export default withStyles(styles)(Votering);
+Votering.propTypes = {
+  votering: shape({
+    id: string.isRequired,
+    beteckning: string.isRequired,
+    tempbeteckning: string.isRequired,
+    titel: string.isRequired,
+    organ: string.isRequired
+  }).isRequired
+};
+
+export default Votering;

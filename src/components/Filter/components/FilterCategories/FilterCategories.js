@@ -1,12 +1,15 @@
 import React from 'react';
-import { withStyles } from '@material-ui/core/styles';
+import { makeStyles } from '@material-ui/styles';
 import { FormGroup, FormControlLabel, Checkbox } from '@material-ui/core';
 
 import { table } from '../../../../utils/authorityTable';
 import { useStateValue } from '../../../../lib/stateProvider';
 import styles from './styles';
 
-const FilterCategories = ({ classes }) => {
+const useStyles = makeStyles(styles);
+
+const FilterCategories = () => {
+  const classes = useStyles();
   const [{ filter }, dispatch] = useStateValue();
 
   const renderCheckBox = object => (
@@ -37,4 +40,4 @@ const FilterCategories = ({ classes }) => {
   );
 };
 
-export default withStyles(styles)(FilterCategories);
+export default FilterCategories;

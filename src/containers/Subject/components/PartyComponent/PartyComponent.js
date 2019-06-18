@@ -1,13 +1,17 @@
 import React, { useState } from 'react';
 import { Collapse, ButtonBase, Grid, Typography } from '@material-ui/core';
-import { withStyles, styled } from '@material-ui/core/styles';
+import { makeStyles, styled } from '@material-ui/styles';
 import { grey } from '@material-ui/core/colors';
+import PropTypes from 'prop-types';
 
 import { getPartyColor } from '../../../../utils/getParties';
 import PartyOpinion from '../PartyOpinion';
 import styles from './styles';
 
-const PartyComponent = ({ classes, party }) => {
+const useStyles = makeStyles(styles);
+
+const PartyComponent = ({ party }) => {
+  const classes = useStyles();
   const [visible, setVisible] = useState(false);
   const partyColor = getPartyColor(party.name);
 
@@ -50,4 +54,8 @@ const PartyComponent = ({ classes, party }) => {
   );
 };
 
-export default withStyles(styles)(PartyComponent);
+PartyComponent.propTypes = {
+  party: PropTypes.object.isRequired
+};
+
+export default PartyComponent;

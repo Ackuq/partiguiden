@@ -4,7 +4,6 @@ const getMemberDocuments = ({ url, page }) =>
     .then(data => {
       const { dokumentlista } = data;
       const pages = parseInt(dokumentlista['@sidor'], 10);
-
       return {
         count: dokumentlista['@traffar'],
         documents: dokumentlista.dokument,

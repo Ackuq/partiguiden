@@ -2,7 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { withRouter } from 'next/router';
 import Head from 'next/head';
 import Container from '@material-ui/core/Container';
+import PropTypes from 'prop-types';
 
+import LoadCircle from '../src/components/LoadCircle';
 import PageTitle from '../src/components/PageTitle';
 import Subject from '../src/containers/Subject';
 import getData from '../src/containers/Subject/lib/getSubjectData';
@@ -39,10 +41,14 @@ const SubjectContainer = ({ router }) => {
       </Head>
       <PageTitle title={name} />
       <Container>
-        <Subject partyData={partyData} loading={loading} />
+        {loading ? <LoadCircle /> : <Subject partyData={partyData} loading={loading} />}
       </Container>
     </React.Fragment>
   );
+};
+
+SubjectContainer.propTypes = {
+  router: PropTypes.object.isRequired
 };
 
 export default withRouter(SubjectContainer);

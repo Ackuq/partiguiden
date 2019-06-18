@@ -1,5 +1,5 @@
 import React from 'react';
-import { withStyles } from '@material-ui/core/styles';
+import { makeStyles } from '@material-ui/styles';
 import { FormGroup, FormControlLabel, Checkbox } from '@material-ui/core';
 
 import FilterContainer from '../../../../components/FilterContainer';
@@ -7,7 +7,10 @@ import { useStateValue } from '../../../../lib/stateProvider';
 import parties from '../../../../utils/getParties';
 import styles from './styles';
 
-const FilterMembers = ({ classes }) => {
+const useStyles = makeStyles(styles);
+
+const FilterMembers = () => {
+  const classes = useStyles();
   const [{ memberFilter }, dispatch] = useStateValue();
 
   const renderCheckBox = party => (
@@ -40,4 +43,4 @@ const FilterMembers = ({ classes }) => {
   );
 };
 
-export default withStyles(styles)(FilterMembers);
+export default FilterMembers;

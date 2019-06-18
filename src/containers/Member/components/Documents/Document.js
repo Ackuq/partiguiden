@@ -1,6 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/styles';
 import { Card, CardContent, CardHeader, Typography } from '@material-ui/core/';
+import { object } from 'prop-types';
 
 import { Router } from '../../../../lib/routes';
 import getOrganInfo from '../../../../utils/authorityTable';
@@ -46,6 +47,10 @@ const Documents = ({ document }) => {
       </CardContent>
     </Card>
   );
+};
+
+Documents.propTypes = {
+  document: object.isRequired
 };
 
 export default Documents;

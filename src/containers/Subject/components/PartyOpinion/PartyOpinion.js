@@ -12,6 +12,7 @@ import {
   ListItemText
 } from '@material-ui/core';
 import { styled } from '@material-ui/styles';
+import PropTypes from 'prop-types';
 
 const PartyOpinion = ({ partyName, subject, partyColor }) => {
   const ListBox = styled(ListItemIcon)({
@@ -54,6 +55,12 @@ const PartyOpinion = ({ partyName, subject, partyColor }) => {
       </Card>
     </Grid>
   );
+};
+
+PartyOpinion.propTypes = {
+  partyName: PropTypes.string.isRequired,
+  subject: PropTypes.object.isRequired,
+  partyColor: PropTypes.string.isRequired
 };
 
 export default PartyOpinion;

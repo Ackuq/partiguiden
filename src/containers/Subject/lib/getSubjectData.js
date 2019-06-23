@@ -1,10 +1,9 @@
-import getParties from '../../../utils/getParties';
+import { getParties, fetchJSON, apiLinks } from '../../../utils';
 
 const getPartyData = async (party, tags) =>
   new Promise(resolve => {
-    const url = `https://api.partiguiden.nu/party?party=${party}`;
-    fetch(url)
-      .then(res => res.json())
+    const url = `${apiLinks.partiguidenApi}/party?party=${party}`;
+    fetchJSON(url)
       .then(data => {
         const temp = [];
         Object.keys(data).forEach(id => {

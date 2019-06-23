@@ -15,7 +15,7 @@ const Member = ({ member, show }) => {
       <Paper
         elevation={2}
         classes={{ root: classes.memberCard }}
-        onClick={() => Router.pushRoute('ledamot', { id: member.intressent_id })}
+        onClick={() => Router.pushRoute('ledamot', { id: member.id })}
       >
         <div className={classes.memberInfo}>
           <div>
@@ -33,12 +33,12 @@ const Member = ({ member, show }) => {
               <span>Ålder</span>
             </b>
             <br />
-            <span>{new Date().getFullYear() - member.fodd_ar}</span>
+            <span>{member.alder}</span>
           </div>
         </div>
         <div
           alt="Bild på ledamot"
-          style={{ background: `url(${member.bild_url_192}) 50% 25% no-repeat` }}
+          style={{ background: `url(${member.bild_url}) 50% 25% no-repeat` }}
           className={classes.memberImage}
         >
           {member.parti !== '-' && (
@@ -50,9 +50,7 @@ const Member = ({ member, show }) => {
           )}
         </div>
         <div className={classes.textContainer}>
-          <span className={classes.name}>
-            {member.tilltalsnamn} {member.efternamn}
-          </span>
+          <span className={classes.name}>{member.namn}</span>
         </div>
       </Paper>
     </Grid>

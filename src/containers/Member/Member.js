@@ -7,13 +7,13 @@ import { ProfilePicture, Information } from './components';
 const Member = ({ member }) => (
   <React.Fragment>
     <ProfilePicture
-      src={member.bild_url_192}
-      name={`${member.tilltalsnamn} ${member.efternamn}`}
+      src={member.bild_url}
+      name={member.namn}
       status={member.status}
-      age={new Date().getFullYear() - member.fodd_ar}
+      age={member.alder}
     />
     <Container>
-      <Information id={member.intressent_id} records={member.personuppgift.uppgift} />
+      <Information id={member.id} records={member.uppgifter} absence={member.absence} />
     </Container>
   </React.Fragment>
 );

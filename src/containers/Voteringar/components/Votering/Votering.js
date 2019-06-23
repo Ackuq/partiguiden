@@ -1,9 +1,10 @@
 /* eslint-disable camelcase */
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import { makeStyles } from '@material-ui/styles';
 import { Card, CardContent, CardHeader, Typography } from '@material-ui/core';
 import { shape, string } from 'prop-types';
 
+import ApiContext from '../../../../lib/ApiContext';
 import VoteringResult from '../VoteringResult';
 import { getVotering } from '../../lib';
 import getOrganInfo from '../../../../utils/authorityTable';
@@ -13,6 +14,7 @@ import styles from './styles';
 const useStyles = makeStyles(styles);
 
 const Votering = ({ votering: { id, beteckning, tempbeteckning, titel, organ } }) => {
+  const { riksdagenApi } = useContext(ApiContext);
   const classes = useStyles();
   const [loading, setLoading] = useState(true);
   const [votes, setVotes] = useState({});
@@ -23,8 +25,10 @@ const Votering = ({ votering: { id, beteckning, tempbeteckning, titel, organ } }
 
   let mounted = true;
 
+  const url = `${riksdagenApi}/dokumentstatus/${dokId}.json`;
+
   useEffect(() => {
-    getVotering({ dokId, tempbeteckning }).then(result => {
+    getVotering({ url, tempbeteckning }).then(result => {
       if (mounted && result) {
         setVotes(result.maxVotes);
         setRubrik(result.rubrik);

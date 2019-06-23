@@ -12,7 +12,7 @@ const MemberList = ({ members }) => {
       {members.map(member => (
         <Member
           member={member}
-          key={member.intressent_id}
+          key={member.id}
           show={memberFilter.parties.length === 0 || memberFilter.parties.includes(member.parti)}
         />
       ))}

@@ -1,28 +1,33 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Typography, Card, CardContent } from '@material-ui/core';
 
-const OmOss = () => (
-  <Card>
-    <CardContent>
-      <Typography variant="subtitle1" paragraph>
-        Partiguiden.nu skapades med syftet av att kunna erbjuda en plattform där man lätt kan kolla
-        upp partiernas ståndpunkter i olika ämnen och sakfrågor. Under utvecklingen av hemsidan togs
-        det hänsyn till begriplighet och användarvänlighet för att kunna erbjuda den bästa möjliga
-        användarupplevensen.
-      </Typography>
-      <Typography variant="subtitle1" paragraph>
-        Utvecklingen av sidan påbörjades som ett fritidsprojekt år 2017 för att utveckla kunskaper
-        inom webbutveckling.
-      </Typography>
-      <Typography variant="subtitle1" paragraph>
-        Informationen som presenteras på sidan är information från partiernas egna hemsidor samt
-        information från Riksdagens öppna API, som finns på{' '}
-        <a rel="noopener noreferrer" target="_blank" href="https://data.riksdagen.se/">
-          https://data.riksdagen.se/
-        </a>
-      </Typography>
-    </CardContent>
-  </Card>
-);
+import ApiContext from '../../lib/ApiContext';
+
+const OmOss = () => {
+  const { riksdagenApi } = useContext(ApiContext);
+  return (
+    <Card>
+      <CardContent>
+        <Typography variant="subtitle1" paragraph>
+          Partiguiden.nu skapades med syftet av att kunna erbjuda en plattform där man lätt kan
+          kolla upp partiernas ståndpunkter i olika ämnen och sakfrågor. Under utvecklingen av
+          hemsidan togs det hänsyn till begriplighet och användarvänlighet för att kunna erbjuda den
+          bästa möjliga användarupplevensen.
+        </Typography>
+        <Typography variant="subtitle1" paragraph>
+          Utvecklingen av sidan påbörjades som ett fritidsprojekt år 2017 för att utveckla kunskaper
+          inom webbutveckling.
+        </Typography>
+        <Typography variant="subtitle1" paragraph>
+          Informationen som presenteras på sidan är information från partiernas egna hemsidor samt
+          information från Riksdagens öppna API, som finns på{' '}
+          <a rel="noopener noreferrer" target="_blank" href={riksdagenApi}>
+            {riksdagenApi}
+          </a>
+        </Typography>
+      </CardContent>
+    </Card>
+  );
+};
 
 export default OmOss;

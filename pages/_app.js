@@ -4,6 +4,8 @@ import ReactGA from 'react-ga';
 import { ThemeProvider } from '@material-ui/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 
+import { ApiProvider } from '../src/lib/ApiContext';
+import { apiLinks } from '../src/utils';
 import { Footer, Header, ToTopButton, CookieBanner } from '../src/containers/App';
 import { StateProvider } from '../src/lib/stateProvider';
 import { initialState, reducer } from '../src/lib/store';
@@ -29,23 +31,25 @@ class MyApp extends App {
     return (
       <Container>
         <ThemeProvider theme={theme}>
-          <StateProvider initialState={initialState} reducer={reducer}>
-            <CssBaseline />
-            <Header />
-            <main
-              style={{
-                marginBottom: '1rem',
-                display: 'flex',
-                flexDirection: 'column',
-                flexGrow: 1
-              }}
-            >
-              <Component pageContext={this.pageContext} {...pageProps} />
-            </main>
-            <Footer />
-            <ToTopButton />
-            <CookieBanner />
-          </StateProvider>
+          <ApiProvider value={apiLinks}>
+            <StateProvider initialState={initialState} reducer={reducer}>
+              <CssBaseline />
+              <Header />
+              <main
+                style={{
+                  marginBottom: '1rem',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  flexGrow: 1
+                }}
+              >
+                <Component pageContext={this.pageContext} {...pageProps} />
+              </main>
+              <Footer />
+              <ToTopButton />
+              <CookieBanner />
+            </StateProvider>
+          </ApiProvider>
         </ThemeProvider>
       </Container>
     );

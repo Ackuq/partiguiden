@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import { makeStyles } from '@material-ui/styles';
 import ButtonBase from '@material-ui/core/ButtonBase';
 
+import ApiContext from '../../../../lib/ApiContext';
 import Ad from '../../../../components/Ad';
 import Votering from '../Votering';
 import LoadCircle from '../../../../components/LoadCircle';
@@ -13,6 +14,7 @@ import styles from './styles';
 const useStyles = makeStyles(styles);
 
 const Voteringar = () => {
+  const { riksdagenApi } = useContext(ApiContext);
   const classes = useStyles();
   const [page, setPage] = useState(1);
   const [loading, setLoading] = useState(true);
@@ -23,7 +25,7 @@ const Voteringar = () => {
   const url = () => {
     const { search } = filter;
     const org = filter.org.join('&org=');
-    return `https://data.riksdagen.se/dokumentlista/?sok=${search}&doktyp=votering&org=${org}&sort=${
+    return `${riksdagenApi}/dokumentlista/?sok=${search}&doktyp=votering&org=${org}&sort=${
       search ? 'rel' : 'datum'
     }&sortorder=desc&utformat=json&a=s&p=${page}`;
   };

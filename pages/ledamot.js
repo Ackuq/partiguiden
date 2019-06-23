@@ -3,17 +3,17 @@ import { withRouter } from 'next/router';
 import Head from 'next/head';
 import PropTypes from 'prop-types';
 
+import { fetchJSON } from '../src/utils';
 import LoadCircle from '../src/components/LoadCircle';
 import Member from '../src/containers/Member';
-import { getMemberInformation } from '../src/containers/Member/lib';
 
 const LedamotContainer = ({ router }) => {
   const [member, setMember] = useState(null);
 
-  const url = `https://data.riksdagen.se/personlista/?iid=${router.query.id}&utformat=json`;
+  const url = `https://api.partiguiden.nu/member?id=${router.query.id}`;
 
   useEffect(() => {
-    getMemberInformation({ url }).then(res => setMember(res));
+    fetchJSON(url).then(res => setMember(res));
   }, []);
 
   return (

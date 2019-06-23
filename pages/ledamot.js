@@ -19,9 +19,15 @@ const LedamotContainer = ({ router }) => {
   return (
     <React.Fragment>
       <Head>
-        <title>Ledamot | Partiguiden.nu</title>
+        <title>{member && `${member.namn} | `}Ledamot | Partiguiden.nu</title>
       </Head>
-      {member ? <Member member={member} /> : <LoadCircle />}
+      {member ? (
+        <React.Fragment>
+          <Member member={member} />
+        </React.Fragment>
+      ) : (
+        <LoadCircle />
+      )}
     </React.Fragment>
   );
 };

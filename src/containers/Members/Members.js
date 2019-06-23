@@ -1,17 +1,15 @@
-import React, { useState, useEffect, useContext } from 'react';
+import React, { useState, useEffect } from 'react';
 
-import ApiContext from '../../lib/ApiContext';
+import { apiLinks, fetchJSON } from '../../utils';
 import LoadCircle from '../../components/LoadCircle';
 import FilterMembers from './components/FilterMembers';
 import MemberList from './components/MemberList';
-import { fetchJSON } from '../../utils';
 
 const Ledamoter = () => {
-  const { partiguidenApi } = useContext(ApiContext);
   const [loading, setLoading] = useState(true);
   const [members, setMembers] = useState({});
 
-  const url = `${partiguidenApi}/members`;
+  const url = `${apiLinks.partiguidenApi}/members`;
 
   useEffect(() => {
     fetchJSON(url).then(data => {

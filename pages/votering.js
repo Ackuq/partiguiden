@@ -1,24 +1,24 @@
-import React, { useState, useEffect, useContext } from 'react';
+import React, { useState, useEffect } from 'react';
 import { withRouter } from 'next/router';
 import Head from 'next/head';
 import Container from '@material-ui/core/Container';
 import PropTypes from 'prop-types';
 
-import ApiContext from '../src/lib/ApiContext';
+import SocialMediaShare from '../src/components/SocialMediaShare';
+import { apiLinks } from '../src/utils';
 import PageTitle from '../src/components/PageTitle';
 import LoadCircle from '../src/components/LoadCircle';
 import Votering from '../src/containers/Votering';
 import { getVotering } from '../src/containers/Votering/lib';
 
 const VoteringContainer = ({ router }) => {
-  const { riksdagenApi } = useContext(ApiContext);
   const [votering, setVotering] = useState({
     bet: router.query.bet,
-    dokument: { titel: '' }
+    dokument: {}
   });
   const [loading, setLoading] = useState(true);
 
-  const url = `${riksdagenApi}/dokumentstatus/${router.query.id}.json`;
+  const url = `${apiLinks.riksdagenApi}/dokumentstatus/${router.query.id}.json`;
 
   useEffect(() => {
     let mount = true;
@@ -36,7 +36,9 @@ const VoteringContainer = ({ router }) => {
   return (
     <React.Fragment>
       <Head>
-        <title>{votering.dokument.titel} | Votering | Partiguiden.nu</title>
+        <title>
+          {votering.dokument.titel && `${votering.dokument.titel} | `}Votering | Partiguiden.nu
+        </title>
         <meta
           name="description"
           content={`Hur har partiernat röstat i voteringen om ${votering.dokument.titel}`}
@@ -44,6 +46,7 @@ const VoteringContainer = ({ router }) => {
       </Head>
       <PageTitle title={`${votering.dokument.titel} förslagspunkt ${votering.bet}`} variant="h3" />
       <Container>
+        <SocialMediaShare title={`${votering.dokument.titel} förslagspunkt ${votering.bet}`} />
         {loading ? (
           <LoadCircle />
         ) : (

@@ -28,8 +28,8 @@ const getMatches = (forslag, referens) => {
   return { matches, newForslag };
 };
 
-const getVotering = ({ bet, id }) =>
-  fetch(`https://data.riksdagen.se/dokumentstatus/${id}.json`)
+const getVotering = ({ bet, url }) =>
+  fetch(url)
     .then(res => res.text())
     .then(json => {
       const result = JSON.parse(stripJsonComments(json));

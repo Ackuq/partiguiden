@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import {
   Typography,
   Grid,
@@ -8,29 +8,12 @@ import {
   ExpansionPanelSummary
 } from '@material-ui/core';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import { string, array } from 'prop-types';
+import { string, array, number } from 'prop-types';
 
 import Documents from '../Documents';
-import { getVoteAbsence } from '../../lib';
 
-const notAcceptedCodes = [
-  'sv',
-  'en',
-  'KandiderarINastaVal',
-  'Officiell e-postadress',
-  'Föräldrar',
-  'Tjänstetelefon'
-];
-
-const Information = ({ id, records }) => {
-  const [absence, setAbsence] = useState('');
+const Information = ({ id, records, absence }) => {
   const [documentCount, setDocumentCount] = useState('0');
-
-  const url = `https://data.riksdagen.se/voteringlista/?iid=${id}&utformat=JSON&gruppering=namn`;
-
-  useEffect(() => {
-    getVoteAbsence({ url }).then(res => setAbsence(res.absence));
-  }, []);
 
   return (
     <Grid container spacing={3}>
@@ -62,29 +45,25 @@ const Information = ({ id, records }) => {
             </Typography>
           </Paper>
 
-          {records.map((record, index) => {
-            if (!notAcceptedCodes.includes(record.kod))
-              return (
-                // eslint-disable-next-line react/no-array-index-key
-                <ExpansionPanel key={index}>
-                  <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />} aria-controls={record.kod}>
-                    <Typography>{record.kod}</Typography>
-                  </ExpansionPanelSummary>
-                  {record.uppgift.map(uppgift => (
-                    <ExpansionPanelDetails key={uppgift}>
-                      {record.typ === 'eadress' ? (
-                        <a href={uppgift} target="_blank" rel="noopener noreferrer">
-                          {uppgift}
-                        </a>
-                      ) : (
-                        uppgift
-                      )}
-                    </ExpansionPanelDetails>
-                  ))}
-                </ExpansionPanel>
-              );
-            return null;
-          })}
+          {records.map((record, index) => (
+            // eslint-disable-next-line react/no-array-index-key
+            <ExpansionPanel key={index}>
+              <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />} aria-controls={record.kod}>
+                <Typography>{record.kod}</Typography>
+              </ExpansionPanelSummary>
+              {record.uppgift.map(uppgift => (
+                <ExpansionPanelDetails key={uppgift}>
+                  {record.typ === 'eadress' ? (
+                    <a href={uppgift} target="_blank" rel="noopener noreferrer">
+                      {uppgift}
+                    </a>
+                  ) : (
+                    uppgift
+                  )}
+                </ExpansionPanelDetails>
+              ))}
+            </ExpansionPanel>
+          ))}
         </Grid>
       )}
       <Grid item xs={12}>
@@ -101,7 +80,8 @@ const Information = ({ id, records }) => {
 
 Information.propTypes = {
   id: string.isRequired,
-  records: array.isRequired
+  records: array.isRequired,
+  absence: number.isRequired
 };
 
 export default Information;

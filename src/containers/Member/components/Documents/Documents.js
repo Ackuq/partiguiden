@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import { Grid, ButtonBase } from '@material-ui/core';
 import { makeStyles } from '@material-ui/styles';
 import { string, func } from 'prop-types';
 
+import ApiContext from '../../../../lib/ApiContext';
 import LoadCircle from '../../../../components/LoadCircle';
 import Document from './Document';
 import { getMemberDocuments } from '../../lib';
@@ -24,13 +25,14 @@ const useStyles = makeStyles(theme => ({
 }));
 
 const Documents = ({ id, setDocumentCount }) => {
+  const { riksdagenApi } = useContext(ApiContext);
   const classes = useStyles();
   const [loading, setLoading] = useState(true);
   const [documents, setDocuments] = useState([]);
   const [page, setPage] = useState(1);
   const [lastPage, setLastPage] = useState(true);
 
-  const url = `https://data.riksdagen.se/dokumentlista/?avd=dokument&sort=datum&sortorder=datum&utformat=json&iid=${id}&p=${page}`;
+  const url = `${riksdagenApi}/dokumentlista/?avd=dokument&sort=datum&sortorder=datum&utformat=json&iid=${id}&p=${page}`;
 
   useEffect(() => {
     setLoading(true);

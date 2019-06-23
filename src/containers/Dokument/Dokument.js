@@ -1,21 +1,23 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import fetch from 'isomorphic-unfetch';
 import parse from 'html-react-parser';
 import { makeStyles } from '@material-ui/styles';
 import PropTypes from 'prop-types';
-import LoadCircle from '../../components/LoadCircle';
 
+import ApiContext from '../../lib/ApiContext';
+import LoadCircle from '../../components/LoadCircle';
 import styles from './styles';
 
 const useStyles = makeStyles(styles);
 
 const Dokument = ({ id }) => {
+  const { riksdagenApi } = useContext(ApiContext);
   const classes = useStyles();
 
   const [body, setBody] = useState(null);
 
   useEffect(() => {
-    const url = `https://data.riksdagen.se/dokument/${id}`;
+    const url = `${riksdagenApi}/dokument/${id}`;
 
     fetch(url)
       .then(res => res.text())

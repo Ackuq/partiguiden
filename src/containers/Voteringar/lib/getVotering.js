@@ -3,8 +3,8 @@ import stripJsonComments from 'strip-json-comments';
 
 import { getVotes, getMaxVotes } from '../../../utils/votingHelpers';
 
-const getVotering = ({ dokId, tempbeteckning }) =>
-  fetch(`https://data.riksdagen.se/dokumentstatus/${dokId}.json`)
+const getVotering = ({ url, tempbeteckning }) =>
+  fetch(url)
     .then(res => res.text())
     .then(json => {
       const result = JSON.parse(stripJsonComments(json));

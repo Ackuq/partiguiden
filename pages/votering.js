@@ -1,26 +1,28 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import { withRouter } from 'next/router';
 import Head from 'next/head';
 import Container from '@material-ui/core/Container';
 import PropTypes from 'prop-types';
 
+import ApiContext from '../src/lib/ApiContext';
 import PageTitle from '../src/components/PageTitle';
 import LoadCircle from '../src/components/LoadCircle';
 import Votering from '../src/containers/Votering';
 import { getVotering } from '../src/containers/Votering/lib';
 
 const VoteringContainer = ({ router }) => {
+  const { riksdagenApi } = useContext(ApiContext);
   const [votering, setVotering] = useState({
     bet: router.query.bet,
-    id: router.query.id,
     dokument: { titel: '' }
   });
   const [loading, setLoading] = useState(true);
 
-  let mount = true;
+  const url = `${riksdagenApi}/dokumentstatus/${router.query.id}.json`;
 
   useEffect(() => {
-    getVotering({ bet: votering.bet, id: votering.id }).then(result => {
+    let mount = true;
+    getVotering({ bet: votering.bet, url }).then(result => {
       if (mount) {
         setVotering({ ...votering, ...result });
         setLoading(false);

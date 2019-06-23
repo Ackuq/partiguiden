@@ -1,21 +1,23 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 
+import ApiContext from '../../lib/ApiContext';
 import LoadCircle from '../../components/LoadCircle';
 import FilterMembers from './components/FilterMembers';
 import MemberList from './components/MemberList';
-import getAllMembers from './lib/getAllMembers';
+import { fetchJSON } from '../../utils';
 
 const Ledamoter = () => {
+  const { partiguidenApi } = useContext(ApiContext);
   const [loading, setLoading] = useState(true);
   const [members, setMembers] = useState({});
 
-  const url = `https://data.riksdagen.se/personlista/?utformat=json`;
+  const url = `${partiguidenApi}/members`;
 
   useEffect(() => {
-    getAllMembers({ url }).then(data => {
-      const personer = data.personlista.person.sort((a, b) => {
-        if (a.tilltalsnamn > b.tilltalsnamn) return 1;
-        if (a.tilltalsnamn < b.tilltalsnamn) return -1;
+    fetchJSON(url).then(data => {
+      const personer = data.sort((a, b) => {
+        if (a.namn > b.namn) return 1;
+        if (a.namn < b.namn) return -1;
         return 0;
       });
 

@@ -1,7 +1,8 @@
 import fetch from 'isomorphic-unfetch';
+import { apiLinks } from '../../utils';
 
 const getSubjectData = () =>
-  fetch('https://api.partiguiden.nu/subject')
+  fetch(`${apiLinks.partiguidenApi}/subject`)
     .then(res => res.json())
     .then(data => data)
     .catch(err => {

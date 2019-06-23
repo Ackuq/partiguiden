@@ -21,6 +21,7 @@ class MyDocument extends Document {
           />
           <link rel="mask-icon" href="/static/icons/safari-pinned-tab.svg" color="#5bbad5" />
           <link rel="manifest" href="/static/manifest.json" />
+          <meta property="og:image" content="/static/images/partiguiden_logo.png" />
           <meta name="theme-color" content="#00796B" />
           <style>
             {`
@@ -36,7 +37,6 @@ class MyDocument extends Document {
             }
           `}
           </style>
-          <meta property="og:image" content="/static/images/partiguiden_logo.svg" />
           {process.env.NODE_ENV === 'production' && (
             <React.Fragment>
               <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" />

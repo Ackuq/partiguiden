@@ -1,11 +1,11 @@
-## Next build
-.next/*
+# Next build
+.next
 
-## Enviroment variables
+# Enviroment variables
 .env
 
-## Node modules
-node_modules/*
+# Node modules
+node_modules
 
-## HTTPS certificates
-certificates/
+# Mac OS Files
+.DS_Store

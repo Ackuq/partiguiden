@@ -4,6 +4,7 @@ import Head from 'next/head';
 import Container from '@material-ui/core/Container';
 import PropTypes from 'prop-types';
 
+import SocialMediaShare from '../src/components/SocialMediaShare';
 import LoadCircle from '../src/components/LoadCircle';
 import PageTitle from '../src/components/PageTitle';
 import Subject from '../src/containers/Subject';
@@ -13,8 +14,7 @@ import { useStateValue } from '../src/lib/stateProvider';
 const SubjectContainer = ({ router }) => {
   const { id } = router.query;
   const { subjectData } = useStateValue()[0];
-
-  const [name, setName] = useState('');
+  const [name, setName] = useState(null);
   const [loading, setLoading] = useState(true);
   const [partyData, setPartyData] = useState(null);
 
@@ -33,7 +33,7 @@ const SubjectContainer = ({ router }) => {
   return (
     <React.Fragment>
       <Head>
-        <title>{name} | Partiguiden.nu</title>
+        <title>{name && `${name} | `} | Ämne | Partiguiden.nu</title>
         <meta
           name="description"
           content={`Vad tar Sveriges partier för ståndpunkter inom ämnet ${name} Här hittar du informationen du behöver för att kunna jämföra och hitta det parti du sympatiserar med mest! `}
@@ -41,6 +41,7 @@ const SubjectContainer = ({ router }) => {
       </Head>
       <PageTitle title={name} />
       <Container>
+        <SocialMediaShare title={name} />
         {loading ? <LoadCircle /> : <Subject partyData={partyData} loading={loading} />}
       </Container>
     </React.Fragment>

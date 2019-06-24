@@ -2,6 +2,7 @@ import React from 'react';
 import { Container } from '@material-ui/core';
 import { object } from 'prop-types';
 
+import SocialMediaShare from '../../components/SocialMediaShare';
 import { ProfilePicture, Information } from './components';
 
 const Member = ({ member }) => (
@@ -13,6 +14,7 @@ const Member = ({ member }) => (
       age={member.alder}
     />
     <Container>
+      <SocialMediaShare title={member.namn} />
       <Information id={member.id} records={member.uppgifter} absence={member.absence} />
     </Container>
   </React.Fragment>

@@ -4,23 +4,23 @@ import Head from 'next/head';
 import Container from '@material-ui/core/Container';
 import PropTypes from 'prop-types';
 
+import { fetchJSON, apiLinks } from '../src/utils';
 import SocialMediaShare from '../src/components/SocialMediaShare';
 import LoadCircle from '../src/components/LoadCircle';
 import PageTitle from '../src/components/PageTitle';
 import Subject from '../src/containers/Subject';
 import getData from '../src/containers/Subject/lib/getSubjectData';
-import { useStateValue } from '../src/lib/stateProvider';
 
 const SubjectContainer = ({ router }) => {
   const { id } = router.query;
-  const { subjectData } = useStateValue()[0];
-  const [name, setName] = useState(null);
+  const [name, setName] = useState('');
   const [loading, setLoading] = useState(true);
   const [partyData, setPartyData] = useState(null);
 
+  const url = `${apiLinks.partiguidenApi}/subject?id=${id}`;
+
   useEffect(() => {
-    subjectData.then(data => {
-      const subject = data.find(el => el.id === id);
+    fetchJSON(url).then(subject => {
       setName(subject.name);
       getData(subject.opinions).then(opinionData => {
         const filtered = opinionData.filter(party => party !== undefined);

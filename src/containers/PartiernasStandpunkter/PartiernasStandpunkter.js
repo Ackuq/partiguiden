@@ -5,21 +5,20 @@ import { makeStyles } from '@material-ui/styles';
 import ListObject from './components/ListObject';
 import LoadCircle from '../../components/LoadCircle';
 
-import { useStateValue } from '../../lib/stateProvider';
+import { fetchJSON, apiLinks } from '../../utils';
 
 import styles from './styles';
 
 const useStyles = makeStyles(styles);
 
+const url = `${apiLinks.partiguidenApi}/subject`;
+
 const PartiernasStandpunkter = () => {
   const classes = useStyles();
   const [subjects, setSubjects] = useState(null);
-  const { subjectData } = useStateValue()[0];
 
   useEffect(() => {
-    subjectData.then(data => {
-      setSubjects(data);
-    });
+    fetchJSON(url).then(data => setSubjects(data));
   }, []);
 
   return (

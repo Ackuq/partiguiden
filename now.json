@@ -6,11 +6,35 @@
   "routes": [
     { "src": "static/icons/.+", "headers": { "cache-control": "s-maxage=604800" } },
     { "src": "static/images/.+", "headers": { "cache-control": "s-maxage=604800" } },
-    { "src": "^/ads.txt", "dest": "/static/ads.txt" },
-    { "src": "^/dokument/(?<id>[^/]+)", "dest": "/dokument?id=$id" },
-    { "src": "^/beslut/(?<id>[^/]+)", "dest": "/beslut?id=$id" },
-    { "src": "^/subject/(?<id>[^/]+)", "dest": "/subject?id=$id" },
-    { "src": "^/votering/(?<id>[^/]+)/(?<bet>[^/]+)", "dest": "/votering?id=$id&bet=$bet" },
-    { "src": "^/ledamot/(?<id>[^/]+)", "dest": "/ledamot?id=$id" }
+    {
+      "src": "^/ads.txt",
+      "dest": "/static/ads.txt",
+      "headers": { "cache-control": "s-maxage=604800" }
+    },
+    {
+      "src": "^/dokument/(?<id>[^/]+)",
+      "dest": "/dokument?id=$id",
+      "headers": { "cache-control": "s-maxage=604800" }
+    },
+    {
+      "src": "^/beslut/(?<id>[^/]+)",
+      "dest": "/beslut?id=$id",
+      "headers": { "cache-control": "s-maxage=604800" }
+    },
+    {
+      "src": "^/subject/(?<id>[^/]+)",
+      "dest": "/subject?id=$id",
+      "headers": { "cache-control": "s-maxage=604800" }
+    },
+    {
+      "src": "^/votering/(?<id>[^/]+)/(?<bet>[^/]+)",
+      "dest": "/votering?id=$id&bet=$bet",
+      "headers": { "cache-control": "s-maxage=604800" }
+    },
+    {
+      "src": "^/ledamot/(?<id>[^/]+)",
+      "dest": "/ledamot?id=$id",
+      "headers": { "cache-control": "s-maxage=604800" }
+    }
   ]
 }

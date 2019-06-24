@@ -4,31 +4,14 @@ const styles = theme => ({
     backgroundColor: theme.palette.primary.main
   },
   brand: {
+    margin: '0.25rem',
     textAlign: 'center',
-    [theme.breakpoints.down('sm')]: {
-      display: 'none'
-    },
     '& a': {
       textDecoration: 'none',
       fontSize: '2rem',
       paddingLeft: '0.25rem',
       paddingRight: '0.25rem',
       color: theme.palette.primary.contrastText
-    }
-  },
-  aligner: {
-    [theme.breakpoints.down('sm')]: {
-      display: 'none'
-    }
-  },
-  searchBar: {
-    display: 'flex',
-    justifyContent: 'center',
-    padding: '0.5rem',
-    [theme.breakpoints.down('sm')]: {
-      width: '100%',
-      maxWidth: '100%',
-      flexBasis: '100%'
     }
   }
 });

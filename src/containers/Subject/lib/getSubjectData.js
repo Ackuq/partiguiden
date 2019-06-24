@@ -1,34 +1,21 @@
-import { getParties, fetchJSON, apiLinks } from '../../../utils';
+import fetch from 'isomorphic-unfetch';
+
+import { getParties, apiLinks } from '../../../utils';
 
 const getPartyData = async (party, tags) =>
-  new Promise(resolve => {
+  new Promise(async resolve => {
     const url = `${apiLinks.partiguidenApi}/party?party=${party}`;
-    fetchJSON(url)
-      .then(data => {
-        const temp = [];
-        Object.keys(data).forEach(id => {
-          if (tags.indexOf(data[id].name) > -1) temp.push(data[id]);
-        });
-        resolve(temp);
-      })
-      .catch(err => {
-        // eslint-disable-next-line no-console
-        console.log(err.message);
-        resolve([]);
-      });
+    const res = await fetch(url);
+    const data = await res.json();
+
+    const temp = [];
+    Object.keys(data).forEach(id => {
+      if (tags.indexOf(data[id].name) > -1) temp.push(data[id]);
+    });
+    if (temp.length > 0) resolve({ name: party, data: temp });
+    else resolve();
   });
 
-const getSubjectData = async tags =>
-  Promise.all(
-    getParties.map(
-      party =>
-        new Promise(resolve =>
-          getPartyData(party.name, tags).then(data => {
-            if (data.length > 0) resolve({ name: party.name, data });
-            resolve();
-          })
-        )
-    )
-  );
+const getSubjectData = tags => Promise.all(getParties.map(party => getPartyData(party.name, tags)));
 
 export default getSubjectData;

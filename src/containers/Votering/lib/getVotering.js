@@ -1,4 +1,5 @@
 import stripJsonComments from 'strip-json-comments';
+import fetch from 'isomorphic-unfetch';
 
 import { getVotes } from '../../../utils/votingHelpers';
 

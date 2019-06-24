@@ -1,28 +1,45 @@
 import React from 'react';
-import { withRouter } from 'next/router';
 import Head from 'next/head';
-import PropTypes from 'prop-types';
+import { string, array } from 'prop-types';
 import Container from '@material-ui/core/Container';
+import fetch from 'isomorphic-unfetch';
+import parse from 'html-react-parser';
 
+import { apiLinks } from '../src/utils';
 import PageTitle from '../src/components/PageTitle';
 import SocialMediaShare from '../src/components/SocialMediaShare';
 import Dokument from '../src/containers/Dokument';
 
-const DokumentContainer = ({ router }) => (
+const DokumentContainer = ({ body, id }) => (
   <React.Fragment>
     <Head>
-      <title>{router.query.id} | Dokument | Partiguiden.nu</title>
+      <title>{id} | Dokument | Partiguiden.nu</title>
     </Head>
-    <PageTitle title={`Dokument ${router.query.id}`} />
+    <PageTitle title={`Dokument ${id}`} />
     <Container>
-      <SocialMediaShare title={`Dokument ${router.query.id}`} />
-      <Dokument id={router.query.id} />
+      <SocialMediaShare title={`Dokument ${id}`} />
+      <Dokument body={body} />
     </Container>
   </React.Fragment>
 );
 
-DokumentContainer.propTypes = {
-  router: PropTypes.object.isRequired
+DokumentContainer.getInitialProps = async ({ query }) => {
+  const { id } = query;
+  const url = `${apiLinks.riksdagenApi}/dokument/${id}`;
+
+  const res = await fetch(url);
+  const text = await res.text();
+  let body = await parse(text);
+  if (!Array.isArray(body)) {
+    body = [body];
+  }
+
+  return { body, id };
 };
 
-export default withRouter(DokumentContainer);
+DokumentContainer.propTypes = {
+  body: array.isRequired,
+  id: string.isRequired
+};
+
+export default DokumentContainer;

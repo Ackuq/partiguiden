@@ -1,3 +1,5 @@
+import fetch from 'isomorphic-unfetch';
+
 const getVoteringList = ({ page, url }) =>
   fetch(url)
     .then(res => res.json())

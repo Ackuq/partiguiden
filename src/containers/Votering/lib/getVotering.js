@@ -68,8 +68,8 @@ const getVotering = ({ bet, url }) =>
         bilaga: dokumentstatus.dokbilaga ? dokumentstatus.dokbilaga.bilaga : null,
         beslut: beslut ? beslut.text : '',
         voting: getVotes(tableRow),
-        notisRubrik,
-        notisBeskrivning
+        notisRubrik: notisRubrik.text,
+        notisBeskrivning: notisBeskrivning.text
       };
     });
 

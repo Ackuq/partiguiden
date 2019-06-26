@@ -2,7 +2,8 @@ const styles = ({ palette, shadows }) => ({
   profilePicture: {
     width: '192px',
     height: '192px',
-    borderRadius: '10rem'
+    borderRadius: '10rem',
+    position: 'relative'
   },
 
   pictureContainer: {
@@ -19,6 +20,14 @@ const styles = ({ palette, shadows }) => ({
     textAlign: 'center',
     paddingTop: '1rem',
     paddingBottom: '1rem'
+  },
+
+  partySymbol: {
+    width: '75px',
+    height: '75px',
+    position: 'absolute',
+    right: 0,
+    top: 0
   }
 });
 

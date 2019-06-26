@@ -12,6 +12,7 @@ const Member = ({ member }) => (
       name={member.namn}
       status={member.status}
       age={member.alder}
+      parti={member.parti}
     />
     <Container>
       <SocialMediaShare title={member.namn} />

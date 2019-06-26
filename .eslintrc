@@ -18,8 +18,7 @@
   "globals": {
     "window": true,
     "document": true,
-    "process": true,
-    "fetch": false
+    "process": true
   },
   "parser": "babel-eslint"
 }

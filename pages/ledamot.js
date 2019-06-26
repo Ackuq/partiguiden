@@ -1,39 +1,30 @@
-import React, { useState, useEffect } from 'react';
-import { withRouter } from 'next/router';
+import React from 'react';
 import Head from 'next/head';
 import PropTypes from 'prop-types';
+import fetch from 'isomorphic-unfetch';
 
-import { fetchJSON } from '../src/utils';
-import LoadCircle from '../src/components/LoadCircle';
+import { apiLinks } from '../src/utils';
 import Member from '../src/containers/Member';
 
-const LedamotContainer = ({ router }) => {
-  const [member, setMember] = useState(null);
+const LedamotContainer = ({ member }) => (
+  <React.Fragment>
+    <Head>
+      <title>{member.namn} | Ledamot | Partiguiden.nu</title>
+    </Head>
+    <Member member={member} />
+  </React.Fragment>
+);
 
-  const url = `https://api.partiguiden.nu/member?id=${router.query.id}`;
+LedamotContainer.getInitialProps = async ({ query }) => {
+  const url = `${apiLinks.partiguidenApi}/member?id=${query.id}`;
+  const res = await fetch(url);
+  const member = await res.json();
 
-  useEffect(() => {
-    fetchJSON(url).then(res => setMember(res));
-  }, []);
-
-  return (
-    <React.Fragment>
-      <Head>
-        <title>{member && `${member.namn} | `}Ledamot | Partiguiden.nu</title>
-      </Head>
-      {member ? (
-        <React.Fragment>
-          <Member member={member} />
-        </React.Fragment>
-      ) : (
-        <LoadCircle />
-      )}
-    </React.Fragment>
-  );
+  return { member };
 };
 
 LedamotContainer.propTypes = {
-  router: PropTypes.object.isRequired
+  member: PropTypes.object.isRequired
 };
 
-export default withRouter(LedamotContainer);
+export default LedamotContainer;

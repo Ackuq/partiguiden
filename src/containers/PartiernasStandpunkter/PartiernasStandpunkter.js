@@ -1,46 +1,31 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Grid from '@material-ui/core/Grid';
-
 import { makeStyles } from '@material-ui/styles';
-import ListObject from './components/ListObject';
-import LoadCircle from '../../components/LoadCircle';
+import { array } from 'prop-types';
 
-import { useStateValue } from '../../lib/stateProvider';
+import ListObject from './components/ListObject';
 
 import styles from './styles';
 
 const useStyles = makeStyles(styles);
 
-const PartiernasStandpunkter = () => {
+const PartiernasStandpunkter = ({ subjects }) => {
   const classes = useStyles();
-  const [subjects, setSubjects] = useState(null);
-  const { subjectData } = useStateValue()[0];
-
-  useEffect(() => {
-    subjectData.then(data => {
-      setSubjects(data);
-    });
-  }, []);
-
   return (
-    <React.Fragment>
-      {subjects ? (
-        <Grid container classes={{ container: classes.subjectList }}>
-          {subjects.map(subject => (
-            <ListObject
-              subject={Object.assign({
-                id: subject.id,
-                name: subject.name
-              })}
-              key={`${subject.id}`}
-            />
-          ))}
-        </Grid>
-      ) : (
-        <LoadCircle />
-      )}
-    </React.Fragment>
+    <Grid container classes={{ container: classes.subjectList }}>
+      {subjects.map(subject => (
+        <ListObject
+          subject={Object.assign({
+            id: subject.id,
+            name: subject.name
+          })}
+          key={`${subject.id}`}
+        />
+      ))}
+    </Grid>
   );
 };
+
+PartiernasStandpunkter.propTypes = { subjects: array.isRequired };
 
 export default PartiernasStandpunkter;

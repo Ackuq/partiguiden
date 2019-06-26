@@ -1,3 +1,4 @@
+import fetch from 'isomorphic-unfetch';
 import stripJsonComments from 'strip-json-comments';
 import { checkVote } from '../../../utils/votingHelpers';
 

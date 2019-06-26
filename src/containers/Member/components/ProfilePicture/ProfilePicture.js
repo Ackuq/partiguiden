@@ -5,13 +5,21 @@ import PropTypes from 'prop-types';
 
 import styles from './styles';
 
-const ProfilePicture = ({ src, classes, name, status, age }) => (
+const ProfilePicture = ({ src, classes, name, status, age, parti }) => (
   <React.Fragment>
     <div className={classes.pictureContainer}>
       <div
         style={{ background: `url(${src}) 50% 25% no-repeat` }}
         className={classes.profilePicture}
-      />
+      >
+        {parti !== '-' && (
+          <img
+            className={classes.partySymbol}
+            src={`../../static/images/party-logos/${parti.toUpperCase()}.svg`}
+            alt="Partisymbol"
+          />
+        )}
+      </div>
     </div>
     <div className={classes.nameContainer}>
       <Typography variant="h6">{status}</Typography>
@@ -28,7 +36,8 @@ ProfilePicture.propTypes = {
   classes: PropTypes.object.isRequired,
   name: PropTypes.string.isRequired,
   status: PropTypes.string.isRequired,
-  age: PropTypes.number.isRequired
+  age: PropTypes.number.isRequired,
+  parti: PropTypes.string.isRequired
 };
 
 export default withStyles(styles)(ProfilePicture);

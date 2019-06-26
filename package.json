@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Partiguiden Server Rendered",
   "main": "next.config.js",
+  "engines": {
+    "node": "10.x"
+  },
   "scripts": {
     "start": "next",
     "dev": "now dev",

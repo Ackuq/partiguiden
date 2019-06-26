@@ -26,30 +26,27 @@ const PartyComponent = ({ party }) => {
       backgroundColor: grey[200]
     }
   });
-
   return (
     <React.Fragment>
-      {party.data && (
-        <div key={`${party.name}`} id={`${party.name}`} className={classes.partyStandpoint}>
-          <PartyTitle onClick={() => setVisible(!visible)}>
-            <Typography variant="h3" style={{ fontWeight: 300 }}>
-              {party.name}
-            </Typography>
-          </PartyTitle>
-          <Collapse in={visible} classes={{ container: classes.collapse }}>
-            <Grid container spacing={3} style={{ marginTop: '0.5rem' }}>
-              {party.data.map(subject => (
-                <PartyOpinion
-                  subject={subject}
-                  partyName={party.name}
-                  partyColor={partyColor}
-                  key={`${party.name}${subject.name}`}
-                />
-              ))}
-            </Grid>
-          </Collapse>
-        </div>
-      )}
+      <div key={`${party.name}`} id={`${party.name}`} className={classes.partyStandpoint}>
+        <PartyTitle onClick={() => setVisible(!visible)}>
+          <Typography variant="h3" style={{ fontWeight: 300 }}>
+            {party.name}
+          </Typography>
+        </PartyTitle>
+        <Collapse in={visible} classes={{ container: classes.collapse }}>
+          <Grid container spacing={3} style={{ marginTop: '0.5rem' }}>
+            {party.data.map(subject => (
+              <PartyOpinion
+                subject={subject}
+                partyName={party.name}
+                partyColor={partyColor}
+                key={`${party.name}${subject.name}`}
+              />
+            ))}
+          </Grid>
+        </Collapse>
+      </div>
     </React.Fragment>
   );
 };

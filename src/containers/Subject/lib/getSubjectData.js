@@ -2,20 +2,20 @@ import fetch from 'isomorphic-unfetch';
 
 import { getParties, apiLinks } from '../../../utils';
 
-const getPartyData = async (party, tags) =>
-  new Promise(async resolve => {
-    const url = `${apiLinks.partiguidenApi}/party?party=${party}`;
-    const res = await fetch(url);
-    const data = await res.json();
+const getSubjectData = tags =>
+  Promise.all(
+    getParties.map(async party => {
+      const url = `${apiLinks.partiguidenApi}/party?party=${party.letter}`;
+      const res = await fetch(url);
+      const data = await res.json();
+      const temp = [];
 
-    const temp = [];
-    Object.keys(data).forEach(id => {
-      if (tags.indexOf(data[id].name) > -1) temp.push(data[id]);
-    });
-    if (temp.length > 0) resolve({ name: party, data: temp });
-    else resolve();
-  });
-
-const getSubjectData = tags => Promise.all(getParties.map(party => getPartyData(party.name, tags)));
+      Object.keys(data).forEach(id => {
+        if (tags.indexOf(data[id].name) > -1) temp.push(data[id]);
+      });
+      if (temp.length > 0) return { name: party.name, data: temp };
+      return null;
+    })
+  );
 
 export default getSubjectData;

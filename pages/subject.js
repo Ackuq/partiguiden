@@ -32,8 +32,7 @@ SubjectContainer.getInitialProps = async ({ query }) => {
   const res = await fetch(url);
   const data = await res.json();
   const partyData = await getData(data.opinions);
-
-  return { name: data.name, partyData: partyData.filter(party => party !== undefined) };
+  return { name: data.name, partyData: partyData.filter(party => party !== null) };
 };
 
 SubjectContainer.propTypes = {

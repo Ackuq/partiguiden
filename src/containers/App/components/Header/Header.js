@@ -1,8 +1,8 @@
 import React from 'react';
+import Link from 'next/link';
 import { Grid, ButtonBase } from '@material-ui/core';
 import { makeStyles } from '@material-ui/styles';
 
-import { Link } from '../../../../lib/routes';
 import NavLinks from './NavLinks';
 import styles from './styles';
 
@@ -14,8 +14,8 @@ const Header = () => {
     <React.Fragment>
       <Grid container justify="flex-start" alignItems="center" className={classes.banner}>
         <Grid item xs={3} className={classes.brand}>
-          <ButtonBase component="div">
-            <Link route="/">
+          <ButtonBase>
+            <Link href="/">
               <a>
                 <strong>Partiguiden</strong>.nu
               </a>

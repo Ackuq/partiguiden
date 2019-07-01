@@ -1,24 +1,26 @@
 import grey from '@material-ui/core/colors/grey';
 
 const styles = theme => ({
+  transition: {
+    margin: 0,
+    background: `linear-gradient( to left, transparent 50%, ${theme.palette.primary.main} 50% )`,
+    backgroundSize: '202% 100%',
+    backgroundPosition: 'right bottom',
+    backgroundRepeat: 'no-repeat',
+    color: grey[900],
+    lineHeight: '50px',
+    padding: '0 0.5rem',
+    transition: 'all 0.2s ease-in-out'
+  },
+
   button: {
     width: '100%',
-    fontWeight: '400',
-    display: 'flex',
-    flexGrow: '1',
     justifyContent: 'flex-start',
-    '& p': {
-      margin: 0,
-      background: `linear-gradient( to left, transparent 50%, ${theme.palette.primary.main} 50% )`,
-      backgroundSize: '202% 100%',
-      backgroundPosition: 'right bottom',
-      backgroundRepeat: 'no-repeat',
-      color: grey[900],
-      lineHeight: '50px',
-      padding: '0 0.5rem',
-      transition: 'all 0.2s ease-in-out'
+    '& a': {
+      width: '100%',
+      display: 'flex'
     },
-    '&:hover p': {
+    '&:hover span': {
       backgroundPosition: 'left bottom',
       color: grey[100]
     }

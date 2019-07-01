@@ -1,10 +1,8 @@
 import React from 'react';
-/* Material UI import */
-import { Grid, ButtonBase } from '@material-ui/core';
+import Link from 'next/link';
+import { Grid, ButtonBase, Typography } from '@material-ui/core';
 import { grey } from '@material-ui/core/colors';
 import { makeStyles } from '@material-ui/styles';
-
-import { Router } from '../../../lib/routes';
 
 const styles = theme => ({
   featured: {
@@ -39,12 +37,12 @@ const Featured = () => {
     <Grid container spacing={3}>
       {getFeatured().map(obj => (
         <Grid key={`${obj.id}`} item xs={12} md={6}>
-          <ButtonBase
-            className={classes.featured}
-            component="div"
-            onClick={() => Router.pushRoute('subject', { id: obj.id })}
-          >
-            <span>{obj.name}</span>
+          <ButtonBase className={classes.featured}>
+            <Link as={`/subject/${obj.id}`} href={`subject?id=${obj.id}`}>
+              <Typography component="a" variant="subtitle1">
+                {obj.name}
+              </Typography>
+            </Link>
           </ButtonBase>
         </Grid>
       ))}

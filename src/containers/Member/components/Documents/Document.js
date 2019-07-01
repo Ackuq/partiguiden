@@ -1,9 +1,9 @@
 import React from 'react';
+import Router from 'next/router';
 import { makeStyles } from '@material-ui/styles';
 import { Card, CardContent, CardHeader, Typography } from '@material-ui/core/';
 import { object } from 'prop-types';
 
-import { Router } from '../../../../lib/routes';
 import getOrganInfo from '../../../../utils/authorityTable';
 
 const useStyles = makeStyles({
@@ -24,7 +24,7 @@ const Documents = ({ document }) => {
   return (
     <Card
       style={{ cursor: 'pointer' }}
-      onClick={() => Router.pushRoute('dokument', { id: document.id })}
+      onClick={() => Router.push(`/dokument?id=${document.id}`, `/dokument/${document.id}`)}
     >
       {organ && (
         <CardHeader

@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
+import Link from 'next/link';
 import { Typography, Collapse, ButtonBase } from '@material-ui/core';
 import { makeStyles } from '@material-ui/styles';
 import ArrowDownRounded from '@material-ui/icons/KeyboardArrowDownRounded';
 
 import { array } from 'prop-types';
-import { Link } from '../../../../lib/routes';
 import styles from '../../styles';
 
 const useStyles = makeStyles(styles);
@@ -29,7 +29,7 @@ const BehandladeDokument = ({ behandladeDokument }) => {
         <div style={{ marginTop: '1.25rem' }}>
           {behandladeDokument.map((dokument, index) => (
             <React.Fragment key={dokument[3]}>
-              <Link route="dokument" params={{ id: dokument[3] }}>
+              <Link href={`dokument?id=${dokument[3]}`} as={`dokument/${dokument[3]}`}>
                 <a style={{ textDecoration: 'none' }}>
                   <Typography variant="body1" color="primary">
                     [{index}] {dokument[0]}

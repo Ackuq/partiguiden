@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from 'react';
+import Link from 'next/link';
 import { withRouter } from 'next/router';
 import { makeStyles } from '@material-ui/styles';
 import { AppBar, Tabs, Tab } from '@material-ui/core';
 
-import { string, object } from 'prop-types';
-import { Router } from '../../../../../lib/routes';
+import { object, string, bool } from 'prop-types';
 import styles from './styles';
-import { useStateValue } from '../../../../../lib/stateProvider';
 
 const useStyles = makeStyles(styles);
 
@@ -24,7 +23,6 @@ const getPages = () => [
 
 const NavLinks = ({ router }) => {
   const classes = useStyles();
-  const dispatch = useStateValue()[1];
 
   const getInitialIndex = val => {
     const { route } = router;
@@ -44,30 +42,24 @@ const NavLinks = ({ router }) => {
   const [value, setValue] = useState(getInitialIndex(0));
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     setValue(getInitialIndex(value));
   }, [router.pathname]);
 
-  const renNavlink = ({ title, href }) => (
-    <Tab classes={{ root: classes.navTab }} key={title} label={title} href={href} />
+  const NavTab = ({ selected, href, title }) => (
+    <Link href={href} key={title}>
+      <Tab component="a" selected={selected} classes={{ root: classes.navTab }} label={title} />
+    </Link>
   );
 
-  renNavlink.propTypes = {
-    title: string.isRequired,
-    href: string.isRequired
+  NavTab.propTypes = {
+    selected: bool,
+    href: string.isRequired,
+    title: string.isRequired
   };
 
-  const handleChange = (event, newValue) => {
-    event.preventDefault();
-    setValue(newValue);
-
-    if (
-      getPages()[newValue].title === 'Voteringar' ||
-      getPages()[newValue].title === 'Riksdagsbeslut'
-    ) {
-      dispatch({ type: 'RESET_FILTER' });
-    }
-
-    Router.pushRoute(getPages()[newValue].href).then(() => window.scrollTo(0, 0));
+  NavTab.defaultProps = {
+    selected: false
   };
 
   return (
@@ -79,9 +71,10 @@ const NavLinks = ({ router }) => {
           scroller: classes.scrollTab
         }}
         value={value}
-        onChange={handleChange}
       >
-        {getPages().map(page => renNavlink(page))}
+        {getPages().map(({ href, title }) => (
+          <NavTab href={href} title={title} key={title} />
+        ))}
       </Tabs>
     </AppBar>
   );

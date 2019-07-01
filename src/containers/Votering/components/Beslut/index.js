@@ -1,7 +1,6 @@
 import React from 'react';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/styles';
-import parse from 'html-react-parser';
 import { string } from 'prop-types';
 
 import styles from '../../styles';
@@ -19,7 +18,8 @@ const Beslut = ({ beslut, notisBeskrivning }) => {
       <Typography variant="h5" color="inherit" gutterBottom style={{ marginTop: '0.5rem' }}>
         Beslut i korthet
       </Typography>
-      {parse(notisBeskrivning)}
+      {/* eslint-disable-next-line react/no-danger */}
+      <div dangerouslySetInnerHTML={{ __html: notisBeskrivning }} />
     </div>
   );
 };

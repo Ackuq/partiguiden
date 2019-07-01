@@ -1,4 +1,4 @@
-const styles = theme => ({
+const styles = () => ({
   memberCard: {
     display: 'flex',
     padding: '0.5rem 1rem 1.5rem 0.5rem',
@@ -20,16 +20,6 @@ const styles = theme => ({
     right: 0,
     padding: '0.75rem',
     top: 0
-  },
-
-  memberInfo: {
-    color: theme.palette.primary.dark,
-    '& > div:first-child': {
-      marginBottom: '0.5rem'
-    },
-    '& > div:last-child': {
-      marginTop: '0.5rem'
-    }
   },
 
   textContainer: {

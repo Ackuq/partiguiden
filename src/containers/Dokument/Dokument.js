@@ -1,7 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/styles';
+import { string } from 'prop-types';
 
-import { array } from 'prop-types';
 import styles from './styles';
 
 const useStyles = makeStyles(styles);
@@ -9,17 +9,11 @@ const useStyles = makeStyles(styles);
 const Dokument = ({ body }) => {
   const classes = useStyles();
 
-  return (
-    <div className={classes.dokumentBody}>
-      {body.map(el => (
-        <React.Fragment key={el.key || el}>{el}</React.Fragment>
-      ))}
-    </div>
-  );
+  return <div className={classes.dokumentBody} dangerouslySetInnerHTML={{ __html: body }} />; // eslint-disable-line react/no-danger
 };
 
 Dokument.propTypes = {
-  body: array.isRequired
+  body: string.isRequired
 };
 
 export default Dokument;

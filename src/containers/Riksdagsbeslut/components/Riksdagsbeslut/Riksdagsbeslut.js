@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import Link from 'next/link';
+import Router from 'next/router';
 import { makeStyles } from '@material-ui/styles';
 import {
   Collapse,
@@ -10,11 +12,9 @@ import {
   Button
 } from '@material-ui/core';
 import ArrowDownRounded from '@material-ui/icons/KeyboardArrowDownRounded';
-import parse from 'html-react-parser';
 import PropTypes from 'prop-types';
 
 import { checkIfVotesExist } from '../../lib';
-import { Router } from '../../../../lib/routes';
 import getOrganInfo from '../../../../utils/authorityTable';
 import styles from './styles';
 import { useStateValue } from '../../../../lib/stateProvider';
@@ -82,19 +82,22 @@ const Riksdagsbeslut = ({ beslut }) => {
 
           <CardContent>
             <Collapse className={classes.paragraphContainer} in={visible}>
-              <div className="paragraph">{beslut.notis && parse(beslut.notis)}</div>
-              <Button
-                component="div"
-                onClick={() => Router.pushRoute('dokument', { id: beslut.id })}
-              >
-                Läs mer om betänkandet
+              <div className="paragraph">
+                {beslut.notis && <div dangerouslySetInnerHTML={{ __html: beslut.notis }} /> // eslint-disable-line react/no-danger
+                }
+              </div>
+              <Button>
+                <Link href={`/dokument?id=${beslut.id}`} as={`/dokument/${beslut.id}`}>
+                  <Typography component="a" variant="button">
+                    Läs mer om betänkandet
+                  </Typography>
+                </Link>
               </Button>
               {voteringarExist && (
                 <Button
                   component="div"
                   onClick={() => {
-                    Router.pushRoute('/voteringar');
-                    window.scrollTo(0, 0);
+                    Router.push('/voteringar');
                     dispatch({ type: 'RESET_FILTER' });
                     dispatch({
                       type: 'SET_SEARCH',

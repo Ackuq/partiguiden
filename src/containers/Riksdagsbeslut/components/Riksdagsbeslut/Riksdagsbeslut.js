@@ -12,7 +12,6 @@ import {
   Button
 } from '@material-ui/core';
 import ArrowDownRounded from '@material-ui/icons/KeyboardArrowDownRounded';
-import parse from 'html-react-parser';
 import PropTypes from 'prop-types';
 
 import { checkIfVotesExist } from '../../lib';
@@ -83,7 +82,10 @@ const Riksdagsbeslut = ({ beslut }) => {
 
           <CardContent>
             <Collapse className={classes.paragraphContainer} in={visible}>
-              <div className="paragraph">{beslut.notis && parse(beslut.notis)}</div>
+              <div className="paragraph">
+                {beslut.notis && <div dangerouslySetInnerHTML={{ __html: beslut.notis }} /> // eslint-disable-line react/no-danger
+                }
+              </div>
               <Button>
                 <Link href={`/dokument?id=${beslut.id}`} as={`/dokument/${beslut.id}`}>
                   <Typography component="a" variant="button">

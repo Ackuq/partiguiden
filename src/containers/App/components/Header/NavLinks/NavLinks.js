@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import Link from 'next/link';
-import { withRouter } from 'next/router';
+import Router, { withRouter } from 'next/router';
 import { makeStyles } from '@material-ui/styles';
 import { AppBar, Tabs, Tab } from '@material-ui/core';
 
-import { object, string, bool } from 'prop-types';
+import { object } from 'prop-types';
 import styles from './styles';
 
 const useStyles = makeStyles(styles);
@@ -46,22 +45,6 @@ const NavLinks = ({ router }) => {
     setValue(getInitialIndex(value));
   }, [router.pathname]);
 
-  const NavTab = ({ selected, href, title }) => (
-    <Link href={href} key={title}>
-      <Tab component="a" selected={selected} classes={{ root: classes.navTab }} label={title} />
-    </Link>
-  );
-
-  NavTab.propTypes = {
-    selected: bool,
-    href: string.isRequired,
-    title: string.isRequired
-  };
-
-  NavTab.defaultProps = {
-    selected: false
-  };
-
   return (
     <AppBar position="sticky">
       <Tabs
@@ -73,7 +56,16 @@ const NavLinks = ({ router }) => {
         value={value}
       >
         {getPages().map(({ href, title }) => (
-          <NavTab href={href} title={title} key={title} />
+          <Tab
+            key={href}
+            component="a"
+            href={href}
+            label={title}
+            onClick={event => {
+              event.preventDefault();
+              Router.push(href);
+            }}
+          />
         ))}
       </Tabs>
     </AppBar>

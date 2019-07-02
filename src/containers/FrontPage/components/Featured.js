@@ -8,9 +8,8 @@ const styles = theme => ({
   featured: {
     width: '100%',
     textAlign: 'center',
-    border: '2px solid',
-    borderColor: theme.palette.secondary.main,
-    borderRadius: '3rem',
+    borderBottom: '2px solid',
+    borderColor: theme.palette.primary.main,
     fontWeight: '400',
     padding: '1rem',
     display: 'flex',
@@ -36,7 +35,7 @@ const Featured = () => {
   return (
     <Grid container spacing={3}>
       {getFeatured().map(obj => (
-        <Grid key={`${obj.id}`} item xs={12} md={6}>
+        <Grid key={obj.id} item xs={12} md={6}>
           <ButtonBase className={classes.featured}>
             <Link as={`/subject/${obj.id}`} href={`subject?id=${obj.id}`}>
               <Typography component="a" variant="subtitle1">

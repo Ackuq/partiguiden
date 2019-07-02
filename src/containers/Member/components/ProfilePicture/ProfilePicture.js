@@ -3,11 +3,18 @@ import { withStyles } from '@material-ui/styles';
 import { Typography } from '@material-ui/core';
 import PropTypes from 'prop-types';
 
+import Breadcrumbs from '../../../../components/Breadcrumbs';
 import styles from './styles';
 
 const ProfilePicture = ({ src, classes, name, status, age, parti }) => (
   <React.Fragment>
     <div className={classes.pictureContainer}>
+      <div className={classes.breadcrumbs}>
+        <Breadcrumbs
+          links={[{ label: 'Ledamöter', href: '/ledamoter' }, { label: 'Ledamot', href: '#' }]}
+        />
+      </div>
+
       <div
         style={{ background: `url(${src}) 50% 25% no-repeat` }}
         className={classes.profilePicture}

@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Container from '@material-ui/core/Container';
 import PropTypes from 'prop-types';
 
+import Breadcrumbs from '../src/components/Breadcrumbs';
 import SocialMediaShare from '../src/components/SocialMediaShare';
 import { apiLinks } from '../src/utils';
 import PageTitle from '../src/components/PageTitle';
@@ -20,7 +21,12 @@ const VoteringContainer = ({ votering, bet }) => (
     </Head>
     <PageTitle title={`${votering.dokument.titel} förslagspunkt ${bet}`} variant="h3" />
     <Container>
-      <SocialMediaShare title={`${votering.dokument.titel} förslagspunkt ${bet}`} />
+      <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+        <Breadcrumbs
+          links={[{ href: '/voteringar', label: 'Voteringar' }, { href: '#', label: 'Votering' }]}
+        />
+        <SocialMediaShare title={`${votering.dokument.titel} förslagspunkt ${bet}`} />
+      </div>
       <Votering {...votering} />
     </Container>
   </React.Fragment>

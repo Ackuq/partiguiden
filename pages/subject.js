@@ -4,6 +4,7 @@ import Container from '@material-ui/core/Container';
 import { string, array } from 'prop-types';
 import fetch from 'isomorphic-unfetch';
 
+import Breadcrumbs from '../src/components/Breadcrumbs';
 import { apiLinks } from '../src/utils';
 import SocialMediaShare from '../src/components/SocialMediaShare';
 import PageTitle from '../src/components/PageTitle';
@@ -21,7 +22,15 @@ const SubjectContainer = ({ name, partyData }) => (
     </Head>
     <PageTitle title={name} />
     <Container>
-      <SocialMediaShare title={name} />
+      <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+        <Breadcrumbs
+          links={[
+            { href: '/partiernas-standpunkter', label: 'Partiernas Ståndpunkter' },
+            { href: '#', label: name }
+          ]}
+        />
+        <SocialMediaShare title={name} />
+      </div>
       <Subject partyData={partyData} />
     </Container>
   </React.Fragment>

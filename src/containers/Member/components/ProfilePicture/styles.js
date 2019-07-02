@@ -7,9 +7,10 @@ const styles = ({ palette, shadows }) => ({
   },
 
   pictureContainer: {
-    height: '117px',
+    position: 'relative',
+    height: '142px',
     marginBottom: '100px',
-    paddingTop: '25px',
+    paddingTop: '50px',
     background: palette.primary.light,
     display: 'flex',
     justifyContent: 'center',
@@ -28,6 +29,13 @@ const styles = ({ palette, shadows }) => ({
     position: 'absolute',
     right: 0,
     top: 0
+  },
+
+  breadcrumbs: {
+    padding: '1rem',
+    position: 'absolute',
+    top: 0,
+    left: 0
   }
 });
 

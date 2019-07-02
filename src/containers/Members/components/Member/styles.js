@@ -3,8 +3,7 @@ const styles = () => ({
     display: 'flex',
     padding: '0.5rem 1rem 1.5rem 0.5rem',
     justifyContent: 'space-between',
-    position: 'relative',
-    cursor: 'pointer'
+    textAlign: 'left'
   },
 
   memberImage: {

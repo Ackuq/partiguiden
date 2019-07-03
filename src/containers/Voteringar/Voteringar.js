@@ -12,9 +12,15 @@ const useStyles = makeStyles(styles);
 
 const Voteringar = ({ router }) => {
   const classes = useStyles();
-
+  let initialOrg = [];
+  if (router.query.org) {
+    initialOrg = Array.isArray(router.query.org) ? router.query.org : [router.query.org];
+  }
   return (
-    <FilterProvider initialState={{ org: [], search: router.query.sok || '' }} reducer={reducer}>
+    <FilterProvider
+      initialState={{ org: initialOrg, search: router.query.sok || '' }}
+      reducer={reducer}
+    >
       <div className={classes.VoteringListContainer}>
         <div className={`VoteringPage ${classes.voteringarPageContainer}`}>
           <VoteringList />

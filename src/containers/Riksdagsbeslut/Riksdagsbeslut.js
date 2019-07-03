@@ -12,8 +12,18 @@ const useStyles = makeStyles(styles);
 
 const Riksdagsbeslut = ({ router }) => {
   const classes = useStyles();
+  let initialOrg = [];
+  if (router.query.org) {
+    initialOrg = Array.isArray(router.query.org) ? router.query.org : [router.query.org];
+  }
   return (
-    <FilterProvider initialState={{ org: [], search: router.query.sok || '' }} reducer={reducer}>
+    <FilterProvider
+      initialState={{
+        org: initialOrg,
+        search: router.query.sok || ''
+      }}
+      reducer={reducer}
+    >
       <div className={classes.beslutListContainer}>
         <div className={classes.beslutPageContainer} id="beslut-container">
           <RiksdagsbeslutList />

@@ -6,6 +6,7 @@ import { apiLinks } from '../../../../utils';
 import Ad from '../../../../components/Ad';
 import Votering from '../Votering';
 import LoadCircle from '../../../../components/LoadCircle';
+import { updateRoute } from '../../../../components/Filter';
 import { useFilter } from '../../../../components/FilterContainer';
 import { getVoteringList } from '../../lib';
 
@@ -42,6 +43,7 @@ const Voteringar = () => {
 
   useEffect(() => {
     setVoteringar([]);
+    updateRoute({ baseUrl: '/voteringar', search, org });
     // eslint-disable-next-line no-new-wrappers
     setPage(new Number(1));
   }, [search, org]);

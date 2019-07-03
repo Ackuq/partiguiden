@@ -3,6 +3,7 @@ import { makeStyles } from '@material-ui/styles';
 import ButtonBase from '@material-ui/core/ButtonBase';
 
 import { useFilter } from '../../../../components/FilterContainer';
+import { updateRoute } from '../../../../components/Filter';
 import { apiLinks } from '../../../../utils';
 import Ad from '../../../../components/Ad';
 import Riksdagsbeslut from '../Riksdagsbeslut/Riksdagsbeslut';
@@ -43,6 +44,7 @@ const RiksdagsList = () => {
 
   useEffect(() => {
     setBeslut([]);
+    updateRoute({ baseUrl: '/riksdagsbeslut', search, org });
     // eslint-disable-next-line no-new-wrappers
     setPage(new Number(1));
   }, [search, org]);

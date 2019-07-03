@@ -20,6 +20,9 @@ const theme = createMuiTheme({
   },
   overrides: {
     MuiTypography: {
+      button: {
+        textDecoration: 'none'
+      },
       h1: {
         fontSize: '2.5rem'
       },

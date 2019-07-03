@@ -29,12 +29,15 @@ const BehandladeDokument = ({ behandladeDokument }) => {
         <div style={{ marginTop: '1.25rem' }}>
           {behandladeDokument.map((dokument, index) => (
             <React.Fragment key={dokument[3]}>
-              <Link href={`dokument?id=${dokument[3]}`} as={`dokument/${dokument[3]}`}>
-                <a style={{ textDecoration: 'none' }}>
-                  <Typography variant="body1" color="primary">
-                    [{index}] {dokument[0]}
-                  </Typography>
-                </a>
+              <Link href={`/dokument?id=${dokument[3]}`} as={`/dokument/${dokument[3]}`}>
+                <Typography
+                  component="a"
+                  variant="body1"
+                  color="primary"
+                  href={`/dokument/${dokument[3]}`}
+                >
+                  [{index}] {dokument[0]}
+                </Typography>
               </Link>
               <br />
             </React.Fragment>

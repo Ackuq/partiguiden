@@ -35,6 +35,9 @@ class MyDocument extends Document {
               flex-direction: column;
               min-height: 100%; 
             }
+            a:not(:hover) {
+              text-decoration: none;
+            }
           `}
           </style>
           {process.env.NODE_ENV === 'production' && (

@@ -1,5 +1,5 @@
 import React from 'react';
-import Link from 'next/link';
+import Router from 'next/router';
 import { Grid, ButtonBase, Typography } from '@material-ui/core';
 import { grey } from '@material-ui/core/colors';
 import { makeStyles } from '@material-ui/styles';
@@ -36,12 +36,16 @@ const Featured = () => {
     <Grid container spacing={3}>
       {getFeatured().map(obj => (
         <Grid key={obj.id} item xs={12} md={6}>
-          <ButtonBase className={classes.featured}>
-            <Link as={`/subject/${obj.id}`} href={`subject?id=${obj.id}`}>
-              <Typography component="a" variant="subtitle1">
-                {obj.name}
-              </Typography>
-            </Link>
+          <ButtonBase
+            className={classes.featured}
+            onClick={event => {
+              event.preventDefault();
+              Router.push(`/subject?id=${obj.id}`, `/subject/${obj.id}`);
+            }}
+          >
+            <Typography component="a" variant="button" href={`/subject/${obj.id}`} color="primary">
+              {obj.name}
+            </Typography>
           </ButtonBase>
         </Grid>
       ))}

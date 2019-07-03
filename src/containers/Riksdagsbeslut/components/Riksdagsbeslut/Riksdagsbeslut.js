@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import Link from 'next/link';
 import Router from 'next/router';
 import { makeStyles } from '@material-ui/styles';
 import {
@@ -86,16 +85,20 @@ const Riksdagsbeslut = ({ beslut }) => {
                 {beslut.notis && <div dangerouslySetInnerHTML={{ __html: beslut.notis }} /> // eslint-disable-line react/no-danger
                 }
               </div>
-              <Button>
-                <Link href={`/dokument?id=${beslut.id}`} as={`/dokument/${beslut.id}`}>
-                  <Typography component="a" variant="button">
-                    Läs mer om betänkandet
-                  </Typography>
-                </Link>
+              <Button
+                component="a"
+                href={`/dokument/${beslut.id}`}
+                onClick={event => {
+                  event.preventDefault();
+                  Router.push(`/dokument?id=${beslut.id}`, `/dokument/${beslut.id}`);
+                }}
+              >
+                Läs mer om betänkandet
               </Button>
               {voteringarExist && (
                 <Button
-                  component="div"
+                  component="a"
+                  href="/voteringar"
                   onClick={() => {
                     Router.push('/voteringar');
                     dispatch({ type: 'RESET_FILTER' });

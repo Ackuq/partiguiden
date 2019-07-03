@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { makeStyles } from '@material-ui/styles';
 import { Card, CardContent, CardHeader, Typography, ButtonBase } from '@material-ui/core';
 import { shape, string } from 'prop-types';
-import Link from 'next/link';
+import Router from 'next/router';
 
 import { apiLinks } from '../../../../utils';
 import VoteringResult from '../VoteringResult';
@@ -39,48 +39,53 @@ const Votering = ({ votering: { id, beteckning, tempbeteckning, titel, organ } }
   }, []);
 
   return (
-    <React.Fragment>
-      {!loading && organObject && (
-        <Link
-          href={`/votering?id=${dokId}&bet=${tempbeteckning}`}
-          as={`/votering/${dokId}/${tempbeteckning}`}
+    !loading &&
+    organObject && (
+      <Card elevation={1} style={{ flex: 1 }}>
+        <ButtonBase
+          style={{ display: 'block' }}
+          href={`/votering/${dokId}/${tempbeteckning}`}
+          component="a"
+          onClick={event => {
+            event.preventDefault();
+            Router.push(
+              `/votering?id=${dokId}&bet=${tempbeteckning}`,
+              `/votering/${dokId}/${tempbeteckning}`
+            );
+          }}
         >
-          <ButtonBase style={{ width: '100%' }}>
-            <Card elevation={1} style={{ flex: 1 }}>
-              <CardHeader
-                title={organObject.desc}
-                style={{ background: organObject.color }}
-                classes={{
-                  title: classes.headerTitle,
-                  root: classes.headerRoot
-                }}
-              />
-              <CardContent>
-                <Typography
-                  variant="h3"
-                  color="textSecondary"
-                  align="left"
-                  gutterBottom
-                  classes={{ h3: classes.title }}
-                >
-                  {titel}
-                </Typography>
-                <Typography
-                  variant="h6"
-                  color="textSecondary"
-                  align="left"
-                  classes={{ h6: classes.subtitle }}
-                >
-                  {rubrik}
-                </Typography>
-              </CardContent>
+          <CardHeader
+            title={organObject.desc}
+            style={{ background: organObject.color }}
+            classes={{
+              title: classes.headerTitle,
+              root: classes.headerRoot
+            }}
+          />
+          <CardContent>
+            <Typography
+              variant="h3"
+              color="textSecondary"
+              align="left"
+              gutterBottom
+              classes={{ h3: classes.title }}
+            >
+              {titel}
+            </Typography>
+            <Typography
+              variant="h6"
+              color="textSecondary"
+              align="left"
+              classes={{ h6: classes.subtitle }}
+            >
+              {rubrik}
+            </Typography>
+          </CardContent>
 
-              <VoteringResult votes={votes} />
-            </Card>
-          </ButtonBase>
-        </Link>
-      )}
-    </React.Fragment>
+          <VoteringResult votes={votes} />
+        </ButtonBase>
+      </Card>
+    )
   );
 };
 

@@ -9,7 +9,7 @@ import styles from './styles';
 
 const useStyles = makeStyles(styles);
 
-const getPages = () => [
+const getPages = [
   { href: '/', title: 'Hem' },
   {
     href: '/partiernas-standpunkter',
@@ -28,7 +28,7 @@ const NavLinks = ({ router }) => {
   const getInitialIndex = val => {
     const { route } = router;
 
-    let index = getPages().findIndex(x => x.href === router.pathname);
+    let index = getPages.findIndex(x => x.href === router.pathname);
 
     if (index < 0) {
       if (route === '/subject') index = 1;
@@ -58,7 +58,7 @@ const NavLinks = ({ router }) => {
         }}
         value={value}
       >
-        {getPages().map(({ href, title }) => (
+        {getPages.map(({ href, title }) => (
           <Tab
             key={href}
             component="a"

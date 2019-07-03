@@ -1,6 +1,5 @@
 const styles = theme => ({
   shown: {
-    '-webkit-transform': 'rotate(180deg)',
     transform: 'rotate(180deg)'
   },
   paragraphContainer: {
@@ -25,7 +24,6 @@ const styles = theme => ({
     width: '100%'
   },
   arrow: {
-    '-webkit-transition': 'transform 0.25s ease-in-out',
     transition: 'transform 0.25s ease-in-out',
     fontSize: '2rem',
     color: theme.palette.primary.dark

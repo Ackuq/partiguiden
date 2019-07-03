@@ -1,6 +1,6 @@
 import React from 'react';
-import Link from 'next/link';
-import { Grid, ButtonBase, Typography } from '@material-ui/core';
+import Router from 'next/router';
+import { Grid, ButtonBase } from '@material-ui/core';
 import { makeStyles } from '@material-ui/styles';
 import PropTypes from 'prop-types';
 
@@ -12,12 +12,16 @@ const ListObject = ({ subject }) => {
   const classes = useStyles();
   return (
     <Grid item xs={12} md={6} className={classes.item}>
-      <ButtonBase className={classes.button}>
-        <Link href={`/subject?id=${subject.id}`} as={`/subject/${subject.id}`}>
-          <Typography component="a">
-            <span className={classes.transition}>{subject.name}</span>
-          </Typography>
-        </Link>
+      <ButtonBase
+        component="a"
+        href={`/subject/${subject.id}`}
+        className={classes.button}
+        onClick={event => {
+          event.preventDefault();
+          Router.push(`/subject?id=${subject.id}`, `/subject/${subject.id}`);
+        }}
+      >
+        <span className={classes.transition}>{subject.name}</span>
       </ButtonBase>
     </Grid>
   );

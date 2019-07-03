@@ -4,7 +4,6 @@ import { makeStyles } from '@material-ui/styles';
 import { AppBar, Tabs, Tab } from '@material-ui/core';
 import { object } from 'prop-types';
 
-import { useStateValue } from '../../../../../lib/stateProvider';
 import styles from './styles';
 
 const useStyles = makeStyles(styles);
@@ -23,7 +22,6 @@ const getPages = [
 
 const NavLinks = ({ router }) => {
   const classes = useStyles();
-  const dispatch = useStateValue()[1];
 
   const getInitialIndex = val => {
     const { route } = router;
@@ -67,8 +65,6 @@ const NavLinks = ({ router }) => {
             onClick={event => {
               event.preventDefault();
               Router.push(href);
-              if (title === 'Voteringar' || title === 'Riksdagsbeslut')
-                dispatch({ type: 'RESET_FILTER' });
             }}
           />
         ))}

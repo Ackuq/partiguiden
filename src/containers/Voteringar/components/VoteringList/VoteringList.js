@@ -6,7 +6,7 @@ import { apiLinks } from '../../../../utils';
 import Ad from '../../../../components/Ad';
 import Votering from '../Votering';
 import LoadCircle from '../../../../components/LoadCircle';
-import { useStateValue } from '../../../../lib/stateProvider';
+import { useFilter } from '../../../../components/FilterContainer';
 import { getVoteringList } from '../../lib';
 
 import styles from './styles';
@@ -19,20 +19,16 @@ const Voteringar = () => {
   const [loading, setLoading] = useState(true);
   const [lastPage, setLastPage] = useState(true);
   const [voteringar, setVoteringar] = useState([]);
-  const { filter } = useStateValue()[0];
+  const { search, org } = useFilter()[0];
 
-  const url = () => {
-    const { search } = filter;
-    const org = filter.org.join('&org=');
-    return `${apiLinks.riksdagenApi}/dokumentlista/?sok=${search}&doktyp=votering&org=${org}&sort=${
-      search ? 'rel' : 'datum'
-    }&sortorder=desc&utformat=json&a=s&p=${page}`;
-  };
+  const url = `${apiLinks.riksdagenApi}/dokumentlista/?sok=${search}&doktyp=votering&org=${org.join(
+    '&org='
+  )}&sort=${search ? 'rel' : 'datum'}&sortorder=desc&utformat=json&a=s&p=${page}`;
 
   useEffect(() => {
     setLoading(true);
     let isMounted = true;
-    getVoteringList({ page, url: url() }).then(res => {
+    getVoteringList({ page, url }).then(res => {
       if (isMounted) {
         setLastPage(res.lastPage);
         if (res.voteringar) setVoteringar(voteringar.concat(...res.voteringar));
@@ -48,7 +44,7 @@ const Voteringar = () => {
     setVoteringar([]);
     // eslint-disable-next-line no-new-wrappers
     setPage(new Number(1));
-  }, [filter]);
+  }, [search, org]);
 
   return (
     <React.Fragment>

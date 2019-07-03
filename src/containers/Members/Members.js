@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
+import reducer from './reducer';
+import { FilterProvider } from '../../components/FilterContainer';
 import { apiLinks, fetchJSON } from '../../utils';
 import LoadCircle from '../../components/LoadCircle';
 import FilterMembers from './components/FilterMembers';
@@ -25,14 +27,16 @@ const Ledamoter = () => {
   }, []);
 
   return (
-    <div
-      style={{
-        display: 'flex'
-      }}
-    >
-      <div style={{ flex: 1 }}>{loading ? <LoadCircle /> : <MemberList members={members} />}</div>
-      <FilterMembers />
-    </div>
+    <FilterProvider initialState={{ parties: [] }} reducer={reducer}>
+      <div
+        style={{
+          display: 'flex'
+        }}
+      >
+        <div style={{ flex: 1 }}>{loading ? <LoadCircle /> : <MemberList members={members} />}</div>
+        <FilterMembers />
+      </div>
+    </FilterProvider>
   );
 };
 

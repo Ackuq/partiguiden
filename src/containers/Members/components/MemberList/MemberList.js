@@ -3,17 +3,17 @@ import Grid from '@material-ui/core/Grid';
 import PropTypes from 'prop-types';
 
 import Member from '../Member';
-import { useStateValue } from '../../../../lib/stateProvider';
+import { useFilter } from '../../../../components/FilterContainer';
 
 const MemberList = ({ members }) => {
-  const { memberFilter } = useStateValue()[0];
+  const { parties } = useFilter()[0];
   return (
     <Grid container spacing={3} justify="center">
       {members.map(member => (
         <Member
           member={member}
           key={member.id}
-          show={memberFilter.parties.length === 0 || memberFilter.parties.includes(member.parti)}
+          show={parties.length === 0 || parties.includes(member.parti)}
         />
       ))}
     </Grid>

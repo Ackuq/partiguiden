@@ -3,14 +3,14 @@ import { makeStyles } from '@material-ui/styles';
 import { FormGroup, FormControlLabel, Checkbox } from '@material-ui/core';
 
 import { table } from '../../../../utils/authorityTable';
-import { useStateValue } from '../../../../lib/stateProvider';
+import { useFilter } from '../../../FilterContainer';
 import styles from './styles';
 
 const useStyles = makeStyles(styles);
 
 const FilterCategories = () => {
   const classes = useStyles();
-  const [{ filter }, dispatch] = useStateValue();
+  const [{ org }, dispatch] = useFilter();
 
   const renderCheckBox = object => (
     <FormControlLabel
@@ -19,7 +19,7 @@ const FilterCategories = () => {
       control={
         <Checkbox
           color="primary"
-          checked={filter.org.includes(object)}
+          checked={org.includes(object)}
           onChange={event => {
             window.scrollTo(0, 0);
             if (event.target.checked) dispatch({ type: 'ADD_ORG_TO_FILTER', org: object });

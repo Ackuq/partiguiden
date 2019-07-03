@@ -14,15 +14,14 @@ const Filter = ({ children }) => {
   const classes = useStyles();
   const [showFilterScreen, setShowFilterScreen] = useState(false);
 
+  const toggleFilterScreen = () => setShowFilterScreen(prevState => !prevState);
+
   const showClass = showFilterScreen ? classes.showFilterScreen : '';
 
   return (
     <React.Fragment>
       <Card classes={{ root: classes.filterButtonContainer }}>
-        <Button
-          classes={{ root: classes.buttonContainer }}
-          onClick={() => setShowFilterScreen(true)}
-        >
+        <Button classes={{ root: classes.buttonContainer }} onClick={toggleFilterScreen}>
           <FilterIcon className={classes.icon} />
         </Button>
       </Card>
@@ -35,12 +34,12 @@ const Filter = ({ children }) => {
           onClickAway={event => {
             if (showClass) {
               event.preventDefault();
-              setShowFilterScreen(false);
+              toggleFilterScreen();
             }
           }}
         >
           <div className={`${classes.filterScreenContainer} ${showClass}`}>
-            <CloseButton aria-label="Close" onClick={() => setShowFilterScreen(false)}>
+            <CloseButton aria-label="Close" onClick={toggleFilterScreen}>
               <CloseIcon />
             </CloseButton>
             {children}

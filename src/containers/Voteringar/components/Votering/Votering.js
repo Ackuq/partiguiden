@@ -38,55 +38,52 @@ const Votering = ({ votering: { id, beteckning, tempbeteckning, titel, organ } }
     };
   }, []);
 
-  return (
-    !loading &&
-    organObject && (
-      <Card elevation={1} style={{ flex: 1 }}>
-        <ButtonBase
-          style={{ display: 'block' }}
-          href={`/votering/${dokId}/${tempbeteckning}`}
-          component="a"
-          onClick={event => {
-            event.preventDefault();
-            Router.push(
-              `/votering?id=${dokId}&bet=${tempbeteckning}`,
-              `/votering/${dokId}/${tempbeteckning}`
-            );
+  return !loading && organObject ? (
+    <Card elevation={1} style={{ flex: 1 }}>
+      <ButtonBase
+        style={{ display: 'block' }}
+        href={`/votering/${dokId}/${tempbeteckning}`}
+        component="a"
+        onClick={event => {
+          event.preventDefault();
+          Router.push(
+            `/votering?id=${dokId}&bet=${tempbeteckning}`,
+            `/votering/${dokId}/${tempbeteckning}`
+          );
+        }}
+      >
+        <CardHeader
+          title={organObject.desc}
+          style={{ background: organObject.color }}
+          classes={{
+            title: classes.headerTitle,
+            root: classes.headerRoot
           }}
-        >
-          <CardHeader
-            title={organObject.desc}
-            style={{ background: organObject.color }}
-            classes={{
-              title: classes.headerTitle,
-              root: classes.headerRoot
-            }}
-          />
-          <CardContent>
-            <Typography
-              variant="h3"
-              color="textSecondary"
-              align="left"
-              gutterBottom
-              classes={{ h3: classes.title }}
-            >
-              {titel}
-            </Typography>
-            <Typography
-              variant="h6"
-              color="textSecondary"
-              align="left"
-              classes={{ h6: classes.subtitle }}
-            >
-              {rubrik}
-            </Typography>
-          </CardContent>
+        />
+        <CardContent>
+          <Typography
+            variant="h3"
+            color="textSecondary"
+            align="left"
+            gutterBottom
+            classes={{ h3: classes.title }}
+          >
+            {titel}
+          </Typography>
+          <Typography
+            variant="h6"
+            color="textSecondary"
+            align="left"
+            classes={{ h6: classes.subtitle }}
+          >
+            {rubrik}
+          </Typography>
+        </CardContent>
 
-          <VoteringResult votes={votes} />
-        </ButtonBase>
-      </Card>
-    )
-  );
+        <VoteringResult votes={votes} />
+      </ButtonBase>
+    </Card>
+  ) : null;
 };
 
 Votering.propTypes = {

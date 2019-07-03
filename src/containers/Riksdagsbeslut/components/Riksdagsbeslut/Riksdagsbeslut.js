@@ -16,7 +16,6 @@ import PropTypes from 'prop-types';
 import { checkIfVotesExist } from '../../lib';
 import getOrganInfo from '../../../../utils/authorityTable';
 import styles from './styles';
-import { useStateValue } from '../../../../lib/stateProvider';
 
 const useStyles = makeStyles(styles);
 
@@ -24,7 +23,6 @@ const Riksdagsbeslut = ({ beslut }) => {
   const classes = useStyles();
   const [voteringarExist, setVoteringarExist] = useState(false);
   const [visible, setVisible] = useState(false);
-  const dispatch = useStateValue()[1];
 
   let mount = true;
 
@@ -99,13 +97,9 @@ const Riksdagsbeslut = ({ beslut }) => {
                 <Button
                   component="a"
                   href="/voteringar"
-                  onClick={() => {
-                    Router.push('/voteringar');
-                    dispatch({ type: 'RESET_FILTER' });
-                    dispatch({
-                      type: 'SET_SEARCH',
-                      searchInput: `${beslut.rm}:${beslut.beteckning}`
-                    });
+                  onClick={event => {
+                    event.preventDefault();
+                    Router.push(`/voteringar?sok=${beslut.rm}:${beslut.beteckning}`);
                   }}
                 >
                   Läs mer om voteringarna

@@ -71,7 +71,7 @@ const table = {
   },
   UU: {
     name: 'Utrikesutskottet',
-    desc: 'Utrike',
+    desc: 'Utrikes',
     color: '#f53b57'
   },
   UFöU: {

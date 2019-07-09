@@ -37,7 +37,7 @@ const SubjectContainer = ({ name, partyData }) => (
 );
 
 SubjectContainer.getInitialProps = async ({ query }) => {
-  const url = `${apiLinks.partiguidenApi}/subject?id=${query.id}`;
+  const url = `${apiLinks.partiguidenApi}/subject/${query.id}`;
   const res = await fetch(url);
   const data = await res.json();
   const partyData = await getData(data.opinions);

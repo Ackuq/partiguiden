@@ -5,7 +5,7 @@ import { getParties, apiLinks } from '../../../utils';
 const getSubjectData = tags =>
   Promise.all(
     getParties.map(async party => {
-      const url = `${apiLinks.partiguidenApi}/party?party=${party.letter}`;
+      const url = `${apiLinks.partiguidenApi}/party/${party.letter}`;
       const res = await fetch(url);
       const data = await res.json();
       const temp = [];

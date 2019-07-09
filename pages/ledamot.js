@@ -16,7 +16,7 @@ const LedamotContainer = ({ member }) => (
 );
 
 LedamotContainer.getInitialProps = async ({ query }) => {
-  const url = `${apiLinks.partiguidenApi}/member?id=${query.id}`;
+  const url = `${apiLinks.partiguidenApi}/member/${query.id}`;
   const res = await fetch(url);
   const member = await res.json();
 

@@ -6,7 +6,7 @@
   "routes": [
     {
       "src": "/_next/static/(.*)",
-      "headers": { "cache-control": "public,max-age=31536000,immutable" },
+      "headers": { "cache-control": "public,max-age=0,s-maxage=31536000" },
       "continue": true
     },
     {
@@ -25,18 +25,18 @@
       "dest": "/static/robots.txt"
     },
     {
-      "src": "^/[a-zA-Z]*$",
-      "headers": { "cache-control": "public,max-age=3600,s-maxage=31536000" },
+      "src": "^/[^/]*$",
+      "headers": { "cache-control": "public,max-age=0,s-maxage=31536000" },
       "continue": true
     },
     {
       "src": "/(?<page>(dokument|riksdagsbeslut|subject|ledamot))/(?<id>[^/]+)",
-      "headers": { "cache-control": "public,max-age=3600,s-maxage=31536000" },
+      "headers": { "cache-control": "public,max-age=0,s-maxage=31536000" },
       "dest": "/$page?id=$id"
     },
     {
       "src": "/votering/(?<id>[^/]+)/(?<bet>[^/]+)",
-      "headers": { "cache-control": "public,max-age=3600,s-maxage=31536000" },
+      "headers": { "cache-control": "public,max-age=0,s-maxage=31536000" },
       "dest": "/votering?id=$id&bet=$bet"
     }
   ]

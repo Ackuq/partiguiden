@@ -5,39 +5,39 @@
   "builds": [{ "src": "next.config.js", "use": "@now/next" }],
   "routes": [
     {
+      "src": "/_next/static/(.*)",
+      "headers": { "cache-control": "public,max-age=31536000,immutable" },
+      "continue": true
+    },
+    {
       "src": "/static/(.*)",
-      "headers": { "cache-control": "s-maxage=31536000,immutable" },
-      "dest": "/static/$1"
+      "headers": { "cache-control": "public,max-age=31536000,immutable" },
+      "continue": true
     },
     {
-      "src": "^/ads.txt",
-      "dest": "/static/ads.txt",
-      "headers": { "cache-control": "s-maxage=31536000,immutable" }
+      "src": "/ads.txt",
+      "headers": { "cache-control": "public,max-age=31536000,immutable" },
+      "dest": "/static/ads.txt"
     },
     {
-      "src": "^/robots.txt",
-      "dest": "/static/robots.txt",
-      "headers": { "cache-control": "s-maxage=31536000,immutable" }
+      "src": "/robots.txt",
+      "headers": { "cache-control": "public,max-age=31536000,immutable" },
+      "dest": "/static/robots.txt"
     },
     {
-      "src": "^/dokument/(?<id>[^/]+)",
-      "dest": "/dokument?id=$id"
+      "src": "^/[a-zA-Z]*$",
+      "headers": { "cache-control": "public,max-age=3600,s-maxage=31536000" },
+      "continue": true
     },
     {
-      "src": "^/beslut/(?<id>[^/]+)",
-      "dest": "/beslut?id=$id"
+      "src": "/(?<page>(dokument|riksdagsbeslut|subject|ledamot))/(?<id>[^/]+)",
+      "headers": { "cache-control": "public,max-age=3600,s-maxage=31536000" },
+      "dest": "/$page?id=$id"
     },
     {
-      "src": "^/subject/(?<id>[^/]+)",
-      "dest": "/subject?id=$id"
-    },
-    {
-      "src": "^/votering/(?<id>[^/]+)/(?<bet>[^/]+)",
+      "src": "/votering/(?<id>[^/]+)/(?<bet>[^/]+)",
+      "headers": { "cache-control": "public,max-age=3600,s-maxage=31536000" },
       "dest": "/votering?id=$id&bet=$bet"
-    },
-    {
-      "src": "^/ledamot/(?<id>[^/]+)",
-      "dest": "/ledamot?id=$id"
     }
   ]
 }

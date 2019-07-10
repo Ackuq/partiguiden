@@ -1,51 +1,57 @@
 import React, { useState } from 'react';
-import { makeStyles } from '@material-ui/styles';
-import { Button, Card } from '@material-ui/core';
+import { Fab, SwipeableDrawer, Box, Hidden, IconButton } from '@material-ui/core';
 import { Tune as FilterIcon, CloseRounded as CloseIcon } from '@material-ui/icons';
-import ClickAwayListener from '@material-ui/core/ClickAwayListener';
 import PropTypes from 'prop-types';
 
-import CloseButton from './CloseButton';
-import styles from './styles';
-
-const useStyles = makeStyles(styles);
-
 const Filter = ({ children }) => {
-  const classes = useStyles();
-  const [showFilterScreen, setShowFilterScreen] = useState(false);
+  const [mobileOpen, setMobileOpen] = useState(false);
 
-  const toggleFilterScreen = () => setShowFilterScreen(prevState => !prevState);
-
-  const showClass = showFilterScreen ? classes.showFilterScreen : '';
+  const toggleFilterScreen = () => setMobileOpen(prevState => !prevState);
 
   return (
     <React.Fragment>
-      <Card classes={{ root: classes.filterButtonContainer }}>
-        <Button classes={{ root: classes.buttonContainer }} onClick={toggleFilterScreen}>
-          <FilterIcon className={classes.icon} />
-        </Button>
-      </Card>
-      <div
-        className={`${classes.filterOverlay} ${
-          showFilterScreen ? classes.filterOverlayShow : classes.filterOverlayHidden
-        }`}
-      >
-        <ClickAwayListener
-          onClickAway={event => {
-            if (showClass) {
-              event.preventDefault();
-              toggleFilterScreen();
-            }
+      <Hidden smUp implementation="js">
+        <Box position="fixed" bottom="1rem" right="5%">
+          <Fab style={{ backgroundColor: '#fff' }} onClick={toggleFilterScreen}>
+            <FilterIcon fontSize="large" />
+          </Fab>
+        </Box>
+
+        <SwipeableDrawer
+          variant="temporary"
+          anchor="right"
+          open={mobileOpen}
+          onClose={() => toggleFilterScreen()}
+          onOpen={() => toggleFilterScreen()}
+          ModalProps={{
+            keepMounted: true // Better open performance on mobile.
           }}
         >
-          <div className={`${classes.filterScreenContainer} ${showClass}`}>
-            <CloseButton aria-label="Close" onClick={toggleFilterScreen}>
+          <Box display="flex" justifyContent="flex-end">
+            <IconButton aria-label="Close" onClick={toggleFilterScreen}>
               <CloseIcon />
-            </CloseButton>
-            {children}
-          </div>
-        </ClickAwayListener>
-      </div>
+            </IconButton>
+          </Box>
+          {children}
+        </SwipeableDrawer>
+      </Hidden>
+      <Hidden xsDown implementation="js">
+        <Box
+          boxShadow={2}
+          position="sticky"
+          display="flex"
+          flexDirection="column"
+          height="100%"
+          minWidth={255}
+          maxHeight="calc(100vh - 48px)"
+          bgcolor="#fff"
+          top={48}
+          mt="-1rem"
+          style={{ overflowY: 'auto', overflowX: 'hidden' }}
+        >
+          {children}
+        </Box>
+      </Hidden>
     </React.Fragment>
   );
 };

@@ -8,10 +8,6 @@ const styles = theme => ({
     padding: '2rem 0.125rem',
     zIndex: 9999
   },
-  cookieText: {
-    textAlign: 'center',
-    fontSize: '1.25rem'
-  },
   acceptButton: {
     marginLeft: '5px'
   }

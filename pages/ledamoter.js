@@ -1,6 +1,5 @@
 import React from 'react';
 import Head from 'next/head';
-import Container from '@material-ui/core/Container';
 import PeopleIcon from '@material-ui/icons/People';
 
 import PageTitle from '../src/components/PageTitle';
@@ -13,9 +12,7 @@ const LedamoterContainer = () => (
       <meta name="description" content="" />
     </Head>
     <PageTitle title="Riksdagsledamöter" Icon={PeopleIcon} variant="h2" />
-    <Container>
-      <Members />
-    </Container>
+    <Members />
   </React.Fragment>
 );
 

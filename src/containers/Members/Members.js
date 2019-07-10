@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Container, Box } from '@material-ui/core';
 import { withRouter } from 'next/router';
 import { object } from 'prop-types';
 
@@ -35,14 +36,10 @@ const Ledamoter = ({ router }) => {
 
   return (
     <FilterProvider initialState={{ parties: initialParties }} reducer={reducer}>
-      <div
-        style={{
-          display: 'flex'
-        }}
-      >
-        <div style={{ flex: 1 }}>{loading ? <LoadCircle /> : <MemberList members={members} />}</div>
+      <Box display="flex">
+        <Container>{loading ? <LoadCircle /> : <MemberList members={members} />}</Container>
         <FilterMembers />
-      </div>
+      </Box>
     </FilterProvider>
   );
 };

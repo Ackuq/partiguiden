@@ -1,7 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
 import GavelIcon from '@material-ui/icons/GavelRounded';
-import Container from '@material-ui/core/Container';
 
 import PageTitle from '../src/components/PageTitle';
 import Riksdagsbeslut from '../src/containers/Riksdagsbeslut';
@@ -16,9 +15,7 @@ const RiksdagsbeslutContainer = () => (
       />
     </Head>
     <PageTitle title="Riksdagsbeslut" Icon={GavelIcon} />
-    <Container>
-      <Riksdagsbeslut />
-    </Container>
+    <Riksdagsbeslut />
   </React.Fragment>
 );
 

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Collapse, ButtonBase, Grid, Typography } from '@material-ui/core';
+import { Collapse, ButtonBase, Grid, Typography, Box } from '@material-ui/core';
 import { makeStyles } from '@material-ui/styles';
 import PropTypes from 'prop-types';
 import ArrowDownRounded from '@material-ui/icons/KeyboardArrowDownRounded';
@@ -20,7 +20,7 @@ const PartyComponent = ({ party }) => {
   }
 
   return (
-    <div key={party.name} id={party.name} className={classes.partyStandpoint}>
+    <Box mb={3} key={party.name} id={party.name}>
       <ButtonBase
         onClick={handleClick}
         aria-expanded={visible}
@@ -29,7 +29,10 @@ const PartyComponent = ({ party }) => {
         style={{ borderBottom: `2px solid ${partyColor}` }}
       >
         <React.Fragment>
-          <Typography variant="h3" style={{ fontWeight: 300 }}>
+          <Typography
+            variant="h3"
+            style={{ fontWeight: 300, marginBottom: '0.25rem', marginTop: '0.25rem' }}
+          >
             {party.name}
           </Typography>
           <ArrowDownRounded
@@ -50,7 +53,7 @@ const PartyComponent = ({ party }) => {
           ))}
         </Grid>
       </Collapse>
-    </div>
+    </Box>
   );
 };
 

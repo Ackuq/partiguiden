@@ -1,12 +1,4 @@
 const styles = theme => ({
-  partyStandpoint: {
-    marginBottom: '2rem',
-    '& h3': {
-      marginBottom: '0.25rem',
-      marginTop: '0.25rem'
-    }
-  },
-
   partyTitle: {
     justifyContent: 'space-between',
     width: '100%',

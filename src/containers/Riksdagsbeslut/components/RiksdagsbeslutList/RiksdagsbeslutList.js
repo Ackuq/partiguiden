@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { makeStyles } from '@material-ui/styles';
-import ButtonBase from '@material-ui/core/ButtonBase';
 
+import LoadMoreButton from '../../../../components/LoadMoreButton';
 import { useFilter } from '../../../../components/FilterContainer';
 import { updateRoute } from '../../../../components/Filter';
 import { apiLinks } from '../../../../utils';
@@ -10,7 +10,14 @@ import Riksdagsbeslut from '../Riksdagsbeslut/Riksdagsbeslut';
 import LoadCircle from '../../../../components/LoadCircle';
 import { getRiksdagsBeslutList } from '../../lib';
 
-import styles from './styles';
+const styles = () => ({
+  listContainer: {
+    marginBottom: '0.5rem',
+    '& > div': {
+      padding: '8px'
+    }
+  }
+});
 
 const useStyles = makeStyles(styles);
 
@@ -66,17 +73,12 @@ const RiksdagsList = () => {
         <LoadCircle />
       ) : (
         !lastPage && (
-          <div className={classes.buttonContainer}>
-            <ButtonBase
-              className={classes.loadMore}
-              onClick={() => {
-                setLastPage(true);
-                setPage(curr => curr + 1);
-              }}
-            >
-              Ladda mer
-            </ButtonBase>
-          </div>
+          <LoadMoreButton
+            onClick={() => {
+              setLastPage(true);
+              setPage(curr => curr + 1);
+            }}
+          />
         )
       )}
     </React.Fragment>

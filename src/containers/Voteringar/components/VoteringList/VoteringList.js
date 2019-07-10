@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { makeStyles } from '@material-ui/styles';
-import ButtonBase from '@material-ui/core/ButtonBase';
 
+import LoadMoreButton from '../../../../components/LoadMoreButton';
 import { apiLinks } from '../../../../utils';
 import Ad from '../../../../components/Ad';
 import Votering from '../Votering';
@@ -10,7 +10,14 @@ import { updateRoute } from '../../../../components/Filter';
 import { useFilter } from '../../../../components/FilterContainer';
 import { getVoteringList } from '../../lib';
 
-import styles from './styles';
+const styles = () => ({
+  listContainer: {
+    marginBottom: '0.5rem',
+    '& > div': {
+      padding: '8px'
+    }
+  }
+});
 
 const useStyles = makeStyles(styles);
 
@@ -65,19 +72,12 @@ const Voteringar = () => {
         <LoadCircle />
       ) : (
         !lastPage && (
-          <React.Fragment>
-            <div className={classes.buttonContainer}>
-              <ButtonBase
-                className={classes.loadMore}
-                onClick={() => {
-                  setLastPage(true);
-                  setPage(curr => curr + 1);
-                }}
-              >
-                Ladda mer
-              </ButtonBase>
-            </div>
-          </React.Fragment>
+          <LoadMoreButton
+            onClick={() => {
+              setLastPage(true);
+              setPage(curr => curr + 1);
+            }}
+          />
         )
       )}
     </React.Fragment>

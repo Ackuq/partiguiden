@@ -1,6 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
-import Container from '@material-ui/core/Container';
+import { Container, Box } from '@material-ui/core';
 import PropTypes from 'prop-types';
 
 import Breadcrumbs from '../src/components/Breadcrumbs';
@@ -21,12 +21,12 @@ const VoteringContainer = ({ votering, bet }) => (
     </Head>
     <PageTitle title={`${votering.dokument.titel} förslagspunkt ${bet}`} variant="h3" />
     <Container>
-      <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+      <Box display="flex" justifyContent="space-between">
         <Breadcrumbs
           links={[{ href: '/voteringar', label: 'Voteringar' }, { href: '#', label: 'Votering' }]}
         />
         <SocialMediaShare title={`${votering.dokument.titel} förslagspunkt ${bet}`} />
-      </div>
+      </Box>
       <Votering {...votering} />
     </Container>
   </React.Fragment>

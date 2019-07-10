@@ -25,7 +25,7 @@ const Votering = ({
       <Typography variant="body1" paragraph>
         {forslag}
       </Typography>
-      {behandladeDokument && <BehandladeDokument behandladeDokument={behandladeDokument} />}
+      {behandladeDokument.length && <BehandladeDokument behandladeDokument={behandladeDokument} />}
       <RostFordelning voting={voting} />
       <Beslut beslut={beslut} notisBeskrivning={notisBeskrivning} />
       {bilaga && <Bilaga bilaga={bilaga} />}

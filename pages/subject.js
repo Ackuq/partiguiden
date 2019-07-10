@@ -1,6 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
-import Container from '@material-ui/core/Container';
+import { Container, Box } from '@material-ui/core';
 import { string, array } from 'prop-types';
 import fetch from 'isomorphic-unfetch';
 
@@ -22,7 +22,7 @@ const SubjectContainer = ({ name, partyData }) => (
     </Head>
     <PageTitle title={name} />
     <Container>
-      <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+      <Box display="flex" justifyContent="space-between">
         <Breadcrumbs
           links={[
             { href: '/partiernas-standpunkter', label: 'Partiernas Ståndpunkter' },
@@ -30,7 +30,7 @@ const SubjectContainer = ({ name, partyData }) => (
           ]}
         />
         <SocialMediaShare title={name} />
-      </div>
+      </Box>
       <Subject partyData={partyData} />
     </Container>
   </React.Fragment>

@@ -1,7 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
 import VoteIcon from '@material-ui/icons/HowToVoteRounded';
-import Container from '@material-ui/core/Container';
 
 import PageTitle from '../src/components/PageTitle';
 import Voteringar from '../src/containers/Voteringar';
@@ -16,9 +15,7 @@ const VoteringarContainer = () => (
       />
     </Head>
     <PageTitle title="Voteringar" Icon={VoteIcon} />
-    <Container>
-      <Voteringar />
-    </Container>
+    <Voteringar />
   </React.Fragment>
 );
 

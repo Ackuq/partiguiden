@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { makeStyles } from '@material-ui/styles';
-import { Paper, Button, Slide, Typography } from '@material-ui/core';
+import { Paper, Button, Slide, Typography, Box } from '@material-ui/core';
 import Cookies from 'universal-cookie';
 
 import styles from './styles';
@@ -22,32 +22,30 @@ const CookieBanner = () => {
     <React.Fragment>
       <Slide direction="up" in={!cookieConsent} mountOnEnter unmountOnExit>
         <Paper square classes={{ root: classes.cookieBannerContainer }}>
-          <div>
-            <h4 className={classes.cookieText}>
-              Partiguiden.nu använder kakor för att anonymt analysera användares interaktion av
-              hemsidan.
-            </h4>
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
-              <Button color="inherit" variant="outlined">
-                <Link href="/kakpolicy">
-                  <Typography component="a" variant="button">
-                    Läs mer
-                  </Typography>
-                </Link>
-              </Button>
-              <Button
-                color="inherit"
-                variant="outlined"
-                classes={{ root: classes.acceptButton }}
-                onClick={() => {
-                  setCookieConsent(true);
-                  cookies.set('consent', true, { path: '/' });
-                }}
-              >
-                Jag godkänner
-              </Button>
-            </div>
-          </div>
+          <Typography variant="h6" align="center">
+            Partiguiden.nu använder kakor för att anonymt analysera användares interaktion med
+            hemsidan.
+          </Typography>
+          <Box display="flex" justifyContent="center" mt={2}>
+            <Button color="inherit" variant="outlined">
+              <Link href="/kakpolicy">
+                <Typography component="a" variant="button">
+                  Läs mer
+                </Typography>
+              </Link>
+            </Button>
+            <Button
+              color="inherit"
+              variant="outlined"
+              classes={{ root: classes.acceptButton }}
+              onClick={() => {
+                setCookieConsent(true);
+                cookies.set('consent', true, { path: '/' });
+              }}
+            >
+              Jag godkänner
+            </Button>
+          </Box>
         </Paper>
       </Slide>
     </React.Fragment>

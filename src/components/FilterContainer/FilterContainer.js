@@ -24,7 +24,7 @@ const Filter = ({ children }) => {
           onClose={() => toggleFilterScreen()}
           onOpen={() => toggleFilterScreen()}
           ModalProps={{
-            keepMounted: true // Better open performance on mobile.
+            keepMounted: true, // Better open performance on mobile.
           }}
         >
           <Box display="flex" justifyContent="flex-end">
@@ -57,7 +57,7 @@ const Filter = ({ children }) => {
 };
 
 Filter.propTypes = {
-  children: PropTypes.PropTypes.oneOfType([PropTypes.func, PropTypes.node]).isRequired
+  children: PropTypes.PropTypes.oneOfType([PropTypes.func, PropTypes.node]).isRequired,
 };
 
 export default Filter;

@@ -12,13 +12,13 @@ const StyledBreadcrumb = withStyles(theme => ({
     color: theme.palette.grey[800],
     fontWeight: theme.typography.fontWeightRegular,
     '&:hover, &:focus': {
-      backgroundColor: theme.palette.grey[300]
+      backgroundColor: theme.palette.grey[300],
     },
     '&:active': {
       boxShadow: theme.shadows[1],
-      backgroundColor: emphasize(theme.palette.grey[300], 0.12)
-    }
-  }
+      backgroundColor: emphasize(theme.palette.grey[300], 0.12),
+    },
+  },
 }))(Chip);
 
 const CustomAvatar = styled(Avatar)(({ theme }) => ({
@@ -27,7 +27,7 @@ const CustomAvatar = styled(Avatar)(({ theme }) => ({
   width: '32px',
   height: '32px',
   fontSize: '1rem',
-  marginRight: -theme.spacing(1.5)
+  marginRight: -theme.spacing(1.5),
 }));
 
 const CustomBreadcrumbs = ({ links }) => (
@@ -53,7 +53,7 @@ const CustomBreadcrumbs = ({ links }) => (
 );
 
 CustomBreadcrumbs.propTypes = {
-  links: array.isRequired
+  links: array.isRequired,
 };
 
 export default CustomBreadcrumbs;

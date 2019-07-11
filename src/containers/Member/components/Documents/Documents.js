@@ -6,22 +6,22 @@ import { string, func } from 'prop-types';
 import { apiLinks } from '../../../../utils';
 import LoadCircle from '../../../../components/LoadCircle';
 import Document from './Document';
-import { getMemberDocuments } from '../../lib';
+import fetchMemberDocuments from './fetchMemberDocuments';
 
 const useStyles = makeStyles(theme => ({
   buttonContainer: {
     display: 'flex',
     justifyContent: 'center',
     marginTop: '1rem',
-    marginBottom: '1rem'
+    marginBottom: '1rem',
   },
   loadMore: {
     backgroundColor: theme.palette.primary.main,
     color: theme.palette.primary.contrastText,
     borderRadius: '1rem',
     height: '2rem',
-    padding: '0 2rem'
-  }
+    padding: '0 2rem',
+  },
 }));
 
 const Documents = ({ id, setDocumentCount }) => {
@@ -31,13 +31,11 @@ const Documents = ({ id, setDocumentCount }) => {
   const [page, setPage] = useState(1);
   const [lastPage, setLastPage] = useState(true);
 
-  const url = `${
-    apiLinks.riksdagenApi
-  }/dokumentlista/?avd=dokument&sort=datum&sortorder=datum&utformat=json&iid=${id}&p=${page}`;
+  const url = `${apiLinks.riksdagenApi}/dokumentlista/?avd=dokument&sort=datum&sortorder=datum&utformat=json&iid=${id}&p=${page}`;
 
   useEffect(() => {
     setLoading(true);
-    getMemberDocuments({ url, page }).then(res => {
+    fetchMemberDocuments({ url, page }).then(res => {
       setDocumentCount(res.count);
       if (res.count !== '0') setDocuments([...documents, ...res.documents]);
       setLastPage(res.lastPage);
@@ -77,7 +75,7 @@ const Documents = ({ id, setDocumentCount }) => {
 
 Documents.propTypes = {
   id: string.isRequired,
-  setDocumentCount: func.isRequired
+  setDocumentCount: func.isRequired,
 };
 
 export default Documents;

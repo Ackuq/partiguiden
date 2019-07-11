@@ -56,7 +56,7 @@ ProfilePicture.propTypes = {
   name: PropTypes.string.isRequired,
   status: PropTypes.string.isRequired,
   age: PropTypes.number.isRequired,
-  parti: PropTypes.string.isRequired
+  parti: PropTypes.string.isRequired,
 };
 
 export default ProfilePicture;

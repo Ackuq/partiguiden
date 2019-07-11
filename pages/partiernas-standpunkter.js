@@ -6,7 +6,7 @@ import { array } from 'prop-types';
 import PageTitle from '../src/components/PageTitle';
 
 import { apiLinks } from '../src/utils';
-import PartiernasStandpunkter from '../src/containers/PartiernasStandpunkter';
+import StandpointsList from '../src/containers/StandpointsList';
 
 const PartiernasStandpunkterContainer = ({ subjects }) => (
   <React.Fragment>
@@ -18,7 +18,7 @@ const PartiernasStandpunkterContainer = ({ subjects }) => (
       />
     </Head>
     <PageTitle title="Partiernas ståndpunkter" Icon={NoteIcon} />
-    <PartiernasStandpunkter subjects={subjects} />
+    <StandpointsList subjects={subjects} />
   </React.Fragment>
 );
 

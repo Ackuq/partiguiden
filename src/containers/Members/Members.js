@@ -8,7 +8,7 @@ import { FilterProvider } from '../../components/FilterContainer';
 import FilterMembers from './components/FilterMembers';
 import MemberList from './components/MemberList';
 
-const Ledamoter = ({ router, members }) => {
+const Members = ({ router, members }) => {
   const getPartyQuery = () =>
     Array.isArray(router.query.party) ? router.query.party : [router.query.party];
 
@@ -28,9 +28,9 @@ const Ledamoter = ({ router, members }) => {
   );
 };
 
-Ledamoter.propTypes = {
+Members.propTypes = {
   router: object.isRequired,
-  members: array.isRequired
+  members: array.isRequired,
 };
 
-export default withRouter(Ledamoter);
+export default withRouter(Members);

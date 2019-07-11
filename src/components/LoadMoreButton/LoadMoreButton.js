@@ -8,7 +8,7 @@ const Button = styled(ButtonBase)(({ theme }) => ({
   color: theme.palette.primary.contrastText,
   borderRadius: '1rem',
   height: '2rem',
-  padding: '0 2rem'
+  padding: '0 2rem',
 }));
 
 const LoadMoreButton = ({ onClick }) => (
@@ -18,7 +18,7 @@ const LoadMoreButton = ({ onClick }) => (
 );
 
 LoadMoreButton.propTypes = {
-  onClick: func.isRequired
+  onClick: func.isRequired,
 };
 
 export default LoadMoreButton;

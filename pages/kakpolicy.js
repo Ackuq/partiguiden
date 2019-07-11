@@ -1,12 +1,11 @@
 import React from 'react';
 import AnnouncementIcon from '@material-ui/icons/Announcement';
 import Head from 'next/head';
-import Container from '@material-ui/core/Container';
+import { Container, Card, Typography, CardContent } from '@material-ui/core';
 
 import PageTitle from '../src/components/PageTitle';
-import CookiePolicy from '../src/containers/CookiePolicy';
 
-const CookiePolicyContainer = () => (
+const CookiePolicy = () => (
   <React.Fragment>
     <Head>
       <title>Kakpolicy | Partiguiden.nu</title>
@@ -17,9 +16,20 @@ const CookiePolicyContainer = () => (
     </Head>
     <PageTitle title="Kakpolicy" Icon={AnnouncementIcon} />
     <Container>
-      <CookiePolicy />
+      <Card>
+        <CardContent>
+          <Typography variant="subtitle1" paragraph>
+            Partiguiden.nu använder webbkakor från Google för att kunna analysera användares
+            interaktion med hemsidan i syftet att kunna vidareutveckla sidan.
+          </Typography>
+          <Typography variant="subtitle1" paragraph>
+            Informationen som delas är krypterad och helt anonym, vi kan alltså inte identifera
+            användare.
+          </Typography>
+        </CardContent>
+      </Card>
     </Container>
   </React.Fragment>
 );
 
-export default CookiePolicyContainer;
+export default CookiePolicy;

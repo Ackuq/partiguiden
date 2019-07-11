@@ -8,12 +8,16 @@
         "extensions": [".js", ".jsx"]
       }
     ],
-    "prettier/prettier": ["error"],
+    "prettier/prettier": [
+      "error",
+      {
+        "trailingComma": "es5",
+        "singleQuote": true,
+        "printWidth": 100
+      }
+    ],
     "react/forbid-prop-types": 0,
-    "jsx-a11y/anchor-is-valid": 0,
-    "no-underscore-dangle": 0,
-    "import/imports-first": ["error", "absolute-first"],
-    "import/prefer-default-export": 0
+    "no-underscore-dangle": 0
   },
   "globals": {
     "window": true,

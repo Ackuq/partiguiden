@@ -5,7 +5,7 @@ import {
   Paper,
   ExpansionPanel,
   ExpansionPanelDetails,
-  ExpansionPanelSummary
+  ExpansionPanelSummary,
 } from '@material-ui/core';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import { string, array, number } from 'prop-types';
@@ -81,7 +81,7 @@ const Information = ({ id, records, absence }) => {
 Information.propTypes = {
   id: string.isRequired,
   records: array.isRequired,
-  absence: number.isRequired
+  absence: number.isRequired,
 };
 
 export default Information;

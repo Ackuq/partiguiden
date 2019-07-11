@@ -6,42 +6,42 @@ const theme = createMuiTheme({
       main: '#00796b',
       dark: '#004c40',
       light: '#009688',
-      contrastText: '#f8f9fa'
+      contrastText: '#f8f9fa',
     },
     secondary: {
       main: '#80cbc4',
       dark: '#006978',
       light: '#56c8d8',
-      contrastText: '#a3cfca'
-    }
+      contrastText: '#a3cfca',
+    },
   },
   typography: {
-    useNextVariants: true
+    useNextVariants: true,
   },
   overrides: {
     MuiTypography: {
       button: {
-        textDecoration: 'none'
+        textDecoration: 'none',
       },
       h1: {
-        fontSize: '2.5rem'
+        fontSize: '2.5rem',
       },
       h2: {
-        fontSize: '2rem'
+        fontSize: '2rem',
       },
       h3: {
-        fontSize: '1.75rem'
+        fontSize: '1.75rem',
       },
       h4: {
         fontSize: '1.5rem',
-        fontWeight: '300'
+        fontWeight: '300',
       },
       h5: {
-        fontSize: '1.25rem'
+        fontSize: '1.25rem',
       },
       h6: {
-        fontSize: '1rem'
-      }
+        fontSize: '1rem',
+      },
     },
     MuiButtonBase: {
       root: {
@@ -51,10 +51,10 @@ const theme = createMuiTheme({
         '-moz-transition': 'background-color 0.4s ease-in-out',
         '-ms-transition': 'background-color 0.4s ease-in-out',
         '-o-transition': 'background-color 0.4s ease-in-out',
-        transition: 'background-color 0.4s ease-in-out'
-      }
-    }
-  }
+        transition: 'background-color 0.4s ease-in-out',
+      },
+    },
+  },
 });
 
 export default theme;

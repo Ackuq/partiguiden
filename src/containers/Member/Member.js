@@ -22,7 +22,7 @@ const Member = ({ member }) => (
 );
 
 Member.propTypes = {
-  member: object.isRequired
+  member: object.isRequired,
 };
 
 export default Member;

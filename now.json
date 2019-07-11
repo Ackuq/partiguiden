@@ -30,14 +30,9 @@
       "continue": true
     },
     {
-      "src": "/(?<page>(dokument|riksdagsbeslut|subject|ledamot))/(?<id>[^/]+)",
+      "src": "/(dokument|riksdagsbeslut|standpunkt|ledamot|votering)/(.*)",
       "headers": { "cache-control": "public,max-age=0,s-maxage=31536000" },
-      "dest": "/$page?id=$id"
-    },
-    {
-      "src": "/votering/(?<id>[^/]+)/(?<bet>[^/]+)",
-      "headers": { "cache-control": "public,max-age=0,s-maxage=31536000" },
-      "dest": "/votering?id=$id&bet=$bet"
+      "continue": true
     }
   ]
 }

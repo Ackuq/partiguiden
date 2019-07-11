@@ -16,16 +16,16 @@ const styles = theme => ({
     flexGrow: '1',
     color: grey[900],
     '&:hover': {
-      backgroundColor: grey[100]
-    }
-  }
+      backgroundColor: grey[100],
+    },
+  },
 });
 
 const getFeatured = () => [
   { id: 'miljo', name: 'Miljö och klimat' },
   { id: 'vard-och-omsorg', name: 'Vård och omsorg' },
   { id: 'skola', name: 'Skola och utbildning' },
-  { id: 'migration-och-integration', name: 'Migration och integration' }
+  { id: 'migration-och-integration', name: 'Migration och integration' },
 ];
 
 const useStyles = makeStyles(styles);
@@ -40,7 +40,7 @@ const Featured = () => {
             className={classes.featured}
             onClick={event => {
               event.preventDefault();
-              Router.push(`/subject?id=${obj.id}`, `/subject/${obj.id}`);
+              Router.push(`/subject/${obj.id}`);
             }}
           >
             <Typography component="a" variant="button" href={`/subject/${obj.id}`} color="primary">

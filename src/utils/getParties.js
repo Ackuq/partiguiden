@@ -6,7 +6,7 @@ const parties = [
   { name: 'Vänsterpartiet', letter: 'V', color: '#cf000f' },
   { name: 'Kristdemokraterna', letter: 'KD', color: '#22a7f0' },
   { name: 'Liberalerna', letter: 'L', color: '#5c97bf' },
-  { name: 'Miljöpartiet', letter: 'MP', color: '#26a65b' }
+  { name: 'Miljöpartiet', letter: 'MP', color: '#26a65b' },
 ];
 
 const getPartyColor = partyName => parties.find(party => party.name === partyName).color;

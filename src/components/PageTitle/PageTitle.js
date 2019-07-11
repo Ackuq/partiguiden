@@ -14,12 +14,12 @@ const PageTitle = ({ title, variant, Icon }) => (
 PageTitle.propTypes = {
   title: PropTypes.string.isRequired,
   variant: PropTypes.string,
-  Icon: PropTypes.oneOfType([PropTypes.func, PropTypes.node, PropTypes.object])
+  Icon: PropTypes.oneOfType([PropTypes.func, PropTypes.node, PropTypes.object]),
 };
 
 PageTitle.defaultProps = {
   variant: 'h1',
-  Icon: null
+  Icon: null,
 };
 
 export default PageTitle;

@@ -10,13 +10,13 @@ import { baseUrl } from '../../utils';
 const SocialMediaWrapper = styled(Box)({
   display: 'flex',
   marginBottom: '1rem',
-  justifyContent: 'flex-end'
+  justifyContent: 'flex-end',
 });
 
 const IconWrapper = styled(Box)({
   cursor: 'pointer',
   marginLeft: '0.25rem',
-  marginRight: '0.25rem'
+  marginRight: '0.25rem',
 });
 
 const size = 45;
@@ -38,7 +38,7 @@ const SocialMediaShare = ({ title, router }) => (
 
 SocialMediaShare.propTypes = {
   title: string.isRequired,
-  router: object.isRequired
+  router: object.isRequired,
 };
 
 export default withRouter(SocialMediaShare);

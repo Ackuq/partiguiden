@@ -12,7 +12,7 @@ const FilterProvider = ({ reducer, initialState, children }) => (
 FilterProvider.propTypes = {
   reducer: func.isRequired,
   children: oneOfType([node, func]).isRequired,
-  initialState: object.isRequired
+  initialState: object.isRequired,
 };
 
 const useFilter = () => useContext(FilterContext);

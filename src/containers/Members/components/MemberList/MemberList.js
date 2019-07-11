@@ -41,7 +41,7 @@ const MemberList = ({ members }) => {
 };
 
 MemberList.propTypes = {
-  members: PropTypes.array.isRequired
+  members: PropTypes.array.isRequired,
 };
 
 export default MemberList;

@@ -4,7 +4,11 @@ import ReactGA from 'react-ga';
 import { ThemeProvider } from '@material-ui/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 
-import { Footer, Header, ToTopButton, CookieBanner } from '../src/containers/App';
+import Footer from '../src/components/Footer';
+import Header from '../src/components/Header';
+import ToTopButton from '../src/components/ToTopButton';
+import CookieBanner from '../src/components/CookieBanner';
+
 import theme from '../src/lib/theme';
 
 const initReactGA = () => {

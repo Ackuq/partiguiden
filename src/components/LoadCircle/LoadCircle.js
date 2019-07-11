@@ -7,7 +7,7 @@ const FullLoadCircle = styled(CircularProgress)({
   margin: 'auto',
   justifyContent: 'center',
   flex: 1,
-  flexDirection: 'column'
+  flexDirection: 'column',
 });
 
 const LoadCircle = () => <FullLoadCircle size={100} />;

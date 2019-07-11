@@ -18,7 +18,7 @@ const Member = ({ member, show }) => {
         href={`/ledamot/${member.id}`}
         onClick={event => {
           event.preventDefault();
-          Router.push(`/ledamot?id=${member.id}`, `/ledamot/${member.id}`);
+          Router.push(`/ledamot/${member.id}`);
         }}
       >
         <Paper classes={{ root: classes.memberCard }}>
@@ -79,7 +79,7 @@ const Member = ({ member, show }) => {
 };
 Member.propTypes = {
   member: PropTypes.object.isRequired,
-  show: PropTypes.bool.isRequired
+  show: PropTypes.bool.isRequired,
 };
 
 export default Member;

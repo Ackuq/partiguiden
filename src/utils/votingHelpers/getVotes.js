@@ -6,7 +6,7 @@ export default row => {
       ja: td[1],
       nej: td[2],
       avstaende: td[3],
-      franvarande: td[4]
+      franvarande: td[4],
     };
     voting[td[0]] = partyVotes;
   }

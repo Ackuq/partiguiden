@@ -10,7 +10,7 @@ const PageTitleContainer = styled(Paper)(({ theme }) => ({
   padding: '1.5rem 0.25rem',
   marginBottom: '1rem',
   color: '#fff',
-  minHeight: '5rem'
+  minHeight: '5rem',
 }));
 
 const TypedComponent = () => (

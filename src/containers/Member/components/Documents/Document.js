@@ -9,13 +9,13 @@ import getOrganInfo from '../../../../utils/authorityTable';
 const useStyles = makeStyles({
   headerTitle: {
     fontSize: '1.15rem',
-    color: '#ffffff'
+    color: '#ffffff',
   },
   headerRoot: {
     width: '100%',
     textAlign: 'left',
-    padding: '0.25rem 1rem'
-  }
+    padding: '0.25rem 1rem',
+  },
 });
 
 const Documents = ({ document }) => {
@@ -27,7 +27,7 @@ const Documents = ({ document }) => {
         style={{ display: 'block' }}
         component="a"
         href={`/dokument/${document.id}`}
-        onClick={() => Router.push(`/dokument?id=${document.id}`, `/dokument/${document.id}`)}
+        onClick={() => Router.push(`/dokument/${document.id}`)}
       >
         {organ && (
           <CardHeader
@@ -35,7 +35,7 @@ const Documents = ({ document }) => {
             style={{ background: organ.color }}
             classes={{
               title: classes.headerTitle,
-              root: classes.headerRoot
+              root: classes.headerRoot,
             }}
           />
         )}
@@ -54,7 +54,7 @@ const Documents = ({ document }) => {
 };
 
 Documents.propTypes = {
-  document: object.isRequired
+  document: object.isRequired,
 };
 
 export default Documents;

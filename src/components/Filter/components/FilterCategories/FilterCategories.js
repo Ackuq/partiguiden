@@ -1,7 +1,7 @@
 import React from 'react';
 import { Checkbox, List, ListItem, ListItemText, ListItemIcon } from '@material-ui/core';
 
-import { table } from '../../../../utils/authorityTable';
+import { authorityTable } from '../../../../utils';
 import { useFilter } from '../../../FilterContainer';
 
 const FilterCategories = () => {
@@ -26,12 +26,14 @@ const FilterCategories = () => {
         disableTypography
         style={{ fontSize: '0.9rem', marginRight: '1rem', lineHeight: 1.5 }}
       >
-        {table[object].desc}
+        {authorityTable[object].desc}
       </ListItemText>
     </ListItem>
   );
 
-  return <List disablePadding>{Object.keys(table).map(object => renderCheckBox(object))}</List>;
+  return (
+    <List disablePadding>{Object.keys(authorityTable).map(object => renderCheckBox(object))}</List>
+  );
 };
 
 export default FilterCategories;

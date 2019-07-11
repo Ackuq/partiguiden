@@ -3,7 +3,7 @@ import Head from 'next/head';
 import GavelIcon from '@material-ui/icons/GavelRounded';
 
 import PageTitle from '../src/components/PageTitle';
-import Riksdagsbeslut from '../src/containers/Riksdagsbeslut';
+import Decisions from '../src/containers/Decisions';
 
 const RiksdagsbeslutContainer = () => (
   <React.Fragment>
@@ -15,7 +15,7 @@ const RiksdagsbeslutContainer = () => (
       />
     </Head>
     <PageTitle title="Riksdagsbeslut" Icon={GavelIcon} />
-    <Riksdagsbeslut />
+    <Decisions />
   </React.Fragment>
 );
 

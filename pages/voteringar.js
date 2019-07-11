@@ -3,9 +3,9 @@ import Head from 'next/head';
 import VoteIcon from '@material-ui/icons/HowToVoteRounded';
 
 import PageTitle from '../src/components/PageTitle';
-import Voteringar from '../src/containers/Voteringar';
+import Votes from '../src/containers/Votes';
 
-const VoteringarContainer = () => (
+const VotesContainer = () => (
   <React.Fragment>
     <Head>
       <title>Voteringar | Partiguiden.nu</title>
@@ -15,8 +15,8 @@ const VoteringarContainer = () => (
       />
     </Head>
     <PageTitle title="Voteringar" Icon={VoteIcon} />
-    <Voteringar />
+    <Votes />
   </React.Fragment>
 );
 
-export default VoteringarContainer;
+export default VotesContainer;

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Divider } from '@material-ui/Core';
 
 import FilterContainer, {
   useFilter,
@@ -27,6 +28,7 @@ const FilterMembers = () => {
   return (
     <FilterContainer>
       <FilterSearch updateSearch={updateSearch} search={search} />
+      <Divider />
       <FilterList
         list={list}
         isChecked={isChecked}

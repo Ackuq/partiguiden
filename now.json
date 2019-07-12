@@ -30,7 +30,7 @@
       "continue": true
     },
     {
-      "src": "/(dokument|riksdagsbeslut|standpunkt|ledamot|votering)/(.*)",
+      "src": "/(dokument|standpunkter|ledamot|votering)/(.*)",
       "headers": { "cache-control": "public,max-age=0,s-maxage=31536000" },
       "continue": true
     }

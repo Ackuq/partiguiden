@@ -39,10 +39,10 @@ class MyApp extends App {
               marginBottom: '1rem',
               display: 'flex',
               flexDirection: 'column',
-              flexGrow: 1
+              flexGrow: 1,
             }}
           >
-            <Component pageContext={this.pageContext} {...pageProps} />
+            <Component {...pageProps} />
           </main>
           <Footer />
           <ToTopButton />

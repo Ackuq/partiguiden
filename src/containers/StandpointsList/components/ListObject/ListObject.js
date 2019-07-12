@@ -18,7 +18,7 @@ const ListObject = ({ subject }) => {
         className={classes.button}
         onClick={event => {
           event.preventDefault();
-          Router.push(`/standpunkter/${subject.id}`);
+          Router.push('/standpunkter/[id]', `/standpunkter/${subject.id}`);
         }}
       >
         <span className={classes.transition}>{subject.name}</span>

@@ -19,6 +19,10 @@ const styles = theme => ({
   shown: {
     transform: 'rotate(180deg)',
   },
+
+  partyContainer: {
+    marginBottom: '1.5rem',
+  },
 });
 
 export default styles;

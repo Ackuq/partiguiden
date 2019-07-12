@@ -1,34 +1,30 @@
 import React from 'react';
-import { Container, Box } from '@material-ui/core';
-import { withRouter } from 'next/router';
+import { Container } from '@material-ui/core';
 import { object } from 'prop-types';
 
-import Filter, { reducer } from '../../components/Filter';
-import { FilterProvider } from '../../components/FilterContainer';
+import Filter, { reducer } from '../../components/ParlimentFilter';
+import { FilterProvider } from '../../components/Filter';
 import VoteList from './components/VoteList';
 
-const Votes = ({ router }) => {
+const Votes = ({ query }) => {
   let initialOrg = [];
-  if (router.query.org) {
-    initialOrg = Array.isArray(router.query.org) ? router.query.org : [router.query.org];
+  if (query.org) {
+    initialOrg = Array.isArray(query.org) ? query.org : [query.org];
   }
   return (
-    <FilterProvider
-      initialState={{ org: initialOrg, search: router.query.sok || '' }}
-      reducer={reducer}
-    >
-      <Box display="flex">
-        <Container>
+    <FilterProvider initialState={{ org: initialOrg, search: query.sok || '' }} reducer={reducer}>
+      <div style={{ display: 'flex' }}>
+        <Container maxWidth="md">
           <VoteList />
         </Container>
         <Filter />
-      </Box>
+      </div>
     </FilterProvider>
   );
 };
 
 Votes.propTypes = {
-  router: object.isRequired,
+  query: object.isRequired,
 };
 
-export default withRouter(Votes);
+export default Votes;

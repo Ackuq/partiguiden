@@ -2,11 +2,11 @@ import React, { useState, useEffect } from 'react';
 import { makeStyles } from '@material-ui/styles';
 
 import LoadMoreButton from '../../../../components/LoadMoreButton';
-import { useFilter } from '../../../../components/FilterContainer';
-import { updateRoute } from '../../../../components/Filter';
+import { updateRoute } from '../../../../components/ParlimentFilter';
 import { apiLinks } from '../../../../utils';
 import Ad from '../../../../components/Ad';
 import Riksdagsbeslut from '../Decision';
+import { useFilter } from '../../../../components/Filter';
 import LoadCircle from '../../../../components/LoadCircle';
 import fetchDecisionList from './fetchDecisionList';
 

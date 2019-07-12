@@ -1,47 +1,73 @@
 import React, { useEffect, useState } from 'react';
-import PropTypes from 'prop-types';
+import { makeStyles } from '@material-ui/styles';
 import Router from 'next/router';
+import fetch from 'isomorphic-unfetch';
+import { Grid } from '@material-ui/core';
 
+import { apiLinks } from '../../../../utils';
 import Member from '../Member';
-import { useFilter } from '../../../../components/FilterContainer';
+import LoadCircle from '../../../../components/LoadCircle';
+import { useFilter } from '../../../../components/Filter';
+import styles from './styles';
 
-const chunkSize = 20;
+const useStyles = makeStyles(styles);
 
-const MemberList = ({ members }) => {
-  const [memberList, setMemberList] = useState(members.slice(0, chunkSize));
-  const { parties } = useFilter()[0];
+const MemberList = () => {
+  const classes = useStyles();
+  const [loading, setLoading] = useState(true);
+  const [members, setMembers] = useState([]);
+  const { parties, search } = useFilter()[0];
 
-  const updateMemberList = () => {
-    if (memberList.length !== members.length) {
-      setMemberList(prevState =>
-        prevState.concat(members.slice(prevState.length, prevState.length + chunkSize))
-      );
-      setTimeout(updateMemberList, 0);
-    }
+  const updateMembers = () => {
+    const url = `${apiLinks.partiguidenApi}/members`;
+    fetch(url)
+      .then(res => res.json())
+      .then(data => {
+        setMembers(data);
+        setLoading(false);
+      });
   };
 
   const updateRoute = () => {
     const partyString = parties.length > 0 && `party=${parties.join('&party=')}`;
+    const searchString = search && `sok=${search}`;
+
     let href = '';
-    if (partyString) href += `?${partyString}`;
+    if (searchString || partyString) {
+      href += '?';
+      if (searchString) {
+        href += searchString;
+        if (partyString) href += '&';
+      }
+      if (partyString) href += partyString;
+    }
+
     Router.push(`/ledamoter${href}`);
   };
 
-  useEffect(updateRoute, [parties]);
+  useEffect(updateRoute, [parties, search]);
+  useEffect(updateMembers, []);
 
-  useEffect(updateMemberList, []);
-
-  return memberList.map(member => (
-    <Member
-      member={member}
-      key={member.id}
-      show={parties.length === 0 || parties.includes(member.parti)}
-    />
-  ));
-};
-
-MemberList.propTypes = {
-  members: PropTypes.array.isRequired,
+  return loading ? (
+    <LoadCircle />
+  ) : (
+    members.map(member => {
+      const inParty = parties.length ? parties.includes(member.parti) : true;
+      const inSearch = member.namn.toLowerCase().includes(search.toLowerCase());
+      return (
+        <Grid
+          item
+          xs={12}
+          md={6}
+          xl={4}
+          key={member.id}
+          style={inParty && inSearch ? null : { display: 'none' }}
+        >
+          <Member classes={classes} member={member} />
+        </Grid>
+      );
+    })
+  );
 };
 
 export default MemberList;

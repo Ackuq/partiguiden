@@ -1,6 +1,7 @@
-import Filter from './Filter';
-import reducer from './reducer';
-import updateRoute from './updateRoute';
+import FilterContainer from './FilterContainer';
+import { FilterContext, FilterProvider, useFilter } from './FilterContext';
+import FilterList from './FilterList';
+import FilterSearch from './FilterSearch';
 
-export default Filter;
-export { reducer, updateRoute };
+export default FilterContainer;
+export { FilterContext, FilterProvider, useFilter, FilterSearch, FilterList };

@@ -88,7 +88,7 @@ const Decision = ({ decision }) => {
                 href={`/dokument/${decision.id}`}
                 onClick={event => {
                   event.preventDefault();
-                  Router.push(`/dokument/${decision.id}`);
+                  Router.push('/dokument/[id]', `/dokument/${decision.id}`);
                 }}
               >
                 Läs mer om betänkandet

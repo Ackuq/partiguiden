@@ -1,6 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
-import { Container, Box } from '@material-ui/core';
+import { Container } from '@material-ui/core';
 import { string, array } from 'prop-types';
 import fetch from 'isomorphic-unfetch';
 
@@ -21,15 +21,15 @@ const StandPointContainer = ({ name, partyData }) => (
     </Head>
     <PageTitle title={name} />
     <Container>
-      <Box display="flex" justifyContent="space-between">
+      <div style={{ display: 'flex' }} justifyContent="space-between">
         <Breadcrumbs
           links={[
             { href: '/partiernas-standpunkter', label: 'Partiernas Ståndpunkter' },
-            { href: '#', label: name }
+            { href: '#', label: name },
           ]}
         />
         <SocialMediaShare title={name} />
-      </Box>
+      </div>
       <Standpoints partyData={partyData} />
     </Container>
   </React.Fragment>
@@ -45,7 +45,7 @@ StandPointContainer.getInitialProps = async ({ query }) => {
 
 StandPointContainer.propTypes = {
   name: string.isRequired,
-  partyData: array.isRequired
+  partyData: array.isRequired,
 };
 
 export default StandPointContainer;

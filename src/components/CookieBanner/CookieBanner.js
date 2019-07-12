@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { makeStyles } from '@material-ui/styles';
-import { Paper, Button, Slide, Typography, Box } from '@material-ui/core';
+import { Paper, Button, Slide, Typography } from '@material-ui/core';
 import Cookies from 'universal-cookie';
 
 import styles from './styles';
@@ -26,7 +26,7 @@ const CookieBanner = () => {
             Partiguiden.nu använder kakor för att anonymt analysera användares interaktion med
             hemsidan.
           </Typography>
-          <Box display="flex" justifyContent="center" mt={2}>
+          <div className={classes.buttonContainer}>
             <Button color="inherit" variant="outlined">
               <Link href="/kakpolicy">
                 <Typography component="a" variant="button">
@@ -45,7 +45,7 @@ const CookieBanner = () => {
             >
               Jag godkänner
             </Button>
-          </Box>
+          </div>
         </Paper>
       </Slide>
     </React.Fragment>

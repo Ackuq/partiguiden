@@ -1,36 +1,36 @@
 import React from 'react';
-import { Container, Box, Grid } from '@material-ui/core';
-import { withRouter } from 'next/router';
-import { object, array } from 'prop-types';
+import { Container, Grid } from '@material-ui/core';
+import { object } from 'prop-types';
 
 import reducer from './reducer';
-import { FilterProvider } from '../../components/FilterContainer';
+import { FilterProvider } from '../../components/Filter';
 import FilterMembers from './components/FilterMembers';
 import MemberList from './components/MemberList';
 
-const Members = ({ router, members }) => {
-  const getPartyQuery = () =>
-    Array.isArray(router.query.party) ? router.query.party : [router.query.party];
+const Members = ({ query }) => {
+  const getPartyQuery = () => (Array.isArray(query.party) ? query.party : [query.party]);
 
-  const initialParties = router.query.party ? getPartyQuery() : [];
+  const initialParties = query.party ? getPartyQuery() : [];
 
   return (
-    <FilterProvider initialState={{ parties: initialParties }} reducer={reducer}>
-      <Box display="flex">
+    <FilterProvider
+      initialState={{ parties: initialParties, search: query.sok || '' }}
+      reducer={reducer}
+    >
+      <div style={{ display: 'flex' }}>
         <Container>
           <Grid container spacing={3} justify="center">
-            <MemberList members={members} />
+            <MemberList />
           </Grid>
         </Container>
         <FilterMembers />
-      </Box>
+      </div>
     </FilterProvider>
   );
 };
 
 Members.propTypes = {
-  router: object.isRequired,
-  members: array.isRequired,
+  query: object.isRequired,
 };
 
-export default withRouter(Members);
+export default Members;

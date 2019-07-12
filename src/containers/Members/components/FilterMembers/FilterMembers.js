@@ -1,5 +1,5 @@
 import React from 'react';
-import { Divider } from '@material-ui/Core';
+import { Divider } from '@material-ui/core';
 
 import FilterContainer, {
   useFilter,

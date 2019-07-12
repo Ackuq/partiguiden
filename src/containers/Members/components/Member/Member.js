@@ -9,29 +9,29 @@ const Member = ({ member, classes }) => (
         <span className={classes.role}>{member.status}</span>
 
         <span className={classes.infoTitle}>Valkrets</span>
-        <span>{member.valkrets}</span>
+        <span>{member.constituency}</span>
 
         <span className={classes.infoTitle}>Ålder</span>
-        <span>{member.alder}</span>
+        <span>{member.age}</span>
       </div>
       <div
         alt="Bild på ledamot"
         className={classes.image}
-        style={{ background: `url(${member.bild_url}) 50% 25% no-repeat` }}
+        style={{ background: `url(${member.picture}) 50% 25% no-repeat` }}
       >
-        {member.parti !== '-' && (
+        {member.party !== '-' && (
           <img
             className={classes.partyLogo}
-            width={50}
-            height={50}
-            src={`../../static/images/party-logos/${member.parti.toUpperCase()}.svg`}
+            width={65}
+            height={65}
+            src={`../../static/images/party-logos/${member.party.toUpperCase()}.svg`}
             alt="Partisymbol"
           />
         )}
       </div>
 
       <div className={classes.nameContainer}>
-        <span>{member.namn}</span>
+        <span>{member.name}</span>
       </div>
     </a>
   </Link>

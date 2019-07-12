@@ -51,7 +51,7 @@ class MyDocument extends Document {
                     google_ad_client: "ca-pub-3248338512924345",
                     enable_page_level_ads: true
               });       
-              `
+              `,
                 }}
               />
             </React.Fragment>
@@ -95,7 +95,7 @@ MyDocument.getInitialProps = async ctx => {
 
   ctx.renderPage = () =>
     originalRenderPage({
-      enhanceApp: App => props => sheets.collect(<App {...props} />)
+      enhanceApp: App => props => sheets.collect(<App {...props} />),
     });
 
   const initialProps = await Document.getInitialProps(ctx);
@@ -108,7 +108,7 @@ MyDocument.getInitialProps = async ctx => {
         {sheets.getStyleElement()}
         {flush() || null}
       </React.Fragment>
-    )
+    ),
   };
 };
 

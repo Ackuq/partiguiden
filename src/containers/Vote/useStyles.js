@@ -1,3 +1,4 @@
+import { makeStyles } from '@material-ui/styles';
 import grey from '@material-ui/core/colors/grey';
 
 const styles = theme => ({
@@ -16,6 +17,7 @@ const styles = theme => ({
     marginTop: '1rem',
     marginLeft: '-20px',
   },
+
   pieChartContainer: {
     [theme.breakpoints.down('xs')]: {
       maxWidth: '75%',
@@ -46,4 +48,4 @@ const styles = theme => ({
   },
 });
 
-export default styles;
+export default makeStyles(styles);

@@ -52,8 +52,8 @@ const MemberList = () => {
     <LoadCircle />
   ) : (
     members.map(member => {
-      const inParty = parties.length ? parties.includes(member.parti) : true;
-      const inSearch = member.namn.toLowerCase().includes(search.toLowerCase());
+      const inParty = parties.length ? parties.includes(member.party) : true;
+      const inSearch = member.name.toLowerCase().includes(search.toLowerCase());
       return (
         <Grid
           item

@@ -17,9 +17,7 @@ import PropTypes from 'prop-types';
 import CustomizedTick from './CustomizedTick';
 import createData from './createData';
 
-import styles from '../../styles';
-
-const useStyles = makeStyles(styles);
+import useStyles from '../../useStyles';
 
 const VoteDistribution = ({ voting }) => {
   const classes = useStyles();

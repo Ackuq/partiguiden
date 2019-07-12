@@ -1,4 +1,4 @@
-const createData = voting => {
+export default voting => {
   const result = [];
 
   // eslint-disable-next-line array-callback-return
@@ -15,5 +15,3 @@ const createData = voting => {
   });
   return result;
 };
-
-export default createData;

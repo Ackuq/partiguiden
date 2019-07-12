@@ -9,7 +9,7 @@ import Member from '../../src/containers/Member';
 const MemberContainer = ({ member }) => (
   <React.Fragment>
     <Head>
-      <title>{member.namn} | Ledamot | Partiguiden.nu</title>
+      <title>{member.name} | Ledamot | Partiguiden.nu</title>
     </Head>
     <Member member={member} />
   </React.Fragment>
@@ -24,7 +24,7 @@ MemberContainer.getInitialProps = async ({ query }) => {
 };
 
 MemberContainer.propTypes = {
-  member: PropTypes.object.isRequired
+  member: PropTypes.object.isRequired,
 };
 
 export default MemberContainer;

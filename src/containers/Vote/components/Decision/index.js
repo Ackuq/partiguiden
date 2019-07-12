@@ -1,11 +1,8 @@
 import React from 'react';
 import Typography from '@material-ui/core/Typography';
-import { makeStyles } from '@material-ui/styles';
 import { string } from 'prop-types';
 
-import styles from '../../styles';
-
-const useStyles = makeStyles(styles);
+import useStyles from '../../useStyles';
 
 const Decision = ({ decision, description }) => {
   const classes = useStyles();

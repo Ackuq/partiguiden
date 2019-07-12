@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 import Breadcrumbs from '../../../../components/Breadcrumbs';
 
-const ProfilePicture = ({ src, name, status, age, parti }) => (
+const ProfilePicture = ({ src, name, status, age, party, isLeader }) => (
   <React.Fragment>
     <Box
       position="relative"
@@ -29,12 +29,12 @@ const ProfilePicture = ({ src, name, status, age, parti }) => (
         borderRadius="50%"
         position="relative"
       >
-        {parti !== '-' && (
+        {party !== '-' && (
           <Box position="absolute" top={0} right={0}>
             <img
-              width={75}
-              height={75}
-              src={`../../static/images/party-logos/${parti.toUpperCase()}.svg`}
+              width={65}
+              height={65}
+              src={`../../static/images/party-logos/${party.toUpperCase()}.svg`}
               alt="Partisymbol"
             />
           </Box>
@@ -42,7 +42,10 @@ const ProfilePicture = ({ src, name, status, age, parti }) => (
       </Box>
     </Box>
     <Box textAlign="center" py={2}>
-      <Typography variant="h6">{status}</Typography>
+      <Typography variant="h6">
+        {status}
+        {isLeader && ' och partiledare'}
+      </Typography>
       <Typography variant="h4">{name}</Typography>
       <Typography variant="h6" color="textPrimary">
         {age} år
@@ -56,7 +59,12 @@ ProfilePicture.propTypes = {
   name: PropTypes.string.isRequired,
   status: PropTypes.string.isRequired,
   age: PropTypes.number.isRequired,
-  parti: PropTypes.string.isRequired,
+  party: PropTypes.string.isRequired,
+  isLeader: PropTypes.bool,
+};
+
+ProfilePicture.defaultProps = {
+  isLeader: false,
 };
 
 export default ProfilePicture;

@@ -1,13 +1,10 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { Typography, Collapse, ButtonBase } from '@material-ui/core';
-import { makeStyles } from '@material-ui/styles';
 import ArrowDownRounded from '@material-ui/icons/KeyboardArrowDownRounded';
 
 import { array } from 'prop-types';
-import styles from '../../styles';
-
-const useStyles = makeStyles(styles);
+import useStyles from '../../useStyles';
 
 const ProcessedDocuments = ({ processedDocuments }) => {
   const classes = useStyles();

@@ -27,7 +27,7 @@ const Documents = ({ document }) => {
         style={{ display: 'block' }}
         component="a"
         href={`/dokument/${document.id}`}
-        onClick={() => Router.push(`/dokument/${document.id}`)}
+        onClick={() => Router.push('/dokument/[id]', `/dokument/${document.id}`)}
       >
         {organ && (
           <CardHeader

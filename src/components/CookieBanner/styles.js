@@ -11,6 +11,12 @@ const styles = theme => ({
   acceptButton: {
     marginLeft: '5px',
   },
+
+  buttonContainer: {
+    display: 'flex',
+    justifyContent: 'center',
+    marginTop: '1rem',
+  },
 });
 
 export default styles;

@@ -29,7 +29,7 @@ const ProcessedDocuments = ({ processedDocuments }) => {
         <div style={{ marginTop: '1.25rem' }}>
           {processedDocuments.map((document, index) => (
             <React.Fragment key={document[3]}>
-              <Link href={`/dokument?id=${document[3]}`} as={`/dokument/${document[3]}`}>
+              <Link href="/dokument/[id]" as={`/dokument/${document[3]}`}>
                 <Typography
                   component="a"
                   variant="body1"

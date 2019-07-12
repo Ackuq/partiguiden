@@ -1,6 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
-import { Container, Box } from '@material-ui/core';
+import { Container } from '@material-ui/core';
 import PropTypes from 'prop-types';
 
 import Breadcrumbs from '../../../src/components/Breadcrumbs';
@@ -20,12 +20,12 @@ const VoteContainer = ({ vote, bet }) => (
     </Head>
     <PageTitle title={`${vote.document.titel} förslagspunkt ${bet}`} variant="h3" />
     <Container>
-      <Box display="flex" justifyContent="space-between">
+      <div style={{ display: 'flex', justifyContent: 'space-betweem' }}>
         <Breadcrumbs
           links={[{ href: '/voteringar', label: 'Voteringar' }, { href: '#', label: 'Votering' }]}
         />
         <SocialMediaShare title={`${vote.document.titel} förslagspunkt ${bet}`} />
-      </Box>
+      </div>
       <Vote {...vote} />
     </Container>
   </React.Fragment>
@@ -39,7 +39,7 @@ VoteContainer.getInitialProps = async ({ query }) => {
 
 VoteContainer.propTypes = {
   vote: PropTypes.object.isRequired,
-  bet: PropTypes.string.isRequired
+  bet: PropTypes.string.isRequired,
 };
 
 export default VoteContainer;

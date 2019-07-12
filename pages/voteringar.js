@@ -1,11 +1,12 @@
 import React from 'react';
 import Head from 'next/head';
 import VoteIcon from '@material-ui/icons/HowToVoteRounded';
+import { object } from 'prop-types';
 
 import PageTitle from '../src/components/PageTitle';
 import Votes from '../src/containers/Votes';
 
-const VotesContainer = () => (
+const VotesContainer = ({ query }) => (
   <React.Fragment>
     <Head>
       <title>Voteringar | Partiguiden.nu</title>
@@ -15,8 +16,13 @@ const VotesContainer = () => (
       />
     </Head>
     <PageTitle title="Voteringar" Icon={VoteIcon} />
-    <Votes />
+    <Votes query={query} />
   </React.Fragment>
 );
+
+VotesContainer.getInitialProps = async ({ query }) => ({ query });
+VotesContainer.propTypes = {
+  query: object.isRequired,
+};
 
 export default VotesContainer;

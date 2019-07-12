@@ -11,6 +11,10 @@ const reducer = (state, action) => {
         ...state,
         parties: [...state.parties, action.party],
       };
+
+    case 'SET_SEARCH':
+      return { ...state, search: action.searchInput };
+
     default:
       return state;
   }

@@ -40,7 +40,7 @@ const Featured = () => {
             className={classes.featured}
             onClick={event => {
               event.preventDefault();
-              Router.push(`/subject/${obj.id}`);
+              Router.push('/subject/[id]', `/subject/${obj.id}`);
             }}
           >
             <Typography component="a" variant="button" href={`/subject/${obj.id}`} color="primary">

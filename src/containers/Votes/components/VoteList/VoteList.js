@@ -6,8 +6,8 @@ import { apiLinks } from '../../../../utils';
 import Ad from '../../../../components/Ad';
 import Votering from '../Vote';
 import LoadCircle from '../../../../components/LoadCircle';
-import { updateRoute } from '../../../../components/Filter';
-import { useFilter } from '../../../../components/FilterContainer';
+import { updateRoute } from '../../../../components/ParlimentFilter';
+import { useFilter } from '../../../../components/Filter';
 import fetchVoteList from './fetchVoteList';
 
 const styles = () => ({

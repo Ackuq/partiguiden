@@ -1,11 +1,12 @@
 import React from 'react';
 import Head from 'next/head';
 import GavelIcon from '@material-ui/icons/GavelRounded';
+import { object } from 'prop-types';
 
 import PageTitle from '../src/components/PageTitle';
 import Decisions from '../src/containers/Decisions';
 
-const RiksdagsbeslutContainer = () => (
+const RiksdagsbeslutContainer = ({ query }) => (
   <React.Fragment>
     <Head>
       <title>Riksdagsbeslut | Partiguiden.nu</title>
@@ -15,8 +16,14 @@ const RiksdagsbeslutContainer = () => (
       />
     </Head>
     <PageTitle title="Riksdagsbeslut" Icon={GavelIcon} />
-    <Decisions />
+    <Decisions query={query} />
   </React.Fragment>
 );
+
+RiksdagsbeslutContainer.getInitialProps = ({ query }) => ({ query });
+
+RiksdagsbeslutContainer.propTypes = {
+  query: object.isRequired,
+};
 
 export default RiksdagsbeslutContainer;

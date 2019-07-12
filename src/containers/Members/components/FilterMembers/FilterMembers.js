@@ -1,42 +1,39 @@
 import React from 'react';
-import { Checkbox, List, ListItem, ListItemText, ListItemIcon } from '@material-ui/core';
 
-import FilterContainer, { useFilter } from '../../../../components/FilterContainer';
+import FilterContainer, {
+  useFilter,
+  FilterList,
+  FilterSearch,
+} from '../../../../components/Filter';
 import getParties from '../../../../utils/getParties';
 
 const FilterMembers = () => {
-  const [{ parties }, dispatch] = useFilter();
+  const [{ parties, search }, dispatch] = useFilter();
 
-  const renderCheckBox = party => (
-    <ListItem
-      key={party.name}
-      dense
-      disableGutters
-      button
-      onClick={() => {
-        window.scrollTo(0, 0);
-        if (parties.includes(party.letter))
-          dispatch({ type: 'REMOVE_MEMBER_PARTY', party: party.letter });
-        else dispatch({ type: 'SET_MEMBER_PARTY', party: party.letter });
-      }}
-    >
-      <ListItemIcon style={{ minWidth: '46px' }}>
-        <Checkbox color="primary" checked={parties.includes(party.letter)} disableRipple />
-      </ListItemIcon>
-      <ListItemText
-        disableTypography
-        style={{ fontSize: '0.9rem', marginRight: '1rem', lineHeight: 1.5 }}
-      >
-        {party.name}
-      </ListItemText>
-    </ListItem>
-  );
+  // Search functions
+  const updateSearch = value => {
+    dispatch({ type: 'SET_SEARCH', searchInput: value });
+  };
+  // List functions
+  const list = [...getParties, { name: 'Partilösa', letter: '-' }];
+  const isChecked = party => parties.includes(party.letter);
+  const getKey = party => party.name;
+  const updateList = party => {
+    if (isChecked(party)) dispatch({ type: 'REMOVE_MEMBER_PARTY', party: party.letter });
+    else dispatch({ type: 'SET_MEMBER_PARTY', party: party.letter });
+  };
+  const getText = party => party.name;
 
   return (
     <FilterContainer>
-      <List disablePadding>
-        {[...getParties, { name: 'Partilösa', letter: '-' }].map(object => renderCheckBox(object))}
-      </List>
+      <FilterSearch updateSearch={updateSearch} search={search} />
+      <FilterList
+        list={list}
+        isChecked={isChecked}
+        getKey={getKey}
+        updateList={updateList}
+        getText={getText}
+      />
     </FilterContainer>
   );
 };

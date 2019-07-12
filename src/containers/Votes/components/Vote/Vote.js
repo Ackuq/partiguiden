@@ -45,7 +45,7 @@ const Vote = ({ votering: { id, beteckning, tempbeteckning, titel, organ } }) =>
         component="a"
         onClick={event => {
           event.preventDefault();
-          Router.push(`/votering/${docId}/${tempbeteckning}`);
+          Router.push('/votering/[id]/[bet]', `/votering/${docId}/${tempbeteckning}`);
         }}
       >
         <CardHeader

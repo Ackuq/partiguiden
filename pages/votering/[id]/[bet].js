@@ -20,7 +20,7 @@ const VoteContainer = ({ vote, bet }) => (
     </Head>
     <PageTitle title={`${vote.document.titel} förslagspunkt ${bet}`} variant="h3" />
     <Container>
-      <div style={{ display: 'flex', justifyContent: 'space-betweem' }}>
+      <div style={{ display: 'flex', justifyContent: 'space-between' }}>
         <Breadcrumbs
           links={[{ href: '/voteringar', label: 'Voteringar' }, { href: '#', label: 'Votering' }]}
         />

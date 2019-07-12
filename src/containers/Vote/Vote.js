@@ -16,7 +16,11 @@ const Vote = ({
   <Card>
     <CardContent>
       <TotalVote voting={voting.Totalt} />
-      <Typography variant="h5" style={{ marginBottom: '1rem' }} color="textSecondary">
+      <Typography
+        variant="h5"
+        style={{ marginBottom: '1rem', marginTop: '1rem' }}
+        color="textSecondary"
+      >
         {title}
       </Typography>
       <Typography variant="h5" gutterBottom>

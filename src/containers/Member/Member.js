@@ -8,15 +8,16 @@ import { ProfilePicture, Information } from './components';
 const Member = ({ member }) => (
   <React.Fragment>
     <ProfilePicture
-      src={member.bild_url}
-      name={member.namn}
+      src={member.picture}
+      name={member.name}
       status={member.status}
-      age={member.alder}
-      parti={member.parti}
+      age={member.age}
+      party={member.party}
+      isLeader={member.isLeader}
     />
     <Container>
       <SocialMediaShare title={member.namn} />
-      <Information id={member.id} records={member.uppgifter} absence={member.absence} />
+      <Information id={member.id} records={member.missions} absence={member.absence} />
     </Container>
   </React.Fragment>
 );

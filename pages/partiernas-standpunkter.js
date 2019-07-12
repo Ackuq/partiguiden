@@ -32,7 +32,7 @@ PartiernasStandpunkterContainer.getInitialProps = async () => {
 };
 
 PartiernasStandpunkterContainer.propTypes = {
-  subjects: array.isRequired
+  subjects: array.isRequired,
 };
 
 export default PartiernasStandpunkterContainer;

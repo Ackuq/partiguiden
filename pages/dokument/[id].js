@@ -34,7 +34,7 @@ DocumentContainer.getInitialProps = async ({ query }) => {
 
 DocumentContainer.propTypes = {
   body: string.isRequired,
-  id: string.isRequired
+  id: string.isRequired,
 };
 
 export default DocumentContainer;

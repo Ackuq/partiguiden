@@ -21,7 +21,7 @@ const StandPointContainer = ({ name, partyData }) => (
     </Head>
     <PageTitle title={name} />
     <Container>
-      <div style={{ display: 'flex' }} justifyContent="space-between">
+      <div style={{ display: 'flex', justifyContent: 'space-between' }}>
         <Breadcrumbs
           links={[
             { href: '/partiernas-standpunkter', label: 'Partiernas Ståndpunkter' },

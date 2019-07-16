@@ -1,6 +1,23 @@
-import grey from '@material-ui/core/colors/grey';
+import { makeStyles } from '@material-ui/styles';
+import { grey } from '@material-ui/core/colors';
 
 const styles = theme => ({
+  subjectList: {
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    marginTop: '-1rem',
+    marginBottom: '1rem',
+    [theme.breakpoints.up('md')]: {
+      maxWidth: '90%',
+    },
+    [theme.breakpoints.up('lg')]: {
+      maxWidth: '70%',
+    },
+    [theme.breakpoints.up('xl')]: {
+      maxWidth: '60%',
+    },
+  },
+
   transition: {
     margin: 0,
     background: `linear-gradient( to left, transparent 50%, ${theme.palette.primary.main} 50% )`,
@@ -14,12 +31,11 @@ const styles = theme => ({
   },
 
   button: {
-    width: '100%',
+    textDecoration: 'none',
+    display: 'flex',
+    flex: 1,
+    fontSize: '1rem',
     justifyContent: 'flex-start',
-    '& a': {
-      width: '100%',
-      display: 'flex',
-    },
     '&:hover span': {
       backgroundPosition: 'left bottom',
       color: grey[100],
@@ -53,4 +69,4 @@ const styles = theme => ({
   },
 });
 
-export default styles;
+export default makeStyles(styles);

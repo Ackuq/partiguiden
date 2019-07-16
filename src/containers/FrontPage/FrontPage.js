@@ -2,7 +2,7 @@ import React from 'react';
 import { Grid, Card, CardContent, Typography } from '@material-ui/core';
 
 /* Custom components */
-import { Featured } from './components';
+import Featured from './Featured';
 
 const FrontPage = () => (
   <Grid container spacing={3}>

@@ -1,34 +1,20 @@
 import React, { useState, useEffect } from 'react';
 import Router from 'next/router';
-import { makeStyles } from '@material-ui/styles';
-import {
-  Collapse,
-  Card,
-  CardContent,
-  CardHeader,
-  Typography,
-  ButtonBase,
-  Button,
-} from '@material-ui/core';
+import { Collapse, CardContent, Typography, ButtonBase, Button } from '@material-ui/core';
 import ArrowDownRounded from '@material-ui/icons/KeyboardArrowDownRounded';
 import PropTypes from 'prop-types';
 
 import checkIfVotesExist from './checkIfVotesExist';
-import getOrganInfo from '../../../../utils/authorityTable';
-import styles from './styles';
+import getOrganInfo from '../../../utils/authorityTable';
 
-const useStyles = makeStyles(styles);
-
-const Decision = ({ decision }) => {
-  const classes = useStyles();
+const Decision = ({ decision, classes }) => {
   const [votesExist, setVotesExist] = useState(false);
   const [visible, setVisible] = useState(false);
-
-  let mount = true;
 
   const organ = getOrganInfo(decision.organ);
 
   useEffect(() => {
+    let mount = true;
     let url = decision.dokumentstatus_url_xml;
     url = url.replace('.xml', '.json');
 
@@ -44,16 +30,11 @@ const Decision = ({ decision }) => {
   return (
     <React.Fragment>
       {organ && (
-        <Card>
+        <div className={classes.cardContainer}>
           <ButtonBase className={classes.buttonContainer} onClick={() => setVisible(!visible)}>
-            <CardHeader
-              title={organ.desc}
-              style={{ background: organ.color }}
-              classes={{
-                title: classes.headerTitle,
-                root: classes.headerRoot,
-              }}
-            />
+            <div style={{ background: organ.color }} className={classes.headerRoot}>
+              <span className={classes.headerTitle}>{organ.desc}</span>
+            </div>
 
             <CardContent classes={{ root: classes.cardContent }}>
               <div>
@@ -107,7 +88,7 @@ const Decision = ({ decision }) => {
               )}
             </Collapse>
           </CardContent>
-        </Card>
+        </div>
       )}
     </React.Fragment>
   );
@@ -115,6 +96,7 @@ const Decision = ({ decision }) => {
 
 Decision.propTypes = {
   decision: PropTypes.object.isRequired,
+  classes: PropTypes.object.isRequired,
 };
 
 export default Decision;

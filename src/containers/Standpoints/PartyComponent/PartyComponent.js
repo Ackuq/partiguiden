@@ -1,23 +1,20 @@
 import React, { useState } from 'react';
 import { Collapse, ButtonBase, Grid, Typography } from '@material-ui/core';
-import { makeStyles } from '@material-ui/styles';
 import PropTypes from 'prop-types';
 import ArrowDownRounded from '@material-ui/icons/KeyboardArrowDownRounded';
 
-import { getPartyColor } from '../../../../utils/getParties';
-import PartyOpinion from '../PartyOpinion';
-import styles from './styles';
-
-const useStyles = makeStyles(styles);
+import { getPartyColor } from '../../../utils/getParties';
+import PartyOpinion from './PartyOpinion';
+import useStyles from './useStyles';
 
 const PartyComponent = ({ party }) => {
   const classes = useStyles();
   const [visible, setVisible] = useState(false);
   const partyColor = getPartyColor(party.name);
 
-  function handleClick() {
+  const handleClick = () => {
     setVisible(prevState => !prevState);
-  }
+  };
 
   return (
     <div key={party.name} id={party.name} className={classes.partyContainer}>

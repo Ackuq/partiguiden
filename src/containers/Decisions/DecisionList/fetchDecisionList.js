@@ -1,4 +1,4 @@
-import { fetchJSON } from '../../../../utils';
+import { fetchJSON } from '../../../utils';
 
 const fetchDecisionList = ({ url, page }) =>
   fetchJSON(url).then(data => {

@@ -3,7 +3,7 @@ import Head from 'next/head';
 import Container from '@material-ui/core/Container';
 
 import FrontPage from '../src/containers/FrontPage';
-import { Typed } from '../src/containers/FrontPage/components';
+import Typed from '../src/containers/FrontPage/Typed';
 
 const FrontPageContainer = () => (
   <React.Fragment>

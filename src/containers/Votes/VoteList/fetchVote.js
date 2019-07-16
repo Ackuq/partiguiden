@@ -1,7 +1,7 @@
 import fetch from 'isomorphic-unfetch';
 import stripJsonComments from 'strip-json-comments';
 
-import { getVotes, getMaxVotes } from '../../../../utils/votingHelpers';
+import { getVotes, getMaxVotes } from '../../../utils/votingHelpers';
 
 const fetchVote = ({ url, tempbeteckning }) =>
   fetch(url)

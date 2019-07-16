@@ -4,7 +4,7 @@ import { object } from 'prop-types';
 
 import Filter, { reducer } from '../../components/ParlimentFilter';
 import { FilterProvider } from '../../components/Filter';
-import RiksdagsbeslutList from './components/DecisionList';
+import RiksdagsbeslutList from './DecisionList';
 
 const Decisions = ({ query }) => {
   let initialOrg = [];

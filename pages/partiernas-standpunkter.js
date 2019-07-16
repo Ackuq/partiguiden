@@ -8,7 +8,7 @@ import PageTitle from '../src/components/PageTitle';
 import { apiLinks } from '../src/utils';
 import StandpointsList from '../src/containers/StandpointsList';
 
-const PartiernasStandpunkterContainer = ({ subjects }) => (
+const StandpointsListContainer = ({ subjects }) => (
   <React.Fragment>
     <Head>
       <title>Partiernas ståndpunkter | Partiguiden.nu 2.0</title>
@@ -24,15 +24,15 @@ const PartiernasStandpunkterContainer = ({ subjects }) => (
 
 const url = `${apiLinks.partiguidenApi}/subject`;
 
-PartiernasStandpunkterContainer.getInitialProps = async () => {
+StandpointsListContainer.getInitialProps = async () => {
   const res = await fetch(url);
   const subjects = await res.json();
 
   return { subjects };
 };
 
-PartiernasStandpunkterContainer.propTypes = {
+StandpointsListContainer.propTypes = {
   subjects: array.isRequired,
 };
 
-export default PartiernasStandpunkterContainer;
+export default StandpointsListContainer;

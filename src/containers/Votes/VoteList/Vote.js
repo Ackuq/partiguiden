@@ -1,18 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import { makeStyles } from '@material-ui/styles';
 import { Card, CardContent, CardHeader, Typography, ButtonBase } from '@material-ui/core';
-import { shape, string } from 'prop-types';
+import { shape, string, object } from 'prop-types';
 import Router from 'next/router';
 
-import { apiLinks, getAuthorityInfo } from '../../../../utils';
-import VoteResult from '../VoteResult';
+import { apiLinks, getAuthorityInfo } from '../../../utils';
+import VoteResult from './VoteResult';
 import fetchVote from './fetchVote';
-import styles from './styles';
 
-const useStyles = makeStyles(styles);
-
-const Vote = ({ votering: { id, beteckning, tempbeteckning, titel, organ } }) => {
-  const classes = useStyles();
+const Vote = ({ votering: { id, beteckning, tempbeteckning, titel, organ }, classes }) => {
   const [loading, setLoading] = useState(true);
   const [votes, setVotes] = useState({});
   const [title, setTitle] = useState('');
@@ -76,7 +71,7 @@ const Vote = ({ votering: { id, beteckning, tempbeteckning, titel, organ } }) =>
           </Typography>
         </CardContent>
 
-        <VoteResult votes={votes} />
+        <VoteResult votes={votes} classes={classes} />
       </ButtonBase>
     </Card>
   ) : null;
@@ -90,6 +85,7 @@ Vote.propTypes = {
     titel: string.isRequired,
     organ: string.isRequired,
   }).isRequired,
+  classes: object.isRequired,
 };
 
 export default Vote;

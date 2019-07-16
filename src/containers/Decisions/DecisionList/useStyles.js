@@ -1,4 +1,12 @@
+import { makeStyles } from '@material-ui/styles';
+
 const styles = theme => ({
+  listContainer: {
+    marginBottom: '0.5rem',
+    '& > div': {
+      padding: '8px',
+    },
+  },
   shown: {
     transform: 'rotate(180deg)',
   },
@@ -28,6 +36,12 @@ const styles = theme => ({
     fontSize: '2rem',
     color: theme.palette.primary.dark,
   },
+  cardContainer: {
+    borderRadius: theme.shape.borderRadius,
+    backgroundColor: '#fff',
+    overflow: 'hidden',
+    boxShadow: theme.shadows[1],
+  },
   cardContent: {
     display: 'flex',
     justifyContent: 'space-between',
@@ -44,4 +58,4 @@ const styles = theme => ({
   },
 });
 
-export default styles;
+export default makeStyles(styles);

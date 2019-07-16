@@ -1,6 +1,6 @@
 import fetch from 'isomorphic-unfetch';
 import stripJsonComments from 'strip-json-comments';
-import { checkVote } from '../../../../utils/votingHelpers';
+import { checkVote } from '../../../utils/votingHelpers';
 
 const checkIfVotesExist = ({ url }) =>
   fetch(url)

@@ -1,11 +1,28 @@
+import { makeStyles } from '@material-ui/styles';
+
 const styles = theme => ({
+  // Vote results
+  vote: {
+    display: 'flex',
+    '& .box': {
+      padding: '0.25rem',
+    },
+  },
+  parties: {
+    display: 'flex',
+    justifyContent: 'center',
+    '& h6': {
+      padding: '0.25rem',
+    },
+    '& img': {
+      height: '30px',
+    },
+  },
+
+  // Vote card
   titel: {
     marginBottom: '2rem',
     transition: 'color 0.3s ease-in-out',
-    '-webkit-transition': 'color 0.4s ease-in-out',
-    '-moz-transition': 'color 0.3s ease-in-out',
-    '-ms-transition': 'color 0.3s ease-in-out',
-    '-o-transition': 'color 0.3s ease-in-out',
     '&:hover': {
       color: '#34495e',
     },
@@ -30,4 +47,4 @@ const styles = theme => ({
   },
 });
 
-export default styles;
+export default makeStyles(styles);

@@ -4,7 +4,7 @@ import { object } from 'prop-types';
 
 import Filter, { reducer } from '../../components/ParlimentFilter';
 import { FilterProvider } from '../../components/Filter';
-import VoteList from './components/VoteList';
+import VoteList from './VoteList';
 
 const Votes = ({ query }) => {
   let initialOrg = [];

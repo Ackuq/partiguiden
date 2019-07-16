@@ -1,3 +1,5 @@
+import { makeStyles } from '@material-ui/styles';
+
 const styles = theme => ({
   partyTitle: {
     justifyContent: 'space-between',
@@ -25,4 +27,4 @@ const styles = theme => ({
   },
 });
 
-export default styles;
+export default makeStyles(styles);

@@ -1,14 +1,8 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/styles';
 import { Typography, Grid } from '@material-ui/core';
 import { object } from 'prop-types';
 
-import styles from './styles';
-
-const useStyles = makeStyles(styles);
-
-const VoteResult = ({ votes }) => {
-  const classes = useStyles();
+const VoteResult = ({ votes, classes }) => {
   const bgYes = votes.total ? { backgroundColor: '#c8e6c9' } : { backgroundColor: '#e0e0e0' };
   const bgNo = votes.total ? { backgroundColor: '#e0e0e0' } : { backgroundColor: '#ffcdd2' };
 
@@ -55,6 +49,7 @@ const VoteResult = ({ votes }) => {
 
 VoteResult.propTypes = {
   votes: object.isRequired,
+  classes: object.isRequired,
 };
 
 export default VoteResult;

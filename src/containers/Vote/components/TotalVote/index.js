@@ -15,7 +15,7 @@ const TotalVote = ({ voting }) => {
   ];
 
   return (
-    <React.Fragment>
+    <>
       {data ? (
         <ResponsiveContainer height={90}>
           <BarChart data={data} layout="vertical" margin={{ left: -60 }}>
@@ -32,7 +32,7 @@ const TotalVote = ({ voting }) => {
       ) : (
         <CircularProgress />
       )}
-    </React.Fragment>
+    </>
   );
 };
 

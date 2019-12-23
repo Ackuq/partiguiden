@@ -6,7 +6,7 @@ import SocialMediaShare from '../../components/SocialMediaShare';
 import { ProfilePicture, Information } from './components';
 
 const Member = ({ member }) => (
-  <React.Fragment>
+  <>
     <ProfilePicture
       src={member.picture}
       name={member.name}
@@ -19,7 +19,7 @@ const Member = ({ member }) => (
       <SocialMediaShare title={member.namn} />
       <Information id={member.id} records={member.missions} absence={member.absence} />
     </Container>
-  </React.Fragment>
+  </>
 );
 
 Member.propTypes = {

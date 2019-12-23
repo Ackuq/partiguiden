@@ -34,9 +34,7 @@ const PartyOpinion = ({ partyName, subject, partyColor }) => {
           <List>
             {subject.opinions.map(opinion => (
               <ListItem key={`${partyName}${subject.name}${opinion}`}>
-                <ListBox>
-                  <React.Fragment />
-                </ListBox>
+                <ListBox />
                 <ListItemText>{opinion}</ListItemText>
               </ListItem>
             ))}

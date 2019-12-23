@@ -4,7 +4,7 @@ import Link from '@material-ui/core/Link';
 import { array } from 'prop-types';
 
 const Appendix = ({ appendix }) => (
-  <React.Fragment>
+  <>
     <Typography variant="h5" color="inherit" gutterBottom>
       Bilaga
     </Typography>
@@ -22,7 +22,7 @@ const Appendix = ({ appendix }) => (
         </Link>
       ))}
     </div>
-  </React.Fragment>
+  </>
 );
 
 Appendix.propTypes = {

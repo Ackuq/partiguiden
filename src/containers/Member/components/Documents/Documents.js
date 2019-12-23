@@ -44,7 +44,7 @@ const Documents = ({ id, setDocumentCount }) => {
   }, [page]);
 
   return (
-    <React.Fragment>
+    <>
       {documents.map(document => (
         <Grid item xs={12} key={document.id}>
           <Document document={document} />
@@ -69,7 +69,7 @@ const Documents = ({ id, setDocumentCount }) => {
           </Grid>
         )
       )}
-    </React.Fragment>
+    </>
   );
 };
 

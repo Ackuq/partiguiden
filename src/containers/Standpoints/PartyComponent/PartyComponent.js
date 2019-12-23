@@ -25,7 +25,7 @@ const PartyComponent = ({ party }) => {
         classes={{ root: classes.partyTitle }}
         style={{ borderBottom: `2px solid ${partyColor}` }}
       >
-        <React.Fragment>
+        <>
           <Typography
             variant="h3"
             style={{ fontWeight: 300, marginBottom: '0.25rem', marginTop: '0.25rem' }}
@@ -36,7 +36,7 @@ const PartyComponent = ({ party }) => {
             style={{ color: partyColor }}
             classes={{ root: `${classes.arrow} ${visible ? classes.shown : ''}` }}
           />
-        </React.Fragment>
+        </>
       </ButtonBase>
       <Collapse in={visible} classes={{ container: classes.collapse }} timeout="auto" unmountOnExit>
         <Grid container spacing={3} style={{ marginTop: '0.5rem' }}>

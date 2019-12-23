@@ -6,7 +6,7 @@ import FrontPage from '../src/containers/FrontPage';
 import Typed from '../src/containers/FrontPage/Typed';
 
 const FrontPageContainer = () => (
-  <React.Fragment>
+  <>
     <Head>
       <title>Partiguiden.nu | Rösta rätt</title>
       <meta
@@ -18,7 +18,7 @@ const FrontPageContainer = () => (
     <Container>
       <FrontPage />
     </Container>
-  </React.Fragment>
+  </>
 );
 
 export default FrontPageContainer;

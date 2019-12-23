@@ -12,13 +12,7 @@ const PartiernasStandpunkter = ({ subjects }) => {
     <Grid container classes={{ container: classes.subjectList }}>
       {subjects.map(subject => (
         <Grid item xs={12} md={6} className={classes.item} key={subject.id}>
-          <StandpointObject
-            classes={classes}
-            subject={Object.assign({
-              id: subject.id,
-              name: subject.name,
-            })}
-          />
+          <StandpointObject classes={classes} subject={{ id: subject.id, name: subject.name }} />
         </Grid>
       ))}
     </Grid>

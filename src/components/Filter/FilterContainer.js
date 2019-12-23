@@ -11,7 +11,7 @@ const Filter = ({ children }) => {
   const toggleFilterScreen = () => setMobileOpen(prevState => !prevState);
 
   return (
-    <React.Fragment>
+    <>
       <Hidden smUp>
         <div style={{ position: 'fixed', bottom: '1rem', right: '5%' }}>
           <Fab style={{ backgroundColor: '#fff' }} onClick={toggleFilterScreen}>
@@ -40,7 +40,7 @@ const Filter = ({ children }) => {
       <Hidden xsDown>
         <FilterContainerDesktop>{children}</FilterContainerDesktop>
       </Hidden>
-    </React.Fragment>
+    </>
   );
 };
 

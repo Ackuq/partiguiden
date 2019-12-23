@@ -49,7 +49,7 @@ const ParlimentList = ({ fetchList, extractData, baseUrl, renderItem, url }) => 
   }, [search, org]);
 
   return (
-    <React.Fragment>
+    <>
       <div className={classes.listContainer}>
         {list.length > 0 && list.map((item, index) => renderItem({ item, index }))}
       </div>
@@ -65,7 +65,7 @@ const ParlimentList = ({ fetchList, extractData, baseUrl, renderItem, url }) => 
           />
         )
       )}
-    </React.Fragment>
+    </>
   );
 };
 

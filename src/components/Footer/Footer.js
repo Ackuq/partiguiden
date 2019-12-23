@@ -11,7 +11,7 @@ const useStyles = makeStyles(styles);
 const Footer = () => {
   const classes = useStyles();
   return (
-    <React.Fragment>
+    <>
       <Ad />
       <footer className={classes.root}>
         <Grid direction="column" justify="center" container>
@@ -27,7 +27,7 @@ const Footer = () => {
           </Grid>
         </Grid>
       </footer>
-    </React.Fragment>
+    </>
   );
 };
 export default Footer;

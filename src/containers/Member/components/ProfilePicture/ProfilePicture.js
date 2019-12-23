@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import Breadcrumbs from '../../../../components/Breadcrumbs';
 
 const ProfilePicture = ({ src, name, status, age, party, isLeader }) => (
-  <React.Fragment>
+  <>
     <Box
       position="relative"
       height={142}
@@ -18,7 +18,10 @@ const ProfilePicture = ({ src, name, status, age, party, isLeader }) => (
     >
       <Box p={2} position="absolute" top={0} left={0}>
         <Breadcrumbs
-          links={[{ label: 'Ledamöter', href: '/ledamoter' }, { label: 'Ledamot', href: '#' }]}
+          links={[
+            { label: 'Ledamöter', href: '/ledamoter' },
+            { label: 'Ledamot', href: '#' },
+          ]}
         />
       </Box>
 
@@ -51,7 +54,7 @@ const ProfilePicture = ({ src, name, status, age, party, isLeader }) => (
         {age} år
       </Typography>
     </Box>
-  </React.Fragment>
+  </>
 );
 
 ProfilePicture.propTypes = {

@@ -19,7 +19,7 @@ const CookieBanner = () => {
   }, []);
 
   return (
-    <React.Fragment>
+    <>
       <Slide direction="up" in={!cookieConsent} mountOnEnter unmountOnExit>
         <Paper square classes={{ root: classes.cookieBannerContainer }}>
           <Typography variant="h6" align="center">
@@ -48,7 +48,7 @@ const CookieBanner = () => {
           </div>
         </Paper>
       </Slide>
-    </React.Fragment>
+    </>
   );
 };
 

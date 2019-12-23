@@ -1,5 +1,5 @@
 import React from 'react';
-import App, { Container } from 'next/app';
+import App from 'next/app';
 import ReactGA from 'react-ga';
 import { ThemeProvider } from '@material-ui/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -30,25 +30,23 @@ class MyApp extends App {
     const { Component, pageProps } = this.props;
 
     return (
-      <Container>
-        <ThemeProvider theme={theme}>
-          <CssBaseline />
-          <Header />
-          <main
-            style={{
-              marginBottom: '1rem',
-              display: 'flex',
-              flexDirection: 'column',
-              flexGrow: 1,
-            }}
-          >
-            <Component {...pageProps} />
-          </main>
-          <Footer />
-          <ToTopButton />
-          <CookieBanner />
-        </ThemeProvider>
-      </Container>
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+        <Header />
+        <main
+          style={{
+            marginBottom: '1rem',
+            display: 'flex',
+            flexDirection: 'column',
+            flexGrow: 1,
+          }}
+        >
+          <Component {...pageProps} />
+        </main>
+        <Footer />
+        <ToTopButton />
+        <CookieBanner />
+      </ThemeProvider>
     );
   }
 }

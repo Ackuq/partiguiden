@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { CircularProgress, Typography, Collapse, ButtonBase } from '@material-ui/core';
-import { makeStyles } from '@material-ui/styles';
 import ArrowDownRounded from '@material-ui/icons/KeyboardArrowDownRounded';
 import {
   BarChart,

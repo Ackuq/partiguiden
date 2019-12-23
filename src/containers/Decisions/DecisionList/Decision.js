@@ -28,7 +28,7 @@ const Decision = ({ decision, classes }) => {
 
   const btnclass = visible ? classes.shown : '';
   return (
-    <React.Fragment>
+    <>
       {organ && (
         <div className={classes.cardContainer}>
           <ButtonBase className={classes.buttonContainer} onClick={() => setVisible(!visible)}>
@@ -90,7 +90,7 @@ const Decision = ({ decision, classes }) => {
           </CardContent>
         </div>
       )}
-    </React.Fragment>
+    </>
   );
 };
 

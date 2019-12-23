@@ -11,7 +11,7 @@ const useStyles = makeStyles(styles);
 const Header = () => {
   const classes = useStyles();
   return (
-    <React.Fragment>
+    <>
       <Grid container justify="flex-start" alignItems="center" className={classes.banner}>
         <Grid item xs={3} className={classes.brand}>
           <ButtonBase>
@@ -24,7 +24,7 @@ const Header = () => {
         </Grid>
       </Grid>
       <NavLinks />
-    </React.Fragment>
+    </>
   );
 };
 

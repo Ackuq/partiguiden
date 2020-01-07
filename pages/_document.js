@@ -41,7 +41,7 @@ class MyDocument extends Document {
           `}
           </style>
           {process.env.NODE_ENV === 'production' && (
-            <React.Fragment>
+            <>
               <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" />
               <script
                 // eslint-disable-next-line react/no-danger
@@ -54,7 +54,7 @@ class MyDocument extends Document {
               `,
                 }}
               />
-            </React.Fragment>
+            </>
           )}
         </Head>
         <body style={{ height: '100%' }}>
@@ -104,10 +104,10 @@ MyDocument.getInitialProps = async ctx => {
     ...initialProps,
     // Styles fragment is rendered after the app and page rendering finish.
     styles: (
-      <React.Fragment>
+      <>
         {sheets.getStyleElement()}
         {flush() || null}
-      </React.Fragment>
+      </>
     ),
   };
 };

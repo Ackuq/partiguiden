@@ -9,7 +9,7 @@ import { apiLinks } from '../src/utils';
 import StandpointsList from '../src/containers/StandpointsList';
 
 const StandpointsListContainer = ({ subjects }) => (
-  <React.Fragment>
+  <>
     <Head>
       <title>Partiernas ståndpunkter | Partiguiden.nu 2.0</title>
       <meta
@@ -19,7 +19,7 @@ const StandpointsListContainer = ({ subjects }) => (
     </Head>
     <PageTitle title="Partiernas ståndpunkter" Icon={NoteIcon} />
     <StandpointsList subjects={subjects} />
-  </React.Fragment>
+  </>
 );
 
 const url = `${apiLinks.partiguidenApi}/subject`;

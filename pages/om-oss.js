@@ -7,7 +7,7 @@ import { apiLinks } from '../src/utils';
 import PageTitle from '../src/components/PageTitle';
 
 const OmOssContainer = () => (
-  <React.Fragment>
+  <>
     <Head>
       <title>Om oss | Partiguiden.nu</title>
       <meta
@@ -39,7 +39,7 @@ const OmOssContainer = () => (
         </CardContent>
       </Card>
     </Container>
-  </React.Fragment>
+  </>
 );
 
 export default OmOssContainer;

@@ -11,7 +11,7 @@ import PageTitle from '../../src/components/PageTitle';
 import { Standpoints, fetchStandpointData } from '../../src/containers/Standpoints';
 
 const StandPointContainer = ({ name, partyData }) => (
-  <React.Fragment>
+  <>
     <Head>
       <title>{name} | Ämne | Partiguiden.nu</title>
       <meta
@@ -32,7 +32,7 @@ const StandPointContainer = ({ name, partyData }) => (
       </div>
       <Standpoints partyData={partyData} />
     </Container>
-  </React.Fragment>
+  </>
 );
 
 StandPointContainer.getInitialProps = async ({ query }) => {

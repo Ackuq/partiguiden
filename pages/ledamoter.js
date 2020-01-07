@@ -7,14 +7,14 @@ import PageTitle from '../src/components/PageTitle';
 import Members from '../src/containers/Members';
 
 const LedamoterContainer = ({ query }) => (
-  <React.Fragment>
+  <>
     <Head>
       <title>Riksdagsledamöter | Partiguiden.nu</title>
       <meta name="description" content="" />
     </Head>
     <PageTitle title="Riksdagsledamöter" Icon={PeopleIcon} variant="h2" />
     <Members query={query} />
-  </React.Fragment>
+  </>
 );
 
 LedamoterContainer.getInitialProps = async ({ query }) => ({ query });

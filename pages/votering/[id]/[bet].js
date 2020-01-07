@@ -10,7 +10,7 @@ import PageTitle from '../../../src/components/PageTitle';
 import { Vote, fetchVote } from '../../../src/containers/Vote';
 
 const VoteContainer = ({ vote, bet }) => (
-  <React.Fragment>
+  <>
     <Head>
       <title>{vote.document.titel} | Votering | Partiguiden.nu</title>
       <meta
@@ -22,13 +22,16 @@ const VoteContainer = ({ vote, bet }) => (
     <Container>
       <div style={{ display: 'flex', justifyContent: 'space-between' }}>
         <Breadcrumbs
-          links={[{ href: '/voteringar', label: 'Voteringar' }, { href: '#', label: 'Votering' }]}
+          links={[
+            { href: '/voteringar', label: 'Voteringar' },
+            { href: '#', label: 'Votering' },
+          ]}
         />
         <SocialMediaShare title={`${vote.document.titel} förslagspunkt ${bet}`} />
       </div>
       <Vote {...vote} />
     </Container>
-  </React.Fragment>
+  </>
 );
 
 VoteContainer.getInitialProps = async ({ query }) => {

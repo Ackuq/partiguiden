@@ -7,7 +7,7 @@ import PageTitle from '../src/components/PageTitle';
 import Votes from '../src/containers/Votes';
 
 const VotesContainer = ({ query }) => (
-  <React.Fragment>
+  <>
     <Head>
       <title>Voteringar | Partiguiden.nu</title>
       <meta
@@ -17,7 +17,7 @@ const VotesContainer = ({ query }) => (
     </Head>
     <PageTitle title="Voteringar" Icon={VoteIcon} />
     <Votes query={query} />
-  </React.Fragment>
+  </>
 );
 
 VotesContainer.getInitialProps = async ({ query }) => ({ query });

@@ -6,7 +6,7 @@ import { Container, Card, Typography, CardContent } from '@material-ui/core';
 import PageTitle from '../src/components/PageTitle';
 
 const CookiePolicy = () => (
-  <React.Fragment>
+  <>
     <Head>
       <title>Kakpolicy | Partiguiden.nu</title>
       <meta
@@ -29,7 +29,7 @@ const CookiePolicy = () => (
         </CardContent>
       </Card>
     </Container>
-  </React.Fragment>
+  </>
 );
 
 export default CookiePolicy;

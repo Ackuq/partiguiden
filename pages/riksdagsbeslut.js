@@ -7,7 +7,7 @@ import PageTitle from '../src/components/PageTitle';
 import Decisions from '../src/containers/Decisions';
 
 const RiksdagsbeslutContainer = ({ query }) => (
-  <React.Fragment>
+  <>
     <Head>
       <title>Riksdagsbeslut | Partiguiden.nu</title>
       <meta
@@ -17,7 +17,7 @@ const RiksdagsbeslutContainer = ({ query }) => (
     </Head>
     <PageTitle title="Riksdagsbeslut" Icon={GavelIcon} />
     <Decisions query={query} />
-  </React.Fragment>
+  </>
 );
 
 RiksdagsbeslutContainer.getInitialProps = ({ query }) => ({ query });

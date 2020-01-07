@@ -10,7 +10,7 @@ import SocialMediaShare from '../../src/components/SocialMediaShare';
 import Document from '../../src/containers/Document';
 
 const DocumentContainer = ({ body, id }) => (
-  <React.Fragment>
+  <>
     <Head>
       <title>{id} | Dokument | Partiguiden.nu</title>
     </Head>
@@ -19,7 +19,7 @@ const DocumentContainer = ({ body, id }) => (
       <SocialMediaShare title={`Dokument ${id}`} />
       <Document body={body} />
     </Container>
-  </React.Fragment>
+  </>
 );
 
 DocumentContainer.getInitialProps = async ({ query }) => {

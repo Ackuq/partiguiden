@@ -10,7 +10,7 @@
     "start": "now dev",
     "build": "next build",
     "now-build": "next build",
-    "lint": "eslint src/"
+    "lint": "eslint src/ --ext .js,.jsx,.ts,.tsx"
   },
   "repository": {
     "type": "git",

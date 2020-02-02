@@ -19,13 +19,12 @@ interface Props {
   partyColor: string;
 }
 
-const ListBox = styled(({ backgroundColor, ...other }) => <ListItemIcon {...other} />)({
+const ListBox = styled(ListItemIcon)({
   position: 'absolute',
   left: '-0.125rem',
   top: '1.275rem',
   minWidth: '6px',
   minHeight: '6px',
-  backgroundColor: ({ backgroundColor }) => backgroundColor,
 });
 
 const PartyOpinion: React.FC<Props> = ({ partyName, subject, partyColor }) => {
@@ -39,7 +38,7 @@ const PartyOpinion: React.FC<Props> = ({ partyName, subject, partyColor }) => {
           <List>
             {subject.opinions.map(opinion => (
               <ListItem key={`${partyName}${subject.name}${opinion}`}>
-                <ListBox backgroundColor={partyColor}>
+                <ListBox style={{ backgroundColor: partyColor }}>
                   <></>
                 </ListBox>
                 <ListItemText>{opinion}</ListItemText>

@@ -17,7 +17,9 @@ const fetchVote = ({ url, tempbeteckning }) =>
 
       const { table } = voteObject.votering_sammanfattning_html;
       const tableRow = Array.isArray(table) ? table[table.length - 1].tr : table.tr;
-      return { maxVotes: getMaxVotes(getVotes(tableRow)), rubrik: voteObject.rubrik };
+
+      const votes = getVotes(tableRow);
+      return { maxVotes: getMaxVotes(votes), rubrik: voteObject.rubrik };
     })
     // eslint-disable-next-line no-console
     .catch(err => console.error(err));

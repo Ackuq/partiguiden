@@ -1,3 +1,6 @@
 module.exports = {
-  target: 'serverless'
+  target: 'serverless',
+  env: {
+    BACKEND_URL: process.env.BACKEND_URL,
+  },
 };

@@ -30,7 +30,7 @@ const DocumentContainer: NextPage<Props> = ({ body, id }) => (
 );
 
 DocumentContainer.getInitialProps = async ({ query }) => {
-  const { id } = query;
+  const id = query.id || '';
   const url = `${apiLinks.riksdagenApi}/dokument/${id}`;
 
   const res = await fetch(url);

@@ -42,7 +42,8 @@ const VoteContainer: NextPage<Props> = ({ vote, bet }) => (
 VoteContainer.getInitialProps = async ({ query }) => {
   const url = `${apiLinks.riksdagenApi}/dokumentstatus/${query.id}.json`;
   const vote = await fetchVote({ bet: query.bet, url });
-  return { vote, bet: query.bet };
+  const bet = query.bet || '';
+  return { vote, bet };
 };
 
 export default VoteContainer;

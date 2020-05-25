@@ -34,7 +34,7 @@ const Header = () => (
         <ButtonBase>
           <Link href="/">
             <BannerText>
-              <strong>Partiguiden</strong>.nu
+              <strong>Partiguiden</strong>
             </BannerText>
           </Link>
         </ButtonBase>

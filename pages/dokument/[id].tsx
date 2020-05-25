@@ -19,7 +19,7 @@ interface Props {
 const DocumentContainer: NextPage<Props> = ({ body, id }) => (
   <>
     <Head>
-      <title>{id} | Dokument | Partiguiden.nu</title>
+      <title>{id} | Dokument | Partiguiden</title>
     </Head>
     <PageTitle title={`Dokument ${id}`} />
     <Container>

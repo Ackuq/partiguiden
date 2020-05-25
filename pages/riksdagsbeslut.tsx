@@ -10,7 +10,7 @@ import Decisions from '../src/containers/Decisions';
 const RiksdagsbeslutContainer: NextPage<{ query: any }> = ({ query }) => (
   <>
     <Head>
-      <title>Riksdagsbeslut | Partiguiden.nu</title>
+      <title>Riksdagsbeslut | Partiguiden</title>
       <meta
         name="description"
         content="Vad tar riksdagen för beslut? Här hittar du en sammanfattning på de senaste besluten som tas upp i riksdagen."

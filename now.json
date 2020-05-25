@@ -1,6 +1,5 @@
 {
   "version": 2,
-  "alias": ["beta.partiguiden.nu"],
   "builds": [{ "src": "next.config.js", "use": "@now/next" }],
   "routes": [
     {

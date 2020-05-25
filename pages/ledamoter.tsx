@@ -9,7 +9,7 @@ import Members from '../src/containers/Members';
 const LedamoterContainer: NextPage<{ query: any }> = ({ query }) => (
   <>
     <Head>
-      <title>Riksdagsledamöter | Partiguiden.nu</title>
+      <title>Riksdagsledamöter | Partiguiden</title>
       <meta name="description" content="" />
     </Head>
     <PageTitle title="Riksdagsledamöter" Icon={PeopleIcon} variant="h2" />

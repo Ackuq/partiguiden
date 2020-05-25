@@ -1,8 +1,20 @@
-export default voting => {
-  const result = [] as any;
+import { partyAbbrev } from '../../../../types/party.d';
+import { votingEntry } from '../../../../types/voting.d';
 
-  // eslint-disable-next-line array-callback-return
-  Object.keys(voting).map(party => {
+type key = partyAbbrev | '-' | 'Totalt';
+
+interface Result {
+  name: string;
+  Ja: string;
+  Nej: string;
+  Avstående: string;
+  Frånvarande: string;
+}
+
+export default (voting: Record<key, votingEntry>) => {
+  const result: Result[] = [];
+
+  (Object.keys(voting) as key[]).forEach((party) => {
     if (party !== '-' && party !== 'Totalt') {
       result.push({
         name: party,

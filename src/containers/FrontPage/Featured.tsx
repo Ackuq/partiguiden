@@ -7,8 +7,9 @@ import Typography from '@material-ui/core/Typography';
 
 import grey from '@material-ui/core/colors/grey';
 import { makeStyles, createStyles } from '@material-ui/styles';
+import { Theme } from '@material-ui/core';
 
-const styles = theme =>
+const styles = (theme: Theme) =>
   createStyles({
     featured: {
       width: '100%',
@@ -39,11 +40,11 @@ const Featured: React.FC = () => {
   const classes = useStyles();
   return (
     <Grid container spacing={3}>
-      {getFeatured().map(obj => (
+      {getFeatured().map((obj) => (
         <Grid key={obj.id} item xs={12} md={6}>
           <ButtonBase
             className={classes.featured}
-            onClick={event => {
+            onClick={(event) => {
               event.preventDefault();
               Router.push('/standpunkter/[id]', `/standpunkter/${obj.id}`);
             }}

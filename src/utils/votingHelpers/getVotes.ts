@@ -1,5 +1,8 @@
-export default row => {
-  const voting = {};
+import { votingEntry, VotingRow } from '../../types/voting.d';
+
+export default (row: VotingRow) => {
+  const voting: Record<string, votingEntry> = {};
+
   for (let i = 2; i < row.length - 1; i += 1) {
     const { td } = row[i];
     const partyVotes = {

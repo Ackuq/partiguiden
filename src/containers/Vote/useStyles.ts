@@ -1,7 +1,8 @@
 import { makeStyles } from '@material-ui/styles';
 import grey from '@material-ui/core/colors/grey';
+import { Theme } from '@material-ui/core';
 
-const styles = theme => ({
+export default makeStyles((theme: Theme) => ({
   button: {
     backgroundColor: grey[100],
     width: '100%',
@@ -46,6 +47,4 @@ const styles = theme => ({
     '-webkit-transform': 'rotate(180deg)',
     transform: 'rotate(180deg)',
   },
-});
-
-export default makeStyles(styles);
+}));

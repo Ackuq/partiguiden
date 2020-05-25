@@ -13,11 +13,15 @@ import Documents from './Documents';
 
 interface Props {
   id: number;
-  records: Array<any>;
+  records: Array<{
+    uppgift: Array<string>;
+    typ: string;
+    kod: string;
+  }>;
   absence: number;
 }
 
-const Information = ({ id, records, absence }) => {
+const Information: React.FC<Props> = ({ id, records, absence }) => {
   const [documentCount, setDocumentCount] = useState('0');
 
   return (
@@ -56,7 +60,7 @@ const Information = ({ id, records, absence }) => {
               <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />} aria-controls={record.kod}>
                 <Typography>{record.kod}</Typography>
               </ExpansionPanelSummary>
-              {record.uppgift.map(uppgift => (
+              {record.uppgift.map((uppgift) => (
                 <ExpansionPanelDetails key={uppgift}>
                   {record.typ === 'eadress' ? (
                     <a href={uppgift} target="_blank" rel="noopener noreferrer">

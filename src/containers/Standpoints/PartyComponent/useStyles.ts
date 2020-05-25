@@ -1,6 +1,7 @@
 import { makeStyles } from '@material-ui/styles';
+import { Theme } from '@material-ui/core';
 
-const styles = theme => ({
+const styles = (theme: Theme) => ({
   partyTitle: {
     justifyContent: 'space-between',
     width: '100%',

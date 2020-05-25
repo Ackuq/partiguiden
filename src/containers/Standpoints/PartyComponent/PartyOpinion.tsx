@@ -12,10 +12,11 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 
 import { styled } from '@material-ui/styles';
+import { Subject } from '../../../types/party.d';
 
 interface Props {
   partyName: string;
-  subject: any;
+  subject: Subject;
   partyColor: string;
 }
 
@@ -36,7 +37,7 @@ const PartyOpinion: React.FC<Props> = ({ partyName, subject, partyColor }) => {
             {subject.name}
           </Typography>
           <List>
-            {subject.opinions.map(opinion => (
+            {subject.opinions.map((opinion) => (
               <ListItem key={`${partyName}${subject.name}${opinion}`}>
                 <ListBox style={{ backgroundColor: partyColor }}>
                   <></>

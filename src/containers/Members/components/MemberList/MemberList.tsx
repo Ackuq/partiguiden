@@ -9,11 +9,12 @@ import Member from '../Member';
 import LoadCircle from '../../../../components/LoadCircle';
 import { useFilter } from '../../../../components/Filter';
 import useStyles from './useStyles';
+import { MemberType } from '../../../../types/member.d';
 
-const MemberList = () => {
+const MemberList: React.FC = () => {
   const classes = useStyles();
   const [loading, setLoading] = useState(true);
-  const [members, setMembers] = useState([] as any);
+  const [members, setMembers] = useState<Array<MemberType>>([]);
   const {
     state: { parties, search },
   } = useFilter();
@@ -21,8 +22,8 @@ const MemberList = () => {
   const updateMembers = () => {
     const url = `${apiLinks.partiguidenApi}/members`;
     fetch(url)
-      .then(res => res.json())
-      .then(data => {
+      .then((res) => res.json())
+      .then((data) => {
         setMembers(data);
         setLoading(false);
       });
@@ -51,22 +52,24 @@ const MemberList = () => {
   return loading ? (
     <LoadCircle />
   ) : (
-    members.map(member => {
-      const inParty = parties.length ? parties.includes(member.party) : true;
-      const inSearch = member.name.toLowerCase().includes(search.toLowerCase());
-      return (
-        <Grid
-          item
-          xs={12}
-          md={6}
-          xl={4}
-          key={member.id}
-          style={inParty && inSearch ? {} : { display: 'none' }}
-        >
-          <Member classes={classes} member={member} />
-        </Grid>
-      );
-    })
+    <>
+      {members.map((member) => {
+        const inParty = parties.length ? parties.includes(member.party) : true;
+        const inSearch = member.name.toLowerCase().includes(search.toLowerCase());
+        return (
+          <Grid
+            item
+            xs={12}
+            md={6}
+            xl={4}
+            key={member.id}
+            style={inParty && inSearch ? {} : { display: 'none' }}
+          >
+            <Member classes={classes} member={member} />
+          </Grid>
+        );
+      })}
+    </>
   );
 };
 

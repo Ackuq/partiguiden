@@ -1,9 +1,11 @@
 import React from 'react';
 import Link from 'next/link';
+import useStyles from './MemberList/useStyles';
+import { MemberType } from '../../../types/member.d';
 
 interface Props {
-  member: any;
-  classes: any;
+  member: MemberType;
+  classes: ReturnType<typeof useStyles>;
 }
 
 const Member: React.FC<Props> = ({ member, classes }) => (

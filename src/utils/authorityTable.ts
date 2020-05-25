@@ -1,4 +1,6 @@
-const authorityTable = {
+import { authorityEntry } from '../types/authority.d';
+
+const authorityTable: Record<string, authorityEntry> = {
   AU: {
     name: 'Arbetsmarknadsutskottet',
     desc: 'Arbetsmarknad och arbetsliv',
@@ -83,6 +85,6 @@ const authorityTable = {
 
 export { authorityTable };
 
-export default organ => {
+export default (organ: string) => {
   return authorityTable[organ];
 };

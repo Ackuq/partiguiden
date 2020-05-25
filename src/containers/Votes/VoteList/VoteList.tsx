@@ -6,8 +6,14 @@ import Ad from '../../../components/Ad';
 import Vote from './Vote';
 import fetchVoteList from './fetchVoteList';
 import useStyles from './useStyles';
+import { VoteListEntry } from '../../../types/voting.d';
 
-const Item = ({ item, index }) => {
+interface ItemProps {
+  item: VoteListEntry;
+  index: number;
+}
+
+const Item = ({ item, index }: ItemProps) => {
   const classes = useStyles();
 
   return (
@@ -20,9 +26,15 @@ const Item = ({ item, index }) => {
   );
 };
 
-const extractData = res => res.voteringar;
+const extractData = (res: { voteringar: VoteListEntry }) => res.voteringar;
 
-const url = ({ search, org, page }) =>
+interface UrlProps {
+  search: string;
+  org: Array<string>;
+  page: string;
+}
+
+const url = ({ search, org, page }: UrlProps) =>
   `${apiLinks.riksdagenApi}/dokumentlista/?sok=${search}&doktyp=votering&org=${org.join(
     '&org='
   )}&sort=${search ? 'rel' : 'datum'}&sortorder=desc&utformat=json&a=s&p=${page}`;

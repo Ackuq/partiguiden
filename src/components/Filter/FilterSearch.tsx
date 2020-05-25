@@ -7,14 +7,14 @@ import SearchIcon from '@material-ui/icons/Search';
 
 interface Props {
   search: string;
-  updateSearch: (value: string) => any;
+  updateSearch: (value: string) => void;
 }
 
-const FilterSearch = ({ search, updateSearch }) => (
+const FilterSearch: React.FC<Props> = ({ search, updateSearch }) => (
   <div style={{ padding: '0.5rem 1rem 0 1rem' }}>
     <InputBase
       value={search}
-      onChange={event => {
+      onChange={(event) => {
         window.scrollTo(0, 0);
         updateSearch(event.target.value);
       }}

@@ -11,8 +11,15 @@ import ArrowDownRounded from '@material-ui/icons/KeyboardArrowDownRounded';
 
 import checkIfVotesExist from './checkIfVotesExist';
 import getOrganInfo from '../../../utils/authorityTable';
+import { Decision as DecisionType } from '../../../types/decision.d';
+import useStyles from './useStyles';
 
-const Decision: React.FC<{ decision: any; classes: any }> = ({ decision, classes }) => {
+interface Props {
+  decision: DecisionType;
+  classes: ReturnType<typeof useStyles>;
+}
+
+const Decision: React.FC<Props> = ({ decision, classes }) => {
   const [votesExist, setVotesExist] = useState(false);
   const [visible, setVisible] = useState(false);
 
@@ -23,7 +30,7 @@ const Decision: React.FC<{ decision: any; classes: any }> = ({ decision, classes
     let url = decision.dokumentstatus_url_xml;
     url = url.replace('.xml', '.json');
 
-    checkIfVotesExist({ url }).then(result => {
+    checkIfVotesExist({ url }).then((result) => {
       if (mount) setVotesExist(result.votesExist);
     });
     return () => {
@@ -66,13 +73,14 @@ const Decision: React.FC<{ decision: any; classes: any }> = ({ decision, classes
           <CardContent>
             <Collapse className={classes.paragraphContainer} in={visible}>
               <div className="paragraph">
-                {decision.notis && <div dangerouslySetInnerHTML={{ __html: decision.notis }} /> // eslint-disable-line react/no-danger
+                {
+                  decision.notis && <div dangerouslySetInnerHTML={{ __html: decision.notis }} /> // eslint-disable-line react/no-danger
                 }
               </div>
               <Button
                 component="a"
                 href={`/dokument/${decision.id}`}
-                onClick={event => {
+                onClick={(event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
                   event.preventDefault();
                   Router.push('/dokument/[id]', `/dokument/${decision.id}`);
                 }}
@@ -83,7 +91,7 @@ const Decision: React.FC<{ decision: any; classes: any }> = ({ decision, classes
                 <Button
                   component="a"
                   href="/voteringar"
-                  onClick={event => {
+                  onClick={(event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
                     event.preventDefault();
                     Router.push(`/voteringar?sok=${decision.rm}:${decision.beteckning}`);
                   }}

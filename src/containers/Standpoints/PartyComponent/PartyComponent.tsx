@@ -10,14 +10,19 @@ import ArrowDownRounded from '@material-ui/icons/KeyboardArrowDownRounded';
 import { getPartyColor } from '../../../utils/getParties';
 import PartyOpinion from './PartyOpinion';
 import useStyles from './useStyles';
+import { PartySubject } from '../../../types/party.d';
 
-const PartyComponent: React.FC<{ party: any }> = ({ party }) => {
+interface Props {
+  party: PartySubject;
+}
+
+const PartyComponent: React.FC<Props> = ({ party }) => {
   const classes = useStyles();
   const [visible, setVisible] = useState(false);
   const partyColor = getPartyColor(party.name) || 'red';
 
   const handleClick = () => {
-    setVisible(prevState => !prevState);
+    setVisible((prevState) => !prevState);
   };
 
   return (
@@ -44,7 +49,7 @@ const PartyComponent: React.FC<{ party: any }> = ({ party }) => {
       </ButtonBase>
       <Collapse in={visible} classes={{ container: classes.collapse }} timeout="auto" unmountOnExit>
         <Grid container spacing={3} style={{ marginTop: '0.5rem' }}>
-          {party.data.map(subject => (
+          {party.data.map((subject) => (
             <PartyOpinion
               subject={subject}
               partyName={party.name}

@@ -3,10 +3,15 @@ import stripJsonComments from 'strip-json-comments';
 
 import { getVotes, getMaxVotes } from '../../../utils/votingHelpers';
 
-const fetchVote = ({ url, tempbeteckning }) =>
+interface Props {
+  url: string;
+  tempbeteckning: number;
+}
+
+const fetchVote = ({ url, tempbeteckning }: Props) =>
   fetch(url)
-    .then(res => res.text())
-    .then(json => {
+    .then((res) => res.text())
+    .then((json) => {
       const result = JSON.parse(stripJsonComments(json));
 
       const { dokumentstatus } = result;
@@ -22,6 +27,6 @@ const fetchVote = ({ url, tempbeteckning }) =>
       return { maxVotes: getMaxVotes(votes), rubrik: voteObject.rubrik };
     })
     // eslint-disable-next-line no-console
-    .catch(err => console.error(err));
+    .catch((err) => console.error(err));
 
 export default fetchVote;

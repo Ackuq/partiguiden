@@ -1,6 +1,7 @@
 import makeStyles from '@material-ui/styles/makeStyles';
+import { Theme } from '@material-ui/core';
 
-const styles = ({ palette }) => ({
+const styles = ({ palette }: Theme) => ({
   dokumentBody: {
     marginTop: '1rem',
     '& table': {

@@ -3,7 +3,17 @@ import React from 'react';
 import CircularProgress from '@material-ui/core/CircularProgress';
 import { ResponsiveContainer, BarChart, XAxis, YAxis, Tooltip, Bar, Legend } from 'recharts';
 
-const parseData = (voting) => ({
+const animationDelay = 2;
+const animationDuration = 2;
+
+interface Voting {
+  ja: string;
+  nej: string;
+  avstaende: string;
+  franvarande: string;
+}
+
+const parseData = (voting: Voting) => ({
   name: 'Totalt',
   Ja: parseInt(voting.ja, 10),
   Nej: parseInt(voting.nej, 10),
@@ -11,10 +21,11 @@ const parseData = (voting) => ({
   Frånvarande: parseInt(voting.franvarande, 10),
 });
 
-const animationDelay = 2;
-const animationDuration = 2;
+interface Props {
+  voting: Voting;
+}
 
-const TotalVote: React.FC<{ voting: any }> = ({ voting }) => {
+const TotalVote: React.FC<Props> = ({ voting }) => {
   const data = parseData(voting);
 
   return (

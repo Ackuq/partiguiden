@@ -6,6 +6,7 @@ import styled from '@material-ui/styles/styled';
 import Grid from '@material-ui/core/Grid';
 import ButtonBase from '@material-ui/core/ButtonBase';
 
+import { Theme } from '@material-ui/core';
 import NavLinks from './NavLinks';
 
 const Brand = styled(Grid)({
@@ -13,12 +14,12 @@ const Brand = styled(Grid)({
   textAlign: 'center',
 });
 
-const Banner = styled(Grid)(({ theme }) => ({
+const Banner = styled(Grid)(({ theme }: { theme: Theme }) => ({
   zIndex: 1200,
   backgroundColor: theme.palette.primary.main,
 }));
 
-const BannerText = styled('span')(({ theme }) => ({
+const BannerText = styled('span')(({ theme }: { theme: Theme }) => ({
   textDecoration: 'none',
   fontSize: '2rem',
   paddingLeft: '0.25rem',

@@ -15,7 +15,7 @@ interface Props {
 }
 
 const FilterList: React.FC<Props> = ({ list, updateList, isChecked, getText, getKey }) => {
-  const renderCheckBox = el => (
+  const renderCheckBox = (el: any) => (
     <ListItem
       key={getKey(el)}
       dense
@@ -38,7 +38,7 @@ const FilterList: React.FC<Props> = ({ list, updateList, isChecked, getText, get
     </ListItem>
   );
 
-  return <List disablePadding>{list.map(el => renderCheckBox(el))}</List>;
+  return <List disablePadding>{list.map((el) => renderCheckBox(el))}</List>;
 };
 
 export default FilterList;

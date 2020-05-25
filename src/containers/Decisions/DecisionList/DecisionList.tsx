@@ -6,15 +6,27 @@ import Ad from '../../../components/Ad';
 import Decision from './Decision';
 import fetchDecisionList from './fetchDecisionList';
 import useStyles from './useStyles';
+import { Decision as DecisionType } from '../../../types/decision.d';
 
-const url = ({ search, org, page }) =>
+interface UrlProps {
+  search: string;
+  org: Array<string>;
+  page: number;
+}
+
+const url = ({ search, org, page }: UrlProps) =>
   `${apiLinks.riksdagenApi}/dokumentlista/?sok=${search}&doktyp=bet&org=${org.join(
     '&org='
   )}&dokstat=beslutade&sort=${search ? 'rel' : 'datum'}&sortorder=desc&utformat=json&p=${page}`;
 
-const extractData = res => res.beslut;
+const extractData = (res: any) => res.beslut;
 
-const Item = ({ item, index }) => {
+interface ItemProps {
+  item: DecisionType;
+  index: number;
+}
+
+const Item: React.FC<ItemProps> = ({ item, index }) => {
   const classes = useStyles();
 
   return (
@@ -27,7 +39,7 @@ const Item = ({ item, index }) => {
   );
 };
 
-const DecisionList = () => {
+const DecisionList: React.FC = () => {
   return (
     <ParlimentList
       extractData={extractData}

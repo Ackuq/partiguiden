@@ -15,10 +15,10 @@ import PageTitle from '../src/components/PageTitle';
 const OmOssContainer: NextPage = () => (
   <>
     <Head>
-      <title>Om oss | Partiguiden.nu</title>
+      <title>Om oss | Partiguiden</title>
       <meta
         name="description"
-        content="Partiguiden.nu erbjuder en platform där du kan jämföra vad olika partier tycker i sakfrågor för att det ska bli lättare att hitta det parti du sympatiserar med mest."
+        content="Partiguiden erbjuder en platform där du kan jämföra vad olika partier tycker i sakfrågor för att det ska bli lättare att hitta det parti du sympatiserar med mest."
       />
     </Head>
     <PageTitle title="Om oss" Icon={InfoIcon} />
@@ -26,10 +26,10 @@ const OmOssContainer: NextPage = () => (
       <Card>
         <CardContent>
           <Typography variant="subtitle1" paragraph>
-            Partiguiden.nu skapades med syftet av att kunna erbjuda en plattform där man lätt kan
-            kolla upp partiernas ståndpunkter i olika ämnen och sakfrågor. Under utvecklingen av
-            hemsidan togs det hänsyn till begriplighet och användarvänlighet för att kunna erbjuda
-            den bästa möjliga användarupplevensen.
+            Partiguiden skapades med syftet av att kunna erbjuda en plattform där man lätt kan kolla
+            upp partiernas ståndpunkter i olika ämnen och sakfrågor. Under utvecklingen av hemsidan
+            togs det hänsyn till begriplighet och användarvänlighet för att kunna erbjuda den bästa
+            möjliga användarupplevensen.
           </Typography>
           <Typography variant="subtitle1" paragraph>
             Utvecklingen av sidan påbörjades som ett fritidsprojekt år 2017 för att utveckla

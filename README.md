@@ -1,6 +1,6 @@
-# Partiguiden.nu 2.0
+# Partiguiden 2.0
 
-This is the new version of the website partiguiden.nu.
+This is the new version of the website partiguiden.
 
 ## Tools used for this project
 

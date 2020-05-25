@@ -13,10 +13,10 @@ import PageTitle from '../src/components/PageTitle';
 const CookiePolicy: NextPage = () => (
   <>
     <Head>
-      <title>Kakpolicy | Partiguiden.nu</title>
+      <title>Kakpolicy | Partiguiden</title>
       <meta
         name="description"
-        content="Partiguiden.nu erbjuder en platform där du kan jämföra vad olika partier tycker i sakfrågor för att det ska bli lättare att hitta det parti du sympatiserar med mest."
+        content="Partiguiden erbjuder en platform där du kan jämföra vad olika partier tycker i sakfrågor för att det ska bli lättare att hitta det parti du sympatiserar med mest."
       />
     </Head>
     <PageTitle title="Kakpolicy" Icon={AnnouncementIcon} />
@@ -24,7 +24,7 @@ const CookiePolicy: NextPage = () => (
       <Card>
         <CardContent>
           <Typography variant="subtitle1" paragraph>
-            Partiguiden.nu använder webbkakor från Google för att kunna analysera användares
+            Partiguiden använder webbkakor från Google för att kunna analysera användares
             interaktion med hemsidan i syftet att kunna vidareutveckla sidan.
           </Typography>
           <Typography variant="subtitle1" paragraph>

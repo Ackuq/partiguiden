@@ -18,7 +18,7 @@ interface Props {
 const StandPointContainer: NextPage<Props> = ({ name, partyData }) => (
   <>
     <Head>
-      <title>{name} | Ämne | Partiguiden.nu</title>
+      <title>{name} | Ämne | Partiguiden</title>
       <meta
         name="description"
         content={`Vad tar Sveriges partier för ståndpunkter inom ämnet ${name} Här hittar du informationen du behöver för att kunna jämföra och hitta det parti du sympatiserar med mest! `}
@@ -45,7 +45,7 @@ StandPointContainer.getInitialProps = async ({ query }) => {
   const res = await fetch(url);
   const data = await res.json();
   const partyData = await fetchStandpointData(data.opinions);
-  return { name: data.name, partyData: partyData.filter(party => party !== null) };
+  return { name: data.name, partyData: partyData.filter((party) => party !== null) };
 };
 
 export default StandPointContainer;

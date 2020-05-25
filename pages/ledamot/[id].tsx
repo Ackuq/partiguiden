@@ -9,7 +9,7 @@ import Member from '../../src/containers/Member';
 const MemberContainer: NextPage<{ member: any }> = ({ member }) => (
   <>
     <Head>
-      <title>{member.name} | Ledamot | Partiguiden.nu</title>
+      <title>{member.name} | Ledamot | Partiguiden</title>
     </Head>
     <Member member={member} />
   </>

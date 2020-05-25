@@ -10,7 +10,7 @@ import Votes from '../src/containers/Votes';
 const VotesContainer: NextPage<{ query: any }> = ({ query }) => (
   <>
     <Head>
-      <title>Voteringar | Partiguiden.nu</title>
+      <title>Voteringar | Partiguiden</title>
       <meta
         name="description"
         content="Hur har partierna röstat i voteringar? Ta reda på det här."

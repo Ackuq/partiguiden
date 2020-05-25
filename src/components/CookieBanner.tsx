@@ -40,7 +40,7 @@ const CookieBanner = () => {
       <Slide direction="up" in={!cookieConsent} mountOnEnter unmountOnExit>
         <CookieBannerContainer square>
           <Typography variant="h6" align="center">
-            Partiguiden.nu använder kakor för att anonymt analysera användares interaktion med
+            Partiguiden använder kakor för att anonymt analysera användares interaktion med
             hemsidan.
           </Typography>
           <ButtonContainer>

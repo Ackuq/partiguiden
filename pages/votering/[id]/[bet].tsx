@@ -17,7 +17,7 @@ interface Props {
 const VoteContainer: NextPage<Props> = ({ vote, bet }) => (
   <>
     <Head>
-      <title>{vote.document.titel} | Votering | Partiguiden.nu</title>
+      <title>{vote.document.titel} | Votering | Partiguiden</title>
       <meta
         name="description"
         content={`Hur har partiernat röstat i voteringen om ${vote.document.titel}`}

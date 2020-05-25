@@ -16,8 +16,8 @@ const FrontPage: React.FC = () => (
             Vilket parti ska man rösta på?
           </Typography>
           <Typography variant="body1" paragraph>
-            Vilket parti ska man rösta på? Och vad tycker partierna egentligen? På Partiguiden.nu
-            kan du läsa om vad partierna tycker enligt sina partiprogram och samt se hur de röstar i
+            Vilket parti ska man rösta på? Och vad tycker partierna egentligen? På Partiguiden kan
+            du läsa om vad partierna tycker enligt sina partiprogram och samt se hur de röstar i
             riksdagsvoteringar.
           </Typography>
         </CardContent>

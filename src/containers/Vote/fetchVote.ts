@@ -3,7 +3,7 @@ import fetch from 'isomorphic-unfetch';
 
 import { getVotes } from '../../utils/votingHelpers';
 
-const getMatches = (suggestion, referens) => {
+const getMatches = (suggestion: string, referens: Array<any>) => {
   let newSuggestion = suggestion.replace(/(<br>)|<BR(\/)>/gm, '');
   const re = /\b([0-9][0-9][0-9][0-9]\/[0-9][0-9]):(\S+).*/gm;
   const processedDocuments = [] as Array<any>;
@@ -31,10 +31,15 @@ const getMatches = (suggestion, referens) => {
   return { processedDocuments, suggestion: newSuggestion };
 };
 
-const fetchVote = ({ bet, url }) =>
+interface Props {
+  bet: number;
+  url: string;
+}
+
+const fetchVote = ({ bet, url }: Props) =>
   fetch(url)
-    .then(res => res.text())
-    .then(json => {
+    .then((res) => res.text())
+    .then((json) => {
       const result = JSON.parse(stripJsonComments(json));
       const { dokumentstatus } = result;
       const { utskottsforslag } = dokumentstatus.dokutskottsforslag;
@@ -49,15 +54,15 @@ const fetchVote = ({ bet, url }) =>
 
       const { uppgift } = dokumentstatus.dokuppgift;
 
-      const decision = uppgift.find(el => {
+      const decision = uppgift.find((el: any) => {
         return el.kod === 'rdbeslut';
       });
 
-      const description = uppgift.find(el => {
+      const description = uppgift.find((el: any) => {
         return el.kod === 'notis';
       });
 
-      const title = uppgift.find(el => {
+      const title = uppgift.find((el: any) => {
         return el.kod === 'notisrubrik';
       });
 

@@ -11,7 +11,7 @@ import { Vote, fetchVote } from '../../../src/containers/Vote';
 
 interface Props {
   vote: any;
-  bet: string | string[];
+  bet: number;
 }
 
 const VoteContainer: NextPage<Props> = ({ vote, bet }) => (
@@ -39,10 +39,17 @@ const VoteContainer: NextPage<Props> = ({ vote, bet }) => (
   </>
 );
 
+const getBet = (bet: string | Array<string>) => {
+  if (Array.isArray(bet)) {
+    return parseInt(bet[0], 10);
+  }
+  return parseInt(bet, 10);
+};
+
 VoteContainer.getInitialProps = async ({ query }) => {
   const url = `${apiLinks.riksdagenApi}/dokumentstatus/${query.id}.json`;
-  const vote = await fetchVote({ bet: query.bet, url });
-  const bet = query.bet || '';
+  const bet = query.bet ? getBet(query.bet) : 0;
+  const vote = await fetchVote({ bet, url });
   return { vote, bet };
 };
 

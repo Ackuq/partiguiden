@@ -3,11 +3,12 @@ import Router, { useRouter } from 'next/router';
 
 import makeStyles from '@material-ui/styles/makeStyles';
 
+import { Theme } from '@material-ui/core';
 import AppBar from '@material-ui/core/AppBar';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 
-const styles = theme => ({
+const useStyles = makeStyles((theme: Theme) => ({
   [theme.breakpoints.up('sm')]: {
     scrollButton: {
       display: 'none',
@@ -16,9 +17,7 @@ const styles = theme => ({
       overflow: 'hidden',
     },
   },
-});
-
-const useStyles = makeStyles(styles);
+}));
 
 const getPages = [
   { href: '/', title: 'Hem' },
@@ -32,8 +31,8 @@ const getPages = [
   { href: '/om-oss', title: 'Om oss' },
 ];
 
-const getIndex = (val, { route, pathname }) => {
-  let index = getPages.findIndex(x => x.href === pathname);
+const getIndex = (val: number, { route, pathname }: { route: string; pathname: string }) => {
+  let index = getPages.findIndex((x) => x.href === pathname);
 
   if (index < 0) {
     if (route === '/standpunkter/[id]') index = 1;
@@ -72,7 +71,7 @@ const NavLinks = () => {
             component="a"
             href={href}
             label={title}
-            onClick={event => {
+            onClick={(event) => {
               event.preventDefault();
               Router.push(href);
             }}

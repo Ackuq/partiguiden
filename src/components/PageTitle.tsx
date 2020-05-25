@@ -4,8 +4,9 @@ import styled from '@material-ui/styles/styled';
 
 import Typography, { TypographyProps } from '@material-ui/core/Typography';
 import Paper from '@material-ui/core/Paper';
+import { Theme } from '@material-ui/core';
 
-const PageTitleContainer = styled(Paper)(({ theme }) => ({
+const PageTitleContainer = styled(Paper)(({ theme }: { theme: Theme }) => ({
   zIndex: 99,
   backgroundColor: theme.palette.primary.light,
   textAlign: 'center',

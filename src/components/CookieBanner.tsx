@@ -8,10 +8,11 @@ import Button from '@material-ui/core/Button';
 import Slide from '@material-ui/core/Slide';
 import Typography from '@material-ui/core/Typography';
 import Cookies from 'universal-cookie';
+import { Theme } from '@material-ui/core';
 
 const cookies = new Cookies();
 
-const CookieBannerContainer = styled(Paper)(({ theme }) => ({
+const CookieBannerContainer = styled(Paper)(({ theme }: { theme: Theme }) => ({
   backgroundColor: theme.palette.primary.main,
   color: '#fff',
   position: 'fixed',

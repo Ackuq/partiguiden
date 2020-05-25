@@ -1,3 +1,5 @@
+import { party } from '../types/party.d';
+
 const parties = [
   { name: 'Socialdemokraterna', letter: 'S', color: '#c0392b' },
   { name: 'Moderaterna', letter: 'M', color: '#3a539b' },
@@ -9,7 +11,7 @@ const parties = [
   { name: 'Miljöpartiet', letter: 'MP', color: '#26a65b' },
 ];
 
-const getPartyColor = partyName => parties.find(party => party.name === partyName)?.color;
+const getPartyColor = (partyName: party) => parties.find((p) => p.name === partyName)?.color;
 
 export default parties;
 

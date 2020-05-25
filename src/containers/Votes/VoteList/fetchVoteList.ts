@@ -1,9 +1,14 @@
 import fetch from 'isomorphic-unfetch';
 
-const fetchVoteList = ({ page, url }) =>
+interface Props {
+  page: string;
+  url: string;
+}
+
+const fetchVoteList = ({ page, url }: Props) =>
   fetch(url)
-    .then(res => res.json())
-    .then(data => {
+    .then((res) => res.json())
+    .then((data) => {
       const { dokumentlista } = data;
       const pages = parseInt(dokumentlista['@sidor'], 10);
 

@@ -1,6 +1,12 @@
 import Router from 'next/router';
 
-export default ({ baseUrl, search, org }) => {
+interface Props {
+  baseUrl: string;
+  search: string;
+  org: Array<string>;
+}
+
+export default ({ baseUrl, search, org }: Props) => {
   const searchString = search && `sok=${search}`;
   const orgString = org.length > 0 && `org=${org.join('&org=')}`;
   let href = '';

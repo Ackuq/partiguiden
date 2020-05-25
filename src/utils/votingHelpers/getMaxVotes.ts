@@ -1,21 +1,19 @@
-interface resultInterface {
-  ja: Array<string>;
-  nej: Array<string>;
-  total: 0 | 1;
-}
+import { votingDict, votingResult, voteDesc } from '../../types/voting.d';
 
-export default partyVotes => {
-  const result: resultInterface = { ja: [], nej: [], total: 0 };
+export default (partyVotes: votingDict) => {
+  const result: votingResult = { ja: [], nej: [], total: 0 };
   let yes = 0;
   let no = 0;
 
-  const parties = Object.keys(partyVotes).filter(party => party !== '-' && party !== 'Totalt');
+  const parties = Object.keys(partyVotes).filter((party) => party !== '-' && party !== 'Totalt');
 
-  parties.forEach(party => {
+  parties.forEach((party) => {
     yes += parseInt(partyVotes[party].ja, 10);
     no += parseInt(partyVotes[party].nej, 10);
 
-    const decisions = Object.keys(partyVotes[party]).filter(decision => decision !== 'franvarande');
+    const decisions = Object.keys(partyVotes[party]).filter(
+      (decision) => decision !== 'franvarande'
+    ) as voteDesc[];
 
     const vote = decisions.reduce((a, b) =>
       parseInt(partyVotes[party][a], 10) > parseInt(partyVotes[party][b], 10) ? a : b

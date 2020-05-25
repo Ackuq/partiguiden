@@ -1,8 +1,9 @@
 import React from 'react';
 import styled from '@material-ui/styles/styled';
 import ButtonBase from '@material-ui/core/ButtonBase';
+import { Theme } from '@material-ui/core';
 
-const Button = styled(ButtonBase)(({ theme }) => ({
+const Button = styled(ButtonBase)(({ theme }: { theme: Theme }) => ({
   display: 'flex',
   backgroundColor: theme.palette.primary.main,
   color: theme.palette.primary.contrastText,

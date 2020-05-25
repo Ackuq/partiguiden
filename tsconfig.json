@@ -10,7 +10,7 @@
     "noEmit": true,
     "strict": true,
     "target": "esnext",
-    "noImplicitAny": false,
+    "noImplicitAny": true,
     "noImplicitThis": true,
     "strictNullChecks": true,
     "skipLibCheck": true,

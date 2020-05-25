@@ -7,19 +7,15 @@ import CardHeader from '@material-ui/core/CardHeader';
 import Typography from '@material-ui/core/Typography';
 import ButtonBase from '@material-ui/core/ButtonBase';
 
+import useStyles from './useStyles';
 import { apiLinks, getAuthorityInfo } from '../../../utils';
 import VoteResult from './VoteResult';
 import fetchVote from './fetchVote';
+import { votingResult, VoteListEntry } from '../../../types/voting.d';
 
 interface Props {
-  votering: {
-    id: string;
-    beteckning: string;
-    tempbeteckning: string;
-    titel: string;
-    organ: string;
-  };
-  classes: any;
+  votering: VoteListEntry;
+  classes: ReturnType<typeof useStyles>;
 }
 
 const Vote: React.FC<Props> = ({
@@ -27,7 +23,7 @@ const Vote: React.FC<Props> = ({
   classes,
 }) => {
   const [loading, setLoading] = useState(true);
-  const [votes, setVotes] = useState({});
+  const [votes, setVotes] = useState<votingResult>({ ja: [], nej: [], total: 0 });
   const [title, setTitle] = useState('');
 
   const authority = getAuthorityInfo(organ);
@@ -38,7 +34,7 @@ const Vote: React.FC<Props> = ({
   const url = `${apiLinks.riksdagenApi}/dokumentstatus/${docId}.json`;
 
   useEffect(() => {
-    fetchVote({ url, tempbeteckning }).then(result => {
+    fetchVote({ url, tempbeteckning }).then((result) => {
       if (mounted && result) {
         setVotes(result.maxVotes);
         setTitle(result.rubrik);
@@ -56,7 +52,7 @@ const Vote: React.FC<Props> = ({
         style={{ display: 'block' }}
         href={`/votering/${docId}/${tempbeteckning}`}
         component="a"
-        onClick={event => {
+        onClick={(event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
           event.preventDefault();
           Router.push('/votering/[id]/[bet]', `/votering/${docId}/${tempbeteckning}`);
         }}

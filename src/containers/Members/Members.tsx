@@ -8,7 +8,14 @@ import { FilterProvider } from '../../components/Filter';
 import FilterMembers from './components/FilterMembers';
 import MemberList from './components/MemberList';
 
-const Members: React.FC<{ query: any }> = ({ query }) => {
+interface Props {
+  query: {
+    party: Array<string> | string;
+    sok: string;
+  };
+}
+
+const Members: React.FC<Props> = ({ query }) => {
   const getPartyQuery = () => (Array.isArray(query.party) ? query.party : [query.party]);
 
   const initialParties = query.party ? getPartyQuery() : [];

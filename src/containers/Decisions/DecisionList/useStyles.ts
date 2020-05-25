@@ -1,6 +1,7 @@
 import { makeStyles, createStyles } from '@material-ui/styles';
+import { Theme } from '@material-ui/core';
 
-const styles = theme =>
+const styles = (theme: Theme) =>
   createStyles({
     listContainer: {
       marginBottom: '0.5rem',

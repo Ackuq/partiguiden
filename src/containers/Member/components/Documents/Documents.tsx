@@ -2,15 +2,15 @@ import React, { useState, useEffect } from 'react';
 
 import Grid from '@material-ui/core/Grid';
 import ButtonBase from '@material-ui/core/ButtonBase';
-
 import makeStyles from '@material-ui/styles/makeStyles';
+import { Theme } from '@material-ui/core';
 
 import { apiLinks } from '../../../../utils';
 import LoadCircle from '../../../../components/LoadCircle';
 import Document from './Document';
 import fetchMemberDocuments from './fetchMemberDocuments';
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme: Theme) => ({
   buttonContainer: {
     display: 'flex',
     justifyContent: 'center',
@@ -42,7 +42,7 @@ const Documents: React.FC<Props> = ({ id, setDocumentCount }) => {
 
   useEffect(() => {
     setLoading(true);
-    fetchMemberDocuments({ url, page }).then(res => {
+    fetchMemberDocuments({ url, page }).then((res) => {
       setDocumentCount(res.count);
       if (res.count !== '0') setDocuments([...documents, ...res.documents]);
       setLastPage(res.lastPage);
@@ -52,7 +52,7 @@ const Documents: React.FC<Props> = ({ id, setDocumentCount }) => {
 
   return (
     <>
-      {documents.map(document => (
+      {documents.map((document) => (
         <Grid item xs={12} key={document.id}>
           <Document document={document} />
         </Grid>
@@ -68,7 +68,7 @@ const Documents: React.FC<Props> = ({ id, setDocumentCount }) => {
               className={classes.loadMore}
               onClick={() => {
                 setLastPage(true);
-                setPage(curr => curr + 1);
+                setPage((curr) => curr + 1);
               }}
             >
               Ladda mer

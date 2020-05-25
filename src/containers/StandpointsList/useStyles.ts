@@ -1,7 +1,8 @@
 import { makeStyles } from '@material-ui/styles';
 import grey from '@material-ui/core/colors/grey';
+import { Theme } from '@material-ui/core';
 
-const styles = theme => ({
+const styles = (theme: Theme) => ({
   subjectList: {
     marginLeft: 'auto',
     marginRight: 'auto',

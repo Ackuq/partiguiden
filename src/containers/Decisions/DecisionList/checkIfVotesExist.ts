@@ -2,10 +2,14 @@ import fetch from 'isomorphic-unfetch';
 import stripJsonComments from 'strip-json-comments';
 import { checkVote } from '../../../utils/votingHelpers';
 
-const checkIfVotesExist = ({ url }) =>
+interface Props {
+  url: string;
+}
+
+const checkIfVotesExist = ({ url }: Props) =>
   fetch(url)
-    .then(res => res.text())
-    .then(json => {
+    .then((res) => res.text())
+    .then((json) => {
       const result = JSON.parse(stripJsonComments(json));
       const { dokumentstatus } = result;
 

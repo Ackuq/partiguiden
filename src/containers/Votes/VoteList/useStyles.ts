@@ -1,6 +1,7 @@
 import { makeStyles, createStyles } from '@material-ui/styles';
+import { Theme } from '@material-ui/core';
 
-const styles = theme =>
+const styles = (theme: Theme) =>
   createStyles({
     // Vote results
     vote: {

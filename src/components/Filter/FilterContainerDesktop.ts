@@ -1,8 +1,9 @@
 import Box from '@material-ui/core/Box';
 
 import { styled } from '@material-ui/styles';
+import { Theme } from '@material-ui/core';
 
-const FilterContainerDesktop = styled(Box)(({ theme }) => ({
+const FilterContainerDesktop = styled(Box)(({ theme }: { theme: Theme }) => ({
   boxShadow: theme.shadows[1],
   position: 'sticky',
   display: 'flex',

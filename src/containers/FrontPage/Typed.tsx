@@ -5,8 +5,9 @@ import Typed from 'react-typed';
 
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
+import { Theme } from '@material-ui/core';
 
-const PageTitleContainer = styled(Paper)(({ theme }) => ({
+const PageTitleContainer = styled(Paper)(({ theme }: { theme: Theme }) => ({
   backgroundColor: theme.palette.primary.light,
   textAlign: 'center',
   padding: '1.5rem 0.25rem',

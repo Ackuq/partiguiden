@@ -9,8 +9,8 @@ import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 
-import { apiLinks } from '../src/utils';
 import PageTitle from '../src/components/PageTitle';
+import { baseUrl as parlimentUrl } from '../src/lib/parlimentApi';
 
 const OmOssContainer: NextPage = () => (
   <>
@@ -38,8 +38,8 @@ const OmOssContainer: NextPage = () => (
           <Typography variant="subtitle1" paragraph>
             Informationen som presenteras på sidan är information från partiernas egna hemsidor samt
             information från Riksdagens öppna API, som finns på{' '}
-            <a rel="noopener noreferrer" target="_blank" href={apiLinks.riksdagenApi}>
-              {apiLinks.riksdagenApi}
+            <a rel="noopener noreferrer" target="_blank" href={parlimentUrl}>
+              {parlimentUrl}
             </a>
           </Typography>
         </CardContent>

@@ -19,13 +19,12 @@ const useStyles = makeStyles(styles);
 
 interface Props {
   extractData: Function;
-  fetchList: (data: any) => any;
+  fetchList: (search: string, org: Array<string>, page: number) => any;
   baseUrl: string;
   Item: React.ElementType;
-  url: (data: any) => string;
 }
 
-const ParlimentList: React.FC<Props> = ({ fetchList, extractData, baseUrl, Item, url }) => {
+const ParlimentList: React.FC<Props> = ({ fetchList, extractData, baseUrl, Item }) => {
   const classes = useStyles();
   const [page, setPage] = useState(1);
   const [loading, setLoading] = useState(true);
@@ -39,7 +38,7 @@ const ParlimentList: React.FC<Props> = ({ fetchList, extractData, baseUrl, Item,
 
   const updateList = () => {
     setLoading(true);
-    fetchList({ page, url: url({ search, org, page }) }).then((res: any) => {
+    fetchList(search, org, page).then((res: any) => {
       setLastPage(res.lastPage);
       if (extractData(res)) setList((prevState) => prevState.concat(...extractData(res)));
       setLoading(false);

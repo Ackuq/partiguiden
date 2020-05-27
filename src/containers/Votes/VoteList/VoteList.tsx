@@ -1,12 +1,11 @@
 import React from 'react';
 
 import ParlimentList from '../../../components/ParlimentList';
-import { apiLinks } from '../../../utils';
 import Ad from '../../../components/Ad';
 import Vote from './Vote';
-import fetchVoteList from './fetchVoteList';
 import useStyles from './useStyles';
 import { VoteListEntry } from '../../../types/voting.d';
+import { getVoteList } from '../../../lib/parlimentApi';
 
 interface ItemProps {
   item: VoteListEntry;
@@ -28,22 +27,10 @@ const Item = ({ item, index }: ItemProps) => {
 
 const extractData = (res: { voteringar: VoteListEntry }) => res.voteringar;
 
-interface UrlProps {
-  search: string;
-  org: Array<string>;
-  page: string;
-}
-
-const url = ({ search, org, page }: UrlProps) =>
-  `${apiLinks.riksdagenApi}/dokumentlista/?sok=${search}&doktyp=votering&org=${org.join(
-    '&org='
-  )}&sort=${search ? 'rel' : 'datum'}&sortorder=desc&utformat=json&a=s&p=${page}`;
-
 const VoteList = () => (
   <ParlimentList
-    fetchList={fetchVoteList}
+    fetchList={getVoteList}
     extractData={extractData}
-    url={url}
     baseUrl="/voteringar"
     Item={Item}
   />

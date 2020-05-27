@@ -5,9 +5,10 @@ import Container from '@material-ui/core/Container';
 
 import Breadcrumbs from '../../../src/components/Breadcrumbs';
 import SocialMediaShare from '../../../src/components/SocialMediaShare';
-import { apiLinks } from '../../../src/utils';
 import PageTitle from '../../../src/components/PageTitle';
-import { Vote, fetchVote } from '../../../src/containers/Vote';
+import Vote from '../../../src/containers/Vote';
+import parseVote from '../../../src/containers/Vote/parseVote';
+import { getVote } from '../../../src/lib/parlimentApi';
 
 interface Props {
   vote: any;
@@ -47,10 +48,10 @@ const getBet = (bet: string | Array<string>) => {
 };
 
 VoteContainer.getInitialProps = async ({ query }) => {
-  const url = `${apiLinks.riksdagenApi}/dokumentstatus/${query.id}.json`;
   const bet = query.bet ? getBet(query.bet) : 0;
-  const vote = await fetchVote({ bet, url });
-  return { vote, bet };
+  const res = await getVote(bet);
+
+  return { vote: parseVote(res, bet), bet };
 };
 
 export default VoteContainer;

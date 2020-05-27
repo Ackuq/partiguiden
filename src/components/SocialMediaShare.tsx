@@ -1,6 +1,7 @@
 import React from 'react';
 import { FacebookShareButton, FacebookIcon, TwitterShareButton, TwitterIcon } from 'react-share';
 import styled from '@material-ui/styles/styled';
+import { useRouter } from 'next/router';
 
 const SocialMediaWrapper = styled('div')({
   display: 'flex',
@@ -21,15 +22,19 @@ interface Props {
 }
 
 const SocialMediaShare: React.FC<Props> = ({ title }) => {
+  const router = useRouter();
+
+  const path = process.env.SHARE_BASE_URL + router.asPath;
+
   return (
     <SocialMediaWrapper>
       <IconWrapper>
-        <FacebookShareButton url={window.location.href} quote={title}>
+        <FacebookShareButton url={path} quote={title}>
           <FacebookIcon size={size} round />
         </FacebookShareButton>
       </IconWrapper>
       <IconWrapper>
-        <TwitterShareButton url={window.location.href} title={title}>
+        <TwitterShareButton url={path} title={title}>
           <TwitterIcon size={size} round />
         </TwitterShareButton>
       </IconWrapper>

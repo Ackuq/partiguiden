@@ -5,10 +5,9 @@ import ButtonBase from '@material-ui/core/ButtonBase';
 import makeStyles from '@material-ui/styles/makeStyles';
 import { Theme } from '@material-ui/core';
 
-import { apiLinks } from '../../../../utils';
 import LoadCircle from '../../../../components/LoadCircle';
 import Document from './Document';
-import fetchMemberDocuments from './fetchMemberDocuments';
+import { getMemberDocuments } from '../../../../lib/parlimentApi';
 
 const useStyles = makeStyles((theme: Theme) => ({
   buttonContainer: {
@@ -38,14 +37,18 @@ const Documents: React.FC<Props> = ({ id, setDocumentCount }) => {
   const [page, setPage] = useState(1);
   const [lastPage, setLastPage] = useState(true);
 
-  const url = `${apiLinks.riksdagenApi}/dokumentlista/?avd=dokument&sort=datum&sortorder=datum&utformat=json&iid=${id}&p=${page}`;
-
   useEffect(() => {
     setLoading(true);
-    fetchMemberDocuments({ url, page }).then((res) => {
-      setDocumentCount(res.count);
-      if (res.count !== '0') setDocuments([...documents, ...res.documents]);
-      setLastPage(res.lastPage);
+    getMemberDocuments(id, page).then((data: any) => {
+      const { dokumentlista } = data;
+      const pages = parseInt(dokumentlista['@sidor'], 10);
+
+      const count = dokumentlista['@traffar'];
+      setDocumentCount(count);
+      if (count !== '0') {
+        setDocuments([...documents, ...dokumentlista.dokument]);
+      }
+      setLastPage(page === pages || pages === 0);
       setLoading(false);
     });
   }, [page]);

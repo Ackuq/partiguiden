@@ -1,15 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import Router from 'next/router';
-import fetch from 'isomorphic-unfetch';
 
 import Grid from '@material-ui/core/Grid';
 
-import { apiLinks } from '../../../../utils';
 import Member from '../Member';
 import LoadCircle from '../../../../components/LoadCircle';
 import { useFilter } from '../../../../components/Filter';
 import useStyles from './useStyles';
 import { MemberType } from '../../../../types/member.d';
+import { getMembers } from '../../../../lib/api';
 
 const MemberList: React.FC = () => {
   const classes = useStyles();
@@ -20,13 +19,10 @@ const MemberList: React.FC = () => {
   } = useFilter();
 
   const updateMembers = () => {
-    const url = `${apiLinks.partiguidenApi}/members`;
-    fetch(url)
-      .then((res) => res.json())
-      .then((data) => {
-        setMembers(data);
-        setLoading(false);
-      });
+    getMembers().then((data) => {
+      setMembers(data);
+      setLoading(false);
+    });
   };
 
   const updateRoute = () => {

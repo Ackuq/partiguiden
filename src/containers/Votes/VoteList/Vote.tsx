@@ -7,11 +7,13 @@ import CardHeader from '@material-ui/core/CardHeader';
 import Typography from '@material-ui/core/Typography';
 import ButtonBase from '@material-ui/core/ButtonBase';
 
+import stripJsonComments from 'strip-json-comments';
 import useStyles from './useStyles';
-import { apiLinks, getAuthorityInfo } from '../../../utils';
+import { getAuthorityInfo } from '../../../utils';
 import VoteResult from './VoteResult';
-import fetchVote from './fetchVote';
 import { votingResult, VoteListEntry } from '../../../types/voting.d';
+import { getVote } from '../../../lib/parlimentApi';
+import { getMaxVotes, getVotes } from '../../../utils/votingHelpers';
 
 interface Props {
   votering: VoteListEntry;
@@ -31,13 +33,22 @@ const Vote: React.FC<Props> = ({
 
   let mounted = true;
 
-  const url = `${apiLinks.riksdagenApi}/dokumentstatus/${docId}.json`;
-
   useEffect(() => {
-    fetchVote({ url, tempbeteckning }).then((result) => {
-      if (mounted && result) {
-        setVotes(result.maxVotes);
-        setTitle(result.rubrik);
+    getVote(docId).then((res) => {
+      const data = JSON.parse(stripJsonComments(res));
+
+      const { dokumentstatus } = data;
+      const { utskottsforslag } = dokumentstatus.dokutskottsforslag;
+      const voteObject = Array.isArray(utskottsforslag)
+        ? utskottsforslag[tempbeteckning - 1]
+        : utskottsforslag;
+
+      const { table } = voteObject.votering_sammanfattning_html;
+      const tableRow = Array.isArray(table) ? table[table.length - 1].tr : table.tr;
+
+      if (mounted && data) {
+        setVotes(getMaxVotes(getVotes(tableRow)));
+        setTitle(voteObject.rubrik);
         setLoading(false);
       }
     });

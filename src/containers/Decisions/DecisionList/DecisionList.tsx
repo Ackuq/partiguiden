@@ -1,23 +1,11 @@
 import React from 'react';
 
 import ParlimentList from '../../../components/ParlimentList';
-import { apiLinks } from '../../../utils';
 import Ad from '../../../components/Ad';
 import Decision from './Decision';
-import fetchDecisionList from './fetchDecisionList';
 import useStyles from './useStyles';
 import { Decision as DecisionType } from '../../../types/decision.d';
-
-interface UrlProps {
-  search: string;
-  org: Array<string>;
-  page: number;
-}
-
-const url = ({ search, org, page }: UrlProps) =>
-  `${apiLinks.riksdagenApi}/dokumentlista/?sok=${search}&doktyp=bet&org=${org.join(
-    '&org='
-  )}&dokstat=beslutade&sort=${search ? 'rel' : 'datum'}&sortorder=desc&utformat=json&p=${page}`;
+import { getDecisionList } from '../../../lib/parlimentApi';
 
 const extractData = (res: any) => res.beslut;
 
@@ -43,9 +31,8 @@ const DecisionList: React.FC = () => {
   return (
     <ParlimentList
       extractData={extractData}
-      url={url}
       Item={Item}
-      fetchList={fetchDecisionList}
+      fetchList={getDecisionList}
       baseUrl="/riksdagsbeslut"
     />
   );

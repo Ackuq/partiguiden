@@ -4,12 +4,10 @@ import Head from 'next/head';
 
 import Container from '@material-ui/core/Container';
 
-import fetch from 'isomorphic-unfetch';
-
-import { apiLinks } from '../../src/utils';
 import PageTitle from '../../src/components/PageTitle';
 import SocialMediaShare from '../../src/components/SocialMediaShare';
 import Document from '../../src/containers/Document';
+import { getDocument } from '../../src/lib/parlimentApi';
 
 interface Props {
   body: string;
@@ -30,11 +28,9 @@ const DocumentContainer: NextPage<Props> = ({ body, id }) => (
 );
 
 DocumentContainer.getInitialProps = async ({ query }) => {
-  const id = query.id || '';
-  const url = `${apiLinks.riksdagenApi}/dokument/${id}`;
+  const id = Array.isArray(query.id) ? query.id[0] : query.id || '';
 
-  const res = await fetch(url);
-  const body = await res.text();
+  const body = await getDocument(id);
 
   return { body, id };
 };

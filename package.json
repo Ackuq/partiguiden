@@ -5,9 +5,9 @@
   "typings": "src/types/index.d.ts",
   "main": "next.config.js",
   "scripts": {
-    "start": "now dev",
+    "start": "vercel dev",
     "build": "next build",
-    "now-build": "next build",
+    "vercel-build": "next build",
     "lint": "tsc --noemit && eslint src/ --ext .js,.jsx,.ts,.tsx"
   },
   "repository": {

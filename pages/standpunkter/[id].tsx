@@ -2,13 +2,12 @@ import React from 'react';
 import { NextPage } from 'next';
 import Head from 'next/head';
 import { Container } from '@material-ui/core';
-import fetch from 'isomorphic-unfetch';
 
 import Breadcrumbs from '../../src/components/Breadcrumbs';
-import { apiLinks } from '../../src/utils';
 import SocialMediaShare from '../../src/components/SocialMediaShare';
 import PageTitle from '../../src/components/PageTitle';
-import { Standpoints, fetchStandpointData } from '../../src/containers/Standpoints';
+import Standpoints from '../../src/containers/Standpoints';
+import { getStandpointData, getSubject } from '../../src/lib/api';
 
 interface Props {
   name: string;
@@ -41,10 +40,10 @@ const StandPointContainer: NextPage<Props> = ({ name, partyData }) => (
 );
 
 StandPointContainer.getInitialProps = async ({ query }) => {
-  const url = `${apiLinks.partiguidenApi}/subject/${query.id}`;
-  const res = await fetch(url);
-  const data = await res.json();
-  const partyData = await fetchStandpointData(data.opinions);
+  const id = Array.isArray(query.id) ? query.id[0] : query.id || '';
+  const data = await getSubject(id);
+  const partyData = await getStandpointData(data.opinions);
+
   return { name: data.name, partyData: partyData.filter((party) => party !== null) };
 };
 

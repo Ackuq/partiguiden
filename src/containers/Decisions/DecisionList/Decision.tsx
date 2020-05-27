@@ -9,10 +9,10 @@ import Button from '@material-ui/core/Button';
 
 import ArrowDownRounded from '@material-ui/icons/KeyboardArrowDownRounded';
 
-import checkIfVotesExist from './checkIfVotesExist';
 import getOrganInfo from '../../../utils/authorityTable';
 import { Decision as DecisionType } from '../../../types/decision.d';
 import useStyles from './useStyles';
+import { checkIfVotesExist } from '../../../lib/parlimentApi';
 
 interface Props {
   decision: DecisionType;
@@ -30,7 +30,7 @@ const Decision: React.FC<Props> = ({ decision, classes }) => {
     let url = decision.dokumentstatus_url_xml;
     url = url.replace('.xml', '.json');
 
-    checkIfVotesExist({ url }).then((result) => {
+    checkIfVotesExist(url).then((result: any) => {
       if (mount) setVotesExist(result.votesExist);
     });
     return () => {

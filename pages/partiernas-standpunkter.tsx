@@ -4,12 +4,10 @@ import Head from 'next/head';
 
 import NoteIcon from '@material-ui/icons/Note';
 
-import fetch from 'isomorphic-unfetch';
-
 import PageTitle from '../src/components/PageTitle';
 
-import { apiLinks } from '../src/utils';
 import StandpointsList from '../src/containers/StandpointsList';
+import { getSubjects } from '../src/lib/api';
 
 const StandpointsListContainer: NextPage<{ subjects: any }> = ({ subjects }) => (
   <>
@@ -24,12 +22,8 @@ const StandpointsListContainer: NextPage<{ subjects: any }> = ({ subjects }) => 
     <StandpointsList subjects={subjects} />
   </>
 );
-
-const url = `${apiLinks.partiguidenApi}/subject`;
-
 StandpointsListContainer.getInitialProps = async () => {
-  const res = await fetch(url);
-  const subjects = await res.json();
+  const subjects = await getSubjects();
 
   return { subjects };
 };

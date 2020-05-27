@@ -48,8 +48,10 @@ const getBet = (bet: string | Array<string>) => {
 };
 
 VoteContainer.getInitialProps = async ({ query }) => {
+  const id = Array.isArray(query.id) ? query.id[0] : query.id || '';
   const bet = query.bet ? getBet(query.bet) : 0;
-  const res = await getVote(bet);
+
+  const res = await getVote(id);
 
   return { vote: parseVote(res, bet), bet };
 };

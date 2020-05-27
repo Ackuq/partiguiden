@@ -1,6 +1,6 @@
 import fetch from 'isomorphic-unfetch';
 import stripJsonComments from 'strip-json-comments';
-import { checkVote } from '../utils/votingHelpers';
+import { checkVote } from '../utils/votes/parseVoteInfo';
 
 export const baseUrl = 'https://data.riksdagen.se';
 

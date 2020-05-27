@@ -7,7 +7,7 @@ import Breadcrumbs from '../../../src/components/Breadcrumbs';
 import SocialMediaShare from '../../../src/components/SocialMediaShare';
 import PageTitle from '../../../src/components/PageTitle';
 import Vote from '../../../src/containers/Vote';
-import parseVote from '../../../src/containers/Vote/parseVote';
+import parseVote from '../../../src/utils/votes/parseVote';
 import { getVote } from '../../../src/lib/parlimentApi';
 
 interface Props {

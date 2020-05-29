@@ -1,7 +1,11 @@
 import dynamic from 'next/dynamic';
 
-const NoSSRAd = dynamic<{}>(() => import('./Ad').then((ad) => ad.default), {
+const FlowAd = dynamic<{}>(() => import('./FlowAd'), {
   ssr: false,
 });
 
-export default NoSSRAd;
+const ResponsiveAd = dynamic<{}>(() => import('./ResponsiveAd'), {
+  ssr: false,
+});
+
+export { FlowAd, ResponsiveAd };

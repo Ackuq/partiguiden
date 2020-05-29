@@ -1,7 +1,7 @@
 import React from 'react';
 
 import ParlimentList from '../ParlimentList';
-import Ad from '../Ad';
+import { FlowAd } from '../Ad';
 import Vote from './Vote';
 import useStyles from './useStyles';
 import { VoteListEntry } from '../../types/voting.d';
@@ -17,7 +17,7 @@ const Item = ({ item, index }: ItemProps) => {
 
   return (
     <React.Fragment key={item.id + item.beteckning}>
-      {!(index % 15) && <Ad />}
+      {!(index % 15) && <FlowAd />}
       <div>
         <Vote votering={item} classes={classes} />
       </div>

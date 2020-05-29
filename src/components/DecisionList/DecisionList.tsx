@@ -1,7 +1,7 @@
 import React from 'react';
 
 import ParlimentList from '../ParlimentList';
-import Ad from '../Ad';
+import { FlowAd } from '../Ad';
 import Decision from './Decision';
 import useStyles from './useStyles';
 import { Decision as DecisionType } from '../../types/decision.d';
@@ -19,7 +19,7 @@ const Item: React.FC<ItemProps> = ({ item, index }) => {
 
   return (
     <React.Fragment key={item.id + item.beteckning}>
-      {!(index % 15) && <Ad />}
+      {!(index % 15) && <FlowAd />}
       <div>
         <Decision decision={item} classes={classes} />
       </div>

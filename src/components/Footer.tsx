@@ -6,7 +6,7 @@ import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Link';
 
 import { Theme } from '@material-ui/core';
-import Ad from './Ad';
+import { ResponsiveAd } from './Ad';
 
 const FooterContent = styled('footer')(({ theme }: { theme: Theme }) => ({
   padding: '1.5rem 0',
@@ -18,7 +18,7 @@ const FooterContent = styled('footer')(({ theme }: { theme: Theme }) => ({
 
 const Footer = () => (
   <>
-    <Ad />
+    <ResponsiveAd />
     <FooterContent>
       <Grid direction="column" justify="center" container>
         <Grid item>

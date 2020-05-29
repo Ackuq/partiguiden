@@ -40,20 +40,7 @@ class MyDocument extends Document {
           `}
           </style>
           {process.env.NODE_ENV === 'production' && (
-            <>
-              <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" />
-              <script
-                // eslint-disable-next-line react/no-danger
-                dangerouslySetInnerHTML={{
-                  __html: `
-                  (adsbygoogle = window.adsbygoogle || []).push({
-                    google_ad_client: "ca-pub-3248338512924345",
-                    enable_page_level_ads: true
-              });       
-              `,
-                }}
-              />
-            </>
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" />
           )}
         </Head>
         <body style={{ height: '100%' }}>
@@ -65,7 +52,7 @@ class MyDocument extends Document {
   }
 }
 
-MyDocument.getInitialProps = async ctx => {
+MyDocument.getInitialProps = async (ctx) => {
   // Resolution order
   //
   // On the server:
@@ -94,7 +81,7 @@ MyDocument.getInitialProps = async ctx => {
 
   ctx.renderPage = () =>
     originalRenderPage({
-      enhanceApp: App => props => sheets.collect(<App {...props} />),
+      enhanceApp: (App) => (props) => sheets.collect(<App {...props} />),
     });
 
   const initialProps = await Document.getInitialProps(ctx);

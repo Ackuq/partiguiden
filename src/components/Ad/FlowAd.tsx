@@ -16,15 +16,13 @@ const Ad: React.FC = () => {
   }, []);
 
   return enableAd ? (
-    <div className="ad" style={{ textAlign: 'center' }}>
-      <ins
-        style={{ display: 'block' }}
-        data-ad-format="fluid"
-        data-ad-layout-key="-fb+5w+4e-db+86"
-        data-ad-client="ca-pub-3248338512924345"
-        data-ad-slot="7770046442"
-      />
-    </div>
+    <ins
+      style={{ display: 'block' }}
+      data-ad-format="fluid"
+      data-ad-layout-key="-fb+5w+4e-db+86"
+      data-ad-client="ca-pub-3248338512924345"
+      data-ad-slot="7770046442"
+    />
   ) : (
     <></>
   );

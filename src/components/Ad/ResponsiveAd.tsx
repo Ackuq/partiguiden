@@ -22,7 +22,7 @@ const Ad: React.FC = () => {
         style={{ display: 'block' }}
         data-ad-client="ca-pub-3248338512924345"
         data-ad-slot="6515707043"
-        data-ad-format="auto"
+        data-ad-format="horizontal"
         data-full-width-responsive="true"
       />
     </div>

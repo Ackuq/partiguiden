@@ -1,5 +1,5 @@
 import React from 'react';
-import { NextPage } from 'next';
+import { NextPage, GetServerSideProps } from 'next';
 import Head from 'next/head';
 import PeopleIcon from '@material-ui/icons/People';
 
@@ -17,6 +17,6 @@ const LedamoterContainer: NextPage<{ query: any }> = ({ query }) => (
   </>
 );
 
-LedamoterContainer.getInitialProps = async ({ query }) => ({ query });
+export const getServerSideProps: GetServerSideProps = async ({ query }) => ({ props: { query } });
 
 export default LedamoterContainer;

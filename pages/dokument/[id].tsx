@@ -1,5 +1,5 @@
 import React from 'react';
-import { NextPage } from 'next';
+import { NextPage, GetServerSideProps } from 'next';
 import Head from 'next/head';
 
 import Container from '@material-ui/core/Container';
@@ -27,12 +27,12 @@ const DocumentContainer: NextPage<Props> = ({ body, id }) => (
   </>
 );
 
-DocumentContainer.getInitialProps = async ({ query }) => {
+export const getServerSideProps: GetServerSideProps = async ({ query }) => {
   const id = Array.isArray(query.id) ? query.id[0] : query.id || '';
 
   const body = await getDocument(id);
 
-  return { body, id };
+  return { props: { body, id } };
 };
 
 export default DocumentContainer;

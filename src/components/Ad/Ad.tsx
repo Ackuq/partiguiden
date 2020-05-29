@@ -16,7 +16,7 @@ const Ad: React.FC = () => {
   }, []);
 
   return enableAd ? (
-    <div className="ad">
+    <div className="ad" style={{ textAlign: 'center' }}>
       <ins
         className="adsbygoogle"
         style={{ display: 'block' }}

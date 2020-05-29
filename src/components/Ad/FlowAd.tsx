@@ -17,6 +17,7 @@ const Ad: React.FC = () => {
 
   return enableAd ? (
     <ins
+      className="adsbygoogle"
       style={{ display: 'block' }}
       data-ad-format="fluid"
       data-ad-layout-key="-fb+5w+4e-db+86"

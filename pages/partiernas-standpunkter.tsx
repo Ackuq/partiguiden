@@ -1,5 +1,5 @@
 import React from 'react';
-import { NextPage } from 'next';
+import { NextPage, GetStaticProps } from 'next';
 import Head from 'next/head';
 
 import NoteIcon from '@material-ui/icons/Note';
@@ -22,10 +22,11 @@ const StandpointsListContainer: NextPage<{ subjects: any }> = ({ subjects }) => 
     <StandpointsList subjects={subjects} />
   </>
 );
-StandpointsListContainer.getInitialProps = async () => {
+
+export const getStaticProps: GetStaticProps = async () => {
   const subjects = await getSubjects();
 
-  return { subjects };
+  return { props: { subjects } };
 };
 
 export default StandpointsListContainer;

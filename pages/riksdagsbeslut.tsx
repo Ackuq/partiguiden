@@ -1,5 +1,5 @@
 import React from 'react';
-import { NextPage } from 'next';
+import { NextPage, GetServerSideProps } from 'next';
 import Head from 'next/head';
 
 import GavelIcon from '@material-ui/icons/GavelRounded';
@@ -21,6 +21,6 @@ const RiksdagsbeslutContainer: NextPage<{ query: any }> = ({ query }) => (
   </>
 );
 
-RiksdagsbeslutContainer.getInitialProps = ({ query }) => ({ query });
+export const getServerSideProps: GetServerSideProps = async ({ query }) => ({ props: { query } });
 
 export default RiksdagsbeslutContainer;

@@ -1,5 +1,5 @@
 import React from 'react';
-import { NextPage } from 'next';
+import { NextPage, GetServerSideProps } from 'next';
 import Head from 'next/head';
 import Container from '@material-ui/core/Container';
 
@@ -47,13 +47,13 @@ const getBet = (bet: string | Array<string>) => {
   return parseInt(bet, 10);
 };
 
-VoteContainer.getInitialProps = async ({ query }) => {
+export const getServerSideProps: GetServerSideProps = async ({ query }) => {
   const id = Array.isArray(query.id) ? query.id[0] : query.id || '';
   const bet = query.bet ? getBet(query.bet) : 0;
 
   const res = await getVote(id);
 
-  return { vote: parseVote(res, bet), bet };
+  return { props: { vote: parseVote(res, bet), bet } };
 };
 
 export default VoteContainer;

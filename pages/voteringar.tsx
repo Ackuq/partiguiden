@@ -1,5 +1,5 @@
 import React from 'react';
-import { NextPage } from 'next';
+import { NextPage, GetServerSideProps } from 'next';
 import Head from 'next/head';
 
 import VoteIcon from '@material-ui/icons/HowToVoteRounded';
@@ -21,6 +21,6 @@ const VotesContainer: NextPage<{ query: any }> = ({ query }) => (
   </>
 );
 
-VotesContainer.getInitialProps = async ({ query }) => ({ query });
+export const getServerSideProps: GetServerSideProps = async ({ query }) => ({ props: { query } });
 
 export default VotesContainer;

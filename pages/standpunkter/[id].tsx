@@ -1,5 +1,5 @@
 import React from 'react';
-import { NextPage } from 'next';
+import { NextPage, GetStaticPaths, GetStaticProps } from 'next';
 import Head from 'next/head';
 import { Container } from '@material-ui/core';
 
@@ -7,7 +7,7 @@ import Breadcrumbs from '../../src/components/Breadcrumbs';
 import SocialMediaShare from '../../src/components/SocialMediaShare';
 import PageTitle from '../../src/components/PageTitle';
 import Standpoints from '../../src/containers/Standpoints';
-import { getStandpointData, getSubject } from '../../src/lib/api';
+import { getStandpointData, getSubject, getSubjects } from '../../src/lib/api';
 
 interface Props {
   name: string;
@@ -39,12 +39,20 @@ const StandPointContainer: NextPage<Props> = ({ name, partyData }) => (
   </>
 );
 
-StandPointContainer.getInitialProps = async ({ query }) => {
-  const id = Array.isArray(query.id) ? query.id[0] : query.id || '';
+export const getStaticPaths: GetStaticPaths = async () => {
+  const subjects = await getSubjects();
+
+  const paths = subjects.map((subject: { id: string }) => ({ params: { id: subject.id } }));
+
+  return { paths, fallback: false };
+};
+
+export const getStaticProps: GetStaticProps = async ({ params }) => {
+  const id = (Array.isArray(params?.id) ? params?.id[0] : params?.id) || '';
   const data = await getSubject(id);
   const partyData = await getStandpointData(data.opinions);
 
-  return { name: data.name, partyData: partyData.filter((party) => party !== null) };
+  return { props: { name: data.name, partyData: partyData.filter((party) => party !== null) } };
 };
 
 export default StandPointContainer;

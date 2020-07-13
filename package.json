@@ -28,7 +28,7 @@
     "react-share": "^4.2.0",
     "react-typed": "^1.2.0",
     "recharts": "^2.0.0-beta.6",
-    "strip-json-comments": "^3.1.0",
+    "strip-json-comments": "^3.1.1",
     "universal-cookie": "^4.0.3"
   },
   "devDependencies": {

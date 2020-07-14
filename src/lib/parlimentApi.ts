@@ -2,10 +2,12 @@ import fetch from 'isomorphic-unfetch';
 import stripJsonComments from 'strip-json-comments';
 import { checkVote } from '../utils/votes/parseVoteInfo';
 
-export const baseUrl = 'https://data.riksdagen.se';
+const corsAnywhereUrl = 'https://cors-anywhere.herokuapp.com/';
+
+export const baseUrl = `${corsAnywhereUrl}https://data.riksdagen.se`;
 
 export const checkIfVotesExist = (url: string) =>
-  fetch(url)
+  fetch(corsAnywhereUrl + url)
     .then((res) => res.text())
     .then((json) => {
       const result = JSON.parse(stripJsonComments(json));

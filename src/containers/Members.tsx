@@ -1,37 +1,26 @@
 import React from 'react';
+import { useRouter } from 'next/router';
 
 import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
 
-import { FilterProvider } from '../components/Filter';
-import { MembersFilter, MemberList, reducer } from '../components/MemberList';
+import { MembersFilter, MemberList } from '../components/MemberList';
+import { queryAttrToString, queryAttrToArray } from '../utils';
 
-interface Props {
-  query: {
-    party: Array<string> | string;
-    sok: string;
-  };
-}
-
-const Members: React.FC<Props> = ({ query }) => {
-  const getPartyQuery = () => (Array.isArray(query.party) ? query.party : [query.party]);
-
-  const initialParties = query.party ? getPartyQuery() : [];
+const Members: React.FC = () => {
+  const router = useRouter();
+  const search = queryAttrToString(router.query.sok);
+  const parties = queryAttrToArray(router.query.party);
 
   return (
-    <FilterProvider
-      initialState={{ parties: initialParties, search: query.sok || '' }}
-      reducer={reducer}
-    >
-      <div style={{ display: 'flex' }}>
-        <Container>
-          <Grid container spacing={3} justify="center">
-            <MemberList />
-          </Grid>
-        </Container>
-        <MembersFilter />
-      </div>
-    </FilterProvider>
+    <div style={{ display: 'flex' }}>
+      <Container>
+        <Grid container spacing={3} justify="center">
+          <MemberList parties={parties} search={search} />
+        </Grid>
+      </Container>
+      <MembersFilter router={router} parties={parties} search={search} />
+    </div>
   );
 };
 

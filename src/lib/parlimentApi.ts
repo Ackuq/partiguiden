@@ -28,13 +28,11 @@ export const getDecisionList = (search: string, org: string[], page: number) =>
     .then((res) => res.json())
     .then((data) => {
       const { dokumentlista } = data;
-
       const pages = parseInt(dokumentlista['@sidor'], 10);
-      const lastPage = page === pages || pages === 0;
 
       return {
-        beslut: dokumentlista.dokument,
-        lastPage,
+        pages,
+        decisions: dokumentlista.dokument,
       };
     });
 
@@ -50,8 +48,8 @@ export const getVoteList = (search: string, org: string[], page: number) =>
       const pages = parseInt(dokumentlista['@sidor'], 10);
 
       return {
-        lastPage: page === pages || pages === 0,
-        voteringar: dokumentlista.dokument,
+        pages,
+        votes: dokumentlista.dokument,
       };
     });
 

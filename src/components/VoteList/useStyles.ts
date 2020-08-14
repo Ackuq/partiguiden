@@ -47,6 +47,12 @@ const styles = (theme: Theme) =>
       textAlign: 'left',
       padding: '0.25rem 1rem',
     },
+    listContainer: {
+      marginBottom: '0.5rem',
+      '& > div': {
+        padding: '8px',
+      },
+    },
   });
 
 export default makeStyles(styles);

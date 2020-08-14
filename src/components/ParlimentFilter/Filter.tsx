@@ -1,24 +1,47 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import { Divider } from '@material-ui/core';
+import { NextRouter } from 'next/router';
 
 import { authorityTable } from '../../utils';
-import FilterContainer, { useFilter, FilterSearch, FilterList } from '../Filter';
+import FilterContainer, { FilterSearch, FilterList } from '../Filter';
 
-const FilterScreen = () => {
-  const {
-    state: { search, org },
-    dispatch,
-  } = useFilter();
+interface Props {
+  router: NextRouter;
+  search: string;
+  org: Array<string>;
+}
 
-  // Search functions
+const Filter: React.FC<Props> = ({ router, search, org }) => {
+  const updateRoute = useCallback(
+    (newSearch: typeof search, newOrg: typeof org) => {
+      const query = [];
+      if (newSearch) {
+        query.push(`sok=${newSearch}`);
+      }
+      if (newOrg.length) {
+        query.push(`org=${newOrg.join('&org=')}`);
+      }
+      const queryString = query.length ? `?${query.join('&')}` : '';
+
+      router.push(`${router.route}${queryString}`);
+    },
+    [router]
+  );
+
   const updateSearch = (value: string) => {
-    dispatch({ type: 'SET_SEARCH', searchInput: value });
+    updateRoute(value, org);
   };
-  // List functions
+
   const isChecked = (el: string) => org.includes(el);
   const updateList = (el: string) => {
-    if (isChecked(el)) dispatch({ type: 'REMOVE_ORG_FROM_FILTER', org: el });
-    else dispatch({ type: 'ADD_ORG_TO_FILTER', org: el });
+    if (isChecked(el)) {
+      updateRoute(
+        search,
+        org.filter((item) => item !== el)
+      );
+    } else {
+      updateRoute(search, [...org, el]);
+    }
   };
   const getText = (el: string) => authorityTable[el].desc;
   const getKey = (el: string) => el;
@@ -38,4 +61,4 @@ const FilterScreen = () => {
   );
 };
 
-export default FilterScreen;
+export default Filter;

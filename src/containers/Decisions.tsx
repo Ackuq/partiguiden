@@ -3,7 +3,7 @@ import { Container } from '@material-ui/core';
 import { useRouter } from 'next/router';
 
 import Filter from '../components/ParlimentFilter';
-import RiksdagsbeslutList from '../components/DecisionList';
+import DecisionList from '../components/DecisionList';
 
 import { queryAttrToArray, queryAttrToString, queryAttrToNumber } from '../utils';
 
@@ -16,7 +16,7 @@ const Decisions: React.FC = () => {
   return (
     <div style={{ display: 'flex' }}>
       <Container maxWidth="md">
-        <RiksdagsbeslutList search={search} page={page} org={org} />
+        <DecisionList router={router} search={search} page={page} org={org} />
       </Container>
       <Filter router={router} search={search} org={org} />
     </div>

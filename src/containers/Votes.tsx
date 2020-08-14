@@ -15,7 +15,7 @@ const Votes: React.FC = () => {
   return (
     <div style={{ display: 'flex' }}>
       <Container maxWidth="md">
-        <VoteList search={search} page={page} org={org} />
+        <VoteList router={router} search={search} page={page} org={org} />
       </Container>
       <Filter router={router} search={search} org={org} />
     </div>

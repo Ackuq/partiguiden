@@ -14,20 +14,16 @@ interface Props {
 const Filter: React.FC<Props> = ({ router, search, org }) => {
   const updateRoute = useCallback(
     (newSearch: typeof search, newOrg: typeof org) => {
-      const searchString = newSearch && `sok=${newSearch}`;
-      const orgString = newOrg.length > 0 && `org=${newOrg.join('&org=')}`;
-      let href = '';
-
-      if (searchString || orgString) {
-        href += '?';
-        if (searchString) {
-          href += searchString;
-          if (orgString) href += '&';
-        }
-        if (orgString) href += orgString;
+      const query = [];
+      if (newSearch) {
+        query.push(`sok=${newSearch}`);
       }
+      if (newOrg.length) {
+        query.push(`org=${newOrg.join('&org=')}`);
+      }
+      const queryString = query.length ? `?${query.join('&')}` : '';
 
-      router.push(`${router.route}${href}`);
+      router.push(`${router.route}${queryString}`);
     },
     [router]
   );

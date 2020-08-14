@@ -16,23 +16,17 @@ interface Props {
 const FilterMembers: React.FC<Props> = ({ router, search, parties }) => {
   const updateRoute = useCallback(
     (newSearch: typeof search, newParties: typeof parties) => {
-      const searchString = newSearch && `sok=${newSearch}`;
-      const partiesString = newParties.length > 0 && `party=${newParties.join('&party=')}`;
-      let href = '';
-      if (searchString || partiesString) {
-        href += '?';
-        if (searchString) {
-          href += searchString;
-          if (partiesString) {
-            href += '&';
-          }
-        }
-        if (partiesString) {
-          href += partiesString;
-        }
+      const query = [];
+      if (newSearch) {
+        query.push(`sok=${newSearch}`);
+      }
+      if (newParties.length) {
+        query.push(`party=${newParties.join('&party=')}`);
       }
 
-      router.push(`${router.route}${href}`);
+      const queryString = query.length ? `?${query.join('&')}` : '';
+
+      router.push(`${router.route}${queryString}`);
     },
     [router]
   );

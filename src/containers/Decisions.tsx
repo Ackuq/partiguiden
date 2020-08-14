@@ -1,30 +1,25 @@
 import React from 'react';
 import { Container } from '@material-ui/core';
+import { useRouter } from 'next/router';
 
-import Filter, { reducer } from '../components/ParlimentFilter';
-import { FilterProvider } from '../components/Filter';
+import Filter from '../components/ParlimentFilter';
 import RiksdagsbeslutList from '../components/DecisionList';
 
-const Decisions: React.FC<{ query: any }> = ({ query }) => {
-  let initialOrg = [];
-  if (query.org) {
-    initialOrg = Array.isArray(query.org) ? query.org : [query.org];
-  }
+import { queryAttrToArray, queryAttrToString, queryAttrToNumber } from '../utils';
+
+const Decisions: React.FC = () => {
+  const router = useRouter();
+  const search = queryAttrToString(router.query.sok);
+  const page = queryAttrToNumber(router.query.page, 1);
+  const org = queryAttrToArray(router.query.org);
+
   return (
-    <FilterProvider
-      initialState={{
-        org: initialOrg,
-        search: query.sok || '',
-      }}
-      reducer={reducer}
-    >
-      <div style={{ display: 'flex' }}>
-        <Container maxWidth="md">
-          <RiksdagsbeslutList />
-        </Container>
-        <Filter />
-      </div>
-    </FilterProvider>
+    <div style={{ display: 'flex' }}>
+      <Container maxWidth="md">
+        <RiksdagsbeslutList search={search} page={page} org={org} />
+      </Container>
+      <Filter router={router} search={search} org={org} />
+    </div>
   );
 };
 

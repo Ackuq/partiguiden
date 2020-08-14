@@ -1,13 +1,14 @@
 import React from 'react';
 import { NextPage, GetServerSideProps } from 'next';
 import Head from 'next/head';
+import { ParsedUrlQuery } from 'querystring';
 
 import VoteIcon from '@material-ui/icons/HowToVoteRounded';
 
 import PageTitle from '../src/components/PageTitle';
 import Votes from '../src/containers/Votes';
 
-const VotesContainer: NextPage<{ query: any }> = ({ query }) => (
+const VotesContainer: NextPage = () => (
   <>
     <Head>
       <title>Voteringar | Partiguiden</title>
@@ -17,10 +18,8 @@ const VotesContainer: NextPage<{ query: any }> = ({ query }) => (
       />
     </Head>
     <PageTitle title="Voteringar" Icon={VoteIcon} />
-    <Votes query={query} />
+    <Votes />
   </>
 );
-
-export const getServerSideProps: GetServerSideProps = async ({ query }) => ({ props: { query } });
 
 export default VotesContainer;

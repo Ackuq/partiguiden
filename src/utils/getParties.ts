@@ -11,7 +11,8 @@ const parties = [
   { name: 'Miljöpartiet', letter: 'MP', color: '#26a65b' },
 ];
 
-const getPartyColor = (partyName: party) => parties.find((p) => p.name === partyName)?.color;
+const getPartyColor = (partyName: party): string =>
+  parties.find((p) => p.name === partyName)?.color || '';
 
 export default parties;
 

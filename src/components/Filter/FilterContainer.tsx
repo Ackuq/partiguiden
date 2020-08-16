@@ -13,7 +13,7 @@ import FilterContainerDesktop from './FilterContainerDesktop';
 const Filter: React.FC<{ children: React.ReactChild | React.ReactChild[] }> = ({ children }) => {
   const [mobileOpen, setMobileOpen] = useState(false);
 
-  const toggleFilterScreen = () => setMobileOpen(prevState => !prevState);
+  const toggleFilterScreen = () => setMobileOpen((prevState) => !prevState);
 
   return (
     <>

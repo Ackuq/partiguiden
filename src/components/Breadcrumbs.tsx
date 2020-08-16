@@ -15,7 +15,7 @@ const CustomBreadcrumbs: React.FC<Props> = ({ links }) => (
     <Link href="/">
       <Chip component="a" href="/" label="Hem" avatar={<HomeIcon />} />
     </Link>
-    {links.map(link => (
+    {links.map((link) => (
       <Link href={link.href} key={link.label}>
         <Chip component="a" href={link.href} label={link.label} />
       </Link>

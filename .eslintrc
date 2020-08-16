@@ -3,19 +3,21 @@
   "parserOptions": {
     "project": "./tsconfig.json"
   },
-  "extends": ["airbnb-typescript", "prettier", "prettier/react", "prettier/@typescript-eslint"],
-  "plugins": ["prettier", "@typescript-eslint"],
+  "settings": {
+    "react": {
+      "version": "detect" // Tells eslint-plugin-react to automatically detect the version of React to use
+    }
+  },
+  "extends": [
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier/@typescript-eslint",
+    "plugin:prettier/recommended"
+  ],
   "rules": {
-    "react/jsx-filename-extension": [
-      1,
-      {
-        "extensions": [".js", ".jsx", ".ts", ".tsx"]
-      }
-    ],
     "react/prop-types": 0,
-    "react/forbid-prop-types": 0,
-    "no-underscore-dangle": 0,
-    "react/jsx-props-no-spreading": 0
+    "@typescript-eslint/explicit-function-return-type": 0,
+    "@typescript-eslint/no-explicit-any": 0
   },
   "globals": {
     "window": true,

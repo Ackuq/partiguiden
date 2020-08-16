@@ -9,7 +9,7 @@ const Appendix: React.FC<{ appendix: Array<any> }> = ({ appendix }) => (
       Bilaga
     </Typography>
     <div style={{ display: 'flex', flexDirection: 'column' }}>
-      {appendix.map(curr => (
+      {appendix.map((curr) => (
         <Link
           href={curr.fil_url}
           key={curr.fil_url}

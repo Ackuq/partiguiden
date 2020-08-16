@@ -10,18 +10,15 @@ import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 import Documents from './Documents';
+import { Information as InformationType } from '../../types/member';
 
 interface Props {
-  id: number;
-  records: Array<{
-    uppgift: Array<string>;
-    typ: string;
-    kod: string;
-  }>;
+  id: string;
+  informationRecords: Array<InformationType>;
   absence: number;
 }
 
-const Information: React.FC<Props> = ({ id, records, absence }) => {
+const Information: React.FC<Props> = ({ id, informationRecords, absence }) => {
   const [documentCount, setDocumentCount] = useState('0');
 
   return (
@@ -46,7 +43,7 @@ const Information: React.FC<Props> = ({ id, records, absence }) => {
           </Typography>
         </Paper>
       </Grid>
-      {records.length > 0 && (
+      {informationRecords.length > 0 && (
         <Grid item xs={12}>
           <Paper style={{ padding: '1rem', borderBottomLeftRadius: 0, borderBottomRightRadius: 0 }}>
             <Typography variant="h4" color="primary">
@@ -54,20 +51,20 @@ const Information: React.FC<Props> = ({ id, records, absence }) => {
             </Typography>
           </Paper>
 
-          {records.map((record, index) => (
+          {informationRecords.map((record, index) => (
             // eslint-disable-next-line react/no-array-index-key
             <ExpansionPanel key={index}>
-              <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />} aria-controls={record.kod}>
-                <Typography>{record.kod}</Typography>
+              <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />} aria-controls={record.code}>
+                <Typography>{record.code}</Typography>
               </ExpansionPanelSummary>
-              {record.uppgift.map((uppgift) => (
-                <ExpansionPanelDetails key={uppgift}>
-                  {record.typ === 'eadress' ? (
-                    <a href={uppgift} target="_blank" rel="noopener noreferrer">
-                      {uppgift}
+              {record.content.map((information) => (
+                <ExpansionPanelDetails key={information}>
+                  {record.type === 'eadress' ? (
+                    <a href={information} target="_blank" rel="noopener noreferrer">
+                      {information}
                     </a>
                   ) : (
-                    uppgift
+                    information
                   )}
                 </ExpansionPanelDetails>
               ))}

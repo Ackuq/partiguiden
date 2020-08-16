@@ -9,7 +9,7 @@ import Document from './Document';
 import { useMemberDocuments } from '../../../hooks/parlimentHooks';
 
 interface Props {
-  id: number;
+  id: string;
   setDocumentCount: Function;
 }
 

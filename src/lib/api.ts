@@ -4,8 +4,6 @@ const baseUrl = process.env.API_URL || 'http://localhost:3001';
 
 export const getMembers = () => fetch(`${baseUrl}/members`).then((res) => res.json());
 
-export const getMember = (id: string) => fetch(`${baseUrl}/member/${id}`).then((res) => res.json());
-
 export const getSubjects = () => fetch(`${baseUrl}/subject`).then((res) => res.json());
 
 export const getSubject = (id: string) =>

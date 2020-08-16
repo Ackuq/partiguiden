@@ -1,12 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 
 import Grid from '@material-ui/core/Grid';
 
 import Member from './Member';
 import LoadCircle from '../LoadCircle';
 import useStyles from './useStyles';
-import { MemberType } from '../../types/member';
-import { getMembers } from '../../lib/api';
+import { useMembers } from '../../hooks/parlimentHooks';
 
 interface Props {
   parties: Array<string>;
@@ -15,23 +14,19 @@ interface Props {
 
 const MemberList: React.FC<Props> = ({ parties, search }) => {
   const classes = useStyles();
-  const [loading, setLoading] = useState(true);
-  const [members, setMembers] = useState<Array<MemberType>>([]);
 
-  useEffect(() => {
-    getMembers().then((data) => {
-      setMembers(data);
-      setLoading(false);
-    });
-  }, []);
+  const members = useMembers();
 
-  return loading ? (
+  return !members ? (
     <LoadCircle />
   ) : (
     <>
       {members.map((member) => {
         const inParty = parties.length ? parties.includes(member.party) : true;
-        const inSearch = member.name.toLowerCase().includes(search.toLowerCase());
+        const inSearch = `${member.firstName} ${member.lastName}`
+          .toLowerCase()
+          .includes(search.toLowerCase());
+
         return (
           <Grid
             item

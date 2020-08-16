@@ -1,7 +1,6 @@
 import React from 'react';
-import { NextPage, GetServerSideProps } from 'next';
+import { NextPage } from 'next';
 import Head from 'next/head';
-import { ParsedUrlQuery } from 'querystring';
 
 import VoteIcon from '@material-ui/icons/HowToVoteRounded';
 

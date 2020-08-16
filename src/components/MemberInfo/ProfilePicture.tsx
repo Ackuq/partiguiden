@@ -4,17 +4,13 @@ import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 
 import Breadcrumbs from '../Breadcrumbs';
+import { Member } from '../../types/member';
 
 interface Props {
-  src: string;
-  name: string;
-  status: string;
-  age: number;
-  party: string;
-  isLeader?: boolean;
+  member: Member;
 }
 
-const ProfilePicture: React.FC<Props> = ({ src, name, status, age, party, isLeader = false }) => (
+const ProfilePicture: React.FC<Props> = ({ member }) => (
   <>
     <Box
       position="relative"
@@ -36,18 +32,18 @@ const ProfilePicture: React.FC<Props> = ({ src, name, status, age, party, isLead
       </Box>
 
       <Box
-        style={{ background: `url(${src}) 50% 25% no-repeat` }}
+        style={{ background: `url(${member.pictureUrl}) 50% 25% no-repeat` }}
         width={192}
         height={192}
         borderRadius="50%"
         position="relative"
       >
-        {party !== '-' && (
+        {member.party !== '-' && (
           <Box position="absolute" top={0} right={0}>
             <img
               width={65}
               height={65}
-              src={`../../static/images/party-logos/${party.toUpperCase()}.svg`}
+              src={`../../static/images/party-logos/${member.party.toUpperCase()}.svg`}
               alt="Partisymbol"
             />
           </Box>
@@ -56,12 +52,14 @@ const ProfilePicture: React.FC<Props> = ({ src, name, status, age, party, isLead
     </Box>
     <Box textAlign="center" py={2}>
       <Typography variant="h6">
-        {status}
-        {isLeader && ' och partiledare'}
+        {member.status}
+        {member.isLeader && ' och partiledare'}
       </Typography>
-      <Typography variant="h4">{name}</Typography>
+      <Typography variant="h4">
+        {member.firstName} {member.lastName}
+      </Typography>
       <Typography variant="h6" color="textPrimary">
-        {age} år
+        {member.age} år
       </Typography>
     </Box>
   </>

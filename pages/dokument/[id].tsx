@@ -7,14 +7,13 @@ import Container from '@material-ui/core/Container';
 import PageTitle from '../../src/components/PageTitle';
 import SocialMediaShare from '../../src/components/SocialMediaShare';
 import Document from '../../src/containers/Document';
-import { getDocument } from '../../src/lib/parlimentApi';
 
 interface Props {
-  body: string;
+  document: { html: string };
   id: string | string[];
 }
 
-const DocumentContainer: NextPage<Props> = ({ body, id }) => (
+const DocumentContainer: NextPage<Props> = ({ document, id }) => (
   <>
     <Head>
       <title>{id} | Dokument | Partiguiden</title>
@@ -22,7 +21,7 @@ const DocumentContainer: NextPage<Props> = ({ body, id }) => (
     <PageTitle title={`Dokument ${id}`} />
     <Container>
       <SocialMediaShare title={`Dokument ${id}`} />
-      <Document body={body} />
+      <Document body={document.html} />
     </Container>
   </>
 );
@@ -30,9 +29,10 @@ const DocumentContainer: NextPage<Props> = ({ body, id }) => (
 export const getServerSideProps: GetServerSideProps = async ({ query }) => {
   const id = Array.isArray(query.id) ? query.id[0] : query.id || '';
 
-  const body = await getDocument(id);
+  const res = await fetch(`${process.env.PROXY_URL}/swe/document/${id}/json`);
+  const document = await res.json();
 
-  return { props: { body, id } };
+  return { props: { document, id } };
 };
 
 export default DocumentContainer;

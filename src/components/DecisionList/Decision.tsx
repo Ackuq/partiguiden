@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Router from 'next/router';
 
 import Collapse from '@material-ui/core/Collapse';
@@ -9,10 +9,9 @@ import Button from '@material-ui/core/Button';
 
 import ArrowDownRounded from '@material-ui/icons/KeyboardArrowDownRounded';
 
-import getOrganInfo from '../../utils/authorityTable';
-import { Decision as DecisionType } from '../../types/decision.d';
+import { lookupAuthority } from '../../utils/authorityTable';
+import { Decision as DecisionType } from '../../types/decision';
 import useStyles from './useStyles';
-import { checkIfVotesExist } from '../../lib/parlimentApi';
 
 interface Props {
   decision: DecisionType;
@@ -20,38 +19,24 @@ interface Props {
 }
 
 const Decision: React.FC<Props> = ({ decision, classes }) => {
-  const [votesExist, setVotesExist] = useState(false);
   const [visible, setVisible] = useState(false);
 
-  const organ = getOrganInfo(decision.organ);
-
-  useEffect(() => {
-    let mount = true;
-    let url = decision.dokumentstatus_url_xml;
-    url = url.replace('.xml', '.json');
-
-    checkIfVotesExist(url).then((result: any) => {
-      if (mount) setVotesExist(result.votesExist);
-    });
-    return () => {
-      mount = false;
-    };
-  }, []);
+  const authority = lookupAuthority(decision.authority);
 
   const btnclass = visible ? classes.shown : '';
   return (
     <>
-      {organ && (
+      {authority && (
         <div className={classes.cardContainer}>
           <ButtonBase className={classes.buttonContainer} onClick={() => setVisible(!visible)}>
-            <div style={{ background: organ.color }} className={classes.headerRoot}>
-              <span className={classes.headerTitle}>{organ.desc}</span>
+            <div style={{ background: authority.color }} className={classes.headerRoot}>
+              <span className={classes.headerTitle}>{authority.desc}</span>
             </div>
 
             <CardContent classes={{ root: classes.cardContent }}>
               <div>
                 <Typography variant="h3" align="left" gutterBottom classes={{ h3: classes.title }}>
-                  {decision.notisrubrik}
+                  {decision.paragraphTitle}
                 </Typography>
                 <Typography
                   variant="h6"
@@ -59,7 +44,7 @@ const Decision: React.FC<Props> = ({ decision, classes }) => {
                   align="left"
                   classes={{ h6: classes.subtitle }}
                 >
-                  {decision.titel}
+                  {decision.title}
                 </Typography>
               </div>
               <ArrowDownRounded
@@ -73,9 +58,9 @@ const Decision: React.FC<Props> = ({ decision, classes }) => {
           <CardContent>
             <Collapse className={classes.paragraphContainer} in={visible}>
               <div className="paragraph">
-                {
-                  decision.notis && <div dangerouslySetInnerHTML={{ __html: decision.notis }} /> // eslint-disable-line react/no-danger
-                }
+                {decision.paragraph && (
+                  <div dangerouslySetInnerHTML={{ __html: decision.paragraph }} /> // eslint-disable-line react/no-danger
+                )}
               </div>
               <Button
                 component="a"
@@ -87,13 +72,13 @@ const Decision: React.FC<Props> = ({ decision, classes }) => {
               >
                 Läs mer om betänkandet
               </Button>
-              {votesExist && (
+              {decision.votesExists && (
                 <Button
                   component="a"
                   href="/voteringar"
                   onClick={(event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
                     event.preventDefault();
-                    Router.push(`/voteringar?sok=${decision.rm}:${decision.beteckning}`);
+                    Router.push(`/voteringar?search=${decision.voteSearchTerm}`);
                   }}
                 >
                   Läs mer om voteringarna

@@ -2,27 +2,21 @@ import React from 'react';
 
 import CircularProgress from '@material-ui/core/CircularProgress';
 import { ResponsiveContainer, BarChart, XAxis, YAxis, Tooltip, Bar, Legend } from 'recharts';
+import { votingEntry } from '../../types/voting';
 
 const animationDelay = 2;
 const animationDuration = 2;
 
-interface Voting {
-  ja: string;
-  nej: string;
-  avstaende: string;
-  franvarande: string;
-}
-
-const parseData = (voting: Voting) => ({
+const parseData = (voting: votingEntry) => ({
   name: 'Totalt',
-  Ja: parseInt(voting.ja, 10),
-  Nej: parseInt(voting.nej, 10),
-  Avstående: parseInt(voting.avstaende, 10),
-  Frånvarande: parseInt(voting.franvarande, 10),
+  Ja: parseInt(voting.yes, 10),
+  Nej: parseInt(voting.no, 10),
+  Avstående: parseInt(voting.refrain, 10),
+  Frånvarande: parseInt(voting.abscent, 10),
 });
 
 interface Props {
-  voting: Voting;
+  voting: votingEntry;
 }
 
 const TotalVote: React.FC<Props> = ({ voting }) => {

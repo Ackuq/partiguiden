@@ -1,4 +1,4 @@
-import { party } from '../types/party.d';
+import { party } from '../types/party';
 
 const parties = [
   { name: 'Socialdemokraterna', letter: 'S', color: '#c0392b' },

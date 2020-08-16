@@ -1,83 +1,58 @@
 import React, { useState, useEffect } from 'react';
+import { makeStyles } from '@material-ui/styles';
 
 import Grid from '@material-ui/core/Grid';
-import ButtonBase from '@material-ui/core/ButtonBase';
-import makeStyles from '@material-ui/styles/makeStyles';
-import { Theme } from '@material-ui/core';
 
+import Pagination from '@material-ui/lab/Pagination';
 import LoadCircle from '../../LoadCircle';
 import Document from './Document';
-import { getMemberDocuments } from '../../../lib/parlimentApi';
-
-const useStyles = makeStyles((theme: Theme) => ({
-  buttonContainer: {
-    display: 'flex',
-    justifyContent: 'center',
-    marginTop: '1rem',
-    marginBottom: '1rem',
-  },
-  loadMore: {
-    backgroundColor: theme.palette.primary.main,
-    color: theme.palette.primary.contrastText,
-    borderRadius: '1rem',
-    height: '2rem',
-    padding: '0 2rem',
-  },
-}));
+import { useMemberDocuments } from '../../../hooks/parlimentHooks';
 
 interface Props {
   id: number;
   setDocumentCount: Function;
 }
 
+const useStyles = makeStyles({
+  paginationContainer: {
+    display: 'flex',
+    justifyContent: 'center',
+    flex: 1,
+    marginBottom: '2rem',
+  },
+});
+
 const Documents: React.FC<Props> = ({ id, setDocumentCount }) => {
   const classes = useStyles();
-  const [loading, setLoading] = useState(true);
-  const [documents, setDocuments] = useState([] as Array<any>);
   const [page, setPage] = useState(1);
-  const [lastPage, setLastPage] = useState(true);
+
+  const data = useMemberDocuments(id, page);
 
   useEffect(() => {
-    setLoading(true);
-    getMemberDocuments(id, page).then((data: any) => {
-      const { dokumentlista } = data;
-      const pages = parseInt(dokumentlista['@sidor'], 10);
+    if (data?.count) {
+      setDocumentCount(data.count);
+    }
+  }, [data?.count]);
 
-      const count = dokumentlista['@traffar'];
-      setDocumentCount(count);
-      if (count !== '0') {
-        setDocuments([...documents, ...dokumentlista.dokument]);
-      }
-      setLastPage(page === pages || pages === 0);
-      setLoading(false);
-    });
-  }, [page]);
+  const changePage = (_event: React.ChangeEvent<unknown>, newPage: number) => {
+    setPage(newPage);
+  };
 
-  return (
+  return !data ? (
+    <Grid item xs={12}>
+      <LoadCircle />
+    </Grid>
+  ) : (
     <>
-      {documents.map((document) => (
+      {data.documents.map((document) => (
         <Grid item xs={12} key={document.id}>
           <Document document={document} />
         </Grid>
       ))}
-      {loading ? (
-        <Grid item xs={12}>
-          <LoadCircle />
-        </Grid>
-      ) : (
-        !lastPage && (
-          <Grid item xs={12} className={classes.buttonContainer}>
-            <ButtonBase
-              className={classes.loadMore}
-              onClick={() => {
-                setLastPage(true);
-                setPage((curr) => curr + 1);
-              }}
-            >
-              Ladda mer
-            </ButtonBase>
-          </Grid>
-        )
+      {data.pages > 1 && (
+        <div className={classes.paginationContainer}>
+          <Pagination size="large" onChange={changePage} page={page} count={data.pages} />
+        </div>
       )}
     </>
   );

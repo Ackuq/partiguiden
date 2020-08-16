@@ -1,5 +1,5 @@
-import { partyAbbrev } from '../../../types/party.d';
-import { votingEntry } from '../../../types/voting.d';
+import { partyAbbrev } from '../../../types/party';
+import { votingEntry } from '../../../types/voting';
 
 type key = partyAbbrev | '-' | 'Totalt';
 

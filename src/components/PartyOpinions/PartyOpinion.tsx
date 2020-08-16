@@ -12,7 +12,7 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 
 import { styled } from '@material-ui/styles';
-import { Subject } from '../../types/party.d';
+import { Subject } from '../../types/party';
 
 interface Props {
   partyName: string;

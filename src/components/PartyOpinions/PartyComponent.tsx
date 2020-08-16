@@ -10,7 +10,7 @@ import ArrowDownRounded from '@material-ui/icons/KeyboardArrowDownRounded';
 import { getPartyColor } from '../../utils/getParties';
 import PartyOpinion from './PartyOpinion';
 import useStyles from './useStyles';
-import { PartySubject } from '../../types/party.d';
+import { PartySubject } from '../../types/party';
 
 interface Props {
   party: PartySubject;

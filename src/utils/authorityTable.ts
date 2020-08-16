@@ -1,4 +1,4 @@
-import { authorityEntry } from '../types/authority.d';
+import { authorityEntry } from '../types/authority';
 
 const authorityTable: Record<string, authorityEntry> = {
   AU: {
@@ -83,8 +83,6 @@ const authorityTable: Record<string, authorityEntry> = {
   },
 };
 
-export { authorityTable };
+const lookupAuthority = (authority: string) => authorityTable[authority];
 
-export default (organ: string) => {
-  return authorityTable[organ];
-};
+export { authorityTable, lookupAuthority };

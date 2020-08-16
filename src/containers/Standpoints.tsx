@@ -1,7 +1,7 @@
 import React from 'react';
 
 import PartyComponent from '../components/PartyOpinions';
-import { PartySubject } from '../types/party.d';
+import { PartySubject } from '../types/party';
 
 interface Props {
   partyData: Array<PartySubject>;

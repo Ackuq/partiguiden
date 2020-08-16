@@ -7,24 +7,23 @@ import Breadcrumbs from '../../../src/components/Breadcrumbs';
 import SocialMediaShare from '../../../src/components/SocialMediaShare';
 import PageTitle from '../../../src/components/PageTitle';
 import Vote from '../../../src/containers/Vote';
-import parseVote from '../../../src/utils/votes/parseVote';
-import { getVote } from '../../../src/lib/parlimentApi';
+import { Vote as VoteType } from '../../../src/types/voting';
 
 interface Props {
-  vote: any;
-  bet: number;
+  vote: VoteType;
+  proposition: number;
 }
 
-const VoteContainer: NextPage<Props> = ({ vote, bet }) => (
+const VoteContainer: NextPage<Props> = ({ vote, proposition }) => (
   <>
     <Head>
-      <title>{vote.document.titel} | Votering | Partiguiden</title>
+      <title>{vote.title} | Votering | Partiguiden</title>
       <meta
         name="description"
-        content={`Hur har partiernat röstat i voteringen om ${vote.document.titel}`}
+        content={`Hur har partiernat röstat i voteringen om ${vote.title}`}
       />
     </Head>
-    <PageTitle title={`${vote.document.titel} förslagspunkt ${bet}`} variant="h3" />
+    <PageTitle title={`${vote.title} förslagspunkt ${proposition}`} variant="h3" />
     <Container>
       <div style={{ display: 'flex', justifyContent: 'space-between' }}>
         <Breadcrumbs
@@ -33,9 +32,9 @@ const VoteContainer: NextPage<Props> = ({ vote, bet }) => (
             { href: '#', label: 'Votering' },
           ]}
         />
-        <SocialMediaShare title={`${vote.document.titel} förslagspunkt ${bet}`} />
+        <SocialMediaShare title={`${vote.title} förslagspunkt ${proposition}`} />
       </div>
-      <Vote {...vote} />
+      <Vote vote={vote} />
     </Container>
   </>
 );
@@ -49,11 +48,12 @@ const getBet = (bet: string | Array<string>) => {
 
 export const getServerSideProps: GetServerSideProps = async ({ query }) => {
   const id = Array.isArray(query.id) ? query.id[0] : query.id || '';
-  const bet = query.bet ? getBet(query.bet) : 0;
+  const proposition = query.bet ? getBet(query.bet) : 0;
 
-  const res = await getVote(id);
+  const res = await fetch(`${process.env.PROXY_URL}/swe/vote/${id}/${proposition}`);
+  const vote: VoteType = await res.json();
 
-  return { props: { vote: parseVote(res, bet), bet } };
+  return { props: { vote, proposition } };
 };
 
 export default VoteContainer;

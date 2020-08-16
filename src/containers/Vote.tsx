@@ -11,25 +11,22 @@ import {
   VoteDistribution,
   ProcessedDocuments,
 } from '../components/VoteInfo';
+import { Vote as VoteType } from '../types/voting';
 
 interface Props {
-  suggestion: string;
-  appendix?: Array<any>;
-  processedDocuments: Array<any>;
-  decision: string;
-  description: string;
-  voting: any;
-  title: string;
+  vote: VoteType;
 }
 
 const Vote: React.FC<Props> = ({
-  suggestion,
-  appendix = null,
-  processedDocuments,
-  decision,
-  voting,
-  title,
-  description,
+  vote: {
+    propositionText,
+    title,
+    decision,
+    description,
+    voting,
+    processedDocuments,
+    appendix = null,
+  },
 }) => (
   <Card>
     <CardContent>
@@ -45,7 +42,7 @@ const Vote: React.FC<Props> = ({
         Utskottets förslag
       </Typography>
       <Typography variant="body1" paragraph>
-        {suggestion}
+        {propositionText}
       </Typography>
       {processedDocuments.length > 0 && (
         <ProcessedDocuments processedDocuments={processedDocuments} />

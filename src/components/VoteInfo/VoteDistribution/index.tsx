@@ -17,10 +17,11 @@ import {
 
 import { styled } from '@material-ui/styles';
 
-import createData from './createData';
 import CustomizedTick from './CustomizedTick';
 import SectionButton from '../SectionButton';
 import RotatingArrow from '../RotatingArrow';
+import { Vote } from '../../../types/voting';
+import { partyAbbrev } from '../../../types/party';
 
 const ChartContainer = styled(ResponsiveContainer)({
   width: 'calc(100% + 20px) !important',
@@ -28,7 +29,38 @@ const ChartContainer = styled(ResponsiveContainer)({
   marginLeft: '-20px',
 });
 
-const VoteDistribution: React.FC<{ voting: any }> = ({ voting }) => {
+interface Result {
+  name: string;
+  Ja: string;
+  Nej: string;
+  Avstående: string;
+  Frånvarande: string;
+}
+
+type key = partyAbbrev | '-' | 'Totalt';
+
+const createData = (voting: Vote['voting']) => {
+  const result: Array<Result> = [];
+
+  (Object.keys(voting) as key[]).forEach((party) => {
+    if (party !== '-' && party !== 'Totalt') {
+      result.push({
+        name: party,
+        Ja: voting[party].yes,
+        Nej: voting[party].no,
+        Avstående: voting[party].refrain,
+        Frånvarande: voting[party].abscent,
+      });
+    }
+  });
+  return result;
+};
+
+interface Props {
+  voting: Vote['voting'];
+}
+
+const VoteDistribution: React.FC<Props> = ({ voting }) => {
   const [visible, setVisible] = useState(false);
 
   const data = createData(voting);

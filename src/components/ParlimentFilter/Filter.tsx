@@ -1,6 +1,7 @@
 import React, { useCallback } from 'react';
 import { Divider } from '@material-ui/core';
 import { NextRouter } from 'next/router';
+import { stringify } from 'querystring';
 
 import { authorityTable } from '../../utils';
 import FilterContainer, { FilterSearch, FilterList } from '../Filter';
@@ -14,16 +15,11 @@ interface Props {
 const Filter: React.FC<Props> = ({ router, search, org }) => {
   const updateRoute = useCallback(
     (newSearch: typeof search, newOrg: typeof org) => {
-      const query = [];
-      if (newSearch) {
-        query.push(`sok=${newSearch}`);
-      }
-      if (newOrg.length) {
-        query.push(`org=${newOrg.join('&org=')}`);
-      }
-      const queryString = query.length ? `?${query.join('&')}` : '';
+      const { query } = router;
+      query.search = newSearch;
+      query.org = newOrg;
 
-      router.push(`${router.route}${queryString}`);
+      router.push(`${router.route}?${stringify(query)}`);
     },
     [router]
   );

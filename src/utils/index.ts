@@ -1,6 +1,6 @@
 import getParties from './getParties';
-import getAuthorityInfo, { authorityTable } from './authorityTable';
+import { authorityTable, lookupAuthority } from './authorityTable';
 
 export * from './helpers';
 
-export { getParties, authorityTable, getAuthorityInfo };
+export { getParties, authorityTable, lookupAuthority };

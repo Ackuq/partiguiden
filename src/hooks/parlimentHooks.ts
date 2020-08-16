@@ -13,7 +13,7 @@ export interface Decisions {
   decisions: Array<Decision>;
 }
 
-export const useDecisions = (query: ParsedUrlQuery) => {
+export const useDecisions = (query: ParsedUrlQuery): Decisions | undefined => {
   const { data } = useSWR<Decisions>(`${baseUrl}/swe/decisions?${stringify(query)}`, fetcher);
 
   return data;
@@ -24,13 +24,13 @@ interface Votes {
   votes: Array<VoteListEntry>;
 }
 
-export const useVotes = (query: ParsedUrlQuery) => {
+export const useVotes = (query: ParsedUrlQuery): Votes | undefined => {
   const { data } = useSWR<Votes>(`${baseUrl}/swe/votes?${stringify(query)}`, fetcher);
 
   return data;
 };
 
-export const useMemberDocuments = (id: string, page: number) => {
+export const useMemberDocuments = (id: string, page: number): MemberDocuments | undefined => {
   const { data } = useSWR<MemberDocuments>(
     `${baseUrl}/swe/member/${id}/documents?page=${page}`,
     fetcher
@@ -39,7 +39,7 @@ export const useMemberDocuments = (id: string, page: number) => {
   return data;
 };
 
-export const useMembers = () => {
+export const useMembers = (): Array<MemberListEntry> | undefined => {
   const { data } = useSWR<Array<MemberListEntry>>(`${baseUrl}/swe/members`, fetcher);
 
   return data;

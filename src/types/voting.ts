@@ -25,13 +25,19 @@ export interface ProcessedDocument {
   proposals?: string;
 }
 
+export interface VoteAppendixItem {
+  titel: string;
+  dok_id: string;
+  fil_url: string;
+}
+
 export interface Vote {
   title: string;
   description: string;
   authority: string;
   propositionText: string;
   processedDocuments: Array<ProcessedDocument>;
-  appendix: any;
+  appendix: Array<VoteAppendixItem>;
   decision: string;
   voting: Record<string, Record<voteDesc, string>>;
 }

@@ -28,7 +28,7 @@ const ButtonContainer = styled('div')({
   marginTop: '1rem',
 });
 
-const CookieBanner = () => {
+const CookieBanner: React.FC = () => {
   const [cookieConsent, setCookieConsent] = useState(true);
 
   useEffect(() => {

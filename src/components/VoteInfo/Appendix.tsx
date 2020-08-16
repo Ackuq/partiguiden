@@ -2,23 +2,28 @@ import React from 'react';
 
 import Typography from '@material-ui/core/Typography';
 import Link from '@material-ui/core/Link';
+import { VoteAppendixItem } from '../../types/voting';
 
-const Appendix: React.FC<{ appendix: Array<any> }> = ({ appendix }) => (
+interface Props {
+  appendix: Array<VoteAppendixItem>;
+}
+
+const Appendix: React.FC<Props> = ({ appendix }) => (
   <>
     <Typography variant="h5" color="inherit" gutterBottom>
       Bilaga
     </Typography>
     <div style={{ display: 'flex', flexDirection: 'column' }}>
-      {appendix.map((curr) => (
+      {appendix.map((item) => (
         <Link
-          href={curr.fil_url}
-          key={curr.fil_url}
+          href={item.fil_url}
+          key={item.fil_url}
           target="_blank"
           rel="noopener"
           variant="body1"
           color="primary"
         >
-          {curr.titel} {curr.dok_id}
+          {item.titel} {item.dok_id}
         </Link>
       ))}
     </div>

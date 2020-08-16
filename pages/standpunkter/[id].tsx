@@ -8,10 +8,11 @@ import SocialMediaShare from '../../src/components/SocialMediaShare';
 import PageTitle from '../../src/components/PageTitle';
 import Standpoints from '../../src/containers/Standpoints';
 import { getStandpointData, getSubject, getSubjects } from '../../src/lib/api';
+import { PartySubject } from '../../src/types/party';
 
 interface Props {
   name: string;
-  partyData: Array<any>;
+  partyData: Array<PartySubject>;
 }
 
 const StandPointContainer: NextPage<Props> = ({ name, partyData }) => (

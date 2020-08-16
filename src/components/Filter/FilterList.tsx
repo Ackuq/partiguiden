@@ -7,15 +7,15 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 
 interface Props {
-  list: Array<any>;
-  updateList: (element: any) => any;
-  isChecked: (element: any) => any;
-  getText: (element: any) => any;
-  getKey: (element: any) => any;
+  list: Array<unknown>;
+  updateList: (element: never) => void;
+  isChecked: (element: never) => boolean;
+  getText: (element: never) => string;
+  getKey: (element: never) => string;
 }
 
 const FilterList: React.FC<Props> = ({ list, updateList, isChecked, getText, getKey }) => {
-  const renderCheckBox = (el: any) => (
+  const renderCheckBox = (el: never) => (
     <ListItem
       key={getKey(el)}
       dense
@@ -38,7 +38,7 @@ const FilterList: React.FC<Props> = ({ list, updateList, isChecked, getText, get
     </ListItem>
   );
 
-  return <List disablePadding>{list.map((el) => renderCheckBox(el))}</List>;
+  return <List disablePadding>{list.map((el) => renderCheckBox(el as never))}</List>;
 };
 
 export default FilterList;

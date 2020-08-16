@@ -27,7 +27,7 @@ const BannerText = styled('span')(({ theme }: { theme: Theme }) => ({
   color: theme.palette.primary.contrastText,
 }));
 
-const Header = () => (
+const Header: React.FC = () => (
   <>
     <Banner container justify="flex-start" alignItems="center">
       <Brand item xs={3}>

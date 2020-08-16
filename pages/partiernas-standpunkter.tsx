@@ -8,8 +8,13 @@ import PageTitle from '../src/components/PageTitle';
 
 import StandpointsList from '../src/containers/StandpointsList';
 import { getSubjects } from '../src/lib/api';
+import { StandpointData } from '../src/types/standpoints';
 
-const StandpointsListContainer: NextPage<{ subjects: any }> = ({ subjects }) => (
+interface Props {
+  subjects: Array<StandpointData>;
+}
+
+const StandpointsListContainer: NextPage<Props> = ({ subjects }) => (
   <>
     <Head>
       <title>Partiernas ståndpunkter | Partiguiden 2.0</title>

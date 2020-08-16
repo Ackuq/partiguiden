@@ -16,7 +16,7 @@ const FooterContent = styled('footer')(({ theme }: { theme: Theme }) => ({
   textAlign: 'center',
 }));
 
-const Footer = () => (
+const Footer: React.FC = () => (
   <>
     <ResponsiveAd />
     <FooterContent>

@@ -10,7 +10,7 @@ import { useMemberDocuments } from '../../../hooks/parlimentHooks';
 
 interface Props {
   id: string;
-  setDocumentCount: Function;
+  setDocumentCount: React.Dispatch<React.SetStateAction<number>>;
 }
 
 const useStyles = makeStyles({

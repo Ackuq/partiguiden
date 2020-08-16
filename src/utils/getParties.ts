@@ -1,6 +1,12 @@
-import { party } from '../types/party';
+import { party, partyAbbrev } from '../types/party';
 
-const parties = [
+interface PartyInfo {
+  name: party;
+  letter: partyAbbrev;
+  color: string;
+}
+
+const parties: Array<PartyInfo> = [
   { name: 'Socialdemokraterna', letter: 'S', color: '#c0392b' },
   { name: 'Moderaterna', letter: 'M', color: '#3a539b' },
   { name: 'Sverigedemokraterna', letter: 'SD', color: '#f4d03f' },

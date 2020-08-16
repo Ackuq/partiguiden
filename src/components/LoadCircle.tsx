@@ -10,6 +10,6 @@ const FullLoadCircle = styled(CircularProgress)({
   flexDirection: 'column',
 });
 
-const LoadCircle = () => <FullLoadCircle size={100} />;
+const LoadCircle: React.FC = () => <FullLoadCircle size={100} />;
 
 export default LoadCircle;

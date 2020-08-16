@@ -19,7 +19,7 @@ interface Props {
 }
 
 const Information: React.FC<Props> = ({ id, informationRecords, absence }) => {
-  const [documentCount, setDocumentCount] = useState('0');
+  const [documentCount, setDocumentCount] = useState(0);
 
   return (
     <Grid container spacing={3}>
@@ -51,9 +51,8 @@ const Information: React.FC<Props> = ({ id, informationRecords, absence }) => {
             </Typography>
           </Paper>
 
-          {informationRecords.map((record, index) => (
-            // eslint-disable-next-line react/no-array-index-key
-            <ExpansionPanel key={index}>
+          {informationRecords.map((record) => (
+            <ExpansionPanel key={`${record.type}:${record.code}`}>
               <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />} aria-controls={record.code}>
                 <Typography>{record.code}</Typography>
               </ExpansionPanelSummary>

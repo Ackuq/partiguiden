@@ -1,11 +1,5 @@
 import React, { useEffect } from 'react';
 
-declare global {
-  interface Window {
-    adsbygoogle: Array<any>;
-  }
-}
-
 const enableAd = process.env.NODE_ENV === 'production' && process.env.ENABLE_ADS === 'true';
 
 const Ad: React.FC = () => {

@@ -5,6 +5,7 @@ import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/styles';
 import grey from '@material-ui/core/colors/grey';
 import { Theme } from '@material-ui/core';
+import { StandpointData } from '../types/standpoints';
 
 const useStyles = makeStyles((theme: Theme) => ({
   subjectList: {
@@ -74,7 +75,11 @@ const useStyles = makeStyles((theme: Theme) => ({
   },
 }));
 
-const PartiernasStandpunkter: React.FC<{ subjects: Array<any> }> = ({ subjects }) => {
+interface Props {
+  subjects: Array<StandpointData>;
+}
+
+const PartiernasStandpunkter: React.FC<Props> = ({ subjects }) => {
   const classes = useStyles();
   return (
     <Grid container classes={{ container: classes.subjectList }}>

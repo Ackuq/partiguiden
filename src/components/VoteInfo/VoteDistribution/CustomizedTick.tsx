@@ -1,7 +1,9 @@
 import React from 'react';
 
 interface Props {
-  payload?: any;
+  payload?: {
+    value: string;
+  };
   x?: string;
   y?: string;
 }

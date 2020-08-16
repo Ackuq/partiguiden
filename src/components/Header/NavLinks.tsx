@@ -44,7 +44,7 @@ const getIndex = (val: number, { route, pathname }: { route: string; pathname: s
   return index;
 };
 
-const NavLinks = () => {
+const NavLinks: React.FC = () => {
   const router = useRouter();
   const classes = useStyles();
 

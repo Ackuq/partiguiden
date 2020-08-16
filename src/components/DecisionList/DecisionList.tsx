@@ -1,77 +1,62 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useCallback } from 'react';
 import Pagination from '@material-ui/lab/Pagination';
 
 import { NextRouter } from 'next/router';
+import { stringify } from 'querystring';
+import { Typography } from '@material-ui/core';
 import { FlowAd } from '../Ad';
 import Decision from './Decision';
 import useStyles from './useStyles';
-import { Decision as DecisionType } from '../../types/decision.d';
-import { getDecisionList } from '../../lib/parlimentApi';
 import LoadCircle from '../LoadCircle';
+import { useDecisions } from '../../hooks/parlimentHooks';
 
 interface Props {
   router: NextRouter;
-  search: string;
-  org: Array<string>;
   page: number;
 }
 
-const DecisionList: React.FC<Props> = ({ router, search, org, page }) => {
+const DecisionListContainer: React.FC<Props> = ({ router, page }) => {
   const classes = useStyles();
+  const data = useDecisions(router.query);
 
   const updatePage = useCallback(
     (_event: React.ChangeEvent<unknown>, newPage: number) => {
-      const query = [];
-      if (search) {
-        query.push(`sok=${search}`);
-      }
-      if (org.length) {
-        query.push(`org=${org.join('&org=')}`);
-      }
-      query.push(`page=${newPage}`);
+      const { query } = router;
+      query.page = `${newPage}`;
 
-      const queryString = query.length ? `?${query.join('&')}` : '';
-
-      router.push(`${router.route}${queryString}`);
+      router.push(`${router.route}?${stringify(query)}`);
     },
     [router]
   );
 
-  const [loading, setLoading] = useState(true);
-  const [decisions, setDecisions] = useState<Array<DecisionType>>([]);
-  const [pages, setPages] = useState(0);
-
-  useEffect(() => {
-    setLoading(true);
-    getDecisionList(search, org, page).then((res) => {
-      setDecisions(res.decisions);
-      setPages(res.pages);
-      setLoading(false);
-    });
-  }, [page, search, org]);
-
   return (
     <>
       <div className={classes.listContainer}>
-        {loading ? (
+        {!data ? (
           <LoadCircle />
         ) : (
           <>
-            {decisions.map((item, index) => (
-              <React.Fragment key={item.id + item.beteckning}>
-                {!(index % 15) && <FlowAd />}
-                <div>
-                  <Decision decision={item} classes={classes} />
-                </div>
-              </React.Fragment>
-            ))}
-            <Pagination
-              style={{ display: 'flex', justifyContent: 'center' }}
-              size="large"
-              onChange={updatePage}
-              page={page}
-              count={pages}
-            />
+            {data.decisions.length > 0 ? (
+              <>
+                {data.decisions.map((item, index) => (
+                  <React.Fragment key={item.id + item.denomination}>
+                    {!(index % 15) && <FlowAd />}
+                    <div>
+                      <Decision decision={item} classes={classes} />
+                    </div>
+                  </React.Fragment>
+                ))}
+                <Pagination
+                  style={{ display: 'flex', justifyContent: 'center' }}
+                  size="large"
+                  onChange={updatePage}
+                  page={page}
+                  count={data.pages}
+                />
+              </>
+            ) : (
+              <Typography>Inga riksdagsbeslut hittades</Typography>
+            )}
           </>
         )}
       </div>
@@ -79,4 +64,4 @@ const DecisionList: React.FC<Props> = ({ router, search, org, page }) => {
   );
 };
 
-export default DecisionList;
+export default DecisionListContainer;

@@ -6,10 +6,13 @@ import Collapse from '@material-ui/core/Collapse';
 
 import RotatingArrow from './RotatingArrow';
 import SectionButton from './SectionButton';
+import { Vote } from '../../types/voting';
 
-const ProcessedDocuments: React.FC<{ processedDocuments: Array<any> }> = ({
-  processedDocuments,
-}) => {
+interface Props {
+  processedDocuments: Vote['processedDocuments'];
+}
+
+const ProcessedDocuments: React.FC<Props> = ({ processedDocuments }) => {
   const [visible, setVisible] = useState(false);
 
   return (
@@ -23,15 +26,15 @@ const ProcessedDocuments: React.FC<{ processedDocuments: Array<any> }> = ({
       <Collapse in={visible}>
         <div style={{ marginTop: '1.25rem' }}>
           {processedDocuments.map((document, index) => (
-            <React.Fragment key={document[3]}>
-              <Link href="/dokument/[id]" as={`/dokument/${document[3]}`}>
+            <React.Fragment key={document.id}>
+              <Link href="/dokument/[id]" as={`/dokument/${document.id}`}>
                 <Typography
                   component="a"
                   variant="body1"
                   color="primary"
-                  href={`/dokument/${document[3]}`}
+                  href={`/dokument/${document.id}`}
                 >
-                  [{index}] {document[0]}
+                  [{index}] {document.label}
                 </Typography>
               </Link>
               <br />

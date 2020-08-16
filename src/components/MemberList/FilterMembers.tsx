@@ -2,6 +2,7 @@ import React, { useCallback } from 'react';
 import Divider from '@material-ui/core/Divider';
 
 import { NextRouter } from 'next/router';
+import { stringify } from 'querystring';
 import FilterContainer, { FilterList, FilterSearch } from '../Filter';
 import allParties from '../../utils/getParties';
 
@@ -16,17 +17,11 @@ interface Props {
 const FilterMembers: React.FC<Props> = ({ router, search, parties }) => {
   const updateRoute = useCallback(
     (newSearch: typeof search, newParties: typeof parties) => {
-      const query = [];
-      if (newSearch) {
-        query.push(`sok=${newSearch}`);
-      }
-      if (newParties.length) {
-        query.push(`party=${newParties.join('&party=')}`);
-      }
+      const { query } = router;
+      query.search = newSearch;
+      query.parties = newParties;
 
-      const queryString = query.length ? `?${query.join('&')}` : '';
-
-      router.push(`${router.route}${queryString}`);
+      router.push(`${router.route}?${stringify(query)}`);
     },
     [router]
   );

@@ -8,7 +8,8 @@ import CardHeader from '@material-ui/core/CardHeader';
 import Typography from '@material-ui/core/Typography';
 import ButtonBase from '@material-ui/core/ButtonBase';
 
-import getOrganInfo from '../../../utils/authorityTable';
+import { lookupAuthority } from '../../../utils/authorityTable';
+import { MemberDocument } from '../../../types/member';
 
 const useStyles = makeStyles({
   headerTitle: {
@@ -22,9 +23,12 @@ const useStyles = makeStyles({
   },
 });
 
-const Documents: React.FC<{ document: any }> = ({ document }) => {
+interface Props {
+  document: MemberDocument;
+}
+const Document: React.FC<Props> = ({ document }) => {
   const classes = useStyles();
-  const organ = getOrganInfo(document.organ);
+  const authority = lookupAuthority(document.authority);
   return (
     <Card>
       <ButtonBase
@@ -33,10 +37,10 @@ const Documents: React.FC<{ document: any }> = ({ document }) => {
         href={`/dokument/${document.id}`}
         onClick={() => Router.push('/dokument/[id]', `/dokument/${document.id}`)}
       >
-        {organ && (
+        {authority && (
           <CardHeader
-            title={organ.desc}
-            style={{ background: organ.color }}
+            title={authority.desc}
+            style={{ background: authority.color }}
             classes={{
               title: classes.headerTitle,
               root: classes.headerRoot,
@@ -45,11 +49,11 @@ const Documents: React.FC<{ document: any }> = ({ document }) => {
         )}
         <CardContent>
           <Typography style={{ fontSize: '0.75rem' }} color="textSecondary" gutterBottom>
-            {document.dokumentnamn}
+            {document.title}
           </Typography>
-          <Typography color="primary">{document.notisrubrik}</Typography>
+          <Typography color="primary">{document.altTitle}</Typography>
           <Typography style={{ fontSize: '0.85rem' }} color="textSecondary">
-            {document.undertitel}
+            {document.subtitle}
           </Typography>
         </CardContent>
       </ButtonBase>
@@ -57,4 +61,4 @@ const Documents: React.FC<{ document: any }> = ({ document }) => {
   );
 };
 
-export default Documents;
+export default Document;

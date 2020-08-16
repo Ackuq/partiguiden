@@ -5,7 +5,7 @@ import Grid from '@material-ui/core/Grid';
 import Member from './Member';
 import LoadCircle from '../LoadCircle';
 import useStyles from './useStyles';
-import { MemberType } from '../../types/member.d';
+import { MemberType } from '../../types/member';
 import { getMembers } from '../../lib/api';
 
 interface Props {

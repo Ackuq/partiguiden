@@ -9,7 +9,7 @@ import { queryAttrToString, queryAttrToArray } from '../utils';
 
 const Members: React.FC = () => {
   const router = useRouter();
-  const search = queryAttrToString(router.query.sok);
+  const search = queryAttrToString(router.query.search);
   const parties = queryAttrToArray(router.query.party);
 
   return (

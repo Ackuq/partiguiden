@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import useStyles from './useStyles';
-import { MemberType } from '../../types/member.d';
+import { MemberType } from '../../types/member';
 
 interface Props {
   member: MemberType;

@@ -8,14 +8,14 @@ import { queryAttrToArray, queryAttrToString, queryAttrToNumber } from '../utils
 
 const Votes: React.FC = () => {
   const router = useRouter();
-  const search = queryAttrToString(router.query.sok);
+  const search = queryAttrToString(router.query.search);
   const page = queryAttrToNumber(router.query.page, 1);
   const org = queryAttrToArray(router.query.org);
 
   return (
     <div style={{ display: 'flex' }}>
       <Container maxWidth="md">
-        <VoteList router={router} search={search} page={page} org={org} />
+        <VoteList router={router} page={page} />
       </Container>
       <Filter router={router} search={search} org={org} />
     </div>

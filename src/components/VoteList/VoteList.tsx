@@ -20,8 +20,7 @@ const VoteList: React.FC<Props> = ({ router, page }) => {
   const data = useVotes(router.query);
   const updatePage = useCallback(
     (_event: React.ChangeEvent<unknown>, newPage: number) => {
-      const { query } = router;
-      query.page = `${newPage}`;
+      const query = { ...router.query, page: newPage };
 
       router.push(`${router.route}?${stringify(query)}`);
     },

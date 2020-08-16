@@ -17,9 +17,7 @@ interface Props {
 const FilterMembers: React.FC<Props> = ({ router, search, parties }) => {
   const updateRoute = useCallback(
     (newSearch: typeof search, newParties: typeof parties) => {
-      const { query } = router;
-      query.search = newSearch;
-      query.parties = newParties;
+      const query = { ...router.query, search: newSearch, parties: newParties };
 
       router.push(`${router.route}?${stringify(query)}`);
     },

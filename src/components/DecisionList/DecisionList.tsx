@@ -46,7 +46,7 @@ const DecisionListContainer: React.FC<Props> = ({ router, page }) => {
                     </div>
                   </React.Fragment>
                 ))}
-                {data.pages > 0 && (
+                {data.pages > 1 && (
                   <Pagination
                     style={{ display: 'flex', justifyContent: 'center' }}
                     size="large"

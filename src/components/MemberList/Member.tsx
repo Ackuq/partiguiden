@@ -43,7 +43,7 @@ const Member: React.FC<Props> = ({ member, classes }) => (
 
       <div className={classes.nameContainer}>
         <span>
-          {member.firstName} {member.lastName}
+          {member.lastName}, {member.firstName}
         </span>
       </div>
     </a>

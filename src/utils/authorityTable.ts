@@ -11,17 +11,17 @@ const authorityTable: Record<string, authorityEntry> = {
     desc: 'Bostad- och konsumentpolitik',
     color: '#f39c12',
   },
-  FiU: {
+  FIU: {
     name: 'Finansutskottet',
     desc: 'Ekonomi och finans',
     color: '#1abc9c',
   },
-  FöU: {
+  FÖU: {
     name: 'Försvarsutskottet',
     desc: 'Försvar och militär',
     color: '#2980b9',
   },
-  JuU: {
+  JUU: {
     name: 'Justitieutskottet',
     desc: 'Rättsväsende och kriminalitet',
     color: '#34495e',
@@ -31,7 +31,7 @@ const authorityTable: Record<string, authorityEntry> = {
     desc: 'Riksdagen',
     color: '#d35400',
   },
-  KrU: {
+  KRU: {
     name: 'Kulturutskottet',
     desc: 'Kultur och folkbildning',
     color: '#8e44ad',
@@ -46,17 +46,17 @@ const authorityTable: Record<string, authorityEntry> = {
     desc: 'Näringsliv och energi',
     color: '#f1c40f',
   },
-  SkU: {
+  SKU: {
     name: 'Skatteutskottet',
     desc: 'Skatter',
     color: '#575fcf',
   },
-  SfU: {
+  SFU: {
     name: 'Socialförsäkringsutskottet',
     desc: 'Socialförsäkringar',
     color: '#ef5777',
   },
-  SoU: {
+  SOU: {
     name: 'Socialutskottet',
     desc: 'Vård och omsorg',
     color: '#ff5e57',
@@ -66,7 +66,7 @@ const authorityTable: Record<string, authorityEntry> = {
     desc: 'Trafik och transport',
     color: '#3c40c6',
   },
-  UbU: {
+  UBU: {
     name: 'Utbildningsutskottet',
     desc: 'Utbildning',
     color: '#808e9b',
@@ -76,13 +76,13 @@ const authorityTable: Record<string, authorityEntry> = {
     desc: 'Utrikes',
     color: '#f53b57',
   },
-  UFöU: {
+  UFÖU: {
     name: 'Sammansatta utrikes- och försvarsutskottet',
     desc: 'Utrikesförsvar',
     color: '#ffa801',
   },
 };
 
-const lookupAuthority = (authority: string) => authorityTable[authority];
+const lookupAuthority = (authority: string) => authorityTable[authority.toUpperCase()];
 
 export { authorityTable, lookupAuthority };

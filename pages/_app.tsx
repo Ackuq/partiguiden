@@ -3,6 +3,7 @@ import { AppProps } from 'next/app';
 import ReactGA from 'react-ga';
 import { ThemeProvider } from '@material-ui/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
+import Head from 'next/head';
 
 import Footer from '../src/components/Footer';
 import Header from '../src/components/Header';
@@ -28,6 +29,9 @@ const App = ({ Component, pageProps }: AppProps) => {
 
   return (
     <ThemeProvider theme={theme}>
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </Head>
       <CssBaseline />
       <Header />
       <main

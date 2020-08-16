@@ -43,12 +43,14 @@ const VoteList: React.FC<Props> = ({ router, page }) => {
                   </div>
                 </React.Fragment>
               ))}
-              <Pagination
-                style={{ display: 'flex', justifyContent: 'center' }}
-                onChange={updatePage}
-                page={page}
-                count={data.pages}
-              />
+              {data.pages > 0 && (
+                <Pagination
+                  style={{ display: 'flex', justifyContent: 'center' }}
+                  onChange={updatePage}
+                  page={page}
+                  count={data.pages}
+                />
+              )}
             </>
           ) : (
             <Typography>Inga voteringar hittades</Typography>

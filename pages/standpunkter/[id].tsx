@@ -53,7 +53,10 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   const data = await getSubject(id);
   const partyData = await getStandpointData(data.opinions);
 
-  return { props: { name: data.name, partyData: partyData.filter((party) => party !== null) } };
+  return {
+    props: { name: data.name, partyData: partyData.filter((party) => party !== null) },
+    revalidate: 518400,
+  };
 };
 
 export default StandPointContainer;

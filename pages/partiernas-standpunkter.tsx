@@ -31,7 +31,7 @@ const StandpointsListContainer: NextPage<Props> = ({ subjects }) => (
 export const getStaticProps: GetStaticProps = async () => {
   const subjects = await getSubjects();
 
-  return { props: { subjects } };
+  return { props: { subjects }, revalidate: 518400 };
 };
 
 export default StandpointsListContainer;

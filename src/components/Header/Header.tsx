@@ -1,13 +1,20 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import Link from 'next/link';
 
 import styled from '@material-ui/styles/styled';
 
+import AppBar from '@material-ui/core/AppBar';
 import Grid from '@material-ui/core/Grid';
 import ButtonBase from '@material-ui/core/ButtonBase';
+import Hidden from '@material-ui/core/Hidden';
+import IconButton from '@material-ui/core/IconButton';
+import Toolbar from '@material-ui/core/Toolbar';
+import { Theme } from '@material-ui/core/styles/createMuiTheme';
 
-import { Theme } from '@material-ui/core';
+import MenuIcon from '@material-ui/icons/Menu';
+
 import NavLinks from './NavLinks';
+import Drawer from './Drawer';
 
 const Brand = styled(Grid)({
   margin: '0.25rem',
@@ -27,21 +34,54 @@ const BannerText = styled('span')(({ theme }: { theme: Theme }) => ({
   color: theme.palette.primary.contrastText,
 }));
 
-const Header: React.FC = () => (
-  <>
-    <Banner container justify="flex-start" alignItems="center">
-      <Brand item xs={3}>
-        <ButtonBase>
-          <Link href="/">
-            <BannerText>
-              <strong>Partiguiden</strong>
-            </BannerText>
-          </Link>
-        </ButtonBase>
-      </Brand>
-    </Banner>
-    <NavLinks />
-  </>
+const Branding = () => (
+  <Banner container justify="flex-start" alignItems="center">
+    <Brand item xs={3}>
+      <ButtonBase>
+        <Link href="/">
+          <BannerText>
+            <strong>Partiguiden</strong>
+          </BannerText>
+        </Link>
+      </ButtonBase>
+    </Brand>
+  </Banner>
 );
+
+const Header: React.FC = () => {
+  const [drawerOpen, setDrawerOpen] = useState(false);
+  const appBar = useRef<HTMLDivElement>();
+
+  const openDrawer = () => {
+    setDrawerOpen(true);
+  };
+
+  const closeDrawer = () => {
+    setDrawerOpen(false);
+  };
+
+  return (
+    <AppBar position="sticky" ref={appBar}>
+      <Hidden smUp>
+        <Toolbar>
+          <IconButton color="inherit" aria-label="open drawer" onClick={openDrawer} edge="start">
+            <MenuIcon />
+          </IconButton>
+          <Branding />
+        </Toolbar>
+        <Drawer
+          isOpen={drawerOpen}
+          appBarHeight={appBar.current?.clientHeight ?? 56}
+          handleClose={closeDrawer}
+          handleOpen={openDrawer}
+        />
+      </Hidden>
+      <Hidden smDown>
+        <Branding />
+        <NavLinks />
+      </Hidden>
+    </AppBar>
+  );
+};
 
 export default Header;

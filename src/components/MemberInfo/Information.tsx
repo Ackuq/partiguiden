@@ -3,9 +3,9 @@ import React, { useState } from 'react';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import Paper from '@material-ui/core/Paper';
-import ExpansionPanel from '@material-ui/core/ExpansionPanel';
-import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
-import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
+import Accordion from '@material-ui/core/Accordion';
+import AccordionDetails from '@material-ui/core/AccordionDetails';
+import AccordionSummary from '@material-ui/core/AccordionSummary';
 
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
@@ -52,12 +52,12 @@ const Information: React.FC<Props> = ({ id, informationRecords, absence }) => {
           </Paper>
 
           {informationRecords.map((record) => (
-            <ExpansionPanel key={`${record.type}:${record.code}`}>
-              <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />} aria-controls={record.code}>
+            <Accordion key={`${record.type}:${record.code}`}>
+              <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls={record.code}>
                 <Typography>{record.code}</Typography>
-              </ExpansionPanelSummary>
+              </AccordionSummary>
               {record.content.map((information) => (
-                <ExpansionPanelDetails key={information}>
+                <AccordionDetails key={information}>
                   {record.type === 'eadress' ? (
                     <a href={information} target="_blank" rel="noopener noreferrer">
                       {information}
@@ -65,9 +65,9 @@ const Information: React.FC<Props> = ({ id, informationRecords, absence }) => {
                   ) : (
                     information
                   )}
-                </ExpansionPanelDetails>
+                </AccordionDetails>
               ))}
-            </ExpansionPanel>
+            </Accordion>
           ))}
         </Grid>
       )}

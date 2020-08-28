@@ -6,27 +6,43 @@
       "use": "@now/next"
     }
   ],
-  "routes": [
+  "headers": [
     {
-      "src": "/static/(.*)",
-      "headers": {
-        "cache-control": "public,max-age=31536000,immutable"
-      },
-      "continue": true
+      "source": "/static/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public,max-age=31536000,immutable"
+        }
+      ]
     },
     {
-      "src": "/ads.txt",
-      "headers": {
-        "cache-control": "public,max-age=31536000,immutable"
-      },
-      "dest": "/static/ads.txt"
+      "source": "/ads.txt",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public,max-age=31536000,immutable"
+        }
+      ]
     },
     {
-      "src": "/robots.txt",
-      "headers": {
-        "cache-control": "public,max-age=31536000,immutable"
-      },
-      "dest": "/static/robots.txt"
+      "source": "/robots.txt",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public,max-age=31536000,immutable"
+        }
+      ]
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/ads.txt",
+      "destination": "/static/ads.txt"
+    },
+    {
+      "source": "/robots.txt",
+      "destination": "/static/robots.txt"
     }
   ]
 }

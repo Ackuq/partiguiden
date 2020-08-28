@@ -1,36 +1,32 @@
 {
   "version": 2,
-  "builds": [{ "src": "next.config.js", "use": "@now/next" }],
+  "builds": [
+    {
+      "src": "next.config.js",
+      "use": "@now/next"
+    }
+  ],
   "routes": [
     {
-      "src": "/_next/static/(.*)",
-      "headers": { "cache-control": "public,max-age=0,s-maxage=31536000" },
-      "continue": true
-    },
-    {
       "src": "/static/(.*)",
-      "headers": { "cache-control": "public,max-age=31536000,immutable" },
+      "headers": {
+        "cache-control": "public,max-age=31536000,immutable"
+      },
       "continue": true
     },
     {
       "src": "/ads.txt",
-      "headers": { "cache-control": "public,max-age=31536000,immutable" },
+      "headers": {
+        "cache-control": "public,max-age=31536000,immutable"
+      },
       "dest": "/static/ads.txt"
     },
     {
       "src": "/robots.txt",
-      "headers": { "cache-control": "public,max-age=31536000,immutable" },
+      "headers": {
+        "cache-control": "public,max-age=31536000,immutable"
+      },
       "dest": "/static/robots.txt"
-    },
-    {
-      "src": "^/[^/]*$",
-      "headers": { "cache-control": "public,max-age=0,s-maxage=31536000" },
-      "continue": true
-    },
-    {
-      "src": "/(dokument|standpunkter|ledamot|votering)/(.*)",
-      "headers": { "cache-control": "public,max-age=0,s-maxage=31536000" },
-      "continue": true
     }
   ]
 }

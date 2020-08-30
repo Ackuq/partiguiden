@@ -85,8 +85,8 @@ const PartiernasStandpunkter: React.FC<Props> = ({ subjects }) => {
     <Grid container classes={{ container: classes.subjectList }}>
       {subjects.map((subject) => (
         <Grid item xs={12} md={6} className={classes.item} key={subject.id}>
-          <Link href="/standpunkter/[id]" as={`/standpunkter/${subject.id}`}>
-            <a className={classes.button} href={`/standpunkter/${subject.id}`}>
+          <Link href="/standpunkter/[id]" as={`/standpunkter/${subject.id}`} passHref>
+            <a className={classes.button}>
               <span className={classes.transition}>{subject.name}</span>
             </a>
           </Link>

@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import Router, { useRouter } from 'next/router';
+import React, { useEffect, useState } from 'react';
+import { NextRouter, useRouter } from 'next/router';
 
 import makeStyles from '@material-ui/styles/makeStyles';
 
@@ -32,9 +32,10 @@ interface DropDownProps {
   title: string;
   href: string;
   subPages: Array<{ title: string; id: string }>;
+  router: NextRouter;
 }
 
-const DropDown: React.FC<DropDownProps> = ({ title, href, subPages }) => {
+const DropDown: React.FC<DropDownProps> = ({ title, href, subPages, router }) => {
   const [anchor, setAnchor] = useState<null | HTMLElement>(null);
 
   const urlPrefix = href.replace(/\s*\[.*?\]\s*/g, '');
@@ -47,16 +48,22 @@ const DropDown: React.FC<DropDownProps> = ({ title, href, subPages }) => {
     setAnchor(null);
   };
 
+  useEffect(() => {
+    handleClose();
+  }, [router.asPath]);
+
   return (
     <div style={{ position: 'relative' }}>
       <Tab label={title} onClick={handleOpen} />
       <Menu keepMounted anchorEl={anchor} open={!!anchor} onClose={handleClose}>
         {subPages.map((page) => (
-          <Link key={page.id} href={href} as={`${urlPrefix}${page.id}`}>
-            <a>
-              <MenuItem>{page.title}</MenuItem>
-            </a>
-          </Link>
+          <div key={page.id}>
+            <Link href={href} as={`${urlPrefix}${page.id}`} passHref>
+              <a style={{ color: 'inherit', textDecoration: 'none' }}>
+                <MenuItem>{page.title}</MenuItem>
+              </a>
+            </Link>
+          </div>
         ))}
       </Menu>
     </div>
@@ -64,6 +71,22 @@ const DropDown: React.FC<DropDownProps> = ({ title, href, subPages }) => {
 };
 
 const hrefArray = pages.map((page) => page.href);
+
+interface CustomTabProps {
+  href: string;
+  title: string;
+}
+
+const CustomTabInner: React.ForwardRefRenderFunction<HTMLAnchorElement, CustomTabProps> = (
+  { href, title },
+  ref
+) => (
+  <Link href={href}>
+    <Tab ref={ref} href={href} label={title} />
+  </Link>
+);
+
+const CustomTab = React.forwardRef<HTMLAnchorElement, CustomTabProps>(CustomTabInner);
 
 const NavLinks: React.FC = () => {
   const router = useRouter();
@@ -82,18 +105,9 @@ const NavLinks: React.FC = () => {
     >
       {pages.map(({ href, title, subPages }) =>
         subPages ? (
-          <DropDown key={href} title={title} href={href} subPages={subPages} />
+          <DropDown key={href} title={title} href={href} subPages={subPages} router={router} />
         ) : (
-          <Tab
-            key={href}
-            component={({ children, ...rest }) => (
-              <Link href={href}>
-                <a {...rest}>{children}</a>
-              </Link>
-            )}
-            href={href}
-            label={title}
-          />
+          <CustomTab key={href} href={href} title={title} />
         )
       )}
     </Tabs>

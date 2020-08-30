@@ -78,7 +78,7 @@ const Party: React.FC<Props> = ({ party }) => {
     return (
       <Grid item>
         <NextLink passHref href="/ledamot/[id]" as={`/ledamot/${id}`}>
-          <a>
+          <a style={{ textDecoration: 'none' }}>
             <Paper classes={{ root: classes.leaderCard }}>
               <div>
                 <Avatar className={classes.leaderAvatar} src={pictureUrl} />

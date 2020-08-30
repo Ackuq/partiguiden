@@ -9,8 +9,8 @@ interface Props {
 }
 
 const Member: React.FC<Props> = ({ member, classes }) => (
-  <Link href="/ledamot/[id]" as={`/ledamot/${member.id}`}>
-    <a href={`/ledamot/${member.id}`} className={classes.memberCard}>
+  <Link href="/ledamot/[id]" as={`/ledamot/${member.id}`} passHref>
+    <a className={classes.memberCard}>
       <div className={classes.infoContainer}>
         <span className={classes.role}>{member.status}</span>
 
@@ -35,7 +35,7 @@ const Member: React.FC<Props> = ({ member, classes }) => (
             className={classes.partyLogo}
             width={65}
             height={65}
-            src={`../../static/images/party-logos/${member.party.toUpperCase()}.svg`}
+            src={`/static/images/party-logos/${member.party.toUpperCase()}.svg`}
             alt="Partisymbol"
           />
         )}

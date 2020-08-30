@@ -76,7 +76,7 @@ const Header: React.FC = () => {
           handleOpen={openDrawer}
         />
       </Hidden>
-      <Hidden smDown>
+      <Hidden xsDown>
         <Branding />
         <NavLinks />
       </Hidden>

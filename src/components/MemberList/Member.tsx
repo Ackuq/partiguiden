@@ -1,10 +1,10 @@
 import React from 'react';
 import Link from 'next/link';
 import useStyles from './useStyles';
-import { MemberListEntry } from '../../types/member';
+import { Member as MemberType } from '../../types/member';
 
 interface Props {
-  member: MemberListEntry;
+  member: MemberType;
   classes: ReturnType<typeof useStyles>;
 }
 

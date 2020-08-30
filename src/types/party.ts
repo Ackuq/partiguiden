@@ -1,3 +1,5 @@
+import { Member } from './member';
+
 export type party =
   | 'Socialdemokraterna'
   | 'Moderaterna'
@@ -19,4 +21,17 @@ export interface Subject {
 export interface PartySubject {
   name: party;
   data: Array<Subject>;
+}
+
+export interface Leader extends Member {
+  role: string;
+}
+
+export interface PartyData {
+  name: party;
+  abbrev: partyAbbrev;
+  website: string;
+  leaders: Array<Leader>;
+  abstract: string;
+  ideology: Array<string>;
 }

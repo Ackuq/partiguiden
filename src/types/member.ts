@@ -1,16 +1,5 @@
-export interface MemberListEntry {
-  party: string;
-  status: string;
-  gender: string;
-  id: string;
-  district: string;
-  firstName: string;
-  lastName: string;
-  age: number;
-  pictureUrl: string;
-}
 export interface MemberDocument {
-  authority: string;
+  authority: string | null;
   title: string;
   subtitle: string;
   altTitle: string;
@@ -41,6 +30,7 @@ export interface Task {
 
 export interface Member {
   id: string;
+  sourceId: string;
   firstName: string;
   lastName: string;
   pictureUrl: string;
@@ -51,5 +41,5 @@ export interface Member {
   information: Information[];
   tasks: Task[];
   isLeader: boolean;
-  absence: number;
+  absence: number | null;
 }

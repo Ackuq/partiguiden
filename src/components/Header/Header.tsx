@@ -26,7 +26,7 @@ const Banner = styled(Grid)(({ theme }: { theme: Theme }) => ({
   backgroundColor: theme.palette.primary.main,
 }));
 
-const BannerText = styled('span')(({ theme }: { theme: Theme }) => ({
+const BannerText = styled('a')(({ theme }: { theme: Theme }) => ({
   textDecoration: 'none',
   fontSize: '2rem',
   paddingLeft: '0.25rem',
@@ -38,7 +38,7 @@ const Branding = () => (
   <Banner container justify="flex-start" alignItems="center">
     <Brand item xs={3}>
       <ButtonBase>
-        <Link href="/">
+        <Link href="/" passHref>
           <BannerText>
             <strong>Partiguiden</strong>
           </BannerText>
@@ -76,7 +76,7 @@ const Header: React.FC = () => {
           handleOpen={openDrawer}
         />
       </Hidden>
-      <Hidden smDown>
+      <Hidden xsDown>
         <Branding />
         <NavLinks />
       </Hidden>

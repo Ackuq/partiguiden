@@ -27,13 +27,8 @@ const ProcessedDocuments: React.FC<Props> = ({ processedDocuments }) => {
         <div style={{ marginTop: '1.25rem' }}>
           {processedDocuments.map((document, index) => (
             <React.Fragment key={document.id}>
-              <Link href="/dokument/[id]" as={`/dokument/${document.id}`}>
-                <Typography
-                  component="a"
-                  variant="body1"
-                  color="primary"
-                  href={`/dokument/${document.id}`}
-                >
+              <Link href="/dokument/[id]" passHref>
+                <Typography component="a" variant="body1" color="primary">
                   [{index}] {document.label}
                 </Typography>
               </Link>

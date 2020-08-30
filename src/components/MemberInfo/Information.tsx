@@ -15,24 +15,26 @@ import { Information as InformationType } from '../../types/member';
 interface Props {
   id: string;
   informationRecords: Array<InformationType>;
-  absence: number;
+  absence: number | null;
 }
 
 const Information: React.FC<Props> = ({ id, informationRecords, absence }) => {
   const [documentCount, setDocumentCount] = useState(0);
 
   return (
-    <Grid container spacing={3}>
-      <Grid item xs={6}>
-        <Paper style={{ padding: '0.5rem' }}>
-          <Typography variant="h5" align="center">
-            {absence} %
-          </Typography>
-          <Typography variant="body2" align="center">
-            Voteringsnärvaro
-          </Typography>
-        </Paper>
-      </Grid>
+    <Grid container spacing={3} justify="center">
+      {absence && (
+        <Grid item xs={6}>
+          <Paper style={{ padding: '0.5rem' }}>
+            <Typography variant="h5" align="center">
+              {absence} %
+            </Typography>
+            <Typography variant="body2" align="center">
+              Voteringsnärvaro
+            </Typography>
+          </Paper>
+        </Grid>
+      )}
       <Grid item xs={6}>
         <Paper style={{ padding: '0.5rem' }}>
           <Typography variant="h5" align="center">

@@ -2,7 +2,7 @@ import useSWR from 'swr';
 import { ParsedUrlQuery, stringify } from 'querystring';
 import { VoteListEntry } from '../types/voting';
 import { Decision } from '../types/decision';
-import { MemberDocuments, MemberListEntry } from '../types/member';
+import { MemberDocuments, Member } from '../types/member';
 
 const baseUrl = process.env.PROXY_URL || 'http://localhost:3002';
 
@@ -39,8 +39,8 @@ export const useMemberDocuments = (id: string, page: number): MemberDocuments | 
   return data;
 };
 
-export const useMembers = (): Array<MemberListEntry> | undefined => {
-  const { data } = useSWR<Array<MemberListEntry>>(`${baseUrl}/swe/members`, fetcher);
+export const useMembers = (): Array<Member> | undefined => {
+  const { data } = useSWR<Array<Member>>(`${baseUrl}/swe/members`, fetcher);
 
   return data;
 };

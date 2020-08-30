@@ -28,7 +28,7 @@ interface Props {
 }
 const Document: React.FC<Props> = ({ document }) => {
   const classes = useStyles();
-  const authority = lookupAuthority(document.authority);
+  const authority = !!document.authority && lookupAuthority(document.authority);
   return (
     <Card>
       <ButtonBase

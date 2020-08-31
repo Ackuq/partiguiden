@@ -1,31 +1,33 @@
-import React from 'react';
-import { useRouter } from 'next/router';
+import React, { useState } from 'react';
 
 import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
 
 import { MembersFilter, MemberList } from '../components/MemberList';
-import { queryAttrToString, queryAttrToArray } from '../utils';
 
 import { Member } from '../types/member';
+import { partyAbbrev } from '../types/party';
 
 interface Props {
   members: Array<Member>;
 }
 
+interface FilterState {
+  search: string;
+  parties: Array<partyAbbrev>;
+}
+
 const Members: React.FC<Props> = ({ members }) => {
-  const router = useRouter();
-  const search = queryAttrToString(router.query.search);
-  const parties = queryAttrToArray(router.query.party);
+  const [filter, setFilter] = useState<FilterState>({ search: '', parties: [] });
 
   return (
     <div style={{ display: 'flex' }}>
       <Container>
         <Grid container spacing={3} justify="center">
-          <MemberList members={members} parties={parties} search={search} />
+          <MemberList members={members} filter={filter} />
         </Grid>
       </Container>
-      <MembersFilter router={router} parties={parties} search={search} />
+      <MembersFilter state={filter} setState={setFilter} />
     </div>
   );
 };

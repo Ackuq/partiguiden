@@ -5,23 +5,26 @@ import Grid from '@material-ui/core/Grid';
 import Member from './Member';
 import useStyles from './useStyles';
 import { Member as MemberType } from '../../types/member';
+import { partyAbbrev } from '../../types/party';
 
 interface Props {
-  parties: Array<string>;
-  search: string;
+  filter: {
+    search: string;
+    parties: Array<partyAbbrev>;
+  };
   members: Array<MemberType>;
 }
 
-const MemberList: React.FC<Props> = ({ members, parties, search }) => {
+const MemberList: React.FC<Props> = ({ members, filter }) => {
   const classes = useStyles();
 
   return (
     <>
       {members.map((member) => {
-        const inParty = parties.length ? parties.includes(member.party) : true;
+        const inParty = filter.parties.length ? filter.parties.includes(member.party) : true;
         const inSearch = `${member.firstName} ${member.lastName}`
           .toLowerCase()
-          .includes(search.toLowerCase());
+          .includes(filter.search.toLowerCase());
 
         return (
           <Grid

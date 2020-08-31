@@ -8,6 +8,7 @@ import SocialMediaShare from '../../../src/components/SocialMediaShare';
 import PageTitle from '../../../src/components/PageTitle';
 import Vote from '../../../src/containers/Vote';
 import { Vote as VoteType } from '../../../src/types/voting';
+import { getVote } from '../../../src/lib/proxy';
 
 interface Props {
   vote: VoteType;
@@ -50,8 +51,7 @@ export const getServerSideProps: GetServerSideProps = async ({ query }) => {
   const id = Array.isArray(query.id) ? query.id[0] : query.id || '';
   const proposition = query.bet ? getBet(query.bet) : 0;
 
-  const res = await fetch(`${process.env.PROXY_URL}/swe/vote/${id}/${proposition}`);
-  const vote: VoteType = await res.json();
+  const vote = await getVote(id, proposition);
 
   return { props: { vote, proposition } };
 };

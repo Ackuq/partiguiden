@@ -3,23 +3,19 @@ import React from 'react';
 import Grid from '@material-ui/core/Grid';
 
 import Member from './Member';
-import LoadCircle from '../LoadCircle';
 import useStyles from './useStyles';
-import { useMembers } from '../../hooks/parlimentHooks';
+import { Member as MemberType } from '../../types/member';
 
 interface Props {
   parties: Array<string>;
   search: string;
+  members: Array<MemberType>;
 }
 
-const MemberList: React.FC<Props> = ({ parties, search }) => {
+const MemberList: React.FC<Props> = ({ members, parties, search }) => {
   const classes = useStyles();
 
-  const members = useMembers();
-
-  return !members ? (
-    <LoadCircle />
-  ) : (
+  return (
     <>
       {members.map((member) => {
         const inParty = parties.length ? parties.includes(member.party) : true;

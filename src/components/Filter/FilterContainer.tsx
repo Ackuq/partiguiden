@@ -17,7 +17,7 @@ const Filter: React.FC<{ children: React.ReactChild | React.ReactChild[] }> = ({
 
   return (
     <>
-      <Hidden smUp>
+      <Hidden smUp implementation="css">
         <div style={{ position: 'fixed', bottom: '1rem', right: '5%' }}>
           <Fab style={{ backgroundColor: '#fff' }} onClick={toggleFilterScreen}>
             <FilterIcon fontSize="large" />
@@ -42,7 +42,7 @@ const Filter: React.FC<{ children: React.ReactChild | React.ReactChild[] }> = ({
           {children}
         </SwipeableDrawer>
       </Hidden>
-      <Hidden xsDown>
+      <Hidden xsDown implementation="css">
         <FilterContainerDesktop>{children}</FilterContainerDesktop>
       </Hidden>
     </>

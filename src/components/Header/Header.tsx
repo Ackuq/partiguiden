@@ -62,7 +62,7 @@ const Header: React.FC = () => {
 
   return (
     <AppBar position="sticky" ref={appBar}>
-      <Hidden smUp>
+      <Hidden smUp implementation="css">
         <Toolbar>
           <IconButton color="inherit" aria-label="open drawer" onClick={openDrawer} edge="start">
             <MenuIcon />
@@ -76,7 +76,7 @@ const Header: React.FC = () => {
           handleOpen={openDrawer}
         />
       </Hidden>
-      <Hidden xsDown>
+      <Hidden xsDown implementation="css">
         <Branding />
         <NavLinks />
       </Hidden>

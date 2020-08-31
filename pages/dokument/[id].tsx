@@ -7,6 +7,7 @@ import Container from '@material-ui/core/Container';
 import PageTitle from '../../src/components/PageTitle';
 import SocialMediaShare from '../../src/components/SocialMediaShare';
 import Document from '../../src/containers/Document';
+import { getDocument } from '../../src/lib/proxy';
 
 interface Props {
   document: { html: string };
@@ -29,8 +30,7 @@ const DocumentContainer: NextPage<Props> = ({ document, id }) => (
 export const getServerSideProps: GetServerSideProps = async ({ query }) => {
   const id = Array.isArray(query.id) ? query.id[0] : query.id || '';
 
-  const res = await fetch(`${process.env.PROXY_URL}/swe/document/${id}/json`);
-  const document = await res.json();
+  const document = await getDocument(id);
 
   return { props: { document, id } };
 };

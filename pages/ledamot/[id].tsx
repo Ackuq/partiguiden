@@ -4,6 +4,7 @@ import Head from 'next/head';
 
 import Member from '../../src/containers/Member';
 import { Member as MemberType } from '../../src/types/member';
+import { getMember } from '../../src/lib/proxy';
 
 interface Props {
   member: MemberType;
@@ -22,8 +23,8 @@ const MemberContainer: NextPage<Props> = ({ member }) => (
 
 export const getServerSideProps: GetServerSideProps = async ({ query }) => {
   const id = Array.isArray(query.id) ? query.id[0] : query.id || '';
-  const res = await fetch(`${process.env.PROXY_URL}/swe/member/${id}`);
-  const member = await res.json();
+
+  const member = await getMember(id);
 
   return { props: { member } };
 };

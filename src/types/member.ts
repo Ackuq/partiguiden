@@ -1,3 +1,5 @@
+import { partyAbbrev } from './party';
+
 export interface MemberDocument {
   authority: string | null;
   title: string;
@@ -35,7 +37,7 @@ export interface Member {
   lastName: string;
   pictureUrl: string;
   age: number;
-  party: string;
+  party: partyAbbrev;
   district: string;
   status: string;
   information: Information[];

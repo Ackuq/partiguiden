@@ -10,7 +10,7 @@ export type party =
   | 'Liberalerna'
   | 'Miljöpartiet';
 
-export type partyAbbrev = 'S' | 'M' | 'SD' | 'C' | 'V' | 'KD' | 'L' | 'MP';
+export type partyAbbrev = 'S' | 'M' | 'SD' | 'C' | 'V' | 'KD' | 'L' | 'MP' | '-';
 
 export interface Subject {
   name: string;

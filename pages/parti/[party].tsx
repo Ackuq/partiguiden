@@ -10,6 +10,7 @@ import { PartyData } from '../../src/types/party';
 import parties from '../../src/utils/getParties';
 import PageTitle from '../../src/components/PageTitle';
 import Party from '../../src/containers/Party';
+import { getParty } from '../../src/lib/proxy';
 
 interface Props {
   party: PartyData;
@@ -31,10 +32,9 @@ const PartyPage: NextPage<Props> = ({ party }) => (
 );
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const partyAbbrev = Array.isArray(params?.party) ? params?.party[0] : params?.party || '';
+  const partyAbbrev = Array.isArray(params?.party) ? params?.party[0] || '' : params?.party || '';
 
-  const res = await fetch(`${process.env.PROXY_URL}/swe/party/${partyAbbrev}`);
-  const party = await res.json();
+  const party = await getParty(partyAbbrev);
 
   return { props: { party: { ...party, abbrev: partyAbbrev } }, revalidate: 518400 };
 };

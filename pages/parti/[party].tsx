@@ -21,7 +21,7 @@ const PartyPage: NextPage<Props> = ({ party }) => (
     <Head>
       <title>{party.name} | Parti | Partiguiden</title>
     </Head>
-    <PageTitle title={party.name} />
+    <PageTitle variant="h2" title={party.name} />
     <Container>
       <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
         <SocialMediaShare title={party.name} />

@@ -10,34 +10,50 @@ const useStyles = makeStyles((theme: Theme) => ({
   cardContainer: {
     padding: '1rem',
     display: 'flex',
+    marginBottom: theme.spacing(4),
+    [theme.breakpoints.down('xs')]: {
+      flexDirection: 'column',
+      alignItems: 'center',
+    },
   },
 
   partyLogo: {
     height: 150,
-  },
-
-  [theme.breakpoints.down('md')]: {
-    partyLogo: {
+    [theme.breakpoints.down('md')]: {
       height: 125,
     },
-  },
-
-  [theme.breakpoints.down('sm')]: {
-    partyLogo: {
+    [theme.breakpoints.down('sm')]: {
       height: 100,
     },
   },
 
   leaderAvatar: {
+    marginBottom: theme.spacing(1),
+    marginRight: 'auto',
+    marginLeft: 'auto',
     width: theme.spacing(20),
     height: theme.spacing(20),
+
+    [theme.breakpoints.down('md')]: {
+      width: theme.spacing(15),
+      height: theme.spacing(15),
+    },
+
+    [theme.breakpoints.down('xs')]: {
+      width: theme.spacing(10),
+      height: theme.spacing(10),
+    },
   },
 
   leaderCard: {
+    height: '100%',
     padding: '1rem',
     textAlign: 'center',
     cursor: 'pointer',
     transition: 'all 0.2s ease-in-out',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'space-around',
     '&:hover': {
       backgroundColor: theme.palette.grey[200],
       boxShadow: theme.shadows[10],
@@ -76,15 +92,13 @@ const Party: React.FC<Props> = ({ party }) => {
 
   const Leader: React.FC<LeaderType> = ({ id, role, firstName, lastName, pictureUrl }) => {
     return (
-      <Grid item>
+      <Grid item md={3} sm={4} xs={6}>
         <NextLink passHref href="/ledamot/[id]" as={`/ledamot/${id}`}>
           <a style={{ textDecoration: 'none' }}>
             <Paper classes={{ root: classes.leaderCard }}>
+              <Avatar className={classes.leaderAvatar} src={pictureUrl} />
               <div>
-                <Avatar className={classes.leaderAvatar} src={pictureUrl} />
-              </div>
-              <div style={{ marginTop: 5 }}>
-                <Typography variant="subtitle2">
+                <Typography variant="subtitle2" component="p">
                   {firstName} {lastName}
                 </Typography>
                 <Typography>{role}</Typography>
@@ -97,7 +111,7 @@ const Party: React.FC<Props> = ({ party }) => {
   };
 
   const Leaders: React.FC = () => (
-    <Grid style={{ marginTop: '0.75rem' }} container spacing={5}>
+    <Grid container spacing={2} justify="center">
       {party.leaders.map((leader) => (
         <Leader key={leader.sourceId} {...leader} />
       ))}

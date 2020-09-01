@@ -1,5 +1,5 @@
 import React from 'react';
-import Router from 'next/router';
+import Link from 'next/link';
 
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
@@ -22,45 +22,43 @@ const Vote: React.FC<Props> = ({ vote, classes }) => {
 
   return (
     <Card elevation={1} style={{ flex: 1 }}>
-      <ButtonBase
-        style={{ display: 'block' }}
-        href={`/votering/${vote.documentId}/${vote.proposition}`}
-        component="a"
-        onClick={(event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
-          event.preventDefault();
-          Router.push('/votering/[id]/[bet]', `/votering/${vote.documentId}/${vote.proposition}`);
-        }}
+      <Link
+        href="/votering/[id]/[bet]"
+        as={`/votering/${vote.documentId}/${vote.proposition}`}
+        passHref
       >
-        <CardHeader
-          title={authority.desc}
-          style={{ background: authority.color }}
-          classes={{
-            title: classes.headerTitle,
-            root: classes.headerRoot,
-          }}
-        />
-        <CardContent>
-          <Typography
-            variant="h3"
-            color="textSecondary"
-            align="left"
-            gutterBottom
-            classes={{ h3: classes.title }}
-          >
-            {vote.title}
-          </Typography>
-          <Typography
-            variant="h6"
-            color="textSecondary"
-            align="left"
-            classes={{ h6: classes.subtitle }}
-          >
-            {vote.subtitle}
-          </Typography>
-        </CardContent>
+        <ButtonBase style={{ display: 'block' }} component="a">
+          <CardHeader
+            title={authority.desc}
+            style={{ background: authority.color }}
+            classes={{
+              title: classes.headerTitle,
+              root: classes.headerRoot,
+            }}
+          />
+          <CardContent>
+            <Typography
+              variant="h3"
+              color="textSecondary"
+              align="left"
+              gutterBottom
+              classes={{ h3: classes.title }}
+            >
+              {vote.title}
+            </Typography>
+            <Typography
+              variant="h6"
+              color="textSecondary"
+              align="left"
+              classes={{ h6: classes.subtitle }}
+            >
+              {vote.subtitle}
+            </Typography>
+          </CardContent>
 
-        <VoteResult votes={vote.results} classes={classes} />
-      </ButtonBase>
+          <VoteResult votes={vote.results} classes={classes} />
+        </ButtonBase>
+      </Link>
     </Card>
   );
 };

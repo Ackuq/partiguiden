@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Link from 'next/link';
 
 import Collapse from '@material-ui/core/Collapse';
 import CardContent from '@material-ui/core/CardContent';
@@ -11,7 +12,6 @@ import ArrowDownRounded from '@material-ui/icons/KeyboardArrowDownRounded';
 import { lookupAuthority } from '../../utils/authorityTable';
 import { Decision as DecisionType } from '../../types/decision';
 import useStyles from './useStyles';
-import Link from 'next/link';
 
 interface Props {
   decision: DecisionType;

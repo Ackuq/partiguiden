@@ -1,5 +1,5 @@
 import React from 'react';
-import Router from 'next/router';
+import Link from 'next/link';
 
 import Grid from '@material-ui/core/Grid';
 import ButtonBase from '@material-ui/core/ButtonBase';
@@ -42,22 +42,18 @@ const Featured: React.FC = () => {
     <Grid container spacing={3}>
       {getFeatured().map((obj) => (
         <Grid key={obj.id} item xs={12} md={6}>
-          <ButtonBase
-            className={classes.featured}
-            onClick={(event) => {
-              event.preventDefault();
-              Router.push('/standpunkter/[id]', `/standpunkter/${obj.id}`);
-            }}
-          >
-            <Typography
-              component="a"
-              variant="button"
-              href={`/standpunkter/${obj.id}`}
-              color="primary"
-            >
-              {obj.name}
-            </Typography>
-          </ButtonBase>
+          <Link href="/standpunkter/[id]" as={`/standpunkter/${obj.id}`} passHref>
+            <ButtonBase className={classes.featured}>
+              <Typography
+                component="a"
+                variant="button"
+                href={`/standpunkter/${obj.id}`}
+                color="primary"
+              >
+                {obj.name}
+              </Typography>
+            </ButtonBase>
+          </Link>
         </Grid>
       ))}
     </Grid>

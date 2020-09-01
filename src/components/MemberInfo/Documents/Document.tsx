@@ -1,5 +1,5 @@
 import React from 'react';
-import Router from 'next/router';
+import Link from 'next/link';
 import { makeStyles } from '@material-ui/styles';
 
 import Card from '@material-ui/core/Card';
@@ -31,32 +31,29 @@ const Document: React.FC<Props> = ({ document }) => {
   const authority = !!document.authority && lookupAuthority(document.authority);
   return (
     <Card>
-      <ButtonBase
-        style={{ display: 'block' }}
-        component="a"
-        href={`/dokument/${document.id}`}
-        onClick={() => Router.push('/dokument/[id]', `/dokument/${document.id}`)}
-      >
-        {authority && (
-          <CardHeader
-            title={authority.desc}
-            style={{ background: authority.color }}
-            classes={{
-              title: classes.headerTitle,
-              root: classes.headerRoot,
-            }}
-          />
-        )}
-        <CardContent>
-          <Typography style={{ fontSize: '0.75rem' }} color="textSecondary" gutterBottom>
-            {document.title}
-          </Typography>
-          <Typography color="primary">{document.altTitle}</Typography>
-          <Typography style={{ fontSize: '0.85rem' }} color="textSecondary">
-            {document.subtitle}
-          </Typography>
-        </CardContent>
-      </ButtonBase>
+      <Link href="/dokument/[id]" as={`/dokument/${document.id}`} passHref>
+        <ButtonBase style={{ display: 'block' }} component="a">
+          {authority && (
+            <CardHeader
+              title={authority.desc}
+              style={{ background: authority.color }}
+              classes={{
+                title: classes.headerTitle,
+                root: classes.headerRoot,
+              }}
+            />
+          )}
+          <CardContent>
+            <Typography style={{ fontSize: '0.75rem' }} color="textSecondary" gutterBottom>
+              {document.title}
+            </Typography>
+            <Typography color="primary">{document.altTitle}</Typography>
+            <Typography style={{ fontSize: '0.85rem' }} color="textSecondary">
+              {document.subtitle}
+            </Typography>
+          </CardContent>
+        </ButtonBase>
+      </Link>
     </Card>
   );
 };

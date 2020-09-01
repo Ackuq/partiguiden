@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Router from 'next/router';
 
 import Collapse from '@material-ui/core/Collapse';
 import CardContent from '@material-ui/core/CardContent';
@@ -12,6 +11,7 @@ import ArrowDownRounded from '@material-ui/icons/KeyboardArrowDownRounded';
 import { lookupAuthority } from '../../utils/authorityTable';
 import { Decision as DecisionType } from '../../types/decision';
 import useStyles from './useStyles';
+import Link from 'next/link';
 
 interface Props {
   decision: DecisionType;
@@ -62,27 +62,13 @@ const Decision: React.FC<Props> = ({ decision, classes }) => {
                   <div dangerouslySetInnerHTML={{ __html: decision.paragraph }} /> // eslint-disable-line react/no-danger
                 )}
               </div>
-              <Button
-                component="a"
-                href={`/dokument/${decision.id}`}
-                onClick={(event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
-                  event.preventDefault();
-                  Router.push('/dokument/[id]', `/dokument/${decision.id}`);
-                }}
-              >
-                Läs mer om betänkandet
-              </Button>
+              <Link href="/dokument/[id]" as={`/dokument/${decision.id}`} passHref>
+                <Button component="a">Läs mer om betänkandet</Button>
+              </Link>
               {decision.votesExists && (
-                <Button
-                  component="a"
-                  href="/voteringar"
-                  onClick={(event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
-                    event.preventDefault();
-                    Router.push(`/voteringar?search=${decision.voteSearchTerm}`);
-                  }}
-                >
-                  Läs mer om voteringarna
-                </Button>
+                <Link href={`/voteringar?search=${decision.voteSearchTerm}`} passHref>
+                  <Button component="a">Läs mer om voteringarna</Button>
+                </Link>
               )}
             </Collapse>
           </CardContent>

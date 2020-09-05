@@ -19,7 +19,7 @@ const LedamoterContainer: NextPage<Props> = ({ members }) => (
       <title>Riksdagsledamöter | Partiguiden</title>
       <meta name="description" content="" />
     </Head>
-    <PageTitle title="Riksdagsledamöter" Icon={PersonIcon} variant="h2" />
+    <PageTitle title="Riksdagsledamöter" Icon={PersonIcon} />
     <Members members={members} />
   </>
 );

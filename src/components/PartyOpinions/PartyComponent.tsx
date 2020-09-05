@@ -36,7 +36,7 @@ const PartyComponent: React.FC<Props> = ({ party }) => {
       >
         <>
           <Typography
-            variant="h3"
+            variant="h4"
             style={{ fontWeight: 300, marginBottom: '0.25rem', marginTop: '0.25rem' }}
           >
             {party.name}

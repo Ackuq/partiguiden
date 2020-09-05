@@ -1,4 +1,4 @@
-import { Avatar, Grid, Link, Paper, Typography } from '@material-ui/core';
+import { Avatar, Divider, Grid, Link, Paper, Typography } from '@material-ui/core';
 import { makeStyles } from '@material-ui/styles';
 import { Theme } from '@material-ui/core';
 
@@ -9,21 +9,18 @@ import NextLink from 'next/link';
 const useStyles = makeStyles((theme: Theme) => ({
   cardContainer: {
     padding: '1rem',
-    display: 'flex',
     marginBottom: theme.spacing(4),
-    [theme.breakpoints.down('xs')]: {
-      flexDirection: 'column',
-      alignItems: 'center',
-    },
   },
 
-  partyLogo: {
-    height: 150,
-    [theme.breakpoints.down('md')]: {
-      height: 125,
-    },
-    [theme.breakpoints.down('sm')]: {
-      height: 100,
+  informationDivider: {
+    marginTop: '0.5rem',
+    marginBottom: '0.5rem',
+  },
+
+  biography: {
+    '& p': {
+      marginTop: '0.5em',
+      marginBottom: '0.5em',
     },
   },
 
@@ -59,6 +56,9 @@ const useStyles = makeStyles((theme: Theme) => ({
       boxShadow: theme.shadows[10],
     },
   },
+  leadersContainer: {
+    padding: '1rem',
+  },
 }));
 
 interface Props {
@@ -70,21 +70,30 @@ const Party: React.FC<Props> = ({ party }) => {
 
   const InformationCard: React.FC = () => (
     <Paper classes={{ root: classes.cardContainer }}>
-      <div style={{ marginRight: '1rem' }}>
-        <img
-          className={classes.partyLogo}
-          src={`/static/images/party-logos/${party.abbrev.toLocaleUpperCase()}.svg`}
-        />
-      </div>
       <div>
+        <Typography variant="h5">Hemsida</Typography>
         <Typography>
-          <strong>Hemsida:</strong>{' '}
           <Link href={party.website} rel="noopener" target="_blank">
             {party.website}
           </Link>
         </Typography>
-        <Typography>
-          <strong>Ideologi:</strong> {party.ideology.join(', ')}[1]
+      </div>
+      <Divider className={classes.informationDivider} />
+      <div>
+        <Typography variant="h5">Ideologi</Typography>
+        <Typography>{party.ideology.join(', ')}</Typography>
+        <Typography component="p" variant="caption">
+          Källa: <a href="https://www.wikipedia.org/">https://www.wikipedia.org/</a>
+        </Typography>
+      </div>
+      <Divider className={classes.informationDivider} />
+      <div>
+        <Typography variant="h5">Biografi</Typography>
+        <Typography component="div" variant="body2">
+          <div dangerouslySetInnerHTML={{ __html: party.abstract }} className={classes.biography} />
+        </Typography>
+        <Typography component="p" variant="caption">
+          Källa: <a href="https://www.wikipedia.org/">https://www.wikipedia.org/</a>
         </Typography>
       </div>
     </Paper>
@@ -95,7 +104,7 @@ const Party: React.FC<Props> = ({ party }) => {
       <Grid item md={3} sm={4} xs={6}>
         <NextLink passHref href="/ledamot/[id]" as={`/ledamot/${id}`}>
           <a style={{ textDecoration: 'none' }}>
-            <Paper classes={{ root: classes.leaderCard }}>
+            <Paper classes={{ root: classes.leaderCard }} elevation={0}>
               <Avatar className={classes.leaderAvatar} src={pictureUrl} />
               <div>
                 <Typography variant="subtitle2" component="p">
@@ -111,11 +120,16 @@ const Party: React.FC<Props> = ({ party }) => {
   };
 
   const Leaders: React.FC = () => (
-    <Grid container spacing={2} justify="center">
-      {party.leaders.map((leader) => (
-        <Leader key={leader.sourceId} {...leader} />
-      ))}
-    </Grid>
+    <Paper classes={{ root: classes.leadersContainer }}>
+      <Typography gutterBottom variant="h4" align="center">
+        Ledning
+      </Typography>
+      <Grid container spacing={2} justify="center">
+        {party.leaders.map((leader) => (
+          <Leader key={leader.sourceId} {...leader} />
+        ))}
+      </Grid>
+    </Paper>
   );
 
   return (

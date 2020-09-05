@@ -12,7 +12,7 @@ const FrontPage: React.FC = () => (
     <Grid item xs={12}>
       <Card>
         <CardContent>
-          <Typography variant="h2" paragraph align="center">
+          <Typography variant="h4" paragraph align="center">
             Vilket parti ska man rösta på?
           </Typography>
           <Typography variant="body1" paragraph>
@@ -26,7 +26,7 @@ const FrontPage: React.FC = () => (
     <Grid item xs={12}>
       <Card>
         <CardContent>
-          <Typography variant="h2" paragraph align="center">
+          <Typography variant="h4" paragraph align="center">
             Aktuella frågor
           </Typography>
           <Featured />

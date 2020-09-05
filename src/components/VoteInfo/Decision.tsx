@@ -15,7 +15,6 @@ const Decision: React.FC<Props> = ({ decision, description }) => (
     <Typography variant="h5" color="inherit" gutterBottom style={{ marginTop: '0.5rem' }}>
       Beslut i korthet
     </Typography>
-    {/* eslint-disable-next-line react/no-danger */}
     <div dangerouslySetInnerHTML={{ __html: description }} />
   </div>
 );

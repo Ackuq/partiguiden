@@ -27,7 +27,7 @@ const VoteContainer: NextPage<Props> = ({ vote, proposition, id }) => (
         content={`Hur har partiernat röstat i voteringen om ${vote.title}`}
       />
     </Head>
-    <PageTitle title={`${vote.title} förslagspunkt ${proposition}`} variant="h3" />
+    <PageTitle title={`${vote.title} förslagspunkt ${proposition}`} variant="h4" />
     <Container>
       <div style={{ display: 'flex', justifyContent: 'space-between' }}>
         <Breadcrumbs

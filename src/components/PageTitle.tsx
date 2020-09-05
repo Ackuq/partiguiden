@@ -21,10 +21,10 @@ interface Props extends TypographyProps {
   Icon?: React.ElementType;
 }
 
-const PageTitle: React.FC<Props> = ({ title, variant = 'h1', Icon, ...rest }) => (
+const PageTitle: React.FC<Props> = ({ title, variant = 'h3', Icon }) => (
   <PageTitleContainer square>
     {Icon && <Icon style={{ fontSize: '2.5rem' }} />}
-    <Typography variant={variant} {...rest}>
+    <Typography variant={variant} component="h1">
       {title}
     </Typography>
   </PageTitleContainer>

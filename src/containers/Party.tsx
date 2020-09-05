@@ -1,10 +1,12 @@
 import { Avatar, Divider, Grid, Link, Paper, Typography } from '@material-ui/core';
 import { makeStyles } from '@material-ui/styles';
 import { Theme } from '@material-ui/core';
+import NextLink from 'next/link';
 
 import React from 'react';
 import { Leader as LeaderType, PartyData } from '../types/party';
-import NextLink from 'next/link';
+
+import * as ROUTES from '../lib/routes';
 
 const useStyles = makeStyles((theme: Theme) => ({
   cardContainer: {
@@ -102,7 +104,7 @@ const Party: React.FC<Props> = ({ party }) => {
   const Leader: React.FC<LeaderType> = ({ id, role, firstName, lastName, pictureUrl }) => {
     return (
       <Grid item md={3} sm={4} xs={6}>
-        <NextLink passHref href="/ledamot/[id]" as={`/ledamot/${id}`}>
+        <NextLink passHref href={ROUTES.MEMBER} as={ROUTES.getMemberHref(id)}>
           <a style={{ textDecoration: 'none' }}>
             <Paper classes={{ root: classes.leaderCard }} elevation={0}>
               <Avatar className={classes.leaderAvatar} src={pictureUrl} />

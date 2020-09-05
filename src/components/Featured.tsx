@@ -8,6 +8,7 @@ import Typography from '@material-ui/core/Typography';
 import grey from '@material-ui/core/colors/grey';
 import { makeStyles, createStyles } from '@material-ui/styles';
 import { Theme } from '@material-ui/core';
+import { getStandpointHref, STANDPOINT } from '../lib/routes';
 
 const styles = (theme: Theme) =>
   createStyles({
@@ -42,14 +43,9 @@ const Featured: React.FC = () => {
     <Grid container spacing={3}>
       {getFeatured().map((obj) => (
         <Grid key={obj.id} item xs={12} md={6}>
-          <Link href="/standpunkter/[id]" as={`/standpunkter/${obj.id}`} passHref>
+          <Link href={STANDPOINT} as={getStandpointHref(obj.id)} passHref>
             <ButtonBase className={classes.featured}>
-              <Typography
-                component="a"
-                variant="button"
-                href={`/standpunkter/${obj.id}`}
-                color="primary"
-              >
+              <Typography variant="button" color="primary">
                 {obj.name}
               </Typography>
             </ButtonBase>

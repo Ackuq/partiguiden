@@ -11,6 +11,7 @@ import {
 import parties from '../../utils/getParties';
 import { makeStyles } from '@material-ui/styles';
 import { Theme } from '@material-ui/core';
+import * as ROUTES from '../../lib/routes';
 
 /* Can probably create React SVG components later on */
 
@@ -37,14 +38,15 @@ const partyFactory = (partyAbbrev: string) =>
   };
 
 export default [
-  { href: '/', title: 'Hem', Icon: Home },
+  { href: ROUTES.INDEX, title: 'Hem', Icon: Home },
   {
-    href: '/partiernas-standpunkter',
+    href: ROUTES.STANDPOINTS,
     title: 'Partiernas Ståndpunkter',
     Icon: Note,
+    associated: [ROUTES.STANDPOINT],
   },
   {
-    href: '/parti/[party]',
+    href: ROUTES.PARTY,
     title: 'Partierna',
     subPages: parties.map((party) => ({
       title: party.name,
@@ -53,8 +55,8 @@ export default [
     })),
     Icon: Group,
   },
-  { href: '/riksdagsbeslut', title: 'Riksdagsbeslut', Icon: GavelRounded },
-  { href: '/voteringar', title: 'Voteringar', Icon: HowToVoteRounded },
-  { href: '/ledamoter', title: 'Ledamöter', Icon: Person },
-  { href: '/om-oss', title: 'Om oss', Icon: InfoRounded },
+  { href: ROUTES.DECISIONS, title: 'Riksdagsbeslut', Icon: GavelRounded },
+  { href: ROUTES.VOTES, title: 'Voteringar', Icon: HowToVoteRounded, associated: [ROUTES.VOTE] },
+  { href: ROUTES.MEMBERS, title: 'Ledamöter', Icon: Person, associated: [ROUTES.MEMBER] },
+  { href: ROUTES.ABOUT_US, title: 'Om oss', Icon: InfoRounded },
 ];

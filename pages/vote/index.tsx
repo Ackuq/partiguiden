@@ -4,8 +4,8 @@ import Head from 'next/head';
 
 import VoteIcon from '@material-ui/icons/HowToVoteRounded';
 
-import PageTitle from '../src/components/PageTitle';
-import Votes from '../src/containers/Votes';
+import PageTitle from '../../src/components/PageTitle';
+import Votes from '../../src/containers/Votes';
 
 const VotesContainer: NextPage = () => (
   <>

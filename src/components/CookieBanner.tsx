@@ -10,6 +10,8 @@ import Typography from '@material-ui/core/Typography';
 import Cookies from 'universal-cookie';
 import { Theme } from '@material-ui/core';
 
+import { COOKIE_POLICY } from '../lib/routes';
+
 const cookies = new Cookies();
 
 const CookieBannerContainer = styled(Paper)(({ theme }: { theme: Theme }) => ({
@@ -51,7 +53,7 @@ const CookieBanner: React.FC = () => {
                 marginRight: '3px',
               }}
             >
-              <Link href="/kakpolicy">
+              <Link href={COOKIE_POLICY}>
                 <Typography component="a" variant="button">
                   Läs mer
                 </Typography>

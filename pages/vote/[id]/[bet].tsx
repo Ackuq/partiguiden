@@ -10,12 +10,15 @@ import Vote from '../../../src/containers/Vote';
 import { Vote as VoteType } from '../../../src/types/voting';
 import { getVote } from '../../../src/lib/proxy';
 
+import * as ROUTES from '../../../src/lib/routes';
+
 interface Props {
   vote: VoteType;
   proposition: number;
+  id: string;
 }
 
-const VoteContainer: NextPage<Props> = ({ vote, proposition }) => (
+const VoteContainer: NextPage<Props> = ({ vote, proposition, id }) => (
   <>
     <Head>
       <title>{vote.title} | Votering | Partiguiden</title>
@@ -29,8 +32,8 @@ const VoteContainer: NextPage<Props> = ({ vote, proposition }) => (
       <div style={{ display: 'flex', justifyContent: 'space-between' }}>
         <Breadcrumbs
           links={[
-            { href: '/voteringar', label: 'Voteringar' },
-            { href: '#', label: 'Votering' },
+            { href: ROUTES.VOTES, label: 'Voteringar' },
+            { href: ROUTES.VOTE, as: ROUTES.getVoteHref(id, proposition), label: 'Votering' },
           ]}
         />
         <SocialMediaShare title={`${vote.title} förslagspunkt ${proposition}`} />
@@ -53,7 +56,7 @@ export const getServerSideProps: GetServerSideProps = async ({ query }) => {
 
   const vote = await getVote(id, proposition);
 
-  return { props: { vote, proposition } };
+  return { props: { vote, proposition, id } };
 };
 
 export default VoteContainer;

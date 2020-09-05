@@ -15,7 +15,7 @@ export interface VoteListEntry {
   results: votingResult;
   authority: string;
   documentId: string;
-  proposition: string;
+  proposition: number;
   subtitle: string;
 }
 

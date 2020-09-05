@@ -6,6 +6,8 @@ import Box from '@material-ui/core/Box';
 import Breadcrumbs from '../Breadcrumbs';
 import { Member } from '../../types/member';
 
+import * as ROUTES from '../../lib/routes';
+
 interface Props {
   member: Member;
 }
@@ -25,8 +27,12 @@ const ProfilePicture: React.FC<Props> = ({ member }) => (
       <Box p={2} position="absolute" top={0} left={0}>
         <Breadcrumbs
           links={[
-            { label: 'Ledamöter', href: '/ledamoter' },
-            { label: 'Ledamot', href: '#' },
+            { label: 'Ledamöter', href: ROUTES.MEMBERS },
+            {
+              label: `${member.firstName} ${member.lastName}`,
+              href: ROUTES.MEMBER,
+              as: ROUTES.getMemberHref(member.id),
+            },
           ]}
         />
       </Box>

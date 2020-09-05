@@ -4,7 +4,7 @@ export const ABOUT_US = '/about-us';
 
 export const VOTES = '/vote';
 export const VOTE = '/vote/[id]/[bet]';
-export const getVoteHref = (id: string, bet: string): string => `/vote/${id}/${bet}`;
+export const getVoteHref = (id: string, bet: number): string => `/vote/${id}/${bet}`;
 
 export const DECISIONS = '/decisions';
 

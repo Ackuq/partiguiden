@@ -8,6 +8,8 @@ import RotatingArrow from './RotatingArrow';
 import SectionButton from './SectionButton';
 import { Vote } from '../../types/voting';
 
+import * as ROUTES from '../../lib/routes';
+
 interface Props {
   processedDocuments: Vote['processedDocuments'];
 }
@@ -27,7 +29,7 @@ const ProcessedDocuments: React.FC<Props> = ({ processedDocuments }) => {
         <div style={{ marginTop: '1.25rem' }}>
           {processedDocuments.map((document, index) => (
             <React.Fragment key={document.id}>
-              <Link href="/dokument/[id]" as={`/dokument/${document.id}`} passHref>
+              <Link href={ROUTES.DOCUMENT} as={ROUTES.getDocumentHref(document.id)} passHref>
                 <Typography component="a" variant="body1" color="primary">
                   [{index}] {document.label}
                 </Typography>

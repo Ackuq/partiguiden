@@ -3,11 +3,11 @@ import { GetStaticProps, NextPage } from 'next';
 import Head from 'next/head';
 import PersonIcon from '@material-ui/icons/Person';
 
-import PageTitle from '../src/components/PageTitle';
-import Members from '../src/containers/Members';
+import PageTitle from '../../src/components/PageTitle';
+import Members from '../../src/containers/Members';
 
-import { getMembers } from '../src/lib/proxy';
-import { Member } from '../src/types/member';
+import { getMembers } from '../../src/lib/proxy';
+import { Member } from '../../src/types/member';
 
 interface Props {
   members: Array<Member>;

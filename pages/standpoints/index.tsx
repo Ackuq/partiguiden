@@ -4,11 +4,11 @@ import Head from 'next/head';
 
 import NoteIcon from '@material-ui/icons/Note';
 
-import PageTitle from '../src/components/PageTitle';
+import PageTitle from '../../src/components/PageTitle';
 
-import StandpointsList from '../src/containers/StandpointsList';
-import { getSubjects } from '../src/lib/api';
-import { StandpointData } from '../src/types/standpoints';
+import StandpointsList from '../../src/containers/StandpointsList';
+import { getSubjects } from '../../src/lib/api';
+import { StandpointData } from '../../src/types/standpoints';
 
 interface Props {
   subjects: Array<StandpointData>;

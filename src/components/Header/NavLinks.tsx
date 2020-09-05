@@ -1,13 +1,14 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import { NextRouter, useRouter } from 'next/router';
+import Link from 'next/link';
 
 import makeStyles from '@material-ui/styles/makeStyles';
 
 import { Menu, MenuItem, Theme } from '@material-ui/core';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
+
 import pages from './pages';
-import Link from 'next/link';
 
 const useStyles = makeStyles((theme: Theme) => ({
   [theme.breakpoints.up('sm')]: {
@@ -70,8 +71,6 @@ const DropDown: React.FC<DropDownProps> = ({ title, href, subPages, router }) =>
   );
 };
 
-const hrefArray = pages.map((page) => page.href);
-
 interface CustomTabProps {
   href: string;
   title: string;
@@ -92,6 +91,15 @@ const NavLinks: React.FC = () => {
   const router = useRouter();
   const classes = useStyles();
 
+  const selectedTab = useMemo(() => {
+    const index = pages.findIndex(
+      (page) =>
+        page.href === router.pathname ||
+        (page.associated && page.associated.includes(router.pathname))
+    );
+    return index === -1 ? false : index;
+  }, [router.pathname]);
+
   return (
     <Tabs
       variant="scrollable"
@@ -99,9 +107,7 @@ const NavLinks: React.FC = () => {
         scrollButtons: classes.scrollButton,
         scroller: classes.scrollTab,
       }}
-      value={
-        hrefArray.some((href) => href === router.pathname) && hrefArray.indexOf(router.pathname)
-      }
+      value={selectedTab}
     >
       {pages.map(({ href, title, subPages }) =>
         subPages ? (

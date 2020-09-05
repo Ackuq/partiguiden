@@ -1,5 +1,5 @@
 export interface Decision {
-  id: number;
+  id: string;
   paragraph: string;
   paragraphTitle: string;
   authority: string;

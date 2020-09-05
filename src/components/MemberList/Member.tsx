@@ -3,13 +3,15 @@ import Link from 'next/link';
 import useStyles from './useStyles';
 import { Member as MemberType } from '../../types/member';
 
+import * as ROUTES from '../../lib/routes';
+
 interface Props {
   member: MemberType;
   classes: ReturnType<typeof useStyles>;
 }
 
 const Member: React.FC<Props> = ({ member, classes }) => (
-  <Link href="/ledamot/[id]" as={`/ledamot/${member.id}`} passHref>
+  <Link href={ROUTES.MEMBER} as={ROUTES.getMemberHref(member.id)} passHref>
     <a className={classes.memberCard}>
       <div className={classes.infoContainer}>
         <span className={classes.role}>{member.status}</span>

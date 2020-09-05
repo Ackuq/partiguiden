@@ -13,6 +13,8 @@ import { lookupAuthority } from '../../utils/authorityTable';
 import { Decision as DecisionType } from '../../types/decision';
 import useStyles from './useStyles';
 
+import * as ROUTES from '../../lib/routes';
+
 interface Props {
   decision: DecisionType;
   classes: ReturnType<typeof useStyles>;
@@ -62,11 +64,11 @@ const Decision: React.FC<Props> = ({ decision, classes }) => {
                   <div dangerouslySetInnerHTML={{ __html: decision.paragraph }} /> // eslint-disable-line react/no-danger
                 )}
               </div>
-              <Link href="/dokument/[id]" as={`/dokument/${decision.id}`} passHref>
+              <Link href={ROUTES.DOCUMENT} as={ROUTES.getDocumentHref(decision.id)} passHref>
                 <Button component="a">Läs mer om betänkandet</Button>
               </Link>
               {decision.votesExists && (
-                <Link href={`/voteringar?search=${decision.voteSearchTerm}`} passHref>
+                <Link href={`${ROUTES.VOTES}?search=${decision.voteSearchTerm}`} passHref>
                   <Button component="a">Läs mer om voteringarna</Button>
                 </Link>
               )}

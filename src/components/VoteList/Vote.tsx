@@ -12,6 +12,8 @@ import { lookupAuthority } from '../../utils';
 import VoteResult from './VoteResult';
 import { VoteListEntry } from '../../types/voting';
 
+import * as ROUTES from '../../lib/routes';
+
 interface Props {
   vote: VoteListEntry;
   classes: ReturnType<typeof useStyles>;
@@ -22,11 +24,7 @@ const Vote: React.FC<Props> = ({ vote, classes }) => {
 
   return (
     <Card elevation={1} style={{ flex: 1 }}>
-      <Link
-        href="/votering/[id]/[bet]"
-        as={`/votering/${vote.documentId}/${vote.proposition}`}
-        passHref
-      >
+      <Link href={ROUTES.VOTE} as={ROUTES.getVoteHref(vote.documentId, vote.proposition)} passHref>
         <ButtonBase style={{ display: 'block' }} component="a">
           <CardHeader
             title={authority.desc}

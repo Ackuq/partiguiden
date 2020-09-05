@@ -16,6 +16,8 @@ import MenuIcon from '@material-ui/icons/Menu';
 import NavLinks from './NavLinks';
 import Drawer from './Drawer';
 
+import { INDEX } from '../../lib/routes';
+
 const Brand = styled(Grid)({
   margin: '0.25rem',
   textAlign: 'center',
@@ -38,7 +40,7 @@ const Branding = () => (
   <Banner container justify="flex-start" alignItems="center">
     <Brand item xs={3}>
       <ButtonBase>
-        <Link href="/" passHref>
+        <Link href={INDEX} passHref>
           <BannerText>
             <strong>Partiguiden</strong>
           </BannerText>

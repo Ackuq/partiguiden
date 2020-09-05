@@ -11,6 +11,8 @@ import ButtonBase from '@material-ui/core/ButtonBase';
 import { lookupAuthority } from '../../../utils/authorityTable';
 import { MemberDocument } from '../../../types/member';
 
+import * as ROUTES from '../../../lib/routes';
+
 const useStyles = makeStyles({
   headerTitle: {
     fontSize: '1.15rem',
@@ -31,7 +33,7 @@ const Document: React.FC<Props> = ({ document }) => {
   const authority = !!document.authority && lookupAuthority(document.authority);
   return (
     <Card>
-      <Link href="/dokument/[id]" as={`/dokument/${document.id}`} passHref>
+      <Link href={ROUTES.DOCUMENT} as={ROUTES.getDocumentHref(document.id)} passHref>
         <ButtonBase style={{ display: 'block' }} component="a">
           {authority && (
             <CardHeader

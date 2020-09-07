@@ -1,15 +1,14 @@
 import React, { useEffect } from 'react';
-
-const enableAd = process.env.NODE_ENV === 'production' && process.env.ENABLE_ADS === 'true';
+import enableAds from './enableAds';
 
 const Ad: React.FC = () => {
   useEffect(() => {
-    if (enableAd) {
+    if (enableAds) {
       (window.adsbygoogle = window.adsbygoogle || []).push({});
     }
   }, []);
 
-  return enableAd ? (
+  return enableAds ? (
     <div style={{ textAlign: 'center' }}>
       <ins
         className="adsbygoogle"

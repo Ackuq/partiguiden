@@ -7,12 +7,9 @@ import Paper from '@material-ui/core/Paper';
 import Button from '@material-ui/core/Button';
 import Slide from '@material-ui/core/Slide';
 import Typography from '@material-ui/core/Typography';
-import Cookies from 'universal-cookie';
 import { Theme } from '@material-ui/core';
 
 import { COOKIE_POLICY } from '../lib/routes';
-
-const cookies = new Cookies();
 
 const CookieBannerContainer = styled(Paper)(({ theme }: { theme: Theme }) => ({
   backgroundColor: theme.palette.primary.main,
@@ -30,11 +27,15 @@ const ButtonContainer = styled('div')({
   marginTop: '1rem',
 });
 
+const COOKIE_CONSENT_KEY = 'cookie_consent';
+
 const CookieBanner: React.FC = () => {
   const [cookieConsent, setCookieConsent] = useState(true);
 
   useEffect(() => {
-    if (!cookies.get('consent')) setCookieConsent(false);
+    if (!localStorage.getItem(COOKIE_CONSENT_KEY)) {
+      setCookieConsent(false);
+    }
   }, []);
 
   return (
@@ -67,7 +68,7 @@ const CookieBanner: React.FC = () => {
               variant="outlined"
               onClick={() => {
                 setCookieConsent(true);
-                cookies.set('consent', true, { path: '/' });
+                localStorage.setItem(COOKIE_CONSENT_KEY, JSON.stringify(true));
               }}
             >
               Jag godkänner

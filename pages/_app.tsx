@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import { AppProps } from 'next/app';
-import ReactGA from 'react-ga';
 import { ThemeProvider } from '@material-ui/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Head from 'next/head';
@@ -12,14 +11,8 @@ import CookieBanner from '../src/components/CookieBanner';
 
 import theme from '../src/lib/theme';
 
-const initReactGA = () => {
-  ReactGA.initialize('UA-111642551-2');
-  ReactGA.pageview(window.location.pathname);
-};
-
-const App = ({ Component, pageProps }: AppProps) => {
+const App: React.FC<AppProps> = ({ Component, pageProps }) => {
   useEffect(() => {
-    initReactGA();
     // Remove the server-side injected CSS.
     const jssStyles = document.querySelector('#jss-server-side');
     if (jssStyles && jssStyles.parentNode) {

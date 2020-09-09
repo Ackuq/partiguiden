@@ -19,6 +19,7 @@ class MyDocument extends Document {
           />
           <link rel="mask-icon" href="/static/icons/safari-pinned-tab.svg" color="#5bbad5" />
           <link rel="manifest" href="/static/manifest.json" />
+
           <meta property="og:image" content="/static/images/partiguiden_logo.png" />
           <meta name="theme-color" content="#00796B" />
           <style>
@@ -38,8 +39,28 @@ class MyDocument extends Document {
             }
           `}
           </style>
+
           {process.env.NODE_ENV === 'production' && (
-            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" />
+            <>
+              <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" />
+
+              {/* Global site tag (gtag.js) - Google Analytics  */}
+              <script
+                async
+                src="https://www.googletagmanager.com/gtag/js?id=UA-111642551-1"
+              ></script>
+              <script
+                dangerouslySetInnerHTML={{
+                  __html: `
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+
+                    gtag('config', ${process.env.TRACKING_ID}'UA-111642551-1');
+                `,
+                }}
+              />
+            </>
           )}
         </Head>
         <body style={{ height: '100%' }}>

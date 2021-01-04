@@ -10,6 +10,9 @@ import ToTopButton from '../src/components/ToTopButton';
 import CookieBanner from '../src/components/CookieBanner';
 
 import theme from '../src/lib/theme';
+import { init } from '../src/utils/sentry';
+
+init();
 
 const App: React.FC<AppProps> = ({ Component, pageProps }) => {
   useEffect(() => {

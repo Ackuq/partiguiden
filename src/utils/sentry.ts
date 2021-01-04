@@ -26,8 +26,8 @@ export const init = (): void => {
       enabled: process.env.NODE_ENV === 'production',
       environment: process.env.VERCEL_ENV,
       integrations,
-      dsn: process.env.VERCEL_PUBLIC_SENTRY_DSN,
-      release: process.env.VERCEL_PUBLIC_COMMIT_SHA,
+      dsn: process.env.NEXT_PUBLIC_SENTRY_DSN,
+      release: process.env.VERCEL_GITHUB_COMMIT_SHA,
     });
   }
 };

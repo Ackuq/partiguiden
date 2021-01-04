@@ -4,12 +4,23 @@ const withSourceMaps = require('@zeit/next-source-maps');
 const SentryWebpackPlugin = require('@sentry/webpack-plugin');
 
 const {
+  // Node
+  NODE_ENV,
+
+  // Vercel
+  VERCEL_GITHUB_COMMIT_SHA,
+  VERCEL_ENV,
+
+  // Custom
+  API_URL,
+  SHARE_BASE_URL,
+  PROXY_URL,
+
+  // Sentry
   NEXT_PUBLIC_SENTRY_DSN: SENTRY_DSN,
   SENTRY_ORG,
   SENTRY_PROJECT,
   SENTRY_AUTH_TOKEN,
-  NODE_ENV,
-  VERCEL_GITHUB_COMMIT_SHA,
 } = process.env;
 
 const COMMIT_SHA = VERCEL_GITHUB_COMMIT_SHA;
@@ -21,9 +32,10 @@ module.exports = withSourceMaps({
   target: 'serverless',
   env: {
     NEXT_PUBLIC_COMMIT_SHA: COMMIT_SHA,
-    API_URL: process.env.API_URL,
-    SHARE_BASE_URL: process.env.SHARE_BASE_URL,
-    PROXY_URL: process.env.PROXY_URL,
+    API_URL,
+    SHARE_BASE_URL,
+    PROXY_URL,
+    VERCEL_ENV,
   },
   webpack: (config, options) => {
     if (!options.isServer) {

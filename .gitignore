@@ -13,3 +13,6 @@ node_modules
 # Now
 .now
 .vercel
+
+# Yarn error logs
+yarn-error.log

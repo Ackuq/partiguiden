@@ -27,7 +27,7 @@ export const init = (): void => {
       environment: process.env.VERCEL_ENV,
       integrations,
       dsn: process.env.NEXT_PUBLIC_SENTRY_DSN,
-      release: process.env.VERCEL_GITHUB_COMMIT_SHA,
+      release: process.env.NEXT_PUBLIC_COMMIT_SHA,
     });
   }
 };

@@ -23,7 +23,7 @@
     "@material-ui/styles": "^4.11.3",
     "@sentry/browser": "^6.0.3",
     "@sentry/integrations": "^6.0.2",
-    "@sentry/node": "^6.0.2",
+    "@sentry/node": "^6.0.3",
     "@sentry/webpack-plugin": "^1.14.0",
     "@zeit/next-source-maps": "^0.0.3",
     "isomorphic-unfetch": "^3.1.0",

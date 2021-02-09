@@ -32,7 +32,7 @@
     "react-dom": "^17.0.1",
     "react-share": "^4.3.1",
     "react-typed": "^1.2.0",
-    "recharts": "^2.0.4",
+    "recharts": "^2.0.6",
     "swr": "^0.4.1"
   },
   "devDependencies": {

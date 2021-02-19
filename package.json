@@ -22,7 +22,7 @@
     "@material-ui/lab": "^4.0.0-alpha.57",
     "@material-ui/styles": "^4.11.3",
     "@sentry/browser": "^6.2.0",
-    "@sentry/integrations": "^6.1.0",
+    "@sentry/integrations": "^6.2.0",
     "@sentry/node": "^6.1.0",
     "@sentry/webpack-plugin": "^1.14.1",
     "@zeit/next-source-maps": "^0.0.3",

@@ -12,17 +12,6 @@ export type party =
 
 export type partyAbbrev = 'S' | 'M' | 'SD' | 'C' | 'V' | 'KD' | 'L' | 'MP' | '-';
 
-export interface Subject {
-  name: string;
-  opinions: Array<string>;
-  url: string;
-}
-
-export interface PartySubject {
-  name: party;
-  data: Array<Subject>;
-}
-
 export interface Leader extends Member {
   role: string;
 }

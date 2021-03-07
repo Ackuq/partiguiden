@@ -7,19 +7,20 @@ import Typography from '@material-ui/core/Typography';
 
 import ArrowDownRounded from '@material-ui/icons/KeyboardArrowDownRounded';
 
-import { getPartyColor } from '../../utils/getParties';
-import PartyOpinion from './PartyOpinion';
+import { PartyInfo } from '../../utils/getParties';
+import PartyStandpoint from './PartyStandpoint';
 import useStyles from './useStyles';
-import { PartySubject } from '../../types/party';
+import { Standpoint } from '../../types/subjects';
 
 interface Props {
-  party: PartySubject;
+  standpoints: Array<Standpoint>;
+  party: PartyInfo;
 }
 
-const PartyComponent: React.FC<Props> = ({ party }) => {
+const PartyStandpoints: React.FC<Props> = ({ standpoints, party }) => {
   const classes = useStyles();
   const [visible, setVisible] = useState(false);
-  const partyColor = getPartyColor(party.name) || 'red';
+  const partyColor = party.color || 'red';
 
   const handleClick = () => {
     setVisible((prevState) => !prevState);
@@ -49,12 +50,11 @@ const PartyComponent: React.FC<Props> = ({ party }) => {
       </ButtonBase>
       <Collapse in={visible} classes={{ container: classes.collapse }} timeout="auto" unmountOnExit>
         <Grid container spacing={3} style={{ marginTop: '0.5rem' }}>
-          {party.data.map((subject) => (
-            <PartyOpinion
-              subject={subject}
-              partyName={party.name}
-              partyColor={partyColor}
-              key={`${party.name}${subject.name}`}
+          {standpoints.map((standpoint) => (
+            <PartyStandpoint
+              standpoint={standpoint}
+              party={party}
+              key={`${party.name}${standpoint.title}`}
             />
           ))}
         </Grid>
@@ -63,4 +63,4 @@ const PartyComponent: React.FC<Props> = ({ party }) => {
   );
 };
 
-export default PartyComponent;
+export default PartyStandpoints;

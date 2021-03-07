@@ -1,16 +1,22 @@
 import React from 'react';
 
-import PartyComponent from '../components/PartyOpinions';
-import { PartySubject } from '../types/party';
+import PartyStandpoints from '../components/PartyStandpoints';
+import { partyAbbrev } from '../types/party';
+import { StandpointsMap } from '../types/subjects';
+import { partiesMap } from '../utils/getParties';
 
 interface Props {
-  partyData: Array<PartySubject>;
+  standpoints: StandpointsMap;
 }
 
-const Subject: React.FC<Props> = ({ partyData }) => (
+const Subject: React.FC<Props> = ({ standpoints }) => (
   <>
-    {partyData.map((party) => (
-      <PartyComponent key={party.name} party={party} />
+    {Object.keys(standpoints).map((party) => (
+      <PartyStandpoints
+        key={party}
+        party={partiesMap[party as partyAbbrev]}
+        standpoints={standpoints[party as partyAbbrev]}
+      />
     ))}
   </>
 );

@@ -1,21 +1,21 @@
 import React from 'react';
-import { NextPage /* , GetStaticPaths, GetStaticProps  */ } from 'next';
+import { NextPage, GetStaticPaths, GetStaticProps } from 'next';
 import Head from 'next/head';
 import { Container } from '@material-ui/core';
 
-//import Breadcrumbs from '../../src/components/Breadcrumbs';
-//import SocialMediaShare from '../../src/components/SocialMediaShare';
+import Breadcrumbs from '../../src/components/Breadcrumbs';
+import SocialMediaShare from '../../src/components/SocialMediaShare';
 import PageTitle from '../../src/components/PageTitle';
-//import Standpoints from '../../src/containers/Standpoints';
-//import { getStandpointData, getSubject, getSubjects } from '../../src/lib/api';
-import { PartySubject } from '../../src/types/party';
+import Standpoints from '../../src/containers/Standpoints';
+import { getSubject, getSubjects } from '../../src/lib/api';
+import { StandpointsMap, Subject } from '../../src/types/subjects';
 
 interface Props {
   name: string;
-  partyData: Array<PartySubject>;
+  standpoints: StandpointsMap;
 }
 
-const StandPointContainer: NextPage<Props> = ({ name /* partyData */ }) => (
+const StandPointContainer: NextPage<Props> = ({ name, standpoints }) => (
   <>
     <Head>
       <title>{name} | Ämne | Partiguiden</title>
@@ -26,7 +26,7 @@ const StandPointContainer: NextPage<Props> = ({ name /* partyData */ }) => (
     </Head>
     <PageTitle title={name} />
     <Container>
-      {/* <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+      <div style={{ display: 'flex', justifyContent: 'space-between' }}>
         <Breadcrumbs
           links={[
             { href: '/partiernas-standpunkter', label: 'Partiernas Ståndpunkter' },
@@ -35,28 +35,39 @@ const StandPointContainer: NextPage<Props> = ({ name /* partyData */ }) => (
         />
         <SocialMediaShare title={name} />
       </div>
-      <Standpoints partyData={partyData} /> */}
+      <Standpoints standpoints={standpoints} />
     </Container>
   </>
 );
 
-// export const getStaticPaths: GetStaticPaths = async () => {
-//   const subjects = await getSubjects();
+export const getStaticPaths: GetStaticPaths = async () => {
+  const subjects = await getSubjects();
 
-//   const paths = subjects.map((subject: { id: string }) => ({ params: { id: subject.id } }));
+  const paths = subjects.map((subject: { id: number }) => ({
+    params: { id: subject.id.toString() },
+  }));
 
-//   return { paths, fallback: false };
-// };
+  return { paths, fallback: false };
+};
 
-// export const getStaticProps: GetStaticProps = async ({ params }) => {
-//   const id = (Array.isArray(params?.id) ? params?.id[0] : params?.id) || '';
-//   const data = await getSubject(id);
-//   const partyData = await getStandpointData(data.opinions);
+const createPartyMap = (subject: Subject): StandpointsMap => {
+  return subject.standpoints.reduce((prev, curr) => {
+    if (curr.party in prev) {
+      return { ...prev, [curr.party]: [...prev[curr.party], curr] };
+    } else {
+      return { ...prev, [curr.party]: [curr] };
+    }
+  }, {} as StandpointsMap);
+};
 
-//   return {
-//     props: { name: data.name, partyData: partyData.filter((party) => party !== null) },
-//     revalidate: 518400,
-//   };
-//};
+export const getStaticProps: GetStaticProps = async ({ params }) => {
+  const id = parseInt(params?.id as string);
+  const data = await getSubject(id);
+
+  return {
+    props: { name: data.name, standpoints: createPartyMap(data) },
+    revalidate: 518400,
+  };
+};
 
 export default StandPointContainer;

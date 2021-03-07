@@ -10,15 +10,10 @@ import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-
 import { styled } from '@material-ui/styles';
-import { Subject } from '../../types/party';
 
-interface Props {
-  partyName: string;
-  subject: Subject;
-  partyColor: string;
-}
+import { PartyInfo } from '../../utils/getParties';
+import { Standpoint } from '../../types/subjects';
 
 const ListBox = styled(ListItemIcon)({
   position: 'absolute',
@@ -28,27 +23,30 @@ const ListBox = styled(ListItemIcon)({
   minHeight: '6px',
 });
 
-const PartyOpinion: React.FC<Props> = ({ partyName, subject, partyColor }) => {
+interface Props {
+  party: PartyInfo;
+  standpoint: Standpoint;
+}
+
+const PartyOpinion: React.FC<Props> = ({ party, standpoint }) => {
   return (
     <Grid item xs={12}>
       <Card>
         <CardContent>
           <Typography variant="h5" color="textSecondary" gutterBottom>
-            {subject.name}
+            {standpoint.title}
           </Typography>
           <List>
-            {subject.opinions.map((opinion) => (
-              <ListItem key={`${partyName}${subject.name}${opinion}`}>
-                <ListBox style={{ backgroundColor: partyColor }}>
-                  <></>
-                </ListBox>
+            {standpoint.content.map((opinion) => (
+              <ListItem key={`${party.name}${standpoint.title}${opinion}`}>
+                <ListBox style={{ backgroundColor: party.color }} />
                 <ListItemText>{opinion}</ListItemText>
               </ListItem>
             ))}
           </List>
           <Button component="div">
             <Link
-              href={subject.url}
+              href={standpoint.link}
               target="_blank"
               rel="noopener noreferrer"
               style={{ textDecoration: 'none' }}

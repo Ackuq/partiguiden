@@ -1,20 +1,20 @@
 import React from 'react';
-import { NextPage /* , GetStaticProps */ } from 'next';
+import { NextPage, GetStaticProps } from 'next';
 import Head from 'next/head';
 
 import NoteIcon from '@material-ui/icons/Note';
 
 import PageTitle from '../../src/components/PageTitle';
 
-// import StandpointsList from '../../src/containers/StandpointsList';
-// import { getSubjects } from '../../src/lib/api';
-import { StandpointData } from '../../src/types/standpoints';
+import StandpointsList from '../../src/containers/StandpointsList';
+import { getSubjects } from '../../src/lib/api';
+import { SubjectListEntry } from '../../src/types/subjects';
 
 interface Props {
-  subjects: Array<StandpointData>;
+  subjects: Array<SubjectListEntry>;
 }
 
-const StandpointsListContainer: NextPage<Props> = (/* { subjects } */) => (
+const StandpointsListContainer: NextPage<Props> = ({ subjects }) => (
   <>
     <Head>
       <title>Partiernas ståndpunkter | Partiguiden 2.0</title>
@@ -24,14 +24,14 @@ const StandpointsListContainer: NextPage<Props> = (/* { subjects } */) => (
       />
     </Head>
     <PageTitle title="Partiernas ståndpunkter" Icon={NoteIcon} />
-    {/* <StandpointsList subjects={subjects} /> */}
+    <StandpointsList subjects={subjects} />
   </>
 );
 
-// export const getStaticProps: GetStaticProps = async () => {
-//   const subjects = await getSubjects();
+export const getStaticProps: GetStaticProps = async () => {
+  const subjects = await getSubjects();
 
-//   return { props: { subjects }, revalidate: 518400 };
-// };
+  return { props: { subjects }, revalidate: 518400 };
+};
 
 export default StandpointsListContainer;

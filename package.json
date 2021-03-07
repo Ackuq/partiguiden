@@ -8,7 +8,7 @@
     "start": "vercel dev",
     "build": "next build",
     "vercel-build": "next build",
-    "lint": "tsc --noemit && eslint {src,pages}/  --ext .js,.jsx,.ts,.tsx"
+    "lint": "tsc --noemit && eslint src/ pages/ --ext .js,.jsx,.ts,.tsx"
   },
   "repository": {
     "type": "git",

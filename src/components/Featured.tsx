@@ -28,12 +28,7 @@ const styles = (theme: Theme) =>
     },
   });
 
-const getFeatured = () => [
-  { id: 'miljo', name: 'Miljö och klimat' },
-  { id: 'vard-och-omsorg', name: 'Vård och omsorg' },
-  { id: 'skola', name: 'Skola och utbildning' },
-  { id: 'migration-och-integration', name: 'Migration och integration' },
-];
+const getFeatured = (): Array<{ id: number; name: string }> => [];
 
 const useStyles = makeStyles(styles);
 

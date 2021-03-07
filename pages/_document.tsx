@@ -1,12 +1,12 @@
 import React from 'react';
-import Document, { Head, Main, NextScript } from 'next/document';
+import Document, { Head, Html, Main, NextScript } from 'next/document';
 
 import ServerStyleSheets from '@material-ui/styles/ServerStyleSheets';
 
 class MyDocument extends Document {
   render() {
     return (
-      <html lang="sv" style={{ height: '100%' }}>
+      <Html lang="sv" style={{ height: '100%' }}>
         <Head>
           <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
@@ -67,7 +67,7 @@ class MyDocument extends Document {
           <Main />
           <NextScript />
         </body>
-      </html>
+      </Html>
     );
   }
 }

@@ -5,7 +5,7 @@ import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/styles';
 import grey from '@material-ui/core/colors/grey';
 import { Theme } from '@material-ui/core';
-import { StandpointData } from '../types/standpoints';
+import { SubjectListEntry } from '../types/subjects';
 
 import * as ROUTES from '../lib/routes';
 
@@ -78,7 +78,7 @@ const useStyles = makeStyles((theme: Theme) => ({
 }));
 
 interface Props {
-  subjects: Array<StandpointData>;
+  subjects: Array<SubjectListEntry>;
 }
 
 const PartiernasStandpunkter: React.FC<Props> = ({ subjects }) => {

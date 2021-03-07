@@ -10,7 +10,7 @@ export const DECISIONS = '/decisions';
 
 export const STANDPOINTS = '/standpoints';
 export const STANDPOINT = '/standpoints/[id]';
-export const getStandpointHref = (id: string): string => `/standpoints/${id}`;
+export const getStandpointHref = (id: number): string => `/standpoints/${id}`;
 
 export const PARTY = '/party/[party]';
 export const getPartyHref = (party: string): string => `/party/${party}`;

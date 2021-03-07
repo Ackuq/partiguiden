@@ -1,6 +1,6 @@
 import { party, partyAbbrev } from '../types/party';
 
-interface PartyInfo {
+export interface PartyInfo {
   name: party;
   letter: partyAbbrev;
   color: string;
@@ -17,9 +17,9 @@ const parties: Array<PartyInfo> = [
   { name: 'Miljöpartiet', letter: 'MP', color: '#26a65b' },
 ];
 
-const getPartyColor = (partyName: party): string =>
-  parties.find((p) => p.name === partyName)?.color || '';
+export const partiesMap = parties.reduce(
+  (prev, curr) => ({ ...prev, [curr.letter]: curr }),
+  {} as Record<partyAbbrev, PartyInfo>
+);
 
 export default parties;
-
-export { getPartyColor };

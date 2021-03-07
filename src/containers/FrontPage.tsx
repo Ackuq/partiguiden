@@ -6,8 +6,13 @@ import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 
 import Featured from '../components/Featured';
+import { Subject } from '../types/subjects';
 
-const FrontPage: React.FC = () => (
+interface Props {
+  popular: Array<Subject>;
+}
+
+const FrontPage: React.FC<Props> = ({ popular }) => (
   <Grid container spacing={3}>
     <Grid item xs={12}>
       <Card>
@@ -29,7 +34,7 @@ const FrontPage: React.FC = () => (
           <Typography variant="h4" paragraph align="center">
             Aktuella frågor
           </Typography>
-          <Featured />
+          <Featured popular={popular} />
         </CardContent>
       </Card>
     </Grid>

@@ -31,8 +31,8 @@ const FrontPage: React.FC<Props> = ({ popular }) => (
     <Grid item xs={12}>
       <Card>
         <CardContent>
-          <Typography variant="h4" paragraph align="center">
-            Aktuella frågor
+          <Typography variant="h5" paragraph align="center">
+            Mest besökta ämnen de senaste 30 dagarna
           </Typography>
           <Featured popular={popular} />
         </CardContent>

@@ -23,7 +23,7 @@ const Footer: React.FC = () => (
       <Grid direction="column" justify="center" container>
         <Grid item>
           <Typography align="center" color="inherit" variant="subtitle1">
-            © Axel Pettersson 2019
+            © Axel Pettersson 2020
           </Typography>
         </Grid>
         <Grid item>

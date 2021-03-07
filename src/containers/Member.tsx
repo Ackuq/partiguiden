@@ -3,24 +3,33 @@ import Container from '@material-ui/core/Container';
 
 import SocialMediaShare from '../components/SocialMediaShare';
 import { ProfilePicture, Information } from '../components/MemberInfo';
-import { Member as MemberType } from '../types/member';
+import { useMember } from '../hooks/parliamentHooks';
+import LoadCircle from '../components/LoadCircle';
 
 interface Props {
-  member: MemberType;
+  id: string;
 }
 
-const Member: React.FC<Props> = ({ member }) => (
-  <>
-    <ProfilePicture member={member} />
-    <Container>
-      <SocialMediaShare title={`${member.firstName} ${member.lastName}`} />
-      <Information
-        id={member.id}
-        informationRecords={member.information}
-        absence={member.absence}
-      />
-    </Container>
-  </>
-);
+const Member: React.FC<Props> = ({ id }) => {
+  const member = useMember(id);
+
+  if (!member) {
+    return <LoadCircle />;
+  }
+
+  return (
+    <>
+      <ProfilePicture member={member} />
+      <Container>
+        <SocialMediaShare title={`${member.firstName} ${member.lastName}`} />
+        <Information
+          id={member.id}
+          informationRecords={member.information}
+          absence={member.absence}
+        />
+      </Container>
+    </>
+  );
+};
 
 export default Member;

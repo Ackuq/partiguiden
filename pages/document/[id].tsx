@@ -7,32 +7,34 @@ import Container from '@material-ui/core/Container';
 import PageTitle from '../../src/components/PageTitle';
 import SocialMediaShare from '../../src/components/SocialMediaShare';
 import Document from '../../src/containers/Document';
-import { getDocument } from '../../src/lib/proxy';
+import { useDocument } from '../../src/hooks/parliamentHooks';
+import LoadCircle from '../../src/components/LoadCircle';
 
 interface Props {
-  document: { html: string };
-  id: string | string[];
+  id: string;
 }
 
-const DocumentContainer: NextPage<Props> = ({ document, id }) => (
-  <>
-    <Head>
-      <title>{id} | Dokument | Partiguiden</title>
-    </Head>
-    <PageTitle title={`Dokument ${id}`} />
-    <Container>
-      <SocialMediaShare title={`Dokument ${id}`} />
-      <Document body={document.html} />
-    </Container>
-  </>
-);
+const DocumentContainer: NextPage<Props> = ({ id }) => {
+  const document = useDocument(id);
+
+  return (
+    <>
+      <Head>
+        <title>{id} | Dokument | Partiguiden</title>
+      </Head>
+      <PageTitle title={`Dokument ${id}`} />
+      <Container>
+        <SocialMediaShare title={`Dokument ${id}`} />
+        {document ? <Document body={document.html} /> : <LoadCircle />}
+      </Container>
+    </>
+  );
+};
 
 export const getServerSideProps: GetServerSideProps = async ({ query }) => {
   const id = Array.isArray(query.id) ? query.id[0] : query.id || '';
 
-  const document = await getDocument(id);
-
-  return { props: { document, id } };
+  return { props: { id } };
 };
 
 export default DocumentContainer;

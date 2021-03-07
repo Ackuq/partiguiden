@@ -6,7 +6,7 @@ import Grid from '@material-ui/core/Grid';
 import Pagination from '@material-ui/lab/Pagination';
 import LoadCircle from '../../LoadCircle';
 import Document from './Document';
-import { useMemberDocuments } from '../../../hooks/parlimentHooks';
+import { useMemberDocuments } from '../../../hooks/parliamentHooks';
 
 interface Props {
   id: string;

@@ -2,9 +2,10 @@ import React from 'react';
 import Document, { Head, Html, Main, NextScript } from 'next/document';
 
 import ServerStyleSheets from '@material-ui/styles/ServerStyleSheets';
+import { GA_TRACKING_ID } from '../src/utils/gtag';
 
 class MyDocument extends Document {
-  render() {
+  render(): JSX.Element {
     return (
       <Html lang="sv" style={{ height: '100%' }}>
         <Head>
@@ -45,10 +46,7 @@ class MyDocument extends Document {
               <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" />
 
               {/* Global site tag (gtag.js) - Google Analytics  */}
-              <script
-                async
-                src="https://www.googletagmanager.com/gtag/js?id=UA-111642551-1"
-              ></script>
+              <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`} />
               <script
                 dangerouslySetInnerHTML={{
                   __html: `
@@ -56,7 +54,9 @@ class MyDocument extends Document {
                     function gtag(){dataLayer.push(arguments);}
                     gtag('js', new Date());
 
-                    gtag('config', '${process.env.TRACKING_ID}');
+                    gtag('config', '${GA_TRACKING_ID}', {
+                      page_path: window.location.pathname,
+                    });
                 `,
                 }}
               />

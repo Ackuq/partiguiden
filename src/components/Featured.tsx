@@ -9,6 +9,7 @@ import grey from '@material-ui/core/colors/grey';
 import { makeStyles, createStyles } from '@material-ui/styles';
 import { Theme } from '@material-ui/core';
 import { getStandpointHref, STANDPOINT } from '../lib/routes';
+import { Subject } from '../types/subjects';
 
 const styles = (theme: Theme) =>
   createStyles({
@@ -28,20 +29,23 @@ const styles = (theme: Theme) =>
     },
   });
 
-const getFeatured = (): Array<{ id: number; name: string }> => [];
-
 const useStyles = makeStyles(styles);
 
-const Featured: React.FC = () => {
+interface Props {
+  popular: Array<Subject>;
+}
+
+const Featured: React.FC<Props> = ({ popular }) => {
   const classes = useStyles();
+
   return (
     <Grid container spacing={3}>
-      {getFeatured().map((obj) => (
-        <Grid key={obj.id} item xs={12} md={6}>
-          <Link href={STANDPOINT} as={getStandpointHref(obj.id)} passHref>
+      {popular.map((subject) => (
+        <Grid key={subject.id} item xs={12} md={6}>
+          <Link href={STANDPOINT} as={getStandpointHref(subject.id)} passHref>
             <ButtonBase className={classes.featured}>
               <Typography variant="button" color="primary">
-                {obj.name}
+                {subject.name}
               </Typography>
             </ButtonBase>
           </Link>

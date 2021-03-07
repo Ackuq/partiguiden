@@ -1,5 +1,5 @@
 import React from 'react';
-import { NextPage } from 'next';
+import { GetStaticProps, NextPage } from 'next';
 import Head from 'next/head';
 import Container from '@material-ui/core/Container';
 import Paper from '@material-ui/core/Paper';
@@ -11,6 +11,8 @@ import styled from '@material-ui/styles/styled';
 import Typed from 'react-typed';
 
 import FrontPage from '../src/containers/FrontPage';
+import { getPopular } from '../src/lib/api';
+import { PopularSubjects, Subject } from '../src/types/subjects';
 
 const PageTitleContainer = styled(Paper)(({ theme }: { theme: Theme }) => ({
   backgroundColor: theme.palette.primary.light,
@@ -21,7 +23,11 @@ const PageTitleContainer = styled(Paper)(({ theme }: { theme: Theme }) => ({
   minHeight: '5rem',
 }));
 
-const FrontPageContainer: NextPage = () => (
+interface Props {
+  popular: Array<Subject>;
+}
+
+const FrontPageContainer: NextPage<Props> = ({ popular }) => (
   <>
     <Head>
       <title>Partiguiden | Rösta rätt</title>
@@ -44,9 +50,32 @@ const FrontPageContainer: NextPage = () => (
       </Typography>
     </PageTitleContainer>
     <Container>
-      <FrontPage />
+      <FrontPage popular={popular} />
     </Container>
   </>
 );
+
+const compare = (a: PopularSubjects[number], b: PopularSubjects[number]) => {
+  if (a[1] < b[1]) {
+    return -1;
+  }
+  if (a[1] > b[1]) {
+    return 1;
+  }
+  return 0;
+};
+
+export const getStaticProps: GetStaticProps = async () => {
+  const data = await getPopular();
+  const popular = data
+    .sort(compare)
+    .slice(0, 4)
+    .map((el) => el[0]);
+
+  return {
+    props: { popular },
+    revalidate: 518400,
+  };
+};
 
 export default FrontPageContainer;

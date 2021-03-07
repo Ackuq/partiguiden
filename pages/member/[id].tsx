@@ -3,30 +3,24 @@ import { NextPage, GetServerSideProps } from 'next';
 import Head from 'next/head';
 
 import Member from '../../src/containers/Member';
-import { Member as MemberType } from '../../src/types/member';
-import { getMember } from '../../src/lib/proxy';
 
 interface Props {
-  member: MemberType;
+  id: string;
 }
 
-const MemberContainer: NextPage<Props> = ({ member }) => (
+const MemberContainer: NextPage<Props> = ({ id }) => (
   <>
     <Head>
-      <title>
-        {member.firstName} {member.lastName} | Ledamot | Partiguiden
-      </title>
+      <title>{id} | Ledamot | Partiguiden</title>
     </Head>
-    <Member member={member} />
+    <Member id={id} />
   </>
 );
 
 export const getServerSideProps: GetServerSideProps = async ({ query }) => {
   const id = Array.isArray(query.id) ? query.id[0] : query.id || '';
 
-  const member = await getMember(id);
-
-  return { props: { member } };
+  return { props: { id } };
 };
 
 export default MemberContainer;

@@ -8,9 +8,14 @@
       "version": "detect" // Tells eslint-plugin-react to automatically detect the version of React to use
     }
   },
-  "extends": ["plugin:react/recommended", "plugin:prettier/recommended"],
+  "extends": [
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",
+    "plugin:prettier/recommended"
+  ],
   "rules": {
-    "react/prop-types": 0
+    "react/prop-types": 0,
+    "react/self-closing-comp": "warn"
   },
   "globals": {
     "window": true,

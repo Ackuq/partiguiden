@@ -8,7 +8,7 @@ import { FlowAd } from '../Ad';
 import Decision from './Decision';
 import useStyles from './useStyles';
 import LoadCircle from '../LoadCircle';
-import { useDecisions } from '../../hooks/parlimentHooks';
+import { useDecisions } from '../../hooks/parliamentHooks';
 
 interface Props {
   router: NextRouter;

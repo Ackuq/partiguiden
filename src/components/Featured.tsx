@@ -9,7 +9,7 @@ import grey from '@material-ui/core/colors/grey';
 import { makeStyles, createStyles } from '@material-ui/styles';
 import { Theme } from '@material-ui/core';
 import { getStandpointHref, STANDPOINT } from '../lib/routes';
-import { Subject } from '../types/subjects';
+import { SubjectListEntry } from '../types/subjects';
 
 const styles = (theme: Theme) =>
   createStyles({
@@ -32,7 +32,7 @@ const styles = (theme: Theme) =>
 const useStyles = makeStyles(styles);
 
 interface Props {
-  popular: Array<Subject>;
+  popular: Array<SubjectListEntry>;
 }
 
 const Featured: React.FC<Props> = ({ popular }) => {

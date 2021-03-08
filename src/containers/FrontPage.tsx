@@ -6,10 +6,10 @@ import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 
 import Featured from '../components/Featured';
-import { Subject } from '../types/subjects';
+import { SubjectListEntry } from '../types/subjects';
 
 interface Props {
-  popular: Array<Subject>;
+  popular: Array<SubjectListEntry>;
 }
 
 const FrontPage: React.FC<Props> = ({ popular }) => (

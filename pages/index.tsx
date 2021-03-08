@@ -12,7 +12,7 @@ import Typed from 'react-typed';
 
 import FrontPage from '../src/containers/FrontPage';
 import { getPopular } from '../src/lib/api';
-import { PopularSubjects, Subject } from '../src/types/subjects';
+import { SubjectListEntry } from '../src/types/subjects';
 
 const PageTitleContainer = styled(Paper)(({ theme }: { theme: Theme }) => ({
   backgroundColor: theme.palette.primary.light,
@@ -24,7 +24,7 @@ const PageTitleContainer = styled(Paper)(({ theme }: { theme: Theme }) => ({
 }));
 
 interface Props {
-  popular: Array<Subject>;
+  popular: Array<SubjectListEntry>;
 }
 
 const FrontPageContainer: NextPage<Props> = ({ popular }) => (
@@ -55,22 +55,9 @@ const FrontPageContainer: NextPage<Props> = ({ popular }) => (
   </>
 );
 
-const compare = (a: PopularSubjects[number], b: PopularSubjects[number]) => {
-  if (a[1] < b[1]) {
-    return -1;
-  }
-  if (a[1] > b[1]) {
-    return 1;
-  }
-  return 0;
-};
-
 export const getStaticProps: GetStaticProps = async () => {
   const data = await getPopular();
-  const popular = data
-    .sort(compare)
-    .slice(0, 4)
-    .map((el) => el[0]);
+  const popular = data.slice(0, 4).map((el) => el[0]);
 
   return {
     props: { popular },

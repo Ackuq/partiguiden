@@ -24,4 +24,4 @@ export interface Subject {
 
 export type StandpointsMap = Record<partyAbbrev, Array<Standpoint>>;
 
-export type PopularSubjects = Array<[Subject, number]>;
+export type PopularSubjects = Array<[SubjectListEntry, number]>;

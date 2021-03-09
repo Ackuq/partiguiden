@@ -6,14 +6,23 @@ interface Props {
   };
   x?: string;
   y?: string;
+  vertical?: boolean;
 }
 
-const CustomizedTick: React.FC<Props> = ({ payload = {}, x = '0', y = '0' }) => {
+const PartySymbolTick: React.FC<Props> = ({ vertical = false, payload = {}, x = '0', y = '0' }) => {
   const { value } = payload;
   const href = value ? `/static/images/party-logos/${value.toUpperCase()}.svg` : '';
-  const X = parseInt(x, 10) - 27;
-  const Y = parseInt(y, 10) - 15;
+  let X = parseInt(x, 10);
+  let Y = parseInt(y, 10);
+  if (vertical) {
+    X -= 27;
+    Y -= 15;
+  } else {
+    X -= 15;
+    Y -= 5;
+  }
+
   return <image x={`${X}`} y={`${Y}`} href={href} width="30" height="30" />;
 };
 
-export default CustomizedTick;
+export default PartySymbolTick;

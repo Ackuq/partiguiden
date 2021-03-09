@@ -17,7 +17,7 @@ import {
 
 import { styled } from '@material-ui/styles';
 
-import CustomizedTick from './CustomizedTick';
+import PartySymbolTick from '../../PartySymbolTick';
 import SectionButton from '../SectionButton';
 import RotatingArrow from '../RotatingArrow';
 import { Vote } from '../../../types/voting';
@@ -79,7 +79,7 @@ const VoteDistribution: React.FC<Props> = ({ voting }) => {
             <BarChart data={data} layout="vertical">
               <CartesianGrid strokeDasharray="3 3" />
               <XAxis type="number" />
-              <YAxis type="category" dataKey="name" tick={<CustomizedTick />} />
+              <YAxis type="category" dataKey="name" tick={<PartySymbolTick vertical />} />
               <Tooltip />
               <Legend />
               <Bar dataKey="Ja" stackId="a" fill="#16a085" />

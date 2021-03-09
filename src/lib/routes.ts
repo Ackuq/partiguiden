@@ -1,6 +1,7 @@
 export const INDEX = '/';
 export const COOKIE_POLICY = '/cookie-policy';
 export const ABOUT_US = '/about-us';
+export const POLLS = '/polls';
 
 export const VOTES = '/vote';
 export const VOTE = '/vote/[id]/[bet]';

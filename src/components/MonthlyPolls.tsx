@@ -11,18 +11,21 @@ import {
   XAxis,
   YAxis,
 } from 'recharts';
+import moment from 'moment';
 import { DefaultTooltipContent } from '../types/recharts.d';
 import PartySymbolTick from '../components/PartySymbolTick';
-import { getAverage, getWithin } from '../lib/polls';
+import { getAverage, getWithin, PollDetails, sortDetailArray } from '../lib/polls';
 import { partyAbbrev } from '../types/party';
 import { Polls as PollsType } from '../types/polls';
 import { partiesMap } from '../utils/getParties';
+import { grey } from '@material-ui/core/colors';
 
 interface Props {
   polls: PollsType;
 }
 
-const today = new Date();
+const today = moment();
+const twoMonthsAgo = moment().subtract(2, 'months');
 
 const ChartContainer = styled(ResponsiveContainer)({
   marginTop: '1rem',
@@ -73,15 +76,17 @@ interface ToolTipProps {
 
 const CustomToolTip: React.FC<ToolTipProps> = ({ ...props }) => {
   if (props.payload && props.payload[0]) {
-    console.log(props);
-    const details = (props.payload[0].payload as { details: Array<[number, string]> }).details.map(
+    const averagePayload = props.payload[0];
+
+    const details = [...(averagePayload.payload as { details: Array<PollDetails> }).details].map(
       (el) => ({
-        name: el[1],
-        value: el[0],
+        name: el.institute,
+        value: `${el.value} (${el.published})`,
+        color: grey[800],
       })
     );
 
-    props.payload = [...props.payload, ...details];
+    props.payload = [averagePayload, ...details];
   }
   return <DefaultTooltipContent {...props} />;
 };
@@ -90,11 +95,11 @@ const MonthlyPolls: React.FC<Props> = ({ polls }) => {
   const shortScreen = useMediaQuery('(max-height:1000px)');
 
   const [barChart, setBarChart] = useState<
-    Array<{ name: string; value: number; details: Array<[number, string]> }>
+    Array<{ name: string; value: number; details: Array<PollDetails> }>
   >();
 
   useEffect(() => {
-    const average = getAverage(getWithin(polls, today, today));
+    const average = getAverage(getWithin(polls, twoMonthsAgo.toDate(), today.toDate()));
     const barChartData = Object.keys(average).map((party) => ({
       name: party,
       value: average[party as partyAbbrev][0],

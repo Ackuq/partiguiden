@@ -16,6 +16,8 @@ const MONTH_MAP = {
   dec: 11,
 };
 
+const isNum = (value: string) => /^\d+$/.test(value);
+
 const parsePolls = (data: string): Polls => {
   const polls: Polls = {};
   const rows = data.split('\n');
@@ -25,11 +27,18 @@ const parsePolls = (data: string): Polls => {
 
   rows.forEach((row) => {
     const fields = row.split(',');
-    const yearMonth = fields[0].split('-') as [string, keyof typeof MONTH_MAP];
 
-    const year = parseInt(yearMonth[0]);
+    const publishedDate = fields[13];
 
-    const month = MONTH_MAP[yearMonth[1]];
+    const [yearString, monthString, dayString] = (publishedDate !== 'NA'
+      ? publishedDate.split('-')
+      : fields[0].split('-')) as [string, keyof typeof MONTH_MAP, string | undefined];
+
+    const year = parseInt(yearString);
+
+    const month = isNum(monthString) ? parseInt(monthString) - 1 : MONTH_MAP[monthString];
+
+    const day = dayString ? parseInt(dayString) : null;
 
     if (!polls[year]) {
       polls[year] = new Array(Object.keys(MONTH_MAP).length);
@@ -52,6 +61,9 @@ const parsePolls = (data: string): Polls => {
     polls[year][month].push({
       from,
       to,
+      year,
+      month,
+      day,
       institute,
       data,
     });
@@ -67,34 +79,50 @@ export const getPolls = (): Promise<Polls> =>
     .then((res) => res.text())
     .then(parsePolls);
 
-export const getWithin = (polls: Polls, from: Date, to: Date): Polls => {
+export const getWithin = (polls: Polls, from: Date, to: Date, repeats = false): Polls => {
   const filtered: Polls = {};
 
+  const usedInstitutes: Array<string> = [];
+
   const [fromYear, toYear] = [from.getFullYear(), to.getFullYear()];
+
+  const addMonth = (year: number, month: number) => {
+    filtered[year][month] = [];
+    polls[year][month].forEach((poll) => {
+      if (!usedInstitutes.includes(poll.institute) || repeats) {
+        filtered[year][month].push(poll);
+        usedInstitutes.push(poll.institute);
+      }
+    });
+  };
 
   if (fromYear === toYear) {
     const year = fromYear;
     filtered[year] = {};
-    for (let i = from.getMonth(); i <= to.getMonth(); i++) {
-      filtered[year][i] = polls[year][i];
+    for (let month = to.getMonth(); month >= from.getMonth(); month--) {
+      addMonth(year, month);
     }
   } else {
+    // Get recents first
+    filtered[toYear] = {};
+    for (let month = to.getMonth(); month >= 0; month--) {
+      addMonth(toYear, month);
+    }
+
+    // Get in between
+    for (let year = toYear - 1; year > fromYear; year--) {
+      filtered[year] = {};
+      for (let month = 11; month <= 0; month--) {
+        addMonth(year, month);
+      }
+    }
+
     // Get from from year
     filtered[fromYear] = {};
-    for (let i = from.getMonth(); i < 12; i++) {
-      filtered[fromYear][i] = polls[fromYear][i];
-    }
-    // Get in between
-    for (let i = fromYear + 1; i < toYear; i++) {
-      filtered[i] = polls[i];
-    }
-
-    filtered[toYear] = {};
-    for (let i = to.getMonth(); i >= 0; i--) {
-      filtered[toYear][i] = polls[toYear][i];
+    for (let month = 11; month <= from.getMonth(); month--) {
+      addMonth(fromYear, month);
     }
   }
-
   return filtered;
 };
 
@@ -103,12 +131,21 @@ export const formatData = (
 ): Array<{ name: string; value: number }> =>
   Object.keys(data).map((name) => ({ name, value: data[name as partyAbbrev] }));
 
-export type AveragePoll = Record<partyAbbrev, [number, Array<[number, string]>]>;
+export interface PollDetails {
+  value: number;
+  institute: string;
+  published: string;
+  day: number | null;
+  month: number;
+  year: number;
+}
+
+export type AveragePoll = Record<partyAbbrev, [number, Array<PollDetails>]>;
 
 export const getAverage = (polls: Polls): AveragePoll => {
   const partyAll = partyAbbreviations.reduce(
     (prev, curr) => ({ ...prev, [curr]: [] }),
-    {} as Record<partyAbbrev, Array<[number, string]>>
+    {} as Record<partyAbbrev, Array<PollDetails>>
   );
 
   for (const party of partyAbbreviations) {
@@ -120,7 +157,14 @@ export const getAverage = (polls: Polls): AveragePoll => {
       if (pollMonth) {
         for (const poll of Object.values(pollMonth)) {
           for (const [party, value] of Object.entries(poll.data)) {
-            partyAll[party as partyAbbrev].push([value, poll.institute]);
+            partyAll[party as partyAbbrev].push({
+              value,
+              institute: poll.institute,
+              published: `${poll.day || 'NA'}/${poll.month + 1}/${poll.year}`,
+              day: poll.day,
+              month: poll.month,
+              year: poll.year,
+            });
           }
         }
       }
@@ -128,10 +172,34 @@ export const getAverage = (polls: Polls): AveragePoll => {
   }
 
   const result = Object.keys(partyAll).reduce((acc, party) => {
-    const totalArray = partyAll[party as partyAbbrev];
-    const sum = totalArray.reduce((prev, curr) => prev + curr[0], 0);
+    const totalArray = partyAll[party as partyAbbrev].sort(sortDetailArray);
+    const sum = totalArray.reduce((prev, curr) => prev + curr.value, 0);
     return { ...acc, [party]: [(sum / totalArray.length).toFixed(2), totalArray] };
   }, {} as AveragePoll);
 
   return result;
+};
+
+export const sortDetailArray = (a: PollDetails, b: PollDetails): number => {
+  if (a.year > b.year) {
+    return -1;
+  }
+  if (a.year < b.year) {
+    return 1;
+  }
+  if (a.month > b.month) {
+    return -1;
+  }
+  if (a.month < b.month) {
+    return 1;
+  }
+  if (a.day !== null && b.day !== null) {
+    if (a.day > b.day) {
+      return -1;
+    }
+    if (a.day < b.day) {
+      return 1;
+    }
+  }
+  return 0;
 };

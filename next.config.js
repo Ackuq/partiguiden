@@ -13,8 +13,8 @@ const {
 
   // Custom
   API_URL,
-  SHARE_BASE_URL,
   PROXY_URL,
+  BASE_PATH,
 
   // Sentry
   NEXT_PUBLIC_SENTRY_DSN: SENTRY_DSN,
@@ -33,7 +33,7 @@ module.exports = withSourceMaps({
   env: {
     NEXT_PUBLIC_COMMIT_SHA: COMMIT_SHA,
     API_URL,
-    SHARE_BASE_URL,
+    BASE_PATH,
     PROXY_URL,
     VERCEL_ENV,
   },

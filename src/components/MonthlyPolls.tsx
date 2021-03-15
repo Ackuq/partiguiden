@@ -1,4 +1,4 @@
-import { styled, useMediaQuery } from '@material-ui/core';
+import { Paper, styled, Typography, useMediaQuery } from '@material-ui/core';
 import React, { useEffect, useState } from 'react';
 import {
   Bar,
@@ -14,7 +14,7 @@ import {
 import moment from 'moment';
 import { DefaultTooltipContent } from '../types/recharts.d';
 import PartySymbolTick from '../components/PartySymbolTick';
-import { getAverage, getWithin, PollDetails, sortDetailArray } from '../lib/polls';
+import { getAverage, getWithin, PollDetails } from '../lib/polls';
 import { partyAbbrev } from '../types/party';
 import { Polls as PollsType } from '../types/polls';
 import { partiesMap } from '../utils/getParties';
@@ -30,6 +30,10 @@ const twoMonthsAgo = moment().subtract(2, 'months');
 const ChartContainer = styled(ResponsiveContainer)({
   marginTop: '1rem',
   marginLeft: '-20px',
+});
+
+const PollCard = styled(Paper)({
+  padding: '1rem 0.5rem',
 });
 
 interface BarrierLabelProps {
@@ -109,29 +113,34 @@ const MonthlyPolls: React.FC<Props> = ({ polls }) => {
   }, []);
 
   return (
-    <ChartContainer height={shortScreen ? 300 : 500}>
-      <BarChart data={barChart}>
-        <CartesianGrid strokeDasharray="3 3" />
-        <XAxis type="category" dataKey="name" tick={<PartySymbolTick />} tickLine={false} />
-        <YAxis
-          type="number"
-          domain={[0, Math.max.apply(Math, barChart?.map((el) => el.value) || []) + 2]}
-        />
-        <Tooltip content={<CustomToolTip />} />
-        <Bar dataKey="value" name="Genomsnitt" legendType="none">
-          {barChart?.map((el) => (
-            <Cell key={el.name} fill={partiesMap[el.name as partyAbbrev].color} />
-          ))}
-        </Bar>
-        <ReferenceLine
-          y={4}
-          stroke="black"
-          strokeWidth={2}
-          label={<BarrierLabel />}
-          textAnchor="middle"
-        />
-      </BarChart>
-    </ChartContainer>
+    <PollCard>
+      <Typography variant="h5" align="center">
+        Senaste mätningar
+      </Typography>
+      <ChartContainer height={shortScreen ? 300 : 500}>
+        <BarChart data={barChart}>
+          <CartesianGrid strokeDasharray="3 3" />
+          <XAxis type="category" dataKey="name" tick={<PartySymbolTick />} tickLine={false} />
+          <YAxis
+            type="number"
+            domain={[0, Math.ceil(Math.max.apply(Math, barChart?.map((el) => el.value) || [])) + 2]}
+          />
+          <Tooltip content={<CustomToolTip />} />
+          <Bar dataKey="value" name="Genomsnitt" legendType="none">
+            {barChart?.map((el) => (
+              <Cell key={el.name} fill={partiesMap[el.name as partyAbbrev].color} />
+            ))}
+          </Bar>
+          <ReferenceLine
+            y={4}
+            stroke="black"
+            strokeWidth={2}
+            label={<BarrierLabel />}
+            textAnchor="middle"
+          />
+        </BarChart>
+      </ChartContainer>
+    </PollCard>
   );
 };
 

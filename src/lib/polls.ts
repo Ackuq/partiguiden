@@ -103,7 +103,7 @@ export const getWithin = (polls: Polls, from: Date, to: Date, repeats = false): 
       addMonth(year, month);
     }
   } else {
-    // Get recents first
+    // Get recent first
     filtered[toYear] = {};
     for (let month = to.getMonth(); month >= 0; month--) {
       addMonth(toYear, month);
@@ -112,14 +112,14 @@ export const getWithin = (polls: Polls, from: Date, to: Date, repeats = false): 
     // Get in between
     for (let year = toYear - 1; year > fromYear; year--) {
       filtered[year] = {};
-      for (let month = 11; month <= 0; month--) {
+      for (let month = 11; month >= 0; month--) {
         addMonth(year, month);
       }
     }
 
     // Get from from year
     filtered[fromYear] = {};
-    for (let month = 11; month <= from.getMonth(); month--) {
+    for (let month = 11; month >= from.getMonth(); month--) {
       addMonth(fromYear, month);
     }
   }
@@ -139,6 +139,44 @@ export interface PollDetails {
   month: number;
   year: number;
 }
+export type MonthlyAverage = Record<string, Record<partyAbbrev, number>>;
+
+export const getMonthlyAverage = (polls: Polls): MonthlyAverage => {
+  const result: MonthlyAverage = {};
+  Object.keys(polls).forEach((yearString) => {
+    const year = parseInt(yearString);
+    Object.keys(polls[year]).forEach((monthString) => {
+      const month = parseInt(monthString);
+      const yearMonth = `${year}-${month < 9 ? '0' : ''}${month + 1}`;
+      const data = polls[year][month];
+
+      const pollResults: { [party: string]: number[] } = {};
+
+      data.forEach((poll) => {
+        const entries = Object.entries(poll.data);
+        entries.forEach(([party, value]) => {
+          if (pollResults[party]) {
+            pollResults[party].push(value);
+          } else {
+            pollResults[party] = [value];
+          }
+        });
+      });
+
+      result[yearMonth] = Object.entries(pollResults).reduce(
+        (acc, [party, values]) => ({
+          ...acc,
+          [party as partyAbbrev]: (values.reduce((a, b) => a + b, 0) / values.length).toPrecision(
+            2
+          ),
+        }),
+        {} as Record<partyAbbrev, number>
+      );
+    });
+  });
+
+  return result;
+};
 
 export type AveragePoll = Record<partyAbbrev, [number, Array<PollDetails>]>;
 

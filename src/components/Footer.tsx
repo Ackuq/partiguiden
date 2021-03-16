@@ -3,7 +3,8 @@ import React from 'react';
 import styled from '@material-ui/styles/styled';
 
 import Grid from '@material-ui/core/Grid';
-import Typography from '@material-ui/core/Link';
+import Link from '@material-ui/core/Link';
+import Typography from '@material-ui/core/Typography';
 
 import { Theme } from '@material-ui/core';
 import { ResponsiveAd } from './Ad';
@@ -27,14 +28,14 @@ const Footer: React.FC = () => (
           </Typography>
         </Grid>
         <Grid item>
-          <Typography
+          <Link
             align="center"
             color="inherit"
             variant="subtitle1"
             href="mailto:contact@partiguiden.nu"
           >
             contact@partiguiden.nu
-          </Typography>
+          </Link>
         </Grid>
       </Grid>
     </FooterContent>

@@ -24,7 +24,7 @@ interface Props {
 const SocialMediaShare: React.FC<Props> = ({ title }) => {
   const router = useRouter();
 
-  const path = process.env.SHARE_BASE_URL + router.asPath;
+  const path = process.env.BASE_PATH + router.asPath;
 
   return (
     <SocialMediaWrapper>

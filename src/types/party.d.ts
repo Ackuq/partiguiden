@@ -10,7 +10,9 @@ export type party =
   | 'Liberalerna'
   | 'Miljöpartiet';
 
-export type partyAbbrev = 'S' | 'M' | 'SD' | 'C' | 'V' | 'KD' | 'L' | 'MP' | '-';
+export const partyAbbreviations = ['S', 'M', 'SD', 'C', 'V', 'KD', 'L', 'MP'] as const;
+
+export type partyAbbrev = typeof partyAbbreviations[number] | '-';
 
 export interface Leader extends Member {
   role: string;

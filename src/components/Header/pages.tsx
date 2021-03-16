@@ -7,6 +7,7 @@ import {
   HowToVoteRounded,
   InfoRounded,
   Person,
+  Poll,
 } from '@material-ui/icons';
 import parties from '../../utils/getParties';
 import { makeStyles } from '@material-ui/styles';
@@ -58,5 +59,11 @@ export default [
   { href: ROUTES.DECISIONS, title: 'Riksdagsbeslut', Icon: GavelRounded },
   { href: ROUTES.VOTES, title: 'Voteringar', Icon: HowToVoteRounded, associated: [ROUTES.VOTE] },
   { href: ROUTES.MEMBERS, title: 'Ledamöter', Icon: Person, associated: [ROUTES.MEMBER] },
+  {
+    href: ROUTES.POLLS,
+    title: 'Opinionsundersökningar',
+    Icon: Poll,
+    associated: [],
+  },
   { href: ROUTES.ABOUT_US, title: 'Om oss', Icon: InfoRounded },
 ];

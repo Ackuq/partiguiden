@@ -2,32 +2,11 @@ import React, { useEffect, useMemo, useState } from 'react';
 import { NextRouter, useRouter } from 'next/router';
 import Link from 'next/link';
 
-import makeStyles from '@material-ui/styles/makeStyles';
-
-import { Menu, MenuItem, Theme } from '@material-ui/core';
+import { Menu, MenuItem } from '@material-ui/core';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 
 import pages from './pages';
-
-const useStyles = makeStyles((theme: Theme) => ({
-  [theme.breakpoints.up('sm')]: {
-    scrollButton: {
-      display: 'none',
-    },
-    scrollTab: {
-      overflow: 'hidden',
-    },
-  },
-  partySelect: {
-    position: 'absolute',
-    left: 0,
-    right: 0,
-    bottom: 0,
-    padding: '0 !important',
-    visibility: 'hidden',
-  },
-}));
 
 interface DropDownProps {
   title: string;
@@ -89,7 +68,6 @@ const CustomTab = React.forwardRef<HTMLAnchorElement, CustomTabProps>(CustomTabI
 
 const NavLinks: React.FC = () => {
   const router = useRouter();
-  const classes = useStyles();
 
   const selectedTab = useMemo(() => {
     const index = pages.findIndex(
@@ -103,10 +81,9 @@ const NavLinks: React.FC = () => {
   return (
     <Tabs
       variant="scrollable"
-      classes={{
-        scrollButtons: classes.scrollButton,
-        scroller: classes.scrollTab,
-      }}
+      indicatorColor="primary"
+      textColor="primary"
+      scrollButtons="on"
       value={selectedTab}
     >
       {pages.map(({ href, title, subPages }) =>

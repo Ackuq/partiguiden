@@ -1,17 +1,21 @@
 import React from 'react';
-import { Polls as PollsType } from '../types/polls';
-import MonthlyPolls from '../components/MonthlyPolls';
-import HistoricPolls from '../components/HistoricPolls';
+import MonthlyPolls from '../components/Polls/MonthlyPolls';
+import HistoricPolls from '../components/Polls/HistoricPolls';
+import BlockStatistics from '../components/Polls/BlockStatistics';
+import { AveragePoll, BlockAverage, MonthlyAverage } from '../lib/polls';
 
 interface Props {
-  polls: PollsType;
+  currentAverage: AveragePoll;
+  blockAverage: BlockAverage;
+  historicPolls: MonthlyAverage;
 }
 
-const Polls: React.FC<Props> = ({ polls }) => {
+const Polls: React.FC<Props> = ({ historicPolls, currentAverage, blockAverage }) => {
   return (
     <>
-      <MonthlyPolls polls={polls} />
-      <HistoricPolls polls={polls} />
+      <MonthlyPolls currentAverage={currentAverage} />
+      <HistoricPolls historicPolls={historicPolls} />
+      <BlockStatistics currentAverage={currentAverage} blockAverage={blockAverage} />
     </>
   );
 };

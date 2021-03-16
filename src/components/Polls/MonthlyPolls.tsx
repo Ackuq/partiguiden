@@ -1,5 +1,5 @@
 import { Paper, styled, Typography, useMediaQuery } from '@material-ui/core';
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import {
   Bar,
   BarChart,
@@ -11,21 +11,12 @@ import {
   XAxis,
   YAxis,
 } from 'recharts';
-import moment from 'moment';
-import { DefaultTooltipContent } from '../types/recharts.d';
-import PartySymbolTick from '../components/PartySymbolTick';
-import { getAverage, getWithin, PollDetails } from '../lib/polls';
-import { partyAbbrev } from '../types/party';
-import { Polls as PollsType } from '../types/polls';
-import { partiesMap } from '../utils/getParties';
+import { DefaultTooltipContent } from '../../types/recharts.d';
+import PartySymbolTick from '../../components/PartySymbolTick';
+import { AveragePoll, PollDetails } from '../../lib/polls';
+import { partyAbbrev } from '../../types/party';
+import { partiesMap } from '../../utils/getParties';
 import { grey } from '@material-ui/core/colors';
-
-interface Props {
-  polls: PollsType;
-}
-
-const today = moment();
-const twoMonthsAgo = moment().subtract(2, 'months');
 
 const ChartContainer = styled(ResponsiveContainer)({
   marginTop: '1rem',
@@ -95,40 +86,26 @@ const CustomToolTip: React.FC<ToolTipProps> = ({ ...props }) => {
   return <DefaultTooltipContent {...props} />;
 };
 
-const MonthlyPolls: React.FC<Props> = ({ polls }) => {
+interface Props {
+  currentAverage: AveragePoll;
+}
+
+const MonthlyPolls: React.FC<Props> = ({ currentAverage }) => {
   const shortScreen = useMediaQuery('(max-height:1000px)');
-
-  const [barChart, setBarChart] = useState<
-    Array<{ name: string; value: number; details: Array<PollDetails> }>
-  >();
-
-  useEffect(() => {
-    const average = getAverage(getWithin(polls, twoMonthsAgo.toDate(), today.toDate()));
-    const barChartData = Object.keys(average).map((party) => ({
-      name: party,
-      value: average[party as partyAbbrev][0],
-      details: average[party as partyAbbrev][1],
-    }));
-    setBarChart(barChartData);
-  }, []);
-
   return (
     <PollCard>
       <Typography variant="h5" align="center">
         Senaste mätningar
       </Typography>
       <ChartContainer height={shortScreen ? 300 : 500}>
-        <BarChart data={barChart}>
+        <BarChart data={currentAverage}>
           <CartesianGrid strokeDasharray="3 3" />
-          <XAxis type="category" dataKey="name" tick={<PartySymbolTick />} tickLine={false} />
-          <YAxis
-            type="number"
-            domain={[0, Math.ceil(Math.max.apply(Math, barChart?.map((el) => el.value) || [])) + 2]}
-          />
+          <XAxis type="category" dataKey="date" tick={<PartySymbolTick />} tickLine={false} />
+          <YAxis type="number" />
           <Tooltip content={<CustomToolTip />} />
           <Bar dataKey="value" name="Genomsnitt" legendType="none">
-            {barChart?.map((el) => (
-              <Cell key={el.name} fill={partiesMap[el.name as partyAbbrev].color} />
+            {currentAverage.map((el) => (
+              <Cell key={el.party} fill={partiesMap[el.party as partyAbbrev].color} />
             ))}
           </Bar>
           <ReferenceLine

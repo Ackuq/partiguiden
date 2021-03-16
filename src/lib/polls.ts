@@ -1,5 +1,6 @@
 import { partyAbbrev, partyAbbreviations } from '../types/party.d';
 import { Polls } from '../types/polls';
+import { blocks } from '../utils/getParties';
 
 const MONTH_MAP = {
   jan: 0,
@@ -139,15 +140,14 @@ export interface PollDetails {
   month: number;
   year: number;
 }
-export type MonthlyAverage = Record<string, Record<partyAbbrev, number>>;
+export type MonthlyAverage = Array<Record<string, number | string>>;
 
 export const getMonthlyAverage = (polls: Polls): MonthlyAverage => {
-  const result: MonthlyAverage = {};
+  const result: MonthlyAverage = [];
   Object.keys(polls).forEach((yearString) => {
     const year = parseInt(yearString);
     Object.keys(polls[year]).forEach((monthString) => {
       const month = parseInt(monthString);
-      const yearMonth = `${year}-${month < 9 ? '0' : ''}${month + 1}`;
       const data = polls[year][month];
 
       const pollResults: { [party: string]: number[] } = {};
@@ -163,14 +163,16 @@ export const getMonthlyAverage = (polls: Polls): MonthlyAverage => {
         });
       });
 
-      result[yearMonth] = Object.entries(pollResults).reduce(
-        (acc, [party, values]) => ({
-          ...acc,
-          [party as partyAbbrev]: (values.reduce((a, b) => a + b, 0) / values.length).toPrecision(
-            2
-          ),
-        }),
-        {} as Record<partyAbbrev, number>
+      result.push(
+        Object.entries(pollResults).reduce(
+          (acc, [party, values]) => ({
+            ...acc,
+            [party as partyAbbrev]: parseFloat(
+              (values.reduce((a, b) => a + b, 0) / values.length).toFixed(2)
+            ),
+          }),
+          { date: `${year}-${month < 9 ? '0' : ''}${month + 1}` } as Record<string, number | string>
+        )
       );
     });
   });
@@ -178,7 +180,7 @@ export const getMonthlyAverage = (polls: Polls): MonthlyAverage => {
   return result;
 };
 
-export type AveragePoll = Record<partyAbbrev, [number, Array<PollDetails>]>;
+export type AveragePoll = Array<{ party: partyAbbrev; value: number; details: Array<PollDetails> }>;
 
 export const getAverage = (polls: Polls): AveragePoll => {
   const partyAll = partyAbbreviations.reduce(
@@ -209,11 +211,18 @@ export const getAverage = (polls: Polls): AveragePoll => {
     }
   }
 
-  const result = Object.keys(partyAll).reduce((acc, party) => {
-    const totalArray = partyAll[party as partyAbbrev].sort(sortDetailArray);
+  const result = Object.entries(partyAll).reduce((acc, [party, details]) => {
+    const totalArray = details.sort(sortDetailArray);
     const sum = totalArray.reduce((prev, curr) => prev + curr.value, 0);
-    return { ...acc, [party]: [(sum / totalArray.length).toFixed(2), totalArray] };
-  }, {} as AveragePoll);
+    return [
+      ...acc,
+      {
+        party: party as partyAbbrev,
+        value: parseFloat((sum / totalArray.length).toFixed(2)),
+        details: totalArray,
+      },
+    ];
+  }, [] as AveragePoll);
 
   return result;
 };
@@ -240,4 +249,13 @@ export const sortDetailArray = (a: PollDetails, b: PollDetails): number => {
     }
   }
   return 0;
+};
+
+export type BlockAverage = Array<{ name: typeof blocks[number]['name']; value: number }>;
+export const createBlockAverage = (average: AveragePoll): BlockAverage => {
+  return average.reduce((prev, { party, value }) => {
+    const blockIndex = blocks.findIndex((block) => block.parties.includes(party));
+    prev[blockIndex].value += value;
+    return prev;
+  }, blocks.map((block) => ({ name: block.name, value: 0 })) as BlockAverage);
 };

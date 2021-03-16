@@ -17,6 +17,12 @@ const parties: ReadonlyArray<PartyInfo> = [
   { name: 'Miljöpartiet', letter: 'MP', color: '#26a65b' },
 ] as const;
 
+export const blocks = [
+  { name: 'Vänsterblocket', parties: ['S', 'V', 'MP'] as Array<partyAbbrev>, color: '#c0392b' },
+  { name: 'Sverigedemokraterna', parties: ['SD'] as Array<partyAbbrev>, color: '#f4d03f' },
+  { name: 'Högerblocket', parties: ['M', 'C', 'KD', 'L'] as Array<partyAbbrev>, color: '#3a539b' },
+] as const;
+
 export const partiesMap = parties.reduce(
   (prev, curr) => ({ ...prev, [curr.letter]: curr }),
   {} as Record<partyAbbrev, PartyInfo>

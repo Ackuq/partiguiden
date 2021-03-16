@@ -100,7 +100,7 @@ const MonthlyPolls: React.FC<Props> = ({ currentAverage }) => {
       <ChartContainer height={shortScreen ? 300 : 500}>
         <BarChart data={currentAverage}>
           <CartesianGrid strokeDasharray="3 3" />
-          <XAxis type="category" dataKey="date" tick={<PartySymbolTick />} tickLine={false} />
+          <XAxis type="category" dataKey="party" tick={<PartySymbolTick />} tickLine={false} />
           <YAxis type="number" />
           <Tooltip content={<CustomToolTip />} />
           <Bar dataKey="value" name="Genomsnitt" legendType="none">

@@ -49,7 +49,7 @@ const Document: React.FC<Props> = ({ document }) => {
             <Typography style={{ fontSize: '0.75rem' }} color="textSecondary" gutterBottom>
               {document.title}
             </Typography>
-            <Typography color="primary">{document.altTitle}</Typography>
+            <Typography>{document.altTitle}</Typography>
             <Typography style={{ fontSize: '0.85rem' }} color="textSecondary">
               {document.subtitle}
             </Typography>

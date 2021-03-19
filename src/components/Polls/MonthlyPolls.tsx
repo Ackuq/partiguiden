@@ -102,7 +102,7 @@ const MonthlyPolls: React.FC<Props> = ({ currentAverage }) => {
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis type="category" dataKey="party" tick={<PartySymbolTick />} tickLine={false} />
           <YAxis type="number" />
-          <Tooltip content={<CustomToolTip />} />
+          <Tooltip content={<CustomToolTip />} labelStyle={{ color: 'black' }} />
           <Bar dataKey="value" name="Genomsnitt" legendType="none">
             {currentAverage.map((el) => (
               <Cell key={el.party} fill={partiesMap[el.party as PartyAbbreviation].color} />

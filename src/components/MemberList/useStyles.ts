@@ -6,7 +6,7 @@ const styles = ({ shadows, shape, palette }: Theme) =>
     memberCard: {
       boxShadow: shadows[1],
       borderRadius: shape.borderRadius,
-      backgroundColor: '#fff',
+      backgroundColor: palette.background.paper,
       position: 'relative',
       display: 'flex',
       padding: '0.5rem 1rem 1.5rem 0.5rem',
@@ -41,7 +41,7 @@ const styles = ({ shadows, shape, palette }: Theme) =>
     },
 
     infoContainer: {
-      color: palette.primary.main,
+      color: palette.type === 'dark' ? palette.text.primary : palette.primary.main,
       display: 'flex',
       flexDirection: 'column',
     },

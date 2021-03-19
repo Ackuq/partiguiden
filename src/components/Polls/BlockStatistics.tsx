@@ -1,4 +1,4 @@
-import { Divider, Paper, styled, Typography, useMediaQuery } from '@material-ui/core';
+import { Divider, Paper, styled, Typography, useMediaQuery, useTheme } from '@material-ui/core';
 import React, { useCallback } from 'react';
 import { PieChart, Pie, ResponsiveContainer, Cell, Tooltip } from 'recharts';
 import { AveragePoll, BlocksAverage, displayFormatter } from '../../lib/polls';
@@ -49,6 +49,10 @@ const Block: React.FC<BlockProps> = ({
   blocks,
   blocksIndex,
 }) => {
+  const theme = useTheme();
+
+  const stroke = theme.palette.type === 'dark' ? theme.palette.grey[500] : 'white';
+
   const sortedAverage = [...currentAverage].sort(blockSort(blocks.values));
 
   return (
@@ -67,6 +71,7 @@ const Block: React.FC<BlockProps> = ({
             cx="50%"
             cy="90%"
             outerRadius={radius}
+            stroke={stroke}
           >
             {sortedAverage.map((data, index) => (
               <Cell key={`party-${blocksIndex}-${index}`} fill={partiesMap[data.party].color} />
@@ -82,6 +87,7 @@ const Block: React.FC<BlockProps> = ({
             innerRadius={radius + 10}
             outerRadius={radius + 30}
             label={(data) => displayFormatter(data.payload.value)}
+            stroke={stroke}
           >
             {blocks.values.map((block: Blocks['values'][number], index: number) => (
               <Cell key={`block-${blocksIndex}-${index}`} fill={block.color} />

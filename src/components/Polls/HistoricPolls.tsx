@@ -57,8 +57,8 @@ const HistoricPolls: React.FC<Props> = ({ historicPolls }) => {
         <LineChart data={historicPolls}>
           <XAxis type="category" dataKey="date" />
           <YAxis type="number" />
-          <Tooltip />
-          <Legend wrapperStyle={{ marginLeft: 30, bottom: -5 }} onClick={onClick} />
+          <Tooltip labelStyle={{ color: 'black' }} />
+          <Legend wrapperStyle={{ marginLeft: 30, bottom: -5 }} fill="#000" onClick={onClick} />
           {partyAbbreviations.map((party) => (
             <Line
               key={party}

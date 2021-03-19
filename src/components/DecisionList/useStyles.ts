@@ -21,7 +21,7 @@ const styles = (theme: Theme) =>
       fontSize: '1.125rem',
       lineHeight: 1.3,
       color:
-        theme.palette.type === 'dark' ? theme.palette.primary.light : theme.palette.primary.dark,
+        theme.palette.type === 'dark' ? theme.palette.text.primary : theme.palette.primary.dark,
     },
     subtitle: {
       fontSize: '1rem',
@@ -35,7 +35,7 @@ const styles = (theme: Theme) =>
       transition: 'transform 0.25s ease-in-out',
       fontSize: '2rem',
       color:
-        theme.palette.type === 'dark' ? theme.palette.primary.light : theme.palette.primary.dark,
+        theme.palette.type === 'dark' ? theme.palette.text.primary : theme.palette.primary.dark,
     },
     cardContainer: {
       borderRadius: theme.shape.borderRadius,

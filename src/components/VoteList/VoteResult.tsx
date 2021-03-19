@@ -5,7 +5,7 @@ import Grid from '@material-ui/core/Grid';
 import { votingResult } from '../../types/voting';
 import useStyles from './useStyles';
 import { useTheme } from '@material-ui/core';
-import { grey, lightGreen, red } from '@material-ui/core/colors';
+import { voteListColors } from '../../lib/voteColors';
 
 interface Props {
   votes: votingResult;
@@ -15,21 +15,7 @@ interface Props {
 const VoteResult: React.FC<Props> = ({ votes, classes }) => {
   const theme = useTheme();
 
-  const colors = useMemo(() => {
-    if (theme.palette.type === 'dark') {
-      return {
-        yes: theme.palette.primary.dark,
-        no: red[600],
-        losing: grey[600],
-      };
-    } else {
-      return {
-        yes: lightGreen[100],
-        no: red[100],
-        losing: grey[300],
-      };
-    }
-  }, [theme.palette.type]);
+  const colors = useMemo(() => voteListColors[theme.palette.type], [theme.palette.type]);
 
   return (
     <Grid container className={classes.vote}>

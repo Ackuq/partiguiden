@@ -6,6 +6,7 @@ import Paper from '@material-ui/core/Paper';
 import Accordion from '@material-ui/core/Accordion';
 import AccordionDetails from '@material-ui/core/AccordionDetails';
 import AccordionSummary from '@material-ui/core/AccordionSummary';
+import { useTheme } from '@material-ui/core/styles';
 
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
@@ -19,6 +20,7 @@ interface Props {
 }
 
 const Information: React.FC<Props> = ({ id, informationRecords, absence }) => {
+  const theme = useTheme();
   const [documentCount, setDocumentCount] = useState(0);
 
   return (
@@ -48,7 +50,10 @@ const Information: React.FC<Props> = ({ id, informationRecords, absence }) => {
       {informationRecords.length > 0 && (
         <Grid item xs={12}>
           <Paper style={{ padding: '1rem', borderBottomLeftRadius: 0, borderBottomRightRadius: 0 }}>
-            <Typography variant="h4" color="primary">
+            <Typography
+              variant="h4"
+              color={theme.palette.type === 'dark' ? 'textPrimary' : 'primary'}
+            >
               Biografi
             </Typography>
           </Paper>
@@ -75,7 +80,10 @@ const Information: React.FC<Props> = ({ id, informationRecords, absence }) => {
       )}
       <Grid item xs={12}>
         <Paper style={{ padding: '1rem' }}>
-          <Typography variant="h4" color="primary">
+          <Typography
+            variant="h4"
+            color={theme.palette.type === 'dark' ? 'textPrimary' : 'primary'}
+          >
             Dokument
           </Typography>
         </Paper>

@@ -12,7 +12,8 @@ import { Theme } from '@material-ui/core';
 import { COOKIE_POLICY } from '../lib/routes';
 
 const CookieBannerContainer = styled(Paper)(({ theme }: { theme: Theme }) => ({
-  backgroundColor: theme.palette.primary.main,
+  backgroundColor:
+    theme.palette.type === 'dark' ? theme.palette.primary.dark : theme.palette.primary.main,
   color: '#fff',
   position: 'fixed',
   bottom: 0,

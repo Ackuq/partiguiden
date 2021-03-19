@@ -13,9 +13,6 @@ const styles = (theme: Theme) =>
       transform: 'rotate(180deg)',
     },
     paragraphContainer: {
-      '& a': {
-        color: '#212121',
-      },
       '& .paragraph p': {
         fontSize: '1rem',
       },
@@ -23,7 +20,8 @@ const styles = (theme: Theme) =>
     title: {
       fontSize: '1.125rem',
       lineHeight: 1.3,
-      color: theme.palette.primary.dark,
+      color:
+        theme.palette.type === 'dark' ? theme.palette.primary.light : theme.palette.primary.dark,
     },
     subtitle: {
       fontSize: '1rem',
@@ -36,11 +34,12 @@ const styles = (theme: Theme) =>
     arrow: {
       transition: 'transform 0.25s ease-in-out',
       fontSize: '2rem',
-      color: theme.palette.primary.dark,
+      color:
+        theme.palette.type === 'dark' ? theme.palette.primary.light : theme.palette.primary.dark,
     },
     cardContainer: {
       borderRadius: theme.shape.borderRadius,
-      backgroundColor: '#fff',
+      backgroundColor: theme.palette.background.paper,
       overflow: 'hidden',
       boxShadow: theme.shadows[1],
     },

@@ -35,21 +35,10 @@ const Vote: React.FC<Props> = ({ vote, classes }) => {
             }}
           />
           <CardContent>
-            <Typography
-              variant="h3"
-              color="textSecondary"
-              align="left"
-              gutterBottom
-              classes={{ h3: classes.title }}
-            >
+            <Typography variant="h3" align="left" gutterBottom classes={{ h3: classes.title }}>
               {vote.title}
             </Typography>
-            <Typography
-              variant="h6"
-              color="textSecondary"
-              align="left"
-              classes={{ h6: classes.subtitle }}
-            >
+            <Typography variant="h6" align="left" classes={{ h6: classes.subtitle }}>
               {vote.subtitle}
             </Typography>
           </CardContent>

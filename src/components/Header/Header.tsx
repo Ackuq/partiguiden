@@ -4,7 +4,6 @@ import Link from 'next/link';
 import styled from '@material-ui/styles/styled';
 
 import AppBar from '@material-ui/core/AppBar';
-import Grid from '@material-ui/core/Grid';
 import ButtonBase from '@material-ui/core/ButtonBase';
 import Hidden from '@material-ui/core/Hidden';
 import IconButton from '@material-ui/core/IconButton';
@@ -17,16 +16,21 @@ import NavLinks from './NavLinks';
 import Drawer from './Drawer';
 
 import { INDEX } from '../../lib/routes';
+import { Brightness6 } from '@material-ui/icons';
 
-const Brand = styled(Grid)({
+const Brand = styled('div')({
   margin: '0.25rem',
   textAlign: 'center',
 });
 
-const Banner = styled(Grid)(({ theme }: { theme: Theme }) => ({
+const Banner = styled('div')({
   zIndex: 1200,
-  backgroundColor: theme.palette.primary.main,
-}));
+  display: 'flex',
+  justifyContent: 'space-between',
+  alignItems: 'center',
+  padding: '0 2rem',
+  width: '100%',
+});
 
 const BannerText = styled('a')(({ theme }: { theme: Theme }) => ({
   textDecoration: 'none',
@@ -36,9 +40,13 @@ const BannerText = styled('a')(({ theme }: { theme: Theme }) => ({
   color: theme.palette.primary.contrastText,
 }));
 
-const Branding = () => (
-  <Banner container justify="flex-start" alignItems="center">
-    <Brand item xs={3}>
+interface Props {
+  toggleDarkMode: () => void;
+}
+
+const Branding: React.FC<Props> = ({ toggleDarkMode }) => (
+  <Banner>
+    <Brand>
       <ButtonBase>
         <Link href={INDEX} passHref>
           <BannerText>
@@ -47,10 +55,18 @@ const Branding = () => (
         </Link>
       </ButtonBase>
     </Brand>
+    <IconButton onClick={toggleDarkMode}>
+      <Brightness6 />
+    </IconButton>
   </Banner>
 );
 
-const Header: React.FC = () => {
+const ColoredAppBar = styled(AppBar)(({ theme }: { theme: Theme }) => ({
+  backgroundColor:
+    theme.palette.type === 'dark' ? theme.palette.background.paper : theme.palette.primary.main,
+}));
+
+const Header: React.FC<Props> = ({ toggleDarkMode }) => {
   const [drawerOpen, setDrawerOpen] = useState(false);
   const appBar = useRef<HTMLDivElement>();
 
@@ -63,13 +79,13 @@ const Header: React.FC = () => {
   };
 
   return (
-    <AppBar position="sticky" ref={appBar}>
+    <ColoredAppBar position="sticky" ref={appBar}>
       <Hidden smUp implementation="css">
         <Toolbar>
           <IconButton color="inherit" aria-label="open drawer" onClick={openDrawer} edge="start">
             <MenuIcon />
           </IconButton>
-          <Branding />
+          <Branding toggleDarkMode={toggleDarkMode} />
         </Toolbar>
         <Drawer
           isOpen={drawerOpen}
@@ -79,10 +95,10 @@ const Header: React.FC = () => {
         />
       </Hidden>
       <Hidden xsDown implementation="css">
-        <Branding />
+        <Branding toggleDarkMode={toggleDarkMode} />
         <NavLinks />
       </Hidden>
-    </AppBar>
+    </ColoredAppBar>
   );
 };
 

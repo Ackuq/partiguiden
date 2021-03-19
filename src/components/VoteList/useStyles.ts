@@ -22,17 +22,11 @@ const styles = (theme: Theme) =>
     },
 
     // Vote card
-    titel: {
-      marginBottom: '2rem',
-      transition: 'color 0.3s ease-in-out',
-      '&:hover': {
-        color: '#34495e',
-      },
-    },
     title: {
       fontSize: '1.125rem',
       lineHeight: 1.3,
-      color: theme.palette.primary.dark,
+      color:
+        theme.palette.type === 'dark' ? theme.palette.primary.light : theme.palette.primary.dark,
     },
     subtitle: {
       fontSize: '1rem',

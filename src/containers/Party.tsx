@@ -53,8 +53,10 @@ const useStyles = makeStyles((theme: Theme) => ({
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'space-around',
+    boxShadow: theme.shadows[2],
     '&:hover': {
-      backgroundColor: theme.palette.grey[200],
+      backgroundColor:
+        theme.palette.type === 'dark' ? theme.palette.grey[700] : theme.palette.grey[200],
       boxShadow: theme.shadows[10],
     },
   },

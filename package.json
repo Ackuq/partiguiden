@@ -21,7 +21,7 @@
     "@material-ui/icons": "^4.11.2",
     "@material-ui/lab": "^4.0.0-alpha.57",
     "@material-ui/styles": "^4.11.3",
-    "@sentry/browser": "^6.2.2",
+    "@sentry/browser": "^6.2.3",
     "@sentry/integrations": "^6.2.3",
     "@sentry/node": "^6.2.3",
     "@sentry/webpack-plugin": "^1.14.2",

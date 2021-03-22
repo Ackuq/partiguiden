@@ -34,7 +34,7 @@
     "react-share": "^4.4.0",
     "react-typed": "^1.2.0",
     "recharts": "^2.0.8",
-    "swr": "^0.5.3"
+    "swr": "^0.5.4"
   },
   "devDependencies": {
     "@types/gtag.js": "^0.0.4",

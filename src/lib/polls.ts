@@ -73,7 +73,8 @@ const parsePolls = (data: string): Polls => {
   return polls;
 };
 
-const POLLS_URL = 'https://raw.githubusercontent.com/hjnilsson/SwedishPolls/master/Data/Polls.csv';
+const POLLS_URL =
+  'https://raw.githubusercontent.com/hampusborgos/SwedishPolls/master/Data/Polls.csv';
 
 export const getPolls = (): Promise<Polls> =>
   fetch(POLLS_URL)
@@ -88,13 +89,15 @@ export const getWithin = (polls: Polls, from: Date, to: Date, repeats = false): 
   const [fromYear, toYear] = [from.getFullYear(), to.getFullYear()];
 
   const addMonth = (year: number, month: number) => {
-    filtered[year][month] = [];
-    polls[year][month].forEach((poll) => {
-      if (!usedInstitutes.includes(poll.institute) || repeats) {
-        filtered[year][month].push(poll);
-        usedInstitutes.push(poll.institute);
-      }
-    });
+    if (polls[year][month]) {
+      filtered[year][month] = [];
+      polls[year][month].forEach((poll) => {
+        if (!usedInstitutes.includes(poll.institute) || repeats) {
+          filtered[year][month].push(poll);
+          usedInstitutes.push(poll.institute);
+        }
+      });
+    }
   };
 
   if (fromYear === toYear) {

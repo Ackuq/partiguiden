@@ -24,7 +24,7 @@
     "@sentry/browser": "^6.3.0",
     "@sentry/integrations": "^6.3.0",
     "@sentry/node": "^6.3.0",
-    "@sentry/webpack-plugin": "^1.15.0",
+    "@sentry/webpack-plugin": "^1.15.1",
     "@zeit/next-source-maps": "^0.0.3",
     "isomorphic-unfetch": "^3.1.0",
     "moment": "^2.29.1",

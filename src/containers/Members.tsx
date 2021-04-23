@@ -6,7 +6,7 @@ import Grid from '@material-ui/core/Grid';
 import { MembersFilter, MemberList } from '../components/MemberList';
 
 import { Member } from '../types/member';
-import { partyAbbrev } from '../types/party';
+import { PartyAbbreviation } from '../types/party';
 
 interface Props {
   members: Array<Member>;
@@ -14,7 +14,7 @@ interface Props {
 
 interface FilterState {
   search: string;
-  parties: Array<partyAbbrev>;
+  parties: Array<PartyAbbreviation>;
 }
 
 const Members: React.FC<Props> = ({ members }) => {

@@ -4,7 +4,7 @@ import Head from 'next/head';
 import PageTitle from '../src/components/PageTitle';
 import {
   AveragePoll,
-  BlockAverage,
+  BlocksAverage,
   createBlockAverage,
   getAverage,
   getMonthlyAverage,
@@ -16,12 +16,11 @@ import { Polls } from '../src/types/polls';
 import PollsContainer from '../src/containers/Polls';
 import { Container } from '@material-ui/core';
 import moment from 'moment';
-import { blocks } from '../src/utils/getParties';
 
 interface Props {
   polls: Polls;
   currentAverage: AveragePoll;
-  blockAverage: BlockAverage;
+  blockAverage: BlocksAverage;
   historicPolls: MonthlyAverage;
 }
 
@@ -45,18 +44,6 @@ const PollsPageContainer: NextPage<Props> = ({ currentAverage, blockAverage, his
   </>
 );
 
-const blockSort = (a: AveragePoll[number], b: AveragePoll[number]) => {
-  const indexA = blocks.findIndex((block) => block.parties.includes(a.party));
-  const indexB = blocks.findIndex((block) => block.parties.includes(b.party));
-  if (indexA < indexB) {
-    return -1;
-  }
-  if (indexA > indexB) {
-    return 1;
-  }
-  return 0;
-};
-
 export const getStaticProps: GetStaticProps = async () => {
   const today = moment();
   const twoMonthsAgo = moment().subtract(2, 'months');
@@ -69,7 +56,6 @@ export const getStaticProps: GetStaticProps = async () => {
   );
 
   const currentAverage = getAverage(getWithin(polls, twoMonthsAgo.toDate(), today.toDate()));
-  currentAverage.sort(blockSort);
   const blockAverage = createBlockAverage(currentAverage);
 
   return {

@@ -1,3 +1,5 @@
+import { PartyAbbreviation } from './party';
+
 export interface Polls {
   [year: number]: Record<
     number,
@@ -8,7 +10,7 @@ export interface Polls {
       month: number;
       day: number | null;
       institute: string;
-      data: Record<partyAbbrev, number>;
+      data: Record<PartyAbbreviation, number>;
     }>
   >;
 }

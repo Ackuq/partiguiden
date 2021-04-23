@@ -14,7 +14,7 @@ import {
 import { DefaultTooltipContent } from '../../types/recharts.d';
 import PartySymbolTick from '../../components/PartySymbolTick';
 import { AveragePoll, PollDetails } from '../../lib/polls';
-import { partyAbbrev } from '../../types/party';
+import { PartyAbbreviation } from '../../types/party';
 import { partiesMap } from '../../utils/getParties';
 import { grey } from '@material-ui/core/colors';
 
@@ -105,7 +105,7 @@ const MonthlyPolls: React.FC<Props> = ({ currentAverage }) => {
           <Tooltip content={<CustomToolTip />} />
           <Bar dataKey="value" name="Genomsnitt" legendType="none">
             {currentAverage.map((el) => (
-              <Cell key={el.party} fill={partiesMap[el.party as partyAbbrev].color} />
+              <Cell key={el.party} fill={partiesMap[el.party as PartyAbbreviation].color} />
             ))}
           </Bar>
           <ReferenceLine

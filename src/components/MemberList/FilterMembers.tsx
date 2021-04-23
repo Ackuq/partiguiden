@@ -3,13 +3,13 @@ import Divider from '@material-ui/core/Divider';
 
 import FilterContainer, { FilterList, FilterSearch } from '../Filter';
 import allParties from '../../utils/getParties';
-import { partyAbbrev } from '../../types/party';
+import { PartyAbbreviation } from '../../types/party';
 
 type partyEntry = typeof allParties[number];
 
 interface FilterState {
   search: string;
-  parties: Array<partyAbbrev>;
+  parties: Array<PartyAbbreviation>;
 }
 
 interface Props {

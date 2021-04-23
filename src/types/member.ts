@@ -1,4 +1,4 @@
-import { partyAbbrev } from './party';
+import { PartyAbbreviation } from './party';
 
 export interface MemberDocument {
   authority: string | null;
@@ -37,7 +37,7 @@ export interface Member {
   lastName: string;
   pictureUrl: string;
   age: number;
-  party: partyAbbrev;
+  party: PartyAbbreviation | '-';
   district: string;
   status: string;
   information: Information[];

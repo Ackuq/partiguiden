@@ -21,7 +21,7 @@ import PartySymbolTick from '../../PartySymbolTick';
 import SectionButton from '../SectionButton';
 import RotatingArrow from '../RotatingArrow';
 import { Vote } from '../../../types/voting';
-import { partyAbbrev } from '../../../types/party';
+import { PartyAbbreviation } from '../../../types/party';
 
 const ChartContainer = styled(ResponsiveContainer)({
   width: 'calc(100% + 20px) !important',
@@ -37,7 +37,7 @@ interface Result {
   Frånvarande: string;
 }
 
-type key = partyAbbrev | '-' | 'Totalt';
+type key = PartyAbbreviation | '-' | 'Totalt';
 
 const createData = (voting: Vote['voting']) => {
   const result: Array<Result> = [];

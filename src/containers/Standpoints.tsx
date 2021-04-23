@@ -1,7 +1,7 @@
 import React from 'react';
 
 import PartyStandpoints from '../components/PartyStandpoints';
-import { partyAbbrev } from '../types/party';
+import { PartyAbbreviation } from '../types/party';
 import { StandpointsMap } from '../types/subjects';
 import { partiesMap } from '../utils/getParties';
 
@@ -14,8 +14,8 @@ const Subject: React.FC<Props> = ({ standpoints }) => (
     {Object.keys(standpoints).map((party) => (
       <PartyStandpoints
         key={party}
-        party={partiesMap[party as partyAbbrev]}
-        standpoints={standpoints[party as partyAbbrev]}
+        party={partiesMap[party as PartyAbbreviation]}
+        standpoints={standpoints[party as PartyAbbreviation]}
       />
     ))}
   </>

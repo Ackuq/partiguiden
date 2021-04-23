@@ -1,29 +1,60 @@
-import { Paper, styled, Typography, useMediaQuery } from '@material-ui/core';
-import React from 'react';
+import { Divider, Paper, styled, Typography, useMediaQuery } from '@material-ui/core';
+import React, { useCallback } from 'react';
 import { PieChart, Pie, ResponsiveContainer, Cell, Tooltip } from 'recharts';
-import { AveragePoll, BlockAverage } from '../../lib/polls';
-import { blocks, partiesMap } from '../../utils/getParties';
+import { AveragePoll, BlocksAverage, displayFormatter } from '../../lib/polls';
+import { allBlocks, Blocks, partiesMap } from '../../utils/getParties';
 
 const PollCard = styled(Paper)({
   padding: '1rem 0.5rem',
   marginTop: '1rem',
 });
 
+const BlockDivider = styled(Divider)({
+  marginBottom: '1rem',
+});
+
+const blockSort = (blocks: Blocks['values']) => (
+  a: AveragePoll[number],
+  b: AveragePoll[number]
+) => {
+  const indexA = blocks.findIndex((block) => block.parties.includes(a.party));
+  const indexB = blocks.findIndex((block) => block.parties.includes(b.party));
+  if (indexA < indexB) {
+    return -1;
+  }
+  if (indexA > indexB) {
+    return 1;
+  }
+  return 0;
+};
 interface Props {
   currentAverage: AveragePoll;
-  blockAverage: BlockAverage;
+  blockAverage: BlocksAverage;
 }
 
-const BlockStatistics: React.FC<Props> = ({ currentAverage, blockAverage }) => {
-  const shortScreen = useMediaQuery('(max-height:1000px)');
+interface BlockProps {
+  currentAverage: AveragePoll;
+  blockAverage: BlocksAverage[number];
+  height: number;
+  radius: number;
+  blocks: Blocks;
+  blocksIndex: number;
+}
 
-  const height = shortScreen ? 200 : 350;
-  const radius = shortScreen ? 100 : 200;
+const Block: React.FC<BlockProps> = ({
+  height,
+  currentAverage,
+  blockAverage,
+  radius,
+  blocks,
+  blocksIndex,
+}) => {
+  const sortedAverage = [...currentAverage].sort(blockSort(blocks.values));
 
   return (
-    <PollCard>
-      <Typography variant="h5" align="center">
-        Blockskillnad (senaste mätningar)
+    <>
+      <Typography align="center" variant="h6">
+        {blocks.name}
       </Typography>
       <ResponsiveContainer height={height}>
         <PieChart height={height}>
@@ -32,35 +63,66 @@ const BlockStatistics: React.FC<Props> = ({ currentAverage, blockAverage }) => {
             dataKey="value"
             startAngle={180}
             endAngle={0}
-            data={currentAverage}
+            data={sortedAverage}
             cx="50%"
             cy="90%"
             outerRadius={radius}
-            fill="#8884d8"
           >
-            {currentAverage.map((data, index) => (
-              <Cell key={`cell-${index}`} fill={partiesMap[data.party].color} />
+            {sortedAverage.map((data, index) => (
+              <Cell key={`party-${blocksIndex}-${index}`} fill={partiesMap[data.party].color} />
             ))}
           </Pie>
           <Pie
-            data={blockAverage}
             dataKey="value"
             startAngle={180}
             endAngle={0}
+            data={blockAverage}
             cx="50%"
             cy="90%"
             innerRadius={radius + 10}
             outerRadius={radius + 30}
-            fill="#82ca9d"
-            label
+            label={(data) => displayFormatter(data.payload.value)}
           >
-            {blocks.map((block, index) => (
-              <Cell key={`cell-${index}`} fill={block.color} />
+            {blocks.values.map((block: Blocks['values'][number], index: number) => (
+              <Cell key={`block-${blocksIndex}-${index}`} fill={block.color} />
             ))}
           </Pie>
-          <Tooltip />
+          <Tooltip formatter={displayFormatter} />
         </PieChart>
       </ResponsiveContainer>
+    </>
+  );
+};
+
+const BlockStatistics: React.FC<Props> = ({ currentAverage, blockAverage }) => {
+  const shortScreen = useMediaQuery('(max-height:1000px)');
+
+  const height = shortScreen ? 200 : 350;
+  const radius = shortScreen ? 100 : 200;
+
+  const renderBlock = useCallback(
+    (block: BlocksAverage[number], index: number) => (
+      <React.Fragment key={index}>
+        <Block
+          currentAverage={currentAverage}
+          height={height}
+          radius={radius}
+          blockAverage={block}
+          blocks={allBlocks[index]}
+          blocksIndex={index}
+        />
+        {index != blockAverage.length - 1 && <BlockDivider />}
+      </React.Fragment>
+    ),
+    [currentAverage, blockAverage, height, radius]
+  );
+
+  return (
+    <PollCard>
+      <Typography variant="h5" align="center" gutterBottom>
+        Blockskillnad (senaste mätningar)
+      </Typography>
+      {blockAverage.map(renderBlock)}
     </PollCard>
   );
 };

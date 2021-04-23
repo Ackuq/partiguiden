@@ -21,7 +21,9 @@ const MemberList: React.FC<Props> = ({ members, filter }) => {
   return (
     <>
       {members.map((member) => {
-        const inParty = filter.parties.length ? filter.parties.includes(member.party) : true;
+        const inParty = filter.parties.length
+          ? filter.parties.includes(member.party as PartyAbbreviation)
+          : true;
         const inSearch = `${member.firstName} ${member.lastName}`
           .toLowerCase()
           .includes(filter.search.toLowerCase());

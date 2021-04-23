@@ -7,7 +7,7 @@ import Typography from '@material-ui/core/Typography';
 
 import ArrowDownRounded from '@material-ui/icons/KeyboardArrowDownRounded';
 
-import { PartyInfo } from '../../utils/getParties';
+import { PartyInfo } from '../../types/party';
 import PartyStandpoint from './PartyStandpoint';
 import useStyles from './useStyles';
 import { Standpoint } from '../../types/subjects';

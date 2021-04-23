@@ -12,7 +12,7 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import { styled } from '@material-ui/styles';
 
-import { PartyInfo } from '../../utils/getParties';
+import { PartyInfo } from '../../types/party';
 import { Standpoint } from '../../types/subjects';
 
 const ListBox = styled(ListItemIcon)({

@@ -37,7 +37,7 @@ export interface Member {
   lastName: string;
   pictureUrl: string;
   age: number;
-  party: PartyAbbreviation;
+  party: PartyAbbreviation | '-';
   district: string;
   status: string;
   information: Information[];

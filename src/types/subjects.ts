@@ -1,4 +1,4 @@
-import { partyAbbrev } from './party';
+import { PartyAbbreviation } from './party';
 
 export interface Standpoint {
   id: string;
@@ -6,7 +6,7 @@ export interface Standpoint {
   content: Array<string>;
   date: string;
   link: string;
-  party: partyAbbrev;
+  party: PartyAbbreviation;
   subject: number;
 }
 
@@ -22,6 +22,6 @@ export interface Subject {
   standpoints: Array<Standpoint>;
 }
 
-export type StandpointsMap = Record<partyAbbrev, Array<Standpoint>>;
+export type StandpointsMap = Record<PartyAbbreviation, Array<Standpoint>>;
 
 export type PopularSubjects = Array<[SubjectListEntry, number]>;

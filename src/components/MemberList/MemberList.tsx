@@ -5,12 +5,12 @@ import Grid from '@material-ui/core/Grid';
 import Member from './Member';
 import useStyles from './useStyles';
 import { Member as MemberType } from '../../types/member';
-import { partyAbbrev } from '../../types/party';
+import { PartyAbbreviation } from '../../types/party';
 
 interface Props {
   filter: {
     search: string;
-    parties: Array<partyAbbrev>;
+    parties: Array<PartyAbbreviation>;
   };
   members: Array<MemberType>;
 }

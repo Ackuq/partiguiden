@@ -11,7 +11,7 @@ import {
   YAxis,
 } from 'recharts';
 import { MonthlyAverage } from '../../lib/polls';
-import { partyAbbrev, partyAbbreviations } from '../../types/party.d';
+import { PartyAbbreviation, partyAbbreviations } from '../../types/party';
 import { partiesMap } from '../../utils/getParties';
 
 const ChartContainer = styled(ResponsiveContainer)({
@@ -29,18 +29,18 @@ interface Props {
 }
 
 const HistoricPolls: React.FC<Props> = ({ historicPolls }) => {
-  const [hide, setHide] = useState<Array<partyAbbrev>>([]);
+  const [hide, setHide] = useState<Array<PartyAbbreviation>>([]);
 
-  const hideParty = (party: partyAbbrev) => {
+  const hideParty = (party: PartyAbbreviation) => {
     setHide((prev) => [...prev, party]);
   };
 
-  const showParty = (party: partyAbbrev) => {
+  const showParty = (party: PartyAbbreviation) => {
     setHide((prev) => prev.filter((p) => p !== party));
   };
 
   const onClick = (event: React.MouseEvent<Element, MouseEvent>) => {
-    const party = ((event as unknown) as { value: partyAbbrev }).value;
+    const party = ((event as unknown) as { value: PartyAbbreviation }).value;
     if (hide.includes(party)) {
       showParty(party);
     } else {

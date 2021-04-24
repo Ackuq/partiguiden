@@ -37,6 +37,11 @@ module.exports = withSourceMaps({
     PROXY_URL,
     VERCEL_ENV,
   },
+
+  future: {
+    webpack5: true,
+  },
+
   webpack: (config, options) => {
     if (!options.isServer) {
       config.resolve.alias['@sentry/node'] = '@sentry/browser';

@@ -15,7 +15,6 @@ const Tooltip: React.FC<TooltipProps<number | string, string>> = ({ ...props }) 
     <RCTooltip
       {...props}
       contentStyle={toolTipStyles(theme)}
-      cursor={false}
       itemStyle={{ color: theme.palette.type === 'dark' ? 'white' : 'black' }}
       labelStyle={{ color: theme.palette.type === 'dark' ? 'white' : 'black' }}
     />

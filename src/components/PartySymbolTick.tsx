@@ -11,10 +11,8 @@ interface Props {
 
 const PartySymbolTick: React.FC<Props> = ({ vertical = false, payload = {}, x = '0', y = '0' }) => {
   const { value } = payload;
-  /* 
-  TODO: Make this image lower res 
-  */
-  const href = value ? `/static/images/party-logos/${value.toUpperCase()}.png` : '';
+
+  const href = value ? `/static/images/party-logos/${value.toUpperCase()}-low-res.png` : '';
   let X = parseInt(x, 10);
   let Y = parseInt(y, 10);
   if (vertical) {

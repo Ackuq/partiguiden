@@ -73,7 +73,7 @@ const VoteResult: React.FC<Props> = ({ votes, classes }) => {
           </Grid>
         </>
       ) : (
-        <Grid xs={12}>
+        <Grid item xs={12}>
           <div style={{ backgroundColor: colors.losing }}>
             <Typography className="box" align="center" variant="h6">
               Ingen voteringsdata hittades

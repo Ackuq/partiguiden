@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 
+import { darken, useTheme } from '@material-ui/core';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import CardHeader from '@material-ui/core/CardHeader';
@@ -20,6 +21,7 @@ interface Props {
 }
 
 const Vote: React.FC<Props> = ({ vote, classes }) => {
+  const theme = useTheme();
   const authority = lookupAuthority(vote.authority);
 
   return (
@@ -28,28 +30,20 @@ const Vote: React.FC<Props> = ({ vote, classes }) => {
         <ButtonBase style={{ display: 'block' }} component="a">
           <CardHeader
             title={authority.desc}
-            style={{ background: authority.color }}
+            style={{
+              background:
+                theme.palette.type === 'dark' ? darken(authority.color, 0.6) : authority.color,
+            }}
             classes={{
               title: classes.headerTitle,
               root: classes.headerRoot,
             }}
           />
           <CardContent>
-            <Typography
-              variant="h3"
-              color="textSecondary"
-              align="left"
-              gutterBottom
-              classes={{ h3: classes.title }}
-            >
+            <Typography variant="h3" align="left" gutterBottom classes={{ h3: classes.title }}>
               {vote.title}
             </Typography>
-            <Typography
-              variant="h6"
-              color="textSecondary"
-              align="left"
-              classes={{ h6: classes.subtitle }}
-            >
+            <Typography variant="h6" align="left" classes={{ h6: classes.subtitle }}>
               {vote.subtitle}
             </Typography>
           </CardContent>

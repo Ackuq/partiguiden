@@ -8,7 +8,8 @@ import { Theme } from '@material-ui/core';
 
 const PageTitleContainer = styled(Paper)(({ theme }: { theme: Theme }) => ({
   zIndex: 99,
-  backgroundColor: theme.palette.primary.light,
+  backgroundColor:
+    theme.palette.type == 'dark' ? theme.palette.background.paper : theme.palette.primary.light,
   textAlign: 'center',
   padding: '1.5rem 0.25rem',
   marginBottom: '1rem',

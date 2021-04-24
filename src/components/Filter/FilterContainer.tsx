@@ -9,8 +9,23 @@ import FilterIcon from '@material-ui/icons/Tune';
 import CloseIcon from '@material-ui/icons/CloseRounded';
 
 import FilterContainerDesktop from './FilterContainerDesktop';
+import { darken, makeStyles } from '@material-ui/core';
+
+const useStyles = makeStyles((theme) => ({
+  fab: {
+    position: 'fixed',
+    bottom: '1rem',
+    right: '5%',
+    color: theme.palette.type === 'dark' ? 'white' : 'black',
+    backgroundColor: theme.palette.background.paper,
+    '&:hover': {
+      backgroundColor: darken(theme.palette.background.paper, 0.25),
+    },
+  },
+}));
 
 const Filter: React.FC<{ children: React.ReactChild | React.ReactChild[] }> = ({ children }) => {
+  const classes = useStyles();
   const [mobileOpen, setMobileOpen] = useState(false);
 
   const toggleFilterScreen = () => setMobileOpen((prevState) => !prevState);
@@ -18,11 +33,9 @@ const Filter: React.FC<{ children: React.ReactChild | React.ReactChild[] }> = ({
   return (
     <>
       <Hidden smUp implementation="css">
-        <div style={{ position: 'fixed', bottom: '1rem', right: '5%' }}>
-          <Fab style={{ backgroundColor: '#fff' }} onClick={toggleFilterScreen}>
-            <FilterIcon fontSize="large" />
-          </Fab>
-        </div>
+        <Fab classes={{ root: classes.fab }} onClick={toggleFilterScreen}>
+          <FilterIcon color="inherit" fontSize="large" />
+        </Fab>
 
         <SwipeableDrawer
           variant="temporary"

@@ -1,10 +1,9 @@
 import React, { useRef, useState } from 'react';
 import Link from 'next/link';
 
-import styled from '@material-ui/styles/styled';
+import { Grid, makeStyles, styled } from '@material-ui/core';
 
 import AppBar from '@material-ui/core/AppBar';
-import Grid from '@material-ui/core/Grid';
 import ButtonBase from '@material-ui/core/ButtonBase';
 import Hidden from '@material-ui/core/Hidden';
 import IconButton from '@material-ui/core/IconButton';
@@ -17,40 +16,65 @@ import NavLinks from './NavLinks';
 import Drawer from './Drawer';
 
 import { INDEX } from '../../lib/routes';
+import { Brightness6 } from '@material-ui/icons';
 
-const Brand = styled(Grid)({
-  margin: '0.25rem',
-  textAlign: 'center',
-});
+const useStyles = makeStyles((theme) => ({
+  brand: {
+    margin: '0.25rem',
+    textAlign: 'center',
+  },
+  iconContainer: {
+    textAlign: 'center',
+    [theme.breakpoints.down('sm')]: {
+      textAlign: 'right',
+    },
+  },
+  banner: {
+    zIndex: 1200,
+    justifyContent: 'space-between',
+  },
 
-const Banner = styled(Grid)(({ theme }: { theme: Theme }) => ({
-  zIndex: 1200,
-  backgroundColor: theme.palette.primary.main,
+  bannerText: {
+    textDecoration: 'none',
+    fontSize: '2rem',
+    paddingLeft: '0.25rem',
+    paddingRight: '0.25rem',
+    color: theme.palette.primary.contrastText,
+  },
 }));
 
-const BannerText = styled('a')(({ theme }: { theme: Theme }) => ({
-  textDecoration: 'none',
-  fontSize: '2rem',
-  paddingLeft: '0.25rem',
-  paddingRight: '0.25rem',
-  color: theme.palette.primary.contrastText,
+interface Props {
+  toggleDarkMode: () => void;
+}
+
+const Branding: React.FC<Props> = ({ toggleDarkMode }) => {
+  const classes = useStyles();
+  return (
+    <Grid container className={classes.banner}>
+      <Grid item xs={3} className={classes.brand}>
+        <ButtonBase>
+          <Link href={INDEX} passHref>
+            <a className={classes.bannerText}>
+              <strong>Partiguiden</strong>
+            </a>
+          </Link>
+        </ButtonBase>
+      </Grid>
+      <Grid item xs={3} className={classes.iconContainer}>
+        <IconButton onClick={toggleDarkMode}>
+          <Brightness6 />
+        </IconButton>
+      </Grid>
+    </Grid>
+  );
+};
+
+const ColoredAppBar = styled(AppBar)(({ theme }: { theme: Theme }) => ({
+  backgroundColor:
+    theme.palette.type === 'dark' ? theme.palette.background.paper : theme.palette.primary.main,
 }));
 
-const Branding = () => (
-  <Banner container justify="flex-start" alignItems="center">
-    <Brand item xs={3}>
-      <ButtonBase>
-        <Link href={INDEX} passHref>
-          <BannerText>
-            <strong>Partiguiden</strong>
-          </BannerText>
-        </Link>
-      </ButtonBase>
-    </Brand>
-  </Banner>
-);
-
-const Header: React.FC = () => {
+const Header: React.FC<Props> = ({ toggleDarkMode }) => {
   const [drawerOpen, setDrawerOpen] = useState(false);
   const appBar = useRef<HTMLDivElement>();
 
@@ -63,13 +87,13 @@ const Header: React.FC = () => {
   };
 
   return (
-    <AppBar position="sticky" ref={appBar}>
+    <ColoredAppBar position="sticky" ref={appBar}>
       <Hidden smUp implementation="css">
         <Toolbar>
           <IconButton color="inherit" aria-label="open drawer" onClick={openDrawer} edge="start">
             <MenuIcon />
           </IconButton>
-          <Branding />
+          <Branding toggleDarkMode={toggleDarkMode} />
         </Toolbar>
         <Drawer
           isOpen={drawerOpen}
@@ -79,10 +103,10 @@ const Header: React.FC = () => {
         />
       </Hidden>
       <Hidden xsDown implementation="css">
-        <Branding />
+        <Branding toggleDarkMode={toggleDarkMode} />
         <NavLinks />
       </Hidden>
-    </AppBar>
+    </ColoredAppBar>
   );
 };
 

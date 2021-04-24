@@ -1,19 +1,10 @@
-import React, { useState } from 'react';
+import React, { useMemo, useState } from 'react';
 
 import CircularProgress from '@material-ui/core/CircularProgress';
 import Typography from '@material-ui/core/Typography';
 import Collapse from '@material-ui/core/Collapse';
 
-import {
-  BarChart,
-  Bar,
-  XAxis,
-  YAxis,
-  CartesianGrid,
-  Tooltip,
-  Legend,
-  ResponsiveContainer,
-} from 'recharts';
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Legend, ResponsiveContainer } from 'recharts';
 
 import { styled } from '@material-ui/styles';
 
@@ -22,6 +13,9 @@ import SectionButton from '../SectionButton';
 import RotatingArrow from '../RotatingArrow';
 import { Vote } from '../../../types/voting';
 import { PartyAbbreviation } from '../../../types/party';
+import { useTheme } from '@material-ui/core';
+import { voteColor } from '../../../lib/voteColors';
+import Tooltip from '../../Charts/Tooltip';
 
 const ChartContainer = styled(ResponsiveContainer)({
   width: 'calc(100% + 20px) !important',
@@ -62,6 +56,9 @@ interface Props {
 
 const VoteDistribution: React.FC<Props> = ({ voting }) => {
   const [visible, setVisible] = useState(false);
+  const theme = useTheme();
+
+  const colors = useMemo(() => voteColor[theme.palette.type], [theme.palette.type]);
 
   const data = createData(voting);
 
@@ -90,10 +87,10 @@ const VoteDistribution: React.FC<Props> = ({ voting }) => {
               <YAxis type="category" dataKey="name" tick={<PartySymbolTick vertical />} />
               <Tooltip />
               <Legend />
-              <Bar dataKey="Ja" stackId="a" fill="#16a085" />
-              <Bar dataKey="Nej" stackId="a" fill="#c0392b" />
-              <Bar dataKey="Avstående" stackId="a" fill="#7f8c8d" />
-              <Bar dataKey="Frånvarande" stackId="a" fill="#34495e" />
+              <Bar dataKey="Ja" stackId="a" fill={colors.yes} />
+              <Bar dataKey="Nej" stackId="a" fill={colors.no} />
+              <Bar dataKey="Avstående" stackId="a" fill={colors.refrain} />
+              <Bar dataKey="Frånvarande" stackId="a" fill={colors.absent} />
             </BarChart>
           ) : (
             <CircularProgress />

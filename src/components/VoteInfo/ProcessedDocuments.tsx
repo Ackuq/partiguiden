@@ -3,6 +3,7 @@ import Link from 'next/link';
 
 import Typography from '@material-ui/core/Typography';
 import Collapse from '@material-ui/core/Collapse';
+import { useTheme } from '@material-ui/core';
 
 import RotatingArrow from './RotatingArrow';
 import SectionButton from './SectionButton';
@@ -15,6 +16,7 @@ interface Props {
 }
 
 const ProcessedDocuments: React.FC<Props> = ({ processedDocuments }) => {
+  const theme = useTheme();
   const [visible, setVisible] = useState(false);
 
   return (
@@ -30,7 +32,11 @@ const ProcessedDocuments: React.FC<Props> = ({ processedDocuments }) => {
           {processedDocuments.map((document, index) => (
             <React.Fragment key={document.id}>
               <Link href={ROUTES.DOCUMENT} as={ROUTES.getDocumentHref(document.id)} passHref>
-                <Typography component="a" variant="body1" color="primary">
+                <Typography
+                  component="a"
+                  variant="body1"
+                  color={theme.palette.type === 'dark' ? 'secondary' : 'primary'}
+                >
                   [{index}] {document.label}
                 </Typography>
               </Link>

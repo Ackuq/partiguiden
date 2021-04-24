@@ -8,9 +8,9 @@ const FilterContainerDesktop = styled(Box)(({ theme }: { theme: Theme }) => ({
   position: 'sticky',
   display: 'flex',
   flexDirection: 'column',
-  minWidth: '270px',
   maxHeight: 'calc(100vh - 68px)',
-  backgroundColor: '#fff',
+  backgroundColor:
+    theme.palette.type === 'dark' ? theme.palette.background.paper : theme.palette.grey[50],
   top: 94,
   bottom: 10,
   overflowY: 'auto',

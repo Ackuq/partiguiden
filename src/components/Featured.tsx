@@ -6,7 +6,7 @@ import ButtonBase from '@material-ui/core/ButtonBase';
 import Typography from '@material-ui/core/Typography';
 
 import grey from '@material-ui/core/colors/grey';
-import { makeStyles, createStyles } from '@material-ui/styles';
+import { makeStyles, createStyles, styled } from '@material-ui/styles';
 import { Theme } from '@material-ui/core';
 import { getStandpointHref, STANDPOINT } from '../lib/routes';
 import { SubjectListEntry } from '../types/subjects';
@@ -16,18 +16,21 @@ const styles = (theme: Theme) =>
     featured: {
       width: '100%',
       textAlign: 'center',
-      borderBottom: '2px solid',
-      borderColor: theme.palette.primary.main,
+      boxShadow: theme.palette.type === 'dark' ? theme.shadows[5] : theme.shadows[2],
       fontWeight: 'normal',
       padding: '1rem',
       display: 'flex',
       flexGrow: 1,
-      color: grey[900],
       '&:hover': {
-        backgroundColor: grey[100],
+        backgroundColor: theme.palette.type === 'dark' ? grey[800] : grey[100],
       },
     },
   });
+
+const ButtonText = styled(Typography)(({ theme }: { theme: Theme }) => ({
+  color:
+    theme.palette.type === 'dark' ? theme.palette.primary.contrastText : theme.palette.primary.main,
+}));
 
 const useStyles = makeStyles(styles);
 
@@ -44,9 +47,7 @@ const Featured: React.FC<Props> = ({ popular }) => {
         <Grid key={subject.id} item xs={12} md={6}>
           <Link href={STANDPOINT} as={getStandpointHref(subject.id)} passHref>
             <ButtonBase className={classes.featured}>
-              <Typography variant="button" color="primary">
-                {subject.name}
-              </Typography>
+              <ButtonText variant="button">{subject.name}</ButtonText>
             </ButtonBase>
           </Link>
         </Grid>

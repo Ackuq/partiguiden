@@ -28,11 +28,13 @@ const useStyles = makeStyles((theme: Theme) => ({
 
   transition: {
     margin: 0,
-    background: `linear-gradient( to left, transparent 50%, ${theme.palette.primary.main} 50% )`,
+    background: `linear-gradient( to left, transparent 50%, ${
+      theme.palette.type === 'dark' ? theme.palette.primary.dark : theme.palette.primary.main
+    } 50% )`,
     backgroundSize: '202% 100%',
     backgroundPosition: 'right bottom',
     backgroundRepeat: 'no-repeat',
-    color: grey[900],
+    color: theme.palette.type === 'dark' ? theme.palette.primary.contrastText : grey[900],
     lineHeight: '50px',
     padding: '0 0.5rem',
     transition: 'all 0.2s ease-in-out',
@@ -52,27 +54,30 @@ const useStyles = makeStyles((theme: Theme) => ({
 
   item: {
     [theme.breakpoints.down('sm')]: {
-      borderColor: theme.palette.primary.main,
-      borderLeft: 'solid 2px',
+      borderLeft: `solid 2px ${
+        theme.palette.type === 'dark' ? theme.palette.primary.dark : theme.palette.primary.main
+      }`,
     },
     [theme.breakpoints.up('md')]: {
       '&:nth-child(2n + 1)': {
-        borderColor: theme.palette.primary.main,
-        borderLeft: 'solid 2px',
+        borderLeft: `solid 2px ${
+          theme.palette.type === 'dark' ? theme.palette.primary.dark : theme.palette.primary.main
+        }`,
       },
       '&:nth-child(2n)': {
-        borderRight: 'solid 2px',
-        borderColor: theme.palette.primary.main,
+        borderRight: `solid 2px ${
+          theme.palette.type === 'dark' ? theme.palette.primary.dark : theme.palette.primary.main
+        }`,
       },
     },
     '&:nth-child(3n)': {
-      backgroundColor: grey[50],
+      backgroundColor: theme.palette.type === 'dark' ? theme.palette.background.paper : grey[50],
     },
     '&:nth-child(3n + 1)': {
-      backgroundColor: grey[100],
+      backgroundColor: theme.palette.type === 'dark' ? theme.palette.background.paper : grey[100],
     },
     '&:nth-child(3n + 2)': {
-      backgroundColor: grey[200],
+      backgroundColor: theme.palette.type === 'dark' ? theme.palette.background.paper : grey[200],
     },
   },
 }));

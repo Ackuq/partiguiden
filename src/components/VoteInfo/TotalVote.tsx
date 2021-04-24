@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 
 import CircularProgress from '@material-ui/core/CircularProgress';
-import { ResponsiveContainer, BarChart, XAxis, YAxis, Tooltip, Bar, Legend } from 'recharts';
+import { ResponsiveContainer, BarChart, XAxis, YAxis, Bar, Legend } from 'recharts';
 import { votingEntry } from '../../types/voting';
+import { useTheme } from '@material-ui/core';
+import { voteColor } from '../../lib/voteColors';
+import Tooltip from '../Charts/Tooltip';
 
 const animationDelay = 2;
 const animationDuration = 2;
@@ -25,7 +28,9 @@ const TotalVote: React.FC<Props> = ({ voting }) => {
     return null;
   }
 
+  const theme = useTheme();
   const data = parseData(voting);
+  const colors = useMemo(() => voteColor[theme.palette.type], [theme.palette.type]);
 
   return (
     <>
@@ -41,7 +46,7 @@ const TotalVote: React.FC<Props> = ({ voting }) => {
               animationEasing="linear"
               dataKey="Ja"
               stackId="a"
-              fill="#16a085"
+              fill={colors.yes}
             />
             <Bar
               animationBegin={data.Ja * animationDelay}
@@ -49,7 +54,7 @@ const TotalVote: React.FC<Props> = ({ voting }) => {
               animationEasing="linear"
               dataKey="Nej"
               stackId="a"
-              fill="#c0392b"
+              fill={colors.no}
             />
             <Bar
               animationBegin={(data.Ja + data.Nej) * animationDelay}
@@ -57,7 +62,7 @@ const TotalVote: React.FC<Props> = ({ voting }) => {
               animationEasing="linear"
               dataKey="Avstående"
               stackId="a"
-              fill="#7f8c8d"
+              fill={colors.refrain}
             />
             <Bar
               animationBegin={(data.Ja + data.Nej + data.Avstående) * animationDelay}
@@ -65,7 +70,7 @@ const TotalVote: React.FC<Props> = ({ voting }) => {
               animationEasing="linear"
               dataKey="Frånvarande"
               stackId="a"
-              fill="#34495e"
+              fill={colors.absent}
             />
           </BarChart>
         </ResponsiveContainer>

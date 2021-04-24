@@ -1,18 +1,11 @@
-import { Paper, styled, Typography } from '@material-ui/core';
+import { Paper, styled, Typography, useTheme } from '@material-ui/core';
+import { grey } from '@material-ui/core/colors';
 import React, { useState } from 'react';
-import {
-  Brush,
-  Legend,
-  Line,
-  LineChart,
-  ResponsiveContainer,
-  Tooltip,
-  XAxis,
-  YAxis,
-} from 'recharts';
+import { Brush, Legend, Line, LineChart, ResponsiveContainer, XAxis, YAxis } from 'recharts';
 import { MonthlyAverage } from '../../lib/polls';
 import { PartyAbbreviation, partyAbbreviations } from '../../types/party';
 import { partiesMap } from '../../utils/getParties';
+import Tooltip from '../Charts/Tooltip';
 
 const ChartContainer = styled(ResponsiveContainer)({
   marginTop: '1rem',
@@ -30,6 +23,7 @@ interface Props {
 
 const HistoricPolls: React.FC<Props> = ({ historicPolls }) => {
   const [hide, setHide] = useState<Array<PartyAbbreviation>>([]);
+  const theme = useTheme();
 
   const hideParty = (party: PartyAbbreviation) => {
     setHide((prev) => [...prev, party]);
@@ -58,7 +52,7 @@ const HistoricPolls: React.FC<Props> = ({ historicPolls }) => {
           <XAxis type="category" dataKey="date" />
           <YAxis type="number" />
           <Tooltip />
-          <Legend wrapperStyle={{ marginLeft: 30, bottom: -5 }} onClick={onClick} />
+          <Legend wrapperStyle={{ marginLeft: 30, bottom: -5 }} fill="#000" onClick={onClick} />
           {partyAbbreviations.map((party) => (
             <Line
               key={party}
@@ -68,7 +62,12 @@ const HistoricPolls: React.FC<Props> = ({ historicPolls }) => {
               dot={false}
             />
           ))}
-          <Brush dataKey="date" style={{ marginBottom: 20 }} />
+          <Brush
+            dataKey="date"
+            fill={theme.palette.type === 'dark' ? grey[700] : 'white'}
+            stroke={theme.palette.type === 'dark' ? grey[900] : grey[700]}
+            style={{ marginBottom: 20, color: 'white' }}
+          />
         </LineChart>
       </ChartContainer>
     </PollCard>

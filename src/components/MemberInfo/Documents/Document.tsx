@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import { makeStyles } from '@material-ui/styles';
 
+import { darken, useTheme } from '@material-ui/core';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import CardHeader from '@material-ui/core/CardHeader';
@@ -29,6 +30,7 @@ interface Props {
   document: MemberDocument;
 }
 const Document: React.FC<Props> = ({ document }) => {
+  const theme = useTheme();
   const classes = useStyles();
   const authority = !!document.authority && lookupAuthority(document.authority);
   return (
@@ -38,7 +40,10 @@ const Document: React.FC<Props> = ({ document }) => {
           {authority && (
             <CardHeader
               title={authority.desc}
-              style={{ background: authority.color }}
+              style={{
+                background:
+                  theme.palette.type === 'dark' ? darken(authority.color, 0.6) : authority.color,
+              }}
               classes={{
                 title: classes.headerTitle,
                 root: classes.headerRoot,
@@ -49,7 +54,7 @@ const Document: React.FC<Props> = ({ document }) => {
             <Typography style={{ fontSize: '0.75rem' }} color="textSecondary" gutterBottom>
               {document.title}
             </Typography>
-            <Typography color="primary">{document.altTitle}</Typography>
+            <Typography>{document.altTitle}</Typography>
             <Typography style={{ fontSize: '0.85rem' }} color="textSecondary">
               {document.subtitle}
             </Typography>

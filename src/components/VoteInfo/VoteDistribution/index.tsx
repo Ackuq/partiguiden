@@ -65,6 +65,14 @@ const VoteDistribution: React.FC<Props> = ({ voting }) => {
 
   const data = createData(voting);
 
+  if (data.length === 0) {
+    return (
+      <Typography gutterBottom variant="h6">
+        Ingen voteringsdata hittades
+      </Typography>
+    );
+  }
+
   return (
     <div style={{ marginBottom: '1rem' }}>
       <SectionButton onClick={() => setVisible(!visible)}>

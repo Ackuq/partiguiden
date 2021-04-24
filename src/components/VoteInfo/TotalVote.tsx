@@ -20,6 +20,11 @@ interface Props {
 }
 
 const TotalVote: React.FC<Props> = ({ voting }) => {
+  /* Special case if all is blank */
+  if (Object.values(voting).every((v) => v === '')) {
+    return null;
+  }
+
   const data = parseData(voting);
 
   return (

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 
+import { darken, useTheme } from '@material-ui/core';
 import Collapse from '@material-ui/core/Collapse';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
@@ -21,8 +22,8 @@ interface Props {
 }
 
 const Decision: React.FC<Props> = ({ decision, classes }) => {
+  const theme = useTheme();
   const [visible, setVisible] = useState(false);
-
   const authority = lookupAuthority(decision.authority);
 
   const btnclass = visible ? classes.shown : '';
@@ -31,7 +32,13 @@ const Decision: React.FC<Props> = ({ decision, classes }) => {
       {authority && (
         <div className={classes.cardContainer}>
           <ButtonBase className={classes.buttonContainer} onClick={() => setVisible(!visible)}>
-            <div style={{ background: authority.color }} className={classes.headerRoot}>
+            <div
+              style={{
+                background:
+                  theme.palette.type === 'dark' ? darken(authority.color, 0.6) : authority.color,
+              }}
+              className={classes.headerRoot}
+            >
               <span className={classes.headerTitle}>{authority.desc}</span>
             </div>
 

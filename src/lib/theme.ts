@@ -13,7 +13,8 @@ const getTheme = (darkMode: boolean): Theme =>
           main: '#80cbc4',
         },
         background: {
-          default: darkMode ? '#212121' : '#fafafa',
+          paper: darkMode ? '#242526' : '#fff',
+          default: darkMode ? '#18191A' : '#fafafa',
         },
       },
       overrides: {

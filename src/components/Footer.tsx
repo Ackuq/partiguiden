@@ -12,7 +12,8 @@ import { ResponsiveAd } from './Ad';
 const FooterContent = styled('footer')(({ theme }: { theme: Theme }) => ({
   padding: '1.5rem 0',
   color: theme.palette.primary.contrastText,
-  background: theme.palette.type === 'dark' ? theme.palette.grey[800] : theme.palette.primary.main,
+  background:
+    theme.palette.type === 'dark' ? theme.palette.background.paper : theme.palette.primary.main,
   boxShadow: '0 -1px 3px rgba(34, 25, 25, 0.4)',
   textAlign: 'center',
 }));

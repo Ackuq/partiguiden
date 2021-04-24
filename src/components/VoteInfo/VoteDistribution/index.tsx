@@ -4,16 +4,7 @@ import CircularProgress from '@material-ui/core/CircularProgress';
 import Typography from '@material-ui/core/Typography';
 import Collapse from '@material-ui/core/Collapse';
 
-import {
-  BarChart,
-  Bar,
-  XAxis,
-  YAxis,
-  CartesianGrid,
-  Tooltip,
-  Legend,
-  ResponsiveContainer,
-} from 'recharts';
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Legend, ResponsiveContainer } from 'recharts';
 
 import { styled } from '@material-ui/styles';
 
@@ -24,6 +15,7 @@ import { Vote } from '../../../types/voting';
 import { PartyAbbreviation } from '../../../types/party';
 import { useTheme } from '@material-ui/core';
 import { voteColor } from '../../../lib/voteColors';
+import Tooltip from '../../Charts/Tooltip';
 
 const ChartContainer = styled(ResponsiveContainer)({
   width: 'calc(100% + 20px) !important',

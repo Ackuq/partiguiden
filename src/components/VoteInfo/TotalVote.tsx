@@ -1,10 +1,11 @@
 import React, { useMemo } from 'react';
 
 import CircularProgress from '@material-ui/core/CircularProgress';
-import { ResponsiveContainer, BarChart, XAxis, YAxis, Tooltip, Bar, Legend } from 'recharts';
+import { ResponsiveContainer, BarChart, XAxis, YAxis, Bar, Legend } from 'recharts';
 import { votingEntry } from '../../types/voting';
 import { useTheme } from '@material-ui/core';
 import { voteColor } from '../../lib/voteColors';
+import Tooltip from '../Charts/Tooltip';
 
 const animationDelay = 2;
 const animationDuration = 2;

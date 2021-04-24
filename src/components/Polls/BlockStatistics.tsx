@@ -1,8 +1,9 @@
 import { Divider, Paper, styled, Typography, useMediaQuery, useTheme } from '@material-ui/core';
 import React, { useCallback } from 'react';
-import { PieChart, Pie, ResponsiveContainer, Cell, Tooltip } from 'recharts';
+import { PieChart, Pie, ResponsiveContainer, Cell } from 'recharts';
 import { AveragePoll, BlocksAverage, displayFormatter } from '../../lib/polls';
 import { allBlocks, Blocks, partiesMap } from '../../utils/getParties';
+import Tooltip from '../Charts/Tooltip';
 
 const PollCard = styled(Paper)({
   padding: '1rem 0.5rem',
@@ -51,7 +52,7 @@ const Block: React.FC<BlockProps> = ({
 }) => {
   const theme = useTheme();
 
-  const stroke = theme.palette.type === 'dark' ? theme.palette.grey[500] : 'white';
+  const stroke = theme.palette.type === 'dark' ? theme.palette.background.paper : 'white';
 
   const sortedAverage = [...currentAverage].sort(blockSort(blocks.values));
 

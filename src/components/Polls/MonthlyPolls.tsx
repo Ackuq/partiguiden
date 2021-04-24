@@ -7,7 +7,6 @@ import {
   Cell,
   ReferenceLine,
   ResponsiveContainer,
-  Tooltip,
   XAxis,
   YAxis,
 } from 'recharts';
@@ -16,7 +15,7 @@ import PartySymbolTick from '../../components/PartySymbolTick';
 import { AveragePoll, PollDetails } from '../../lib/polls';
 import { PartyAbbreviation } from '../../types/party';
 import { partiesMap } from '../../utils/getParties';
-import { grey } from '@material-ui/core/colors';
+import Tooltip from '../Charts/Tooltip';
 
 const ChartContainer = styled(ResponsiveContainer)({
   marginTop: '1rem',
@@ -77,7 +76,6 @@ const CustomToolTip: React.FC<ToolTipProps> = ({ ...props }) => {
       (el) => ({
         name: el.institute,
         value: `${el.value} (${el.published})`,
-        color: grey[800],
       })
     );
 
@@ -102,7 +100,7 @@ const MonthlyPolls: React.FC<Props> = ({ currentAverage }) => {
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis type="category" dataKey="party" tick={<PartySymbolTick />} tickLine={false} />
           <YAxis type="number" />
-          <Tooltip content={<CustomToolTip />} labelStyle={{ color: 'black' }} />
+          <Tooltip content={<CustomToolTip />} />
           <Bar dataKey="value" name="Genomsnitt" legendType="none">
             {currentAverage.map((el) => (
               <Cell key={el.party} fill={partiesMap[el.party as PartyAbbreviation].color} />

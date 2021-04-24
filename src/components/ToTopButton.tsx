@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import ArrowUp from '@material-ui/icons/ArrowUpwardRounded';
 import Fab from '@material-ui/core/Fab';
 import Zoom from '@material-ui/core/Zoom';
-import { Theme } from '@material-ui/core';
+import { darken, Theme } from '@material-ui/core';
 import { makeStyles } from '@material-ui/styles';
 
 const useStyles = makeStyles((theme: Theme) => ({
@@ -11,11 +11,14 @@ const useStyles = makeStyles((theme: Theme) => ({
     bottom: '1rem',
     left: '5%',
     right: '95%',
-    backgroundColor: theme.palette.grey[100],
+    backgroundColor: theme.palette.background.paper,
+    '&:hover': {
+      backgroundColor: darken(theme.palette.background.paper, 0.25),
+    },
   },
 
   arrow: {
-    color: theme.palette.primary.dark,
+    color: theme.palette.type === 'dark' ? theme.palette.primary.main : theme.palette.primary.dark,
   },
 }));
 

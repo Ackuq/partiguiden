@@ -1,9 +1,10 @@
+import { darken } from '@material-ui/core';
 import { blueGrey, green, grey, red, teal } from '@material-ui/core/colors';
 
 export const voteListColors = {
   dark: {
-    yes: teal[800],
-    no: red[600],
+    yes: teal[900],
+    no: darken(red[600], 0.5),
     losing: grey[700],
   },
   light: {
@@ -16,9 +17,9 @@ export const voteListColors = {
 export const voteColor = {
   dark: {
     yes: teal[700],
-    no: red[600],
-    refrain: blueGrey[400],
-    absent: grey[900],
+    no: darken(red[600], 0.4),
+    refrain: grey[200],
+    absent: blueGrey[400],
   },
   light: {
     yes: teal[500],

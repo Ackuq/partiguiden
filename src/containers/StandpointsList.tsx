@@ -71,13 +71,13 @@ const useStyles = makeStyles((theme: Theme) => ({
       },
     },
     '&:nth-child(3n)': {
-      backgroundColor: theme.palette.type === 'dark' ? grey[800] : grey[50],
+      backgroundColor: theme.palette.type === 'dark' ? theme.palette.background.paper : grey[50],
     },
     '&:nth-child(3n + 1)': {
-      backgroundColor: theme.palette.type === 'dark' ? grey[800] : grey[100],
+      backgroundColor: theme.palette.type === 'dark' ? theme.palette.background.paper : grey[100],
     },
     '&:nth-child(3n + 2)': {
-      backgroundColor: theme.palette.type === 'dark' ? grey[800] : grey[200],
+      backgroundColor: theme.palette.type === 'dark' ? theme.palette.background.paper : grey[200],
     },
   },
 }));

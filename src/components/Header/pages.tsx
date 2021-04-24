@@ -9,31 +9,19 @@ import {
   Person,
   Poll,
 } from '@material-ui/icons';
+import Image from 'next/image';
 import parties from '../../utils/getParties';
-import { makeStyles } from '@material-ui/styles';
-import { Theme } from '@material-ui/core';
 import * as ROUTES from '../../lib/routes';
-
-/* Can probably create React SVG components later on */
-
-const useStyles = makeStyles((theme: Theme) => ({
-  icon: {
-    width: '1em',
-    height: '1em',
-    display: 'inline-block',
-    fill: 'currentColor',
-    flexShrink: 0,
-    fontSize: theme.typography.pxToRem(24),
-  },
-}));
 
 const partyFactory = (partyAbbrev: string) =>
   function PartyIcon() {
-    const classes = useStyles();
     return (
-      <img
-        className={classes.icon}
-        src={`/static/images/party-logos/${partyAbbrev.toUpperCase()}.svg`}
+      <Image
+        src={`/static/images/party-logos/${partyAbbrev.toUpperCase()}.png`}
+        layout="fixed"
+        width="30%"
+        height="30%"
+        quality="50%"
       />
     );
   };

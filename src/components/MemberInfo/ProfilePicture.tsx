@@ -1,5 +1,6 @@
 import React from 'react';
 
+import Image from 'next/image';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import { useTheme } from '@material-ui/core';
@@ -50,10 +51,11 @@ const ProfilePicture: React.FC<Props> = ({ member }) => {
         >
           {member.party !== '-' && (
             <Box position="absolute" top={0} right={0}>
-              <img
+              <Image
                 width={65}
                 height={65}
-                src={`../../static/images/party-logos/${member.party.toUpperCase()}.svg`}
+                src={`/static/images/party-logos/${member.party.toUpperCase()}.png`}
+                layout="intrinsic"
                 alt="Partisymbol"
               />
             </Box>

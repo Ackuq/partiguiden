@@ -16,7 +16,7 @@ import { SubjectListEntry } from '../src/types/subjects';
 
 const PageTitleContainer = styled(Paper)(({ theme }: { theme: Theme }) => ({
   backgroundColor:
-    theme.palette.type === 'dark' ? theme.palette.primary.dark : theme.palette.primary.light,
+    theme.palette.type === 'dark' ? theme.palette.background.paper : theme.palette.primary.light,
   textAlign: 'center',
   padding: '1.5rem 0.25rem',
   marginBottom: '1rem',

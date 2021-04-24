@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 import useStyles from './useStyles';
 import { Member as MemberType } from '../../types/member';
@@ -33,11 +34,11 @@ const Member: React.FC<Props> = ({ member, classes }) => (
         }}
       >
         {member.party !== '-' && (
-          <img
-            className={classes.partyLogo}
-            width={65}
-            height={65}
-            src={`/static/images/party-logos/${member.party.toUpperCase()}.svg`}
+          <Image
+            width={50}
+            height={50}
+            layout="intrinsic"
+            src={`/static/images/party-logos/${member.party.toUpperCase()}.png`}
             alt="Partisymbol"
           />
         )}

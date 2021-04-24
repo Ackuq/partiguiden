@@ -13,11 +13,8 @@ const styles = (theme: Theme) =>
     parties: {
       display: 'flex',
       justifyContent: 'center',
-      '& h6': {
-        padding: '0.25rem',
-      },
-      '& img': {
-        height: '30px',
+      '& > div': {
+        margin: '2px',
       },
     },
 

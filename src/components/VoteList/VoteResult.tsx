@@ -1,5 +1,6 @@
 import React, { useMemo } from 'react';
 
+import Image from 'next/image';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import { votingResult } from '../../types/voting';
@@ -33,12 +34,14 @@ const VoteResult: React.FC<Props> = ({ votes, classes }) => {
               </Typography>
               <div className={classes.parties}>
                 {votes.yes.map((party: string) => (
-                  <Typography variant="h6" color="textSecondary" key={party}>
-                    <img
-                      src={`/static/images/party-logos/${party.toUpperCase()}.svg`}
-                      alt="party logo"
+                  <div key={party}>
+                    <Image
+                      src={`/static/images/party-logos/${party.toUpperCase()}.png`}
+                      layout="intrinsic"
+                      width="40%"
+                      height="40%"
                     />
-                  </Typography>
+                  </div>
                 ))}
               </div>
             </div>
@@ -56,19 +59,21 @@ const VoteResult: React.FC<Props> = ({ votes, classes }) => {
               </Typography>
               <div className={classes.parties}>
                 {votes.no.map((party: string) => (
-                  <Typography variant="h6" color="textSecondary" key={party}>
-                    <img
-                      src={`/static/images/party-logos/${party.toUpperCase()}.svg`}
-                      alt="party logo"
+                  <div key={party}>
+                    <Image
+                      src={`/static/images/party-logos/${party.toUpperCase()}.png`}
+                      layout="intrinsic"
+                      width="40%"
+                      height="40%"
                     />
-                  </Typography>
+                  </div>
                 ))}
               </div>
             </div>
           </Grid>
         </>
       ) : (
-        <Grid xs={12}>
+        <Grid item xs={12}>
           <div style={{ backgroundColor: colors.losing }}>
             <Typography className="box" align="center" variant="h6">
               Ingen voteringsdata hittades

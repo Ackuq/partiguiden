@@ -16,13 +16,6 @@ const styles = ({ shadows, shape, palette }: Theme) =>
       textDecoration: 'none',
     },
 
-    partyLogo: {
-      position: 'absolute',
-      right: 0,
-      top: 0,
-      padding: '0.5rem',
-    },
-
     image: {
       width: 175,
       height: 175,

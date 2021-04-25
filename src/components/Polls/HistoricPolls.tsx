@@ -1,11 +1,20 @@
 import { Paper, styled, Typography, useTheme } from '@material-ui/core';
 import { grey } from '@material-ui/core/colors';
 import React, { useState } from 'react';
-import { Brush, Legend, Line, LineChart, ResponsiveContainer, XAxis, YAxis } from 'recharts';
+import {
+  Brush,
+  Legend,
+  Line,
+  LineChart,
+  ResponsiveContainer,
+  XAxis,
+  YAxis,
+  Tooltip,
+} from 'recharts';
 import { MonthlyAverage } from '../../lib/polls';
 import { PartyAbbreviation, partyAbbreviations } from '../../types/party';
 import { partiesMap } from '../../utils/getParties';
-import Tooltip from '../Charts/Tooltip';
+import tooltipProps from '../../utils/tooltipProps';
 
 const ChartContainer = styled(ResponsiveContainer)({
   marginTop: '1rem',
@@ -51,7 +60,7 @@ const HistoricPolls: React.FC<Props> = ({ historicPolls }) => {
         <LineChart data={historicPolls}>
           <XAxis type="category" dataKey="date" />
           <YAxis type="number" />
-          <Tooltip />
+          <Tooltip {...tooltipProps(theme)} />
           <Legend wrapperStyle={{ marginLeft: 30, bottom: -5 }} fill="#000" onClick={onClick} />
           {partyAbbreviations.map((party) => (
             <Line

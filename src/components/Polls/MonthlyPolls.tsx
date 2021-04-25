@@ -1,4 +1,4 @@
-import { Paper, styled, Typography, useMediaQuery } from '@material-ui/core';
+import { Paper, styled, Typography, useMediaQuery, useTheme } from '@material-ui/core';
 import React from 'react';
 import {
   Bar,
@@ -9,13 +9,14 @@ import {
   ResponsiveContainer,
   XAxis,
   YAxis,
+  Tooltip,
 } from 'recharts';
 import { DefaultTooltipContent } from '../../types/recharts.d';
 import PartySymbolTick from '../../components/PartySymbolTick';
 import { AveragePoll, PollDetails } from '../../lib/polls';
 import { PartyAbbreviation } from '../../types/party';
 import { partiesMap } from '../../utils/getParties';
-import Tooltip from '../Charts/Tooltip';
+import tooltipProps from '../../utils/tooltipProps';
 
 const ChartContainer = styled(ResponsiveContainer)({
   marginTop: '1rem',
@@ -89,6 +90,7 @@ interface Props {
 }
 
 const MonthlyPolls: React.FC<Props> = ({ currentAverage }) => {
+  const theme = useTheme();
   const shortScreen = useMediaQuery('(max-height:1000px)');
   return (
     <PollCard>
@@ -100,7 +102,7 @@ const MonthlyPolls: React.FC<Props> = ({ currentAverage }) => {
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis type="category" dataKey="party" tick={<PartySymbolTick />} tickLine={false} />
           <YAxis type="number" />
-          <Tooltip content={<CustomToolTip />} />
+          <Tooltip content={<CustomToolTip />} {...tooltipProps(theme)} />
           <Bar dataKey="value" name="Genomsnitt" legendType="none">
             {currentAverage.map((el) => (
               <Cell key={el.party} fill={partiesMap[el.party as PartyAbbreviation].color} />

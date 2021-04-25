@@ -1,9 +1,9 @@
 import { Divider, Paper, styled, Typography, useMediaQuery, useTheme } from '@material-ui/core';
 import React, { useCallback } from 'react';
-import { PieChart, Pie, ResponsiveContainer, Cell } from 'recharts';
+import { PieChart, Pie, ResponsiveContainer, Cell, Tooltip } from 'recharts';
 import { AveragePoll, BlocksAverage, displayFormatter } from '../../lib/polls';
 import { allBlocks, Blocks, partiesMap } from '../../utils/getParties';
-import Tooltip from '../Charts/Tooltip';
+import toolTipProps from '../../utils/tooltipProps';
 
 const PollCard = styled(Paper)({
   padding: '1rem 0.5rem',
@@ -94,7 +94,7 @@ const Block: React.FC<BlockProps> = ({
               <Cell key={`block-${blocksIndex}-${index}`} fill={block.color} />
             ))}
           </Pie>
-          <Tooltip formatter={displayFormatter} />
+          <Tooltip {...toolTipProps(theme)} formatter={displayFormatter} />
         </PieChart>
       </ResponsiveContainer>
     </>

@@ -1,6 +1,8 @@
 import React from 'react';
 import { GetStaticProps, NextPage } from 'next';
 import Head from 'next/head';
+import { Container } from '@material-ui/core';
+import moment from 'moment';
 import PageTitle from '../src/components/PageTitle';
 import {
   AveragePoll,
@@ -14,8 +16,6 @@ import {
 } from '../src/lib/polls';
 import { Polls } from '../src/types/polls';
 import PollsContainer from '../src/containers/Polls';
-import { Container } from '@material-ui/core';
-import moment from 'moment';
 
 interface Props {
   polls: Polls;

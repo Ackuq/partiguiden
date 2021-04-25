@@ -1,4 +1,4 @@
-import { parties, PartyAbbreviation, PartyInfo } from '../types/party';
+import { parties, PartyAbbreviation, PartyInfo } from './parties';
 
 export const newBlocks = {
   name: 'Nya blocken',

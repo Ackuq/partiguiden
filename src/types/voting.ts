@@ -1,18 +1,18 @@
-export type votingResult = {
+export type VotingResult = {
   yes: Array<string>;
   no: Array<string>;
   winner: 'yes' | 'no' | 'draw';
 };
 
-export type voteDesc = 'yes' | 'no' | 'refrain' | 'abscent';
+export type VoteDescription = 'yes' | 'no' | 'refrain' | 'abscent';
 
-export type votingEntry = Record<voteDesc, string>;
+export type VotingEntry = Record<VoteDescription, string>;
 
-export type votingDict = Record<string, votingEntry>;
+export type VotingDict = Record<string, VotingEntry>;
 
 export interface VoteListEntry {
   title: string;
-  results: votingResult;
+  results: VotingResult;
   authority: string;
   documentId: string;
   proposition: number;
@@ -39,5 +39,5 @@ export interface Vote {
   processedDocuments: Array<ProcessedDocument>;
   appendix: Array<VoteAppendixItem>;
   decision: string;
-  voting: Record<string, Record<voteDesc, string>>;
+  voting: Record<string, Record<VoteDescription, string>>;
 }

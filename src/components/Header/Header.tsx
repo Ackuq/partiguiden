@@ -11,12 +11,12 @@ import Toolbar from '@material-ui/core/Toolbar';
 import { Theme } from '@material-ui/core/styles/createMuiTheme';
 
 import MenuIcon from '@material-ui/icons/Menu';
+import BrightnessIcon from '@material-ui/icons/Brightness6';
 
 import NavLinks from './NavLinks';
 import Drawer from './Drawer';
 
 import { INDEX } from '../../lib/routes';
-import { Brightness6 } from '@material-ui/icons';
 
 const useStyles = makeStyles((theme) => ({
   brand: {
@@ -62,7 +62,7 @@ const Branding: React.FC<Props> = ({ toggleDarkMode }) => {
       </Grid>
       <Grid item xs={3} className={classes.iconContainer}>
         <IconButton onClick={toggleDarkMode}>
-          <Brightness6 />
+          <BrightnessIcon />
         </IconButton>
       </Grid>
     </Grid>

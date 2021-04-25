@@ -11,7 +11,7 @@ import {
   Tooltip,
 } from 'recharts';
 import { MonthlyAverage } from '../../lib/polls';
-import { PartyAbbreviation, partyAbbreviations } from '../../types/party';
+import { PartyAbbreviation, partyAbbreviations } from '../../utils/parties';
 import { partiesMap } from '../../utils/getParties';
 import tooltipProps from '../../utils/tooltipProps';
 

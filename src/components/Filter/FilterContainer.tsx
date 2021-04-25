@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 
+import { darken, makeStyles } from '@material-ui/core';
 import Fab from '@material-ui/core/Fab';
 import SwipeableDrawer from '@material-ui/core/SwipeableDrawer';
 import Hidden from '@material-ui/core/Hidden';
@@ -9,7 +10,6 @@ import FilterIcon from '@material-ui/icons/Tune';
 import CloseIcon from '@material-ui/icons/CloseRounded';
 
 import FilterContainerDesktop from './FilterContainerDesktop';
-import { darken, makeStyles } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
   fab: {

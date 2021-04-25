@@ -118,7 +118,7 @@ const BlockStatistics: React.FC<Props> = ({ currentAverage, blockAverage }) => {
           blocks={allBlocks[index]}
           blocksIndex={index}
         />
-        {index != blockAverage.length - 1 && <BlockDivider />}
+        {index !== blockAverage.length - 1 && <BlockDivider />}
       </React.Fragment>
     ),
     [currentAverage, blockAverage, height, radius]

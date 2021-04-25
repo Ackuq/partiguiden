@@ -1,7 +1,7 @@
 import * as Sentry from '@sentry/node';
 import { RewriteFrames } from '@sentry/integrations';
 
-export const init = (): void => {
+export default (): void => {
   if (process.env.NEXT_PUBLIC_SENTRY_DSN) {
     const integrations = [];
     if (process.env.NEXT_IS_SERVER === 'true' && process.env.NEXT_PUBLIC_SENTRY_SERVER_ROOT_DIR) {
@@ -11,12 +11,13 @@ export const init = (): void => {
       integrations.push(
         new RewriteFrames({
           iteratee: (frame) => {
-            frame.filename = (frame.filename || '').replace(
+            const newFrame = frame;
+            newFrame.filename = (frame.filename || '').replace(
               process.env.NEXT_PUBLIC_SENTRY_SERVER_ROOT_DIR || '',
               'app:///'
             );
-            frame.filename = frame.filename.replace('.next', '_next');
-            return frame;
+            newFrame.filename = frame.filename?.replace('.next', '_next');
+            return newFrame;
           },
         })
       );

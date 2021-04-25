@@ -1,7 +1,7 @@
 import React from 'react';
 
 import PartyStandpoints from '../components/PartyStandpoints';
-import { PartyAbbreviation } from '../types/party';
+import { PartyAbbreviation } from '../utils/parties';
 import { StandpointsMap } from '../types/subjects';
 import { partiesMap } from '../utils/getParties';
 

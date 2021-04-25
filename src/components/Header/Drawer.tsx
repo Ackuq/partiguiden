@@ -14,10 +14,10 @@ import {
 
 import CloseIcon from '@material-ui/icons/Close';
 
-import pages from './pages';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 import { ExpandLess, ExpandMore, SvgIconComponent } from '@material-ui/icons';
+import pages from './pages';
 
 interface Props {
   isOpen: boolean;

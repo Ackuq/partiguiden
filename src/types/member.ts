@@ -1,4 +1,4 @@
-import { PartyAbbreviation } from './party';
+import { PartyAbbreviation } from '../utils/parties';
 
 export interface MemberDocument {
   authority: string | null;
@@ -44,4 +44,8 @@ export interface Member {
   tasks: Task[];
   isLeader: boolean;
   absence: number | null;
+}
+
+export interface Leader extends Member {
+  role: string;
 }

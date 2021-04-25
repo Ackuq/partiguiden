@@ -1,16 +1,17 @@
 import React, { useMemo } from 'react';
 
+import { useTheme } from '@material-ui/core';
 import CircularProgress from '@material-ui/core/CircularProgress';
 import { ResponsiveContainer, BarChart, XAxis, YAxis, Bar, Legend, Tooltip } from 'recharts';
-import { votingEntry } from '../../types/voting';
-import { useTheme } from '@material-ui/core';
+
+import { VotingEntry } from '../../types/voting';
 import { voteColor } from '../../lib/voteColors';
 import tooltipProps from '../../utils/tooltipProps';
 
 const animationDelay = 2;
 const animationDuration = 2;
 
-const parseData = (voting: votingEntry) => ({
+const parseData = (voting: VotingEntry) => ({
   name: 'Totalt',
   Ja: parseInt(voting.yes, 10),
   Nej: parseInt(voting.no, 10),
@@ -19,7 +20,7 @@ const parseData = (voting: votingEntry) => ({
 });
 
 interface Props {
-  voting: votingEntry;
+  voting: VotingEntry;
 }
 
 const TotalVote: React.FC<Props> = ({ voting }) => {

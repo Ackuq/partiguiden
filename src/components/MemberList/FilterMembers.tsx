@@ -3,9 +3,9 @@ import Divider from '@material-ui/core/Divider';
 
 import FilterContainer, { FilterList, FilterSearch } from '../Filter';
 import allParties from '../../utils/getParties';
-import { PartyAbbreviation } from '../../types/party';
+import { PartyAbbreviation } from '../../utils/parties';
 
-type partyEntry = typeof allParties[number];
+type PartyEntry = typeof allParties[number];
 
 interface FilterState {
   search: string;
@@ -24,9 +24,9 @@ const FilterMembers: React.FC<Props> = ({ state, setState }) => {
   };
   // List functions
   const list = [...allParties, { name: 'Partilösa', letter: '-' }];
-  const isChecked = (party: partyEntry) => state.parties.includes(party.letter);
-  const getKey = (party: partyEntry) => party.name;
-  const updateList = (party: partyEntry) => {
+  const isChecked = (party: PartyEntry) => state.parties.includes(party.letter);
+  const getKey = (party: PartyEntry) => party.name;
+  const updateList = (party: PartyEntry) => {
     if (isChecked(party)) {
       setState((prevState) => ({
         ...prevState,
@@ -36,7 +36,7 @@ const FilterMembers: React.FC<Props> = ({ state, setState }) => {
       setState((prevState) => ({ ...prevState, parties: [...prevState.parties, party.letter] }));
     }
   };
-  const getText = (party: partyEntry) => party.name;
+  const getText = (party: PartyEntry) => party.name;
 
   return (
     <FilterContainer>

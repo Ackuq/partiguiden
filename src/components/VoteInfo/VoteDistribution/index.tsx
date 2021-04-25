@@ -16,13 +16,13 @@ import {
 } from 'recharts';
 
 import { styled } from '@material-ui/styles';
+import { useTheme } from '@material-ui/core';
 
 import PartySymbolTick from '../../PartySymbolTick';
 import SectionButton from '../SectionButton';
 import RotatingArrow from '../RotatingArrow';
 import { Vote } from '../../../types/voting';
-import { PartyAbbreviation } from '../../../types/party';
-import { useTheme } from '@material-ui/core';
+import { PartyAbbreviation } from '../../../utils/parties';
 import { voteColor } from '../../../lib/voteColors';
 import tooltipProps from '../../../utils/tooltipProps';
 
@@ -40,12 +40,12 @@ interface Result {
   Frånvarande: string;
 }
 
-type key = PartyAbbreviation | '-' | 'Totalt';
+type Key = PartyAbbreviation | '-' | 'Totalt';
 
 const createData = (voting: Vote['voting']) => {
   const result: Array<Result> = [];
 
-  (Object.keys(voting) as key[]).forEach((party) => {
+  (Object.keys(voting) as Key[]).forEach((party) => {
     if (party !== '-' && party !== 'Totalt') {
       result.push({
         name: party,

@@ -13,10 +13,10 @@ import ToTopButton from '../src/components/ToTopButton';
 import CookieBanner from '../src/components/CookieBanner';
 
 import getTheme from '../src/lib/theme';
-import { init } from '../src/utils/sentry';
+import initSentry from '../src/utils/sentry';
 import * as gtag from '../src/utils/gtag';
 
-init();
+initSentry();
 
 const App: React.FC<AppProps> = ({ Component, pageProps }) => {
   const router = useRouter();
@@ -26,9 +26,8 @@ const App: React.FC<AppProps> = ({ Component, pageProps }) => {
   const theme = useMemo(() => {
     if (darkModeState !== undefined) {
       return getTheme(darkModeState);
-    } else {
-      return getTheme(prefersDarkMode);
     }
+    return getTheme(prefersDarkMode);
   }, [prefersDarkMode, darkModeState]);
 
   const toggleDarkMode = useCallback(() => {

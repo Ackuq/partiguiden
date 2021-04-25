@@ -56,14 +56,13 @@ const createPartyMap = (subject: Subject): StandpointsMap => {
   return subject.standpoints.reduce((prev, curr) => {
     if (curr.party in prev) {
       return { ...prev, [curr.party]: [...prev[curr.party], curr] };
-    } else {
-      return { ...prev, [curr.party]: [curr] };
     }
+    return { ...prev, [curr.party]: [curr] };
   }, {} as StandpointsMap);
 };
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const id = parseInt(params?.id as string);
+  const id = parseInt(params?.id as string, 10);
   const data = await getSubject(id);
 
   return {

@@ -1,9 +1,10 @@
 import React from 'react';
 
+import { useTheme } from '@material-ui/core';
 import Typography from '@material-ui/core/Typography';
 import Link from '@material-ui/core/Link';
+
 import { VoteAppendixItem } from '../../types/voting';
-import { useTheme } from '@material-ui/core';
 
 interface Props {
   appendix: Array<VoteAppendixItem>;

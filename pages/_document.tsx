@@ -48,6 +48,7 @@ class MyDocument extends Document {
               {/* Global site tag (gtag.js) - Google Analytics  */}
               <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`} />
               <script
+                // eslint-disable-next-line react/no-danger
                 dangerouslySetInnerHTML={{
                   __html: `
                     window.dataLayer = window.dataLayer || [];

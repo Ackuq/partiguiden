@@ -1,4 +1,4 @@
-import { PartyAbbreviation } from './party';
+import { PartyAbbreviation } from '../utils/parties';
 
 export interface Standpoint {
   id: string;

@@ -6,7 +6,7 @@ import Grid from '@material-ui/core/Grid';
 import { MembersFilter, MemberList } from '../components/MemberList';
 
 import { Member } from '../types/member';
-import { PartyAbbreviation } from '../types/party';
+import { PartyAbbreviation } from '../utils/parties';
 
 interface Props {
   members: Array<Member>;

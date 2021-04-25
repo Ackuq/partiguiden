@@ -12,9 +12,9 @@ import {
   Tooltip,
 } from 'recharts';
 import { DefaultTooltipContent } from '../../types/recharts.d';
-import PartySymbolTick from '../../components/PartySymbolTick';
+import PartySymbolTick from '../PartySymbolTick';
 import { AveragePoll, PollDetails } from '../../lib/polls';
-import { PartyAbbreviation } from '../../types/party';
+import { PartyAbbreviation } from '../../utils/parties';
 import { partiesMap } from '../../utils/getParties';
 import tooltipProps from '../../utils/tooltipProps';
 
@@ -45,7 +45,7 @@ const BarrierLabel: React.FC<BarrierLabelProps> = ({
   const height = 25;
 
   const x = viewBox.width / 2 + viewBox.x;
-  const y = viewBox.y;
+  const { y } = viewBox;
 
   return (
     <g>
@@ -70,6 +70,8 @@ interface ToolTipProps {
 }
 
 const CustomToolTip: React.FC<ToolTipProps> = ({ ...props }) => {
+  const newProps = props;
+
   if (props.payload && props.payload[0]) {
     const averagePayload = props.payload[0];
 
@@ -80,9 +82,9 @@ const CustomToolTip: React.FC<ToolTipProps> = ({ ...props }) => {
       })
     );
 
-    props.payload = [averagePayload, ...details];
+    newProps.payload = [averagePayload, ...details];
   }
-  return <DefaultTooltipContent {...props} />;
+  return <DefaultTooltipContent {...newProps} />;
 };
 
 interface Props {

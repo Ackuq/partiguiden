@@ -1,15 +1,17 @@
 import React, { useMemo } from 'react';
 
 import Image from 'next/image';
+
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
-import { votingResult } from '../../types/voting';
-import useStyles from './useStyles';
 import { useTheme } from '@material-ui/core';
+
+import { VotingResult } from '../../types/voting';
+import useStyles from './useStyles';
 import { voteListColors } from '../../lib/voteColors';
 
 interface Props {
-  votes: votingResult;
+  votes: VotingResult;
   classes: ReturnType<typeof useStyles>;
 }
 

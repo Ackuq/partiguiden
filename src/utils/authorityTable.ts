@@ -1,6 +1,6 @@
-import { authorityEntry } from '../types/authority';
+import { AuthorityEntry } from '../types/authority';
 
-const authorityTable: Record<string, authorityEntry> = {
+const authorityTable: Record<string, AuthorityEntry> = {
   AU: {
     name: 'Arbetsmarknadsutskottet',
     desc: 'Arbetsmarknad och arbetsliv',
@@ -83,7 +83,7 @@ const authorityTable: Record<string, authorityEntry> = {
   },
 };
 
-const lookupAuthority = (authority: string): authorityEntry =>
+const lookupAuthority = (authority: string): AuthorityEntry =>
   authorityTable[authority.toUpperCase()];
 
 export { authorityTable, lookupAuthority };

@@ -1,10 +1,11 @@
-import { Avatar, Divider, Grid, Link, Paper, Typography } from '@material-ui/core';
+import { Avatar, Divider, Grid, Link, Paper, Typography, Theme } from '@material-ui/core';
 import { makeStyles } from '@material-ui/styles';
-import { Theme } from '@material-ui/core';
+
 import NextLink from 'next/link';
 
 import React from 'react';
-import { Leader as LeaderType, PartyData } from '../types/party';
+import { Leader as LeaderType } from '../types/member';
+import { PartyData } from '../types/party';
 
 import * as ROUTES from '../lib/routes';
 

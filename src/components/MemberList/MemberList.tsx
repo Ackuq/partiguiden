@@ -5,7 +5,7 @@ import Grid from '@material-ui/core/Grid';
 import Member from './Member';
 import useStyles from './useStyles';
 import { Member as MemberType } from '../../types/member';
-import { PartyAbbreviation } from '../../types/party';
+import { PartyAbbreviation } from '../../utils/parties';
 
 interface Props {
   filter: {

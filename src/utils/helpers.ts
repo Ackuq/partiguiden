@@ -1,8 +1,8 @@
 import { ParsedUrlQuery } from 'querystring';
 
-export type queryAttr = ParsedUrlQuery[0];
+export type QueryAttribute = ParsedUrlQuery[0];
 
-export const queryAttrToString = (attr: queryAttr, def = ''): string => {
+export const queryAttrToString = (attr: QueryAttribute, def = ''): string => {
   if (attr) {
     if (Array.isArray(attr)) {
       return attr[0];
@@ -12,7 +12,7 @@ export const queryAttrToString = (attr: queryAttr, def = ''): string => {
   return def;
 };
 
-export const queryAttrToNumber = (attr: queryAttr, def = 0): number => {
+export const queryAttrToNumber = (attr: QueryAttribute, def = 0): number => {
   const str = queryAttrToString(attr);
   if (str) {
     return parseInt(str, 10);
@@ -20,7 +20,7 @@ export const queryAttrToNumber = (attr: queryAttr, def = 0): number => {
   return def;
 };
 
-export const queryAttrToArray = (attr: queryAttr, def = []): Array<string> => {
+export const queryAttrToArray = (attr: QueryAttribute, def = []): Array<string> => {
   if (attr) {
     if (Array.isArray(attr)) {
       return attr;

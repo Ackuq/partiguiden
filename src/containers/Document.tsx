@@ -35,6 +35,7 @@ const useStyles = makeStyles(({ palette }: Theme) => {
 const Document: React.FC<{ body: string }> = ({ body }) => {
   const classes = useStyles();
 
+  // eslint-disable-next-line react/no-danger
   return <div className={classes.dokumentBody} dangerouslySetInnerHTML={{ __html: body }} />;
 };
 

@@ -23,14 +23,15 @@ interface Props {
 }
 
 const TotalVote: React.FC<Props> = ({ voting }) => {
+  const theme = useTheme();
+  const colors = useMemo(() => voteColor[theme.palette.type], [theme.palette.type]);
+
   /* Special case if all is blank */
   if (Object.values(voting).every((v) => v === '')) {
     return null;
   }
 
-  const theme = useTheme();
   const data = parseData(voting);
-  const colors = useMemo(() => voteColor[theme.palette.type], [theme.palette.type]);
 
   return (
     <>

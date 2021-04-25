@@ -103,7 +103,7 @@ const Drawer: React.FC<Props> = ({ isOpen, handleClose, handleOpen, appBarHeight
 
   useEffect(() => {
     handleClose();
-  }, [router.asPath]);
+  }, [router.asPath, handleClose]);
 
   return (
     <SwipeableDrawer

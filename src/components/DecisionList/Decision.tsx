@@ -68,7 +68,7 @@ const Decision: React.FC<Props> = ({ decision, classes }) => {
             <Collapse className={classes.paragraphContainer} in={visible}>
               <div className="paragraph">
                 {decision.paragraph && (
-                  <div dangerouslySetInnerHTML={{ __html: decision.paragraph }} /> // eslint-disable-line react/no-danger
+                  <div dangerouslySetInnerHTML={{ __html: decision.paragraph }} />
                 )}
               </div>
               <Link href={ROUTES.DOCUMENT} as={ROUTES.getDocumentHref(decision.id)} passHref>

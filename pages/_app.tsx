@@ -37,7 +37,7 @@ const App: React.FC<AppProps> = ({ Component, pageProps }) => {
       localStorage.setItem('prefersDarkMode', newValue.toString());
       return newValue;
     });
-  }, []);
+  }, [prefersDarkMode]);
 
   useEffect(() => {
     // Remove the server-side injected CSS.

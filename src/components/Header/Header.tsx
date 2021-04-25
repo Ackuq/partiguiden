@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useCallback, useRef, useState } from 'react';
 import Link from 'next/link';
 
 import { Grid, makeStyles, styled } from '@material-ui/core';
@@ -78,13 +78,13 @@ const Header: React.FC<Props> = ({ toggleDarkMode }) => {
   const [drawerOpen, setDrawerOpen] = useState(false);
   const appBar = useRef<HTMLDivElement>();
 
-  const openDrawer = () => {
+  const openDrawer = useCallback(() => {
     setDrawerOpen(true);
-  };
+  }, []);
 
-  const closeDrawer = () => {
+  const closeDrawer = useCallback(() => {
     setDrawerOpen(false);
-  };
+  }, []);
 
   return (
     <ColoredAppBar position="sticky" ref={appBar}>

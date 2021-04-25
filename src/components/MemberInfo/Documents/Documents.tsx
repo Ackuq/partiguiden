@@ -32,7 +32,7 @@ const Documents: React.FC<Props> = ({ id, setDocumentCount }) => {
     if (data?.count) {
       setDocumentCount(data.count);
     }
-  }, [data?.count]);
+  }, [data?.count, setDocumentCount]);
 
   const changePage = (_event: React.ChangeEvent<unknown>, newPage: number) => {
     setPage(newPage);

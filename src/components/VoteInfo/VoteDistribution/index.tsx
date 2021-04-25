@@ -4,7 +4,16 @@ import CircularProgress from '@material-ui/core/CircularProgress';
 import Typography from '@material-ui/core/Typography';
 import Collapse from '@material-ui/core/Collapse';
 
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Legend, ResponsiveContainer } from 'recharts';
+import {
+  BarChart,
+  Bar,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Legend,
+  ResponsiveContainer,
+  Tooltip,
+} from 'recharts';
 
 import { styled } from '@material-ui/styles';
 
@@ -15,7 +24,7 @@ import { Vote } from '../../../types/voting';
 import { PartyAbbreviation } from '../../../types/party';
 import { useTheme } from '@material-ui/core';
 import { voteColor } from '../../../lib/voteColors';
-import Tooltip from '../../Charts/Tooltip';
+import tooltipProps from '../../../utils/tooltipProps';
 
 const ChartContainer = styled(ResponsiveContainer)({
   width: 'calc(100% + 20px) !important',
@@ -85,7 +94,7 @@ const VoteDistribution: React.FC<Props> = ({ voting }) => {
               <CartesianGrid strokeDasharray="3 3" />
               <XAxis type="number" />
               <YAxis type="category" dataKey="name" tick={<PartySymbolTick vertical />} />
-              <Tooltip />
+              <Tooltip {...tooltipProps(theme)} />
               <Legend />
               <Bar dataKey="Ja" stackId="a" fill={colors.yes} />
               <Bar dataKey="Nej" stackId="a" fill={colors.no} />

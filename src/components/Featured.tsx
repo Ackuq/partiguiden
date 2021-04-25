@@ -5,7 +5,6 @@ import Grid from '@material-ui/core/Grid';
 import ButtonBase from '@material-ui/core/ButtonBase';
 import Typography from '@material-ui/core/Typography';
 
-import grey from '@material-ui/core/colors/grey';
 import { makeStyles, createStyles, styled } from '@material-ui/styles';
 import { Theme } from '@material-ui/core';
 import { getStandpointHref, STANDPOINT } from '../lib/routes';
@@ -22,7 +21,8 @@ const styles = (theme: Theme) =>
       display: 'flex',
       flexGrow: 1,
       '&:hover': {
-        backgroundColor: theme.palette.type === 'dark' ? grey[800] : grey[100],
+        backgroundColor:
+          theme.palette.type === 'dark' ? theme.palette.grey[800] : theme.palette.grey[100],
       },
     },
   });

@@ -1,11 +1,11 @@
 import React, { useMemo } from 'react';
 
 import CircularProgress from '@material-ui/core/CircularProgress';
-import { ResponsiveContainer, BarChart, XAxis, YAxis, Bar, Legend } from 'recharts';
+import { ResponsiveContainer, BarChart, XAxis, YAxis, Bar, Legend, Tooltip } from 'recharts';
 import { votingEntry } from '../../types/voting';
 import { useTheme } from '@material-ui/core';
 import { voteColor } from '../../lib/voteColors';
-import Tooltip from '../Charts/Tooltip';
+import tooltipProps from '../../utils/tooltipProps';
 
 const animationDelay = 2;
 const animationDuration = 2;
@@ -39,7 +39,7 @@ const TotalVote: React.FC<Props> = ({ voting }) => {
           <BarChart data={[data]} layout="vertical" margin={{ left: -60 }}>
             <XAxis type="number" domain={[0, 349]} tickCount={10} />
             <YAxis type="category" dataKey="name" tick={false} />
-            <Tooltip />
+            <Tooltip {...tooltipProps(theme)} />
             <Legend wrapperStyle={{ marginLeft: 30 }} />
             <Bar
               animationDuration={data.Ja * animationDuration}

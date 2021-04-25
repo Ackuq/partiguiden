@@ -1,5 +1,4 @@
 import { Paper, styled, Typography, useTheme } from '@material-ui/core';
-import { grey } from '@material-ui/core/colors';
 import React, { useState } from 'react';
 import {
   Brush,
@@ -73,8 +72,10 @@ const HistoricPolls: React.FC<Props> = ({ historicPolls }) => {
           ))}
           <Brush
             dataKey="date"
-            fill={theme.palette.type === 'dark' ? grey[700] : 'white'}
-            stroke={theme.palette.type === 'dark' ? grey[900] : grey[700]}
+            fill={theme.palette.type === 'dark' ? theme.palette.grey[700] : 'white'}
+            stroke={
+              theme.palette.type === 'dark' ? theme.palette.grey[900] : theme.palette.grey[700]
+            }
             style={{ marginBottom: 20, color: 'white' }}
           />
         </LineChart>

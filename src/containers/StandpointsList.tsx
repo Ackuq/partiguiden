@@ -3,7 +3,6 @@ import Link from 'next/link';
 
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/styles';
-import grey from '@material-ui/core/colors/grey';
 import { Theme } from '@material-ui/core';
 import { SubjectListEntry } from '../types/subjects';
 
@@ -34,7 +33,8 @@ const useStyles = makeStyles((theme: Theme) => ({
     backgroundSize: '202% 100%',
     backgroundPosition: 'right bottom',
     backgroundRepeat: 'no-repeat',
-    color: theme.palette.type === 'dark' ? theme.palette.primary.contrastText : grey[900],
+    color:
+      theme.palette.type === 'dark' ? theme.palette.primary.contrastText : theme.palette.grey[900],
     lineHeight: '50px',
     padding: '0 0.5rem',
     transition: 'all 0.2s ease-in-out',
@@ -48,7 +48,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     justifyContent: 'flex-start',
     '&:hover span': {
       backgroundPosition: 'left bottom',
-      color: grey[100],
+      color: theme.palette.grey[100],
     },
   },
 
@@ -71,13 +71,16 @@ const useStyles = makeStyles((theme: Theme) => ({
       },
     },
     '&:nth-child(3n)': {
-      backgroundColor: theme.palette.type === 'dark' ? theme.palette.background.paper : grey[50],
+      backgroundColor:
+        theme.palette.type === 'dark' ? theme.palette.background.paper : theme.palette.grey[50],
     },
     '&:nth-child(3n + 1)': {
-      backgroundColor: theme.palette.type === 'dark' ? theme.palette.background.paper : grey[100],
+      backgroundColor:
+        theme.palette.type === 'dark' ? theme.palette.background.paper : theme.palette.grey[100],
     },
     '&:nth-child(3n + 2)': {
-      backgroundColor: theme.palette.type === 'dark' ? theme.palette.background.paper : grey[200],
+      backgroundColor:
+        theme.palette.type === 'dark' ? theme.palette.background.paper : theme.palette.grey[200],
     },
   },
 }));

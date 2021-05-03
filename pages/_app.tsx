@@ -13,10 +13,7 @@ import ToTopButton from '../src/components/ToTopButton';
 import CookieBanner from '../src/components/CookieBanner';
 
 import getTheme from '../src/lib/theme';
-import initSentry from '../src/utils/sentry';
 import * as gtag from '../src/utils/gtag';
-
-initSentry();
 
 const App: React.FC<AppProps> = ({ Component, pageProps }) => {
   const router = useRouter();

@@ -38,7 +38,7 @@
     "@babel/eslint-parser": "^7.13.14",
     "@types/gtag.js": "^0.0.4",
     "@types/node": "^15.0.2",
-    "@types/react": "^17.0.4",
+    "@types/react": "^17.0.5",
     "@types/recharts": "^1.8.19",
     "@typescript-eslint/eslint-plugin": "^4.22.0",
     "@typescript-eslint/parser": "^4.22.1",

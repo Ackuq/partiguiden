@@ -36,9 +36,9 @@ const parsePolls = (csv: string): Polls => {
 
     const publishedDate = fields[13];
 
-    const [yearString, monthString, dayString] = (publishedDate !== 'NA'
-      ? publishedDate.split('-')
-      : fields[0].split('-')) as [string, keyof typeof MONTH_MAP, string | undefined];
+    const [yearString, monthString, dayString] = (
+      publishedDate !== 'NA' ? publishedDate.split('-') : fields[0].split('-')
+    ) as [string, keyof typeof MONTH_MAP, string | undefined];
 
     const year = parseInt(yearString, 10);
 
@@ -302,14 +302,16 @@ export type BlocksAverage = [BlockAverage, BlockAverage];
  * @param average Poll statistics for each party
  * @returns Function that categorize the data into a specific block
  */
-const generateBlockAverage = (average: AveragePoll) => (blocks: Blocks): BlockAverage => {
-  return average.reduce((prev, { party, value }) => {
-    const blockIndex = blocks.values.findIndex((block) => block.parties.includes(party));
-    const newAverage = prev;
-    newAverage[blockIndex].value += value;
-    return newAverage;
-  }, blocks.values.map((block: Blocks['values'][number]) => ({ name: block.name, value: 0 })) as BlockAverage);
-};
+const generateBlockAverage =
+  (average: AveragePoll) =>
+  (blocks: Blocks): BlockAverage => {
+    return average.reduce((prev, { party, value }) => {
+      const blockIndex = blocks.values.findIndex((block) => block.parties.includes(party));
+      const newAverage = prev;
+      newAverage[blockIndex].value += value;
+      return newAverage;
+    }, blocks.values.map((block: Blocks['values'][number]) => ({ name: block.name, value: 0 })) as BlockAverage);
+  };
 
 /**
  * Categorize the party poll data into blocks

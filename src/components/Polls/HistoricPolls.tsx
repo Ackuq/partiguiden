@@ -42,7 +42,7 @@ const HistoricPolls: React.FC<Props> = ({ historicPolls }) => {
   };
 
   const onClick = (event: React.MouseEvent<Element, MouseEvent>) => {
-    const party = ((event as unknown) as { value: PartyAbbreviation }).value;
+    const party = (event as unknown as { value: PartyAbbreviation }).value;
     if (hide.includes(party)) {
       showParty(party);
     } else {

@@ -14,20 +14,18 @@ const BlockDivider = styled(Divider)({
   marginBottom: '1rem',
 });
 
-const blockSort = (blocks: Blocks['values']) => (
-  a: AveragePoll[number],
-  b: AveragePoll[number]
-) => {
-  const indexA = blocks.findIndex((block) => block.parties.includes(a.party));
-  const indexB = blocks.findIndex((block) => block.parties.includes(b.party));
-  if (indexA < indexB) {
-    return -1;
-  }
-  if (indexA > indexB) {
-    return 1;
-  }
-  return 0;
-};
+const blockSort =
+  (blocks: Blocks['values']) => (a: AveragePoll[number], b: AveragePoll[number]) => {
+    const indexA = blocks.findIndex((block) => block.parties.includes(a.party));
+    const indexB = blocks.findIndex((block) => block.parties.includes(b.party));
+    if (indexA < indexB) {
+      return -1;
+    }
+    if (indexA > indexB) {
+      return 1;
+    }
+    return 0;
+  };
 interface Props {
   currentAverage: AveragePoll;
   blockAverage: BlocksAverage;

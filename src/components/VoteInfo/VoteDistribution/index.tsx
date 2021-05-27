@@ -1,8 +1,7 @@
 import React, { useMemo, useState } from 'react';
 
-import CircularProgress from '@material-ui/core/CircularProgress';
-import Typography from '@material-ui/core/Typography';
-import Collapse from '@material-ui/core/Collapse';
+import { CircularProgress, Typography, Collapse } from '@material-ui/core';
+import { styled, useTheme } from '@material-ui/core/styles';
 
 import {
   BarChart,
@@ -14,9 +13,6 @@ import {
   ResponsiveContainer,
   Tooltip,
 } from 'recharts';
-
-import { styled } from '@material-ui/styles';
-import { useTheme } from '@material-ui/core';
 
 import PartySymbolTick from '../../PartySymbolTick';
 import SectionButton from '../SectionButton';

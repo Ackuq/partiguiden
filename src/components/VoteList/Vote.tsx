@@ -1,19 +1,16 @@
 import React from 'react';
 import Link from 'next/link';
 
-import { darken, useTheme } from '@material-ui/core';
-import Card from '@material-ui/core/Card';
-import CardContent from '@material-ui/core/CardContent';
-import CardHeader from '@material-ui/core/CardHeader';
-import Typography from '@material-ui/core/Typography';
-import ButtonBase from '@material-ui/core/ButtonBase';
-
+import { Card, CardContent, CardHeader, Typography, ButtonBase } from '@material-ui/core';
+import { darken, useTheme } from '@material-ui/core/styles';
 import useStyles from './useStyles';
-import { lookupAuthority } from '../../utils';
-import VoteResult from './VoteResult';
-import { VoteListEntry } from '../../types/voting';
 
+import VoteResult from './VoteResult';
+
+import { lookupAuthority } from '../../utils';
 import * as ROUTES from '../../lib/routes';
+
+import { VoteListEntry } from '../../types/voting';
 
 interface Props {
   vote: VoteListEntry;

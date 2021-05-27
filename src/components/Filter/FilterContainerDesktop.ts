@@ -1,7 +1,5 @@
-import Box from '@material-ui/core/Box';
-
-import { styled } from '@material-ui/styles';
-import { Theme } from '@material-ui/core';
+import { Box } from '@material-ui/core';
+import { styled, Theme } from '@material-ui/core/styles';
 
 const FilterContainerDesktop = styled(Box)(({ theme }: { theme: Theme }) => ({
   boxShadow: theme.shadows[1],

@@ -1,8 +1,7 @@
 import React from 'react';
 
-import { useTheme } from '@material-ui/core';
-import Typography from '@material-ui/core/Typography';
-import Link from '@material-ui/core/Link';
+import { Typography, Link } from '@material-ui/core';
+import { useTheme } from '@material-ui/core/styles';
 
 import { VoteAppendixItem } from '../../types/voting';
 

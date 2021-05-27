@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 
-import Typography from '@material-ui/core/Typography';
-import Collapse from '@material-ui/core/Collapse';
-import { useTheme } from '@material-ui/core';
+import { Typography, Collapse } from '@material-ui/core';
+import { useTheme } from '@material-ui/core/styles';
 
 import RotatingArrow from './RotatingArrow';
 import SectionButton from './SectionButton';

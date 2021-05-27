@@ -1,6 +1,7 @@
 import React from 'react';
-import styled from '@material-ui/styles/styled';
-import CircularProgress from '@material-ui/core/CircularProgress';
+
+import { CircularProgress } from '@material-ui/core';
+import { styled } from '@material-ui/core/styles';
 
 const FullLoadCircle = styled(CircularProgress)({
   display: 'flex',

@@ -1,7 +1,12 @@
-import { Divider, Paper, styled, Typography, useMediaQuery, useTheme } from '@material-ui/core';
 import React, { useCallback } from 'react';
+
+import { Divider, Paper, Typography, useMediaQuery } from '@material-ui/core';
+import { styled, useTheme } from '@material-ui/core/styles';
+
 import { PieChart, Pie, ResponsiveContainer, Cell, Tooltip } from 'recharts';
+
 import { AveragePoll, BlocksAverage, displayFormatter } from '../../lib/polls';
+
 import { allBlocks, Blocks, partiesMap } from '../../utils/getParties';
 import toolTipProps from '../../utils/tooltipProps';
 

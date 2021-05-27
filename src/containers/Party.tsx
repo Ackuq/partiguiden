@@ -1,13 +1,14 @@
-import { Avatar, Divider, Grid, Link, Paper, Typography, Theme } from '@material-ui/core';
-import { makeStyles } from '@material-ui/styles';
+import React from 'react';
 
 import NextLink from 'next/link';
 
-import React from 'react';
-import { Leader as LeaderType } from '../types/member';
-import { PartyData } from '../types/party';
+import { Avatar, Divider, Grid, Link, Paper, Typography, Theme } from '@material-ui/core';
+import { makeStyles } from '@material-ui/core/styles';
 
 import * as ROUTES from '../lib/routes';
+
+import { Leader as LeaderType } from '../types/member';
+import { PartyData } from '../types/party';
 
 const useStyles = makeStyles((theme: Theme) => ({
   cardContainer: {

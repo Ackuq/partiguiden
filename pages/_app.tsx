@@ -1,8 +1,8 @@
 import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import { AppProps } from 'next/app';
-import { ThemeProvider } from '@material-ui/styles';
-import CssBaseline from '@material-ui/core/CssBaseline';
-import { useMediaQuery } from '@material-ui/core';
+
+import { useMediaQuery, CssBaseline } from '@material-ui/core';
+import { ThemeProvider } from '@material-ui/core/styles';
 
 import Head from 'next/head';
 import { useRouter } from 'next/router';

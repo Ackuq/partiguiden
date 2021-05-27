@@ -1,5 +1,8 @@
-import { Paper, styled, Typography, useTheme } from '@material-ui/core';
 import React, { useState } from 'react';
+
+import { Paper, Typography } from '@material-ui/core';
+import { styled, useTheme } from '@material-ui/core/styles';
+
 import {
   Brush,
   Legend,
@@ -10,7 +13,9 @@ import {
   YAxis,
   Tooltip,
 } from 'recharts';
+
 import { MonthlyAverage } from '../../lib/polls';
+
 import { PartyAbbreviation, partyAbbreviations } from '../../utils/parties';
 import { partiesMap } from '../../utils/getParties';
 import tooltipProps from '../../utils/tooltipProps';

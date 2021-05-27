@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from 'react';
 
+import { useRouter } from 'next/router';
+import Link from 'next/link';
+
 import {
   List,
   ListItem,
@@ -8,15 +11,11 @@ import {
   IconButton,
   Collapse,
   ListItemIcon,
-  makeStyles,
-  Theme,
 } from '@material-ui/core';
+import { Theme, makeStyles } from '@material-ui/core/styles';
 
-import CloseIcon from '@material-ui/icons/Close';
+import { ExpandLess, ExpandMore, SvgIconComponent, Close as CloseIcon } from '@material-ui/icons';
 
-import { useRouter } from 'next/router';
-import Link from 'next/link';
-import { ExpandLess, ExpandMore, SvgIconComponent } from '@material-ui/icons';
 import pages from './pages';
 
 interface Props {

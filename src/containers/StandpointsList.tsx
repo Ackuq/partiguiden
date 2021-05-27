@@ -1,9 +1,9 @@
 import React from 'react';
 import Link from 'next/link';
 
-import Grid from '@material-ui/core/Grid';
-import { makeStyles } from '@material-ui/styles';
-import { Theme } from '@material-ui/core';
+import { Grid, Theme } from '@material-ui/core';
+import { makeStyles } from '@material-ui/core/styles';
+
 import { SubjectListEntry } from '../types/subjects';
 
 import * as ROUTES from '../lib/routes';

@@ -1,15 +1,13 @@
 import React, { useState } from 'react';
 
-import Collapse from '@material-ui/core/Collapse';
-import ButtonBase from '@material-ui/core/ButtonBase';
-import Grid from '@material-ui/core/Grid';
-import Typography from '@material-ui/core/Typography';
+import { Typography, Collapse, ButtonBase, Grid } from '@material-ui/core';
 
-import ArrowDownRounded from '@material-ui/icons/KeyboardArrowDownRounded';
+import { KeyboardArrowDownRounded as ArrowDownRounded } from '@material-ui/icons';
 
-import { PartyInfo } from '../../utils/parties';
 import PartyStandpoint from './PartyStandpoint';
 import useStyles from './useStyles';
+
+import { PartyInfo } from '../../utils/parties';
 import { Standpoint } from '../../types/subjects';
 
 interface Props {

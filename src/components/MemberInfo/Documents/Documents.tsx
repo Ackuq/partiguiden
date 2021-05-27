@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { makeStyles } from '@material-ui/styles';
 
-import Grid from '@material-ui/core/Grid';
+import { Grid } from '@material-ui/core';
+import { Pagination } from '@material-ui/lab';
+import { makeStyles } from '@material-ui/core/styles';
 
-import Pagination from '@material-ui/lab/Pagination';
 import LoadCircle from '../../LoadCircle';
 import Document from './Document';
 import { useMemberDocuments } from '../../../hooks/parliamentHooks';

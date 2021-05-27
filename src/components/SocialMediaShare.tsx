@@ -1,6 +1,9 @@
 import React from 'react';
+
 import { FacebookShareButton, FacebookIcon, TwitterShareButton, TwitterIcon } from 'react-share';
-import styled from '@material-ui/styles/styled';
+
+import { styled } from '@material-ui/core/styles';
+
 import { useRouter } from 'next/router';
 
 const SocialMediaWrapper = styled('div')({

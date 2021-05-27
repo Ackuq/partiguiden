@@ -1,10 +1,9 @@
 import React from 'react';
 import Link from 'next/link';
 
-import Breadcrumbs from '@material-ui/core/Breadcrumbs';
-import Chip from '@material-ui/core/Chip';
+import { Breadcrumbs, Chip } from '@material-ui/core';
 
-import HomeIcon from '@material-ui/icons/Home';
+import { Home as HomeIcon } from '@material-ui/icons';
 import { INDEX } from '../lib/routes';
 
 interface Props {

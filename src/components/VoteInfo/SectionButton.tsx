@@ -1,6 +1,5 @@
-import { styled } from '@material-ui/styles';
-import ButtonBase from '@material-ui/core/ButtonBase';
-import { Theme } from '@material-ui/core';
+import { ButtonBase } from '@material-ui/core';
+import { styled, Theme } from '@material-ui/core/styles';
 
 const SectionButton = styled(ButtonBase)(({ theme }: { theme: Theme }) => ({
   backgroundColor:

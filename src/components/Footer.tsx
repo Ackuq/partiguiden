@@ -1,12 +1,8 @@
 import React from 'react';
 
-import styled from '@material-ui/styles/styled';
+import { Grid, Link, Typography } from '@material-ui/core';
+import { styled, Theme } from '@material-ui/core/styles';
 
-import Grid from '@material-ui/core/Grid';
-import Link from '@material-ui/core/Link';
-import Typography from '@material-ui/core/Typography';
-
-import { Theme } from '@material-ui/core';
 import { ResponsiveAd } from './Ad';
 
 const FooterContent = styled('footer')(({ theme }: { theme: Theme }) => ({

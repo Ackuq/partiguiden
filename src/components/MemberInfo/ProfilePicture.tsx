@@ -1,9 +1,9 @@
 import React from 'react';
 
 import Image from 'next/image';
-import Typography from '@material-ui/core/Typography';
-import Box from '@material-ui/core/Box';
-import { useTheme } from '@material-ui/core';
+
+import { Typography, Box } from '@material-ui/core';
+import { useTheme } from '@material-ui/core/styles';
 
 import Breadcrumbs from '../Breadcrumbs';
 import { Member } from '../../types/member';

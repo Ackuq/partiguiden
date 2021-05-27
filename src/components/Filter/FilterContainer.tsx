@@ -1,13 +1,9 @@
 import React, { useState } from 'react';
 
-import { darken, makeStyles } from '@material-ui/core';
-import Fab from '@material-ui/core/Fab';
-import SwipeableDrawer from '@material-ui/core/SwipeableDrawer';
-import Hidden from '@material-ui/core/Hidden';
-import IconButton from '@material-ui/core/IconButton';
+import { Fab, SwipeableDrawer, Hidden, IconButton } from '@material-ui/core';
+import { makeStyles, darken } from '@material-ui/core/styles';
 
-import FilterIcon from '@material-ui/icons/Tune';
-import CloseIcon from '@material-ui/icons/CloseRounded';
+import { Tune as FilterIcon, CloseRounded as CloseIcon } from '@material-ui/icons';
 
 import FilterContainerDesktop from './FilterContainerDesktop';
 

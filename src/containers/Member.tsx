@@ -1,10 +1,12 @@
 import React from 'react';
-import Container from '@material-ui/core/Container';
+
+import { Container } from '@material-ui/core';
 
 import SocialMediaShare from '../components/SocialMediaShare';
 import { ProfilePicture, Information } from '../components/MemberInfo';
-import { useMember } from '../hooks/parliamentHooks';
 import LoadCircle from '../components/LoadCircle';
+
+import { useMember } from '../hooks/parliamentHooks';
 
 interface Props {
   id: string;

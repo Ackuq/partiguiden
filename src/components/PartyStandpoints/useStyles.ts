@@ -1,5 +1,4 @@
-import { makeStyles } from '@material-ui/styles';
-import { Theme } from '@material-ui/core';
+import { Theme, makeStyles } from '@material-ui/core/styles';
 
 const styles = (theme: Theme) => ({
   partyTitle: {

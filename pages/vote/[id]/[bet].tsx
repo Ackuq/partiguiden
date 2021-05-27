@@ -1,7 +1,7 @@
 import React from 'react';
 import { NextPage, GetServerSideProps } from 'next';
 import Head from 'next/head';
-import Container from '@material-ui/core/Container';
+import { Container } from '@material-ui/core';
 
 import Breadcrumbs from '../../../src/components/Breadcrumbs';
 import SocialMediaShare from '../../../src/components/SocialMediaShare';

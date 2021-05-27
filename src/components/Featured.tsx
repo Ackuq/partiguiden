@@ -1,12 +1,9 @@
 import React from 'react';
 import Link from 'next/link';
 
-import Grid from '@material-ui/core/Grid';
-import ButtonBase from '@material-ui/core/ButtonBase';
-import Typography from '@material-ui/core/Typography';
+import { Theme, Grid, ButtonBase, Typography } from '@material-ui/core';
+import { makeStyles, styled, createStyles } from '@material-ui/core/styles';
 
-import { makeStyles, createStyles, styled } from '@material-ui/styles';
-import { Theme } from '@material-ui/core';
 import { getStandpointHref, STANDPOINT } from '../lib/routes';
 import { SubjectListEntry } from '../types/subjects';
 

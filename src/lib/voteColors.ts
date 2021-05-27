@@ -1,5 +1,5 @@
-import { darken } from '@material-ui/core';
 import { blueGrey, green, grey, red, teal } from '@material-ui/core/colors';
+import { darken } from '@material-ui/core/styles';
 
 export const voteListColors = {
   dark: {

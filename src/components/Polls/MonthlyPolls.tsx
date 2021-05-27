@@ -1,5 +1,8 @@
-import { Paper, styled, Typography, useMediaQuery, useTheme } from '@material-ui/core';
 import React from 'react';
+
+import { Paper, Typography, useMediaQuery } from '@material-ui/core';
+import { styled, useTheme } from '@material-ui/core/styles';
+
 import {
   Bar,
   BarChart,
@@ -11,12 +14,16 @@ import {
   YAxis,
   Tooltip,
 } from 'recharts';
-import { DefaultTooltipContent } from '../../types/recharts.d';
+
 import PartySymbolTick from '../PartySymbolTick';
+
 import { AveragePoll, PollDetails } from '../../lib/polls';
+
 import { PartyAbbreviation } from '../../utils/parties';
 import { partiesMap } from '../../utils/getParties';
 import tooltipProps from '../../utils/tooltipProps';
+
+import { DefaultTooltipContent } from '../../types/recharts.d';
 
 const ChartContainer = styled(ResponsiveContainer)({
   marginTop: '1rem',

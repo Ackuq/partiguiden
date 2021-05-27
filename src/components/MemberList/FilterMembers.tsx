@@ -1,7 +1,9 @@
 import React from 'react';
-import Divider from '@material-ui/core/Divider';
+
+import { Divider } from '@material-ui/core';
 
 import FilterContainer, { FilterList, FilterSearch } from '../Filter';
+
 import allParties from '../../utils/getParties';
 import { PartyAbbreviation } from '../../utils/parties';
 

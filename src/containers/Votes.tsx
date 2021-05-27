@@ -1,9 +1,10 @@
 import React from 'react';
-import Container from '@material-ui/core/Container';
 import { useRouter } from 'next/router';
+import { Container } from '@material-ui/core';
 
 import Filter from '../components/ParlimentFilter';
 import VoteList from '../components/VoteList';
+
 import { queryAttrToArray, queryAttrToString, queryAttrToNumber } from '../utils';
 
 const Votes: React.FC = () => {

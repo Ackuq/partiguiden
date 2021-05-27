@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import ArrowUp from '@material-ui/icons/ArrowUpwardRounded';
-import Fab from '@material-ui/core/Fab';
-import Zoom from '@material-ui/core/Zoom';
-import { darken, Theme } from '@material-ui/core';
-import { makeStyles } from '@material-ui/styles';
+
+import { ArrowUpwardRounded as ArrowUp } from '@material-ui/icons';
+
+import { Theme, Fab, Zoom } from '@material-ui/core';
+import { darken, makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme: Theme) => ({
   fab: {

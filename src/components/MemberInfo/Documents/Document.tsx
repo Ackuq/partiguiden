@@ -1,13 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
-import { makeStyles } from '@material-ui/styles';
 
-import { darken, useTheme } from '@material-ui/core';
-import Card from '@material-ui/core/Card';
-import CardContent from '@material-ui/core/CardContent';
-import CardHeader from '@material-ui/core/CardHeader';
-import Typography from '@material-ui/core/Typography';
-import ButtonBase from '@material-ui/core/ButtonBase';
+import { Card, CardContent, CardHeader, Typography, ButtonBase } from '@material-ui/core';
+import { darken, useTheme, makeStyles } from '@material-ui/core/styles';
 
 import { lookupAuthority } from '../../../utils/authorityTable';
 import { MemberDocument } from '../../../types/member';

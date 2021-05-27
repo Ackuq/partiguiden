@@ -1,13 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 
-import styled from '@material-ui/styles/styled';
-
-import Paper from '@material-ui/core/Paper';
-import Button from '@material-ui/core/Button';
-import Slide from '@material-ui/core/Slide';
-import Typography from '@material-ui/core/Typography';
-import { Theme } from '@material-ui/core';
+import { Paper, Button, Slide, Typography } from '@material-ui/core';
+import { styled, Theme } from '@material-ui/core/styles';
 
 import { COOKIE_POLICY } from '../lib/routes';
 

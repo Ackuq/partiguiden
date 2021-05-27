@@ -1,13 +1,16 @@
 import React, { useCallback } from 'react';
-import Pagination from '@material-ui/lab/Pagination';
 
 import { NextRouter } from 'next/router';
 import { stringify } from 'querystring';
+
 import { Typography } from '@material-ui/core';
+import { Pagination } from '@material-ui/lab';
+
 import { FlowAd } from '../Ad';
 import Decision from './Decision';
-import useStyles from './useStyles';
 import LoadCircle from '../LoadCircle';
+
+import useStyles from './useStyles';
 import { useDecisions } from '../../hooks/parliamentHooks';
 
 interface Props {

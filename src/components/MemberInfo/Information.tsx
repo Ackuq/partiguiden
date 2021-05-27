@@ -1,14 +1,16 @@
 import React, { useState } from 'react';
 
-import Grid from '@material-ui/core/Grid';
-import Typography from '@material-ui/core/Typography';
-import Paper from '@material-ui/core/Paper';
-import Accordion from '@material-ui/core/Accordion';
-import AccordionDetails from '@material-ui/core/AccordionDetails';
-import AccordionSummary from '@material-ui/core/AccordionSummary';
+import {
+  Grid,
+  Typography,
+  Paper,
+  Accordion,
+  AccordionDetails,
+  AccordionSummary,
+} from '@material-ui/core';
 import { useTheme } from '@material-ui/core/styles';
 
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import { ExpandMore as ExpandMoreIcon } from '@material-ui/icons';
 
 import Documents from './Documents';
 import { Information as InformationType } from '../../types/member';

@@ -1,12 +1,9 @@
 import React from 'react';
 import { GetStaticProps, NextPage } from 'next';
 import Head from 'next/head';
-import Container from '@material-ui/core/Container';
-import Paper from '@material-ui/core/Paper';
-import Typography from '@material-ui/core/Typography';
-import { Theme } from '@material-ui/core';
 
-import styled from '@material-ui/styles/styled';
+import { Container, Paper, Typography } from '@material-ui/core';
+import { styled, Theme } from '@material-ui/core/styles';
 
 import Typed from '../src/components/Typed';
 import FrontPage from '../src/containers/FrontPage';

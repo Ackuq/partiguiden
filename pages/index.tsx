@@ -44,6 +44,7 @@ const FrontPageContainer: NextPage<Props> = ({ popular }) => (
         <Typed
           strings={['miljön?', 'jämlikheten?', 'vården?', 'Sverige?']}
           typeSpeed={100}
+          backSpeed={50}
           showCursor={false}
         />
         &nbsp;

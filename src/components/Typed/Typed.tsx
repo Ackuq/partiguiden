@@ -7,7 +7,7 @@ const Typed: React.FC<TypedOptions> = ({ ...options }) => {
   return (
     <span
       ref={(ref) => {
-        if (ref) {
+        if (ref && !typed.current) {
           typed.current = new TypedJS(ref, options);
         }
       }}

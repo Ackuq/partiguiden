@@ -8,8 +8,7 @@ import { Theme } from '@material-ui/core';
 
 import styled from '@material-ui/styles/styled';
 
-import Typed from 'react-typed';
-
+import Typed from '../src/components/Typed';
 import FrontPage from '../src/containers/FrontPage';
 import { getPopular } from '../src/lib/api';
 import { SubjectListEntry } from '../src/types/subjects';

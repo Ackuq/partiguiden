@@ -34,7 +34,7 @@
     "typed.js": "^2.0.12"
   },
   "devDependencies": {
-    "@babel/eslint-parser": "^7.14.3",
+    "@babel/eslint-parser": "^7.14.4",
     "@types/gtag.js": "^0.0.4",
     "@types/node": "^15.6.1",
     "@types/react": "^17.0.8",

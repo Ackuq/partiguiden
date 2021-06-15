@@ -9,6 +9,8 @@ import Breadcrumbs from '../Breadcrumbs';
 import { Member } from '../../types/member';
 
 import * as ROUTES from '../../lib/routes';
+import { PARTY_LOGOS_LOW_RES } from '../../assets/logos';
+import { PartyAbbreviation } from '../../utils/parties';
 
 interface Props {
   member: Member;
@@ -54,8 +56,7 @@ const ProfilePicture: React.FC<Props> = ({ member }) => {
               <Image
                 width={65}
                 height={65}
-                src={`/static/images/party-logos/${member.party.toUpperCase()}.png`}
-                layout="intrinsic"
+                src={PARTY_LOGOS_LOW_RES[member.party.toUpperCase() as PartyAbbreviation]}
                 alt="Partisymbol"
               />
             </Box>

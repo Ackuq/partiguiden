@@ -12,6 +12,7 @@ import parties from '../../src/utils/getParties';
 import PageTitle from '../../src/components/PageTitle';
 import Party from '../../src/containers/Party';
 import { getParty } from '../../src/lib/proxy';
+import { PARTY_LOGOS } from '../../src/assets/logos';
 
 interface Props {
   party: PartyData;
@@ -20,8 +21,8 @@ interface Props {
 const PartyPage: NextPage<Props> = ({ party }) => {
   const PartyLogo: React.FC = () => (
     <Image
-      src={`/static/images/party-logos/${party.abbrev.toLocaleUpperCase()}.png`}
-      layout="intrinsic"
+      src={PARTY_LOGOS[party.abbrev.toUpperCase() as PartyData['abbrev']]}
+      quality={50}
       width="90%"
       height="90%"
       alt="Party logo"

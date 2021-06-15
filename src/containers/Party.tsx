@@ -89,7 +89,10 @@ const Party: React.FC<Props> = ({ party }) => {
         <Typography variant="h5">Ideologi</Typography>
         <Typography>{party.ideology.join(', ')}</Typography>
         <Typography component="p" variant="caption">
-          Källa: <a href="https://www.wikipedia.org/">https://www.wikipedia.org/</a>
+          Källa:{' '}
+          <Link href="https://www.wikipedia.org/" rel="noopener" target="_blank">
+            https://www.wikipedia.org/
+          </Link>
         </Typography>
       </div>
       <Divider className={classes.informationDivider} />
@@ -99,7 +102,10 @@ const Party: React.FC<Props> = ({ party }) => {
           <div dangerouslySetInnerHTML={{ __html: party.abstract }} className={classes.biography} />
         </Typography>
         <Typography component="p" variant="caption">
-          Källa: <a href="https://www.wikipedia.org/">https://www.wikipedia.org/</a>
+          Källa:{' '}
+          <Link href="https://www.wikipedia.org/" rel="noopener" target="_blank">
+            https://www.wikipedia.org/
+          </Link>
         </Typography>
       </div>
     </Paper>

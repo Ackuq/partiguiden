@@ -9,6 +9,8 @@ import { VotingResult } from '../../types/voting';
 import { voteListColors } from '../../lib/voteColors';
 
 import useStyles from './useStyles';
+import { PARTY_LOGOS_LOW_RES } from '../../assets/logos';
+import { PartyAbbreviation } from '../../utils/parties';
 
 interface Props {
   votes: VotingResult;
@@ -38,10 +40,10 @@ const VoteResult: React.FC<Props> = ({ votes, classes }) => {
                 {votes.yes.map((party: string) => (
                   <div key={party}>
                     <Image
-                      src={`/static/images/party-logos/${party.toUpperCase()}.png`}
-                      layout="intrinsic"
+                      src={PARTY_LOGOS_LOW_RES[party.toUpperCase() as PartyAbbreviation]}
                       width="40%"
                       height="40%"
+                      alt={`${party} logo`}
                     />
                   </div>
                 ))}
@@ -63,10 +65,10 @@ const VoteResult: React.FC<Props> = ({ votes, classes }) => {
                 {votes.no.map((party: string) => (
                   <div key={party}>
                     <Image
-                      src={`/static/images/party-logos/${party.toUpperCase()}.png`}
-                      layout="intrinsic"
+                      src={PARTY_LOGOS_LOW_RES[party.toUpperCase() as PartyAbbreviation]}
                       width="40%"
                       height="40%"
+                      alt={`${party} logo`}
                     />
                   </div>
                 ))}

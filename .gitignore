@@ -3,6 +3,7 @@
 
 # Enviroment variables
 .env
+.env.local
 
 # Node modules
 node_modules

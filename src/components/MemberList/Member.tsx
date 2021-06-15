@@ -5,6 +5,8 @@ import useStyles from './useStyles';
 import { Member as MemberType } from '../../types/member';
 
 import * as ROUTES from '../../lib/routes';
+import { PARTY_LOGOS_LOW_RES } from '../../assets/logos';
+import { PartyAbbreviation } from '../../utils/parties';
 
 interface Props {
   member: MemberType;
@@ -37,8 +39,7 @@ const Member: React.FC<Props> = ({ member, classes }) => (
           <Image
             width={50}
             height={50}
-            layout="intrinsic"
-            src={`/static/images/party-logos/${member.party.toUpperCase()}.png`}
+            src={PARTY_LOGOS_LOW_RES[member.party.toUpperCase() as PartyAbbreviation]}
             alt="Partisymbol"
           />
         )}

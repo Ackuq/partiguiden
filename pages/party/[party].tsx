@@ -24,6 +24,7 @@ const PartyPage: NextPage<Props> = ({ party }) => {
       layout="intrinsic"
       width="90%"
       height="90%"
+      alt="Party logo"
     />
   );
 

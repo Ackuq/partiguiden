@@ -19,15 +19,10 @@ const {
   SENTRY_AUTH_TOKEN,
 } = process.env;
 
-const COMMIT_SHA = VERCEL_GITHUB_COMMIT_SHA;
-
-process.env.SENTRY_DSN = SENTRY_DSN;
-const basePath = '';
-
 const moduleExports = withSourceMaps({
   target: 'serverless',
   env: {
-    NEXT_PUBLIC_COMMIT_SHA: COMMIT_SHA,
+    NEXT_PUBLIC_COMMIT_SHA: VERCEL_GITHUB_COMMIT_SHA,
     API_URL,
     BASE_PATH,
     PROXY_URL,
@@ -41,21 +36,11 @@ const moduleExports = withSourceMaps({
     SENTRY_AUTH_TOKEN,
   },
 
-  future: {
-    webpack5: true,
-  },
-
-  basePath,
+  basePath: '',
 });
 
 const SentryWebpackPluginOptions = {
-  // Additional config options for the Sentry Webpack plugin. Keep in mind that
-  // the following options are set automatically, and overriding them is not
-  // recommended:
-  //   release, url, org, project, authToken, configFile, stripPrefix,
-  //   urlPrefix, include, ignore
-  // For all available options, see:
-  // https://github.com/getsentry/sentry-webpack-plugin#options.
+  silent: true,
 };
 
 module.exports = withSentryConfig(moduleExports, SentryWebpackPluginOptions);

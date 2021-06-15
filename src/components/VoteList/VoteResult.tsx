@@ -42,6 +42,7 @@ const VoteResult: React.FC<Props> = ({ votes, classes }) => {
                       layout="intrinsic"
                       width="40%"
                       height="40%"
+                      alt={`${party} logo`}
                     />
                   </div>
                 ))}
@@ -67,6 +68,7 @@ const VoteResult: React.FC<Props> = ({ votes, classes }) => {
                       layout="intrinsic"
                       width="40%"
                       height="40%"
+                      alt={`${party} logo`}
                     />
                   </div>
                 ))}

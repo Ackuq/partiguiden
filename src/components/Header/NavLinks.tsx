@@ -57,7 +57,7 @@ const CustomTabInner: React.ForwardRefRenderFunction<HTMLAnchorElement, CustomTa
   { href, title },
   ref
 ) => (
-  <Link href={href}>
+  <Link href={href} passHref>
     <Tab ref={ref} href={href} label={title} />
   </Link>
 );

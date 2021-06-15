@@ -22,11 +22,12 @@ const partyFactory = (partyAbbrev: string) =>
         width="30%"
         height="30%"
         quality="50%"
+        alt={`${partyAbbrev} logo`}
       />
     );
   };
 
-export default [
+const PAGES = [
   { href: ROUTES.INDEX, title: 'Hem', Icon: Home },
   {
     href: ROUTES.STANDPOINTS,
@@ -55,3 +56,5 @@ export default [
   },
   { href: ROUTES.ABOUT_US, title: 'Om oss', Icon: InfoRounded },
 ];
+
+export default PAGES;

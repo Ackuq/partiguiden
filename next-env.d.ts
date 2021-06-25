@@ -1,4 +1,3 @@
 /// <reference types="next" />
 /// <reference types="next/types/global" />
-
-declare module '*.png';
+/// <reference types="next/image-types/global" />

@@ -8,16 +8,17 @@ import SocialMediaShare from '../../src/components/SocialMediaShare';
 import PageTitle from '../../src/components/PageTitle';
 import Standpoints from '../../src/containers/Standpoints';
 import { getSubject, getSubjects } from '../../src/lib/api';
-import { StandpointsMap, Subject } from '../../src/types/subjects';
+import { RelatedSubject, StandpointsMap, Subject } from '../../src/types/subjects';
 import * as ROUTES from '../../src/lib/routes';
 
 interface Props {
   name: string;
   standpoints: StandpointsMap;
+  relatedSubjects: Array<RelatedSubject>;
   id: number;
 }
 
-const StandPointContainer: NextPage<Props> = ({ name, standpoints, id }) => (
+const StandPointContainer: NextPage<Props> = ({ name, standpoints, id, relatedSubjects }) => (
   <>
     <Head>
       <title>{name} | Ämne | Partiguiden</title>
@@ -37,7 +38,7 @@ const StandPointContainer: NextPage<Props> = ({ name, standpoints, id }) => (
         />
         <SocialMediaShare title={name} />
       </div>
-      <Standpoints standpoints={standpoints} />
+      <Standpoints relatedSubjects={relatedSubjects} standpoints={standpoints} />
     </Container>
   </>
 );
@@ -66,7 +67,12 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   const data = await getSubject(id);
 
   return {
-    props: { name: data.name, standpoints: createPartyMap(data), id },
+    props: {
+      name: data.name,
+      standpoints: createPartyMap(data),
+      relatedSubjects: data.related_subject,
+      id,
+    },
     revalidate: 518400,
   };
 };

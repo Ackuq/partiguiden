@@ -19,3 +19,7 @@ node_modules
 yarn-error.log
 
 .vscode
+
+# Automatic generated fiels
+public/robots.txt
+public/sitemap.xml

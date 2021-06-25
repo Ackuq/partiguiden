@@ -15,10 +15,15 @@ export interface SubjectListEntry {
   id: number;
 }
 
+export interface RelatedSubject {
+  name: string;
+  id: number;
+}
+
 export interface Subject {
   name: string;
   id: number;
-  related_subject: Array<Subject>;
+  related_subject: Array<RelatedSubject>;
   standpoints: Array<Standpoint>;
 }
 

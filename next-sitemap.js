@@ -1,4 +1,4 @@
 module.exports = {
-  siteUrl: process.env.SITE_URL || 'https://partiguiden.se',
+  siteUrl: process.env.BASE_PATH || 'https://partiguiden.se',
   generateRobotsTxt: true,
 };

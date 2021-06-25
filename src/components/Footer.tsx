@@ -29,9 +29,9 @@ const Footer: React.FC = () => (
             align="center"
             color="inherit"
             variant="subtitle1"
-            href="mailto:contact@partiguiden.nu"
+            href="mailto:hello@partiguiden.se"
           >
-            contact@partiguiden.nu
+            hello@partiguiden.se
           </Link>
         </Grid>
       </Grid>

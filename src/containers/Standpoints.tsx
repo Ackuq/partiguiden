@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link as MUILink, Typography } from '@material-ui/core';
+import { Divider, Link as MUILink, Typography } from '@material-ui/core';
+import { styled } from '@material-ui/core/styles';
 
 import Link from 'next/link';
 import PartyStandpoints from '../components/PartyStandpoints';
@@ -7,6 +8,11 @@ import { PartyAbbreviation } from '../utils/parties';
 import { RelatedSubject, StandpointsMap } from '../types/subjects';
 import { partiesMap } from '../utils/getParties';
 import { getStandpointHref, STANDPOINT } from '../lib/routes';
+
+const ContentDivider = styled(Divider)({
+  marginTop: '5rem',
+  marginBottom: '1rem',
+});
 
 interface Props {
   standpoints: StandpointsMap;
@@ -22,8 +28,10 @@ const Subject: React.FC<Props> = ({ standpoints, relatedSubjects }) => (
         standpoints={standpoints[party as PartyAbbreviation]}
       />
     ))}
+
     {relatedSubjects.length > 0 && (
       <>
+        <ContentDivider />
         <Typography gutterBottom variant="h5" color="primary">
           Se även
         </Typography>
@@ -35,7 +43,7 @@ const Subject: React.FC<Props> = ({ standpoints, relatedSubjects }) => (
               as={getStandpointHref(relatedSubject.id)}
               passHref
             >
-              <MUILink display="block" key={relatedSubject.id}>
+              <MUILink variant="body1" display="block" key={relatedSubject.id}>
                 {relatedSubject.name}
               </MUILink>
             </Link>

@@ -1,42 +1,4 @@
 {
   "version": 2,
-  "headers": [
-    {
-      "source": "/static/(.*)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public,max-age=31536000,immutable"
-        }
-      ]
-    },
-    {
-      "source": "/ads.txt",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public,max-age=31536000,immutable"
-        }
-      ]
-    },
-    {
-      "source": "/robots.txt",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public,max-age=31536000,immutable"
-        }
-      ]
-    }
-  ],
-  "rewrites": [
-    {
-      "source": "/ads.txt",
-      "destination": "/static/ads.txt"
-    },
-    {
-      "source": "/robots.txt",
-      "destination": "/static/robots.txt"
-    }
-  ]
+  "headers": []
 }

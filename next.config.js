@@ -43,4 +43,8 @@ const SentryWebpackPluginOptions = {
   silent: true,
 };
 
-module.exports = withSentryConfig(moduleExports, SentryWebpackPluginOptions);
+if (SENTRY_ORG && SENTRY_PROJECT) {
+  module.exports = withSentryConfig(moduleExports, SentryWebpackPluginOptions);
+} else {
+  module.exports = moduleExports;
+}

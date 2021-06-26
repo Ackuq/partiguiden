@@ -3,6 +3,7 @@ import { NextRouter, useRouter } from 'next/router';
 import Link from 'next/link';
 
 import { Menu, MenuItem, Tabs, Tab } from '@material-ui/core';
+import { useTheme } from '@material-ui/core/styles';
 
 import pages from './pages';
 
@@ -13,7 +14,7 @@ interface DropDownProps {
   router: NextRouter;
 }
 
-const DropDown: React.FC<DropDownProps> = ({ title, href, subPages, router }) => {
+const DropDown: React.FC<DropDownProps> = ({ title, href, subPages, router, ...rest }) => {
   const [anchor, setAnchor] = useState<null | HTMLElement>(null);
 
   const urlPrefix = href.replace(/\s*\[.*?\]\s*/g, '');
@@ -32,7 +33,7 @@ const DropDown: React.FC<DropDownProps> = ({ title, href, subPages, router }) =>
 
   return (
     <div style={{ position: 'relative' }}>
-      <Tab label={title} onClick={handleOpen} />
+      <Tab label={title} onClick={handleOpen} {...rest} />
       <Menu keepMounted anchorEl={anchor} open={!!anchor} onClose={handleClose}>
         {subPages.map((page) => (
           <div key={page.id}>
@@ -54,11 +55,11 @@ interface CustomTabProps {
 }
 
 const CustomTabInner: React.ForwardRefRenderFunction<HTMLAnchorElement, CustomTabProps> = (
-  { href, title },
+  { href, title, ...rest },
   ref
 ) => (
   <Link href={href} passHref>
-    <Tab ref={ref} href={href} label={title} />
+    <Tab ref={ref} href={href} label={title} {...rest} />
   </Link>
 );
 
@@ -66,6 +67,7 @@ const CustomTab = React.forwardRef<HTMLAnchorElement, CustomTabProps>(CustomTabI
 
 const NavLinks: React.FC = () => {
   const router = useRouter();
+  const theme = useTheme();
 
   const selectedTab = useMemo(() => {
     const index = pages.findIndex(
@@ -79,8 +81,7 @@ const NavLinks: React.FC = () => {
   return (
     <Tabs
       variant="scrollable"
-      indicatorColor="primary"
-      textColor="primary"
+      indicatorColor={theme.palette.type === 'dark' ? 'primary' : 'secondary'}
       scrollButtons="on"
       value={selectedTab}
     >

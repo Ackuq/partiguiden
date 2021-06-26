@@ -20,7 +20,7 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
           />
           <link rel="mask-icon" href="/static/icons/safari-pinned-tab.svg" color="#5bbad5" />
-          <link rel="manifest" href="/manifest.json" />
+          <link rel="manifest" href="/manifest.webmanifest" />
 
           <meta property="og:image" content="/static/images/partiguiden_logo.png" />
           <meta name="theme-color" content="#00796B" />

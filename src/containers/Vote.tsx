@@ -31,12 +31,13 @@ const Vote: React.FC<Props> = ({
       <TotalVote voting={voting.Totalt} />
       <Typography
         variant="h5"
+        component="h2"
         style={{ marginBottom: '1rem', marginTop: '1rem' }}
         color="textSecondary"
       >
         {title}
       </Typography>
-      <Typography variant="h5" gutterBottom>
+      <Typography variant="h5" component="span" gutterBottom>
         Utskottets förslag
       </Typography>
       <Typography variant="body1" paragraph>

@@ -23,18 +23,27 @@ const FilterList: React.FC<Props> = ({ list, updateList, isChecked, getText, get
       }}
     >
       <ListItemIcon style={{ minWidth: '46px' }}>
-        <Checkbox color="primary" checked={isChecked(el)} disableRipple />
+        <Checkbox
+          inputProps={{ id: `${getKey(el)}-input` }}
+          color="primary"
+          checked={isChecked(el)}
+          disableRipple
+        />
       </ListItemIcon>
       <ListItemText
         disableTypography
         style={{ fontSize: '0.9rem', marginRight: '1rem', lineHeight: 1.5 }}
       >
-        {getText(el)}
+        <label htmlFor={`${getKey(el)}-input`}>{getText(el)}</label>
       </ListItemText>
     </ListItem>
   );
 
-  return <List disablePadding>{list.map((el) => renderCheckBox(el as never))}</List>;
+  return (
+    <List component="div" disablePadding>
+      {list.map((el) => renderCheckBox(el as never))}
+    </List>
+  );
 };
 
 export default FilterList;

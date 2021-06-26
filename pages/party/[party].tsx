@@ -33,6 +33,10 @@ const PartyPage: NextPage<Props> = ({ party }) => {
     <>
       <Head>
         <title>{party.name} | Parti | Partiguiden</title>
+        <meta
+          name="description"
+          content={`Vilka är ${party.name} och vad är deras ideologi? Läs på om dem här!`}
+        />
       </Head>
       <PageTitle variant="h3" title={party.name} Icon={PartyLogo} />
       <Container>

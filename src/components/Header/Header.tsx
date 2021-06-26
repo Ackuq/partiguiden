@@ -54,7 +54,7 @@ const Branding: React.FC<Props> = ({ toggleDarkMode }) => {
         </ButtonBase>
       </Grid>
       <Grid item xs={3} className={classes.iconContainer}>
-        <IconButton onClick={toggleDarkMode}>
+        <IconButton onClick={toggleDarkMode} aria-label="Toggle dark mode">
           <BrightnessIcon />
         </IconButton>
       </Grid>

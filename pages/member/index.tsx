@@ -18,7 +18,10 @@ const LedamoterContainer: NextPage<Props> = ({ members }) => (
   <>
     <Head>
       <title>Riksdagsledamöter | Partiguiden</title>
-      <meta name="description" content="" />
+      <meta
+        name="description"
+        content="Här kan du ta reda på information om ledamöterna i riksdagen, samt se vilka ledamöter är aktiva för varje parti"
+      />
     </Head>
     <PageTitle title="Riksdagsledamöter" Icon={PersonIcon} />
     <Members members={members} />

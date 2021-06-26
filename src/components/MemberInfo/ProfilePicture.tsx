@@ -64,14 +64,14 @@ const ProfilePicture: React.FC<Props> = ({ member }) => {
         </Box>
       </Box>
       <Box textAlign="center" py={2}>
-        <Typography variant="h6">
+        <Typography variant="h6" component="span">
           {member.status}
           {member.isLeader && ' och partiledare'}
         </Typography>
-        <Typography variant="h4">
+        <Typography variant="h4" component="h1">
           {member.firstName} {member.lastName}
         </Typography>
-        <Typography variant="h6" color="textPrimary">
+        <Typography variant="h6" color="textPrimary" component="span">
           {member.age} år
         </Typography>
       </Box>

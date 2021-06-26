@@ -23,7 +23,7 @@ export interface RelatedSubject {
 export interface Subject {
   name: string;
   id: number;
-  related_subject: Array<RelatedSubject>;
+  related_subjects: Array<RelatedSubject>;
   standpoints: Array<Standpoint>;
 }
 

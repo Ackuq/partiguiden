@@ -70,7 +70,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     props: {
       name: data.name,
       standpoints: createPartyMap(data),
-      relatedSubjects: data.related_subject,
+      relatedSubjects: data.related_subjects,
       id,
     },
     revalidate: 518400,

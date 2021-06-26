@@ -13,12 +13,10 @@ export interface Standpoint {
 export interface SubjectListEntry {
   name: string;
   id: number;
+  related_subjects: Array<number>;
 }
 
-export interface RelatedSubject {
-  name: string;
-  id: number;
-}
+export type RelatedSubject = SubjectListEntry;
 
 export interface Subject {
   name: string;

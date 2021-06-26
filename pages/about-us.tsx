@@ -4,7 +4,7 @@ import Head from 'next/head';
 
 import { Info as InfoIcon } from '@material-ui/icons';
 
-import { Container, Card, CardContent, Typography } from '@material-ui/core';
+import { Container, Card, CardContent, Typography, Link } from '@material-ui/core';
 
 import PageTitle from '../src/components/PageTitle';
 
@@ -34,9 +34,9 @@ const OmOssContainer: NextPage = () => (
           <Typography variant="subtitle1" paragraph>
             Informationen som presenteras på sidan är information från partiernas egna hemsidor samt
             information från Riksdagens öppna API, som finns på{' '}
-            <a rel="noopener noreferrer" target="_blank" href="https://data.riksdagen.se/">
+            <Link rel="noopener noreferrer" target="_blank" href="https://data.riksdagen.se/">
               https://data.riksdagen.se/
-            </a>
+            </Link>
           </Typography>
         </CardContent>
       </Card>

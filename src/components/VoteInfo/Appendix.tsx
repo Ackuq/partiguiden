@@ -13,7 +13,7 @@ const Appendix: React.FC<Props> = ({ appendix }) => {
   const theme = useTheme();
   return (
     <>
-      <Typography variant="h5" color="inherit" gutterBottom>
+      <Typography variant="h5" color="inherit" component="span" gutterBottom>
         Bilaga
       </Typography>
       <div style={{ display: 'flex', flexDirection: 'column' }}>

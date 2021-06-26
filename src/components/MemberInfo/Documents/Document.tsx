@@ -46,11 +46,13 @@ const Document: React.FC<Props> = ({ document }) => {
             />
           )}
           <CardContent>
-            <Typography style={{ fontSize: '0.75rem' }} color="textSecondary" gutterBottom>
+            <Typography color="textSecondary" variant="body2">
               {document.title}
             </Typography>
-            <Typography>{document.altTitle}</Typography>
-            <Typography style={{ fontSize: '0.85rem' }} color="textSecondary">
+            <Typography variant="body1" gutterBottom>
+              {document.altTitle}
+            </Typography>
+            <Typography variant="body2" color="textSecondary">
               {document.subtitle}
             </Typography>
           </CardContent>

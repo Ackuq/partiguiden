@@ -52,6 +52,11 @@ const getTheme = (darkMode: boolean): Theme =>
             transition: 'background-color 0.4s ease-in-out',
           },
         },
+        MuiTab: {
+          textColorInherit: {
+            opacity: 0.9,
+          },
+        },
       },
     })
   );

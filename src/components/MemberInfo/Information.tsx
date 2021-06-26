@@ -30,7 +30,7 @@ const Information: React.FC<Props> = ({ id, informationRecords, absence }) => {
       {absence && (
         <Grid item xs={6}>
           <Paper style={{ padding: '0.5rem' }}>
-            <Typography variant="h5" align="center">
+            <Typography variant="h5" component="p" align="center">
               {absence} %
             </Typography>
             <Typography variant="body2" align="center">
@@ -41,7 +41,7 @@ const Information: React.FC<Props> = ({ id, informationRecords, absence }) => {
       )}
       <Grid item xs={6}>
         <Paper style={{ padding: '0.5rem' }}>
-          <Typography variant="h5" align="center">
+          <Typography variant="h5" component="p" align="center">
             {documentCount}
           </Typography>
           <Typography variant="body2" align="center">
@@ -54,6 +54,7 @@ const Information: React.FC<Props> = ({ id, informationRecords, absence }) => {
           <Paper style={{ padding: '1rem', borderBottomLeftRadius: 0, borderBottomRightRadius: 0 }}>
             <Typography
               variant="h4"
+              component="span"
               color={theme.palette.type === 'dark' ? 'textPrimary' : 'primary'}
             >
               Biografi
@@ -84,6 +85,7 @@ const Information: React.FC<Props> = ({ id, informationRecords, absence }) => {
         <Paper style={{ padding: '1rem' }}>
           <Typography
             variant="h4"
+            component="span"
             color={theme.palette.type === 'dark' ? 'textPrimary' : 'primary'}
           >
             Dokument

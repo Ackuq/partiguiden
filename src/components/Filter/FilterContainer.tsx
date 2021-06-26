@@ -28,7 +28,7 @@ const Filter: React.FC<{ children: React.ReactChild | React.ReactChild[] }> = ({
 
   return (
     <>
-      <Hidden smUp implementation="css">
+      <Hidden smUp>
         <Fab classes={{ root: classes.fab }} onClick={toggleFilterScreen}>
           <FilterIcon color="inherit" fontSize="large" />
         </Fab>
@@ -51,7 +51,7 @@ const Filter: React.FC<{ children: React.ReactChild | React.ReactChild[] }> = ({
           {children}
         </SwipeableDrawer>
       </Hidden>
-      <Hidden xsDown implementation="css">
+      <Hidden xsDown>
         <FilterContainerDesktop>{children}</FilterContainerDesktop>
       </Hidden>
     </>

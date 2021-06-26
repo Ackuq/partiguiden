@@ -69,7 +69,7 @@ const VoteDistribution: React.FC<Props> = ({ voting }) => {
 
   if (data.length === 0) {
     return (
-      <Typography gutterBottom variant="h6">
+      <Typography gutterBottom variant="h6" component="span">
         Ingen voteringsdata hittades
       </Typography>
     );
@@ -78,7 +78,7 @@ const VoteDistribution: React.FC<Props> = ({ voting }) => {
   return (
     <div style={{ marginBottom: '1rem' }}>
       <SectionButton onClick={() => setVisible(!visible)}>
-        <Typography variant="h5" color="inherit">
+        <Typography variant="h5" color="inherit" component="span">
           Röstfördelning
         </Typography>
         <RotatingArrow style={visible ? { transform: 'rotate(180deg)' } : undefined} />

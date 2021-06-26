@@ -117,7 +117,11 @@ const Party: React.FC<Props> = ({ party }) => {
         <NextLink passHref href={ROUTES.MEMBER} as={ROUTES.getMemberHref(id)}>
           <a style={{ textDecoration: 'none' }}>
             <Paper classes={{ root: classes.leaderCard }} elevation={0}>
-              <Avatar className={classes.leaderAvatar} src={pictureUrl} />
+              <Avatar
+                className={classes.leaderAvatar}
+                src={pictureUrl}
+                alt={`${firstName} ${lastName}`}
+              />
               <div>
                 <Typography variant="subtitle2" component="p">
                   {firstName} {lastName}

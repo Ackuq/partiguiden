@@ -19,6 +19,11 @@ const {
   SENTRY_ORG,
   SENTRY_PROJECT,
   SENTRY_AUTH_TOKEN,
+
+  // Google AdSense
+  AD_CLIENT_ID,
+  FLOW_AD_SLOT,
+  RESPONSIVE_AD_SLOT,
 } = process.env;
 
 const moduleExports = withPWA(
@@ -41,6 +46,11 @@ const moduleExports = withPWA(
       SENTRY_ORG,
       SENTRY_PROJECT,
       SENTRY_AUTH_TOKEN,
+
+      // Google AdSense
+      AD_CLIENT_ID,
+      FLOW_AD_SLOT,
+      RESPONSIVE_AD_SLOT,
     },
 
     basePath: '',

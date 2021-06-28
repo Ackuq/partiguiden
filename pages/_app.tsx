@@ -15,40 +15,35 @@ import CookieBanner from '../src/components/CookieBanner';
 import getTheme from '../src/lib/theme';
 import * as gtag from '../src/utils/gtag';
 
+const DARK_MODE_KEY = 'prefersDarkMode';
+
+const getInitialDarkMode = (prefersDarkMode: boolean): boolean => {
+  if (typeof window !== 'undefined') {
+    const stored = window.localStorage.getItem(DARK_MODE_KEY);
+    // If we got a stored value, let it override the browser preference
+    if (stored !== null) {
+      return stored === 'true';
+    }
+  }
+  // If no stored value, let the initial value be the browser preference
+  return prefersDarkMode;
+};
+
+const setStoredDarkModeValue = (value: boolean) => {
+  localStorage.setItem(DARK_MODE_KEY, value.toString());
+};
+
 const App: React.FC<AppProps> = ({ Component, pageProps }) => {
   const router = useRouter();
-  const [darkModeState, setDarkModeState] = useState<boolean>();
-  const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
-
-  const theme = useMemo(() => {
-    if (darkModeState !== undefined) {
-      return getTheme(darkModeState);
-    }
-    return getTheme(prefersDarkMode);
-  }, [prefersDarkMode, darkModeState]);
-
-  const toggleDarkMode = useCallback(() => {
-    setDarkModeState((prevValue) => {
-      const newValue = prevValue !== undefined ? !prevValue : !prefersDarkMode;
-      localStorage.setItem('prefersDarkMode', newValue.toString());
-      return newValue;
-    });
-  }, [prefersDarkMode]);
+  const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)', { noSsr: true });
+  const [darkModeState, setDarkModeState] = useState<boolean>(getInitialDarkMode(prefersDarkMode));
+  const theme = useMemo(() => getTheme(darkModeState), [darkModeState]);
 
   useEffect(() => {
     // Remove the server-side injected CSS.
     const jssStyles = document.querySelector('#jss-server-side');
     if (jssStyles && jssStyles.parentNode) {
       jssStyles.parentNode.removeChild(jssStyles);
-    }
-  }, []);
-
-  useEffect(() => {
-    if (typeof window !== undefined) {
-      const stored = localStorage.getItem('prefersDarkMode');
-      if (stored === 'false' || stored === 'true') {
-        setDarkModeState(stored === 'true');
-      }
     }
   }, []);
 
@@ -68,7 +63,15 @@ const App: React.FC<AppProps> = ({ Component, pageProps }) => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <CssBaseline />
-      <Header toggleDarkMode={toggleDarkMode} />
+      <Header
+        toggleDarkMode={() => {
+          setDarkModeState((prevValue) => {
+            const newValue = !prevValue;
+            setStoredDarkModeValue(newValue);
+            return newValue;
+          });
+        }}
+      />
       <main
         style={{
           marginBottom: '1rem',

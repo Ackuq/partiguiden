@@ -19,7 +19,7 @@ const Custom404: NextPage = () => {
         <Card>
           <CardContent>
             <Typography variant="h6" align="center">
-              Sidan du letade efter kanske har blivit borttagen, eller skrev du in en felaktig URL.
+              Sidan du letade har kanske blivit borttagen, eller skrev du in en felaktig URL.
             </Typography>
           </CardContent>
         </Card>

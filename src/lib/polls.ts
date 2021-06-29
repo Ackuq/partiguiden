@@ -78,8 +78,7 @@ const parsePolls = (csv: string): Polls => {
   return polls;
 };
 
-const POLLS_URL =
-  'https://raw.githubusercontent.com/hampusborgos/SwedishPolls/master/Data/Polls.csv';
+const POLLS_URL = 'https://raw.githubusercontent.com/MansMeg/SwedishPolls/master/Data/Polls.csv';
 
 /**
  * Fetches the poll data

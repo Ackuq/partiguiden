@@ -1,8 +1,11 @@
-import React from 'react';
 import { GetStaticProps, InferGetStaticPropsType, NextPage } from 'next';
 import Head from 'next/head';
+
 import { Container } from '@material-ui/core';
+import PollIcon from '@material-ui/icons/Poll';
+
 import moment from 'moment';
+
 import PageTitle from '../src/components/PageTitle';
 import {
   AveragePoll,
@@ -29,7 +32,7 @@ const PollsPageContainer: NextPage<InferGetStaticPropsType<typeof getStaticProps
         content="Vad tar Sveriges partier för ståndpunkter i sakfrågor? På Partiguiden kan du hitta och jämföra vad partierns åsikter för att hitta det parti du sympatiserar mest med."
       />
     </Head>
-    <PageTitle title="Opinionsundersökningar" />
+    <PageTitle title="Opinionsundersökningar" Icon={PollIcon} />
     <Container style={{ flex: 1 }}>
       <PollsContainer
         currentAverage={currentAverage}

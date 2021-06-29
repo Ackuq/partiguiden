@@ -3,9 +3,9 @@ import { darken } from '@material-ui/core/styles';
 
 export const voteListColors = {
   dark: {
-    yes: teal[900],
-    no: darken(red[600], 0.5),
-    losing: grey[700],
+    yes: teal[500],
+    no: darken(red[300], 0.2),
+    losing: grey[600],
   },
   light: {
     yes: green[100],
@@ -16,10 +16,10 @@ export const voteListColors = {
 
 export const voteColor = {
   dark: {
-    yes: teal[700],
-    no: darken(red[600], 0.4),
+    yes: teal[600],
+    no: red[600],
     refrain: grey[200],
-    absent: blueGrey[400],
+    absent: blueGrey[300],
   },
   light: {
     yes: teal[500],

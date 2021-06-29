@@ -1,14 +1,14 @@
 import React from 'react';
-import {
-  Home,
-  Note,
-  Group,
-  GavelRounded,
-  HowToVoteRounded,
-  InfoRounded,
-  Person,
-  Poll,
-} from '@material-ui/icons';
+
+import HomeIcon from '@material-ui/icons/Home';
+import NoteIcon from '@material-ui/icons/Note';
+import GavelIcon from '@material-ui/icons/GavelRounded';
+import GroupIcon from '@material-ui/icons/Group';
+import HowToVoteIcon from '@material-ui/icons/HowToVoteRounded';
+import InfoIcon from '@material-ui/icons/InfoRounded';
+import PersonIcon from '@material-ui/icons/Person';
+import PollIcon from '@material-ui/icons/Poll';
+
 import Image from 'next/image';
 import parties from '../../utils/getParties';
 import * as ROUTES from '../../lib/routes';
@@ -30,11 +30,11 @@ const partyFactory = (partyAbbrev: string) =>
   };
 
 const PAGES = [
-  { href: ROUTES.INDEX, title: 'Hem', Icon: Home },
+  { href: ROUTES.INDEX, title: 'Hem', Icon: HomeIcon },
   {
     href: ROUTES.STANDPOINTS,
     title: 'Partiernas Ståndpunkter',
-    Icon: Note,
+    Icon: NoteIcon,
     associated: [ROUTES.STANDPOINT],
   },
   {
@@ -45,18 +45,18 @@ const PAGES = [
       id: party.letter.toLocaleLowerCase(),
       Icon: partyFactory(party.letter.toUpperCase()),
     })),
-    Icon: Group,
+    Icon: GroupIcon,
   },
-  { href: ROUTES.DECISIONS, title: 'Riksdagsbeslut', Icon: GavelRounded },
-  { href: ROUTES.VOTES, title: 'Voteringar', Icon: HowToVoteRounded, associated: [ROUTES.VOTE] },
-  { href: ROUTES.MEMBERS, title: 'Ledamöter', Icon: Person, associated: [ROUTES.MEMBER] },
+  { href: ROUTES.DECISIONS, title: 'Riksdagsbeslut', Icon: GavelIcon },
+  { href: ROUTES.VOTES, title: 'Voteringar', Icon: HowToVoteIcon, associated: [ROUTES.VOTE] },
+  { href: ROUTES.MEMBERS, title: 'Ledamöter', Icon: PersonIcon, associated: [ROUTES.MEMBER] },
   {
     href: ROUTES.POLLS,
     title: 'Opinionsundersökningar',
-    Icon: Poll,
+    Icon: PollIcon,
     associated: [],
   },
-  { href: ROUTES.ABOUT_US, title: 'Om oss', Icon: InfoRounded },
+  { href: ROUTES.ABOUT_US, title: 'Om oss', Icon: InfoIcon },
 ];
 
 export default PAGES;

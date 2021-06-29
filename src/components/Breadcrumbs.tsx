@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 import { Breadcrumbs, Chip } from '@material-ui/core';
 
-import { Home as HomeIcon } from '@material-ui/icons';
+import HomeIcon from '@material-ui/icons/Home';
 import { INDEX } from '../lib/routes';
 
 interface Props {

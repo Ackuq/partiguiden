@@ -2,7 +2,7 @@ import React from 'react';
 import { GetStaticProps, InferGetStaticPropsType, NextPage } from 'next';
 import Head from 'next/head';
 
-import { Person as PersonIcon } from '@material-ui/icons';
+import PersonIcon from '@material-ui/icons/Person';
 
 import PageTitle from '../../src/components/PageTitle';
 import Members from '../../src/containers/Members';

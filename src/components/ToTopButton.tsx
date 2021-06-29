@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-import { ArrowUpwardRounded as ArrowUp } from '@material-ui/icons';
+import ArrowUpIcon from '@material-ui/icons/ArrowUpwardRounded';
 
 import { Theme, Fab, Zoom } from '@material-ui/core';
 import { darken, makeStyles } from '@material-ui/core/styles';
@@ -50,7 +50,7 @@ const ToTopButton: React.FC = () => {
   return (
     <Zoom in={show}>
       <Fab onClick={scrollToTop} classes={{ root: classes.fab }} size="large">
-        <ArrowUp classes={{ root: classes.arrow }} fontSize="large" />
+        <ArrowUpIcon classes={{ root: classes.arrow }} fontSize="large" />
       </Fab>
     </Zoom>
   );

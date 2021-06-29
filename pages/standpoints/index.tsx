@@ -2,7 +2,7 @@ import React from 'react';
 import { NextPage, GetStaticProps, InferGetStaticPropsType } from 'next';
 import Head from 'next/head';
 
-import { Note as NoteIcon } from '@material-ui/icons';
+import NoteIcon from '@material-ui/icons/Note';
 
 import PageTitle from '../../src/components/PageTitle';
 

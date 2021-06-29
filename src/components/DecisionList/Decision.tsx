@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { Collapse, CardContent, Typography, ButtonBase, Button } from '@material-ui/core';
 import { darken, useTheme } from '@material-ui/core/styles';
 
-import { KeyboardArrowDownRounded as ArrowDownRounded } from '@material-ui/icons';
+import ArrowDownIcon from '@material-ui/icons/KeyboardArrowDownRounded';
 
 import { lookupAuthority } from '../../utils/authorityTable';
 import { Decision as DecisionType } from '../../types/decision';
@@ -52,7 +52,7 @@ const Decision: React.FC<Props> = ({ decision, classes }) => {
                   {decision.title}
                 </Typography>
               </div>
-              <ArrowDownRounded
+              <ArrowDownIcon
                 classes={{
                   root: `${classes.arrow} ${btnclass}`,
                 }}

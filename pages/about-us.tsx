@@ -2,7 +2,7 @@ import React from 'react';
 import { NextPage } from 'next';
 import Head from 'next/head';
 
-import { Info as InfoIcon } from '@material-ui/icons';
+import InfoIcon from '@material-ui/icons/Info';
 
 import { Container, Card, CardContent, Typography, Link } from '@material-ui/core';
 

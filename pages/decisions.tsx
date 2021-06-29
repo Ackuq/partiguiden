@@ -2,7 +2,7 @@ import React from 'react';
 import { NextPage } from 'next';
 import Head from 'next/head';
 
-import { GavelRounded as GavelIcon } from '@material-ui/icons';
+import GavelIcon from '@material-ui/icons/GavelRounded';
 
 import PageTitle from '../src/components/PageTitle';
 import Decisions from '../src/containers/Decisions';

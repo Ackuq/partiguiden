@@ -1,4 +1,4 @@
-import { KeyboardArrowDownRounded as ArrowDownRounded } from '@material-ui/icons';
+import ArrowDownRounded from '@material-ui/icons/KeyboardArrowDownRounded';
 import { styled, Theme } from '@material-ui/core/styles';
 
 const RotatingArrow = styled(ArrowDownRounded)(({ theme }: { theme: Theme }) => ({

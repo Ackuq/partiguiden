@@ -2,7 +2,7 @@ import React from 'react';
 import { NextPage } from 'next';
 import Head from 'next/head';
 
-import { HowToVoteRounded as VoteIcon } from '@material-ui/icons';
+import VoteIcon from '@material-ui/icons/HowToVoteRounded';
 
 import PageTitle from '../../src/components/PageTitle';
 import Votes from '../../src/containers/Votes';

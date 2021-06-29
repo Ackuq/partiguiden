@@ -7,12 +7,14 @@ import {
   Accordion,
   AccordionDetails,
   AccordionSummary,
+  Link,
 } from '@material-ui/core';
 import { useTheme } from '@material-ui/core/styles';
 
-import { ExpandMore as ExpandMoreIcon } from '@material-ui/icons';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 import Documents from './Documents';
+
 import { Information as InformationType } from '../../types/member';
 
 interface Props {
@@ -69,9 +71,9 @@ const Information: React.FC<Props> = ({ id, informationRecords, absence }) => {
               {record.content.map((information) => (
                 <AccordionDetails key={information}>
                   {record.type === 'eadress' ? (
-                    <a href={information} target="_blank" rel="noopener noreferrer">
+                    <Link href={information} target="_blank" rel="noopener noreferrer">
                       {information}
-                    </a>
+                    </Link>
                   ) : (
                     information
                   )}

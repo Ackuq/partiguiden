@@ -3,7 +3,7 @@ import React from 'react';
 import { NextPage } from 'next';
 import Head from 'next/head';
 
-import { Announcement as AnnouncementIcon } from '@material-ui/icons';
+import AnnouncementIcon from '@material-ui/icons/Announcement';
 
 import { Container, Card, CardContent, Typography } from '@material-ui/core';
 

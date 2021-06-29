@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import { Typography, Collapse, ButtonBase, Grid } from '@material-ui/core';
 
-import { KeyboardArrowDownRounded as ArrowDownRounded } from '@material-ui/icons';
+import ArrowDownRounded from '@material-ui/icons/KeyboardArrowDownRounded';
 
 import PartyStandpoint from './PartyStandpoint';
 import useStyles from './useStyles';

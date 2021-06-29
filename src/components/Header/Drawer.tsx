@@ -11,10 +11,13 @@ import {
   IconButton,
   Collapse,
   ListItemIcon,
+  SvgIcon,
 } from '@material-ui/core';
 import { Theme, makeStyles } from '@material-ui/core/styles';
 
-import { ExpandLess, ExpandMore, SvgIconComponent, Close as CloseIcon } from '@material-ui/icons';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import ExpandLessIcon from '@material-ui/icons/ExpandLess';
+import CloseIcon from '@material-ui/icons/Close';
 
 import pages from './pages';
 
@@ -28,7 +31,7 @@ interface Props {
 interface ListItemProps {
   title: string;
   href: string;
-  Icon?: SvgIconComponent | (() => JSX.Element);
+  Icon?: typeof SvgIcon | (() => JSX.Element);
   as?: string;
   className?: string;
 }
@@ -49,7 +52,7 @@ const CustomListItem: React.FC<ListItemProps> = ({ title, href, as, Icon, classN
 );
 
 interface DropDownProps extends ListItemProps {
-  subPages: Array<{ title: string; id: string; Icon: SvgIconComponent | (() => JSX.Element) }>;
+  subPages: Array<{ title: string; id: string; Icon: typeof SvgIcon | (() => JSX.Element) }>;
 }
 
 const useStyles = makeStyles((theme: Theme) => ({
@@ -77,7 +80,7 @@ const DropDown: React.FC<DropDownProps> = ({ title, href, subPages, Icon }) => {
           </ListItemIcon>
         )}
         <ListItemText primary={title} />
-        {open ? <ExpandLess /> : <ExpandMore />}
+        {open ? <ExpandLessIcon /> : <ExpandMoreIcon />}
       </ListItem>
       <Collapse in={open}>
         <List component="div">

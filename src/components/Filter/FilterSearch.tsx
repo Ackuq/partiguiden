@@ -2,7 +2,7 @@ import React from 'react';
 
 import { InputBase, InputAdornment } from '@material-ui/core';
 
-import { Search as SearchIcon } from '@material-ui/icons';
+import SearchIcon from '@material-ui/icons/Search';
 
 interface Props {
   search: string;

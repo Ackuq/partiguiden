@@ -4,7 +4,8 @@ import Link from 'next/link';
 import { Grid, AppBar, ButtonBase, Hidden, IconButton, Toolbar } from '@material-ui/core';
 import { styled, Theme, makeStyles } from '@material-ui/core/styles';
 
-import { Menu as MenuIcon, Brightness6 as BrightnessIcon } from '@material-ui/icons';
+import MenuIcon from '@material-ui/icons/Menu';
+import BrightnessIcon from '@material-ui/icons/Brightness6';
 
 import NavLinks from './NavLinks';
 import Drawer from './Drawer';

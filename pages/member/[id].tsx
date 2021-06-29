@@ -21,8 +21,14 @@ const MemberContainer: NextPage<Props> = ({ id }) => (
   </>
 );
 
-export const getServerSideProps: GetServerSideProps = async ({ query }) => {
-  const id = Array.isArray(query.id) ? query.id[0] : query.id || '';
+export const getServerSideProps: GetServerSideProps<{ id: string }, { id: string }> = async ({
+  params,
+}) => {
+  const id = params?.id;
+  if (id === undefined || !/^\d+$/.test(id)) {
+    // A member id may only contain numbers
+    return { notFound: true };
+  }
 
   return { props: { id } };
 };

@@ -1,5 +1,5 @@
 import React from 'react';
-import { NextPage, GetStaticPaths, GetStaticProps } from 'next';
+import { NextPage, GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from 'next';
 import Head from 'next/head';
 import { Container } from '@material-ui/core';
 
@@ -11,14 +11,12 @@ import { getSubject, getSubjects } from '../../src/lib/api';
 import { RelatedSubject, StandpointsMap, Subject } from '../../src/types/subjects';
 import * as ROUTES from '../../src/lib/routes';
 
-interface Props {
-  name: string;
-  standpoints: StandpointsMap;
-  relatedSubjects: Array<RelatedSubject>;
-  id: number;
-}
-
-const StandPointContainer: NextPage<Props> = ({ name, standpoints, id, relatedSubjects }) => (
+const StandPointContainer: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
+  name,
+  standpoints,
+  id,
+  relatedSubjects,
+}) => (
   <>
     <Head>
       <title>{name} | Ämne | Partiguiden</title>
@@ -62,8 +60,20 @@ const createPartyMap = (subject: Subject): StandpointsMap => {
   }, {} as StandpointsMap);
 };
 
-export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const id = parseInt(params?.id as string, 10);
+export const getStaticProps: GetStaticProps<
+  {
+    name: string;
+    standpoints: StandpointsMap;
+    relatedSubjects: Array<RelatedSubject>;
+    id: number;
+  },
+  { id: string }
+> = async ({ params }) => {
+  const stringId = params?.id;
+  if (!stringId) {
+    return { notFound: true };
+  }
+  const id = parseInt(stringId, 10);
   const data = await getSubject(id);
 
   return {

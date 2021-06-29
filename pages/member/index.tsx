@@ -1,5 +1,5 @@
 import React from 'react';
-import { GetStaticProps, NextPage } from 'next';
+import { GetStaticProps, InferGetStaticPropsType, NextPage } from 'next';
 import Head from 'next/head';
 
 import { Person as PersonIcon } from '@material-ui/icons';
@@ -10,11 +10,9 @@ import Members from '../../src/containers/Members';
 import { getMembers } from '../../src/lib/proxy';
 import { Member } from '../../src/types/member';
 
-interface Props {
-  members: Array<Member>;
-}
-
-const LedamoterContainer: NextPage<Props> = ({ members }) => (
+const LedamoterContainer: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
+  members,
+}) => (
   <>
     <Head>
       <title>Riksdagsledamöter | Partiguiden</title>
@@ -28,7 +26,9 @@ const LedamoterContainer: NextPage<Props> = ({ members }) => (
   </>
 );
 
-export const getStaticProps: GetStaticProps = async () => {
+export const getStaticProps: GetStaticProps<{
+  members: Array<Member>;
+}> = async () => {
   const members = await getMembers();
 
   return { props: { members }, revalidate: 259200 };

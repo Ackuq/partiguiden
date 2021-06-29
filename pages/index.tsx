@@ -1,5 +1,5 @@
 import React from 'react';
-import { GetStaticProps, NextPage } from 'next';
+import { GetStaticProps, InferGetStaticPropsType, NextPage } from 'next';
 import Head from 'next/head';
 
 import { Container, Paper, Typography } from '@material-ui/core';
@@ -20,11 +20,9 @@ const PageTitleContainer = styled(Paper)(({ theme }: { theme: Theme }) => ({
   minHeight: '5rem',
 }));
 
-interface Props {
-  popular: Array<SubjectListEntry>;
-}
-
-const FrontPageContainer: NextPage<Props> = ({ popular }) => (
+const FrontPageContainer: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
+  popular,
+}) => (
   <>
     <Head>
       <title>Partiguiden | Rösta rätt</title>
@@ -53,7 +51,7 @@ const FrontPageContainer: NextPage<Props> = ({ popular }) => (
   </>
 );
 
-export const getStaticProps: GetStaticProps = async () => {
+export const getStaticProps: GetStaticProps<{ popular: Array<SubjectListEntry> }> = async () => {
   const data = await getPopular();
   const popular = data.slice(0, 4).map((el) => el[0]);
 

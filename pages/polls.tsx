@@ -1,5 +1,5 @@
 import React from 'react';
-import { GetStaticProps, NextPage } from 'next';
+import { GetStaticProps, InferGetStaticPropsType, NextPage } from 'next';
 import Head from 'next/head';
 import { Container } from '@material-ui/core';
 import moment from 'moment';
@@ -14,17 +14,13 @@ import {
   getWithin,
   MonthlyAverage,
 } from '../src/lib/polls';
-import { Polls } from '../src/types/polls';
 import PollsContainer from '../src/containers/Polls';
 
-interface Props {
-  polls: Polls;
-  currentAverage: AveragePoll;
-  blockAverage: BlocksAverage;
-  historicPolls: MonthlyAverage;
-}
-
-const PollsPageContainer: NextPage<Props> = ({ currentAverage, blockAverage, historicPolls }) => (
+const PollsPageContainer: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
+  currentAverage,
+  blockAverage,
+  historicPolls,
+}) => (
   <>
     <Head>
       <title>Opinionsundersökningar | Partiguiden</title>
@@ -44,7 +40,11 @@ const PollsPageContainer: NextPage<Props> = ({ currentAverage, blockAverage, his
   </>
 );
 
-export const getStaticProps: GetStaticProps = async () => {
+export const getStaticProps: GetStaticProps<{
+  currentAverage: AveragePoll;
+  blockAverage: BlocksAverage;
+  historicPolls: MonthlyAverage;
+}> = async () => {
   const today = moment();
   const twoMonthsAgo = moment().subtract(2, 'months');
   const fourYearsAgo = moment().subtract(4, 'years');

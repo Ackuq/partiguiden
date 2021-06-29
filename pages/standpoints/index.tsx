@@ -1,5 +1,5 @@
 import React from 'react';
-import { NextPage, GetStaticProps } from 'next';
+import { NextPage, GetStaticProps, InferGetStaticPropsType } from 'next';
 import Head from 'next/head';
 
 import { Note as NoteIcon } from '@material-ui/icons';
@@ -10,11 +10,9 @@ import StandpointsList from '../../src/containers/StandpointsList';
 import { getSubjects } from '../../src/lib/api';
 import { SubjectListEntry } from '../../src/types/subjects';
 
-interface Props {
-  subjects: Array<SubjectListEntry>;
-}
-
-const StandpointsListContainer: NextPage<Props> = ({ subjects }) => (
+const StandpointsListContainer: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
+  subjects,
+}) => (
   <>
     <Head>
       <title>Partiernas ståndpunkter | Partiguiden 2.0</title>
@@ -28,7 +26,7 @@ const StandpointsListContainer: NextPage<Props> = ({ subjects }) => (
   </>
 );
 
-export const getStaticProps: GetStaticProps = async () => {
+export const getStaticProps: GetStaticProps<{ subjects: Array<SubjectListEntry> }> = async () => {
   const subjects = await getSubjects();
 
   return { props: { subjects }, revalidate: 518400 };

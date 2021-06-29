@@ -1,5 +1,5 @@
 import React from 'react';
-import { NextPage, GetServerSideProps } from 'next';
+import { NextPage, GetServerSideProps, InferGetServerSidePropsType } from 'next';
 import Head from 'next/head';
 import { Container } from '@material-ui/core';
 
@@ -12,12 +12,10 @@ import * as ROUTES from '../../../src/lib/routes';
 import { useVote } from '../../../src/hooks/parliamentHooks';
 import LoadCircle from '../../../src/components/LoadCircle';
 
-interface Props {
-  proposition: number;
-  id: string;
-}
-
-const VoteContainer: NextPage<Props> = ({ proposition, id }) => {
+const VoteContainer: NextPage<InferGetServerSidePropsType<typeof getServerSideProps>> = ({
+  proposition,
+  id,
+}) => {
   const vote = useVote(id, proposition);
 
   return (
@@ -46,16 +44,16 @@ const VoteContainer: NextPage<Props> = ({ proposition, id }) => {
   );
 };
 
-const getBet = (bet: string | Array<string>) => {
-  if (Array.isArray(bet)) {
-    return parseInt(bet[0], 10);
+export const getServerSideProps: GetServerSideProps<
+  { proposition: number; id: string },
+  { id: string; bet: string }
+> = async ({ params }) => {
+  const id = params?.id;
+  const bet = params?.bet;
+  if (id === undefined || bet === undefined) {
+    return { notFound: true };
   }
-  return parseInt(bet, 10);
-};
-
-export const getServerSideProps: GetServerSideProps = async ({ query }) => {
-  const id = Array.isArray(query.id) ? query.id[0] : query.id || '';
-  const proposition = query.bet ? getBet(query.bet) : 0;
+  const proposition = parseInt(bet, 10);
 
   return { props: { proposition, id } };
 };

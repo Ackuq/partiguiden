@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { GetStaticPaths, GetStaticProps, NextPage } from 'next';
+import { GetStaticPaths, GetStaticProps, InferGetStaticPropsType, NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
 
@@ -13,12 +13,9 @@ import PageTitle from '../../src/components/PageTitle';
 import Party from '../../src/containers/Party';
 import { getParty } from '../../src/lib/proxy';
 import { PARTY_LOGOS } from '../../src/assets/logos';
+import { PartyAbbreviation } from '../../src/utils/parties';
 
-interface Props {
-  party: PartyData;
-}
-
-const PartyPage: NextPage<Props> = ({ party }) => {
+const PartyPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({ party }) => {
   const PartyLogo: React.FC = () => (
     <Image
       src={PARTY_LOGOS[party.abbrev.toUpperCase() as PartyData['abbrev']]}
@@ -49,12 +46,24 @@ const PartyPage: NextPage<Props> = ({ party }) => {
   );
 };
 
-export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const partyAbbrev = Array.isArray(params?.party) ? params?.party[0] || '' : params?.party || '';
+export const getStaticProps: GetStaticProps<
+  {
+    party: PartyData;
+  },
+  { party: string }
+> = async ({ params }) => {
+  const partyAbbrev = params?.party;
+
+  if (partyAbbrev === undefined) {
+    return { notFound: true };
+  }
 
   const party = await getParty(partyAbbrev);
 
-  return { props: { party: { ...party, abbrev: partyAbbrev } }, revalidate: 518400 };
+  return {
+    props: { party: { ...party, abbrev: partyAbbrev as PartyAbbreviation } },
+    revalidate: 518400,
+  };
 };
 
 export const getStaticPaths: GetStaticPaths = async () => {

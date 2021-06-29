@@ -5,10 +5,8 @@ import Image from 'next/image';
 import { Typography, Box } from '@material-ui/core';
 import { useTheme } from '@material-ui/core/styles';
 
-import Breadcrumbs from '../Breadcrumbs';
 import { Member } from '../../types/member';
 
-import * as ROUTES from '../../lib/routes';
 import { PARTY_LOGOS_LOW_RES } from '../../assets/logos';
 import { PartyAbbreviation } from '../../utils/parties';
 
@@ -31,19 +29,6 @@ const ProfilePicture: React.FC<Props> = ({ member }) => {
         justifyContent="center"
         boxShadow={2}
       >
-        <Box p={2} position="absolute" top={0} left={0}>
-          <Breadcrumbs
-            links={[
-              { label: 'Ledamöter', href: ROUTES.MEMBERS },
-              {
-                label: `${member.firstName} ${member.lastName}`,
-                href: ROUTES.MEMBER,
-                as: ROUTES.getMemberHref(member.id),
-              },
-            ]}
-          />
-        </Box>
-
         <Box
           style={{ background: `url(${member.pictureUrl}) 50% 25% no-repeat` }}
           width={192}

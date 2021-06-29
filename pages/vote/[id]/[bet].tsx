@@ -3,14 +3,13 @@ import { NextPage, GetServerSideProps, InferGetServerSidePropsType } from 'next'
 import Head from 'next/head';
 import { Container } from '@material-ui/core';
 
-import Breadcrumbs from '../../../src/components/Breadcrumbs';
-import SocialMediaShare from '../../../src/components/SocialMediaShare';
 import PageTitle from '../../../src/components/PageTitle';
 import Vote from '../../../src/containers/Vote';
 
 import * as ROUTES from '../../../src/lib/routes';
 import { useVote } from '../../../src/hooks/parliamentHooks';
 import LoadCircle from '../../../src/components/LoadCircle';
+import BreadcrumbsSocialMediaShare from '../../../src/components/BreadcrumbsSocialMediaShare';
 
 const VoteContainer: NextPage<InferGetServerSidePropsType<typeof getServerSideProps>> = ({
   proposition,
@@ -29,15 +28,15 @@ const VoteContainer: NextPage<InferGetServerSidePropsType<typeof getServerSidePr
 
       <PageTitle title={vote ? `${vote.title} förslagspunkt ${proposition}` : ''} variant="h4" />
       <Container>
-        <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-          <Breadcrumbs
-            links={[
+        <BreadcrumbsSocialMediaShare
+          breadcrumbsProps={{
+            links: [
               { href: ROUTES.VOTES, label: 'Voteringar' },
               { href: ROUTES.VOTE, as: ROUTES.getVoteHref(id, proposition), label: 'Votering' },
-            ]}
-          />
-          <SocialMediaShare title={`${id} förslagspunkt ${proposition}`} />
-        </div>
+            ],
+          }}
+          socialMediaShareProps={{ title: `${id} förslagspunkt ${proposition}` }}
+        />
         {vote ? <Vote vote={vote} /> : <LoadCircle />}
       </Container>
     </>

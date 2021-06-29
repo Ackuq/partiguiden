@@ -10,6 +10,7 @@ const SocialMediaWrapper = styled('div')({
   display: 'flex',
   marginBottom: '1rem',
   justifyContent: 'flex-end',
+  flexGrow: 1,
 });
 
 const IconWrapper = styled('div')({
@@ -44,5 +45,7 @@ const SocialMediaShare: React.FC<Props> = ({ title }) => {
     </SocialMediaWrapper>
   );
 };
+
+export type SocialMediaShareProps = Props;
 
 export default SocialMediaShare;

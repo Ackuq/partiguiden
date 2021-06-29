@@ -1,14 +1,14 @@
-import React from 'react';
 import { NextPage, GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from 'next';
 import Head from 'next/head';
+
 import { Container } from '@material-ui/core';
 
-import Breadcrumbs from '../../src/components/Breadcrumbs';
-import SocialMediaShare from '../../src/components/SocialMediaShare';
+import BreadcrumbsSocialMediaShare from '../../src/components/BreadcrumbsSocialMediaShare';
 import PageTitle from '../../src/components/PageTitle';
 import Standpoints from '../../src/containers/Standpoints';
 import { getSubject, getSubjects } from '../../src/lib/api';
 import { RelatedSubject, StandpointsMap, Subject } from '../../src/types/subjects';
+
 import * as ROUTES from '../../src/lib/routes';
 
 const StandPointContainer: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
@@ -27,15 +27,15 @@ const StandPointContainer: NextPage<InferGetStaticPropsType<typeof getStaticProp
     </Head>
     <PageTitle title={name} />
     <Container>
-      <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-        <Breadcrumbs
-          links={[
+      <BreadcrumbsSocialMediaShare
+        breadcrumbsProps={{
+          links: [
             { href: ROUTES.STANDPOINTS, label: 'Partiernas Ståndpunkter' },
             { href: ROUTES.STANDPOINT, as: ROUTES.getStandpointHref(id), label: name },
-          ]}
-        />
-        <SocialMediaShare title={name} />
-      </div>
+          ],
+        }}
+        socialMediaShareProps={{ title: name }}
+      />
       <Standpoints relatedSubjects={relatedSubjects} standpoints={standpoints} />
     </Container>
   </>

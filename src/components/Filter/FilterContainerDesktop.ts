@@ -4,13 +4,11 @@ import { styled, Theme } from '@material-ui/core/styles';
 const FilterContainerDesktop = styled(Box)(({ theme }: { theme: Theme }) => ({
   boxShadow: theme.shadows[1],
   position: 'sticky',
-  display: 'flex',
-  flexDirection: 'column',
-  maxHeight: 'calc(100vh - 68px)',
+  height: 'min-content',
+  maxHeight: 'calc(100vh - 110px)',
   backgroundColor:
     theme.palette.type === 'dark' ? theme.palette.background.paper : theme.palette.grey[50],
-  top: 94,
-  bottom: 10,
+  top: 102,
   overflowY: 'auto',
   overflowX: 'hidden',
   marginRight: 'auto',

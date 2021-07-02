@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 import { Container } from '@material-ui/core';
 
-import SocialMediaShare from '../../src/components/SocialMediaShare';
+import SocialMediaShare from '../../src/components/BreadcrumbsSocialMediaShare/SocialMediaShare';
 import { PartyData } from '../../src/types/party';
 import parties from '../../src/utils/getParties';
 import PageTitle from '../../src/components/PageTitle';

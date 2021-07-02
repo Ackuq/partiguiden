@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { Paper, Button, Slide, Typography } from '@material-ui/core';
 import { styled, Theme } from '@material-ui/core/styles';
 
-import { COOKIE_POLICY } from '../lib/routes';
+import { COOKIE_POLICY } from '../../lib/routes';
 
 const CookieBannerContainer = styled(Paper)(({ theme }: { theme: Theme }) => ({
   backgroundColor:

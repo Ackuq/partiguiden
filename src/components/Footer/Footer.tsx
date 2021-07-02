@@ -3,7 +3,7 @@ import React from 'react';
 import { Grid, Link, Typography } from '@material-ui/core';
 import { styled, Theme } from '@material-ui/core/styles';
 
-import { ResponsiveAd } from './Ad';
+import { ResponsiveAd } from '../Ad';
 
 const FooterContent = styled('footer')(({ theme }: { theme: Theme }) => ({
   padding: '1.5rem 0',

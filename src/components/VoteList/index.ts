@@ -1,3 +1,3 @@
-import VoteList from './VoteList';
+import dynamic from 'next/dynamic';
 
-export default VoteList;
+export default dynamic(() => import('./VoteList'));

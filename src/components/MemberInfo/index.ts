@@ -1,4 +1,4 @@
-import ProfilePicture from './ProfilePicture';
-import Information from './Information';
+import dynamic from 'next/dynamic';
 
-export { ProfilePicture, Information };
+export const Information = dynamic(() => import('./Information'));
+export const ProfilePicture = dynamic(() => import('./ProfilePicture'));

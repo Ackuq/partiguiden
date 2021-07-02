@@ -15,15 +15,15 @@ import {
   Tooltip,
 } from 'recharts';
 
-import PartySymbolTick from '../PartySymbolTick';
+import PartySymbolTick from '../../PartySymbolTick';
 
-import { AveragePoll, PollDetails } from '../../lib/polls';
+import { AveragePoll, PollDetails } from '../../../lib/polls';
 
-import { PartyAbbreviation } from '../../utils/parties';
-import { partiesMap } from '../../utils/getParties';
-import tooltipProps from '../../utils/tooltipProps';
+import { PartyAbbreviation } from '../../../utils/parties';
+import { partiesMap } from '../../../utils/getParties';
+import tooltipProps from '../../../utils/tooltipProps';
 
-import { DefaultTooltipContent } from '../../types/recharts.d';
+import { DefaultTooltipContent } from '../../../types/recharts.d';
 
 const ChartContainer = styled(ResponsiveContainer)({
   marginTop: '1rem',

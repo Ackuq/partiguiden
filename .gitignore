@@ -27,4 +27,5 @@ public/sitemap.xml
 # PWA worker files
 public/sw.js*
 workbox-*.js*
+worker-*.js*
 public/worker-development.js

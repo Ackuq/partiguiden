@@ -5,10 +5,10 @@ import { styled, useTheme } from '@material-ui/core/styles';
 
 import { PieChart, Pie, ResponsiveContainer, Cell, Tooltip } from 'recharts';
 
-import { AveragePoll, BlocksAverage, displayFormatter } from '../../lib/polls';
+import { AveragePoll, BlocksAverage, displayFormatter } from '../../../lib/polls';
 
-import { allBlocks, Blocks, partiesMap } from '../../utils/getParties';
-import toolTipProps from '../../utils/tooltipProps';
+import { allBlocks, Blocks, partiesMap } from '../../../utils/getParties';
+import toolTipProps from '../../../utils/tooltipProps';
 
 const PollCard = styled(Paper)({
   padding: '1rem 0.5rem',

@@ -5,9 +5,9 @@ import { useTheme } from '@material-ui/core/styles';
 
 import { ResponsiveContainer, BarChart, XAxis, YAxis, Bar, Legend, Tooltip } from 'recharts';
 
-import { VotingEntry } from '../../types/voting';
-import { voteColor } from '../../lib/voteColors';
-import tooltipProps from '../../utils/tooltipProps';
+import { VotingEntry } from '../../../types/voting';
+import { voteColor } from '../../../lib/voteColors';
+import tooltipProps from '../../../utils/tooltipProps';
 
 const animationDelay = 2;
 const animationDuration = 2;

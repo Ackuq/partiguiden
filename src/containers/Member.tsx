@@ -2,7 +2,6 @@ import React from 'react';
 
 import { Container } from '@material-ui/core';
 
-import SocialMediaShare from '../components/SocialMediaShare';
 import { ProfilePicture, Information } from '../components/MemberInfo';
 import LoadCircle from '../components/LoadCircle';
 

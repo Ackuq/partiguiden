@@ -63,27 +63,11 @@ const MemberList: React.FC<Props> = ({ members, filter }) => {
 
   return (
     <>
-      {membersInView.map((member) => {
-        const inParty = filter.parties.length
-          ? filter.parties.includes(member.party as PartyAbbreviation)
-          : true;
-        const inSearch = `${member.firstName} ${member.lastName}`
-          .toLowerCase()
-          .includes(filter.search.toLowerCase());
-
-        return (
-          <Grid
-            item
-            xs={12}
-            md={6}
-            xl={4}
-            key={member.id}
-            style={inParty && inSearch ? {} : { display: 'none' }}
-          >
-            <Member classes={classes} member={member} />
-          </Grid>
-        );
-      })}
+      {membersInView.map((member) => (
+        <Grid item xs={12} md={6} xl={4} key={member.id}>
+          <Member classes={classes} member={member} />
+        </Grid>
+      ))}
     </>
   );
 };

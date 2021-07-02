@@ -20,6 +20,7 @@
     "@material-ui/core": "^4.11.4",
     "@material-ui/icons": "^4.11.2",
     "@material-ui/lab": "^4.0.0-alpha.58",
+    "@next/bundle-analyzer": "^11.0.1",
     "@sentry/nextjs": "^6.8.0",
     "@sentry/webpack-plugin": "^1.15.1",
     "@zeit/next-source-maps": "^0.0.3",

@@ -15,8 +15,8 @@ import {
 } from 'recharts';
 
 import PartySymbolTick from '../../PartySymbolTick';
-import SectionButton from '../SectionButton';
-import RotatingArrow from '../RotatingArrow';
+import SectionButton from '../shared/SectionButton';
+import RotatingArrow from '../shared/RotatingArrow';
 import { Vote } from '../../../types/voting';
 import { PartyAbbreviation } from '../../../utils/parties';
 import { voteColor } from '../../../lib/voteColors';

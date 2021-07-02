@@ -1,3 +1,3 @@
-import Header from './Header';
+import dynamic from 'next/dynamic';
 
-export default Header;
+export default dynamic(() => import('./Header'));

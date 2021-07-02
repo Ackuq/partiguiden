@@ -1,5 +1,5 @@
-import MembersFilter from './FilterMembers';
-import Member from './Member';
-import MemberList from './MemberList';
+import dynamic from 'next/dynamic';
 
-export { MembersFilter, Member, MemberList };
+export const MembersFilter = dynamic(() => import('./FilterMembers'));
+export const Member = dynamic(() => import('./Member'));
+export const MemberList = dynamic(() => import('./MemberList'));

@@ -3,7 +3,7 @@ import React from 'react';
 import { Typography, Link } from '@material-ui/core';
 import { useTheme } from '@material-ui/core/styles';
 
-import { VoteAppendixItem } from '../../types/voting';
+import { VoteAppendixItem } from '../../../types/voting';
 
 interface Props {
   appendix: Array<VoteAppendixItem>;

@@ -5,7 +5,7 @@ import Head from 'next/head';
 import { Container } from '@material-ui/core';
 
 import PageTitle from '../../src/components/PageTitle';
-import SocialMediaShare from '../../src/components/SocialMediaShare';
+import SocialMediaShare from '../../src/components/BreadcrumbsSocialMediaShare/SocialMediaShare';
 import Document from '../../src/containers/Document';
 import { useDocument } from '../../src/hooks/parliamentHooks';
 import LoadCircle from '../../src/components/LoadCircle';

@@ -4,11 +4,11 @@ import Link from 'next/link';
 import { Typography, Collapse } from '@material-ui/core';
 import { useTheme } from '@material-ui/core/styles';
 
-import RotatingArrow from './RotatingArrow';
-import SectionButton from './SectionButton';
-import { Vote } from '../../types/voting';
+import RotatingArrow from '../shared/RotatingArrow';
+import SectionButton from '../shared/SectionButton';
+import { Vote } from '../../../types/voting';
 
-import * as ROUTES from '../../lib/routes';
+import * as ROUTES from '../../../lib/routes';
 
 interface Props {
   processedDocuments: Vote['processedDocuments'];

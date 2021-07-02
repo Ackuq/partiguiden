@@ -1,3 +1,3 @@
-import Typed from './Typed';
+import dynamic from 'next/dynamic';
 
-export default Typed;
+export default dynamic(() => import('./Typed'), { ssr: true });

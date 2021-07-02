@@ -1,3 +1,3 @@
-import Filter from './Filter';
+import dynamic from 'next/dynamic';
 
-export default Filter;
+export default dynamic(() => import('./Filter'));

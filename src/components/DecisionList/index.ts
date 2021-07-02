@@ -1,3 +1,3 @@
-import DecisionList from './DecisionList';
+import dynamic from 'next/dynamic';
 
-export default DecisionList;
+export default dynamic(() => import('./DecisionList'));

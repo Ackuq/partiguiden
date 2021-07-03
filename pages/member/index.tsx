@@ -7,8 +7,8 @@ import PersonIcon from '@material-ui/icons/Person';
 import PageTitle from '../../src/components/PageTitle';
 import Members from '../../src/containers/Members';
 
-import { getMembers } from '../../src/lib/proxy';
-import { Member } from '../../src/types/member';
+import { MemberList } from '../../src/types/member';
+import { membersController } from '../../src/api/controllers/members';
 
 const LedamoterContainer: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
   members,
@@ -27,9 +27,9 @@ const LedamoterContainer: NextPage<InferGetStaticPropsType<typeof getStaticProps
 );
 
 export const getStaticProps: GetStaticProps<{
-  members: Array<Member>;
+  members: MemberList;
 }> = async () => {
-  const members = await getMembers();
+  const members = await membersController();
 
   return { props: { members }, revalidate: 259200 };
 };

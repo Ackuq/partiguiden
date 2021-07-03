@@ -10,13 +10,15 @@ export type VotingEntry = Record<VoteDescription, string>;
 
 export type VotingDict = Record<string, VotingEntry>;
 
-export interface VoteListEntry {
-  title: string;
+export interface VoteResultsResponse {
   results: VotingResult;
+  subtitle: string;
+}
+export interface VoteListEntry extends VoteResultsResponse {
+  title: string;
   authority: string;
   documentId: string;
   proposition: number;
-  subtitle: string;
 }
 
 export interface ProcessedDocument {
@@ -31,6 +33,11 @@ export interface VoteAppendixItem {
   fil_url: string;
 }
 
+export interface VoteList {
+  pages: number;
+  votes: Array<VoteListEntry>;
+}
+
 export interface Vote {
   title: string;
   description: string;
@@ -41,3 +48,17 @@ export interface Vote {
   decision: string;
   voting: Record<string, Record<VoteDescription, string>>;
 }
+
+/* API Types */
+
+export type VotingRowEntry = { td: Array<string> };
+
+export type VotingRow = [
+  {
+    th: Array<string>;
+  },
+  {
+    td: { h4: string; p: string };
+  },
+  ...VotingRowEntry[]
+];

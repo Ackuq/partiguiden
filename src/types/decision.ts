@@ -8,3 +8,8 @@ export interface Decision {
   voteSearchTerm: string;
   votesExists: boolean;
 }
+
+export interface Decisions {
+  pages: number;
+  decisions: Array<Decision>;
+}

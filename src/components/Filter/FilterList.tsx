@@ -2,6 +2,20 @@ import React from 'react';
 
 import { Checkbox, List, ListItem, ListItemIcon, ListItemText } from '@material-ui/core';
 
+import { makeStyles } from '@material-ui/core/styles';
+
+const useStyles = makeStyles({
+  itemIcon: {
+    minWidth: '46px',
+  },
+  itemText: {
+    fontSize: '0.9rem',
+    marginRight: '1rem',
+    lineHeight: 1.5,
+    pointerEvents: 'none',
+  },
+});
+
 interface Props {
   list: Array<unknown>;
   updateList: (element: never) => void;
@@ -11,6 +25,8 @@ interface Props {
 }
 
 const FilterList: React.FC<Props> = ({ list, updateList, isChecked, getText, getKey }) => {
+  const classes = useStyles();
+
   const renderCheckBox = (el: never) => (
     <ListItem
       key={getKey(el)}
@@ -22,7 +38,7 @@ const FilterList: React.FC<Props> = ({ list, updateList, isChecked, getText, get
         updateList(el);
       }}
     >
-      <ListItemIcon style={{ minWidth: '46px' }}>
+      <ListItemIcon classes={{ root: classes.itemIcon }}>
         <Checkbox
           inputProps={{ id: `${getKey(el)}-input` }}
           color="primary"
@@ -30,10 +46,7 @@ const FilterList: React.FC<Props> = ({ list, updateList, isChecked, getText, get
           disableRipple
         />
       </ListItemIcon>
-      <ListItemText
-        disableTypography
-        style={{ fontSize: '0.9rem', marginRight: '1rem', lineHeight: 1.5 }}
-      >
+      <ListItemText disableTypography classes={{ root: classes.itemText }}>
         <label htmlFor={`${getKey(el)}-input`}>{getText(el)}</label>
       </ListItemText>
     </ListItem>

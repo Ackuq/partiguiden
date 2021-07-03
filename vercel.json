@@ -1,4 +1,17 @@
 {
-  "version": 2,
-  "headers": []
+  "headers": [
+    {
+      "source": "/api/(.*)",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "max-age=3600, public"
+        }
+      ]
+    }
+  ]
 }

@@ -14,3 +14,14 @@ export const partyAbbreviations = parties.map((party) => party.letter);
 export type PartyInfo = typeof parties[number];
 export type Party = typeof parties[number]['name'];
 export type PartyAbbreviation = typeof partyAbbreviations[number];
+
+export const partyNameMap: Record<Lowercase<PartyAbbreviation>, Party> = {
+  s: 'Socialdemokraterna',
+  m: 'Moderaterna',
+  sd: 'Sverigedemokraterna',
+  c: 'Centerpartiet',
+  v: 'Vänsterpartiet',
+  kd: 'Kristdemokraterna',
+  l: 'Liberalerna',
+  mp: 'Miljöpartiet',
+};

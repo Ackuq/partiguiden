@@ -4,11 +4,11 @@ import { Grid, Container } from '@material-ui/core';
 
 import { MembersFilter, MemberList } from '../components/MemberList';
 
-import { Member } from '../types/member';
+import { MemberList as MemberListType } from '../types/member';
 import { PartyAbbreviation } from '../utils/parties';
 
 interface Props {
-  members: Array<Member>;
+  members: MemberListType;
 }
 
 interface FilterState {

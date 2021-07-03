@@ -46,6 +46,8 @@ export interface Member {
   absence: number | null;
 }
 
-export interface Leader extends Member {
+export type MemberList = Omit<Member, 'absence'>[];
+
+export interface Leader extends Omit<Member, 'absence'> {
   role: string;
 }

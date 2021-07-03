@@ -11,9 +11,9 @@ import { PartyData } from '../../src/types/party';
 import parties from '../../src/utils/getParties';
 import PageTitle from '../../src/components/PageTitle';
 import Party from '../../src/containers/Party';
-import { getParty } from '../../src/lib/proxy';
 import { PARTY_LOGOS } from '../../src/assets/logos';
-import { PartyAbbreviation } from '../../src/utils/parties';
+import { PartyAbbreviation, partyAbbreviations } from '../../src/utils/parties';
+import { partyController } from '../../src/api/controllers/parties';
 
 const PartyPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({ party }) => {
   const PartyLogo: React.FC = () => (
@@ -54,11 +54,14 @@ export const getStaticProps: GetStaticProps<
 > = async ({ params }) => {
   const partyAbbrev = params?.party;
 
-  if (partyAbbrev === undefined) {
+  if (
+    partyAbbrev === undefined ||
+    !partyAbbreviations.includes(partyAbbrev.toLocaleUpperCase() as PartyAbbreviation)
+  ) {
     return { notFound: true };
   }
 
-  const party = await getParty(partyAbbrev);
+  const party = await partyController(partyAbbrev.toLowerCase() as Lowercase<PartyAbbreviation>);
 
   return {
     props: { party: { ...party, abbrev: partyAbbrev as PartyAbbreviation } },

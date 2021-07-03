@@ -2,14 +2,14 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import useStyles from './useStyles';
-import { Member as MemberType } from '../../types/member';
+import { MemberList } from '../../types/member';
 
 import * as ROUTES from '../../lib/routes';
 import { PARTY_LOGOS_LOW_RES } from '../../assets/logos';
 import { PartyAbbreviation } from '../../utils/parties';
 
 interface Props {
-  member: MemberType;
+  member: MemberList[number];
   classes: ReturnType<typeof useStyles>;
 }
 

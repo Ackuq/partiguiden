@@ -22,7 +22,7 @@ const Members: React.FC<Props> = ({ members }) => {
   return (
     <div style={{ display: 'flex' }}>
       <Container>
-        <Grid container spacing={3} justify="center">
+        <Grid container spacing={3} justifyContent="center">
           <MemberList members={members} filter={filter} />
         </Grid>
       </Container>

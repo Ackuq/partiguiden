@@ -46,7 +46,7 @@ const PartyStandpoints: React.FC<Props> = ({ standpoints, party }) => {
           />
         </>
       </ButtonBase>
-      <Collapse in={visible} classes={{ container: classes.collapse }} timeout="auto" unmountOnExit>
+      <Collapse in={visible} classes={{ wrapper: classes.collapse }} timeout="auto" unmountOnExit>
         <Grid container spacing={3} style={{ marginTop: '0.5rem' }}>
           {standpoints.map((standpoint) => (
             <PartyStandpoint

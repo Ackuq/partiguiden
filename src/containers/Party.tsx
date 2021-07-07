@@ -140,7 +140,7 @@ const Party: React.FC<Props> = ({ party }) => {
       <Typography gutterBottom variant="h4" align="center">
         Ledning
       </Typography>
-      <Grid container spacing={2} justify="center">
+      <Grid container spacing={2} justifyContent="center">
         {party.leaders.map((leader) => (
           <Leader key={leader.sourceId} {...leader} />
         ))}

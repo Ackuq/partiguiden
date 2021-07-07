@@ -28,7 +28,7 @@ const Information: React.FC<Props> = ({ id, informationRecords, absence }) => {
   const [documentCount, setDocumentCount] = useState(0);
 
   return (
-    <Grid container spacing={3} justify="center">
+    <Grid container spacing={3} justifyContent="center">
       {absence && (
         <Grid item xs={6}>
           <Paper style={{ padding: '0.5rem' }}>

@@ -18,7 +18,7 @@ const Footer: React.FC = () => (
   <>
     <ResponsiveAd />
     <FooterContent>
-      <Grid direction="column" justify="center" container>
+      <Grid direction="column" justifyContent="center" container>
         <Grid item>
           <Typography align="center" color="inherit" variant="subtitle1" component="span">
             © Axel Pettersson 2021

@@ -19,7 +19,7 @@
   "dependencies": {
     "@material-ui/core": "^4.12.1",
     "@material-ui/icons": "^4.11.2",
-    "@material-ui/lab": "^4.0.0-alpha.59",
+    "@material-ui/lab": "^4.0.0-alpha.60",
     "@next/bundle-analyzer": "^11.0.1",
     "@sentry/nextjs": "^6.8.0",
     "@sentry/webpack-plugin": "^1.16.0",

@@ -1,19 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
 
 import { Grid, Theme } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 
-import { SubjectListEntry } from '../types/subjects';
+import { SubjectList } from '../types/subjects';
 
 import * as ROUTES from '../lib/routes';
+import Search from '../components/Search/Search';
 
 const useStyles = makeStyles((theme: Theme) => ({
-  subjectList: {
+  container: {
     marginLeft: 'auto',
     marginRight: 'auto',
-    marginTop: '-1rem',
-    marginBottom: '1rem',
     [theme.breakpoints.up('md')]: {
       maxWidth: '90%',
     },
@@ -23,6 +22,15 @@ const useStyles = makeStyles((theme: Theme) => ({
     [theme.breakpoints.up('xl')]: {
       maxWidth: '60%',
     },
+  },
+
+  searchContainer: {
+    width: '100%',
+    marginTop: '-1rem',
+  },
+
+  subjectsContainer: {
+    marginBottom: '1rem',
   },
 
   transition: {
@@ -86,24 +94,32 @@ const useStyles = makeStyles((theme: Theme) => ({
 }));
 
 interface Props {
-  subjects: Array<SubjectListEntry>;
+  subjects: SubjectList;
 }
 
-const PartiernasStandpunkter: React.FC<Props> = ({ subjects }) => {
+const Subjects: React.FC<Props> = ({ subjects }) => {
   const classes = useStyles();
+
+  const [shownSubjects, setShownSubjects] = useState(subjects);
+
   return (
-    <Grid container classes={{ container: classes.subjectList }}>
-      {subjects.map((subject) => (
-        <Grid item xs={12} md={6} className={classes.item} key={subject.id}>
-          <Link href={ROUTES.STANDPOINT} as={ROUTES.getStandpointHref(subject.id)} passHref>
-            <a className={classes.button}>
-              <span className={classes.transition}>{subject.name}</span>
-            </a>
-          </Link>
-        </Grid>
-      ))}
-    </Grid>
+    <>
+      <div className={`${classes.searchContainer} ${classes.container}`}>
+        <Search setSearchResult={setShownSubjects} />
+      </div>
+      <Grid container classes={{ container: `${classes.container} ${classes.subjectsContainer}` }}>
+        {shownSubjects.map((subject) => (
+          <Grid item xs={12} md={6} className={classes.item} key={subject.id}>
+            <Link href={ROUTES.STANDPOINT} as={ROUTES.getStandpointHref(subject.id)} passHref>
+              <a className={classes.button}>
+                <span className={classes.transition}>{subject.name}</span>
+              </a>
+            </Link>
+          </Grid>
+        ))}
+      </Grid>
+    </>
   );
 };
 
-export default PartiernasStandpunkter;
+export default Subjects;

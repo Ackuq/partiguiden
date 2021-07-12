@@ -6,9 +6,9 @@ import NoteIcon from '@material-ui/icons/Note';
 
 import PageTitle from '../../src/components/PageTitle';
 
-import StandpointsList from '../../src/containers/StandpointsList';
+import Subjects from '../../src/containers/Subjects';
 import { getSubjects } from '../../src/lib/api';
-import { SubjectListEntry } from '../../src/types/subjects';
+import { SubjectList } from '../../src/types/subjects';
 
 const StandpointsListContainer: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
   subjects,
@@ -22,11 +22,11 @@ const StandpointsListContainer: NextPage<InferGetStaticPropsType<typeof getStati
       />
     </Head>
     <PageTitle title="Partiernas ståndpunkter" Icon={NoteIcon} />
-    <StandpointsList subjects={subjects} />
+    <Subjects subjects={subjects} />
   </>
 );
 
-export const getStaticProps: GetStaticProps<{ subjects: Array<SubjectListEntry> }> = async () => {
+export const getStaticProps: GetStaticProps<{ subjects: SubjectList }> = async () => {
   const subjects = await getSubjects();
 
   return { props: { subjects }, revalidate: 518400 };

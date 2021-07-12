@@ -24,11 +24,16 @@ const Search: React.FC<Props> = ({ setSearchResult }) => {
   const [searchText, setSearchText] = useState<string>();
 
   useEffect(() => {
+    const controller = new AbortController();
     if (searchText !== undefined) {
-      searchSubjects(searchText).then((result) => {
+      const { signal } = controller;
+      searchSubjects(searchText, signal).then((result) => {
         setSearchResult(result);
       });
     }
+    return () => {
+      controller.abort();
+    };
   }, [searchText, setSearchResult]);
 
   const onTextChange: TextFieldProps['onChange'] = (event) => {

@@ -49,22 +49,6 @@ const DropDown: React.FC<DropDownProps> = ({ title, href, subPages, router, ...r
   );
 };
 
-interface CustomTabProps {
-  href: string;
-  title: string;
-}
-
-const CustomTabInner: React.ForwardRefRenderFunction<HTMLAnchorElement, CustomTabProps> = (
-  { href, title, ...rest },
-  ref
-) => (
-  <Link href={href} passHref>
-    <Tab ref={ref} href={href} label={title} {...rest} />
-  </Link>
-);
-
-const CustomTab = React.forwardRef<HTMLAnchorElement, CustomTabProps>(CustomTabInner);
-
 const NavLinks: React.FC = () => {
   const router = useRouter();
   const theme = useTheme();
@@ -89,7 +73,9 @@ const NavLinks: React.FC = () => {
         subPages ? (
           <DropDown key={href} title={title} href={href} subPages={subPages} router={router} />
         ) : (
-          <CustomTab key={href} href={href} title={title} />
+          <Link key={href} href={href} passHref>
+            <Tab label={title} />
+          </Link>
         )
       )}
     </Tabs>

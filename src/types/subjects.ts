@@ -16,6 +16,8 @@ export interface SubjectListEntry {
   related_subjects: Array<number>;
 }
 
+export type SubjectList = Array<SubjectListEntry>;
+
 export type RelatedSubject = SubjectListEntry;
 
 export interface Subject {

@@ -21,7 +21,7 @@
     "@material-ui/icons": "^4.11.2",
     "@material-ui/lab": "^4.0.0-alpha.60",
     "@next/bundle-analyzer": "^11.0.1",
-    "@sentry/nextjs": "^6.8.0",
+    "@sentry/nextjs": "^6.9.0",
     "@sentry/webpack-plugin": "^1.16.0",
     "@zeit/next-source-maps": "^0.0.3",
     "isomorphic-unfetch": "^3.1.0",

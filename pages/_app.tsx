@@ -1,14 +1,14 @@
 import { useEffect, useMemo, useState } from 'react';
 
 import { AppProps } from 'next/app';
+import Head from 'next/head';
+import { useRouter } from 'next/router';
 
 import { useMediaQuery, CssBaseline } from '@material-ui/core';
 import { ThemeProvider } from '@material-ui/core/styles';
 import { CacheProvider, css, ThemeProvider as EmotionThemeProvider } from '@emotion/react';
 
-import Head from 'next/head';
-import { useRouter } from 'next/router';
-
+import createCache, { EmotionCache } from '@emotion/cache';
 import Footer from '../src/components/Footer';
 import Header from '../src/components/Header';
 import ToTopButton from '../src/components/ToTopButton';
@@ -16,9 +16,9 @@ import CookieBanner from '../src/components/CookieBanner';
 
 import getTheme from '../src/lib/theme';
 import * as gtag from '../src/utils/gtag';
-import getCache from '../src/lib/getCache';
 
-const cache = getCache();
+const browserCache = createCache({ key: 'css' });
+browserCache.compat = true;
 
 const DARK_MODE_KEY = 'prefersDarkMode';
 
@@ -38,7 +38,7 @@ const setStoredDarkModeValue = (value: boolean) => {
   localStorage.setItem(DARK_MODE_KEY, value.toString());
 };
 
-const App: React.FC<AppProps> = ({ Component, pageProps }) => {
+function MyApp({ Component, pageProps, cache }: AppProps & { cache: EmotionCache }): JSX.Element {
   const router = useRouter();
   const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
   const [darkModeState, setDarkModeState] = useState(prefersDarkMode);
@@ -63,7 +63,7 @@ const App: React.FC<AppProps> = ({ Component, pageProps }) => {
   }, [router.events]);
 
   return (
-    <CacheProvider value={cache}>
+    <CacheProvider value={cache ?? browserCache}>
       <ThemeProvider theme={theme}>
         <EmotionThemeProvider theme={theme}>
           <Head>
@@ -96,6 +96,6 @@ const App: React.FC<AppProps> = ({ Component, pageProps }) => {
       </ThemeProvider>
     </CacheProvider>
   );
-};
+}
 
-export default App;
+export default MyApp;

@@ -1,9 +1,17 @@
 import React from 'react';
-import Document, { Head, Html, Main, NextScript } from 'next/document';
+import Document, { Html, Head, Main, NextScript } from 'next/document';
 
-import { ServerStyleSheets } from '@material-ui/core/styles';
+import createCache, { EmotionCache } from '@emotion/cache';
+
+import createEmotionServer from '@emotion/server/create-instance';
 
 import { GA_TRACKING_ID } from '../src/utils/gtag';
+
+const getCache = (): EmotionCache => {
+  const cache = createCache({ key: 'css', prepend: true });
+  cache.compat = true;
+  return cache;
+};
 
 class MyDocument extends Document {
   render(): JSX.Element {
@@ -74,6 +82,8 @@ class MyDocument extends Document {
   }
 }
 
+// `getInitialProps` belongs to `_document` (instead of `_app`),
+// it's compatible with static-site generation (SSG).
 MyDocument.getInitialProps = async (ctx) => {
   // Resolution order
   //
@@ -97,21 +107,39 @@ MyDocument.getInitialProps = async (ctx) => {
   // 3. app.render
   // 4. page.render
 
-  // Render app and page and get the context of the page with collected side effects.
-  const sheets = new ServerStyleSheets();
   const originalRenderPage = ctx.renderPage;
+
+  const cache = getCache();
+  const { extractCriticalToChunks } = createEmotionServer(cache);
 
   ctx.renderPage = () =>
     originalRenderPage({
-      enhanceApp: (App) => (props) => sheets.collect(<App {...props} />),
+      // Take precedence over the CacheProvider in our custom _app.js
+
+      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+      // @ts-ignore
+      // eslint-disable-next-line react/display-name
+      enhanceApp: (App) => (props) => <App {...props} cache={cache} />,
     });
 
   const initialProps = await Document.getInitialProps(ctx);
+  const emotionStyles = extractCriticalToChunks(initialProps.html);
+
+  const emotionStyleTags = emotionStyles.styles.map(
+    (style: { key: React.Key | null | undefined; ids: string[]; css: string }) => (
+      <style
+        data-emotion={`${style.key} ${style.ids.join(' ')}`}
+        key={style.key}
+        // eslint-disable-next-line react/no-danger
+        dangerouslySetInnerHTML={{ __html: style.css }}
+      />
+    )
+  );
 
   return {
     ...initialProps,
     // Styles fragment is rendered after the app and page rendering finish.
-    styles: [...React.Children.toArray(initialProps.styles), sheets.getStyleElement()],
+    styles: [...React.Children.toArray(initialProps.styles), ...emotionStyleTags],
   };
 };
 

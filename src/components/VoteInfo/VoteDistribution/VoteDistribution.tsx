@@ -1,7 +1,8 @@
 import React, { useMemo, useState } from 'react';
 
 import { CircularProgress, Typography, Collapse } from '@material-ui/core';
-import { styled, useTheme } from '@material-ui/core/styles';
+import { useTheme } from '@material-ui/core/styles';
+import styled from '@emotion/styled';
 
 import {
   BarChart,
@@ -22,11 +23,11 @@ import { PartyAbbreviation } from '../../../utils/parties';
 import { voteColor } from '../../../lib/voteColors';
 import tooltipProps from '../../../utils/tooltipProps';
 
-const ChartContainer = styled(ResponsiveContainer)({
-  width: 'calc(100% + 20px) !important',
-  marginTop: '1rem',
-  marginLeft: '-20px',
-});
+const ChartContainer = styled(ResponsiveContainer)`
+  width: calc(100% + 20px) !important;
+  margin-top: 1rem;
+  margin-left: -20px;
+`;
 
 interface Result {
   name: string;
@@ -63,7 +64,7 @@ const VoteDistribution: React.FC<Props> = ({ voting }) => {
   const [visible, setVisible] = useState(false);
   const theme = useTheme();
 
-  const colors = useMemo(() => voteColor[theme.palette.type], [theme.palette.type]);
+  const colors = useMemo(() => voteColor[theme.palette.mode], [theme.palette.mode]);
 
   const data = createData(voting);
 
@@ -81,7 +82,7 @@ const VoteDistribution: React.FC<Props> = ({ voting }) => {
         <Typography variant="h5" color="inherit" component="span">
           Röstfördelning
         </Typography>
-        <RotatingArrow style={visible ? { transform: 'rotate(180deg)' } : undefined} />
+        <RotatingArrow active={visible.toString() as 'true' | 'false'} />
       </SectionButton>
       <Collapse in={visible}>
         <ChartContainer height={500}>

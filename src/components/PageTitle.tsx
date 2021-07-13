@@ -1,18 +1,18 @@
 import React from 'react';
 
 import { Typography, TypographyProps, Paper } from '@material-ui/core';
-import { styled, Theme } from '@material-ui/core/styles';
+import styled from '@emotion/styled';
 
-const PageTitleContainer = styled(Paper)(({ theme }: { theme: Theme }) => ({
-  zIndex: 99,
-  backgroundColor:
-    theme.palette.type === 'dark' ? theme.palette.background.paper : theme.palette.primary.light,
-  textAlign: 'center',
-  padding: '1.5rem 0.25rem',
-  marginBottom: '1rem',
-  color: '#fff',
-  minHeight: '5rem',
-}));
+const PageTitleContainer = styled(Paper)`
+  z-index: 99;
+  background-color: ${({ theme }) =>
+    theme.palette.mode === 'dark' ? theme.palette.background.paper : theme.palette.primary.light};
+  text-align: center;
+  padding: 1.5rem 0.25rem;
+  margin-bottom: 1rem;
+  color: #fff;
+  min-height: 5rem;
+`;
 
 interface Props extends TypographyProps {
   title: string;

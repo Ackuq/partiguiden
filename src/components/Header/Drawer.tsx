@@ -13,20 +13,13 @@ import {
   ListItemIcon,
   SvgIcon,
 } from '@material-ui/core';
-import { Theme, makeStyles } from '@material-ui/core/styles';
 
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import ExpandLessIcon from '@material-ui/icons/ExpandLess';
 import CloseIcon from '@material-ui/icons/Close';
 
+import styled from '@emotion/styled';
 import pages from './pages';
-
-interface Props {
-  isOpen: boolean;
-  handleClose: () => void;
-  handleOpen: () => void;
-  appBarHeight: number;
-}
 
 interface ListItemProps {
   title: string;
@@ -51,19 +44,23 @@ const CustomListItem: React.FC<ListItemProps> = ({ title, href, as, Icon, classN
   </Link>
 );
 
-interface DropDownProps extends ListItemProps {
-  subPages: Array<{ title: string; id: string; Icon: typeof SvgIcon | (() => JSX.Element) }>;
-}
+const DropDownListItem = styled(CustomListItem)`
+  padding-left: ${({ theme }) => theme.spacing(4)};
+`;
 
-const useStyles = makeStyles((theme: Theme) => ({
+/* const useStyles = makeStyles((theme: Theme) => ({
   nested: {
     paddingLeft: theme.spacing(4),
   },
 }));
+ */
+
+interface DropDownProps extends ListItemProps {
+  subPages: Array<{ title: string; id: string; Icon: typeof SvgIcon | (() => JSX.Element) }>;
+}
 
 const DropDown: React.FC<DropDownProps> = ({ title, href, subPages, Icon }) => {
   const [open, setOpen] = useState(false);
-  const classes = useStyles();
 
   const urlPrefix = href.replace(/\s*\[.*?\]\s*/g, '');
 
@@ -85,13 +82,13 @@ const DropDown: React.FC<DropDownProps> = ({ title, href, subPages, Icon }) => {
       <Collapse in={open}>
         <List component="div">
           {subPages.map((page) => (
-            <CustomListItem
+            <DropDownListItem
               key={page.id}
               title={page.title}
               Icon={page.Icon}
               href={href}
               as={`${urlPrefix}${page.id}`}
-              className={classes.nested}
+              // className={classes.nested}
             />
           ))}
         </List>
@@ -99,6 +96,13 @@ const DropDown: React.FC<DropDownProps> = ({ title, href, subPages, Icon }) => {
     </>
   );
 };
+
+interface Props {
+  isOpen: boolean;
+  handleClose: () => void;
+  handleOpen: () => void;
+  appBarHeight: number;
+}
 
 const Drawer: React.FC<Props> = ({ isOpen, handleClose, handleOpen, appBarHeight }) => {
   const router = useRouter();

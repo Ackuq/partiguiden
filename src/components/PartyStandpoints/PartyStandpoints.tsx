@@ -1,14 +1,32 @@
 import React, { useState } from 'react';
 
 import { Typography, Collapse, ButtonBase, Grid } from '@material-ui/core';
+import styled from '@emotion/styled';
 
 import ArrowDownRounded from '@material-ui/icons/KeyboardArrowDownRounded';
 
 import PartyStandpoint from './PartyStandpoint';
-import useStyles from './useStyles';
 
 import { PartyInfo } from '../../utils/parties';
 import { Standpoint } from '../../types/subjects';
+
+const PartyContainer = styled.div`
+  margin-bottom: 1.5rem;
+`;
+
+const PartyTitle = styled(ButtonBase)<{ partyColor: string }>`
+  justify-content: space-between;
+  width: 100%;
+  padding: 0.5rem;
+  border-bottom: ${({ partyColor }) => `2px solid ${partyColor}`};
+`;
+
+const Arrow = styled(ArrowDownRounded)<{ visible: boolean; partyColor: string }>`
+  transition: transform 0.25s ease-in-out;
+  font-size: 2rem;
+  color: ${({ partyColor }) => partyColor};
+  transform: rotate(${({ visible }) => (visible ? '180deg' : '0')});
+`;
 
 interface Props {
   standpoints: Array<Standpoint>;
@@ -16,7 +34,6 @@ interface Props {
 }
 
 const PartyStandpoints: React.FC<Props> = ({ standpoints, party }) => {
-  const classes = useStyles();
   const [visible, setVisible] = useState(false);
   const partyColor = party.color || 'red';
 
@@ -25,13 +42,12 @@ const PartyStandpoints: React.FC<Props> = ({ standpoints, party }) => {
   };
 
   return (
-    <div key={party.name} id={party.name} className={classes.partyContainer}>
-      <ButtonBase
+    <PartyContainer key={party.name} id={party.name}>
+      <PartyTitle
         onClick={handleClick}
         aria-expanded={visible}
         aria-label="Show more"
-        classes={{ root: classes.partyTitle }}
-        style={{ borderBottom: `2px solid ${partyColor}` }}
+        partyColor={partyColor}
       >
         <>
           <Typography
@@ -40,13 +56,18 @@ const PartyStandpoints: React.FC<Props> = ({ standpoints, party }) => {
           >
             {party.name}
           </Typography>
-          <ArrowDownRounded
-            style={{ color: partyColor }}
-            classes={{ root: `${classes.arrow} ${visible ? classes.shown : ''}` }}
-          />
+          <Arrow partyColor={partyColor} visible={visible} />
         </>
-      </ButtonBase>
-      <Collapse in={visible} classes={{ wrapper: classes.collapse }} timeout="auto" unmountOnExit>
+      </PartyTitle>
+      <Collapse
+        in={visible}
+        sx={{
+          paddingLeft: '0.5rem',
+          paddingRight: '0.5rem',
+        }}
+        timeout="auto"
+        unmountOnExit
+      >
         <Grid container spacing={3} style={{ marginTop: '0.5rem' }}>
           {standpoints.map((standpoint) => (
             <PartyStandpoint
@@ -57,7 +78,7 @@ const PartyStandpoints: React.FC<Props> = ({ standpoints, party }) => {
           ))}
         </Grid>
       </Collapse>
-    </div>
+    </PartyContainer>
   );
 };
 

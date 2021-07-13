@@ -24,7 +24,7 @@ const ProcessedDocuments: React.FC<Props> = ({ processedDocuments }) => {
         <Typography variant="h5" color="inherit">
           Behandlade dokument
         </Typography>
-        <RotatingArrow style={visible ? { transform: 'rotate(180deg)' } : undefined} />
+        <RotatingArrow active={visible.toString() as 'true' | 'false'} />
       </SectionButton>
       <Collapse in={visible}>
         <div style={{ marginTop: '1.25rem' }}>
@@ -34,7 +34,7 @@ const ProcessedDocuments: React.FC<Props> = ({ processedDocuments }) => {
                 <Typography
                   component="a"
                   variant="body1"
-                  color={theme.palette.type === 'dark' ? 'secondary' : 'primary'}
+                  color={theme.palette.mode === 'dark' ? 'secondary' : 'primary'}
                 >
                   [{index}] {document.label}
                 </Typography>

@@ -1,7 +1,8 @@
 import React from 'react';
 
 import { Paper, Typography, useMediaQuery } from '@material-ui/core';
-import { styled, useTheme } from '@material-ui/core/styles';
+import { useTheme } from '@material-ui/core/styles';
+import styled from '@emotion/styled';
 
 import {
   Bar,
@@ -25,14 +26,14 @@ import tooltipProps from '../../../utils/tooltipProps';
 
 import { DefaultTooltipContent } from '../../../types/recharts.d';
 
-const ChartContainer = styled(ResponsiveContainer)({
-  marginTop: '1rem',
-  marginLeft: '-20px',
-});
+const ChartContainer = styled(ResponsiveContainer)`
+  margin-top: 1rem;
+  margin-left: -20px;
+`;
 
-const PollCard = styled(Paper)({
-  padding: '1rem 0.5rem',
-});
+const PollCard = styled(Paper)`
+  padding: 1rem 0.5rem;
+`;
 
 interface BarrierLabelProps {
   offset?: number;

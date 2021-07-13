@@ -2,8 +2,8 @@ import React from 'react';
 import Link from 'next/link';
 
 import { Card, CardContent, CardHeader, Typography, ButtonBase } from '@material-ui/core';
-import { darken, useTheme } from '@material-ui/core/styles';
-import useStyles from './useStyles';
+import { darken } from '@material-ui/core/styles';
+import styled from '@emotion/styled';
 
 import VoteResult from './VoteResult';
 
@@ -12,40 +12,46 @@ import * as ROUTES from '../../lib/routes';
 
 import { VoteListEntry } from '../../types/voting';
 
+const CustomCardHeader = styled(CardHeader)<{ background: string }>`
+  width: 100%;
+  text-align: left;
+  padding: 0.25rem 1rem;
+  background-color: ${({ theme, background }) =>
+    theme.palette.mode === 'dark' ? darken(background, 0.6) : background};
+`;
+
+const Title = styled(Typography)`
+  font-size: 1.125rem;
+  line-height: 1.3;
+  color: ${({ theme }) =>
+    theme.palette.mode === 'dark' ? theme.palette.text.primary : theme.palette.primary.dark};
+`;
+
+const Subtitle = styled(Typography)`
+  font-size: 1rem;
+  line-height: 1.25;
+`;
+
 interface Props {
   vote: VoteListEntry;
-  classes: ReturnType<typeof useStyles>;
 }
 
-const Vote: React.FC<Props> = ({ vote, classes }) => {
-  const theme = useTheme();
+const Vote: React.FC<Props> = ({ vote }) => {
   const authority = lookupAuthority(vote.authority);
 
   return (
     <Card elevation={1} style={{ flex: 1 }}>
       <Link href={ROUTES.VOTE} as={ROUTES.getVoteHref(vote.documentId, vote.proposition)} passHref>
         <ButtonBase style={{ display: 'block' }} component="a">
-          <CardHeader
-            title={authority.desc}
-            style={{
-              background:
-                theme.palette.type === 'dark' ? darken(authority.color, 0.6) : authority.color,
-            }}
-            classes={{
-              title: classes.headerTitle,
-              root: classes.headerRoot,
-            }}
-          />
+          <CustomCardHeader title={authority.desc} background={authority.color} />
           <CardContent>
-            <Typography variant="h3" align="left" gutterBottom classes={{ h3: classes.title }}>
+            <Title align="left" gutterBottom>
               {vote.title}
-            </Typography>
-            <Typography variant="h6" align="left" classes={{ h6: classes.subtitle }}>
-              {vote.subtitle}
-            </Typography>
+            </Title>
+            <Subtitle align="left">{vote.subtitle}</Subtitle>
           </CardContent>
 
-          <VoteResult votes={vote.results} classes={classes} />
+          <VoteResult votes={vote.results} />
         </ButtonBase>
       </Link>
     </Card>

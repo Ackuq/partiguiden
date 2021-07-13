@@ -1,6 +1,6 @@
 import React from 'react';
 import { Divider, Link as MUILink, Typography } from '@material-ui/core';
-import { styled } from '@material-ui/core/styles';
+import styled from '@emotion/styled';
 
 import Link from 'next/link';
 import PartyStandpoints from '../components/PartyStandpoints';
@@ -9,10 +9,10 @@ import { RelatedSubject, StandpointsMap } from '../types/subjects';
 import { partiesMap } from '../utils/getParties';
 import { getStandpointHref, STANDPOINT } from '../lib/routes';
 
-const ContentDivider = styled(Divider)({
-  marginTop: '5rem',
-  marginBottom: '1rem',
-});
+const ContentDivider = styled(Divider)`
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+`;
 
 interface Props {
   standpoints: StandpointsMap;

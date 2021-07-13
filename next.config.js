@@ -32,7 +32,6 @@ const {
 const moduleExports = withPWA(
   withBundleAnalyzer(
     withSourceMaps({
-      target: 'serverless',
       pwa: {
         dest: 'public',
         runtimeCaching,

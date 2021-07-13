@@ -1,24 +1,23 @@
-import React from 'react';
 import { GetStaticProps, InferGetStaticPropsType, NextPage } from 'next';
 import Head from 'next/head';
 
 import { Container, Paper, Typography } from '@material-ui/core';
-import { styled, Theme } from '@material-ui/core/styles';
+import styled from '@emotion/styled';
 
 import Typed from '../src/components/Typed';
 import FrontPage from '../src/containers/FrontPage';
 import { getPopular } from '../src/lib/api';
 import { SubjectListEntry } from '../src/types/subjects';
 
-const PageTitleContainer = styled(Paper)(({ theme }: { theme: Theme }) => ({
-  backgroundColor:
-    theme.palette.type === 'dark' ? theme.palette.background.paper : theme.palette.primary.light,
-  textAlign: 'center',
-  padding: '1.5rem 0.25rem',
-  marginBottom: '1rem',
-  color: '#fff',
-  minHeight: '5rem',
-}));
+const PageTitleContainer = styled(Paper)`
+  background-color: ${({ theme }) =>
+    theme.palette.mode === 'dark' ? theme.palette.background.paper : theme.palette.primary.light};
+  text-align: center;
+  padding: 1.5rem 0.25rem;
+  margin-bottom: 1rem;
+  color: #fff;
+  min-height: 5rem;
+`;
 
 const FrontPageContainer: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
   popular,

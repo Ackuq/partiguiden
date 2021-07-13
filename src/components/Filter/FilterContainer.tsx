@@ -1,28 +1,33 @@
 import React, { useState } from 'react';
 
 import { Fab, SwipeableDrawer, Hidden, IconButton } from '@material-ui/core';
-import { makeStyles, darken } from '@material-ui/core/styles';
+import { darken } from '@material-ui/core/styles';
+import styled from '@emotion/styled';
 
 import FilterIcon from '@material-ui/icons/Tune';
 import CloseIcon from '@material-ui/icons/CloseRounded';
 
 import FilterContainerDesktop from './FilterContainerDesktop';
 
-const useStyles = makeStyles((theme) => ({
-  fab: {
-    position: 'fixed',
-    bottom: '1rem',
-    right: '5%',
-    color: theme.palette.type === 'dark' ? 'white' : 'black',
-    backgroundColor: theme.palette.background.paper,
-    '&:hover': {
-      backgroundColor: darken(theme.palette.background.paper, 0.25),
-    },
-  },
-}));
+const CustomFab = styled(Fab)(
+  ({ theme }) => `
+    position: fixed;
+    bottom: 1rem;
+    right: 5%;
+    color: ${theme.palette.mode === 'dark' ? 'white' : 'black'};
+    background-color: ${theme.palette.background.paper};
+    :hover {
+      background-color: ${darken(theme.palette.background.paper, 0.25)};
+    }
+`
+);
+
+const IconButtonContainer = styled.div`
+  display: flex;
+  justify-content: flex-end;
+`;
 
 const Filter: React.FC<{ children: React.ReactChild | React.ReactChild[] }> = ({ children }) => {
-  const classes = useStyles();
   const [mobileOpen, setMobileOpen] = useState(false);
 
   const toggleFilterScreen = () => setMobileOpen((prevState) => !prevState);
@@ -30,9 +35,9 @@ const Filter: React.FC<{ children: React.ReactChild | React.ReactChild[] }> = ({
   return (
     <>
       <Hidden smUp>
-        <Fab classes={{ root: classes.fab }} onClick={toggleFilterScreen}>
+        <CustomFab onClick={toggleFilterScreen}>
           <FilterIcon color="inherit" fontSize="large" />
-        </Fab>
+        </CustomFab>
 
         <SwipeableDrawer
           variant="temporary"
@@ -44,15 +49,15 @@ const Filter: React.FC<{ children: React.ReactChild | React.ReactChild[] }> = ({
             keepMounted: true, // Better open performance on mobile.
           }}
         >
-          <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
+          <IconButtonContainer>
             <IconButton aria-label="Close" onClick={toggleFilterScreen}>
               <CloseIcon />
             </IconButton>
-          </div>
+          </IconButtonContainer>
           {children}
         </SwipeableDrawer>
       </Hidden>
-      <Hidden xsDown>
+      <Hidden smDown>
         <FilterContainerDesktop>{children}</FilterContainerDesktop>
       </Hidden>
     </>

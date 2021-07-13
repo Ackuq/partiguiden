@@ -2,28 +2,28 @@ import React, { useEffect, useMemo, useState } from 'react';
 import { NextRouter, useRouter } from 'next/router';
 import Link from 'next/link';
 
-import { Menu, MenuItem, Tabs, Tab } from '@material-ui/core';
+import { Menu, MenuItem, Tabs, Tab, TabProps } from '@material-ui/core';
 import { useTheme } from '@material-ui/core/styles';
 
 import pages from './pages';
 
-interface DropDownProps {
+interface DropDownProps extends TabProps {
   title: string;
   href: string;
   subPages: Array<{ title: string; id: string }>;
   router: NextRouter;
 }
 
-const DropDown: React.FC<DropDownProps> = ({ title, href, subPages, router, ...rest }) => {
+const DropDown: React.FC<DropDownProps> = ({ title, href, subPages, router }) => {
   const [anchor, setAnchor] = useState<null | HTMLElement>(null);
 
   const urlPrefix = href.replace(/\s*\[.*?\]\s*/g, '');
 
-  const handleOpen = (event: React.MouseEvent<HTMLButtonElement>) => {
+  const handleOpen: TabProps['onClick'] = (event: React.MouseEvent<HTMLDivElement>) => {
     setAnchor(event.currentTarget);
   };
 
-  const handleClose = () => {
+  const handleClose = (): void => {
     setAnchor(null);
   };
 
@@ -32,8 +32,8 @@ const DropDown: React.FC<DropDownProps> = ({ title, href, subPages, router, ...r
   }, [router.asPath]);
 
   return (
-    <div style={{ position: 'relative' }}>
-      <Tab label={title} onClick={handleOpen} {...rest} />
+    <>
+      <Tab label={title} onClick={handleOpen} />
       <Menu keepMounted anchorEl={anchor} open={!!anchor} onClose={handleClose}>
         {subPages.map((page) => (
           <div key={page.id}>
@@ -45,7 +45,7 @@ const DropDown: React.FC<DropDownProps> = ({ title, href, subPages, router, ...r
           </div>
         ))}
       </Menu>
-    </div>
+    </>
   );
 };
 
@@ -65,8 +65,8 @@ const NavLinks: React.FC = () => {
   return (
     <Tabs
       variant="scrollable"
-      indicatorColor={theme.palette.type === 'dark' ? 'primary' : 'secondary'}
-      scrollButtons="on"
+      indicatorColor={theme.palette.mode === 'dark' ? 'primary' : 'secondary'}
+      scrollButtons
       value={selectedTab}
     >
       {pages.map(({ href, title, subPages }) =>

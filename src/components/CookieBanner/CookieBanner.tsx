@@ -1,38 +1,32 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
 
 import { Paper, Button, Slide, Typography } from '@material-ui/core';
-import { styled, Theme } from '@material-ui/core/styles';
+import styled from '@emotion/styled';
 
 import { COOKIE_POLICY } from '../../lib/routes';
 
-const CookieBannerContainer = styled(Paper)(({ theme }: { theme: Theme }) => ({
-  backgroundColor:
-    theme.palette.type === 'dark' ? theme.palette.primary.dark : theme.palette.primary.main,
-  color: '#fff',
-  position: 'fixed',
-  bottom: 0,
-  width: '100%',
-  padding: '2rem 0.125rem',
-  zIndex: 9999,
-}));
+const CookieBannerContainer = styled(Paper)`
+  background-color: ${({ theme }) =>
+    theme.palette.mode === 'dark' ? theme.palette.primary.dark : theme.palette.primary.main};
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 2rem 0.125rem;
+  z-index: 9999;
+`;
 
-const ButtonContainer = styled('div')({
-  display: 'flex',
-  justifyContent: 'center',
-  marginTop: '1rem',
-});
+const ButtonContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+`;
 
 const COOKIE_CONSENT_KEY = 'cookie_consent';
 
 const CookieBanner: React.FC = () => {
-  const [cookieConsent, setCookieConsent] = useState(true);
-
-  useEffect(() => {
-    if (!localStorage.getItem(COOKIE_CONSENT_KEY)) {
-      setCookieConsent(false);
-    }
-  }, []);
+  const [cookieConsent, setCookieConsent] = useState(!!localStorage.getItem(COOKIE_CONSENT_KEY));
 
   return (
     <>

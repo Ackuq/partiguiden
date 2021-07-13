@@ -2,120 +2,125 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 
 import { Grid, Theme } from '@material-ui/core';
-import { makeStyles } from '@material-ui/core/styles';
+import { css } from '@emotion/react';
+import styled from '@emotion/styled';
 
 import { SubjectList } from '../types/subjects';
 
 import * as ROUTES from '../lib/routes';
 import Search from '../components/Search/Search';
 
-const useStyles = makeStyles((theme: Theme) => ({
-  container: {
-    marginLeft: 'auto',
-    marginRight: 'auto',
-    [theme.breakpoints.up('md')]: {
-      maxWidth: '90%',
-    },
-    [theme.breakpoints.up('lg')]: {
-      maxWidth: '70%',
-    },
-    [theme.breakpoints.up('xl')]: {
-      maxWidth: '60%',
-    },
-  },
+const containerStyles = (theme: Theme) => css`
+  margin-left: auto;
+  margin-right: auto;
+  ${theme.breakpoints.up('md')} {
+    max-width: 90%;
+  }
+  ${theme.breakpoints.up('lg')} {
+    max-width: 70%;
+  }
+  ${theme.breakpoints.up('xl')} {
+    max-width: 60%;
+  }
+`;
 
-  searchContainer: {
-    width: '100%',
-    marginTop: '-1rem',
-  },
+const SearchContainer = styled.div`
+  width: 100%;
+  margin-top: -1rem;
+`;
 
-  subjectsContainer: {
-    marginBottom: '1rem',
-  },
+const Transition = styled.span`
+  margin: 0;
+  background: linear-gradient(
+    to left,
+    transparent 50%,
+    ${({ theme }) =>
+        theme.palette.mode === 'dark' ? theme.palette.primary.dark : theme.palette.primary.main}
+      50%
+  );
+  background-size: 202% 100%;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  color: ${({ theme }) =>
+    theme.palette.mode === 'dark' ? theme.palette.primary.contrastText : theme.palette.grey[900]};
+  line-height: 50px;
+  padding: 0 0.5rem;
+  transition: all 0.2s ease-in-out;
+`;
 
-  transition: {
-    margin: 0,
-    background: `linear-gradient( to left, transparent 50%, ${
-      theme.palette.type === 'dark' ? theme.palette.primary.dark : theme.palette.primary.main
-    } 50% )`,
-    backgroundSize: '202% 100%',
-    backgroundPosition: 'right bottom',
-    backgroundRepeat: 'no-repeat',
-    color:
-      theme.palette.type === 'dark' ? theme.palette.primary.contrastText : theme.palette.grey[900],
-    lineHeight: '50px',
-    padding: '0 0.5rem',
-    transition: 'all 0.2s ease-in-out',
-  },
+const Button = styled.a`
+  text-decoration: none;
+  display: flex;
+  flex: 1;
+  font-size: 1rem;
+  justify-content: flex-start;
+  :hover span {
+    background-position: left bottom;
+    color: ${({ theme }) => theme.palette.grey[100]};
+  }
+`;
 
-  button: {
-    textDecoration: 'none',
-    display: 'flex',
-    flex: 1,
-    fontSize: '1rem',
-    justifyContent: 'flex-start',
-    '&:hover span': {
-      backgroundPosition: 'left bottom',
-      color: theme.palette.grey[100],
-    },
-  },
-
-  item: {
-    [theme.breakpoints.down('sm')]: {
-      borderLeft: `solid 2px ${
-        theme.palette.type === 'dark' ? theme.palette.primary.dark : theme.palette.primary.main
-      }`,
-    },
-    [theme.breakpoints.up('md')]: {
-      '&:nth-child(2n + 1)': {
-        borderLeft: `solid 2px ${
-          theme.palette.type === 'dark' ? theme.palette.primary.dark : theme.palette.primary.main
-        }`,
-      },
-      '&:nth-child(2n)': {
-        borderRight: `solid 2px ${
-          theme.palette.type === 'dark' ? theme.palette.primary.dark : theme.palette.primary.main
-        }`,
-      },
-    },
-    '&:nth-child(3n)': {
-      backgroundColor:
-        theme.palette.type === 'dark' ? theme.palette.background.paper : theme.palette.grey[50],
-    },
-    '&:nth-child(3n + 1)': {
-      backgroundColor:
-        theme.palette.type === 'dark' ? theme.palette.background.paper : theme.palette.grey[100],
-    },
-    '&:nth-child(3n + 2)': {
-      backgroundColor:
-        theme.palette.type === 'dark' ? theme.palette.background.paper : theme.palette.grey[200],
-    },
-  },
-}));
+const Item = styled(Grid)(
+  ({ theme }) => `
+    ${theme.breakpoints.down('sm')} {
+      border-left: solid 2px ${
+        theme.palette.mode === 'dark' ? theme.palette.primary.dark : theme.palette.primary.main
+      };
+    }
+    ${theme.breakpoints.up('md')} {
+      :nth-child(2n + 1) {
+        border-left: solid 2px ${
+          theme.palette.mode === 'dark' ? theme.palette.primary.dark : theme.palette.primary.main
+        };
+      }
+      :nth-child(2n) {
+        border-right: solid 2px ${
+          theme.palette.mode === 'dark' ? theme.palette.primary.dark : theme.palette.primary.main
+        };
+      }
+    }
+    :nth-child(3n) {
+      background-color:
+        ${theme.palette.mode === 'dark' ? theme.palette.background.paper : theme.palette.grey[50]};
+    }
+    :nth-child(3n + 1) {
+      background-color:
+        ${theme.palette.mode === 'dark' ? theme.palette.background.paper : theme.palette.grey[100]};
+    }
+    :nth-child(3n + 2) {
+      background-color:
+        ${theme.palette.mode === 'dark' ? theme.palette.background.paper : theme.palette.grey[200]};
+    }
+  `
+);
 
 interface Props {
   subjects: SubjectList;
 }
 
 const Subjects: React.FC<Props> = ({ subjects }) => {
-  const classes = useStyles();
-
   const [shownSubjects, setShownSubjects] = useState(subjects);
 
   return (
     <>
-      <div className={`${classes.searchContainer} ${classes.container}`}>
+      <SearchContainer css={containerStyles}>
         <Search setSearchResult={setShownSubjects} />
-      </div>
-      <Grid container classes={{ container: `${classes.container} ${classes.subjectsContainer}` }}>
+      </SearchContainer>
+      <Grid
+        container
+        css={containerStyles}
+        sx={{
+          marginBottom: '1rem',
+        }}
+      >
         {shownSubjects.map((subject) => (
-          <Grid item xs={12} md={6} className={classes.item} key={subject.id}>
+          <Item item xs={12} md={6} key={subject.id}>
             <Link href={ROUTES.STANDPOINT} as={ROUTES.getStandpointHref(subject.id)} passHref>
-              <a className={classes.button}>
-                <span className={classes.transition}>{subject.name}</span>
-              </a>
+              <Button>
+                <Transition>{subject.name}</Transition>
+              </Button>
             </Link>
-          </Grid>
+          </Item>
         ))}
       </Grid>
     </>

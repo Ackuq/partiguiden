@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 
 import { Paper, Typography } from '@material-ui/core';
-import { styled, useTheme } from '@material-ui/core/styles';
+import { useTheme } from '@material-ui/core/styles';
+import styled from '@emotion/styled';
 
 import {
   Brush,
@@ -20,15 +21,15 @@ import { PartyAbbreviation, partyAbbreviations } from '../../../utils/parties';
 import { partiesMap } from '../../../utils/getParties';
 import tooltipProps from '../../../utils/tooltipProps';
 
-const ChartContainer = styled(ResponsiveContainer)({
-  marginTop: '1rem',
-  marginLeft: '-20px',
-});
+const ChartContainer = styled(ResponsiveContainer)`
+  margin-top: 1rem;
+  margin-left: -20px;
+`;
 
-const PollCard = styled(Paper)({
-  padding: '1rem 0.5rem',
-  marginTop: '1rem',
-});
+const PollCard = styled(Paper)`
+  padding: '1rem 0.5rem;
+  margin-Top: ' 1rem;
+`;
 
 interface Props {
   historicPolls: MonthlyAverage;
@@ -77,9 +78,9 @@ const HistoricPolls: React.FC<Props> = ({ historicPolls }) => {
           ))}
           <Brush
             dataKey="date"
-            fill={theme.palette.type === 'dark' ? theme.palette.grey[700] : 'white'}
+            fill={theme.palette.mode === 'dark' ? theme.palette.grey[700] : 'white'}
             stroke={
-              theme.palette.type === 'dark' ? theme.palette.grey[900] : theme.palette.grey[700]
+              theme.palette.mode === 'dark' ? theme.palette.grey[900] : theme.palette.grey[700]
             }
             style={{ marginBottom: 20, color: 'white' }}
           />

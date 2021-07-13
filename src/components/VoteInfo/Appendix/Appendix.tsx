@@ -4,6 +4,7 @@ import { Typography, Link } from '@material-ui/core';
 import { useTheme } from '@material-ui/core/styles';
 
 import { VoteAppendixItem } from '../../../types/voting';
+import SectionDivider from '../SectionDivider';
 
 interface Props {
   appendix: Array<VoteAppendixItem>;
@@ -13,7 +14,8 @@ const Appendix: React.FC<Props> = ({ appendix }) => {
   const theme = useTheme();
   return (
     <>
-      <Typography variant="h5" color="inherit" component="span" gutterBottom>
+      <SectionDivider />
+      <Typography variant="h4" color="textSecondary" component="span" gutterBottom>
         Bilaga
       </Typography>
       <div style={{ display: 'flex', flexDirection: 'column' }}>
@@ -24,7 +26,7 @@ const Appendix: React.FC<Props> = ({ appendix }) => {
             target="_blank"
             rel="noopener"
             variant="body1"
-            color={theme.palette.type === 'dark' ? 'secondary' : 'primary'}
+            color={theme.palette.mode === 'dark' ? 'secondary' : 'primary'}
           >
             {item.titel} {item.dok_id}
           </Link>

@@ -2,80 +2,81 @@ import React from 'react';
 
 import NextLink from 'next/link';
 
-import { Avatar, Divider, Grid, Link, Paper, Typography, Theme } from '@material-ui/core';
-import { makeStyles } from '@material-ui/core/styles';
+import { Avatar, Divider, Grid, Link, Paper, Typography } from '@material-ui/core';
+import { useTheme } from '@material-ui/core/styles';
+import styled from '@emotion/styled';
+import { css } from '@emotion/react';
 
 import * as ROUTES from '../lib/routes';
 
 import { Leader as LeaderType } from '../types/member';
 import { PartyData } from '../types/party';
 
-const useStyles = makeStyles((theme: Theme) => ({
-  cardContainer: {
-    padding: '1rem',
-    marginBottom: theme.spacing(4),
-  },
+const Biography = styled.div`
+  p {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+`;
 
-  informationDivider: {
-    marginTop: '0.5rem',
-    marginBottom: '0.5rem',
-  },
+const LeaderAvatar = styled(Avatar)(
+  ({ theme }) => `
+    margin-bottom: ${theme.spacing(1)};
+    margin-right: auto;
+    margin-left: auto;
+    width: ${theme.spacing(20)};
+    height: ${theme.spacing(20)};
 
-  biography: {
-    '& p': {
-      marginTop: '0.5em',
-      marginBottom: '0.5em',
-    },
-  },
+    ${theme.breakpoints.down('md')} {
+      width: ${theme.spacing(15)};
+      height: ${theme.spacing(15)};
+    }
 
-  leaderAvatar: {
-    marginBottom: theme.spacing(1),
-    marginRight: 'auto',
-    marginLeft: 'auto',
-    width: theme.spacing(20),
-    height: theme.spacing(20),
+    ${theme.breakpoints.down('xs')} {
+      width: ${theme.spacing(10)};
+      height: ${theme.spacing(10)};
+    }
+`
+);
 
-    [theme.breakpoints.down('md')]: {
-      width: theme.spacing(15),
-      height: theme.spacing(15),
-    },
+const LeaderCard = styled(Paper)(
+  ({ theme }) => `
+    height: 100%;
+    padding: 1rem;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-shadow: ${theme.shadows[2]};
+    :hover {
+      background-color:
+        ${theme.palette.mode === 'dark' ? theme.palette.grey[700] : theme.palette.grey[200]};
+      box-shadow: ${theme.shadows[10]};
+    }
+`
+);
 
-    [theme.breakpoints.down('xs')]: {
-      width: theme.spacing(10),
-      height: theme.spacing(10),
-    },
-  },
-
-  leaderCard: {
-    height: '100%',
-    padding: '1rem',
-    textAlign: 'center',
-    cursor: 'pointer',
-    transition: 'all 0.2s ease-in-out',
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'space-around',
-    boxShadow: theme.shadows[2],
-    '&:hover': {
-      backgroundColor:
-        theme.palette.type === 'dark' ? theme.palette.grey[700] : theme.palette.grey[200],
-      boxShadow: theme.shadows[10],
-    },
-  },
-  leadersContainer: {
-    padding: '1rem',
-  },
-}));
+const InformationDivider = styled(Divider)`
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+`;
 
 interface Props {
   party: PartyData;
 }
 
 const Party: React.FC<Props> = ({ party }) => {
-  const classes = useStyles();
+  const theme = useTheme();
 
   const InformationCard: React.FC = () => (
-    <Paper classes={{ root: classes.cardContainer }}>
+    <Paper
+      sx={{
+        padding: '1rem',
+        marginBottom: theme.spacing(4),
+      }}
+    >
       <div>
         <Typography variant="h5">Hemsida</Typography>
         <Typography>
@@ -84,7 +85,7 @@ const Party: React.FC<Props> = ({ party }) => {
           </Link>
         </Typography>
       </div>
-      <Divider className={classes.informationDivider} />
+      <InformationDivider />
       <div>
         <Typography variant="h5">Ideologi</Typography>
         <Typography>{party.ideology.join(', ')}</Typography>
@@ -95,11 +96,11 @@ const Party: React.FC<Props> = ({ party }) => {
           </Link>
         </Typography>
       </div>
-      <Divider className={classes.informationDivider} />
+      <InformationDivider />
       <div>
         <Typography variant="h5">Biografi</Typography>
         <Typography component="div" variant="body2">
-          <div dangerouslySetInnerHTML={{ __html: party.abstract }} className={classes.biography} />
+          <Biography dangerouslySetInnerHTML={{ __html: party.abstract }} />
         </Typography>
         <Typography component="p" variant="caption">
           Källa:{' '}
@@ -115,20 +116,20 @@ const Party: React.FC<Props> = ({ party }) => {
     return (
       <Grid item md={3} sm={4} xs={6}>
         <NextLink passHref href={ROUTES.MEMBER} as={ROUTES.getMemberHref(id)}>
-          <a style={{ textDecoration: 'none' }}>
-            <Paper classes={{ root: classes.leaderCard }} elevation={0}>
-              <Avatar
-                className={classes.leaderAvatar}
-                src={pictureUrl}
-                alt={`${firstName} ${lastName}`}
-              />
+          <a
+            css={css`
+              text-decoration: none;
+            `}
+          >
+            <LeaderCard elevation={0}>
+              <LeaderAvatar src={pictureUrl} alt={`${firstName} ${lastName}`} />
               <div>
                 <Typography variant="subtitle2" component="p">
                   {firstName} {lastName}
                 </Typography>
                 <Typography>{role}</Typography>
               </div>
-            </Paper>
+            </LeaderCard>
           </a>
         </NextLink>
       </Grid>
@@ -136,7 +137,7 @@ const Party: React.FC<Props> = ({ party }) => {
   };
 
   const Leaders: React.FC = () => (
-    <Paper classes={{ root: classes.leadersContainer }}>
+    <Paper sx={{ padding: '1rem' }}>
       <Typography gutterBottom variant="h4" align="center">
         Ledning
       </Typography>

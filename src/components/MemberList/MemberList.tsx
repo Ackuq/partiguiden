@@ -2,7 +2,6 @@ import React, { useEffect, useState, useCallback } from 'react';
 
 import { Grid } from '@material-ui/core';
 
-import useStyles from './useStyles';
 import Member from './Member';
 import { MemberList as MemberListType } from '../../types/member';
 import { PartyAbbreviation } from '../../utils/parties';
@@ -16,7 +15,6 @@ interface Props {
 }
 
 const MemberList: React.FC<Props> = ({ members, filter }) => {
-  const classes = useStyles();
   const [filteredMembers, setFilteredMembers] = useState(members);
   const [membersInView, setMembersInView] = useState(members.slice(0, 20));
 
@@ -65,7 +63,7 @@ const MemberList: React.FC<Props> = ({ members, filter }) => {
     <>
       {membersInView.map((member) => (
         <Grid item xs={12} md={6} xl={4} key={member.id}>
-          <Member classes={classes} member={member} />
+          <Member member={member} />
         </Grid>
       ))}
     </>

@@ -4,39 +4,46 @@ import Image from 'next/image';
 
 import { Typography, Grid } from '@material-ui/core';
 import { useTheme } from '@material-ui/core/styles';
+import styled from '@emotion/styled';
 
 import { VotingResult } from '../../types/voting';
 import { voteListColors } from '../../lib/voteColors';
 
-import useStyles from './useStyles';
 import { PARTY_LOGOS_LOW_RES } from '../../assets/logos';
 import { PartyAbbreviation } from '../../utils/parties';
 
+const PartyPartition = styled.div<{ background: string }>`
+  padding: 0.25rem;
+  background-color: ${({ background }) => background};
+`;
+
+const Parties = styled.div`
+  display: flex;
+  justify-content: center;
+  > div {
+    margin: 2px;
+  }
+`;
+
 interface Props {
   votes: VotingResult;
-  classes: ReturnType<typeof useStyles>;
 }
 
-const VoteResult: React.FC<Props> = ({ votes, classes }) => {
+const VoteResult: React.FC<Props> = ({ votes }) => {
   const theme = useTheme();
 
-  const colors = useMemo(() => voteListColors[theme.palette.type], [theme.palette.type]);
+  const colors = useMemo(() => voteListColors[theme.palette.mode], [theme.palette.mode]);
 
   return (
-    <Grid container className={classes.vote}>
+    <Grid display="flex">
       {votes.no.length || votes.yes.length ? (
         <>
           <Grid item sm={6} xs={12}>
-            <div
-              className="box"
-              style={{
-                backgroundColor: votes.winner === 'yes' ? colors.yes : colors.losing,
-              }}
-            >
+            <PartyPartition background={votes.winner === 'yes' ? colors.yes : colors.losing}>
               <Typography align="center" variant="h5" gutterBottom>
                 JA
               </Typography>
-              <div className={classes.parties}>
+              <Parties>
                 {votes.yes.map((party: string) => (
                   <div key={party}>
                     <Image
@@ -47,21 +54,16 @@ const VoteResult: React.FC<Props> = ({ votes, classes }) => {
                     />
                   </div>
                 ))}
-              </div>
-            </div>
+              </Parties>
+            </PartyPartition>
           </Grid>
 
           <Grid item sm={6} xs={12}>
-            <div
-              className="box"
-              style={{
-                backgroundColor: votes.winner === 'no' ? colors.no : colors.losing,
-              }}
-            >
+            <PartyPartition background={votes.winner === 'no' ? colors.no : colors.losing}>
               <Typography align="center" variant="h5" gutterBottom>
                 NEJ
               </Typography>
-              <div className={classes.parties}>
+              <Parties>
                 {votes.no.map((party: string) => (
                   <div key={party}>
                     <Image
@@ -72,8 +74,8 @@ const VoteResult: React.FC<Props> = ({ votes, classes }) => {
                     />
                   </div>
                 ))}
-              </div>
-            </div>
+              </Parties>
+            </PartyPartition>
           </Grid>
         </>
       ) : (

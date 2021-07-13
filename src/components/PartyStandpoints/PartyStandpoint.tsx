@@ -12,18 +12,18 @@ import {
   ListItemIcon,
   ListItemText,
 } from '@material-ui/core';
-import { styled } from '@material-ui/core/styles';
+import styled from '@emotion/styled';
 
 import { PartyInfo } from '../../utils/parties';
 import { Standpoint } from '../../types/subjects';
 
-const ListBox = styled(ListItemIcon)({
-  position: 'absolute',
-  left: '-0.125rem',
-  top: '1.275rem',
-  minWidth: '6px',
-  minHeight: '6px',
-});
+const ListBox = styled(ListItemIcon)`
+  position: absolute;
+  left: -0.125rem;
+  top: 1.275rem;
+  min-width: 6px;
+  min-height: 6px;
+`;
 
 interface Props {
   party: PartyInfo;

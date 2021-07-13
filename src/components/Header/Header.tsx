@@ -2,7 +2,8 @@ import React, { useCallback, useRef, useState } from 'react';
 import Link from 'next/link';
 
 import { Grid, AppBar, ButtonBase, Hidden, IconButton, Toolbar } from '@material-ui/core';
-import { styled, Theme, makeStyles } from '@material-ui/core/styles';
+import styled from '@emotion/styled';
+import { css } from '@emotion/react';
 
 import MenuIcon from '@material-ui/icons/Menu';
 import BrightnessIcon from '@material-ui/icons/Brightness6';
@@ -12,49 +13,40 @@ import Drawer from './Drawer';
 
 import { INDEX } from '../../lib/routes';
 
-const useStyles = makeStyles((theme) => ({
-  brand: {
-    margin: '0.25rem',
-    textAlign: 'center',
-  },
-  iconContainer: {
-    textAlign: 'center',
-    [theme.breakpoints.down('sm')]: {
-      textAlign: 'right',
-    },
-  },
-  banner: {
-    zIndex: 1200,
-    justifyContent: 'space-between',
-  },
-
-  bannerText: {
-    textDecoration: 'none',
-    fontSize: '2rem',
-    paddingLeft: '0.25rem',
-    paddingRight: '0.25rem',
-    color: theme.palette.primary.contrastText,
-  },
-}));
+const BannerText = styled.a`
+  text-decoration: none;
+  font-size: 2rem;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  color: ${({ theme }) => theme.palette.primary.contrastText};
+`;
 
 interface Props {
   toggleDarkMode: () => void;
 }
 
 const Branding: React.FC<Props> = ({ toggleDarkMode }) => {
-  const classes = useStyles();
   return (
-    <Grid container className={classes.banner}>
-      <Grid item xs={3} className={classes.brand}>
+    <Grid container zIndex={1200} justifyContent="space-between">
+      <Grid item xs={3} textAlign="center">
         <ButtonBase>
           <Link href={INDEX} passHref>
-            <a className={classes.bannerText}>
+            <BannerText>
               <strong>Partiguiden</strong>
-            </a>
+            </BannerText>
           </Link>
         </ButtonBase>
       </Grid>
-      <Grid item xs={3} className={classes.iconContainer}>
+      <Grid
+        item
+        xs={3}
+        css={(theme) => css`
+          text-align: center;
+          ${theme.breakpoints.down('sm')} {
+            text-align: right;
+          }
+        `}
+      >
         <IconButton onClick={toggleDarkMode} aria-label="Toggle dark mode">
           <BrightnessIcon />
         </IconButton>
@@ -63,14 +55,9 @@ const Branding: React.FC<Props> = ({ toggleDarkMode }) => {
   );
 };
 
-const ColoredAppBar = styled(AppBar)(({ theme }: { theme: Theme }) => ({
-  backgroundColor:
-    theme.palette.mode === 'dark' ? theme.palette.background.paper : theme.palette.primary.main,
-}));
-
 const Header: React.FC<Props> = ({ toggleDarkMode }) => {
   const [drawerOpen, setDrawerOpen] = useState(false);
-  const appBar = useRef<HTMLDivElement>();
+  const appBar = useRef<HTMLDivElement>(null);
 
   const openDrawer = useCallback(() => {
     setDrawerOpen(true);
@@ -81,7 +68,15 @@ const Header: React.FC<Props> = ({ toggleDarkMode }) => {
   }, []);
 
   return (
-    <ColoredAppBar position="sticky" ref={appBar}>
+    <AppBar
+      position="sticky"
+      ref={appBar}
+      css={(theme) => css`
+        background-color: ${theme.palette.mode === 'dark'
+          ? theme.palette.background.paper
+          : theme.palette.primary.main};
+      `}
+    >
       <Hidden smUp implementation="css">
         <Toolbar>
           <IconButton color="inherit" aria-label="open drawer" onClick={openDrawer} edge="start">
@@ -96,11 +91,11 @@ const Header: React.FC<Props> = ({ toggleDarkMode }) => {
           handleOpen={openDrawer}
         />
       </Hidden>
-      <Hidden xsDown implementation="css">
+      <Hidden smDown implementation="css">
         <Branding toggleDarkMode={toggleDarkMode} />
         <NavLinks />
       </Hidden>
-    </ColoredAppBar>
+    </AppBar>
   );
 };
 

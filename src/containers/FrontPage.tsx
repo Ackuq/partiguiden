@@ -12,7 +12,7 @@ interface Props {
 
 const FrontPage: React.FC<Props> = ({ popular }) => (
   <Grid container spacing={3}>
-    {/*     <Grid item xs={12}>
+    <Grid item xs={12}>
       <Card>
         <CardContent>
           <Typography variant="h4" paragraph align="center">
@@ -31,11 +31,11 @@ const FrontPage: React.FC<Props> = ({ popular }) => (
         <CardContent>
           <Typography variant="h5" paragraph align="center">
             Mest besökta ämnen de senaste 30 dagarna
-          </Typography> */}
-    {/* <Featured popular={popular} /> */}
-    {/* </CardContent>
+          </Typography>
+          <Featured popular={popular} />
+        </CardContent>
       </Card>
-    </Grid> */}
+    </Grid>
   </Grid>
 );
 

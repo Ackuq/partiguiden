@@ -1,4 +1,3 @@
-import React from 'react';
 import { GetStaticProps, InferGetStaticPropsType, NextPage } from 'next';
 import Head from 'next/head';
 
@@ -11,6 +10,8 @@ import { getPopular } from '../src/lib/api';
 import { SubjectListEntry } from '../src/types/subjects';
 
 const PageTitleContainer = styled(Paper)`
+  background-color: ${({ theme }) =>
+    theme.palette.mode === 'dark' ? theme.palette.background.paper : theme.palette.primary.light};
   text-align: center;
   padding: 1.5rem 0.25rem;
   margin-bottom: 1rem;
@@ -29,7 +30,7 @@ const FrontPageContainer: NextPage<InferGetStaticPropsType<typeof getStaticProps
         content="Vad tar Sveriges partier för ståndpunkter i sakfrågor? På Partiguiden kan du hitta och jämföra vad partierns åsikter för att hitta det parti du sympatiserar mest med."
       />
     </Head>
-    <Paper square>
+    <PageTitleContainer square>
       <Typography variant="h4" paragraph>
         Hur vill Sveriges partier förbättra
       </Typography>
@@ -42,7 +43,7 @@ const FrontPageContainer: NextPage<InferGetStaticPropsType<typeof getStaticProps
         />
         &nbsp;
       </Typography>
-    </Paper>
+    </PageTitleContainer>
     <Container>
       <FrontPage popular={popular} />
     </Container>

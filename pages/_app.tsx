@@ -3,7 +3,6 @@ import { useEffect, useMemo, useState } from 'react';
 import { AppProps } from 'next/app';
 
 import { useMediaQuery, CssBaseline } from '@material-ui/core';
-import { ThemeProvider } from '@material-ui/core/styles';
 import { CacheProvider, css, ThemeProvider as EmotionThemeProvider } from '@emotion/react';
 
 import Head from 'next/head';
@@ -40,17 +39,17 @@ const setStoredDarkModeValue = (value: boolean) => {
 
 const App: React.FC<AppProps> = ({ Component, pageProps }) => {
   const router = useRouter();
-  const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)', { noSsr: true });
-  const [darkModeState, setDarkModeState] = useState<boolean>(getInitialDarkMode(prefersDarkMode));
-  const theme = useMemo(() => getTheme(darkModeState), [darkModeState]);
+  const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
+  const [darkModeState, setDarkModeState] = useState(prefersDarkMode);
+
+  const theme = useMemo(() => {
+    return getTheme(darkModeState);
+  }, [darkModeState]);
 
   useEffect(() => {
-    // Remove the server-side injected CSS.
-    const jssStyles = document.querySelector('#jss-server-side');
-    if (jssStyles && jssStyles.parentNode) {
-      jssStyles.parentNode.removeChild(jssStyles);
-    }
-  }, []);
+    /* In case the server and client has different opinions on which mode to use */
+    setDarkModeState(getInitialDarkMode(prefersDarkMode));
+  }, [prefersDarkMode]);
 
   useEffect(() => {
     const handleRouteChange = (url: URL) => {
@@ -64,13 +63,12 @@ const App: React.FC<AppProps> = ({ Component, pageProps }) => {
 
   return (
     <CacheProvider value={cache}>
-      <ThemeProvider theme={theme}>
-        <EmotionThemeProvider theme={theme}>
-          <Head>
-            <meta name="viewport" content="width=device-width, initial-scale=1" />
-          </Head>
-          <CssBaseline />
-          {/* <Header
+      <EmotionThemeProvider theme={theme}>
+        <Head>
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+        </Head>
+        <CssBaseline />
+        <Header
           toggleDarkMode={() => {
             setDarkModeState((prevValue) => {
               const newValue = !prevValue;
@@ -78,22 +76,21 @@ const App: React.FC<AppProps> = ({ Component, pageProps }) => {
               return newValue;
             });
           }}
-        /> */}
-          <main
-            css={css`
-              margin-bottom: 1rem;
-              display: flex;
-              flex-direction: column;
-              flex-grow: 1;
-            `}
-          >
-            <Component {...pageProps} />
-          </main>
-          <Footer />
-          <ToTopButton />
-          <CookieBanner />
-        </EmotionThemeProvider>
-      </ThemeProvider>
+        />
+        <main
+          css={css`
+            margin-bottom: 1rem;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+          `}
+        >
+          <Component {...pageProps} />
+        </main>
+        <Footer />
+        <ToTopButton />
+        <CookieBanner />
+      </EmotionThemeProvider>
     </CacheProvider>
   );
 };

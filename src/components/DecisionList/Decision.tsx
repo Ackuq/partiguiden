@@ -14,7 +14,7 @@ import * as ROUTES from '../../lib/routes';
 
 const CardContainer = styled.div(
   ({ theme }) => `
-    border-radius: ${theme.shape.borderRadius};
+    border-radius: ${theme.shape.borderRadius}px;
     background-color: ${theme.palette.background.paper};
     overflow: hidden;
     box-shadow: ${theme.shadows[1]};

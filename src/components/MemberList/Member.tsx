@@ -13,7 +13,7 @@ import { MemberList } from '../../types/member';
 const MemberCard = styled.a(
   ({ theme }) => `
   box-shadow: ${theme.shadows[1]};
-  border-radius: ${theme.shape.borderRadius};
+  border-radius: ${theme.shape.borderRadius}px;
   background-color: ${theme.palette.background.paper};
   position: relative;
   display: flex;

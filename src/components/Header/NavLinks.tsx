@@ -14,7 +14,7 @@ interface DropDownProps extends TabProps {
   router: NextRouter;
 }
 
-const DropDown: React.FC<DropDownProps> = ({ title, href, subPages, router, ...rest }) => {
+const DropDown: React.FC<DropDownProps> = ({ title, href, subPages, router }) => {
   const [anchor, setAnchor] = useState<null | HTMLElement>(null);
 
   const urlPrefix = href.replace(/\s*\[.*?\]\s*/g, '');

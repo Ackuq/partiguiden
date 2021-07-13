@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 
 import ArrowUpIcon from '@material-ui/icons/ArrowUpwardRounded';
 
-import { Theme, Fab, Zoom } from '@material-ui/core';
+import { Fab, Zoom } from '@material-ui/core';
 import { darken } from '@material-ui/core/styles';
 import styled from '@emotion/styled';
 

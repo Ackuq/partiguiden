@@ -3,6 +3,7 @@ import { useEffect, useMemo, useState } from 'react';
 import { AppProps } from 'next/app';
 
 import { useMediaQuery, CssBaseline } from '@material-ui/core';
+import { ThemeProvider } from '@material-ui/core/styles';
 import { CacheProvider, css, ThemeProvider as EmotionThemeProvider } from '@emotion/react';
 
 import Head from 'next/head';
@@ -63,34 +64,36 @@ const App: React.FC<AppProps> = ({ Component, pageProps }) => {
 
   return (
     <CacheProvider value={cache}>
-      <EmotionThemeProvider theme={theme}>
-        <Head>
-          <meta name="viewport" content="width=device-width, initial-scale=1" />
-        </Head>
-        <CssBaseline />
-        <Header
-          toggleDarkMode={() => {
-            setDarkModeState((prevValue) => {
-              const newValue = !prevValue;
-              setStoredDarkModeValue(newValue);
-              return newValue;
-            });
-          }}
-        />
-        <main
-          css={css`
-            margin-bottom: 1rem;
-            display: flex;
-            flex-direction: column;
-            flex-grow: 1;
-          `}
-        >
-          <Component {...pageProps} />
-        </main>
-        <Footer />
-        <ToTopButton />
-        <CookieBanner />
-      </EmotionThemeProvider>
+      <ThemeProvider theme={theme}>
+        <EmotionThemeProvider theme={theme}>
+          <Head>
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
+          </Head>
+          <CssBaseline />
+          <Header
+            toggleDarkMode={() => {
+              setDarkModeState((prevValue) => {
+                const newValue = !prevValue;
+                setStoredDarkModeValue(newValue);
+                return newValue;
+              });
+            }}
+          />
+          <main
+            css={css`
+              margin-bottom: 1rem;
+              display: flex;
+              flex-direction: column;
+              flex-grow: 1;
+            `}
+          >
+            <Component {...pageProps} />
+          </main>
+          <Footer />
+          <ToTopButton />
+          <CookieBanner />
+        </EmotionThemeProvider>
+      </ThemeProvider>
     </CacheProvider>
   );
 };

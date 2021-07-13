@@ -10,6 +10,7 @@ import {
   ProcessedDocuments,
 } from '../components/VoteInfo';
 import { Vote as VoteType } from '../types/voting';
+import SectionDivider from '../components/VoteInfo/SectionDivider';
 
 interface Props {
   vote: VoteType;
@@ -30,23 +31,30 @@ const Vote: React.FC<Props> = ({
     <CardContent>
       <TotalVote voting={voting.Totalt} />
       <Typography
-        variant="h5"
+        variant="h3"
         component="h2"
-        style={{ marginBottom: '1rem', marginTop: '1rem' }}
-        color="textSecondary"
+        sx={{
+          marginBottom: '1rem',
+          marginTop: '1rem',
+        }}
       >
         {title}
       </Typography>
-      <Typography variant="h5" component="span" gutterBottom>
+      <Typography variant="h4" color="textSecondary" component="span" gutterBottom>
         Utskottets förslag
       </Typography>
       <Typography variant="body1" paragraph>
         {propositionText}
       </Typography>
+      <SectionDivider />
       {processedDocuments.length > 0 && (
-        <ProcessedDocuments processedDocuments={processedDocuments} />
+        <>
+          <ProcessedDocuments processedDocuments={processedDocuments} />
+          <SectionDivider />
+        </>
       )}
       <VoteDistribution voting={voting} />
+      <SectionDivider />
       <Decision decision={decision} description={description} />
       {appendix && <Appendix appendix={appendix} />}
     </CardContent>

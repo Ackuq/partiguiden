@@ -10,15 +10,7 @@
       },
       "core"
     ],
-    [
-      "babel-plugin-import",
-      {
-        "libraryName": "@material-ui/lab",
-        "libraryDirectory": "",
-        "camel2DashComponentName": false
-      },
-      "lab"
-    ],
+
     [
       "babel-plugin-import",
       {

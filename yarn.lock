@@ -1144,17 +1144,6 @@
   dependencies:
     "@babel/runtime" "^7.4.4"
 
-"@material-ui/lab@^4.0.0-alpha.60":
-  version "4.0.0-alpha.60"
-  resolved "https://registry.yarnpkg.com/@material-ui/lab/-/lab-4.0.0-alpha.60.tgz#5ad203aed5a8569b0f1753945a21a05efa2234d2"
-  integrity sha512-fadlYsPJF+0fx2lRuyqAuJj7hAS1tLDdIEEdov5jlrpb5pp4b+mRDUqQTUxi4inRZHS1bEXpU8QWUhO6xX88aA==
-  dependencies:
-    "@babel/runtime" "^7.4.4"
-    "@material-ui/utils" "^4.11.2"
-    clsx "^1.0.4"
-    prop-types "^15.7.2"
-    react-is "^16.8.0 || ^17.0.0"
-
 "@material-ui/private-theming@5.0.0-beta.0":
   version "5.0.0-beta.0"
   resolved "https://registry.yarnpkg.com/@material-ui/private-theming/-/private-theming-5.0.0-beta.0.tgz#54b00f535543b479361c95e7c2e2c0a319773e54"
@@ -1213,15 +1202,6 @@
     "@types/react-is" "^16.7.1 || ^17.0.0"
     prop-types "^15.7.2"
     react-is "^17.0.0"
-
-"@material-ui/utils@^4.11.2":
-  version "4.11.2"
-  resolved "https://registry.yarnpkg.com/@material-ui/utils/-/utils-4.11.2.tgz#f1aefa7e7dff2ebcb97d31de51aecab1bb57540a"
-  integrity sha512-Uul8w38u+PICe2Fg2pDKCaIG7kOyhowZ9vjiC1FsVwPABTW8vPPKfF6OvxRq3IiBaI1faOJmgdvMG7rMJARBhA==
-  dependencies:
-    "@babel/runtime" "^7.4.4"
-    prop-types "^15.7.2"
-    react-is "^16.8.0 || ^17.0.0"
 
 "@next/bundle-analyzer@^11.0.1":
   version "11.0.1"
@@ -5011,7 +4991,7 @@ react-is@16.10.2:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.10.2.tgz#984120fd4d16800e9a738208ab1fba422d23b5ab"
   integrity sha512-INBT1QEgtcCCgvccr5/86CfD71fw9EPmDxgiJX4I2Ddr6ZsV6iFXsuby+qWJPtmNuMY0zByTsG4468P7nHuNWA==
 
-react-is@17.0.2, "react-is@^16.8.0 || ^17.0.0", react-is@^17.0.0:
+react-is@17.0.2, react-is@^17.0.0:
   version "17.0.2"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-17.0.2.tgz#e691d4a8e9c789365655539ab372762b0efb54f0"
   integrity sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w==

@@ -4,29 +4,30 @@ import Link from 'next/link';
 import { Breadcrumbs, Chip } from '@material-ui/core';
 import HomeIcon from '@material-ui/icons/Home';
 
-import { makeStyles } from '@material-ui/core/styles';
-
+import styled from '@emotion/styled';
 import { INDEX } from '../../lib/routes';
 
-const useStyles = makeStyles((theme) => ({
-  chip: {
-    marginBottom: theme.spacing(1),
-  },
-}));
+const BreadcrumbsWithMargin = styled(Breadcrumbs)(
+  ({ theme }) => `
+    li {
+      margin-bottom: ${theme.spacing(1)};
+    }
+`
+);
 
 interface Props {
   links: Array<{ href: string; as?: string; label: string }>;
 }
 
 const CustomBreadcrumbs: React.FC<Props> = ({ links }) => {
-  const classes = useStyles();
   return (
-    <Breadcrumbs
+    <BreadcrumbsWithMargin
       aria-label="Breadcrumbs"
-      classes={{
+
+      /* classes={{
         li: classes.chip,
         separator: classes.chip,
-      }}
+      }} */
     >
       <Link href={INDEX} passHref>
         <Chip component="a" label="Hem" variant="outlined" icon={<HomeIcon fontSize="small" />} />
@@ -36,7 +37,7 @@ const CustomBreadcrumbs: React.FC<Props> = ({ links }) => {
           <Chip component="a" label={link.label} variant="outlined" />
         </Link>
       ))}
-    </Breadcrumbs>
+    </BreadcrumbsWithMargin>
   );
 };
 

@@ -5,6 +5,7 @@ import NextLink from 'next/link';
 import { Avatar, Divider, Grid, Link, Paper, Typography } from '@material-ui/core';
 import { useTheme } from '@material-ui/core/styles';
 import styled from '@emotion/styled';
+import { css } from '@emotion/react';
 
 import * as ROUTES from '../lib/routes';
 
@@ -115,7 +116,11 @@ const Party: React.FC<Props> = ({ party }) => {
     return (
       <Grid item md={3} sm={4} xs={6}>
         <NextLink passHref href={ROUTES.MEMBER} as={ROUTES.getMemberHref(id)}>
-          <a style={{ textDecoration: 'none' }}>
+          <a
+            css={css`
+              text-decoration: none;
+            `}
+          >
             <LeaderCard elevation={0}>
               <LeaderAvatar src={pictureUrl} alt={`${firstName} ${lastName}`} />
               <div>

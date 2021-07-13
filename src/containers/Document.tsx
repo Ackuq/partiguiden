@@ -1,41 +1,32 @@
-import React from 'react';
+import styled from '@emotion/styled';
 
-import { Theme, makeStyles } from '@material-ui/core/styles';
-
-const useStyles = makeStyles(({ palette }: Theme) => {
-  const styles = {
-    dokumentBody: {
-      marginTop: '1rem',
-      '& *': {},
-      '& table': {
-        display: 'block',
-        maxWidth: '100%',
-      },
-      '& h1': {
-        color: palette.primary.light,
-        fontSize: '1.75rem',
-      },
-      '& a': {
-        color: palette.primary.main,
-      },
-    },
-  };
-
-  if (palette.type === 'dark') {
-    styles.dokumentBody['& *'] = {
-      color: '#fff !important',
-      borderColor: '#fff !important',
-    };
+const DocumentBody = styled.div`
+  margin-top: 1rem;
+  * {
+    ${({ theme }) =>
+      theme.palette.mode === 'dark'
+        ? `
+          color: #fff !important;
+          border-color: #fff !important;
+`
+        : ``}
   }
-
-  return styles;
-});
+  table {
+    display: block;
+    max-width: 100%;
+  }
+  h1 {
+    color: ${({ theme }) => theme.palette.primary.light};
+    font-size: 1.75rem;
+  }
+  a {
+    color: ${({ theme }) => theme.palette.primary.main};
+  }
+`;
 
 const Document: React.FC<{ body: string }> = ({ body }) => {
-  const classes = useStyles();
-
   // eslint-disable-next-line react/no-danger
-  return <div className={classes.dokumentBody} dangerouslySetInnerHTML={{ __html: body }} />;
+  return <DocumentBody dangerouslySetInnerHTML={{ __html: body }} />;
 };
 
 export default Document;

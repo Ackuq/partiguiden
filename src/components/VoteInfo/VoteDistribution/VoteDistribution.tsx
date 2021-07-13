@@ -81,7 +81,7 @@ const VoteDistribution: React.FC<Props> = ({ voting }) => {
         <Typography variant="h5" color="inherit" component="span">
           Röstfördelning
         </Typography>
-        <RotatingArrow style={visible ? { transform: 'rotate(180deg)' } : undefined} />
+        <RotatingArrow active={visible.toString() as 'true' | 'false'} />
       </SectionButton>
       <Collapse in={visible}>
         <ChartContainer height={500}>

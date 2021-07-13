@@ -1,29 +1,25 @@
 import React, { useState, useEffect } from 'react';
 
-import { Grid } from '@material-ui/core';
-import { Pagination } from '@material-ui/lab';
-import { makeStyles } from '@material-ui/core/styles';
+import { Grid, Pagination } from '@material-ui/core';
+import styled from '@emotion/styled';
 
 import LoadCircle from '../../LoadCircle';
 import Document from './Document';
 import { useMemberDocuments } from '../../../hooks/parliamentHooks';
+
+const PaginationContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  margin-bottom: 2rem;
+`;
 
 interface Props {
   id: string;
   setDocumentCount: React.Dispatch<React.SetStateAction<number>>;
 }
 
-const useStyles = makeStyles({
-  paginationContainer: {
-    display: 'flex',
-    justifyContent: 'center',
-    flex: 1,
-    marginBottom: '2rem',
-  },
-});
-
 const Documents: React.FC<Props> = ({ id, setDocumentCount }) => {
-  const classes = useStyles();
   const [page, setPage] = useState(1);
 
   const data = useMemberDocuments(id, page);
@@ -50,9 +46,9 @@ const Documents: React.FC<Props> = ({ id, setDocumentCount }) => {
         </Grid>
       ))}
       {data.pages > 1 && (
-        <div className={classes.paginationContainer}>
+        <PaginationContainer>
           <Pagination size="large" onChange={changePage} page={page} count={data.pages} />
-        </div>
+        </PaginationContainer>
       )}
     </>
   );

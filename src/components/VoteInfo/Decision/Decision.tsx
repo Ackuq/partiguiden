@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { Typography } from '@material-ui/core';
+import SectionDivider from '../SectionDivider';
 
 interface Props {
   decision: string;
@@ -8,22 +9,19 @@ interface Props {
 }
 
 const Decision: React.FC<Props> = ({ decision, description }) => (
-  <div style={{ marginBottom: '1rem' }}>
-    <Typography variant="h5" color="inherit" component="span" gutterBottom>
+  <>
+    <Typography variant="h4" color="textSecondary" component="span" gutterBottom>
       Beslut
     </Typography>
-    <Typography variant="body1">{decision}</Typography>
-    <Typography
-      variant="h5"
-      color="inherit"
-      component="span"
-      gutterBottom
-      style={{ marginTop: '0.5rem' }}
-    >
+    <Typography variant="body1" gutterBottom>
+      {decision}
+    </Typography>
+    <SectionDivider />
+    <Typography variant="h4" color="textSecondary" component="span">
       Beslut i korthet
     </Typography>
     <div dangerouslySetInnerHTML={{ __html: description }} />
-  </div>
+  </>
 );
 
 export default Decision;

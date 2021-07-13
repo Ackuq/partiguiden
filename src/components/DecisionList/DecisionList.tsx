@@ -3,15 +3,21 @@ import React, { useCallback } from 'react';
 import { NextRouter } from 'next/router';
 import { stringify } from 'querystring';
 
-import { Typography } from '@material-ui/core';
-import { Pagination } from '@material-ui/lab';
+import { Typography, Pagination } from '@material-ui/core';
+import styled from '@emotion/styled';
 
 import { FlowAd } from '../Ad';
 import Decision from './Decision';
 import LoadCircle from '../LoadCircle';
 
-import useStyles from './useStyles';
 import { useDecisions } from '../../hooks/parliamentHooks';
+
+const ListContainer = styled.div`
+  margin-bottom: 0.5rem;
+  > div {
+    padding: 8px;
+  }
+`;
 
 interface Props {
   router: NextRouter;
@@ -19,7 +25,6 @@ interface Props {
 }
 
 const DecisionListContainer: React.FC<Props> = ({ router, page }) => {
-  const classes = useStyles();
   const data = useDecisions(router.query);
 
   const updatePage = useCallback(
@@ -34,7 +39,7 @@ const DecisionListContainer: React.FC<Props> = ({ router, page }) => {
 
   return (
     <>
-      <div className={classes.listContainer}>
+      <ListContainer>
         {!data ? (
           <LoadCircle />
         ) : (
@@ -45,7 +50,7 @@ const DecisionListContainer: React.FC<Props> = ({ router, page }) => {
                   <React.Fragment key={item.id + item.denomination}>
                     {!(index % 15) && <FlowAd />}
                     <div>
-                      <Decision decision={item} classes={classes} />
+                      <Decision decision={item} />
                     </div>
                   </React.Fragment>
                 ))}
@@ -64,7 +69,7 @@ const DecisionListContainer: React.FC<Props> = ({ router, page }) => {
             )}
           </>
         )}
-      </div>
+      </ListContainer>
     </>
   );
 };

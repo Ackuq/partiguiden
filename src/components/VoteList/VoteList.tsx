@@ -2,15 +2,21 @@ import React, { useCallback } from 'react';
 import { NextRouter } from 'next/router';
 import { stringify } from 'querystring';
 
-import { Pagination } from '@material-ui/lab';
-import { Typography } from '@material-ui/core';
+import { Typography, Pagination } from '@material-ui/core';
+import styled from '@emotion/styled';
 
 import { FlowAd } from '../Ad';
 import Vote from './Vote';
 import LoadCircle from '../LoadCircle';
 
-import useStyles from './useStyles';
 import { useVotes } from '../../hooks/parliamentHooks';
+
+const ListContainer = styled.div`
+  margin-bottom: 0.5rem;
+  > div {
+    padding: 8px;
+  }
+`;
 
 interface Props {
   router: NextRouter;
@@ -18,7 +24,6 @@ interface Props {
 }
 
 const VoteList: React.FC<Props> = ({ router, page }) => {
-  const classes = useStyles();
   const data = useVotes(router.query);
   const updatePage = useCallback(
     (_event: React.ChangeEvent<unknown>, newPage: number) => {
@@ -30,7 +35,7 @@ const VoteList: React.FC<Props> = ({ router, page }) => {
   );
 
   return (
-    <div className={classes.listContainer}>
+    <ListContainer>
       {!data ? (
         <LoadCircle />
       ) : (
@@ -41,7 +46,7 @@ const VoteList: React.FC<Props> = ({ router, page }) => {
                 <React.Fragment key={`${vote.documentId}:${vote.proposition}`}>
                   {!(index % 15) && <FlowAd />}
                   <div>
-                    <Vote vote={vote} classes={classes} />
+                    <Vote vote={vote} />
                   </div>
                 </React.Fragment>
               ))}
@@ -59,7 +64,7 @@ const VoteList: React.FC<Props> = ({ router, page }) => {
           )}
         </>
       )}
-    </div>
+    </ListContainer>
   );
 };
 

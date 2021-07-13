@@ -1,7 +1,8 @@
 import React, { useCallback } from 'react';
 
 import { Divider, Paper, Typography, useMediaQuery } from '@material-ui/core';
-import { styled, useTheme } from '@material-ui/core/styles';
+import { useTheme } from '@material-ui/core/styles';
+import styled from '@emotion/styled';
 
 import { PieChart, Pie, ResponsiveContainer, Cell, Tooltip } from 'recharts';
 
@@ -10,14 +11,14 @@ import { AveragePoll, BlocksAverage, displayFormatter } from '../../../lib/polls
 import { allBlocks, Blocks, partiesMap } from '../../../utils/getParties';
 import toolTipProps from '../../../utils/tooltipProps';
 
-const PollCard = styled(Paper)({
-  padding: '1rem 0.5rem',
-  marginTop: '1rem',
-});
+const PollCard = styled(Paper)`
+  padding: 1rem 0.5rem;
+  margin-top: 1rem;
+`;
 
-const BlockDivider = styled(Divider)({
-  marginBottom: '1rem',
-});
+const BlockDivider = styled(Divider)`
+  margin-bottom: 1rem;
+`;
 
 const blockSort =
   (blocks: Blocks['values']) => (a: AveragePoll[number], b: AveragePoll[number]) => {

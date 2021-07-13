@@ -5,8 +5,6 @@ import createCache, { EmotionCache } from '@emotion/cache';
 
 import createEmotionServer from '@emotion/server/create-instance';
 
-import { GA_TRACKING_ID } from '../src/utils/gtag';
-
 const getCache = (): EmotionCache => {
   const cache = createCache({ key: 'css', prepend: true });
   cache.compat = true;
@@ -49,29 +47,6 @@ class MyDocument extends Document {
             }
           `}
           </style>
-
-          {process.env.NODE_ENV === 'production' && (
-            <>
-              <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" />
-
-              {/* Global site tag (gtag.js) - Google Analytics  */}
-              <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`} />
-              <script
-                // eslint-disable-next-line react/no-danger
-                dangerouslySetInnerHTML={{
-                  __html: `
-                    window.dataLayer = window.dataLayer || [];
-                    function gtag(){dataLayer.push(arguments);}
-                    gtag('js', new Date());
-
-                    gtag('config', '${GA_TRACKING_ID}', {
-                      page_path: window.location.pathname,
-                    });
-                `,
-                }}
-              />
-            </>
-          )}
         </Head>
         <body style={{ height: '100%' }}>
           <Main />

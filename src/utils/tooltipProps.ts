@@ -11,10 +11,10 @@ const toolTipStyles = (theme: Theme): React.CSSProperties => ({
 const tooltipProps = (theme: Theme): TooltipProps<string | number, string> => ({
   contentStyle: toolTipStyles(theme),
   cursor: {
-    fill: theme.palette.type === 'dark' ? theme.palette.grey[800] : theme.palette.grey[400],
+    fill: theme.palette.mode === 'dark' ? theme.palette.grey[800] : theme.palette.grey[400],
   },
-  itemStyle: { color: theme.palette.type === 'dark' ? 'white' : 'black' },
-  labelStyle: { color: theme.palette.type === 'dark' ? 'white' : 'black' },
+  itemStyle: { color: theme.palette.mode === 'dark' ? 'white' : 'black' },
+  labelStyle: { color: theme.palette.mode === 'dark' ? 'white' : 'black' },
 });
 
 export default tooltipProps;

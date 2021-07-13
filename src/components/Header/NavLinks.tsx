@@ -65,7 +65,7 @@ const NavLinks: React.FC = () => {
   return (
     <Tabs
       variant="scrollable"
-      indicatorColor={theme.palette.type === 'dark' ? 'primary' : 'secondary'}
+      indicatorColor={theme.palette.mode === 'dark' ? 'primary' : 'secondary'}
       scrollButtons="on"
       value={selectedTab}
     >

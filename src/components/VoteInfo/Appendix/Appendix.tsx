@@ -24,7 +24,7 @@ const Appendix: React.FC<Props> = ({ appendix }) => {
             target="_blank"
             rel="noopener"
             variant="body1"
-            color={theme.palette.type === 'dark' ? 'secondary' : 'primary'}
+            color={theme.palette.mode === 'dark' ? 'secondary' : 'primary'}
           >
             {item.titel} {item.dok_id}
           </Link>

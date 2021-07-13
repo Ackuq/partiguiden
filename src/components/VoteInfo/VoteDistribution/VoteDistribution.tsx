@@ -63,7 +63,7 @@ const VoteDistribution: React.FC<Props> = ({ voting }) => {
   const [visible, setVisible] = useState(false);
   const theme = useTheme();
 
-  const colors = useMemo(() => voteColor[theme.palette.type], [theme.palette.type]);
+  const colors = useMemo(() => voteColor[theme.palette.mode], [theme.palette.mode]);
 
   const data = createData(voting);
 

@@ -1,8 +1,10 @@
-import React, { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
+
 import { AppProps } from 'next/app';
 
 import { useMediaQuery, CssBaseline } from '@material-ui/core';
 import { ThemeProvider } from '@material-ui/core/styles';
+import { CacheProvider, css, ThemeProvider as EmotionThemeProvider } from '@emotion/react';
 
 import Head from 'next/head';
 import { useRouter } from 'next/router';
@@ -14,6 +16,9 @@ import CookieBanner from '../src/components/CookieBanner';
 
 import getTheme from '../src/lib/theme';
 import * as gtag from '../src/utils/gtag';
+import getCache from '../src/lib/getCache';
+
+const cache = getCache();
 
 const DARK_MODE_KEY = 'prefersDarkMode';
 
@@ -58,34 +63,38 @@ const App: React.FC<AppProps> = ({ Component, pageProps }) => {
   }, [router.events]);
 
   return (
-    <ThemeProvider theme={theme}>
-      <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-      </Head>
-      <CssBaseline />
-      <Header
-        toggleDarkMode={() => {
-          setDarkModeState((prevValue) => {
-            const newValue = !prevValue;
-            setStoredDarkModeValue(newValue);
-            return newValue;
-          });
-        }}
-      />
-      <main
-        style={{
-          marginBottom: '1rem',
-          display: 'flex',
-          flexDirection: 'column',
-          flexGrow: 1,
-        }}
-      >
-        <Component {...pageProps} />
-      </main>
-      <Footer />
-      <ToTopButton />
-      <CookieBanner />
-    </ThemeProvider>
+    <CacheProvider value={cache}>
+      <ThemeProvider theme={theme}>
+        <EmotionThemeProvider theme={theme}>
+          <Head>
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
+          </Head>
+          <CssBaseline />
+          {/* <Header
+          toggleDarkMode={() => {
+            setDarkModeState((prevValue) => {
+              const newValue = !prevValue;
+              setStoredDarkModeValue(newValue);
+              return newValue;
+            });
+          }}
+        /> */}
+          <main
+            css={css`
+              margin-bottom: 1rem;
+              display: flex;
+              flex-direction: column;
+              flex-grow: 1;
+            `}
+          >
+            <Component {...pageProps} />
+          </main>
+          <Footer />
+          <ToTopButton />
+          <CookieBanner />
+        </EmotionThemeProvider>
+      </ThemeProvider>
+    </CacheProvider>
   );
 };
 

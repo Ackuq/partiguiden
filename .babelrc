@@ -1,5 +1,6 @@
 {
   "plugins": [
+    "@emotion",
     [
       "babel-plugin-import",
       {
@@ -28,5 +29,15 @@
       "icons"
     ]
   ],
-  "presets": ["next/babel"]
+  "presets": [
+    [
+      "next/babel",
+      {
+        "preset-react": {
+          "runtime": "automatic",
+          "importSource": "@emotion/react"
+        }
+      }
+    ]
+  ]
 }

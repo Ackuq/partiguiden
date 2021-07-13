@@ -4,7 +4,7 @@ const getTheme = (darkMode: boolean): Theme =>
   responsiveFontSizes(
     createTheme({
       palette: {
-        type: darkMode ? 'dark' : 'light',
+        mode: darkMode ? 'dark' : 'light',
         primary: {
           main: '#00796b',
         },
@@ -16,45 +16,48 @@ const getTheme = (darkMode: boolean): Theme =>
           default: darkMode ? '#18191A' : '#fafafa',
         },
       },
-      overrides: {
-        MuiTypography: {
-          button: {
-            textDecoration: 'none',
-          },
-          h1: {
-            fontSize: '2.5rem',
-          },
-          h2: {
-            fontSize: '2rem',
-          },
-          h3: {
-            fontSize: '1.75rem',
-          },
-          h4: {
-            fontSize: '1.5rem',
-            fontWeight: 'lighter',
-          },
-          h5: {
-            fontSize: '1.25rem',
-          },
-          h6: {
-            fontSize: '1rem',
-          },
+      typography: {
+        button: {
+          textDecoration: 'none',
         },
+        h1: {
+          fontSize: '2.5rem',
+        },
+        h2: {
+          fontSize: '2rem',
+        },
+        h3: {
+          fontSize: '1.75rem',
+        },
+        h4: {
+          fontSize: '1.5rem',
+          fontWeight: 'lighter',
+        },
+        h5: {
+          fontSize: '1.25rem',
+        },
+        h6: {
+          fontSize: '1rem',
+        },
+      },
+      components: {
         MuiButtonBase: {
-          root: {
-            fontSize: '1rem',
-            fontFamily: 'inherit',
-            '-webkit-transition': 'background-color 0.4s ease-in-out',
-            '-moz-transition': 'background-color 0.4s ease-in-out',
-            '-ms-transition': 'background-color 0.4s ease-in-out',
-            '-o-transition': 'background-color 0.4s ease-in-out',
-            transition: 'background-color 0.4s ease-in-out',
+          styleOverrides: {
+            root: {
+              fontSize: '1rem',
+              fontFamily: 'inherit',
+              WebkitTransition: 'background-color 0.4s ease-in-out',
+              MozTransition: 'background-color 0.4s ease-in-out',
+              msTransition: 'background-color 0.4s ease-in-out',
+              transition: 'background-color 0.4s ease-in-out',
+            },
           },
         },
         MuiTab: {
-          textColorInherit: {
-            opacity: 0.9,
+          styleOverrides: {
+            textColorInherit: {
+              opacity: 0.9,
+            },
           },
         },
       },

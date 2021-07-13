@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
     position: 'fixed',
     bottom: '1rem',
     right: '5%',
-    color: theme.palette.type === 'dark' ? 'white' : 'black',
+    color: theme.palette.mode === 'dark' ? 'white' : 'black',
     backgroundColor: theme.palette.background.paper,
     '&:hover': {
       backgroundColor: darken(theme.palette.background.paper, 0.25),

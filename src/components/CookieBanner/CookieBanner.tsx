@@ -8,7 +8,7 @@ import { COOKIE_POLICY } from '../../lib/routes';
 
 const CookieBannerContainer = styled(Paper)(({ theme }: { theme: Theme }) => ({
   backgroundColor:
-    theme.palette.type === 'dark' ? theme.palette.primary.dark : theme.palette.primary.main,
+    theme.palette.mode === 'dark' ? theme.palette.primary.dark : theme.palette.primary.main,
   color: '#fff',
   position: 'fixed',
   bottom: 0,

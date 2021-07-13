@@ -1,18 +1,18 @@
 import React from 'react';
 
 import { Grid, Link, Typography } from '@material-ui/core';
-import { styled, Theme } from '@material-ui/core/styles';
+import styled from '@emotion/styled';
 
 import { ResponsiveAd } from '../Ad';
 
-const FooterContent = styled('footer')(({ theme }: { theme: Theme }) => ({
-  padding: '1.5rem 0',
-  color: theme.palette.primary.contrastText,
-  background:
-    theme.palette.type === 'dark' ? theme.palette.background.paper : theme.palette.primary.main,
-  boxShadow: '0 -1px 3px rgba(34, 25, 25, 0.4)',
-  textAlign: 'center',
-}));
+const FooterContent = styled.footer`
+  padding: 1.5rem 0;
+  color: ${({ theme }) => theme.palette.primary.contrastText};
+  background: ${({ theme }) =>
+    theme.palette.mode === 'dark' ? theme.palette.background.paper : theme.palette.primary.main};
+  box-shadow: 0 -1px 3px rgba(34, 25, 25, 0.4);
+  text-align: center;
+`;
 
 const Footer: React.FC = () => (
   <>

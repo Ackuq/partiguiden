@@ -34,7 +34,7 @@ const ProcessedDocuments: React.FC<Props> = ({ processedDocuments }) => {
                 <Typography
                   component="a"
                   variant="body1"
-                  color={theme.palette.type === 'dark' ? 'secondary' : 'primary'}
+                  color={theme.palette.mode === 'dark' ? 'secondary' : 'primary'}
                 >
                   [{index}] {document.label}
                 </Typography>

@@ -12,21 +12,21 @@ const styles = (theme: Theme) =>
     featured: {
       width: '100%',
       textAlign: 'center',
-      boxShadow: theme.palette.type === 'dark' ? theme.shadows[5] : theme.shadows[2],
+      boxShadow: theme.palette.mode === 'dark' ? theme.shadows[5] : theme.shadows[2],
       fontWeight: 'normal',
       padding: '1rem',
       display: 'flex',
       flexGrow: 1,
       '&:hover': {
         backgroundColor:
-          theme.palette.type === 'dark' ? theme.palette.grey[800] : theme.palette.grey[100],
+          theme.palette.mode === 'dark' ? theme.palette.grey[800] : theme.palette.grey[100],
       },
     },
   });
 
 const ButtonText = styled(Typography)(({ theme }: { theme: Theme }) => ({
   color:
-    theme.palette.type === 'dark' ? theme.palette.primary.contrastText : theme.palette.primary.main,
+    theme.palette.mode === 'dark' ? theme.palette.primary.contrastText : theme.palette.primary.main,
 }));
 
 const useStyles = makeStyles(styles);

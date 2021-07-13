@@ -29,7 +29,7 @@ const Vote: React.FC<Props> = ({ vote, classes }) => {
             title={authority.desc}
             style={{
               background:
-                theme.palette.type === 'dark' ? darken(authority.color, 0.6) : authority.color,
+                theme.palette.mode === 'dark' ? darken(authority.color, 0.6) : authority.color,
             }}
             classes={{
               title: classes.headerTitle,

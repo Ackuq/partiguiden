@@ -7,7 +7,7 @@ const FilterContainerDesktop = styled(Box)(({ theme }: { theme: Theme }) => ({
   height: 'min-content',
   maxHeight: 'calc(100vh - 110px)',
   backgroundColor:
-    theme.palette.type === 'dark' ? theme.palette.background.paper : theme.palette.grey[50],
+    theme.palette.mode === 'dark' ? theme.palette.background.paper : theme.palette.grey[50],
   top: 102,
   overflowY: 'auto',
   overflowX: 'hidden',

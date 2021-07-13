@@ -25,7 +25,7 @@ const ProfilePicture: React.FC<Props> = ({ member }) => {
         display="flex"
         mb="100px"
         pt="50px"
-        bgcolor={theme.palette.type === 'dark' ? 'primary.dark' : 'primary.light'}
+        bgcolor={theme.palette.mode === 'dark' ? 'primary.dark' : 'primary.light'}
         justifyContent="center"
         boxShadow={2}
       >

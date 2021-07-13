@@ -55,7 +55,7 @@ const Block: React.FC<BlockProps> = ({
 }) => {
   const theme = useTheme();
 
-  const stroke = theme.palette.type === 'dark' ? 'transparent' : theme.palette.background.paper;
+  const stroke = theme.palette.mode === 'dark' ? 'transparent' : theme.palette.background.paper;
 
   const sortedAverage = [...currentAverage].sort(blockSort(blocks.values));
 

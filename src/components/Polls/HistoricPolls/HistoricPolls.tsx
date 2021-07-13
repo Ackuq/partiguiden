@@ -77,9 +77,9 @@ const HistoricPolls: React.FC<Props> = ({ historicPolls }) => {
           ))}
           <Brush
             dataKey="date"
-            fill={theme.palette.type === 'dark' ? theme.palette.grey[700] : 'white'}
+            fill={theme.palette.mode === 'dark' ? theme.palette.grey[700] : 'white'}
             stroke={
-              theme.palette.type === 'dark' ? theme.palette.grey[900] : theme.palette.grey[700]
+              theme.palette.mode === 'dark' ? theme.palette.grey[900] : theme.palette.grey[700]
             }
             style={{ marginBottom: 20, color: 'white' }}
           />

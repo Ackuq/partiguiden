@@ -65,7 +65,7 @@ const Branding: React.FC<Props> = ({ toggleDarkMode }) => {
 
 const ColoredAppBar = styled(AppBar)(({ theme }: { theme: Theme }) => ({
   backgroundColor:
-    theme.palette.type === 'dark' ? theme.palette.background.paper : theme.palette.primary.main,
+    theme.palette.mode === 'dark' ? theme.palette.background.paper : theme.palette.primary.main,
 }));
 
 const Header: React.FC<Props> = ({ toggleDarkMode }) => {

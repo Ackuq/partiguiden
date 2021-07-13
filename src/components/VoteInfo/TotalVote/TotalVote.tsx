@@ -26,7 +26,7 @@ interface Props {
 
 const TotalVote: React.FC<Props> = ({ voting }) => {
   const theme = useTheme();
-  const colors = useMemo(() => voteColor[theme.palette.type], [theme.palette.type]);
+  const colors = useMemo(() => voteColor[theme.palette.mode], [theme.palette.mode]);
 
   /* Special case if all is blank */
   if (Object.values(voting).every((v) => v === '')) {

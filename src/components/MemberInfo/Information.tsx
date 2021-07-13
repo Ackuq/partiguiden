@@ -57,7 +57,7 @@ const Information: React.FC<Props> = ({ id, informationRecords, absence }) => {
             <Typography
               variant="h4"
               component="span"
-              color={theme.palette.type === 'dark' ? 'textPrimary' : 'primary'}
+              color={theme.palette.mode === 'dark' ? 'textPrimary' : 'primary'}
             >
               Biografi
             </Typography>
@@ -88,7 +88,7 @@ const Information: React.FC<Props> = ({ id, informationRecords, absence }) => {
           <Typography
             variant="h4"
             component="span"
-            color={theme.palette.type === 'dark' ? 'textPrimary' : 'primary'}
+            color={theme.palette.mode === 'dark' ? 'textPrimary' : 'primary'}
           >
             Dokument
           </Typography>

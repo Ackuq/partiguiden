@@ -20,7 +20,7 @@ interface Props {
 const VoteResult: React.FC<Props> = ({ votes, classes }) => {
   const theme = useTheme();
 
-  const colors = useMemo(() => voteListColors[theme.palette.type], [theme.palette.type]);
+  const colors = useMemo(() => voteListColors[theme.palette.mode], [theme.palette.mode]);
 
   return (
     <Grid container className={classes.vote}>

@@ -3,24 +3,24 @@ import React, { useEffect, useState } from 'react';
 import ArrowUpIcon from '@material-ui/icons/ArrowUpwardRounded';
 
 import { Theme, Fab, Zoom } from '@material-ui/core';
-import { darken, makeStyles } from '@material-ui/core/styles';
+import { darken } from '@material-ui/core/styles';
+import styled from '@emotion/styled';
 
-const useStyles = makeStyles((theme: Theme) => ({
-  fab: {
-    position: 'fixed',
-    bottom: '1rem',
-    left: '5%',
-    right: '95%',
-    backgroundColor: theme.palette.background.paper,
-    '&:hover': {
-      backgroundColor: darken(theme.palette.background.paper, 0.25),
-    },
-  },
+const CustomFab = styled(Fab)`
+  position: fixed;
+  bottom: 1rem;
+  left: 5%;
+  right: 95%;
+  background-color: ${({ theme }) => theme.palette.background.paper};
+  :hover {
+    background-color: ${({ theme }) => darken(theme.palette.background.paper, 0.25)};
+  }
+`;
 
-  arrow: {
-    color: theme.palette.type === 'dark' ? theme.palette.primary.main : theme.palette.primary.dark,
-  },
-}));
+const CustomArrow = styled(ArrowUpIcon)`
+  color: ${({ theme }) =>
+    theme.palette.mode === 'dark' ? theme.palette.primary.main : theme.palette.primary.dark};
+`;
 
 const showUnder = 500;
 
@@ -46,12 +46,11 @@ const ToTopButton: React.FC = () => {
     window.scroll({ top: 0, left: 0, behavior: 'smooth' });
   };
 
-  const classes = useStyles();
   return (
     <Zoom in={show}>
-      <Fab onClick={scrollToTop} classes={{ root: classes.fab }} size="large">
-        <ArrowUpIcon classes={{ root: classes.arrow }} fontSize="large" />
-      </Fab>
+      <CustomFab onClick={scrollToTop} size="large">
+        <CustomArrow fontSize="large" />
+      </CustomFab>
     </Zoom>
   );
 };

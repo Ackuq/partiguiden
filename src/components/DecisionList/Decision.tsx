@@ -31,7 +31,7 @@ const Decision: React.FC<Props> = ({ decision, classes }) => {
             <div
               style={{
                 background:
-                  theme.palette.type === 'dark' ? darken(authority.color, 0.6) : authority.color,
+                  theme.palette.mode === 'dark' ? darken(authority.color, 0.6) : authority.color,
               }}
               className={classes.headerRoot}
             >

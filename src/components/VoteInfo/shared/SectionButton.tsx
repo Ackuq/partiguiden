@@ -3,7 +3,7 @@ import { styled, Theme } from '@material-ui/core/styles';
 
 const SectionButton = styled(ButtonBase)(({ theme }: { theme: Theme }) => ({
   backgroundColor:
-    theme.palette.type === 'dark' ? theme.palette.grey[900] : theme.palette.grey[100],
+    theme.palette.mode === 'dark' ? theme.palette.grey[900] : theme.palette.grey[100],
   width: '100%',
   borderRadius: '0.25rem',
   marginBottom: '0.25rem',

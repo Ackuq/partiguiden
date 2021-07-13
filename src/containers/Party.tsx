@@ -58,7 +58,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     boxShadow: theme.shadows[2],
     '&:hover': {
       backgroundColor:
-        theme.palette.type === 'dark' ? theme.palette.grey[700] : theme.palette.grey[200],
+        theme.palette.mode === 'dark' ? theme.palette.grey[700] : theme.palette.grey[200],
       boxShadow: theme.shadows[10],
     },
   },

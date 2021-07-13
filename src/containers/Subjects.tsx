@@ -36,13 +36,13 @@ const useStyles = makeStyles((theme: Theme) => ({
   transition: {
     margin: 0,
     background: `linear-gradient( to left, transparent 50%, ${
-      theme.palette.type === 'dark' ? theme.palette.primary.dark : theme.palette.primary.main
+      theme.palette.mode === 'dark' ? theme.palette.primary.dark : theme.palette.primary.main
     } 50% )`,
     backgroundSize: '202% 100%',
     backgroundPosition: 'right bottom',
     backgroundRepeat: 'no-repeat',
     color:
-      theme.palette.type === 'dark' ? theme.palette.primary.contrastText : theme.palette.grey[900],
+      theme.palette.mode === 'dark' ? theme.palette.primary.contrastText : theme.palette.grey[900],
     lineHeight: '50px',
     padding: '0 0.5rem',
     transition: 'all 0.2s ease-in-out',
@@ -63,32 +63,32 @@ const useStyles = makeStyles((theme: Theme) => ({
   item: {
     [theme.breakpoints.down('sm')]: {
       borderLeft: `solid 2px ${
-        theme.palette.type === 'dark' ? theme.palette.primary.dark : theme.palette.primary.main
+        theme.palette.mode === 'dark' ? theme.palette.primary.dark : theme.palette.primary.main
       }`,
     },
     [theme.breakpoints.up('md')]: {
       '&:nth-child(2n + 1)': {
         borderLeft: `solid 2px ${
-          theme.palette.type === 'dark' ? theme.palette.primary.dark : theme.palette.primary.main
+          theme.palette.mode === 'dark' ? theme.palette.primary.dark : theme.palette.primary.main
         }`,
       },
       '&:nth-child(2n)': {
         borderRight: `solid 2px ${
-          theme.palette.type === 'dark' ? theme.palette.primary.dark : theme.palette.primary.main
+          theme.palette.mode === 'dark' ? theme.palette.primary.dark : theme.palette.primary.main
         }`,
       },
     },
     '&:nth-child(3n)': {
       backgroundColor:
-        theme.palette.type === 'dark' ? theme.palette.background.paper : theme.palette.grey[50],
+        theme.palette.mode === 'dark' ? theme.palette.background.paper : theme.palette.grey[50],
     },
     '&:nth-child(3n + 1)': {
       backgroundColor:
-        theme.palette.type === 'dark' ? theme.palette.background.paper : theme.palette.grey[100],
+        theme.palette.mode === 'dark' ? theme.palette.background.paper : theme.palette.grey[100],
     },
     '&:nth-child(3n + 2)': {
       backgroundColor:
-        theme.palette.type === 'dark' ? theme.palette.background.paper : theme.palette.grey[200],
+        theme.palette.mode === 'dark' ? theme.palette.background.paper : theme.palette.grey[200],
     },
   },
 }));

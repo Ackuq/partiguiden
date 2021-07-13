@@ -16,11 +16,9 @@ const containerStyles = (theme: Theme) => css`
   ${theme.breakpoints.up('md')} {
     max-width: 90%;
   }
-  ,
   ${theme.breakpoints.up('lg')} {
     max-width: 70%;
   }
-  ,
   ${theme.breakpoints.up('xl')} {
     max-width: 60%;
   }
@@ -62,8 +60,8 @@ const Button = styled.a`
   }
 `;
 
-const Item = styled(Grid)`
-  ${({ theme }) => `
+const Item = styled(Grid)(
+  ({ theme }) => `
     ${theme.breakpoints.down('sm')} {
       border-left: solid 2px ${
         theme.palette.mode === 'dark' ? theme.palette.primary.dark : theme.palette.primary.main
@@ -93,8 +91,8 @@ const Item = styled(Grid)`
       background-color:
         ${theme.palette.mode === 'dark' ? theme.palette.background.paper : theme.palette.grey[200]};
     }
-  `}
-`;
+  `
+);
 
 interface Props {
   subjects: SubjectList;

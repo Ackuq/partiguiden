@@ -1,40 +1,88 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import useStyles from './useStyles';
+
+import styled from '@emotion/styled';
+
+import { PARTY_LOGOS_LOW_RES } from '../../assets/logos';
+import * as ROUTES from '../../lib/routes';
+import { PartyAbbreviation } from '../../utils/parties';
+
 import { MemberList } from '../../types/member';
 
-import * as ROUTES from '../../lib/routes';
-import { PARTY_LOGOS_LOW_RES } from '../../assets/logos';
-import { PartyAbbreviation } from '../../utils/parties';
+const MemberCard = styled.a(
+  ({ theme }) => `
+  box-shadow: ${theme.shadows[1]};
+  border-radius: ${theme.shape.borderRadius};
+  background-color: ${theme.palette.background.paper};
+  position: relative;
+  display: flex;
+  padding: 0.5rem 1rem 1.5rem 0.5rem;
+  justify-content: space-between;
+  text-align: left;
+  flex: 1;
+  text-decoration: none;
+`
+);
+
+const InfoContainer = styled.div(
+  ({ theme }) => `
+  color: ${theme.palette.mode === 'dark' ? theme.palette.text.primary : theme.palette.primary.main};
+  display: flex;
+  flex-direction: column;
+`
+);
+
+const Role = styled.span`
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+`;
+
+const InfoTitle = styled.span`
+  font-weight: 500;
+  margin-top: 0.25rem;
+  margin-bottom: 0.125rem;
+`;
+
+const ImageContainer = styled.div<{ url: string }>`
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
+  background: url(${({ url }) => url});
+  background-position-x: 50%;
+  background-position-y: 25%;
+  background-repeat: no-repeat;
+  background-size: cover;
+`;
+
+const NameContainer = styled.div`
+  padding: 0.5rem;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  border-radius: 0 0 4px 4px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+`;
 
 interface Props {
   member: MemberList[number];
-  classes: ReturnType<typeof useStyles>;
 }
 
-const Member: React.FC<Props> = ({ member, classes }) => (
+const Member: React.FC<Props> = ({ member }) => (
   <Link href={ROUTES.MEMBER} as={ROUTES.getMemberHref(member.id)} passHref>
-    <a className={classes.memberCard}>
-      <div className={classes.infoContainer}>
-        <span className={classes.role}>{member.status}</span>
+    <MemberCard>
+      <InfoContainer>
+        <Role>{member.status}</Role>
 
-        <span className={classes.infoTitle}>Valkrets</span>
+        <InfoTitle>Valkrets</InfoTitle>
         <span>{member.district}</span>
 
-        <span className={classes.infoTitle}>Ålder</span>
+        <InfoTitle>Ålder</InfoTitle>
         <span>{member.age}</span>
-      </div>
-      <div
-        className={classes.image}
-        style={{
-          background: `url(${member.pictureUrl})`,
-          backgroundPositionX: '50%',
-          backgroundPositionY: '25%',
-          backgroundRepeat: 'no-repeat',
-          backgroundSize: 'cover',
-        }}
-      >
+      </InfoContainer>
+      <ImageContainer url={member.pictureUrl}>
         {member.party !== '-' && (
           <Image
             width={50}
@@ -43,14 +91,14 @@ const Member: React.FC<Props> = ({ member, classes }) => (
             alt="Partisymbol"
           />
         )}
-      </div>
+      </ImageContainer>
 
-      <div className={classes.nameContainer}>
+      <NameContainer>
         <span>
           {member.lastName}, {member.firstName}
         </span>
-      </div>
-    </a>
+      </NameContainer>
+    </MemberCard>
   </Link>
 );
 

@@ -27,9 +27,17 @@ const Search: React.FC<Props> = ({ setSearchResult }) => {
     const controller = new AbortController();
     if (searchText !== undefined) {
       const { signal } = controller;
-      searchSubjects(searchText, signal).then((result) => {
-        setSearchResult(result);
-      });
+      searchSubjects(searchText, signal)
+        .then((result) => {
+          setSearchResult(result);
+        })
+        .catch((e) => {
+          /* Ignore abort errors */
+          if (e.name === 'AbortError') {
+            return;
+          }
+          throw e;
+        });
     }
     return () => {
       controller.abort();

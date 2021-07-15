@@ -21,7 +21,7 @@
     "@emotion/react": "^11.4.0",
     "@emotion/server": "^11.4.0",
     "@emotion/styled": "^11.3.0",
-    "@material-ui/core": "^5.0.0-beta.0",
+    "@material-ui/core": "^5.0.0-beta.1",
     "@material-ui/icons": "^4.11.2",
     "@next/bundle-analyzer": "^11.0.1",
     "@sentry/nextjs": "^6.9.0",

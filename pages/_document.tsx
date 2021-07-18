@@ -4,6 +4,7 @@ import Document, { Html, Head, Main, NextScript } from 'next/document';
 import createCache, { EmotionCache } from '@emotion/cache';
 
 import createEmotionServer from '@emotion/server/create-instance';
+import { adClientID } from '../src/components/Ad/enableAds';
 
 const getCache = (): EmotionCache => {
   const cache = createCache({ key: 'css', prepend: true });
@@ -48,7 +49,11 @@ class MyDocument extends Document {
           `}
           </style>
           {process.env.NODE_ENV === 'production' && (
-            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" />
+            <script
+              data-ad-client={adClientID}
+              async
+              src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+            />
           )}
         </Head>
         <body style={{ height: '100%' }}>

@@ -21,7 +21,7 @@ const getTheme = (darkMode: boolean): Theme =>
           textDecoration: 'none',
         },
         h1: {
-          fontSize: '2.5rem',
+          fontSize: '2.25rem',
         },
         h2: {
           fontSize: '2rem',
@@ -30,14 +30,14 @@ const getTheme = (darkMode: boolean): Theme =>
           fontSize: '1.75rem',
         },
         h4: {
-          fontSize: '1.5rem',
+          fontSize: '1.75rem',
           fontWeight: 'lighter',
         },
         h5: {
-          fontSize: '1.25rem',
+          fontSize: '1.5rem',
         },
         h6: {
-          fontSize: '1rem',
+          fontSize: '1.25rem',
         },
       },
       components: {

@@ -47,6 +47,9 @@ class MyDocument extends Document {
             }
           `}
           </style>
+          {process.env.NODE_ENV === 'production' && (
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" />
+          )}
         </Head>
         <body style={{ height: '100%' }}>
           <Main />

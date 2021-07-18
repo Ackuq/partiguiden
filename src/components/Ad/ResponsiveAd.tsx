@@ -15,7 +15,7 @@ const Ad: React.FC = () => {
         style={{ display: 'block' }}
         data-ad-client={adClientID}
         data-ad-slot={process.env.RESPONSIVE_AD_SLOT}
-        data-ad-format="auto"
+        data-ad-format="horizontal"
         data-full-width-responsive="true"
       />
     </div>

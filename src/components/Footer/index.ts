@@ -1,3 +1,3 @@
-import dynamic from 'next/dynamic';
+import Footer from './Footer';
 
-export default dynamic(() => import('./Footer'));
+export default Footer;

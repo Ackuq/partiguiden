@@ -27,8 +27,8 @@ const ChartContainer = styled(ResponsiveContainer)`
 `;
 
 const PollCard = styled(Paper)`
-  padding: '1rem 0.5rem;
-  margin-Top: ' 1rem;
+  padding: 1rem 0.5rem;
+  margin-top: 1rem;
 `;
 
 interface Props {

@@ -1,15 +1,11 @@
-import React, { useEffect } from 'react';
+import React from 'react';
+import Script from 'next/script';
 import enableAds, { adClientID } from './enableAds';
 
 const Ad: React.FC = () => {
-  useEffect(() => {
-    if (enableAds) {
-      (window.adsbygoogle = window.adsbygoogle || []).push({});
-    }
-  }, []);
-
   return enableAds ? (
     <div style={{ textAlign: 'center' }}>
+      <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" />
       <ins
         className="adsbygoogle"
         style={{ display: 'block' }}
@@ -17,6 +13,11 @@ const Ad: React.FC = () => {
         data-ad-slot={process.env.RESPONSIVE_AD_SLOT}
         data-ad-format="horizontal"
         data-full-width-responsive="true"
+      />
+      <Script
+        dangerouslySetInnerHTML={{
+          __html: `(adsbygoogle = window.adsbygoogle || []).push({});`,
+        }}
       />
     </div>
   ) : (

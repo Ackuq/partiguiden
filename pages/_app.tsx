@@ -69,13 +69,6 @@ function MyApp({ Component, pageProps, cache }: AppProps & { cache: EmotionCache
         <EmotionThemeProvider theme={theme}>
           {process.env.NODE_ENV === 'production' && (
             <>
-              {/* Google Ads */}
-              <Script
-                async
-                strategy="afterInteractive"
-                id="ads"
-                src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
-              />
               {/* Global site tag (gtag.js) - Google Analytics  */}
               <Script
                 async

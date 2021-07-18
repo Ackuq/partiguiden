@@ -14,18 +14,18 @@ const PartyContainer = styled.div`
   margin-bottom: 1.5rem;
 `;
 
-const PartyTitle = styled(ButtonBase)<{ partyColor: string }>`
+const PartyTitle = styled(ButtonBase)<{ color: string }>`
   justify-content: space-between;
   width: 100%;
   padding: 0.5rem;
-  border-bottom: ${({ partyColor }) => `2px solid ${partyColor}`};
+  border-bottom: ${({ color }) => `2px solid ${color}`};
 `;
 
-const Arrow = styled(ArrowDownRounded)<{ visible: boolean; partyColor: string }>`
+const Arrow = styled(ArrowDownRounded)<{ visible: 'true' | 'false'; arrowcolor: string }>`
   transition: transform 0.25s ease-in-out;
   font-size: 2rem;
-  color: ${({ partyColor }) => partyColor};
-  transform: rotate(${({ visible }) => (visible ? '180deg' : '0')});
+  color: ${({ arrowcolor }) => arrowcolor};
+  transform: rotate(${({ visible }) => (visible === 'true' ? '180deg' : '0')});
 `;
 
 interface Props {
@@ -47,7 +47,7 @@ const PartyStandpoints: React.FC<Props> = ({ standpoints, party }) => {
         onClick={handleClick}
         aria-expanded={visible}
         aria-label="Show more"
-        partyColor={partyColor}
+        color={partyColor}
       >
         <>
           <Typography
@@ -56,7 +56,7 @@ const PartyStandpoints: React.FC<Props> = ({ standpoints, party }) => {
           >
             {party.name}
           </Typography>
-          <Arrow partyColor={partyColor} visible={visible} />
+          <Arrow arrowcolor={partyColor} visible={visible.toString() as 'true' | 'false'} />
         </>
       </PartyTitle>
       <Collapse

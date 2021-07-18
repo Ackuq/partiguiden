@@ -3,7 +3,6 @@ import React from 'react';
 import NextLink from 'next/link';
 
 import { Avatar, Divider, Grid, Link, Paper, Typography } from '@material-ui/core';
-import { useTheme } from '@material-ui/core/styles';
 import styled from '@emotion/styled';
 import { css } from '@emotion/react';
 
@@ -49,10 +48,9 @@ const LeaderCard = styled(Paper)(
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    box-shadow: ${theme.shadows[2]};
     :hover {
       background-color:
-        ${theme.palette.mode === 'dark' ? theme.palette.grey[700] : theme.palette.grey[200]};
+        ${theme.palette.mode === 'dark' ? theme.palette.grey[800] : theme.palette.grey[200]};
       box-shadow: ${theme.shadows[10]};
     }
 `
@@ -63,96 +61,94 @@ const InformationDivider = styled(Divider)`
   margin-bottom: 0.5rem;
 `;
 
+const InformationCardWrapper = styled(Paper)`
+  padding: 1rem;
+  margin-bottom: ${({ theme }) => theme.spacing(4)};
+`;
+
 interface Props {
   party: PartyData;
 }
 
-const Party: React.FC<Props> = ({ party }) => {
-  const theme = useTheme();
-
-  const InformationCard: React.FC = () => (
-    <Paper
-      sx={{
-        padding: '1rem',
-        marginBottom: theme.spacing(4),
-      }}
-    >
-      <div>
-        <Typography variant="h5">Hemsida</Typography>
-        <Typography>
-          <Link href={party.website} rel="noopener" target="_blank">
-            {party.website}
-          </Link>
-        </Typography>
-      </div>
-      <InformationDivider />
-      <div>
-        <Typography variant="h5">Ideologi</Typography>
-        <Typography>{party.ideology.join(', ')}</Typography>
-        <Typography component="p" variant="caption">
-          Källa:{' '}
-          <Link href="https://www.wikipedia.org/" rel="noopener" target="_blank">
-            https://www.wikipedia.org/
-          </Link>
-        </Typography>
-      </div>
-      <InformationDivider />
-      <div>
-        <Typography variant="h5">Biografi</Typography>
-        <Typography component="div" variant="body2">
-          <Biography dangerouslySetInnerHTML={{ __html: party.abstract }} />
-        </Typography>
-        <Typography component="p" variant="caption">
-          Källa:{' '}
-          <Link href="https://www.wikipedia.org/" rel="noopener" target="_blank">
-            https://www.wikipedia.org/
-          </Link>
-        </Typography>
-      </div>
-    </Paper>
-  );
-
-  const Leader: React.FC<LeaderType> = ({ id, role, firstName, lastName, pictureUrl }) => {
-    return (
-      <Grid item md={3} sm={4} xs={6}>
-        <NextLink passHref href={ROUTES.MEMBER} as={ROUTES.getMemberHref(id)}>
-          <a
-            css={css`
-              text-decoration: none;
-            `}
-          >
-            <LeaderCard elevation={0}>
-              <LeaderAvatar src={pictureUrl} alt={`${firstName} ${lastName}`} />
-              <div>
-                <Typography variant="subtitle2" component="p">
-                  {firstName} {lastName}
-                </Typography>
-                <Typography>{role}</Typography>
-              </div>
-            </LeaderCard>
-          </a>
-        </NextLink>
-      </Grid>
-    );
-  };
-
-  const Leaders: React.FC = () => (
-    <Paper sx={{ padding: '1rem' }}>
-      <Typography gutterBottom variant="h4" align="center">
-        Ledning
+const InformationCard: React.FC<Props> = ({ party }) => (
+  <InformationCardWrapper>
+    <div>
+      <Typography variant="h5">Hemsida</Typography>
+      <Typography>
+        <Link href={party.website} rel="noopener" target="_blank">
+          {party.website}
+        </Link>
       </Typography>
-      <Grid container spacing={2} justifyContent="center">
-        {party.leaders.map((leader) => (
-          <Leader key={leader.sourceId} {...leader} />
-        ))}
-      </Grid>
-    </Paper>
-  );
+    </div>
+    <InformationDivider />
+    <div>
+      <Typography variant="h5">Ideologi</Typography>
+      <Typography>{party.ideology.join(', ')}</Typography>
+      <Typography component="p" variant="caption">
+        Källa:{' '}
+        <Link href="https://www.wikipedia.org/" rel="noopener" target="_blank">
+          https://www.wikipedia.org/
+        </Link>
+      </Typography>
+    </div>
+    <InformationDivider />
+    <div>
+      <Typography variant="h5">Biografi</Typography>
+      <Typography component="div" variant="body2">
+        <Biography dangerouslySetInnerHTML={{ __html: party.abstract }} />
+      </Typography>
+      <Typography component="p" variant="caption">
+        Källa:{' '}
+        <Link href="https://www.wikipedia.org/" rel="noopener" target="_blank">
+          https://www.wikipedia.org/
+        </Link>
+      </Typography>
+    </div>
+  </InformationCardWrapper>
+);
 
+const Leader: React.FC<LeaderType> = ({ id, role, firstName, lastName, pictureUrl }) => {
+  return (
+    <Grid item md={3} sm={4} xs={6}>
+      <NextLink passHref href={ROUTES.MEMBER} as={ROUTES.getMemberHref(id)}>
+        <a
+          css={css`
+            text-decoration: none;
+          `}
+        >
+          <LeaderCard elevation={0}>
+            <LeaderAvatar src={pictureUrl} alt={`${firstName} ${lastName}`} />
+            <div>
+              <Typography variant="subtitle2" component="p">
+                {firstName} {lastName}
+              </Typography>
+              <Typography>{role}</Typography>
+            </div>
+          </LeaderCard>
+        </a>
+      </NextLink>
+    </Grid>
+  );
+};
+
+const Leaders: React.FC<Props> = ({ party }) => (
+  <Paper sx={{ padding: '1rem' }}>
+    <Typography gutterBottom variant="h4" align="center">
+      Ledning
+    </Typography>
+    <Grid container spacing={2} justifyContent="center">
+      {party.leaders.map((leader) => (
+        <Leader key={leader.sourceId} {...leader} />
+      ))}
+    </Grid>
+  </Paper>
+);
+
+const Party: React.FC<Props> = ({ party }) => {
   return (
     <>
-      <InformationCard />
-      <Leaders />
+      <InformationCard party={party} />
+      <Leaders party={party} />
     </>
   );
 };

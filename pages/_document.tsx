@@ -57,6 +57,14 @@ class MyDocument extends Document {
                 async
                 src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
               />
+              <script
+                dangerouslySetInnerHTML={{
+                  __html: ` (adsbygoogle=window.adsbygoogle||[]).pauseAdRequests=1;
+                            // This will pause ad requests, so users have time to interact with your consent solution.
+                            (adsbygoogle=window.adsbygoogle||[]).push({google_ad_client: ${process.env.AD_CLIENT_ID}"ca-pubxxx", enable_page_level_ads: true});
+                            // This usually triggers the ad request, but you have paused these.`,
+                }}
+              />
               {/* Global site tag (gtag.js) - Google Analytics  */}
               <script
                 async
@@ -65,13 +73,13 @@ class MyDocument extends Document {
               <script
                 dangerouslySetInnerHTML={{
                   __html: `
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  gtag('js', new Date());
 
-                gtag('config', '${gtag.GA_TRACKING_ID}', {
-                  page_path: window.location.pathname,
-                });
+                  gtag('config', '${gtag.GA_TRACKING_ID}', {
+                    page_path: window.location.pathname,
+                  });
             `,
                 }}
               />

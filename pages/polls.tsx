@@ -18,6 +18,7 @@ import {
   MonthlyAverage,
 } from '../src/lib/polls';
 import PollsContainer from '../src/containers/Polls';
+import { ResponsiveAd } from '../src/components/Ad';
 
 const PollsPageContainer: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
   currentAverage,
@@ -39,6 +40,7 @@ const PollsPageContainer: NextPage<InferGetStaticPropsType<typeof getStaticProps
         blockAverage={blockAverage}
         historicPolls={historicPolls}
       />
+      <ResponsiveAd />
     </Container>
   </>
 );

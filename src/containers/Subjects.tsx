@@ -9,6 +9,7 @@ import { SubjectList } from '../types/subjects';
 
 import * as ROUTES from '../lib/routes';
 import Search from '../components/Search/Search';
+import { ResponsiveAd } from '../components/Ad';
 
 const containerStyles = (theme: Theme) => css`
   margin-left: auto;
@@ -123,6 +124,7 @@ const Subjects: React.FC<Props> = ({ subjects }) => {
           </Item>
         ))}
       </Grid>
+      <ResponsiveAd />
     </>
   );
 };

@@ -8,6 +8,7 @@ import Typed from '../src/components/Typed';
 import FrontPage from '../src/containers/FrontPage';
 import { getPopular } from '../src/lib/api';
 import { SubjectListEntry } from '../src/types/subjects';
+import { ResponsiveAd } from '../src/components/Ad';
 
 const PageTitleContainer = styled(Paper)`
   background-color: ${({ theme }) =>
@@ -46,6 +47,7 @@ const FrontPageContainer: NextPage<InferGetStaticPropsType<typeof getStaticProps
     </PageTitleContainer>
     <Container>
       <FrontPage popular={popular} />
+      <ResponsiveAd />
     </Container>
   </>
 );

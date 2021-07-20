@@ -1,4 +1,3 @@
-import React from 'react';
 import { NextPage, GetStaticProps, InferGetStaticPropsType } from 'next';
 import Head from 'next/head';
 

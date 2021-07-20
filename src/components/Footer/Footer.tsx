@@ -3,8 +3,6 @@ import React from 'react';
 import { Grid, Link, Typography } from '@material-ui/core';
 import styled from '@emotion/styled';
 
-import { ResponsiveAd } from '../Ad';
-
 const FooterContent = styled.footer`
   padding: 1.5rem 0;
   color: ${({ theme }) => theme.palette.primary.contrastText};
@@ -15,28 +13,20 @@ const FooterContent = styled.footer`
 `;
 
 const Footer: React.FC = () => (
-  <>
-    <ResponsiveAd />
-    <FooterContent>
-      <Grid direction="column" justifyContent="center" container>
-        <Grid item>
-          <Typography align="center" color="inherit" variant="subtitle1" component="span">
-            © Axel Pettersson 2021
-          </Typography>
-        </Grid>
-        <Grid item>
-          <Link
-            align="center"
-            color="inherit"
-            variant="subtitle1"
-            href="mailto:hello@partiguiden.se"
-          >
-            hello@partiguiden.se
-          </Link>
-        </Grid>
+  <FooterContent>
+    <Grid direction="column" justifyContent="center" container>
+      <Grid item>
+        <Typography align="center" color="inherit" variant="subtitle1" component="span">
+          © Axel Pettersson 2021
+        </Typography>
       </Grid>
-    </FooterContent>
-  </>
+      <Grid item>
+        <Link align="center" color="inherit" variant="subtitle1" href="mailto:hello@partiguiden.se">
+          hello@partiguiden.se
+        </Link>
+      </Grid>
+    </Grid>
+  </FooterContent>
 );
 
 export default Footer;

@@ -9,8 +9,8 @@ const Ad: React.FC = () => {
   }, []);
 
   return (
-    <div style={{ textAlign: 'center' }}>
-      {enableAds() && (
+    <div>
+      {enableAds() ? (
         <ins
           className="adsbygoogle"
           style={{ display: 'block' }}
@@ -19,6 +19,15 @@ const Ad: React.FC = () => {
           data-ad-format="horizontal"
           data-full-width-responsive="true"
         />
+      ) : (
+        <div
+          style={{
+            padding: 20,
+            border: '1px solid #ccc',
+          }}
+        >
+          Placeholder ad
+        </div>
       )}
     </div>
   );

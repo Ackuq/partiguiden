@@ -10,7 +10,7 @@ const Ad: React.FC = () => {
 
   return (
     <>
-      {enableAds() && (
+      {enableAds() ? (
         <ins
           className="adsbygoogle"
           style={{ display: 'block' }}
@@ -19,6 +19,15 @@ const Ad: React.FC = () => {
           data-ad-client={adClientID}
           data-ad-slot={process.env.FLOW_AD_SLOT}
         />
+      ) : (
+        <div
+          style={{
+            padding: 20,
+            border: '1px solid #ccc',
+          }}
+        >
+          Placeholder ad
+        </div>
       )}
     </>
   );

@@ -53,9 +53,9 @@ class MyDocument extends Document {
             <>
               {/* Google Ads */}
               <script
-                data-ad-client={process.env.AD_CLIENT_ID}
                 async
-                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+                src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${process.env.AD_CLIENT_ID}`}
+                crossOrigin="anonymous"
               />
               {/* Global site tag (gtag.js) - Google Analytics  */}
               <script

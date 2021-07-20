@@ -2,7 +2,6 @@ import { useEffect, useMemo, useState } from 'react';
 
 import { AppProps } from 'next/app';
 import Head from 'next/head';
-import Script from 'next/script';
 import { useRouter } from 'next/router';
 
 import { useMediaQuery, CssBaseline } from '@material-ui/core';
@@ -67,30 +66,6 @@ function MyApp({ Component, pageProps, cache }: AppProps & { cache: EmotionCache
     <CacheProvider value={cache ?? browserCache}>
       <ThemeProvider theme={theme}>
         <EmotionThemeProvider theme={theme}>
-          {process.env.NODE_ENV === 'production' && (
-            <>
-              {/* Global site tag (gtag.js) - Google Analytics  */}
-              <Script
-                async
-                strategy="afterInteractive"
-                id="analytics"
-                src={`https://www.googletagmanager.com/gtag/js?id=${gtag.GA_TRACKING_ID}`}
-              />
-              <Script
-                dangerouslySetInnerHTML={{
-                  __html: `
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-
-                gtag('config', '${gtag.GA_TRACKING_ID}', {
-                  page_path: window.location.pathname,
-                });
-            `,
-                }}
-              />
-            </>
-          )}
           <Head>
             <meta name="viewport" content="width=device-width, initial-scale=1" />
           </Head>

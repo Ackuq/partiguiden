@@ -5,6 +5,8 @@ import createCache, { EmotionCache } from '@emotion/cache';
 
 import createEmotionServer from '@emotion/server/create-instance';
 
+import * as gtag from '../src/utils/gtag';
+
 const getCache = (): EmotionCache => {
   const cache = createCache({ key: 'css', prepend: true });
   cache.compat = true;
@@ -48,11 +50,32 @@ class MyDocument extends Document {
           `}
           </style>
           {process.env.NODE_ENV === 'production' && (
-            <script
-              data-ad-client={process.env.AD_CLIENT_ID}
-              async
-              src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
-            />
+            <>
+              {/* Google Ads */}
+              <script
+                data-ad-client={process.env.AD_CLIENT_ID}
+                async
+                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+              />
+              {/* Global site tag (gtag.js) - Google Analytics  */}
+              <script
+                async
+                src={`https://www.googletagmanager.com/gtag/js?id=${gtag.GA_TRACKING_ID}`}
+              />
+              <script
+                dangerouslySetInnerHTML={{
+                  __html: `
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+
+                gtag('config', '${gtag.GA_TRACKING_ID}', {
+                  page_path: window.location.pathname,
+                });
+            `,
+                }}
+              />
+            </>
           )}
         </Head>
         <body style={{ height: '100%' }}>

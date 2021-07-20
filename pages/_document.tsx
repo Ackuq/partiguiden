@@ -57,14 +57,6 @@ class MyDocument extends Document {
                 async
                 src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
               />
-              <script
-                dangerouslySetInnerHTML={{
-                  __html: ` (adsbygoogle=window.adsbygoogle||[]).pauseAdRequests=1;
-                            // This will pause ad requests, so users have time to interact with your consent solution.
-                            (adsbygoogle=window.adsbygoogle||[]).push({google_ad_client: "${process.env.AD_CLIENT_ID}", enable_page_level_ads: true});
-                            // This usually triggers the ad request, but you have paused these.`,
-                }}
-              />
               {/* Global site tag (gtag.js) - Google Analytics  */}
               <script
                 async

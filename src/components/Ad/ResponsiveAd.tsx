@@ -4,7 +4,9 @@ import enableAds, { adClientID } from './enableAds';
 const Ad: React.FC = () => {
   useEffect(() => {
     if (enableAds) {
-      (window.adsbygoogle = window.adsbygoogle || []).push({});
+      if (typeof window !== 'undefined') {
+        (window.adsbygoogle = window.adsbygoogle || []).push({});
+      }
     }
   }, []);
 

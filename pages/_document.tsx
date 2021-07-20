@@ -61,7 +61,7 @@ class MyDocument extends Document {
                 dangerouslySetInnerHTML={{
                   __html: ` (adsbygoogle=window.adsbygoogle||[]).pauseAdRequests=1;
                             // This will pause ad requests, so users have time to interact with your consent solution.
-                            (adsbygoogle=window.adsbygoogle||[]).push({google_ad_client: ${process.env.AD_CLIENT_ID}"ca-pubxxx", enable_page_level_ads: true});
+                            (adsbygoogle=window.adsbygoogle||[]).push({google_ad_client: "${process.env.AD_CLIENT_ID}", enable_page_level_ads: true});
                             // This usually triggers the ad request, but you have paused these.`,
                 }}
               />

@@ -14,9 +14,11 @@ interface Props {
   members: MemberListType;
 }
 
+const MEMBERS_PER_PAGE = 24;
+
 const MemberList: React.FC<Props> = ({ members, filter }) => {
   const [filteredMembers, setFilteredMembers] = useState(members);
-  const [membersInView, setMembersInView] = useState(members.slice(0, 20));
+  const [membersInView, setMembersInView] = useState(members.slice(0, MEMBERS_PER_PAGE));
 
   const handleScroll = useCallback(() => {
     const bottom =
@@ -28,7 +30,7 @@ const MemberList: React.FC<Props> = ({ members, filter }) => {
           ...prevState,
           ...filteredMembers.slice(
             prevState.length,
-            prevState.length + Math.min(filteredMembers.length - prevState.length, 20)
+            prevState.length + Math.min(filteredMembers.length - prevState.length, MEMBERS_PER_PAGE)
           ),
         ];
       });

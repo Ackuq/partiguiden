@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 const withSourceMaps = require('@zeit/next-source-maps');
 const { withSentryConfig } = require('@sentry/nextjs');
-// const withPWA = require('next-pwa');
+const withPWA = require('next-pwa');
 const runtimeCaching = require('next-pwa/cache');
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
   enabled: process.env.ANALYZE === 'true',
@@ -29,14 +29,14 @@ const {
   RESPONSIVE_AD_SLOT,
 } = process.env;
 
-const moduleExports =
-  /* withPWA( */
+const moduleExports = withPWA(
   withBundleAnalyzer(
     withSourceMaps({
-      /* pwa: {
+      pwa: {
         dest: 'public',
+        disable: true,
         runtimeCaching,
-      }, */
+      },
       env: {
         NEXT_PUBLIC_COMMIT_SHA: VERCEL_GITHUB_COMMIT_SHA,
         API_URL,
@@ -59,8 +59,8 @@ const moduleExports =
 
       basePath: '',
     })
-  );
-// );
+  )
+);
 
 const SentryWebpackPluginOptions = {
   silent: true,

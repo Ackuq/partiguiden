@@ -58,7 +58,7 @@ const MemberList: React.FC<Props> = ({ members, filter }) => {
       return inParty && inSearch;
     });
     setFilteredMembers(newMembers);
-    setMembersInView(newMembers.slice(0, Math.min(10, newMembers.length)));
+    setMembersInView(newMembers.slice(0, Math.min(MEMBERS_PER_PAGE, newMembers.length)));
   }, [filter, members]);
 
   return (

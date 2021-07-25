@@ -4,7 +4,7 @@ const robotsTxtPolicy =
     : [{ userAgent: '*', disallow: '/' }];
 
 module.exports = {
-  siteUrl: process.env.BASE_PATH || 'https://partiguiden.se',
+  siteUrl: process.env.BASE_PATH || 'https://partiguiden.nu',
   generateRobotsTxt: true,
   robotsTxtOptions: {
     policies: robotsTxtPolicy,

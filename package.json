@@ -28,7 +28,7 @@
     "@sentry/webpack-plugin": "^1.17.1",
     "@zeit/next-source-maps": "^0.0.3",
     "isomorphic-unfetch": "^3.1.0",
-    "jsdom": "^16.7.0",
+    "jsdom": "^17.0.0",
     "moment": "^2.29.1",
     "next": "^11.1.0",
     "next-pwa": "^5.2.24",

@@ -28,4 +28,8 @@ const PageTitle: React.FC<Props> = ({ title, variant = 'h1', Icon }) => (
   </PageTitleContainer>
 );
 
+PageTitle.defaultProps = {
+  Icon: undefined,
+};
+
 export default PageTitle;

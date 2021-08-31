@@ -26,13 +26,12 @@ interface ListItemProps {
   href: string;
   Icon?: typeof SvgIcon | (() => JSX.Element);
   as?: string;
-  className?: string;
 }
 
-const CustomListItem: React.FC<ListItemProps> = ({ title, href, as, Icon, className }) => (
+const CustomListItem: React.FC<ListItemProps> = ({ title, href, as, Icon }) => (
   <Link href={href} as={as} passHref>
     <a style={{ color: 'inherit', textDecoration: 'none' }}>
-      <ListItem button key={href} className={className}>
+      <ListItem button key={href}>
         {Icon && (
           <ListItemIcon>
             <Icon />
@@ -44,19 +43,20 @@ const CustomListItem: React.FC<ListItemProps> = ({ title, href, as, Icon, classN
   </Link>
 );
 
+CustomListItem.defaultProps = {
+  Icon: undefined,
+  as: '',
+};
+
 const DropDownListItem = styled(CustomListItem)`
   padding-left: ${({ theme }) => theme.spacing(4)};
 `;
 
-/* const useStyles = makeStyles((theme: Theme) => ({
-  nested: {
-    paddingLeft: theme.spacing(4),
-  },
-}));
- */
-
-interface DropDownProps extends ListItemProps {
+interface DropDownProps {
+  title: string;
+  href: string;
   subPages: Array<{ title: string; id: string; Icon: typeof SvgIcon | (() => JSX.Element) }>;
+  Icon?: typeof SvgIcon | (() => JSX.Element);
 }
 
 const DropDown: React.FC<DropDownProps> = ({ title, href, subPages, Icon }) => {
@@ -88,13 +88,16 @@ const DropDown: React.FC<DropDownProps> = ({ title, href, subPages, Icon }) => {
               Icon={page.Icon}
               href={href}
               as={`${urlPrefix}${page.id}`}
-              // className={classes.nested}
             />
           ))}
         </List>
       </Collapse>
     </>
   );
+};
+
+DropDown.defaultProps = {
+  Icon: undefined,
 };
 
 interface Props {
@@ -130,9 +133,15 @@ const Drawer: React.FC<Props> = ({ isOpen, handleClose, handleOpen, appBarHeight
         </ListItem>
         {pages.map((page) =>
           page.subPages ? (
-            <DropDown key={page.href} {...page} />
+            <DropDown
+              key={page.href}
+              title={page.title}
+              subPages={page.subPages}
+              Icon={page.Icon}
+              href={page.href}
+            />
           ) : (
-            <CustomListItem key={page.href} {...page} />
+            <CustomListItem key={page.href} title={page.title} Icon={page.Icon} href={page.href} />
           )
         )}
       </List>

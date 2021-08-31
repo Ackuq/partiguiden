@@ -9,7 +9,12 @@ interface Props {
   vertical?: boolean;
 }
 
-const PartySymbolTick: React.FC<Props> = ({ vertical = false, payload = {}, x = '0', y = '0' }) => {
+const PartySymbolTick: React.FC<Props> = ({
+  vertical = false,
+  payload = { value: '' },
+  x = '0',
+  y = '0',
+}) => {
   const { value } = payload;
 
   const href = value ? `/static/images/party-logos/${value.toUpperCase()}-low-res.png` : '';
@@ -24,6 +29,13 @@ const PartySymbolTick: React.FC<Props> = ({ vertical = false, payload = {}, x = 
   }
 
   return <image x={`${X}`} y={`${Y}`} href={href} width="30" height="30" />;
+};
+
+PartySymbolTick.defaultProps = {
+  vertical: false,
+  payload: { value: '' },
+  x: '0',
+  y: '0',
 };
 
 export default PartySymbolTick;

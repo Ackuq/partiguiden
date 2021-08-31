@@ -47,7 +47,7 @@ interface BarrierLabelProps {
 
 const BarrierLabel: React.FC<BarrierLabelProps> = ({
   offset = 0,
-  viewBox = { x: 0, y: 0, width: 0 },
+  viewBox = { x: 0, y: 0, width: 0, height: 0 },
 }) => {
   const width = 70;
   const height = 25;
@@ -73,6 +73,11 @@ const BarrierLabel: React.FC<BarrierLabelProps> = ({
   );
 };
 
+BarrierLabel.defaultProps = {
+  offset: 0,
+  viewBox: { x: 0, y: 0, width: 0, height: 0 },
+};
+
 interface ToolTipProps {
   payload?: Array<{ name: string; payload?: unknown }>;
 }
@@ -93,6 +98,10 @@ const CustomToolTip: React.FC<ToolTipProps> = ({ ...props }) => {
     newProps.payload = [averagePayload, ...details];
   }
   return <DefaultTooltipContent {...newProps} />;
+};
+
+CustomToolTip.defaultProps = {
+  payload: undefined,
 };
 
 interface Props {

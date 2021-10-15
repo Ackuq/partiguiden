@@ -3,9 +3,9 @@ import React from 'react';
 import { NextPage } from 'next';
 import Head from 'next/head';
 
-import AnnouncementIcon from '@material-ui/icons/Announcement';
+import AnnouncementIcon from '@mui/icons-material/Announcement';
 
-import { Container, Card, CardContent, Typography } from '@material-ui/core';
+import { Container, Card, CardContent, Typography } from '@mui/material';
 
 import PageTitle from '../src/components/PageTitle';
 

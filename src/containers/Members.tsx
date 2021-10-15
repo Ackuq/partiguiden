@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import { Grid, Container } from '@material-ui/core';
+import { Grid, Container } from '@mui/material';
 import { css } from '@emotion/react';
 
 import { MembersFilter, MemberList } from '../components/MemberList';

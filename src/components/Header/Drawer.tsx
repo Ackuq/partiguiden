@@ -12,11 +12,11 @@ import {
   Collapse,
   ListItemIcon,
   SvgIcon,
-} from '@material-ui/core';
+} from '@mui/material';
 
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import ExpandLessIcon from '@material-ui/icons/ExpandLess';
-import CloseIcon from '@material-ui/icons/Close';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import ExpandLessIcon from '@mui/icons-material/ExpandLess';
+import CloseIcon from '@mui/icons-material/Close';
 
 import styled from '@emotion/styled';
 import pages from './pages';

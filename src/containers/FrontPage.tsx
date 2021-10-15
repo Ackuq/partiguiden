@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Grid, Card, CardContent, Typography } from '@material-ui/core';
+import { Grid, Card, CardContent, Typography } from '@mui/material';
 
 import Featured from '../components/Featured';
 

@@ -2,8 +2,8 @@ import React, { useEffect, useMemo, useState } from 'react';
 import { NextRouter, useRouter } from 'next/router';
 import Link from 'next/link';
 
-import { Menu, MenuItem, Tabs, Tab, TabProps } from '@material-ui/core';
-import { useTheme } from '@material-ui/core/styles';
+import { Menu, MenuItem, Tabs, Tab, TabProps } from '@mui/material';
+import { useTheme } from '@mui/material/styles';
 
 import pages from './pages';
 

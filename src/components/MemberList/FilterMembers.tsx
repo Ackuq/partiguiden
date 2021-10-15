@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Divider } from '@material-ui/core';
+import { Divider } from '@mui/material';
 
 import FilterContainer, { FilterList, FilterSearch } from '../Filter';
 

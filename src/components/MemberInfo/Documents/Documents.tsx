@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-import { Grid, Pagination } from '@material-ui/core';
+import { Grid, Pagination } from '@mui/material';
 import styled from '@emotion/styled';
 
 import LoadCircle from '../../LoadCircle';

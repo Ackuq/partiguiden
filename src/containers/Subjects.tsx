@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 
-import { Grid, Theme } from '@material-ui/core';
+import { Grid, Theme } from '@mui/material';
 import { css } from '@emotion/react';
 import styled from '@emotion/styled';
 

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Checkbox, List, ListItem, ListItemIcon, ListItemText } from '@material-ui/core';
+import { Checkbox, List, ListItem, ListItemIcon, ListItemText } from '@mui/material';
 
 interface Props {
   list: Array<unknown>;

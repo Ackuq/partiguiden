@@ -1,13 +1,13 @@
 import React from 'react';
 
-import HomeIcon from '@material-ui/icons/Home';
-import NoteIcon from '@material-ui/icons/Note';
-import GavelIcon from '@material-ui/icons/GavelRounded';
-import GroupIcon from '@material-ui/icons/Group';
-import HowToVoteIcon from '@material-ui/icons/HowToVoteRounded';
-import InfoIcon from '@material-ui/icons/InfoRounded';
-import PersonIcon from '@material-ui/icons/Person';
-import PollIcon from '@material-ui/icons/Poll';
+import HomeIcon from '@mui/icons-material/Home';
+import NoteIcon from '@mui/icons-material/Note';
+import GavelIcon from '@mui/icons-material/GavelRounded';
+import GroupIcon from '@mui/icons-material/Group';
+import HowToVoteIcon from '@mui/icons-material/HowToVoteRounded';
+import InfoIcon from '@mui/icons-material/InfoRounded';
+import PersonIcon from '@mui/icons-material/Person';
+import PollIcon from '@mui/icons-material/Poll';
 
 import Image from 'next/image';
 import parties from '../../utils/getParties';

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Typography, TypographyProps, Paper } from '@material-ui/core';
+import { Typography, TypographyProps, Paper } from '@mui/material';
 import styled from '@emotion/styled';
 
 const PageTitleContainer = styled(Paper)`

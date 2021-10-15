@@ -1,12 +1,12 @@
 import React, { useCallback, useRef, useState } from 'react';
 import Link from 'next/link';
 
-import { Grid, AppBar, ButtonBase, Hidden, IconButton, Toolbar } from '@material-ui/core';
+import { Grid, AppBar, ButtonBase, Hidden, IconButton, Toolbar } from '@mui/material';
 import styled from '@emotion/styled';
 import { css } from '@emotion/react';
 
-import MenuIcon from '@material-ui/icons/Menu';
-import BrightnessIcon from '@material-ui/icons/Brightness6';
+import MenuIcon from '@mui/icons-material/Menu';
+import BrightnessIcon from '@mui/icons-material/Brightness6';
 
 import NavLinks from './NavLinks';
 import Drawer from './Drawer';

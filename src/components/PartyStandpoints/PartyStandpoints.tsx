@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 
-import { Typography, Collapse, ButtonBase, Grid } from '@material-ui/core';
+import { Typography, Collapse, ButtonBase, Grid } from '@mui/material';
 import styled from '@emotion/styled';
 
-import ArrowDownRounded from '@material-ui/icons/KeyboardArrowDownRounded';
+import ArrowDownRounded from '@mui/icons-material/KeyboardArrowDownRounded';
 
 import PartyStandpoint from './PartyStandpoint';
 

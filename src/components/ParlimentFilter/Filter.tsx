@@ -1,5 +1,5 @@
 import React, { useCallback } from 'react';
-import { Divider } from '@material-ui/core';
+import { Divider } from '@mui/material';
 import { NextRouter } from 'next/router';
 import { stringify } from 'querystring';
 

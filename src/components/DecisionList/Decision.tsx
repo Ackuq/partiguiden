@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 
-import { Collapse, CardContent, Typography, ButtonBase, Button } from '@material-ui/core';
-import { darken } from '@material-ui/core/styles';
+import { Collapse, CardContent, Typography, ButtonBase, Button } from '@mui/material';
+import { darken } from '@mui/material/styles';
 import styled from '@emotion/styled';
 
-import ArrowDownIcon from '@material-ui/icons/KeyboardArrowDownRounded';
+import ArrowDownIcon from '@mui/icons-material/KeyboardArrowDownRounded';
 
 import { lookupAuthority } from '../../utils/authorityTable';
 import { Decision as DecisionType } from '../../types/decision';

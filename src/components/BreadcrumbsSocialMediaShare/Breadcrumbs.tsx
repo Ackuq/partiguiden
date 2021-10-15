@@ -1,8 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
 
-import { Breadcrumbs, Chip } from '@material-ui/core';
-import HomeIcon from '@material-ui/icons/Home';
+import { Breadcrumbs, Chip } from '@mui/material';
+import HomeIcon from '@mui/icons-material/Home';
 
 import styled from '@emotion/styled';
 import { INDEX } from '../../lib/routes';

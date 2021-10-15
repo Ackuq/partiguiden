@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 
-import ArrowUpIcon from '@material-ui/icons/ArrowUpwardRounded';
+import ArrowUpIcon from '@mui/icons-material/ArrowUpwardRounded';
 
-import { Fab, Zoom } from '@material-ui/core';
-import { darken } from '@material-ui/core/styles';
+import { Fab, Zoom } from '@mui/material';
+import { darken } from '@mui/material/styles';
 import styled from '@emotion/styled';
 
 const CustomFab = styled(Fab)`

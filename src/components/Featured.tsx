@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 
-import { Grid, ButtonBase, Typography } from '@material-ui/core';
+import { Grid, ButtonBase, Typography } from '@mui/material';
 import styled from '@emotion/styled';
 
 import { getStandpointHref, STANDPOINT } from '../lib/routes';

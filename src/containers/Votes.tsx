@@ -1,6 +1,6 @@
 import React from 'react';
 import { useRouter } from 'next/router';
-import { Container } from '@material-ui/core';
+import { Container } from '@mui/material';
 import { css } from '@emotion/react';
 
 import Filter from '../components/ParlimentFilter';

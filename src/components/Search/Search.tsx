@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 
-import { InputAdornment, TextField, TextFieldProps } from '@material-ui/core';
+import { InputAdornment, TextField, TextFieldProps } from '@mui/material';
 
-import SearchIcon from '@material-ui/icons/Search';
+import SearchIcon from '@mui/icons-material/Search';
 
 import { SubjectList } from '../../types/subjects';
 import { searchSubjects } from '../../lib/api';

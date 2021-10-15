@@ -124,7 +124,7 @@ MyDocument.getInitialProps = async (ctx) => {
       // eslint-disable-next-line @typescript-eslint/ban-ts-comment
       // @ts-ignore
       // eslint-disable-next-line react/display-name
-      enhanceApp: (App) => (props) => <App {...props} cache={cache} />,
+      enhanceApp: (App) => (props) => <App {...props} emotionCache={cache} />,
     });
 
   const initialProps = await Document.getInitialProps(ctx);

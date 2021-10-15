@@ -2,8 +2,8 @@ import React, { useMemo } from 'react';
 
 import Image from 'next/image';
 
-import { Typography, Grid } from '@material-ui/core';
-import { useTheme } from '@material-ui/core/styles';
+import { Typography, Grid } from '@mui/material';
+import { useTheme } from '@mui/material/styles';
 import styled from '@emotion/styled';
 
 import { VotingResult } from '../../types/voting';

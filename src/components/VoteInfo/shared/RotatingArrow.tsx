@@ -1,4 +1,4 @@
-import ArrowDownRounded from '@material-ui/icons/KeyboardArrowDownRounded';
+import ArrowDownRounded from '@mui/icons-material/KeyboardArrowDownRounded';
 import styled from '@emotion/styled';
 
 const RotatingArrow = styled(ArrowDownRounded)<{ active: 'true' | 'false' }>`

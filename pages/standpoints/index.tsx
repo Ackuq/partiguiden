@@ -1,7 +1,7 @@
 import { NextPage, GetStaticProps, InferGetStaticPropsType } from 'next';
 import Head from 'next/head';
 
-import NoteIcon from '@material-ui/icons/Note';
+import NoteIcon from '@mui/icons-material/Note';
 
 import PageTitle from '../../src/components/PageTitle';
 

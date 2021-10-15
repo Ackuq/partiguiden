@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 
-import { Paper, Button, Slide, Typography } from '@material-ui/core';
+import { Paper, Button, Slide, Typography } from '@mui/material';
 import styled from '@emotion/styled';
 
 import { COOKIE_POLICY } from '../../lib/routes';

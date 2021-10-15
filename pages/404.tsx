@@ -1,8 +1,8 @@
 import { NextPage } from 'next';
 import Head from 'next/head';
 
-import { Card, CardContent, Typography, Container } from '@material-ui/core';
-import ErrorIcon from '@material-ui/icons/Error';
+import { Card, CardContent, Typography, Container } from '@mui/material';
+import ErrorIcon from '@mui/icons-material/Error';
 
 import PageTitle from '../src/components/PageTitle';
 

@@ -1,12 +1,12 @@
 import React, { useCallback, useRef, useState } from 'react';
 import Link from 'next/link';
 
-import { Grid, AppBar, ButtonBase, Hidden, IconButton, Toolbar } from '@material-ui/core';
+import { Grid, AppBar, ButtonBase, IconButton, Toolbar, useMediaQuery, Theme } from '@mui/material';
 import styled from '@emotion/styled';
 import { css } from '@emotion/react';
 
-import MenuIcon from '@material-ui/icons/Menu';
-import BrightnessIcon from '@material-ui/icons/Brightness6';
+import MenuIcon from '@mui/icons-material/Menu';
+import BrightnessIcon from '@mui/icons-material/Brightness6';
 
 import NavLinks from './NavLinks';
 import Drawer from './Drawer';
@@ -56,6 +56,7 @@ const Branding: React.FC<Props> = ({ toggleDarkMode }) => {
 };
 
 const Header: React.FC<Props> = ({ toggleDarkMode }) => {
+  const isMobile = useMediaQuery<Theme>((theme) => theme.breakpoints.down('sm'));
   const [drawerOpen, setDrawerOpen] = useState(false);
   const appBar = useRef<HTMLDivElement>(null);
 
@@ -77,24 +78,27 @@ const Header: React.FC<Props> = ({ toggleDarkMode }) => {
           : theme.palette.primary.main};
       `}
     >
-      <Hidden smUp implementation="css">
-        <Toolbar>
-          <IconButton color="inherit" aria-label="open drawer" onClick={openDrawer} edge="start">
-            <MenuIcon />
-          </IconButton>
+      {isMobile ? (
+        <>
+          <Toolbar>
+            <IconButton color="inherit" aria-label="open drawer" onClick={openDrawer} edge="start">
+              <MenuIcon />
+            </IconButton>
+            <Branding toggleDarkMode={toggleDarkMode} />
+          </Toolbar>
+          <Drawer
+            isOpen={drawerOpen}
+            appBarHeight={appBar.current?.clientHeight ?? 56}
+            handleClose={closeDrawer}
+            handleOpen={openDrawer}
+          />
+        </>
+      ) : (
+        <>
           <Branding toggleDarkMode={toggleDarkMode} />
-        </Toolbar>
-        <Drawer
-          isOpen={drawerOpen}
-          appBarHeight={appBar.current?.clientHeight ?? 56}
-          handleClose={closeDrawer}
-          handleOpen={openDrawer}
-        />
-      </Hidden>
-      <Hidden smDown implementation="css">
-        <Branding toggleDarkMode={toggleDarkMode} />
-        <NavLinks />
-      </Hidden>
+          <NavLinks />
+        </>
+      )}
     </AppBar>
   );
 };

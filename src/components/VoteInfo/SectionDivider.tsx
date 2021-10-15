@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { Divider } from '@material-ui/core';
+import { Divider } from '@mui/material';
 
 const SectionDivider = styled(Divider)`
   margin: 1rem 0px;

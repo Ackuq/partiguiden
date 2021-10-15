@@ -2,9 +2,9 @@ import React from 'react';
 import { NextPage } from 'next';
 import Head from 'next/head';
 
-import InfoIcon from '@material-ui/icons/Info';
+import InfoIcon from '@mui/icons-material/Info';
 
-import { Container, Card, CardContent, Typography, Link } from '@material-ui/core';
+import { Container, Card, CardContent, Typography, Link } from '@mui/material';
 
 import PageTitle from '../src/components/PageTitle';
 

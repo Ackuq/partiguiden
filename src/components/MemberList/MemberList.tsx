@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useCallback } from 'react';
 
-import { Grid } from '@material-ui/core';
+import { Grid } from '@mui/material';
 
 import Member from './Member';
 import { MemberList as MemberListType } from '../../types/member';

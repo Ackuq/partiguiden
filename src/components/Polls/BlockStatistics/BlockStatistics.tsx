@@ -1,7 +1,7 @@
 import React, { useCallback } from 'react';
 
-import { Divider, Paper, Typography, useMediaQuery } from '@material-ui/core';
-import { useTheme } from '@material-ui/core/styles';
+import { Divider, Paper, Typography, useMediaQuery } from '@mui/material';
+import { useTheme } from '@mui/material/styles';
 import styled from '@emotion/styled';
 
 import { PieChart, Pie, ResponsiveContainer, Cell, Tooltip } from 'recharts';

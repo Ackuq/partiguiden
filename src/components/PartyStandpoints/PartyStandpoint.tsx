@@ -11,7 +11,7 @@ import {
   ListItem,
   ListItemIcon,
   ListItemText,
-} from '@material-ui/core';
+} from '@mui/material';
 import styled from '@emotion/styled';
 
 import { PartyInfo } from '../../utils/parties';

@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { Typography, Link } from '@material-ui/core';
-import { useTheme } from '@material-ui/core/styles';
+import { Typography, Link } from '@mui/material';
+import { useTheme } from '@mui/material/styles';
 
 import { VoteAppendixItem } from '../../../types/voting';
 import SectionDivider from '../SectionDivider';

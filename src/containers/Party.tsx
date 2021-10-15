@@ -2,7 +2,7 @@ import React from 'react';
 
 import NextLink from 'next/link';
 
-import { Avatar, Divider, Grid, Link, Paper, Typography } from '@material-ui/core';
+import { Avatar, Divider, Grid, Link, Paper, Typography } from '@mui/material';
 import styled from '@emotion/styled';
 import { css } from '@emotion/react';
 

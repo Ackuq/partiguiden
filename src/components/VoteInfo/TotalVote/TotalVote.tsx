@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
 
-import { CircularProgress } from '@material-ui/core';
-import { useTheme } from '@material-ui/core/styles';
+import { CircularProgress } from '@mui/material';
+import { useTheme } from '@mui/material/styles';
 
 import { ResponsiveContainer, BarChart, XAxis, YAxis, Bar, Legend, Tooltip } from 'recharts';
 

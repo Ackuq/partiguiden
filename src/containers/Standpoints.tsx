@@ -1,5 +1,5 @@
 import React from 'react';
-import { Divider, Link as MUILink, Typography } from '@material-ui/core';
+import { Divider, Link as MUILink, Typography } from '@mui/material';
 import styled from '@emotion/styled';
 
 import Link from 'next/link';

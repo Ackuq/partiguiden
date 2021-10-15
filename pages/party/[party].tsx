@@ -4,7 +4,7 @@ import { GetStaticPaths, GetStaticProps, InferGetStaticPropsType, NextPage } fro
 import Head from 'next/head';
 import Image from 'next/image';
 
-import { Container } from '@material-ui/core';
+import { Container } from '@mui/material';
 
 import SocialMediaShare from '../../src/components/BreadcrumbsSocialMediaShare/SocialMediaShare';
 import { PartyData } from '../../src/types/party';

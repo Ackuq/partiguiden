@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 
-import { Fab, SwipeableDrawer, Hidden, IconButton } from '@material-ui/core';
-import { darken } from '@material-ui/core/styles';
+import { Fab, SwipeableDrawer, IconButton, useMediaQuery, Theme } from '@mui/material';
+import { darken } from '@mui/material/styles';
 import styled from '@emotion/styled';
 
-import FilterIcon from '@material-ui/icons/Tune';
-import CloseIcon from '@material-ui/icons/CloseRounded';
+import FilterIcon from '@mui/icons-material/Tune';
+import CloseIcon from '@mui/icons-material/CloseRounded';
 
 import FilterContainerDesktop from './FilterContainerDesktop';
 
@@ -28,39 +28,38 @@ const IconButtonContainer = styled.div`
 `;
 
 const Filter: React.FC<{ children: React.ReactChild | React.ReactChild[] }> = ({ children }) => {
+  const isMobile = useMediaQuery<Theme>((theme) => theme.breakpoints.down('sm'));
+
   const [mobileOpen, setMobileOpen] = useState(false);
 
   const toggleFilterScreen = () => setMobileOpen((prevState) => !prevState);
 
-  return (
+  return isMobile ? (
     <>
-      <Hidden smUp>
-        <CustomFab onClick={toggleFilterScreen}>
-          <FilterIcon color="inherit" fontSize="large" />
-        </CustomFab>
+      <CustomFab onClick={toggleFilterScreen}>
+        <FilterIcon color="inherit" fontSize="large" />
+      </CustomFab>
 
-        <SwipeableDrawer
-          variant="temporary"
-          anchor="right"
-          open={mobileOpen}
-          onClose={() => toggleFilterScreen()}
-          onOpen={() => toggleFilterScreen()}
-          ModalProps={{
-            keepMounted: true, // Better open performance on mobile.
-          }}
-        >
-          <IconButtonContainer>
-            <IconButton aria-label="Close" onClick={toggleFilterScreen}>
-              <CloseIcon />
-            </IconButton>
-          </IconButtonContainer>
-          {children}
-        </SwipeableDrawer>
-      </Hidden>
-      <Hidden smDown>
-        <FilterContainerDesktop>{children}</FilterContainerDesktop>
-      </Hidden>
+      <SwipeableDrawer
+        variant="temporary"
+        anchor="right"
+        open={mobileOpen}
+        onClose={() => toggleFilterScreen()}
+        onOpen={() => toggleFilterScreen()}
+        ModalProps={{
+          keepMounted: true, // Better open performance on mobile.
+        }}
+      >
+        <IconButtonContainer>
+          <IconButton aria-label="Close" onClick={toggleFilterScreen}>
+            <CloseIcon />
+          </IconButton>
+        </IconButtonContainer>
+        {children}
+      </SwipeableDrawer>
     </>
+  ) : (
+    <FilterContainerDesktop>{children}</FilterContainerDesktop>
   );
 };
 

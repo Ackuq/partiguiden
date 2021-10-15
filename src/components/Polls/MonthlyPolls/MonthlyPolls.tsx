@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { Paper, Typography, useMediaQuery } from '@material-ui/core';
-import { useTheme } from '@material-ui/core/styles';
+import { Paper, Typography, useMediaQuery } from '@mui/material';
+import { useTheme } from '@mui/material/styles';
 import styled from '@emotion/styled';
 
 import {

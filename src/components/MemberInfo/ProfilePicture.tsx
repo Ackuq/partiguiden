@@ -2,8 +2,8 @@ import React from 'react';
 
 import Image from 'next/image';
 
-import { Typography, Box } from '@material-ui/core';
-import { useTheme } from '@material-ui/core/styles';
+import { Typography, Box } from '@mui/material';
+import { useTheme } from '@mui/material/styles';
 
 import { Member } from '../../types/member';
 

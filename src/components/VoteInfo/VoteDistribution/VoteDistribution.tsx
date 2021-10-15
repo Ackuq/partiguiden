@@ -1,7 +1,7 @@
 import React, { useMemo, useState } from 'react';
 
-import { CircularProgress, Typography, Collapse } from '@material-ui/core';
-import { useTheme } from '@material-ui/core/styles';
+import { CircularProgress, Typography, Collapse } from '@mui/material';
+import { useTheme } from '@mui/material/styles';
 import styled from '@emotion/styled';
 
 import {

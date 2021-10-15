@@ -4,8 +4,8 @@ import { AppProps } from 'next/app';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 
-import { useMediaQuery, CssBaseline } from '@material-ui/core';
-import { ThemeProvider } from '@material-ui/core/styles';
+import { useMediaQuery, CssBaseline } from '@mui/material';
+import { ThemeProvider } from '@mui/material/styles';
 import { CacheProvider, css, ThemeProvider as EmotionThemeProvider } from '@emotion/react';
 
 import createCache, { EmotionCache } from '@emotion/cache';
@@ -38,7 +38,11 @@ const setStoredDarkModeValue = (value: boolean) => {
   localStorage.setItem(DARK_MODE_KEY, value.toString());
 };
 
-function MyApp({ Component, pageProps, cache }: AppProps & { cache: EmotionCache }): JSX.Element {
+interface Props extends AppProps {
+  emotionCache?: EmotionCache;
+}
+
+function MyApp({ Component, pageProps, emotionCache = browserCache }: Props): JSX.Element {
   const router = useRouter();
   const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
   const [darkModeState, setDarkModeState] = useState(prefersDarkMode);
@@ -63,7 +67,7 @@ function MyApp({ Component, pageProps, cache }: AppProps & { cache: EmotionCache
   }, [router.events]);
 
   return (
-    <CacheProvider value={cache ?? browserCache}>
+    <CacheProvider value={emotionCache}>
       <ThemeProvider theme={theme}>
         <EmotionThemeProvider theme={theme}>
           <Head>

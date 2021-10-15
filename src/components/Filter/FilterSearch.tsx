@@ -1,8 +1,8 @@
 import React from 'react';
 
-import { InputBase, InputAdornment } from '@material-ui/core';
+import { InputBase, InputAdornment } from '@mui/material';
 
-import SearchIcon from '@material-ui/icons/Search';
+import SearchIcon from '@mui/icons-material/Search';
 
 interface Props {
   search: string;

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { CircularProgress } from '@material-ui/core';
+import { CircularProgress } from '@mui/material';
 import styled from '@emotion/styled';
 
 const FullLoadCircle = styled(CircularProgress)`

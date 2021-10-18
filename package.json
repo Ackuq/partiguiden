@@ -17,7 +17,7 @@
   "author": "Axel Pettersson",
   "license": "ISC",
   "dependencies": {
-    "@emotion/cache": "^11.4.0",
+    "@emotion/cache": "^11.5.0",
     "@emotion/react": "^11.4.1",
     "@emotion/server": "^11.4.0",
     "@emotion/styled": "^11.3.0",

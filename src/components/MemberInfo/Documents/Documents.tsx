@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
 
 import { Grid, Pagination } from '@mui/material';
-import styled from '@emotion/styled';
+import { styled } from '@mui/material/styles';
 
 import LoadCircle from '../../LoadCircle';
 import Document from './Document';
 import { useMemberDocuments } from '../../../hooks/parliamentHooks';
 
-const PaginationContainer = styled.div`
+const PaginationContainer = styled('div')`
   display: flex;
   justify-content: center;
   flex: 1;

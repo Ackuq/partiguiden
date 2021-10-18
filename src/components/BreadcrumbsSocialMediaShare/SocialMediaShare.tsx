@@ -2,18 +2,18 @@ import React from 'react';
 
 import { FacebookShareButton, FacebookIcon, TwitterShareButton, TwitterIcon } from 'react-share';
 
-import styled from '@emotion/styled';
+import { styled } from '@mui/material/styles';
 
 import { useRouter } from 'next/router';
 
-const SocialMediaWrapper = styled.div`
+const SocialMediaWrapper = styled('div')`
   display: flex;
   margin-bottom: 1rem;
   justify-content: flex-end;
   flex-grow: 1;
 `;
 
-const IconWrapper = styled.div`
+const IconWrapper = styled('div')`
   cursor: pointer;
   margin-left: 0.25rem;
   margin-right: 0.25rem;

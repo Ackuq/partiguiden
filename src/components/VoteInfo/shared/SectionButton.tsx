@@ -1,5 +1,5 @@
 import { ButtonBase } from '@mui/material';
-import styled from '@emotion/styled';
+import { styled } from '@mui/material/styles';
 
 const SectionButton = styled(ButtonBase)`
   background-color: ${({ theme }) =>

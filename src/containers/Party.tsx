@@ -3,15 +3,14 @@ import React from 'react';
 import NextLink from 'next/link';
 
 import { Avatar, Divider, Grid, Link, Paper, Typography } from '@mui/material';
-import styled from '@emotion/styled';
-import { css } from '@emotion/react';
+import { styled } from '@mui/material/styles';
 
 import * as ROUTES from '../lib/routes';
 
 import { Leader as LeaderType } from '../types/member';
 import { PartyData } from '../types/party';
 
-const Biography = styled.div`
+const Biography = styled('div')`
   p {
     margin-top: 0.5em;
     margin-bottom: 0.5em;
@@ -111,11 +110,7 @@ const Leader: React.FC<LeaderType> = ({ id, role, firstName, lastName, pictureUr
   return (
     <Grid item md={3} sm={4} xs={6}>
       <NextLink passHref href={ROUTES.MEMBER} as={ROUTES.getMemberHref(id)}>
-        <a
-          css={css`
-            text-decoration: none;
-          `}
-        >
+        <a style={{ textDecoration: 'none' }}>
           <LeaderCard elevation={0}>
             <LeaderAvatar src={pictureUrl} alt={`${firstName} ${lastName}`} />
             <div>

@@ -2,8 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 
 import { Card, CardContent, CardHeader, Typography, ButtonBase } from '@mui/material';
-import { darken } from '@mui/material/styles';
-import styled from '@emotion/styled';
+import { darken, styled } from '@mui/material/styles';
 
 import VoteResult from './VoteResult';
 

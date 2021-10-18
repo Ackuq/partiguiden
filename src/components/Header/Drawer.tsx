@@ -18,18 +18,18 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 import CloseIcon from '@mui/icons-material/Close';
 
-import styled from '@emotion/styled';
+import { styled } from '@mui/material/styles';
 import pages from './pages';
 
 interface ListItemProps {
   title: string;
   href: string;
   Icon?: typeof SvgIcon | (() => JSX.Element);
-  as?: string;
+  linkAs?: string;
 }
 
-const CustomListItem: React.FC<ListItemProps> = ({ title, href, as, Icon }) => (
-  <Link href={href} as={as} passHref>
+const CustomListItem: React.FC<ListItemProps> = ({ title, href, linkAs, Icon }) => (
+  <Link href={href} as={linkAs} passHref>
     <a style={{ color: 'inherit', textDecoration: 'none' }}>
       <ListItem button key={href}>
         {Icon && (
@@ -42,11 +42,6 @@ const CustomListItem: React.FC<ListItemProps> = ({ title, href, as, Icon }) => (
     </a>
   </Link>
 );
-
-CustomListItem.defaultProps = {
-  Icon: undefined,
-  as: '',
-};
 
 const DropDownListItem = styled(CustomListItem)`
   padding-left: ${({ theme }) => theme.spacing(4)};
@@ -87,17 +82,13 @@ const DropDown: React.FC<DropDownProps> = ({ title, href, subPages, Icon }) => {
               title={page.title}
               Icon={page.Icon}
               href={href}
-              as={`${urlPrefix}${page.id}`}
+              linkAs={`${urlPrefix}${page.id}`}
             />
           ))}
         </List>
       </Collapse>
     </>
   );
-};
-
-DropDown.defaultProps = {
-  Icon: undefined,
 };
 
 interface Props {

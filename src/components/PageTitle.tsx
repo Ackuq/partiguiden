@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Typography, TypographyProps, Paper } from '@mui/material';
-import styled from '@emotion/styled';
+import { styled } from '@mui/material/styles';
 
 const PageTitleContainer = styled(Paper)`
   z-index: 99;

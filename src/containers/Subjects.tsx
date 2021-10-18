@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 
-import { Grid, Theme } from '@mui/material';
-import { css } from '@emotion/react';
-import styled from '@emotion/styled';
+import { Grid } from '@mui/material';
+import { styled } from '@mui/material/styles';
 
 import { SubjectList } from '../types/subjects';
 
@@ -11,26 +10,18 @@ import * as ROUTES from '../lib/routes';
 import Search from '../components/Search/Search';
 import { ResponsiveAd } from '../components/Ad';
 
-const containerStyles = (theme: Theme) => css`
-  margin-left: auto;
-  margin-right: auto;
-  ${theme.breakpoints.up('md')} {
-    max-width: 90%;
-  }
-  ${theme.breakpoints.up('lg')} {
-    max-width: 70%;
-  }
-  ${theme.breakpoints.up('xl')} {
-    max-width: 60%;
-  }
-`;
+const containerSx = {
+  marginLeft: 'auto',
+  marginRight: 'auto',
+  maxWidth: { md: '90%', lg: '70%', xl: '60%' },
+};
 
-const SearchContainer = styled.div`
+const SearchContainer = styled('div')`
   width: 100%;
   margin-top: -1rem;
 `;
 
-const Transition = styled.span`
+const Transition = styled('span')`
   margin: 0;
   background: linear-gradient(
     to left,
@@ -49,7 +40,7 @@ const Transition = styled.span`
   transition: all 0.2s ease-in-out;
 `;
 
-const Button = styled.a`
+const Button = styled('a')`
   text-decoration: none;
   display: flex;
   flex: 1;
@@ -104,14 +95,14 @@ const Subjects: React.FC<Props> = ({ subjects }) => {
 
   return (
     <>
-      <SearchContainer css={containerStyles}>
+      <SearchContainer sx={containerSx}>
         <Search setSearchResult={setShownSubjects} />
       </SearchContainer>
       <Grid
         container
-        css={containerStyles}
         sx={{
           marginBottom: '1rem',
+          ...containerSx,
         }}
       >
         {shownSubjects.map((subject) => (

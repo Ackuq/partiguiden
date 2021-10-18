@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
-import { Typography, Collapse, ButtonBase, Grid } from '@mui/material';
-import styled from '@emotion/styled';
+import { Typography, Collapse, ButtonBase, Stack } from '@mui/material';
+import { styled } from '@mui/material/styles';
 
 import ArrowDownRounded from '@mui/icons-material/KeyboardArrowDownRounded';
 
@@ -10,7 +10,7 @@ import PartyStandpoint from './PartyStandpoint';
 import { PartyInfo } from '../../utils/parties';
 import { Standpoint } from '../../types/subjects';
 
-const PartyContainer = styled.div`
+const PartyContainer = styled('div')`
   margin-bottom: 1.5rem;
 `;
 
@@ -68,7 +68,7 @@ const PartyStandpoints: React.FC<Props> = ({ standpoints, party }) => {
         timeout="auto"
         unmountOnExit
       >
-        <Grid container spacing={3} style={{ marginTop: '0.5rem' }}>
+        <Stack spacing={3} sx={{ marginTop: '1rem' }}>
           {standpoints.map((standpoint) => (
             <PartyStandpoint
               standpoint={standpoint}
@@ -76,7 +76,7 @@ const PartyStandpoints: React.FC<Props> = ({ standpoints, party }) => {
               key={`${party.name}${standpoint.title}`}
             />
           ))}
-        </Grid>
+        </Stack>
       </Collapse>
     </PartyContainer>
   );

@@ -1,7 +1,7 @@
 import React, { useCallback, useRef, useState } from 'react';
 import Link from 'next/link';
 
-import { Grid, AppBar, ButtonBase, IconButton, Toolbar, useMediaQuery, Theme } from '@mui/material';
+import { Grid, AppBar, ButtonBase, IconButton, Toolbar, Box } from '@mui/material';
 import styled from '@emotion/styled';
 import { css } from '@emotion/react';
 
@@ -56,7 +56,6 @@ const Branding: React.FC<Props> = ({ toggleDarkMode }) => {
 };
 
 const Header: React.FC<Props> = ({ toggleDarkMode }) => {
-  const isMobile = useMediaQuery<Theme>((theme) => theme.breakpoints.down('sm'));
   const [drawerOpen, setDrawerOpen] = useState(false);
   const appBar = useRef<HTMLDivElement>(null);
 
@@ -78,27 +77,24 @@ const Header: React.FC<Props> = ({ toggleDarkMode }) => {
           : theme.palette.primary.main};
       `}
     >
-      {isMobile ? (
-        <>
-          <Toolbar>
-            <IconButton color="inherit" aria-label="open drawer" onClick={openDrawer} edge="start">
-              <MenuIcon />
-            </IconButton>
-            <Branding toggleDarkMode={toggleDarkMode} />
-          </Toolbar>
-          <Drawer
-            isOpen={drawerOpen}
-            appBarHeight={appBar.current?.clientHeight ?? 56}
-            handleClose={closeDrawer}
-            handleOpen={openDrawer}
-          />
-        </>
-      ) : (
-        <>
+      <Box sx={{ display: { xs: 'block', sm: 'none' } }}>
+        <Toolbar>
+          <IconButton color="inherit" aria-label="open drawer" onClick={openDrawer} edge="start">
+            <MenuIcon />
+          </IconButton>
           <Branding toggleDarkMode={toggleDarkMode} />
-          <NavLinks />
-        </>
-      )}
+        </Toolbar>
+        <Drawer
+          isOpen={drawerOpen}
+          appBarHeight={appBar.current?.clientHeight ?? 56}
+          handleClose={closeDrawer}
+          handleOpen={openDrawer}
+        />
+      </Box>
+      <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
+        <Branding toggleDarkMode={toggleDarkMode} />
+        <NavLinks />
+      </Box>
     </AppBar>
   );
 };

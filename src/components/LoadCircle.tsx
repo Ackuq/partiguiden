@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { CircularProgress } from '@mui/material';
-import styled from '@emotion/styled';
+import { styled } from '@mui/material/styles';
 
 const FullLoadCircle = styled(CircularProgress)`
   display: flex;

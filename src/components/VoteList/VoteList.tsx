@@ -3,7 +3,7 @@ import { NextRouter } from 'next/router';
 import { stringify } from 'querystring';
 
 import { Typography, Pagination } from '@mui/material';
-import styled from '@emotion/styled';
+import { styled } from '@mui/material/styles';
 
 import { FlowAd } from '../Ad';
 import Vote from './Vote';
@@ -11,7 +11,7 @@ import LoadCircle from '../LoadCircle';
 
 import { useVotes } from '../../hooks/parliamentHooks';
 
-const ListContainer = styled.div`
+const ListContainer = styled('div')`
   margin-bottom: 0.5rem;
   > div {
     padding: 8px;

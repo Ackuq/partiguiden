@@ -1,8 +1,7 @@
 import React, { useCallback } from 'react';
 
 import { Divider, Paper, Typography, useMediaQuery } from '@mui/material';
-import { useTheme } from '@mui/material/styles';
-import styled from '@emotion/styled';
+import { useTheme, styled } from '@mui/material/styles';
 
 import { PieChart, Pie, ResponsiveContainer, Cell, Tooltip } from 'recharts';
 

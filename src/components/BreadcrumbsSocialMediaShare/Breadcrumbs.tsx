@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { Breadcrumbs, Chip } from '@mui/material';
 import HomeIcon from '@mui/icons-material/Home';
 
-import styled from '@emotion/styled';
+import { styled } from '@mui/material/styles';
 import { INDEX } from '../../lib/routes';
 
 const BreadcrumbsWithMargin = styled(Breadcrumbs)(

@@ -2,8 +2,7 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 
 import { Collapse, CardContent, Typography, ButtonBase, Button } from '@mui/material';
-import { darken } from '@mui/material/styles';
-import styled from '@emotion/styled';
+import { darken, styled } from '@mui/material/styles';
 
 import ArrowDownIcon from '@mui/icons-material/KeyboardArrowDownRounded';
 
@@ -12,7 +11,7 @@ import { Decision as DecisionType } from '../../types/decision';
 
 import * as ROUTES from '../../lib/routes';
 
-const CardContainer = styled.div(
+const CardContainer = styled('div')(
   ({ theme }) => `
     border-radius: ${theme.shape.borderRadius}px;
     background-color: ${theme.palette.background.paper};
@@ -47,7 +46,7 @@ const Arrow = styled(ArrowDownIcon)<{ active: 'true' | 'false' }>`
   transform: rotate(${({ active }) => (active === 'true' ? '180deg' : '0')});
 `;
 
-const Header = styled.div<{ authorityColor: string }>`
+const Header = styled('div')<{ authorityColor: string }>`
   background-color: ${({ theme, authorityColor }) =>
     theme.palette.mode === 'dark' ? darken(authorityColor, 0.6) : authorityColor};
   width: 100%;
@@ -55,7 +54,7 @@ const Header = styled.div<{ authorityColor: string }>`
   padding: 0.25rem 1rem;
 `;
 
-const HeaderTitle = styled.span`
+const HeaderTitle = styled('span')`
   font-size: 1.15rem;
   color: #ffffff;
 `;

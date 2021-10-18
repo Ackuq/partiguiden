@@ -1,7 +1,6 @@
 import React from 'react';
 import { Container } from '@mui/material';
 import { useRouter } from 'next/router';
-import { css } from '@emotion/react';
 
 import Filter from '../components/ParlimentFilter';
 import DecisionList from '../components/DecisionList';
@@ -15,11 +14,7 @@ const Decisions: React.FC = () => {
   const org = queryAttrToArray(router.query.org);
 
   return (
-    <div
-      css={css`
-        display: flex;
-      `}
-    >
+    <div style={{ display: 'flex' }}>
       <Container maxWidth="md">
         <DecisionList router={router} page={page} />
       </Container>

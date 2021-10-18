@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 
 import { Grid, ButtonBase, Typography } from '@mui/material';
-import styled from '@emotion/styled';
+import { styled } from '@mui/material/styles';
 
 import { getStandpointHref, STANDPOINT } from '../lib/routes';
 import { SubjectListEntry } from '../types/subjects';

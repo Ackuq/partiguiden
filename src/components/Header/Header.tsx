@@ -2,8 +2,7 @@ import React, { useCallback, useRef, useState } from 'react';
 import Link from 'next/link';
 
 import { Grid, AppBar, ButtonBase, IconButton, Toolbar, Box } from '@mui/material';
-import styled from '@emotion/styled';
-import { css } from '@emotion/react';
+import { styled } from '@mui/material/styles';
 
 import MenuIcon from '@mui/icons-material/Menu';
 import BrightnessIcon from '@mui/icons-material/Brightness6';
@@ -13,7 +12,7 @@ import Drawer from './Drawer';
 
 import { INDEX } from '../../lib/routes';
 
-const BannerText = styled.a`
+const BannerText = styled('a')`
   text-decoration: none;
   font-size: 2rem;
   padding-left: 0.25rem;
@@ -40,12 +39,9 @@ const Branding: React.FC<Props> = ({ toggleDarkMode }) => {
       <Grid
         item
         xs={3}
-        css={(theme) => css`
-          text-align: center;
-          ${theme.breakpoints.down('sm')} {
-            text-align: right;
-          }
-        `}
+        sx={{
+          textAlign: { xs: 'right', sm: 'center' },
+        }}
       >
         <IconButton onClick={toggleDarkMode} aria-label="Toggle dark mode">
           <BrightnessIcon />
@@ -71,11 +67,12 @@ const Header: React.FC<Props> = ({ toggleDarkMode }) => {
     <AppBar
       position="sticky"
       ref={appBar}
-      css={(theme) => css`
-        background-color: ${theme.palette.mode === 'dark'
-          ? theme.palette.background.paper
-          : theme.palette.primary.main};
-      `}
+      sx={{
+        backgroundColor: (theme) =>
+          theme.palette.mode === 'dark'
+            ? theme.palette.background.paper
+            : theme.palette.primary.main,
+      }}
     >
       <Box sx={{ display: { xs: 'block', sm: 'none' } }}>
         <Toolbar>

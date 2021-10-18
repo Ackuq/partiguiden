@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 
 import { Fab, SwipeableDrawer, IconButton, useMediaQuery, Theme } from '@mui/material';
-import { darken } from '@mui/material/styles';
-import styled from '@emotion/styled';
+import { darken, styled } from '@mui/material/styles';
 
 import FilterIcon from '@mui/icons-material/Tune';
 import CloseIcon from '@mui/icons-material/CloseRounded';
@@ -22,7 +21,7 @@ const CustomFab = styled(Fab)(
 `
 );
 
-const IconButtonContainer = styled.div`
+const IconButtonContainer = styled('div')`
   display: flex;
   justify-content: flex-end;
 `;

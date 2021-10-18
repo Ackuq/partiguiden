@@ -1,6 +1,6 @@
-import styled from '@emotion/styled';
+import { styled } from '@mui/material/styles';
 
-const FilterContainerDesktop = styled.div(
+const FilterContainerDesktop = styled('div')(
   ({ theme }) => `
     box-shadow: ${theme.shadows[1]};
     position: sticky;

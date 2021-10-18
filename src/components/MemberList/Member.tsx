@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
-import styled from '@emotion/styled';
+import { styled } from '@mui/material/styles';
 
 import { PARTY_LOGOS_LOW_RES } from '../../assets/logos';
 import * as ROUTES from '../../lib/routes';
@@ -10,7 +10,7 @@ import { PartyAbbreviation } from '../../utils/parties';
 
 import { MemberList } from '../../types/member';
 
-const MemberCard = styled.a(
+const MemberCard = styled('a')(
   ({ theme }) => `
   box-shadow: ${theme.shadows[1]};
   border-radius: ${theme.shape.borderRadius}px;
@@ -25,7 +25,7 @@ const MemberCard = styled.a(
 `
 );
 
-const InfoContainer = styled.div(
+const InfoContainer = styled('div')(
   ({ theme }) => `
   color: ${theme.palette.mode === 'dark' ? theme.palette.text.primary : theme.palette.primary.main};
   display: flex;
@@ -33,18 +33,18 @@ const InfoContainer = styled.div(
 `
 );
 
-const Role = styled.span`
+const Role = styled('span')`
   font-size: 1rem;
   margin-bottom: 0.25rem;
 `;
 
-const InfoTitle = styled.span`
+const InfoTitle = styled('span')`
   font-weight: 500;
   margin-top: 0.25rem;
   margin-bottom: 0.125rem;
 `;
 
-const ImageContainer = styled.div<{ url: string }>`
+const ImageContainer = styled('div')<{ url: string }>`
   width: 175px;
   height: 175px;
   border-radius: 50%;
@@ -55,7 +55,7 @@ const ImageContainer = styled.div<{ url: string }>`
   background-size: cover;
 `;
 
-const NameContainer = styled.div`
+const NameContainer = styled('div')`
   padding: 0.5rem;
   position: absolute;
   width: 100%;

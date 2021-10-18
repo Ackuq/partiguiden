@@ -1,6 +1,6 @@
 import React from 'react';
 import { Divider, Link as MUILink, Typography } from '@mui/material';
-import styled from '@emotion/styled';
+import { styled } from '@mui/material/styles';
 
 import Link from 'next/link';
 import PartyStandpoints from '../components/PartyStandpoints';

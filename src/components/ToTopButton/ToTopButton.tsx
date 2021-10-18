@@ -3,8 +3,7 @@ import React, { useEffect, useState } from 'react';
 import ArrowUpIcon from '@mui/icons-material/ArrowUpwardRounded';
 
 import { Fab, Zoom } from '@mui/material';
-import { darken } from '@mui/material/styles';
-import styled from '@emotion/styled';
+import { darken, styled } from '@mui/material/styles';
 
 const CustomFab = styled(Fab)`
   position: fixed;

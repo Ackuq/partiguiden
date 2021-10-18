@@ -3,8 +3,7 @@ import React, { useMemo } from 'react';
 import Image from 'next/image';
 
 import { Typography, Grid } from '@mui/material';
-import { useTheme } from '@mui/material/styles';
-import styled from '@emotion/styled';
+import { useTheme, styled } from '@mui/material/styles';
 
 import { VotingResult } from '../../types/voting';
 import { voteListColors } from '../../lib/voteColors';
@@ -12,12 +11,12 @@ import { voteListColors } from '../../lib/voteColors';
 import { PARTY_LOGOS_LOW_RES } from '../../assets/logos';
 import { PartyAbbreviation } from '../../utils/parties';
 
-const PartyPartition = styled.div<{ background: string }>`
+const PartyPartition = styled('div')<{ background: string }>`
   padding: 0.25rem;
   background-color: ${({ background }) => background};
 `;
 
-const Parties = styled.div`
+const Parties = styled('div')`
   display: flex;
   justify-content: center;
   > div {

@@ -1,6 +1,6 @@
-import styled from '@emotion/styled';
+import { styled } from '@mui/material/styles';
 
-const DocumentBody = styled.div`
+const DocumentBody = styled('div')`
   margin-top: 1rem;
   * {
     ${({ theme }) =>

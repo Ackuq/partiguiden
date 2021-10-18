@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 
 import { Paper, Typography } from '@mui/material';
-import { useTheme } from '@mui/material/styles';
-import styled from '@emotion/styled';
+import { useTheme, styled } from '@mui/material/styles';
 
 import {
   Brush,

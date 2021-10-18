@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { Grid, Link, Typography } from '@mui/material';
-import styled from '@emotion/styled';
+import { Stack, Link, Typography } from '@mui/material';
+import { styled } from '@mui/material/styles';
 
-const FooterContent = styled.footer`
+const FooterContent = styled('footer')`
   padding: 1.5rem 0;
   color: ${({ theme }) => theme.palette.primary.contrastText};
   background: ${({ theme }) =>
@@ -14,18 +14,14 @@ const FooterContent = styled.footer`
 
 const Footer: React.FC = () => (
   <FooterContent>
-    <Grid direction="column" justifyContent="center" container>
-      <Grid item>
-        <Typography align="center" color="inherit" variant="subtitle1" component="span">
-          © Axel Pettersson 2021
-        </Typography>
-      </Grid>
-      <Grid item>
-        <Link align="center" color="inherit" variant="subtitle1" href="mailto:hello@partiguiden.se">
-          hello@partiguiden.se
-        </Link>
-      </Grid>
-    </Grid>
+    <Stack>
+      <Typography align="center" color="inherit" variant="subtitle1" component="span">
+        © Axel Pettersson 2021
+      </Typography>
+      <Link align="center" color="inherit" variant="subtitle1" href="mailto:hello@partiguiden.se">
+        hello@partiguiden.se
+      </Link>
+    </Stack>
   </FooterContent>
 );
 

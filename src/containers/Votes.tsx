@@ -1,7 +1,6 @@
 import React from 'react';
 import { useRouter } from 'next/router';
 import { Container } from '@mui/material';
-import { css } from '@emotion/react';
 
 import Filter from '../components/ParlimentFilter';
 import VoteList from '../components/VoteList';
@@ -15,11 +14,7 @@ const Votes: React.FC = () => {
   const org = queryAttrToArray(router.query.org);
 
   return (
-    <div
-      css={css`
-        display: flex;
-      `}
-    >
+    <div style={{ display: 'flex' }}>
       <Container maxWidth="md">
         <VoteList router={router} page={page} />
       </Container>

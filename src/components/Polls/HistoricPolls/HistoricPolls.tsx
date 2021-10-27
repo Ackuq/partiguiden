@@ -6,6 +6,7 @@ import { useTheme, styled } from '@mui/material/styles';
 import {
   Brush,
   Legend,
+  LegendProps,
   Line,
   LineChart,
   ResponsiveContainer,
@@ -46,8 +47,8 @@ const HistoricPolls: React.FC<Props> = ({ historicPolls }) => {
     setHide((prev) => prev.filter((p) => p !== party));
   };
 
-  const onClick = (event: React.MouseEvent<Element, MouseEvent>) => {
-    const party = (event as unknown as { value: PartyAbbreviation }).value;
+  const onClick: LegendProps['onClick'] = (data) => {
+    const party = data.value;
     if (hide.includes(party)) {
       showParty(party);
     } else {

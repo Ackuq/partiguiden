@@ -3,6 +3,7 @@ import { PartyAbbreviation, partyNameMap } from '../../utils/parties';
 import { parliamentInfoSerializer } from '../serializers/parties';
 import { getWikipediaAbstract, getWikipediaInfoBox } from './wikipedia';
 
+// TODO: Adapt to new website format
 const getParliamentInformation = (
   party: Lowercase<PartyAbbreviation>
 ): Promise<ParliamentPartyData> => {

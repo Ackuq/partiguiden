@@ -2,20 +2,21 @@ import { JSDOM } from 'jsdom';
 import { Leader } from '../../types/member';
 import { ParliamentPartyData } from '../../types/party';
 import { PartyAbbreviation } from '../../utils/parties';
-import { getMember } from '../controllers/members';
+// import { getMember } from '../controllers/members';
 
 // eslint-disable-next-line import/prefer-default-export
 export const parliamentInfoSerializer = (
   html: string,
-  party: Lowercase<PartyAbbreviation>
+  _party: Lowercase<PartyAbbreviation>
 ): Promise<ParliamentPartyData> => {
   const dom = new JSDOM(html);
 
-  const leadersContainer = dom.window.document.body.getElementsByClassName('fellows-list').item(0);
+  // const leadersContainer = dom.window.document.body.getElementsByClassName('fellows-list').item(0);
 
   const leaderPromises: Promise<Leader>[] = [];
 
-  if (leadersContainer) {
+  // TODO: Adapt to new website format
+  /*   if (leadersContainer) {
     const elements = leadersContainer.getElementsByClassName('fellow-item');
     // eslint-disable-next-line no-restricted-syntax
     for (const leaderItem of elements) {
@@ -47,7 +48,7 @@ export const parliamentInfoSerializer = (
 
       leaderPromises.push(promise);
     }
-  }
+  } */
 
   const website = dom.window.document.body
     .getElementsByClassName('party-website')

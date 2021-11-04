@@ -45,7 +45,7 @@
     "@types/gtag.js": "^0.0.8",
     "@types/jsdom": "^16.2.13",
     "@types/node": "^16.11.6",
-    "@types/react": "^17.0.33",
+    "@types/react": "^17.0.34",
     "@typescript-eslint/eslint-plugin": "^5.3.0",
     "babel-plugin-import": "^1.13.3",
     "eslint": "^8.1.0",

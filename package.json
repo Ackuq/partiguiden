@@ -44,7 +44,7 @@
     "@emotion/babel-plugin": "^11.3.0",
     "@types/gtag.js": "^0.0.8",
     "@types/jsdom": "^16.2.13",
-    "@types/node": "^16.11.6",
+    "@types/node": "^16.11.7",
     "@types/react": "^17.0.34",
     "@typescript-eslint/eslint-plugin": "^5.3.0",
     "babel-plugin-import": "^1.13.3",

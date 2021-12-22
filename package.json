@@ -41,7 +41,7 @@
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.16.5",
-    "@emotion/babel-plugin": "^11.7.1",
+    "@emotion/babel-plugin": "^11.7.2",
     "@types/gtag.js": "^0.0.8",
     "@types/jsdom": "^16.2.13",
     "@types/node": "^17.0.1",

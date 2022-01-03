@@ -78,7 +78,8 @@ const parsePolls = (csv: string): Polls => {
   return polls;
 };
 
-const POLLS_URL = 'https://raw.githubusercontent.com/MansMeg/SwedishPolls/master/Data/Polls.csv';
+const POLLS_URL =
+  'https://raw.githubusercontent.com/hampusborgos/SwedishPolls/master/Data/Polls.csv';
 
 /**
  * Fetches the poll data
@@ -105,7 +106,7 @@ export const getWithin = (polls: Polls, from: Date, to: Date, repeats = false): 
   const [fromYear, toYear] = [from.getFullYear(), to.getFullYear()];
 
   const addMonth = (year: number, month: number) => {
-    if (polls[year][month]) {
+    if (polls[year]?.[month]) {
       filtered[year][month] = [];
       polls[year][month].forEach((poll) => {
         if (!usedInstitutes.includes(poll.institute) || repeats) {

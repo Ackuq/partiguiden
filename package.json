@@ -40,7 +40,7 @@
     "typed.js": "^2.0.12"
   },
   "devDependencies": {
-    "@babel/eslint-parser": "^7.16.5",
+    "@babel/eslint-parser": "^7.17.0",
     "@emotion/babel-plugin": "^11.7.2",
     "@types/gtag.js": "^0.0.8",
     "@types/jsdom": "^16.2.14",

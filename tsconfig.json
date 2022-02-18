@@ -5,7 +5,11 @@
     "esModuleInterop": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "lib": ["ESNext", "dom", "DOM.Iterable"],
+    "lib": [
+      "ESNext",
+      "dom",
+      "DOM.Iterable"
+    ],
     "moduleResolution": "node",
     "noEmit": true,
     "strict": true,
@@ -17,8 +21,16 @@
     "forceConsistentCasingInFileNames": true,
     "module": "esnext",
     "resolveJsonModule": true,
-    "jsxImportSource": "@emotion/react"
+    "jsxImportSource": "@emotion/react",
+    "incremental": true
   },
-  "exclude": ["node_modules"],
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.js"]
+  "exclude": [
+    "node_modules"
+  ],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.js"
+  ]
 }

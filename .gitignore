@@ -29,3 +29,6 @@ public/sw.js*
 workbox-*.js*
 worker-*.js*
 public/worker-development.js
+
+# TS files
+tsconfig.tsbuildinfo

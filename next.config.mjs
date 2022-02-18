@@ -1,10 +1,9 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
-const { withSentryConfig } = require('@sentry/nextjs');
-const withPWA = require('next-pwa');
-const runtimeCaching = require('next-pwa/cache');
-const withBundleAnalyzer = require('@next/bundle-analyzer')({
-  enabled: process.env.ANALYZE === 'true',
-});
+import { withSentryConfig } from '@sentry/nextjs';
+import withPWA from 'next-pwa';
+import runtimeCaching from 'next-pwa/cache.js';
+import bundleAnalyzer from '@next/bundle-analyzer';
+
+const withBundleAnalyzer = bundleAnalyzer({ enabled: process.env.ANALYZE === 'true' });
 
 const {
   // Vercel
@@ -64,8 +63,9 @@ const SentryWebpackPluginOptions = {
   silent: true,
 };
 
-if (SENTRY_ORG && SENTRY_PROJECT) {
-  module.exports = withSentryConfig(moduleExports, SentryWebpackPluginOptions);
-} else {
-  module.exports = moduleExports;
-}
+const defaultExport =
+  SENTRY_ORG && SENTRY_PROJECT
+    ? withSentryConfig(moduleExports, SentryWebpackPluginOptions)
+    : moduleExports;
+
+export default defaultExport;

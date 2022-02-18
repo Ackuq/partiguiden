@@ -46,7 +46,9 @@ const Arrow = styled(ArrowDownIcon)<{ active: 'true' | 'false' }>`
   transform: rotate(${({ active }) => (active === 'true' ? '180deg' : '0')});
 `;
 
-const Header = styled('div')<{ authorityColor: string }>`
+const Header = styled('div', { shouldForwardProp: (props) => props !== 'authorityColor' })<{
+  authorityColor: string;
+}>`
   background-color: ${({ theme, authorityColor }) =>
     theme.palette.mode === 'dark' ? darken(authorityColor, 0.6) : authorityColor};
   width: 100%;

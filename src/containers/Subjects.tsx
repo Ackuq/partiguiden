@@ -87,11 +87,11 @@ const Container = styled('div')(
     ${theme.breakpoints.down('md')} {
       width: 100%;
     }
-    ${theme.breakpoints.down('lg')} {
-      min-width: 70%;
+    ${theme.breakpoints.up('md')} {
+      max-width: 70%;
     }
     ${theme.breakpoints.up('lg')} {
-      min-width: 60%;
+      max-width: 60%;
     }
 `
 );

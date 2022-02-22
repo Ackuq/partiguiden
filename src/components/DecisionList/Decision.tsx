@@ -1,7 +1,13 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 
-import { Collapse, CardContent, Typography, ButtonBase, Button } from '@mui/material';
+import Button from '@mui/material/Button';
+import ButtonBase from '@mui/material/ButtonBase';
+import Typography from '@mui/material/Typography';
+import CardContent from '@mui/material/CardContent';
+
+import Collapse from '@mui/material/Collapse';
+
 import { darken, styled } from '@mui/material/styles';
 
 import ArrowDownIcon from '@mui/icons-material/KeyboardArrowDownRounded';

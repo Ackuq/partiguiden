@@ -1,6 +1,7 @@
 import React, { useMemo } from 'react';
 
-import { CircularProgress } from '@mui/material';
+import CircularProgress from '@mui/material/CircularProgress';
+
 import { useTheme } from '@mui/material/styles';
 
 import { ResponsiveContainer, BarChart, XAxis, YAxis, Bar, Legend, Tooltip } from 'recharts';

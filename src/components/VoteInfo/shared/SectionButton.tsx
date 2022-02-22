@@ -1,4 +1,5 @@
-import { ButtonBase } from '@mui/material';
+import ButtonBase from '@mui/material/ButtonBase';
+
 import { styled } from '@mui/material/styles';
 
 const SectionButton = styled(ButtonBase)`

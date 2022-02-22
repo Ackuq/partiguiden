@@ -1,6 +1,7 @@
 import React from 'react';
 
-import { Typography } from '@mui/material';
+import Typography from '@mui/material/Typography';
+
 import SectionDivider from '../SectionDivider';
 
 interface Props {

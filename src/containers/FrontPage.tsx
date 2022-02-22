@@ -1,6 +1,9 @@
 import React from 'react';
 
-import { Card, CardContent, Typography, Stack } from '@mui/material';
+import Stack from '@mui/material/Stack';
+import Typography from '@mui/material/Typography';
+import CardContent from '@mui/material/CardContent';
+import Card from '@mui/material/Card';
 
 import Featured from '../components/Featured';
 

@@ -1,7 +1,7 @@
 import { NextPage, GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from 'next';
 import Head from 'next/head';
 
-import { Container } from '@mui/material';
+import Container from '@mui/material/Container';
 
 import BreadcrumbsSocialMediaShare from '../../components/BreadcrumbsSocialMediaShare';
 import PageTitle from '../../components/PageTitle';

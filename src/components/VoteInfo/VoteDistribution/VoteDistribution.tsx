@@ -1,6 +1,9 @@
 import React, { useMemo, useState } from 'react';
 
-import { CircularProgress, Typography, Collapse } from '@mui/material';
+import Collapse from '@mui/material/Collapse';
+import Typography from '@mui/material/Typography';
+import CircularProgress from '@mui/material/CircularProgress';
+
 import { useTheme, styled } from '@mui/material/styles';
 
 import {

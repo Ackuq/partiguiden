@@ -1,7 +1,9 @@
 import React from 'react';
 import Link from 'next/link';
 
-import { Breadcrumbs, Chip } from '@mui/material';
+import Chip from '@mui/material/Chip';
+import Breadcrumbs from '@mui/material/Breadcrumbs';
+
 import HomeIcon from '@mui/icons-material/Home';
 
 import { styled } from '@mui/material/styles';

@@ -1,7 +1,8 @@
 import { GetStaticProps, InferGetStaticPropsType, NextPage } from 'next';
 import Head from 'next/head';
 
-import { Container } from '@mui/material';
+import Container from '@mui/material/Container';
+
 import PollIcon from '@mui/icons-material/Poll';
 
 import moment from 'moment';

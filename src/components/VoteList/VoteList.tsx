@@ -2,7 +2,9 @@ import React, { useCallback } from 'react';
 import { NextRouter } from 'next/router';
 import { stringify } from 'querystring';
 
-import { Typography, Pagination } from '@mui/material';
+import Pagination from '@mui/material/Pagination';
+import Typography from '@mui/material/Typography';
+
 import { styled } from '@mui/material/styles';
 
 import { FlowAd } from '../Ad';

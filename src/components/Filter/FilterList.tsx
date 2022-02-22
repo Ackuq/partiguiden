@@ -1,6 +1,10 @@
 import React from 'react';
 
-import { Checkbox, List, ListItem, ListItemIcon, ListItemText } from '@mui/material';
+import ListItemText from '@mui/material/ListItemText';
+import ListItemIcon from '@mui/material/ListItemIcon';
+import ListItem from '@mui/material/ListItem';
+import List from '@mui/material/List';
+import Checkbox from '@mui/material/Checkbox';
 
 interface Props {
   list: Array<unknown>;

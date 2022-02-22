@@ -1,7 +1,10 @@
 import { GetStaticProps, InferGetStaticPropsType, NextPage } from 'next';
 import Head from 'next/head';
 
-import { Container, Paper, Typography } from '@mui/material';
+import Typography from '@mui/material/Typography';
+import Paper from '@mui/material/Paper';
+import Container from '@mui/material/Container';
+
 import { styled } from '@mui/material/styles';
 
 import Typed from '../components/Typed';

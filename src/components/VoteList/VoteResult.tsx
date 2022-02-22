@@ -2,7 +2,9 @@ import React, { useMemo } from 'react';
 
 import Image from 'next/image';
 
-import { Typography, Grid } from '@mui/material';
+import Grid from '@mui/material/Grid';
+import Typography from '@mui/material/Typography';
+
 import { useTheme, styled } from '@mui/material/styles';
 
 import { VotingResult } from '../../types/voting';

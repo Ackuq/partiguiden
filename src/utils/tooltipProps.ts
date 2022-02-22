@@ -1,6 +1,6 @@
 import React from 'react';
 import { TooltipProps } from 'recharts';
-import { Theme } from '@mui/material';
+import { Theme } from '@mui/material/styles';
 
 const toolTipStyles = (theme: Theme): React.CSSProperties => ({
   backgroundColor: theme.palette.background.paper,

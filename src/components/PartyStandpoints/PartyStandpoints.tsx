@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 
-import { Typography, Collapse, ButtonBase, Stack } from '@mui/material';
+import Stack from '@mui/material/Stack';
+import ButtonBase from '@mui/material/ButtonBase';
+import Collapse from '@mui/material/Collapse';
+import Typography from '@mui/material/Typography';
+
 import { styled } from '@mui/material/styles';
 
 import ArrowDownRounded from '@mui/icons-material/KeyboardArrowDownRounded';

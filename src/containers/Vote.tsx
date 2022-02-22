@@ -1,6 +1,8 @@
 import React from 'react';
 
-import { Card, CardContent, Typography } from '@mui/material';
+import Typography from '@mui/material/Typography';
+import CardContent from '@mui/material/CardContent';
+import Card from '@mui/material/Card';
 
 import {
   TotalVote,

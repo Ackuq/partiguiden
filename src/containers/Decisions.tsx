@@ -1,5 +1,7 @@
 import React from 'react';
-import { Container } from '@mui/material';
+
+import Container from '@mui/material/Container';
+
 import { useRouter } from 'next/router';
 
 import Filter from '../components/ParlimentFilter';

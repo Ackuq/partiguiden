@@ -1,7 +1,7 @@
 import React from 'react';
 import { NextPage, GetServerSideProps, InferGetServerSidePropsType } from 'next';
 import Head from 'next/head';
-import { Container } from '@mui/material';
+import Container from '@mui/material/Container';
 
 import PageTitle from '../../../components/PageTitle';
 import Vote from '../../../containers/Vote';

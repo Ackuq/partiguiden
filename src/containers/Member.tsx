@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Container } from '@mui/material';
+import Container from '@mui/material/Container';
 
 import { ProfilePicture, Information } from '../components/MemberInfo';
 import LoadCircle from '../components/LoadCircle';

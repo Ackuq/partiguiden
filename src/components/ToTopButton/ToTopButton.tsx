@@ -2,7 +2,9 @@ import React, { useEffect, useState } from 'react';
 
 import ArrowUpIcon from '@mui/icons-material/ArrowUpwardRounded';
 
-import { Fab, Zoom } from '@mui/material';
+import Zoom from '@mui/material/Zoom';
+import Fab from '@mui/material/Fab';
+
 import { darken, styled } from '@mui/material/styles';
 
 const CustomFab = styled(Fab)`

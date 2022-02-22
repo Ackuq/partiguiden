@@ -1,6 +1,9 @@
 import React from 'react';
 
-import { Stack, Link, Typography } from '@mui/material';
+import Typography from '@mui/material/Typography';
+import Link from '@mui/material/Link';
+import Stack from '@mui/material/Stack';
+
 import { styled } from '@mui/material/styles';
 
 const FooterContent = styled('footer')`

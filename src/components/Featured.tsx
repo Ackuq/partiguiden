@@ -1,7 +1,10 @@
 import React from 'react';
 import Link from 'next/link';
 
-import { Grid, ButtonBase, Typography } from '@mui/material';
+import Typography from '@mui/material/Typography';
+import ButtonBase from '@mui/material/ButtonBase';
+import Grid from '@mui/material/Grid';
+
 import { styled } from '@mui/material/styles';
 
 import { getStandpointHref, STANDPOINT } from '../lib/routes';

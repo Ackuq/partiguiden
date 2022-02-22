@@ -2,7 +2,7 @@ import React from 'react';
 import { NextPage, GetServerSideProps, InferGetStaticPropsType } from 'next';
 import Head from 'next/head';
 
-import { Container } from '@mui/material';
+import Container from '@mui/material/Container';
 
 import PageTitle from '../../components/PageTitle';
 import SocialMediaShare from '../../components/BreadcrumbsSocialMediaShare/SocialMediaShare';

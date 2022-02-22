@@ -1,6 +1,7 @@
 import React from 'react';
 
-import { InputBase, InputAdornment } from '@mui/material';
+import InputAdornment from '@mui/material/InputAdornment';
+import InputBase from '@mui/material/InputBase';
 
 import SearchIcon from '@mui/icons-material/Search';
 

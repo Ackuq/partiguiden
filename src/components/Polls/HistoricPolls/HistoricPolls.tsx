@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 
-import { Paper, Typography } from '@mui/material';
+import Typography from '@mui/material/Typography';
+import Paper from '@mui/material/Paper';
+
 import { useTheme, styled } from '@mui/material/styles';
 
 import {

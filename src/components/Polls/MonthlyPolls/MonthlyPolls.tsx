@@ -1,6 +1,9 @@
 import React from 'react';
 
-import { Paper, Typography, useMediaQuery } from '@mui/material';
+import useMediaQuery from '@mui/material/useMediaQuery';
+import Typography from '@mui/material/Typography';
+import Paper from '@mui/material/Paper';
+
 import { useTheme, styled } from '@mui/material/styles';
 
 import {

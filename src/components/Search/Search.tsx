@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
-import { InputAdornment, TextField, TextFieldProps } from '@mui/material';
+import TextField, { TextFieldProps } from '@mui/material/TextField';
+import InputAdornment from '@mui/material/InputAdornment';
 
 import SearchIcon from '@mui/icons-material/Search';
 

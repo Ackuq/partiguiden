@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
-import { Grid, Container } from '@mui/material';
+import Container from '@mui/material/Container';
+import Grid from '@mui/material/Grid';
 
 import { MembersFilter, MemberList } from '../components/MemberList';
 

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 
-import { Grid } from '@mui/material';
+import Grid from '@mui/material/Grid';
 import { styled } from '@mui/material/styles';
 
 import { SubjectList } from '../types/subjects';
@@ -9,12 +9,6 @@ import { SubjectList } from '../types/subjects';
 import * as ROUTES from '../lib/routes';
 import Search from '../components/Search/Search';
 import { ResponsiveAd } from '../components/Ad';
-
-const containerSx = {
-  marginLeft: 'auto',
-  marginRight: 'auto',
-  maxWidth: { md: '90%', lg: '70%', xl: '60%' },
-};
 
 const SearchContainer = styled('div')`
   width: 100%;
@@ -86,6 +80,22 @@ const Item = styled(Grid)(
   `
 );
 
+const Container = styled('div')(
+  ({ theme }) => `
+    margin-left: auto;
+    margin-right: auto;
+    ${theme.breakpoints.down('md')} {
+      width: 100%;
+    }
+    ${theme.breakpoints.down('lg')} {
+      min-width: 70%;
+    }
+    ${theme.breakpoints.up('lg')} {
+      min-width: 60%;
+    }
+`
+);
+
 interface Props {
   subjects: SubjectList;
 }
@@ -94,15 +104,14 @@ const Subjects: React.FC<Props> = ({ subjects }) => {
   const [shownSubjects, setShownSubjects] = useState(subjects);
 
   return (
-    <>
-      <SearchContainer sx={containerSx}>
+    <Container>
+      <SearchContainer>
         <Search setSearchResult={setShownSubjects} />
       </SearchContainer>
       <Grid
         container
         sx={{
           marginBottom: '1rem',
-          ...containerSx,
         }}
       >
         {shownSubjects.map((subject) => (
@@ -116,7 +125,7 @@ const Subjects: React.FC<Props> = ({ subjects }) => {
         ))}
       </Grid>
       <ResponsiveAd />
-    </>
+    </Container>
   );
 };
 

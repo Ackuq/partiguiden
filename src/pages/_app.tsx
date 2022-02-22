@@ -4,7 +4,10 @@ import { AppProps } from 'next/app';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 
-import { useMediaQuery, CssBaseline } from '@mui/material';
+import CssBaseline from '@mui/material/CssBaseline';
+
+import useMediaQuery from '@mui/material/useMediaQuery';
+
 import { ThemeProvider } from '@mui/material/styles';
 import { CacheProvider, css, ThemeProvider as EmotionThemeProvider } from '@emotion/react';
 

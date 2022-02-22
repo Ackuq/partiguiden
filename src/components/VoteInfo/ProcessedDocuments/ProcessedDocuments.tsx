@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 
-import { Typography, Collapse } from '@mui/material';
+import Collapse from '@mui/material/Collapse';
+import Typography from '@mui/material/Typography';
+
 import { useTheme } from '@mui/material/styles';
 
 import RotatingArrow from '../shared/RotatingArrow';

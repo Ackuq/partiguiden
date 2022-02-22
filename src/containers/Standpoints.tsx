@@ -1,5 +1,9 @@
 import React from 'react';
-import { Divider, Link as MUILink, Typography } from '@mui/material';
+
+import Typography from '@mui/material/Typography';
+import MUILink from '@mui/material/Link';
+import Divider from '@mui/material/Divider';
+
 import { styled } from '@mui/material/styles';
 
 import Link from 'next/link';

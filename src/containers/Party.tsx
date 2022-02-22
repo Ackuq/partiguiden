@@ -2,7 +2,13 @@ import React from 'react';
 
 import NextLink from 'next/link';
 
-import { Avatar, Divider, Grid, Link, Paper, Typography } from '@mui/material';
+import Typography from '@mui/material/Typography';
+import Paper from '@mui/material/Paper';
+import Link from '@mui/material/Link';
+import Grid from '@mui/material/Grid';
+import Divider from '@mui/material/Divider';
+import Avatar from '@mui/material/Avatar';
+
 import { styled } from '@mui/material/styles';
 
 import * as ROUTES from '../lib/routes';

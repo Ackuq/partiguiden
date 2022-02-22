@@ -2,7 +2,11 @@ import React, { useEffect, useMemo, useState } from 'react';
 import { NextRouter, useRouter } from 'next/router';
 import Link from 'next/link';
 
-import { Menu, MenuItem, Tabs, Tab, TabProps } from '@mui/material';
+import Tab, { TabProps } from '@mui/material/Tab';
+import Tabs from '@mui/material/Tabs';
+import MenuItem from '@mui/material/MenuItem';
+import Menu from '@mui/material/Menu';
+
 import { useTheme } from '@mui/material/styles';
 
 import pages from './pages';

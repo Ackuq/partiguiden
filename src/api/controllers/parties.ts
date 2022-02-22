@@ -12,7 +12,7 @@ const getParliamentInformation = (
     .replace('ä', 'a')
     .replace('å', 'a')
     .replace('ö', 'o');
-
+  console.log(urlParam);
   return fetch(`https://www.riksdagen.se/sv/ledamoter-partier/${urlParam}`)
     .then((res) => res.text())
     .then((html) => parliamentInfoSerializer(html, party));

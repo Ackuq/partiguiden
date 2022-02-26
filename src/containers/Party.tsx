@@ -69,6 +69,34 @@ const InformationCardWrapper = styled(Paper)`
   margin-bottom: ${({ theme }) => theme.spacing(4)};
 `;
 
+const stringToColor = (string: string): string => {
+  let hash = 0;
+  let i;
+
+  for (i = 0; i < string.length; i += 1) {
+    hash = string.charCodeAt(i) + ((hash << 5) - hash);
+  }
+
+  let color = '#';
+
+  for (i = 0; i < 3; i += 1) {
+    const value = (hash >> (i * 8)) & 0xff;
+    color += `00${value.toString(16)}`.substr(-2);
+  }
+
+  return color;
+};
+
+const stringAvatar = (name: string) => {
+  return {
+    sx: {
+      bgcolor: stringToColor(name),
+      fontSize: '2rem',
+    },
+    children: `${name.split(' ')[0][0]}${name.split(' ')[1][0]}`,
+  };
+};
+
 interface Props {
   party: PartyData;
 }
@@ -116,7 +144,11 @@ const Leader: React.FC<LeaderType> = ({ id, role, firstName, lastName, pictureUr
       <NextLink passHref href={ROUTES.MEMBER} as={ROUTES.getMemberHref(id)}>
         <a style={{ textDecoration: 'none' }}>
           <LeaderCard elevation={0}>
-            <LeaderAvatar src={pictureUrl} alt={`${firstName} ${lastName}`} />
+            <LeaderAvatar
+              {...stringAvatar(`${firstName} ${lastName}`)}
+              src={pictureUrl}
+              alt={`${firstName} ${lastName}`}
+            />
             <div>
               <Typography variant="subtitle2" component="p">
                 {firstName} {lastName}

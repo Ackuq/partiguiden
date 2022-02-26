@@ -3,8 +3,8 @@ import Typography from '@mui/material/Typography';
 
 import { useTheme } from '@mui/material/styles';
 
-import { VoteAppendixItem } from '../../../types/voting';
-import SectionDivider from '../SectionDivider';
+import { VoteAppendixItem } from '../../types/voting';
+import SectionDivider from './SectionDivider';
 
 interface Props {
   appendix: Array<VoteAppendixItem>;

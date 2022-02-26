@@ -54,7 +54,7 @@ const VoteList: React.FC<Props> = ({ router, page }) => {
               ))}
               {data.pages > 1 && (
                 <Pagination
-                  style={{ display: 'flex', justifyContent: 'center' }}
+                  sx={{ display: 'flex', justifyContent: 'center' }}
                   onChange={updatePage}
                   page={page}
                   count={data.pages}

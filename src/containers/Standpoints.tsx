@@ -5,11 +5,12 @@ import Divider from '@mui/material/Divider';
 import { styled } from '@mui/material/styles';
 
 import Link from 'next/link';
-import PartyStandpoints from '../components/PartyStandpoints';
+import PartyStandpoints from '../components/PartyStandpoints/PartyStandpoints';
 import { PartyAbbreviation } from '../utils/parties';
 import { RelatedSubject, StandpointsMap } from '../types/subjects';
 import { partiesMap } from '../utils/getParties';
 import { getStandpointHref, STANDPOINT } from '../lib/routes';
+import { ResponsiveAd } from '../components/Ad';
 
 const ContentDivider = styled(Divider)`
   margin-top: 5rem;
@@ -30,6 +31,8 @@ const Subject: React.FC<Props> = ({ standpoints, relatedSubjects }) => (
         standpoints={standpoints[party as PartyAbbreviation]}
       />
     ))}
+
+    <ResponsiveAd />
 
     {relatedSubjects.length > 0 && (
       <>

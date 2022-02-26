@@ -27,7 +27,7 @@ const Vote: React.FC<Props> = ({
     appendix = null,
   },
 }) => (
-  <Card>
+  <Card sx={{ marginBottom: '1rem' }}>
     <CardContent>
       <TotalVote voting={voting.Totalt} />
       <Typography

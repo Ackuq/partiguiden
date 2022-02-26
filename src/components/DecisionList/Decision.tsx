@@ -8,7 +8,7 @@ import CardContent from '@mui/material/CardContent';
 
 import Collapse from '@mui/material/Collapse';
 
-import { darken, styled } from '@mui/material/styles';
+import { styled } from '@mui/material/styles';
 
 import ArrowDownIcon from '@mui/icons-material/KeyboardArrowDownRounded';
 
@@ -16,6 +16,7 @@ import { lookupAuthority } from '../../utils/authorityTable';
 import { Decision as DecisionType } from '../../types/decision';
 
 import * as ROUTES from '../../lib/routes';
+import AuthorityCardHeader from '../AuthorityCardHeader';
 
 const CardContainer = styled('div')(
   ({ theme }) => `
@@ -52,21 +53,6 @@ const Arrow = styled(ArrowDownIcon)<{ active: 'true' | 'false' }>`
   transform: rotate(${({ active }) => (active === 'true' ? '180deg' : '0')});
 `;
 
-const Header = styled('div', { shouldForwardProp: (props) => props !== 'authorityColor' })<{
-  authorityColor: string;
-}>`
-  background-color: ${({ theme, authorityColor }) =>
-    theme.palette.mode === 'dark' ? darken(authorityColor, 0.6) : authorityColor};
-  width: 100%;
-  text-align: left;
-  padding: 0.25rem 1rem;
-`;
-
-const HeaderTitle = styled('span')`
-  font-size: 1.15rem;
-  color: #ffffff;
-`;
-
 const CardButton = styled(ButtonBase)`
   display: block;
   width: 100%;
@@ -85,9 +71,7 @@ const Decision: React.FC<Props> = ({ decision }) => {
       {authority && (
         <CardContainer>
           <CardButton onClick={() => setVisible(!visible)}>
-            <Header authorityColor={authority.color}>
-              <HeaderTitle>{authority.desc}</HeaderTitle>
-            </Header>
+            <AuthorityCardHeader authority={authority} />
 
             <CustomCardContent>
               <div>

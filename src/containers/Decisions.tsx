@@ -2,8 +2,8 @@ import Container from '@mui/material/Container';
 
 import { useRouter } from 'next/router';
 
-import Filter from '../components/ParlimentFilter';
-import DecisionList from '../components/DecisionList';
+import Filter from '../components/ParlimentFilter/Filter';
+import DecisionList from '../components/DecisionList/DecisionList';
 
 import { queryAttrToArray, queryAttrToString, queryAttrToNumber } from '../utils';
 

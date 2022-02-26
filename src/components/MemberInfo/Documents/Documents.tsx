@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from 'react';
 
 import Pagination from '@mui/material/Pagination';
-import Grid from '@mui/material/Grid';
+import Stack from '@mui/material/Stack';
+import Typography from '@mui/material/Typography';
+import Paper from '@mui/material/Paper';
+import useTheme from '@mui/system/useTheme';
 
 import { styled } from '@mui/material/styles';
 
@@ -22,6 +25,7 @@ interface Props {
 }
 
 const Documents: React.FC<Props> = ({ id, setDocumentCount }) => {
+  const theme = useTheme();
   const [page, setPage] = useState(1);
 
   const data = useMemberDocuments(id, page);
@@ -36,23 +40,33 @@ const Documents: React.FC<Props> = ({ id, setDocumentCount }) => {
     setPage(newPage);
   };
 
-  return !data ? (
-    <Grid item xs={12}>
-      <LoadCircle />
-    </Grid>
-  ) : (
-    <>
-      {data.documents.map((document) => (
-        <Grid item xs={12} key={document.id}>
-          <Document document={document} />
-        </Grid>
-      ))}
-      {data.pages > 1 && (
-        <PaginationContainer>
-          <Pagination size="large" onChange={changePage} page={page} count={data.pages} />
-        </PaginationContainer>
-      )}
-    </>
+  return (
+    <Paper sx={{ p: 2 }}>
+      <Stack spacing={3}>
+        <Typography
+          variant="h4"
+          component="span"
+          color={theme.palette.mode === 'dark' ? 'textPrimary' : 'primary'}
+        >
+          Dokument
+        </Typography>
+
+        {!data ? (
+          <LoadCircle />
+        ) : (
+          <>
+            {data.documents.map((document) => (
+              <Document document={document} key={document.id} />
+            ))}
+            {data.pages > 1 && (
+              <PaginationContainer>
+                <Pagination onChange={changePage} page={page} count={data.pages} />
+              </PaginationContainer>
+            )}
+          </>
+        )}
+      </Stack>
+    </Paper>
   );
 };
 

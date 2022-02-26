@@ -5,6 +5,7 @@ import Grid from '@mui/material/Grid';
 import Member from './Member';
 import { MemberList as MemberListType } from '../../types/member';
 import { PartyAbbreviation } from '../../utils/parties';
+import { ResponsiveAd } from '../Ad';
 
 interface Props {
   filter: {
@@ -63,10 +64,17 @@ const MemberList: React.FC<Props> = ({ members, filter }) => {
 
   return (
     <>
-      {membersInView.map((member) => (
-        <Grid item xs={12} md={6} xl={4} key={member.id}>
-          <Member member={member} />
-        </Grid>
+      {membersInView.map((member, index) => (
+        <React.Fragment key={member.id}>
+          {index % 24 === 0 && (
+            <Grid item xs={12}>
+              <ResponsiveAd />
+            </Grid>
+          )}
+          <Grid item xs={12} md={6} xl={4}>
+            <Member member={member} />
+          </Grid>
+        </React.Fragment>
       ))}
     </>
   );

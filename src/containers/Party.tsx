@@ -13,6 +13,7 @@ import * as ROUTES from '../lib/routes';
 
 import { Leader as LeaderType } from '../types/member';
 import { PartyData } from '../types/party';
+import { ResponsiveAd } from '../components/Ad';
 
 const Biography = styled('div')`
   p {
@@ -163,7 +164,7 @@ const Leader: React.FC<LeaderType> = ({ id, role, firstName, lastName, pictureUr
 };
 
 const Leaders: React.FC<Props> = ({ party }) => (
-  <Paper sx={{ padding: '1rem' }}>
+  <Paper sx={{ padding: '1rem', marginBottom: '1rem' }}>
     <Typography gutterBottom variant="h4" align="center">
       Ledning
     </Typography>
@@ -180,6 +181,7 @@ const Party: React.FC<Props> = ({ party }) => {
     <>
       <InformationCard party={party} />
       <Leaders party={party} />
+      <ResponsiveAd />
     </>
   );
 };

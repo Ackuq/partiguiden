@@ -1,8 +1,9 @@
 import Container from '@mui/material/Container';
 
-import { ProfilePicture, Information } from '../components/MemberInfo';
+import Information from '../components/MemberInfo/Information';
+import ProfilePicture from '../components/MemberInfo/ProfilePicture';
 
-import BreadcrumbsSocialMediaShare from '../components/BreadcrumbsSocialMediaShare';
+import BreadcrumbsSocialMediaShare from '../components/BreadcrumbsSocialMediaShare/BreadcrumbsSocialMediaShare';
 import * as ROUTES from '../lib/routes';
 
 import { Member as MemberType } from '../types/member';

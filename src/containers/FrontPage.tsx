@@ -6,7 +6,7 @@ import Card from '@mui/material/Card';
 import Featured from '../components/Featured';
 
 import { SubjectListEntry } from '../types/subjects';
-
+import { ResponsiveAd } from '../components/Ad';
 interface Props {
   popular: Array<SubjectListEntry>;
 }
@@ -33,6 +33,7 @@ const FrontPage: React.FC<Props> = ({ popular }) => (
         <Featured popular={popular} />
       </CardContent>
     </Card>
+    <ResponsiveAd />
   </Stack>
 );
 

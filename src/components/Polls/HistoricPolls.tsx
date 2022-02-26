@@ -17,11 +17,11 @@ import {
   Tooltip,
 } from 'recharts';
 
-import { MonthlyAverage } from '../../../lib/polls';
+import { MonthlyAverage } from '../../lib/polls';
 
-import { PartyAbbreviation, partyAbbreviations } from '../../../utils/parties';
-import { partiesMap } from '../../../utils/getParties';
-import tooltipProps from '../../../utils/tooltipProps';
+import { PartyAbbreviation, partyAbbreviations } from '../../utils/parties';
+import { partiesMap } from '../../utils/getParties';
+import tooltipProps from '../../utils/tooltipProps';
 
 const ChartContainer = styled(ResponsiveContainer)`
   margin-top: 1rem;

@@ -17,13 +17,13 @@ import {
   Tooltip,
 } from 'recharts';
 
-import PartySymbolTick from '../../PartySymbolTick';
-import SectionButton from '../shared/SectionButton';
-import RotatingArrow from '../shared/RotatingArrow';
-import { Vote } from '../../../types/voting';
-import { PartyAbbreviation } from '../../../utils/parties';
-import { voteColor } from '../../../lib/voteColors';
-import tooltipProps from '../../../utils/tooltipProps';
+import PartySymbolTick from '../PartySymbolTick';
+import SectionButton from './shared/SectionButton';
+import RotatingArrow from './shared/RotatingArrow';
+import { Vote } from '../../types/voting';
+import { PartyAbbreviation } from '../../utils/parties';
+import { voteColor } from '../../lib/voteColors';
+import tooltipProps from '../../utils/tooltipProps';
 
 const ChartContainer = styled(ResponsiveContainer)`
   width: calc(100% + 20px) !important;

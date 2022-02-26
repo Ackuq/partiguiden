@@ -16,6 +16,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Documents from './Documents';
 
 import { Information as InformationType } from '../../types/member';
+import { ResponsiveAd } from '../Ad';
 
 interface Props {
   id: string;
@@ -53,7 +54,7 @@ const Information: React.FC<Props> = ({ id, informationRecords, absence }) => {
       </Grid>
       {informationRecords.length > 0 && (
         <Grid item xs={12}>
-          <Paper style={{ padding: '1rem', borderBottomLeftRadius: 0, borderBottomRightRadius: 0 }}>
+          <Paper sx={{ p: 2, borderBottomLeftRadius: 0, borderBottomRightRadius: 0 }}>
             <Typography
               variant="h4"
               component="span"
@@ -83,18 +84,14 @@ const Information: React.FC<Props> = ({ id, informationRecords, absence }) => {
           ))}
         </Grid>
       )}
+
       <Grid item xs={12}>
-        <Paper style={{ padding: '1rem' }}>
-          <Typography
-            variant="h4"
-            component="span"
-            color={theme.palette.mode === 'dark' ? 'textPrimary' : 'primary'}
-          >
-            Dokument
-          </Typography>
-        </Paper>
+        <ResponsiveAd />
       </Grid>
-      <Documents id={id} setDocumentCount={setDocumentCount} />
+
+      <Grid item xs={12}>
+        <Documents id={id} setDocumentCount={setDocumentCount} />
+      </Grid>
     </Grid>
   );
 };

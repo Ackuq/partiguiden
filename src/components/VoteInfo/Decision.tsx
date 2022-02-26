@@ -1,6 +1,6 @@
 import Typography from '@mui/material/Typography';
 
-import SectionDivider from '../SectionDivider';
+import SectionDivider from './SectionDivider';
 
 interface Props {
   decision: string;

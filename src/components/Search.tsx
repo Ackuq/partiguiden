@@ -5,8 +5,8 @@ import InputAdornment from '@mui/material/InputAdornment';
 
 import SearchIcon from '@mui/icons-material/Search';
 
-import { SubjectList } from '../../types/subjects';
-import { searchSubjects } from '../../lib/api';
+import { SubjectList } from '../types/subjects';
+import { searchSubjects } from '../lib/api';
 
 interface Props {
   setSearchResult: React.Dispatch<React.SetStateAction<SubjectList>>;

@@ -8,7 +8,8 @@ import Vote from '../../../containers/Vote';
 import * as ROUTES from '../../../lib/routes';
 import { useVote } from '../../../hooks/parliamentHooks';
 import LoadCircle from '../../../components/LoadCircle';
-import BreadcrumbsSocialMediaShare from '../../../components/BreadcrumbsSocialMediaShare';
+import BreadcrumbsSocialMediaShare from '../../../components/BreadcrumbsSocialMediaShare/BreadcrumbsSocialMediaShare';
+import { ResponsiveAd } from '../../../components/Ad';
 
 const VoteContainer: NextPage<InferGetServerSidePropsType<typeof getServerSideProps>> = ({
   proposition,
@@ -37,6 +38,7 @@ const VoteContainer: NextPage<InferGetServerSidePropsType<typeof getServerSidePr
           socialMediaShareProps={{ title: `${id} förslagspunkt ${proposition}` }}
         />
         {vote ? <Vote vote={vote} /> : <LoadCircle />}
+        <ResponsiveAd />
       </Container>
     </>
   );

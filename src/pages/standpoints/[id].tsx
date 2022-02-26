@@ -3,7 +3,7 @@ import Head from 'next/head';
 
 import Container from '@mui/material/Container';
 
-import BreadcrumbsSocialMediaShare from '../../components/BreadcrumbsSocialMediaShare';
+import BreadcrumbsSocialMediaShare from '../../components/BreadcrumbsSocialMediaShare/BreadcrumbsSocialMediaShare';
 import PageTitle from '../../components/PageTitle';
 import Standpoints from '../../containers/Standpoints';
 import { getSubject, getSubjects } from '../../lib/api';

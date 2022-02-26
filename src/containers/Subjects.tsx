@@ -7,7 +7,7 @@ import { styled } from '@mui/material/styles';
 import { SubjectList } from '../types/subjects';
 
 import * as ROUTES from '../lib/routes';
-import Search from '../components/Search/Search';
+import Search from '../components/Search';
 import { ResponsiveAd } from '../components/Ad';
 
 const SearchContainer = styled('div')`

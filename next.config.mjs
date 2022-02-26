@@ -32,7 +32,6 @@ const moduleExports = withPWA(
     productionBrowserSourceMaps: true,
     pwa: {
       dest: 'public',
-      disable: true,
       runtimeCaching,
     },
     env: {

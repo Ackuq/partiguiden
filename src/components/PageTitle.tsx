@@ -1,5 +1,3 @@
-import React from 'react';
-
 import Paper from '@mui/material/Paper';
 
 import Typography, { TypographyProps } from '@mui/material/Typography';

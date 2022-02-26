@@ -1,36 +1,68 @@
-import React from 'react';
-import { NextPage, GetServerSideProps } from 'next';
+import { NextPage, GetStaticPaths, GetStaticProps } from 'next';
 import Head from 'next/head';
 
 import Member from '../../containers/Member';
+import { memberController, membersController } from '../../api/controllers/members';
+import { Member as MemberType } from '../../types/member';
+import LoadCircle from '../../components/LoadCircle';
 
 interface Props {
-  id: string;
+  member?: MemberType;
 }
 
-const MemberContainer: NextPage<Props> = ({ id }) => (
+const MemberContainer: NextPage<Props> = ({ member }) => (
   <>
     <Head>
-      <title>{id} | Ledamot | Partiguiden</title>
+      <title>{member && `${member.firstName} ${member.lastName} |`} Ledamot | Partiguiden</title>
       <meta
         name="description"
-        content={`Här kan du ta reda på information om ledamot ${id}. Se vilka dokument som hen har varit med och skapat och samt voteringsnärvaro.`}
+        content={`Här kan du ta reda på information om ledamot${
+          member && `${member.firstName} ${member.lastName}`
+        }. Se vilka dokument som hen har varit med och skapat och samt voteringsnärvaro.`}
       />
     </Head>
-    <Member id={id} />
+    {member ? <Member member={member} /> : <LoadCircle />}
   </>
 );
 
-export const getServerSideProps: GetServerSideProps<{ id: string }, { id: string }> = async ({
-  params,
-}) => {
+export const getStaticPaths: GetStaticPaths = async () => {
+  const members = await membersController();
+
+  const paths = members.map((member) => ({
+    params: { id: member.id.toString() },
+  }));
+
+  return { paths, fallback: true };
+};
+
+export const getStaticProps: GetStaticProps<
+  {
+    member: MemberType;
+  },
+  { id: string }
+> = async ({ params }) => {
   const id = params?.id;
-  if (id === undefined || !/^\d+$/.test(id)) {
-    // A member id may only contain numbers
+  if (!id) {
     return { notFound: true };
   }
 
-  return { props: { id } };
+  let member = null;
+  try {
+    member = await memberController(id);
+  } catch {
+    // Handled after
+  }
+
+  if (member == null) {
+    return { notFound: true };
+  }
+
+  return {
+    props: {
+      member,
+    },
+    revalidate: 60 * 60 * 24 * 2, // Every 2 days
+  };
 };
 
 export default MemberContainer;

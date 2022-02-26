@@ -1,5 +1,3 @@
-import React from 'react';
-
 import NextLink from 'next/link';
 
 import Typography from '@mui/material/Typography';

@@ -1,5 +1,3 @@
-import React from 'react';
-
 import Divider from '@mui/material/Divider';
 
 import FilterContainer, { FilterList, FilterSearch } from '../Filter';

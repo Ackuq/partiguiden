@@ -1,5 +1,3 @@
-import React from 'react';
-
 import Typography from '@mui/material/Typography';
 import MUILink from '@mui/material/Link';
 import Divider from '@mui/material/Divider';

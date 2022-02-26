@@ -1,26 +1,17 @@
-import React from 'react';
-
 import Container from '@mui/material/Container';
 
 import { ProfilePicture, Information } from '../components/MemberInfo';
-import LoadCircle from '../components/LoadCircle';
 
-import { useMember } from '../hooks/parliamentHooks';
 import BreadcrumbsSocialMediaShare from '../components/BreadcrumbsSocialMediaShare';
-
 import * as ROUTES from '../lib/routes';
 
+import { Member as MemberType } from '../types/member';
+
 interface Props {
-  id: string;
+  member: MemberType;
 }
 
-const Member: React.FC<Props> = ({ id }) => {
-  const member = useMember(id);
-
-  if (!member) {
-    return <LoadCircle />;
-  }
-
+const Member: React.FC<Props> = ({ member }) => {
   return (
     <>
       <ProfilePicture member={member} />

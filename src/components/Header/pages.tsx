@@ -1,5 +1,3 @@
-import React from 'react';
-
 import HomeIcon from '@mui/icons-material/Home';
 import NoteIcon from '@mui/icons-material/Note';
 import GavelIcon from '@mui/icons-material/GavelRounded';

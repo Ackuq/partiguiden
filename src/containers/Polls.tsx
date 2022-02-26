@@ -1,4 +1,3 @@
-import React from 'react';
 import MonthlyPolls from '../components/Polls/MonthlyPolls';
 import HistoricPolls from '../components/Polls/HistoricPolls';
 import BlockStatistics from '../components/Polls/BlockStatistics';

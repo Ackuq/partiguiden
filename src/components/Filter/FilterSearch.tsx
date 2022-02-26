@@ -1,5 +1,3 @@
-import React from 'react';
-
 import InputAdornment from '@mui/material/InputAdornment';
 import InputBase from '@mui/material/InputBase';
 

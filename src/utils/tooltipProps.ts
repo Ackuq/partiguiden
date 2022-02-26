@@ -1,4 +1,3 @@
-import React from 'react';
 import { TooltipProps } from 'recharts';
 import { Theme } from '@mui/material/styles';
 

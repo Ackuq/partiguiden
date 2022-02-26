@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { FacebookShareButton, FacebookIcon, TwitterShareButton, TwitterIcon } from 'react-share';
 
 import { styled } from '@mui/material/styles';

@@ -32,11 +32,6 @@ const InfoContainer = styled('div')(
 `
 );
 
-const Role = styled('span')`
-  font-size: 1rem;
-  margin-bottom: 0.25rem;
-`;
-
 const InfoTitle = styled('span')`
   font-weight: 500;
   margin-top: 0.25rem;
@@ -73,8 +68,6 @@ const Member: React.FC<Props> = ({ member }) => (
   <Link href={ROUTES.MEMBER} as={ROUTES.getMemberHref(member.id)} passHref>
     <MemberCard>
       <InfoContainer>
-        <Role>{member.status}</Role>
-
         <InfoTitle>Valkrets</InfoTitle>
         <span>{member.district}</span>
 

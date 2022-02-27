@@ -39,8 +39,8 @@ const ProfilePicture: React.FC<Props> = ({ member }) => {
           {member.party !== '-' && (
             <Box position="absolute" top={0} right={0}>
               <Image
-                width={65}
-                height={65}
+                width={64}
+                height={64}
                 src={PARTY_LOGOS_LOW_RES[member.party.toUpperCase() as PartyAbbreviation]}
                 alt="Partisymbol"
               />

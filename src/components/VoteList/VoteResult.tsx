@@ -5,26 +5,58 @@ import Image from 'next/image';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 
-import { useTheme, styled } from '@mui/material/styles';
+import { useTheme, styled, Breakpoints } from '@mui/material/styles';
 
 import { VotingResult } from '../../types/voting';
 import { voteListColors } from '../../lib/voteColors';
 
 import { PARTY_LOGOS_LOW_RES } from '../../assets/logos';
 import { PartyAbbreviation } from '../../utils/parties';
+import { useMediaQuery } from '@mui/material';
 
-const PartyPartition = styled('div')<{ background: string }>`
-  padding: 0.25rem;
-  background-color: ${({ background }) => background};
+const Party = styled('div')`
+  padding-left: 4px;
+  padding-right: 4px;
 `;
 
-const Parties = styled('div')`
+const PartyContainer = styled('div')`
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  > div {
-    margin: 2px;
-  }
 `;
+
+interface ResultColumnProps {
+  bgcolor: string;
+  votes: string[];
+  title: string;
+  breakpoints: Breakpoints;
+}
+
+const ResultColumn: React.FC<ResultColumnProps> = ({ bgcolor, votes, title, breakpoints }) => {
+  const smallDevice = useMediaQuery(breakpoints.down('md'));
+
+  const imageSize = smallDevice ? 32 : 48;
+
+  return (
+    <Grid item sm={6} xs={12} sx={{ bgcolor }} padding={0.5}>
+      <Typography align="center" variant="h5" gutterBottom>
+        {title}
+      </Typography>
+      <PartyContainer>
+        {votes.map((party: string) => (
+          <Party key={party}>
+            <Image
+              src={PARTY_LOGOS_LOW_RES[party.toUpperCase() as PartyAbbreviation]}
+              width={imageSize}
+              height={imageSize}
+              alt={`${party} logo`}
+            />
+          </Party>
+        ))}
+      </PartyContainer>
+    </Grid>
+  );
+};
 
 interface Props {
   votes: VotingResult;
@@ -39,45 +71,18 @@ const VoteResult: React.FC<Props> = ({ votes }) => {
     <Grid display="flex">
       {votes.no.length || votes.yes.length ? (
         <>
-          <Grid item sm={6} xs={12}>
-            <PartyPartition background={votes.winner === 'yes' ? colors.yes : colors.losing}>
-              <Typography align="center" variant="h5" gutterBottom>
-                JA
-              </Typography>
-              <Parties>
-                {votes.yes.map((party: string) => (
-                  <div key={party}>
-                    <Image
-                      src={PARTY_LOGOS_LOW_RES[party.toUpperCase() as PartyAbbreviation]}
-                      width="40%"
-                      height="40%"
-                      alt={`${party} logo`}
-                    />
-                  </div>
-                ))}
-              </Parties>
-            </PartyPartition>
-          </Grid>
-
-          <Grid item sm={6} xs={12}>
-            <PartyPartition background={votes.winner === 'no' ? colors.no : colors.losing}>
-              <Typography align="center" variant="h5" gutterBottom>
-                NEJ
-              </Typography>
-              <Parties>
-                {votes.no.map((party: string) => (
-                  <div key={party}>
-                    <Image
-                      src={PARTY_LOGOS_LOW_RES[party.toUpperCase() as PartyAbbreviation]}
-                      width="40%"
-                      height="40%"
-                      alt={`${party} logo`}
-                    />
-                  </div>
-                ))}
-              </Parties>
-            </PartyPartition>
-          </Grid>
+          <ResultColumn
+            bgcolor={votes.winner === 'yes' ? colors.yes : colors.losing}
+            title="JA"
+            votes={votes.yes}
+            breakpoints={theme.breakpoints}
+          />
+          <ResultColumn
+            bgcolor={votes.winner === 'no' ? colors.no : colors.losing}
+            title="NEJ"
+            votes={votes.no}
+            breakpoints={theme.breakpoints}
+          />
         </>
       ) : (
         <Grid item xs={12}>

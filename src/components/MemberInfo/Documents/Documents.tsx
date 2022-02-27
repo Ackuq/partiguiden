@@ -52,7 +52,9 @@ const Documents: React.FC<Props> = ({ id, setDocumentCount }) => {
         </Typography>
 
         {!data ? (
-          <LoadCircle />
+          <div style={{ alignItems: 'center' }}>
+            <LoadCircle />
+          </div>
         ) : (
           <>
             {data.documents.map((document) => (

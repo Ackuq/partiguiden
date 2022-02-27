@@ -14,7 +14,7 @@ const StandpointsListContainer: NextPage<InferGetStaticPropsType<typeof getStati
 }) => (
   <>
     <Head>
-      <title>Partiernas ståndpunkter | Partiguiden 2.0</title>
+      <title>Partiernas ståndpunkter | Partiguiden</title>
       <meta
         name="description"
         content="Vad tar Sveriges partier för ståndpunkter i olika ämnen och sakfrågor? Jämför Sveriges partier politik och hitta det parti du sympatiserar mest med nu!"

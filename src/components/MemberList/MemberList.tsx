@@ -1,11 +1,11 @@
-import React, { useEffect, useState, useCallback } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 
 import Grid from '@mui/material/Grid';
 
-import Member from './Member';
 import { MemberList as MemberListType } from '../../types/member';
 import { PartyAbbreviation } from '../../utils/parties';
 import { ResponsiveAd } from '../Ad';
+import Member from './Member';
 
 interface Props {
   filter: {

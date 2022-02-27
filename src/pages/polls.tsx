@@ -7,19 +7,19 @@ import PollIcon from '@mui/icons-material/Poll';
 
 import moment from 'moment';
 
-import PageTitle from '../components/PageTitle';
 import {
   AveragePoll,
   BlocksAverage,
+  MonthlyAverage,
   createBlockAverage,
   getAverage,
   getMonthlyAverage,
   getPolls,
   getWithin,
-  MonthlyAverage,
 } from '../lib/polls';
-import PollsContainer from '../containers/Polls';
 import { ResponsiveAd } from '../components/Ad';
+import PageTitle from '../components/PageTitle';
+import PollsContainer from '../containers/Polls';
 
 const PollsPageContainer: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
   currentAverage,

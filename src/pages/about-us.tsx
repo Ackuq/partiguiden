@@ -3,11 +3,11 @@ import Head from 'next/head';
 
 import InfoIcon from '@mui/icons-material/Info';
 
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import Container from '@mui/material/Container';
 import Link from '@mui/material/Link';
 import Typography from '@mui/material/Typography';
-import CardContent from '@mui/material/CardContent';
-import Card from '@mui/material/Card';
-import Container from '@mui/material/Container';
 
 import PageTitle from '../components/PageTitle';
 

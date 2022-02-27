@@ -1,12 +1,12 @@
 import Link from 'next/link';
 
 import ButtonBase from '@mui/material/ButtonBase';
-import Typography from '@mui/material/Typography';
-import CardContent from '@mui/material/CardContent';
 import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import Typography from '@mui/material/Typography';
 
-import { lookupAuthority } from '../../../utils/authorityTable';
 import { MemberDocument } from '../../../types/member';
+import { lookupAuthority } from '../../../utils/authorityTable';
 
 import * as ROUTES from '../../../lib/routes';
 import AuthorityCardHeader from '../../AuthorityCardHeader';

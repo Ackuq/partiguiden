@@ -1,17 +1,17 @@
-import HomeIcon from '@mui/icons-material/Home';
-import NoteIcon from '@mui/icons-material/Note';
 import GavelIcon from '@mui/icons-material/GavelRounded';
 import GroupIcon from '@mui/icons-material/Group';
+import HomeIcon from '@mui/icons-material/Home';
 import HowToVoteIcon from '@mui/icons-material/HowToVoteRounded';
 import InfoIcon from '@mui/icons-material/InfoRounded';
+import NoteIcon from '@mui/icons-material/Note';
 import PersonIcon from '@mui/icons-material/Person';
 import PollIcon from '@mui/icons-material/Poll';
 
-import Image from 'next/image';
-import parties from '../../utils/getParties';
 import * as ROUTES from '../../lib/routes';
 import { PARTY_LOGOS_LOW_RES } from '../../assets/logos';
 import { PartyAbbreviation } from '../../utils/parties';
+import Image from 'next/image';
+import parties from '../../utils/getParties';
 
 const partyFactory = (partyAbbrev: string) =>
   function PartyIcon() {

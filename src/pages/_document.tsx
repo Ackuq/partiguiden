@@ -1,5 +1,5 @@
+import Document, { Head, Html, Main, NextScript } from 'next/document';
 import React from 'react';
-import Document, { Html, Head, Main, NextScript } from 'next/document';
 
 import createCache, { EmotionCache } from '@emotion/cache';
 

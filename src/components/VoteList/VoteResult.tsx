@@ -5,14 +5,14 @@ import Image from 'next/image';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 
-import { useTheme, styled, Breakpoints } from '@mui/material/styles';
+import { Breakpoints, styled, useTheme } from '@mui/material/styles';
+import useMediaQuery from '@mui/material/useMediaQuery';
 
 import { VotingResult } from '../../types/voting';
 import { voteListColors } from '../../lib/voteColors';
 
 import { PARTY_LOGOS_LOW_RES } from '../../assets/logos';
 import { PartyAbbreviation } from '../../utils/parties';
-import { useMediaQuery } from '@mui/material';
 
 const Party = styled('div')`
   padding-left: 4px;

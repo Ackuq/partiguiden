@@ -1,9 +1,9 @@
-import useSWR from 'swr';
+import { Decisions } from '../types/decision';
+import { DocumentResponse } from '../types/document';
+import { Member, MemberDocuments } from '../types/member';
 import { ParsedUrlQuery, stringify } from 'querystring';
 import { Vote, VoteList } from '../types/voting';
-import { Decisions } from '../types/decision';
-import { Member, MemberDocuments } from '../types/member';
-import { DocumentResponse } from '../types/document';
+import useSWR from 'swr';
 
 const fetcher = (url: string) => fetch(url).then((r) => r.json());
 

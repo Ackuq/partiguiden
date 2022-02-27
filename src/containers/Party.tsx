@@ -1,11 +1,11 @@
 import NextLink from 'next/link';
 
-import Typography from '@mui/material/Typography';
-import Paper from '@mui/material/Paper';
-import Link from '@mui/material/Link';
-import Grid from '@mui/material/Grid';
-import Divider from '@mui/material/Divider';
 import Avatar from '@mui/material/Avatar';
+import Divider from '@mui/material/Divider';
+import Grid from '@mui/material/Grid';
+import Link from '@mui/material/Link';
+import Paper from '@mui/material/Paper';
+import Typography from '@mui/material/Typography';
 
 import { styled } from '@mui/material/styles';
 

@@ -1,5 +1,5 @@
-import getParties from './getParties';
 import { authorityTable, lookupAuthority } from './authorityTable';
+import getParties from './getParties';
 
 export * from './helpers';
 

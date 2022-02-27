@@ -1,12 +1,12 @@
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
-import CardContent from '@mui/material/CardContent';
-import Card from '@mui/material/Card';
 
 import Featured from '../components/Featured';
 
-import { SubjectListEntry } from '../types/subjects';
 import { ResponsiveAd } from '../components/Ad';
+import { SubjectListEntry } from '../types/subjects';
 interface Props {
   popular: Array<SubjectListEntry>;
 }

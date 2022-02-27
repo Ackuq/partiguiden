@@ -1,7 +1,7 @@
-import { PartyData, ParliamentPartyData } from '../../types/party';
+import { ParliamentPartyData, PartyData } from '../../types/party';
 import { PartyAbbreviation, partyNameMap } from '../../utils/parties';
-import { parliamentInfoSerializer } from '../serializers/parties';
 import { getWikipediaAbstract, getWikipediaInfoBox } from './wikipedia';
+import { parliamentInfoSerializer } from '../serializers/parties';
 
 const getParliamentInformation = (
   party: Lowercase<PartyAbbreviation>

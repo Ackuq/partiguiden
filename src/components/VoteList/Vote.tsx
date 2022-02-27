@@ -1,16 +1,16 @@
 import Link from 'next/link';
 
 import ButtonBase from '@mui/material/ButtonBase';
-import Typography from '@mui/material/Typography';
-import CardContent from '@mui/material/CardContent';
 import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import Typography from '@mui/material/Typography';
 
 import { styled } from '@mui/material/styles';
 
 import VoteResult from './VoteResult';
 
-import { lookupAuthority } from '../../utils';
 import * as ROUTES from '../../lib/routes';
+import { lookupAuthority } from '../../utils';
 
 import { VoteListEntry } from '../../types/voting';
 import AuthorityCardHeader from '../AuthorityCardHeader';

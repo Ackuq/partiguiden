@@ -1,5 +1,5 @@
-import ArrowDownRounded from '@mui/icons-material/KeyboardArrowDownRounded';
 import { styled } from '@mui/material/styles';
+import ArrowDownRounded from '@mui/icons-material/KeyboardArrowDownRounded';
 
 const RotatingArrow = styled(ArrowDownRounded)<{ active: 'true' | 'false' }>`
   transition: transform 0.25s ease-in-out;

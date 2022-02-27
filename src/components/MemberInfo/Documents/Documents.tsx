@@ -1,16 +1,16 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import Pagination from '@mui/material/Pagination';
+import Paper from '@mui/material/Paper';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
-import Paper from '@mui/material/Paper';
 import useTheme from '@mui/system/useTheme';
 
 import { styled } from '@mui/material/styles';
 
-import LoadCircle from '../../LoadCircle';
-import Document from './Document';
 import { useMemberDocuments } from '../../../hooks/parliamentHooks';
+import Document from './Document';
+import LoadCircle from '../../LoadCircle';
 
 const PaginationContainer = styled('div')`
   display: flex;

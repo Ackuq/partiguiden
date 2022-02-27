@@ -1,17 +1,17 @@
 import React, { useCallback } from 'react';
 
-import useMediaQuery from '@mui/material/useMediaQuery';
-import Typography from '@mui/material/Typography';
-import Paper from '@mui/material/Paper';
 import Divider from '@mui/material/Divider';
+import Paper from '@mui/material/Paper';
+import Typography from '@mui/material/Typography';
+import useMediaQuery from '@mui/material/useMediaQuery';
 
-import { useTheme, styled } from '@mui/material/styles';
+import { styled, useTheme } from '@mui/material/styles';
 
-import { PieChart, Pie, ResponsiveContainer, Cell, Tooltip } from 'recharts';
+import { Cell, Pie, PieChart, ResponsiveContainer, Tooltip } from 'recharts';
 
 import { AveragePoll, BlocksAverage, displayFormatter } from '../../lib/polls';
 
-import { allBlocks, Blocks, partiesMap } from '../../utils/getParties';
+import { Blocks, allBlocks, partiesMap } from '../../utils/getParties';
 import toolTipProps from '../../utils/tooltipProps';
 
 const PollCard = styled(Paper)`

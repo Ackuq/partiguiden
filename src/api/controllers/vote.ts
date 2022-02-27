@@ -1,7 +1,7 @@
-import stripJsonComments from 'strip-json-comments';
 import { Vote, VoteResultsResponse } from '../../types/voting';
 import { parliamentURL } from '../constants';
 import { voteResultSerializer, voteSerializer } from '../serializers/vote';
+import stripJsonComments from 'strip-json-comments';
 
 export const getVote = (id: string, proposition: number): Promise<Vote> =>
   fetch(`${parliamentURL}/dokumentstatus/${id}.json`)

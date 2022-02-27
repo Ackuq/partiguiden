@@ -1,16 +1,16 @@
 import { GetStaticProps, InferGetStaticPropsType, NextPage } from 'next';
 import Head from 'next/head';
 
-import Typography from '@mui/material/Typography';
-import Paper from '@mui/material/Paper';
 import Container from '@mui/material/Container';
+import Paper from '@mui/material/Paper';
+import Typography from '@mui/material/Typography';
 
 import { styled } from '@mui/material/styles';
 
-import Typed from '../components/Typed';
-import FrontPage from '../containers/FrontPage';
-import { getPopular } from '../lib/api';
 import { SubjectListEntry } from '../types/subjects';
+import { getPopular } from '../lib/api';
+import FrontPage from '../containers/FrontPage';
+import Typed from '../components/Typed';
 
 const PageTitleContainer = styled(Paper)`
   background-color: ${({ theme }) =>

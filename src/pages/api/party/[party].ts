@@ -1,6 +1,6 @@
 import { NextApiRequest, NextApiResponse } from 'next';
-import { partyController } from '../../../api/controllers/parties';
 import { PartyAbbreviation, partyAbbreviations } from '../../../utils/parties';
+import { partyController } from '../../../api/controllers/parties';
 
 const ALLOWED_METHODS = ['GET'];
 

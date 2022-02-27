@@ -1,13 +1,13 @@
-import { NextPage, GetStaticProps, InferGetStaticPropsType } from 'next';
+import { GetStaticProps, InferGetStaticPropsType, NextPage } from 'next';
 import Head from 'next/head';
 
 import NoteIcon from '@mui/icons-material/Note';
 
 import PageTitle from '../../components/PageTitle';
 
-import Subjects from '../../containers/Subjects';
-import { getSubjects } from '../../lib/api';
 import { SubjectList } from '../../types/subjects';
+import { getSubjects } from '../../lib/api';
+import Subjects from '../../containers/Subjects';
 
 const StandpointsListContainer: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
   subjects,

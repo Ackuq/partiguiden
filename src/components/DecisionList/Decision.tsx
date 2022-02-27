@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
 import Link from 'next/link';
+import React, { useState } from 'react';
 
 import Button from '@mui/material/Button';
 import ButtonBase from '@mui/material/ButtonBase';
-import Typography from '@mui/material/Typography';
 import CardContent from '@mui/material/CardContent';
+import Typography from '@mui/material/Typography';
 
 import Collapse from '@mui/material/Collapse';
 
@@ -12,8 +12,8 @@ import { styled } from '@mui/material/styles';
 
 import ArrowDownIcon from '@mui/icons-material/KeyboardArrowDownRounded';
 
-import { lookupAuthority } from '../../utils/authorityTable';
 import { Decision as DecisionType } from '../../types/decision';
+import { lookupAuthority } from '../../utils/authorityTable';
 
 import * as ROUTES from '../../lib/routes';
 import AuthorityCardHeader from '../AuthorityCardHeader';

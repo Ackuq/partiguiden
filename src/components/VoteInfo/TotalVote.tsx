@@ -4,7 +4,7 @@ import CircularProgress from '@mui/material/CircularProgress';
 
 import { useTheme } from '@mui/material/styles';
 
-import { ResponsiveContainer, BarChart, XAxis, YAxis, Bar, Legend, Tooltip } from 'recharts';
+import { Bar, BarChart, Legend, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 
 import { VotingEntry } from '../../types/voting';
 import { voteColor } from '../../lib/voteColors';

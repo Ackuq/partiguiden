@@ -1,17 +1,16 @@
 import React, { useState } from 'react';
 
-import {
-  Grid,
-  Typography,
-  Paper,
-  Accordion,
-  AccordionDetails,
-  AccordionSummary,
-  Link,
-} from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+
+import Accordion from '@mui/material/Accordion';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import Grid from '@mui/material/Grid';
+import Link from '@mui/material/Link';
+import Paper from '@mui/material/Paper';
+import Typography from '@mui/material/Typography';
 
 import Documents from './Documents';
 

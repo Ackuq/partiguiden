@@ -3,8 +3,8 @@ import Head from 'next/head';
 
 import GavelIcon from '@mui/icons-material/GavelRounded';
 
-import PageTitle from '../components/PageTitle';
 import Decisions from '../containers/Decisions';
+import PageTitle from '../components/PageTitle';
 
 const RiksdagsbeslutContainer: NextPage = () => (
   <>

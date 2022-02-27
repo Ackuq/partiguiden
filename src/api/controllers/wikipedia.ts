@@ -1,7 +1,7 @@
-import { wikipediaPartyMap } from '../helpers/wikipediaUtils';
-import { getAbstract, getInfoBoxAttr } from '../serializers/wikipedia';
 import { PartyAbbreviation } from '../../utils/parties';
 import { WikipediaInfoBox } from '../../types/party';
+import { getAbstract, getInfoBoxAttr } from '../serializers/wikipedia';
+import { wikipediaPartyMap } from '../helpers/wikipediaUtils';
 
 const sleep = (ms: number) =>
   new Promise((resolve) => {

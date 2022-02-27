@@ -1,13 +1,13 @@
-import { NextPage, GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from 'next';
+import { GetStaticPaths, GetStaticProps, InferGetStaticPropsType, NextPage } from 'next';
 import Head from 'next/head';
 
 import Container from '@mui/material/Container';
 
+import { RelatedSubject, StandpointsMap, Subject } from '../../types/subjects';
+import { getSubject, getSubjects } from '../../lib/api';
 import BreadcrumbsSocialMediaShare from '../../components/BreadcrumbsSocialMediaShare/BreadcrumbsSocialMediaShare';
 import PageTitle from '../../components/PageTitle';
 import Standpoints from '../../containers/Standpoints';
-import { getSubject, getSubjects } from '../../lib/api';
-import { RelatedSubject, StandpointsMap, Subject } from '../../types/subjects';
 
 import * as ROUTES from '../../lib/routes';
 

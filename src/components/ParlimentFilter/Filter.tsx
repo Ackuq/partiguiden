@@ -7,8 +7,8 @@ import { stringify } from 'querystring';
 
 import { authorityTable } from '../../utils';
 import FilterContainer from '../Filter/FilterContainer';
-import FilterSearch from '../Filter/FilterSearch';
 import FilterList from '../Filter/FilterList';
+import FilterSearch from '../Filter/FilterSearch';
 
 interface Props {
   router: NextRouter;

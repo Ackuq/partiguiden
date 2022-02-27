@@ -4,8 +4,8 @@ import FilterContainer from '../Filter/FilterContainer';
 import FilterList from '../Filter/FilterList';
 import FilterSearch from '../Filter/FilterSearch';
 
-import allParties from '../../utils/getParties';
 import { PartyAbbreviation } from '../../utils/parties';
+import allParties from '../../utils/getParties';
 
 type PartyEntry = typeof allParties[number];
 

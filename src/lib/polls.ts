@@ -1,6 +1,6 @@
+import { Blocks, classicBlocks, newBlocks } from '../utils/getParties';
 import { PartyAbbreviation, partyAbbreviations } from '../utils/parties';
 import { Polls } from '../types/polls';
-import { Blocks, classicBlocks, newBlocks } from '../utils/getParties';
 
 const MONTH_MAP = {
   jan: 0,

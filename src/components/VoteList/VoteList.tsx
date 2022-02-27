@@ -1,6 +1,6 @@
-import React, { useCallback } from 'react';
 import { NextRouter } from 'next/router';
 import { stringify } from 'querystring';
+import React, { useCallback } from 'react';
 
 import Pagination from '@mui/material/Pagination';
 import Typography from '@mui/material/Typography';
@@ -8,8 +8,8 @@ import Typography from '@mui/material/Typography';
 import { styled } from '@mui/material/styles';
 
 import { FlowAd } from '../Ad';
-import Vote from './Vote';
 import LoadCircle from '../LoadCircle';
+import Vote from './Vote';
 
 import { useVotes } from '../../hooks/parliamentHooks';
 

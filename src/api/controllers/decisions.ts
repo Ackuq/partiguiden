@@ -1,7 +1,7 @@
-import { stringify } from 'querystring';
 import { Decisions } from '../../types/decision';
-import { parliamentURL } from '../constants';
 import { decisionsSerializer } from '../serializers/decisions';
+import { parliamentURL } from '../constants';
+import { stringify } from 'querystring';
 
 export const getDecisions = (query: string): Promise<Decisions> =>
   fetch(`${parliamentURL}/dokumentlista/?${query}`)

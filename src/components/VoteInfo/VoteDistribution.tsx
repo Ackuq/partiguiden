@@ -1,28 +1,28 @@
 import React, { useMemo, useState } from 'react';
 
+import CircularProgress from '@mui/material/CircularProgress';
 import Collapse from '@mui/material/Collapse';
 import Typography from '@mui/material/Typography';
-import CircularProgress from '@mui/material/CircularProgress';
 
-import { useTheme, styled } from '@mui/material/styles';
+import { styled, useTheme } from '@mui/material/styles';
 
 import {
-  BarChart,
   Bar,
-  XAxis,
-  YAxis,
+  BarChart,
   CartesianGrid,
   Legend,
   ResponsiveContainer,
   Tooltip,
+  XAxis,
+  YAxis,
 } from 'recharts';
 
-import PartySymbolTick from '../PartySymbolTick';
-import SectionButton from './shared/SectionButton';
-import RotatingArrow from './shared/RotatingArrow';
-import { Vote } from '../../types/voting';
 import { PartyAbbreviation } from '../../utils/parties';
+import { Vote } from '../../types/voting';
 import { voteColor } from '../../lib/voteColors';
+import PartySymbolTick from '../PartySymbolTick';
+import RotatingArrow from './shared/RotatingArrow';
+import SectionButton from './shared/SectionButton';
 import tooltipProps from '../../utils/tooltipProps';
 
 const ChartContainer = styled(ResponsiveContainer)`

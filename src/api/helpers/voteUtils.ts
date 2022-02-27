@@ -1,9 +1,9 @@
 import {
-  VotingRow,
-  VotingEntry,
-  VotingDict,
-  VotingResult,
   ProcessedDocument,
+  VotingDict,
+  VotingEntry,
+  VotingResult,
+  VotingRow,
 } from '../../types/voting';
 
 interface Reference {

@@ -5,7 +5,7 @@ import Container from '@mui/material/Container';
 import Filter from '../components/ParlimentFilter/Filter';
 import VoteList from '../components/VoteList/VoteList';
 
-import { queryAttrToArray, queryAttrToString, queryAttrToNumber } from '../utils';
+import { queryAttrToArray, queryAttrToNumber, queryAttrToString } from '../utils';
 
 const Votes: React.FC = () => {
   const router = useRouter();

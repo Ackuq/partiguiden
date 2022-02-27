@@ -1,14 +1,14 @@
-import React, { useState } from 'react';
 import Link from 'next/link';
+import React, { useState } from 'react';
 
 import Collapse from '@mui/material/Collapse';
 import Typography from '@mui/material/Typography';
 
 import { useTheme } from '@mui/material/styles';
 
+import { Vote } from '../../types/voting';
 import RotatingArrow from './shared/RotatingArrow';
 import SectionButton from './shared/SectionButton';
-import { Vote } from '../../types/voting';
 
 import * as ROUTES from '../../lib/routes';
 

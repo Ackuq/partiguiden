@@ -1,16 +1,16 @@
-import Typography from '@mui/material/Typography';
-import MUILink from '@mui/material/Link';
 import Divider from '@mui/material/Divider';
+import MUILink from '@mui/material/Link';
+import Typography from '@mui/material/Typography';
 
 import { styled } from '@mui/material/styles';
 
-import Link from 'next/link';
-import PartyStandpoints from '../components/PartyStandpoints/PartyStandpoints';
 import { PartyAbbreviation } from '../utils/parties';
 import { RelatedSubject, StandpointsMap } from '../types/subjects';
-import { partiesMap } from '../utils/getParties';
-import { getStandpointHref, STANDPOINT } from '../lib/routes';
 import { ResponsiveAd } from '../components/Ad';
+import { STANDPOINT, getStandpointHref } from '../lib/routes';
+import { partiesMap } from '../utils/getParties';
+import Link from 'next/link';
+import PartyStandpoints from '../components/PartyStandpoints/PartyStandpoints';
 
 const ContentDivider = styled(Divider)`
   margin-top: 5rem;

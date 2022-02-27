@@ -1,5 +1,5 @@
-import { darken, styled } from '@mui/material/styles';
 import { AuthorityEntry } from '../types/authority';
+import { darken, styled } from '@mui/material/styles';
 
 const Header = styled('div', { shouldForwardProp: (props) => props !== 'authorityColor' })<{
   authorityColor: string;

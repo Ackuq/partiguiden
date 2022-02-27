@@ -4,14 +4,14 @@ import Image from 'next/image';
 
 import Container from '@mui/material/Container';
 
-import SocialMediaShare from '../../components/BreadcrumbsSocialMediaShare/SocialMediaShare';
-import { PartyData } from '../../types/party';
-import parties from '../../utils/getParties';
-import PageTitle from '../../components/PageTitle';
-import Party from '../../containers/Party';
 import { PARTY_LOGOS } from '../../assets/logos';
 import { PartyAbbreviation, partyAbbreviations } from '../../utils/parties';
+import { PartyData } from '../../types/party';
 import { partyController } from '../../api/controllers/parties';
+import PageTitle from '../../components/PageTitle';
+import Party from '../../containers/Party';
+import SocialMediaShare from '../../components/BreadcrumbsSocialMediaShare/SocialMediaShare';
+import parties from '../../utils/getParties';
 
 const PartyPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({ party }) => {
   const PartyLogo: React.FC = () => (

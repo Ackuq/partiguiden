@@ -1,5 +1,5 @@
-import { PartyAbbreviation, Party } from '../utils/parties';
 import { Leader } from './member';
+import { Party, PartyAbbreviation } from '../utils/parties';
 
 export interface WikipediaInfoBox {
   ideology: string[];

@@ -1,10 +1,10 @@
-import { NextPage, GetStaticPaths, GetStaticProps } from 'next';
+import { GetStaticPaths, GetStaticProps, NextPage } from 'next';
 import Head from 'next/head';
 
-import Member from '../../containers/Member';
-import { memberController, membersController } from '../../api/controllers/members';
 import { Member as MemberType } from '../../types/member';
+import { memberController, membersController } from '../../api/controllers/members';
 import LoadCircle from '../../components/LoadCircle';
+import Member from '../../containers/Member';
 
 interface Props {
   member?: MemberType;

@@ -1,5 +1,5 @@
-import { getMaxVote, extractVotes, createReferences } from '../helpers/voteUtils';
 import { Vote, VoteResultsResponse } from '../../types/voting';
+import { createReferences, extractVotes, getMaxVote } from '../helpers/voteUtils';
 
 export const voteSerializer = (data: any, propositionNr: number): Vote => {
   const { dokumentstatus } = data;

@@ -1,7 +1,7 @@
+import { DocumentResponse } from '../../types/document';
+import { MemberDocuments } from '../../types/member';
 import { parliamentURL } from '../constants';
 import { serializeMemberDocuments } from '../serializers/document';
-import { MemberDocuments } from '../../types/member';
-import { DocumentResponse } from '../../types/document';
 
 export const getHtmlDocument = (id: string): Promise<string> =>
   fetch(`${parliamentURL}/dokument/${id}`).then((res) => res.text());

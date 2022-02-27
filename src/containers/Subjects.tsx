@@ -1,14 +1,14 @@
-import React, { useState } from 'react';
 import Link from 'next/link';
+import React, { useState } from 'react';
 
-import Grid from '@mui/material/Grid';
 import { styled } from '@mui/material/styles';
+import Grid from '@mui/material/Grid';
 
 import { SubjectList } from '../types/subjects';
 
 import * as ROUTES from '../lib/routes';
-import Search from '../components/Search';
 import { ResponsiveAd } from '../components/Ad';
+import Search from '../components/Search';
 
 const SearchContainer = styled('div')`
   width: 100%;

@@ -1,13 +1,13 @@
-import { NextPage, GetServerSideProps, InferGetStaticPropsType } from 'next';
+import { GetServerSideProps, InferGetStaticPropsType, NextPage } from 'next';
 import Head from 'next/head';
 
 import Container from '@mui/material/Container';
 
+import { useDocument } from '../../hooks/parliamentHooks';
+import Document from '../../containers/Document';
+import LoadCircle from '../../components/LoadCircle';
 import PageTitle from '../../components/PageTitle';
 import SocialMediaShare from '../../components/BreadcrumbsSocialMediaShare/SocialMediaShare';
-import Document from '../../containers/Document';
-import { useDocument } from '../../hooks/parliamentHooks';
-import LoadCircle from '../../components/LoadCircle';
 
 const DocumentContainer: NextPage<InferGetStaticPropsType<typeof getServerSideProps>> = ({
   id,

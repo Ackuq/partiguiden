@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 
 import Fab from '@mui/material/Fab';
-import SwipeableDrawer from '@mui/material/SwipeableDrawer';
 import IconButton from '@mui/material/IconButton';
+import SwipeableDrawer from '@mui/material/SwipeableDrawer';
 
+import { Theme, darken, styled } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
-import { darken, styled, Theme } from '@mui/material/styles';
 
-import FilterIcon from '@mui/icons-material/Tune';
 import CloseIcon from '@mui/icons-material/CloseRounded';
+import FilterIcon from '@mui/icons-material/Tune';
 
 import FilterContainerDesktop from './FilterContainerDesktop';
 

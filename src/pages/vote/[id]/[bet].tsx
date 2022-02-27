@@ -1,15 +1,15 @@
-import { NextPage, GetServerSideProps, InferGetServerSidePropsType } from 'next';
-import Head from 'next/head';
+import { GetServerSideProps, InferGetServerSidePropsType, NextPage } from 'next';
 import Container from '@mui/material/Container';
+import Head from 'next/head';
 
 import PageTitle from '../../../components/PageTitle';
 import Vote from '../../../containers/Vote';
 
 import * as ROUTES from '../../../lib/routes';
-import { useVote } from '../../../hooks/parliamentHooks';
-import LoadCircle from '../../../components/LoadCircle';
-import BreadcrumbsSocialMediaShare from '../../../components/BreadcrumbsSocialMediaShare/BreadcrumbsSocialMediaShare';
 import { ResponsiveAd } from '../../../components/Ad';
+import { useVote } from '../../../hooks/parliamentHooks';
+import BreadcrumbsSocialMediaShare from '../../../components/BreadcrumbsSocialMediaShare/BreadcrumbsSocialMediaShare';
+import LoadCircle from '../../../components/LoadCircle';
 
 const VoteContainer: NextPage<InferGetServerSidePropsType<typeof getServerSideProps>> = ({
   proposition,

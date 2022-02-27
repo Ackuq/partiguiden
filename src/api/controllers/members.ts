@@ -1,7 +1,7 @@
-import { ParsedUrlQuery, stringify } from 'querystring';
-import { parliamentURL } from '../constants';
-import { memberSerializer, serializeAbsence } from '../serializers/member';
 import { Member, MemberList } from '../../types/member';
+import { ParsedUrlQuery, stringify } from 'querystring';
+import { memberSerializer, serializeAbsence } from '../serializers/member';
+import { parliamentURL } from '../constants';
 
 export const getAbsence = (query: string): Promise<number | null> =>
   fetch(`${parliamentURL}/voteringlista/?${query}`)

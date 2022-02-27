@@ -1,6 +1,6 @@
-import { stringify } from 'querystring';
 import { VoteList } from '../../types/voting';
 import { parliamentURL } from '../constants';
+import { stringify } from 'querystring';
 import { votesSerializer } from '../serializers/votes';
 
 export const getVotes = (query: string): Promise<VoteList> =>

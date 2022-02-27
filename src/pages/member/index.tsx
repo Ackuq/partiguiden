@@ -3,8 +3,8 @@ import Head from 'next/head';
 
 import PersonIcon from '@mui/icons-material/Person';
 
-import PageTitle from '../../components/PageTitle';
 import Members from '../../containers/Members';
+import PageTitle from '../../components/PageTitle';
 
 import { MemberList } from '../../types/member';
 import { membersController } from '../../api/controllers/members';

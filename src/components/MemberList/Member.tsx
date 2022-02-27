@@ -3,8 +3,8 @@ import Link from 'next/link';
 
 import { styled } from '@mui/material/styles';
 
-import { PARTY_LOGOS_LOW_RES } from '../../assets/logos';
 import * as ROUTES from '../../lib/routes';
+import { PARTY_LOGOS_LOW_RES } from '../../assets/logos';
 import { PartyAbbreviation } from '../../utils/parties';
 
 import { MemberList } from '../../types/member';

@@ -1,24 +1,24 @@
 import { useEffect, useMemo, useState } from 'react';
 
 import { AppProps } from 'next/app';
-import Head from 'next/head';
 import { useRouter } from 'next/router';
+import Head from 'next/head';
 
 import CssBaseline from '@mui/material/CssBaseline';
 
 import useMediaQuery from '@mui/material/useMediaQuery';
 
+import { CacheProvider, ThemeProvider as EmotionThemeProvider, css } from '@emotion/react';
 import { ThemeProvider } from '@mui/material/styles';
-import { CacheProvider, css, ThemeProvider as EmotionThemeProvider } from '@emotion/react';
 
-import createCache, { EmotionCache } from '@emotion/cache';
+import CookieBanner from '../components/CookieBanner';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import ToTopButton from '../components/ToTopButton';
-import CookieBanner from '../components/CookieBanner';
+import createCache, { EmotionCache } from '@emotion/cache';
 
-import getTheme from '../lib/theme';
 import * as gtag from '../utils/gtag';
+import getTheme from '../lib/theme';
 
 const browserCache = createCache({ key: 'css' });
 browserCache.compat = true;

@@ -1,13 +1,13 @@
-import Typography from '@mui/material/Typography';
-import CardContent from '@mui/material/CardContent';
 import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import Typography from '@mui/material/Typography';
 
 import {
-  TotalVote,
-  Decision,
   Appendix,
-  VoteDistribution,
+  Decision,
   ProcessedDocuments,
+  TotalVote,
+  VoteDistribution,
 } from '../components/VoteInfo';
 import { Vote as VoteType } from '../types/voting';
 import SectionDivider from '../components/VoteInfo/SectionDivider';

@@ -3,10 +3,10 @@ import Head from 'next/head';
 
 import AnnouncementIcon from '@mui/icons-material/Announcement';
 
-import Typography from '@mui/material/Typography';
-import CardContent from '@mui/material/CardContent';
 import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
 import Container from '@mui/material/Container';
+import Typography from '@mui/material/Typography';
 
 import PageTitle from '../components/PageTitle';
 

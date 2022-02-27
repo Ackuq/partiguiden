@@ -23,6 +23,7 @@ yarn-error.log
 # Automatic generated fiels
 public/robots.txt
 public/sitemap.xml
+public/sitemap-0.xml
 
 # PWA worker files
 public/sw.js*

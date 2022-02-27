@@ -1,7 +1,7 @@
 import { withSentryConfig } from '@sentry/nextjs';
-import withPWA from 'next-pwa';
-import runtimeCaching from 'next-pwa/cache.js';
 import bundleAnalyzer from '@next/bundle-analyzer';
+import runtimeCaching from 'next-pwa/cache.js';
+import withPWA from 'next-pwa';
 
 const withBundleAnalyzer = bundleAnalyzer({ enabled: process.env.ANALYZE === 'true' });
 

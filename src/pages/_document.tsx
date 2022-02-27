@@ -77,6 +77,12 @@ class MyDocument extends Document {
               />
             </>
           )}
+          {process.env.VERCEL_ENV !== 'production' && (
+            <>
+              {/* Disable indexing of all non-production sites */}
+              <meta name="robots" content="noindex" />
+            </>
+          )}
         </Head>
         <body style={{ height: '100%' }}>
           <Main />

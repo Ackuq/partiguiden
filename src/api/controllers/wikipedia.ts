@@ -1,5 +1,5 @@
-import { Abstract, WikipediaInfoBox } from '../../types/party';
 import { PartyAbbreviation } from '../../utils/parties';
+import { WikipediaInfoBox } from '../../types/party';
 import { getAbstract, getInfoBoxAttr } from '../serializers/wikipedia';
 import { wikipediaPartyMap } from '../helpers/wikipediaUtils';
 
@@ -8,7 +8,7 @@ const sleep = (ms: number) =>
     setTimeout(resolve, ms);
   });
 
-export const getWikipediaAbstract = (party: Lowercase<PartyAbbreviation>): Promise<Abstract> =>
+export const getWikipediaAbstract = (party: Lowercase<PartyAbbreviation>): Promise<string> =>
   fetch(
     `https://sv.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&exintro&redirects=1&titles=${encodeURIComponent(
       wikipediaPartyMap[party]

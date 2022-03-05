@@ -1,5 +1,6 @@
+import { Abstract, WikipediaInfoBox } from '../../types/party';
 import { JSDOM } from 'jsdom';
-import { WikipediaInfoBox } from '../../types/party';
+import turndownService from '../../utils/turndown';
 
 interface WikipediaAbstractResponse {
   query: {
@@ -15,10 +16,12 @@ interface WikipediaAbstractResponse {
   };
 }
 
-export const getAbstract = (data: WikipediaAbstractResponse): string => {
+export const getAbstract = (data: WikipediaAbstractResponse): Abstract => {
   const pageData = Object.values(data.query.pages)[0];
 
-  return pageData.extract;
+  const abstract = pageData.extract;
+
+  return { abstract, abstractMD: turndownService.turndown(abstract) };
 };
 
 interface WikipediaInfoBoxResponse {

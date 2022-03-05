@@ -37,6 +37,7 @@
     "recharts": "2.1.9",
     "strip-json-comments": "^4.0.0",
     "swr": "^1.2.2",
+    "turndown": "^7.1.1",
     "typed.js": "^2.0.12"
   },
   "devDependencies": {
@@ -44,6 +45,7 @@
     "@types/jsdom": "^16.2.14",
     "@types/node": "^17.0.21",
     "@types/react": "^17.0.39",
+    "@types/turndown": "^5.0.1",
     "@typescript-eslint/eslint-plugin": "^5.12.1",
     "eslint": "^8.10.0",
     "eslint-config-next": "^12.1.0",

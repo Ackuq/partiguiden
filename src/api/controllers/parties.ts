@@ -26,7 +26,7 @@ export const getParty = (
     getParliamentInformation(party),
   ]).then(([abstract, infoBox, parliamentInfo]) => {
     return {
-      abstract,
+      ...abstract,
       ...infoBox,
       ...parliamentInfo,
       name: partyNameMap[party],

@@ -15,3 +15,8 @@ export interface PartyData extends ParliamentPartyData, WikipediaInfoBox {
   abbrev: PartyAbbreviation;
   abstract: string;
 }
+
+export interface Abstract {
+  abstract: string;
+  abstractMD: string;
+}

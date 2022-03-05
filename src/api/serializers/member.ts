@@ -23,8 +23,8 @@ const notAcceptedTasks = [
 
 const serializeInformation = (unparsed: any): Information => {
   const { kod: code, uppgift: content, typ: type } = unparsed;
-
-  return { code, content, type };
+  const parsedContent = content.length == 0 || typeof content[0] === 'string' ? content : [];
+  return { code, content: parsedContent, type };
 };
 
 const serializeTask = (unparsed: any): Task => {
@@ -38,7 +38,9 @@ const serializeTask = (unparsed: any): Task => {
     tom: to,
   } = unparsed;
 
-  return { authorityCode, role, content, status, type, from, to };
+  const parsedContent = content.length == 0 || typeof content[0] === 'string' ? content : [];
+
+  return { authorityCode, role, content: parsedContent, status, type, from, to };
 };
 
 export const serializeAbsence = (data: UnparsedVotes): number | null => {

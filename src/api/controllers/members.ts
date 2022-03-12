@@ -1,5 +1,6 @@
 import { Member, MemberList } from '../../types/member';
 import { ParsedUrlQuery, stringify } from 'querystring';
+import { Person, PersonListMany, PersonListSingle } from '../../types/parliament';
 import { memberSerializer, serializeAbsence } from '../serializers/member';
 import { parliamentURL } from '../constants';
 
@@ -11,9 +12,9 @@ export const getAbsence = (query: string): Promise<number | null> =>
 export const getMember = (query: ParsedUrlQuery): Promise<MemberList[number] | null> =>
   fetch(`${parliamentURL}/personlista/?${stringify(query)}`)
     .then((res) => res.json())
-    .then((data) => {
+    .then((data: PersonListSingle) => {
       if (data.personlista.person) {
-        return memberSerializer(data.personlista.person);
+        return memberSerializer(data.personlista.person as Person);
       }
       /* Sometimes the first(s) element in last name is an initial, remove it and try again */
       const lastNameArray = (query.enamn as string)?.split(' ');
@@ -32,8 +33,8 @@ export const membersController = (party?: string): Promise<MemberList> => {
 
   return fetch(`${parliamentURL}/personlista/?${stringify(query)}`)
     .then((res) => res.json())
-    .then((data) => {
-      const members = data.personlista.person;
+    .then((data: PersonListMany) => {
+      const members = data.personlista.person as Person[];
       return members.map(memberSerializer);
     });
 };

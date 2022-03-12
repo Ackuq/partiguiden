@@ -1,7 +1,8 @@
 import { Decision, Decisions } from '../../types/decision';
+import { DocumentList, DocumentListEntry } from '../../types/parliament';
 import { checkIfVotesExist } from '../helpers/decisionUtils';
 
-export const decisionSerializer = async (data: any): Promise<Decision> => {
+export const decisionSerializer = async (data: DocumentListEntry): Promise<Decision> => {
   const {
     titel: title,
     organ: authority,
@@ -29,7 +30,7 @@ export const decisionSerializer = async (data: any): Promise<Decision> => {
   };
 };
 
-export const decisionsSerializer = (data: any): Promise<Decisions> => {
+export const decisionsSerializer = (data: DocumentList): Promise<Decisions> => {
   const { dokumentlista } = data;
   const { dokument: document } = dokumentlista;
 

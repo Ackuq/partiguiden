@@ -1,3 +1,5 @@
+import { DocumentAttachment } from './parliament';
+
 export type VotingResult = {
   yes: Array<string>;
   no: Array<string>;
@@ -44,21 +46,7 @@ export interface Vote {
   authority: string;
   propositionText: string;
   processedDocuments: Array<ProcessedDocument>;
-  appendix: Array<VoteAppendixItem>;
+  appendix: Array<DocumentAttachment>;
   decision: string;
   voting: Record<string, Record<VoteDescription, string>>;
 }
-
-/* API Types */
-
-export type VotingRowEntry = { td: Array<string> };
-
-export type VotingRow = [
-  {
-    th: Array<string>;
-  },
-  {
-    td: { h4: string; p: string };
-  },
-  ...VotingRowEntry[]
-];

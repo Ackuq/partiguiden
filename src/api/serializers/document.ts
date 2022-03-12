@@ -1,6 +1,7 @@
+import { DocumentList, DocumentListEntry } from '../../types/parliament';
 import { MemberDocument, MemberDocuments } from '../../types/member';
 
-export const serializeMemberDocument = (document: any): MemberDocument => {
+export const serializeMemberDocument = (document: DocumentListEntry): MemberDocument => {
   const {
     organ: authority,
     dokumentnamn: title,
@@ -12,7 +13,7 @@ export const serializeMemberDocument = (document: any): MemberDocument => {
   return { authority, title, subtitle, altTitle, id };
 };
 
-export const serializeMemberDocuments = (data: any): MemberDocuments => {
+export const serializeMemberDocuments = (data: DocumentList): MemberDocuments => {
   const { dokumentlista } = data;
   const pages = parseInt(dokumentlista['@sidor'], 10);
   const count = parseInt(dokumentlista['@traffar'], 10);

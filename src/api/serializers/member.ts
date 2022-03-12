@@ -1,16 +1,10 @@
 import { Information, MemberList, Task } from '../../types/member';
-
-interface UnparsedVotes {
-  voteringlista: {
-    votering?: {
-      namn: string;
-      Ja: string;
-      Nej: string;
-      Frånvarande: string;
-      Avstår: string;
-    };
-  };
-}
+import {
+  Person,
+  PersonInformation,
+  PersonTask,
+  VoteListGroupedSingle,
+} from '../../types/parliament';
 
 const notAcceptedTasks = [
   'sv',
@@ -21,13 +15,13 @@ const notAcceptedTasks = [
   'Tjänstetelefon',
 ];
 
-const serializeInformation = (unparsed: any): Information => {
+const serializeInformation = (unparsed: PersonInformation): Information => {
   const { kod: code, uppgift: content, typ: type } = unparsed;
-  const parsedContent = content.length == 0 || typeof content[0] === 'string' ? content : [];
+  const parsedContent = Array.isArray(content) ? content : [];
   return { code, content: parsedContent, type };
 };
 
-const serializeTask = (unparsed: any): Task => {
+const serializeTask = (unparsed: PersonTask): Task => {
   const {
     organ_kod: authorityCode,
     roll_kod: role,
@@ -38,12 +32,12 @@ const serializeTask = (unparsed: any): Task => {
     tom: to,
   } = unparsed;
 
-  const parsedContent = content.length == 0 || typeof content[0] === 'string' ? content : [];
+  const parsedContent = Array.isArray(content) ? content : [];
 
   return { authorityCode, role, content: parsedContent, status, type, from, to };
 };
 
-export const serializeAbsence = (data: UnparsedVotes): number | null => {
+export const serializeAbsence = (data: VoteListGroupedSingle): number | null => {
   if (data.voteringlista.votering) {
     const votes = data.voteringlista.votering;
     const total =
@@ -56,7 +50,7 @@ export const serializeAbsence = (data: UnparsedVotes): number | null => {
   return null;
 };
 
-export const memberSerializer = (data: any): MemberList[number] => {
+export const memberSerializer = (data: Person): MemberList[number] => {
   const {
     intressent_id: id,
     tilltalsnamn: firstName,
@@ -75,12 +69,12 @@ export const memberSerializer = (data: any): MemberList[number] => {
   const unparsedTasks = personuppdrag?.uppdrag ?? [];
 
   const information = unparsedInformation
-    .filter((el: any) => !notAcceptedTasks.includes(el.kod))
+    .filter((el) => !notAcceptedTasks.includes(el.kod))
     .map(serializeInformation);
 
   const tasks = unparsedTasks.map(serializeTask);
 
-  const isLeader = !!tasks.find((el: any) => el.role === 'Partiledare' && !el.to);
+  const isLeader = !!tasks.find((el) => el.role === 'Partiledare' && !el.to);
 
   const age = new Date().getFullYear() - parseInt(birthYear, 10);
 

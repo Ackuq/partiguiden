@@ -1,23 +1,5 @@
-import {
-  ProcessedDocument,
-  VotingDict,
-  VotingEntry,
-  VotingResult,
-  VotingRow,
-} from '../../types/voting';
-
-interface Reference {
-  referenstyp: string;
-  uppgift: string | null;
-  ref_dok_id: string;
-  ref_dok_typ: string;
-  ref_dok_rm: string;
-  ref_dok_bet: string;
-  ref_dok_titel: string;
-  ref_dok_subtitel: string | null;
-  ref_dok_subtyp: string | null;
-  ref_dok_dokumentnamn: string;
-}
+import { DocumentReference, VotingRow } from '../../types/parliament';
+import { ProcessedDocument, VotingDict, VotingEntry, VotingResult } from '../../types/voting';
 
 interface ReferencesResponse {
   processedDocuments: ProcessedDocument[];
@@ -26,7 +8,7 @@ interface ReferencesResponse {
 
 export const createReferences = (
   unparsedProposition: string,
-  references: Array<Reference>
+  references: DocumentReference[]
 ): ReferencesResponse => {
   /* Remove newlines */
   let proposition = unparsedProposition.replace(/(<br>)|<BR\/>/gm, ' ');

@@ -1,7 +1,8 @@
 import { Vote, VoteResultsResponse } from '../../types/voting';
+import { VoteDocumentStatus } from '../../types/parliament';
 import { createReferences, extractVotes, getMaxVote } from '../helpers/voteUtils';
 
-export const voteSerializer = (data: any, propositionNr: number): Vote => {
+export const voteSerializer = (data: VoteDocumentStatus, propositionNr: number): Vote => {
   const { dokumentstatus } = data;
   const { utskottsforslag: unparsedProposition } = dokumentstatus.dokutskottsforslag;
 
@@ -17,15 +18,15 @@ export const voteSerializer = (data: any, propositionNr: number): Vote => {
 
   const { uppgift } = dokumentstatus.dokuppgift;
 
-  const decision = uppgift.find((el: any) => {
+  const decision = uppgift.find((el) => {
     return el.kod === 'rdbeslut';
   });
 
-  const description = uppgift.find((el: any) => {
+  const description = uppgift.find((el) => {
     return el.kod === 'notis';
   });
 
-  const title = uppgift.find((el: any) => {
+  const title = uppgift.find((el) => {
     return el.kod === 'notisrubrik';
   });
 
@@ -33,18 +34,21 @@ export const voteSerializer = (data: any, propositionNr: number): Vote => {
   const tableRow = Array.isArray(table) ? table[table.length - 1].tr : table.tr;
 
   return {
-    title: title.text,
-    description: description.text,
+    title: title?.text ?? '',
+    description: description?.text ?? '',
     authority,
     propositionText,
     processedDocuments,
-    appendix: dokumentstatus.dokbilaga ? dokumentstatus.dokbilaga.bilaga : null,
+    appendix: dokumentstatus.dokbilaga ? dokumentstatus.dokbilaga.bilaga : [],
     decision: decision ? decision.text : '',
     voting: extractVotes(tableRow),
   };
 };
 
-export const voteResultSerializer = (data: any, num: number): VoteResultsResponse => {
+export const voteResultSerializer = (
+  data: VoteDocumentStatus,
+  num: number
+): VoteResultsResponse => {
   const { dokumentstatus } = data;
   const { utskottsforslag } = dokumentstatus.dokutskottsforslag;
   const voteObject = Array.isArray(utskottsforslag) ? utskottsforslag[num - 1] : utskottsforslag;

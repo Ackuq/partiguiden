@@ -254,7 +254,7 @@ export interface PersonTask {
   typ: string;
   from: string;
   tom: string;
-  uppgift: Array<string> | Record<string, never>;
+  uppgift: Array<string> | Record<string, never> | [Record<string, never>];
   intressent_id: string;
   hangar_id: string;
   sortering: string;
@@ -265,7 +265,7 @@ export interface PersonTask {
 
 export interface PersonInformation {
   kod: string;
-  uppgift: Array<string> | Record<string, never>;
+  uppgift: Array<string> | Record<string, never> | [Record<string, never>];
   typ: string;
   intressent_id: string;
   hangar_id: string;

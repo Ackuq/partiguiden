@@ -17,7 +17,10 @@ const notAcceptedTasks = [
 
 const serializeInformation = (unparsed: PersonInformation): Information => {
   const { kod: code, uppgift: content, typ: type } = unparsed;
-  const parsedContent = Array.isArray(content) ? content : [];
+  const parsedContent =
+    Array.isArray(content) && content.length > 0 && typeof content[0] === 'string'
+      ? (content as string[])
+      : [];
   return { code, content: parsedContent, type };
 };
 
@@ -31,8 +34,11 @@ const serializeTask = (unparsed: PersonTask): Task => {
     from,
     tom: to,
   } = unparsed;
-
-  const parsedContent = Array.isArray(content) ? content : [];
+  console.log(content);
+  const parsedContent =
+    Array.isArray(content) && content.length > 0 && typeof content[0] === 'string'
+      ? (content as string[])
+      : [];
 
   return { authorityCode, role, content: parsedContent, status, type, from, to };
 };

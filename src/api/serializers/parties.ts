@@ -41,7 +41,7 @@ export const parliamentInfoSerializer = (
           if (member === null) {
             reject(Error("Couldn't find member"));
           }
-          resolve({ role, ...member } as unknown as Leader);
+          resolve({ role, ...member } as Leader);
         });
       });
 

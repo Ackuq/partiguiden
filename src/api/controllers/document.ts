@@ -1,12 +1,13 @@
 import { DocumentResponse } from '../../types/document';
 import { MemberDocuments } from '../../types/member';
+import { UnknownDocumentStatus } from '../../types/parliament';
 import { parliamentURL } from '../constants';
 import { serializeMemberDocuments } from '../serializers/document';
 
 export const getHtmlDocument = (id: string): Promise<string> =>
   fetch(`${parliamentURL}/dokument/${id}`).then((res) => res.text());
 
-export const getJsonDocument = (id: string): Promise<Record<string, unknown>> =>
+export const getJsonDocument = (id: string): Promise<UnknownDocumentStatus> =>
   fetch(`${parliamentURL}/dokument/${id}.json`).then((res) => res.json());
 
 export const getMemberDocuments = (id: string, page: number): Promise<MemberDocuments> =>

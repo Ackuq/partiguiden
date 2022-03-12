@@ -277,6 +277,33 @@ export interface DocumentStatus<T> {
   } & T;
 }
 
+export interface UnknownDocumentStatus {
+  dokutskottsforslag?: {
+    utskottsforslag: DocumentComitteeProposal[] | DocumentComitteeProposal;
+  };
+  dokmotforslag?: {
+    motforslag: DocumentCounterProposal[];
+  };
+  dokforslag?: {
+    forslag: DocumentProposal[];
+  };
+  dokaktivitet?: {
+    aktivitet: DocumentActivity[];
+  };
+  dokintressent?: {
+    intressent: DocumentParticipants[];
+  };
+  dokuppgift?: {
+    uppgift: DocumentInformation[];
+  };
+  dokbilaga?: {
+    bilaga: DocumentAttachment[];
+  };
+  dokreferens?: {
+    referens: DocumentReference[];
+  };
+}
+
 export type VoteDocumentStatus = DocumentStatus<{
   dokutskottsforslag: {
     utskottsforslag: DocumentComitteeProposal[] | DocumentComitteeProposal;

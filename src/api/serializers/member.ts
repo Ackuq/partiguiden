@@ -34,7 +34,7 @@ const serializeTask = (unparsed: PersonTask): Task => {
     from,
     tom: to,
   } = unparsed;
-  console.log(content);
+
   const parsedContent =
     Array.isArray(content) && content.length > 0 && typeof content[0] === 'string'
       ? (content as string[])

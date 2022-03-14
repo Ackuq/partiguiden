@@ -29,7 +29,7 @@ const Vote: React.FC<Props> = ({
 }) => (
   <Card sx={{ marginBottom: '1rem' }}>
     <CardContent>
-      <TotalVote voting={voting.Totalt} />
+      <TotalVote voting={voting.total} />
       <Typography
         variant="h3"
         component="h2"

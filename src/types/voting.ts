@@ -1,16 +1,19 @@
 import { DocumentAttachment } from './parliament';
+import { PartyAbbreviation } from '../utils/parties';
+
+export type VoteDescription = 'yes' | 'no' | 'refrain' | 'abscent';
+
+export type VotingEntry = Record<VoteDescription, string>;
+
+export type VotingGroup = Lowercase<PartyAbbreviation> | 'noParty' | 'total';
+
+export type VotingDict = Record<VotingGroup, VotingEntry>;
 
 export type VotingResult = {
   yes: Array<string>;
   no: Array<string>;
   winner: 'yes' | 'no' | 'draw';
 };
-
-export type VoteDescription = 'yes' | 'no' | 'refrain' | 'abscent';
-
-export type VotingEntry = Record<VoteDescription, string>;
-
-export type VotingDict = Record<string, VotingEntry>;
 
 export interface VoteResultsResponse {
   results: VotingResult;
@@ -48,5 +51,5 @@ export interface Vote {
   processedDocuments: Array<ProcessedDocument>;
   appendix: Array<DocumentAttachment>;
   decision: string;
-  voting: Record<string, Record<VoteDescription, string>>;
+  voting: VotingDict;
 }

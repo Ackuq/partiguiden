@@ -83,7 +83,7 @@ const authorityTable: Record<string, AuthorityEntry> = {
   },
 };
 
-const lookupAuthority = (authority: string): AuthorityEntry =>
+const lookupAuthority = (authority: string): AuthorityEntry | undefined =>
   authorityTable[authority.toUpperCase()];
 
 export { authorityTable, lookupAuthority };

@@ -33,12 +33,11 @@ interface Props {
 
 const Vote: React.FC<Props> = ({ vote }) => {
   const authority = lookupAuthority(vote.authority);
-
   return (
     <Card elevation={1} style={{ flex: 1 }}>
       <Link href={ROUTES.VOTE} as={ROUTES.getVoteHref(vote.documentId, vote.proposition)} passHref>
         <ButtonBase style={{ display: 'block' }} component="a">
-          <AuthorityCardHeader authority={authority} />
+          {authority && <AuthorityCardHeader authority={authority} />}
 
           <CardContent>
             <Title align="left" gutterBottom>

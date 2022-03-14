@@ -1,9 +1,6 @@
 import C from '../../public/static/images/party-logos/C.png';
 import CLowRes from '../../public/static/images/party-logos/C-low-res.png';
 
-import FP from '../../public/static/images/party-logos/FP.png';
-import FPLowRes from '../../public/static/images/party-logos/FP-low-res.png';
-
 import KD from '../../public/static/images/party-logos/KD.png';
 import KDLowRes from '../../public/static/images/party-logos/KD-low-res.png';
 
@@ -27,7 +24,6 @@ import VLowRes from '../../public/static/images/party-logos/V-low-res.png';
 
 export const PARTY_LOGOS = {
   C,
-  FP,
   KD,
   L,
   M,
@@ -39,7 +35,6 @@ export const PARTY_LOGOS = {
 
 export const PARTY_LOGOS_LOW_RES = {
   C: CLowRes,
-  FP: FPLowRes,
   KD: KDLowRes,
   L: LLowRes,
   M: MLowRes,

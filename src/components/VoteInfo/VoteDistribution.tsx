@@ -17,8 +17,7 @@ import {
   YAxis,
 } from 'recharts';
 
-import { PartyAbbreviation } from '../../utils/parties';
-import { Vote } from '../../types/voting';
+import { Vote, VotingDict } from '../../types/voting';
 import { voteColor } from '../../lib/voteColors';
 import PartySymbolTick from '../PartySymbolTick';
 import RotatingArrow from './shared/RotatingArrow';
@@ -39,13 +38,11 @@ interface Result {
   Frånvarande: string;
 }
 
-type Key = PartyAbbreviation | '-' | 'Totalt';
-
 const createData = (voting: Vote['voting']) => {
   const result: Array<Result> = [];
 
-  (Object.keys(voting) as Key[]).forEach((party) => {
-    if (party !== '-' && party !== 'Totalt') {
+  (Object.keys(voting) as (keyof VotingDict)[]).forEach((party) => {
+    if (party !== 'noParty' && party !== 'total') {
       result.push({
         name: party,
         Ja: voting[party].yes,

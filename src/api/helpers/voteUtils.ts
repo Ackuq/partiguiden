@@ -1,5 +1,5 @@
 import { DocumentReference, VotingRow } from '../../types/parliament';
-import { ProcessedDocument, VotingDict, VotingEntry, VotingResult } from '../../types/voting';
+import { ProcessedDocument, VotingDict, VotingGroup, VotingResult } from '../../types/voting';
 
 interface ReferencesResponse {
   processedDocuments: ProcessedDocument[];
@@ -68,21 +68,36 @@ export const createReferences = (
 export const titleTrim = (title: string): string =>
   title.split(/([0-9]{4}\/[0-9]{2}:[A-ö]{0,4}[0-9]{0,4})/)[2].trim();
 
-export const extractVotes = (row: VotingRow): Record<string, VotingEntry> => {
-  const voting: Record<string, VotingEntry> = {};
+const votingGroupRemap = (partyName: string): VotingGroup => {
+  switch (partyName) {
+    case 'fp':
+      return 'l';
+    case '-':
+      return 'noParty';
+    case 'Totalt':
+      return 'total';
+    default:
+      return partyName as VotingGroup;
+  }
+};
+
+export const extractVotes = (row: VotingRow): VotingDict => {
+  const voting = {} as VotingDict;
 
   const [, , ...entries] = row;
 
   entries.forEach((entry) => {
     const { td } = entry;
+
     if (Array.isArray(td)) {
+      const votingGroupName = votingGroupRemap(td[0]);
       const partyVotes = {
         yes: td[1],
         no: td[2],
         refrain: td[3],
         abscent: td[4],
       };
-      voting[td[0]] = partyVotes;
+      voting[votingGroupName] = partyVotes;
     }
   });
 
@@ -94,8 +109,9 @@ const decisions: ['yes', 'no', 'refrain'] = ['yes', 'no', 'refrain'];
 export const getMaxVote = (partyVotes: VotingDict): VotingResult => {
   const result: VotingResult = { yes: [], no: [], winner: 'draw' };
 
+  // Want to isolate so just the parties are in the parties constant
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const { '-': noParty, Totalt: total, ...parties } = partyVotes;
+  const { noParty, total, ...parties } = partyVotes;
 
   const yesTotal = parseInt(total.yes, 10);
   const noTotal = parseInt(total.no, 10);

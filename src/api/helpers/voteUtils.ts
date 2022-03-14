@@ -71,13 +71,13 @@ export const titleTrim = (title: string): string =>
 const votingGroupRemap = (partyName: string): VotingGroup => {
   switch (partyName) {
     case 'fp':
-      return 'l';
+      return 'L';
     case '-':
       return 'noParty';
     case 'Totalt':
       return 'total';
     default:
-      return partyName as VotingGroup;
+      return partyName.toUpperCase() as VotingGroup;
   }
 };
 
@@ -91,6 +91,7 @@ export const extractVotes = (row: VotingRow): VotingDict => {
 
     if (Array.isArray(td)) {
       const votingGroupName = votingGroupRemap(td[0]);
+
       const partyVotes = {
         yes: td[1],
         no: td[2],

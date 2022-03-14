@@ -5,7 +5,7 @@ export type VoteDescription = 'yes' | 'no' | 'refrain' | 'abscent';
 
 export type VotingEntry = Record<VoteDescription, string>;
 
-export type VotingGroup = Lowercase<PartyAbbreviation> | 'noParty' | 'total';
+export type VotingGroup = PartyAbbreviation | 'noParty' | 'total';
 
 export type VotingDict = Record<VotingGroup, VotingEntry>;
 

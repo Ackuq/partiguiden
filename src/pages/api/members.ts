@@ -1,5 +1,6 @@
 import { NextApiRequest, NextApiResponse } from 'next';
 import { membersController } from '../../api/controllers/members';
+import { setCache } from '../../utils/apiUtils';
 
 const ALLOWED_METHODS = ['GET'];
 
@@ -14,6 +15,9 @@ const membersHandler = async (req: MembersApiRequest, res: NextApiResponse): Pro
     query: { party },
     method,
   } = req;
+
+  // 1 week
+  setCache(604800, res);
 
   if (!ALLOWED_METHODS.includes(method || '')) {
     res.setHeader('Allow', ALLOWED_METHODS);

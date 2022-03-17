@@ -1,5 +1,6 @@
 import { NextApiRequest, NextApiResponse } from 'next';
 import { memberController } from '../../../api/controllers/members';
+import { setCache } from '../../../utils/apiUtils';
 
 const ALLOWED_METHODS = ['GET'];
 
@@ -14,6 +15,9 @@ const memberHandler = async (req: MemberApiRequest, res: NextApiResponse): Promi
     query: { id },
     method,
   } = req;
+
+  // The absence can change somewhat frequently, cache for 2 days
+  setCache(172800, res);
 
   if (!ALLOWED_METHODS.includes(method || '')) {
     res.setHeader('Allow', ALLOWED_METHODS);

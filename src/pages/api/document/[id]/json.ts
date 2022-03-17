@@ -1,5 +1,6 @@
 import { NextApiRequest, NextApiResponse } from 'next';
 import { jsonDocumentController } from '../../../../api/controllers/document';
+import { setCache } from '../../../../utils/apiUtils';
 
 const ALLOWED_METHODS = ['GET'];
 
@@ -14,6 +15,9 @@ const memberHandler = async (req: JsonDocumentApiRequest, res: NextApiResponse):
     query: { id },
     method,
   } = req;
+
+  // Barely any changes, cache for 2 weekss
+  setCache(1210000, res);
 
   if (!ALLOWED_METHODS.includes(method || '')) {
     res.setHeader('Allow', ALLOWED_METHODS);

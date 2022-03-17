@@ -1,4 +1,5 @@
 import { NextApiRequest, NextApiResponse } from 'next';
+import { setCache } from '../../../../utils/apiUtils';
 import { voteController } from '../../../../api/controllers/vote';
 
 const ALLOWED_METHODS = ['GET'];
@@ -15,6 +16,9 @@ const voteHandler = async (req: VoteApiRequest, res: NextApiResponse): Promise<v
     query: { id, proposition },
     method,
   } = req;
+
+  // These are pretty static, cache for a week
+  setCache(604800, res);
 
   if (!ALLOWED_METHODS.includes(method || '')) {
     res.setHeader('Allow', ALLOWED_METHODS);

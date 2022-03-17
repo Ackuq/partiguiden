@@ -1,6 +1,7 @@
 import { NextApiRequest, NextApiResponse } from 'next';
 import { PartyAbbreviation, partyAbbreviations } from '../../../utils/parties';
 import { partyController } from '../../../api/controllers/parties';
+import { setCache } from '../../../utils/apiUtils';
 
 const ALLOWED_METHODS = ['GET'];
 
@@ -15,6 +16,9 @@ const partyHandler = async (req: PartyApiRequest, res: NextApiResponse): Promise
     query: { party },
     method,
   } = req;
+
+  // Very static, cache for a week
+  setCache(604800, res);
 
   if (!ALLOWED_METHODS.includes(method || '')) {
     res.setHeader('Allow', ALLOWED_METHODS);

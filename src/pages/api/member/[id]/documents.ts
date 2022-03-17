@@ -1,5 +1,6 @@
 import { NextApiRequest, NextApiResponse } from 'next';
 import { memberDocumentsController } from '../../../../api/controllers/document';
+import { setCache } from '../../../../utils/apiUtils';
 
 const ALLOWED_METHODS = ['GET'];
 
@@ -18,6 +19,9 @@ const memberHandler = async (
     query: { id, page },
     method,
   } = req;
+
+  // Can change daily, cache for a day
+  setCache(86400, res);
 
   if (!ALLOWED_METHODS.includes(method || '')) {
     res.setHeader('Allow', ALLOWED_METHODS);

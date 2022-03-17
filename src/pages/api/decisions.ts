@@ -1,5 +1,6 @@
 import { NextApiRequest, NextApiResponse } from 'next';
 import { decisionsController } from '../../api/controllers/decisions';
+import { setCache } from '../../utils/apiUtils';
 
 const ALLOWED_METHODS = ['GET'];
 
@@ -8,6 +9,9 @@ const decisionsHandler = async (req: NextApiRequest, res: NextApiResponse): Prom
     query: { search, org, page },
     method,
   } = req;
+
+  // 2 hours
+  setCache(7200, res);
 
   if (!ALLOWED_METHODS.includes(method || '')) {
     res.setHeader('Allow', ALLOWED_METHODS);

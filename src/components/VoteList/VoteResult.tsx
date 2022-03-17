@@ -68,7 +68,7 @@ const VoteResult: React.FC<Props> = ({ votes }) => {
   const colors = useMemo(() => voteListColors[theme.palette.mode], [theme.palette.mode]);
 
   return (
-    <Grid display="flex">
+    <Grid container>
       {votes.no.length || votes.yes.length ? (
         <>
           <ResultColumn

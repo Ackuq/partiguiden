@@ -36,6 +36,7 @@ export interface Member {
   firstName: string;
   lastName: string;
   pictureUrl: string;
+  pictureUrlLowRes: string;
   age: number;
   party: PartyAbbreviation | '-';
   district: string;

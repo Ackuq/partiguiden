@@ -324,4 +324,4 @@ export const createBlockAverage = (average: AveragePoll): BlocksAverage => {
 };
 
 // Format number to only 2 significant figures, to avoid weird values
-export const displayFormatter = (value: number): string => value.toFixed(2);
+export const displayFormatter = (value: number): string => value.toFixed(2) + '%';

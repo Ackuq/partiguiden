@@ -1,37 +1,17 @@
 import React, { useState } from 'react';
 
-import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
 
-import { styled, useTheme } from '@mui/material/styles';
+import { useTheme } from '@mui/material/styles';
 
-import {
-  Brush,
-  Legend,
-  LegendProps,
-  Line,
-  LineChart,
-  ResponsiveContainer,
-  Tooltip,
-  XAxis,
-  YAxis,
-} from 'recharts';
+import { Brush, Legend, LegendProps, Line, LineChart, Tooltip, XAxis, YAxis } from 'recharts';
 
 import { MonthlyAverage } from '../../lib/polls';
 
+import { ChartContainer, PollCard } from './utils';
 import { PartyAbbreviation, partyAbbreviations } from '../../utils/parties';
 import { partiesMap } from '../../utils/getParties';
 import tooltipProps from '../../utils/tooltipProps';
-
-const ChartContainer = styled(ResponsiveContainer)`
-  margin-top: 1rem;
-  margin-left: -20px;
-`;
-
-const PollCard = styled(Paper)`
-  padding: 1rem 0.5rem;
-  margin-top: 1rem;
-`;
 
 interface Props {
   historicPolls: MonthlyAverage;
@@ -66,7 +46,7 @@ const HistoricPolls: React.FC<Props> = ({ historicPolls }) => {
       <ChartContainer height={500}>
         <LineChart data={historicPolls}>
           <XAxis type="category" dataKey="date" />
-          <YAxis type="number" />
+          <YAxis type="number" unit="%" />
           <Tooltip {...tooltipProps(theme)} />
           <Legend wrapperStyle={{ marginLeft: 30, bottom: -5 }} fill="#000" onClick={onClick} />
           {partyAbbreviations.map((party) => (
@@ -76,6 +56,7 @@ const HistoricPolls: React.FC<Props> = ({ historicPolls }) => {
               hide={hide.includes(party)}
               stroke={partiesMap[party].color}
               dot={false}
+              unit="%"
             />
           ))}
           <Brush

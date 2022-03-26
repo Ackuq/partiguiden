@@ -1,7 +1,6 @@
 import React, { useCallback } from 'react';
 
 import Divider from '@mui/material/Divider';
-import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
 import useMediaQuery from '@mui/material/useMediaQuery';
 
@@ -12,13 +11,8 @@ import { Cell, Pie, PieChart, ResponsiveContainer, Tooltip } from 'recharts';
 import { AveragePoll, BlocksAverage, displayFormatter } from '../../lib/polls';
 
 import { Blocks, allBlocks, partiesMap } from '../../utils/getParties';
+import { PollCard } from './utils';
 import toolTipProps from '../../utils/tooltipProps';
-
-const PollCard = styled(Paper)`
-  padding: 1rem 0.5rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-`;
 
 const BlockDivider = styled(Divider)`
   margin-bottom: 1rem;

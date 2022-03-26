@@ -39,6 +39,7 @@ const ChatBubble = styled('div', { shouldForwardProp: (prop) => prop !== 'primar
   padding: 0.25rem 0.5rem;
   ${primary ? 'margin-right' : 'margin-left'}: ${arrowWidth};
   margin-bottom: 1rem;
+  z-index: 99;
   &:after {
     content: '';
     position: absolute;
@@ -57,7 +58,7 @@ const ChatBubble = styled('div', { shouldForwardProp: (prop) => prop !== 'primar
     border: ${arrowWidth} solid transparent;
     border-top-color: ${getColor({ theme, primary })};
     ${primary ? 'margin-right' : 'margin-left'}: -${arrowWidth};
-    z-index: -1;
+    z-index: -9;
   }
 `
 );

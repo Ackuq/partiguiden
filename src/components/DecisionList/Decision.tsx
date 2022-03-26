@@ -18,7 +18,7 @@ import { lookupAuthority } from '../../utils/authorityTable';
 import * as ROUTES from '../../lib/routes';
 import AuthorityCardHeader from '../AuthorityCardHeader';
 
-const CardContainer = styled('div')(
+export const CardContainer = styled('div')(
   ({ theme }) => `
     border-radius: ${theme.shape.borderRadius}px;
     background-color: ${theme.palette.background.paper};
@@ -27,25 +27,30 @@ const CardContainer = styled('div')(
 `
 );
 
-const CustomCardContent = styled(CardContent)`
+export const CustomCardContent = styled(CardContent)`
   display: flex;
   justify-content: space-between;
   padding: 0.5rem 1rem;
 `;
 
-const Title = styled(Typography)`
+export const Title = styled(Typography)`
   font-size: 1.125rem;
   line-height: 1.3;
   color: ${({ theme }) =>
     theme.palette.mode === 'dark' ? theme.palette.text.primary : theme.palette.primary.dark};
 `;
 
-const Subtitle = styled(Typography)`
+export const TypeTitle = styled(Typography)`
+  font-size: 0.9rem;
+  line-height: 1.2;
+`;
+
+export const Subtitle = styled(Typography)`
   font-size: 1rem;
   line-height: 1.25;
 `;
 
-const Arrow = styled(ArrowDownIcon)<{ active: 'true' | 'false' }>`
+export const Arrow = styled(ArrowDownIcon)<{ active: 'true' | 'false' }>`
   transition: transform 0.25s ease-in-out;
   font-size: 2rem;
   color: ${({ theme }) =>
@@ -53,7 +58,7 @@ const Arrow = styled(ArrowDownIcon)<{ active: 'true' | 'false' }>`
   transform: rotate(${({ active }) => (active === 'true' ? '180deg' : '0')});
 `;
 
-const CardButton = styled(ButtonBase)`
+export const CardButton = styled(ButtonBase)`
   display: block;
   width: 100%;
 `;

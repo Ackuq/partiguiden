@@ -1,3 +1,4 @@
+import ConnectWithoutContactIcon from '@mui/icons-material/ConnectWithoutContact';
 import GavelIcon from '@mui/icons-material/GavelRounded';
 import GroupIcon from '@mui/icons-material/Group';
 import HomeIcon from '@mui/icons-material/Home';
@@ -47,6 +48,12 @@ const PAGES = [
   },
   { href: ROUTES.DECISIONS, title: 'Riksdagsbeslut', Icon: GavelIcon },
   { href: ROUTES.VOTES, title: 'Voteringar', Icon: HowToVoteIcon, associated: [ROUTES.VOTE] },
+  {
+    href: ROUTES.DEBATES,
+    title: 'Debatter',
+    Icon: ConnectWithoutContactIcon,
+    associated: [ROUTES.DEBATE],
+  },
   { href: ROUTES.MEMBERS, title: 'Ledamöter', Icon: PersonIcon, associated: [ROUTES.MEMBER] },
   {
     href: ROUTES.POLLS,

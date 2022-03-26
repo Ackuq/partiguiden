@@ -30,7 +30,7 @@ export interface Task {
   to: string;
 }
 
-export interface Member {
+export interface MemberResponse {
   id: string;
   sourceId: string;
   firstName: string;
@@ -44,10 +44,13 @@ export interface Member {
   information: Information[];
   tasks: Task[];
   isLeader: boolean;
-  absence: number | null;
 }
 
-export type MemberList = Omit<Member, 'absence'>[];
+export type Member = MemberResponse & {
+  absence: number | null;
+};
+
+export type MemberList = MemberResponse[];
 
 export interface Leader extends Omit<Member, 'absence'> {
   role: string;

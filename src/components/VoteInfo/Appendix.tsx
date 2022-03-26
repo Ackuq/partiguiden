@@ -15,7 +15,7 @@ const Appendix: React.FC<Props> = ({ appendix }) => {
   return (
     <>
       <SectionDivider />
-      <Typography variant="h4" color="textSecondary" component="span" gutterBottom>
+      <Typography variant="h4" component="span" gutterBottom>
         Bilaga
       </Typography>
       <div style={{ display: 'flex', flexDirection: 'column' }}>

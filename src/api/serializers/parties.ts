@@ -2,7 +2,7 @@ import { JSDOM } from 'jsdom';
 import { Leader } from '../../types/member';
 import { ParliamentPartyData } from '../../types/party';
 import { PartyAbbreviation } from '../../utils/parties';
-import { getMember } from '../controllers/members';
+import { getMemberQuery } from '../controllers/members';
 
 // eslint-disable-next-line import/prefer-default-export
 export const parliamentInfoSerializer = (
@@ -37,7 +37,7 @@ export const parliamentInfoSerializer = (
       };
 
       const promise = new Promise<Leader>((resolve, reject) => {
-        getMember(query).then((member) => {
+        getMemberQuery(query).then((member) => {
           if (member === null) {
             reject(Error("Couldn't find member"));
           }

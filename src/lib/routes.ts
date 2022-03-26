@@ -22,3 +22,7 @@ export const getMemberHref = (id: string): string => `/member/${id}`;
 
 export const DOCUMENT = '/document/[id]';
 export const getDocumentHref = (id: string): string => `/document/${id}`;
+
+export const DEBATES = '/debate';
+export const DEBATE = '/debate/[id]';
+export const getDebateHref = (id: string): string => `/debate/${id}`;

@@ -86,7 +86,7 @@ export interface DocumentActivity {
   process: string;
 }
 
-export interface DocumentParticipants {
+export interface DocumentParticipant {
   intressent_id: string;
   namn: string;
   partibet: string;
@@ -148,7 +148,7 @@ export interface DocumentReference {
   ref_dok_dokumentnamn: string;
 }
 
-export interface Debate {
+export interface Statement {
   parti: PartyAbbreviation;
   parent_ardome_id: string;
   tumnagel: string;
@@ -197,27 +197,29 @@ export interface GroupedVote {
   Avstår: string;
 }
 
-export interface Statement {
-  dok_hangar_id: string;
-  dok_id: string;
-  dok_titel: string;
-  dok_rm: string;
-  dok_nummer: string;
-  dok_datum: string;
-  avsnittsrubrik: string;
-  underrubrik: string;
-  kammaraktivitet: string;
-  anforande_id: string;
-  anforande_nummer: string;
-  talare: string;
-  parti: PartyAbbreviation;
-  anforandetext: string;
-  intressent_id: string;
-  rel_dok_id: string;
-  replik: string;
-  systemdatum: string;
-  systemnyckel: string;
-  protokoll_url_www: string;
+export interface StatementDocument {
+  anforande: {
+    dok_hangar_id: string;
+    dok_id: string;
+    dok_titel: string;
+    dok_rm: string;
+    dok_nummer: string;
+    dok_datum: string;
+    avsnittsrubrik: string;
+    underrubrik: string;
+    kammaraktivitet: string;
+    anforande_id: string;
+    anforande_nummer: string;
+    talare: string;
+    parti: PartyAbbreviation;
+    anforandetext: string;
+    intressent_id: string;
+    rel_dok_id: string;
+    replik: string;
+    systemdatum: string;
+    systemnyckel: string;
+    protokoll_url_www: string;
+  };
 }
 
 export interface Person {
@@ -291,7 +293,7 @@ export interface UnknownDocumentStatus {
     aktivitet: DocumentActivity[];
   };
   dokintressent?: {
-    intressent: DocumentParticipants[];
+    intressent: DocumentParticipant[];
   };
   dokuppgift?: {
     uppgift: DocumentInformation[];
@@ -384,7 +386,7 @@ export interface DocumentListEntry {
   notisrubrik: string;
   notis: string;
   dokintressent: {
-    intressent: Array<DocumentParticipants>;
+    intressent: Array<DocumentParticipant>;
   };
   filbilaga: {
     fil: Array<DocumentFile>;
@@ -402,7 +404,9 @@ export interface DocumentListEntry {
   debattsekunder: string;
   ardometyp: string;
   reservationer: string;
-  debatt: null;
+  debatt: {
+    anforande: Array<Statement> | Statement;
+  };
   debattnamn: string;
   dokumentnamn: string;
 }

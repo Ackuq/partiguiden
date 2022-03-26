@@ -9,14 +9,14 @@ interface Props {
 
 const Decision: React.FC<Props> = ({ decision, description }) => (
   <>
-    <Typography variant="h4" color="textSecondary" component="span" gutterBottom>
+    <Typography variant="h4" component="span" gutterBottom>
       Beslut
     </Typography>
     <Typography variant="body1" gutterBottom>
       {decision}
     </Typography>
     <SectionDivider />
-    <Typography variant="h4" color="textSecondary" component="span">
+    <Typography variant="h4" component="span">
       Beslut i korthet
     </Typography>
     <div dangerouslySetInnerHTML={{ __html: description }} />

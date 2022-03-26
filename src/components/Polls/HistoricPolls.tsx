@@ -61,7 +61,7 @@ const HistoricPolls: React.FC<Props> = ({ historicPolls }) => {
   return (
     <PollCard>
       <Typography variant="h5" align="center">
-        Historisk genomsnitt (senaste 4 åren)
+        Historiskt genomsnitt (senaste 4 åren)
       </Typography>
       <ChartContainer height={500}>
         <LineChart data={historicPolls}>

@@ -1,3 +1,4 @@
+import { DebateEntry, DebateListResponse } from '../types/debate';
 import { Decisions } from '../types/decision';
 import { DocumentResponse } from '../types/document';
 import { Member, MemberDocuments } from '../types/member';
@@ -9,6 +10,16 @@ const fetcher = (url: string) => fetch(url).then((r) => r.json());
 
 export const useDecisions = (query: ParsedUrlQuery): Decisions | undefined => {
   const { data } = useSWR<Decisions>(`/api/decisions?${stringify(query)}`, fetcher);
+  return data;
+};
+
+export const useDebates = (query: ParsedUrlQuery): DebateListResponse | undefined => {
+  const { data } = useSWR<DebateListResponse>(`/api/debate?${stringify(query)}`, fetcher);
+  return data;
+};
+
+export const useDebate = (id: string): DebateEntry | undefined => {
+  const { data } = useSWR<DebateEntry>(`/api/debate/${id}`, fetcher);
   return data;
 };
 

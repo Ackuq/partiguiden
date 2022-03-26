@@ -9,7 +9,14 @@ export const getAbsence = (query: string): Promise<number | null> =>
     .then((res) => res.json())
     .then(serializeAbsence);
 
-export const getMember = (query: ParsedUrlQuery): Promise<MemberList[number] | null> =>
+export const getMember = (id: string): Promise<MemberList[number]> =>
+  fetch(`${parliamentURL}/person/${id}/json`)
+    .then((res) => res.json())
+    .then((data: PersonListSingle) => {
+      return memberSerializer(data.personlista.person as Person);
+    });
+
+export const getMemberQuery = (query: ParsedUrlQuery): Promise<MemberList[number] | null> =>
   fetch(`${parliamentURL}/personlista/?${stringify(query)}`)
     .then((res) => res.json())
     .then((data: PersonListSingle) => {
@@ -19,7 +26,7 @@ export const getMember = (query: ParsedUrlQuery): Promise<MemberList[number] | n
       /* Sometimes the first(s) element in last name is an initial, remove it and try again */
       const lastNameArray = (query.enamn as string)?.split(' ');
       if (lastNameArray.length > 1) {
-        return getMember({ ...query, enamn: lastNameArray.slice(1).join(' ') });
+        return getMemberQuery({ ...query, enamn: lastNameArray.slice(1).join(' ') });
       }
       return null;
     });
@@ -45,13 +52,9 @@ export const memberController = async (id: string): Promise<Member | null> => {
     utformat: 'json',
     gruppering: 'namn',
   };
-  const memberQuery = {
-    iid: id,
-    rdlstatus: 'samtliga',
-    utformat: 'json',
-  };
+
   const [memberData, absence] = await Promise.all([
-    getMember(memberQuery),
+    getMember(id),
     getAbsence(stringify(absenceQuery)),
   ]);
 
@@ -60,20 +63,4 @@ export const memberController = async (id: string): Promise<Member | null> => {
   }
 
   return { ...memberData, absence };
-};
-
-export const memberSearchController = (
-  firstName?: string,
-  lastName?: string,
-  party?: string
-): Promise<MemberList[number] | null> => {
-  const query = {
-    fnamn: firstName as string,
-    enamn: lastName as string,
-    parti: party as string,
-    rdlstatus: 'samtliga',
-    utformat: 'json',
-  };
-
-  return getMember(query);
 };

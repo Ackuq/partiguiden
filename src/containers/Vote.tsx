@@ -40,7 +40,7 @@ const Vote: React.FC<Props> = ({
       >
         {title}
       </Typography>
-      <Typography variant="h4" color="textSecondary" component="span" gutterBottom>
+      <Typography variant="h4" component="span" gutterBottom>
         Utskottets förslag
       </Typography>
       <Typography variant="body1" paragraph>

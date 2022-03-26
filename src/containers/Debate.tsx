@@ -95,10 +95,10 @@ const IFrame = styled('iframe')(
   right: 0;
   border: none;
   ${theme.breakpoints.down('sm')} {
-    transform: scale(0.5);
+    transform: scale(0.625);
     transform-origin: 0 0;
-    height: 200%;
-    width: 200%;
+    height: 160%;
+    width: 160%;
   }
 `
 );

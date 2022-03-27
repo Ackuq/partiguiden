@@ -17,7 +17,7 @@ const Footer: React.FC = () => (
   <FooterContent>
     <Stack>
       <Typography align="center" color="inherit" variant="subtitle1" component="span">
-        © Axel Pettersson 2021
+        © Axel Pettersson 2022
       </Typography>
       <Link align="center" color="inherit" variant="subtitle1" href="mailto:hello@partiguiden.se">
         hello@partiguiden.se

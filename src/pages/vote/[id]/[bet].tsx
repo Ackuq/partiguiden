@@ -8,8 +8,12 @@ import Vote from '../../../containers/Vote';
 import * as ROUTES from '../../../lib/routes';
 import { ResponsiveAd } from '../../../components/Ad';
 import { useVote } from '../../../hooks/parliamentHooks';
-import BreadcrumbsSocialMediaShare from '../../../components/BreadcrumbsSocialMediaShare/BreadcrumbsSocialMediaShare';
-import LoadCircle from '../../../components/LoadCircle';
+import dynamic from 'next/dynamic';
+
+const LoadCircle = dynamic(() => import('../../../components/LoadCircle'));
+const BreadcrumbsSocialMediaShare = dynamic(
+  () => import('../../../components/BreadcrumbsSocialMediaShare/BreadcrumbsSocialMediaShare')
+);
 
 const VoteContainer: NextPage<InferGetServerSidePropsType<typeof getServerSideProps>> = ({
   proposition,

@@ -23,6 +23,7 @@ export const CardContainer = styled('div')(
     border-radius: ${theme.shape.borderRadius}px;
     background-color: ${theme.palette.background.paper};
     overflow: hidden;
+    width: 100%;
     box-shadow: ${theme.shadows[1]};
 `
 );

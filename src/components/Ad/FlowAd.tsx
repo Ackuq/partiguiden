@@ -10,11 +10,11 @@ const Ad: React.FC = () => {
 
   // Flow ads need at least 250px of width to render
   return (
-    <div style={{ minWidth: 250 }}>
+    <>
       {enableAds() ? (
         <ins
           className="adsbygoogle"
-          style={{ display: 'block' }}
+          style={{ display: 'block', width: '100%' }}
           data-ad-format="fluid"
           data-ad-layout-key="-fb+5w+4e-db+86"
           data-ad-client={adClientID}
@@ -30,7 +30,7 @@ const Ad: React.FC = () => {
           Placeholder ad
         </div>
       )}
-    </div>
+    </>
   );
 };
 

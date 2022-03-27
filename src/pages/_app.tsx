@@ -11,14 +11,16 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 import { CacheProvider, ThemeProvider as EmotionThemeProvider, css } from '@emotion/react';
 import { ThemeProvider } from '@mui/material/styles';
 
-import CookieBanner from '../components/CookieBanner';
-import Footer from '../components/Footer';
 import Header from '../components/Header';
-import ToTopButton from '../components/ToTopButton';
 import createCache, { EmotionCache } from '@emotion/cache';
 
 import * as gtag from '../utils/gtag';
+import dynamic from 'next/dynamic';
 import getTheme from '../lib/theme';
+
+const ToTopButton = dynamic(() => import('../components/ToTopButton'));
+const Footer = dynamic(() => import('../components/Footer'));
+const CookieBanner = dynamic(() => import('../components/CookieBanner'), { ssr: false });
 
 const browserCache = createCache({ key: 'css' });
 browserCache.compat = true;

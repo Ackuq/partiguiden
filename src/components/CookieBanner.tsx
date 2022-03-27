@@ -8,7 +8,7 @@ import Typography from '@mui/material/Typography';
 
 import { styled } from '@mui/material/styles';
 
-import { COOKIE_POLICY } from '../../lib/routes';
+import { COOKIE_POLICY } from '../lib/routes';
 
 const CookieBannerContainer = styled(Paper)`
   background-color: ${({ theme }) =>

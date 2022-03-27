@@ -3,9 +3,10 @@ import Head from 'next/head';
 
 import { Member as MemberType } from '../../types/member';
 import { memberController, membersController } from '../../api/controllers/members';
-import LoadCircle from '../../components/LoadCircle';
 import Member from '../../containers/Member';
+import dynamic from 'next/dynamic';
 
+const LoadCircle = dynamic(() => import('../../components/LoadCircle'));
 interface Props {
   member?: MemberType;
 }

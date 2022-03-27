@@ -10,8 +10,12 @@ import { PartyData } from '../../types/party';
 import { partyController } from '../../api/controllers/parties';
 import PageTitle from '../../components/PageTitle';
 import Party from '../../containers/Party';
-import SocialMediaShare from '../../components/BreadcrumbsSocialMediaShare/SocialMediaShare';
+import dynamic from 'next/dynamic';
 import parties from '../../utils/getParties';
+
+const SocialMediaShare = dynamic(
+  () => import('../../components/BreadcrumbsSocialMediaShare/SocialMediaShare')
+);
 
 const PartyPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({ party }) => {
   const PartyLogo: React.FC = () => (

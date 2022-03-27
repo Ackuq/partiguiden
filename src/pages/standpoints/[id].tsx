@@ -5,11 +5,15 @@ import Container from '@mui/material/Container';
 
 import { RelatedSubject, StandpointsMap, Subject } from '../../types/subjects';
 import { getSubject, getSubjects } from '../../lib/api';
-import BreadcrumbsSocialMediaShare from '../../components/BreadcrumbsSocialMediaShare/BreadcrumbsSocialMediaShare';
 import PageTitle from '../../components/PageTitle';
 import Standpoints from '../../containers/Standpoints';
 
 import * as ROUTES from '../../lib/routes';
+import dynamic from 'next/dynamic';
+
+const BreadcrumbsSocialMediaShare = dynamic(
+  () => import('../../components/BreadcrumbsSocialMediaShare/BreadcrumbsSocialMediaShare')
+);
 
 const StandPointContainer: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
   name,

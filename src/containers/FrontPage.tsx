@@ -2,11 +2,12 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
-
-import Featured from '../components/Featured';
+import dynamic from 'next/dynamic';
 
 import { ResponsiveAd } from '../components/Ad';
 import { SubjectListEntry } from '../types/subjects';
+
+const Featured = dynamic(() => import('../components/Featured'));
 interface Props {
   popular: Array<SubjectListEntry>;
 }

@@ -1,11 +1,10 @@
-import Container from '@mui/material/Container';
-
-import { useRouter } from 'next/router';
-
-import DecisionList from '../components/DecisionList/DecisionList';
-import Filter from '../components/ParlimentFilter/Filter';
-
 import { queryAttrToArray, queryAttrToNumber, queryAttrToString } from '../utils';
+import { useRouter } from 'next/router';
+import Container from '@mui/material/Container';
+import dynamic from 'next/dynamic';
+
+const DecisionList = dynamic(() => import('../components/DecisionList/DecisionList'));
+const Filter = dynamic(() => import('../components/ParlimentFilter/Filter'));
 
 const Decisions: React.FC = () => {
   const router = useRouter();

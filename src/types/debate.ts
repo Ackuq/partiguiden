@@ -62,7 +62,7 @@ export interface Speech {
 export type DebateStatement = Debate & { speech: Speech };
 
 export type DebateEntry = Omit<DebateListEntry, 'debate'> & {
-  protocolId: string;
+  protocolId?: string;
   speakers: Record<string, MemberResponse>;
   statements: DebateStatement[];
 };

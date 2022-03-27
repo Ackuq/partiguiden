@@ -222,11 +222,15 @@ const Debate: React.FC<Props> = ({ id }) => {
               />
             </Box>
           </Container>
-          <SectionDivider />
-          <Typography variant="h4" align="center" gutterBottom>
-            Debatt i text
-          </Typography>
-          <Statements debate={debate} />
+          {debate.statements.length > 0 && (
+            <>
+              <SectionDivider />
+              <Typography variant="h4" align="center" gutterBottom>
+                Debatt i text
+              </Typography>
+              <Statements debate={debate} />
+            </>
+          )}
         </CardContent>
       </Card>
     </>

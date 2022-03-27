@@ -16,7 +16,10 @@ const Debates: React.FC = () => {
 
   return (
     <div style={{ display: 'flex' }}>
-      <Container maxWidth="md" sx={{ marginBottom: 1, '&> div': { padding: 1 } }}>
+      <Container
+        maxWidth="md"
+        sx={{ marginBottom: 1, minHeight: '50vh', '&> div': { padding: 1 } }}
+      >
         <DebateListContainer router={router} page={page} />
       </Container>
       <Filter router={router} search={search} org={org} />

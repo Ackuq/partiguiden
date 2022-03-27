@@ -18,6 +18,7 @@ const Decisions: React.FC = () => {
         maxWidth="md"
         sx={{
           marginBottom: 1,
+          minHeight: '50vh',
           '&> div': {
             padding: 1,
           },

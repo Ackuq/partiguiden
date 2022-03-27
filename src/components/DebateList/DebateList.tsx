@@ -6,20 +6,11 @@ import { stringify } from 'querystring';
 import Pagination from '@mui/material/Pagination';
 import Typography from '@mui/material/Typography';
 
-import { styled } from '@mui/material/styles';
-
 import { FlowAd } from '../Ad';
 import LoadCircle from '../LoadCircle';
 
 import { useDebates } from '../../hooks/parliamentHooks';
 import Debate from './Debate';
-
-const ListContainer = styled('div')`
-  margin-bottom: 0.5rem;
-  > div {
-    padding: 8px;
-  }
-`;
 
 interface Props {
   router: NextRouter;
@@ -40,7 +31,7 @@ const DebateListContainer: React.FC<Props> = ({ router, page }) => {
   );
 
   return (
-    <ListContainer>
+    <>
       {!data ? (
         <LoadCircle />
       ) : data.debates.length > 0 ? (
@@ -66,7 +57,7 @@ const DebateListContainer: React.FC<Props> = ({ router, page }) => {
       ) : (
         <Typography>Inga debatter hittades</Typography>
       )}
-    </ListContainer>
+    </>
   );
 };
 

@@ -40,39 +40,33 @@ const DebateListContainer: React.FC<Props> = ({ router, page }) => {
   );
 
   return (
-    <>
-      <ListContainer>
-        {!data ? (
-          <LoadCircle />
-        ) : (
-          <>
-            {data.debates.length > 0 ? (
-              <>
-                {data.debates.map((item, index) => (
-                  <React.Fragment key={item.id + item.denomination}>
-                    {!(index % 15) && <FlowAd />}
-                    <div>
-                      <Debate debate={item} />
-                    </div>
-                  </React.Fragment>
-                ))}
-                {data.pages > 1 && (
-                  <Pagination
-                    style={{ display: 'flex', justifyContent: 'center' }}
-                    size="large"
-                    onChange={updatePage}
-                    page={page}
-                    count={data.pages}
-                  />
-                )}
-              </>
-            ) : (
-              <Typography>Inga debatter hittades</Typography>
-            )}
-          </>
-        )}
-      </ListContainer>
-    </>
+    <ListContainer>
+      {!data ? (
+        <LoadCircle />
+      ) : data.debates.length > 0 ? (
+        <>
+          {data.debates.map((item, index) => (
+            <React.Fragment key={item.id + item.denomination}>
+              {!(index % 15) && <FlowAd />}
+              <div>
+                <Debate debate={item} />
+              </div>
+            </React.Fragment>
+          ))}
+          {data.pages > 1 && (
+            <Pagination
+              style={{ display: 'flex', justifyContent: 'center' }}
+              size="large"
+              onChange={updatePage}
+              page={page}
+              count={data.pages}
+            />
+          )}
+        </>
+      ) : (
+        <Typography>Inga debatter hittades</Typography>
+      )}
+    </ListContainer>
   );
 };
 

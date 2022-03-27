@@ -63,31 +63,29 @@ interface Props {
 const Debate: React.FC<Props> = ({ debate }) => {
   const authority = lookupAuthority(debate.authority);
   return (
-    <>
-      <CardContainer>
-        <Link href={ROUTES.DEBATE} as={ROUTES.getDebateHref(debate.id)} passHref>
-          <CardButton LinkComponent="a">
-            {!!authority && <AuthorityCardHeader authority={authority} />}
+    <CardContainer>
+      <Link href={ROUTES.DEBATE} as={ROUTES.getDebateHref(debate.id)} passHref>
+        <CardButton LinkComponent="a">
+          {!!authority && <AuthorityCardHeader authority={authority} />}
 
-            <CustomCardContent>
-              <div>
-                <TypeTitle color="textSecondary" align="left" gutterBottom>
-                  {debate.debateName}
-                </TypeTitle>
-                <Title align="left" gutterBottom>
-                  {debate.paragraphTitle}
-                </Title>
-                <Subtitle color="textSecondary" align="left">
-                  {!!debate.subtitle ? debate.subtitle : debate.title}
-                </Subtitle>
-              </div>
+          <CustomCardContent>
+            <div>
+              <TypeTitle color="textSecondary" align="left" gutterBottom>
+                {debate.debateName}
+              </TypeTitle>
+              <Title align="left" gutterBottom>
+                {debate.paragraphTitle}
+              </Title>
+              <Subtitle color="textSecondary" align="left">
+                {!!debate.subtitle ? debate.subtitle : debate.title}
+              </Subtitle>
+            </div>
 
-              {!!debate.participants?.sender && <SenderImage sender={debate.participants.sender} />}
-            </CustomCardContent>
-          </CardButton>
-        </Link>
-      </CardContainer>
-    </>
+            {!!debate.participants?.sender && <SenderImage sender={debate.participants.sender} />}
+          </CustomCardContent>
+        </CardButton>
+      </Link>
+    </CardContainer>
   );
 };
 

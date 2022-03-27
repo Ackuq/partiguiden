@@ -14,7 +14,8 @@ const Ad: React.FC = () => {
 
   // Flow ads need at least 250px of width to render
   return (
-    <>
+    // @ts-expect-error This is explicitly checked by the goole ad
+    <div align="center">
       {enableAds() ? (
         <ins
           className="adsbygoogle"
@@ -34,7 +35,7 @@ const Ad: React.FC = () => {
           Placeholder ad
         </div>
       )}
-    </>
+    </div>
   );
 };
 

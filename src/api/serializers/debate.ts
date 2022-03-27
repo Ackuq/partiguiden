@@ -7,28 +7,35 @@ import { getMember } from '../controllers/members';
 import { getSpeech } from '../controllers/speech';
 
 const getProtocolId = async (documentId: string): Promise<string> => {
+  // TODO: Change this to search based on time instead
   const document = await getJsonDocument(documentId);
-  let protocolId = document.dokumentstatus.dokreferens?.referens.find(
-    (reference) => reference.referenstyp === 'protokolldebatt'
-  );
-
-  if (protocolId === undefined) {
-    // If the protocol is not directly found, try to find the document of list of participants
-    protocolId = document.dokumentstatus.dokreferens?.referens.find(
-      (reference) => reference.referenstyp === 'föredragningslista'
+  console.log(documentId);
+  if (Array.isArray(document.dokumentstatus.dokreferens?.referens)) {
+    let protocolId = document.dokumentstatus.dokreferens?.referens.find(
+      (reference) => reference.referenstyp === 'protokolldebatt'
     );
-    if (protocolId !== undefined) {
-      // TODO: Replacement value depends on the type of debate
-      protocolId.ref_dok_id =
-        protocolId.ref_dok_id.slice(0, 2) + '09' + protocolId.ref_dok_id.slice(4);
-      console.log(protocolId);
-    }
-  }
 
-  if (protocolId === undefined) {
+    if (protocolId === undefined) {
+      // If the protocol is not directly found, try to find the document of list of participants
+      protocolId = document.dokumentstatus.dokreferens?.referens.find(
+        (reference) => reference.ref_dok_typ === 'prot'
+      );
+      if (protocolId !== undefined) {
+        // TODO: Replacement value depends on the type of debate
+        protocolId.ref_dok_id =
+          protocolId.ref_dok_id.slice(0, 2) + '09' + protocolId.ref_dok_id.slice(4);
+      }
+    }
+
+    if (protocolId === undefined) {
+      throw new Error(`No protocol found for document with id ${documentId}`);
+    }
+    return protocolId.ref_dok_id;
+  }
+  if (document.dokumentstatus.dokreferens?.referens == null) {
     throw new Error(`No protocol found for document with id ${documentId}`);
   }
-  return protocolId.ref_dok_id;
+  return document.dokumentstatus.dokreferens.referens.ref_dok_id;
 };
 
 export const debateSerializer = async (data: DocumentList): Promise<DebateEntry> => {

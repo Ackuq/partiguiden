@@ -302,7 +302,7 @@ export interface UnknownDocumentStatus {
     bilaga: DocumentAttachment[];
   };
   dokreferens?: {
-    referens: DocumentReference[];
+    referens: DocumentReference[] | DocumentReference;
   };
 }
 

@@ -36,9 +36,7 @@ const VoteList: React.FC<Props> = ({ router, page }) => {
           {data.votes.map((vote, index) => (
             <React.Fragment key={`${vote.documentId}:${vote.proposition}`}>
               {!(index % 15) && <FlowAd />}
-              <div>
-                <Vote vote={vote} />
-              </div>
+              <Vote vote={vote} />
             </React.Fragment>
           ))}
           {data.pages > 1 && (

@@ -1,6 +1,6 @@
 import { queryAttrToArray, queryAttrToNumber, queryAttrToString } from '../utils';
 import { useRouter } from 'next/router';
-import Container from '@mui/material/Container';
+import ContainerList from '../components/ContainerList';
 import dynamic from 'next/dynamic';
 
 const DecisionList = dynamic(() => import('../components/DecisionList/DecisionList'));
@@ -14,18 +14,9 @@ const Decisions: React.FC = () => {
 
   return (
     <div style={{ display: 'flex' }}>
-      <Container
-        maxWidth="md"
-        sx={{
-          marginBottom: 1,
-          minHeight: '50vh',
-          '&> div': {
-            padding: 1,
-          },
-        }}
-      >
+      <ContainerList maxWidth="md">
         <DecisionList router={router} page={page} />
-      </Container>
+      </ContainerList>
       <Filter router={router} search={search} org={org} />
     </div>
   );

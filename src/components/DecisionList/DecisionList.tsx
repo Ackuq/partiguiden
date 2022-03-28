@@ -39,9 +39,7 @@ const DecisionListContainer: React.FC<Props> = ({ router, page }) => {
           {data.decisions.map((item, index) => (
             <React.Fragment key={item.id + item.denomination}>
               {!(index % 15) && <FlowAd />}
-              <div>
-                <Decision decision={item} />
-              </div>
+              <Decision decision={item} />
             </React.Fragment>
           ))}
           {data.pages > 1 && (

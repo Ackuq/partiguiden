@@ -39,9 +39,7 @@ const DebateListContainer: React.FC<Props> = ({ router, page }) => {
           {data.debates.map((item, index) => (
             <React.Fragment key={item.id + item.denomination}>
               {!(index % 15) && <FlowAd />}
-              <div>
-                <Debate debate={item} />
-              </div>
+              <Debate debate={item} />
             </React.Fragment>
           ))}
           {data.pages > 1 && (

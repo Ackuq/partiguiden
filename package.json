@@ -24,7 +24,7 @@
     "@mui/icons-material": "^5.5.1",
     "@mui/material": "^5.5.3",
     "@next/bundle-analyzer": "^12.1.2",
-    "@sentry/nextjs": "^6.19.2",
+    "@sentry/nextjs": "^6.19.3",
     "@sentry/webpack-plugin": "^1.18.8",
     "isomorphic-unfetch": "^3.1.0",
     "jsdom": "^19.0.0",

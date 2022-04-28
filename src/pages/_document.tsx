@@ -32,7 +32,7 @@ class MyDocument extends Document {
 
           <meta property="og:image" content="/static/images/partiguiden_logo.png" />
           <meta name="theme-color" content="#00796B" media="(prefers-color-scheme: light)" />
-          <meta name="theme-color" content="#242526" media="(prefers-color-scheme: dark)" />
+          <meta name="theme-color" content="#383939" media="(prefers-color-scheme: dark)" />
           <style>
             {`
             #__next {     

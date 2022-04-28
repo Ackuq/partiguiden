@@ -8,8 +8,9 @@ import PageTitle from '../../components/PageTitle';
 
 import { MemberList } from '../../types/member';
 import { membersController } from '../../api/controllers/members';
+import MembersTabs from '../../components/MemberStatistics/MemberTabs';
 
-const LedamoterContainer: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
+const MembersContainer: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
   members,
 }) => (
   <>
@@ -20,7 +21,8 @@ const LedamoterContainer: NextPage<InferGetStaticPropsType<typeof getStaticProps
         content="Här kan du ta reda på information om ledamöterna i riksdagen, samt se vilka ledamöter är aktiva för varje parti"
       />
     </Head>
-    <PageTitle title="Riksdagsledamöter" Icon={PersonIcon} />
+    <PageTitle marginBottom="0" title="Riksdagsledamöter" Icon={PersonIcon} />
+    <MembersTabs value={0} />
     <Members members={members} />
   </>
 );
@@ -33,4 +35,4 @@ export const getStaticProps: GetStaticProps<{
   return { props: { members }, revalidate: 259200 };
 };
 
-export default LedamoterContainer;
+export default MembersContainer;

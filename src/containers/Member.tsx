@@ -6,14 +6,14 @@ import ProfilePicture from '../components/MemberInfo/ProfilePicture';
 
 import * as ROUTES from '../lib/routes';
 
-import { Member as MemberType } from '../types/member';
+import { MemberDetailedResponse } from '../types/member';
 
 const BreadcrumbsSocialMediaShare = dynamic(
   () => import('../components/BreadcrumbsSocialMediaShare/BreadcrumbsSocialMediaShare')
 );
 
 interface Props {
-  member: MemberType;
+  member: MemberDetailedResponse;
 }
 
 const Member: React.FC<Props> = ({ member }) => {

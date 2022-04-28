@@ -1,7 +1,7 @@
 import { DebateEntry, DebateListResponse } from '../types/debate';
 import { Decisions } from '../types/decision';
 import { DocumentResponse } from '../types/document';
-import { Member, MemberDocuments } from '../types/member';
+import { MemberDetailedResponse, MemberDocuments } from '../types/member';
 import { ParsedUrlQuery, stringify } from 'querystring';
 import { Vote, VoteList } from '../types/voting';
 import useSWR from 'swr';
@@ -23,8 +23,8 @@ export const useDebate = (id: string): DebateEntry | undefined => {
   return data;
 };
 
-export const useMember = (id: string): Member | undefined => {
-  const { data } = useSWR<Member>(`/api/member/${id}`, fetcher);
+export const useMember = (id: string): MemberDetailedResponse | undefined => {
+  const { data } = useSWR<MemberDetailedResponse>(`/api/member/${id}`, fetcher);
   return data;
 };
 

@@ -17,6 +17,7 @@ import Drawer from './Drawer';
 import NavLinks from './NavLinks';
 
 import { INDEX } from '../../lib/routes';
+import { addOpacity } from '../../utils/colorUtils';
 
 const BannerText = styled('a')`
   text-decoration: none;
@@ -70,35 +71,52 @@ const Header: React.FC<Props> = ({ toggleDarkMode }) => {
   }, []);
 
   return (
-    <AppBar
-      position="sticky"
-      ref={appBar}
-      sx={{
-        backgroundColor: (theme) =>
-          theme.palette.mode === 'dark'
-            ? theme.palette.background.paper
-            : theme.palette.primary.main,
-      }}
-    >
-      <Box sx={{ display: { xs: 'block', sm: 'none' } }}>
-        <Toolbar>
-          <IconButton color="inherit" aria-label="open drawer" onClick={openDrawer} edge="start">
-            <MenuIcon />
-          </IconButton>
+    <>
+      <Box
+        sx={(theme) => ({
+          height: appBar.current?.clientHeight ?? 56,
+          position: 'absolute',
+          width: '100%',
+          bgcolor:
+            theme.palette.mode === 'dark'
+              ? theme.palette.background.paper
+              : theme.palette.primary.light,
+        })}
+      />
+      <AppBar
+        position="sticky"
+        ref={appBar}
+        sx={{
+          backgroundColor: (theme) =>
+            addOpacity(
+              theme.palette.mode === 'dark'
+                ? theme.palette.background.paper
+                : theme.palette.primary.light,
+              0.8
+            ),
+          backdropFilter: 'blur(5px)',
+        }}
+      >
+        <Box sx={{ display: { xs: 'block', sm: 'none' } }}>
+          <Toolbar>
+            <IconButton color="inherit" aria-label="open drawer" onClick={openDrawer} edge="start">
+              <MenuIcon />
+            </IconButton>
+            <Branding toggleDarkMode={toggleDarkMode} />
+          </Toolbar>
+          <Drawer
+            isOpen={drawerOpen}
+            appBarHeight={appBar.current?.clientHeight ?? 56}
+            handleClose={closeDrawer}
+            handleOpen={openDrawer}
+          />
+        </Box>
+        <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
           <Branding toggleDarkMode={toggleDarkMode} />
-        </Toolbar>
-        <Drawer
-          isOpen={drawerOpen}
-          appBarHeight={appBar.current?.clientHeight ?? 56}
-          handleClose={closeDrawer}
-          handleOpen={openDrawer}
-        />
-      </Box>
-      <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
-        <Branding toggleDarkMode={toggleDarkMode} />
-        <NavLinks />
-      </Box>
-    </AppBar>
+          <NavLinks />
+        </Box>
+      </AppBar>
+    </>
   );
 };
 

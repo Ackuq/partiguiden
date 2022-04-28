@@ -1,3 +1,4 @@
+import Box from '@mui/material/Box';
 import Link from 'next/link';
 import Tab from '@mui/material/Tab';
 import Tabs from '@mui/material/Tabs';
@@ -15,19 +16,27 @@ interface Props {
 }
 
 const MembersTabs: React.FC<Props> = ({ value }) => (
-  <Tabs
-    value={value}
-    centered
+  <Box
     sx={{
-      mb: '1rem',
+      display: 'flex',
+      justifyContent: 'center',
     }}
   >
-    {tabs.map((tab, index) => (
-      <Link key={tab.route} href={tab.route} passHref>
-        <Tab value={index} label={tab.label} />
-      </Link>
-    ))}
-  </Tabs>
+    <Tabs
+      value={value}
+      sx={{
+        mb: '1rem',
+      }}
+      variant="scrollable"
+      scrollButtons="auto"
+    >
+      {tabs.map((tab, index) => (
+        <Link key={tab.route} href={tab.route} passHref>
+          <Tab value={index} label={tab.label} />
+        </Link>
+      ))}
+    </Tabs>
+  </Box>
 );
 
 export default MembersTabs;

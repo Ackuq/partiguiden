@@ -46,12 +46,37 @@ export interface MemberResponse {
   isLeader: boolean;
 }
 
-export type Member = MemberResponse & {
+export enum AbsencePeriod {
+  mandatePeriod = 'mandatperiod',
+  parliamentYear = 'riksmöte',
+}
+export interface Absence {
+  value: number | null;
+  description: string;
+}
+
+export interface MemberDetailedResponse extends MemberResponse {
+  absence: {
+    mandatePeriod: Absence;
+    parliamentYear: Absence;
+  };
+}
+
+export interface MemberAbsenceResponse extends MemberResponse {
   absence: number | null;
-};
+}
+
+export interface MemberAbsenceResponseNullSafe extends MemberResponse {
+  absence: number;
+}
+
+export interface AbsenceLeaderboard {
+  mostAbsence: MemberAbsenceResponse[];
+  leastAbsence: MemberAbsenceResponse[];
+}
 
 export type MemberList = MemberResponse[];
 
-export interface Leader extends Omit<Member, 'absence'> {
+export interface Leader extends MemberResponse {
   role: string;
 }

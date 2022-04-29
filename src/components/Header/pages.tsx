@@ -54,7 +54,12 @@ const PAGES = [
     Icon: ConnectWithoutContactIcon,
     associated: [ROUTES.DEBATE],
   },
-  { href: ROUTES.MEMBERS, title: 'Ledamöter', Icon: PersonIcon, associated: [ROUTES.MEMBER] },
+  {
+    href: ROUTES.MEMBERS,
+    title: 'Ledamöter',
+    Icon: PersonIcon,
+    associated: [ROUTES.MEMBER, ROUTES.MEMBER_STATS_PERIOD, ROUTES.MEMBER_STATS_YEAR],
+  },
   {
     href: ROUTES.POLLS,
     title: 'Opinionsundersökningar',

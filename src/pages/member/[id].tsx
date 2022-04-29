@@ -1,17 +1,14 @@
-import { GetStaticPaths, GetStaticProps, NextPage } from 'next';
+import { GetStaticPaths, GetStaticProps, InferGetStaticPropsType, NextPage } from 'next';
 import Head from 'next/head';
 
-import { Member as MemberType } from '../../types/member';
+import { MemberDetailedResponse } from '../../types/member';
 import { memberController, membersController } from '../../api/controllers/members';
 import Member from '../../containers/Member';
 import dynamic from 'next/dynamic';
 
 const LoadCircle = dynamic(() => import('../../components/LoadCircle'));
-interface Props {
-  member?: MemberType;
-}
 
-const MemberContainer: NextPage<Props> = ({ member }) => (
+const MemberContainer: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({ member }) => (
   <>
     <Head>
       <title>{member && `${member.firstName} ${member.lastName} |`} Ledamot | Partiguiden</title>
@@ -38,7 +35,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 export const getStaticProps: GetStaticProps<
   {
-    member: MemberType;
+    member: MemberDetailedResponse;
   },
   { id: string }
 > = async ({ params }) => {

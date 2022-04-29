@@ -14,13 +14,13 @@ import Typography from '@mui/material/Typography';
 
 import Documents from './Documents';
 
-import { Information as InformationType } from '../../types/member';
+import { Information as InformationType, MemberDetailedResponse } from '../../types/member';
 import { ResponsiveAd } from '../Ad';
 
 interface Props {
   id: string;
   informationRecords: Array<InformationType>;
-  absence: number | null;
+  absence: MemberDetailedResponse['absence'];
 }
 
 const Information: React.FC<Props> = ({ id, informationRecords, absence }) => {
@@ -29,19 +29,31 @@ const Information: React.FC<Props> = ({ id, informationRecords, absence }) => {
 
   return (
     <Grid container spacing={3} justifyContent="center">
-      {absence && (
-        <Grid item xs={6}>
+      {absence.mandatePeriod.value !== null && (
+        <Grid item xs={6} sm={4}>
           <Paper style={{ padding: '0.5rem' }}>
             <Typography variant="h5" component="p" align="center">
-              {absence} %
+              {absence.mandatePeriod.value}%
             </Typography>
             <Typography variant="body2" align="center">
-              Voteringsnärvaro
+              Voteringsnärvaro mandatperiod {absence.mandatePeriod.description}
             </Typography>
           </Paper>
         </Grid>
       )}
-      <Grid item xs={6}>
+      {absence.parliamentYear.value !== null && (
+        <Grid item xs={6} sm={4}>
+          <Paper style={{ padding: '0.5rem' }}>
+            <Typography variant="h5" component="p" align="center">
+              {absence.parliamentYear.value}%
+            </Typography>
+            <Typography variant="body2" align="center">
+              Voteringsnärvaro riksmöte {absence.parliamentYear.description}
+            </Typography>
+          </Paper>
+        </Grid>
+      )}
+      <Grid item xs={12} sm={4}>
         <Paper style={{ padding: '0.5rem' }}>
           <Typography variant="h5" component="p" align="center">
             {documentCount}

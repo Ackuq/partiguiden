@@ -466,3 +466,17 @@ export type VoteListAll = VoteList<Vote[]>;
 export type VoteListSingle = VoteList<Vote>;
 export type VoteListGroupedAll = VoteList<GroupedVote[]>;
 export type VoteListGroupedSingle = VoteList<GroupedVote>;
+
+export interface ParliamentYearResponse {
+  riksmote: string;
+  id: string;
+  start: string;
+  slut: string;
+  mandatperiod: string;
+}
+export interface ParliamentYearsResponse {
+  riksmoten: {
+    '@systemdatum': string;
+    riksmote: ParliamentYearResponse[];
+  };
+}

@@ -1,6 +1,12 @@
-import { Member, MemberList } from '../../types/member';
+import {
+  Absence,
+  MemberAbsenceResponse,
+  MemberDetailedResponse,
+  MemberList,
+} from '../../types/member';
 import { ParsedUrlQuery, stringify } from 'querystring';
 import { Person, PersonListMany, PersonListSingle } from '../../types/parliament';
+import { getLatestMandatePeriod } from '../../utils/parliamentYear';
 import { memberSerializer, serializeAbsence } from '../serializers/member';
 import { parliamentURL } from '../constants';
 
@@ -46,21 +52,62 @@ export const membersController = (party?: string): Promise<MemberList> => {
     });
 };
 
-export const memberController = async (id: string): Promise<Member | null> => {
+export const membersWithAbsenceController = (
+  parliamentYears: string[] = [],
+  party?: string
+): Promise<MemberAbsenceResponse[]> => {
+  return membersController(party).then((memberList) => {
+    const absenceQueries = memberList.map((member) => {
+      const absenceQuery = {
+        iid: member.id,
+        utformat: 'json',
+        gruppering: 'namn',
+        rm: parliamentYears.join(','),
+      };
+      return getAbsence(stringify(absenceQuery));
+    });
+    return Promise.all(absenceQueries).then((absence) =>
+      memberList.map((member, i) => ({
+        ...member,
+        absence: absence[i],
+      }))
+    );
+  });
+};
+
+export const memberController = async (id: string): Promise<MemberDetailedResponse | null> => {
   const absenceQuery = {
     iid: id,
     utformat: 'json',
     gruppering: 'namn',
   };
+  // Get latest parliament year and mandate period
+  const mandatePeriod = await getLatestMandatePeriod();
 
-  const [memberData, absence] = await Promise.all([
+  const [memberData, absenceParliamentYear, absenceMandatePeriod] = await Promise.all([
     getMember(id),
-    getAbsence(stringify(absenceQuery)),
+    getAbsence(stringify({ ...absenceQuery, rm: [mandatePeriod.latestParliamentYear] })).then(
+      (absence) =>
+        ({
+          value: absence,
+          description: mandatePeriod.latestParliamentYear,
+        } as Absence)
+    ),
+    getAbsence(stringify({ ...absenceQuery, rm: mandatePeriod.parliamentYears })).then(
+      (absence) =>
+        ({
+          value: absence,
+          description: mandatePeriod.period,
+        } as Absence)
+    ),
   ]);
 
   if (!memberData) {
     return null;
   }
 
-  return { ...memberData, absence };
+  return {
+    ...memberData,
+    absence: { mandatePeriod: absenceMandatePeriod, parliamentYear: absenceParliamentYear },
+  };
 };

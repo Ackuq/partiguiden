@@ -5,13 +5,13 @@ import Typography from '@mui/material/Typography';
 
 import { useTheme } from '@mui/material/styles';
 
-import { Member } from '../../types/member';
+import { MemberDetailedResponse } from '../../types/member';
 
 import { PARTY_LOGOS_LOW_RES } from '../../assets/logos';
 import { PartyAbbreviation } from '../../utils/parties';
 
 interface Props {
-  member: Member;
+  member: MemberDetailedResponse;
 }
 
 const ProfilePicture: React.FC<Props> = ({ member }) => {

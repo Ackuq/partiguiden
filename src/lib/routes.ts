@@ -20,6 +20,9 @@ export const MEMBERS = `/member`;
 export const MEMBER = `/member/[id]`;
 export const getMemberHref = (id: string): string => `/member/${id}`;
 
+export const MEMBER_STATS_YEAR = `/member-statistics-year`;
+export const MEMBER_STATS_PERIOD = `/member-statistics-period`;
+
 export const DOCUMENT = '/document/[id]';
 export const getDocumentHref = (id: string): string => `/document/${id}`;
 

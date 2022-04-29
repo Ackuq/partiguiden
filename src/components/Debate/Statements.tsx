@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 import { Theme } from '@emotion/react';
 import { styled } from '@mui/material/styles';
@@ -6,6 +7,7 @@ import { styled } from '@mui/material/styles';
 import { Box } from '@mui/system';
 import Typography from '@mui/material/Typography';
 
+import * as ROUTES from '../../lib/routes';
 import { DebateEntry } from '../../types/debate';
 import { MemberResponse } from '../../types/member';
 import { PARTY_LOGOS_LOW_RES } from '../../assets/logos';
@@ -83,9 +85,10 @@ const ImageContainer = styled('div')<{ url: string }>(
 const SpeakerImage: React.FC<{ speaker: MemberResponse; primary: boolean }> = ({
   speaker,
   primary,
-}) => {
-  return (
+}) => (
+  <Link href={ROUTES.MEMBER} as={ROUTES.getMemberHref(speaker.id)} passHref>
     <Box
+      component="a"
       sx={{
         display: 'flex',
         flexDirection: 'column',
@@ -111,8 +114,8 @@ const SpeakerImage: React.FC<{ speaker: MemberResponse; primary: boolean }> = ({
         </>
       </ImageContainer>
     </Box>
-  );
-};
+  </Link>
+);
 
 interface StatementProps {
   debate: DebateEntry;
@@ -128,13 +131,17 @@ const Statements: React.FC<StatementProps> = ({ debate }) => {
           <Box display="flex" key={statement.number}>
             {!primary && <SpeakerImage speaker={speaker} primary={primary} />}
             <ChatBubble primary={primary}>
-              <Typography
-                variant="button"
-                display="flex"
-                justifyContent={primary ? 'flex-end' : 'flex-start'}
-              >
-                {speaker.firstName} {speaker.lastName}
-              </Typography>
+              <Link href={ROUTES.MEMBER} as={ROUTES.getMemberHref(speaker.id)} passHref>
+                <Typography
+                  component="a"
+                  variant="button"
+                  color="primary"
+                  display="flex"
+                  justifyContent={primary ? 'flex-end' : 'flex-start'}
+                >
+                  {speaker.firstName} {speaker.lastName}
+                </Typography>
+              </Link>
               <Typography variant="caption" sx={{ '& p': { marginTop: 0 } }}>
                 <div dangerouslySetInnerHTML={{ __html: statement.speech.text }} />
               </Typography>

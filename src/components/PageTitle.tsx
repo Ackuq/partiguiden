@@ -4,7 +4,9 @@ import Typography, { TypographyProps } from '@mui/material/Typography';
 
 import { styled } from '@mui/material/styles';
 
-const PageTitleContainer = styled(Paper)<{ marginBottom: string }>`
+const PageTitleContainer = styled(Paper, { shouldForwardProp: (prop) => prop !== 'marginBottom' })<{
+  marginBottom: string;
+}>`
   z-index: 99;
   background-color: ${({ theme }) =>
     theme.palette.mode === 'dark' ? theme.palette.background.paper : theme.palette.primary.light};

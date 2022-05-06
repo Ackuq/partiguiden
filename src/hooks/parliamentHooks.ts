@@ -9,12 +9,20 @@ import useSWR from 'swr';
 const fetcher = (url: string) => fetch(url).then((r) => r.json());
 
 export const useDecisions = (query: ParsedUrlQuery): Decisions | undefined => {
-  const { data } = useSWR<Decisions>(`/api/decisions?${stringify(query)}`, fetcher);
+  const parsedQuery = query;
+  if (!parsedQuery.page) {
+    parsedQuery.page = '1';
+  }
+  const { data } = useSWR<Decisions>(`/api/decisions?${stringify(parsedQuery)}`, fetcher);
   return data;
 };
 
 export const useDebates = (query: ParsedUrlQuery): DebateListResponse | undefined => {
-  const { data } = useSWR<DebateListResponse>(`/api/debate?${stringify(query)}`, fetcher);
+  const parsedQuery = query;
+  if (!parsedQuery.page) {
+    parsedQuery.page = '1';
+  }
+  const { data } = useSWR<DebateListResponse>(`/api/debate?${stringify(parsedQuery)}`, fetcher);
   return data;
 };
 
@@ -34,7 +42,11 @@ export const useVote = (id: string, proposition: number): Vote | undefined => {
 };
 
 export const useVotes = (query: ParsedUrlQuery): VoteList | undefined => {
-  const { data } = useSWR<VoteList>(`/api/vote?${stringify(query)}`, fetcher);
+  const parsedQuery = query;
+  if (!parsedQuery.page) {
+    parsedQuery.page = '1';
+  }
+  const { data } = useSWR<VoteList>(`/api/vote?${stringify(parsedQuery)}`, fetcher);
   return data;
 };
 

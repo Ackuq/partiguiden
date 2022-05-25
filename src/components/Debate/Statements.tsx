@@ -125,7 +125,7 @@ const Statements: React.FC<StatementProps> = ({ debate }) => {
   return (
     <>
       {debate.statements.map((statement) => {
-        const speaker = debate.speakers[statement.personId];
+        const speaker = debate.speakers[statement.speech.speakerId];
         const primary = statement.personId === debate.participants?.sender?.id;
         return (
           <Box display="flex" key={statement.number}>

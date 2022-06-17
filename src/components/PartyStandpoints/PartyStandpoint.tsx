@@ -51,6 +51,9 @@ const PartyOpinion: React.FC<Props> = ({ party, standpoint }) => {
             Läs mer på partiets hemsida
           </Link>
         </Button>
+        <Typography textAlign="right" variant="body2">
+          Datan hämtades {standpoint.date}
+        </Typography>
       </CardContent>
     </Card>
   );

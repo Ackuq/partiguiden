@@ -1,8 +1,13 @@
+import Image from 'next/image';
 import Link from '@mui/material/Link';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 
 import { styled } from '@mui/material/styles';
+
+import { githubProfile, linkedIn } from '../../lib/socials';
+import GitHubLogo from '../../../public/static/images/github_logo.png';
+import LinkedInLogo from '../../../public/static/images/linkedin_logo.png';
 
 const FooterContent = styled('footer')`
   padding: 1.5rem 0;
@@ -16,8 +21,29 @@ const FooterContent = styled('footer')`
 const Footer: React.FC = () => (
   <FooterContent>
     <Stack>
-      <Typography align="center" color="inherit" variant="subtitle1" component="span">
-        © Axel Pettersson 2022
+      <Typography
+        align="center"
+        color="inherit"
+        variant="subtitle1"
+        component="span"
+        display="flex"
+        justifyContent="center"
+      >
+        © Axel Pettersson 2022&nbsp;
+        <a href={linkedIn} target="_blank" rel="noopener noreferrer">
+          <Image src={LinkedInLogo} layout="fixed" height={28} width={28} alt="LinkedIn logo" />
+        </a>
+        &nbsp;
+        <a href={githubProfile} target="_blank" rel="noopener noreferrer">
+          <Image
+            src={GitHubLogo}
+            layout="fixed"
+            height={28}
+            width={28}
+            alt="GitHub logo"
+            style={{ backgroundColor: '#fff', borderRadius: '50%' }}
+          />
+        </a>
       </Typography>
       <Link align="center" color="inherit" variant="subtitle1" href="mailto:hello@partiguiden.se">
         hello@partiguiden.se

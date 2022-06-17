@@ -61,6 +61,10 @@ const OmOssContainer: NextPage = () => (
             information från&nbsp;
             <Link href="https://data.riksdagen.se/">Riksdagens öppna API</Link>. Viss data om
             partierna är tagen från <Link href="https://wikipedia.se/">Wikipedia</Link>.
+            Dataunderlaget för opinionsundersökningar hämtas genom ett dataset som underhålls av
+            Hampus Nilsson, utvecklaren av <Link href="https://val.digital/">val.digital</Link>, och
+            finns publikt på&nbsp;
+            <Link href="https://github.com/hampusborgos/SwedishPolls">GitHub</Link>.
           </Typography>
           <Typography variant="h3" gutterBottom>
             Annonser

@@ -920,10 +920,10 @@
     "@babel/helper-validator-identifier" "^7.16.7"
     to-fast-properties "^2.0.0"
 
-"@corex/deepmerge@^4.0.14":
-  version "4.0.22"
-  resolved "https://registry.yarnpkg.com/@corex/deepmerge/-/deepmerge-4.0.22.tgz#76260a7840733b5fc3773e2d464094661760c521"
-  integrity sha512-PARVBRhvf3eBfag/sJMoTfAE3a5xhW3Jio7pvN9HcPy06PQnBM0j0ozCdSC0pkocMEizI5giBX3TSWFqVeMo+A==
+"@corex/deepmerge@^4.0.16":
+  version "4.0.24"
+  resolved "https://registry.yarnpkg.com/@corex/deepmerge/-/deepmerge-4.0.24.tgz#d167c0249b2136d6da958bacc0c6788c30405457"
+  integrity sha512-rgiQIkwFcphlE1TCY9Mds3DTj1voBfywnLDTJkHSaRX/sfCh0hmboJX1mOKNXSyDtq5m48ELj23Ogm+Vx2ACHg==
 
 "@emotion/babel-plugin@^11.7.1":
   version "11.9.2"
@@ -3766,12 +3766,12 @@ next-pwa@^5.5.4:
     workbox-webpack-plugin "^6.5.3"
     workbox-window "^6.5.3"
 
-next-sitemap@^3.0.5:
-  version "3.0.5"
-  resolved "https://registry.yarnpkg.com/next-sitemap/-/next-sitemap-3.0.5.tgz#6c031641455356db7fac9d34b42809dd4c43d1b2"
-  integrity sha512-YdiW5wYNruyZCvhGGOMAdTylCQuxQkZKbSFV9Fjuf/U7aAt8lJwc3HG/WvR0n3Q1Y8c1ZiW/24UDZLQPfoKsYg==
+next-sitemap@^3.1.1:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/next-sitemap/-/next-sitemap-3.1.1.tgz#c6d5c076f9c17e6138dd253486ca00a572458dda"
+  integrity sha512-6xNv0qawHHgIWYyEe/JHq/fl5hhHAbhe3N0y5/s0QpxNzQ/fVwhP4i29O2x6cjve3ONyFTwcYdBbQCk5Wya2BQ==
   dependencies:
-    "@corex/deepmerge" "^4.0.14"
+    "@corex/deepmerge" "^4.0.16"
     minimist "^1.2.6"
 
 next@^12.1.6:

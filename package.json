@@ -28,7 +28,7 @@
     "@sentry/nextjs": "^7.1.1",
     "@sentry/webpack-plugin": "^1.18.9",
     "isomorphic-unfetch": "^3.1.0",
-    "jsdom": "^19.0.0",
+    "jsdom": "^20.0.0",
     "moment": "^2.29.3",
     "next": "^12.1.6",
     "next-pwa": "^5.5.4",

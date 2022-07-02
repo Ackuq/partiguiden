@@ -108,6 +108,9 @@ export const memberController = async (id: string): Promise<MemberDetailedRespon
 
   return {
     ...memberData,
-    absence: { mandatePeriod: absenceMandatePeriod, parliamentYear: absenceParliamentYear },
+    absence: {
+      mandatePeriod: absenceMandatePeriod,
+      parliamentYear: absenceParliamentYear,
+    },
   };
 };

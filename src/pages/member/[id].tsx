@@ -18,6 +18,7 @@ const MemberContainer: NextPage<InferGetStaticPropsType<typeof getStaticProps>> 
           member && `${member.firstName} ${member.lastName}`
         }. Se vilka dokument som hen har varit med och skapat och samt voteringsnärvaro.`}
       />
+      {/* This enables the window.twttr  */}
     </Head>
     {member ? <Member member={member} /> : <LoadCircle />}
   </>
@@ -47,8 +48,8 @@ export const getStaticProps: GetStaticProps<
   let member = null;
   try {
     member = await memberController(id);
-  } catch {
-    // Handled after
+  } catch (err) {
+    console.log(`Failed to render member ${id}, got error`);
   }
 
   if (member == null) {

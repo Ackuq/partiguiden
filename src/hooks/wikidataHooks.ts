@@ -13,17 +13,19 @@ const useWikidata = <T>(sparqlQuery: string): WikidataResponse<T> | undefined =>
 };
 
 export const useTwitterInfo = (memberId: string): WikidataResponse<TwitterResult> | undefined => {
-  const sparqlQuery =
-    '#title: Riksdagsmedlemmars twitterkonton\n' +
-    'SELECT DISTINCT ?person ?twitterHandle ?twitterId WHERE {\n' +
-    '  ?person wdt:P31 wd:Q5;\n' +
-    '    p:P39 ?positionStatement.\n' +
-    '  ?person p:P2002 ?twitterStatement.\n' +
-    '  ?twitterStatement pq:P6552 ?twitterId ;\n' +
-    '                    ps:P2002 ?twitterHandle .\n' +
-    `  ?person wdt:P1214 "${memberId}".\n` +
-    '  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }\n' +
-    '}\n' +
-    'ORDER BY (?personLabel)';
+  const sparqlQuery = `
+    #title: Riksdagsmedlemmars twitterkonton
+    SELECT DISTINCT ?person ?twitterHandle ?twitterId WHERE {
+      ?person wdt:P31 wd:Q5;
+        p:P39 ?positionStatement.
+      ?person p:P2002 ?twitterStatement.
+      ?twitterStatement pq:P6552 ?twitterId ;
+                        ps:P2002 ?twitterHandle .
+      ?person wdt:P1214 "${memberId}".
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+    }
+    ORDER BY (?personLabel)
+  `;
+  console.log(sparqlQuery);
   return useWikidata(sparqlQuery);
 };

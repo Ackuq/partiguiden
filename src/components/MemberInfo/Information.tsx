@@ -12,10 +12,9 @@ import Link from '@mui/material/Link';
 import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
 
-import Documents from './Documents';
-
 import { Information as InformationType, MemberDetailedResponse } from '../../types/member';
 import { ResponsiveAd } from '../Ad';
+import InformationTabs from './InformationTabs';
 
 interface Props {
   id: string;
@@ -101,7 +100,7 @@ const Information: React.FC<Props> = ({ id, informationRecords, absence }) => {
       </Grid>
 
       <Grid item xs={12}>
-        <Documents id={id} setDocumentCount={setDocumentCount} />
+        <InformationTabs id={id} setDocumentCount={setDocumentCount} />
       </Grid>
     </Grid>
   );

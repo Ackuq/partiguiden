@@ -42,7 +42,7 @@
   },
   "devDependencies": {
     "@types/gtag.js": "^0.0.10",
-    "@types/jsdom": "^16.2.14",
+    "@types/jsdom": "^16.2.15",
     "@types/node": "^18.0.6",
     "@types/react": "^18.0.15",
     "@types/turndown": "^5.0.1",

@@ -23,7 +23,7 @@
     "@emotion/server": "^11.10.0",
     "@emotion/styled": "^11.10.0",
     "@mui/icons-material": "^5.8.4",
-    "@mui/material": "^5.10.0",
+    "@mui/material": "^5.10.1",
     "@next/bundle-analyzer": "^12.2.5",
     "@sentry/nextjs": "^7.10.0",
     "@sentry/webpack-plugin": "^1.19.0",

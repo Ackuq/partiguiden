@@ -14,7 +14,8 @@ import { ThemeProvider } from '@mui/material/styles';
 import Header from '../components/Header';
 import createCache, { EmotionCache } from '@emotion/cache';
 
-import * as gtag from '../utils/gtag';
+import * as fbq from '../lib/fbPixel';
+import * as gtag from '../lib/gtag';
 import dynamic from 'next/dynamic';
 import getTheme from '../lib/theme';
 
@@ -62,8 +63,12 @@ function MyApp({ Component, pageProps, emotionCache = browserCache }: Props): JS
   }, [prefersDarkMode]);
 
   useEffect(() => {
+    // This pageview only triggers the first time (it's important for Pixel to have real information)
+    fbq.pageview();
+
     const handleRouteChange = (url: URL) => {
       gtag.pageview(url);
+      fbq.pageview();
     };
     router.events.on('routeChangeComplete', handleRouteChange);
     return () => {

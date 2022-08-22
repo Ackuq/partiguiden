@@ -1,22 +1,12 @@
 import { withSentryConfig } from '@sentry/nextjs';
 import bundleAnalyzer from '@next/bundle-analyzer';
-import runtimeCaching from 'next-pwa/cache.js';
-import withPWA from 'next-pwa';
 
 const withBundleAnalyzer = bundleAnalyzer({ enabled: process.env.ANALYZE === 'true' });
 
-const moduleExports = withPWA(
-  withBundleAnalyzer({
-    productionBrowserSourceMaps: true,
-    pwa: {
-      dest: 'public',
-      disable: process.env.NODE_ENV === 'development',
-      runtimeCaching,
-    },
-
-    basePath: '',
-  })
-);
+const moduleExports = withBundleAnalyzer({
+  productionBrowserSourceMaps: true,
+  basePath: '',
+});
 
 /**
  * @type {Partial<import('@sentry/nextjs').SentryWebpackPluginOptions>}

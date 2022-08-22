@@ -25,11 +25,5 @@ public/robots.txt
 public/sitemap.xml
 public/sitemap-0.xml
 
-# PWA worker files
-public/sw.js*
-workbox-*.js*
-worker-*.js*
-public/worker-development.js
-
 # TS files
 tsconfig.tsbuildinfo

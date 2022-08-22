@@ -5,16 +5,6 @@ import withPWA from 'next-pwa';
 
 const withBundleAnalyzer = bundleAnalyzer({ enabled: process.env.ANALYZE === 'true' });
 
-const {
-  // Vercel
-  VERCEL_GITHUB_COMMIT_SHA,
-
-  // Sentry
-  SENTRY_ORG,
-  SENTRY_PROJECT,
-  SENTRY_AUTH_TOKEN,
-} = process.env;
-
 const moduleExports = withPWA(
   withBundleAnalyzer({
     productionBrowserSourceMaps: true,
@@ -31,18 +21,10 @@ const moduleExports = withPWA(
 /**
  * @type {Partial<import('@sentry/nextjs').SentryWebpackPluginOptions>}
  */
-const SentryWebpackPluginOptions = {
+const sentryWebpackPluginOptions = {
   silent: true,
-  url: 'https://sentry.io/',
-  org: SENTRY_ORG,
-  project: SENTRY_PROJECT,
-  authToken: SENTRY_AUTH_TOKEN,
-  release: VERCEL_GITHUB_COMMIT_SHA,
 };
 
-const defaultExport =
-  SENTRY_ORG && SENTRY_PROJECT
-    ? withSentryConfig(moduleExports, SentryWebpackPluginOptions)
-    : moduleExports;
+const defaultExport = withSentryConfig(moduleExports, sentryWebpackPluginOptions);
 
 export default defaultExport;

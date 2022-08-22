@@ -1,5 +1,8 @@
 import React, { useEffect } from 'react';
-import enableAds, { adClientID } from './enableAds';
+
+import { ADSENSE_CLIENT_ID, RESPONSIVE_AD_SLOT_ID } from '../../lib/adsense';
+
+import enableAds from './enableAds';
 
 const Ad: React.FC = () => {
   useEffect(() => {
@@ -14,8 +17,8 @@ const Ad: React.FC = () => {
         <ins
           className="adsbygoogle"
           style={{ display: 'block' }}
-          data-ad-client={adClientID}
-          data-ad-slot={process.env.RESPONSIVE_AD_SLOT}
+          data-ad-client={ADSENSE_CLIENT_ID}
+          data-ad-slot={RESPONSIVE_AD_SLOT_ID}
           data-ad-format="horizontal"
           data-full-width-responsive="true"
         />

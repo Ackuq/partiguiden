@@ -31,6 +31,7 @@ const ChatBubble = styled('div', { shouldForwardProp: (prop) => prop !== 'primar
   color: ${primary ? theme.palette.primary.contrastText : theme.palette.text.primary};
   border-radius: 0.4em;
   padding: 0.25rem 0.5rem;
+  flex: 1;
   ${primary ? 'margin-right' : 'margin-left'}: ${arrowWidth};
   margin-bottom: 1rem;
   z-index: 99;
@@ -60,15 +61,15 @@ const ChatBubble = styled('div', { shouldForwardProp: (prop) => prop !== 'primar
 const ImageContainer = styled('div')<{ url: string }>(
   ({ theme, url }) => `
   ${theme.breakpoints.down('sm')} {
-    min-width: 50px;
+    width: 50px;
     height: 50px;
   }
   ${theme.breakpoints.between('sm', 'md')} {
-    min-width: 75px;
+    width: 75px;
     height: 75px;
   }
   ${theme.breakpoints.up('md')} {
-    min-width: 90px;
+    width: 90px;
     height: 90px;
   }
   border-radius: 50%;

@@ -23,7 +23,7 @@ const TwitterFeed: React.FC<Props> = ({ id }) => {
   const twitterHandle = twitterResponse?.results?.bindings?.[0]?.twitterHandle?.value;
 
   useEffect(() => {
-    if (twitterHandle) {
+    if (twitterHandle || !window.twttr) {
       const container = document.getElementById('twitterContainer');
       if (container) {
         container.innerHTML = '';

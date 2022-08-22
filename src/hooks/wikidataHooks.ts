@@ -26,6 +26,5 @@ export const useTwitterInfo = (memberId: string): WikidataResponse<TwitterResult
     }
     ORDER BY (?personLabel)
   `;
-  console.log(sparqlQuery);
   return useWikidata(sparqlQuery);
 };

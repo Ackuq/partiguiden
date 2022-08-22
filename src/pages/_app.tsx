@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from 'react';
 
 import { AppProps } from 'next/app';
 import { useRouter } from 'next/router';
+import Head from 'next/head';
 import Script from 'next/script';
 
 import CssBaseline from '@mui/material/CssBaseline';
@@ -102,7 +103,9 @@ function MyApp({ Component, pageProps, emotionCache = browserCache }: Props): JS
               />
             </>
           )}
-
+          <Head>
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
+          </Head>
           <CssBaseline />
           <Header
             toggleDarkMode={() => {

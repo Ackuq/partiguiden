@@ -20,7 +20,6 @@ class MyDocument extends Document {
     return (
       <Html lang="sv" style={{ height: '100%' }}>
         <Head>
-          <meta name="viewport" content="width=device-width, initial-scale=1" />
           <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
           <link rel="apple-touch-icon" sizes="180x180" href="/static/icons/apple-touch-icon.png" />

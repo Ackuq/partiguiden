@@ -1,0 +1,5 @@
+export const ADSENSE_CLIENT_ID = process.env.NEXT_PUBLIC_ADSENSE_CLIENT_ID;
+
+export const FLOW_AD_SLOT_ID = process.env.NEXT_PUBLIC_FLOW_AD_SLOT_ID;
+
+export const RESPONSIVE_AD_SLOT_ID = process.env.NEXT_PUBLIC_RESPONSIVE_AD_SLOT_ID;

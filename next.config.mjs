@@ -8,23 +8,11 @@ const withBundleAnalyzer = bundleAnalyzer({ enabled: process.env.ANALYZE === 'tr
 const {
   // Vercel
   VERCEL_GITHUB_COMMIT_SHA,
-  VERCEL_ENV,
-
-  // Custom
-  API_URL,
-  PROXY_URL,
-  BASE_PATH,
 
   // Sentry
-  NEXT_PUBLIC_SENTRY_DSN: SENTRY_DSN,
   SENTRY_ORG,
   SENTRY_PROJECT,
   SENTRY_AUTH_TOKEN,
-
-  // Google AdSense
-  AD_CLIENT_ID,
-  FLOW_AD_SLOT,
-  RESPONSIVE_AD_SLOT,
 } = process.env;
 
 const moduleExports = withPWA(
@@ -35,32 +23,21 @@ const moduleExports = withPWA(
       disable: process.env.NODE_ENV === 'development',
       runtimeCaching,
     },
-    env: {
-      NEXT_PUBLIC_COMMIT_SHA: VERCEL_GITHUB_COMMIT_SHA,
-      API_URL,
-      BASE_PATH,
-      PROXY_URL,
-      VERCEL_ENV,
-
-      // Sentry
-      SENTRY_DSN,
-      SENTRY_URL: 'https://sentry.io/',
-      SENTRY_ORG,
-      SENTRY_PROJECT,
-      SENTRY_AUTH_TOKEN,
-
-      // Google AdSense
-      AD_CLIENT_ID,
-      FLOW_AD_SLOT,
-      RESPONSIVE_AD_SLOT,
-    },
 
     basePath: '',
   })
 );
 
+/**
+ * @type {Partial<import('@sentry/nextjs').SentryWebpackPluginOptions>}
+ */
 const SentryWebpackPluginOptions = {
   silent: true,
+  url: 'https://sentry.io/',
+  org: SENTRY_ORG,
+  project: SENTRY_PROJECT,
+  authToken: SENTRY_AUTH_TOKEN,
+  release: VERCEL_GITHUB_COMMIT_SHA,
 };
 
 const defaultExport =

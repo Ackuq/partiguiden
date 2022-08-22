@@ -6,6 +6,7 @@ import createCache, { EmotionCache } from '@emotion/cache';
 import createEmotionServer from '@emotion/server/create-instance';
 
 import * as gtag from '../lib/gtag';
+import { ADSENSE_CLIENT_ID } from '../lib/adsense';
 import { FB_PIXEL_ID } from '../lib/fbPixel';
 
 const getCache = (): EmotionCache => {
@@ -88,7 +89,7 @@ class MyDocument extends Document {
               {/* Google Ads */}
               <script
                 async
-                src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${process.env.AD_CLIENT_ID}`}
+                src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT_ID}`}
                 crossOrigin="anonymous"
               />
               {/* Global site tag (gtag.js) - Google Analytics  */}
@@ -111,7 +112,7 @@ class MyDocument extends Document {
               />
             </>
           )}
-          {process.env.VERCEL_ENV !== 'production' && (
+          {process.env.NEXT_PUBLIC_VERCEL_ENV !== 'production' && (
             <>
               {/* Disable indexing of all non-production sites */}
               <meta name="robots" content="noindex" />

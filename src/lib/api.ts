@@ -1,6 +1,6 @@
 import { PopularSubjects, Subject, SubjectList } from '../types/subjects';
 
-const baseUrl = process.env.API_URL || 'http://localhost:8000';
+const baseUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
 
 export const getSubjects = (signal?: AbortSignal): Promise<SubjectList> =>
   fetch(`${baseUrl}/subjects/`, { signal }).then((res) => res.json());

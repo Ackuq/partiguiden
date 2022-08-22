@@ -96,7 +96,6 @@ function MyApp({ Component, pageProps, emotionCache = browserCache }: Props): JS
               s.parentNode.insertBefore(t,s)}(window, document,'script',
               'https://connect.facebook.net/en_US/fbevents.js');
               fbq('init', ${fbq.FB_PIXEL_ID});
-              fbq('track', 'PageView');
           `,
             }}
           />

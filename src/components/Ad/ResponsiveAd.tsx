@@ -7,7 +7,11 @@ import enableAds from './enableAds';
 const Ad: React.FC = () => {
   useEffect(() => {
     if (enableAds()) {
-      (window.adsbygoogle = window.adsbygoogle || []).push({});
+      try {
+        (window.adsbygoogle = window.adsbygoogle || []).push({});
+      } catch (error) {
+        // Ignore error
+      }
     }
   }, []);
 

@@ -2,7 +2,6 @@ import { useEffect, useMemo, useState } from 'react';
 
 import { AppProps } from 'next/app';
 import { useRouter } from 'next/router';
-import Head from 'next/head';
 import Script from 'next/script';
 
 import CssBaseline from '@mui/material/CssBaseline';
@@ -81,27 +80,49 @@ function MyApp({ Component, pageProps, emotionCache = browserCache }: Props): JS
     <CacheProvider value={emotionCache}>
       <ThemeProvider theme={theme}>
         <EmotionThemeProvider theme={theme}>
-          {/* Global Site Code Pixel - Facebook Pixel */}
-          <Script
-            id="fb-pixel"
-            strategy="afterInteractive"
-            dangerouslySetInnerHTML={{
-              __html: `
-              !function(f,b,e,v,n,t,s)
-              {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-              n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-              if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-              n.queue=[];t=b.createElement(e);t.async=!0;
-              t.src=v;s=b.getElementsByTagName(e)[0];
-              s.parentNode.insertBefore(t,s)}(window, document,'script',
-              'https://connect.facebook.net/en_US/fbevents.js');
-              fbq('init', ${fbq.FB_PIXEL_ID});
-          `,
-            }}
-          />
-          <Head>
-            <meta name="viewport" content="width=device-width, initial-scale=1" />
-          </Head>
+          {process.env.NODE_ENV === 'production' && (
+            <>
+              {/* Global site tag (gtag.js) - Google Analytics  */}
+              <Script
+                strategy="afterInteractive"
+                src={`https://www.googletagmanager.com/gtag/js?id=${gtag.GA_TRACKING_ID}`}
+              />
+              <Script
+                id="gtag-init"
+                strategy="afterInteractive"
+                dangerouslySetInnerHTML={{
+                  __html: `
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  gtag('js', new Date());
+
+                  gtag('config', '${gtag.GA_TRACKING_ID}', {
+                    page_path: window.location.pathname,
+                  });
+                `,
+                }}
+              />
+              {/* Global Site Code Pixel - Facebook Pixel */}
+              <Script
+                id="fb-pixel"
+                strategy="afterInteractive"
+                dangerouslySetInnerHTML={{
+                  __html: `
+                    !function(f,b,e,v,n,t,s)
+                    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+                    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+                    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+                    n.queue=[];t=b.createElement(e);t.async=!0;
+                    t.src=v;s=b.getElementsByTagName(e)[0];
+                    s.parentNode.insertBefore(t,s)}(window, document,'script',
+                    'https://connect.facebook.net/en_US/fbevents.js');
+                    fbq('init', ${fbq.FB_PIXEL_ID});
+                  `,
+                }}
+              />
+            </>
+          )}
+
           <CssBaseline />
           <Header
             toggleDarkMode={() => {

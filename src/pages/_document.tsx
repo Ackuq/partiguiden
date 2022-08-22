@@ -5,6 +5,7 @@ import createCache, { EmotionCache } from '@emotion/cache';
 
 import createEmotionServer from '@emotion/server/create-instance';
 
+import * as gtag from '../lib/gtag';
 import { ADSENSE_CLIENT_ID } from '../lib/adsense';
 import { FB_PIXEL_ID } from '../lib/fbPixel';
 
@@ -91,6 +92,23 @@ class MyDocument extends Document {
                 async
                 src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT_ID}`}
                 crossOrigin="anonymous"
+              />
+              {/* Global site tag (gtag.js) - Google Analytics  */}
+              <script
+                async
+                src={`https://www.googletagmanager.com/gtag/js?id=${gtag.GA_TRACKING_ID}`}
+              />
+              <script
+                dangerouslySetInnerHTML={{
+                  __html: `
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  gtag('js', new Date());
+                  gtag('config', '${gtag.GA_TRACKING_ID}', {
+                    page_path: window.location.pathname,
+                  });
+            `,
+                }}
               />
             </>
           )}

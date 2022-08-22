@@ -17,6 +17,7 @@ import createCache, { EmotionCache } from '@emotion/cache';
 
 import * as fbq from '../lib/fbPixel';
 import * as gtag from '../lib/gtag';
+import { ADSENSE_CLIENT_ID } from '../lib/adsense';
 import dynamic from 'next/dynamic';
 import getTheme from '../lib/theme';
 
@@ -100,6 +101,16 @@ function MyApp({ Component, pageProps, emotionCache = browserCache }: Props): JS
                     fbq('init', '${fbq.FB_PIXEL_ID}');
                   `,
                 }}
+              />
+              {/* Google Adsense */}
+              <Script
+                async
+                onError={(e) => {
+                  console.error('Script failed to load', e);
+                }}
+                strategy="afterInteractive"
+                src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT_ID}`}
+                crossOrigin="anonymous"
               />
             </>
           )}

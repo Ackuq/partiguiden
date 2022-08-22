@@ -6,7 +6,6 @@ import createCache, { EmotionCache } from '@emotion/cache';
 import createEmotionServer from '@emotion/server/create-instance';
 
 import * as gtag from '../lib/gtag';
-import { ADSENSE_CLIENT_ID } from '../lib/adsense';
 import { FB_PIXEL_ID } from '../lib/fbPixel';
 
 const getCache = (): EmotionCache => {
@@ -86,12 +85,6 @@ class MyDocument extends Document {
                   src={`https://www.facebook.com/tr?id=${FB_PIXEL_ID}&ev=PageView&noscript=1`}
                 />
               </noscript>
-              {/* Google Adsense */}
-              <script
-                async
-                src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT_ID}`}
-                crossOrigin="anonymous"
-              />
               {/* Global site tag (gtag.js) - Google Analytics  */}
               <script
                 async

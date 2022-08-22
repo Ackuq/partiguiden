@@ -5,7 +5,6 @@ import createCache, { EmotionCache } from '@emotion/cache';
 
 import createEmotionServer from '@emotion/server/create-instance';
 
-import * as gtag from '../lib/gtag';
 import { ADSENSE_CLIENT_ID } from '../lib/adsense';
 import { FB_PIXEL_ID } from '../lib/fbPixel';
 
@@ -20,6 +19,7 @@ class MyDocument extends Document {
     return (
       <Html lang="sv" style={{ height: '100%' }}>
         <Head>
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
           <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
           <link rel="apple-touch-icon" sizes="180x180" href="/static/icons/apple-touch-icon.png" />
@@ -86,29 +86,11 @@ class MyDocument extends Document {
                   src={`https://www.facebook.com/tr?id=${FB_PIXEL_ID}&ev=PageView&noscript=1`}
                 />
               </noscript>
-              {/* Google Ads */}
+              {/* Google Adsense */}
               <script
                 async
                 src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT_ID}`}
                 crossOrigin="anonymous"
-              />
-              {/* Global site tag (gtag.js) - Google Analytics  */}
-              <script
-                async
-                src={`https://www.googletagmanager.com/gtag/js?id=${gtag.GA_TRACKING_ID}`}
-              />
-              <script
-                dangerouslySetInnerHTML={{
-                  __html: `
-                  window.dataLayer = window.dataLayer || [];
-                  function gtag(){dataLayer.push(arguments);}
-                  gtag('js', new Date());
-
-                  gtag('config', '${gtag.GA_TRACKING_ID}', {
-                    page_path: window.location.pathname,
-                  });
-            `,
-                }}
               />
             </>
           )}

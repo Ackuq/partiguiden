@@ -5,7 +5,8 @@ import createCache, { EmotionCache } from '@emotion/cache';
 
 import createEmotionServer from '@emotion/server/create-instance';
 
-import * as gtag from '../utils/gtag';
+import * as gtag from '../lib/gtag';
+import { FB_PIXEL_ID } from '../lib/fbPixel';
 
 const getCache = (): EmotionCache => {
   const cache = createCache({ key: 'css', prepend: true });
@@ -74,6 +75,16 @@ class MyDocument extends Document {
           />
           {process.env.NODE_ENV === 'production' && (
             <>
+              {/* Meta Pixel Code  */}
+              <noscript>
+                {/* eslint-disable-next-line @next/next/no-img-element, jsx-a11y/alt-text */}
+                <img
+                  height="1"
+                  width="1"
+                  style={{ display: 'none' }}
+                  src={`https://www.facebook.com/tr?id=${FB_PIXEL_ID}&ev=PageView&noscript=1`}
+                />
+              </noscript>
               {/* Google Ads */}
               <script
                 async

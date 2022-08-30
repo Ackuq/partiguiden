@@ -6,7 +6,7 @@ import PersonIcon from '@mui/icons-material/Person';
 import Members from '../../containers/Members';
 import PageTitle from '../../components/PageTitle';
 
-import { MemberList } from '../../types/member';
+import { MemberListEntry } from '../../types/member';
 import { membersController } from '../../api/controllers/members';
 import MembersTabs from '../../components/MemberStatistics/MemberTabs';
 
@@ -28,7 +28,7 @@ const MembersContainer: NextPage<InferGetStaticPropsType<typeof getStaticProps>>
 );
 
 export const getStaticProps: GetStaticProps<{
-  members: MemberList;
+  members: MemberListEntry[];
 }> = async () => {
   const members = await membersController();
 

@@ -3,7 +3,7 @@ import bundleAnalyzer from '@next/bundle-analyzer';
 
 const withBundleAnalyzer = bundleAnalyzer({ enabled: process.env.ANALYZE === 'true' });
 
-const moduleExports = withBundleAnalyzer({
+let moduleExports = withBundleAnalyzer({
   productionBrowserSourceMaps: true,
   basePath: '',
 });
@@ -15,6 +15,8 @@ const sentryWebpackPluginOptions = {
   silent: true,
 };
 
-const defaultExport = withSentryConfig(moduleExports, sentryWebpackPluginOptions);
+if (process.env.VERCEL) {
+  moduleExports = withSentryConfig(moduleExports, sentryWebpackPluginOptions);
+}
 
-export default defaultExport;
+export default moduleExports;

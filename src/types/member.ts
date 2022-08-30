@@ -46,6 +46,21 @@ export interface MemberResponse {
   isLeader: boolean;
 }
 
+export interface MemberListEntry {
+  id: string;
+  firstName: string;
+  lastName: string;
+  pictureUrl: string;
+  age: number;
+  party: PartyAbbreviation | '-';
+  district: string;
+  status: string;
+}
+
+export interface MemberAbsenceResponse extends MemberListEntry {
+  absence: number | null;
+}
+
 export enum AbsencePeriod {
   mandatePeriod = 'mandatperiod',
   parliamentYear = 'riksmöte',
@@ -62,10 +77,6 @@ export interface MemberDetailedResponse extends MemberResponse {
   };
 }
 
-export interface MemberAbsenceResponse extends MemberResponse {
-  absence: number | null;
-}
-
 export interface MemberAbsenceResponseNullSafe extends MemberResponse {
   absence: number;
 }
@@ -74,8 +85,6 @@ export interface AbsenceLeaderboard {
   mostAbsence: MemberAbsenceResponse[];
   leastAbsence: MemberAbsenceResponse[];
 }
-
-export type MemberList = MemberResponse[];
 
 export interface Leader extends MemberResponse {
   role: string;

@@ -15,7 +15,6 @@ import { ThemeProvider } from '@mui/material/styles';
 import Header from '../components/Header';
 import createCache, { EmotionCache } from '@emotion/cache';
 
-import * as fbq from '../lib/fbPixel';
 import * as gtag from '../lib/gtag';
 import { ADSENSE_CLIENT_ID } from '../lib/adsense';
 import dynamic from 'next/dynamic';
@@ -65,12 +64,8 @@ function MyApp({ Component, pageProps, emotionCache = browserCache }: Props): JS
   }, [prefersDarkMode]);
 
   useEffect(() => {
-    // This pageview only triggers the first time (it's important for Pixel to have real information)
-    fbq.pageview();
-
     const handleRouteChange = (url: URL) => {
       gtag.pageview(url);
-      fbq.pageview();
     };
     router.events.on('routeChangeComplete', handleRouteChange);
     return () => {
@@ -110,25 +105,6 @@ function MyApp({ Component, pageProps, emotionCache = browserCache }: Props): JS
 
           {process.env.NODE_ENV === 'production' && (
             <>
-              {/* Global Site Code Pixel - Facebook Pixel */}
-              <Script
-                id="fb-pixel"
-                strategy="afterInteractive"
-                dangerouslySetInnerHTML={{
-                  __html: `
-                    !function(f,b,e,v,n,t,s)
-                    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-                    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-                    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-                    n.queue=[];t=b.createElement(e);t.async=!0;
-                    t.src=v;s=b.getElementsByTagName(e)[0];
-                    s.parentNode.insertBefore(t,s)}(window, document,'script',
-                    'https://connect.facebook.net/en_US/fbevents.js');
-                    fbq('set', 'autoConfig', false, '${fbq.FB_PIXEL_ID}'); 
-                    fbq('init', '${fbq.FB_PIXEL_ID}');
-                  `,
-                }}
-              />
               {/* Google Ads */}
               <Script
                 id="ads-init"

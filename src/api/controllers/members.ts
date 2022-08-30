@@ -2,12 +2,17 @@ import {
   Absence,
   MemberAbsenceResponse,
   MemberDetailedResponse,
-  MemberList,
+  MemberListEntry,
+  MemberResponse,
 } from '../../types/member';
 import { ParsedUrlQuery, stringify } from 'querystring';
 import { Person, PersonListMany, PersonListSingle } from '../../types/parliament';
 import { getLatestMandatePeriod } from '../../utils/parliamentYear';
-import { memberSerializer, serializeAbsence } from '../serializers/member';
+import {
+  memberListEntrySerializer,
+  memberSerializer,
+  serializeAbsence,
+} from '../serializers/member';
 import { parliamentURL } from '../constants';
 
 export const getAbsence = (query: string): Promise<number | null> =>
@@ -15,14 +20,14 @@ export const getAbsence = (query: string): Promise<number | null> =>
     .then((res) => res.json())
     .then(serializeAbsence);
 
-export const getMember = (id: string): Promise<MemberList[number]> =>
+export const getMember = (id: string): Promise<MemberResponse> =>
   fetch(`${parliamentURL}/person/${id}/json`)
     .then((res) => res.json())
     .then((data: PersonListSingle) => {
       return memberSerializer(data.personlista.person as Person);
     });
 
-export const getMemberQuery = (query: ParsedUrlQuery): Promise<MemberList[number] | null> =>
+export const getMemberQuery = (query: ParsedUrlQuery): Promise<MemberResponse | null> =>
   fetch(`${parliamentURL}/personlista/?${stringify(query)}`)
     .then((res) => res.json())
     .then((data: PersonListSingle) => {
@@ -37,7 +42,7 @@ export const getMemberQuery = (query: ParsedUrlQuery): Promise<MemberList[number
       return null;
     });
 
-export const membersController = (party?: string): Promise<MemberList> => {
+export const membersController = (party?: string): Promise<MemberListEntry[]> => {
   const query = {
     parti: party,
     utformat: 'json',
@@ -48,7 +53,7 @@ export const membersController = (party?: string): Promise<MemberList> => {
     .then((res) => res.json())
     .then((data: PersonListMany) => {
       const members = data.personlista.person as Person[];
-      return members.map(memberSerializer);
+      return members.map(memberListEntrySerializer);
     });
 };
 

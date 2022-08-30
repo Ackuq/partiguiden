@@ -3,14 +3,14 @@ import { useState } from 'react';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 
-import { MemberList as MemberListType } from '../types/member';
+import { MemberListEntry } from '../types/member';
 import { PartyAbbreviation } from '../utils/parties';
 import dynamic from 'next/dynamic';
 
 const MemberList = dynamic(() => import('../components/MemberList/MemberList'));
 const MembersFilter = dynamic(() => import('../components/MemberList/FilterMembers'));
 interface Props {
-  members: MemberListType;
+  members: MemberListEntry[];
 }
 
 interface FilterState {

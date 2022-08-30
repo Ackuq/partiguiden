@@ -7,7 +7,7 @@ import * as ROUTES from '../../lib/routes';
 import { PARTY_LOGOS_LOW_RES } from '../../assets/logos';
 import { PartyAbbreviation } from '../../utils/parties';
 
-import { MemberList } from '../../types/member';
+import { MemberListEntry } from '../../types/member';
 
 const MemberCard = styled('a')(
   ({ theme }) => `
@@ -61,7 +61,7 @@ const NameContainer = styled('div')`
 `;
 
 interface Props {
-  member: MemberList[number];
+  member: MemberListEntry;
 }
 
 const Member: React.FC<Props> = ({ member }) => (

@@ -1,4 +1,4 @@
-import { Information, MemberList, Task } from '../../types/member';
+import { Information, MemberListEntry, MemberResponse, Task } from '../../types/member';
 import {
   Person,
   PersonInformation,
@@ -56,7 +56,7 @@ export const serializeAbsence = (data: VoteListGroupedSingle): number | null => 
   return null;
 };
 
-export const memberSerializer = (data: Person): MemberList[number] => {
+export const memberSerializer = (data: Person): MemberResponse => {
   const {
     intressent_id: id,
     tilltalsnamn: firstName,
@@ -99,5 +99,31 @@ export const memberSerializer = (data: Person): MemberList[number] => {
     information,
     tasks,
     isLeader,
+  };
+};
+
+export const memberListEntrySerializer = (data: Person): MemberListEntry => {
+  const {
+    intressent_id: id,
+    tilltalsnamn: firstName,
+    efternamn: lastName,
+    fodd_ar: birthYear,
+    valkrets: district,
+    bild_url_192: pictureUrl,
+    parti: party,
+    status,
+  } = data;
+
+  const age = new Date().getFullYear() - parseInt(birthYear, 10);
+
+  return {
+    id,
+    firstName,
+    lastName,
+    pictureUrl: pictureUrl?.replace('http://', 'https://'),
+    age,
+    party,
+    district,
+    status,
   };
 };

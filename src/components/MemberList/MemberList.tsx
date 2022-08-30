@@ -2,7 +2,7 @@ import React, { useCallback, useEffect, useState } from 'react';
 
 import Grid from '@mui/material/Grid';
 
-import { MemberList as MemberListType } from '../../types/member';
+import { MemberListEntry } from '../../types/member';
 import { PartyAbbreviation } from '../../utils/parties';
 import { ResponsiveAd } from '../Ad';
 import Member from './Member';
@@ -12,7 +12,7 @@ interface Props {
     search: string;
     parties: Array<PartyAbbreviation>;
   };
-  members: MemberListType;
+  members: MemberListEntry[];
 }
 
 const MEMBERS_PER_PAGE = 24;

@@ -64,6 +64,10 @@ const MemberListEntry: React.FC<MemberListEntryProps> = ({ member, percentageCol
                 PARTY_LOGOS_LOW_RES[member.party.toUpperCase() as keyof typeof PARTY_LOGOS_LOW_RES]
               }
               alt="Partisymbol"
+              style={{
+                maxWidth: '100%',
+                height: 'auto',
+              }}
             />
           )}
         </ImageContainer>

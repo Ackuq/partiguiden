@@ -50,6 +50,10 @@ const SenderImage: React.FC<SenderImageProps> = ({ sender }) => {
           height={25}
           src={PARTY_LOGOS_LOW_RES[member.party.toUpperCase() as PartyAbbreviation]}
           alt="Partisymbol"
+          style={{
+            maxWidth: '100%',
+            height: 'auto',
+          }}
         />
       )}
     </ImageContainer>

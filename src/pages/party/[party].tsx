@@ -22,9 +22,11 @@ const PartyPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({ p
     <Image
       src={PARTY_LOGOS[party.abbrev.toUpperCase() as PartyData['abbrev']]}
       quality={50}
-      width="90%"
-      height="90%"
       alt="Party logo"
+      style={{
+        maxWidth: '100%',
+        height: 'auto',
+      }}
     />
   );
 

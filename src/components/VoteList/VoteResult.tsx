@@ -50,6 +50,10 @@ const ResultColumn: React.FC<ResultColumnProps> = ({ bgcolor, votes, title, brea
               width={imageSize}
               height={imageSize}
               alt={`${party} logo`}
+              style={{
+                maxWidth: '100%',
+                height: 'auto',
+              }}
             />
           </Party>
         ))}

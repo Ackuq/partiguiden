@@ -1,14 +1,12 @@
 [
-    {
-        "relation": [
-            "delegate_permission/common.handle_all_urls"
-        ],
-        "target": {
-            "namespace": "android_app",
-            "package_name": "se.partiguiden.twa",
-            "sha256_cert_fingerprints": [
-                "1B:2A:8C:9F:8A:33:AE:18:3B:B6:27:FA:5A:A0:27:EE:FB:37:40:1F:7C:30:4B:1E:36:6E:B6:80:91:20:1E:41"
-            ]
-        }
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "se.partiguiden.twa",
+      "sha256_cert_fingerprints": [
+        "1B:2A:8C:9F:8A:33:AE:18:3B:B6:27:FA:5A:A0:27:EE:FB:37:40:1F:7C:30:4B:1E:36:6E:B6:80:91:20:1E:41"
+      ]
     }
+  }
 ]

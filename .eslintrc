@@ -4,9 +4,7 @@
       "version": "detect" // Tells eslint-plugin-react to automatically detect the version of React to use
     }
   },
-  "plugins": [
-    "sort-imports-es6-autofix"
-  ],
+  "plugins": ["sort-imports-es6-autofix"],
   "extends": [
     "plugin:@typescript-eslint/recommended",
     "plugin:prettier/recommended",
@@ -29,13 +27,16 @@
       "error",
       {
         "paths": ["@mui/material", "@mui/icons"],
-        "patterns": ["@mui/*/*/*",  "!@mui/material/test-utils/*"]
+        "patterns": ["@mui/*/*/*", "!@mui/material/test-utils/*"]
       }
     ],
-    "sort-imports-es6-autofix/sort-imports-es6": [2, {
-      "ignoreCase": false,
-      "ignoreMemberSort": false,
-      "memberSyntaxSortOrder": ["none", "all", "multiple", "single"]
-    }]
+    "sort-imports-es6-autofix/sort-imports-es6": [
+      2,
+      {
+        "ignoreCase": false,
+        "ignoreMemberSort": false,
+        "memberSyntaxSortOrder": ["none", "all", "multiple", "single"]
+      }
+    ]
   }
 }

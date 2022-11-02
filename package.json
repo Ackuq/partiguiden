@@ -9,7 +9,8 @@
     "start-dev": "next dev",
     "build": "next build",
     "vercel-build": "next build && next-sitemap",
-    "lint": "tsc --noemit && eslint src/ --ext .js,.jsx,.ts,.tsx"
+    "lint": "tsc --noemit && eslint src/ --ext .js,.jsx,.ts,.tsx",
+    "format": "prettier --write ."
   },
   "repository": {
     "type": "git",

@@ -1,5 +1,11 @@
 import { DocumentReference, VotingRow } from '../../types/parliament';
-import { ProcessedDocument, VotingDict, VotingGroup, VotingResult } from '../../types/voting';
+import {
+  ProcessedDocument,
+  VotingDict,
+  VotingEntry,
+  votingGroup,
+  VotingResult,
+} from '../../types/voting';
 
 interface ReferencesResponse {
   processedDocuments: ProcessedDocument[];
@@ -81,8 +87,24 @@ const votingGroupRemap = (partyName: string): VotingGroup => {
   }
 };
 
-export const extractVotes = (row: VotingRow): VotingDict => {
+const defaultVotingEntry: VotingEntry = {
+  yes: '0',
+  no: '0',
+  abscent: '0',
+  refrain: '0',
+};
+
+const defaultVotes: VotingDict = votingGroup.reduce(
+  (prev, curr) => ({ ...prev, [curr]: defaultVotingEntry }),
+  {} as VotingDict
+);
+
+export const extractVotes = (row: VotingRow | undefined): VotingDict => {
   const voting = {} as VotingDict;
+
+  if (!row) {
+    return defaultVotes;
+  }
 
   const [, , ...entries] = row;
 

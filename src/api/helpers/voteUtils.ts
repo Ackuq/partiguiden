@@ -3,8 +3,9 @@ import {
   ProcessedDocument,
   VotingDict,
   VotingEntry,
-  votingGroup,
+  VotingGroup,
   VotingResult,
+  votingGroup,
 } from '../../types/voting';
 
 interface ReferencesResponse {

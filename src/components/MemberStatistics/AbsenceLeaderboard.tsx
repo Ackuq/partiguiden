@@ -36,7 +36,7 @@ interface MemberListEntryProps {
 
 const MemberListEntry: React.FC<MemberListEntryProps> = ({ member, percentageColor }) => {
   return (
-    <Link href={ROUTES.MEMBER} as={ROUTES.getMemberHref(member.id)} passHref>
+    <Link href={ROUTES.MEMBER} as={ROUTES.getMemberHref(member.id)} passHref legacyBehavior>
       <Stack
         component="a"
         direction="row"

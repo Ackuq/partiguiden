@@ -31,7 +31,7 @@ const MembersTabs: React.FC<Props> = ({ value }) => (
       scrollButtons="auto"
     >
       {tabs.map((tab, index) => (
-        <Link key={tab.route} href={tab.route} passHref>
+        <Link key={tab.route} href={tab.route} passHref legacyBehavior>
           <Tab value={index} label={tab.label} />
         </Link>
       ))}

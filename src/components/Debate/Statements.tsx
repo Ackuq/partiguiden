@@ -87,7 +87,7 @@ const SpeakerImage: React.FC<{ speaker: MemberResponse; primary: boolean }> = ({
   speaker,
   primary,
 }) => (
-  <Link href={ROUTES.MEMBER} as={ROUTES.getMemberHref(speaker.id)} passHref>
+  <Link href={ROUTES.MEMBER} as={ROUTES.getMemberHref(speaker.id)} passHref legacyBehavior>
     <Box
       component="a"
       sx={{
@@ -136,7 +136,12 @@ const Statements: React.FC<StatementProps> = ({ debate }) => {
           <Box display="flex" key={statement.number}>
             {!primary && <SpeakerImage speaker={speaker} primary={primary} />}
             <ChatBubble primary={primary}>
-              <Link href={ROUTES.MEMBER} as={ROUTES.getMemberHref(speaker.id)} passHref>
+              <Link
+                href={ROUTES.MEMBER}
+                as={ROUTES.getMemberHref(speaker.id)}
+                passHref
+                legacyBehavior
+              >
                 <Typography
                   component="a"
                   variant="button"

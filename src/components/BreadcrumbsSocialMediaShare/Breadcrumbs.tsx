@@ -22,19 +22,12 @@ interface Props {
 
 const CustomBreadcrumbs: React.FC<Props> = ({ links }) => {
   return (
-    <BreadcrumbsWithMargin
-      aria-label="Breadcrumbs"
-
-      /* classes={{
-        li: classes.chip,
-        separator: classes.chip,
-      }} */
-    >
-      <Link href={INDEX} passHref>
+    <BreadcrumbsWithMargin aria-label="Breadcrumbs">
+      <Link href={INDEX} passHref legacyBehavior>
         <Chip component="a" label="Hem" variant="outlined" icon={<HomeIcon fontSize="small" />} />
       </Link>
       {links.map((link) => (
-        <Link href={link.href} as={link.as} key={link.label} passHref>
+        <Link href={link.href} as={link.as} key={link.label} passHref legacyBehavior>
           <Chip component="a" label={link.label} variant="outlined" />
         </Link>
       ))}

@@ -35,7 +35,12 @@ const Vote: React.FC<Props> = ({ vote }) => {
   const authority = lookupAuthority(vote.authority);
   return (
     <Card elevation={1} style={{ flex: 1 }}>
-      <Link href={ROUTES.VOTE} as={ROUTES.getVoteHref(vote.documentId, vote.proposition)} passHref>
+      <Link
+        href={ROUTES.VOTE}
+        as={ROUTES.getVoteHref(vote.documentId, vote.proposition)}
+        passHref
+        legacyBehavior
+      >
         <ButtonBase style={{ display: 'block' }} component="a">
           {authority && <AuthorityCardHeader authority={authority} />}
 

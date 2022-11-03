@@ -65,7 +65,7 @@ interface Props {
 }
 
 const Member: React.FC<Props> = ({ member }) => (
-  <Link href={ROUTES.MEMBER} as={ROUTES.getMemberHref(member.id)} passHref>
+  <Link href={ROUTES.MEMBER} as={ROUTES.getMemberHref(member.id)} passHref legacyBehavior>
     <MemberCard>
       <InfoContainer>
         <InfoTitle>Valkrets</InfoTitle>

@@ -118,7 +118,12 @@ const Subjects: React.FC<Props> = ({ subjects }) => {
       >
         {shownSubjects.map((subject) => (
           <Item item xs={12} md={6} key={subject.id}>
-            <Link href={ROUTES.STANDPOINT} as={ROUTES.getStandpointHref(subject.id)} passHref>
+            <Link
+              href={ROUTES.STANDPOINT}
+              as={ROUTES.getStandpointHref(subject.id)}
+              passHref
+              legacyBehavior
+            >
               <Button>
                 <Transition>{subject.name}</Transition>
               </Button>

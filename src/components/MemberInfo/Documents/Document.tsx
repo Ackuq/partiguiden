@@ -18,7 +18,7 @@ const Document: React.FC<Props> = ({ document }) => {
   const authority = !!document.authority && lookupAuthority(document.authority);
   return (
     <Card elevation={4}>
-      <Link href={ROUTES.DOCUMENT} as={ROUTES.getDocumentHref(document.id)} passHref>
+      <Link href={ROUTES.DOCUMENT} as={ROUTES.getDocumentHref(document.id)} passHref legacyBehavior>
         <ButtonBase style={{ display: 'block' }} component="a">
           {authority && <AuthorityCardHeader authority={authority} />}
           <CardContent>

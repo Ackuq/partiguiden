@@ -68,7 +68,7 @@ const Debate: React.FC<Props> = ({ debate }) => {
   const authority = lookupAuthority(debate.authority);
   return (
     <CardContainer>
-      <Link href={ROUTES.DEBATE} as={ROUTES.getDebateHref(debate.id)} passHref>
+      <Link href={ROUTES.DEBATE} as={ROUTES.getDebateHref(debate.id)} passHref legacyBehavior>
         <CardButton LinkComponent="a">
           {!!authority && <AuthorityCardHeader authority={authority} />}
 

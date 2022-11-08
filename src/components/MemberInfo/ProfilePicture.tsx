@@ -43,10 +43,6 @@ const ProfilePicture: React.FC<Props> = ({ member }) => {
                 height={64}
                 src={PARTY_LOGOS_LOW_RES[member.party.toUpperCase() as PartyAbbreviation]}
                 alt="Partisymbol"
-                style={{
-                  maxWidth: '100%',
-                  height: 'auto',
-                }}
               />
             </Box>
           )}

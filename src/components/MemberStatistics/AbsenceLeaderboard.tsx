@@ -1,3 +1,5 @@
+import React from 'react';
+
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -64,10 +66,6 @@ const MemberListEntry: React.FC<MemberListEntryProps> = ({ member, percentageCol
                 PARTY_LOGOS_LOW_RES[member.party.toUpperCase() as keyof typeof PARTY_LOGOS_LOW_RES]
               }
               alt="Partisymbol"
-              style={{
-                maxWidth: '100%',
-                height: 'auto',
-              }}
             />
           )}
         </ImageContainer>
@@ -118,10 +116,10 @@ const AbsenceLeaderboardContent: React.FC<AbsenceLeaderboardContentProps> = ({
     />
 
     {memberList.map((member) => (
-      <>
+      <React.Fragment key={member.id}>
         <Divider />
-        <MemberListEntry key={member.id} member={member} percentageColor={percentageColor} />
-      </>
+        <MemberListEntry member={member} percentageColor={percentageColor} />
+      </React.Fragment>
     ))}
   </Card>
 );

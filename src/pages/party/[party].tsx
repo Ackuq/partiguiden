@@ -2,6 +2,7 @@ import { GetStaticPaths, GetStaticProps, InferGetStaticPropsType, NextPage } fro
 import Head from 'next/head';
 import Image from 'next/image';
 
+import { styled } from '@mui/material/styles';
 import Container from '@mui/material/Container';
 
 import { PARTY_LOGOS } from '../../assets/logos';
@@ -17,17 +18,37 @@ const SocialMediaShare = dynamic(
   () => import('../../components/BreadcrumbsSocialMediaShare/SocialMediaShare')
 );
 
+const IconContainer = styled('div')(
+  ({ theme }) => `
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  height: 75px;
+  width: 75px;
+  ${theme.breakpoints.up('sm')} {
+    width: 90px;
+    height: 90px;
+  }
+  ${theme.breakpoints.up('md')} {
+    width: 100px;
+    height: 100px;
+  }
+  ${theme.breakpoints.up('lg')} {
+    width: 115px;
+    height: 115px;
+  }
+`
+);
+
 const PartyPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({ party }) => {
   const PartyLogo: React.FC = () => (
-    <Image
-      src={PARTY_LOGOS[party.abbrev.toUpperCase() as PartyData['abbrev']]}
-      quality={50}
-      alt="Party logo"
-      style={{
-        maxWidth: '100%',
-        height: 'auto',
-      }}
-    />
+    <IconContainer>
+      <Image
+        src={PARTY_LOGOS[party.abbrev.toUpperCase() as PartyData['abbrev']]}
+        fill
+        alt="Party logo"
+      />
+    </IconContainer>
   );
 
   return (

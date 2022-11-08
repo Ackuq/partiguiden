@@ -32,7 +32,12 @@ const ProcessedDocuments: React.FC<Props> = ({ processedDocuments }) => {
         <div style={{ marginTop: '1.25rem' }}>
           {processedDocuments.map((document, index) => (
             <React.Fragment key={document.id}>
-              <Link href={ROUTES.DOCUMENT} as={ROUTES.getDocumentHref(document.id)} passHref>
+              <Link
+                href={ROUTES.DOCUMENT}
+                as={ROUTES.getDocumentHref(document.id)}
+                passHref
+                legacyBehavior
+              >
                 <Typography
                   component="a"
                   variant="body1"

@@ -27,17 +27,15 @@ interface ListItemProps {
 }
 
 const CustomListItem: React.FC<ListItemProps> = ({ title, href, linkAs, Icon }) => (
-  <Link href={href} as={linkAs} passHref>
-    <a style={{ color: 'inherit', textDecoration: 'none' }}>
-      <ListItem button key={href}>
-        {Icon && (
-          <ListItemIcon>
-            <Icon />
-          </ListItemIcon>
-        )}
-        <ListItemText primary={title} />
-      </ListItem>
-    </a>
+  <Link href={href} as={linkAs} passHref style={{ color: 'inherit', textDecoration: 'none' }}>
+    <ListItem button key={href}>
+      {Icon && (
+        <ListItemIcon>
+          <Icon />
+        </ListItemIcon>
+      )}
+      <ListItemText primary={title} />
+    </ListItem>
   </Link>
 );
 

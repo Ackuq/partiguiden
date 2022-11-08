@@ -1,3 +1,5 @@
+import React from 'react';
+
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -36,7 +38,7 @@ interface MemberListEntryProps {
 
 const MemberListEntry: React.FC<MemberListEntryProps> = ({ member, percentageColor }) => {
   return (
-    <Link href={ROUTES.MEMBER} as={ROUTES.getMemberHref(member.id)} passHref>
+    <Link href={ROUTES.MEMBER} as={ROUTES.getMemberHref(member.id)} passHref legacyBehavior>
       <Stack
         component="a"
         direction="row"
@@ -114,10 +116,10 @@ const AbsenceLeaderboardContent: React.FC<AbsenceLeaderboardContentProps> = ({
     />
 
     {memberList.map((member) => (
-      <>
+      <React.Fragment key={member.id}>
         <Divider />
-        <MemberListEntry key={member.id} member={member} percentageColor={percentageColor} />
-      </>
+        <MemberListEntry member={member} percentageColor={percentageColor} />
+      </React.Fragment>
     ))}
   </Card>
 );

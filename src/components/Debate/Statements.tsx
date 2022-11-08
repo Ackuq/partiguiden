@@ -87,7 +87,7 @@ const SpeakerImage: React.FC<{ speaker: MemberResponse; primary: boolean }> = ({
   speaker,
   primary,
 }) => (
-  <Link href={ROUTES.MEMBER} as={ROUTES.getMemberHref(speaker.id)} passHref>
+  <Link href={ROUTES.MEMBER} as={ROUTES.getMemberHref(speaker.id)} passHref legacyBehavior>
     <Box
       component="a"
       sx={{
@@ -102,12 +102,14 @@ const SpeakerImage: React.FC<{ speaker: MemberResponse; primary: boolean }> = ({
           {speaker.party !== '-' && (
             <Box
               sx={{
+                position: 'relative',
                 width: '37.5%',
                 height: '37.5%',
               }}
             >
               <Image
                 src={PARTY_LOGOS_LOW_RES[speaker.party.toUpperCase() as PartyAbbreviation]}
+                fill
                 alt="Partisymbol"
               />
             </Box>
@@ -132,7 +134,12 @@ const Statements: React.FC<StatementProps> = ({ debate }) => {
           <Box display="flex" key={statement.number}>
             {!primary && <SpeakerImage speaker={speaker} primary={primary} />}
             <ChatBubble primary={primary}>
-              <Link href={ROUTES.MEMBER} as={ROUTES.getMemberHref(speaker.id)} passHref>
+              <Link
+                href={ROUTES.MEMBER}
+                as={ROUTES.getMemberHref(speaker.id)}
+                passHref
+                legacyBehavior
+              >
                 <Typography
                   component="a"
                   variant="button"

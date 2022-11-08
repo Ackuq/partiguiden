@@ -1,4 +1,4 @@
-import { GetServerSideProps, InferGetStaticPropsType, NextPage } from 'next';
+import { GetServerSideProps, NextPage } from 'next';
 import Head from 'next/head';
 
 import Container from '@mui/material/Container';
@@ -14,9 +14,7 @@ const SocialMediaShare = dynamic(
 );
 const LoadCircle = dynamic(() => import('../../components/LoadCircle'));
 
-const DocumentContainer: NextPage<InferGetStaticPropsType<typeof getServerSideProps>> = ({
-  id,
-}) => {
+const DocumentContainer: NextPage<{ id: string }> = ({ id }) => {
   const document = useDocument(id);
 
   return (

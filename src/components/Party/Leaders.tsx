@@ -81,22 +81,25 @@ const stringAvatar = (name: string) => {
 const Leader: React.FC<LeaderType> = ({ id, role, firstName, lastName, pictureUrl }) => {
   return (
     <Grid item md={3} sm={4} xs={6}>
-      <NextLink passHref href={ROUTES.MEMBER} as={ROUTES.getMemberHref(id)}>
-        <a style={{ textDecoration: 'none' }}>
-          <LeaderCard elevation={0}>
-            <LeaderAvatar
-              {...stringAvatar(`${firstName} ${lastName}`)}
-              src={pictureUrl}
-              alt={`${firstName} ${lastName}`}
-            />
-            <div>
-              <Typography variant="subtitle2" component="p">
-                {firstName} {lastName}
-              </Typography>
-              <Typography>{role}</Typography>
-            </div>
-          </LeaderCard>
-        </a>
+      <NextLink
+        passHref
+        href={ROUTES.MEMBER}
+        as={ROUTES.getMemberHref(id)}
+        style={{ textDecoration: 'none' }}
+      >
+        <LeaderCard elevation={0}>
+          <LeaderAvatar
+            {...stringAvatar(`${firstName} ${lastName}`)}
+            src={pictureUrl}
+            alt={`${firstName} ${lastName}`}
+          />
+          <div>
+            <Typography variant="subtitle2" component="p">
+              {firstName} {lastName}
+            </Typography>
+            <Typography>{role}</Typography>
+          </div>
+        </LeaderCard>
       </NextLink>
     </Grid>
   );

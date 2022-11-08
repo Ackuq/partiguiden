@@ -1,4 +1,12 @@
+import { Roboto } from '@next/font/google';
 import { Theme, createTheme, responsiveFontSizes } from '@mui/material/styles';
+
+export const roboto = Roboto({
+  weight: ['300', '400', '500', '700'],
+  subsets: ['latin'],
+  display: 'swap',
+  fallback: ['Helvetica', 'Arial', 'sans-serif'],
+});
 
 const getTheme = (darkMode: boolean): Theme =>
   responsiveFontSizes(
@@ -39,6 +47,7 @@ const getTheme = (darkMode: boolean): Theme =>
         h6: {
           fontSize: '1.25rem',
         },
+        fontFamily: roboto.style.fontFamily,
       },
       components: {
         MuiButtonBase: {

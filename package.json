@@ -24,7 +24,7 @@
     "@emotion/server": "^11.10.0",
     "@emotion/styled": "^11.10.5",
     "@mui/icons-material": "^5.11.0",
-    "@mui/material": "^5.10.17",
+    "@mui/material": "^5.11.0",
     "@next/bundle-analyzer": "^13.0.7",
     "@next/font": "^13.0.7",
     "@sentry/nextjs": "^7.26.0",

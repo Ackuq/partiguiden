@@ -7,7 +7,7 @@ import FilterSearch from '../Filter/FilterSearch';
 import { PartyAbbreviation } from '../../utils/parties';
 import allParties from '../../utils/getParties';
 
-type PartyEntry = typeof allParties[number];
+type PartyEntry = (typeof allParties)[number];
 
 interface FilterState {
   search: string;

@@ -7,7 +7,7 @@ export type VotingEntry = Record<VoteDescription, string>;
 
 export const votingGroup = [...partyAbbreviations, 'noParty', 'total'] as const;
 
-export type VotingGroup = typeof votingGroup[number];
+export type VotingGroup = (typeof votingGroup)[number];
 
 export type VotingDict = Record<VotingGroup, VotingEntry>;
 

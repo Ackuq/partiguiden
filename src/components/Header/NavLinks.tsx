@@ -41,10 +41,13 @@ const DropDown: React.FC<DropDownProps> = ({ title, href, subPages, router }) =>
       <Menu keepMounted anchorEl={anchor} open={!!anchor} onClose={handleClose}>
         {subPages.map((page) => (
           <div key={page.id}>
-            <Link href={href} as={`${urlPrefix}${page.id}`} passHref>
-              <a style={{ color: 'inherit', textDecoration: 'none' }}>
-                <MenuItem>{page.title}</MenuItem>
-              </a>
+            <Link
+              href={href}
+              as={`${urlPrefix}${page.id}`}
+              passHref
+              style={{ color: 'inherit', textDecoration: 'none' }}
+            >
+              <MenuItem>{page.title}</MenuItem>
             </Link>
           </div>
         ))}
@@ -77,7 +80,7 @@ const NavLinks: React.FC = () => {
         subPages ? (
           <DropDown key={href} title={title} href={href} subPages={subPages} router={router} />
         ) : (
-          <Link key={href} href={href} passHref>
+          <Link key={href} href={href} passHref legacyBehavior>
             <Tab label={title} />
           </Link>
         )

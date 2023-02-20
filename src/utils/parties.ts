@@ -11,9 +11,9 @@ export const parties = [
 
 export const partyAbbreviations = parties.map((party) => party.letter);
 
-export type PartyInfo = typeof parties[number];
-export type Party = typeof parties[number]['name'];
-export type PartyAbbreviation = typeof partyAbbreviations[number];
+export type PartyInfo = (typeof parties)[number];
+export type Party = (typeof parties)[number]['name'];
+export type PartyAbbreviation = (typeof partyAbbreviations)[number];
 
 export const partyNameMap: Record<Lowercase<PartyAbbreviation>, Party> = {
   s: 'Socialdemokraterna',

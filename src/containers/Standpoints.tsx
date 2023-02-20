@@ -49,6 +49,7 @@ const Subject: React.FC<Props> = ({ standpoints, relatedSubjects }) => (
               href={STANDPOINT}
               as={getStandpointHref(relatedSubject.id)}
               passHref
+              legacyBehavior
             >
               <MUILink variant="body1" display="block" key={relatedSubject.id}>
                 {relatedSubject.name}

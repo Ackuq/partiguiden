@@ -48,7 +48,7 @@ const CookieBanner: React.FC = () => {
                 marginRight: '3px',
               }}
             >
-              <Link href={COOKIE_POLICY} passHref>
+              <Link href={COOKIE_POLICY} passHref legacyBehavior>
                 <Typography component="a" variant="button" color="inherit">
                   Läs mer
                 </Typography>

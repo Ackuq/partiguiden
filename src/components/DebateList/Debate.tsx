@@ -46,8 +46,8 @@ const SenderImage: React.FC<SenderImageProps> = ({ sender }) => {
     <ImageContainer url={member.pictureUrl}>
       {member.party !== '-' && (
         <Image
-          width={25}
-          height={25}
+          width={30}
+          height={30}
           src={PARTY_LOGOS_LOW_RES[member.party.toUpperCase() as PartyAbbreviation]}
           alt="Partisymbol"
         />
@@ -64,7 +64,7 @@ const Debate: React.FC<Props> = ({ debate }) => {
   const authority = lookupAuthority(debate.authority);
   return (
     <CardContainer>
-      <Link href={ROUTES.DEBATE} as={ROUTES.getDebateHref(debate.id)} passHref>
+      <Link href={ROUTES.DEBATE} as={ROUTES.getDebateHref(debate.id)} passHref legacyBehavior>
         <CardButton LinkComponent="a">
           {!!authority && <AuthorityCardHeader authority={authority} />}
 

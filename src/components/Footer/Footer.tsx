@@ -31,18 +31,11 @@ const Footer: React.FC = () => (
       >
         © Axel Pettersson 2022&nbsp;
         <a href={linkedIn} target="_blank" rel="noopener noreferrer">
-          <Image src={LinkedInLogo} layout="fixed" height={28} width={28} alt="LinkedIn logo" />
+          <Image src={LinkedInLogo} height={28} width={28} alt="LinkedIn logo" />
         </a>
         &nbsp;
         <a href={githubProfile} target="_blank" rel="noopener noreferrer">
-          <Image
-            src={GitHubLogo}
-            layout="fixed"
-            height={28}
-            width={28}
-            alt="GitHub logo"
-            style={{ backgroundColor: '#fff', borderRadius: '50%' }}
-          />
+          <Image src={GitHubLogo} height={28} width={28} alt="GitHub logo" />
         </a>
       </Typography>
       <Link align="center" color="inherit" variant="subtitle1" href="mailto:hello@partiguiden.se">

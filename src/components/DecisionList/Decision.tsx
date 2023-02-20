@@ -99,11 +99,20 @@ const Decision: React.FC<Props> = ({ decision }) => {
                   <div dangerouslySetInnerHTML={{ __html: decision.paragraph }} />
                 )}
               </div>
-              <Link href={ROUTES.DOCUMENT} as={ROUTES.getDocumentHref(decision.id)} passHref>
+              <Link
+                href={ROUTES.DOCUMENT}
+                as={ROUTES.getDocumentHref(decision.id)}
+                passHref
+                legacyBehavior
+              >
                 <Button component="a">Läs mer om betänkandet</Button>
               </Link>
               {decision.votesExists && (
-                <Link href={`${ROUTES.VOTES}?search=${decision.voteSearchTerm}`} passHref>
+                <Link
+                  href={`${ROUTES.VOTES}?search=${decision.voteSearchTerm}`}
+                  passHref
+                  legacyBehavior
+                >
                   <Button component="a">Läs mer om voteringarna</Button>
                 </Link>
               )}

@@ -19,10 +19,8 @@ const partyFactory = (partyAbbrev: string) =>
     return (
       <Image
         src={PARTY_LOGOS_LOW_RES[partyAbbrev.toUpperCase() as PartyAbbreviation]}
-        layout="fixed"
-        width="30%"
-        height="30%"
-        quality={100}
+        width={30}
+        height={30}
         alt={`${partyAbbrev} logo`}
       />
     );

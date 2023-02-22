@@ -1,5 +1,3 @@
-import dynamic from 'next/dynamic';
-
 import { styled } from '@mui/material/styles';
 
 import { Box } from '@mui/system';
@@ -12,8 +10,7 @@ import LoadCircle from '../components/LoadCircle';
 import SectionDivider from '../components/VoteInfo/SectionDivider';
 
 import { useDebate } from '../hooks/parliamentHooks';
-
-const Statements = dynamic(() => import('../components/Debate/Statements'));
+import Statements from '../components/Debate/Statements';
 
 const IFrame = styled('iframe')(
   ({ theme }) => `

@@ -1,10 +1,8 @@
 import { PartyData } from '../types/party';
 import { ResponsiveAd } from '../components/Ad';
 
-import dynamic from 'next/dynamic';
-
-const InformationCard = dynamic(() => import('../components/Party/InformationCard'));
-const Leaders = dynamic(() => import('../components/Party/Leaders'));
+import InformationCard from '../components/Party/InformationCard';
+import Leaders from '../components/Party/Leaders';
 
 interface Props {
   party: PartyData;

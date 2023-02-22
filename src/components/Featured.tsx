@@ -40,7 +40,7 @@ const Featured: React.FC<Props> = ({ popular }) => {
     <Grid container spacing={3}>
       {popular.map((subject) => (
         <Grid key={subject.id} item xs={12} md={6}>
-          <Link href={STANDPOINT} as={getStandpointHref(subject.id)} passHref>
+          <Link href={STANDPOINT} as={getStandpointHref(subject.id)} passHref legacyBehavior>
             <FeaturedButton>
               <ButtonText variant="button">{subject.name}</ButtonText>
             </FeaturedButton>

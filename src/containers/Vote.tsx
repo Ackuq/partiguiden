@@ -3,14 +3,12 @@ import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 
 import { Vote as VoteType } from '../types/voting';
+import Appendix from '../components/VoteInfo/Appendix';
+import Decision from '../components/VoteInfo/Decision';
+import ProcessedDocuments from '../components/VoteInfo/ProcessedDocuments';
 import SectionDivider from '../components/VoteInfo/SectionDivider';
-import dynamic from 'next/dynamic';
-
-const ProcessedDocuments = dynamic(() => import('../components/VoteInfo/ProcessedDocuments'));
-const Appendix = dynamic(() => import('../components/VoteInfo/Appendix'));
-const Decision = dynamic(() => import('../components/VoteInfo/Decision'));
-const VoteDistribution = dynamic(() => import('../components/VoteInfo/VoteDistribution'));
-const TotalVote = dynamic(() => import('../components/VoteInfo/TotalVote'));
+import TotalVote from '../components/VoteInfo/TotalVote';
+import VoteDistribution from '../components/VoteInfo/VoteDistribution';
 
 interface Props {
   vote: VoteType;

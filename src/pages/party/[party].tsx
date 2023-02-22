@@ -11,12 +11,8 @@ import { PartyData } from '../../types/party';
 import { partyController } from '../../api/controllers/parties';
 import PageTitle from '../../components/PageTitle';
 import Party from '../../containers/Party';
-import dynamic from 'next/dynamic';
+import SocialMediaShare from '../../components/BreadcrumbsSocialMediaShare/SocialMediaShare';
 import parties from '../../utils/getParties';
-
-const SocialMediaShare = dynamic(
-  () => import('../../components/BreadcrumbsSocialMediaShare/SocialMediaShare')
-);
 
 const IconContainer = styled('div')(
   ({ theme }) => `

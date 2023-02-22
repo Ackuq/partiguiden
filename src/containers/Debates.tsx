@@ -1,12 +1,9 @@
-import dynamic from 'next/dynamic';
-
 import { useRouter } from 'next/router';
 import ContainerList from '../components/ContainerList';
+import DebateListContainer from '../components/DebateList/DebateList';
+import Filter from '../components/ParlimentFilter/Filter';
 
 import { queryAttrToArray, queryAttrToNumber, queryAttrToString } from '../utils';
-
-const DebateListContainer = dynamic(() => import('../components/DebateList/DebateList'));
-const Filter = dynamic(() => import('../components/ParlimentFilter/Filter'));
 
 const Debates: React.FC = () => {
   const router = useRouter();

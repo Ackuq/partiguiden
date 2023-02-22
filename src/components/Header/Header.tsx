@@ -19,7 +19,8 @@ import NavLinks from './NavLinks';
 import { INDEX } from '../../lib/routes';
 import { addOpacity } from '../../utils/colorUtils';
 
-const BannerText = styled('strong')`
+const BannerText = styled('a')`
+  font-weight: bold;
   text-decoration: none;
   font-size: 2rem;
   padding-left: 0.25rem;
@@ -36,7 +37,7 @@ const Branding: React.FC<Props> = ({ toggleDarkMode }) => {
     <Grid container zIndex={1200} justifyContent="space-between">
       <Grid item xs={3} textAlign="center">
         <ButtonBase>
-          <Link href={INDEX} passHref>
+          <Link href={INDEX} passHref legacyBehavior>
             <BannerText>Partiguiden</BannerText>
           </Link>
         </ButtonBase>

@@ -8,9 +8,7 @@ import { SubjectList } from '../types/subjects';
 
 import * as ROUTES from '../lib/routes';
 import { ResponsiveAd } from '../components/Ad';
-import dynamic from 'next/dynamic';
-
-const Search = dynamic(() => import('../components/Search'));
+import Search from '../components/Search';
 
 const SearchContainer = styled('div')`
   width: 100%;

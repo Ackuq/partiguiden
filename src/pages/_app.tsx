@@ -20,8 +20,8 @@ import { ADSENSE_CLIENT_ID } from '../lib/adsense';
 import dynamic from 'next/dynamic';
 import getTheme from '../lib/theme';
 
-const ToTopButton = dynamic(() => import('../components/ToTopButton'));
-const Footer = dynamic(() => import('../components/Footer'));
+const ToTopButton = dynamic(() => import('../components/ToTopButton'), { ssr: false });
+const Footer = dynamic(() => import('../components/Footer'), { ssr: false });
 const CookieBanner = dynamic(() => import('../components/CookieBanner'), { ssr: false });
 
 const browserCache = createCache({ key: 'css' });

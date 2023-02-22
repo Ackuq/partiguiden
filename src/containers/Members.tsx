@@ -5,10 +5,9 @@ import Grid from '@mui/material/Grid';
 
 import { MemberListEntry } from '../types/member';
 import { PartyAbbreviation } from '../utils/parties';
-import dynamic from 'next/dynamic';
+import MemberList from '../components/MemberList/MemberList';
+import MembersFilter from '../components/MemberList/FilterMembers';
 
-const MemberList = dynamic(() => import('../components/MemberList/MemberList'));
-const MembersFilter = dynamic(() => import('../components/MemberList/FilterMembers'));
 interface Props {
   members: MemberListEntry[];
 }

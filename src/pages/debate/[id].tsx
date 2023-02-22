@@ -1,14 +1,11 @@
 import * as ROUTES from '../../lib/routes';
 import { GetServerSideProps, NextPage } from 'next';
+import BreadcrumbsSocialMediaShare from '../../components/BreadcrumbsSocialMediaShare/BreadcrumbsSocialMediaShare';
 import Container from '@mui/material/Container';
 import Debate from '../../containers/Debate';
 import Head from 'next/head';
 import PageTitle from '../../components/PageTitle';
-import dynamic from 'next/dynamic';
 
-const BreadcrumbsSocialMediaShare = dynamic(
-  () => import('../../components/BreadcrumbsSocialMediaShare/BreadcrumbsSocialMediaShare')
-);
 interface Props {
   id: string;
 }

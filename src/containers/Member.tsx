@@ -1,5 +1,5 @@
+import BreadcrumbsSocialMediaShare from '../components/BreadcrumbsSocialMediaShare/BreadcrumbsSocialMediaShare';
 import Container from '@mui/material/Container';
-import dynamic from 'next/dynamic';
 
 import Information from '../components/MemberInfo/Information';
 import ProfilePicture from '../components/MemberInfo/ProfilePicture';
@@ -7,10 +7,6 @@ import ProfilePicture from '../components/MemberInfo/ProfilePicture';
 import * as ROUTES from '../lib/routes';
 
 import { MemberDetailedResponse } from '../types/member';
-
-const BreadcrumbsSocialMediaShare = dynamic(
-  () => import('../components/BreadcrumbsSocialMediaShare/BreadcrumbsSocialMediaShare')
-);
 
 interface Props {
   member: MemberDetailedResponse;

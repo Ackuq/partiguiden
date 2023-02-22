@@ -10,9 +10,7 @@ import { ResponsiveAd } from '../components/Ad';
 import { STANDPOINT, getStandpointHref } from '../lib/routes';
 import { partiesMap } from '../utils/getParties';
 import Link from 'next/link';
-import dynamic from 'next/dynamic';
-
-const PartyStandpoints = dynamic(() => import('../components/PartyStandpoints/PartyStandpoints'));
+import PartyStandpoints from '../components/PartyStandpoints/PartyStandpoints';
 
 const ContentDivider = styled(Divider)`
   margin-top: 5rem;

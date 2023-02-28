@@ -44,7 +44,7 @@
   "devDependencies": {
     "@types/gtag.js": "^0.0.12",
     "@types/jsdom": "^21.1.0",
-    "@types/node": "^18.13.0",
+    "@types/node": "^18.14.2",
     "@types/react": "^18.0.28",
     "@types/turndown": "^5.0.1",
     "@typescript-eslint/eslint-plugin": "^5.54.0",

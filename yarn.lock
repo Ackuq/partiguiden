@@ -337,10 +337,10 @@
   dependencies:
     glob "7.1.7"
 
-"@next/font@^13.2.2":
-  version "13.2.2"
-  resolved "https://registry.yarnpkg.com/@next/font/-/font-13.2.2.tgz#7ef6e67ead1a4e337e89394194d95eb77c8e95b4"
-  integrity sha512-ZGwJxAfAYRTO+GTrlFqXFnh1vbcXvtf+kMRE23MjyIJpQQA3qFXnMSitXJkfzzyMAFYo1cRuKeWJbIqqFVYRXQ==
+"@next/font@^13.2.3":
+  version "13.2.3"
+  resolved "https://registry.yarnpkg.com/@next/font/-/font-13.2.3.tgz#96d8a1b431425b47e01f3620118d570e2148e312"
+  integrity sha512-7EHzk0f7FVYICLUZTpyPk93IfcTUao++Xt1Sgb+Zk5dVOCYHabqLtlF5ywSoXIqyFlo0qlshEBxsrzHAGTWkDw==
 
 "@next/swc-android-arm-eabi@13.2.3":
   version "13.2.3"

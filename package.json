@@ -38,7 +38,7 @@
     "react-share": "^4.4.1",
     "recharts": "2.4.3",
     "strip-json-comments": "^5.0.0",
-    "swr": "^2.0.4",
+    "swr": "^2.1.0",
     "typed.js": "^2.0.12"
   },
   "devDependencies": {

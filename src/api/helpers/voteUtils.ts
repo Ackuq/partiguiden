@@ -1,4 +1,4 @@
-import { DocumentReference, VotingRow } from '../../types/parliament';
+import { DocumentReference, NewVotingRow, OldVotingRow } from '../../types/parliament';
 import {
   ProcessedDocument,
   VotingDict,
@@ -89,10 +89,10 @@ const votingGroupRemap = (partyName: string): VotingGroup => {
 };
 
 const defaultVotingEntry: VotingEntry = {
-  yes: '0',
-  no: '0',
-  abscent: '0',
-  refrain: '0',
+  yes: 0,
+  no: 0,
+  abscent: 0,
+  refrain: 0,
 };
 
 const defaultVotes: VotingDict = votingGroup.reduce(
@@ -100,14 +100,39 @@ const defaultVotes: VotingDict = votingGroup.reduce(
   {} as VotingDict
 );
 
-export const extractVotes = (row: VotingRow | undefined): VotingDict => {
+export const extractVotesNew = (row: NewVotingRow[]): VotingDict => {
   const voting = {} as VotingDict;
 
+  const total: VotingEntry = defaultVotingEntry;
+
+  row.forEach(({ th, td }) => {
+    const votingGroupName = votingGroupRemap(th);
+    const partyVotes = {
+      yes: +td[0],
+      no: +td[1],
+      refrain: +td[2],
+      abscent: +td[3],
+    };
+    total['yes'] = total['yes'] + partyVotes['yes'];
+    total['no'] = total['no'] + partyVotes['no'];
+    total['refrain'] = total['refrain'] + partyVotes['refrain'];
+    total['abscent'] = total['abscent'] + partyVotes['abscent'];
+    voting[votingGroupName] = partyVotes;
+  });
+  voting['total'] = total;
+  return voting;
+};
+
+export const extractVotes = (row: NewVotingRow[] | OldVotingRow | undefined): VotingDict => {
   if (!row) {
     return defaultVotes;
   }
-
-  const [, , ...entries] = row;
+  // New only contains `td`
+  if (row.every((col) => Object.hasOwn(col, 'td'))) {
+    return extractVotesNew(<NewVotingRow[]>row);
+  }
+  const voting = {} as VotingDict;
+  const [, , ...entries] = <OldVotingRow>row;
 
   entries.forEach((entry) => {
     const { td } = entry;
@@ -116,10 +141,10 @@ export const extractVotes = (row: VotingRow | undefined): VotingDict => {
       const votingGroupName = votingGroupRemap(td[0]);
 
       const partyVotes = {
-        yes: td[1],
-        no: td[2],
-        refrain: td[3],
-        abscent: td[4],
+        yes: +td[1],
+        no: +td[2],
+        refrain: +td[3],
+        abscent: +td[4],
       };
       voting[votingGroupName] = partyVotes;
     }
@@ -137,8 +162,8 @@ export const getMaxVote = (partyVotes: VotingDict): VotingResult => {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const { noParty, total, ...parties } = partyVotes;
 
-  const yesTotal = parseInt(total.yes, 10);
-  const noTotal = parseInt(total.no, 10);
+  const yesTotal = total.yes;
+  const noTotal = total.no;
 
   /* Get the winner */
   if (yesTotal !== noTotal) {
@@ -148,9 +173,7 @@ export const getMaxVote = (partyVotes: VotingDict): VotingResult => {
   /* Decide on what parties voted for */
   // eslint-disable-next-line no-restricted-syntax
   for (const [party, votes] of Object.entries(parties)) {
-    const vote = decisions.reduce((a, b) =>
-      parseInt(votes[a], 10) > parseInt(votes[b], 10) ? a : b
-    );
+    const vote = decisions.reduce((a, b) => (votes[a] > votes[b] ? a : b));
 
     if (vote === 'yes' || vote === 'no') {
       result[vote].push(party);

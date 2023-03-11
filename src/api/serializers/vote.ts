@@ -1,6 +1,20 @@
+import {
+  NewVotingRow,
+  NewVotingTable,
+  OldVotingRow,
+  OldVotingTable,
+  VoteDocumentStatus,
+  VotingTable,
+} from '../../types/parliament';
 import { Vote, VoteResultsResponse } from '../../types/voting';
-import { VoteDocumentStatus } from '../../types/parliament';
 import { createReferences, extractVotes, getMaxVote } from '../helpers/voteUtils';
+
+export const getVotingRow = (votingTable: VotingTable): NewVotingRow[] | OldVotingRow => {
+  if ((<NewVotingTable>votingTable).tbody !== undefined) {
+    return (<NewVotingTable>votingTable).tbody.tr;
+  }
+  return (<OldVotingTable>votingTable).tr;
+};
 
 export const voteSerializer = (data: VoteDocumentStatus, propositionNr: number): Vote => {
   const { dokumentstatus } = data;
@@ -31,7 +45,8 @@ export const voteSerializer = (data: VoteDocumentStatus, propositionNr: number):
   });
 
   const { table } = proposition.votering_sammanfattning_html;
-  const tableRow = Array.isArray(table) ? table[table.length - 1].tr : table.tr;
+  const singleTable = Array.isArray(table) ? table[table.length - 1] : table;
+  const tableRow = getVotingRow(singleTable);
 
   return {
     title: title?.text ?? '',
@@ -54,7 +69,8 @@ export const voteResultSerializer = (
   const voteObject = Array.isArray(utskottsforslag) ? utskottsforslag[num - 1] : utskottsforslag;
 
   const { table } = voteObject.votering_sammanfattning_html;
-  const tableRow = Array.isArray(table) ? table[table.length - 1].tr : table.tr;
+  const singleTable = Array.isArray(table) ? table[table.length - 1] : table;
+  const tableRow = getVotingRow(singleTable);
 
   return {
     results: getMaxVote(extractVotes(tableRow)),

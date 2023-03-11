@@ -34,7 +34,12 @@ export interface Document {
 
 export type VotingRowEntry = { td: Array<string> };
 
-export type VotingRow = [
+export type NewVotingRow = {
+  th: string; // Party
+  td: string[]; // Votes: yes, no, refrain, absent
+};
+
+export type OldVotingRow = [
   {
     th: Array<string>;
   },
@@ -43,6 +48,18 @@ export type VotingRow = [
   },
   ...VotingRowEntry[]
 ];
+
+export type OldVotingTable = {
+  tr: OldVotingRow;
+};
+
+export type NewVotingTable = {
+  tbody: {
+    tr: NewVotingRow[];
+  };
+};
+
+export type VotingTable = OldVotingTable | NewVotingTable;
 
 export interface DocumentComitteeProposal {
   // Proposals made in the document
@@ -54,9 +71,7 @@ export interface DocumentComitteeProposal {
   motforslag_partier: string;
   votering_id: string;
   votering_sammanfattning_html: {
-    table: {
-      tr: VotingRow[];
-    };
+    table: VotingTable | VotingTable[];
   };
   votering_ledamot_url_xml: string;
   rm: string;

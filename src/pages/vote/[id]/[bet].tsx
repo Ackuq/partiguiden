@@ -17,12 +17,12 @@ const VoteContainer: NextPage<InferGetServerSidePropsType<typeof getServerSidePr
 }) => {
   const vote = useVote(id, proposition);
 
+  const title = `${id} ${proposition} | Votering | Partiguiden`;
+
   return (
     <>
       <Head>
-        <title>
-          {id} {proposition} | Votering | Partiguiden
-        </title>
+        <title>{title}</title>
         <meta name="description" content={`Hur har partiernat röstat i voteringen ${id}`} />
       </Head>
 

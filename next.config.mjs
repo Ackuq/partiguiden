@@ -6,6 +6,16 @@ const withBundleAnalyzer = bundleAnalyzer({ enabled: process.env.ANALYZE === 'tr
 let moduleExports = withBundleAnalyzer({
   productionBrowserSourceMaps: true,
   basePath: '',
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'data.riksdagen.se',
+        port: '',
+        pathname: '/filarkiv/bilder/**',
+      },
+    ],
+  },
 });
 
 /**

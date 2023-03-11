@@ -15,10 +15,10 @@ const animationDuration = 2;
 
 const parseData = (voting: VotingEntry) => ({
   name: 'Totalt',
-  Ja: parseInt(voting.yes, 10),
-  Nej: parseInt(voting.no, 10),
-  Avstående: parseInt(voting.refrain, 10),
-  Frånvarande: parseInt(voting.abscent, 10),
+  Ja: voting.yes,
+  Nej: voting.no,
+  Avstående: voting.refrain,
+  Frånvarande: voting.abscent,
 });
 
 interface Props {
@@ -29,8 +29,8 @@ const TotalVote: React.FC<Props> = ({ voting }) => {
   const theme = useTheme();
   const colors = useMemo(() => voteColor[theme.palette.mode], [theme.palette.mode]);
 
-  /* Special case if all is blank */
-  if (Object.values(voting).every((v) => v === '')) {
+  /* Special case if all is 0 */
+  if (Object.values(voting).every((v) => v === 0)) {
     return null;
   }
 

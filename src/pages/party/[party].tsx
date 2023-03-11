@@ -46,11 +46,11 @@ const PartyPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({ p
       />
     </IconContainer>
   );
-
+  const title = `${party.name} | Parti | Partiguiden`;
   return (
     <>
       <Head>
-        <title>{party.name} | Parti | Partiguiden</title>
+        <title>{title}</title>
         <meta
           name="description"
           content={`Vilka är ${party.name} och vad är deras ideologi? Läs på om dem här!`}

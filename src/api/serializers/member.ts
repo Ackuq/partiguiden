@@ -5,7 +5,7 @@ import {
   PersonTask,
   VoteListGroupedSingle,
 } from '../../types/parliament';
-import { parliamentURL } from '../constants';
+import { parsePictureUrl } from '../helpers/memberUtils';
 
 const notAcceptedTasks = [
   'sv',
@@ -91,8 +91,8 @@ export const memberSerializer = (data: Person): MemberResponse => {
     sourceId,
     firstName,
     lastName,
-    pictureUrl: pictureUrl?.replace(/https?:\/\//, parliamentURL),
-    pictureUrlLowRes: pictureUrlLowRes?.replace(/https?:\/\//, parliamentURL),
+    pictureUrl: parsePictureUrl(pictureUrl),
+    pictureUrlLowRes: parsePictureUrl(pictureUrlLowRes),
     age,
     party,
     district,
@@ -121,7 +121,7 @@ export const memberListEntrySerializer = (data: Person): MemberListEntry => {
     id,
     firstName,
     lastName,
-    pictureUrl: pictureUrl?.replace(/https?:\/\//, parliamentURL),
+    pictureUrl: parsePictureUrl(pictureUrl),
     age,
     party,
     district,

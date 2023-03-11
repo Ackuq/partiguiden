@@ -6,20 +6,25 @@ import { memberController, membersController } from '../../api/controllers/membe
 import LoadCircle from '../../components/LoadCircle';
 import Member from '../../containers/Member';
 
-const MemberContainer: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({ member }) => (
-  <>
-    <Head>
-      <title>{member && `${member.firstName} ${member.lastName} |`} Ledamot | Partiguiden</title>
-      <meta
-        name="description"
-        content={`Här kan du ta reda på information om ledamot${
-          member && `${member.firstName} ${member.lastName}`
-        }. Se vilka dokument som hen har varit med och skapat och samt voteringsnärvaro.`}
-      />
-    </Head>
-    {member ? <Member member={member} /> : <LoadCircle />}
-  </>
-);
+const MemberContainer: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({ member }) => {
+  const memberName = `${member?.firstName ?? ''} ${member?.lastName ?? ''}`.trim();
+
+  const title = `${!!memberName ? `${memberName} |` : ''} Ledamot | Partiguiden`;
+  return (
+    <>
+      <Head>
+        <title>{title}</title>
+        <meta
+          name="description"
+          content={`Här kan du ta reda på information om ledamot${
+            !!memberName ? ` ${memberName}` : ''
+          }. Se vilka dokument som hen har varit med och skapat och samt voteringsnärvaro.`}
+        />
+      </Head>
+      {member ? <Member member={member} /> : <LoadCircle />}
+    </>
+  );
+};
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const members = await membersController();

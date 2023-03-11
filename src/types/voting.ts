@@ -3,7 +3,7 @@ import { partyAbbreviations } from '../utils/parties';
 
 export type VoteDescription = 'yes' | 'no' | 'refrain' | 'abscent';
 
-export type VotingEntry = Record<VoteDescription, string>;
+export type VotingEntry = Record<VoteDescription, number>;
 
 export const votingGroup = [...partyAbbreviations, 'noParty', 'total'] as const;
 

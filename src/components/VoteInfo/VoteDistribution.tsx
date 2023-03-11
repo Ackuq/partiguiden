@@ -32,10 +32,10 @@ const ChartContainer = styled(ResponsiveContainer)`
 
 interface Result {
   name: string;
-  Ja: string;
-  Nej: string;
-  Avstående: string;
-  Frånvarande: string;
+  Ja: number;
+  Nej: number;
+  Avstående: number;
+  Frånvarande: number;
 }
 
 const createData = (voting: Vote['voting']) => {

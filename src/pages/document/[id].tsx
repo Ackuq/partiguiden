@@ -13,10 +13,12 @@ import SocialMediaShare from '../../components/BreadcrumbsSocialMediaShare/Socia
 const DocumentContainer: NextPage<{ id: string }> = ({ id }) => {
   const document = useDocument(id);
 
+  const title = `${id} | Dokument | Partiguiden`;
+
   return (
     <>
       <Head>
-        <title>{id} | Dokument | Partiguiden</title>
+        <title>{title}</title>
       </Head>
       <PageTitle title={`Dokument ${id}`} />
       <Container>

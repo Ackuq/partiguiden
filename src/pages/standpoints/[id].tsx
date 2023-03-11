@@ -20,30 +20,33 @@ const StandPointContainer: NextPage<InferGetStaticPropsType<typeof getStaticProp
   standpoints,
   id,
   relatedSubjects,
-}) => (
-  <>
-    <Head>
-      <title>{name} | Ämne | Partiguiden</title>
-      <meta
-        name="description"
-        content={`Vad tar Sveriges partier för ståndpunkter inom ämnet ${name} Här hittar du informationen du behöver för att kunna jämföra och hitta det parti du sympatiserar med mest! `}
-      />
-    </Head>
-    <PageTitle title={name} />
-    <Container>
-      <BreadcrumbsSocialMediaShare
-        breadcrumbsProps={{
-          links: [
-            { href: ROUTES.STANDPOINTS, label: 'Partiernas Ståndpunkter' },
-            { href: ROUTES.STANDPOINT, as: ROUTES.getStandpointHref(id), label: name },
-          ],
-        }}
-        socialMediaShareProps={{ title: name }}
-      />
-      <Standpoints relatedSubjects={relatedSubjects} standpoints={standpoints} />
-    </Container>
-  </>
-);
+}) => {
+  const title = `${name} | Ämne | Partiguiden`;
+  return (
+    <>
+      <Head>
+        <title>{title}</title>
+        <meta
+          name="description"
+          content={`Vad tar Sveriges partier för ståndpunkter inom ämnet ${name} Här hittar du informationen du behöver för att kunna jämföra och hitta det parti du sympatiserar med mest! `}
+        />
+      </Head>
+      <PageTitle title={name} />
+      <Container>
+        <BreadcrumbsSocialMediaShare
+          breadcrumbsProps={{
+            links: [
+              { href: ROUTES.STANDPOINTS, label: 'Partiernas Ståndpunkter' },
+              { href: ROUTES.STANDPOINT, as: ROUTES.getStandpointHref(id), label: name },
+            ],
+          }}
+          socialMediaShareProps={{ title: name }}
+        />
+        <Standpoints relatedSubjects={relatedSubjects} standpoints={standpoints} />
+      </Container>
+    </>
+  );
+};
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const subjects = await getSubjects();

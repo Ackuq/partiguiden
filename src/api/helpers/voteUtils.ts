@@ -93,7 +93,7 @@ const defaultVotingEntry: VotingEntry = {
   no: 0,
   abscent: 0,
   refrain: 0,
-};
+} as const;
 
 const defaultVotes: VotingDict = votingGroup.reduce(
   (prev, curr) => ({ ...prev, [curr]: defaultVotingEntry }),
@@ -103,7 +103,12 @@ const defaultVotes: VotingDict = votingGroup.reduce(
 export const extractVotesNew = (row: NewVotingRow[]): VotingDict => {
   const voting = {} as VotingDict;
 
-  const total: VotingEntry = defaultVotingEntry;
+  const total: VotingEntry = {
+    yes: 0,
+    no: 0,
+    abscent: 0,
+    refrain: 0,
+  };
 
   row.forEach(({ th, td }) => {
     const votingGroupName = votingGroupRemap(th);
@@ -120,6 +125,7 @@ export const extractVotesNew = (row: NewVotingRow[]): VotingDict => {
     voting[votingGroupName] = partyVotes;
   });
   voting['total'] = total;
+  console.log(voting['total']);
   return voting;
 };
 

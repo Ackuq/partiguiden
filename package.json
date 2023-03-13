@@ -39,7 +39,7 @@
     "recharts": "2.4.3",
     "strip-json-comments": "^5.0.0",
     "swr": "^2.1.0",
-    "typed.js": "^2.0.12"
+    "typed.js": "^2.0.132"
   },
   "devDependencies": {
     "@types/gtag.js": "^0.0.12",

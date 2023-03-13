@@ -1,7 +1,8 @@
 import React, { useRef } from 'react';
-import TypedJS, { TypedOptions } from 'typed.js';
+import TypedJS from 'typed.js';
 
-const Typed: React.FC<TypedOptions> = ({ ...options }) => {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const Typed: React.FC<any> = ({ ...options }) => {
   const typed = useRef<TypedJS | null>(null);
 
   return (

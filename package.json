@@ -45,7 +45,7 @@
     "@types/gtag.js": "^0.0.12",
     "@types/jsdom": "^21.1.1",
     "@types/node": "^18.15.11",
-    "@types/react": "^18.0.31",
+    "@types/react": "^18.0.32",
     "@types/turndown": "^5.0.1",
     "@typescript-eslint/eslint-plugin": "^5.57.0",
     "eslint": "^8.37.0",

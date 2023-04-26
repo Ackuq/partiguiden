@@ -27,7 +27,7 @@
     "@mui/material": "^5.12.2",
     "@next/bundle-analyzer": "^13.3.1",
     "@next/font": "^13.3.1",
-    "@sentry/nextjs": "^7.48.0",
+    "@sentry/nextjs": "^7.49.0",
     "@sentry/webpack-plugin": "^1.20.0",
     "isomorphic-unfetch": "^4.0.2",
     "jsdom": "^21.1.1",

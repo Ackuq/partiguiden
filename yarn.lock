@@ -322,10 +322,10 @@
     prop-types "^15.8.1"
     react-is "^18.2.0"
 
-"@next/bundle-analyzer@^13.3.1":
-  version "13.3.1"
-  resolved "https://registry.yarnpkg.com/@next/bundle-analyzer/-/bundle-analyzer-13.3.1.tgz#df6c8c969646456b694dc1cd41d2847eae331248"
-  integrity sha512-Qkd0ENOczIyJlKjjN7ENwQ2S5B6wqrTnVlzfWqAImw38VNgaVqZRgaM9Ph8JM43E6iLPjsMOHh8EN/7FxHyQ/g==
+"@next/bundle-analyzer@^13.3.2":
+  version "13.3.2"
+  resolved "https://registry.yarnpkg.com/@next/bundle-analyzer/-/bundle-analyzer-13.3.2.tgz#ee732a5cd3e61606b54cf615ccf843874a634201"
+  integrity sha512-ttg/Tk9y+3nUI4p5+aSfh2pg9PMCj2LRGvmxt2mTXWtUQ/JTZze8FNZYyERmpkCC7BPnKXOpGxxH/reLRr2MRg==
   dependencies:
     webpack-bundle-analyzer "4.7.0"
 

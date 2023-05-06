@@ -27,3 +27,11 @@ public/sitemap-0.xml
 
 # TS files
 tsconfig.tsbuildinfo
+
+# Yarn 2 files
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions

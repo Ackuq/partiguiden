@@ -491,12 +491,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@next/bundle-analyzer@npm:^13.4.0":
-  version: 13.4.0
-  resolution: "@next/bundle-analyzer@npm:13.4.0"
+"@next/bundle-analyzer@npm:^13.4.1":
+  version: 13.4.1
+  resolution: "@next/bundle-analyzer@npm:13.4.1"
   dependencies:
     webpack-bundle-analyzer: 4.7.0
-  checksum: ee19b22c5dbda950d64204dbf0d5f29529d5d2039c63563f86777323de2a9584502a3a728805701067f34b27b06f2c9204d12e9b90d79ab8bcbd1c4206c5f26a
+  checksum: c89d2ede0563c4e60848c3b367cddc43ab25e039e94b0518e5a8f9409a1e222c1158465354427727451ab710c6e1652492d3399dd3f15e876963a555ef48bdfe
   languageName: node
   linkType: hard
 
@@ -4388,7 +4388,7 @@ __metadata:
     "@emotion/styled": ^11.10.8
     "@mui/icons-material": ^5.11.16
     "@mui/material": ^5.12.3
-    "@next/bundle-analyzer": ^13.4.0
+    "@next/bundle-analyzer": ^13.4.1
     "@next/font": ^13.4.0
     "@sentry/nextjs": ^7.51.0
     "@sentry/webpack-plugin": ^1.20.1

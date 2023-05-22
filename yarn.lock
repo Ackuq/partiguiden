@@ -566,10 +566,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@next/font@npm:^13.4.2":
-  version: 13.4.2
-  resolution: "@next/font@npm:13.4.2"
-  checksum: c7579b3f76028395592851e36010e17dda562d8110e82f6273a1fbef03dd431333441d55dfc1e55e4c51c0a22357675dd5b0c55da5437b38be14dbc0b15b84b7
+"@next/font@npm:^13.4.3":
+  version: 13.4.3
+  resolution: "@next/font@npm:13.4.3"
+  checksum: 9feca5b6181505b85d9c198535ddd1dd26bc0e435dbfb53af06c14debe8eb021c78842100ef7f37e21d75701156ee4ae060db1de3d4bcb6ce6e82eb54b441634
   languageName: node
   linkType: hard
 
@@ -4454,7 +4454,7 @@ __metadata:
     "@mui/icons-material": ^5.11.16
     "@mui/material": ^5.13.1
     "@next/bundle-analyzer": ^13.4.3
-    "@next/font": ^13.4.2
+    "@next/font": ^13.4.3
     "@sentry/nextjs": ^7.52.1
     "@sentry/webpack-plugin": ^1.20.1
     "@types/gtag.js": ^0.0.12

@@ -741,9 +741,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sentry/bundler-plugin-core@npm:2.0.0":
-  version: 2.0.0
-  resolution: "@sentry/bundler-plugin-core@npm:2.0.0"
+"@sentry/bundler-plugin-core@npm:2.1.0":
+  version: 2.1.0
+  resolution: "@sentry/bundler-plugin-core@npm:2.1.0"
   dependencies:
     "@sentry/cli": ^2.17.0
     "@sentry/node": 7.50.0
@@ -751,7 +751,7 @@ __metadata:
     glob: 9.3.2
     magic-string: 0.27.0
     unplugin: 1.0.1
-  checksum: d112c1f92e26750a27b19dcd329af3755b764faec50a6c8ef401a4097469e20dd754a2c8d210fb620608487d4aa4cf1c2f5538d65d36aac95944d4e50c6173eb
+  checksum: 4f9bfa5a693fc99de8426ea602e6c9b53773751b2f8bfa897eb6b6d3e5dc0c1c2b1abe30e25721fb01e7f438c96bfd9a91d8a360ceb842636a24a5e79d01b316
   languageName: node
   linkType: hard
 
@@ -949,15 +949,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sentry/webpack-plugin@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "@sentry/webpack-plugin@npm:2.0.0"
+"@sentry/webpack-plugin@npm:^2.1.0":
+  version: 2.1.0
+  resolution: "@sentry/webpack-plugin@npm:2.1.0"
   dependencies:
-    "@sentry/bundler-plugin-core": 2.0.0
+    "@sentry/bundler-plugin-core": 2.1.0
     unplugin: 1.0.1
     uuid: ^9.0.0
     webpack-4: "npm:webpack@^4"
-  checksum: b9228f8e7818ad28f8585c279d283e2f592b18fc82bdf22e483d83863ee07dddaa0a7f42e7fd7a2798beadb3dd1ce14ce8a837c617e6debe3cac2425bf2bbd4a
+  checksum: 1c4352d6585a119ef836c1e5b271386e8f6dd589af10adffa64805028ef20ebd9bc0443d1fa5977c085d8840fa6d468105edbf18ffefa21df763fea446e66a12
   languageName: node
   linkType: hard
 
@@ -6307,7 +6307,7 @@ __metadata:
     "@next/bundle-analyzer": ^13.4.3
     "@next/font": ^13.4.3
     "@sentry/nextjs": ^7.53.1
-    "@sentry/webpack-plugin": ^2.0.0
+    "@sentry/webpack-plugin": ^2.1.0
     "@types/gtag.js": ^0.0.12
     "@types/jsdom": ^21.1.1
     "@types/node": ^20.2.3

@@ -28,7 +28,7 @@
     "@next/bundle-analyzer": "^13.4.4",
     "@next/font": "^13.4.4",
     "@sentry/nextjs": "^7.53.1",
-    "@sentry/webpack-plugin": "^2.1.0",
+    "@sentry/webpack-plugin": "^2.2.0",
     "isomorphic-unfetch": "^4.0.2",
     "jsdom": "^22.0.0",
     "moment": "^2.29.4",

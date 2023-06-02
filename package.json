@@ -4,6 +4,9 @@
   "description": "Partiguiden Server Rendered",
   "typings": "src/types/index.d.ts",
   "main": "next.config.js",
+  "engines": {
+    "node": "18"
+  },
   "scripts": {
     "start": "vercel dev",
     "start-dev": "next dev",

@@ -27,8 +27,8 @@ export const createMemberAbsenceLeaderboard = (
 export const parsePictureUrl = (pictureUrl: string) => {
   const parsed = pictureUrl?.replace('http://', 'https://');
   // Sometimes the picture url does not include the domain
-  if (!parsed.includes(parliamentURL)) {
-    return parsed.replace('https://', parliamentURL);
+  if (!parsed?.includes(parliamentURL)) {
+    return parsed?.replace('https://', parliamentURL);
   }
   return parsed;
 };

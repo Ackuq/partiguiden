@@ -37,5 +37,5 @@ export const getWikipediaInfoBox = (
     }
     const json = await res.json();
 
-    return getInfoBoxAttr(json);
+    return getInfoBoxAttr(json, party);
   });

@@ -2,6 +2,8 @@ import { Leader } from './member';
 import { Party, PartyAbbreviation } from '../utils/parties';
 
 export interface WikipediaInfoBox {
+  website?: string;
+  leaders: Leader[];
   ideology: string[];
 }
 

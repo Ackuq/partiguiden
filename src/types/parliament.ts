@@ -46,7 +46,7 @@ export type OldVotingRow = [
   {
     td: { h4: string; p: string };
   },
-  ...VotingRowEntry[]
+  ...VotingRowEntry[],
 ];
 
 export type OldVotingTable = {

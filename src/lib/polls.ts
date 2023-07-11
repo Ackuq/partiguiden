@@ -305,12 +305,18 @@ export type BlocksAverage = [BlockAverage, BlockAverage];
 const generateBlockAverage =
   (average: AveragePoll) =>
   (blocks: Blocks): BlockAverage => {
-    return average.reduce((prev, { party, value }) => {
-      const blockIndex = blocks.values.findIndex((block) => block.parties.includes(party));
-      const newAverage = prev;
-      newAverage[blockIndex].value += value;
-      return newAverage;
-    }, blocks.values.map((block: Blocks['values'][number]) => ({ name: block.name, value: 0 })) as BlockAverage);
+    return average.reduce(
+      (prev, { party, value }) => {
+        const blockIndex = blocks.values.findIndex((block) => block.parties.includes(party));
+        const newAverage = prev;
+        newAverage[blockIndex].value += value;
+        return newAverage;
+      },
+      blocks.values.map((block: Blocks['values'][number]) => ({
+        name: block.name,
+        value: 0,
+      })) as BlockAverage
+    );
   };
 
 /**

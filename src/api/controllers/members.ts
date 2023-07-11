@@ -96,14 +96,14 @@ export const memberController = async (id: string): Promise<MemberDetailedRespon
         ({
           value: absence,
           description: mandatePeriod.latestParliamentYear,
-        } as Absence)
+        }) as Absence
     ),
     getAbsence(stringify({ ...absenceQuery, rm: mandatePeriod.parliamentYears })).then(
       (absence) =>
         ({
           value: absence,
           description: mandatePeriod.period,
-        } as Absence)
+        }) as Absence
     ),
   ]);
 

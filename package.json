@@ -29,7 +29,7 @@
     "@mui/icons-material": "5.14.1",
     "@mui/material": "5.14.1",
     "@next/bundle-analyzer": "13.4.10",
-    "@next/font": "13.4.10",
+    "@next/font": "13.4.11",
     "@sentry/nextjs": "7.59.3",
     "@sentry/webpack-plugin": "2.4.0",
     "isomorphic-unfetch": "4.0.2",

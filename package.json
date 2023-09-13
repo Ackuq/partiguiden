@@ -48,7 +48,7 @@
     "@types/jsdom": "21.1.2",
     "@types/node": "20.5.9",
     "@types/react": "18.2.21",
-    "@types/turndown": "5.0.1",
+    "@types/turndown": "5.0.2",
     "@typescript-eslint/eslint-plugin": "6.6.0",
     "eslint": "8.48.0",
     "eslint-config-next": "13.4.19",

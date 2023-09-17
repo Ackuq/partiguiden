@@ -100,6 +100,12 @@ importers:
         specifier: 4.2.3
         version: 4.2.3(next@13.4.19)
 
+  packages/dev-https-proxy:
+    devDependencies:
+      http-proxy:
+        specifier: 1.18.1
+        version: 1.18.1
+
   packages/eslint-config-base:
     devDependencies:
       '@typescript-eslint/eslint-plugin':
@@ -2189,7 +2195,6 @@ packages:
 
   /eventemitter3@4.0.7:
     resolution: {integrity: sha512-8guHBZCwKnFhYdHr2ysuRWErTwhoN2X8XELRlrRwpmfeY2jjuUN4taQMsULKUVo1K4DvZl+0pgfyoysHxvmvEw==}
-    dev: false
 
   /execa@5.1.1:
     resolution: {integrity: sha512-8uSpZZocAZRBAPIEINJj3Lo9HyGitllczc27Eh5YYojjMFMn8yHMDMaUHE2Jqfq05D/wucwI4JGURyXt1vchyg==}
@@ -2304,6 +2309,16 @@ packages:
 
   /flatted@3.2.9:
     resolution: {integrity: sha512-36yxDn5H7OFZQla0/jFJmbIKTdZAQHngCedGxiMmpNfEZM0sdEeT+WczLQrjK6D7o2aiyLYDnkw0R3JK0Qv1RQ==}
+    dev: true
+
+  /follow-redirects@1.15.2:
+    resolution: {integrity: sha512-VQLG33o04KaQ8uYi2tVNbdrWp1QWxNNea+nmIB4EVM28v0hmP17z7aG1+wAkNzVq4KeXTq3221ye5qTJP91JwA==}
+    engines: {node: '>=4.0'}
+    peerDependencies:
+      debug: '*'
+    peerDependenciesMeta:
+      debug:
+        optional: true
     dev: true
 
   /for-each@0.3.3:
@@ -2556,6 +2571,17 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: false
+
+  /http-proxy@1.18.1:
+    resolution: {integrity: sha512-7mz/721AbnJwIVbnaSv1Cz3Am0ZLT/UBwkC92VlxhXv/k/BBQfM2fXElQNC27BVGr0uwUpplYPQM9LnaBMR5NQ==}
+    engines: {node: '>=8.0.0'}
+    dependencies:
+      eventemitter3: 4.0.7
+      follow-redirects: 1.15.2
+      requires-port: 1.0.0
+    transitivePeerDependencies:
+      - debug
+    dev: true
 
   /https-proxy-agent@5.0.1:
     resolution: {integrity: sha512-dFcAjpTQFgoLMzC2VwU+C/CbS7uRL0lWmxDITmqm7C+7F0Odmj6s9l6alZc6AELXhrnggM2CeWSXHGOdX2YtwA==}
@@ -3652,7 +3678,6 @@ packages:
 
   /requires-port@1.0.0:
     resolution: {integrity: sha512-KigOCHcocU3XODJxsu8i/j8T9tzT4adHiecwORRQ0ZZFcp7ahwXuRU1m+yuO90C5ZUyGeGfocHDI14M3L3yDAQ==}
-    dev: false
 
   /resolve-from@4.0.0:
     resolution: {integrity: sha512-pb/MYmXstAkysRFx8piNI1tGFNQIFA3vkE3Gq4EuA1dF6gHp/+vgZqsCGJapvy8N3Q+4o7FwvquPJcnZ7RYy4g==}

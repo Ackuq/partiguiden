@@ -6,8 +6,6 @@ import Typography from "@mui/material/Typography";
 import { styled } from "@mui/material/styles";
 
 import { githubProfile, linkedIn } from "../../lib/socials";
-import GitHubLogo from "../../../public/static/images/github_logo.png";
-import LinkedInLogo from "../../../public/static/images/linkedin_logo.png";
 
 const FooterContent = styled("footer")`
   padding: 1.5rem 0;
@@ -34,7 +32,7 @@ const Footer: React.FC = () => (
         © Axel Pettersson 2022&nbsp;
         <a href={linkedIn} target="_blank" rel="noopener noreferrer">
           <Image
-            src={LinkedInLogo}
+            src="/static/images/linkedin_logo.png"
             height={28}
             width={28}
             alt="LinkedIn logo"
@@ -42,7 +40,12 @@ const Footer: React.FC = () => (
         </a>
         &nbsp;
         <a href={githubProfile} target="_blank" rel="noopener noreferrer">
-          <Image src={GitHubLogo} height={28} width={28} alt="GitHub logo" />
+          <Image
+            src="/static/images/github_logo.png"
+            height={28}
+            width={28}
+            alt="GitHub logo"
+          />
         </a>
       </Typography>
       <Link

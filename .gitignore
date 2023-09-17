@@ -1,37 +1,28 @@
-# Next build
-.next
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# Enviroment variables
-.env
-.env.local
-
-# Node modules
+# dependencies
 node_modules
 
-# Mac OS Files
-.DS_Store
+# next.js
+.next/
+out/
 
-# Now
-.now
+# production
+build
+
+# misc
+.DS_Store
+*.pem
+
+# local env files
+.env*.local
+
+# vercel
 .vercel
 
-# Yarn error logs
-yarn-error.log
+# typescript
+*.tsbuildinfo
+next-env.d.ts
 
-.vscode
-
-# Automatic generated fiels
-public/robots.txt
-public/sitemap.xml
-public/sitemap-0.xml
-
-# TS files
-tsconfig.tsbuildinfo
-
-# Yarn 2 files
-.yarn/*
-!.yarn/patches
-!.yarn/plugins
-!.yarn/releases
-!.yarn/sdks
-!.yarn/versions
+# SSL certificates
+.cert

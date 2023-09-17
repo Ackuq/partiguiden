@@ -1,0 +1,51 @@
+{
+  "name": "@partiguiden/web",
+  "version": "1.0.0",
+  "description": "Partiguiden",
+  "author": "Axel Pettersson",
+  "license": "ISC",
+  "scripts": {
+    "dev": "next dev",
+    "start": "next start",
+    "build": "next build",
+    "vercel-build": "next build && next-sitemap",
+    "typecheck": "tsc",
+    "lint": "next lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ackuq/partiguiden.git"
+  },
+  "dependencies": {
+    "@emotion/cache": "11.11.0",
+    "@emotion/react": "11.11.1",
+    "@emotion/server": "11.11.0",
+    "@emotion/styled": "11.11.0",
+    "@mui/icons-material": "5.14.9",
+    "@mui/material": "5.14.9",
+    "@mui/system": "5.14.9",
+    "@next/bundle-analyzer": "13.4.19",
+    "@next/font": "13.4.19",
+    "@sentry/nextjs": "7.69.0",
+    "isomorphic-unfetch": "4.0.2",
+    "jsdom": "22.1.0",
+    "moment": "2.29.4",
+    "next": "13.4.19",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-share": "4.4.1",
+    "recharts": "2.8.0",
+    "strip-json-comments": "5.0.1",
+    "swr": "2.2.2",
+    "typed.js": "2.0.132"
+  },
+  "devDependencies": {
+    "@partiguiden/eslint-config-base": "workspace:*",
+    "@types/gtag.js": "0.0.13",
+    "@types/jsdom": "21.1.2",
+    "@types/node": "20.6.0",
+    "@types/react": "18.2.21",
+    "@types/turndown": "5.0.2",
+    "next-sitemap": "4.2.3"
+  }
+}

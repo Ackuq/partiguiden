@@ -27,7 +27,7 @@ In this section, information on how to set up and contribute to the project will
 
 ### Prerequisites
 
-- [yarn](https://yarnpkg.com) - Package manager
+- [pnpm](https://pnpm.io) - Package manager
 - [vercel-cli](https://vercel.com/docs/cli) - (optional) Used for interacting with the vercel project
 
 ### Environment variables
@@ -46,16 +46,10 @@ vercel env pull
 
 ### Running
 
-If you have access to the vercel project, you may use the following command to make use of serverless functionality:
+You can run the application using the following command:
 
 ```sh
-yarn start # Runs the command `vercel dev` (https://vercel.com/docs/cli#commands/dev)
-```
-
-If you don't have access to the vercel project, you can run using Next's development mode using:
-
-```sh
-yarn start-dev # Runs the command `next dev` (https://nextjs.org/docs/api-reference/cli#development)
+pnpm start-dev # Runs the command `next dev` (https://nextjs.org/docs/api-reference/cli#development)
 ```
 
 ### Linting and formatting
@@ -63,7 +57,9 @@ yarn start-dev # Runs the command `next dev` (https://nextjs.org/docs/api-refere
 This project uses [ESLint](https://eslint.org) and [Prettier](https://prettier.io) for code linting and formatting. The configuration for ESLint can be found in the file [.eslintrc](./.eslintrc) and for Prettier in the file [.prettierrc](./.prettierrc). To check linting and formatting of the project, run the command:
 
 ```sh
-yarn lint # Will run the commands `tsc` for type checking and `eslint` for linting and code formatting
+pnpm typecheck # Will run the commands `tsc` for type checking
+pnpm lint # Will run `eslint` for linting and code formatting
+pnpm format:check # Checks that formatting is OK
 ```
 
 ## CI/CD

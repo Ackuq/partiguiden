@@ -1,0 +1,101 @@
+import React, { useMemo } from "react";
+
+import CircularProgress from "@mui/material/CircularProgress";
+
+import { useTheme } from "@mui/material/styles";
+
+import {
+  Bar,
+  BarChart,
+  Legend,
+  ResponsiveContainer,
+  Tooltip,
+  XAxis,
+  YAxis,
+} from "recharts";
+
+import type { VotingEntry } from "../../types/voting";
+import { voteColor } from "../../lib/voteColors";
+import tooltipProps from "../../utils/tooltipProps";
+
+const animationDelay = 2;
+const animationDuration = 2;
+
+const parseData = (voting: VotingEntry) => ({
+  name: "Totalt",
+  Ja: voting.yes,
+  Nej: voting.no,
+  Avstående: voting.refrain,
+  Frånvarande: voting.abscent,
+});
+
+interface Props {
+  voting: VotingEntry;
+}
+
+const TotalVote: React.FC<Props> = ({ voting }) => {
+  const theme = useTheme();
+  const colors = useMemo(
+    () => voteColor[theme.palette.mode],
+    [theme.palette.mode],
+  );
+
+  /* Special case if all is 0 */
+  if (Object.values(voting).every((v) => v === 0)) {
+    return null;
+  }
+
+  const data = parseData(voting);
+
+  return (
+    <>
+      {data ? (
+        <ResponsiveContainer height={90}>
+          <BarChart data={[data]} layout="vertical" margin={{ left: -60 }}>
+            <XAxis type="number" domain={[0, 349]} tickCount={10} />
+            <YAxis type="category" dataKey="name" tick={false} />
+            <Tooltip {...tooltipProps(theme)} />
+            <Legend wrapperStyle={{ marginLeft: 30 }} />
+            <Bar
+              animationDuration={data.Ja * animationDuration}
+              animationEasing="linear"
+              dataKey="Ja"
+              stackId="a"
+              fill={colors.yes}
+            />
+            <Bar
+              animationBegin={data.Ja * animationDelay}
+              animationDuration={data.Nej * animationDuration}
+              animationEasing="linear"
+              dataKey="Nej"
+              stackId="a"
+              fill={colors.no}
+            />
+            <Bar
+              animationBegin={(data.Ja + data.Nej) * animationDelay}
+              animationDuration={data.Avstående * animationDuration}
+              animationEasing="linear"
+              dataKey="Avstående"
+              stackId="a"
+              fill={colors.refrain}
+            />
+            <Bar
+              animationBegin={
+                (data.Ja + data.Nej + data.Avstående) * animationDelay
+              }
+              animationDuration={data.Frånvarande * animationDuration}
+              animationEasing="linear"
+              dataKey="Frånvarande"
+              stackId="a"
+              fill={colors.absent}
+            />
+          </BarChart>
+        </ResponsiveContainer>
+      ) : (
+        <CircularProgress />
+      )}
+    </>
+  );
+};
+
+export default TotalVote;

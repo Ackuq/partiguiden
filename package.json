@@ -1,62 +1,22 @@
 {
-  "name": "partiguiden-server",
+  "name": "partiguiden",
   "version": "1.0.0",
-  "description": "Partiguiden Server Rendered",
-  "typings": "src/types/index.d.ts",
-  "main": "next.config.js",
-  "engines": {
-    "node": "18"
-  },
-  "scripts": {
-    "start": "vercel dev",
-    "start-dev": "next dev",
-    "build": "next build",
-    "vercel-build": "next build && next-sitemap",
-    "lint": "tsc --noemit && eslint src/ --ext .js,.jsx,.ts,.tsx",
-    "format": "prettier --write ."
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Ackuq/Partiguiden-2.0.git"
-  },
+  "description": "Monorepo for all Partiguiden",
   "author": "Axel Pettersson",
   "license": "ISC",
-  "dependencies": {
-    "@emotion/cache": "11.11.0",
-    "@emotion/react": "11.11.1",
-    "@emotion/server": "11.11.0",
-    "@emotion/styled": "11.11.0",
-    "@mui/icons-material": "5.14.9",
-    "@mui/material": "5.14.9",
-    "@next/bundle-analyzer": "13.4.19",
-    "@next/font": "13.4.19",
-    "@sentry/nextjs": "7.69.0",
-    "isomorphic-unfetch": "4.0.2",
-    "jsdom": "22.1.0",
-    "moment": "2.29.4",
-    "next": "13.4.19",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "react-share": "4.4.1",
-    "recharts": "2.8.0",
-    "strip-json-comments": "5.0.1",
-    "swr": "2.2.2",
-    "typed.js": "2.0.132"
+  "packageManager": "pnpm@8.7.5",
+  "scripts": {
+    "dev": "pnpm -r dev",
+    "build": "pnpm -r build",
+    "lint": "pnpm -r lint",
+    "typecheck": "pnpm -r typecheck",
+    "format:write": "prettier -w '**/*.{js,ts,tsx,md,json}'",
+    "format:check": "prettier -c '**/*.{js,ts,tsx,md,json}'"
   },
   "devDependencies": {
-    "@types/gtag.js": "0.0.13",
-    "@types/jsdom": "21.1.2",
-    "@types/node": "20.6.0",
-    "@types/react": "18.2.21",
-    "@types/turndown": "5.0.2",
-    "@typescript-eslint/eslint-plugin": "6.7.0",
-    "eslint": "8.49.0",
-    "eslint-config-next": "13.4.19",
-    "eslint-config-prettier": "9.0.0",
-    "eslint-plugin-prettier": "5.0.0",
-    "eslint-plugin-sort-imports-es6-autofix": "0.6.0",
-    "next-sitemap": "4.2.3",
-    "prettier": "3.0.3",
     "typescript": "5.2.2"
+  },
+  "prettier": {
+    "trailingComma": "all"
   }
 }

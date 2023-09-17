@@ -1,0 +1,13 @@
+{
+  "name": "@partiguiden/dev-https-proxy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "license": "ISC",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "devDependencies": {
+    "http-proxy": "1.18.1"
+  }
+}

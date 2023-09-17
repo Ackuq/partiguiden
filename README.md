@@ -30,26 +30,12 @@ In this section, information on how to set up and contribute to the project will
 - [pnpm](https://pnpm.io) - Package manager
 - [vercel-cli](https://vercel.com/docs/cli) - (optional) Used for interacting with the vercel project
 
-### Environment variables
-
-To easily get started with the bare minimum environment variables to get started, a file `.env.example` is provided in this project. This configuration allows you to interact with the beta version of the backend. To copy this config, run:
-
-```sh
-cp .env.example .env
-```
-
-Alternatively, if have an authenticated vercel-cli and have access to the project, you can get a complete copy of the development environment configuration by running:
-
-```sh
-vercel env pull
-```
-
 ### Running
 
 You can run the application using the following command:
 
 ```sh
-pnpm start-dev # Runs the command `next dev` (https://nextjs.org/docs/api-reference/cli#development)
+pnpm dev # Runs the command `next dev` (https://nextjs.org/docs/api-reference/cli#development)
 ```
 
 ### Linting and formatting

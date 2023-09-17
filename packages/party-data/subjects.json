@@ -1,0 +1,146 @@
+{
+  "Bostad": {
+    "name": "Bostad",
+    "relatedSubjects": ["Energi", "Trygghetssystem och Välfärd"]
+  },
+  "Demokrati": {
+    "name": "Demokrati",
+    "relatedSubjects": [
+      "Lag och rätt",
+      "Trygghetssystem och Välfärd",
+      "Utrikes- och biståndsfrågor"
+    ]
+  },
+  "Ekonomi och Skatter": {
+    "name": "Ekonomi och Skatter",
+    "relatedSubjects": [
+      "Energi",
+      "Jobb",
+      "Konsumentpolitik",
+      "Lag och rätt",
+      "Näringsliv",
+      "Trygghetssystem och Välfärd"
+    ]
+  },
+  "Energi": {
+    "name": "Energi",
+    "relatedSubjects": ["Bostad", "Ekonomi och Skatter", "Landsbygd"]
+  },
+  "Europa": {
+    "name": "Europa",
+    "relatedSubjects": ["Utrikes- och biståndsfrågor"]
+  },
+  "Familjen": {
+    "name": "Familjen",
+    "relatedSubjects": ["Trygghetssystem och Välfärd", "Utbildning"]
+  },
+  "Försvar": {
+    "name": "Försvar",
+    "relatedSubjects": ["Lag och rätt", "Utrikes- och biståndsfrågor"]
+  },
+  "Infrastruktur och Trafik": {
+    "name": "Infrastruktur och Trafik",
+    "relatedSubjects": []
+  },
+  "IT och Mobiltelefoni": {
+    "name": "IT och Mobiltelefoni",
+    "relatedSubjects": []
+  },
+  "Jobb": {
+    "name": "Jobb",
+    "relatedSubjects": [
+      "Ekonomi och Skatter",
+      "Näringsliv",
+      "Trygghetssystem och Välfärd"
+    ]
+  },
+  "Jordbruk, Jakt och Fiske": {
+    "name": "Jordbruk, Jakt och Fiske",
+    "relatedSubjects": ["Landsbygd", "Miljö och klimat"]
+  },
+  "Jämställdhet och diskriminering": {
+    "name": "Jämställdhet och diskriminering",
+    "relatedSubjects": ["Lag och rätt", "Vård och Omsorg"]
+  },
+  "Konsumentpolitik": {
+    "name": "Konsumentpolitik",
+    "relatedSubjects": ["Ekonomi och Skatter", "Kultur, media, och idrott"]
+  },
+  "Kultur, media, och idrott": {
+    "name": "Kultur, media, och idrott",
+    "relatedSubjects": [
+      "Konsumentpolitik",
+      "Näringsliv",
+      "Trygghetssystem och Välfärd"
+    ]
+  },
+  "Lag och rätt": {
+    "name": "Lag och rätt",
+    "relatedSubjects": [
+      "Demokrati",
+      "Ekonomi och Skatter",
+      "Försvar",
+      "Jämställdhet och diskriminering",
+      "Trygghetssystem och Välfärd",
+      "Utrikes- och biståndsfrågor"
+    ]
+  },
+  "Landsbygd": {
+    "name": "Landsbygd",
+    "relatedSubjects": [
+      "Energi",
+      "Jordbruk, Jakt och Fiske",
+      "Miljö och klimat"
+    ]
+  },
+  "Migration och Integration": {
+    "name": "Migration och Integration",
+    "relatedSubjects": ["Utbildning"]
+  },
+  "Miljö och klimat": {
+    "name": "Miljö och klimat",
+    "relatedSubjects": ["Jordbruk, Jakt och Fiske", "Landsbygd"]
+  },
+  "Näringsliv": {
+    "name": "Näringsliv",
+    "relatedSubjects": [
+      "Ekonomi och Skatter",
+      "Jobb",
+      "Kultur, media, och idrott"
+    ]
+  },
+  "Trygghetssystem och Välfärd": {
+    "name": "Trygghetssystem och Välfärd",
+    "relatedSubjects": [
+      "Bostad",
+      "Demokrati",
+      "Ekonomi och Skatter",
+      "Familjen",
+      "Jobb",
+      "Kultur, media, och idrott",
+      "Lag och rätt",
+      "Vård och Omsorg",
+      "Äldrepolitik"
+    ]
+  },
+  "Utbildning": {
+    "name": "Utbildning",
+    "relatedSubjects": ["Familjen", "Migration och Integration"]
+  },
+  "Utrikes- och biståndsfrågor": {
+    "name": "Utrikes- och biståndsfrågor",
+    "relatedSubjects": ["Demokrati", "Europa", "Försvar", "Lag och rätt"]
+  },
+  "Vård och Omsorg": {
+    "name": "Vård och Omsorg",
+    "relatedSubjects": [
+      "Jämställdhet och diskriminering",
+      "Trygghetssystem och Välfärd",
+      "Äldrepolitik"
+    ]
+  },
+  "Äldrepolitik": {
+    "name": "Äldrepolitik",
+    "relatedSubjects": ["Trygghetssystem och Välfärd", "Vård och Omsorg"]
+  }
+}

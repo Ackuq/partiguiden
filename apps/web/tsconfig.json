@@ -1,5 +1,5 @@
 {
-  "extends": "../../tsconfig.json",
+  "extends": "@partiguiden/tsconfig",
   "compilerOptions": {
     "jsxImportSource": "@emotion/react",
     "plugins": [

@@ -41,6 +41,7 @@
   },
   "devDependencies": {
     "@partiguiden/eslint-config-base": "workspace:*",
+    "@partiguiden/tsconfig": "workspace:*",
     "@types/gtag.js": "0.0.13",
     "@types/jsdom": "21.1.2",
     "@types/node": "20.6.0",

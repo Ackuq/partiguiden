@@ -1,18 +1,20 @@
-import { withSentryConfig } from '@sentry/nextjs';
-import bundleAnalyzer from '@next/bundle-analyzer';
+import { withSentryConfig } from "@sentry/nextjs";
+import bundleAnalyzer from "@next/bundle-analyzer";
 
-const withBundleAnalyzer = bundleAnalyzer({ enabled: process.env.ANALYZE === 'true' });
+const withBundleAnalyzer = bundleAnalyzer({
+  enabled: process.env.ANALYZE === "true",
+});
 
 let moduleExports = withBundleAnalyzer({
   productionBrowserSourceMaps: true,
-  basePath: '',
+  basePath: "",
   images: {
     remotePatterns: [
       {
-        protocol: 'https',
-        hostname: 'data.riksdagen.se',
-        port: '',
-        pathname: '/filarkiv/bilder/**',
+        protocol: "https",
+        hostname: "data.riksdagen.se",
+        port: "",
+        pathname: "/filarkiv/bilder/**",
       },
     ],
   },

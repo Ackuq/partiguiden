@@ -1,0 +1,3 @@
+{
+  "extends": "@partiguiden/tsconfig/tsconfig.node.json"
+}

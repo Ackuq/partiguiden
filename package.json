@@ -10,16 +10,13 @@
     "build": "turbo build",
     "lint": "turbo lint",
     "typecheck": "turbo typecheck",
-    "format:write": "prettier -w '**/*.{js,ts,tsx,md,json}'",
-    "format:check": "prettier -c '**/*.{js,ts,tsx,md,json}'"
+    "format:write": "prettier -w '**/*.{js,ts,tsx,md,json,css}'",
+    "format:check": "prettier -c '**/*.{js,ts,tsx,md,json,css}'"
   },
   "dependencies": {
     "turbo": "1.10.14"
   },
   "devDependencies": {
     "typescript": "5.2.2"
-  },
-  "prettier": {
-    "trailingComma": "all"
   }
 }

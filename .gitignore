@@ -26,3 +26,6 @@ next-env.d.ts
 
 # SSL certificates
 .cert
+
+# Turborepo
+.turbo

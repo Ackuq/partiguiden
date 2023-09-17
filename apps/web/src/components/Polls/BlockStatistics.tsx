@@ -1,25 +1,28 @@
-import React, { useCallback } from 'react';
+import React, { useCallback } from "react";
 
-import Divider from '@mui/material/Divider';
-import Typography from '@mui/material/Typography';
-import useMediaQuery from '@mui/material/useMediaQuery';
+import Divider from "@mui/material/Divider";
+import Typography from "@mui/material/Typography";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
-import { styled, useTheme } from '@mui/material/styles';
+import { styled, useTheme } from "@mui/material/styles";
 
-import { Cell, Pie, PieChart, ResponsiveContainer, Tooltip } from 'recharts';
+import { Cell, Pie, PieChart, ResponsiveContainer, Tooltip } from "recharts";
 
-import { AveragePoll, BlocksAverage, displayFormatter } from '../../lib/polls';
+import type { AveragePoll, BlocksAverage } from "../../lib/polls";
+import { displayFormatter } from "../../lib/polls";
 
-import { Blocks, allBlocks, partiesMap } from '../../utils/getParties';
-import { PollCard } from './utils';
-import toolTipProps from '../../utils/tooltipProps';
+import type { Blocks } from "../../utils/getParties";
+import { allBlocks, partiesMap } from "../../utils/getParties";
+import { PollCard } from "./utils";
+import toolTipProps from "../../utils/tooltipProps";
 
 const BlockDivider = styled(Divider)`
   margin-bottom: 1rem;
 `;
 
 const blockSort =
-  (blocks: Blocks['values']) => (a: AveragePoll[number], b: AveragePoll[number]) => {
+  (blocks: Blocks["values"]) =>
+  (a: AveragePoll[number], b: AveragePoll[number]) => {
     const indexA = blocks.findIndex((block) => block.parties.includes(a.party));
     const indexB = blocks.findIndex((block) => block.parties.includes(b.party));
     if (indexA < indexB) {
@@ -54,7 +57,10 @@ const Block: React.FC<BlockProps> = ({
 }) => {
   const theme = useTheme();
 
-  const stroke = theme.palette.mode === 'dark' ? 'transparent' : theme.palette.background.paper;
+  const stroke =
+    theme.palette.mode === "dark"
+      ? "transparent"
+      : theme.palette.background.paper;
 
   const sortedAverage = [...currentAverage].sort(blockSort(blocks.values));
 
@@ -77,7 +83,10 @@ const Block: React.FC<BlockProps> = ({
             stroke={stroke}
           >
             {sortedAverage.map((data, index) => (
-              <Cell key={`party-${blocksIndex}-${index}`} fill={partiesMap[data.party].color} />
+              <Cell
+                key={`party-${blocksIndex}-${index}`}
+                fill={partiesMap[data.party].color}
+              />
             ))}
           </Pie>
           <Pie
@@ -92,9 +101,14 @@ const Block: React.FC<BlockProps> = ({
             label={(data) => displayFormatter(data.payload.value)}
             stroke={stroke}
           >
-            {blocks.values.map((block: Blocks['values'][number], index: number) => (
-              <Cell key={`block-${blocksIndex}-${index}`} fill={block.color} />
-            ))}
+            {blocks.values.map(
+              (block: Blocks["values"][number], index: number) => (
+                <Cell
+                  key={`block-${blocksIndex}-${index}`}
+                  fill={block.color}
+                />
+              ),
+            )}
           </Pie>
           <Tooltip {...toolTipProps(theme)} formatter={displayFormatter} />
         </PieChart>
@@ -104,7 +118,7 @@ const Block: React.FC<BlockProps> = ({
 };
 
 const BlockStatistics: React.FC<Props> = ({ currentAverage, blockAverage }) => {
-  const shortScreen = useMediaQuery('(max-height:1000px)');
+  const shortScreen = useMediaQuery("(max-height:1000px)");
 
   const height = shortScreen ? 200 : 350;
   const radius = shortScreen ? 100 : 200;
@@ -123,7 +137,7 @@ const BlockStatistics: React.FC<Props> = ({ currentAverage, blockAverage }) => {
         {index !== blockAverage.length - 1 && <BlockDivider />}
       </React.Fragment>
     ),
-    [currentAverage, blockAverage, height, radius]
+    [currentAverage, blockAverage, height, radius],
   );
 
   return (

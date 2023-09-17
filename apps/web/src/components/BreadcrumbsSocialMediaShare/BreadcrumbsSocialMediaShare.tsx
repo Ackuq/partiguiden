@@ -1,9 +1,11 @@
-import { styled } from '@mui/material/styles';
+import { styled } from "@mui/material/styles";
 
-import Breadcrumbs, { BreadcrumbsProps } from './Breadcrumbs';
-import SocialMediaShare, { SocialMediaShareProps } from './SocialMediaShare';
+import type { BreadcrumbsProps } from "./Breadcrumbs";
+import Breadcrumbs from "./Breadcrumbs";
+import type { SocialMediaShareProps } from "./SocialMediaShare";
+import SocialMediaShare from "./SocialMediaShare";
 
-const Container = styled('div')`
+const Container = styled("div")`
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;

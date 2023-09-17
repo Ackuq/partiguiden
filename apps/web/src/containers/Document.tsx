@@ -1,10 +1,10 @@
-import { styled } from '@mui/material/styles';
+import { styled } from "@mui/material/styles";
 
-const DocumentBody = styled('div')`
+const DocumentBody = styled("div")`
   margin-top: 1rem;
   * {
     ${({ theme }) =>
-      theme.palette.mode === 'dark'
+      theme.palette.mode === "dark"
         ? `
           color: #fff !important;
           border-color: #fff !important;

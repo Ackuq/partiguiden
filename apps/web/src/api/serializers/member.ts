@@ -1,25 +1,32 @@
-import { Information, MemberListEntry, MemberResponse, Task } from '../../types/member';
-import {
+import type {
+  Information,
+  MemberListEntry,
+  MemberResponse,
+  Task,
+} from "../../types/member";
+import type {
   Person,
   PersonInformation,
   PersonTask,
   VoteListGroupedSingle,
-} from '../../types/parliament';
-import { parsePictureUrl } from '../helpers/memberUtils';
+} from "../../types/parliament";
+import { parsePictureUrl } from "../helpers/memberUtils";
 
 const notAcceptedTasks = [
-  'sv',
-  'en',
-  'KandiderarINastaVal',
-  'Officiell e-postadress',
-  'Föräldrar',
-  'Tjänstetelefon',
+  "sv",
+  "en",
+  "KandiderarINastaVal",
+  "Officiell e-postadress",
+  "Föräldrar",
+  "Tjänstetelefon",
 ];
 
 const serializeInformation = (unparsed: PersonInformation): Information => {
   const { kod: code, uppgift: content, typ: type } = unparsed;
   const parsedContent =
-    Array.isArray(content) && content.length > 0 && typeof content[0] === 'string'
+    Array.isArray(content) &&
+    content.length > 0 &&
+    typeof content[0] === "string"
       ? (content as string[])
       : [];
   return { code, content: parsedContent, type };
@@ -37,14 +44,26 @@ const serializeTask = (unparsed: PersonTask): Task => {
   } = unparsed;
 
   const parsedContent =
-    Array.isArray(content) && content.length > 0 && typeof content[0] === 'string'
+    Array.isArray(content) &&
+    content.length > 0 &&
+    typeof content[0] === "string"
       ? (content as string[])
       : [];
 
-  return { authorityCode, role, content: parsedContent, status, type, from, to };
+  return {
+    authorityCode,
+    role,
+    content: parsedContent,
+    status,
+    type,
+    from,
+    to,
+  };
 };
 
-export const serializeAbsence = (data: VoteListGroupedSingle): number | null => {
+export const serializeAbsence = (
+  data: VoteListGroupedSingle,
+): number | null => {
   if (data.voteringlista.votering) {
     const votes = data.voteringlista.votering;
     const total =
@@ -52,7 +71,10 @@ export const serializeAbsence = (data: VoteListGroupedSingle): number | null => 
       (parseInt(votes.Nej, 10) || 0) +
       (parseInt(votes.Frånvarande, 10) || 0) +
       (parseInt(votes.Avstår, 10) || 0);
-    return Math.round((1 - (parseInt(votes.Frånvarande, 10) || 0) / total) * 1000) / 10;
+    return (
+      Math.round((1 - (parseInt(votes.Frånvarande, 10) || 0) / total) * 1000) /
+      10
+    );
   }
   return null;
 };
@@ -82,7 +104,7 @@ export const memberSerializer = (data: Person): MemberResponse => {
 
   const tasks = unparsedTasks.map(serializeTask);
 
-  const isLeader = !!tasks.find((el) => el.role === 'Partiledare' && !el.to);
+  const isLeader = !!tasks.find((el) => el.role === "Partiledare" && !el.to);
 
   const age = new Date().getFullYear() - parseInt(birthYear, 10);
 

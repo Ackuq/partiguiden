@@ -1,20 +1,22 @@
-import { GetStaticProps, InferGetStaticPropsType, NextPage } from 'next';
-import Head from 'next/head';
+import type { GetStaticProps, InferGetStaticPropsType, NextPage } from "next";
+import Head from "next/head";
 
-import Container from '@mui/material/Container';
-import Paper from '@mui/material/Paper';
-import Typography from '@mui/material/Typography';
+import Container from "@mui/material/Container";
+import Paper from "@mui/material/Paper";
+import Typography from "@mui/material/Typography";
 
-import { styled } from '@mui/material/styles';
+import { styled } from "@mui/material/styles";
 
-import { SubjectListEntry } from '../types/subjects';
-import { getPopular } from '../lib/api';
-import FrontPage from '../containers/FrontPage';
-import Typed from '../components/Typed';
+import type { SubjectListEntry } from "../types/subjects";
+import { getPopular } from "../lib/api";
+import FrontPage from "../containers/FrontPage";
+import Typed from "../components/Typed";
 
 const PageTitleContainer = styled(Paper)`
   background-color: ${({ theme }) =>
-    theme.palette.mode === 'dark' ? theme.palette.background.paper : theme.palette.primary.light};
+    theme.palette.mode === "dark"
+      ? theme.palette.background.paper
+      : theme.palette.primary.light};
   text-align: center;
   padding: 1.5rem 0.25rem;
   margin-bottom: 1rem;
@@ -22,9 +24,9 @@ const PageTitleContainer = styled(Paper)`
   min-height: 5rem;
 `;
 
-const FrontPageContainer: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
-  popular,
-}) => (
+const FrontPageContainer: NextPage<
+  InferGetStaticPropsType<typeof getStaticProps>
+> = ({ popular }) => (
   <>
     <Head>
       <title>Partiguiden | Rösta rätt</title>
@@ -39,7 +41,7 @@ const FrontPageContainer: NextPage<InferGetStaticPropsType<typeof getStaticProps
       </Typography>
       <Typography variant="h4">
         <Typed
-          strings={['miljön?', 'jämlikheten?', 'vården?', 'Sverige?']}
+          strings={["miljön?", "jämlikheten?", "vården?", "Sverige?"]}
           typeSpeed={100}
           backSpeed={50}
           showCursor={false}
@@ -53,7 +55,9 @@ const FrontPageContainer: NextPage<InferGetStaticPropsType<typeof getStaticProps
   </>
 );
 
-export const getStaticProps: GetStaticProps<{ popular: Array<SubjectListEntry> }> = async () => {
+export const getStaticProps: GetStaticProps<{
+  popular: Array<SubjectListEntry>;
+}> = async () => {
   const data = await getPopular();
   const popular = data.slice(0, 4).map((el) => el[0]);
 

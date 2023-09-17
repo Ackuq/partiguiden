@@ -1,12 +1,12 @@
-import BreadcrumbsSocialMediaShare from '../components/BreadcrumbsSocialMediaShare/BreadcrumbsSocialMediaShare';
-import Container from '@mui/material/Container';
+import BreadcrumbsSocialMediaShare from "../components/BreadcrumbsSocialMediaShare/BreadcrumbsSocialMediaShare";
+import Container from "@mui/material/Container";
 
-import Information from '../components/MemberInfo/Information';
-import ProfilePicture from '../components/MemberInfo/ProfilePicture';
+import Information from "../components/MemberInfo/Information";
+import ProfilePicture from "../components/MemberInfo/ProfilePicture";
 
-import * as ROUTES from '../lib/routes';
+import * as ROUTES from "../lib/routes";
 
-import { MemberDetailedResponse } from '../types/member';
+import type { MemberDetailedResponse } from "../types/member";
 
 interface Props {
   member: MemberDetailedResponse;
@@ -20,7 +20,7 @@ const Member: React.FC<Props> = ({ member }) => {
         <BreadcrumbsSocialMediaShare
           breadcrumbsProps={{
             links: [
-              { label: 'Ledamöter', href: ROUTES.MEMBERS },
+              { label: "Ledamöter", href: ROUTES.MEMBERS },
               {
                 label: `${member.firstName} ${member.lastName}`,
                 href: ROUTES.MEMBER,
@@ -28,7 +28,9 @@ const Member: React.FC<Props> = ({ member }) => {
               },
             ],
           }}
-          socialMediaShareProps={{ title: `${member.firstName} ${member.lastName}` }}
+          socialMediaShareProps={{
+            title: `${member.firstName} ${member.lastName}`,
+          }}
         />
         <Information
           id={member.id}

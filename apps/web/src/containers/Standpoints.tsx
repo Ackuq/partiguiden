@@ -1,16 +1,16 @@
-import Divider from '@mui/material/Divider';
-import MUILink from '@mui/material/Link';
-import Typography from '@mui/material/Typography';
+import Divider from "@mui/material/Divider";
+import MUILink from "@mui/material/Link";
+import Typography from "@mui/material/Typography";
 
-import { styled } from '@mui/material/styles';
+import { styled } from "@mui/material/styles";
 
-import { PartyAbbreviation } from '../utils/parties';
-import { RelatedSubject, StandpointsMap } from '../types/subjects';
-import { ResponsiveAd } from '../components/Ad';
-import { STANDPOINT, getStandpointHref } from '../lib/routes';
-import { partiesMap } from '../utils/getParties';
-import Link from 'next/link';
-import PartyStandpoints from '../components/PartyStandpoints/PartyStandpoints';
+import type { PartyAbbreviation } from "../utils/parties";
+import type { RelatedSubject, StandpointsMap } from "../types/subjects";
+import { ResponsiveAd } from "../components/Ad";
+import { STANDPOINT, getStandpointHref } from "../lib/routes";
+import { partiesMap } from "../utils/getParties";
+import Link from "next/link";
+import PartyStandpoints from "../components/PartyStandpoints/PartyStandpoints";
 
 const ContentDivider = styled(Divider)`
   margin-top: 5rem;
@@ -53,7 +53,7 @@ const Subject: React.FC<Props> = ({ standpoints, relatedSubjects }) => (
                 {relatedSubject.name}
               </MUILink>
             </Link>
-          )
+          ),
         )}
       </>
     )}

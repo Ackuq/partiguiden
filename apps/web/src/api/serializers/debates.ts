@@ -1,11 +1,16 @@
-import { Debate, DebateListEntry, DebateListResponse, Participant } from '../../types/debate';
-import {
+import type {
+  Debate,
+  DebateListEntry,
+  DebateListResponse,
+  Participant,
+} from "../../types/debate";
+import type {
   DocumentList,
   DocumentListEntry,
   DocumentParticipant,
   Statement,
-} from '../../types/parliament';
-import { PartyAbbreviation } from '../../utils/parties';
+} from "../../types/parliament";
+import type { PartyAbbreviation } from "../../utils/parties";
 
 const statementSerializer = (data: Statement): Debate => {
   return {
@@ -26,7 +31,9 @@ const statementSerializer = (data: Statement): Debate => {
   };
 };
 
-export const participantSerializer = (data: DocumentParticipant): Participant => {
+export const participantSerializer = (
+  data: DocumentParticipant,
+): Participant => {
   return {
     id: data.intressent_id,
     name: data.namn,
@@ -34,7 +41,9 @@ export const participantSerializer = (data: DocumentParticipant): Participant =>
   };
 };
 
-export const debateListEntrySerializer = (data: DocumentListEntry): DebateListEntry => {
+export const debateListEntrySerializer = (
+  data: DocumentListEntry,
+): DebateListEntry => {
   const {
     titel: title,
     organ: authority,
@@ -51,11 +60,17 @@ export const debateListEntrySerializer = (data: DocumentListEntry): DebateListEn
     datum: date,
     systemdatum: systemDate,
   } = data;
-  let participants: DebateListEntry['participants'] = undefined;
+  let participants: DebateListEntry["participants"] = undefined;
   if (dokintressent != null) {
-    const sender = dokintressent.intressent.find((e) => e.roll === 'undertecknare');
-    const answerer = dokintressent.intressent.find((e) => e.roll === 'besvaradav');
-    const recipient = dokintressent.intressent.find((e) => e.roll === 'stalldtill');
+    const sender = dokintressent.intressent.find(
+      (e) => e.roll === "undertecknare",
+    );
+    const answerer = dokintressent.intressent.find(
+      (e) => e.roll === "besvaradav",
+    );
+    const recipient = dokintressent.intressent.find(
+      (e) => e.roll === "stalldtill",
+    );
 
     participants = {
       sender: !!sender ? participantSerializer(sender) : undefined,
@@ -92,13 +107,15 @@ export const debatesSerializer = (data: DocumentList): DebateListResponse => {
   const { dokumentlista } = data;
   const { dokument: document } = dokumentlista;
 
-  const pages = parseInt(dokumentlista['@sidor'], 10);
+  const pages = parseInt(dokumentlista["@sidor"], 10);
 
   if (!document || pages === 0) {
     return { debates: [], pages };
   }
 
-  const serializedDebates: Array<DebateListEntry> = document.map(debateListEntrySerializer);
+  const serializedDebates: Array<DebateListEntry> = document.map(
+    debateListEntrySerializer,
+  );
   return {
     debates: serializedDebates,
     pages,

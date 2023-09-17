@@ -1,8 +1,8 @@
-import { PartyData } from '../types/party';
-import { ResponsiveAd } from '../components/Ad';
+import type { PartyData } from "../types/party";
+import { ResponsiveAd } from "../components/Ad";
 
-import InformationCard from '../components/Party/InformationCard';
-import Leaders from '../components/Party/Leaders';
+import InformationCard from "../components/Party/InformationCard";
+import Leaders from "../components/Party/Leaders";
 
 interface Props {
   party: PartyData;

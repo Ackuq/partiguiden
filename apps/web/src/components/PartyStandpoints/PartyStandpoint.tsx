@@ -1,17 +1,17 @@
-import Button from '@mui/material/Button';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import Link from '@mui/material/Link';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemIcon from '@mui/material/ListItemIcon';
-import ListItemText from '@mui/material/ListItemText';
-import Typography from '@mui/material/Typography';
+import Button from "@mui/material/Button";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import Link from "@mui/material/Link";
+import List from "@mui/material/List";
+import ListItem from "@mui/material/ListItem";
+import ListItemIcon from "@mui/material/ListItemIcon";
+import ListItemText from "@mui/material/ListItemText";
+import Typography from "@mui/material/Typography";
 
-import { styled } from '@mui/material/styles';
+import { styled } from "@mui/material/styles";
 
-import { PartyInfo } from '../../utils/parties';
-import { Standpoint } from '../../types/subjects';
+import type { PartyInfo } from "../../utils/parties";
+import type { Standpoint } from "../../types/subjects";
 
 const ListBox = styled(ListItemIcon)`
   position: absolute;
@@ -46,7 +46,7 @@ const PartyOpinion: React.FC<Props> = ({ party, standpoint }) => {
             href={standpoint.link}
             target="_blank"
             rel="noopener noreferrer"
-            style={{ textDecoration: 'none' }}
+            style={{ textDecoration: "none" }}
           >
             Läs mer på partiets hemsida
           </Link>

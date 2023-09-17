@@ -1,11 +1,11 @@
-import React, { useCallback, useEffect, useState } from 'react';
+import React, { useCallback, useEffect, useState } from "react";
 
-import Grid from '@mui/material/Grid';
+import Grid from "@mui/material/Grid";
 
-import { MemberListEntry } from '../../types/member';
-import { PartyAbbreviation } from '../../utils/parties';
-import { ResponsiveAd } from '../Ad';
-import Member from './Member';
+import type { MemberListEntry } from "../../types/member";
+import type { PartyAbbreviation } from "../../utils/parties";
+import { ResponsiveAd } from "../Ad";
+import Member from "./Member";
 
 interface Props {
   filter: {
@@ -19,11 +19,14 @@ const MEMBERS_PER_PAGE = 24;
 
 const MemberList: React.FC<Props> = ({ members, filter }) => {
   const [filteredMembers, setFilteredMembers] = useState(members);
-  const [membersInView, setMembersInView] = useState(members.slice(0, MEMBERS_PER_PAGE));
+  const [membersInView, setMembersInView] = useState(
+    members.slice(0, MEMBERS_PER_PAGE),
+  );
 
   const handleScroll = useCallback(() => {
     const bottom =
-      Math.ceil(window.innerHeight + window.scrollY) >= document.documentElement.scrollHeight - 20;
+      Math.ceil(window.innerHeight + window.scrollY) >=
+      document.documentElement.scrollHeight - 20;
 
     if (bottom && membersInView.length < filteredMembers.length) {
       setMembersInView((prevState) => {
@@ -31,7 +34,11 @@ const MemberList: React.FC<Props> = ({ members, filter }) => {
           ...prevState,
           ...filteredMembers.slice(
             prevState.length,
-            prevState.length + Math.min(filteredMembers.length - prevState.length, MEMBERS_PER_PAGE)
+            prevState.length +
+              Math.min(
+                filteredMembers.length - prevState.length,
+                MEMBERS_PER_PAGE,
+              ),
           ),
         ];
       });
@@ -39,12 +46,12 @@ const MemberList: React.FC<Props> = ({ members, filter }) => {
   }, [filteredMembers, membersInView.length]);
 
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll, {
+    window.addEventListener("scroll", handleScroll, {
       passive: true,
     });
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, [handleScroll]);
 
@@ -59,7 +66,9 @@ const MemberList: React.FC<Props> = ({ members, filter }) => {
       return inParty && inSearch;
     });
     setFilteredMembers(newMembers);
-    setMembersInView(newMembers.slice(0, Math.min(MEMBERS_PER_PAGE, newMembers.length)));
+    setMembersInView(
+      newMembers.slice(0, Math.min(MEMBERS_PER_PAGE, newMembers.length)),
+    );
   }, [filter, members]);
 
   return (

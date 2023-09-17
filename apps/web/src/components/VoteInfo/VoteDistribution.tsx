@@ -1,10 +1,10 @@
-import React, { useMemo, useState } from 'react';
+import React, { useMemo, useState } from "react";
 
-import CircularProgress from '@mui/material/CircularProgress';
-import Collapse from '@mui/material/Collapse';
-import Typography from '@mui/material/Typography';
+import CircularProgress from "@mui/material/CircularProgress";
+import Collapse from "@mui/material/Collapse";
+import Typography from "@mui/material/Typography";
 
-import { styled, useTheme } from '@mui/material/styles';
+import { styled, useTheme } from "@mui/material/styles";
 
 import {
   Bar,
@@ -15,14 +15,14 @@ import {
   Tooltip,
   XAxis,
   YAxis,
-} from 'recharts';
+} from "recharts";
 
-import { Vote, VotingDict } from '../../types/voting';
-import { voteColor } from '../../lib/voteColors';
-import PartySymbolTick from '../PartySymbolTick';
-import RotatingArrow from './shared/RotatingArrow';
-import SectionButton from './shared/SectionButton';
-import tooltipProps from '../../utils/tooltipProps';
+import type { Vote, VotingDict } from "../../types/voting";
+import { voteColor } from "../../lib/voteColors";
+import PartySymbolTick from "../PartySymbolTick";
+import RotatingArrow from "./shared/RotatingArrow";
+import SectionButton from "./shared/SectionButton";
+import tooltipProps from "../../utils/tooltipProps";
 
 const ChartContainer = styled(ResponsiveContainer)`
   width: calc(100% + 20px) !important;
@@ -38,11 +38,11 @@ interface Result {
   Frånvarande: number;
 }
 
-const createData = (voting: Vote['voting']) => {
+const createData = (voting: Vote["voting"]) => {
   const result: Array<Result> = [];
 
   (Object.keys(voting) as (keyof VotingDict)[]).forEach((party) => {
-    if (party !== 'noParty' && party !== 'total') {
+    if (party !== "noParty" && party !== "total") {
       result.push({
         name: party,
         Ja: voting[party].yes,
@@ -56,14 +56,17 @@ const createData = (voting: Vote['voting']) => {
 };
 
 interface Props {
-  voting: Vote['voting'];
+  voting: Vote["voting"];
 }
 
 const VoteDistribution: React.FC<Props> = ({ voting }) => {
   const [visible, setVisible] = useState(false);
   const theme = useTheme();
 
-  const colors = useMemo(() => voteColor[theme.palette.mode], [theme.palette.mode]);
+  const colors = useMemo(
+    () => voteColor[theme.palette.mode],
+    [theme.palette.mode],
+  );
 
   const data = createData(voting);
 
@@ -76,12 +79,12 @@ const VoteDistribution: React.FC<Props> = ({ voting }) => {
   }
 
   return (
-    <div style={{ marginBottom: '1rem' }}>
+    <div style={{ marginBottom: "1rem" }}>
       <SectionButton onClick={() => setVisible(!visible)}>
         <Typography variant="h5" color="inherit" component="span">
           Röstfördelning
         </Typography>
-        <RotatingArrow active={visible.toString() as 'true' | 'false'} />
+        <RotatingArrow active={visible.toString() as "true" | "false"} />
       </SectionButton>
       <Collapse in={visible}>
         <ChartContainer height={500}>
@@ -89,7 +92,11 @@ const VoteDistribution: React.FC<Props> = ({ voting }) => {
             <BarChart data={data} layout="vertical">
               <CartesianGrid strokeDasharray="3 3" />
               <XAxis type="number" />
-              <YAxis type="category" dataKey="name" tick={<PartySymbolTick vertical />} />
+              <YAxis
+                type="category"
+                dataKey="name"
+                tick={<PartySymbolTick vertical />}
+              />
               <Tooltip {...tooltipProps(theme)} />
               <Legend />
               <Bar dataKey="Ja" stackId="a" fill={colors.yes} />

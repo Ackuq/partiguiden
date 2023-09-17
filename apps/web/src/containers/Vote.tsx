@@ -1,14 +1,14 @@
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import Typography from '@mui/material/Typography';
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import Typography from "@mui/material/Typography";
 
-import { Vote as VoteType } from '../types/voting';
-import Appendix from '../components/VoteInfo/Appendix';
-import Decision from '../components/VoteInfo/Decision';
-import ProcessedDocuments from '../components/VoteInfo/ProcessedDocuments';
-import SectionDivider from '../components/VoteInfo/SectionDivider';
-import TotalVote from '../components/VoteInfo/TotalVote';
-import VoteDistribution from '../components/VoteInfo/VoteDistribution';
+import type { Vote as VoteType } from "../types/voting";
+import Appendix from "../components/VoteInfo/Appendix";
+import Decision from "../components/VoteInfo/Decision";
+import ProcessedDocuments from "../components/VoteInfo/ProcessedDocuments";
+import SectionDivider from "../components/VoteInfo/SectionDivider";
+import TotalVote from "../components/VoteInfo/TotalVote";
+import VoteDistribution from "../components/VoteInfo/VoteDistribution";
 
 interface Props {
   vote: VoteType;
@@ -25,15 +25,15 @@ const Vote: React.FC<Props> = ({
     appendix = null,
   },
 }) => (
-  <Card sx={{ marginBottom: '1rem' }}>
+  <Card sx={{ marginBottom: "1rem" }}>
     <CardContent>
       <TotalVote voting={voting.total} />
       <Typography
         variant="h3"
         component="h2"
         sx={{
-          marginBottom: '1rem',
-          marginTop: '1rem',
+          marginBottom: "1rem",
+          marginTop: "1rem",
         }}
       >
         {title}

@@ -1,8 +1,8 @@
-import { NextApiRequest, NextApiResponse } from 'next';
-import { setCache } from '../../../../utils/apiUtils';
-import { voteController } from '../../../../api/controllers/vote';
+import type { NextApiRequest, NextApiResponse } from "next";
+import { setCache } from "../../../../utils/apiUtils";
+import { voteController } from "../../../../api/controllers/vote";
 
-const ALLOWED_METHODS = ['GET'];
+const ALLOWED_METHODS = ["GET"];
 
 interface VoteApiRequest extends NextApiRequest {
   query: {
@@ -11,7 +11,10 @@ interface VoteApiRequest extends NextApiRequest {
   };
 }
 
-const voteHandler = async (req: VoteApiRequest, res: NextApiResponse): Promise<void> => {
+const voteHandler = async (
+  req: VoteApiRequest,
+  res: NextApiResponse,
+): Promise<void> => {
   const {
     query: { id, proposition },
     method,
@@ -20,8 +23,8 @@ const voteHandler = async (req: VoteApiRequest, res: NextApiResponse): Promise<v
   // These are pretty static, cache for a week
   setCache(604800, res);
 
-  if (!ALLOWED_METHODS.includes(method || '')) {
-    res.setHeader('Allow', ALLOWED_METHODS);
+  if (!ALLOWED_METHODS.includes(method || "")) {
+    res.setHeader("Allow", ALLOWED_METHODS);
     res.status(405).end(`Method ${method} Not Allowed`);
     return;
   }

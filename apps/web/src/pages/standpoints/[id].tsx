@@ -1,26 +1,35 @@
-import { GetStaticPaths, GetStaticProps, InferGetStaticPropsType, NextPage } from 'next';
-import Head from 'next/head';
+import type {
+  GetStaticPaths,
+  GetStaticProps,
+  InferGetStaticPropsType,
+  NextPage,
+} from "next";
+import Head from "next/head";
 
-import Container from '@mui/material/Container';
+import Container from "@mui/material/Container";
 
-import { RelatedSubject, StandpointsMap, Subject } from '../../types/subjects';
-import { getSubject, getSubjects } from '../../lib/api';
-import PageTitle from '../../components/PageTitle';
-import Standpoints from '../../containers/Standpoints';
+import type {
+  RelatedSubject,
+  StandpointsMap,
+  Subject,
+} from "../../types/subjects";
+import { getSubject, getSubjects } from "../../lib/api";
+import PageTitle from "../../components/PageTitle";
+import Standpoints from "../../containers/Standpoints";
 
-import * as ROUTES from '../../lib/routes';
-import dynamic from 'next/dynamic';
+import * as ROUTES from "../../lib/routes";
+import dynamic from "next/dynamic";
 
 const BreadcrumbsSocialMediaShare = dynamic(
-  () => import('../../components/BreadcrumbsSocialMediaShare/BreadcrumbsSocialMediaShare')
+  () =>
+    import(
+      "../../components/BreadcrumbsSocialMediaShare/BreadcrumbsSocialMediaShare"
+    ),
 );
 
-const StandPointContainer: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
-  name,
-  standpoints,
-  id,
-  relatedSubjects,
-}) => {
+const StandPointContainer: NextPage<
+  InferGetStaticPropsType<typeof getStaticProps>
+> = ({ name, standpoints, id, relatedSubjects }) => {
   const title = `${name} | Ämne | Partiguiden`;
   return (
     <>
@@ -36,13 +45,20 @@ const StandPointContainer: NextPage<InferGetStaticPropsType<typeof getStaticProp
         <BreadcrumbsSocialMediaShare
           breadcrumbsProps={{
             links: [
-              { href: ROUTES.STANDPOINTS, label: 'Partiernas Ståndpunkter' },
-              { href: ROUTES.STANDPOINT, as: ROUTES.getStandpointHref(id), label: name },
+              { href: ROUTES.STANDPOINTS, label: "Partiernas Ståndpunkter" },
+              {
+                href: ROUTES.STANDPOINT,
+                as: ROUTES.getStandpointHref(id),
+                label: name,
+              },
             ],
           }}
           socialMediaShareProps={{ title: name }}
         />
-        <Standpoints relatedSubjects={relatedSubjects} standpoints={standpoints} />
+        <Standpoints
+          relatedSubjects={relatedSubjects}
+          standpoints={standpoints}
+        />
       </Container>
     </>
   );

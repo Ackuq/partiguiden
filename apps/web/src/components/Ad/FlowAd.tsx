@@ -1,7 +1,7 @@
-import React, { useEffect } from 'react';
+import React, { useEffect } from "react";
 
-import { ADSENSE_CLIENT_ID, FLOW_AD_SLOT_ID } from '../../lib/adsense';
-import enableAds from './enableAds';
+import { ADSENSE_CLIENT_ID, FLOW_AD_SLOT_ID } from "../../lib/adsense";
+import enableAds from "./enableAds";
 
 const Ad: React.FC = () => {
   useEffect(() => {
@@ -21,7 +21,7 @@ const Ad: React.FC = () => {
       {enableAds() ? (
         <ins
           className="adsbygoogle"
-          style={{ display: 'block', width: '100%' }}
+          style={{ display: "block", width: "100%" }}
           data-ad-format="fluid"
           data-ad-layout-key="-fb+5w+4e-db+86"
           data-ad-client={ADSENSE_CLIENT_ID}
@@ -31,7 +31,7 @@ const Ad: React.FC = () => {
         <div
           style={{
             padding: 20,
-            border: '1px solid #ccc',
+            border: "1px solid #ccc",
           }}
         >
           Placeholder ad

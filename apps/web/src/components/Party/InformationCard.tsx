@@ -1,13 +1,13 @@
-import Divider from '@mui/material/Divider';
-import Link from '@mui/material/Link';
-import Paper from '@mui/material/Paper';
-import Typography from '@mui/material/Typography';
+import Divider from "@mui/material/Divider";
+import Link from "@mui/material/Link";
+import Paper from "@mui/material/Paper";
+import Typography from "@mui/material/Typography";
 
-import { styled } from '@mui/material/styles';
+import { styled } from "@mui/material/styles";
 
-import { PartyData } from '../../types/party';
+import type { PartyData } from "../../types/party";
 
-const Biography = styled('div')`
+const Biography = styled("div")`
   p {
     margin-top: 0.5em;
     margin-bottom: 0.5em;
@@ -41,9 +41,9 @@ const InformationCard: React.FC<Props> = ({ party }) => (
     <InformationDivider />
     <div>
       <Typography variant="h5">Ideologi</Typography>
-      <Typography>{party.ideology.join(', ')}</Typography>
+      <Typography>{party.ideology.join(", ")}</Typography>
       <Typography component="p" variant="caption">
-        Källa:{' '}
+        Källa:{" "}
         <Link href="https://www.wikipedia.org/" rel="noopener" target="_blank">
           https://www.wikipedia.org/
         </Link>
@@ -56,7 +56,7 @@ const InformationCard: React.FC<Props> = ({ party }) => (
         <Biography dangerouslySetInnerHTML={{ __html: party.abstract }} />
       </Typography>
       <Typography component="p" variant="caption">
-        Källa:{' '}
+        Källa:{" "}
         <Link href="https://www.wikipedia.org/" rel="noopener" target="_blank">
           https://www.wikipedia.org/
         </Link>

@@ -1,26 +1,27 @@
-import React from 'react';
+import React from "react";
 
-import Image from 'next/image';
-import Link from 'next/link';
+import Image from "next/image";
+import Link from "next/link";
 
-import Card from '@mui/material/Card';
-import CardHeader from '@mui/material/CardHeader';
-import Divider from '@mui/material/Divider';
-import Stack from '@mui/material/Stack';
-import Typography, { TypographyProps } from '@mui/material/Typography';
+import Card from "@mui/material/Card";
+import CardHeader from "@mui/material/CardHeader";
+import Divider from "@mui/material/Divider";
+import Stack from "@mui/material/Stack";
+import type { TypographyProps } from "@mui/material/Typography";
+import Typography from "@mui/material/Typography";
 
-import { styled } from '@mui/material/styles';
+import { styled } from "@mui/material/styles";
 
-import * as ROUTES from '../../lib/routes';
-import { PARTY_LOGOS_LOW_RES } from '../../assets/logos';
+import * as ROUTES from "../../lib/routes";
+import { PARTY_LOGOS_LOW_RES } from "../../assets/logos";
 
 import type {
   AbsenceLeaderboard as AbsenceLeaderboardType,
   AbsencePeriod,
   MemberAbsenceResponse,
-} from '../../types/member';
+} from "../../types/member";
 
-const ImageContainer = styled('div')<{ url: string }>`
+const ImageContainer = styled("div")<{ url: string }>`
   width: 75px;
   height: 75px;
   border-radius: 50%;
@@ -33,12 +34,20 @@ const ImageContainer = styled('div')<{ url: string }>`
 
 interface MemberListEntryProps {
   member: MemberAbsenceResponse;
-  percentageColor: TypographyProps['color'];
+  percentageColor: TypographyProps["color"];
 }
 
-const MemberListEntry: React.FC<MemberListEntryProps> = ({ member, percentageColor }) => {
+const MemberListEntry: React.FC<MemberListEntryProps> = ({
+  member,
+  percentageColor,
+}) => {
   return (
-    <Link href={ROUTES.MEMBER} as={ROUTES.getMemberHref(member.id)} passHref legacyBehavior>
+    <Link
+      href={ROUTES.MEMBER}
+      as={ROUTES.getMemberHref(member.id)}
+      passHref
+      legacyBehavior
+    >
       <Stack
         component="a"
         direction="row"
@@ -46,24 +55,29 @@ const MemberListEntry: React.FC<MemberListEntryProps> = ({ member, percentageCol
         marginY={1}
         color="inherit"
         sx={(theme) => ({
-          textDecoration: 'none',
+          textDecoration: "none",
           margin: 0,
-          padding: '0.5rem 1rem',
-          transition: 'box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out',
-          '&:hover': {
+          padding: "0.5rem 1rem",
+          transition:
+            "box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out",
+          "&:hover": {
             boxShadow: theme.shadows[10],
             backgroundColor:
-              theme.palette.mode === 'dark' ? theme.palette.grey[800] : theme.palette.grey[200],
+              theme.palette.mode === "dark"
+                ? theme.palette.grey[800]
+                : theme.palette.grey[200],
           },
         })}
       >
         <ImageContainer url={member.pictureUrl}>
-          {member.party !== '-' && (
+          {member.party !== "-" && (
             <Image
               width={25}
               height={25}
               src={
-                PARTY_LOGOS_LOW_RES[member.party.toUpperCase() as keyof typeof PARTY_LOGOS_LOW_RES]
+                PARTY_LOGOS_LOW_RES[
+                  member.party.toUpperCase() as keyof typeof PARTY_LOGOS_LOW_RES
+                ]
               }
               alt="Partisymbol"
             />
@@ -96,7 +110,7 @@ const MemberListEntry: React.FC<MemberListEntryProps> = ({ member, percentageCol
 interface AbsenceLeaderboardContentProps {
   title: string;
   memberList: MemberAbsenceResponse[];
-  percentageColor: TypographyProps['color'];
+  percentageColor: TypographyProps["color"];
   period: AbsencePeriod;
   description: string;
 }
@@ -112,7 +126,10 @@ const AbsenceLeaderboardContent: React.FC<AbsenceLeaderboardContentProps> = ({
     <CardHeader
       title={title}
       subheader={`För ${period} ${description}`}
-      sx={{ backgroundColor: (theme) => theme.palette.primary.main, color: 'white' }}
+      sx={{
+        backgroundColor: (theme) => theme.palette.primary.main,
+        color: "white",
+      }}
     />
 
     {memberList.map((member) => (
@@ -130,13 +147,21 @@ interface Props {
   description: string;
 }
 
-const AbsenceLeaderboard: React.FC<Props> = ({ absenceLeaderboard, period, description }) => {
+const AbsenceLeaderboard: React.FC<Props> = ({
+  absenceLeaderboard,
+  period,
+  description,
+}) => {
   return (
     <>
       <Typography variant="h4" gutterBottom align="center">
         Voteringsnärvaro för {period} {description}
       </Typography>
-      <Stack spacing={2} direction={{ xs: 'column', sm: 'row' }} justifyContent="center">
+      <Stack
+        spacing={2}
+        direction={{ xs: "column", sm: "row" }}
+        justifyContent="center"
+      >
         <AbsenceLeaderboardContent
           title="Ledamöter med minst voteringsnärvaro"
           memberList={absenceLeaderboard.mostAbsence}

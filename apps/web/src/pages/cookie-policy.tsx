@@ -1,14 +1,14 @@
-import { NextPage } from 'next';
-import Head from 'next/head';
+import type { NextPage } from "next";
+import Head from "next/head";
 
-import AnnouncementIcon from '@mui/icons-material/Announcement';
+import AnnouncementIcon from "@mui/icons-material/Announcement";
 
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import Container from '@mui/material/Container';
-import Typography from '@mui/material/Typography';
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import Container from "@mui/material/Container";
+import Typography from "@mui/material/Typography";
 
-import PageTitle from '../components/PageTitle';
+import PageTitle from "../components/PageTitle";
 
 const CookiePolicy: NextPage = () => (
   <>
@@ -24,12 +24,13 @@ const CookiePolicy: NextPage = () => (
       <Card>
         <CardContent>
           <Typography variant="subtitle1" paragraph>
-            Partiguiden använder webbkakor från Google för att kunna analysera användares
-            interaktion med hemsidan i syftet att kunna vidareutveckla sidan.
+            Partiguiden använder webbkakor från Google för att kunna analysera
+            användares interaktion med hemsidan i syftet att kunna
+            vidareutveckla sidan.
           </Typography>
           <Typography variant="subtitle1" paragraph>
-            Informationen som delas är krypterad och helt anonym, vi kan alltså inte identifera
-            användare.
+            Informationen som delas är krypterad och helt anonym, vi kan alltså
+            inte identifera användare.
           </Typography>
         </CardContent>
       </Card>

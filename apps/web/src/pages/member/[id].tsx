@@ -1,15 +1,29 @@
-import { GetStaticPaths, GetStaticProps, InferGetStaticPropsType, NextPage } from 'next';
-import Head from 'next/head';
+import type {
+  GetStaticPaths,
+  GetStaticProps,
+  InferGetStaticPropsType,
+  NextPage,
+} from "next";
+import Head from "next/head";
 
-import { MemberDetailedResponse } from '../../types/member';
-import { memberController, membersController } from '../../api/controllers/members';
-import LoadCircle from '../../components/LoadCircle';
-import Member from '../../containers/Member';
+import type { MemberDetailedResponse } from "../../types/member";
+import {
+  memberController,
+  membersController,
+} from "../../api/controllers/members";
+import LoadCircle from "../../components/LoadCircle";
+import Member from "../../containers/Member";
 
-const MemberContainer: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({ member }) => {
-  const memberName = `${member?.firstName ?? ''} ${member?.lastName ?? ''}`.trim();
+const MemberContainer: NextPage<
+  InferGetStaticPropsType<typeof getStaticProps>
+> = ({ member }) => {
+  const memberName = `${member?.firstName ?? ""} ${
+    member?.lastName ?? ""
+  }`.trim();
 
-  const title = `${!!memberName ? `${memberName} |` : ''} Ledamot | Partiguiden`;
+  const title = `${
+    !!memberName ? `${memberName} |` : ""
+  } Ledamot | Partiguiden`;
   return (
     <>
       <Head>
@@ -17,7 +31,7 @@ const MemberContainer: NextPage<InferGetStaticPropsType<typeof getStaticProps>> 
         <meta
           name="description"
           content={`Här kan du ta reda på information om ledamot${
-            !!memberName ? ` ${memberName}` : ''
+            !!memberName ? ` ${memberName}` : ""
           }. Se vilka dokument som hen har varit med och skapat och samt voteringsnärvaro.`}
         />
       </Head>

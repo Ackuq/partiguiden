@@ -1,12 +1,16 @@
-import { DocumentReference, NewVotingRow, OldVotingRow } from '../../types/parliament';
-import {
+import type {
+  DocumentReference,
+  NewVotingRow,
+  OldVotingRow,
+} from "../../types/parliament";
+import type {
   ProcessedDocument,
   VotingDict,
   VotingEntry,
   VotingGroup,
   VotingResult,
-  votingGroup,
-} from '../../types/voting';
+} from "../../types/voting";
+import { votingGroup } from "../../types/voting";
 
 interface ReferencesResponse {
   processedDocuments: ProcessedDocument[];
@@ -15,10 +19,10 @@ interface ReferencesResponse {
 
 export const createReferences = (
   unparsedProposition: string,
-  references: DocumentReference[]
+  references: DocumentReference[],
 ): ReferencesResponse => {
   /* Remove newlines */
-  let proposition = unparsedProposition.replace(/(<br>)|<BR\/>/gm, ' ');
+  let proposition = unparsedProposition.replace(/(<br>)|<BR\/>/gm, " ");
   /* Regex to find references in suggestion text */
   /* Matches for example: 2019/20:3635 */
   const referenceRegex = /[0-9]{4}\/[0-9]{2}:[A-ö]{0,4}[0-9]{0,4}/gm;
@@ -44,14 +48,16 @@ export const createReferences = (
 
     const id =
       references.find(
-        (reference) => `${reference.ref_dok_rm}:${reference.ref_dok_bet}` === referencedDocuments[i]
-      )?.ref_dok_id ?? '';
+        (reference) =>
+          `${reference.ref_dok_rm}:${reference.ref_dok_bet}` ===
+          referencedDocuments[i],
+      )?.ref_dok_id ?? "";
 
     const section = proposition.slice(sectionStart, sectionEnd);
 
-    if (section.includes(')')) {
+    if (section.includes(")")) {
       /* Replace EX: "2019/20:3642 av Helena Lindahl m.fl. (C)"" */
-      const endIndex = section.indexOf(')') + 1;
+      const endIndex = section.indexOf(")") + 1;
       const label = section.substring(0, endIndex);
       processedDocuments.push({ id, label });
 
@@ -77,12 +83,12 @@ export const titleTrim = (title: string): string =>
 
 const votingGroupRemap = (partyName: string): VotingGroup => {
   switch (partyName) {
-    case 'fp':
-      return 'L';
-    case '-':
-      return 'noParty';
-    case 'Totalt':
-      return 'total';
+    case "fp":
+      return "L";
+    case "-":
+      return "noParty";
+    case "Totalt":
+      return "total";
     default:
       return partyName.toUpperCase() as VotingGroup;
   }
@@ -97,7 +103,7 @@ const defaultVotingEntry: VotingEntry = {
 
 const defaultVotes: VotingDict = votingGroup.reduce(
   (prev, curr) => ({ ...prev, [curr]: defaultVotingEntry }),
-  {} as VotingDict
+  {} as VotingDict,
 );
 
 export const extractVotesNew = (row: NewVotingRow[]): VotingDict => {
@@ -118,23 +124,25 @@ export const extractVotesNew = (row: NewVotingRow[]): VotingDict => {
       refrain: +td[2],
       abscent: +td[3],
     };
-    total['yes'] = total['yes'] + partyVotes['yes'];
-    total['no'] = total['no'] + partyVotes['no'];
-    total['refrain'] = total['refrain'] + partyVotes['refrain'];
-    total['abscent'] = total['abscent'] + partyVotes['abscent'];
+    total["yes"] = total["yes"] + partyVotes["yes"];
+    total["no"] = total["no"] + partyVotes["no"];
+    total["refrain"] = total["refrain"] + partyVotes["refrain"];
+    total["abscent"] = total["abscent"] + partyVotes["abscent"];
     voting[votingGroupName] = partyVotes;
   });
-  voting['total'] = total;
-  console.log(voting['total']);
+  voting["total"] = total;
+  console.log(voting["total"]);
   return voting;
 };
 
-export const extractVotes = (row: NewVotingRow[] | OldVotingRow | undefined): VotingDict => {
+export const extractVotes = (
+  row: NewVotingRow[] | OldVotingRow | undefined,
+): VotingDict => {
   if (!row) {
     return defaultVotes;
   }
   // New only contains `td`
-  if (row.every((col) => Object.hasOwn(col, 'td'))) {
+  if (row.every((col) => Object.hasOwn(col, "td"))) {
     return extractVotesNew(<NewVotingRow[]>row);
   }
   const voting = {} as VotingDict;
@@ -159,10 +167,10 @@ export const extractVotes = (row: NewVotingRow[] | OldVotingRow | undefined): Vo
   return voting;
 };
 
-const decisions: ['yes', 'no', 'refrain'] = ['yes', 'no', 'refrain'];
+const decisions: ["yes", "no", "refrain"] = ["yes", "no", "refrain"];
 
 export const getMaxVote = (partyVotes: VotingDict): VotingResult => {
-  const result: VotingResult = { yes: [], no: [], winner: 'draw' };
+  const result: VotingResult = { yes: [], no: [], winner: "draw" };
 
   // Want to isolate so just the parties are in the parties constant
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -173,7 +181,7 @@ export const getMaxVote = (partyVotes: VotingDict): VotingResult => {
 
   /* Get the winner */
   if (yesTotal !== noTotal) {
-    result.winner = yesTotal > noTotal ? 'yes' : 'no';
+    result.winner = yesTotal > noTotal ? "yes" : "no";
   }
 
   /* Decide on what parties voted for */
@@ -181,7 +189,7 @@ export const getMaxVote = (partyVotes: VotingDict): VotingResult => {
   for (const [party, votes] of Object.entries(parties)) {
     const vote = decisions.reduce((a, b) => (votes[a] > votes[b] ? a : b));
 
-    if (vote === 'yes' || vote === 'no') {
+    if (vote === "yes" || vote === "no") {
       result[vote].push(party);
     }
   }

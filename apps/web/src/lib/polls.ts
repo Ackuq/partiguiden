@@ -1,6 +1,8 @@
-import { Blocks, classicBlocks, newBlocks } from '../utils/getParties';
-import { PartyAbbreviation, partyAbbreviations } from '../utils/parties';
-import { Polls } from '../types/polls';
+import type { Blocks } from "../utils/getParties";
+import { classicBlocks, newBlocks } from "../utils/getParties";
+import type { PartyAbbreviation } from "../utils/parties";
+import { partyAbbreviations } from "../utils/parties";
+import type { Polls } from "../types/polls";
 
 const MONTH_MAP = {
   jan: 0,
@@ -26,23 +28,27 @@ const isNum = (value: string) => /^\d+$/.test(value);
  */
 const parsePolls = (csv: string): Polls => {
   const polls: Polls = {};
-  const rows = csv.split('\n');
+  const rows = csv.split("\n");
   rows.pop();
   const header = rows.shift() as string;
-  const partyOrdering = header.split(',').slice(2, 10) as Array<PartyAbbreviation>;
+  const partyOrdering = header
+    .split(",")
+    .slice(2, 10) as Array<PartyAbbreviation>;
 
   rows.forEach((row) => {
-    const fields = row.split(',');
+    const fields = row.split(",");
 
     const publishedDate = fields[13];
 
     const [yearString, monthString, dayString] = (
-      publishedDate !== 'NA' ? publishedDate.split('-') : fields[0].split('-')
+      publishedDate !== "NA" ? publishedDate.split("-") : fields[0].split("-")
     ) as [string, keyof typeof MONTH_MAP, string | undefined];
 
     const year = parseInt(yearString, 10);
 
-    const month = isNum(monthString) ? parseInt(monthString, 10) - 1 : MONTH_MAP[monthString];
+    const month = isNum(monthString)
+      ? parseInt(monthString, 10) - 1
+      : MONTH_MAP[monthString];
 
     const day = dayString ? parseInt(dayString, 10) : null;
 
@@ -59,7 +65,7 @@ const parsePolls = (csv: string): Polls => {
       .slice(2, 10)
       .reduce(
         (prev, curr, i) => ({ ...prev, [partyOrdering[i]]: parseFloat(curr) }),
-        {} as Record<PartyAbbreviation, number>
+        {} as Record<PartyAbbreviation, number>,
       );
     const from = fields[14];
     const to = fields[15];
@@ -79,7 +85,7 @@ const parsePolls = (csv: string): Polls => {
 };
 
 const POLLS_URL =
-  'https://raw.githubusercontent.com/hampusborgos/SwedishPolls/master/Data/Polls.csv';
+  "https://raw.githubusercontent.com/hampusborgos/SwedishPolls/master/Data/Polls.csv";
 
 /**
  * Fetches the poll data
@@ -98,7 +104,12 @@ export const getPolls = (): Promise<Polls> =>
  * @param repeats Whether institutes should only have 1 entry in the output
  * @returns The filtered poll data
  */
-export const getWithin = (polls: Polls, from: Date, to: Date, repeats = false): Polls => {
+export const getWithin = (
+  polls: Polls,
+  from: Date,
+  to: Date,
+  repeats = false,
+): Polls => {
   const filtered: Polls = {};
 
   const usedInstitutes: Array<string> = [];
@@ -153,9 +164,12 @@ export const getWithin = (polls: Polls, from: Date, to: Date, repeats = false): 
  * @returns Array that consists of {name, value}
  */
 export const formatData = (
-  data: Record<PartyAbbreviation, number>
+  data: Record<PartyAbbreviation, number>,
 ): Array<{ name: string; value: number }> =>
-  Object.keys(data).map((name) => ({ name, value: data[name as PartyAbbreviation] }));
+  Object.keys(data).map((name) => ({
+    name,
+    value: data[name as PartyAbbreviation],
+  }));
 
 export interface PollDetails {
   value: number;
@@ -198,11 +212,14 @@ export const getMonthlyAverage = (polls: Polls): MonthlyAverage => {
           (acc, [party, values]) => ({
             ...acc,
             [party as PartyAbbreviation]: parseFloat(
-              (values.reduce((a, b) => a + b, 0) / values.length).toFixed(2)
+              (values.reduce((a, b) => a + b, 0) / values.length).toFixed(2),
             ),
           }),
-          { date: `${year}-${month < 9 ? '0' : ''}${month + 1}` } as Record<string, number | string>
-        )
+          { date: `${year}-${month < 9 ? "0" : ""}${month + 1}` } as Record<
+            string,
+            number | string
+          >,
+        ),
       );
     });
   });
@@ -251,7 +268,7 @@ export type AveragePoll = Array<{
 export const getAverage = (polls: Polls): AveragePoll => {
   const partyAll = partyAbbreviations.reduce(
     (prev, curr) => ({ ...prev, [curr]: [] }),
-    {} as Record<PartyAbbreviation, Array<PollDetails>>
+    {} as Record<PartyAbbreviation, Array<PollDetails>>,
   );
 
   partyAbbreviations.forEach((party) => {
@@ -266,7 +283,7 @@ export const getAverage = (polls: Polls): AveragePoll => {
             partyAll[party as PartyAbbreviation].push({
               value,
               institute: poll.institute,
-              published: `${poll.day || 'NA'}/${poll.month + 1}/${poll.year}`,
+              published: `${poll.day || "NA"}/${poll.month + 1}/${poll.year}`,
               day: poll.day,
               month: poll.month,
               year: poll.year,
@@ -293,7 +310,10 @@ export const getAverage = (polls: Polls): AveragePoll => {
   return result;
 };
 
-type BlockAverage = Array<{ name: Blocks['values'][number]['name']; value: number }>;
+type BlockAverage = Array<{
+  name: Blocks["values"][number]["name"];
+  value: number;
+}>;
 
 export type BlocksAverage = [BlockAverage, BlockAverage];
 
@@ -307,15 +327,17 @@ const generateBlockAverage =
   (blocks: Blocks): BlockAverage => {
     return average.reduce(
       (prev, { party, value }) => {
-        const blockIndex = blocks.values.findIndex((block) => block.parties.includes(party));
+        const blockIndex = blocks.values.findIndex((block) =>
+          block.parties.includes(party),
+        );
         const newAverage = prev;
         newAverage[blockIndex].value += value;
         return newAverage;
       },
-      blocks.values.map((block: Blocks['values'][number]) => ({
+      blocks.values.map((block: Blocks["values"][number]) => ({
         name: block.name,
         value: 0,
-      })) as BlockAverage
+      })) as BlockAverage,
     );
   };
 
@@ -331,8 +353,8 @@ export const createBlockAverage = (average: AveragePoll): BlocksAverage => {
 
 // Format number to only 2 significant figures, to avoid weird values
 export const displayFormatter = (value: number | string): string => {
-  if (typeof value === 'string') {
+  if (typeof value === "string") {
     return value;
   }
-  return value.toFixed(2) + '%';
+  return value.toFixed(2) + "%";
 };

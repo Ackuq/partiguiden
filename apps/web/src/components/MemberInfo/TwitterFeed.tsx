@@ -1,9 +1,9 @@
-import Typography from '@mui/material/Typography';
-import useTheme from '@mui/system/useTheme';
+import Typography from "@mui/material/Typography";
+import useTheme from "@mui/system/useTheme";
 
-import { useEffect, useState } from 'react';
-import { useTwitterInfo } from '../../hooks/wikidataHooks';
-import LoadCircle from '../LoadCircle';
+import { useEffect, useState } from "react";
+import { useTwitterInfo } from "../../hooks/wikidataHooks";
+import LoadCircle from "../LoadCircle";
 
 declare global {
   interface Window {
@@ -20,26 +20,27 @@ const TwitterFeed: React.FC<Props> = ({ id }) => {
   const theme = useTheme();
   const [contentLoaded, setContentLoaded] = useState<boolean>(false);
   const twitterResponse = useTwitterInfo(id);
-  const twitterHandle = twitterResponse?.results?.bindings?.[0]?.twitterHandle?.value;
+  const twitterHandle =
+    twitterResponse?.results?.bindings?.[0]?.twitterHandle?.value;
 
   useEffect(() => {
     if (twitterHandle || !window.twttr) {
-      const container = document.getElementById('twitterContainer');
+      const container = document.getElementById("twitterContainer");
       if (container) {
-        container.innerHTML = '';
+        container.innerHTML = "";
       }
       setContentLoaded(false);
       window.twttr.widgets
         .createTimeline(
           {
-            sourceType: 'profile',
+            sourceType: "profile",
             screenName: twitterHandle,
           },
           container,
           {
             theme: theme.palette.mode,
-            chrome: 'transparent nofooter noborders',
-          }
+            chrome: "transparent nofooter noborders",
+          },
         )
         .then(() => {
           setContentLoaded(true);
@@ -54,7 +55,7 @@ const TwitterFeed: React.FC<Props> = ({ id }) => {
     <>
       <div
         id="twitterContainer"
-        style={{ maxWidth: 500, marginRight: 'auto', marginLeft: 'auto' }}
+        style={{ maxWidth: 500, marginRight: "auto", marginLeft: "auto" }}
       ></div>
       {!contentLoaded && <LoadCircle />}
       {contentLoaded && !twitterHandle && (

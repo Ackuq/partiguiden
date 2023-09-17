@@ -1,14 +1,14 @@
-import Box from '@mui/material/Box';
-import Link from 'next/link';
-import Tab from '@mui/material/Tab';
-import Tabs from '@mui/material/Tabs';
+import Box from "@mui/material/Box";
+import Link from "next/link";
+import Tab from "@mui/material/Tab";
+import Tabs from "@mui/material/Tabs";
 
-import * as ROUTES from '../../lib/routes';
+import * as ROUTES from "../../lib/routes";
 
 const tabs = [
-  { label: 'Ledamöter', route: ROUTES.MEMBERS },
-  { label: 'Statistik riksmöte (riksdagsår)', route: ROUTES.MEMBER_STATS_YEAR },
-  { label: 'Statistik mandatperiod', route: ROUTES.MEMBER_STATS_PERIOD },
+  { label: "Ledamöter", route: ROUTES.MEMBERS },
+  { label: "Statistik riksmöte (riksdagsår)", route: ROUTES.MEMBER_STATS_YEAR },
+  { label: "Statistik mandatperiod", route: ROUTES.MEMBER_STATS_PERIOD },
 ] as const;
 
 interface Props {
@@ -18,14 +18,14 @@ interface Props {
 const MembersTabs: React.FC<Props> = ({ value }) => (
   <Box
     sx={{
-      display: 'flex',
-      justifyContent: 'center',
+      display: "flex",
+      justifyContent: "center",
     }}
   >
     <Tabs
       value={value}
       sx={{
-        mb: '1rem',
+        mb: "1rem",
       }}
       variant="scrollable"
       scrollButtons="auto"

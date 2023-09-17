@@ -1,14 +1,14 @@
-import { GetServerSideProps, NextPage } from 'next';
-import Head from 'next/head';
+import type { GetServerSideProps, NextPage } from "next";
+import Head from "next/head";
 
-import Container from '@mui/material/Container';
+import Container from "@mui/material/Container";
 
-import { useDocument } from '../../hooks/parliamentHooks';
+import { useDocument } from "../../hooks/parliamentHooks";
 
-import Document from '../../containers/Document';
-import LoadCircle from '../../components/LoadCircle';
-import PageTitle from '../../components/PageTitle';
-import SocialMediaShare from '../../components/BreadcrumbsSocialMediaShare/SocialMediaShare';
+import Document from "../../containers/Document";
+import LoadCircle from "../../components/LoadCircle";
+import PageTitle from "../../components/PageTitle";
+import SocialMediaShare from "../../components/BreadcrumbsSocialMediaShare/SocialMediaShare";
 
 const DocumentContainer: NextPage<{ id: string }> = ({ id }) => {
   const document = useDocument(id);
@@ -29,9 +29,10 @@ const DocumentContainer: NextPage<{ id: string }> = ({ id }) => {
   );
 };
 
-export const getServerSideProps: GetServerSideProps<{ id: string }, { id: string }> = async ({
-  params,
-}) => {
+export const getServerSideProps: GetServerSideProps<
+  { id: string },
+  { id: string }
+> = async ({ params }) => {
   const id = params?.id;
 
   if (id === undefined) {

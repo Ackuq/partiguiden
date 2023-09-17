@@ -1,4 +1,4 @@
-import { PartyAbbreviation } from '../utils/parties';
+import type { PartyAbbreviation } from "../utils/parties";
 
 interface Poll {
   from: string;

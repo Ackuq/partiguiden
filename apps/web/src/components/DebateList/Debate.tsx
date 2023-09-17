@@ -1,9 +1,9 @@
-import Image from 'next/image';
-import Link from 'next/link';
+import Image from "next/image";
+import Link from "next/link";
 
-import { lookupAuthority } from '../../utils/authorityTable';
+import { lookupAuthority } from "../../utils/authorityTable";
 
-import * as ROUTES from '../../lib/routes';
+import * as ROUTES from "../../lib/routes";
 import {
   CardButton,
   CardContainer,
@@ -11,15 +11,15 @@ import {
   Subtitle,
   Title,
   TypeTitle,
-} from '../DecisionList/Decision';
-import { DebateListEntry, Participant } from '../../types/debate';
-import { PARTY_LOGOS_LOW_RES } from '../../assets/logos';
-import { PartyAbbreviation } from '../../utils/parties';
-import { styled } from '@mui/material/styles';
-import { useMember } from '../../hooks/parliamentHooks';
-import AuthorityCardHeader from '../AuthorityCardHeader';
+} from "../DecisionList/Decision";
+import type { DebateListEntry, Participant } from "../../types/debate";
+import { PARTY_LOGOS_LOW_RES } from "../../assets/logos";
+import type { PartyAbbreviation } from "../../utils/parties";
+import { styled } from "@mui/material/styles";
+import { useMember } from "../../hooks/parliamentHooks";
+import AuthorityCardHeader from "../AuthorityCardHeader";
 
-const ImageContainer = styled('div')<{ url: string }>`
+const ImageContainer = styled("div")<{ url: string }>`
   margin-left: 0.5rem;
   min-width: 90px;
   height: 90px;
@@ -44,11 +44,13 @@ const SenderImage: React.FC<SenderImageProps> = ({ sender }) => {
 
   return (
     <ImageContainer url={member.pictureUrl}>
-      {member.party !== '-' && (
+      {member.party !== "-" && (
         <Image
           width={30}
           height={30}
-          src={PARTY_LOGOS_LOW_RES[member.party.toUpperCase() as PartyAbbreviation]}
+          src={
+            PARTY_LOGOS_LOW_RES[member.party.toUpperCase() as PartyAbbreviation]
+          }
           alt="Partisymbol"
         />
       )}
@@ -64,7 +66,12 @@ const Debate: React.FC<Props> = ({ debate }) => {
   const authority = lookupAuthority(debate.authority);
   return (
     <CardContainer>
-      <Link href={ROUTES.DEBATE} as={ROUTES.getDebateHref(debate.id)} passHref legacyBehavior>
+      <Link
+        href={ROUTES.DEBATE}
+        as={ROUTES.getDebateHref(debate.id)}
+        passHref
+        legacyBehavior
+      >
         <CardButton LinkComponent="a">
           {!!authority && <AuthorityCardHeader authority={authority} />}
 
@@ -81,7 +88,9 @@ const Debate: React.FC<Props> = ({ debate }) => {
               </Subtitle>
             </div>
 
-            {!!debate.participants?.sender && <SenderImage sender={debate.participants.sender} />}
+            {!!debate.participants?.sender && (
+              <SenderImage sender={debate.participants.sender} />
+            )}
           </CustomCardContent>
         </CardButton>
       </Link>

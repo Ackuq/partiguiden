@@ -1,14 +1,14 @@
-import React, { useCallback } from 'react';
+import React, { useCallback } from "react";
 
-import Divider from '@mui/material/Divider';
+import Divider from "@mui/material/Divider";
 
-import { NextRouter } from 'next/router';
-import { stringify } from 'querystring';
+import type { NextRouter } from "next/router";
+import { stringify } from "querystring";
 
-import { authorityTable } from '../../utils';
-import FilterContainer from '../Filter/FilterContainer';
-import FilterList from '../Filter/FilterList';
-import FilterSearch from '../Filter/FilterSearch';
+import { authorityTable } from "../../utils";
+import FilterContainer from "../Filter/FilterContainer";
+import FilterList from "../Filter/FilterList";
+import FilterSearch from "../Filter/FilterSearch";
 
 interface Props {
   router: NextRouter;
@@ -22,7 +22,7 @@ const Filter: React.FC<Props> = ({ router, search, org }) => {
       const query = { ...router.query, search: newSearch, org: newOrg };
       router.push(`${router.route}?${stringify(query)}`);
     },
-    [router]
+    [router],
   );
 
   const updateSearch = (value: string) => {
@@ -34,7 +34,7 @@ const Filter: React.FC<Props> = ({ router, search, org }) => {
     if (isChecked(el)) {
       updateRoute(
         search,
-        org.filter((item) => item !== el)
+        org.filter((item) => item !== el),
       );
     } else {
       updateRoute(search, [...org, el]);

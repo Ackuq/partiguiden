@@ -1,9 +1,13 @@
-import { useRouter } from 'next/router';
+import { useRouter } from "next/router";
 
-import { queryAttrToArray, queryAttrToNumber, queryAttrToString } from '../utils';
-import ContainerList from '../components/ContainerList';
-import Filter from '../components/ParlimentFilter/Filter';
-import VoteList from '../components/VoteList/VoteList';
+import {
+  queryAttrToArray,
+  queryAttrToNumber,
+  queryAttrToString,
+} from "../utils";
+import ContainerList from "../components/ContainerList";
+import Filter from "../components/ParlimentFilter/Filter";
+import VoteList from "../components/VoteList/VoteList";
 
 const Votes: React.FC = () => {
   const router = useRouter();
@@ -12,7 +16,7 @@ const Votes: React.FC = () => {
   const org = queryAttrToArray(router.query.org);
 
   return (
-    <div style={{ display: 'flex' }}>
+    <div style={{ display: "flex" }}>
       <ContainerList maxWidth="md">
         <VoteList router={router} page={page} />
       </ContainerList>

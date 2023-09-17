@@ -1,25 +1,27 @@
-import Link from 'next/link';
+import Link from "next/link";
 
-import ButtonBase from '@mui/material/ButtonBase';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import Typography from '@mui/material/Typography';
+import ButtonBase from "@mui/material/ButtonBase";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import Typography from "@mui/material/Typography";
 
-import { styled } from '@mui/material/styles';
+import { styled } from "@mui/material/styles";
 
-import VoteResult from './VoteResult';
+import VoteResult from "./VoteResult";
 
-import * as ROUTES from '../../lib/routes';
-import { lookupAuthority } from '../../utils';
+import * as ROUTES from "../../lib/routes";
+import { lookupAuthority } from "../../utils";
 
-import { VoteListEntry } from '../../types/voting';
-import AuthorityCardHeader from '../AuthorityCardHeader';
+import type { VoteListEntry } from "../../types/voting";
+import AuthorityCardHeader from "../AuthorityCardHeader";
 
 const Title = styled(Typography)`
   font-size: 1.125rem;
   line-height: 1.3;
   color: ${({ theme }) =>
-    theme.palette.mode === 'dark' ? theme.palette.text.primary : theme.palette.primary.dark};
+    theme.palette.mode === "dark"
+      ? theme.palette.text.primary
+      : theme.palette.primary.dark};
 `;
 
 const Subtitle = styled(Typography)`
@@ -41,7 +43,7 @@ const Vote: React.FC<Props> = ({ vote }) => {
         passHref
         legacyBehavior
       >
-        <ButtonBase style={{ display: 'block' }} component="a">
+        <ButtonBase style={{ display: "block" }} component="a">
           {authority && <AuthorityCardHeader authority={authority} />}
 
           <CardContent>

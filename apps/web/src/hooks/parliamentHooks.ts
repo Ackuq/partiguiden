@@ -1,28 +1,37 @@
-import { DebateEntry, DebateListResponse } from '../types/debate';
-import { Decisions } from '../types/decision';
-import { DocumentResponse } from '../types/document';
-import { MemberDetailedResponse, MemberDocuments } from '../types/member';
-import { ParsedUrlQuery, stringify } from 'querystring';
-import { Vote, VoteList } from '../types/voting';
-import useSWR from 'swr';
+import type { DebateEntry, DebateListResponse } from "../types/debate";
+import type { Decisions } from "../types/decision";
+import type { DocumentResponse } from "../types/document";
+import type { MemberDetailedResponse, MemberDocuments } from "../types/member";
+import type { ParsedUrlQuery } from "querystring";
+import { stringify } from "querystring";
+import type { Vote, VoteList } from "../types/voting";
+import useSWR from "swr";
 
 const fetcher = (url: string) => fetch(url).then((r) => r.json());
 
 export const useDecisions = (query: ParsedUrlQuery): Decisions | undefined => {
   const parsedQuery = query;
   if (!parsedQuery.page) {
-    parsedQuery.page = '1';
+    parsedQuery.page = "1";
   }
-  const { data } = useSWR<Decisions>(`/api/decisions?${stringify(parsedQuery)}`, fetcher);
+  const { data } = useSWR<Decisions>(
+    `/api/decisions?${stringify(parsedQuery)}`,
+    fetcher,
+  );
   return data;
 };
 
-export const useDebates = (query: ParsedUrlQuery): DebateListResponse | undefined => {
+export const useDebates = (
+  query: ParsedUrlQuery,
+): DebateListResponse | undefined => {
   const parsedQuery = query;
   if (!parsedQuery.page) {
-    parsedQuery.page = '1';
+    parsedQuery.page = "1";
   }
-  const { data } = useSWR<DebateListResponse>(`/api/debate?${stringify(parsedQuery)}`, fetcher);
+  const { data } = useSWR<DebateListResponse>(
+    `/api/debate?${stringify(parsedQuery)}`,
+    fetcher,
+  );
   return data;
 };
 
@@ -44,18 +53,30 @@ export const useVote = (id: string, proposition: number): Vote | undefined => {
 export const useVotes = (query: ParsedUrlQuery): VoteList | undefined => {
   const parsedQuery = query;
   if (!parsedQuery.page) {
-    parsedQuery.page = '1';
+    parsedQuery.page = "1";
   }
-  const { data } = useSWR<VoteList>(`/api/vote?${stringify(parsedQuery)}`, fetcher);
+  const { data } = useSWR<VoteList>(
+    `/api/vote?${stringify(parsedQuery)}`,
+    fetcher,
+  );
   return data;
 };
 
-export const useMemberDocuments = (id: string, page: number): MemberDocuments | undefined => {
-  const { data } = useSWR<MemberDocuments>(`/api/member/${id}/documents?page=${page}`, fetcher);
+export const useMemberDocuments = (
+  id: string,
+  page: number,
+): MemberDocuments | undefined => {
+  const { data } = useSWR<MemberDocuments>(
+    `/api/member/${id}/documents?page=${page}`,
+    fetcher,
+  );
   return data;
 };
 
 export const useDocument = (id: string): DocumentResponse | undefined => {
-  const { data } = useSWR<DocumentResponse>(`/api/document/${id}/json`, fetcher);
+  const { data } = useSWR<DocumentResponse>(
+    `/api/document/${id}/json`,
+    fetcher,
+  );
   return data;
 };

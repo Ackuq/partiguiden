@@ -1,12 +1,12 @@
-import Image from 'next/image';
+import Image from "next/image";
 
-import Avatar from '@mui/material/Avatar';
-import Box from '@mui/material/Box';
+import Avatar from "@mui/material/Avatar";
+import Box from "@mui/material/Box";
 
-import { styled } from '@mui/material/styles';
+import { styled } from "@mui/material/styles";
 
-import { PARTY_LOGOS_LOW_RES } from '../../assets/logos';
-import { PartyAbbreviation } from '../../utils/parties';
+import { PARTY_LOGOS_LOW_RES } from "../../assets/logos";
+import type { PartyAbbreviation } from "../../utils/parties";
 
 const stringToColor = (string: string): string => {
   let hash = 0;
@@ -16,7 +16,7 @@ const stringToColor = (string: string): string => {
     hash = string.charCodeAt(i) + ((hash << 5) - hash);
   }
 
-  let color = '#';
+  let color = "#";
 
   for (i = 0; i < 3; i += 1) {
     const value = (hash >> (i * 8)) & 0xff;
@@ -46,25 +46,25 @@ const MemberAvatar = styled(Avatar)<MemberAvatarProps>(
         : `
     width: ${theme.spacing(20)};
     height: ${theme.spacing(20)};
-    ${theme.breakpoints.down('md')} {
+    ${theme.breakpoints.down("md")} {
       width: ${theme.spacing(15)};
       height: ${theme.spacing(15)};
     }
 
-    ${theme.breakpoints.down('xs')} {
+    ${theme.breakpoints.down("xs")} {
       width: ${theme.spacing(10)};
       height: ${theme.spacing(10)};
     }
     `
     }
-`
+`,
 );
 
 const firstLetterOfSentences = (s: string) => {
   return s
-    .split(' ')
+    .split(" ")
     .map((s) => s[0])
-    .join('');
+    .join("");
 };
 
 interface Props {
@@ -75,7 +75,13 @@ interface Props {
   party?: PartyAbbreviation;
 }
 
-const Picture: React.FC<Props> = ({ firstName, lastName, pictureUrl, size, party }) => {
+const Picture: React.FC<Props> = ({
+  firstName,
+  lastName,
+  pictureUrl,
+  size,
+  party,
+}) => {
   const name = `${firstName} ${lastName}`;
 
   return (
@@ -87,7 +93,7 @@ const Picture: React.FC<Props> = ({ firstName, lastName, pictureUrl, size, party
           fill
           priority={true}
           style={{
-            objectFit: 'cover',
+            objectFit: "cover",
             fontSize: 0,
           }}
           sizes=" (max-width: 768px) 100vw,

@@ -1,5 +1,5 @@
-import { blueGrey, green, grey, red, teal } from '@mui/material/colors';
-import { darken } from '@mui/material/styles';
+import { blueGrey, green, grey, red, teal } from "@mui/material/colors";
+import { darken } from "@mui/material/styles";
 
 export const voteListColors = {
   dark: {

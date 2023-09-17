@@ -1,32 +1,34 @@
-import Link from 'next/link';
+import Link from "next/link";
 
-import ButtonBase from '@mui/material/ButtonBase';
-import Grid from '@mui/material/Grid';
-import Typography from '@mui/material/Typography';
+import ButtonBase from "@mui/material/ButtonBase";
+import Grid from "@mui/material/Grid";
+import Typography from "@mui/material/Typography";
 
-import { styled } from '@mui/material/styles';
+import { styled } from "@mui/material/styles";
 
-import { STANDPOINT, getStandpointHref } from '../lib/routes';
-import { SubjectListEntry } from '../types/subjects';
+import { STANDPOINT, getStandpointHref } from "../lib/routes";
+import type { SubjectListEntry } from "../types/subjects";
 
 const FeaturedButton = styled(ButtonBase)`
   width: 100%;
   text-align: center;
   box-shadow: ${({ theme }) =>
-    theme.palette.mode === 'dark' ? theme.shadows[5] : theme.shadows[2]};
+    theme.palette.mode === "dark" ? theme.shadows[5] : theme.shadows[2]};
   font-weight: normal;
   padding: 1rem;
   display: flex;
   flex-grow: 1;
   :hover {
     background-color: ${({ theme }) =>
-      theme.palette.mode === 'dark' ? theme.palette.grey[800] : theme.palette.grey[100]};
+      theme.palette.mode === "dark"
+        ? theme.palette.grey[800]
+        : theme.palette.grey[100]};
   }
 `;
 
 const ButtonText = styled(Typography)`
   color: ${({ theme }) =>
-    theme.palette.mode === 'dark'
+    theme.palette.mode === "dark"
       ? theme.palette.primary.contrastText
       : theme.palette.primary.main};
 `;
@@ -40,7 +42,12 @@ const Featured: React.FC<Props> = ({ popular }) => {
     <Grid container spacing={3}>
       {popular.map((subject) => (
         <Grid key={subject.id} item xs={12} md={6}>
-          <Link href={STANDPOINT} as={getStandpointHref(subject.id)} passHref legacyBehavior>
+          <Link
+            href={STANDPOINT}
+            as={getStandpointHref(subject.id)}
+            passHref
+            legacyBehavior
+          >
             <FeaturedButton>
               <ButtonText variant="button">{subject.name}</ButtonText>
             </FeaturedButton>

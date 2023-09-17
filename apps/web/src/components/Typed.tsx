@@ -1,5 +1,7 @@
-import React, { useRef } from 'react';
-import TypedJS from 'typed.js';
+import React, { useRef } from "react";
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
+import TypedJS from "typed.js";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const Typed: React.FC<any> = ({ ...options }) => {

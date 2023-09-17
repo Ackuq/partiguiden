@@ -1,15 +1,15 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react";
 
-import Pagination from '@mui/material/Pagination';
-import Stack from '@mui/material/Stack';
+import Pagination from "@mui/material/Pagination";
+import Stack from "@mui/material/Stack";
 
-import { styled } from '@mui/material/styles';
+import { styled } from "@mui/material/styles";
 
-import { useMemberDocuments } from '../../../hooks/parliamentHooks';
-import Document from './Document';
-import LoadCircle from '../../LoadCircle';
+import { useMemberDocuments } from "../../../hooks/parliamentHooks";
+import Document from "./Document";
+import LoadCircle from "../../LoadCircle";
 
-const PaginationContainer = styled('div')`
+const PaginationContainer = styled("div")`
   display: flex;
   justify-content: center;
   flex: 1;
@@ -39,7 +39,7 @@ const Documents: React.FC<Props> = ({ id, setDocumentCount }) => {
   return (
     <Stack spacing={3}>
       {!data ? (
-        <div style={{ alignItems: 'center' }}>
+        <div style={{ alignItems: "center" }}>
           <LoadCircle />
         </div>
       ) : (
@@ -49,7 +49,11 @@ const Documents: React.FC<Props> = ({ id, setDocumentCount }) => {
           ))}
           {data.pages > 1 && (
             <PaginationContainer>
-              <Pagination onChange={changePage} page={page} count={data.pages} />
+              <Pagination
+                onChange={changePage}
+                page={page}
+                count={data.pages}
+              />
             </PaginationContainer>
           )}
         </>

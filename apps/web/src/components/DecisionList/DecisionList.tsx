@@ -1,16 +1,16 @@
-import React, { useCallback } from 'react';
+import React, { useCallback } from "react";
 
-import { NextRouter } from 'next/router';
-import { stringify } from 'querystring';
+import type { NextRouter } from "next/router";
+import { stringify } from "querystring";
 
-import Pagination from '@mui/material/Pagination';
-import Typography from '@mui/material/Typography';
+import Pagination from "@mui/material/Pagination";
+import Typography from "@mui/material/Typography";
 
-import { FlowAd } from '../Ad';
-import Decision from './Decision';
-import LoadCircle from '../LoadCircle';
+import { FlowAd } from "../Ad";
+import Decision from "./Decision";
+import LoadCircle from "../LoadCircle";
 
-import { useDecisions } from '../../hooks/parliamentHooks';
+import { useDecisions } from "../../hooks/parliamentHooks";
 
 interface Props {
   router: NextRouter;
@@ -27,7 +27,7 @@ const DecisionListContainer: React.FC<Props> = ({ router, page }) => {
 
       router.push(`${router.route}?${stringify(query)}`);
     },
-    [router]
+    [router],
   );
 
   return (
@@ -44,7 +44,7 @@ const DecisionListContainer: React.FC<Props> = ({ router, page }) => {
           ))}
           {data.pages > 1 && (
             <Pagination
-              style={{ display: 'flex', justifyContent: 'center' }}
+              style={{ display: "flex", justifyContent: "center" }}
               size="large"
               onChange={updatePage}
               page={page}

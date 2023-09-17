@@ -1,20 +1,28 @@
-import React, { useMemo } from 'react';
+import React, { useMemo } from "react";
 
-import CircularProgress from '@mui/material/CircularProgress';
+import CircularProgress from "@mui/material/CircularProgress";
 
-import { useTheme } from '@mui/material/styles';
+import { useTheme } from "@mui/material/styles";
 
-import { Bar, BarChart, Legend, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
+import {
+  Bar,
+  BarChart,
+  Legend,
+  ResponsiveContainer,
+  Tooltip,
+  XAxis,
+  YAxis,
+} from "recharts";
 
-import { VotingEntry } from '../../types/voting';
-import { voteColor } from '../../lib/voteColors';
-import tooltipProps from '../../utils/tooltipProps';
+import type { VotingEntry } from "../../types/voting";
+import { voteColor } from "../../lib/voteColors";
+import tooltipProps from "../../utils/tooltipProps";
 
 const animationDelay = 2;
 const animationDuration = 2;
 
 const parseData = (voting: VotingEntry) => ({
-  name: 'Totalt',
+  name: "Totalt",
   Ja: voting.yes,
   Nej: voting.no,
   Avstående: voting.refrain,
@@ -27,7 +35,10 @@ interface Props {
 
 const TotalVote: React.FC<Props> = ({ voting }) => {
   const theme = useTheme();
-  const colors = useMemo(() => voteColor[theme.palette.mode], [theme.palette.mode]);
+  const colors = useMemo(
+    () => voteColor[theme.palette.mode],
+    [theme.palette.mode],
+  );
 
   /* Special case if all is 0 */
   if (Object.values(voting).every((v) => v === 0)) {
@@ -69,7 +80,9 @@ const TotalVote: React.FC<Props> = ({ voting }) => {
               fill={colors.refrain}
             />
             <Bar
-              animationBegin={(data.Ja + data.Nej + data.Avstående) * animationDelay}
+              animationBegin={
+                (data.Ja + data.Nej + data.Avstående) * animationDelay
+              }
               animationDuration={data.Frånvarande * animationDuration}
               animationEasing="linear"
               dataKey="Frånvarande"

@@ -8,7 +8,9 @@
     "dev": "next dev",
     "start": "next start",
     "build": "next build",
-    "vercel-build": "next build && next-sitemap"
+    "vercel-build": "next build && next-sitemap",
+    "typecheck": "tsc",
+    "lint": "next lint"
   },
   "repository": {
     "type": "git",
@@ -21,6 +23,7 @@
     "@emotion/styled": "11.11.0",
     "@mui/icons-material": "5.14.9",
     "@mui/material": "5.14.9",
+    "@mui/system": "5.14.9",
     "@next/bundle-analyzer": "13.4.19",
     "@next/font": "13.4.19",
     "@sentry/nextjs": "7.69.0",
@@ -37,12 +40,12 @@
     "typed.js": "2.0.132"
   },
   "devDependencies": {
+    "@partiguiden/eslint-config-base": "workspace:*",
     "@types/gtag.js": "0.0.13",
     "@types/jsdom": "21.1.2",
     "@types/node": "20.6.0",
     "@types/react": "18.2.21",
     "@types/turndown": "5.0.2",
-    "next-sitemap": "4.2.3",
-    "typescript": "5.2.2"
+    "next-sitemap": "4.2.3"
   }
 }

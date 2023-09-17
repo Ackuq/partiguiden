@@ -1,43 +1,49 @@
-import { AveragePoll } from '../../lib/polls';
+import type { AveragePoll } from "../../lib/polls";
+import type { LegendProps } from "recharts";
 import {
   Bar,
   BarChart,
   CartesianGrid,
   Legend,
-  LegendProps,
   ReferenceLine,
   Tooltip,
   XAxis,
   YAxis,
-} from 'recharts';
-import { ChartContainer, PollCard } from './utils';
-import { Formatter, Payload } from 'recharts/types/component/DefaultLegendContent';
-import { PARTY_LOGOS_LOW_RES } from '../../assets/logos';
-import { PartyAbbreviation } from '../../utils/parties';
-import { partiesMap } from '../../utils/getParties';
-import { useState } from 'react';
-import { useTheme } from '@mui/material/styles';
-import BarrierLabel from './BarrierLabel';
-import Image from 'next/image';
-import Typography from '@mui/material/Typography';
-import tooltipProps from '../../utils/tooltipProps';
-import useMediaQuery from '@mui/material/useMediaQuery';
+} from "recharts";
+import { ChartContainer, PollCard } from "./utils";
+import type {
+  Formatter,
+  Payload,
+} from "recharts/types/component/DefaultLegendContent";
+import { PARTY_LOGOS_LOW_RES } from "../../assets/logos";
+import type { PartyAbbreviation } from "../../utils/parties";
+import { partiesMap } from "../../utils/getParties";
+import { useState } from "react";
+import { useTheme } from "@mui/material/styles";
+import BarrierLabel from "./BarrierLabel";
+import Image from "next/image";
+import Typography from "@mui/material/Typography";
+import tooltipProps from "../../utils/tooltipProps";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 interface Props {
   currentAverage: AveragePoll;
 }
 
-type StackedData = Record<PartyAbbreviation | 'total', number>;
+type StackedData = Record<PartyAbbreviation | "total", number>;
 
-const toStackedData = (data: AveragePoll, included: PartyAbbreviation[]): StackedData => {
+const toStackedData = (
+  data: AveragePoll,
+  included: PartyAbbreviation[],
+): StackedData => {
   const withParties = data.reduce(
     (prev, current) => ({ ...prev, [current.party]: current.value }),
-    {} as StackedData
+    {} as StackedData,
   );
   const total = (included
     .map((party) => withParties[party])
     .reduce((prev, curr) => prev + curr, 0)
-    .toFixed(2) + '%') as unknown as number;
+    .toFixed(2) + "%") as unknown as number;
   return { ...withParties, total };
 };
 
@@ -48,7 +54,7 @@ const legendFormatter: Formatter = (value, entry: Payload) => {
       alt={`${entry.value} logo`}
       width={40}
       style={{
-        filter: `grayscale(${entry.inactive ? '75%' : 0})`,
+        filter: `grayscale(${entry.inactive ? "75%" : 0})`,
       }}
     />
   );
@@ -58,7 +64,7 @@ const BlockBuilder: React.FC<Props> = ({ currentAverage }) => {
   const theme = useTheme();
   const [included, setIncluded] = useState<PartyAbbreviation[]>([]);
 
-  const shortScreen = useMediaQuery('(max-height:1000px)');
+  const shortScreen = useMediaQuery("(max-height:1000px)");
 
   const includeParty = (party: PartyAbbreviation) => {
     setIncluded((prev) => [...prev, party]);
@@ -68,7 +74,7 @@ const BlockBuilder: React.FC<Props> = ({ currentAverage }) => {
     setIncluded((prev) => prev.filter((p) => p !== party));
   };
 
-  const onClick: LegendProps['onClick'] = (data) => {
+  const onClick: LegendProps["onClick"] = (data) => {
     const party = data.value;
     if (included.includes(party)) {
       removeParty(party);

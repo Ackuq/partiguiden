@@ -1,5 +1,5 @@
-import { MemberResponse } from './member';
-import { PartyAbbreviation } from '../utils/parties';
+import type { MemberResponse } from "./member";
+import type { PartyAbbreviation } from "../utils/parties";
 
 export interface Debate {
   party: PartyAbbreviation;
@@ -61,7 +61,7 @@ export interface Speech {
 
 export type DebateStatement = Debate & { speech: Speech };
 
-export type DebateEntry = Omit<DebateListEntry, 'debate'> & {
+export type DebateEntry = Omit<DebateListEntry, "debate"> & {
   protocolId?: string;
   speakers: Record<string, MemberResponse>;
   statements: DebateStatement[];

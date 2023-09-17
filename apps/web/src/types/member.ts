@@ -1,4 +1,4 @@
-import { PartyAbbreviation } from '../utils/parties';
+import type { PartyAbbreviation } from "../utils/parties";
 
 export interface MemberDocument {
   authority: string | null;
@@ -38,7 +38,7 @@ export interface MemberResponse {
   pictureUrl: string;
   pictureUrlLowRes: string;
   age: number;
-  party: PartyAbbreviation | '-';
+  party: PartyAbbreviation | "-";
   district: string;
   status: string;
   information: Information[];
@@ -52,7 +52,7 @@ export interface MemberListEntry {
   lastName: string;
   pictureUrl: string;
   age: number;
-  party: PartyAbbreviation | '-';
+  party: PartyAbbreviation | "-";
   district: string;
   status: string;
 }
@@ -62,8 +62,8 @@ export interface MemberAbsenceResponse extends MemberListEntry {
 }
 
 export enum AbsencePeriod {
-  mandatePeriod = 'mandatperiod',
-  parliamentYear = 'riksmöte',
+  mandatePeriod = "mandatperiod",
+  parliamentYear = "riksmöte",
 }
 export interface Absence {
   value: number | null;

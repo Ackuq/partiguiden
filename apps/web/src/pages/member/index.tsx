@@ -1,18 +1,18 @@
-import { GetStaticProps, InferGetStaticPropsType, NextPage } from 'next';
-import Head from 'next/head';
+import type { GetStaticProps, InferGetStaticPropsType, NextPage } from "next";
+import Head from "next/head";
 
-import PersonIcon from '@mui/icons-material/Person';
+import PersonIcon from "@mui/icons-material/Person";
 
-import Members from '../../containers/Members';
-import PageTitle from '../../components/PageTitle';
+import Members from "../../containers/Members";
+import PageTitle from "../../components/PageTitle";
 
-import { MemberListEntry } from '../../types/member';
-import { membersController } from '../../api/controllers/members';
-import MembersTabs from '../../components/MemberStatistics/MemberTabs';
+import type { MemberListEntry } from "../../types/member";
+import { membersController } from "../../api/controllers/members";
+import MembersTabs from "../../components/MemberStatistics/MemberTabs";
 
-const MembersContainer: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
-  members,
-}) => (
+const MembersContainer: NextPage<
+  InferGetStaticPropsType<typeof getStaticProps>
+> = ({ members }) => (
   <>
     <Head>
       <title>Riksdagsledamöter | Partiguiden</title>

@@ -1,5 +1,5 @@
-import { Leader } from './member';
-import { Party, PartyAbbreviation } from '../utils/parties';
+import type { Leader } from "./member";
+import type { Party, PartyAbbreviation } from "../utils/parties";
 
 export interface WikipediaInfoBox {
   website?: string;

@@ -1,8 +1,8 @@
-import React, { useEffect } from 'react';
+import React, { useEffect } from "react";
 
-import { ADSENSE_CLIENT_ID, RESPONSIVE_AD_SLOT_ID } from '../../lib/adsense';
+import { ADSENSE_CLIENT_ID, RESPONSIVE_AD_SLOT_ID } from "../../lib/adsense";
 
-import enableAds from './enableAds';
+import enableAds from "./enableAds";
 
 const Ad: React.FC = () => {
   useEffect(() => {
@@ -20,7 +20,7 @@ const Ad: React.FC = () => {
       {enableAds() ? (
         <ins
           className="adsbygoogle"
-          style={{ display: 'block' }}
+          style={{ display: "block" }}
           data-ad-client={ADSENSE_CLIENT_ID}
           data-ad-slot={RESPONSIVE_AD_SLOT_ID}
           data-ad-format="horizontal"
@@ -30,7 +30,7 @@ const Ad: React.FC = () => {
         <div
           style={{
             padding: 20,
-            border: '1px solid #ccc',
+            border: "1px solid #ccc",
           }}
         >
           Placeholder ad

@@ -1,8 +1,8 @@
-import { NextApiRequest, NextApiResponse } from 'next';
-import { membersController } from '../../api/controllers/members';
-import { setCache } from '../../utils/apiUtils';
+import type { NextApiRequest, NextApiResponse } from "next";
+import { membersController } from "../../api/controllers/members";
+import { setCache } from "../../utils/apiUtils";
 
-const ALLOWED_METHODS = ['GET'];
+const ALLOWED_METHODS = ["GET"];
 
 interface MembersApiRequest extends NextApiRequest {
   query: {
@@ -10,7 +10,10 @@ interface MembersApiRequest extends NextApiRequest {
   };
 }
 
-const membersHandler = async (req: MembersApiRequest, res: NextApiResponse): Promise<void> => {
+const membersHandler = async (
+  req: MembersApiRequest,
+  res: NextApiResponse,
+): Promise<void> => {
   const {
     query: { party },
     method,
@@ -19,8 +22,8 @@ const membersHandler = async (req: MembersApiRequest, res: NextApiResponse): Pro
   // 1 week
   setCache(604800, res);
 
-  if (!ALLOWED_METHODS.includes(method || '')) {
-    res.setHeader('Allow', ALLOWED_METHODS);
+  if (!ALLOWED_METHODS.includes(method || "")) {
+    res.setHeader("Allow", ALLOWED_METHODS);
     res.status(405).end(`Method ${method} Not Allowed`);
     return;
   }

@@ -1,4 +1,4 @@
-import dynamic from 'next/dynamic';
+import dynamic from "next/dynamic";
 
 declare global {
   interface Window {
@@ -6,11 +6,11 @@ declare global {
   }
 }
 
-const FlowAd = dynamic(() => import('./FlowAd'), {
+const FlowAd = dynamic(() => import("./FlowAd"), {
   ssr: false,
 });
 
-const ResponsiveAd = dynamic(() => import('./ResponsiveAd'), {
+const ResponsiveAd = dynamic(() => import("./ResponsiveAd"), {
   ssr: false,
 });
 

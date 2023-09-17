@@ -1,10 +1,10 @@
-import { NextPage } from 'next';
-import Head from 'next/head';
+import type { NextPage } from "next";
+import Head from "next/head";
 
-import GavelIcon from '@mui/icons-material/GavelRounded';
+import GavelIcon from "@mui/icons-material/GavelRounded";
 
-import Decisions from '../containers/Decisions';
-import PageTitle from '../components/PageTitle';
+import Decisions from "../containers/Decisions";
+import PageTitle from "../components/PageTitle";
 
 const RiksdagsbeslutContainer: NextPage = () => (
   <>

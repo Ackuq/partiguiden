@@ -1,10 +1,12 @@
-import ButtonBase from '@mui/material/ButtonBase';
+import ButtonBase from "@mui/material/ButtonBase";
 
-import { styled } from '@mui/material/styles';
+import { styled } from "@mui/material/styles";
 
 const SectionButton = styled(ButtonBase)`
   background-color: ${({ theme }) =>
-    theme.palette.mode === 'dark' ? theme.palette.grey[900] : theme.palette.grey[100]};
+    theme.palette.mode === "dark"
+      ? theme.palette.grey[900]
+      : theme.palette.grey[100]};
   width: 100%;
   border-radius: 0.25rem;
   margin-bottom: 0.25rem;

@@ -9,13 +9,15 @@ interface Props {
 
 const PartySymbolTick: React.FC<Props> = ({
   vertical = false,
-  payload = { value: '' },
-  x = '0',
-  y = '0',
+  payload = { value: "" },
+  x = "0",
+  y = "0",
 }) => {
   const { value } = payload;
 
-  const href = value ? `/static/images/party-logos/${value.toUpperCase()}-low-res.png` : '';
+  const href = value
+    ? `/static/images/party-logos/${value.toUpperCase()}-low-res.png`
+    : "";
   let X = parseInt(x, 10);
   let Y = parseInt(y, 10);
   if (vertical) {
@@ -31,9 +33,9 @@ const PartySymbolTick: React.FC<Props> = ({
 
 PartySymbolTick.defaultProps = {
   vertical: false,
-  payload: { value: '' },
-  x: '0',
-  y: '0',
+  payload: { value: "" },
+  x: "0",
+  y: "0",
 };
 
 export default PartySymbolTick;

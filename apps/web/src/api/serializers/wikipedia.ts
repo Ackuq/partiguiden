@@ -1,8 +1,8 @@
-import { JSDOM } from 'jsdom';
-import { Leader } from '../../types/member';
-import { PartyAbbreviation } from '../../utils/parties';
-import { WikipediaInfoBox } from '../../types/party';
-import { getMemberQuery } from '../controllers/members';
+import { JSDOM } from "jsdom";
+import type { Leader } from "../../types/member";
+import type { PartyAbbreviation } from "../../utils/parties";
+import type { WikipediaInfoBox } from "../../types/party";
+import { getMemberQuery } from "../controllers/members";
 
 interface WikipediaAbstractResponse {
   query: {
@@ -30,14 +30,14 @@ const getLeader = (
   firstName: string,
   lastName: string,
   role: string,
-  party: Lowercase<PartyAbbreviation>
+  party: Lowercase<PartyAbbreviation>,
 ): Promise<Leader> => {
   const query = {
     fnamn: firstName,
     enamn: lastName,
     parti: party,
-    rdlstatus: 'samtliga',
-    utformat: 'json',
+    rdlstatus: "samtliga",
+    utformat: "json",
   };
   return new Promise<Leader>((resolve, reject) => {
     getMemberQuery(query).then((member) => {
@@ -52,69 +52,76 @@ const getLeader = (
 interface WikipediaInfoBoxResponse {
   parse: {
     text: {
-      '*': string;
+      "*": string;
     };
   };
 }
 
 export const getInfoBoxAttr = async (
   data: WikipediaInfoBoxResponse,
-  party: Lowercase<PartyAbbreviation>
+  party: Lowercase<PartyAbbreviation>,
 ): Promise<WikipediaInfoBox> => {
-  const dom = new JSDOM(data.parse.text['*']);
+  const dom = new JSDOM(data.parse.text["*"]);
 
-  const rowHeaders = dom.window.document.body.getElementsByTagName('th');
-  let website = '';
+  const rowHeaders = dom.window.document.body.getElementsByTagName("th");
+  let website = "";
   const leaders: Leader[] = [];
   const ideology: string[] = [];
 
   // eslint-disable-next-line no-restricted-syntax
   for (const header of rowHeaders) {
     /* Remove spaces since HTML spaces are treated differently */
-    const title = header.textContent?.replace(/[[\s]/g, '');
+    const title = header.textContent?.replace(/[[\s]/g, "");
     const item = header.nextSibling;
 
     switch (title) {
-      case 'Politiskideologi':
+      case "Politiskideologi":
         // eslint-disable-next-line no-restricted-syntax
         if (!item) {
           break;
         }
         for (const ideologyNode of item.childNodes) {
-          if (ideologyNode.nodeName !== 'A' || ideologyNode.textContent === null) {
+          if (
+            ideologyNode.nodeName !== "A" ||
+            ideologyNode.textContent === null
+          ) {
             continue;
           }
           ideology.push(ideologyNode.textContent);
         }
         break;
-      case 'Partiledare':
-      case 'Partiordförande':
-      case 'Partisekreterare':
-      case 'Gruppledare':
-      case 'Språkrör':
+      case "Partiledare":
+      case "Partiordförande":
+      case "Partisekreterare":
+      case "Gruppledare":
+      case "Språkrör":
         if (!item) {
           break;
         }
         for (const leaderNode of item.childNodes) {
           const name = leaderNode.textContent;
-          if (leaderNode.nodeName !== 'A' || !name) {
+          if (leaderNode.nodeName !== "A" || !name) {
             continue;
           }
-          const [firstName, ...lastName] = name.replace(/\[\d+\]/g, '').split(' ');
-          leaders.push(await getLeader(firstName, lastName.join(' '), title, party));
+          const [firstName, ...lastName] = name
+            .replace(/\[\d+\]/g, "")
+            .split(" ");
+          leaders.push(
+            await getLeader(firstName, lastName.join(" "), title, party),
+          );
         }
         break;
-      case 'Webbplats':
+      case "Webbplats":
         // Website is defined on the next row
         const siteElement = header.parentElement?.nextElementSibling;
         if (!siteElement) {
           continue;
         }
         website = (
-          siteElement.querySelector('a')?.getAttribute('href') ??
+          siteElement.querySelector("a")?.getAttribute("href") ??
           siteElement.textContent ??
-          ''
-        ).replace('http://', 'https://');
+          ""
+        ).replace("http://", "https://");
     }
   }
 

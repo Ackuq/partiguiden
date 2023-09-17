@@ -1,25 +1,26 @@
-import React, { useMemo } from 'react';
+import React, { useMemo } from "react";
 
-import Image from 'next/image';
+import Image from "next/image";
 
-import Grid from '@mui/material/Grid';
-import Typography from '@mui/material/Typography';
+import Grid from "@mui/material/Grid";
+import Typography from "@mui/material/Typography";
 
-import { Breakpoints, styled, useTheme } from '@mui/material/styles';
-import useMediaQuery from '@mui/material/useMediaQuery';
+import type { Breakpoints } from "@mui/material/styles";
+import { styled, useTheme } from "@mui/material/styles";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
-import { VotingResult } from '../../types/voting';
-import { voteListColors } from '../../lib/voteColors';
+import type { VotingResult } from "../../types/voting";
+import { voteListColors } from "../../lib/voteColors";
 
-import { PARTY_LOGOS_LOW_RES } from '../../assets/logos';
-import { PartyAbbreviation } from '../../utils/parties';
+import { PARTY_LOGOS_LOW_RES } from "../../assets/logos";
+import type { PartyAbbreviation } from "../../utils/parties";
 
-const Party = styled('div')`
+const Party = styled("div")`
   padding-left: 4px;
   padding-right: 4px;
 `;
 
-const PartyContainer = styled('div')`
+const PartyContainer = styled("div")`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -32,8 +33,13 @@ interface ResultColumnProps {
   breakpoints: Breakpoints;
 }
 
-const ResultColumn: React.FC<ResultColumnProps> = ({ bgcolor, votes, title, breakpoints }) => {
-  const smallDevice = useMediaQuery(breakpoints.down('md'));
+const ResultColumn: React.FC<ResultColumnProps> = ({
+  bgcolor,
+  votes,
+  title,
+  breakpoints,
+}) => {
+  const smallDevice = useMediaQuery(breakpoints.down("md"));
 
   const imageSize = smallDevice ? 32 : 48;
 
@@ -46,13 +52,15 @@ const ResultColumn: React.FC<ResultColumnProps> = ({ bgcolor, votes, title, brea
         {votes.map((party: string) => (
           <Party key={party}>
             <Image
-              src={PARTY_LOGOS_LOW_RES[party.toUpperCase() as PartyAbbreviation]}
+              src={
+                PARTY_LOGOS_LOW_RES[party.toUpperCase() as PartyAbbreviation]
+              }
               width={imageSize}
               height={imageSize}
               alt={`${party} logo`}
               style={{
-                maxWidth: '100%',
-                height: 'auto',
+                maxWidth: "100%",
+                height: "auto",
               }}
             />
           </Party>
@@ -69,20 +77,23 @@ interface Props {
 const VoteResult: React.FC<Props> = ({ votes }) => {
   const theme = useTheme();
 
-  const colors = useMemo(() => voteListColors[theme.palette.mode], [theme.palette.mode]);
+  const colors = useMemo(
+    () => voteListColors[theme.palette.mode],
+    [theme.palette.mode],
+  );
 
   return (
     <Grid container>
       {votes.no.length || votes.yes.length ? (
         <>
           <ResultColumn
-            bgcolor={votes.winner === 'yes' ? colors.yes : colors.losing}
+            bgcolor={votes.winner === "yes" ? colors.yes : colors.losing}
             title="JA"
             votes={votes.yes}
             breakpoints={theme.breakpoints}
           />
           <ResultColumn
-            bgcolor={votes.winner === 'no' ? colors.no : colors.losing}
+            bgcolor={votes.winner === "no" ? colors.no : colors.losing}
             title="NEJ"
             votes={votes.no}
             breakpoints={theme.breakpoints}

@@ -1,12 +1,13 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react";
 
-import InputAdornment from '@mui/material/InputAdornment';
-import TextField, { TextFieldProps } from '@mui/material/TextField';
+import InputAdornment from "@mui/material/InputAdornment";
+import type { TextFieldProps } from "@mui/material/TextField";
+import TextField from "@mui/material/TextField";
 
-import SearchIcon from '@mui/icons-material/Search';
+import SearchIcon from "@mui/icons-material/Search";
 
-import { SubjectList } from '../types/subjects';
-import { searchSubjects } from '../lib/api';
+import type { SubjectList } from "../types/subjects";
+import { searchSubjects } from "../lib/api";
 
 interface Props {
   setSearchResult: React.Dispatch<React.SetStateAction<SubjectList>>;
@@ -25,7 +26,7 @@ const Search: React.FC<Props> = ({ setSearchResult }) => {
         })
         .catch((e) => {
           /* Ignore abort errors */
-          if (e.name === 'AbortError') {
+          if (e.name === "AbortError") {
             return;
           }
           throw e;
@@ -36,7 +37,7 @@ const Search: React.FC<Props> = ({ setSearchResult }) => {
     };
   }, [searchText, setSearchResult]);
 
-  const onTextChange: TextFieldProps['onChange'] = (event) => {
+  const onTextChange: TextFieldProps["onChange"] = (event) => {
     setSearchText(event.target.value);
   };
 
@@ -48,7 +49,7 @@ const Search: React.FC<Props> = ({ setSearchResult }) => {
       onChange={onTextChange}
       InputProps={{
         sx: {
-          padding: '0.25rem 0.5rem',
+          padding: "0.25rem 0.5rem",
         },
         startAdornment: (
           <InputAdornment position="start">

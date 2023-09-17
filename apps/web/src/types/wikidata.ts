@@ -9,15 +9,15 @@ export interface WikidataResponse<T> {
 
 export interface TwitterResult {
   person: {
-    type: 'uri';
+    type: "uri";
     value: string;
   };
   twitterHandle: {
-    type: 'literal';
+    type: "literal";
     value: string;
   };
   twitterId: {
-    type: 'literal';
+    type: "literal";
     value: string;
   };
 }

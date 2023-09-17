@@ -1,31 +1,31 @@
-import Link from 'next/link';
-import React, { useState } from 'react';
+import Link from "next/link";
+import React, { useState } from "react";
 
-import Button from '@mui/material/Button';
-import ButtonBase from '@mui/material/ButtonBase';
-import CardContent from '@mui/material/CardContent';
-import Typography from '@mui/material/Typography';
+import Button from "@mui/material/Button";
+import ButtonBase from "@mui/material/ButtonBase";
+import CardContent from "@mui/material/CardContent";
+import Typography from "@mui/material/Typography";
 
-import Collapse from '@mui/material/Collapse';
+import Collapse from "@mui/material/Collapse";
 
-import { styled } from '@mui/material/styles';
+import { styled } from "@mui/material/styles";
 
-import ArrowDownIcon from '@mui/icons-material/KeyboardArrowDownRounded';
+import ArrowDownIcon from "@mui/icons-material/KeyboardArrowDownRounded";
 
-import { Decision as DecisionType } from '../../types/decision';
-import { lookupAuthority } from '../../utils/authorityTable';
+import type { Decision as DecisionType } from "../../types/decision";
+import { lookupAuthority } from "../../utils/authorityTable";
 
-import * as ROUTES from '../../lib/routes';
-import AuthorityCardHeader from '../AuthorityCardHeader';
+import * as ROUTES from "../../lib/routes";
+import AuthorityCardHeader from "../AuthorityCardHeader";
 
-export const CardContainer = styled('div')(
+export const CardContainer = styled("div")(
   ({ theme }) => `
     border-radius: ${theme.shape.borderRadius}px;
     background-color: ${theme.palette.background.paper};
     overflow: hidden;
     width: 100%;
     box-shadow: ${theme.shadows[1]};
-`
+`,
 );
 
 export const CustomCardContent = styled(CardContent)`
@@ -38,7 +38,9 @@ export const Title = styled(Typography)`
   font-size: 1.125rem;
   line-height: 1.3;
   color: ${({ theme }) =>
-    theme.palette.mode === 'dark' ? theme.palette.text.primary : theme.palette.primary.dark};
+    theme.palette.mode === "dark"
+      ? theme.palette.text.primary
+      : theme.palette.primary.dark};
 `;
 
 export const TypeTitle = styled(Typography)`
@@ -51,12 +53,14 @@ export const Subtitle = styled(Typography)`
   line-height: 1.25;
 `;
 
-export const Arrow = styled(ArrowDownIcon)<{ active: 'true' | 'false' }>`
+export const Arrow = styled(ArrowDownIcon)<{ active: "true" | "false" }>`
   transition: transform 0.25s ease-in-out;
   font-size: 2rem;
   color: ${({ theme }) =>
-    theme.palette.mode === 'dark' ? theme.palette.text.primary : theme.palette.primary.dark};
-  transform: rotate(${({ active }) => (active === 'true' ? '180deg' : '0')});
+    theme.palette.mode === "dark"
+      ? theme.palette.text.primary
+      : theme.palette.primary.dark};
+  transform: rotate(${({ active }) => (active === "true" ? "180deg" : "0")});
 `;
 
 export const CardButton = styled(ButtonBase)`
@@ -88,7 +92,7 @@ const Decision: React.FC<Props> = ({ decision }) => {
                   {decision.title}
                 </Subtitle>
               </div>
-              <Arrow active={visible.toString() as 'true' | 'false'} />
+              <Arrow active={visible.toString() as "true" | "false"} />
             </CustomCardContent>
           </CardButton>
 
@@ -96,7 +100,9 @@ const Decision: React.FC<Props> = ({ decision }) => {
             <Collapse in={visible}>
               <div className="paragraph">
                 {decision.paragraph && (
-                  <div dangerouslySetInnerHTML={{ __html: decision.paragraph }} />
+                  <div
+                    dangerouslySetInnerHTML={{ __html: decision.paragraph }}
+                  />
                 )}
               </div>
               <Link

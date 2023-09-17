@@ -1,8 +1,8 @@
-import { NextApiRequest, NextApiResponse } from 'next';
-import { documentController } from '../../../api/controllers/document';
-import { setCache } from '../../../utils/apiUtils';
+import type { NextApiRequest, NextApiResponse } from "next";
+import { documentController } from "../../../api/controllers/document";
+import { setCache } from "../../../utils/apiUtils";
 
-const ALLOWED_METHODS = ['GET'];
+const ALLOWED_METHODS = ["GET"];
 
 interface DocumentApiRequest extends NextApiRequest {
   query: {
@@ -10,7 +10,10 @@ interface DocumentApiRequest extends NextApiRequest {
   };
 }
 
-const documentHandler = async (req: DocumentApiRequest, res: NextApiResponse): Promise<void> => {
+const documentHandler = async (
+  req: DocumentApiRequest,
+  res: NextApiResponse,
+): Promise<void> => {
   const {
     query: { id },
     method,
@@ -19,8 +22,8 @@ const documentHandler = async (req: DocumentApiRequest, res: NextApiResponse): P
   // Barely any changes, cache for 2 weekss
   setCache(1210000, res);
 
-  if (!ALLOWED_METHODS.includes(method || '')) {
-    res.setHeader('Allow', ALLOWED_METHODS);
+  if (!ALLOWED_METHODS.includes(method || "")) {
+    res.setHeader("Allow", ALLOWED_METHODS);
     res.status(405).end(`Method ${method} Not Allowed`);
     return;
   }

@@ -1,8 +1,8 @@
-import { ParsedUrlQuery } from 'querystring';
+import type { ParsedUrlQuery } from "querystring";
 
 export type QueryAttribute = ParsedUrlQuery[0];
 
-export const queryAttrToString = (attr: QueryAttribute, def = ''): string => {
+export const queryAttrToString = (attr: QueryAttribute, def = ""): string => {
   if (attr) {
     if (Array.isArray(attr)) {
       return attr[0];
@@ -20,7 +20,10 @@ export const queryAttrToNumber = (attr: QueryAttribute, def = 0): number => {
   return def;
 };
 
-export const queryAttrToArray = (attr: QueryAttribute, def = []): Array<string> => {
+export const queryAttrToArray = (
+  attr: QueryAttribute,
+  def = [],
+): Array<string> => {
   if (attr) {
     if (Array.isArray(attr)) {
       return attr;

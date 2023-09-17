@@ -1,6 +1,6 @@
-import { ResponsiveContainer } from 'recharts';
-import { styled } from '@mui/material/styles';
-import Paper from '@mui/material/Paper';
+import { ResponsiveContainer } from "recharts";
+import { styled } from "@mui/material/styles";
+import Paper from "@mui/material/Paper";
 
 export const ChartContainer = styled(ResponsiveContainer)`
   margin-top: 1rem;

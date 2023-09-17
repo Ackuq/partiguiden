@@ -1,18 +1,18 @@
-import { styled } from '@mui/material/styles';
+import { styled } from "@mui/material/styles";
 
-import { Box } from '@mui/system';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import Container from '@mui/material/Container';
-import Typography from '@mui/material/Typography';
+import { Box } from "@mui/system";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import Container from "@mui/material/Container";
+import Typography from "@mui/material/Typography";
 
-import LoadCircle from '../components/LoadCircle';
-import SectionDivider from '../components/VoteInfo/SectionDivider';
+import LoadCircle from "../components/LoadCircle";
+import SectionDivider from "../components/VoteInfo/SectionDivider";
 
-import { useDebate } from '../hooks/parliamentHooks';
-import Statements from '../components/Debate/Statements';
+import { useDebate } from "../hooks/parliamentHooks";
+import Statements from "../components/Debate/Statements";
 
-const IFrame = styled('iframe')(
+const IFrame = styled("iframe")(
   ({ theme }) => `
   position: absolute;
   top: 0;
@@ -20,13 +20,13 @@ const IFrame = styled('iframe')(
   bottom: 0;
   right: 0;
   border: none;
-  ${theme.breakpoints.down('sm')} {
+  ${theme.breakpoints.down("sm")} {
     transform: scale(0.625);
     transform-origin: 0 0;
     height: 160%;
     width: 160%;
   }
-`
+`,
 );
 
 const createWebTVLink = (id: string) => {

@@ -1,24 +1,24 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react";
 
-import { useRouter } from 'next/router';
-import Link from 'next/link';
+import { useRouter } from "next/router";
+import Link from "next/link";
 
-import CloseIcon from '@mui/icons-material/Close';
-import ExpandLessIcon from '@mui/icons-material/ExpandLess';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import CloseIcon from "@mui/icons-material/Close";
+import ExpandLessIcon from "@mui/icons-material/ExpandLess";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
-import Collapse from '@mui/material/Collapse';
-import IconButton from '@mui/material/IconButton';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemIcon from '@mui/material/ListItemIcon';
-import ListItemText from '@mui/material/ListItemText';
-import SvgIcon from '@mui/material/SvgIcon';
-import SwipeableDrawer from '@mui/material/SwipeableDrawer';
+import Collapse from "@mui/material/Collapse";
+import IconButton from "@mui/material/IconButton";
+import List from "@mui/material/List";
+import ListItem from "@mui/material/ListItem";
+import ListItemIcon from "@mui/material/ListItemIcon";
+import ListItemText from "@mui/material/ListItemText";
+import type SvgIcon from "@mui/material/SvgIcon";
+import SwipeableDrawer from "@mui/material/SwipeableDrawer";
 
-import { styled } from '@mui/material/styles';
+import { styled } from "@mui/material/styles";
 
-import pages from './pages';
+import pages from "./pages";
 interface ListItemProps {
   title: string;
   href: string;
@@ -26,8 +26,18 @@ interface ListItemProps {
   linkAs?: string;
 }
 
-const CustomListItem: React.FC<ListItemProps> = ({ title, href, linkAs, Icon }) => (
-  <Link href={href} as={linkAs} passHref style={{ color: 'inherit', textDecoration: 'none' }}>
+const CustomListItem: React.FC<ListItemProps> = ({
+  title,
+  href,
+  linkAs,
+  Icon,
+}) => (
+  <Link
+    href={href}
+    as={linkAs}
+    passHref
+    style={{ color: "inherit", textDecoration: "none" }}
+  >
     <ListItem button key={href}>
       {Icon && (
         <ListItemIcon>
@@ -46,14 +56,18 @@ const DropDownListItem = styled(CustomListItem)`
 interface DropDownProps {
   title: string;
   href: string;
-  subPages: Array<{ title: string; id: string; Icon: typeof SvgIcon | (() => JSX.Element) }>;
+  subPages: Array<{
+    title: string;
+    id: string;
+    Icon: typeof SvgIcon | (() => JSX.Element);
+  }>;
   Icon?: typeof SvgIcon | (() => JSX.Element);
 }
 
 const DropDown: React.FC<DropDownProps> = ({ title, href, subPages, Icon }) => {
   const [open, setOpen] = useState(false);
 
-  const urlPrefix = href.replace(/\s*\[.*?\]\s*/g, '');
+  const urlPrefix = href.replace(/\s*\[.*?\]\s*/g, "");
 
   const handleClick = () => {
     setOpen((prevState) => !prevState);
@@ -94,7 +108,12 @@ interface Props {
   appBarHeight: number;
 }
 
-const Drawer: React.FC<Props> = ({ isOpen, handleClose, handleOpen, appBarHeight }) => {
+const Drawer: React.FC<Props> = ({
+  isOpen,
+  handleClose,
+  handleOpen,
+  appBarHeight,
+}) => {
   const router = useRouter();
 
   useEffect(() => {
@@ -114,7 +133,12 @@ const Drawer: React.FC<Props> = ({ isOpen, handleClose, handleOpen, appBarHeight
     >
       <List disablePadding component="nav">
         <ListItem style={{ height: appBarHeight }}>
-          <IconButton color="inherit" aria-label="close drawer" onClick={handleClose} edge="start">
+          <IconButton
+            color="inherit"
+            aria-label="close drawer"
+            onClick={handleClose}
+            edge="start"
+          >
             <CloseIcon />
           </IconButton>
         </ListItem>
@@ -128,8 +152,13 @@ const Drawer: React.FC<Props> = ({ isOpen, handleClose, handleOpen, appBarHeight
               href={page.href}
             />
           ) : (
-            <CustomListItem key={page.href} title={page.title} Icon={page.Icon} href={page.href} />
-          )
+            <CustomListItem
+              key={page.href}
+              title={page.title}
+              Icon={page.Icon}
+              href={page.href}
+            />
+          ),
         )}
       </List>
     </SwipeableDrawer>

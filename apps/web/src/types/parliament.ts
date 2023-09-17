@@ -1,4 +1,4 @@
-import { PartyAbbreviation } from '../utils/parties';
+import type { PartyAbbreviation } from "../utils/parties";
 
 export interface Document {
   hangar_id: number;
@@ -428,22 +428,22 @@ export interface DocumentListEntry {
 
 export interface DocumentList {
   dokumentlista: {
-    '@ms': string;
-    '@version': string;
-    '@q': string;
-    '@varning': string;
-    '@datum': string;
-    '@nasta_sida': string;
-    '@sida': string;
-    '@sidor': string;
-    '@beta': string;
-    '@traff_fran': string;
-    '@traff_till': string;
-    '@traffar': string;
-    '@dPre': string;
-    '@dSol': string;
-    '@dDt': string;
-    '@dR': string;
+    "@ms": string;
+    "@version": string;
+    "@q": string;
+    "@varning": string;
+    "@datum": string;
+    "@nasta_sida": string;
+    "@sida": string;
+    "@sidor": string;
+    "@beta": string;
+    "@traff_fran": string;
+    "@traff_till": string;
+    "@traffar": string;
+    "@dPre": string;
+    "@dSol": string;
+    "@dDt": string;
+    "@dR": string;
     facettlista: null;
     dokument?: DocumentListEntry[];
   };
@@ -451,8 +451,8 @@ export interface DocumentList {
 
 interface PersonList<T> {
   personlista: {
-    '@systemdatum': string;
-    '@hits': string;
+    "@systemdatum": string;
+    "@hits": string;
     person: T;
   };
 }
@@ -462,17 +462,17 @@ export type PersonListSingle = PersonList<Person>;
 
 interface VoteList<T> {
   voteringlista: {
-    '@grupp8': '';
-    '@grupp7': '';
-    '@grupp6': '';
-    '@grupp5': '';
-    '@grupp4': '';
-    '@grupp3': '';
-    '@grupp1': '';
-    '@grupp2': '';
-    '@gruppering': '';
-    '@villkor': '';
-    '@antal': '500';
+    "@grupp8": "";
+    "@grupp7": "";
+    "@grupp6": "";
+    "@grupp5": "";
+    "@grupp4": "";
+    "@grupp3": "";
+    "@grupp1": "";
+    "@grupp2": "";
+    "@gruppering": "";
+    "@villkor": "";
+    "@antal": "500";
     votering?: T;
   };
 }
@@ -491,7 +491,7 @@ export interface ParliamentYearResponse {
 }
 export interface ParliamentYearsResponse {
   riksmoten: {
-    '@systemdatum': string;
+    "@systemdatum": string;
     riksmote: ParliamentYearResponse[];
   };
 }

@@ -1,15 +1,15 @@
-import { NextRouter } from 'next/router';
-import { stringify } from 'querystring';
-import React, { useCallback } from 'react';
+import type { NextRouter } from "next/router";
+import { stringify } from "querystring";
+import React, { useCallback } from "react";
 
-import Pagination from '@mui/material/Pagination';
-import Typography from '@mui/material/Typography';
+import Pagination from "@mui/material/Pagination";
+import Typography from "@mui/material/Typography";
 
-import { FlowAd } from '../Ad';
-import LoadCircle from '../LoadCircle';
-import Vote from './Vote';
+import { FlowAd } from "../Ad";
+import LoadCircle from "../LoadCircle";
+import Vote from "./Vote";
 
-import { useVotes } from '../../hooks/parliamentHooks';
+import { useVotes } from "../../hooks/parliamentHooks";
 
 interface Props {
   router: NextRouter;
@@ -24,7 +24,7 @@ const VoteList: React.FC<Props> = ({ router, page }) => {
 
       router.push(`${router.route}?${stringify(query)}`);
     },
-    [router]
+    [router],
   );
 
   return (
@@ -41,7 +41,7 @@ const VoteList: React.FC<Props> = ({ router, page }) => {
           ))}
           {data.pages > 1 && (
             <Pagination
-              sx={{ display: 'flex', justifyContent: 'center' }}
+              sx={{ display: "flex", justifyContent: "center" }}
               onChange={updatePage}
               page={page}
               count={data.pages}

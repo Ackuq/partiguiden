@@ -1,5 +1,5 @@
-import { VoteDocumentStatus } from '../../types/parliament';
-import stripJsonComments from 'strip-json-comments';
+import type { VoteDocumentStatus } from "../../types/parliament";
+import stripJsonComments from "strip-json-comments";
 
 export const checkIfVotesExist = (url: string): Promise<boolean> =>
   fetch(url)
@@ -9,7 +9,8 @@ export const checkIfVotesExist = (url: string): Promise<boolean> =>
       const { dokumentstatus } = result;
 
       if (dokumentstatus.dokutskottsforslag) {
-        const { utskottsforslag: suggestions } = dokumentstatus.dokutskottsforslag;
+        const { utskottsforslag: suggestions } =
+          dokumentstatus.dokutskottsforslag;
 
         if (!Array.isArray(suggestions) && suggestions.votering_id !== null) {
           return true;

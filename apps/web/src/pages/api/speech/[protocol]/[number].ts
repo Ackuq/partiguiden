@@ -1,8 +1,8 @@
-import { NextApiRequest, NextApiResponse } from 'next';
-import { setCache } from '../../../../utils/apiUtils';
-import { speechController } from '../../../../api/controllers/speech';
+import type { NextApiRequest, NextApiResponse } from "next";
+import { setCache } from "../../../../utils/apiUtils";
+import { speechController } from "../../../../api/controllers/speech";
 
-const ALLOWED_METHODS = ['GET'];
+const ALLOWED_METHODS = ["GET"];
 
 interface JsonDocumentApiRequest extends NextApiRequest {
   query: {
@@ -11,7 +11,10 @@ interface JsonDocumentApiRequest extends NextApiRequest {
   };
 }
 
-const speechHandler = async (req: JsonDocumentApiRequest, res: NextApiResponse): Promise<void> => {
+const speechHandler = async (
+  req: JsonDocumentApiRequest,
+  res: NextApiResponse,
+): Promise<void> => {
   const {
     query: { protocol, number },
     method,
@@ -20,8 +23,8 @@ const speechHandler = async (req: JsonDocumentApiRequest, res: NextApiResponse):
   // Barely any changes, cache for 2 weekss
   setCache(1210000, res);
 
-  if (!ALLOWED_METHODS.includes(method || '')) {
-    res.setHeader('Allow', ALLOWED_METHODS);
+  if (!ALLOWED_METHODS.includes(method || "")) {
+    res.setHeader("Allow", ALLOWED_METHODS);
     res.status(405).end(`Method ${method} Not Allowed`);
     return;
   }

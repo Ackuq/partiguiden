@@ -1,9 +1,10 @@
-import { NextApiRequest, NextApiResponse } from 'next';
-import { PartyAbbreviation, partyAbbreviations } from '../../../utils/parties';
-import { partyController } from '../../../api/controllers/parties';
-import { setCache } from '../../../utils/apiUtils';
+import type { NextApiRequest, NextApiResponse } from "next";
+import type { PartyAbbreviation } from "../../../utils/parties";
+import { partyAbbreviations } from "../../../utils/parties";
+import { partyController } from "../../../api/controllers/parties";
+import { setCache } from "../../../utils/apiUtils";
 
-const ALLOWED_METHODS = ['GET'];
+const ALLOWED_METHODS = ["GET"];
 
 interface PartyApiRequest extends NextApiRequest {
   query: {
@@ -11,7 +12,10 @@ interface PartyApiRequest extends NextApiRequest {
   };
 }
 
-const partyHandler = async (req: PartyApiRequest, res: NextApiResponse): Promise<void> => {
+const partyHandler = async (
+  req: PartyApiRequest,
+  res: NextApiResponse,
+): Promise<void> => {
   const {
     query: { party },
     method,
@@ -20,8 +24,8 @@ const partyHandler = async (req: PartyApiRequest, res: NextApiResponse): Promise
   // Very static, cache for a week
   setCache(604800, res);
 
-  if (!ALLOWED_METHODS.includes(method || '')) {
-    res.setHeader('Allow', ALLOWED_METHODS);
+  if (!ALLOWED_METHODS.includes(method || "")) {
+    res.setHeader("Allow", ALLOWED_METHODS);
     res.status(405).end(`Method ${method} Not Allowed`);
     return;
   }
@@ -31,11 +35,11 @@ const partyHandler = async (req: PartyApiRequest, res: NextApiResponse): Promise
   }
   try {
     const partyData = await partyController(
-      party.toLocaleLowerCase() as Lowercase<PartyAbbreviation>
+      party.toLocaleLowerCase() as Lowercase<PartyAbbreviation>,
     );
     res.status(200).json(partyData);
   } catch (error) {
-    res.status(500).end('Something went wrong');
+    res.status(500).end("Something went wrong");
   }
 };
 

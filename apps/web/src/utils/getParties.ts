@@ -1,34 +1,39 @@
-import { PartyAbbreviation, PartyInfo, parties } from './parties';
+import type { PartyAbbreviation, PartyInfo } from "./parties";
+import { parties } from "./parties";
 
 export const newBlocks = {
-  name: 'Nya blocken',
+  name: "Nya blocken",
   values: [
     {
-      name: 'Vänsterblocket',
-      parties: ['S', 'V', 'MP', 'C'] as Array<PartyAbbreviation>,
-      color: '#c0392b',
+      name: "Vänsterblocket",
+      parties: ["S", "V", "MP", "C"] as Array<PartyAbbreviation>,
+      color: "#c0392b",
     },
     {
-      name: 'Högerblocket',
-      parties: ['M', 'SD', 'KD', 'L'] as Array<PartyAbbreviation>,
-      color: '#3a539b',
+      name: "Högerblocket",
+      parties: ["M", "SD", "KD", "L"] as Array<PartyAbbreviation>,
+      color: "#3a539b",
     },
   ],
 } as const;
 
 export const classicBlocks = {
-  name: 'Klassiska blocken',
+  name: "Klassiska blocken",
   values: [
     {
-      name: 'Vänsterblocket',
-      parties: ['S', 'V', 'MP'] as Array<PartyAbbreviation>,
-      color: '#c0392b',
+      name: "Vänsterblocket",
+      parties: ["S", "V", "MP"] as Array<PartyAbbreviation>,
+      color: "#c0392b",
     },
-    { name: 'Sverigedemokraterna', parties: ['SD'] as Array<PartyAbbreviation>, color: '#f4d03f' },
     {
-      name: 'Högerblocket',
-      parties: ['M', 'C', 'KD', 'L'] as Array<PartyAbbreviation>,
-      color: '#3a539b',
+      name: "Sverigedemokraterna",
+      parties: ["SD"] as Array<PartyAbbreviation>,
+      color: "#f4d03f",
+    },
+    {
+      name: "Högerblocket",
+      parties: ["M", "C", "KD", "L"] as Array<PartyAbbreviation>,
+      color: "#3a539b",
     },
   ],
 } as const;
@@ -39,7 +44,7 @@ export type Blocks = typeof classicBlocks | typeof newBlocks;
 
 export const partiesMap = parties.reduce(
   (prev, curr) => ({ ...prev, [curr.letter]: curr }),
-  {} as Record<PartyAbbreviation, PartyInfo>
+  {} as Record<PartyAbbreviation, PartyInfo>,
 );
 
 export default parties;

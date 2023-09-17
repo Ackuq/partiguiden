@@ -1,19 +1,19 @@
-import Link from 'next/link';
-import React, { useState } from 'react';
+import Link from "next/link";
+import React, { useState } from "react";
 
-import Collapse from '@mui/material/Collapse';
-import Typography from '@mui/material/Typography';
+import Collapse from "@mui/material/Collapse";
+import Typography from "@mui/material/Typography";
 
-import { useTheme } from '@mui/material/styles';
+import { useTheme } from "@mui/material/styles";
 
-import { Vote } from '../../types/voting';
-import RotatingArrow from './shared/RotatingArrow';
-import SectionButton from './shared/SectionButton';
+import type { Vote } from "../../types/voting";
+import RotatingArrow from "./shared/RotatingArrow";
+import SectionButton from "./shared/SectionButton";
 
-import * as ROUTES from '../../lib/routes';
+import * as ROUTES from "../../lib/routes";
 
 interface Props {
-  processedDocuments: Vote['processedDocuments'];
+  processedDocuments: Vote["processedDocuments"];
 }
 
 const ProcessedDocuments: React.FC<Props> = ({ processedDocuments }) => {
@@ -21,15 +21,15 @@ const ProcessedDocuments: React.FC<Props> = ({ processedDocuments }) => {
   const [visible, setVisible] = useState(false);
 
   return (
-    <div style={{ marginBottom: '1rem' }}>
+    <div style={{ marginBottom: "1rem" }}>
       <SectionButton onClick={() => setVisible(!visible)}>
         <Typography variant="h5" color="inherit">
           Behandlade dokument
         </Typography>
-        <RotatingArrow active={visible.toString() as 'true' | 'false'} />
+        <RotatingArrow active={visible.toString() as "true" | "false"} />
       </SectionButton>
       <Collapse in={visible}>
-        <div style={{ marginTop: '1.25rem' }}>
+        <div style={{ marginTop: "1.25rem" }}>
           {processedDocuments.map((document, index) => (
             <React.Fragment key={document.id}>
               <Link
@@ -41,7 +41,9 @@ const ProcessedDocuments: React.FC<Props> = ({ processedDocuments }) => {
                 <Typography
                   component="a"
                   variant="body1"
-                  color={theme.palette.mode === 'dark' ? 'secondary' : 'primary'}
+                  color={
+                    theme.palette.mode === "dark" ? "secondary" : "primary"
+                  }
                 >
                   [{index}] {document.label}
                 </Typography>

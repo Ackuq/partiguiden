@@ -1,17 +1,17 @@
-import { GetStaticProps, InferGetStaticPropsType, NextPage } from 'next';
-import Head from 'next/head';
+import type { GetStaticProps, InferGetStaticPropsType, NextPage } from "next";
+import Head from "next/head";
 
-import NoteIcon from '@mui/icons-material/Note';
+import NoteIcon from "@mui/icons-material/Note";
 
-import PageTitle from '../../components/PageTitle';
+import PageTitle from "../../components/PageTitle";
 
-import { SubjectList } from '../../types/subjects';
-import { getSubjects } from '../../lib/api';
-import Subjects from '../../containers/Subjects';
+import type { SubjectList } from "../../types/subjects";
+import { getSubjects } from "../../lib/api";
+import Subjects from "../../containers/Subjects";
 
-const StandpointsListContainer: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
-  subjects,
-}) => (
+const StandpointsListContainer: NextPage<
+  InferGetStaticPropsType<typeof getStaticProps>
+> = ({ subjects }) => (
   <>
     <Head>
       <title>Partiernas ståndpunkter | Partiguiden</title>
@@ -25,7 +25,9 @@ const StandpointsListContainer: NextPage<InferGetStaticPropsType<typeof getStati
   </>
 );
 
-export const getStaticProps: GetStaticProps<{ subjects: SubjectList }> = async () => {
+export const getStaticProps: GetStaticProps<{
+  subjects: SubjectList;
+}> = async () => {
   const subjects = await getSubjects();
 
   return { props: { subjects }, revalidate: 518400 };

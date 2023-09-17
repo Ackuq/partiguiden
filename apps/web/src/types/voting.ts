@@ -1,11 +1,11 @@
-import { DocumentAttachment } from './parliament';
-import { partyAbbreviations } from '../utils/parties';
+import type { DocumentAttachment } from "./parliament";
+import { partyAbbreviations } from "../utils/parties";
 
-export type VoteDescription = 'yes' | 'no' | 'refrain' | 'abscent';
+export type VoteDescription = "yes" | "no" | "refrain" | "abscent";
 
 export type VotingEntry = Record<VoteDescription, number>;
 
-export const votingGroup = [...partyAbbreviations, 'noParty', 'total'] as const;
+export const votingGroup = [...partyAbbreviations, "noParty", "total"] as const;
 
 export type VotingGroup = (typeof votingGroup)[number];
 
@@ -14,7 +14,7 @@ export type VotingDict = Record<VotingGroup, VotingEntry>;
 export type VotingResult = {
   yes: Array<string>;
   no: Array<string>;
-  winner: 'yes' | 'no' | 'draw';
+  winner: "yes" | "no" | "draw";
 };
 
 export interface VoteResultsResponse {

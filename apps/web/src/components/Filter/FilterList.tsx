@@ -1,8 +1,8 @@
-import Checkbox from '@mui/material/Checkbox';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemIcon from '@mui/material/ListItemIcon';
-import ListItemText from '@mui/material/ListItemText';
+import Checkbox from "@mui/material/Checkbox";
+import List from "@mui/material/List";
+import ListItem from "@mui/material/ListItem";
+import ListItemIcon from "@mui/material/ListItemIcon";
+import ListItemText from "@mui/material/ListItemText";
 
 interface Props {
   list: Array<unknown>;
@@ -12,7 +12,13 @@ interface Props {
   getKey: (element: never) => string;
 }
 
-const FilterList: React.FC<Props> = ({ list, updateList, isChecked, getText, getKey }) => {
+const FilterList: React.FC<Props> = ({
+  list,
+  updateList,
+  isChecked,
+  getText,
+  getKey,
+}) => {
   const renderCheckBox = (el: never) => (
     <ListItem
       key={getKey(el)}
@@ -24,7 +30,7 @@ const FilterList: React.FC<Props> = ({ list, updateList, isChecked, getText, get
         updateList(el);
       }}
     >
-      <ListItemIcon sx={{ minWidth: '46px' }}>
+      <ListItemIcon sx={{ minWidth: "46px" }}>
         <Checkbox
           inputProps={{ id: `${getKey(el)}-input` }}
           color="primary"
@@ -35,10 +41,10 @@ const FilterList: React.FC<Props> = ({ list, updateList, isChecked, getText, get
       <ListItemText
         disableTypography
         sx={{
-          fontSize: '0.9rem',
-          marginRight: '1rem',
+          fontSize: "0.9rem",
+          marginRight: "1rem",
           lineHeight: 1.5,
-          pointerEvents: 'none',
+          pointerEvents: "none",
         }}
       >
         <label htmlFor={`${getKey(el)}-input`}>{getText(el)}</label>

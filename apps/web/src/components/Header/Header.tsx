@@ -1,25 +1,25 @@
-import Link from 'next/link';
-import React, { useCallback, useRef, useState } from 'react';
+import Link from "next/link";
+import React, { useCallback, useRef, useState } from "react";
 
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import ButtonBase from '@mui/material/ButtonBase';
-import Grid from '@mui/material/Grid';
-import IconButton from '@mui/material/IconButton';
-import Toolbar from '@mui/material/Toolbar';
+import AppBar from "@mui/material/AppBar";
+import Box from "@mui/material/Box";
+import ButtonBase from "@mui/material/ButtonBase";
+import Grid from "@mui/material/Grid";
+import IconButton from "@mui/material/IconButton";
+import Toolbar from "@mui/material/Toolbar";
 
-import { styled } from '@mui/material/styles';
+import { styled } from "@mui/material/styles";
 
-import BrightnessIcon from '@mui/icons-material/Brightness6';
-import MenuIcon from '@mui/icons-material/Menu';
+import BrightnessIcon from "@mui/icons-material/Brightness6";
+import MenuIcon from "@mui/icons-material/Menu";
 
-import Drawer from './Drawer';
-import NavLinks from './NavLinks';
+import Drawer from "./Drawer";
+import NavLinks from "./NavLinks";
 
-import { INDEX } from '../../lib/routes';
-import { addOpacity } from '../../utils/colorUtils';
+import { INDEX } from "../../lib/routes";
+import { addOpacity } from "../../utils/colorUtils";
 
-const BannerText = styled('a')`
+const BannerText = styled("a")`
   font-weight: bold;
   text-decoration: none;
   font-size: 2rem;
@@ -46,7 +46,7 @@ const Branding: React.FC<Props> = ({ toggleDarkMode }) => {
         item
         xs={3}
         sx={{
-          textAlign: { xs: 'right', sm: 'center' },
+          textAlign: { xs: "right", sm: "center" },
         }}
       >
         <IconButton onClick={toggleDarkMode} aria-label="Toggle dark mode">
@@ -74,10 +74,10 @@ const Header: React.FC<Props> = ({ toggleDarkMode }) => {
       <Box
         sx={(theme) => ({
           height: appBar.current?.clientHeight ?? 56,
-          position: 'absolute',
-          width: '100%',
+          position: "absolute",
+          width: "100%",
           bgcolor:
-            theme.palette.mode === 'dark'
+            theme.palette.mode === "dark"
               ? theme.palette.background.paper
               : theme.palette.primary.light,
         })}
@@ -88,17 +88,22 @@ const Header: React.FC<Props> = ({ toggleDarkMode }) => {
         sx={{
           backgroundColor: (theme) =>
             addOpacity(
-              theme.palette.mode === 'dark'
+              theme.palette.mode === "dark"
                 ? theme.palette.background.paper
                 : theme.palette.primary.light,
-              0.8
+              0.8,
             ),
-          backdropFilter: 'blur(5px)',
+          backdropFilter: "blur(5px)",
         }}
       >
-        <Box sx={{ display: { xs: 'block', sm: 'none' } }}>
+        <Box sx={{ display: { xs: "block", sm: "none" } }}>
           <Toolbar>
-            <IconButton color="inherit" aria-label="open drawer" onClick={openDrawer} edge="start">
+            <IconButton
+              color="inherit"
+              aria-label="open drawer"
+              onClick={openDrawer}
+              edge="start"
+            >
               <MenuIcon />
             </IconButton>
             <Branding toggleDarkMode={toggleDarkMode} />
@@ -110,7 +115,7 @@ const Header: React.FC<Props> = ({ toggleDarkMode }) => {
             handleOpen={openDrawer}
           />
         </Box>
-        <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
+        <Box sx={{ display: { xs: "none", sm: "block" } }}>
           <Branding toggleDarkMode={toggleDarkMode} />
           <NavLinks />
         </Box>

@@ -1,25 +1,28 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
-import { useTheme } from '@mui/material/styles';
+import { useTheme } from "@mui/material/styles";
 
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
-import Accordion from '@mui/material/Accordion';
-import AccordionDetails from '@mui/material/AccordionDetails';
-import AccordionSummary from '@mui/material/AccordionSummary';
-import Grid from '@mui/material/Grid';
-import Link from '@mui/material/Link';
-import Paper from '@mui/material/Paper';
-import Typography from '@mui/material/Typography';
+import Accordion from "@mui/material/Accordion";
+import AccordionDetails from "@mui/material/AccordionDetails";
+import AccordionSummary from "@mui/material/AccordionSummary";
+import Grid from "@mui/material/Grid";
+import Link from "@mui/material/Link";
+import Paper from "@mui/material/Paper";
+import Typography from "@mui/material/Typography";
 
-import { Information as InformationType, MemberDetailedResponse } from '../../types/member';
-import { ResponsiveAd } from '../Ad';
-import InformationTabs from './InformationTabs';
+import type {
+  Information as InformationType,
+  MemberDetailedResponse,
+} from "../../types/member";
+import { ResponsiveAd } from "../Ad";
+import InformationTabs from "./InformationTabs";
 
 interface Props {
   id: string;
   informationRecords: Array<InformationType>;
-  absence: MemberDetailedResponse['absence'];
+  absence: MemberDetailedResponse["absence"];
 }
 
 const Information: React.FC<Props> = ({ id, informationRecords, absence }) => {
@@ -30,7 +33,7 @@ const Information: React.FC<Props> = ({ id, informationRecords, absence }) => {
     <Grid container spacing={3} justifyContent="center">
       {absence.mandatePeriod.value !== null && (
         <Grid item xs={6} sm={4}>
-          <Paper style={{ padding: '0.5rem' }}>
+          <Paper style={{ padding: "0.5rem" }}>
             <Typography variant="h5" component="p" align="center">
               {absence.mandatePeriod.value}%
             </Typography>
@@ -42,7 +45,7 @@ const Information: React.FC<Props> = ({ id, informationRecords, absence }) => {
       )}
       {absence.parliamentYear.value !== null && (
         <Grid item xs={6} sm={4}>
-          <Paper style={{ padding: '0.5rem' }}>
+          <Paper style={{ padding: "0.5rem" }}>
             <Typography variant="h5" component="p" align="center">
               {absence.parliamentYear.value}%
             </Typography>
@@ -53,7 +56,7 @@ const Information: React.FC<Props> = ({ id, informationRecords, absence }) => {
         </Grid>
       )}
       <Grid item xs={12} sm={4}>
-        <Paper style={{ padding: '0.5rem' }}>
+        <Paper style={{ padding: "0.5rem" }}>
           <Typography variant="h5" component="p" align="center">
             {documentCount}
           </Typography>
@@ -64,11 +67,13 @@ const Information: React.FC<Props> = ({ id, informationRecords, absence }) => {
       </Grid>
       {informationRecords.length > 0 && (
         <Grid item xs={12}>
-          <Paper sx={{ p: 2, borderBottomLeftRadius: 0, borderBottomRightRadius: 0 }}>
+          <Paper
+            sx={{ p: 2, borderBottomLeftRadius: 0, borderBottomRightRadius: 0 }}
+          >
             <Typography
               variant="h4"
               component="span"
-              color={theme.palette.mode === 'dark' ? 'textPrimary' : 'primary'}
+              color={theme.palette.mode === "dark" ? "textPrimary" : "primary"}
             >
               Biografi
             </Typography>
@@ -76,13 +81,20 @@ const Information: React.FC<Props> = ({ id, informationRecords, absence }) => {
 
           {informationRecords.map((record) => (
             <Accordion key={`${record.type}:${record.code}`}>
-              <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls={record.code}>
+              <AccordionSummary
+                expandIcon={<ExpandMoreIcon />}
+                aria-controls={record.code}
+              >
                 <Typography>{record.code}</Typography>
               </AccordionSummary>
               {record.content.map((information) => (
                 <AccordionDetails key={information}>
-                  {record.type === 'eadress' ? (
-                    <Link href={information} target="_blank" rel="noopener noreferrer">
+                  {record.type === "eadress" ? (
+                    <Link
+                      href={information}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       {information}
                     </Link>
                   ) : (

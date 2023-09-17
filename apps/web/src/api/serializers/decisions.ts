@@ -1,8 +1,10 @@
-import { Decision, Decisions } from '../../types/decision';
-import { DocumentList, DocumentListEntry } from '../../types/parliament';
-import { checkIfVotesExist } from '../helpers/decisionUtils';
+import type { Decision, Decisions } from "../../types/decision";
+import type { DocumentList, DocumentListEntry } from "../../types/parliament";
+import { checkIfVotesExist } from "../helpers/decisionUtils";
 
-export const decisionSerializer = async (data: DocumentListEntry): Promise<Decision> => {
+export const decisionSerializer = async (
+  data: DocumentListEntry,
+): Promise<Decision> => {
   const {
     titel: title,
     organ: authority,
@@ -15,7 +17,7 @@ export const decisionSerializer = async (data: DocumentListEntry): Promise<Decis
   } = data;
 
   const voteSearchTerm = `${session}:${denomination}`;
-  const jsonUrl = `https:${textUrl}`.replace('.text', '.json');
+  const jsonUrl = `https:${textUrl}`.replace(".text", ".json");
   const votesExists = await checkIfVotesExist(jsonUrl);
 
   return {
@@ -34,13 +36,14 @@ export const decisionsSerializer = (data: DocumentList): Promise<Decisions> => {
   const { dokumentlista } = data;
   const { dokument: document } = dokumentlista;
 
-  const pages = parseInt(dokumentlista['@sidor'], 10);
+  const pages = parseInt(dokumentlista["@sidor"], 10);
 
   if (!document || pages === 0) {
     return Promise.resolve({ decisions: [], pages });
   }
 
-  const unserializedDecisions: Array<Promise<Decision>> = document.map(decisionSerializer);
+  const unserializedDecisions: Array<Promise<Decision>> =
+    document.map(decisionSerializer);
 
   return Promise.all(unserializedDecisions).then((decisions) => ({
     decisions,

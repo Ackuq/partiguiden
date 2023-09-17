@@ -1,18 +1,24 @@
-import { TwitterResult, WikidataResponse } from '../types/wikidata';
-import useSWR from 'swr';
+import type { TwitterResult, WikidataResponse } from "../types/wikidata";
+import useSWR from "swr";
 
 const fetcher = (url: string) =>
-  fetch(url, { headers: { Accept: 'application/sparql-results+json' } }).then((r) => r.json());
+  fetch(url, { headers: { Accept: "application/sparql-results+json" } }).then(
+    (r) => r.json(),
+  );
 
-const QUERY_URL = 'https://query.wikidata.org/sparql';
+const QUERY_URL = "https://query.wikidata.org/sparql";
 
-const useWikidata = <T>(sparqlQuery: string): WikidataResponse<T> | undefined => {
-  const fullUrl = QUERY_URL + '?query=' + encodeURIComponent(sparqlQuery);
+const useWikidata = <T>(
+  sparqlQuery: string,
+): WikidataResponse<T> | undefined => {
+  const fullUrl = QUERY_URL + "?query=" + encodeURIComponent(sparqlQuery);
   const { data } = useSWR<WikidataResponse<T>>(fullUrl, fetcher);
   return data;
 };
 
-export const useTwitterInfo = (memberId: string): WikidataResponse<TwitterResult> | undefined => {
+export const useTwitterInfo = (
+  memberId: string,
+): WikidataResponse<TwitterResult> | undefined => {
   const sparqlQuery = `
     #title: Riksdagsmedlemmars twitterkonton
     SELECT DISTINCT ?person ?twitterHandle ?twitterId WHERE {

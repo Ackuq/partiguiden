@@ -37,7 +37,7 @@ export function writePartyData(
   const fileName = partyFileName(abbreviation);
 
   if (!fs.existsSync(fileName)) {
-    fs.writeFileSync(fileName, JSON.stringify(data, null, 2));
+    fs.writeFileSync(fileName, JSON.stringify(data, null, 2) + "\n");
     return;
   }
   const storedData = JSON.parse(
@@ -74,7 +74,7 @@ export function writePartyData(
     result.fetchDate = incomingData.fetchDate;
     storedData[link] = result;
   }
-  fs.writeFileSync(fileName, JSON.stringify(storedData, null, 2));
+  fs.writeFileSync(fileName, JSON.stringify(storedData, null, 2) + "\n");
 }
 
 export function updateStandpoint(abbreviation: string, standpoint: Standpoint) {
@@ -83,7 +83,7 @@ export function updateStandpoint(abbreviation: string, standpoint: Standpoint) {
     fs.readFileSync(fileName).toString(),
   ) as PartyData;
   storedData[standpoint.url] = standpoint;
-  fs.writeFileSync(fileName, JSON.stringify(storedData, null, 2));
+  fs.writeFileSync(fileName, JSON.stringify(storedData, null, 2) + "\n");
 }
 
 function readSubjectData() {

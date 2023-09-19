@@ -6,7 +6,8 @@
     "title": "Abort",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/abort",
     "fetchDate": "2023-09-17T17:52:42.258Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Vård och Omsorg"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/adoption": {
     "opinions": [
@@ -15,7 +16,8 @@
     "title": "Adoption",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/adoption",
     "fetchDate": "2023-09-17T17:52:42.631Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Familjen"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/a-kassa": {
     "opinions": [
@@ -24,7 +26,8 @@
     "title": "A-kassa",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/a-kassa",
     "fetchDate": "2023-09-17T17:52:41.345Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Trygghetssystem och Välfärd"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/amorteringskrav": {
     "opinions": [
@@ -33,7 +36,8 @@
     "title": "Amorteringskrav",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/amorteringskrav",
     "fetchDate": "2023-09-17T17:52:42.932Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Ekonomi och Skatter"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/andts": {
     "opinions": [
@@ -43,7 +47,8 @@
     "title": "ANDTS",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/andts",
     "fetchDate": "2023-09-17T17:52:42.465Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Vård och Omsorg"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/anhoriginvandring": {
     "opinions": [
@@ -52,7 +57,8 @@
     "title": "Anhöriginvandring",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/anhoriginvandring",
     "fetchDate": "2023-09-17T17:52:42.774Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Migration och Integration"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/anhorigvard": {
     "opinions": [
@@ -61,7 +67,8 @@
     "title": "Anhörigvård",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/anhorigvard",
     "fetchDate": "2023-09-17T17:52:39.560Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Vård och Omsorg"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/anonyma-vittnen": {
     "opinions": [
@@ -70,7 +77,8 @@
     "title": "Anonyma vittnen",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/anonyma-vittnen",
     "fetchDate": "2023-09-17T17:52:40.338Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Lag och rätt"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/antibiotika": {
     "opinions": [
@@ -80,7 +88,8 @@
     "title": "Antibiotika",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/antibiotika",
     "fetchDate": "2023-09-17T17:52:41.687Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Miljö och klimat"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/arbetsformedlingen": {
     "opinions": [
@@ -89,7 +98,8 @@
     "title": "Arbetsförmedlingen",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/arbetsformedlingen",
     "fetchDate": "2023-09-17T17:52:38.404Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Jobb"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/arbetsintegrerande-sociala-foretag": {
     "opinions": [
@@ -98,7 +108,8 @@
     "title": "Arbetsintegrerande sociala företag",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/arbetsintegrerande-sociala-foretag",
     "fetchDate": "2023-09-17T17:52:41.840Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Jobb"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/arbetskraftsinvandring": {
     "opinions": [
@@ -107,7 +118,8 @@
     "title": "Arbetskraftsinvandring",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/arbetskraftsinvandring",
     "fetchDate": "2023-09-17T17:52:42.607Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Migration och Integration"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/arbetsmarknad": {
     "opinions": [
@@ -116,7 +128,8 @@
     "title": "Arbetsmarknad",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/arbetsmarknad",
     "fetchDate": "2023-09-17T17:52:39.861Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Jobb"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/arbetsratt": {
     "opinions": [
@@ -125,7 +138,8 @@
     "title": "Arbetsrätt",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/arbetsratt",
     "fetchDate": "2023-09-17T17:52:42.956Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Jobb"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/assistans": {
     "opinions": [
@@ -136,7 +150,8 @@
     "title": "Assistans",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/assistans",
     "fetchDate": "2023-09-17T17:52:39.441Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Vård och Omsorg"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/asyl": {
     "opinions": [
@@ -145,7 +160,8 @@
     "title": "Asyl",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/asyl",
     "fetchDate": "2023-09-17T17:52:42.203Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Migration och Integration"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/asylansokningsomraden": {
     "opinions": [
@@ -154,7 +170,8 @@
     "title": "Asylansökningsområden",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/asylansokningsomraden",
     "fetchDate": "2023-09-17T17:52:42.409Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Migration och Integration"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/asylprogram": {
     "opinions": [
@@ -163,7 +180,8 @@
     "title": "Asylprogram",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/asylprogram",
     "fetchDate": "2023-09-17T17:52:41.966Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Migration och Integration"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/barnbidrag": {
     "opinions": [
@@ -172,7 +190,8 @@
     "title": "Barnbidrag",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/barnbidrag",
     "fetchDate": "2023-09-17T17:52:42.538Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Familjen"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/barnfattigdom": {
     "opinions": [
@@ -181,7 +200,8 @@
     "title": "Barnfattigdom",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/barnfattigdom",
     "fetchDate": "2023-09-17T17:52:43.057Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Jämställdhet och diskriminering"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/barnkonventionen": {
     "opinions": [
@@ -190,7 +210,8 @@
     "title": "Barnkonventionen",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/barnkonventionen",
     "fetchDate": "2023-09-17T17:52:38.669Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Familjen"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/barnomsorg": {
     "opinions": [
@@ -199,7 +220,8 @@
     "title": "Barnomsorg",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/barnomsorg",
     "fetchDate": "2023-09-17T17:52:41.943Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Vård och Omsorg"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/barnomsorgspeng": {
     "opinions": [
@@ -208,7 +230,8 @@
     "title": "Barnomsorgspeng",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/barnomsorgspeng",
     "fetchDate": "2023-09-17T17:52:41.893Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Familjen"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/barnaktenskap": {
     "opinions": [
@@ -217,7 +240,8 @@
     "title": "Barnäktenskap",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/barnaktenskap",
     "fetchDate": "2023-09-17T17:52:41.230Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Lag och rätt"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/betyg": {
     "opinions": [
@@ -226,7 +250,8 @@
     "title": "Betyg",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/betyg",
     "fetchDate": "2023-09-17T17:52:43.364Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Utbildning"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/bibliotek": {
     "opinions": [
@@ -236,7 +261,8 @@
     "title": "Bibliotek",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/bibliotek",
     "fetchDate": "2023-09-17T17:52:38.927Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Utbildning"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/bildning": {
     "opinions": [
@@ -245,7 +271,8 @@
     "title": "Bildning",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/bildning",
     "fetchDate": "2023-09-17T17:52:42.897Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Utbildning"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/biologisk-mangfald": {
     "opinions": [
@@ -254,7 +281,8 @@
     "title": "Biologisk mångfald",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/biologisk-mangfald",
     "fetchDate": "2023-09-17T17:52:42.880Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Miljö och klimat"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/bistand-och-utvecklingssamarbete": {
     "opinions": [
@@ -263,7 +291,8 @@
     "title": "Bistånd och utvecklingssamarbete",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/bistand-och-utvecklingssamarbete",
     "fetchDate": "2023-09-17T17:52:41.245Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Utrikes- och biståndsfrågor"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/bostad": {
     "opinions": [
@@ -272,7 +301,8 @@
     "title": "Bostad",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/bostad",
     "fetchDate": "2023-09-17T17:52:41.952Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Bostad"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/bostadsbidrag": {
     "opinions": [
@@ -281,7 +311,8 @@
     "title": "Bostadsbidrag",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/bostadsbidrag",
     "fetchDate": "2023-09-17T17:52:42.100Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Bostad"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/bostadssegregation": {
     "opinions": [
@@ -290,7 +321,8 @@
     "title": "Bostadssegregation",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/bostadssegregation",
     "fetchDate": "2023-09-17T17:52:40.934Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Bostad"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/bredband": {
     "opinions": [
@@ -299,7 +331,8 @@
     "title": "Bredband",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/bredband",
     "fetchDate": "2023-09-17T17:52:41.175Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "IT och Mobiltelefoni"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/brottsbekampning": {
     "opinions": [
@@ -308,7 +341,8 @@
     "title": "Brottsbekämpning",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/brottsbekampning",
     "fetchDate": "2023-09-17T17:52:41.574Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Lag och rätt"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/brottsforebyggande-atgarder": {
     "opinions": [
@@ -318,7 +352,8 @@
     "title": "Brottsförebyggande åtgärder",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/brottsforebyggande-atgarder",
     "fetchDate": "2023-09-17T17:52:43.280Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Lag och rätt"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/brottsoffer": {
     "opinions": [
@@ -327,7 +362,8 @@
     "title": "Brottsoffer",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/brottsoffer",
     "fetchDate": "2023-09-17T17:52:42.552Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Lag och rätt"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/civilkurage": {
     "opinions": [
@@ -336,7 +372,8 @@
     "title": "Civilkurage",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/civilkurage",
     "fetchDate": "2023-09-17T17:52:42.863Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Lag och rätt"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/civilsamhallet": {
     "opinions": [
@@ -345,7 +382,8 @@
     "title": "Civilsamhället",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/civilsamhallet",
     "fetchDate": "2023-09-17T17:52:43.224Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Kultur, media, och idrott"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/delade-turer": {
     "opinions": [
@@ -354,7 +392,8 @@
     "title": "Delade turer",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/delade-turer",
     "fetchDate": "2023-09-17T17:52:40.208Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Äldrepolitik"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/demokrati": {
     "opinions": [
@@ -363,7 +402,8 @@
     "title": "Demokrati",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/demokrati",
     "fetchDate": "2023-09-17T17:52:42.057Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Lag och rätt"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/digitalisering": {
     "opinions": [
@@ -372,7 +412,8 @@
     "title": "Digitalisering",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/digitalisering",
     "fetchDate": "2023-09-17T17:52:40.992Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "IT och Mobiltelefoni"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/diskriminering": {
     "opinions": [
@@ -381,7 +422,8 @@
     "title": "Diskriminering",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/diskriminering",
     "fetchDate": "2023-09-17T17:52:39.042Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Jämställdhet och diskriminering"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/djurforsok": {
     "opinions": [
@@ -390,7 +432,8 @@
     "title": "Djurförsök",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/djurforsok",
     "fetchDate": "2023-09-17T17:52:41.027Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Miljö och klimat"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/djurskydd": {
     "opinions": [
@@ -399,7 +442,8 @@
     "title": "Djurskydd",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/djurskydd",
     "fetchDate": "2023-09-17T17:52:42.995Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Jordbruk, Jakt och Fiske"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/drivmedelsskatt": {
     "opinions": [
@@ -408,7 +452,8 @@
     "title": "Drivmedelsskatt",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/drivmedelsskatt",
     "fetchDate": "2023-09-17T17:52:41.633Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Infrastruktur och Trafik"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/dodshjalp": {
     "opinions": [
@@ -417,7 +462,8 @@
     "title": "Dödshjälp",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/dodshjalp",
     "fetchDate": "2023-09-17T17:52:41.665Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Vård och Omsorg"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/dodsstraff": {
     "opinions": [
@@ -426,7 +472,8 @@
     "title": "Dödsstraff",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/dodsstraff",
     "fetchDate": "2023-09-17T17:52:41.330Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Lag och rätt"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/e-halsa": {
     "opinions": [
@@ -436,7 +483,8 @@
     "title": "E-hälsa",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/e-halsa",
     "fetchDate": "2023-09-17T17:52:43.132Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Vård och Omsorg"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/ekologiskt-lantbruk": {
     "opinions": [
@@ -445,7 +493,8 @@
     "title": "Ekologiskt lantbruk",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/ekologiskt-lantbruk",
     "fetchDate": "2023-09-17T17:52:41.555Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Jordbruk, Jakt och Fiske"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/ekonomisk-politik": {
     "opinions": [
@@ -454,7 +503,8 @@
     "title": "Ekonomisk politik",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/ekonomisk-politik",
     "fetchDate": "2023-09-17T17:52:41.772Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Ekonomi och Skatter"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/elevhalsa": {
     "opinions": [
@@ -463,7 +513,8 @@
     "title": "Elevhälsa",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/elevhalsa",
     "fetchDate": "2023-09-17T17:52:40.092Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Vård och Omsorg"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/elmarknad": {
     "opinions": [
@@ -472,7 +523,8 @@
     "title": "Elmarknad",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/elmarknad",
     "fetchDate": "2023-09-17T17:52:40.844Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Energi"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/elpris": {
     "opinions": [
@@ -481,7 +533,8 @@
     "title": "Elpris",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/elpris",
     "fetchDate": "2023-09-17T17:52:42.839Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Energi"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/elsystem": {
     "opinions": [
@@ -490,7 +543,8 @@
     "title": "Elsystem",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/elsystem",
     "fetchDate": "2023-09-17T17:52:38.935Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Energi"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/emu-och-euron": {
     "opinions": [
@@ -499,7 +553,8 @@
     "title": "EMU och Euron",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/emu-och-euron",
     "fetchDate": "2023-09-17T17:52:43.285Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Europa"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/energi": {
     "opinions": [
@@ -508,7 +563,8 @@
     "title": "Energi",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/energi",
     "fetchDate": "2023-09-17T17:52:42.161Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Energi"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/energieffektivisering": {
     "opinions": [
@@ -517,7 +573,8 @@
     "title": "Energieffektivisering",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/energieffektivisering",
     "fetchDate": "2023-09-17T17:52:41.740Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Energi"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/ensamkommande-barn": {
     "opinions": [
@@ -526,7 +583,8 @@
     "title": "Ensamkommande barn",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/ensamkommande-barn",
     "fetchDate": "2023-09-17T17:52:41.010Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Migration och Integration"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/enskilda-avlopp": {
     "opinions": [
@@ -535,7 +593,8 @@
     "title": "Enskilda avlopp",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/enskilda-avlopp",
     "fetchDate": "2023-09-17T17:52:42.715Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Miljö och klimat"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/enskilda-vagar": {
     "opinions": [
@@ -544,7 +603,8 @@
     "title": "Enskilda vägar",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/enskilda-vagar",
     "fetchDate": "2023-09-17T17:52:42.509Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Landsbygd"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/etableringsprogram": {
     "opinions": [
@@ -553,7 +613,8 @@
     "title": "Etableringsprogram",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/etableringsprogram",
     "fetchDate": "2023-09-17T17:52:39.852Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Migration och Integration"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/eu": {
     "opinions": [
@@ -562,7 +623,8 @@
     "title": "EU",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/eu",
     "fetchDate": "2023-09-17T17:52:43.215Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Europa"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/extremism": {
     "opinions": [
@@ -571,7 +633,8 @@
     "title": "Extremism",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/extremism",
     "fetchDate": "2023-09-17T17:52:41.934Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Lag och rätt"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/familjen": {
     "opinions": [
@@ -580,7 +643,8 @@
     "title": "Familjen",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/familjen",
     "fetchDate": "2023-09-17T17:52:40.968Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Familjen"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/familjepolitik": {
     "opinions": [
@@ -589,7 +653,8 @@
     "title": "Familjepolitik",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/familjepolitik",
     "fetchDate": "2023-09-17T17:52:42.248Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Familjen"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/familjeaterforening": {
     "opinions": [
@@ -598,7 +663,8 @@
     "title": "Familjeåterförening",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/familjeaterforening",
     "fetchDate": "2023-09-17T17:52:42.456Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Familjen"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/fastighetsskatt": {
     "opinions": [
@@ -607,7 +673,8 @@
     "title": "Fastighetsskatt",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/fastighetsskatt",
     "fetchDate": "2023-09-17T17:52:42.079Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Ekonomi och Skatter"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/feminism": {
     "opinions": [
@@ -616,7 +683,8 @@
     "title": "Feminism",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/feminism",
     "fetchDate": "2023-09-17T17:52:42.139Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Jämställdhet och diskriminering"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/fiske": {
     "opinions": [
@@ -625,7 +693,8 @@
     "title": "Fiske",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/fiske",
     "fetchDate": "2023-09-17T17:52:43.373Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Jordbruk, Jakt och Fiske"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/flygtrafik": {
     "opinions": [
@@ -634,7 +703,8 @@
     "title": "Flygtrafik",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/flygtrafik",
     "fetchDate": "2023-09-17T17:52:41.731Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Infrastruktur och Trafik"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/flyktingar": {
     "opinions": [
@@ -643,7 +713,8 @@
     "title": "Flyktingar",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/flyktingar",
     "fetchDate": "2023-09-17T17:52:42.757Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Migration och Integration"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/folkhalsa": {
     "opinions": [
@@ -652,7 +723,8 @@
     "title": "Folkhälsa",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/folkhalsa",
     "fetchDate": "2023-09-17T17:52:42.986Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Vård och Omsorg"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/folkhogskolor": {
     "opinions": [
@@ -661,7 +733,8 @@
     "title": "Folkhögskolor",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/folkhogskolor",
     "fetchDate": "2023-09-17T17:52:41.560Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Utbildning"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/folkrakning": {
     "opinions": [
@@ -670,7 +743,8 @@
     "title": "Folkräkning",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/folkrakning",
     "fetchDate": "2023-09-17T17:52:42.808Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Demokrati"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/forskning": {
     "opinions": [
@@ -679,7 +753,8 @@
     "title": "Forskning",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/forskning",
     "fetchDate": "2023-09-17T17:52:42.857Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Utbildning"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/fossilfri-energi": {
     "opinions": [
@@ -688,7 +763,8 @@
     "title": "Fossilfri energi",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/fossilfri-energi",
     "fetchDate": "2023-09-17T17:52:41.151Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Energi"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/frihandel": {
     "opinions": [
@@ -698,7 +774,8 @@
     "title": "Frihandel",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/frihandel",
     "fetchDate": "2023-09-17T17:52:41.624Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Näringsliv"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/friskolor": {
     "opinions": [
@@ -707,7 +784,8 @@
     "title": "Friskolor",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/friskolor",
     "fetchDate": "2023-09-17T17:52:41.383Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Utbildning"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/fritidskort": {
     "opinions": [
@@ -717,7 +795,8 @@
     "title": "Fritidskort",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/fritidskort",
     "fetchDate": "2023-09-17T17:52:40.784Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Kultur, media, och idrott"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/ftt---finansiell-transaktionsskatt": {
     "opinions": [
@@ -726,7 +805,8 @@
     "title": "FTT – finansiell transaktionsskatt",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/ftt---finansiell-transaktionsskatt",
     "fetchDate": "2023-09-17T17:52:39.396Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Ekonomi och Skatter"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/funktionsnedsattning": {
     "opinions": [
@@ -735,7 +815,8 @@
     "title": "Funktionsnedsättning",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/funktionsnedsattning",
     "fetchDate": "2023-09-17T17:52:42.117Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Vård och Omsorg"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/forenta-nationerna-fn": {
     "opinions": [
@@ -745,7 +826,8 @@
     "title": "Förenta Nationerna (FN)",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/forenta-nationerna-fn",
     "fetchDate": "2023-09-17T17:52:40.861Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Utrikes- och biståndsfrågor"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/foretagande": {
     "opinions": [
@@ -754,7 +836,8 @@
     "title": "Företagande",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/foretagande",
     "fetchDate": "2023-09-17T17:52:41.453Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Näringsliv"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/foretagsskatt": {
     "opinions": [
@@ -763,7 +846,8 @@
     "title": "Företagsskatt",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/foretagsskatt",
     "fetchDate": "2023-09-17T17:52:42.134Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Näringsliv"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/forlossning": {
     "opinions": [
@@ -772,7 +856,8 @@
     "title": "Förlossning",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/forlossning",
     "fetchDate": "2023-09-17T17:52:41.961Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Vård och Omsorg"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/formogenhetsskatt": {
     "opinions": [
@@ -781,7 +866,8 @@
     "title": "Förmögenhetsskatt",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/formogenhetsskatt",
     "fetchDate": "2023-09-17T17:52:43.260Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Ekonomi och Skatter"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/forskola": {
     "opinions": [
@@ -790,7 +876,8 @@
     "title": "Förskola",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/forskola",
     "fetchDate": "2023-09-17T17:52:42.378Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Utbildning"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/forsvar": {
     "opinions": [
@@ -799,7 +886,8 @@
     "title": "Försvar",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/forsvar",
     "fetchDate": "2023-09-17T17:52:42.817Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Försvar"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/forsvarsmaterielexport": {
     "opinions": [
@@ -808,7 +896,8 @@
     "title": "Försvarsmaterielexport",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/forsvarsmaterielexport",
     "fetchDate": "2023-09-17T17:52:43.190Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Försvar"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/foraldraforsakring": {
     "opinions": [
@@ -817,7 +906,8 @@
     "title": "Föräldraförsäkring",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/foraldraforsakring",
     "fetchDate": "2023-09-17T17:52:41.221Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Familjen"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/foraldrastod": {
     "opinions": [
@@ -826,7 +916,8 @@
     "title": "Föräldrastöd",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/foraldrastod",
     "fetchDate": "2023-09-17T17:52:40.213Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Familjen"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/genmodifierade-produkter-gmo": {
     "opinions": [
@@ -835,7 +926,8 @@
     "title": "Genmodifierade produkter (GMO)",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/genmodifierade-produkter-gmo",
     "fetchDate": "2023-09-17T17:52:41.035Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Miljö och klimat"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/graviditetspeng": {
     "opinions": [
@@ -844,7 +936,8 @@
     "title": "Graviditetspeng",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/graviditetspeng",
     "fetchDate": "2023-09-17T17:52:42.889Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Familjen"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/grundlagen": {
     "opinions": [
@@ -853,7 +946,8 @@
     "title": "Grundlagen",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/grundlagen",
     "fetchDate": "2023-09-17T17:52:41.903Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Demokrati"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/grundskola": {
     "opinions": [
@@ -862,7 +956,8 @@
     "title": "Grundskola",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/grundskola",
     "fetchDate": "2023-09-17T17:52:42.947Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Utbildning"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/gruvor": {
     "opinions": [
@@ -871,7 +966,8 @@
     "title": "Gruvor",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/gruvor",
     "fetchDate": "2023-09-17T17:52:41.860Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Miljö och klimat"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/gymnasieskola": {
     "opinions": [
@@ -880,7 +976,8 @@
     "title": "Gymnasieskola",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/gymnasieskola",
     "fetchDate": "2023-09-17T17:52:41.850Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Utbildning"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/gardsforsaljning": {
     "opinions": [
@@ -889,7 +986,8 @@
     "title": "Gårdsförsäljning",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/gardsforsaljning",
     "fetchDate": "2023-09-17T17:52:42.976Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Näringsliv"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/gangkriminalitet": {
     "opinions": [
@@ -899,7 +997,8 @@
     "title": "Gängkriminalitet",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/gangkriminalitet",
     "fetchDate": "2023-09-17T17:52:42.640Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Lag och rätt"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/hbt-": {
     "opinions": [
@@ -908,7 +1007,8 @@
     "title": "HBT+",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/hbt-",
     "fetchDate": "2023-09-17T17:52:42.384Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Jämställdhet och diskriminering"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/hedersrelaterat-vald": {
     "opinions": [
@@ -917,7 +1017,8 @@
     "title": "Hedersrelaterat våld",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/hedersrelaterat-vald",
     "fetchDate": "2023-09-17T17:52:43.019Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Jämställdhet och diskriminering"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/hemloshet": {
     "opinions": [
@@ -926,7 +1027,8 @@
     "title": "Hemlöshet",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/hemloshet",
     "fetchDate": "2023-09-17T17:52:43.153Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Jämställdhet och diskriminering"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/hemsjukvard": {
     "opinions": [
@@ -935,7 +1037,8 @@
     "title": "Hemsjukvård",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/hemsjukvard",
     "fetchDate": "2023-09-17T17:52:41.642Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Vård och Omsorg"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/hemtagningsteam": {
     "opinions": [
@@ -944,7 +1047,8 @@
     "title": "Hemtagningsteam",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/hemtagningsteam",
     "fetchDate": "2023-09-17T17:52:41.682Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Migration och Integration"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/hjalpmedel": {
     "opinions": [
@@ -953,7 +1057,8 @@
     "title": "Hjälpmedel",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/hjalpmedel",
     "fetchDate": "2023-09-17T17:52:42.519Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Vård och Omsorg"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/hushallstjanster": {
     "opinions": [
@@ -962,7 +1067,8 @@
     "title": "Hushållstjänster",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/hushallstjanster",
     "fetchDate": "2023-09-17T17:52:41.018Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Bostad"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/hyresratt": {
     "opinions": [
@@ -971,7 +1077,8 @@
     "title": "Hyresrätt",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/hyresratt",
     "fetchDate": "2023-09-17T17:52:42.361Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Bostad"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/hyrkop": {
     "opinions": [
@@ -980,7 +1087,8 @@
     "title": "Hyrköp",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/hyrkop",
     "fetchDate": "2023-09-17T17:52:42.152Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Bostad"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/haktning": {
     "opinions": [
@@ -989,7 +1097,8 @@
     "title": "Häktning",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/haktning",
     "fetchDate": "2023-09-17T17:52:42.062Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Lag och rätt"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/hoghastighetstag": {
     "opinions": [
@@ -998,7 +1107,8 @@
     "title": "Höghastighetståg",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/hoghastighetstag",
     "fetchDate": "2023-09-17T17:52:41.078Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Infrastruktur och Trafik"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/ideburna-foretag": {
     "opinions": [
@@ -1007,7 +1117,8 @@
     "title": "Idéburna företag",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/ideburna-foretag",
     "fetchDate": "2023-09-17T17:52:39.050Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Näringsliv"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/ideella-organisationer": {
     "opinions": [
@@ -1016,7 +1127,8 @@
     "title": "Ideella organisationer",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/ideella-organisationer",
     "fetchDate": "2023-09-17T17:52:42.499Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Kultur, media, och idrott"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/inkomstskatter": {
     "opinions": [
@@ -1025,7 +1137,8 @@
     "title": "Inkomstskatter",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/inkomstskatter",
     "fetchDate": "2023-09-17T17:52:42.295Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Jobb"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/innovation": {
     "opinions": [
@@ -1034,7 +1147,8 @@
     "title": "Innovation",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/innovation",
     "fetchDate": "2023-09-17T17:52:43.171Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Näringsliv"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/integration": {
     "opinions": [
@@ -1044,7 +1158,8 @@
     "title": "Integration",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/integration",
     "fetchDate": "2023-09-17T17:52:41.647Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Migration och Integration"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/integritet": {
     "opinions": [
@@ -1053,7 +1168,8 @@
     "title": "Integritet",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/integritet",
     "fetchDate": "2023-09-17T17:52:38.944Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Demokrati"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/invandring": {
     "opinions": [
@@ -1062,7 +1178,8 @@
     "title": "Invandring",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/invandring",
     "fetchDate": "2023-09-17T17:52:41.884Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Migration och Integration"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/jakt": {
     "opinions": [
@@ -1071,7 +1188,8 @@
     "title": "Jakt",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/jakt",
     "fetchDate": "2023-09-17T17:52:41.821Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Jordbruk, Jakt och Fiske"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/jobb": {
     "opinions": [
@@ -1080,7 +1198,8 @@
     "title": "Jobb",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/jobb",
     "fetchDate": "2023-09-17T17:52:42.087Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Jobb"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/jobbskatteavdraget": {
     "opinions": [
@@ -1089,7 +1208,8 @@
     "title": "Jobbskatteavdraget",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/jobbskatteavdraget",
     "fetchDate": "2023-09-17T17:52:42.748Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Jobb"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/jordbruk": {
     "opinions": [
@@ -1098,7 +1218,8 @@
     "title": "Jordbruk",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/jordbruk",
     "fetchDate": "2023-09-17T17:52:42.966Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Jordbruk, Jakt och Fiske"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/jamstallda-pensioner": {
     "opinions": [
@@ -1107,7 +1228,8 @@
     "title": "Jämställda pensioner",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/jamstallda-pensioner",
     "fetchDate": "2023-09-17T17:52:42.273Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Äldrepolitik"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/jamstalldhet": {
     "opinions": [
@@ -1116,7 +1238,8 @@
     "title": "Jämställdhet",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/jamstalldhet",
     "fetchDate": "2023-09-17T17:52:41.579Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Jämställdhet och diskriminering"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/jarnvag": {
     "opinions": [
@@ -1125,7 +1248,8 @@
     "title": "Järnväg",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/jarnvag",
     "fetchDate": "2023-09-17T17:52:43.205Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Infrastruktur och Trafik"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/kameraovervakning": {
     "opinions": [
@@ -1134,7 +1258,8 @@
     "title": "Kameraövervakning",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/kameraovervakning",
     "fetchDate": "2023-09-17T17:52:42.239Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Lag och rätt"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/klassikerlista": {
     "opinions": [
@@ -1144,7 +1269,8 @@
     "title": "Klassikerlista",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/klassikerlista",
     "fetchDate": "2023-09-17T17:52:41.373Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Kultur, media, och idrott"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/klimat": {
     "opinions": [
@@ -1153,7 +1279,8 @@
     "title": "Klimat",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/klimat",
     "fetchDate": "2023-09-17T17:52:40.975Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Miljö och klimat"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/kollektivtrafik": {
     "opinions": [
@@ -1162,7 +1289,8 @@
     "title": "Kollektivtrafik",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/kollektivtrafik",
     "fetchDate": "2023-09-17T17:52:43.250Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Infrastruktur och Trafik"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/kommunala-skatteutjamningssystemet": {
     "opinions": [
@@ -1171,7 +1299,8 @@
     "title": "Kommunala skatteutjämningssystemet",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/kommunala-skatteutjamningssystemet",
     "fetchDate": "2023-09-17T17:52:38.840Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Ekonomi och Skatter"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/konsumentpolitik": {
     "opinions": [
@@ -1180,7 +1309,8 @@
     "title": "Konsumentpolitik",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/konsumentpolitik",
     "fetchDate": "2023-09-17T17:52:41.169Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Konsumentpolitik"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/konsumentratt": {
     "opinions": [
@@ -1189,7 +1319,8 @@
     "title": "Konsumenträtt",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/konsumentratt",
     "fetchDate": "2023-09-17T17:52:42.562Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Konsumentpolitik"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/kort-info-om-kds-politik-rorande-pedagogisk-mangfald": {
     "opinions": [
@@ -1198,7 +1329,8 @@
     "title": "Kort info om KDs politik rörande pedagogisk mångfald",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/kort-info-om-kds-politik-rorande-pedagogisk-mangfald",
     "fetchDate": "2023-09-17T17:52:42.923Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Utbildning"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/kriminalvarden": {
     "opinions": [
@@ -1207,7 +1339,8 @@
     "title": "Kriminalvården",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/kriminalvarden",
     "fetchDate": "2023-09-17T17:52:42.370Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Vård och Omsorg"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/kristdemokraterna": {
     "opinions": [
@@ -1216,7 +1349,8 @@
     "title": "Kristdemokraterna",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/kristdemokraterna",
     "fetchDate": "2023-09-17T17:52:40.834Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Näringsliv"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/kultur-och-media": {
     "opinions": [
@@ -1225,7 +1359,8 @@
     "title": "Kultur och media",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/kultur-och-media",
     "fetchDate": "2023-09-17T17:52:42.437Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Kultur, media, och idrott"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/kvinnojourer": {
     "opinions": [
@@ -1234,7 +1369,8 @@
     "title": "Kvinnojourer",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/kvinnojourer",
     "fetchDate": "2023-09-17T17:52:43.349Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Jämställdhet och diskriminering"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/kvinnors-foretagande": {
     "opinions": [
@@ -1243,7 +1379,8 @@
     "title": "Kvinnors företagande",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/kvinnors-foretagande",
     "fetchDate": "2023-09-17T17:52:41.087Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Näringsliv"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/kvotering": {
     "opinions": [
@@ -1252,7 +1389,8 @@
     "title": "Kvotering",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/kvotering",
     "fetchDate": "2023-09-17T17:52:42.188Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Jämställdhet och diskriminering"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/karnkraft": {
     "opinions": [
@@ -1261,7 +1399,8 @@
     "title": "Kärnkraft",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/karnkraft",
     "fetchDate": "2023-09-17T17:52:41.486Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Energi"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/landsbygd": {
     "opinions": [
@@ -1270,7 +1409,8 @@
     "title": "Landsbygd",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/landsbygd",
     "fetchDate": "2023-09-17T17:52:43.304Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Landsbygd"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/lov": {
     "opinions": [
@@ -1279,7 +1419,8 @@
     "title": "LOV",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/lov",
     "fetchDate": "2023-09-17T17:52:39.304Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Vård och Omsorg"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/larare": {
     "opinions": [
@@ -1288,7 +1429,8 @@
     "title": "Lärare",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/larare",
     "fetchDate": "2023-09-17T17:52:40.232Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Utbildning"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/larlingsprogram": {
     "opinions": [
@@ -1297,7 +1439,8 @@
     "title": "Lärlingsprogram",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/larlingsprogram",
     "fetchDate": "2023-09-17T17:52:43.313Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Utbildning"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/maxtaxan": {
     "opinions": [
@@ -1306,7 +1449,8 @@
     "title": "Maxtaxan",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/maxtaxan",
     "fetchDate": "2023-09-17T17:52:41.547Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Ekonomi och Skatter"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/migration": {
     "opinions": [
@@ -1315,7 +1459,8 @@
     "title": "Migration",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/migration",
     "fetchDate": "2023-09-17T17:52:42.475Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Migration och Integration"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/miljobrott": {
     "opinions": [
@@ -1324,7 +1469,8 @@
     "title": "Miljöbrott",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/miljobrott",
     "fetchDate": "2023-09-17T17:52:39.312Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Miljö och klimat"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/miljopolitik": {
     "opinions": [
@@ -1333,7 +1479,8 @@
     "title": "Miljöpolitik",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/miljopolitik",
     "fetchDate": "2023-09-17T17:52:41.143Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Miljö och klimat"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/mobbning": {
     "opinions": [
@@ -1342,7 +1489,8 @@
     "title": "Mobbning",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/mobbning",
     "fetchDate": "2023-09-17T17:52:42.830Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Jämställdhet och diskriminering"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/modersmalsundervisning": {
     "opinions": [
@@ -1352,7 +1500,8 @@
     "title": "Modersmålsundervisning",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/modersmalsundervisning",
     "fetchDate": "2023-09-17T17:52:41.673Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Utbildning"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/moms": {
     "opinions": [
@@ -1361,7 +1510,8 @@
     "title": "Moms",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/moms",
     "fetchDate": "2023-09-17T17:52:41.462Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Konsumentpolitik"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/momsplikt-for-foretag": {
     "opinions": [
@@ -1370,7 +1520,8 @@
     "title": "Momsplikt för företag",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/momsplikt-for-foretag",
     "fetchDate": "2023-09-17T17:52:40.984Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Näringsliv"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/monarki": {
     "opinions": [
@@ -1379,7 +1530,8 @@
     "title": "Monarki",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/monarki",
     "fetchDate": "2023-09-17T17:52:42.589Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Demokrati"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/manniskohandel": {
     "opinions": [
@@ -1388,7 +1540,8 @@
     "title": "Människohandel",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/manniskohandel",
     "fetchDate": "2023-09-17T17:52:41.095Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Lag och rätt"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/manskliga-fri--och-rattigheter": {
     "opinions": [
@@ -1397,7 +1550,8 @@
     "title": "Mänskliga fri- och rättigheter",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/manskliga-fri--och-rattigheter",
     "fetchDate": "2023-09-17T17:52:39.724Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Lag och rätt"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/narkotika": {
     "opinions": [
@@ -1406,7 +1560,8 @@
     "title": "Narkotika",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/narkotika",
     "fetchDate": "2023-09-17T17:52:41.365Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Lag och rätt"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/nationalism": {
     "opinions": [
@@ -1415,7 +1570,8 @@
     "title": "Nationalism",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/nationalism",
     "fetchDate": "2023-09-17T17:52:42.654Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Kultur, media, och idrott"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/nationella-prov": {
     "opinions": [
@@ -1424,7 +1580,8 @@
     "title": "Nationella prov",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/nationella-prov",
     "fetchDate": "2023-09-17T17:52:41.355Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Försvar"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/nato": {
     "opinions": [
@@ -1434,7 +1591,8 @@
     "title": "Nato",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/nato",
     "fetchDate": "2023-09-17T17:52:41.749Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Försvar"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/naturskydd": {
     "opinions": [
@@ -1443,7 +1601,8 @@
     "title": "Naturskydd",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/naturskydd",
     "fetchDate": "2023-09-17T17:52:43.177Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Miljö och klimat"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/nordiskt-samarbete": {
     "opinions": [
@@ -1452,7 +1611,8 @@
     "title": "Nordiskt samarbete",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/nordiskt-samarbete",
     "fetchDate": "2023-09-17T17:52:41.875Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Utrikes- och biståndsfrågor"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/nystartsjobb": {
     "opinions": [
@@ -1461,7 +1621,8 @@
     "title": "Nystartsjobb",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/nystartsjobb",
     "fetchDate": "2023-09-17T17:52:42.616Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Jobb"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/namndeman": {
     "opinions": [
@@ -1471,7 +1632,8 @@
     "title": "Nämndemän",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/namndeman",
     "fetchDate": "2023-09-17T17:52:43.242Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Lag och rätt"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/offentlig-upphandling": {
     "opinions": [
@@ -1480,7 +1642,8 @@
     "title": "Offentlig upphandling",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/offentlig-upphandling",
     "fetchDate": "2023-09-17T17:52:42.766Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Näringsliv"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/organiserad-brottslighet": {
     "opinions": [
@@ -1489,7 +1652,8 @@
     "title": "Organiserad brottslighet",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/organiserad-brottslighet",
     "fetchDate": "2023-09-17T17:52:41.504Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Lag och rätt"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/parboendegaranti": {
     "opinions": [
@@ -1498,7 +1662,8 @@
     "title": "Parboendegaranti",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/parboendegaranti",
     "fetchDate": "2023-09-17T17:52:39.691Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Vård och Omsorg"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/pension": {
     "opinions": [
@@ -1507,7 +1672,8 @@
     "title": "Pension",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/pension",
     "fetchDate": "2023-09-17T17:52:41.781Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Äldrepolitik"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/polisen": {
     "opinions": [
@@ -1516,7 +1682,8 @@
     "title": "Polisen",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/polisen",
     "fetchDate": "2023-09-17T17:52:42.822Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Lag och rätt"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/posten": {
     "opinions": [
@@ -1525,7 +1692,8 @@
     "title": "Posten",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/posten",
     "fetchDate": "2023-09-17T17:52:41.101Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Kultur, media, och idrott"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/premiepension": {
     "opinions": [
@@ -1534,7 +1702,8 @@
     "title": "Premiepension",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/premiepension",
     "fetchDate": "2023-09-17T17:52:39.588Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Äldrepolitik"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/primarvard": {
     "opinions": [
@@ -1543,7 +1712,8 @@
     "title": "Primärvård",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/primarvard",
     "fetchDate": "2023-09-17T17:52:41.130Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Vård och Omsorg"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/privata-vardforsakringar": {
     "opinions": [
@@ -1552,7 +1722,8 @@
     "title": "Privata vårdförsäkringar",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/privata-vardforsakringar",
     "fetchDate": "2023-09-17T17:52:39.970Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Vård och Omsorg"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/privatisering-av-statliga-bolag": {
     "opinions": [
@@ -1561,7 +1732,8 @@
     "title": "Privatisering av statliga bolag",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/privatisering-av-statliga-bolag",
     "fetchDate": "2023-09-17T17:52:42.008Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Näringsliv"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/privat-vard": {
     "opinions": [
@@ -1570,7 +1742,8 @@
     "title": "Privat vård",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/privat-vard",
     "fetchDate": "2023-09-17T17:52:40.688Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Vård och Omsorg"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/psykiatri": {
     "opinions": [
@@ -1579,7 +1752,8 @@
     "title": "Psykiatri",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/psykiatri",
     "fetchDate": "2023-09-17T17:52:42.094Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Vård och Omsorg"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/psykisk-ohalsa-hos-unga": {
     "opinions": [
@@ -1588,7 +1762,8 @@
     "title": "Psykisk ohälsa hos unga",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/psykisk-ohalsa-hos-unga",
     "fetchDate": "2023-09-17T17:52:43.126Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Vård och Omsorg"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/public-service": {
     "opinions": [
@@ -1597,7 +1772,8 @@
     "title": "Public service",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/public-service",
     "fetchDate": "2023-09-17T17:52:42.906Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Kultur, media, och idrott"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/radikalisering": {
     "opinions": [
@@ -1606,7 +1782,8 @@
     "title": "Radikalisering",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/radikalisering",
     "fetchDate": "2023-09-17T17:52:41.476Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Försvar"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/reavinstskatt": {
     "opinions": [
@@ -1615,7 +1792,8 @@
     "title": "Reavinstskatt",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/reavinstskatt",
     "fetchDate": "2023-09-17T17:52:42.598Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Ekonomi och Skatter"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/regelforenkling": {
     "opinions": [
@@ -1624,7 +1802,8 @@
     "title": "Regelförenkling",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/regelforenkling",
     "fetchDate": "2023-09-17T17:52:42.194Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Näringsliv"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/religionsfrihet": {
     "opinions": [
@@ -1633,7 +1812,8 @@
     "title": "Religionsfrihet",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/religionsfrihet",
     "fetchDate": "2023-09-17T17:52:40.098Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Jämställdhet och diskriminering"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/reseavdrag": {
     "opinions": [
@@ -1642,7 +1822,8 @@
     "title": "Reseavdrag",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/reseavdrag",
     "fetchDate": "2023-09-17T17:52:43.469Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Ekonomi och Skatter"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/riskkapital": {
     "opinions": [
@@ -1651,7 +1832,8 @@
     "title": "Riskkapital",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/riskkapital",
     "fetchDate": "2023-09-17T17:52:41.616Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Ekonomi och Skatter"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/rot--och-rut-avdrag": {
     "opinions": [
@@ -1660,7 +1842,8 @@
     "title": "ROT- och RUT-avdrag",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/rot--och-rut-avdrag",
     "fetchDate": "2023-09-17T17:52:42.212Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Ekonomi och Skatter"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/rovdjursforvaltning": {
     "opinions": [
@@ -1669,7 +1852,8 @@
     "title": "Rovdjursförvaltning",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/rovdjursforvaltning",
     "fetchDate": "2023-09-17T17:52:43.000Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Jordbruk, Jakt och Fiske"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/ranteavdrag": {
     "opinions": [
@@ -1678,7 +1862,8 @@
     "title": "Ränteavdrag",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/ranteavdrag",
     "fetchDate": "2023-09-17T17:52:42.484Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Ekonomi och Skatter"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/rattssakerhet": {
     "opinions": [
@@ -1687,7 +1872,8 @@
     "title": "Rättssäkerhet",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/rattssakerhet",
     "fetchDate": "2023-09-17T17:52:43.048Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Lag och rätt"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/rattsvasendet": {
     "opinions": [
@@ -1696,7 +1882,8 @@
     "title": "Rättsväsendet",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/rattsvasendet",
     "fetchDate": "2023-09-17T17:52:42.016Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Lag och rätt"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/samhallsplanering-och-byggande": {
     "opinions": [
@@ -1705,7 +1892,8 @@
     "title": "Samhällsplanering och byggande",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/samhallsplanering-och-byggande",
     "fetchDate": "2023-09-17T17:52:42.026Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Infrastruktur och Trafik"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/sexkop": {
     "opinions": [
@@ -1714,7 +1902,8 @@
     "title": "Sexköp",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/sexkop",
     "fetchDate": "2023-09-17T17:52:42.681Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Lag och rätt"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/sex--och-samlevnadsundervisning": {
     "opinions": [
@@ -1723,7 +1912,8 @@
     "title": "Sex- och samlevnadsundervisning",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/sex--och-samlevnadsundervisning",
     "fetchDate": "2023-09-17T17:52:39.122Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Utbildning"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/sexualbrott": {
     "opinions": [
@@ -1732,7 +1922,8 @@
     "title": "Sexualbrott",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/sexualbrott",
     "fetchDate": "2023-09-17T17:52:41.212Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Lag och rätt"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/sfi-svenska-for-invandrare": {
     "opinions": [
@@ -1741,7 +1932,8 @@
     "title": "SFI/Svenska för invandrare",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/sfi-svenska-for-invandrare",
     "fetchDate": "2023-09-17T17:52:42.848Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Migration och Integration"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/sjukforsakring": {
     "opinions": [
@@ -1750,7 +1942,8 @@
     "title": "Sjukförsäkring",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/sjukforsakring",
     "fetchDate": "2023-09-17T17:52:41.831Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Vård och Omsorg"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/sjukvard": {
     "opinions": [
@@ -1759,7 +1952,8 @@
     "title": "Sjukvård",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/sjukvard",
     "fetchDate": "2023-09-17T17:52:41.763Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Vård och Omsorg"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/sjofart": {
     "opinions": [
@@ -1768,7 +1962,8 @@
     "title": "Sjöfart",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/sjofart",
     "fetchDate": "2023-09-17T17:52:42.230Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Infrastruktur och Trafik"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/skatter": {
     "opinions": [
@@ -1777,7 +1972,8 @@
     "title": "Skatter",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/skatter",
     "fetchDate": "2023-09-17T17:52:42.392Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Ekonomi och Skatter"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/skogsbruk": {
     "opinions": [
@@ -1786,7 +1982,8 @@
     "title": "Skogsbruk",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/skogsbruk",
     "fetchDate": "2023-09-17T17:52:42.003Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Miljö och klimat"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/skola": {
     "opinions": [
@@ -1795,7 +1992,8 @@
     "title": "Skola",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/skola",
     "fetchDate": "2023-09-17T17:52:42.733Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Utbildning"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/skolmat": {
     "opinions": [
@@ -1804,7 +2002,8 @@
     "title": "Skolmat",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/skolmat",
     "fetchDate": "2023-09-17T17:52:42.171Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Utbildning"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/skuldavskrivningar": {
     "opinions": [
@@ -1813,7 +2012,8 @@
     "title": "Skuldavskrivningar",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/skuldavskrivningar",
     "fetchDate": "2023-09-17T17:52:42.871Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Konsumentpolitik"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/skuldsanering": {
     "opinions": [
@@ -1822,7 +2022,8 @@
     "title": "Skuldsanering",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/skuldsanering",
     "fetchDate": "2023-09-17T17:52:41.160Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Konsumentpolitik"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/smittskydd": {
     "opinions": [
@@ -1831,7 +2032,8 @@
     "title": "Smittskydd",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/smittskydd",
     "fetchDate": "2023-09-17T17:52:42.583Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Vård och Omsorg"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/smaforetag": {
     "opinions": [
@@ -1840,7 +2042,8 @@
     "title": "Småföretag",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/smaforetag",
     "fetchDate": "2023-09-17T17:52:40.222Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Näringsliv"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/smahus": {
     "opinions": [
@@ -1849,7 +2052,8 @@
     "title": "Småhus",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/smahus",
     "fetchDate": "2023-09-17T17:52:42.799Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Bostad"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/socialforsakring": {
     "opinions": [
@@ -1858,7 +2062,8 @@
     "title": "Socialförsäkring",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/socialforsakring",
     "fetchDate": "2023-09-17T17:52:39.700Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Trygghetssystem och Välfärd"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/solenergi": {
     "opinions": [
@@ -1867,7 +2072,8 @@
     "title": "Solenergi",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/solenergi",
     "fetchDate": "2023-09-17T17:52:43.077Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Energi"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/spelreklam": {
     "opinions": [
@@ -1876,7 +2082,8 @@
     "title": "Spelreklam",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/spelreklam",
     "fetchDate": "2023-09-17T17:52:42.427Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Kultur, media, och idrott"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/statlig-dagpenning": {
     "opinions": [
@@ -1885,7 +2092,8 @@
     "title": "Statlig dagpenning",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/statlig-dagpenning",
     "fetchDate": "2023-09-17T17:52:43.147Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Jobb"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/statligt-agande-statliga-bolag": {
     "opinions": [
@@ -1894,7 +2102,8 @@
     "title": "Statligt ägande/statliga bolag",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/statligt-agande-statliga-bolag",
     "fetchDate": "2023-09-17T17:52:43.382Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Näringsliv"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/straff": {
     "opinions": [
@@ -1903,7 +2112,8 @@
     "title": "Straff",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/straff",
     "fetchDate": "2023-09-17T17:52:42.689Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Lag och rätt"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/strandskydd": {
     "opinions": [
@@ -1912,7 +2122,8 @@
     "title": "Strandskydd",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/strandskydd",
     "fetchDate": "2023-09-17T17:52:40.890Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Miljö och klimat"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/subsidiaritetsprincipen": {
     "opinions": [
@@ -1921,7 +2132,8 @@
     "title": "Subsidiaritetsprincipen",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/subsidiaritetsprincipen",
     "fetchDate": "2023-09-17T17:52:42.941Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Demokrati"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/svartarbete": {
     "opinions": [
@@ -1930,7 +2142,8 @@
     "title": "Svartarbete",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/svartarbete",
     "fetchDate": "2023-09-17T17:52:43.009Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Jobb"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/sakerhetspolitik": {
     "opinions": [
@@ -1939,7 +2152,8 @@
     "title": "Säkerhetspolitik",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/sakerhetspolitik",
     "fetchDate": "2023-09-17T17:52:42.786Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Försvar"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/tandvard": {
     "opinions": [
@@ -1948,7 +2162,8 @@
     "title": "Tandvård",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/tandvard",
     "fetchDate": "2023-09-17T17:52:41.135Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Vård och Omsorg"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/terrorbekampning": {
     "opinions": [
@@ -1957,7 +2172,8 @@
     "title": "Terrorbekämpning",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/terrorbekampning",
     "fetchDate": "2023-09-17T17:52:42.649Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Försvar"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/tiggeri": {
     "opinions": [
@@ -1966,7 +2182,8 @@
     "title": "Tiggeri",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/tiggeri",
     "fetchDate": "2023-09-17T17:52:40.925Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Lag och rätt"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/tjanstemoms": {
     "opinions": [
@@ -1975,7 +2192,8 @@
     "title": "Tjänstemoms",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/tjanstemoms",
     "fetchDate": "2023-09-17T17:52:41.253Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Näringsliv"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/tobak": {
     "opinions": [
@@ -1984,7 +2202,8 @@
     "title": "Tobak",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/tobak",
     "fetchDate": "2023-09-17T17:52:41.444Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Vård och Omsorg"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/trafiksakerhet": {
     "opinions": [
@@ -1993,7 +2212,8 @@
     "title": "Trafiksäkerhet",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/trafiksakerhet",
     "fetchDate": "2023-09-17T17:52:43.196Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Infrastruktur och Trafik"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/tullen": {
     "opinions": [
@@ -2002,7 +2222,8 @@
     "title": "Tullen",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/tullen",
     "fetchDate": "2023-09-17T17:52:41.335Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Ekonomi och Skatter"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/turism": {
     "opinions": [
@@ -2011,7 +2232,8 @@
     "title": "Turism",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/turism",
     "fetchDate": "2023-09-17T17:52:42.418Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Kultur, media, och idrott"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/ungdomsarbetsloshet": {
     "opinions": [
@@ -2020,7 +2242,8 @@
     "title": "Ungdomsarbetslöshet",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/ungdomsarbetsloshet",
     "fetchDate": "2023-09-17T17:52:42.529Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Jobb"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/ungdomsmottagningar": {
     "opinions": [
@@ -2029,7 +2252,8 @@
     "title": "Ungdomsmottagningar",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/ungdomsmottagningar",
     "fetchDate": "2023-09-17T17:52:42.739Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Vård och Omsorg"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/uppehallstillstand": {
     "opinions": [
@@ -2038,7 +2262,8 @@
     "title": "Uppehållstillstånd",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/uppehallstillstand",
     "fetchDate": "2023-09-17T17:52:42.672Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Migration och Integration"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/ursprungsmarkning": {
     "opinions": [
@@ -2047,7 +2272,8 @@
     "title": "Ursprungsmärkning",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/ursprungsmarkning",
     "fetchDate": "2023-09-17T17:52:42.071Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Jordbruk, Jakt och Fiske"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/utrikespolitik": {
     "opinions": [
@@ -2056,7 +2282,8 @@
     "title": "Utrikespolitik",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/utrikespolitik",
     "fetchDate": "2023-09-17T17:52:42.108Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Utrikes- och biståndsfrågor"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/utslappsratter": {
     "opinions": [
@@ -2065,7 +2292,8 @@
     "title": "Utsläppsrätter",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/utslappsratter",
     "fetchDate": "2023-09-17T17:52:43.162Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Miljö och klimat"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/vaccinationer": {
     "opinions": [
@@ -2074,7 +2302,8 @@
     "title": "Vaccinationer",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/vaccinationer",
     "fetchDate": "2023-09-17T17:52:41.975Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Vård och Omsorg"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/valfrihet": {
     "opinions": [
@@ -2083,7 +2312,8 @@
     "title": "Valfrihet",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/valfrihet",
     "fetchDate": "2023-09-17T17:52:40.920Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Vård och Omsorg"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/valsystem": {
     "opinions": [
@@ -2092,7 +2322,8 @@
     "title": "Valsystem",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/valsystem",
     "fetchDate": "2023-09-17T17:52:41.239Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Demokrati"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/vanvard": {
     "opinions": [
@@ -2101,7 +2332,8 @@
     "title": "Vanvård",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/vanvard",
     "fetchDate": "2023-09-17T17:52:41.866Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Vård och Omsorg"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/varg": {
     "opinions": [
@@ -2110,7 +2342,8 @@
     "title": "Varg",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/varg",
     "fetchDate": "2023-09-17T17:52:43.294Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Jordbruk, Jakt och Fiske"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/vattenkraft": {
     "opinions": [
@@ -2119,7 +2352,8 @@
     "title": "Vattenkraft",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/vattenkraft",
     "fetchDate": "2023-09-17T17:52:43.358Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Energi"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/vildsvin": {
     "opinions": [
@@ -2128,7 +2362,8 @@
     "title": "Vildsvin",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/vildsvin",
     "fetchDate": "2023-09-17T17:52:42.663Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Jordbruk, Jakt och Fiske"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/vindkraft": {
     "opinions": [
@@ -2137,7 +2372,8 @@
     "title": "Vindkraft",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/vindkraft",
     "fetchDate": "2023-09-17T17:52:41.471Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Energi"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/vinster-i-valfarden": {
     "opinions": [
@@ -2146,7 +2382,8 @@
     "title": "Vinster i välfärden",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/vinster-i-valfarden",
     "fetchDate": "2023-09-17T17:52:40.779Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Trygghetssystem och Välfärd"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/vald-i-nara-relationer": {
     "opinions": [
@@ -2155,7 +2392,8 @@
     "title": "Våld i nära relationer",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/vald-i-nara-relationer",
     "fetchDate": "2023-09-17T17:52:43.111Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Lag och rätt"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/vard-till-papperslosa": {
     "opinions": [
@@ -2164,7 +2402,8 @@
     "title": "Vård till papperslösa",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/vard-till-papperslosa",
     "fetchDate": "2023-09-17T17:52:41.587Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Vård och Omsorg"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/vagar": {
     "opinions": [
@@ -2173,7 +2412,8 @@
     "title": "Vägar",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/vagar",
     "fetchDate": "2023-09-17T17:52:42.268Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Infrastruktur och Trafik"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/vardighetsgaranti": {
     "opinions": [
@@ -2182,7 +2422,8 @@
     "title": "Värdighetsgaranti",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/vardighetsgaranti",
     "fetchDate": "2023-09-17T17:52:39.953Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Äldrepolitik"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/varnplikt": {
     "opinions": [
@@ -2191,7 +2432,8 @@
     "title": "Värnplikt",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/varnplikt",
     "fetchDate": "2023-09-17T17:52:40.793Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Försvar"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/varnskatt": {
     "opinions": [
@@ -2200,7 +2442,8 @@
     "title": "Värnskatt",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/varnskatt",
     "fetchDate": "2023-09-17T17:52:41.754Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Ekonomi och Skatter"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/yrkeskompetensbevis-ykb": {
     "opinions": [
@@ -2209,7 +2452,8 @@
     "title": "Yrkeskompetensbevis (YKB)",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/yrkeskompetensbevis-ykb",
     "fetchDate": "2023-09-17T17:52:42.543Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Utbildning"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/yrkesprogram": {
     "opinions": [
@@ -2218,7 +2462,8 @@
     "title": "Yrkesprogram",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/yrkesprogram",
     "fetchDate": "2023-09-17T17:52:41.984Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Utbildning"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/yttrandefrihet": {
     "opinions": [
@@ -2227,7 +2472,8 @@
     "title": "Yttrandefrihet",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/yttrandefrihet",
     "fetchDate": "2023-09-17T17:52:42.179Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Demokrati"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/atervinning": {
     "opinions": [
@@ -2236,7 +2482,8 @@
     "title": "Återvinning",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/atervinning",
     "fetchDate": "2023-09-17T17:52:41.695Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Miljö och klimat"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/aganderatt": {
     "opinions": [
@@ -2245,7 +2492,8 @@
     "title": "Äganderätt",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/aganderatt",
     "fetchDate": "2023-09-17T17:52:41.656Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Näringsliv"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/aktenskap": {
     "opinions": [
@@ -2254,7 +2502,8 @@
     "title": "Äktenskap",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/aktenskap",
     "fetchDate": "2023-09-17T17:52:42.126Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Familjen"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/aldre": {
     "opinions": [
@@ -2263,7 +2512,8 @@
     "title": "Äldre",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/aldre",
     "fetchDate": "2023-09-17T17:52:43.265Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Äldrepolitik"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/aldreboendegaranti": {
     "opinions": [
@@ -2272,7 +2522,8 @@
     "title": "Äldreboendegaranti",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/aldreboendegaranti",
     "fetchDate": "2023-09-17T17:52:41.993Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Äldrepolitik"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/aldreboendemiljard": {
     "opinions": [
@@ -2281,7 +2532,8 @@
     "title": "Äldreboendemiljard",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/aldreboendemiljard",
     "fetchDate": "2023-09-17T17:52:41.925Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Äldrepolitik"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/aldre-i-arbetslivet": {
     "opinions": [
@@ -2290,7 +2542,8 @@
     "title": "Äldre i arbetslivet",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/aldre-i-arbetslivet",
     "fetchDate": "2023-09-17T17:52:39.961Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Äldrepolitik"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/ostersjon": {
     "opinions": [
@@ -2299,6 +2552,7 @@
     "title": "Östersjön",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/ostersjon",
     "fetchDate": "2023-09-17T17:52:42.725Z",
-    "party": "kd"
+    "party": "kd",
+    "subject": "Miljö och klimat"
   }
 }

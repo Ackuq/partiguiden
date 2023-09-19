@@ -10,7 +10,8 @@
     "title": "Abort",
     "url": "https://www.liberalerna.se/politik/abort",
     "fetchDate": "2023-09-17T17:52:39.918Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Trygghetssystem och Välfärd"
   },
   "https://www.liberalerna.se/politik/alkohol": {
     "opinions": [
@@ -22,7 +23,8 @@
     "title": "Alkohol",
     "url": "https://www.liberalerna.se/politik/alkohol",
     "fetchDate": "2023-09-17T17:52:40.428Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Vård och Omsorg"
   },
   "https://www.liberalerna.se/politik/arbetsmarknad": {
     "opinions": [
@@ -35,7 +37,8 @@
     "title": "Arbetsmarknad",
     "url": "https://www.liberalerna.se/politik/arbetsmarknad",
     "fetchDate": "2023-09-17T17:52:43.401Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Jobb"
   },
   "https://www.liberalerna.se/politik/arbetskraftsinvandring": {
     "opinions": [
@@ -49,7 +52,8 @@
     "title": "Arbetskraftsinvandring",
     "url": "https://www.liberalerna.se/politik/arbetskraftsinvandring",
     "fetchDate": "2023-09-17T17:52:39.938Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Migration och Integration"
   },
   "https://www.liberalerna.se/politik/a-kassa": {
     "opinions": [
@@ -62,7 +66,8 @@
     "title": "A-kassa",
     "url": "https://www.liberalerna.se/politik/a-kassa",
     "fetchDate": "2023-09-17T17:52:38.784Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Trygghetssystem och Välfärd"
   },
   "https://www.liberalerna.se/politik/arbetsratt": {
     "opinions": [
@@ -75,7 +80,8 @@
     "title": "Arbetsrätt",
     "url": "https://www.liberalerna.se/politik/arbetsratt",
     "fetchDate": "2023-09-17T17:52:42.339Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Jobb"
   },
   "https://www.liberalerna.se/politik/assisterad-befruktning": {
     "opinions": [
@@ -87,7 +93,8 @@
     "title": "Assisterad befruktning",
     "url": "https://www.liberalerna.se/politik/assisterad-befruktning",
     "fetchDate": "2023-09-17T17:52:38.287Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Vård och Omsorg"
   },
   "https://www.liberalerna.se/politik/anpassad-skola": {
     "opinions": [
@@ -99,7 +106,8 @@
     "title": "Anpassad skola",
     "url": "https://www.liberalerna.se/politik/anpassad-skola",
     "fetchDate": "2023-09-17T17:52:43.535Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Utbildning"
   },
   "https://www.liberalerna.se/politik/arbetsformedlingen": {
     "opinions": [
@@ -112,7 +120,8 @@
     "title": "Arbetsförmedlingen",
     "url": "https://www.liberalerna.se/politik/arbetsformedlingen",
     "fetchDate": "2023-09-17T17:52:40.756Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Jobb"
   },
   "https://www.liberalerna.se/politik/bistand": {
     "opinions": [
@@ -126,7 +135,8 @@
     "title": "Bistånd",
     "url": "https://www.liberalerna.se/politik/bistand",
     "fetchDate": "2023-09-17T17:52:40.655Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Utrikes- och biståndsfrågor"
   },
   "https://www.liberalerna.se/politik/politikbostader": {
     "opinions": [
@@ -139,7 +149,8 @@
     "title": "Bostäder",
     "url": "https://www.liberalerna.se/politik/politikbostader",
     "fetchDate": "2023-09-17T17:52:37.215Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Bostad"
   },
   "https://www.liberalerna.se/politik/barnaktenskap": {
     "opinions": [
@@ -152,7 +163,8 @@
     "title": "Barnäktenskap",
     "url": "https://www.liberalerna.se/politik/barnaktenskap",
     "fetchDate": "2023-09-17T17:52:43.606Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Familjen"
   },
   "https://www.liberalerna.se/politik/biologisk-mangfald": {
     "opinions": [
@@ -166,7 +178,8 @@
     "title": "Biologisk mångfald",
     "url": "https://www.liberalerna.se/politik/biologisk-mangfald",
     "fetchDate": "2023-09-17T17:52:44.584Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Miljö och klimat"
   },
   "https://www.liberalerna.se/politik/bibliotek": {
     "opinions": [
@@ -178,7 +191,8 @@
     "title": "Bibliotek",
     "url": "https://www.liberalerna.se/politik/bibliotek",
     "fetchDate": "2023-09-17T17:52:38.053Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Infrastruktur och Trafik"
   },
   "https://www.liberalerna.se/politik/betyg": {
     "opinions": [
@@ -191,7 +205,8 @@
     "title": "Betyg / Nationella prov",
     "url": "https://www.liberalerna.se/politik/betyg",
     "fetchDate": "2023-09-17T17:52:36.583Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Utbildning"
   },
   "https://www.liberalerna.se/politik/barns-rattigheter-2": {
     "opinions": [
@@ -204,7 +219,8 @@
     "title": "Barns rättigheter",
     "url": "https://www.liberalerna.se/politik/barns-rattigheter-2",
     "fetchDate": "2023-09-17T17:52:43.603Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Familjen"
   },
   "https://www.liberalerna.se/politik/bostadssegregation": {
     "opinions": [
@@ -216,7 +232,8 @@
     "title": "Bostadssegregation",
     "url": "https://www.liberalerna.se/politik/bostadssegregation",
     "fetchDate": "2023-09-17T17:52:44.594Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Migration och Integration"
   },
   "https://www.liberalerna.se/politik/biobranslen": {
     "opinions": [
@@ -229,7 +246,8 @@
     "title": "Biobränslen",
     "url": "https://www.liberalerna.se/politik/biobranslen",
     "fetchDate": "2023-09-17T17:52:42.335Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Energi"
   },
   "https://www.liberalerna.se/politik/bredband": {
     "opinions": [
@@ -243,7 +261,8 @@
     "title": "Bredband",
     "url": "https://www.liberalerna.se/politik/bredband",
     "fetchDate": "2023-09-17T17:52:43.668Z",
-    "party": "l"
+    "party": "l",
+    "subject": "IT och Mobiltelefoni"
   },
   "https://www.liberalerna.se/politik/cykling": {
     "opinions": [
@@ -257,7 +276,8 @@
     "title": "Cykling",
     "url": "https://www.liberalerna.se/politik/cykling",
     "fetchDate": "2023-09-17T17:52:43.619Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Infrastruktur och Trafik"
   },
   "https://www.liberalerna.se/politik/cirkular-ekonomi": {
     "opinions": [
@@ -269,7 +289,8 @@
     "title": "Cirkulär ekonomi",
     "url": "https://www.liberalerna.se/politik/cirkular-ekonomi",
     "fetchDate": "2023-09-17T17:52:37.006Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Ekonomi och Skatter"
   },
   "https://www.liberalerna.se/politik/demokrati": {
     "opinions": [
@@ -282,7 +303,8 @@
     "title": "Demokrati",
     "url": "https://www.liberalerna.se/politik/demokrati",
     "fetchDate": "2023-09-17T17:52:44.526Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Lag och rätt"
   },
   "https://www.liberalerna.se/politik/diskriminering": {
     "opinions": [
@@ -295,7 +317,8 @@
     "title": "Diskriminering",
     "url": "https://www.liberalerna.se/politik/diskriminering",
     "fetchDate": "2023-09-17T17:52:41.430Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Jämställdhet och diskriminering"
   },
   "https://www.liberalerna.se/politik/djurskydd": {
     "opinions": [
@@ -310,7 +333,8 @@
     "title": "Djurskydd",
     "url": "https://www.liberalerna.se/politik/djurskydd",
     "fetchDate": "2023-09-17T17:52:40.904Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Jordbruk, Jakt och Fiske"
   },
   "https://www.liberalerna.se/politik/digitalisering": {
     "opinions": [
@@ -324,7 +348,8 @@
     "title": "Digitalisering",
     "url": "https://www.liberalerna.se/politik/digitalisering",
     "fetchDate": "2023-09-17T17:52:41.800Z",
-    "party": "l"
+    "party": "l",
+    "subject": "IT och Mobiltelefoni"
   },
   "https://www.liberalerna.se/politik/frittskolval": {
     "opinions": [
@@ -344,7 +369,8 @@
     "title": "Det fria skolvalet – likvärdighet och egenmakt",
     "url": "https://www.liberalerna.se/politik/frittskolval",
     "fetchDate": "2023-09-17T17:52:42.318Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Utbildning"
   },
   "https://www.liberalerna.se/politik/ekonomi": {
     "opinions": [
@@ -357,7 +383,8 @@
     "title": "Ekonomi",
     "url": "https://www.liberalerna.se/politik/ekonomi",
     "fetchDate": "2023-09-17T17:52:43.507Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Ekonomi och Skatter"
   },
   "https://www.liberalerna.se/politik/energi": {
     "opinions": [
@@ -370,7 +397,8 @@
     "title": "Energi",
     "url": "https://www.liberalerna.se/politik/energi",
     "fetchDate": "2023-09-17T17:52:43.736Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Energi"
   },
   "https://www.liberalerna.se/politik/eu-europeiska-unionen": {
     "opinions": [
@@ -384,7 +412,8 @@
     "title": "Europeiska unionen",
     "url": "https://www.liberalerna.se/politik/eu-europeiska-unionen",
     "fetchDate": "2023-09-17T17:52:44.454Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Europa"
   },
   "https://www.liberalerna.se/politik/elevhalsa": {
     "opinions": [
@@ -397,7 +426,8 @@
     "title": "Elevhälsa",
     "url": "https://www.liberalerna.se/politik/elevhalsa",
     "fetchDate": "2023-09-17T17:52:43.438Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Utbildning"
   },
   "https://www.liberalerna.se/politik/eu-bra-dig": {
     "opinions": [
@@ -415,7 +445,8 @@
     "title": "EU – bra för dig",
     "url": "https://www.liberalerna.se/politik/eu-bra-dig",
     "fetchDate": "2023-09-17T17:52:43.511Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Europa"
   },
   "https://www.liberalerna.se/politik/enkla-jobb": {
     "opinions": [
@@ -429,7 +460,8 @@
     "title": "Enkla jobb",
     "url": "https://www.liberalerna.se/politik/enkla-jobb",
     "fetchDate": "2023-09-17T17:52:43.642Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Jobb"
   },
   "https://www.liberalerna.se/politik/euron": {
     "opinions": [
@@ -441,7 +473,8 @@
     "title": "Euron",
     "url": "https://www.liberalerna.se/politik/euron",
     "fetchDate": "2023-09-17T17:52:44.289Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Europa"
   },
   "https://www.liberalerna.se/politik/extremism": {
     "opinions": [
@@ -453,7 +486,8 @@
     "title": "Extremism",
     "url": "https://www.liberalerna.se/politik/extremism",
     "fetchDate": "2023-09-17T17:52:43.633Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Lag och rätt"
   },
   "https://www.liberalerna.se/politik/elektrobranslen": {
     "opinions": [
@@ -467,7 +501,8 @@
     "title": "Elektrobränslen",
     "url": "https://www.liberalerna.se/politik/elektrobranslen",
     "fetchDate": "2023-09-17T17:52:43.441Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Energi"
   },
   "https://www.liberalerna.se/politik/elmarknad": {
     "opinions": [
@@ -480,7 +515,8 @@
     "title": "Elmarknad",
     "url": "https://www.liberalerna.se/politik/elmarknad",
     "fetchDate": "2023-09-17T17:52:39.351Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Energi"
   },
   "https://www.liberalerna.se/politik/energieffektivisering": {
     "opinions": [
@@ -493,7 +529,8 @@
     "title": "Energieffektivisering",
     "url": "https://www.liberalerna.se/politik/energieffektivisering",
     "fetchDate": "2023-09-17T17:52:42.703Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Energi"
   },
   "https://www.liberalerna.se/politik/elpriser": {
     "opinions": [
@@ -507,7 +544,8 @@
     "title": "Elpriser",
     "url": "https://www.liberalerna.se/politik/elpriser",
     "fetchDate": "2023-09-17T17:52:43.557Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Energi"
   },
   "https://www.liberalerna.se/politik/friskolor": {
     "opinions": [
@@ -519,7 +557,8 @@
     "title": "Friskolor",
     "url": "https://www.liberalerna.se/politik/friskolor",
     "fetchDate": "2023-09-17T17:52:42.706Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Utbildning"
   },
   "https://www.liberalerna.se/politik/familjepolitik": {
     "opinions": [
@@ -532,7 +571,8 @@
     "title": "Familjepolitik",
     "url": "https://www.liberalerna.se/politik/familjepolitik",
     "fetchDate": "2023-09-17T17:52:43.615Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Familjen"
   },
   "https://www.liberalerna.se/politik/fastighetsskatt": {
     "opinions": [
@@ -545,7 +585,8 @@
     "title": "Fastighetsskatt",
     "url": "https://www.liberalerna.se/politik/fastighetsskatt",
     "fetchDate": "2023-09-17T17:52:43.566Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Ekonomi och Skatter"
   },
   "https://www.liberalerna.se/politik/fiske": {
     "opinions": [
@@ -560,7 +601,8 @@
     "title": "Fiske",
     "url": "https://www.liberalerna.se/politik/fiske",
     "fetchDate": "2023-09-17T17:52:42.568Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Jordbruk, Jakt och Fiske"
   },
   "https://www.liberalerna.se/politik/fn": {
     "opinions": [
@@ -573,7 +615,8 @@
     "title": "FN",
     "url": "https://www.liberalerna.se/politik/fn",
     "fetchDate": "2023-09-17T17:52:37.606Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Utrikes- och biståndsfrågor"
   },
   "https://www.liberalerna.se/politik/forskning": {
     "opinions": [
@@ -586,7 +629,8 @@
     "title": "Forskning",
     "url": "https://www.liberalerna.se/politik/forskning",
     "fetchDate": "2023-09-17T17:52:44.110Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Utbildning"
   },
   "https://www.liberalerna.se/politik/frihandel": {
     "opinions": [
@@ -600,7 +644,8 @@
     "title": "Frihandel",
     "url": "https://www.liberalerna.se/politik/frihandel",
     "fetchDate": "2023-09-17T17:52:40.647Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Ekonomi och Skatter"
   },
   "https://www.liberalerna.se/politik/foretag": {
     "opinions": [
@@ -614,7 +659,8 @@
     "title": "Företag",
     "url": "https://www.liberalerna.se/politik/foretag",
     "fetchDate": "2023-09-17T17:52:44.230Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Näringsliv"
   },
   "https://www.liberalerna.se/politik/foraldraforsakring": {
     "opinions": [
@@ -627,7 +673,8 @@
     "title": "Föräldraförsäkring",
     "url": "https://www.liberalerna.se/politik/foraldraforsakring",
     "fetchDate": "2023-09-17T17:52:43.487Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Trygghetssystem och Välfärd"
   },
   "https://www.liberalerna.se/politik/foretagsamhet-och-sparande": {
     "opinions": [
@@ -639,7 +686,8 @@
     "title": "Företagsamhet och sparande",
     "url": "https://www.liberalerna.se/politik/foretagsamhet-och-sparande",
     "fetchDate": "2023-09-17T17:52:40.769Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Näringsliv"
   },
   "https://www.liberalerna.se/politik/flyg": {
     "opinions": [
@@ -652,7 +700,8 @@
     "title": "Flyg",
     "url": "https://www.liberalerna.se/politik/flyg",
     "fetchDate": "2023-09-17T17:52:43.657Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Infrastruktur och Trafik"
   },
   "https://www.liberalerna.se/politik/forortslyftet": {
     "opinions": [
@@ -667,7 +716,8 @@
     "title": "Förortslyftet",
     "url": "https://www.liberalerna.se/politik/forortslyftet",
     "fetchDate": "2023-09-17T17:52:39.425Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Bostad"
   },
   "https://www.liberalerna.se/politik/forskolan": {
     "opinions": [
@@ -680,7 +730,8 @@
     "title": "Förskolan",
     "url": "https://www.liberalerna.se/politik/forskolan",
     "fetchDate": "2023-09-17T17:52:42.043Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Utbildning"
   },
   "https://www.liberalerna.se/politik/forsvar": {
     "opinions": [
@@ -692,7 +743,8 @@
     "title": "Försvar",
     "url": "https://www.liberalerna.se/politik/forsvar",
     "fetchDate": "2023-09-17T17:52:39.285Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Försvar"
   },
   "https://www.liberalerna.se/politik/friskolor-2": {
     "opinions": [
@@ -705,7 +757,8 @@
     "title": "Friskolor",
     "url": "https://www.liberalerna.se/politik/friskolor-2",
     "fetchDate": "2023-09-17T17:52:43.520Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Utbildning"
   },
   "https://www.liberalerna.se/politik/grundlagen": {
     "opinions": [
@@ -718,7 +771,8 @@
     "title": "Grundlagen",
     "url": "https://www.liberalerna.se/politik/grundlagen",
     "fetchDate": "2023-09-17T17:52:44.249Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Demokrati"
   },
   "https://www.liberalerna.se/politik/gymnasieskolan": {
     "opinions": [
@@ -730,7 +784,8 @@
     "title": "Gymnasieskolan",
     "url": "https://www.liberalerna.se/politik/gymnasieskolan",
     "fetchDate": "2023-09-17T17:52:44.261Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Utbildning"
   },
   "https://www.liberalerna.se/politik/grundskolan": {
     "opinions": [
@@ -743,7 +798,8 @@
     "title": "Grundskola",
     "url": "https://www.liberalerna.se/politik/grundskolan",
     "fetchDate": "2023-09-17T17:52:38.994Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Utbildning"
   },
   "https://www.liberalerna.se/politik/glesbygd": {
     "opinions": [
@@ -757,7 +813,8 @@
     "title": "Glesbygd",
     "url": "https://www.liberalerna.se/politik/glesbygd",
     "fetchDate": "2023-09-17T17:52:36.758Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Landsbygd"
   },
   "https://www.liberalerna.se/politik/gangkriminalitet": {
     "opinions": [
@@ -770,7 +827,8 @@
     "title": "Gängkriminalitet",
     "url": "https://www.liberalerna.se/politik/gangkriminalitet",
     "fetchDate": "2023-09-17T17:52:42.352Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Lag och rätt"
   },
   "https://www.liberalerna.se/politik/hav": {
     "opinions": [
@@ -784,7 +842,8 @@
     "title": "Havsmiljö",
     "url": "https://www.liberalerna.se/politik/hav",
     "fetchDate": "2023-09-17T17:52:41.797Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Jordbruk, Jakt och Fiske"
   },
   "https://www.liberalerna.se/politik/hbtqi-fragor": {
     "opinions": [
@@ -797,7 +856,8 @@
     "title": "HBTQI-frågor",
     "url": "https://www.liberalerna.se/politik/hbtqi-fragor",
     "fetchDate": "2023-09-17T17:52:43.646Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Jämställdhet och diskriminering"
   },
   "https://www.liberalerna.se/politik/hedersrelaterat-vald-och-fortryck": {
     "opinions": [
@@ -810,7 +870,8 @@
     "title": "Hedersrelaterat våld och förtryck",
     "url": "https://www.liberalerna.se/politik/hedersrelaterat-vald-och-fortryck",
     "fetchDate": "2023-09-17T17:52:43.694Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Lag och rätt"
   },
   "https://www.liberalerna.se/politik/hemloshet": {
     "opinions": [
@@ -824,7 +885,8 @@
     "title": "Hemlöshet",
     "url": "https://www.liberalerna.se/politik/hemloshet",
     "fetchDate": "2023-09-17T17:52:41.120Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Bostad"
   },
   "https://www.liberalerna.se/politik/hemtjanst": {
     "opinions": [
@@ -836,7 +898,8 @@
     "title": "Hemtjänst",
     "url": "https://www.liberalerna.se/politik/hemtjanst",
     "fetchDate": "2023-09-17T17:52:41.808Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Bostad"
   },
   "https://www.liberalerna.se/politik/hyresratter": {
     "opinions": [
@@ -849,7 +912,8 @@
     "title": "Hyresrätter",
     "url": "https://www.liberalerna.se/politik/hyresratter",
     "fetchDate": "2023-09-17T17:52:41.201Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Bostad"
   },
   "https://www.liberalerna.se/politik/hogre-utbildning": {
     "opinions": [
@@ -861,7 +925,8 @@
     "title": "Högre utbildning",
     "url": "https://www.liberalerna.se/politik/hogre-utbildning",
     "fetchDate": "2023-09-17T17:52:42.342Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Utbildning"
   },
   "https://www.liberalerna.se/politik/hastpolitik": {
     "opinions": [
@@ -874,7 +939,8 @@
     "title": "Hästpolitik",
     "url": "https://www.liberalerna.se/politik/hastpolitik",
     "fetchDate": "2023-09-17T17:52:43.236Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Kultur, media, och idrott"
   },
   "https://www.liberalerna.se/politik/idrott": {
     "opinions": [
@@ -887,7 +953,8 @@
     "title": "Idrott",
     "url": "https://www.liberalerna.se/politik/idrott",
     "fetchDate": "2023-09-17T17:52:40.047Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Kultur, media, och idrott"
   },
   "https://www.liberalerna.se/politik/infrastruktur": {
     "opinions": [
@@ -901,7 +968,8 @@
     "title": "Infrastruktur och trafik",
     "url": "https://www.liberalerna.se/politik/infrastruktur",
     "fetchDate": "2023-09-17T17:52:42.450Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Infrastruktur och Trafik"
   },
   "https://www.liberalerna.se/politik/integration": {
     "opinions": [
@@ -914,7 +982,8 @@
     "title": "Integration",
     "url": "https://www.liberalerna.se/politik/integration",
     "fetchDate": "2023-09-17T17:52:41.711Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Migration och Integration"
   },
   "https://www.liberalerna.se/politik/integritet": {
     "opinions": [
@@ -927,7 +996,8 @@
     "title": "Integritet",
     "url": "https://www.liberalerna.se/politik/integritet",
     "fetchDate": "2023-09-17T17:52:39.282Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Demokrati"
   },
   "https://www.liberalerna.se/politik/invandring": {
     "opinions": [
@@ -942,7 +1012,8 @@
     "title": "Invandring",
     "url": "https://www.liberalerna.se/politik/invandring",
     "fetchDate": "2023-09-17T17:52:44.430Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Migration och Integration"
   },
   "https://www.liberalerna.se/politik/jakt": {
     "opinions": [
@@ -955,7 +1026,8 @@
     "title": "Jakt",
     "url": "https://www.liberalerna.se/politik/jakt",
     "fetchDate": "2023-09-17T17:52:40.763Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Jordbruk, Jakt och Fiske"
   },
   "https://www.liberalerna.se/politik/jarnvagar": {
     "opinions": [
@@ -968,7 +1040,8 @@
     "title": "Järnvägar",
     "url": "https://www.liberalerna.se/politik/jarnvagar",
     "fetchDate": "2023-09-17T17:52:43.707Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Infrastruktur och Trafik"
   },
   "https://www.liberalerna.se/politik/jamstallda-loner": {
     "opinions": [
@@ -980,7 +1053,8 @@
     "title": "Jämställda löner",
     "url": "https://www.liberalerna.se/politik/jamstallda-loner",
     "fetchDate": "2023-09-17T17:52:38.891Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Jobb"
   },
   "https://www.liberalerna.se/politik/liberal-feminism": {
     "opinions": [
@@ -993,7 +1067,8 @@
     "title": "Jämställdhet och feminism",
     "url": "https://www.liberalerna.se/politik/liberal-feminism",
     "fetchDate": "2023-09-17T17:52:43.609Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Jämställdhet och diskriminering"
   },
   "https://www.liberalerna.se/politik/jobb": {
     "opinions": [
@@ -1006,7 +1081,8 @@
     "title": "Jobb",
     "url": "https://www.liberalerna.se/politik/jobb",
     "fetchDate": "2023-09-17T17:52:37.464Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Jobb"
   },
   "https://www.liberalerna.se/politik/jordbruk": {
     "opinions": [
@@ -1020,7 +1096,8 @@
     "title": "Jordbruk",
     "url": "https://www.liberalerna.se/politik/jordbruk",
     "fetchDate": "2023-09-17T17:52:43.325Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Jordbruk, Jakt och Fiske"
   },
   "https://www.liberalerna.se/politik/klimatet": {
     "opinions": [
@@ -1033,7 +1110,8 @@
     "title": "Klimatet",
     "url": "https://www.liberalerna.se/politik/klimatet",
     "fetchDate": "2023-09-17T17:52:37.211Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Miljö och klimat"
   },
   "https://www.liberalerna.se/politik/konsumenters-rattigheter": {
     "opinions": [
@@ -1046,7 +1124,8 @@
     "title": "Konsumenters rättigheter",
     "url": "https://www.liberalerna.se/politik/konsumenters-rattigheter",
     "fetchDate": "2023-09-17T17:52:39.930Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Konsumentpolitik"
   },
   "https://www.liberalerna.se/politik/politikkriminalvard": {
     "opinions": [
@@ -1059,7 +1138,8 @@
     "title": "Kriminalvård",
     "url": "https://www.liberalerna.se/politik/politikkriminalvard",
     "fetchDate": "2023-09-17T17:52:43.661Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Vård och Omsorg"
   },
   "https://www.liberalerna.se/politik/karnkraft": {
     "opinions": [
@@ -1072,7 +1152,8 @@
     "title": "Kärnkraft",
     "url": "https://www.liberalerna.se/politik/karnkraft",
     "fetchDate": "2023-09-17T17:52:38.597Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Energi"
   },
   "https://www.liberalerna.se/politik/kultur": {
     "opinions": [
@@ -1084,7 +1165,8 @@
     "title": "Kultur",
     "url": "https://www.liberalerna.se/politik/kultur",
     "fetchDate": "2023-09-17T17:52:43.875Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Kultur, media, och idrott"
   },
   "https://www.liberalerna.se/politik/koldioxidinfangning": {
     "opinions": [
@@ -1097,7 +1179,8 @@
     "title": "Koldioxidinfångning",
     "url": "https://www.liberalerna.se/politik/koldioxidinfangning",
     "fetchDate": "2023-09-17T17:52:42.404Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Miljö och klimat"
   },
   "https://www.liberalerna.se/politik/livsmedel": {
     "opinions": [
@@ -1110,7 +1193,8 @@
     "title": "Livsmedel",
     "url": "https://www.liberalerna.se/politik/livsmedel",
     "fetchDate": "2023-09-17T17:52:40.333Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Jordbruk, Jakt och Fiske"
   },
   "https://www.liberalerna.se/politik/larlingar": {
     "opinions": [
@@ -1123,7 +1207,8 @@
     "title": "Lärlingar",
     "url": "https://www.liberalerna.se/politik/larlingar",
     "fetchDate": "2023-09-17T17:52:39.933Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Utbildning"
   },
   "https://www.liberalerna.se/politik/lararna-2": {
     "opinions": [
@@ -1136,7 +1221,8 @@
     "title": "Lärarnas villkor",
     "url": "https://www.liberalerna.se/politik/lararna-2",
     "fetchDate": "2023-09-17T17:52:43.697Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Utbildning"
   },
   "https://www.liberalerna.se/politik/livets-slut-pa-egna-villkor": {
     "opinions": [
@@ -1149,7 +1235,8 @@
     "title": "Livets slut på egna villkor",
     "url": "https://www.liberalerna.se/politik/livets-slut-pa-egna-villkor",
     "fetchDate": "2023-09-17T17:52:43.780Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Vård och Omsorg"
   },
   "https://www.liberalerna.se/politik/miljo-och-natur": {
     "opinions": [
@@ -1164,7 +1251,8 @@
     "title": "Miljö och natur",
     "url": "https://www.liberalerna.se/politik/miljo-och-natur",
     "fetchDate": "2023-09-17T17:52:43.494Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Miljö och klimat"
   },
   "https://www.liberalerna.se/politik/monarki": {
     "opinions": [
@@ -1177,7 +1265,8 @@
     "title": "Monarki",
     "url": "https://www.liberalerna.se/politik/monarki",
     "fetchDate": "2023-09-17T17:52:43.623Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Demokrati"
   },
   "https://www.liberalerna.se/politik/manniskohandel": {
     "opinions": [
@@ -1190,7 +1279,8 @@
     "title": "Människohandel",
     "url": "https://www.liberalerna.se/politik/manniskohandel",
     "fetchDate": "2023-09-17T17:52:40.944Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Lag och rätt"
   },
   "https://www.liberalerna.se/politik/medier-och-public-service": {
     "opinions": [
@@ -1203,7 +1293,8 @@
     "title": "Medier / Public service",
     "url": "https://www.liberalerna.se/politik/medier-och-public-service",
     "fetchDate": "2023-09-17T17:52:43.672Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Kultur, media, och idrott"
   },
   "https://www.liberalerna.se/politik/narkotika": {
     "opinions": [
@@ -1216,7 +1307,8 @@
     "title": "Narkotika",
     "url": "https://www.liberalerna.se/politik/narkotika",
     "fetchDate": "2023-09-17T17:52:41.427Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Vård och Omsorg"
   },
   "https://www.liberalerna.se/politik/nyanlanda-elever": {
     "opinions": [
@@ -1228,7 +1320,8 @@
     "title": "Nyanlända elever",
     "url": "https://www.liberalerna.se/politik/nyanlanda-elever",
     "fetchDate": "2023-09-17T17:52:40.947Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Migration och Integration"
   },
   "https://www.liberalerna.se/politik/nato": {
     "opinions": [
@@ -1241,7 +1334,8 @@
     "title": "Nato",
     "url": "https://www.liberalerna.se/politik/nato",
     "fetchDate": "2023-09-17T17:52:42.911Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Försvar"
   },
   "https://www.liberalerna.se/politik/offentliga-monopol": {
     "opinions": [
@@ -1254,7 +1348,8 @@
     "title": "Offentliga monopol",
     "url": "https://www.liberalerna.se/politik/offentliga-monopol",
     "fetchDate": "2023-09-17T17:52:43.684Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Ekonomi och Skatter"
   },
   "https://www.liberalerna.se/politik/pensioner": {
     "opinions": [
@@ -1267,7 +1362,8 @@
     "title": "Pensioner",
     "url": "https://www.liberalerna.se/politik/pensioner",
     "fetchDate": "2023-09-17T17:52:42.037Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Äldrepolitik"
   },
   "https://www.liberalerna.se/politik/polisen": {
     "opinions": [
@@ -1280,7 +1376,8 @@
     "title": "Polisen",
     "url": "https://www.liberalerna.se/politik/polisen",
     "fetchDate": "2023-09-17T17:52:41.720Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Lag och rätt"
   },
   "https://www.liberalerna.se/politik/prostitution": {
     "opinions": [
@@ -1293,7 +1390,8 @@
     "title": "Prostitution",
     "url": "https://www.liberalerna.se/politik/prostitution",
     "fetchDate": "2023-09-17T17:52:41.198Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Lag och rätt"
   },
   "https://www.liberalerna.se/politik/psykiatri": {
     "opinions": [
@@ -1305,7 +1403,8 @@
     "title": "Psykiatri",
     "url": "https://www.liberalerna.se/politik/psykiatri",
     "fetchDate": "2023-09-17T17:52:41.708Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Vård och Omsorg"
   },
   "https://www.liberalerna.se/politik/lss": {
     "opinions": [
@@ -1317,7 +1416,8 @@
     "title": "Personlig assistans / LSS",
     "url": "https://www.liberalerna.se/politik/lss",
     "fetchDate": "2023-09-17T17:52:43.444Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Vård och Omsorg"
   },
   "https://www.liberalerna.se/politik/politikregelforenklingar": {
     "opinions": [
@@ -1330,7 +1430,8 @@
     "title": "Regelförenklingar",
     "url": "https://www.liberalerna.se/politik/politikregelforenklingar",
     "fetchDate": "2023-09-17T17:52:41.920Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Näringsliv"
   },
   "https://www.liberalerna.se/politik/rovdjur": {
     "opinions": [
@@ -1343,7 +1444,8 @@
     "title": "Rovdjur",
     "url": "https://www.liberalerna.se/politik/rovdjur",
     "fetchDate": "2023-09-17T17:52:43.431Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Jordbruk, Jakt och Fiske"
   },
   "https://www.liberalerna.se/politik/rut-avdrag": {
     "opinions": [
@@ -1354,7 +1456,8 @@
     "title": "RUT-avdrag",
     "url": "https://www.liberalerna.se/politik/rut-avdrag",
     "fetchDate": "2023-09-17T17:52:39.164Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Ekonomi och Skatter"
   },
   "https://www.liberalerna.se/politik/regional-utveckling": {
     "opinions": [
@@ -1368,7 +1471,8 @@
     "title": "Regional utveckling",
     "url": "https://www.liberalerna.se/politik/regional-utveckling",
     "fetchDate": "2023-09-17T17:52:43.649Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Landsbygd"
   },
   "https://www.liberalerna.se/politik/rasism": {
     "opinions": [
@@ -1381,7 +1485,8 @@
     "title": "Rasism",
     "url": "https://www.liberalerna.se/politik/rasism",
     "fetchDate": "2023-09-17T17:52:41.311Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Jämställdhet och diskriminering"
   },
   "https://www.liberalerna.se/politik/religiosa-friskolor": {
     "opinions": [
@@ -1393,7 +1498,8 @@
     "title": "Religiösa friskolor",
     "url": "https://www.liberalerna.se/politik/religiosa-friskolor",
     "fetchDate": "2023-09-17T17:52:43.408Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Utbildning"
   },
   "https://www.liberalerna.se/politik/reduktionsplikten": {
     "opinions": [
@@ -1407,7 +1513,8 @@
     "title": "Reduktionsplikten",
     "url": "https://www.liberalerna.se/politik/reduktionsplikten",
     "fetchDate": "2023-09-17T17:52:43.418Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Miljö och klimat"
   },
   "https://www.liberalerna.se/politik/sjukforsakring": {
     "opinions": [
@@ -1420,7 +1527,8 @@
     "title": "Sjukförsäkring",
     "url": "https://www.liberalerna.se/politik/sjukforsakring",
     "fetchDate": "2023-09-17T17:52:44.567Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Trygghetssystem och Välfärd"
   },
   "https://www.liberalerna.se/politik/sjukvard": {
     "opinions": [
@@ -1433,7 +1541,8 @@
     "title": "Sjukvård",
     "url": "https://www.liberalerna.se/politik/sjukvard",
     "fetchDate": "2023-09-17T17:52:37.860Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Vård och Omsorg"
   },
   "https://www.liberalerna.se/politik/skola": {
     "opinions": [
@@ -1445,7 +1554,8 @@
     "title": "Skola",
     "url": "https://www.liberalerna.se/politik/skola",
     "fetchDate": "2023-09-17T17:52:44.414Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Utbildning"
   },
   "https://www.liberalerna.se/politik/sjofart": {
     "opinions": [
@@ -1458,7 +1568,8 @@
     "title": "Sjöfart",
     "url": "https://www.liberalerna.se/politik/sjofart",
     "fetchDate": "2023-09-17T17:52:40.999Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Infrastruktur och Trafik"
   },
   "https://www.liberalerna.se/politik/skogen": {
     "opinions": [
@@ -1471,7 +1582,8 @@
     "title": "Skogen",
     "url": "https://www.liberalerna.se/politik/skogen",
     "fetchDate": "2023-09-17T17:52:40.760Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Jordbruk, Jakt och Fiske"
   },
   "https://www.liberalerna.se/politik/socialforsakring": {
     "opinions": [
@@ -1484,7 +1596,8 @@
     "title": "Socialförsäkring",
     "url": "https://www.liberalerna.se/politik/socialforsakring",
     "fetchDate": "2023-09-17T17:52:39.428Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Trygghetssystem och Välfärd"
   },
   "https://www.liberalerna.se/politik/studiemedel": {
     "opinions": [
@@ -1496,7 +1609,8 @@
     "title": "Studiemedel",
     "url": "https://www.liberalerna.se/politik/studiemedel",
     "fetchDate": "2023-09-17T17:52:43.318Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Utbildning"
   },
   "https://www.liberalerna.se/politik/statliga-foretag": {
     "opinions": [
@@ -1510,7 +1624,8 @@
     "title": "Statliga företag",
     "url": "https://www.liberalerna.se/politik/statliga-foretag",
     "fetchDate": "2023-09-17T17:52:42.332Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Näringsliv"
   },
   "https://www.liberalerna.se/politik/sfi": {
     "opinions": [
@@ -1524,7 +1639,8 @@
     "title": "SFI",
     "url": "https://www.liberalerna.se/politik/sfi",
     "fetchDate": "2023-09-17T17:52:38.129Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Migration och Integration"
   },
   "https://www.liberalerna.se/politik/svenska-spraket": {
     "opinions": [
@@ -1536,7 +1652,8 @@
     "title": "Svenska språket",
     "url": "https://www.liberalerna.se/politik/svenska-spraket",
     "fetchDate": "2023-09-17T17:52:38.373Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Migration och Integration"
   },
   "https://www.liberalerna.se/politik/spelmissbruk": {
     "opinions": [
@@ -1548,7 +1665,8 @@
     "title": "Spelmissbruk",
     "url": "https://www.liberalerna.se/politik/spelmissbruk",
     "fetchDate": "2023-09-17T17:52:40.960Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Vård och Omsorg"
   },
   "https://www.liberalerna.se/politik/solenergi": {
     "opinions": [
@@ -1561,7 +1679,8 @@
     "title": "Solenergi",
     "url": "https://www.liberalerna.se/politik/solenergi",
     "fetchDate": "2023-09-17T17:52:40.907Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Energi"
   },
   "https://www.liberalerna.se/politik/skolvalet": {
     "opinions": [
@@ -1573,7 +1692,8 @@
     "title": "Skolvalet",
     "url": "https://www.liberalerna.se/politik/skolvalet",
     "fetchDate": "2023-09-17T17:52:41.052Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Utbildning"
   },
   "https://www.liberalerna.se/politik/skatter": {
     "opinions": [
@@ -1585,7 +1705,8 @@
     "title": "Skatter",
     "url": "https://www.liberalerna.se/politik/skatter",
     "fetchDate": "2023-09-17T17:52:44.388Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Ekonomi och Skatter"
   },
   "https://www.liberalerna.se/politik/strandskydd": {
     "opinions": [
@@ -1598,7 +1719,8 @@
     "title": "Strandskydd",
     "url": "https://www.liberalerna.se/politik/strandskydd",
     "fetchDate": "2023-09-17T17:52:37.618Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Miljö och klimat"
   },
   "https://www.liberalerna.se/politik/politiktrangselskatt": {
     "opinions": [
@@ -1611,7 +1733,8 @@
     "title": "Trängselskatt",
     "url": "https://www.liberalerna.se/politik/politiktrangselskatt",
     "fetchDate": "2023-09-17T17:52:41.049Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Infrastruktur och Trafik"
   },
   "https://www.liberalerna.se/politik/tandvard": {
     "opinions": [
@@ -1624,7 +1747,8 @@
     "title": "Tandvård",
     "url": "https://www.liberalerna.se/politik/tandvard",
     "fetchDate": "2023-09-17T17:52:44.243Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Vård och Omsorg"
   },
   "https://www.liberalerna.se/politik/trygghet-och-studiero": {
     "opinions": [
@@ -1636,7 +1760,8 @@
     "title": "Trygghet och studiero",
     "url": "https://www.liberalerna.se/politik/trygghet-och-studiero",
     "fetchDate": "2023-09-17T17:52:43.514Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Utbildning"
   },
   "https://www.liberalerna.se/politik/tobak": {
     "opinions": [
@@ -1649,7 +1774,8 @@
     "title": "Tobak",
     "url": "https://www.liberalerna.se/politik/tobak",
     "fetchDate": "2023-09-17T17:52:43.674Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Vård och Omsorg"
   },
   "https://www.liberalerna.se/politik/torv": {
     "opinions": [
@@ -1663,7 +1789,8 @@
     "title": "Torv",
     "url": "https://www.liberalerna.se/politik/torv",
     "fetchDate": "2023-09-17T17:52:42.494Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Miljö och klimat"
   },
   "https://www.liberalerna.se/politik/upphovsratten": {
     "opinions": [
@@ -1677,7 +1804,8 @@
     "title": "Upphovsrätt",
     "url": "https://www.liberalerna.se/politik/upphovsratten",
     "fetchDate": "2023-09-17T17:52:41.602Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Lag och rätt"
   },
   "https://www.liberalerna.se/politik/utrikespolitik": {
     "opinions": [
@@ -1690,7 +1818,8 @@
     "title": "Utrikespolitik",
     "url": "https://www.liberalerna.se/politik/utrikespolitik",
     "fetchDate": "2023-09-17T17:52:43.590Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Utrikes- och biståndsfrågor"
   },
   "https://www.liberalerna.se/politik/utsatta-omraden": {
     "opinions": [
@@ -1703,7 +1832,8 @@
     "title": "Utsatta områden",
     "url": "https://www.liberalerna.se/politik/utsatta-omraden",
     "fetchDate": "2023-09-17T17:52:38.787Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Jämställdhet och diskriminering"
   },
   "https://www.liberalerna.se/politik/utlandssvenskar": {
     "opinions": [
@@ -1718,7 +1848,8 @@
     "title": "Utlandssvenskar",
     "url": "https://www.liberalerna.se/politik/utlandssvenskar",
     "fetchDate": "2023-09-17T17:52:40.199Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Utrikes- och biståndsfrågor"
   },
   "https://www.liberalerna.se/politik/valsystemet": {
     "opinions": [
@@ -1731,7 +1862,8 @@
     "title": "Valsystemet",
     "url": "https://www.liberalerna.se/politik/valsystemet",
     "fetchDate": "2023-09-17T17:52:41.794Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Demokrati"
   },
   "https://www.liberalerna.se/politik/vuxenutbildning": {
     "opinions": [
@@ -1744,7 +1876,8 @@
     "title": "Vuxenutbildning",
     "url": "https://www.liberalerna.se/politik/vuxenutbildning",
     "fetchDate": "2023-09-17T17:52:42.695Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Utbildning"
   },
   "https://www.liberalerna.se/politik/vagar": {
     "opinions": [
@@ -1757,7 +1890,8 @@
     "title": "Vägar",
     "url": "https://www.liberalerna.se/politik/vagar",
     "fetchDate": "2023-09-17T17:52:43.690Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Infrastruktur och Trafik"
   },
   "https://www.liberalerna.se/politik/vattenkraft": {
     "opinions": [
@@ -1771,7 +1905,8 @@
     "title": "Vattenkraft",
     "url": "https://www.liberalerna.se/politik/vattenkraft",
     "fetchDate": "2023-09-17T17:52:42.040Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Energi"
   },
   "https://www.liberalerna.se/politik/vindkraft": {
     "opinions": [
@@ -1785,7 +1920,8 @@
     "title": "Vindkraft",
     "url": "https://www.liberalerna.se/politik/vindkraft",
     "fetchDate": "2023-09-17T17:52:43.704Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Energi"
   },
   "https://www.liberalerna.se/politik/vatgas": {
     "opinions": [
@@ -1799,7 +1935,8 @@
     "title": "Vätgas",
     "url": "https://www.liberalerna.se/politik/vatgas",
     "fetchDate": "2023-09-17T17:52:43.680Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Energi"
   },
   "https://www.liberalerna.se/politik/yttrandefrihet": {
     "opinions": [
@@ -1812,7 +1949,8 @@
     "title": "Yttrandefrihet",
     "url": "https://www.liberalerna.se/politik/yttrandefrihet",
     "fetchDate": "2023-09-17T17:52:43.630Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Demokrati"
   },
   "https://www.liberalerna.se/politik/arsrika": {
     "opinions": [
@@ -1825,7 +1963,8 @@
     "title": "Årsrika",
     "url": "https://www.liberalerna.se/politik/arsrika",
     "fetchDate": "2023-09-17T17:52:43.718Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Äldrepolitik"
   },
   "https://www.liberalerna.se/politik/aldre-i-arbetslivet": {
     "opinions": [
@@ -1838,7 +1977,8 @@
     "title": "Äldre i arbetslivet",
     "url": "https://www.liberalerna.se/politik/aldre-i-arbetslivet",
     "fetchDate": "2023-09-17T17:52:39.791Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Äldrepolitik"
   },
   "https://www.liberalerna.se/politik/ostersjon": {
     "opinions": [
@@ -1851,6 +1991,7 @@
     "title": "Östersjön",
     "url": "https://www.liberalerna.se/politik/ostersjon",
     "fetchDate": "2023-09-17T17:52:43.907Z",
-    "party": "l"
+    "party": "l",
+    "subject": "Miljö och klimat"
   }
 }

@@ -1,5 +1,5 @@
 import "./global.css";
-import { Roboto } from "@next/font/google";
+import { Roboto } from "next/font/google";
 import type { PropsWithChildren } from "react";
 import Head from "./head";
 import Footer from "./footer";

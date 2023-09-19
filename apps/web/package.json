@@ -25,7 +25,6 @@
     "@mui/material": "5.14.9",
     "@mui/system": "5.14.9",
     "@next/bundle-analyzer": "13.4.19",
-    "@next/font": "13.4.19",
     "@sentry/nextjs": "7.69.0",
     "isomorphic-unfetch": "4.0.2",
     "jsdom": "22.1.0",

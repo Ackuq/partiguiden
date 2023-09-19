@@ -42,9 +42,6 @@ importers:
       '@next/bundle-analyzer':
         specifier: 13.4.19
         version: 13.4.19
-      '@next/font':
-        specifier: 13.4.19
-        version: 13.4.19
       '@sentry/nextjs':
         specifier: 7.69.0
         version: 7.69.0(next@13.4.19)(react@18.2.0)
@@ -843,10 +840,6 @@ packages:
     dependencies:
       glob: 7.1.7
     dev: true
-
-  /@next/font@13.4.19:
-    resolution: {integrity: sha512-yOuSRYfqksWcaG/sATr1/DEGvvI8gnmAAnQCCZ0+L9p4Pio3/DMu71J56YHh9Hz84LDN4tMVzuux0ssCuM50sA==}
-    dev: false
 
   /@next/swc-darwin-arm64@13.4.19:
     resolution: {integrity: sha512-vv1qrjXeGbuF2mOkhkdxMDtv9np7W4mcBtaDnHU+yJG+bBwa6rYsYSCI/9Xm5+TuF5SbZbrWO6G1NfTh1TMjvQ==}

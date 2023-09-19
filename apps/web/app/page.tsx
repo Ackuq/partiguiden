@@ -8,21 +8,6 @@ export const metadata = {
     "Vad tar Sveriges partier för ståndpunkter i sakfrågor? På Partiguiden kan du hitta och jämföra vad partierns åsikter för att hitta det parti du sympatiserar mest med.",
 };
 
-/**
-const PageTitleContainer = styled(Paper)`
-  background-color: ${({ theme }) =>
-    theme.palette.mode === "dark"
-      ? theme.palette.background.paper
-      : theme.palette.primary.light};
-  text-align: center;
-  padding: 1.5rem 0.25rem;
-  margin-bottom: 1rem;
-  color: #fff;
-  min-height: 5rem;
-`;
-
- */
-
 function PageTitleContainer() {
   return (
     <h2 className="bg-primary-elevated-light dark:bg-primary-elevated-dark mb-4 py-6 text-center text-3xl leading-10 text-white shadow-lg">

@@ -1,0 +1,3 @@
+{
+  "extends": ["@partiguiden/eslint-config-base/next"]
+}

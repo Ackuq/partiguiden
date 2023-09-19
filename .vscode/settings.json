@@ -3,5 +3,9 @@
   "eslint.workingDirectories": [
     { "pattern": "./apps/*" },
     { "pattern": "./packages/*" }
-  ]
+  ],
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }

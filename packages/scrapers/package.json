@@ -1,0 +1,19 @@
+{
+  "name": "@partiguiden/scrapers",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.ts",
+  "scripts": {
+    "scrape": "ts-node src/index.ts",
+    "scrape:all": "ts-node src/index.ts -p all"
+  },
+  "devDependencies": {
+    "@partiguiden/eslint-config-base": "workspace:*",
+    "@partiguiden/party-data": "workspace:*",
+    "@partiguiden/tsconfig": "workspace:*",
+    "@types/node": "20.6.0",
+    "cheerio": "1.0.0-rc.12",
+    "pdfjs-dist": "3.10.111",
+    "ts-node": "^10.9.1"
+  }
+}

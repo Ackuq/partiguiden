@@ -1,0 +1,915 @@
+{
+  "https://www.vansterpartiet.se/var-politik/politik-a-o/abort/": {
+    "opinions": [
+      "Alla kvinnor ska ha rätt att bestämma över sin egen kropp. Fri abort är en förutsättning för att alla barn som föds ska vara välkomna men är också en hälsofråga för kvinnor, både fysiskt och psykiskt. Det är kvinnans rätt att avgöra om och när hon vill ha barn."
+    ],
+    "title": "Abort",
+    "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/abort/",
+    "fetchDate": "2023-09-17T17:52:39.257Z",
+    "party": "v",
+    "subject": "Vård och Omsorg"
+  },
+  "https://www.vansterpartiet.se/var-politik/politik-a-o/anstallningstrygghet/": {
+    "opinions": [
+      "att särskild visstidsanställning avskaffas och att det istället införs objektiva kriterier för när det är tillåtet med visstidsanställningar. Det ska krävas särskilda skäl för att anställa någon tillfälligt.",
+      "att LAS ändras så att hyvling av den anställdes sysselsättningsgrad förbjuds.",
+      "att rätten för arbetsgivare att ensidigt undanta tre personer från turordningen ska tas bort ur LAS."
+    ],
+    "title": "Anställningstrygghet",
+    "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/anstallningstrygghet/",
+    "fetchDate": "2023-09-17T17:52:35.385Z",
+    "party": "v",
+    "subject": "Trygghetssystem och Välfärd"
+  },
+  "https://www.vansterpartiet.se/var-politik/politik-a-o/antirasism/": {
+    "opinions": [
+      "Vänsterpartiet vill ha ett samhälle för alla, fritt från rasism. Rasism sorterar och underordnar människor och därför är rasism ett hinder för rättvisa och jämlikhet."
+    ],
+    "title": "Antirasism",
+    "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/antirasism/",
+    "fetchDate": "2023-09-17T17:52:40.312Z",
+    "party": "v",
+    "subject": "Jämställdhet och diskriminering"
+  },
+  "https://www.vansterpartiet.se/var-politik/politik-a-o/arbetskraftsinvandring/": {
+    "opinions": [
+      "Arbetskraftsinvandringen har historiskt varit positiv för Sverige och bidragit till vårt lands utveckling. En väl fungerande arbetskraftsinvandring kan även framöver tillföra mycket för såväl den enskilde som kommer hit för att arbeta som för svensk ekonomi och arbetsmarknad."
+    ],
+    "title": "Arbetskraftsinvandring",
+    "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/arbetskraftsinvandring/",
+    "fetchDate": "2023-09-17T17:52:35.788Z",
+    "party": "v",
+    "subject": "Migration och Integration"
+  },
+  "https://www.vansterpartiet.se/var-politik/politik-a-o/arbetsmarknad/": {
+    "opinions": [
+      "att lagstiftningen kring utstationering ändras så att svenska löner och villkor gäller fullt ut för alla som arbetar på svensk arbetsmarknad.",
+      "att lagstiftningen kring arbetskraftsinvandring rivs upp och att det bland annat införs krav på arbetsmarknadsprövning och heltidsanställning.",
+      "att regelverket kring subventionerade anställningar stramas upp för att motverka fusk och överutnyttjande."
+    ],
+    "title": "Arbetsmarknad",
+    "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/arbetsmarknad/",
+    "fetchDate": "2023-09-17T17:52:35.556Z",
+    "party": "v",
+    "subject": "Jobb"
+  },
+  "https://www.vansterpartiet.se/var-politik/politik-a-o/arbetsmiljo/": {
+    "opinions": [
+      "Att regionala skyddsombud ska få rätt att verka på arbetsplatser med kollektivavtal även om det för tillfället inte finns någon medlem där",
+      "Att alla anställda ges tillgång till en effektiv och kvalitetssäkrad företagshälsovård",
+      "Öka resurserna till forskning, utbildning, tillsyn och förebyggande arbetsmiljöarbete"
+    ],
+    "title": "Arbetsmiljö",
+    "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/arbetsmiljo/",
+    "fetchDate": "2023-09-17T17:52:39.889Z",
+    "party": "v",
+    "subject": "Jobb"
+  },
+  "https://www.vansterpartiet.se/var-politik/politik-a-o/arbetstidsforkortning/": {
+    "opinions": [
+      "Vänsterpartiet vill ha ett mänskligt och rättvist samhälle där människor har reella möjligheter att utvecklas och leva berikande liv."
+    ],
+    "title": "Arbetstidsförkortning",
+    "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/arbetstidsforkortning/",
+    "fetchDate": "2023-09-17T17:52:36.034Z",
+    "party": "v",
+    "subject": "Jobb"
+  },
+  "https://www.vansterpartiet.se/var-politik/politik-a-o/banker/": {
+    "opinions": [
+      "Bankerna ska vara till för vanligt folk, inte bara för storföretagen. Därför har Vänsterpartiet lagt en rad förslag för att stärka kundernas ställning gentemot bankerna. Vi vill också hindra bankerna från att agera så att samhällsekonomin hotas."
+    ],
+    "title": "Banker",
+    "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/banker/",
+    "fetchDate": "2023-09-17T17:52:36.505Z",
+    "party": "v",
+    "subject": "Ekonomi och Skatter"
+  },
+  "https://www.vansterpartiet.se/var-politik/politik-a-o/barns-och-unga-rattigheter/": {
+    "opinions": [
+      "I ett jämlikt samhälle är allas rättigheter lika viktiga och därför måste barns rättigheter stärkas."
+    ],
+    "title": "Barns och ungas rättigheter",
+    "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/barns-och-unga-rattigheter/",
+    "fetchDate": "2023-09-17T17:52:36.325Z",
+    "party": "v",
+    "subject": "Jämställdhet och diskriminering"
+  },
+  "https://www.vansterpartiet.se/var-politik/politik-a-o/bistand/": {
+    "opinions": [
+      "Vänsterpartiet vill se en rättvis och jämlik värld där alla människor har samma möjligheter att leva de liv de vill. Utvecklings- och biståndspolitiken är viktiga medel för att nå dit."
+    ],
+    "title": "Bistånd",
+    "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/bistand/",
+    "fetchDate": "2023-09-17T17:52:39.417Z",
+    "party": "v",
+    "subject": "Utrikes- och biståndsfrågor"
+  },
+  "https://www.vansterpartiet.se/var-politik/politik-a-o/bostader/": {
+    "opinions": [
+      "Öka den statliga finansieringen av bostadsbyggandet (stöd och lån)",
+      "Inrätta ett statligt byggbolag med fokus på att bygga hyresrätter med rimliga hyror",
+      "Ställa högre krav på regioner och kommuner att planera och bygga bostäder"
+    ],
+    "title": "Bostäder",
+    "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/bostader/",
+    "fetchDate": "2023-09-17T17:52:37.615Z",
+    "party": "v",
+    "subject": "Bostad"
+  },
+  "https://www.vansterpartiet.se/var-politik/politik-a-o/brottsoffer/": {
+    "opinions": [
+      "Det öppna samhället bygger på demokrati, frihet och respekt för alla människors rätt att forma sina liv så länge man inte inkräktar på sina medmänniskors frihet."
+    ],
+    "title": "Brottsoffer",
+    "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/brottsoffer/",
+    "fetchDate": "2023-09-17T17:52:38.770Z",
+    "party": "v",
+    "subject": "Lag och rätt"
+  },
+  "https://www.vansterpartiet.se/var-politik/politik-a-o/betyg/": {
+    "opinions": [
+      "För att garan­tera elevernas rätt till kunskap behöver deras kunskapsutveckling följas upp. En tydlig och likvärdig uppföljning i tidig ålder är bättre än tidiga betyg."
+    ],
+    "title": "Betyg",
+    "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/betyg/",
+    "fetchDate": "2023-09-17T17:52:40.519Z",
+    "party": "v",
+    "subject": "Utbildning"
+  },
+  "https://www.vansterpartiet.se/var-politik/politik-a-o/droger-och-beroende/": {
+    "opinions": [
+      "Alla har rätt till en bra hälsa och vård. Idag har ungefär 100 000 personer ett missbruk av narkotika eller läkemedel. Många våldsbrott begås under påverkan av droger. Tillgången till droger måste begränsas kraftfullt och det preventiva arbetet stärkas."
+    ],
+    "title": "Droger och beroende",
+    "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/droger-och-beroende/",
+    "fetchDate": "2023-09-17T17:52:37.941Z",
+    "party": "v",
+    "subject": "Vård och Omsorg"
+  },
+  "https://www.vansterpartiet.se/var-politik/politik-a-o/dodshjalp/": {
+    "opinions": [
+      "Frågan om aktiv dödshjälp innebär etiska överväganden som mycket grundligt måste göras och som talar för att dödshjälp står i stark kontrast till det som är vårdens främsta uppgift – att bota, lindra och trösta."
+    ],
+    "title": "Dödshjälp",
+    "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/dodshjalp/",
+    "fetchDate": "2023-09-17T17:52:38.726Z",
+    "party": "v",
+    "subject": "Vård och Omsorg"
+  },
+  "https://www.vansterpartiet.se/var-politik/politik-a-o/djurskydd/": {
+    "opinions": [
+      "Vänsterpartiet arbetar för att stärka djurskyddet och respekten för djur som kännande individer. Vi vill förbättra djurens möjligheter till naturligt beteende och utevistelse."
+    ],
+    "title": "Djurskydd",
+    "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/djurskydd/",
+    "fetchDate": "2023-09-17T17:52:36.763Z",
+    "party": "v",
+    "subject": "Miljö och klimat"
+  },
+  "https://www.vansterpartiet.se/var-politik/politik-a-o/drivmedelsbeskattning/": {
+    "opinions": [
+      "I och med Rysslands anfall på Ukraina har priset på bensin och diesel stigit kraftigt. För många människor innebär det en tuff ekonomi. I många verksamheter blir kostnaderna höga och jobb riskerar förloras. Vänsterpartiet är ett parti som ser människors problem i vardagen och gör något åt dem. Vi vill att det ska vara möjligt att leva i hela landet, även där det idag inte finns kollektivtrafik så som vi skulle önska."
+    ],
+    "title": "Drivmedels­beskattning",
+    "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/drivmedelsbeskattning/",
+    "fetchDate": "2023-09-17T17:52:36.412Z",
+    "party": "v",
+    "subject": "Infrastruktur och Trafik"
+  },
+  "https://www.vansterpartiet.se/var-politik/politik-a-o/ekonomisk-brottslighet-riktad-mot-valfarden/": {
+    "opinions": [
+      "Vänsterpartiet vill ha en välfärd som är till för alla, inte bara för de rika. Välfärden har genom omfattande privatiseringar och utförsäljningar genomgått stora förändringar, vilket gjort den sårbar och till en måltavla för oseriösa företagare och ekonomisk brottslighet."
+    ],
+    "title": "Ekonomisk brottslighet riktad mot välfärden",
+    "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/ekonomisk-brottslighet-riktad-mot-valfarden/",
+    "fetchDate": "2023-09-17T17:52:41.276Z",
+    "party": "v",
+    "subject": "Trygghetssystem och Välfärd"
+  },
+  "https://www.vansterpartiet.se/var-politik/politik-a-o/energi/": {
+    "opinions": [
+      "Klimatkrisen är akut och vi måste snabbt ställa om Sverige för att minska utsläppen. Det kräver en snabb utbyggnad av vår elproduktion. Elmarknaden har under 2022 präglats av höga priser. Att skydda svensk industri och svenska hushåll från effekterna av det är högt prioriterat."
+    ],
+    "title": "Energi",
+    "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/energi/",
+    "fetchDate": "2023-09-17T17:52:38.045Z",
+    "party": "v",
+    "subject": "Energi"
+  },
+  "https://www.vansterpartiet.se/var-politik/politik-a-o/ensamkommande-barn-och-unga/": {
+    "opinions": [
+      "Vänsterpartiet vill se en mänsklig, välkomnande och rättssäker flyktingpolitik i Sverige och Europa."
+    ],
+    "title": "Ensamkommande barn och unga",
+    "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/ensamkommande-barn-och-unga/",
+    "fetchDate": "2023-09-17T17:52:39.766Z",
+    "party": "v",
+    "subject": "Migration och Integration"
+  },
+  "https://www.vansterpartiet.se/var-politik/politik-a-o/eu/": {
+    "opinions": [
+      "EU begränsar demokratin och prioriterar företagens intressen framför miljön, arbetsrätten, folkhälsan och konsumentintressena."
+    ],
+    "title": "EU",
+    "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/eu/",
+    "fetchDate": "2023-09-17T17:52:40.044Z",
+    "party": "v",
+    "subject": "Europa"
+  },
+  "https://www.vansterpartiet.se/var-politik/politik-a-o/fribeloppet/": {
+    "opinions": [
+      "För att kunna studera på heltid är det nödvändigt med studiemedel som det går att leva på."
+    ],
+    "title": "Fribeloppet",
+    "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/fribeloppet/",
+    "fetchDate": "2023-09-17T17:52:40.418Z",
+    "party": "v",
+    "subject": "Utbildning"
+  },
+  "https://www.vansterpartiet.se/var-politik/politik-a-o/forlossningsvard/": {
+    "opinions": [
+      "Den som föder barn ska känna sig trygg med att få den vård som behövs. Vårt mål är ett det ska finnas en barnmorska för varje förlossning."
+    ],
+    "title": "Förlossningsvård",
+    "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/forlossningsvard/",
+    "fetchDate": "2023-09-17T17:52:36.168Z",
+    "party": "v",
+    "subject": "Vård och Omsorg"
+  },
+  "https://www.vansterpartiet.se/var-politik/politik-a-o/fackforeningar/": {
+    "opinions": [
+      "Starka fackföreningar med många medlemmar är avgörande för trygghet på jobbet, goda arbetsvillkor och bra löner."
+    ],
+    "title": "Fackföreningar",
+    "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/fackforeningar/",
+    "fetchDate": "2023-09-17T17:52:37.850Z",
+    "party": "v",
+    "subject": "Jobb"
+  },
+  "https://www.vansterpartiet.se/var-politik/politik-a-o/feminism/": {
+    "opinions": [
+      "Vi i Vänsterpartiet är feminister. Det innebär att vi ser att män generellt överordnas kvinnor i vårt samhälle. Genom vår feministiska politik arbetar vi för att förändra detta."
+    ],
+    "title": "Feminism",
+    "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/feminism/",
+    "fetchDate": "2023-09-17T17:52:36.352Z",
+    "party": "v",
+    "subject": "Jämställdhet och diskriminering"
+  },
+  "https://www.vansterpartiet.se/var-politik/politik-a-o/flyktingpolitik/": {
+    "opinions": [
+      "Människor på flykt behöver få skydd, därför vill vi försvara asylrätten. Sverige ska inte vara ett land som splittrar familjer. Vi vill bygga ett starkt samhälle med robust välfärd och politik för full sysselsättning. Det är så man löser samhällsproblemen, inte genom att urholka asylrätten."
+    ],
+    "title": "Flyktingpolitik",
+    "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/flyktingpolitik/",
+    "fetchDate": "2023-09-17T17:52:39.757Z",
+    "party": "v",
+    "subject": "Migration och Integration"
+  },
+  "https://www.vansterpartiet.se/var-politik/politik-a-o/funktionsratt/": {
+    "opinions": [
+      "Alla människor har lika värde och alla människor har kunskaper, förmågor och erfarenheter som är viktiga för samhället. Den som lever sitt liv med en normbrytande funktionalitet ska ha samma möjlighet till ett gott liv som alla andra."
+    ],
+    "title": "Funktionsrätt",
+    "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/funktionsratt/",
+    "fetchDate": "2023-09-17T17:52:40.643Z",
+    "party": "v",
+    "subject": "Vård och Omsorg"
+  },
+  "https://www.vansterpartiet.se/var-politik/politik-a-o/foretagande/": {
+    "opinions": [
+      "Vänsterpartiets mål är full sysselsättning. När alla människor har möjlighet att ha ett arbete fungerar samhället som bäst. Jobb skapas när innovationer och nytänkande omsätts i nya produkter och tjänster, inte genom att konkurrera med lägre löner och sämre villkor."
+    ],
+    "title": "Företagande",
+    "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/foretagande/",
+    "fetchDate": "2023-09-17T17:52:36.130Z",
+    "party": "v",
+    "subject": "Näringsliv"
+  },
+  "https://www.vansterpartiet.se/var-politik/politik-a-o/forskolan/": {
+    "opinions": [
+      "Vänsterpartiet anser att förskolan ska vara en rättighet och en möjlighet för alla barn."
+    ],
+    "title": "Förskolan",
+    "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/forskolan/",
+    "fetchDate": "2023-09-17T17:52:41.404Z",
+    "party": "v",
+    "subject": "Utbildning"
+  },
+  "https://www.vansterpartiet.se/var-politik/politik-a-o/forsvaret/": {
+    "opinions": [
+      "Vi lever i ett sårbart samhälle. De senaste åren har det blivit tydligt vilka civila hot som finns mot Sverige, som cyberattacker, splittring mellan olika grupper i samhället, naturkatastrofer i klimatförändringens spår, och inte minst, pandemier."
+    ],
+    "title": "Försvaret",
+    "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/forsvaret/",
+    "fetchDate": "2023-09-17T17:52:37.268Z",
+    "party": "v",
+    "subject": "Försvar"
+  },
+  "https://www.vansterpartiet.se/var-politik/politik-a-o/foraldraforsakringen/": {
+    "opinions": [
+      "Att föräldrar ska fördela ansvar för hem och barn lika är en av de mest centrala jämställdhetsfrågorna. Ett jämnare uttag av föräldraledighet skulle göra att kvinnors inkomster och hälsa ökar och att män tar större ansvar för hem och barn. Alla barn har rätt till en bra relation med båda sina föräldrar."
+    ],
+    "title": "Föräldraförsäkringen",
+    "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/foraldraforsakringen/",
+    "fetchDate": "2023-09-17T17:52:36.428Z",
+    "party": "v",
+    "subject": "Familjen"
+  },
+  "https://www.vansterpartiet.se/var-politik/politik-a-o/gardsforsaljning/": {
+    "opinions": [
+      "Vänsterpartiet står för en solidarisk och restriktiv alkoholpolitik som innebär att alkohol inte ska vara tillgängligt som om det var vilken vara som helst."
+    ],
+    "title": "Gårdsförsäljning",
+    "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/gardsforsaljning/",
+    "fetchDate": "2023-09-17T17:52:35.357Z",
+    "party": "v",
+    "subject": "Näringsliv"
+  },
+  "https://www.vansterpartiet.se/var-politik/politik-a-o/grova-brott/": {
+    "opinions": [
+      "Ju grövre brott, desto kraftigare måste samhället reagera. För att knäcka gängkriminaliteten krävs insatser från hela samhället."
+    ],
+    "title": "Grova brott",
+    "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/grova-brott/",
+    "fetchDate": "2023-09-17T17:52:36.303Z",
+    "party": "v",
+    "subject": "Lag och rätt"
+  },
+  "https://www.vansterpartiet.se/var-politik/politik-a-o/halso-och-sjukvardens-huvudmannaskap/": {
+    "opinions": [
+      "Det regionala självstyret kan vara en stor tillgång i arbetet för ett regionalt anpassat förebyggande arbete, folkhälsoarbete och andra insatser med regional prägel, men det får aldrig ske på bekostnad av jämlikheten."
+    ],
+    "title": "Hälso- och sjukvårdens huvudmannaskap",
+    "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/halso-och-sjukvardens-huvudmannaskap/",
+    "fetchDate": "2023-09-17T17:52:35.396Z",
+    "party": "v",
+    "subject": "Vård och Omsorg"
+  },
+  "https://www.vansterpartiet.se/var-politik/politik-a-o/handelspolitik/": {
+    "opinions": [
+      "Vänsterpartiet vill se en rättvis handelspolitik som sätter människor, social rättvisa, djur, klimatet och miljön främst och som fokuserar på samhällsvinster för alla och inte bara på vinster för storföretag."
+    ],
+    "title": "Handelspolitik",
+    "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/handelspolitik/",
+    "fetchDate": "2023-09-17T17:52:38.121Z",
+    "party": "v",
+    "subject": "Näringsliv"
+  },
+  "https://www.vansterpartiet.se/var-politik/politik-a-o/hbtqi/": {
+    "opinions": [
+      "Alla människor ska ha samma rättigheter oavsett sexuell läggning, könsidentitet eller könsuttryck."
+    ],
+    "title": "Hbtqi",
+    "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/hbtqi/",
+    "fetchDate": "2023-09-17T17:52:41.195Z",
+    "party": "v",
+    "subject": "Jämställdhet och diskriminering"
+  },
+  "https://www.vansterpartiet.se/var-politik/politik-a-o/hedersvald/": {
+    "opinions": [
+      "Hedersrelaterat våld och förtryck har, liksom mäns våld mot kvinnor i övrigt, generellt sin grund i kön, sexualitet, makt och kulturella föreställningar om dessa."
+    ],
+    "title": "Hedersvåld",
+    "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/hedersvald/",
+    "fetchDate": "2023-09-17T17:52:38.262Z",
+    "party": "v",
+    "subject": "Lag och rätt"
+  },
+  "https://www.vansterpartiet.se/var-politik/politik-a-o/hyresratter/": {
+    "opinions": [
+      "Bygga fler hyresrätter med rimliga hyror",
+      "Motverka utförsäljning och ombildning av allmännyttiga hyresrätter",
+      "Bevara och utveckla den svenska modellen för hyressättning",
+      "Stärka hyresgästernas ställning vid renoveringar – alla ska ha råd att bo kvar även efter en upprustning"
+    ],
+    "title": "Hyresrätter",
+    "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/hyresratter/",
+    "fetchDate": "2023-09-17T17:52:38.884Z",
+    "party": "v",
+    "subject": "Bostad"
+  },
+  "https://www.vansterpartiet.se/var-politik/politik-a-o/hoghastighetsbanor/": {
+    "opinions": [
+      "Dagens järnvägssystem har stor kapacitetsbrist. Vi behöver därför bygga mer järnväg, inte minst nya stambanor för snabba tåg."
+    ],
+    "title": "Höghastighetsbanor",
+    "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/hoghastighetsbanor/",
+    "fetchDate": "2023-09-17T17:52:39.112Z",
+    "party": "v",
+    "subject": "Infrastruktur och Trafik"
+  },
+  "https://www.vansterpartiet.se/var-politik/politik-a-o/hogskolan-och-yrkeshogskolan/": {
+    "opinions": [
+      "Högskolans huvuduppgift är att förmedla kunskap och bildning. Tanken bakom yrkeshögskolans utbildningar är att de ska finnas när och där de behövs. Båda är viktiga för att skapa välstånd och ett öppet och demokratiskt samhälle."
+    ],
+    "title": "Högskolan och yrkeshögskolan",
+    "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/hogskolan-och-yrkeshogskolan/",
+    "fetchDate": "2023-09-17T17:52:38.974Z",
+    "party": "v",
+    "subject": "Utbildning"
+  },
+  "https://www.vansterpartiet.se/var-politik/politik-a-o/integritet-och-statens-maktutovning/": {
+    "opinions": [
+      "Vänsterpartiet värnar demokratiska grundvärden som rättssäkerhet och skyddet för den personliga integriteten. Vi vill samtidigt inte försvåra de brottsbekämpande myndigheternas arbete med att utreda och beivra brott."
+    ],
+    "title": "Integritet och statens maktutövning",
+    "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/integritet-och-statens-maktutovning/",
+    "fetchDate": "2023-09-17T17:52:38.697Z",
+    "party": "v",
+    "subject": "Demokrati"
+  },
+  "https://www.vansterpartiet.se/var-politik/politik-a-o/idrott-och-friluftsliv/": {
+    "opinions": [
+      "För Vänsterpartiet är det centralt att det finns goda möjligheter till idrottande för människor i alla åldrar, oavsett bakgrund, funktionsvariation och ekonomiska förhållanden."
+    ],
+    "title": "Idrott och friluftsliv",
+    "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/idrott-och-friluftsliv/",
+    "fetchDate": "2023-09-17T17:52:39.267Z",
+    "party": "v",
+    "subject": "Kultur, media, och idrott"
+  },
+  "https://www.vansterpartiet.se/var-politik/politik-a-o/industri/": {
+    "opinions": [
+      "Behovet av en hållbar industri måste tydliggöras. Vänsterpartiet vill se kraftigt ökade investeringar i det som ställer om Sverige."
+    ],
+    "title": "Industri",
+    "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/industri/",
+    "fetchDate": "2023-09-17T17:52:38.393Z",
+    "party": "v",
+    "subject": "Näringsliv"
+  },
+  "https://www.vansterpartiet.se/var-politik/politik-a-o/integration/": {
+    "opinions": [
+      "Vänsterpartiet arbetar för alla människors frihet. Det är samhällets ansvar och kräver en politik som ger alla, oavsett bakgrund, religion, hudfärg, kön eller sexualitet, samma möjligheter och samma rätt till god utbildning, arbete och bostad."
+    ],
+    "title": "Integration",
+    "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/integration/",
+    "fetchDate": "2023-09-17T17:52:37.703Z",
+    "party": "v",
+    "subject": "Migration och Integration"
+  },
+  "https://www.vansterpartiet.se/var-politik/politik-a-o/jamlikhet/": {
+    "opinions": [
+      "Vänsterpartiet arbetar för att skapa ett samhälle för alla – inte bara några få. Vi tycker det är fel att en liten elit har hur mycket pengar som helst, samtidigt som många familjer behöver vända på varenda krona för att få vardagen att gå ihop."
+    ],
+    "title": "Jämlikhet",
+    "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/jamlikhet/",
+    "fetchDate": "2023-09-17T17:52:35.547Z",
+    "party": "v",
+    "subject": "Jämställdhet och diskriminering"
+  },
+  "https://www.vansterpartiet.se/var-politik/politik-a-o/jarnvag-och-tag/": {
+    "opinions": [
+      "För klimatets skull måste vi satsa mycket mer på tågen. Det ska vara bekvämt och smidigt att välja tåget och man ska kunna lita på att det går i tid. Vänsterpartiet driver på för ökade investeringar i nya järnvägar och förbättrat underhåll av banorna."
+    ],
+    "title": "Järnväg och tåg",
+    "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/jarnvag-och-tag/",
+    "fetchDate": "2023-09-17T17:52:40.035Z",
+    "party": "v",
+    "subject": "Infrastruktur och Trafik"
+  },
+  "https://www.vansterpartiet.se/var-politik/politik-a-o/jordbruk-och-mat/": {
+    "opinions": [
+      "Vänsterpartiet anser att Sverige ska vara mer självförsörjande på livsmedel. Vi vill stärka stödet till ekologiskt jordbruk och för att produktion, förädling och distribution av mat ska ske närmare konsumenten."
+    ],
+    "title": "Jordbruk och mat",
+    "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/jordbruk-och-mat/",
+    "fetchDate": "2023-09-17T17:52:38.192Z",
+    "party": "v",
+    "subject": "Jordbruk, Jakt och Fiske"
+  },
+  "https://www.vansterpartiet.se/var-politik/politik-a-o/jobb-och-arbetsloshet/": {
+    "opinions": [
+      "Den högsta dagpenningen och grundbeloppet höjs. ",
+      "Ersättningsnivån höjs till 80 procent för hela ersättningsperioden samt för tid med aktivitetsstöd, ",
+      "Kvalificerings- och ersättningsvillkoren förbättras och studerandevillkoret återinförs ",
+      "A-kassans ersättningsbelopp indexeras så att de kopplas till den allmänna löneutvecklingen. "
+    ],
+    "title": "Jobb och arbetslöshet",
+    "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/jobb-och-arbetsloshet/",
+    "fetchDate": "2023-09-17T17:52:37.932Z",
+    "party": "v",
+    "subject": "Jobb"
+  },
+  "https://www.vansterpartiet.se/var-politik/politik-a-o/klimat/": {
+    "opinions": [
+      "Genomföra ett massivt investeringsprogram för klimatet på 700 miljarder kronor under 10 år för att snabbt ställa om transporter, energi och bostäder.",
+      "Införa en statlig subvention på 50 procent av biljettpriset i kollektivtrafiken. Detta för att göra klimatsmarta alternativ till bilism mer tillgängliga.",
+      "Inrätta en grön omställningsfond där staten möjliggör investeringar för omställning till fossilfria företag genom överföring av medel från klimatbelastande produktion.",
+      "Inrätta en grön statlig investeringsbank med minst 100 miljarder kronor i kapital där både stora och små företag kunna låna pengar för gröna investeringar till låg ränta.",
+      "Fasa ut klimatskadliga subventioner och istället lägga pengarna på att bygga ett hållbarare Sverige.",
+      "Ge konkreta direktiv till våra AP-fonder för fossilfria pensioner.",
+      "Att det alltid ska vara billigare att ta det klimatvänliga alternativet, exempelvis att ta tåget istället för att flyga. Därför är vi för en träffsäker vägslitageavgift för tunga lastbilar och progressiv flygskatt. Inkomsterna från dessa skatter ska gå till investeringar för billigare och bättre miljövänliga resor och transporter.",
+      "Sverige bör anta klimatmål om nollutsläpp senast år 2035.",
+      "Öka anslagen till de internationella klimatfonderna samt införa ett nytt klimatbistånd bestående av nya medel. Klimatbiståndet ska inte konkurrera med det ordinarie biståndet.",
+      "Ge en statlig konverteringspremie till de som ställer om sin begagnade fossildrivna bil till klimatvänlig drift.",
+      "Investera fem miljarder extra varje år på att skydda biologisk mångfald och återställa uttorkade våtmarker"
+    ],
+    "title": "Klimat",
+    "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/klimat/",
+    "fetchDate": "2023-09-17T17:52:38.088Z",
+    "party": "v",
+    "subject": "Miljö och klimat"
+  },
+  "https://www.vansterpartiet.se/var-politik/politik-a-o/kollektivtrafik/": {
+    "opinions": [
+      "För klimatets skull behöver det bli lättare, bättre och billigare att åka kollektivt. Vänsterpartiet vill satsa mer på kollektivtrafiken så att den är billig eller gratis och fungerar bra i hela landet."
+    ],
+    "title": "Kollektivtrafik",
+    "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/kollektivtrafik/",
+    "fetchDate": "2023-09-17T17:52:37.712Z",
+    "party": "v",
+    "subject": "Infrastruktur och Trafik"
+  },
+  "https://www.vansterpartiet.se/var-politik/politik-a-o/krisberedskap-och-samhallsskydd/": {
+    "opinions": [
+      "Idag är klimatförändringarna det allvarligaste hotet mot den globala säkerheten. Torka, översvämningar och bränder utgör både akuta hot och är orsaker till krig och konflikter."
+    ],
+    "title": "Krisberedskap och samhällsskydd",
+    "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/krisberedskap-och-samhallsskydd/",
+    "fetchDate": "2023-09-17T17:52:38.267Z",
+    "party": "v",
+    "subject": "Försvar"
+  },
+  "https://www.vansterpartiet.se/var-politik/politik-a-o/kultur/": {
+    "opinions": [
+      "Kultur ska vara till för alla, inte bara en lyx för några få. Den ska vara lätt att uppleva och att utöva oavsett var i landet man bor eller vem man är."
+    ],
+    "title": "Kultur",
+    "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/kultur/",
+    "fetchDate": "2023-09-17T17:52:41.113Z",
+    "party": "v",
+    "subject": "Kultur, media, och idrott"
+  },
+  "https://www.vansterpartiet.se/var-politik/politik-a-o/karnkraft/": {
+    "opinions": [
+      "Vänsterpartiet vill avveckla kärnkraften så fort som möjligt eftersom den är en dyr, smutsig och osäker energikälla."
+    ],
+    "title": "Kärnkraft",
+    "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/karnkraft/",
+    "fetchDate": "2023-09-17T17:52:37.233Z",
+    "party": "v",
+    "subject": "Energi"
+  },
+  "https://www.vansterpartiet.se/var-politik/politik-a-o/kriminalitet-och-kriminalvard/": {
+    "opinions": [
+      "Vänsterpartiet arbetar för ett samhälle där ingen har anledning att se kriminalitet som en lösning. Vi vill ge alla barn en uppväxt som ger dem möjligheter i livet, från förskolan till skolan och det första jobbet. Det är nödvändigt för att minska kriminaliteten och se till att så få som möjligt drabbas av brott."
+    ],
+    "title": "Kriminalitet och kriminalvård",
+    "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/kriminalitet-och-kriminalvard/",
+    "fetchDate": "2023-09-17T17:52:41.267Z",
+    "party": "v",
+    "subject": "Lag och rätt"
+  },
+  "https://www.vansterpartiet.se/var-politik/politik-a-o/landsbygd/": {
+    "opinions": [
+      "Sverige ska vara ett land som håller ihop. Våra gemensamma rikedomar skapas av hela landets resurser och hela landets arbete. Då ska frukterna av det arbetet också komma hela landet till del."
+    ],
+    "title": "Landsbygd",
+    "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/landsbygd/",
+    "fetchDate": "2023-09-17T17:52:36.261Z",
+    "party": "v",
+    "subject": "Landsbygd"
+  },
+  "https://www.vansterpartiet.se/var-politik/politik-a-o/lss-personlig-assistans/": {
+    "opinions": [
+      "Vår gemensamma välfärd ska skapa frihet för alla, ge oss möjlighet att leva goda liv. Alla människor har lika värde och alla människor har kunskaper, förmågor och erfarenheter som är viktiga för samhället. Alla människor, oavsett funktionsvariation, ska ha samma möjlighet till ett gott liv som alla andra."
+    ],
+    "title": "LSS/Personlig assistans",
+    "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/lss-personlig-assistans/",
+    "fetchDate": "2023-09-17T17:52:40.025Z",
+    "party": "v",
+    "subject": "Vård och Omsorg"
+  },
+  "https://www.vansterpartiet.se/var-politik/politik-a-o/miljo/": {
+    "opinions": [
+      "För oss är miljön viktigare än vinstintresset. Utarmningen av den biologiska mångfalden, klimatkrisen och andra allvarliga miljöproblem gör att vi snabbt måste ställa om vårt samhälle."
+    ],
+    "title": "Miljö",
+    "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/miljo/",
+    "fetchDate": "2023-09-17T17:52:35.341Z",
+    "party": "v",
+    "subject": "Miljö och klimat"
+  },
+  "https://www.vansterpartiet.se/var-politik/politik-a-o/monarki/": {
+    "opinions": [
+      "Vänsterpartiet vill avskaffa monarkin. Till dess att det sker kräver vi att anslaget till kungahuset minskar, att utgifterna redovisas samt att kungens åtalsimmunitet avskaffas."
+    ],
+    "title": "Monarki",
+    "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/monarki/",
+    "fetchDate": "2023-09-17T17:52:36.025Z",
+    "party": "v",
+    "subject": "Demokrati"
+  },
+  "https://www.vansterpartiet.se/var-politik/politik-a-o/mans-vald-mot-kvinnor/": {
+    "opinions": [
+      "Mäns våld är det grövsta uttrycket för den ojämlika fördelningen av makt mellan könen. Många kvinnor har antingen egna erfarenheter av fysisk, psykisk eller sexuell misshandel, eller känner någon som har det."
+    ],
+    "title": "Mäns våld mot kvinnor",
+    "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/mans-vald-mot-kvinnor/",
+    "fetchDate": "2023-09-17T17:52:36.618Z",
+    "party": "v",
+    "subject": "Lag och rätt"
+  },
+  "https://www.vansterpartiet.se/var-politik/politik-a-o/marknadsskolan/": {
+    "opinions": [
+      "En gång i tiden var svensk skola känd för att vara världens mest jämlika. I takt med att marknadsexperimenten i välfärden har gjort frammarsch och den demokratiska styrningen förvandlats till marknadsstyrning så har samhället förändrats. Elev blev ”kund”, skola blev ”marknad” och utbildning en ”vara” i det svenska marknadsexperimentet. Vänsterpartiet ställde inte upp på detta när det infördes och vi ställer inte upp på det i dag. Marknadsskolan behöver avskaffas om den svenska skolan återigen ska bli en av världens bästa."
+    ],
+    "title": "Marknadsskolan",
+    "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/marknadsskolan/",
+    "fetchDate": "2023-09-17T17:52:37.840Z",
+    "party": "v",
+    "subject": "Utbildning"
+  },
+  "https://www.vansterpartiet.se/var-politik/politik-a-o/nato/": {
+    "opinions": [
+      "Vänsterpartiet säger nej till ett svenskt Natomedlemskap. Militär alliansfrihet är det säkraste för Sverige och Sveriges befolkning."
+    ],
+    "title": "Nato",
+    "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/nato/",
+    "fetchDate": "2023-09-17T17:52:36.691Z",
+    "party": "v",
+    "subject": "Försvar"
+  },
+  "https://www.vansterpartiet.se/var-politik/politik-a-o/penningpolitik/": {
+    "opinions": [
+      "Riksbankens penningpolitik styrs av ett inflationsmål som innebär att inflationen ska ligga på omkring 2 procent. Sedan inflationsmålet infördes har arbetslösheten i genomsnitt legat på ca 8 procent. Vi menar att detta visar att inflationsmålet bör kompletteras med ett sysselsättningsmål. Detta mål ska inte vara underordnat inflationsmålet."
+    ],
+    "title": "Penningpolitik",
+    "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/penningpolitik/",
+    "fetchDate": "2023-09-17T17:52:40.809Z",
+    "party": "v",
+    "subject": "Ekonomi och Skatter"
+  },
+  "https://www.vansterpartiet.se/var-politik/politik-a-o/pension/": {
+    "opinions": [
+      "Alla människor ska kunna leva på sin pension, inte bara de som varit höginkomsttagare. Därför vill Vänsterpartiet att det offentliga ska ta ett större ansvar för vår gemensamma välfärd och inkomsttrygghet. Sveriges pensionssparare och pensionärer ska inte vara beroende att privata lösningar för ekonomisk trygghet vid arbetslivets slut. Det är politikens ansvar att du får en trygg pension."
+    ],
+    "title": "Pension",
+    "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/pension/",
+    "fetchDate": "2023-09-17T17:52:36.492Z",
+    "party": "v",
+    "subject": "Äldrepolitik"
+  },
+  "https://www.vansterpartiet.se/var-politik/politik-a-o/politikerlon-och-partiskatt/": {
+    "opinions": [
+      "Många politiker har idag inkomster som de flesta i Sverige bara kan drömma om. Till exempel tjänar de flesta partiledarna i andra partier mellan cirka 100 000 och 170 000 kronor i månaden. För att inte klyftan ska bli för stor mellan de folkvalda och folket de representerar vill Vänsterpartiet att riksdagsledamöternas arvoden sänks."
+    ],
+    "title": "Politikerlön och partiskatt",
+    "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/politikerlon-och-partiskatt/",
+    "fetchDate": "2023-09-17T17:52:41.393Z",
+    "party": "v",
+    "subject": "Demokrati"
+  },
+  "https://www.vansterpartiet.se/var-politik/politik-a-o/psykisk-ohalsa/": {
+    "opinions": [
+      "Psykisk ohälsa kan drabba vem som helst. Därför måste alla som drabbas få en bra vård, inte bara de som har råd att betala psykologsamtal ur egen ficka."
+    ],
+    "title": "Psykisk ohälsa",
+    "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/psykisk-ohalsa/",
+    "fetchDate": "2023-09-17T17:52:36.159Z",
+    "party": "v",
+    "subject": "Vård och Omsorg"
+  },
+  "https://www.vansterpartiet.se/var-politik/politik-a-o/polisen/": {
+    "opinions": [
+      "Polisen är central för upprätthållandet av rättsstaten. Därför har det stor betydelse att myndigheten är en attraktiv arbetsplats som tar väl hand om sina anställda."
+    ],
+    "title": "Polisen",
+    "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/polisen/",
+    "fetchDate": "2023-09-17T17:52:40.308Z",
+    "party": "v",
+    "subject": "Lag och rätt"
+  },
+  "https://www.vansterpartiet.se/var-politik/politik-a-o/rut-och-rot/": {
+    "opinions": [
+      "Vänsterpartiet arbetar för att ekonomin ska fungera för alla – inte bara några få. Idag finns flera avdrag och skattereduktioner som i stor utsträckning går till de med höga inkomster. Dit hör RUT- och ROT-avdragen samt ränteavdragen."
+    ],
+    "title": "RUT och ROT",
+    "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/rut-och-rot/",
+    "fetchDate": "2023-09-17T17:52:37.788Z",
+    "party": "v",
+    "subject": "Ekonomi och Skatter"
+  },
+  "https://www.vansterpartiet.se/var-politik/politik-a-o/religiosa-friskolor/": {
+    "opinions": [
+      "Religiösa friskolor gör att elever med olika bakgrund mer sällan möts i en gemensam skola. Det förstärker segregationen."
+    ],
+    "title": "Religiösa friskolor",
+    "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/religiosa-friskolor/",
+    "fetchDate": "2023-09-17T17:52:37.722Z",
+    "party": "v",
+    "subject": "Utbildning"
+  },
+  "https://www.vansterpartiet.se/var-politik/politik-a-o/ranteavdraget/": {
+    "opinions": [
+      "Ränteavdragen har bidragit till att blåsa upp bostadspriserna och ger en orättvis fördelning."
+    ],
+    "title": "Ränteavdraget",
+    "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/ranteavdraget/",
+    "fetchDate": "2023-09-17T17:52:40.611Z",
+    "party": "v",
+    "subject": "Ekonomi och Skatter"
+  },
+  "https://www.vansterpartiet.se/var-politik/politik-a-o/sjukforsakringen/": {
+    "opinions": [
+      "Alla kan bli sjuka. Alla har därför intresse av en bra sjukförsäkring."
+    ],
+    "title": "Sjukförsäkringen",
+    "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/sjukforsakringen/",
+    "fetchDate": "2023-09-17T17:52:35.458Z",
+    "party": "v",
+    "subject": "Ekonomi och Skatter"
+  },
+  "https://www.vansterpartiet.se/var-politik/politik-a-o/sjukvard/": {
+    "opinions": [
+      "Alla har rätt till en bra och tillgänglig sjukvård som är anpassad efter den enskildes behov. Vänsterpartiet värnar en vård som finns där i alla delar av livet och som är tillgänglig över hela landet. I ett rättvist Sverige ges vård efter behov, inte först till den som har en privat sjukvårdsförsäkring."
+    ],
+    "title": "Sjukvård",
+    "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/sjukvard/",
+    "fetchDate": "2023-09-17T17:52:35.759Z",
+    "party": "v",
+    "subject": "Vård och Omsorg"
+  },
+  "https://www.vansterpartiet.se/var-politik/politik-a-o/skatteflykt/": {
+    "opinions": [
+      "Skatteflykt är ett stort samhällsproblem. Stora resurser försvinner och det blir vi andra som får stå för notan. Lågt räknat går Sverige årligen miste om ca 45 miljarder kronor i uteblivna skatteintäkter."
+    ],
+    "title": "Skatteflykt",
+    "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/skatteflykt/",
+    "fetchDate": "2023-09-17T17:52:36.418Z",
+    "party": "v",
+    "subject": "Lag och rätt"
+  },
+  "https://www.vansterpartiet.se/var-politik/politik-a-o/skattepolitik/": {
+    "opinions": [
+      "Ingen som tjänar under 43 000 kr/mån får höjd skatt med vår politik",
+      "Den som tjänar 45 000 kr/mån får höjd skatt med ca 100 kr/mån",
+      "Den som tjänar 70 000 kr/mån får höjd skatt med ca 2 500 kr/mån",
+      "Lika skatt på lika inkomst, vilket innebär sänkt skatt för sjuka, arbetslösa m.fl.",
+      "Skattereduktion för avgift till fackförening.",
+      "Ta bort skattesubventioner till lönsamma företag.",
+      "Avskaffa energiskatteavdraget för datorhallar.",
+      "En statlig fastighetsskatt införs på villor med ett marknadsvärde över 10 miljoner kronor, vilket rör cirka 3,5 procent av den vuxna befolkningen. Begränsningsregel så ingen betalar mer än 4 procent av sin inkomst.",
+      "Utdelning och kapitalvinst från onoterade aktier ska beskattas med 30 procent.",
+      "Utdelning och kapitalvinst från fåmansbolag ska beskattas med 30 procent."
+    ],
+    "title": "Skattepolitik",
+    "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/skattepolitik/",
+    "fetchDate": "2023-09-17T17:52:35.678Z",
+    "party": "v",
+    "subject": "Ekonomi och Skatter"
+  },
+  "https://www.vansterpartiet.se/var-politik/politik-a-o/skolan/": {
+    "opinions": [
+      "Svensk skola ska vara jämlik, alla barn och unga ska ges samma rätt till utbildning."
+    ],
+    "title": "Skolan",
+    "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/skolan/",
+    "fetchDate": "2023-09-17T17:52:41.415Z",
+    "party": "v",
+    "subject": "Utbildning"
+  },
+  "https://www.vansterpartiet.se/var-politik/politik-a-o/socialpolitik/": {
+    "opinions": [
+      "Alla har rätt till ett skyddsnät som fångar upp oss när sjukdom eller arbetslöshet gör att vi faller. Det ska inte bara finnas för dem som har pengar eller anhöriga som kämpar för dem. Ett jämlikt samhälle med få människor som lever i utsatthet är bra för alla."
+    ],
+    "title": "Socialpolitik",
+    "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/socialpolitik/",
+    "fetchDate": "2023-09-17T17:52:41.065Z",
+    "party": "v",
+    "subject": "Jämställdhet och diskriminering"
+  },
+  "https://www.vansterpartiet.se/var-politik/politik-a-o/statlig-folkbank/": {
+    "opinions": [
+      "Den svenska bankmarknaden har en rad problem. Fyra storbanker dominerar marknaden och konkurrensen är generellt sett bristfällig."
+    ],
+    "title": "Statlig folkbank",
+    "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/statlig-folkbank/",
+    "fetchDate": "2023-09-17T17:52:36.109Z",
+    "party": "v",
+    "subject": "Ekonomi och Skatter"
+  },
+  "https://www.vansterpartiet.se/var-politik/politik-a-o/sexuella-overgrepp-och-sexkop/": {
+    "opinions": [
+      "Vi står bakom samtyckeslagen som trädde i kraft den 1 juli 2018. Vänsterpartiet hade sedan länge drivit kravet om att sexualbrottslagstiftningen ska baseras på samtycke istället för att det ska ha förekommit våld, hot eller ett otillbörligt utnyttjande av att offret befunnit sig i en särskilt utsatt situation, för att en gärning ska betecknas som våldtäkt. Det var en stor feministisk seger när riksdagen röstade ja till samtyckeslagen."
+    ],
+    "title": "Sexuella övergrepp och sexköp",
+    "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/sexuella-overgrepp-och-sexkop/",
+    "fetchDate": "2023-09-17T17:52:40.637Z",
+    "party": "v",
+    "subject": "Lag och rätt"
+  },
+  "https://www.vansterpartiet.se/var-politik/politik-a-o/strandskyddet/": {
+    "opinions": [
+      "Strandskyddet behövs för att vi alla ska ha tillgång till sjöar och vattendrag."
+    ],
+    "title": "Strandskyddet",
+    "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/strandskyddet/",
+    "fetchDate": "2023-09-17T17:52:36.658Z",
+    "party": "v",
+    "subject": "Miljö och klimat"
+  },
+  "https://www.vansterpartiet.se/var-politik/politik-a-o/sprak-och-integration/": {
+    "opinions": [
+      "Det är viktigt att nyanlända får bra möjligheter att snabbt lära sig svenska. Det bör framför allt ske genom att förbättra språkundervisningen. SFI, Svenska för invandrare, behöver få mer resurser."
+    ],
+    "title": "Språk och integration",
+    "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/sprak-och-integration/",
+    "fetchDate": "2023-09-17T17:52:36.307Z",
+    "party": "v",
+    "subject": "Migration och Integration"
+  },
+  "https://www.vansterpartiet.se/var-politik/politik-a-o/tandvard/": {
+    "opinions": [
+      "Alla ska ha råd att ha bra tänder, inte bara de som kan betala dyra behandlingar. Tänderna är en del av kroppen och bör på sikt ingå i sjukvården. Idag har tandhälsan blivit en klassmarkör."
+    ],
+    "title": "Tandvård",
+    "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/tandvard/",
+    "fetchDate": "2023-09-17T17:52:36.387Z",
+    "party": "v",
+    "subject": "Vård och Omsorg"
+  },
+  "https://www.vansterpartiet.se/var-politik/politik-a-o/terrorism/": {
+    "opinions": [
+      "Våldsbejakande extremism och terrorism är hot mot grundläggande demokratiska värden och det demokratiska samhället. Vi måste ta det på största allvar, oavsett om det sker i Syrien, Paris, Stockholm eller på nätet."
+    ],
+    "title": "Terrorism",
+    "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/terrorism/",
+    "fetchDate": "2023-09-17T17:52:35.490Z",
+    "party": "v",
+    "subject": "Försvar"
+  },
+  "https://www.vansterpartiet.se/var-politik/politik-a-o/tjanstemannaansvar/": {
+    "opinions": [
+      "Vår utgångspunkt är att vi inte vill återinföra tjänstemannaansvaret i samma form som det såg ut tidigare."
+    ],
+    "title": "Tjänstemannaansvar",
+    "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/tjanstemannaansvar/",
+    "fetchDate": "2023-09-17T17:52:35.477Z",
+    "party": "v",
+    "subject": "Lag och rätt"
+  },
+  "https://www.vansterpartiet.se/var-politik/politik-a-o/utrikespolitik/": {
+    "opinions": [
+      "Vänsterpartiets utrikespolitik strävar efter att skapa en rättvisare och jämlikare värld. Vi vill jämna ut klyftorna mellan såväl fattiga och rika människor och länder som mellan kvinnor och män genom en mer rättvis global världsordning."
+    ],
+    "title": "Utrikespolitik",
+    "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/utrikespolitik/",
+    "fetchDate": "2023-09-17T17:52:40.407Z",
+    "party": "v",
+    "subject": "Utrikes- och biståndsfrågor"
+  },
+  "https://www.vansterpartiet.se/var-politik/politik-a-o/vapenexport/": {
+    "opinions": [
+      "Vänsterpartiet vill att Sverige ska vara ett land som konsekvent står upp för demokrati och mänskliga rättigheter, samt aktivt och konsekvent arbetar för fred och nedrustning. Därför vill vi förbjuda vapenexport till diktaturer, krigförande stater och regimer som begår grova och omfattande brott mot de mänskliga rättigheterna."
+    ],
+    "title": "Vapenexport",
+    "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/vapenexport/",
+    "fetchDate": "2023-09-17T17:52:36.228Z",
+    "party": "v",
+    "subject": "Utrikes- och biståndsfrågor"
+  },
+  "https://www.vansterpartiet.se/var-politik/politik-a-o/vindkraft/": {
+    "opinions": [
+      "Elbehovet väntas öka kraftigt då transporternas och industrins klimatomställning sker genom elektrifiering. Samtidigt vill Vänsterpartiet ställa om energisystemet så att energiproduktionen blir helt förnybar."
+    ],
+    "title": "Vindkraft",
+    "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/vindkraft/",
+    "fetchDate": "2023-09-17T17:52:35.708Z",
+    "party": "v",
+    "subject": "Energi"
+  },
+  "https://www.vansterpartiet.se/var-politik/politik-a-o/vinster-i-valfarden/": {
+    "opinions": [
+      "När vi går till vårdcentralen vill vi vara trygga med att vi bemöts utifrån våra behov, inte utifrån hur lönsamma vi är."
+    ],
+    "title": "Vinster i välfärden",
+    "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/vinster-i-valfarden/",
+    "fetchDate": "2023-09-17T17:52:37.084Z",
+    "party": "v",
+    "subject": "Trygghetssystem och Välfärd"
+  },
+  "https://www.vansterpartiet.se/var-politik/politik-a-o/valfard/": {
+    "opinions": [
+      "Att välfärden fungerar är en förutsättning för många människors frihet. Det ska gå att lita på att ditt barn möter trygghet i skolan, att dina föräldrar får värme och omsorg på äldreboendet och på att du får bästa möjliga vård när du mår dåligt."
+    ],
+    "title": "Välfärden",
+    "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/valfard/",
+    "fetchDate": "2023-09-17T17:52:38.805Z",
+    "party": "v",
+    "subject": "Trygghetssystem och Välfärd"
+  },
+  "https://www.vansterpartiet.se/var-politik/politik-a-o/aldreomsorg/": {
+    "opinions": [
+      "Äldreomsorgen berör oss alla. Antingen är vi själva äldre och befinner oss i äldreomsorgen, vi kanske arbetar där, eller så kommer vi i många fall förr eller senare att hamna där."
+    ],
+    "title": "Äldreomsorg",
+    "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/aldreomsorg/",
+    "fetchDate": "2023-09-17T17:52:37.457Z",
+    "party": "v",
+    "subject": "Äldrepolitik"
+  }
+}

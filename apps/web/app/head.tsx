@@ -96,9 +96,6 @@ export default function Head() {
           <Script
             id="ads-init"
             async
-            onError={(e) => {
-              console.error("Ads failed to load", e);
-            }}
             strategy="afterInteractive"
             src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT_ID}`}
             crossOrigin="anonymous"
@@ -106,17 +103,11 @@ export default function Head() {
           {/* Global site tag (gtag.js) - Google Analytics  */}
           <Script
             strategy="afterInteractive"
-            onError={(e) => {
-              console.error("gtag failed to load", e);
-            }}
             src={`https://www.googletagmanager.com/gtag/js?id=${gtag.GA_TRACKING_ID}`}
           />
           <Script
             id="gtag-init"
             strategy="afterInteractive"
-            onError={(e) => {
-              console.error("gtag failed to load", e);
-            }}
             dangerouslySetInnerHTML={{
               __html: `
               window.dataLayer = window.dataLayer || [];

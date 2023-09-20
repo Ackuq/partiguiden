@@ -3,7 +3,7 @@ import { Roboto } from "next/font/google";
 import type { PropsWithChildren } from "react";
 import Head from "./head";
 import Footer from "./footer";
-import Header from "./header";
+import Header from "@components/header/header";
 import { ThemeProvider } from "@components/providers/theme-provider";
 
 const roboto = Roboto({
@@ -15,10 +15,10 @@ const roboto = Roboto({
 
 export default function RootLayout({ children }: PropsWithChildren) {
   return (
-    <html lang="sv">
+    <html lang="sv" suppressHydrationWarning>
       <Head />
       <body
-        className={`${roboto.className} bg-background-light dark:bg-background-dark text-font-light dark:text-font-dark flex min-h-screen flex-col shadow-2xl`}
+        className={`${roboto.className} bg-background-light dark:bg-background-dark text-font-light dark:text-font-dark flex min-h-screen flex-col shadow-sm`}
       >
         <ThemeProvider attribute="class">
           <Header />

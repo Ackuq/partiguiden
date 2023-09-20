@@ -25,6 +25,7 @@ const config: Config = {
             light: "#339388",
           },
           DEFAULT: "#00796b",
+          light: "#80cbc4",
         },
         background: {
           elevated: {
@@ -34,9 +35,9 @@ const config: Config = {
               200: colors.slate[700],
             },
             light: {
-              DEFAULT: colors.slate[200],
-              100: colors.slate[200],
-              200: colors.slate[300],
+              DEFAULT: colors.slate[100],
+              100: colors.slate[100],
+              200: colors.slate[200],
             },
           },
           dark: colors.slate[950],
@@ -50,7 +51,7 @@ const config: Config = {
       },
       minWidth: {
         screen: "100vw",
-        modal: "35rem",
+        "tab-link": "90px",
       },
       minHeight: {
         screen: [

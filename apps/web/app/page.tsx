@@ -10,7 +10,7 @@ export const metadata = {
 
 function PageTitleContainer() {
   return (
-    <h2 className="bg-primary-elevated-light dark:bg-primary-elevated-dark mb-4 py-6 text-center text-3xl leading-10 text-white shadow-lg">
+    <h2 className="bg-primary-elevated-light dark:bg-primary-elevated-dark mb-4 py-6 text-center text-xl font-light leading-10 text-white shadow-sm sm:text-3xl">
       Hur vill Sveriges partier förbättra
       <br />
       <Typed
@@ -24,6 +24,7 @@ function PageTitleContainer() {
   );
 }
 
+// TODO: Fetch this from google
 const featured = [
   { id: "ekonomi-och-skatter", name: "Ekonomi och Skatter" },
   { id: "lag-och-ratt", name: "Lag och rätt" },
@@ -37,7 +38,7 @@ export default function IndexPage() {
       <PageTitleContainer />
       <div className="container grid gap-4">
         <BaseCard className="w-full">
-          <h3 className="pb-4 text-center text-3xl">
+          <h3 className="pb-4 text-center text-2xl sm:text-3xl">
             Vilket parti ska man rösta på?
           </h3>
           <p>
@@ -47,7 +48,7 @@ export default function IndexPage() {
           </p>
         </BaseCard>
         <BaseCard>
-          <h3 className="pb-4 text-center text-3xl">
+          <h3 className="pb-4 text-center text-2xl sm:text-3xl">
             Mest besökta ämnen de senaste 30 dagarna
           </h3>
           <div className="grid grid-cols-2 gap-6 text-center">
@@ -55,7 +56,7 @@ export default function IndexPage() {
               <Link
                 key={subject.id}
                 href={`/standpoints/${subject.id}`}
-                className="bg-background-elevated-light-200 dark:bg-background-elevated-dark-200 rounded py-3 shadow-lg transition-opacity hover:opacity-70"
+                className="bg-background-elevated-light dark:bg-background-elevated-dark-200 rounded py-3 shadow-md transition-opacity hover:opacity-70"
               >
                 {subject.name}
               </Link>

@@ -9,7 +9,8 @@
     "strictNullChecks": true,
     "paths": {
       "@app/*": ["./app/*"],
-      "@components/*": ["./components/*"]
+      "@components/*": ["./components/*"],
+      "@lib/*": ["./lib/*"]
     }
   },
   "exclude": ["node_modules"],

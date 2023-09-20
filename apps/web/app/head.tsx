@@ -35,7 +35,7 @@ export default function Head() {
       <meta property="og:image" content="/static/images/partiguiden_logo.png" />
       <meta
         name="theme-color"
-        content="#f8fafc"
+        content="#339388"
         media="(prefers-color-scheme: light)"
       />
       <meta

@@ -20,6 +20,7 @@ enum Party {
 }
 
 export interface Subject {
+  id: string;
   name: string;
   relatedSubjects: string[];
 }

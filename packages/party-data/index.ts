@@ -8,7 +8,7 @@ export interface PartyData {
 export type PartyDataWithoutPartyName = Omit<Standpoint, "party">;
 
 interface SubjectData {
-  [name: string]: Subject;
+  [id: string]: Subject;
 }
 
 const PARTIES_DIRECTORY = `${__dirname}/parties`;

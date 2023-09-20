@@ -8,7 +8,7 @@
     "url": "https://moderaterna.se/var-politik/a-kassa/",
     "fetchDate": "2023-09-17T17:52:40.912Z",
     "party": "m",
-    "subject": "Trygghetssystem och Välfärd"
+    "subject": "trygghetssystem-och-valfard"
   },
   "https://moderaterna.se/var-politik/abort/": {
     "opinions": [
@@ -21,7 +21,7 @@
     "url": "https://moderaterna.se/var-politik/abort/",
     "fetchDate": "2023-09-17T17:52:41.043Z",
     "party": "m",
-    "subject": "Vård och Omsorg"
+    "subject": "vard-och-omsorg"
   },
   "https://moderaterna.se/var-politik/arbetskraftsinvandring/": {
     "opinions": [
@@ -32,7 +32,7 @@
     "url": "https://moderaterna.se/var-politik/arbetskraftsinvandring/",
     "fetchDate": "2023-09-17T17:52:43.421Z",
     "party": "m",
-    "subject": "Migration och Integration"
+    "subject": "migration-och-integration"
   },
   "https://moderaterna.se/var-politik/langtidsarbetsloshet/": {
     "opinions": [
@@ -44,7 +44,7 @@
     "url": "https://moderaterna.se/var-politik/langtidsarbetsloshet/",
     "fetchDate": "2023-09-17T17:52:43.026Z",
     "party": "m",
-    "subject": "Jobb"
+    "subject": "jobb"
   },
   "https://moderaterna.se/var-politik/utsattabarn/": {
     "opinions": [
@@ -62,7 +62,7 @@
     "url": "https://moderaterna.se/var-politik/utsattabarn/",
     "fetchDate": "2023-09-17T17:52:43.427Z",
     "party": "m",
-    "subject": "Familjen"
+    "subject": "familjen"
   },
   "https://moderaterna.se/var-politik/bensinskattochdieselskatt/": {
     "opinions": [
@@ -73,7 +73,7 @@
     "url": "https://moderaterna.se/var-politik/bensinskattochdieselskatt/",
     "fetchDate": "2023-09-17T17:52:43.036Z",
     "party": "m",
-    "subject": "Infrastruktur och Trafik"
+    "subject": "infrastruktur-och-trafik"
   },
   "https://moderaterna.se/var-politik/hur-far-vi-ordning-pa-bidragsberoendet/": {
     "opinions": [
@@ -85,7 +85,7 @@
     "url": "https://moderaterna.se/var-politik/hur-far-vi-ordning-pa-bidragsberoendet/",
     "fetchDate": "2023-09-17T17:52:43.385Z",
     "party": "m",
-    "subject": "Jobb"
+    "subject": "jobb"
   },
   "https://moderaterna.se/var-politik/bidragsfusk/": {
     "opinions": [
@@ -98,7 +98,7 @@
     "url": "https://moderaterna.se/var-politik/bidragsfusk/",
     "fetchDate": "2023-09-17T17:52:40.955Z",
     "party": "m",
-    "subject": "Lag och rätt"
+    "subject": "lag-och-ratt"
   },
   "https://moderaterna.se/var-politik/bidragstak/": {
     "opinions": [
@@ -113,7 +113,7 @@
     "url": "https://moderaterna.se/var-politik/bidragstak/",
     "fetchDate": "2023-09-17T17:52:42.914Z",
     "party": "m",
-    "subject": "Ekonomi och Skatter"
+    "subject": "ekonomi-och-skatter"
   },
   "https://moderaterna.se/var-politik/bistand/": {
     "opinions": [
@@ -130,7 +130,7 @@
     "url": "https://moderaterna.se/var-politik/bistand/",
     "fetchDate": "2023-09-17T17:52:43.581Z",
     "party": "m",
-    "subject": "Utrikes- och biståndsfrågor"
+    "subject": "utrikes--och-bistandsfragor"
   },
   "https://moderaterna.se/var-politik/bolan/": {
     "opinions": [],
@@ -138,7 +138,7 @@
     "url": "https://moderaterna.se/var-politik/bolan/",
     "fetchDate": "2023-09-17T17:52:43.331Z",
     "party": "m",
-    "subject": "Bostad"
+    "subject": "bostad"
   },
   "https://moderaterna.se/var-politik/bostader/": {
     "opinions": [
@@ -152,7 +152,7 @@
     "url": "https://moderaterna.se/var-politik/bostader/",
     "fetchDate": "2023-09-17T17:52:43.394Z",
     "party": "m",
-    "subject": "Bostad"
+    "subject": "bostad"
   },
   "https://moderaterna.se/var-politik/forebygga-brott/": {
     "opinions": [
@@ -191,7 +191,7 @@
     "url": "https://moderaterna.se/var-politik/forebygga-brott/",
     "fetchDate": "2023-09-17T17:52:37.792Z",
     "party": "m",
-    "subject": "Lag och rätt"
+    "subject": "lag-och-ratt"
   },
   "https://moderaterna.se/var-politik/hur-far-vi-ordning-pa-brottsligheten/": {
     "opinions": [
@@ -208,7 +208,7 @@
     "url": "https://moderaterna.se/var-politik/hur-far-vi-ordning-pa-brottsligheten/",
     "fetchDate": "2023-09-17T17:52:41.068Z",
     "party": "m",
-    "subject": "Lag och rätt"
+    "subject": "lag-och-ratt"
   },
   "https://moderaterna.se/var-politik/brottsoffer/": {
     "opinions": [
@@ -225,7 +225,7 @@
     "url": "https://moderaterna.se/var-politik/brottsoffer/",
     "fetchDate": "2023-09-17T17:52:43.392Z",
     "party": "m",
-    "subject": "Lag och rätt"
+    "subject": "lag-och-ratt"
   },
   "https://moderaterna.se/var-politik/batliv/": {
     "opinions": [
@@ -237,7 +237,7 @@
     "url": "https://moderaterna.se/var-politik/batliv/",
     "fetchDate": "2023-09-17T17:52:42.788Z",
     "party": "m",
-    "subject": "Kultur, media, och idrott"
+    "subject": "kultur-media-och-idrott"
   },
   "https://moderaterna.se/var-politik/cancervard/": {
     "opinions": [
@@ -252,7 +252,7 @@
     "url": "https://moderaterna.se/var-politik/cancervard/",
     "fetchDate": "2023-09-17T17:52:38.461Z",
     "party": "m",
-    "subject": "Vård och Omsorg"
+    "subject": "vard-och-omsorg"
   },
   "https://moderaterna.se/var-politik/civilsamhallet/": {
     "opinions": [
@@ -271,7 +271,7 @@
     "url": "https://moderaterna.se/var-politik/civilsamhallet/",
     "fetchDate": "2023-09-17T17:52:43.525Z",
     "party": "m",
-    "subject": "Trygghetssystem och Välfärd"
+    "subject": "trygghetssystem-och-valfard"
   },
   "https://moderaterna.se/var-politik/hybridhot/": {
     "opinions": [
@@ -283,7 +283,7 @@
     "url": "https://moderaterna.se/var-politik/hybridhot/",
     "fetchDate": "2023-09-17T17:52:43.532Z",
     "party": "m",
-    "subject": "Försvar"
+    "subject": "forsvar"
   },
   "https://moderaterna.se/var-politik/demokrati/": {
     "opinions": [
@@ -304,7 +304,7 @@
     "url": "https://moderaterna.se/var-politik/demokrati/",
     "fetchDate": "2023-09-17T17:52:43.328Z",
     "party": "m",
-    "subject": "Demokrati"
+    "subject": "demokrati"
   },
   "https://moderaterna.se/var-politik/digitalisering/": {
     "opinions": [
@@ -317,7 +317,7 @@
     "url": "https://moderaterna.se/var-politik/digitalisering/",
     "fetchDate": "2023-09-17T17:52:41.318Z",
     "party": "m",
-    "subject": "IT och Mobiltelefoni"
+    "subject": "it-och-mobiltelefoni"
   },
   "https://moderaterna.se/var-politik/ekonomi-och-jobb/": {
     "opinions": [
@@ -335,7 +335,7 @@
     "url": "https://moderaterna.se/var-politik/ekonomi-och-jobb/",
     "fetchDate": "2023-09-17T17:52:36.608Z",
     "party": "m",
-    "subject": "Ekonomi och Skatter"
+    "subject": "ekonomi-och-skatter"
   },
   "https://moderaterna.se/var-politik/elpriser/": {
     "opinions": [
@@ -349,7 +349,7 @@
     "url": "https://moderaterna.se/var-politik/elpriser/",
     "fetchDate": "2023-09-17T17:52:40.878Z",
     "party": "m",
-    "subject": "Energi"
+    "subject": "energi"
   },
   "https://moderaterna.se/var-politik/energi/": {
     "opinions": [
@@ -375,7 +375,7 @@
     "url": "https://moderaterna.se/var-politik/energi/",
     "fetchDate": "2023-09-17T17:52:43.593Z",
     "party": "m",
-    "subject": "Energi"
+    "subject": "energi"
   },
   "https://moderaterna.se/var-politik/hur-far-vi-ordning-pa-energikrisen/": {
     "opinions": [
@@ -396,7 +396,7 @@
     "url": "https://moderaterna.se/var-politik/hur-far-vi-ordning-pa-energikrisen/",
     "fetchDate": "2023-09-17T17:52:43.033Z",
     "party": "m",
-    "subject": "Energi"
+    "subject": "energi"
   },
   "https://moderaterna.se/var-politik/eu/": {
     "opinions": [
@@ -408,7 +408,7 @@
     "url": "https://moderaterna.se/var-politik/eu/",
     "fetchDate": "2023-09-17T17:52:40.850Z",
     "party": "m",
-    "subject": "Utrikes- och biståndsfrågor"
+    "subject": "utrikes--och-bistandsfragor"
   },
   "https://moderaterna.se/var-politik/fastighetsskatten/": {
     "opinions": [],
@@ -416,7 +416,7 @@
     "url": "https://moderaterna.se/var-politik/fastighetsskatten/",
     "fetchDate": "2023-09-17T17:52:41.723Z",
     "party": "m",
-    "subject": "Bostad"
+    "subject": "bostad"
   },
   "https://moderaterna.se/var-politik/flerbarnstillagg/": {
     "opinions": [],
@@ -424,7 +424,7 @@
     "url": "https://moderaterna.se/var-politik/flerbarnstillagg/",
     "fetchDate": "2023-09-17T17:52:40.881Z",
     "party": "m",
-    "subject": "Familjen"
+    "subject": "familjen"
   },
   "https://moderaterna.se/var-politik/flyget/": {
     "opinions": [
@@ -436,7 +436,7 @@
     "url": "https://moderaterna.se/var-politik/flyget/",
     "fetchDate": "2023-09-17T17:52:43.559Z",
     "party": "m",
-    "subject": "Infrastruktur och Trafik"
+    "subject": "infrastruktur-och-trafik"
   },
   "https://moderaterna.se/var-politik/funktionsnedsattning-och-lss/": {
     "opinions": [
@@ -448,7 +448,7 @@
     "url": "https://moderaterna.se/var-politik/funktionsnedsattning-och-lss/",
     "fetchDate": "2023-09-17T17:52:40.678Z",
     "party": "m",
-    "subject": "Vård och Omsorg"
+    "subject": "vard-och-omsorg"
   },
   "https://moderaterna.se/var-politik/foretagande/": {
     "opinions": [
@@ -475,7 +475,7 @@
     "url": "https://moderaterna.se/var-politik/foretagande/",
     "fetchDate": "2023-09-17T17:52:40.668Z",
     "party": "m",
-    "subject": "Jobb"
+    "subject": "jobb"
   },
   "https://moderaterna.se/var-politik/forskola-och-forskoleklass/": {
     "opinions": [
@@ -489,7 +489,7 @@
     "url": "https://moderaterna.se/var-politik/forskola-och-forskoleklass/",
     "fetchDate": "2023-09-17T17:52:40.852Z",
     "party": "m",
-    "subject": "Utbildning"
+    "subject": "utbildning"
   },
   "https://moderaterna.se/var-politik/forsvar/": {
     "opinions": [
@@ -503,7 +503,7 @@
     "url": "https://moderaterna.se/var-politik/forsvar/",
     "fetchDate": "2023-09-17T17:52:40.876Z",
     "party": "m",
-    "subject": "Försvar"
+    "subject": "forsvar"
   },
   "https://moderaterna.se/var-politik/foraldraforsakring/": {
     "opinions": [
@@ -517,7 +517,7 @@
     "url": "https://moderaterna.se/var-politik/foraldraforsakring/",
     "fetchDate": "2023-09-17T17:52:40.673Z",
     "party": "m",
-    "subject": "Familjen"
+    "subject": "familjen"
   },
   "https://moderaterna.se/var-politik/gruvnaringen/": {
     "opinions": [
@@ -530,7 +530,7 @@
     "url": "https://moderaterna.se/var-politik/gruvnaringen/",
     "fetchDate": "2023-09-17T17:52:40.671Z",
     "party": "m",
-    "subject": "Infrastruktur och Trafik"
+    "subject": "infrastruktur-och-trafik"
   },
   "https://moderaterna.se/var-politik/gangkriminalitet/": {
     "opinions": [
@@ -543,7 +543,7 @@
     "url": "https://moderaterna.se/var-politik/gangkriminalitet/",
     "fetchDate": "2023-09-17T17:52:43.572Z",
     "party": "m",
-    "subject": "Lag och rätt"
+    "subject": "lag-och-ratt"
   },
   "https://moderaterna.se/var-politik/havochvatten/": {
     "opinions": [
@@ -558,7 +558,7 @@
     "url": "https://moderaterna.se/var-politik/havochvatten/",
     "fetchDate": "2023-09-17T17:52:43.230Z",
     "party": "m",
-    "subject": "Miljö och klimat"
+    "subject": "miljo-och-klimat"
   },
   "https://moderaterna.se/var-politik/hbtq/": {
     "opinions": [
@@ -586,7 +586,7 @@
     "url": "https://moderaterna.se/var-politik/hbtq/",
     "fetchDate": "2023-09-17T17:52:43.457Z",
     "party": "m",
-    "subject": "Jämställdhet och diskriminering"
+    "subject": "jamstalldhet-och-diskriminering"
   },
   "https://moderaterna.se/var-politik/hushallsekonomi/": {
     "opinions": [
@@ -615,7 +615,7 @@
     "url": "https://moderaterna.se/var-politik/hushallsekonomi/",
     "fetchDate": "2023-09-17T17:52:40.901Z",
     "party": "m",
-    "subject": "Konsumentpolitik"
+    "subject": "konsumentpolitik"
   },
   "https://moderaterna.se/var-politik/hastsport/": {
     "opinions": [
@@ -635,7 +635,7 @@
     "url": "https://moderaterna.se/var-politik/hastsport/",
     "fetchDate": "2023-09-17T17:52:36.519Z",
     "party": "m",
-    "subject": "Kultur, media, och idrott"
+    "subject": "kultur-media-och-idrott"
   },
   "https://moderaterna.se/var-politik/idrott/": {
     "opinions": [
@@ -651,7 +651,7 @@
     "url": "https://moderaterna.se/var-politik/idrott/",
     "fetchDate": "2023-09-17T17:52:43.449Z",
     "party": "m",
-    "subject": "Kultur, media, och idrott"
+    "subject": "kultur-media-och-idrott"
   },
   "https://moderaterna.se/var-politik/inbrott/": {
     "opinions": [
@@ -663,7 +663,7 @@
     "url": "https://moderaterna.se/var-politik/inbrott/",
     "fetchDate": "2023-09-17T17:52:41.004Z",
     "party": "m",
-    "subject": "Lag och rätt"
+    "subject": "lag-och-ratt"
   },
   "https://moderaterna.se/var-politik/infrastruktur/": {
     "opinions": [
@@ -683,7 +683,7 @@
     "url": "https://moderaterna.se/var-politik/infrastruktur/",
     "fetchDate": "2023-09-17T17:52:41.913Z",
     "party": "m",
-    "subject": "Infrastruktur och Trafik"
+    "subject": "infrastruktur-och-trafik"
   },
   "https://moderaterna.se/var-politik/integration/": {
     "opinions": [
@@ -705,7 +705,7 @@
     "url": "https://moderaterna.se/var-politik/integration/",
     "fetchDate": "2023-09-17T17:52:41.717Z",
     "party": "m",
-    "subject": "Migration och Integration"
+    "subject": "migration-och-integration"
   },
   "https://moderaterna.se/var-politik/migrationspolitik/": {
     "opinions": [
@@ -721,7 +721,7 @@
     "url": "https://moderaterna.se/var-politik/migrationspolitik/",
     "fetchDate": "2023-09-17T17:52:43.584Z",
     "party": "m",
-    "subject": "Migration och Integration"
+    "subject": "migration-och-integration"
   },
   "https://moderaterna.se/var-politik/isk-skatt/": {
     "opinions": [
@@ -732,7 +732,7 @@
     "url": "https://moderaterna.se/var-politik/isk-skatt/",
     "fetchDate": "2023-09-17T17:52:43.340Z",
     "party": "m",
-    "subject": "Ekonomi och Skatter"
+    "subject": "ekonomi-och-skatter"
   },
   "https://moderaterna.se/var-politik/jakt-och-viltvard/": {
     "opinions": [
@@ -745,7 +745,7 @@
     "url": "https://moderaterna.se/var-politik/jakt-och-viltvard/",
     "fetchDate": "2023-09-17T17:52:40.105Z",
     "party": "m",
-    "subject": "Jordbruk, Jakt och Fiske"
+    "subject": "jordbruk-jakt-och-fiske"
   },
   "https://moderaterna.se/var-politik/jordbruk/": {
     "opinions": [
@@ -760,7 +760,7 @@
     "url": "https://moderaterna.se/var-politik/jordbruk/",
     "fetchDate": "2023-09-17T17:52:40.949Z",
     "party": "m",
-    "subject": "Jordbruk, Jakt och Fiske"
+    "subject": "jordbruk-jakt-och-fiske"
   },
   "https://moderaterna.se/var-politik/jagareochsportskyttar/": {
     "opinions": [
@@ -782,7 +782,7 @@
     "url": "https://moderaterna.se/var-politik/jagareochsportskyttar/",
     "fetchDate": "2023-09-17T17:52:42.350Z",
     "party": "m",
-    "subject": "Jordbruk, Jakt och Fiske"
+    "subject": "jordbruk-jakt-och-fiske"
   },
   "https://moderaterna.se/var-politik/jamstalldhet/": {
     "opinions": [
@@ -796,7 +796,7 @@
     "url": "https://moderaterna.se/var-politik/jamstalldhet/",
     "fetchDate": "2023-09-17T17:52:43.271Z",
     "party": "m",
-    "subject": "Jämställdhet och diskriminering"
+    "subject": "jamstalldhet-och-diskriminering"
   },
   "https://moderaterna.se/var-politik/klimat/": {
     "opinions": [
@@ -807,7 +807,7 @@
     "url": "https://moderaterna.se/var-politik/klimat/",
     "fetchDate": "2023-09-17T17:52:41.605Z",
     "party": "m",
-    "subject": "Miljö och klimat"
+    "subject": "miljo-och-klimat"
   },
   "https://moderaterna.se/var-politik/krisberedskap/": {
     "opinions": [
@@ -821,7 +821,7 @@
     "url": "https://moderaterna.se/var-politik/krisberedskap/",
     "fetchDate": "2023-09-17T17:52:43.577Z",
     "party": "m",
-    "subject": "Försvar"
+    "subject": "forsvar"
   },
   "https://moderaterna.se/var-politik/kultur/": {
     "opinions": [
@@ -838,7 +838,7 @@
     "url": "https://moderaterna.se/var-politik/kultur/",
     "fetchDate": "2023-09-17T17:52:40.528Z",
     "party": "m",
-    "subject": "Kultur, media, och idrott"
+    "subject": "kultur-media-och-idrott"
   },
   "https://moderaterna.se/var-politik/karnkraft/": {
     "opinions": [
@@ -856,7 +856,7 @@
     "url": "https://moderaterna.se/var-politik/karnkraft/",
     "fetchDate": "2023-09-17T17:52:42.224Z",
     "party": "m",
-    "subject": "Energi"
+    "subject": "energi"
   },
   "https://moderaterna.se/var-politik/lag-och-ordning/": {
     "opinions": [
@@ -870,7 +870,7 @@
     "url": "https://moderaterna.se/var-politik/lag-och-ordning/",
     "fetchDate": "2023-09-17T17:52:39.345Z",
     "party": "m",
-    "subject": "Lag och rätt"
+    "subject": "lag-och-ratt"
   },
   "https://moderaterna.se/var-politik/landsbygd/": {
     "opinions": [
@@ -880,7 +880,7 @@
     "url": "https://moderaterna.se/var-politik/landsbygd/",
     "fetchDate": "2023-09-17T17:52:41.607Z",
     "party": "m",
-    "subject": "Landsbygd"
+    "subject": "landsbygd"
   },
   "https://moderaterna.se/var-politik/larare/": {
     "opinions": [
@@ -895,7 +895,7 @@
     "url": "https://moderaterna.se/var-politik/larare/",
     "fetchDate": "2023-09-17T17:52:43.414Z",
     "party": "m",
-    "subject": "Utbildning"
+    "subject": "utbildning"
   },
   "https://moderaterna.se/var-politik/miljo/": {
     "opinions": [
@@ -915,7 +915,7 @@
     "url": "https://moderaterna.se/var-politik/miljo/",
     "fetchDate": "2023-09-17T17:52:43.454Z",
     "party": "m",
-    "subject": "Miljö och klimat"
+    "subject": "miljo-och-klimat"
   },
   "https://moderaterna.se/var-politik/motorsport/": {
     "opinions": [
@@ -928,7 +928,7 @@
     "url": "https://moderaterna.se/var-politik/motorsport/",
     "fetchDate": "2023-09-17T17:52:43.544Z",
     "party": "m",
-    "subject": "Kultur, media, och idrott"
+    "subject": "kultur-media-och-idrott"
   },
   "https://moderaterna.se/var-politik/grov-kvinnofridskrankning/": {
     "opinions": [
@@ -940,7 +940,7 @@
     "url": "https://moderaterna.se/var-politik/grov-kvinnofridskrankning/",
     "fetchDate": "2023-09-17T17:52:41.805Z",
     "party": "m",
-    "subject": "Jämställdhet och diskriminering"
+    "subject": "jamstalldhet-och-diskriminering"
   },
   "https://moderaterna.se/var-politik/nato/": {
     "opinions": [],
@@ -948,7 +948,7 @@
     "url": "https://moderaterna.se/var-politik/nato/",
     "fetchDate": "2023-09-17T17:52:40.750Z",
     "party": "m",
-    "subject": "Försvar"
+    "subject": "forsvar"
   },
   "https://moderaterna.se/var-politik/pension/": {
     "opinions": [
@@ -959,7 +959,7 @@
     "url": "https://moderaterna.se/var-politik/pension/",
     "fetchDate": "2023-09-17T17:52:40.869Z",
     "party": "m",
-    "subject": "Äldrepolitik"
+    "subject": "aldrepolitik"
   },
   "https://moderaterna.se/var-politik/stark-svensk-polis/": {
     "opinions": [
@@ -974,7 +974,7 @@
     "url": "https://moderaterna.se/var-politik/stark-svensk-polis/",
     "fetchDate": "2023-09-17T17:52:43.500Z",
     "party": "m",
-    "subject": "Lag och rätt"
+    "subject": "lag-och-ratt"
   },
   "https://moderaterna.se/var-politik/psykisk-ohalsa/": {
     "opinions": [
@@ -990,7 +990,7 @@
     "url": "https://moderaterna.se/var-politik/psykisk-ohalsa/",
     "fetchDate": "2023-09-17T17:52:43.541Z",
     "party": "m",
-    "subject": "Vård och Omsorg"
+    "subject": "vard-och-omsorg"
   },
   "https://moderaterna.se/var-politik/regelforenklingar-for-foretag/": {
     "opinions": [
@@ -1003,7 +1003,7 @@
     "url": "https://moderaterna.se/var-politik/regelforenklingar-for-foretag/",
     "fetchDate": "2023-09-17T17:52:42.622Z",
     "party": "m",
-    "subject": "Näringsliv"
+    "subject": "naringsliv"
   },
   "https://moderaterna.se/var-politik/rut-avdraget/": {
     "opinions": [
@@ -1017,7 +1017,7 @@
     "url": "https://moderaterna.se/var-politik/rut-avdraget/",
     "fetchDate": "2023-09-17T17:52:42.049Z",
     "party": "m",
-    "subject": "Ekonomi och Skatter"
+    "subject": "ekonomi-och-skatter"
   },
   "https://moderaterna.se/var-politik/sjukforsakring/": {
     "opinions": [
@@ -1031,7 +1031,7 @@
     "url": "https://moderaterna.se/var-politik/sjukforsakring/",
     "fetchDate": "2023-09-17T17:52:42.447Z",
     "party": "m",
-    "subject": "Vård och Omsorg"
+    "subject": "vard-och-omsorg"
   },
   "https://moderaterna.se/var-politik/halso-och-sjukvard/": {
     "opinions": [
@@ -1046,7 +1046,7 @@
     "url": "https://moderaterna.se/var-politik/halso-och-sjukvard/",
     "fetchDate": "2023-09-17T17:52:40.828Z",
     "party": "m",
-    "subject": "Utrikes- och biståndsfrågor"
+    "subject": "utrikes--och-bistandsfragor"
   },
   "https://moderaterna.se/var-politik/skatter/": {
     "opinions": [
@@ -1057,7 +1057,7 @@
     "url": "https://moderaterna.se/var-politik/skatter/",
     "fetchDate": "2023-09-17T17:52:43.569Z",
     "party": "m",
-    "subject": "Ekonomi och Skatter"
+    "subject": "ekonomi-och-skatter"
   },
   "https://moderaterna.se/var-politik/skjutningar/": {
     "opinions": [],
@@ -1065,7 +1065,7 @@
     "url": "https://moderaterna.se/var-politik/skjutningar/",
     "fetchDate": "2023-09-17T17:52:37.271Z",
     "party": "m",
-    "subject": "Lag och rätt"
+    "subject": "lag-och-ratt"
   },
   "https://moderaterna.se/var-politik/skogen/": {
     "opinions": [
@@ -1084,7 +1084,7 @@
     "url": "https://moderaterna.se/var-politik/skogen/",
     "fetchDate": "2023-09-17T17:52:40.665Z",
     "party": "m",
-    "subject": "Miljö och klimat"
+    "subject": "miljo-och-klimat"
   },
   "https://moderaterna.se/var-politik/skola/": {
     "opinions": [
@@ -1112,7 +1112,7 @@
     "url": "https://moderaterna.se/var-politik/skola/",
     "fetchDate": "2023-09-17T17:52:43.554Z",
     "party": "m",
-    "subject": "Utbildning"
+    "subject": "utbildning"
   },
   "https://moderaterna.se/var-politik/socialtjanst-och-social-omsorg/": {
     "opinions": [
@@ -1124,7 +1124,7 @@
     "url": "https://moderaterna.se/var-politik/socialtjanst-och-social-omsorg/",
     "fetchDate": "2023-09-17T17:52:43.497Z",
     "party": "m",
-    "subject": "Familjen"
+    "subject": "familjen"
   },
   "https://moderaterna.se/var-politik/sprakkrav/": {
     "opinions": [
@@ -1136,7 +1136,7 @@
     "url": "https://moderaterna.se/var-politik/sprakkrav/",
     "fetchDate": "2023-09-17T17:52:41.320Z",
     "party": "m",
-    "subject": "Migration och Integration"
+    "subject": "migration-och-integration"
   },
   "https://moderaterna.se/var-politik/straff/": {
     "opinions": [
@@ -1149,7 +1149,7 @@
     "url": "https://moderaterna.se/var-politik/straff/",
     "fetchDate": "2023-09-17T17:52:41.815Z",
     "party": "m",
-    "subject": "Lag och rätt"
+    "subject": "lag-och-ratt"
   },
   "https://moderaterna.se/var-politik/studiero/": {
     "opinions": [
@@ -1162,7 +1162,7 @@
     "url": "https://moderaterna.se/var-politik/studiero/",
     "fetchDate": "2023-09-17T17:52:40.530Z",
     "party": "m",
-    "subject": "Utbildning"
+    "subject": "utbildning"
   },
   "https://moderaterna.se/var-politik/surrogatmoderskap/": {
     "opinions": [],
@@ -1170,7 +1170,7 @@
     "url": "https://moderaterna.se/var-politik/surrogatmoderskap/",
     "fetchDate": "2023-09-17T17:52:42.790Z",
     "party": "m",
-    "subject": "Vård och Omsorg"
+    "subject": "vard-och-omsorg"
   },
   "https://moderaterna.se/var-politik/svenskar-i-utlandet/": {
     "opinions": [],
@@ -1178,7 +1178,7 @@
     "url": "https://moderaterna.se/var-politik/svenskar-i-utlandet/",
     "fetchDate": "2023-09-17T17:52:43.523Z",
     "party": "m",
-    "subject": "Utrikes- och biståndsfrågor"
+    "subject": "utrikes--och-bistandsfragor"
   },
   "https://moderaterna.se/var-politik/terrorism/": {
     "opinions": [
@@ -1193,7 +1193,7 @@
     "url": "https://moderaterna.se/var-politik/terrorism/",
     "fetchDate": "2023-09-17T17:52:39.435Z",
     "party": "m",
-    "subject": "Försvar"
+    "subject": "forsvar"
   },
   "https://moderaterna.se/var-politik/tiggeriforbud/": {
     "opinions": [
@@ -1204,7 +1204,7 @@
     "url": "https://moderaterna.se/var-politik/tiggeriforbud/",
     "fetchDate": "2023-09-17T17:52:43.546Z",
     "party": "m",
-    "subject": "Lag och rätt"
+    "subject": "lag-och-ratt"
   },
   "https://moderaterna.se/var-politik/tillvaxt/": {
     "opinions": [
@@ -1216,7 +1216,7 @@
     "url": "https://moderaterna.se/var-politik/tillvaxt/",
     "fetchDate": "2023-09-17T17:52:43.404Z",
     "party": "m",
-    "subject": "Näringsliv"
+    "subject": "naringsliv"
   },
   "https://moderaterna.se/var-politik/ungdomsbrottslighet/": {
     "opinions": [
@@ -1230,7 +1230,7 @@
     "url": "https://moderaterna.se/var-politik/ungdomsbrottslighet/",
     "fetchDate": "2023-09-17T17:52:40.430Z",
     "party": "m",
-    "subject": "Lag och rätt"
+    "subject": "lag-och-ratt"
   },
   "https://moderaterna.se/var-politik/utrikespolitik/": {
     "opinions": [],
@@ -1238,7 +1238,7 @@
     "url": "https://moderaterna.se/var-politik/utrikespolitik/",
     "fetchDate": "2023-09-17T17:52:43.038Z",
     "party": "m",
-    "subject": "Utrikes- och biståndsfrågor"
+    "subject": "utrikes--och-bistandsfragor"
   },
   "https://moderaterna.se/var-politik/visitationszoner/": {
     "opinions": [
@@ -1248,7 +1248,7 @@
     "url": "https://moderaterna.se/var-politik/visitationszoner/",
     "fetchDate": "2023-09-17T17:52:42.574Z",
     "party": "m",
-    "subject": "Lag och rätt"
+    "subject": "lag-och-ratt"
   },
   "https://moderaterna.se/var-politik/vittnesskydd/": {
     "opinions": [
@@ -1260,7 +1260,7 @@
     "url": "https://moderaterna.se/var-politik/vittnesskydd/",
     "fetchDate": "2023-09-17T17:52:39.524Z",
     "party": "m",
-    "subject": "Lag och rätt"
+    "subject": "lag-och-ratt"
   },
   "https://moderaterna.se/var-politik/valdsbejakandeextremism/": {
     "opinions": [
@@ -1271,7 +1271,7 @@
     "url": "https://moderaterna.se/var-politik/valdsbejakandeextremism/",
     "fetchDate": "2023-09-17T17:52:41.433Z",
     "party": "m",
-    "subject": "Försvar"
+    "subject": "forsvar"
   },
   "https://moderaterna.se/var-politik/aldreomsorg/": {
     "opinions": [
@@ -1288,6 +1288,6 @@
     "url": "https://moderaterna.se/var-politik/aldreomsorg/",
     "fetchDate": "2023-09-17T17:52:40.957Z",
     "party": "m",
-    "subject": "Äldrepolitik"
+    "subject": "aldrepolitik"
   }
 }

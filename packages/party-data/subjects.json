@@ -1,146 +1,166 @@
 {
-  "Bostad": {
+  "bostad": {
+    "id": "bostad",
     "name": "Bostad",
-    "relatedSubjects": ["Energi", "Trygghetssystem och Välfärd"]
+    "relatedSubjects": ["energi", "trygghetssystem-och-valfard"]
   },
-  "Demokrati": {
+  "demokrati": {
+    "id": "demokrati",
     "name": "Demokrati",
     "relatedSubjects": [
-      "Lag och rätt",
-      "Trygghetssystem och Välfärd",
-      "Utrikes- och biståndsfrågor"
+      "lag-och-ratt",
+      "trygghetssystem-och-valfard",
+      "utrikes--och-bistandsfragor"
     ]
   },
-  "Ekonomi och Skatter": {
+  "ekonomi-och-skatter": {
+    "id": "ekonomi-och-skatter",
     "name": "Ekonomi och Skatter",
     "relatedSubjects": [
-      "Energi",
-      "Jobb",
-      "Konsumentpolitik",
-      "Lag och rätt",
-      "Näringsliv",
-      "Trygghetssystem och Välfärd"
+      "energi",
+      "jobb",
+      "konsumentpolitik",
+      "lag-och-ratt",
+      "naringsliv",
+      "trygghetssystem-och-valfard"
     ]
   },
-  "Energi": {
+  "energi": {
+    "id": "energi",
     "name": "Energi",
-    "relatedSubjects": ["Bostad", "Ekonomi och Skatter", "Landsbygd"]
+    "relatedSubjects": ["bostad", "ekonomi-och-skatter", "landsbygd"]
   },
-  "Europa": {
+  "europa": {
+    "id": "europa",
     "name": "Europa",
-    "relatedSubjects": ["Utrikes- och biståndsfrågor"]
+    "relatedSubjects": ["utrikes--och-bistandsfragor"]
   },
-  "Familjen": {
+  "familjen": {
+    "id": "familjen",
     "name": "Familjen",
-    "relatedSubjects": ["Trygghetssystem och Välfärd", "Utbildning"]
+    "relatedSubjects": ["trygghetssystem-och-valfard", "utbildning"]
   },
-  "Försvar": {
+  "forsvar": {
+    "id": "forsvar",
     "name": "Försvar",
-    "relatedSubjects": ["Lag och rätt", "Utrikes- och biståndsfrågor"]
+    "relatedSubjects": ["lag-och-ratt", "utrikes--och-bistandsfragor"]
   },
-  "Infrastruktur och Trafik": {
+  "infrastruktur-och-trafik": {
+    "id": "infrastruktur-och-trafik",
     "name": "Infrastruktur och Trafik",
     "relatedSubjects": []
   },
-  "IT och Mobiltelefoni": {
+  "it-och-mobiltelefoni": {
+    "id": "it-och-mobiltelefoni",
     "name": "IT och Mobiltelefoni",
     "relatedSubjects": []
   },
-  "Jobb": {
+  "jobb": {
+    "id": "jobb",
     "name": "Jobb",
     "relatedSubjects": [
-      "Ekonomi och Skatter",
-      "Näringsliv",
-      "Trygghetssystem och Välfärd"
+      "ekonomi-och-skatter",
+      "naringsliv",
+      "trygghetssystem-och-valfard"
     ]
   },
-  "Jordbruk, Jakt och Fiske": {
+  "jordbruk-jakt-och-fiske": {
+    "id": "jordbruk,-jakt-och-fiske",
     "name": "Jordbruk, Jakt och Fiske",
-    "relatedSubjects": ["Landsbygd", "Miljö och klimat"]
+    "relatedSubjects": ["landsbygd", "miljo-och-klimat"]
   },
-  "Jämställdhet och diskriminering": {
+  "jamstalldhet-och-diskriminering": {
+    "id": "jamstalldhet-och-diskriminering",
     "name": "Jämställdhet och diskriminering",
-    "relatedSubjects": ["Lag och rätt", "Vård och Omsorg"]
+    "relatedSubjects": ["lag-och-ratt", "vard-och-omsorg"]
   },
-  "Konsumentpolitik": {
+  "konsumentpolitik": {
+    "id": "konsumentpolitik",
     "name": "Konsumentpolitik",
-    "relatedSubjects": ["Ekonomi och Skatter", "Kultur, media, och idrott"]
+    "relatedSubjects": ["ekonomi-och-skatter", "kultur-media-och-idrott"]
   },
-  "Kultur, media, och idrott": {
+  "kultur-media-och-idrott": {
+    "id": "kultur,-media,-och-idrott",
     "name": "Kultur, media, och idrott",
     "relatedSubjects": [
-      "Konsumentpolitik",
-      "Näringsliv",
-      "Trygghetssystem och Välfärd"
+      "konsumentpolitik",
+      "naringsliv",
+      "trygghetssystem-och-valfard"
     ]
   },
-  "Lag och rätt": {
+  "lag-och-ratt": {
+    "id": "lag-och-ratt",
     "name": "Lag och rätt",
     "relatedSubjects": [
-      "Demokrati",
-      "Ekonomi och Skatter",
-      "Försvar",
-      "Jämställdhet och diskriminering",
-      "Trygghetssystem och Välfärd",
-      "Utrikes- och biståndsfrågor"
+      "demokrati",
+      "ekonomi-och-skatter",
+      "forsvar",
+      "jamstalldhet-och-diskriminering",
+      "trygghetssystem-och-valfard",
+      "utrikes--och-bistandsfragor"
     ]
   },
-  "Landsbygd": {
+  "landsbygd": {
+    "id": "landsbygd",
     "name": "Landsbygd",
-    "relatedSubjects": [
-      "Energi",
-      "Jordbruk, Jakt och Fiske",
-      "Miljö och klimat"
-    ]
+    "relatedSubjects": ["energi", "jordbruk-jakt-och-fiske", "miljo-och-klimat"]
   },
-  "Migration och Integration": {
+  "migration-och-integration": {
+    "id": "migration-och-integration",
     "name": "Migration och Integration",
-    "relatedSubjects": ["Utbildning"]
+    "relatedSubjects": ["utbildning"]
   },
-  "Miljö och klimat": {
+  "miljo-och-klimat": {
+    "id": "miljo-och-klimat",
     "name": "Miljö och klimat",
-    "relatedSubjects": ["Jordbruk, Jakt och Fiske", "Landsbygd"]
+    "relatedSubjects": ["jordbruk-jakt-och-fiske", "landsbygd"]
   },
-  "Näringsliv": {
+  "naringsliv": {
+    "id": "naringsliv",
     "name": "Näringsliv",
     "relatedSubjects": [
-      "Ekonomi och Skatter",
-      "Jobb",
-      "Kultur, media, och idrott"
+      "ekonomi-och-skatter",
+      "jobb",
+      "kultur-media-och-idrott"
     ]
   },
-  "Trygghetssystem och Välfärd": {
+  "trygghetssystem-och-valfard": {
+    "id": "trygghetssystem-och-valfard",
     "name": "Trygghetssystem och Välfärd",
     "relatedSubjects": [
-      "Bostad",
-      "Demokrati",
-      "Ekonomi och Skatter",
-      "Familjen",
-      "Jobb",
-      "Kultur, media, och idrott",
-      "Lag och rätt",
-      "Vård och Omsorg",
-      "Äldrepolitik"
+      "bostad",
+      "demokrati",
+      "ekonomi-och-skatter",
+      "familjen",
+      "jobb",
+      "kultur-media-och-idrott",
+      "lag-och-ratt",
+      "vard-och-omsorg",
+      "aldrepolitik"
     ]
   },
-  "Utbildning": {
+  "utbildning": {
+    "id": "utbildning",
     "name": "Utbildning",
-    "relatedSubjects": ["Familjen", "Migration och Integration"]
+    "relatedSubjects": ["familjen", "migration-och-integration"]
   },
-  "Utrikes- och biståndsfrågor": {
+  "utrikes--och-bistandsfragor": {
+    "id": "utrikes--och-bistandsfragor",
     "name": "Utrikes- och biståndsfrågor",
-    "relatedSubjects": ["Demokrati", "Europa", "Försvar", "Lag och rätt"]
+    "relatedSubjects": ["demokrati", "europa", "forsvar", "lag-och-ratt"]
   },
-  "Vård och Omsorg": {
+  "vard-och-omsorg": {
+    "id": "vard-och-omsorg",
     "name": "Vård och Omsorg",
     "relatedSubjects": [
-      "Jämställdhet och diskriminering",
-      "Trygghetssystem och Välfärd",
-      "Äldrepolitik"
+      "jamstalldhet-och-diskriminering",
+      "trygghetssystem-och-valfard",
+      "aldrepolitik"
     ]
   },
-  "Äldrepolitik": {
+  "aldrepolitik": {
+    "id": "aldrepolitik",
     "name": "Äldrepolitik",
-    "relatedSubjects": ["Trygghetssystem och Välfärd", "Vård och Omsorg"]
+    "relatedSubjects": ["trygghetssystem-och-valfard", "vard-och-omsorg"]
   }
 }

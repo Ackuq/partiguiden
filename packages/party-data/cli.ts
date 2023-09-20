@@ -20,7 +20,8 @@ async function categorize() {
   const standpoints = readNotCategorizedStandpoints();
 
   const subjectChoices = subjects.map((subject) => ({
-    value: subject.name,
+    name: subject.name,
+    value: subject.id,
     description: undefined,
   }));
 

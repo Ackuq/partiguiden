@@ -4,6 +4,7 @@ import type { PropsWithChildren } from "react";
 import Head from "./head";
 import Footer from "./footer";
 import Header from "./header";
+import { ThemeProvider } from "@components/providers/theme-provider";
 
 const roboto = Roboto({
   weight: ["300", "400", "500", "700"],
@@ -19,9 +20,11 @@ export default function RootLayout({ children }: PropsWithChildren) {
       <body
         className={`${roboto.className} bg-background-light dark:bg-background-dark text-font-light dark:text-font-dark flex min-h-screen flex-col shadow-2xl`}
       >
-        <Header />
-        {children}
-        <Footer />
+        <ThemeProvider attribute="class">
+          <Header />
+          {children}
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );

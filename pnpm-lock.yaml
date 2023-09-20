@@ -30,6 +30,9 @@ importers:
       '@emotion/styled':
         specifier: 11.11.0
         version: 11.11.0(@emotion/react@11.11.1)(@types/react@18.2.21)(react@18.2.0)
+      '@heroicons/react':
+        specifier: ^2.0.18
+        version: 2.0.18(react@18.2.0)
       '@mui/icons-material':
         specifier: 5.14.9
         version: 5.14.9(@mui/material@5.14.9)(@types/react@18.2.21)(react@18.2.0)
@@ -453,6 +456,14 @@ packages:
 
   /@floating-ui/utils@0.1.3:
     resolution: {integrity: sha512-uvnFKtPgzLnpzzTRfhDlvXX0kLYi9lDRQbcDmT8iXl71Rx+uwSuaUIQl3DNC7w5OweAQ7XQMDObML+KaYDQfng==}
+    dev: false
+
+  /@heroicons/react@2.0.18(react@18.2.0):
+    resolution: {integrity: sha512-7TyMjRrZZMBPa+/5Y8lN0iyvUU/01PeMGX2+RE7cQWpEUIcb4QotzUObFkJDejj/HUH4qjP/eQ0gzzKs2f+6Yw==}
+    peerDependencies:
+      react: '>= 16'
+    dependencies:
+      react: 18.2.0
     dev: false
 
   /@humanwhocodes/config-array@0.11.11:

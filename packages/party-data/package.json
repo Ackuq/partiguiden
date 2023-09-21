@@ -10,7 +10,10 @@
   },
   "exports": {
     ".": "./index.ts",
-    "./client": "./client.ts"
+    "./utils": "./utils.ts",
+    "./reader": "./reader.ts",
+    "./writer": "./writer.ts",
+    "./types": "./types.ts"
   },
   "devDependencies": {
     "@partiguiden/eslint-config-base": "workspace:*",

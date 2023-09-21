@@ -10,7 +10,7 @@ export const metadata = {
 
 function PageTitleContainer() {
   return (
-    <h2 className="bg-primary-elevated-light dark:bg-primary-elevated-dark mb-4 py-6 text-center text-xl font-light leading-10 text-white shadow-sm sm:text-3xl">
+    <h2 className="bg-primary dark:bg-primary-elevated-dark mb-4 py-6 text-center text-xl font-light leading-10 text-white shadow-sm sm:text-3xl">
       Hur vill Sveriges partier förbättra
       <br />
       <Typed

@@ -81,7 +81,7 @@ export default function TabNavigation() {
             key={href}
             href={href}
             aria-current={href === pathname && "page"}
-            className="aria-current-page:border-b-2 min-w-tab-link border-primary-light dark:border-primary-elevated-light flex-shrink-0 whitespace-nowrap p-4 text-sm uppercase hover:opacity-80"
+            className="aria-current-page:border-b-2 border-primary-light dark:border-primary-elevated-light min-w-[90px] flex-shrink-0 whitespace-nowrap p-4 text-sm uppercase hover:opacity-80"
           >
             {title}
           </Link>

@@ -1,5 +1,6 @@
 import type { Config } from "tailwindcss";
 import colors from "tailwindcss/colors";
+import { partyColors } from "@partiguiden/party-data/utils";
 
 const config: Config = {
   darkMode: "class",
@@ -27,6 +28,9 @@ const config: Config = {
           DEFAULT: "#00796b",
           light: "#80cbc4",
         },
+        party: {
+          ...partyColors,
+        },
         background: {
           elevated: {
             dark: {
@@ -51,7 +55,6 @@ const config: Config = {
       },
       minWidth: {
         screen: "100vw",
-        "tab-link": "90px",
       },
       minHeight: {
         screen: [

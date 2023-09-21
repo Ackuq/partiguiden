@@ -1,6 +1,6 @@
 import { parseArgs } from "node:util";
 import scrapers from "./scrapers";
-import { writePartyData } from "@partiguiden/party-data";
+import { writePartyData } from "@partiguiden/party-data/writer";
 
 const {
   values: { party },

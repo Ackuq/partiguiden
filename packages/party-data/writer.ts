@@ -1,18 +1,7 @@
 import * as fs from "node:fs";
-import { readAllStandpoints, type Standpoint, type Subject } from "./client";
-
-export interface PartyData {
-  [url: string]: Standpoint;
-}
-
-export type PartyDataWithoutPartyName = Omit<Standpoint, "party">;
-
-interface SubjectData {
-  [id: string]: Subject;
-}
+import type { PartyData, PartyDataWithoutPartyName, Standpoint } from "./types";
 
 const PARTIES_DIRECTORY = `${__dirname}/parties`;
-const SUBJECTS_FILE = `${__dirname}/subjects.json`;
 
 const partyFileName = (abbreviation: string) =>
   `${PARTIES_DIRECTORY}/${abbreviation.toLocaleLowerCase()}.json`;
@@ -84,29 +73,4 @@ export function updateStandpoint(abbreviation: string, standpoint: Standpoint) {
   ) as PartyData;
   storedData[standpoint.url] = standpoint;
   fs.writeFileSync(fileName, JSON.stringify(storedData, null, 2) + "\n");
-}
-
-function readSubjectData() {
-  return JSON.parse(fs.readFileSync(SUBJECTS_FILE).toString()) as SubjectData;
-}
-
-export function readSubjects(): Subject[] {
-  return Object.values(readSubjectData());
-}
-
-export function readPartyData(abbreviation: string): Standpoint[] {
-  const partyData = JSON.parse(
-    fs.readFileSync(partyFileName(abbreviation)).toString(),
-  ) as PartyData;
-  return Object.values(partyData);
-}
-
-export function readPartyDataForSubject(party: string, subjectName: string) {
-  const partyData = readPartyData(party);
-  return partyData.filter((subject) => subject.subject === subjectName);
-}
-
-export function readNotCategorizedStandpoints() {
-  const standpoints = readAllStandpoints();
-  return standpoints.filter((standpoint) => standpoint.subject === undefined);
 }

@@ -7,6 +7,7 @@ const withBundleAnalyzer = bundleAnalyzer({
 
 let moduleExports = withBundleAnalyzer({
   productionBrowserSourceMaps: true,
+  transpilePackages: ["@partiguiden/party-data"],
   basePath: "",
   images: {
     remotePatterns: [

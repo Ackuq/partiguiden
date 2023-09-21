@@ -12,13 +12,15 @@ import {
 export const routes = {
   index: "/",
   cookiePolicy: "/cookie-policy",
-  aboutUs: "/about-us",
+  aboutUs: "/om-oss",
   polls: "/polls",
-  votes: "/vote",
+  votes: "/voteringar",
   vote: "/vote/[id]/[bet]",
   decisions: "/decisions",
-  standpoints: "/standpoints",
-  standpoint: "/standpoints/[id]",
+  standpoints: "/standpunkter",
+  standpoint(id: string) {
+    return `/standpunkter/${id}`;
+  },
   party: "/party/[party]",
   members: "/member",
   member: "/member/[id]",
@@ -28,19 +30,6 @@ export const routes = {
   debates: "/debate",
   debate: "/debate/[id]",
 };
-
-export const getVoteHref = (id: string, bet: number): string =>
-  `/vote/${id}/${bet}`;
-
-export const getStandpointHref = (id: number): string => `/standpoints/${id}`;
-
-export const getPartyHref = (party: string): string => `/party/${party}`;
-
-export const getMemberHref = (id: string): string => `/member/${id}`;
-
-export const getDocumentHref = (id: string): string => `/document/${id}`;
-
-export const getDebateHref = (id: string): string => `/debate/${id}`;
 
 export const mainNavigation = [
   { href: routes.index, title: "Hem", Icon: HomeIcon },

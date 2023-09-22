@@ -1,6 +1,7 @@
 import { BaseCard } from "@components/card";
 import Typed from "../src/components/Typed";
 import Link from "next/link";
+import { routes } from "@lib/navigation";
 
 export const metadata = {
   title: "Partiguiden | Rösta rätt",
@@ -55,7 +56,7 @@ export default function IndexPage() {
             {featured.map((subject) => (
               <Link
                 key={subject.id}
-                href={`/standpoints/${subject.id}`}
+                href={routes.standpoint(subject.id)}
                 className="bg-background-elevated-light dark:bg-background-elevated-dark-200 rounded py-3 shadow-md transition-opacity hover:opacity-70"
               >
                 {subject.name}

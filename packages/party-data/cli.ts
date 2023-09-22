@@ -1,10 +1,7 @@
 import { Separator, select } from "@inquirer/prompts";
-import {
-  readNotCategorizedStandpoints,
-  readSubjects,
-  updateStandpoint,
-} from ".";
-import type { Standpoint } from "./client";
+import { readSubjects, readNotCategorizedStandpoints } from "./reader";
+import { updateStandpoint } from "./writer";
+import type { Standpoint } from "./types";
 
 const promptTemplate = (
   standpoint: Standpoint,
@@ -20,7 +17,8 @@ async function categorize() {
   const standpoints = readNotCategorizedStandpoints();
 
   const subjectChoices = subjects.map((subject) => ({
-    value: subject.name,
+    name: subject.name,
+    value: subject.id,
     description: undefined,
   }));
 

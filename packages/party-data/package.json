@@ -4,11 +4,16 @@
   "description": "",
   "main": "index.ts",
   "scripts": {
-    "cli": "ts-node cli.ts"
+    "cli": "ts-node cli.ts",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint --ext .ts,.js"
   },
   "exports": {
     ".": "./index.ts",
-    "./client": "./client.ts"
+    "./utils": "./utils.ts",
+    "./reader": "./reader.ts",
+    "./writer": "./writer.ts",
+    "./types": "./types.ts"
   },
   "devDependencies": {
     "@partiguiden/eslint-config-base": "workspace:*",

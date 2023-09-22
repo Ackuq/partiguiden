@@ -5,7 +5,9 @@
   "main": "src/index.ts",
   "scripts": {
     "scrape": "ts-node src/index.ts",
-    "scrape:all": "ts-node src/index.ts -p all"
+    "scrape:all": "ts-node src/index.ts -p all",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint --ext .ts,.js"
   },
   "devDependencies": {
     "@partiguiden/eslint-config-base": "workspace:*",

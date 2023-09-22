@@ -7,7 +7,7 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/abort/",
     "fetchDate": "2023-09-17T17:52:39.257Z",
     "party": "v",
-    "subject": "Vård och Omsorg"
+    "subject": "vard-och-omsorg"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/anstallningstrygghet/": {
     "opinions": [
@@ -19,7 +19,7 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/anstallningstrygghet/",
     "fetchDate": "2023-09-17T17:52:35.385Z",
     "party": "v",
-    "subject": "Trygghetssystem och Välfärd"
+    "subject": "trygghetssystem-och-valfard"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/antirasism/": {
     "opinions": [
@@ -29,7 +29,7 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/antirasism/",
     "fetchDate": "2023-09-17T17:52:40.312Z",
     "party": "v",
-    "subject": "Jämställdhet och diskriminering"
+    "subject": "jamstalldhet-och-diskriminering"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/arbetskraftsinvandring/": {
     "opinions": [
@@ -39,7 +39,7 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/arbetskraftsinvandring/",
     "fetchDate": "2023-09-17T17:52:35.788Z",
     "party": "v",
-    "subject": "Migration och Integration"
+    "subject": "migration-och-integration"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/arbetsmarknad/": {
     "opinions": [
@@ -51,7 +51,7 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/arbetsmarknad/",
     "fetchDate": "2023-09-17T17:52:35.556Z",
     "party": "v",
-    "subject": "Jobb"
+    "subject": "jobb"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/arbetsmiljo/": {
     "opinions": [
@@ -63,7 +63,7 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/arbetsmiljo/",
     "fetchDate": "2023-09-17T17:52:39.889Z",
     "party": "v",
-    "subject": "Jobb"
+    "subject": "jobb"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/arbetstidsforkortning/": {
     "opinions": [
@@ -73,7 +73,7 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/arbetstidsforkortning/",
     "fetchDate": "2023-09-17T17:52:36.034Z",
     "party": "v",
-    "subject": "Jobb"
+    "subject": "jobb"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/banker/": {
     "opinions": [
@@ -83,7 +83,7 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/banker/",
     "fetchDate": "2023-09-17T17:52:36.505Z",
     "party": "v",
-    "subject": "Ekonomi och Skatter"
+    "subject": "ekonomi-och-skatter"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/barns-och-unga-rattigheter/": {
     "opinions": [
@@ -93,7 +93,7 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/barns-och-unga-rattigheter/",
     "fetchDate": "2023-09-17T17:52:36.325Z",
     "party": "v",
-    "subject": "Jämställdhet och diskriminering"
+    "subject": "jamstalldhet-och-diskriminering"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/bistand/": {
     "opinions": [
@@ -103,7 +103,7 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/bistand/",
     "fetchDate": "2023-09-17T17:52:39.417Z",
     "party": "v",
-    "subject": "Utrikes- och biståndsfrågor"
+    "subject": "utrikes--och-bistandsfragor"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/bostader/": {
     "opinions": [
@@ -115,7 +115,7 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/bostader/",
     "fetchDate": "2023-09-17T17:52:37.615Z",
     "party": "v",
-    "subject": "Bostad"
+    "subject": "bostad"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/brottsoffer/": {
     "opinions": [
@@ -125,7 +125,7 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/brottsoffer/",
     "fetchDate": "2023-09-17T17:52:38.770Z",
     "party": "v",
-    "subject": "Lag och rätt"
+    "subject": "lag-och-ratt"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/betyg/": {
     "opinions": [
@@ -135,7 +135,7 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/betyg/",
     "fetchDate": "2023-09-17T17:52:40.519Z",
     "party": "v",
-    "subject": "Utbildning"
+    "subject": "utbildning"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/droger-och-beroende/": {
     "opinions": [
@@ -145,7 +145,7 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/droger-och-beroende/",
     "fetchDate": "2023-09-17T17:52:37.941Z",
     "party": "v",
-    "subject": "Vård och Omsorg"
+    "subject": "vard-och-omsorg"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/dodshjalp/": {
     "opinions": [
@@ -155,7 +155,7 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/dodshjalp/",
     "fetchDate": "2023-09-17T17:52:38.726Z",
     "party": "v",
-    "subject": "Vård och Omsorg"
+    "subject": "vard-och-omsorg"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/djurskydd/": {
     "opinions": [
@@ -165,7 +165,7 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/djurskydd/",
     "fetchDate": "2023-09-17T17:52:36.763Z",
     "party": "v",
-    "subject": "Miljö och klimat"
+    "subject": "miljo-och-klimat"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/drivmedelsbeskattning/": {
     "opinions": [
@@ -175,7 +175,7 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/drivmedelsbeskattning/",
     "fetchDate": "2023-09-17T17:52:36.412Z",
     "party": "v",
-    "subject": "Infrastruktur och Trafik"
+    "subject": "infrastruktur-och-trafik"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/ekonomisk-brottslighet-riktad-mot-valfarden/": {
     "opinions": [
@@ -185,7 +185,7 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/ekonomisk-brottslighet-riktad-mot-valfarden/",
     "fetchDate": "2023-09-17T17:52:41.276Z",
     "party": "v",
-    "subject": "Trygghetssystem och Välfärd"
+    "subject": "trygghetssystem-och-valfard"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/energi/": {
     "opinions": [
@@ -195,7 +195,7 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/energi/",
     "fetchDate": "2023-09-17T17:52:38.045Z",
     "party": "v",
-    "subject": "Energi"
+    "subject": "energi"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/ensamkommande-barn-och-unga/": {
     "opinions": [
@@ -205,7 +205,7 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/ensamkommande-barn-och-unga/",
     "fetchDate": "2023-09-17T17:52:39.766Z",
     "party": "v",
-    "subject": "Migration och Integration"
+    "subject": "migration-och-integration"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/eu/": {
     "opinions": [
@@ -215,7 +215,7 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/eu/",
     "fetchDate": "2023-09-17T17:52:40.044Z",
     "party": "v",
-    "subject": "Europa"
+    "subject": "europa"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/fribeloppet/": {
     "opinions": [
@@ -225,7 +225,7 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/fribeloppet/",
     "fetchDate": "2023-09-17T17:52:40.418Z",
     "party": "v",
-    "subject": "Utbildning"
+    "subject": "utbildning"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/forlossningsvard/": {
     "opinions": [
@@ -235,7 +235,7 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/forlossningsvard/",
     "fetchDate": "2023-09-17T17:52:36.168Z",
     "party": "v",
-    "subject": "Vård och Omsorg"
+    "subject": "vard-och-omsorg"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/fackforeningar/": {
     "opinions": [
@@ -245,7 +245,7 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/fackforeningar/",
     "fetchDate": "2023-09-17T17:52:37.850Z",
     "party": "v",
-    "subject": "Jobb"
+    "subject": "jobb"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/feminism/": {
     "opinions": [
@@ -255,7 +255,7 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/feminism/",
     "fetchDate": "2023-09-17T17:52:36.352Z",
     "party": "v",
-    "subject": "Jämställdhet och diskriminering"
+    "subject": "jamstalldhet-och-diskriminering"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/flyktingpolitik/": {
     "opinions": [
@@ -265,7 +265,7 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/flyktingpolitik/",
     "fetchDate": "2023-09-17T17:52:39.757Z",
     "party": "v",
-    "subject": "Migration och Integration"
+    "subject": "migration-och-integration"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/funktionsratt/": {
     "opinions": [
@@ -275,7 +275,7 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/funktionsratt/",
     "fetchDate": "2023-09-17T17:52:40.643Z",
     "party": "v",
-    "subject": "Vård och Omsorg"
+    "subject": "vard-och-omsorg"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/foretagande/": {
     "opinions": [
@@ -285,7 +285,7 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/foretagande/",
     "fetchDate": "2023-09-17T17:52:36.130Z",
     "party": "v",
-    "subject": "Näringsliv"
+    "subject": "naringsliv"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/forskolan/": {
     "opinions": [
@@ -295,7 +295,7 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/forskolan/",
     "fetchDate": "2023-09-17T17:52:41.404Z",
     "party": "v",
-    "subject": "Utbildning"
+    "subject": "utbildning"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/forsvaret/": {
     "opinions": [
@@ -305,7 +305,7 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/forsvaret/",
     "fetchDate": "2023-09-17T17:52:37.268Z",
     "party": "v",
-    "subject": "Försvar"
+    "subject": "forsvar"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/foraldraforsakringen/": {
     "opinions": [
@@ -315,7 +315,7 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/foraldraforsakringen/",
     "fetchDate": "2023-09-17T17:52:36.428Z",
     "party": "v",
-    "subject": "Familjen"
+    "subject": "familjen"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/gardsforsaljning/": {
     "opinions": [
@@ -325,7 +325,7 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/gardsforsaljning/",
     "fetchDate": "2023-09-17T17:52:35.357Z",
     "party": "v",
-    "subject": "Näringsliv"
+    "subject": "naringsliv"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/grova-brott/": {
     "opinions": [
@@ -335,7 +335,7 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/grova-brott/",
     "fetchDate": "2023-09-17T17:52:36.303Z",
     "party": "v",
-    "subject": "Lag och rätt"
+    "subject": "lag-och-ratt"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/halso-och-sjukvardens-huvudmannaskap/": {
     "opinions": [
@@ -345,7 +345,7 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/halso-och-sjukvardens-huvudmannaskap/",
     "fetchDate": "2023-09-17T17:52:35.396Z",
     "party": "v",
-    "subject": "Vård och Omsorg"
+    "subject": "vard-och-omsorg"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/handelspolitik/": {
     "opinions": [
@@ -355,7 +355,7 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/handelspolitik/",
     "fetchDate": "2023-09-17T17:52:38.121Z",
     "party": "v",
-    "subject": "Näringsliv"
+    "subject": "naringsliv"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/hbtqi/": {
     "opinions": [
@@ -365,7 +365,7 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/hbtqi/",
     "fetchDate": "2023-09-17T17:52:41.195Z",
     "party": "v",
-    "subject": "Jämställdhet och diskriminering"
+    "subject": "jamstalldhet-och-diskriminering"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/hedersvald/": {
     "opinions": [
@@ -375,7 +375,7 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/hedersvald/",
     "fetchDate": "2023-09-17T17:52:38.262Z",
     "party": "v",
-    "subject": "Lag och rätt"
+    "subject": "lag-och-ratt"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/hyresratter/": {
     "opinions": [
@@ -388,7 +388,7 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/hyresratter/",
     "fetchDate": "2023-09-17T17:52:38.884Z",
     "party": "v",
-    "subject": "Bostad"
+    "subject": "bostad"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/hoghastighetsbanor/": {
     "opinions": [
@@ -398,7 +398,7 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/hoghastighetsbanor/",
     "fetchDate": "2023-09-17T17:52:39.112Z",
     "party": "v",
-    "subject": "Infrastruktur och Trafik"
+    "subject": "infrastruktur-och-trafik"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/hogskolan-och-yrkeshogskolan/": {
     "opinions": [
@@ -408,7 +408,7 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/hogskolan-och-yrkeshogskolan/",
     "fetchDate": "2023-09-17T17:52:38.974Z",
     "party": "v",
-    "subject": "Utbildning"
+    "subject": "utbildning"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/integritet-och-statens-maktutovning/": {
     "opinions": [
@@ -418,7 +418,7 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/integritet-och-statens-maktutovning/",
     "fetchDate": "2023-09-17T17:52:38.697Z",
     "party": "v",
-    "subject": "Demokrati"
+    "subject": "demokrati"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/idrott-och-friluftsliv/": {
     "opinions": [
@@ -428,7 +428,7 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/idrott-och-friluftsliv/",
     "fetchDate": "2023-09-17T17:52:39.267Z",
     "party": "v",
-    "subject": "Kultur, media, och idrott"
+    "subject": "kultur-media-och-idrott"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/industri/": {
     "opinions": [
@@ -438,7 +438,7 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/industri/",
     "fetchDate": "2023-09-17T17:52:38.393Z",
     "party": "v",
-    "subject": "Näringsliv"
+    "subject": "naringsliv"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/integration/": {
     "opinions": [
@@ -448,7 +448,7 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/integration/",
     "fetchDate": "2023-09-17T17:52:37.703Z",
     "party": "v",
-    "subject": "Migration och Integration"
+    "subject": "migration-och-integration"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/jamlikhet/": {
     "opinions": [
@@ -458,7 +458,7 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/jamlikhet/",
     "fetchDate": "2023-09-17T17:52:35.547Z",
     "party": "v",
-    "subject": "Jämställdhet och diskriminering"
+    "subject": "jamstalldhet-och-diskriminering"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/jarnvag-och-tag/": {
     "opinions": [
@@ -468,7 +468,7 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/jarnvag-och-tag/",
     "fetchDate": "2023-09-17T17:52:40.035Z",
     "party": "v",
-    "subject": "Infrastruktur och Trafik"
+    "subject": "infrastruktur-och-trafik"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/jordbruk-och-mat/": {
     "opinions": [
@@ -478,7 +478,7 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/jordbruk-och-mat/",
     "fetchDate": "2023-09-17T17:52:38.192Z",
     "party": "v",
-    "subject": "Jordbruk, Jakt och Fiske"
+    "subject": "jordbruk-jakt-och-fiske"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/jobb-och-arbetsloshet/": {
     "opinions": [
@@ -491,7 +491,7 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/jobb-och-arbetsloshet/",
     "fetchDate": "2023-09-17T17:52:37.932Z",
     "party": "v",
-    "subject": "Jobb"
+    "subject": "jobb"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/klimat/": {
     "opinions": [
@@ -511,7 +511,7 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/klimat/",
     "fetchDate": "2023-09-17T17:52:38.088Z",
     "party": "v",
-    "subject": "Miljö och klimat"
+    "subject": "miljo-och-klimat"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/kollektivtrafik/": {
     "opinions": [
@@ -521,7 +521,7 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/kollektivtrafik/",
     "fetchDate": "2023-09-17T17:52:37.712Z",
     "party": "v",
-    "subject": "Infrastruktur och Trafik"
+    "subject": "infrastruktur-och-trafik"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/krisberedskap-och-samhallsskydd/": {
     "opinions": [
@@ -531,7 +531,7 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/krisberedskap-och-samhallsskydd/",
     "fetchDate": "2023-09-17T17:52:38.267Z",
     "party": "v",
-    "subject": "Försvar"
+    "subject": "forsvar"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/kultur/": {
     "opinions": [
@@ -541,7 +541,7 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/kultur/",
     "fetchDate": "2023-09-17T17:52:41.113Z",
     "party": "v",
-    "subject": "Kultur, media, och idrott"
+    "subject": "kultur-media-och-idrott"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/karnkraft/": {
     "opinions": [
@@ -551,7 +551,7 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/karnkraft/",
     "fetchDate": "2023-09-17T17:52:37.233Z",
     "party": "v",
-    "subject": "Energi"
+    "subject": "energi"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/kriminalitet-och-kriminalvard/": {
     "opinions": [
@@ -561,7 +561,7 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/kriminalitet-och-kriminalvard/",
     "fetchDate": "2023-09-17T17:52:41.267Z",
     "party": "v",
-    "subject": "Lag och rätt"
+    "subject": "lag-och-ratt"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/landsbygd/": {
     "opinions": [
@@ -571,7 +571,7 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/landsbygd/",
     "fetchDate": "2023-09-17T17:52:36.261Z",
     "party": "v",
-    "subject": "Landsbygd"
+    "subject": "landsbygd"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/lss-personlig-assistans/": {
     "opinions": [
@@ -581,7 +581,7 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/lss-personlig-assistans/",
     "fetchDate": "2023-09-17T17:52:40.025Z",
     "party": "v",
-    "subject": "Vård och Omsorg"
+    "subject": "vard-och-omsorg"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/miljo/": {
     "opinions": [
@@ -591,7 +591,7 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/miljo/",
     "fetchDate": "2023-09-17T17:52:35.341Z",
     "party": "v",
-    "subject": "Miljö och klimat"
+    "subject": "miljo-och-klimat"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/monarki/": {
     "opinions": [
@@ -601,7 +601,7 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/monarki/",
     "fetchDate": "2023-09-17T17:52:36.025Z",
     "party": "v",
-    "subject": "Demokrati"
+    "subject": "demokrati"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/mans-vald-mot-kvinnor/": {
     "opinions": [
@@ -611,7 +611,7 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/mans-vald-mot-kvinnor/",
     "fetchDate": "2023-09-17T17:52:36.618Z",
     "party": "v",
-    "subject": "Lag och rätt"
+    "subject": "lag-och-ratt"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/marknadsskolan/": {
     "opinions": [
@@ -621,7 +621,7 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/marknadsskolan/",
     "fetchDate": "2023-09-17T17:52:37.840Z",
     "party": "v",
-    "subject": "Utbildning"
+    "subject": "utbildning"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/nato/": {
     "opinions": [
@@ -631,7 +631,7 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/nato/",
     "fetchDate": "2023-09-17T17:52:36.691Z",
     "party": "v",
-    "subject": "Försvar"
+    "subject": "forsvar"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/penningpolitik/": {
     "opinions": [
@@ -641,7 +641,7 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/penningpolitik/",
     "fetchDate": "2023-09-17T17:52:40.809Z",
     "party": "v",
-    "subject": "Ekonomi och Skatter"
+    "subject": "ekonomi-och-skatter"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/pension/": {
     "opinions": [
@@ -651,7 +651,7 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/pension/",
     "fetchDate": "2023-09-17T17:52:36.492Z",
     "party": "v",
-    "subject": "Äldrepolitik"
+    "subject": "aldrepolitik"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/politikerlon-och-partiskatt/": {
     "opinions": [
@@ -661,7 +661,7 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/politikerlon-och-partiskatt/",
     "fetchDate": "2023-09-17T17:52:41.393Z",
     "party": "v",
-    "subject": "Demokrati"
+    "subject": "demokrati"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/psykisk-ohalsa/": {
     "opinions": [
@@ -671,7 +671,7 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/psykisk-ohalsa/",
     "fetchDate": "2023-09-17T17:52:36.159Z",
     "party": "v",
-    "subject": "Vård och Omsorg"
+    "subject": "vard-och-omsorg"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/polisen/": {
     "opinions": [
@@ -681,7 +681,7 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/polisen/",
     "fetchDate": "2023-09-17T17:52:40.308Z",
     "party": "v",
-    "subject": "Lag och rätt"
+    "subject": "lag-och-ratt"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/rut-och-rot/": {
     "opinions": [
@@ -691,7 +691,7 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/rut-och-rot/",
     "fetchDate": "2023-09-17T17:52:37.788Z",
     "party": "v",
-    "subject": "Ekonomi och Skatter"
+    "subject": "ekonomi-och-skatter"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/religiosa-friskolor/": {
     "opinions": [
@@ -701,7 +701,7 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/religiosa-friskolor/",
     "fetchDate": "2023-09-17T17:52:37.722Z",
     "party": "v",
-    "subject": "Utbildning"
+    "subject": "utbildning"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/ranteavdraget/": {
     "opinions": [
@@ -711,7 +711,7 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/ranteavdraget/",
     "fetchDate": "2023-09-17T17:52:40.611Z",
     "party": "v",
-    "subject": "Ekonomi och Skatter"
+    "subject": "ekonomi-och-skatter"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/sjukforsakringen/": {
     "opinions": [
@@ -721,7 +721,7 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/sjukforsakringen/",
     "fetchDate": "2023-09-17T17:52:35.458Z",
     "party": "v",
-    "subject": "Ekonomi och Skatter"
+    "subject": "ekonomi-och-skatter"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/sjukvard/": {
     "opinions": [
@@ -731,7 +731,7 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/sjukvard/",
     "fetchDate": "2023-09-17T17:52:35.759Z",
     "party": "v",
-    "subject": "Vård och Omsorg"
+    "subject": "vard-och-omsorg"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/skatteflykt/": {
     "opinions": [
@@ -741,7 +741,7 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/skatteflykt/",
     "fetchDate": "2023-09-17T17:52:36.418Z",
     "party": "v",
-    "subject": "Lag och rätt"
+    "subject": "lag-och-ratt"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/skattepolitik/": {
     "opinions": [
@@ -760,7 +760,7 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/skattepolitik/",
     "fetchDate": "2023-09-17T17:52:35.678Z",
     "party": "v",
-    "subject": "Ekonomi och Skatter"
+    "subject": "ekonomi-och-skatter"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/skolan/": {
     "opinions": [
@@ -770,7 +770,7 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/skolan/",
     "fetchDate": "2023-09-17T17:52:41.415Z",
     "party": "v",
-    "subject": "Utbildning"
+    "subject": "utbildning"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/socialpolitik/": {
     "opinions": [
@@ -780,7 +780,7 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/socialpolitik/",
     "fetchDate": "2023-09-17T17:52:41.065Z",
     "party": "v",
-    "subject": "Jämställdhet och diskriminering"
+    "subject": "jamstalldhet-och-diskriminering"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/statlig-folkbank/": {
     "opinions": [
@@ -790,7 +790,7 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/statlig-folkbank/",
     "fetchDate": "2023-09-17T17:52:36.109Z",
     "party": "v",
-    "subject": "Ekonomi och Skatter"
+    "subject": "ekonomi-och-skatter"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/sexuella-overgrepp-och-sexkop/": {
     "opinions": [
@@ -800,7 +800,7 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/sexuella-overgrepp-och-sexkop/",
     "fetchDate": "2023-09-17T17:52:40.637Z",
     "party": "v",
-    "subject": "Lag och rätt"
+    "subject": "lag-och-ratt"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/strandskyddet/": {
     "opinions": [
@@ -810,7 +810,7 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/strandskyddet/",
     "fetchDate": "2023-09-17T17:52:36.658Z",
     "party": "v",
-    "subject": "Miljö och klimat"
+    "subject": "miljo-och-klimat"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/sprak-och-integration/": {
     "opinions": [
@@ -820,7 +820,7 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/sprak-och-integration/",
     "fetchDate": "2023-09-17T17:52:36.307Z",
     "party": "v",
-    "subject": "Migration och Integration"
+    "subject": "migration-och-integration"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/tandvard/": {
     "opinions": [
@@ -830,7 +830,7 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/tandvard/",
     "fetchDate": "2023-09-17T17:52:36.387Z",
     "party": "v",
-    "subject": "Vård och Omsorg"
+    "subject": "vard-och-omsorg"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/terrorism/": {
     "opinions": [
@@ -840,7 +840,7 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/terrorism/",
     "fetchDate": "2023-09-17T17:52:35.490Z",
     "party": "v",
-    "subject": "Försvar"
+    "subject": "forsvar"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/tjanstemannaansvar/": {
     "opinions": [
@@ -850,7 +850,7 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/tjanstemannaansvar/",
     "fetchDate": "2023-09-17T17:52:35.477Z",
     "party": "v",
-    "subject": "Lag och rätt"
+    "subject": "lag-och-ratt"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/utrikespolitik/": {
     "opinions": [
@@ -860,7 +860,7 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/utrikespolitik/",
     "fetchDate": "2023-09-17T17:52:40.407Z",
     "party": "v",
-    "subject": "Utrikes- och biståndsfrågor"
+    "subject": "utrikes--och-bistandsfragor"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/vapenexport/": {
     "opinions": [
@@ -870,7 +870,7 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/vapenexport/",
     "fetchDate": "2023-09-17T17:52:36.228Z",
     "party": "v",
-    "subject": "Utrikes- och biståndsfrågor"
+    "subject": "utrikes--och-bistandsfragor"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/vindkraft/": {
     "opinions": [
@@ -880,7 +880,7 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/vindkraft/",
     "fetchDate": "2023-09-17T17:52:35.708Z",
     "party": "v",
-    "subject": "Energi"
+    "subject": "energi"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/vinster-i-valfarden/": {
     "opinions": [
@@ -890,7 +890,7 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/vinster-i-valfarden/",
     "fetchDate": "2023-09-17T17:52:37.084Z",
     "party": "v",
-    "subject": "Trygghetssystem och Välfärd"
+    "subject": "trygghetssystem-och-valfard"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/valfard/": {
     "opinions": [
@@ -900,7 +900,7 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/valfard/",
     "fetchDate": "2023-09-17T17:52:38.805Z",
     "party": "v",
-    "subject": "Trygghetssystem och Välfärd"
+    "subject": "trygghetssystem-och-valfard"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/aldreomsorg/": {
     "opinions": [
@@ -910,6 +910,6 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/aldreomsorg/",
     "fetchDate": "2023-09-17T17:52:37.457Z",
     "party": "v",
-    "subject": "Äldrepolitik"
+    "subject": "aldrepolitik"
   }
 }

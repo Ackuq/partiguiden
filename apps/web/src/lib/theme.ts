@@ -1,4 +1,4 @@
-import { Roboto } from "@next/font/google";
+import { Roboto } from "next/font/google";
 import type { Theme } from "@mui/material/styles";
 import { createTheme, responsiveFontSizes } from "@mui/material/styles";
 

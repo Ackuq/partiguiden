@@ -9,7 +9,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/bostad",
     "fetchDate": "2023-09-17T17:52:40.570Z",
     "party": "c",
-    "subject": "Bostad"
+    "subject": "bostad"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/bostad/bostadsbyggande": {
     "opinions": [
@@ -21,7 +21,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/bostad/bostadsbyggande",
     "fetchDate": "2023-09-17T17:52:38.428Z",
     "party": "c",
-    "subject": "Bostad"
+    "subject": "bostad"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/bostad/bostadsskatter": {
     "opinions": [
@@ -33,7 +33,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/bostad/bostadsskatter",
     "fetchDate": "2023-09-17T17:52:40.173Z",
     "party": "c",
-    "subject": "Bostad"
+    "subject": "bostad"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/bostad/bostader-i-hela-landet": {
     "opinions": [
@@ -45,7 +45,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/bostad/bostader-i-hela-landet",
     "fetchDate": "2023-09-17T17:52:35.816Z",
     "party": "c",
-    "subject": "Bostad"
+    "subject": "bostad"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/bostad/hyresratter": {
     "opinions": [
@@ -58,7 +58,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/bostad/hyresratter",
     "fetchDate": "2023-09-17T17:52:36.906Z",
     "party": "c",
-    "subject": "Bostad"
+    "subject": "bostad"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/bostad/hallbart-byggande": {
     "opinions": [
@@ -70,7 +70,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/bostad/hallbart-byggande",
     "fetchDate": "2023-09-17T17:52:39.471Z",
     "party": "c",
-    "subject": "Miljö och klimat"
+    "subject": "miljo-och-klimat"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/bostad/samhallsplanering": {
     "opinions": [
@@ -81,7 +81,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/bostad/samhallsplanering",
     "fetchDate": "2023-09-17T17:52:38.309Z",
     "party": "c",
-    "subject": "Bostad"
+    "subject": "bostad"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/familjen/skilsmassa-och-bodelning": {
     "opinions": [
@@ -93,7 +93,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/familjen/skilsmassa-och-bodelning",
     "fetchDate": "2023-09-17T17:52:36.979Z",
     "party": "c",
-    "subject": "Familjen"
+    "subject": "familjen"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/bostad/strandskydd": {
     "opinions": [
@@ -105,7 +105,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/bostad/strandskydd",
     "fetchDate": "2023-09-17T17:52:35.849Z",
     "party": "c",
-    "subject": "Miljö och klimat"
+    "subject": "miljo-och-klimat"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/demokrati": {
     "opinions": [
@@ -117,7 +117,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/demokrati",
     "fetchDate": "2023-09-17T17:52:40.720Z",
     "party": "c",
-    "subject": "Demokrati"
+    "subject": "demokrati"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/diskriminering": {
     "opinions": [
@@ -129,7 +129,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/diskriminering",
     "fetchDate": "2023-09-17T17:52:40.369Z",
     "party": "c",
-    "subject": "Jämställdhet och diskriminering"
+    "subject": "jamstalldhet-och-diskriminering"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/demokrati/hbtqi": {
     "opinions": [
@@ -141,7 +141,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/demokrati/hbtqi",
     "fetchDate": "2023-09-17T17:52:39.483Z",
     "party": "c",
-    "subject": "Jämställdhet och diskriminering"
+    "subject": "jamstalldhet-och-diskriminering"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/jamstalldhet": {
     "opinions": [
@@ -153,7 +153,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/jamstalldhet",
     "fetchDate": "2023-09-17T17:52:37.559Z",
     "party": "c",
-    "subject": "Jämställdhet och diskriminering"
+    "subject": "jamstalldhet-och-diskriminering"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/demokrati/monarki": {
     "opinions": [
@@ -163,7 +163,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/demokrati/monarki",
     "fetchDate": "2023-09-17T17:52:35.622Z",
     "party": "c",
-    "subject": "Demokrati"
+    "subject": "demokrati"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/diskriminering/manskliga-rattigheter": {
     "opinions": [
@@ -175,7 +175,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/diskriminering/manskliga-rattigheter",
     "fetchDate": "2023-09-17T17:52:40.176Z",
     "party": "c",
-    "subject": "Demokrati"
+    "subject": "demokrati"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/demokrati/varna-och-utveckla-demokratin": {
     "opinions": [
@@ -187,7 +187,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/demokrati/varna-och-utveckla-demokratin",
     "fetchDate": "2023-09-17T17:52:39.497Z",
     "party": "c",
-    "subject": "Demokrati"
+    "subject": "demokrati"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/digitalisering": {
     "opinions": [
@@ -199,7 +199,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/digitalisering",
     "fetchDate": "2023-09-17T17:52:36.803Z",
     "party": "c",
-    "subject": "IT och Mobiltelefoni"
+    "subject": "it-och-mobiltelefoni"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/digitalisering/artificiell-intelligens-ai": {
     "opinions": [
@@ -211,7 +211,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/digitalisering/artificiell-intelligens-ai",
     "fetchDate": "2023-09-17T17:52:39.491Z",
     "party": "c",
-    "subject": "IT och Mobiltelefoni"
+    "subject": "it-och-mobiltelefoni"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/digitalisering/cybersakerhet": {
     "opinions": [
@@ -223,7 +223,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/digitalisering/cybersakerhet",
     "fetchDate": "2023-09-17T17:52:40.277Z",
     "party": "c",
-    "subject": "IT och Mobiltelefoni"
+    "subject": "it-och-mobiltelefoni"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/digitalisering/digitalisering-i-skolan": {
     "opinions": [
@@ -235,7 +235,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/digitalisering/digitalisering-i-skolan",
     "fetchDate": "2023-09-17T17:52:40.446Z",
     "party": "c",
-    "subject": "Utbildning"
+    "subject": "utbildning"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/digitalisering/digital-utbildnings--och-arbetsmarknad": {
     "opinions": [
@@ -247,7 +247,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/digitalisering/digital-utbildnings--och-arbetsmarknad",
     "fetchDate": "2023-09-17T17:52:38.679Z",
     "party": "c",
-    "subject": "Utbildning"
+    "subject": "utbildning"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/digitalisering/digital-valfard": {
     "opinions": [
@@ -259,7 +259,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/digitalisering/digital-valfard",
     "fetchDate": "2023-09-17T17:52:36.856Z",
     "party": "c",
-    "subject": "IT och Mobiltelefoni"
+    "subject": "it-och-mobiltelefoni"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/digitalisering/jamstalld-och-hallbar-digitalisering": {
     "opinions": [
@@ -270,7 +270,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/digitalisering/jamstalld-och-hallbar-digitalisering",
     "fetchDate": "2023-09-17T17:52:40.271Z",
     "party": "c",
-    "subject": "Jämställdhet och diskriminering"
+    "subject": "jamstalldhet-och-diskriminering"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/diskriminering/metoo": {
     "opinions": [
@@ -283,7 +283,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/diskriminering/metoo",
     "fetchDate": "2023-09-17T17:52:36.973Z",
     "party": "c",
-    "subject": "Jämställdhet och diskriminering"
+    "subject": "jamstalldhet-och-diskriminering"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/diskriminering/funktionsnedsattningar": {
     "opinions": [
@@ -296,7 +296,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/diskriminering/funktionsnedsattningar",
     "fetchDate": "2023-09-17T17:52:40.346Z",
     "party": "c",
-    "subject": "Vård och Omsorg"
+    "subject": "vard-och-omsorg"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/diskriminering/hbtqi-fragor": {
     "opinions": [
@@ -308,7 +308,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/diskriminering/hbtqi-fragor",
     "fetchDate": "2023-09-17T17:52:40.394Z",
     "party": "c",
-    "subject": "Jämställdhet och diskriminering"
+    "subject": "jamstalldhet-och-diskriminering"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/diskriminering/kvotering": {
     "opinions": [
@@ -320,7 +320,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/diskriminering/kvotering",
     "fetchDate": "2023-09-17T17:52:39.503Z",
     "party": "c",
-    "subject": "Jämställdhet och diskriminering"
+    "subject": "jamstalldhet-och-diskriminering"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/diskriminering/mangfald": {
     "opinions": [
@@ -332,7 +332,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/diskriminering/mangfald",
     "fetchDate": "2023-09-17T17:52:38.319Z",
     "party": "c",
-    "subject": "Jämställdhet och diskriminering"
+    "subject": "jamstalldhet-och-diskriminering"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/ekonomi-och-skatter": {
     "opinions": [
@@ -344,7 +344,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/ekonomi-och-skatter",
     "fetchDate": "2023-09-17T17:52:40.247Z",
     "party": "c",
-    "subject": "Ekonomi och Skatter"
+    "subject": "ekonomi-och-skatter"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/ekonomi-och-skatter/det-personliga-agandet-i-foretag": {
     "opinions": [
@@ -355,7 +355,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/ekonomi-och-skatter/det-personliga-agandet-i-foretag",
     "fetchDate": "2023-09-17T17:52:38.312Z",
     "party": "c",
-    "subject": "Näringsliv"
+    "subject": "naringsliv"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/jamstalldhet/ekonomisk-jamstalldhet": {
     "opinions": [
@@ -367,7 +367,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/jamstalldhet/ekonomisk-jamstalldhet",
     "fetchDate": "2023-09-17T17:52:36.933Z",
     "party": "c",
-    "subject": "Jämställdhet och diskriminering"
+    "subject": "jamstalldhet-och-diskriminering"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/ekonomi-och-skatter/ekonomisk-politik": {
     "opinions": [
@@ -379,7 +379,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/ekonomi-och-skatter/ekonomisk-politik",
     "fetchDate": "2023-09-17T17:52:40.372Z",
     "party": "c",
-    "subject": "Ekonomi och Skatter"
+    "subject": "ekonomi-och-skatter"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/ekonomi-och-skatter/gron-skattevaxling": {
     "opinions": [
@@ -391,7 +391,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/ekonomi-och-skatter/gron-skattevaxling",
     "fetchDate": "2023-09-17T17:52:39.319Z",
     "party": "c",
-    "subject": "Miljö och klimat"
+    "subject": "miljo-och-klimat"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/ekonomi-och-skatter/inkomstskatt": {
     "opinions": [
@@ -403,7 +403,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/ekonomi-och-skatter/inkomstskatt",
     "fetchDate": "2023-09-17T17:52:37.036Z",
     "party": "c",
-    "subject": "Jobb"
+    "subject": "jobb"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/ekonomi-och-skatter/kommunalt-skatteutjamningssystem": {
     "opinions": [
@@ -415,7 +415,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/ekonomi-och-skatter/kommunalt-skatteutjamningssystem",
     "fetchDate": "2023-09-17T17:52:35.838Z",
     "party": "c",
-    "subject": "Ekonomi och Skatter"
+    "subject": "ekonomi-och-skatter"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/ekonomi-och-skatter/moms": {
     "opinions": [
@@ -427,7 +427,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/ekonomi-och-skatter/moms",
     "fetchDate": "2023-09-17T17:52:36.093Z",
     "party": "c",
-    "subject": "Konsumentpolitik"
+    "subject": "konsumentpolitik"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/ekonomi-och-skatter/ordning-och-reda-i-statsfinanserna": {
     "opinions": [
@@ -439,7 +439,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/ekonomi-och-skatter/ordning-och-reda-i-statsfinanserna",
     "fetchDate": "2023-09-17T17:52:38.589Z",
     "party": "c",
-    "subject": "Ekonomi och Skatter"
+    "subject": "ekonomi-och-skatter"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/ekonomi-och-skatter/regionala-skattebaser": {
     "opinions": [
@@ -450,7 +450,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/ekonomi-och-skatter/regionala-skattebaser",
     "fetchDate": "2023-09-17T17:52:37.487Z",
     "party": "c",
-    "subject": "Ekonomi och Skatter"
+    "subject": "ekonomi-och-skatter"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/energi": {
     "opinions": [
@@ -462,7 +462,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/energi",
     "fetchDate": "2023-09-17T17:52:35.917Z",
     "party": "c",
-    "subject": "Energi"
+    "subject": "energi"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/energi/bioenergi": {
     "opinions": [
@@ -474,7 +474,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/energi/bioenergi",
     "fetchDate": "2023-09-17T17:52:39.399Z",
     "party": "c",
-    "subject": "Energi"
+    "subject": "energi"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/energi/elnat": {
     "opinions": [
@@ -486,7 +486,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/energi/elnat",
     "fetchDate": "2023-09-17T17:52:39.653Z",
     "party": "c",
-    "subject": "Energi"
+    "subject": "energi"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/energi/energioverenskommelsen": {
     "opinions": [
@@ -498,7 +498,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/energi/energioverenskommelsen",
     "fetchDate": "2023-09-17T17:52:36.964Z",
     "party": "c",
-    "subject": "Energi"
+    "subject": "energi"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/energi/fornybar-energi": {
     "opinions": [],
@@ -506,7 +506,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/energi/fornybar-energi",
     "fetchDate": "2023-09-17T17:52:39.865Z",
     "party": "c",
-    "subject": "Energi"
+    "subject": "energi"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/energi/grona-transporter": {
     "opinions": [
@@ -518,7 +518,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/energi/grona-transporter",
     "fetchDate": "2023-09-17T17:52:40.707Z",
     "party": "c",
-    "subject": "Energi"
+    "subject": "energi"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/energi/gron-vatgas": {
     "opinions": [
@@ -529,7 +529,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/energi/gron-vatgas",
     "fetchDate": "2023-09-17T17:52:36.859Z",
     "party": "c",
-    "subject": "Energi"
+    "subject": "energi"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/energi/kraftvarme": {
     "opinions": [
@@ -540,7 +540,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/energi/kraftvarme",
     "fetchDate": "2023-09-17T17:52:39.494Z",
     "party": "c",
-    "subject": "Energi"
+    "subject": "energi"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/energi/karnkraft": {
     "opinions": [
@@ -552,7 +552,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/energi/karnkraft",
     "fetchDate": "2023-09-17T17:52:39.645Z",
     "party": "c",
-    "subject": "Energi"
+    "subject": "energi"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/energi/solenergi": {
     "opinions": [
@@ -564,7 +564,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/energi/solenergi",
     "fetchDate": "2023-09-17T17:52:40.166Z",
     "party": "c",
-    "subject": "Energi"
+    "subject": "energi"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/energi/sankta-elpriser": {
     "opinions": [
@@ -576,7 +576,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/energi/sankta-elpriser",
     "fetchDate": "2023-09-17T17:52:40.556Z",
     "party": "c",
-    "subject": "Energi"
+    "subject": "energi"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/energi/vattenkraft": {
     "opinions": [
@@ -588,7 +588,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/energi/vattenkraft",
     "fetchDate": "2023-09-17T17:52:37.903Z",
     "party": "c",
-    "subject": "Energi"
+    "subject": "energi"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/energi/vindkraft": {
     "opinions": [
@@ -600,7 +600,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/energi/vindkraft",
     "fetchDate": "2023-09-17T17:52:40.127Z",
     "party": "c",
-    "subject": "Energi"
+    "subject": "energi"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/europa-och-eu": {
     "opinions": [
@@ -612,7 +612,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/europa-och-eu",
     "fetchDate": "2023-09-17T17:52:35.441Z",
     "party": "c",
-    "subject": "Europa"
+    "subject": "europa"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/europa-och-eu/for-liberala-varderingar": {
     "opinions": [],
@@ -627,7 +627,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/europa-och-eu/for-fri-rorlighet",
     "fetchDate": "2023-09-17T17:52:37.309Z",
     "party": "c",
-    "subject": "Europa"
+    "subject": "europa"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/europa-och-eu/for-klimatet-och-miljon": {
     "opinions": [],
@@ -635,7 +635,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/europa-och-eu/for-klimatet-och-miljon",
     "fetchDate": "2023-09-17T17:52:40.274Z",
     "party": "c",
-    "subject": "Europa"
+    "subject": "europa"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/europa-och-eu/for-skarpt-djurskydd": {
     "opinions": [],
@@ -643,7 +643,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/europa-och-eu/for-skarpt-djurskydd",
     "fetchDate": "2023-09-17T17:52:40.289Z",
     "party": "c",
-    "subject": "Europa"
+    "subject": "europa"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/europa-och-eu/for-hallbart-jordbruk": {
     "opinions": [],
@@ -651,7 +651,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/europa-och-eu/for-hallbart-jordbruk",
     "fetchDate": "2023-09-17T17:52:39.464Z",
     "party": "c",
-    "subject": "Europa"
+    "subject": "europa"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/europa-och-eu/for-sakrare-migration": {
     "opinions": [],
@@ -659,7 +659,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/europa-och-eu/for-sakrare-migration",
     "fetchDate": "2023-09-17T17:52:38.239Z",
     "party": "c",
-    "subject": "Europa"
+    "subject": "europa"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/europa-och-eu/for-svensk-arbetsmarknad": {
     "opinions": [],
@@ -667,7 +667,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/europa-och-eu/for-svensk-arbetsmarknad",
     "fetchDate": "2023-09-17T17:52:39.480Z",
     "party": "c",
-    "subject": "Europa"
+    "subject": "europa"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/europa-och-eu/for-mer-transparens": {
     "opinions": [],
@@ -675,7 +675,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/europa-och-eu/for-mer-transparens",
     "fetchDate": "2023-09-17T17:52:39.462Z",
     "party": "c",
-    "subject": "Europa"
+    "subject": "europa"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/europa-och-eu/for-decentralisering": {
     "opinions": [],
@@ -683,7 +683,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/europa-och-eu/for-decentralisering",
     "fetchDate": "2023-09-17T17:52:36.829Z",
     "party": "c",
-    "subject": "Europa"
+    "subject": "europa"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/europa-och-eu/for-bankunion-men-inte-euro": {
     "opinions": [
@@ -694,7 +694,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/europa-och-eu/for-bankunion-men-inte-euro",
     "fetchDate": "2023-09-17T17:52:40.379Z",
     "party": "c",
-    "subject": "Europa"
+    "subject": "europa"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/europa-och-eu/for-svenska-roster": {
     "opinions": [],
@@ -702,7 +702,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/europa-och-eu/for-svenska-roster",
     "fetchDate": "2023-09-17T17:52:40.481Z",
     "party": "c",
-    "subject": "Europa"
+    "subject": "europa"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/familjen": {
     "opinions": [
@@ -714,7 +714,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/familjen",
     "fetchDate": "2023-09-17T17:52:36.904Z",
     "party": "c",
-    "subject": "Familjen"
+    "subject": "familjen"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/familjen/adoption": {
     "opinions": [
@@ -725,7 +725,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/familjen/adoption",
     "fetchDate": "2023-09-17T17:52:39.326Z",
     "party": "c",
-    "subject": "Familjen"
+    "subject": "familjen"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/familjen/barnbidrag": {
     "opinions": [],
@@ -733,7 +733,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/familjen/barnbidrag",
     "fetchDate": "2023-09-17T17:52:37.306Z",
     "party": "c",
-    "subject": "Familjen"
+    "subject": "familjen"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/familjen/barn-som-far-illa": {
     "opinions": [
@@ -745,7 +745,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/familjen/barn-som-far-illa",
     "fetchDate": "2023-09-17T17:52:37.567Z",
     "party": "c",
-    "subject": "Familjen"
+    "subject": "familjen"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/familjen/foraldraforsakring": {
     "opinions": [
@@ -757,7 +757,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/familjen/foraldraforsakring",
     "fetchDate": "2023-09-17T17:52:39.640Z",
     "party": "c",
-    "subject": "Familjen"
+    "subject": "familjen"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/familjen/ofrivillig-barnloshet": {
     "opinions": [
@@ -769,7 +769,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/familjen/ofrivillig-barnloshet",
     "fetchDate": "2023-09-17T17:52:38.432Z",
     "party": "c",
-    "subject": "Familjen"
+    "subject": "familjen"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/familjen/omhandertagande-av-barn": {
     "opinions": [
@@ -781,7 +781,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/familjen/omhandertagande-av-barn",
     "fetchDate": "2023-09-17T17:52:37.087Z",
     "party": "c",
-    "subject": "Familjen"
+    "subject": "familjen"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/funktionshindermanifest": {
     "opinions": [],
@@ -789,7 +789,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/funktionshindermanifest",
     "fetchDate": "2023-09-17T17:52:36.459Z",
     "party": "c",
-    "subject": "Europa"
+    "subject": "europa"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/foretagande": {
     "opinions": [
@@ -801,7 +801,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/foretagande",
     "fetchDate": "2023-09-17T17:52:36.940Z",
     "party": "c",
-    "subject": "Näringsliv"
+    "subject": "naringsliv"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/foretagande/foretagsklimat": {
     "opinions": [
@@ -813,7 +813,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/foretagande/foretagsklimat",
     "fetchDate": "2023-09-17T17:52:37.096Z",
     "party": "c",
-    "subject": "Näringsliv"
+    "subject": "naringsliv"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/foretagande/foretagsskatter": {
     "opinions": [
@@ -825,7 +825,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/foretagande/foretagsskatter",
     "fetchDate": "2023-09-17T17:52:39.473Z",
     "party": "c",
-    "subject": "Näringsliv"
+    "subject": "naringsliv"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/foretagande/nyforetagande": {
     "opinions": [
@@ -837,7 +837,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/foretagande/nyforetagande",
     "fetchDate": "2023-09-17T17:52:40.005Z",
     "party": "c",
-    "subject": "Näringsliv"
+    "subject": "naringsliv"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/foretagande/regelforenklingar-for-foretag": {
     "opinions": [
@@ -849,7 +849,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/foretagande/regelforenklingar-for-foretag",
     "fetchDate": "2023-09-17T17:52:40.477Z",
     "party": "c",
-    "subject": "Näringsliv"
+    "subject": "naringsliv"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/foretagande/rut--och-rot-avdrag": {
     "opinions": ["Fortsätta bredda RUT till att gälla fler tjänster"],
@@ -857,7 +857,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/foretagande/rut--och-rot-avdrag",
     "fetchDate": "2023-09-17T17:52:40.000Z",
     "party": "c",
-    "subject": "Ekonomi och Skatter"
+    "subject": "ekonomi-och-skatter"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/foretagande/sankta-kostnader-for-att-anstalla": {
     "opinions": [
@@ -868,7 +868,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/foretagande/sankta-kostnader-for-att-anstalla",
     "fetchDate": "2023-09-17T17:52:37.766Z",
     "party": "c",
-    "subject": "Näringsliv"
+    "subject": "naringsliv"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/forsvar": {
     "opinions": [
@@ -880,7 +880,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/forsvar",
     "fetchDate": "2023-09-17T17:52:40.145Z",
     "party": "c",
-    "subject": "Försvar"
+    "subject": "forsvar"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/forsvar/internationella-forsvarssamarbeten": {
     "opinions": [
@@ -892,7 +892,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/forsvar/internationella-forsvarssamarbeten",
     "fetchDate": "2023-09-17T17:52:39.662Z",
     "party": "c",
-    "subject": "Utrikes- och biståndsfrågor"
+    "subject": "utrikes--och-bistandsfragor"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/forsvar/internationella-insatser": {
     "opinions": [
@@ -904,7 +904,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/forsvar/internationella-insatser",
     "fetchDate": "2023-09-17T17:52:36.920Z",
     "party": "c",
-    "subject": "Försvar"
+    "subject": "forsvar"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/forsvar/krisberedskap-och-civilt-forsvar": {
     "opinions": [
@@ -916,7 +916,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/forsvar/krisberedskap-och-civilt-forsvar",
     "fetchDate": "2023-09-17T17:52:38.872Z",
     "party": "c",
-    "subject": "Försvar"
+    "subject": "forsvar"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/forsvar/personalforsorjning": {
     "opinions": [
@@ -928,7 +928,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/forsvar/personalforsorjning",
     "fetchDate": "2023-09-17T17:52:38.869Z",
     "party": "c",
-    "subject": "Försvar"
+    "subject": "forsvar"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/forsvar/raddningstjanst": {
     "opinions": [
@@ -940,7 +940,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/forsvar/raddningstjanst",
     "fetchDate": "2023-09-17T17:52:39.982Z",
     "party": "c",
-    "subject": "Försvar"
+    "subject": "forsvar"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/forsvar/terrorism": {
     "opinions": [
@@ -952,7 +952,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/forsvar/terrorism",
     "fetchDate": "2023-09-17T17:52:40.286Z",
     "party": "c",
-    "subject": "Försvar"
+    "subject": "forsvar"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/infrastruktur-och-trafik": {
     "opinions": [
@@ -964,7 +964,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/infrastruktur-och-trafik",
     "fetchDate": "2023-09-17T17:52:39.449Z",
     "party": "c",
-    "subject": "Infrastruktur och Trafik"
+    "subject": "infrastruktur-och-trafik"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/infrastruktur-och-trafik/bil": {
     "opinions": [
@@ -976,7 +976,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/infrastruktur-och-trafik/bil",
     "fetchDate": "2023-09-17T17:52:38.019Z",
     "party": "c",
-    "subject": "Infrastruktur och Trafik"
+    "subject": "infrastruktur-och-trafik"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/infrastruktur-och-trafik/cykel": {
     "opinions": [
@@ -988,7 +988,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/infrastruktur-och-trafik/cykel",
     "fetchDate": "2023-09-17T17:52:38.551Z",
     "party": "c",
-    "subject": "Infrastruktur och Trafik"
+    "subject": "infrastruktur-och-trafik"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/infrastruktur-och-trafik/dubbdack": {
     "opinions": [
@@ -998,7 +998,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/infrastruktur-och-trafik/dubbdack",
     "fetchDate": "2023-09-17T17:52:40.559Z",
     "party": "c",
-    "subject": "Infrastruktur och Trafik"
+    "subject": "infrastruktur-och-trafik"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/infrastruktur-och-trafik/elsparkcyklar": {
     "opinions": [
@@ -1010,7 +1010,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/infrastruktur-och-trafik/elsparkcyklar",
     "fetchDate": "2023-09-17T17:52:39.874Z",
     "party": "c",
-    "subject": "Infrastruktur och Trafik"
+    "subject": "infrastruktur-och-trafik"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/infrastruktur-och-trafik/flyg": {
     "opinions": [
@@ -1022,7 +1022,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/infrastruktur-och-trafik/flyg",
     "fetchDate": "2023-09-17T17:52:40.726Z",
     "party": "c",
-    "subject": "Infrastruktur och Trafik"
+    "subject": "infrastruktur-och-trafik"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/infrastruktur-och-trafik/hastighetssankningar": {
     "opinions": [
@@ -1034,7 +1034,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/infrastruktur-och-trafik/hastighetssankningar",
     "fetchDate": "2023-09-17T17:52:38.418Z",
     "party": "c",
-    "subject": "Infrastruktur och Trafik"
+    "subject": "infrastruktur-och-trafik"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/infrastruktur-och-trafik/jarnvag": {
     "opinions": [
@@ -1046,7 +1046,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/infrastruktur-och-trafik/jarnvag",
     "fetchDate": "2023-09-17T17:52:40.359Z",
     "party": "c",
-    "subject": "Infrastruktur och Trafik"
+    "subject": "infrastruktur-och-trafik"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/infrastruktur-och-trafik/kollektivtrafik": {
     "opinions": [
@@ -1058,7 +1058,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/infrastruktur-och-trafik/kollektivtrafik",
     "fetchDate": "2023-09-17T17:52:38.346Z",
     "party": "c",
-    "subject": "Infrastruktur och Trafik"
+    "subject": "infrastruktur-och-trafik"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/infrastruktur-och-trafik/lastbilar-och-tung-trafik": {
     "opinions": [
@@ -1070,7 +1070,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/infrastruktur-och-trafik/lastbilar-och-tung-trafik",
     "fetchDate": "2023-09-17T17:52:35.522Z",
     "party": "c",
-    "subject": "Infrastruktur och Trafik"
+    "subject": "infrastruktur-och-trafik"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/infrastruktur-och-trafik/mer-lokal-miljomakt": {
     "opinions": [
@@ -1080,7 +1080,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/infrastruktur-och-trafik/mer-lokal-miljomakt",
     "fetchDate": "2023-09-17T17:52:40.124Z",
     "party": "c",
-    "subject": "Infrastruktur och Trafik"
+    "subject": "infrastruktur-och-trafik"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/infrastruktur-och-trafik/sjofart": {
     "opinions": [
@@ -1092,7 +1092,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/infrastruktur-och-trafik/sjofart",
     "fetchDate": "2023-09-17T17:52:38.411Z",
     "party": "c",
-    "subject": "Infrastruktur och Trafik"
+    "subject": "infrastruktur-och-trafik"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/infrastruktur-och-trafik/trangselskatt": {
     "opinions": [
@@ -1102,7 +1102,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/infrastruktur-och-trafik/trangselskatt",
     "fetchDate": "2023-09-17T17:52:35.427Z",
     "party": "c",
-    "subject": "Infrastruktur och Trafik"
+    "subject": "infrastruktur-och-trafik"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/infrastruktur-och-trafik/vagar": {
     "opinions": [
@@ -1113,7 +1113,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/infrastruktur-och-trafik/vagar",
     "fetchDate": "2023-09-17T17:52:39.068Z",
     "party": "c",
-    "subject": "Infrastruktur och Trafik"
+    "subject": "infrastruktur-och-trafik"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/it-och-mobiltelefoni": {
     "opinions": [
@@ -1125,7 +1125,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/it-och-mobiltelefoni",
     "fetchDate": "2023-09-17T17:52:40.494Z",
     "party": "c",
-    "subject": "IT och Mobiltelefoni"
+    "subject": "it-och-mobiltelefoni"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/it-och-mobiltelefoni/it-och-bredband": {
     "opinions": [
@@ -1137,7 +1137,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/it-och-mobiltelefoni/it-och-bredband",
     "fetchDate": "2023-09-17T17:52:36.976Z",
     "party": "c",
-    "subject": "IT och Mobiltelefoni"
+    "subject": "it-och-mobiltelefoni"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/it-och-mobiltelefoni/mobiltackning": {
     "opinions": [
@@ -1148,7 +1148,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/it-och-mobiltelefoni/mobiltackning",
     "fetchDate": "2023-09-17T17:52:38.163Z",
     "party": "c",
-    "subject": "IT och Mobiltelefoni"
+    "subject": "it-och-mobiltelefoni"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/januariavtalet": {
     "opinions": [],
@@ -1167,7 +1167,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/jobb",
     "fetchDate": "2023-09-17T17:52:40.553Z",
     "party": "c",
-    "subject": "Jobb"
+    "subject": "jobb"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/jobb/arbetsformedlingen": {
     "opinions": [
@@ -1179,7 +1179,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/jobb/arbetsformedlingen",
     "fetchDate": "2023-09-17T17:52:40.011Z",
     "party": "c",
-    "subject": "Jobb"
+    "subject": "jobb"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/jobb/arbetsmiljo": {
     "opinions": [
@@ -1191,7 +1191,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/jobb/arbetsmiljo",
     "fetchDate": "2023-09-17T17:52:38.957Z",
     "party": "c",
-    "subject": "Jobb"
+    "subject": "jobb"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/jobb/arbetsratt-och-fackforening": {
     "opinions": [
@@ -1203,7 +1203,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/jobb/arbetsratt-och-fackforening",
     "fetchDate": "2023-09-17T17:52:36.943Z",
     "party": "c",
-    "subject": "Jobb"
+    "subject": "jobb"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/jobb/foretagsklimat": {
     "opinions": [
@@ -1215,7 +1215,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/jobb/foretagsklimat",
     "fetchDate": "2023-09-17T17:52:38.242Z",
     "party": "c",
-    "subject": "Näringsliv"
+    "subject": "naringsliv"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/jobb/ingangsavdrag": {
     "opinions": [
@@ -1226,7 +1226,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/jobb/ingangsavdrag",
     "fetchDate": "2023-09-17T17:52:38.099Z",
     "party": "c",
-    "subject": "Jobb"
+    "subject": "jobb"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/jobb/langtidsarbetsloshet-och-etablering": {
     "opinions": [
@@ -1237,7 +1237,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/jobb/langtidsarbetsloshet-och-etablering",
     "fetchDate": "2023-09-17T17:52:38.687Z",
     "party": "c",
-    "subject": "Jobb"
+    "subject": "jobb"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/jobb/ungdomsarbetsloshet": {
     "opinions": [
@@ -1248,7 +1248,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/jobb/ungdomsarbetsloshet",
     "fetchDate": "2023-09-17T17:52:38.362Z",
     "party": "c",
-    "subject": "Jobb"
+    "subject": "jobb"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/jordbruk-jakt-och-fiske": {
     "opinions": [
@@ -1260,7 +1260,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/jordbruk-jakt-och-fiske",
     "fetchDate": "2023-09-17T17:52:38.422Z",
     "party": "c",
-    "subject": "Jordbruk, Jakt och Fiske"
+    "subject": "jordbruk-jakt-och-fiske"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/jordbruk-jakt-och-fiske/djurskydd-och-djurhalsa-internationellt": {
     "opinions": [
@@ -1272,7 +1272,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/jordbruk-jakt-och-fiske/djurskydd-och-djurhalsa-internationellt",
     "fetchDate": "2023-09-17T17:52:39.745Z",
     "party": "c",
-    "subject": "Miljö och klimat"
+    "subject": "miljo-och-klimat"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/jordbruk-jakt-och-fiske/djurskydd-och-djurhalsa-i-sverige": {
     "opinions": [
@@ -1284,7 +1284,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/jordbruk-jakt-och-fiske/djurskydd-och-djurhalsa-i-sverige",
     "fetchDate": "2023-09-17T17:52:35.742Z",
     "party": "c",
-    "subject": "Miljö och klimat"
+    "subject": "miljo-och-klimat"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/jordbruk-jakt-och-fiske/fiske": {
     "opinions": [
@@ -1296,7 +1296,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/jordbruk-jakt-och-fiske/fiske",
     "fetchDate": "2023-09-17T17:52:37.908Z",
     "party": "c",
-    "subject": "Jordbruk, Jakt och Fiske"
+    "subject": "jordbruk-jakt-och-fiske"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/jordbruk-jakt-och-fiske/hastar": {
     "opinions": [
@@ -1308,7 +1308,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/jordbruk-jakt-och-fiske/hastar",
     "fetchDate": "2023-09-17T17:52:36.806Z",
     "party": "c",
-    "subject": "Miljö och klimat"
+    "subject": "miljo-och-klimat"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/jordbruk-jakt-och-fiske/jakt": {
     "opinions": [
@@ -1320,7 +1320,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/jordbruk-jakt-och-fiske/jakt",
     "fetchDate": "2023-09-17T17:52:36.946Z",
     "party": "c",
-    "subject": "Jordbruk, Jakt och Fiske"
+    "subject": "jordbruk-jakt-och-fiske"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/jordbruk-jakt-och-fiske/jordbruk-och-livsmedel": {
     "opinions": [
@@ -1332,7 +1332,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/jordbruk-jakt-och-fiske/jordbruk-och-livsmedel",
     "fetchDate": "2023-09-17T17:52:40.567Z",
     "party": "c",
-    "subject": "Jordbruk, Jakt och Fiske"
+    "subject": "jordbruk-jakt-och-fiske"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/jordbruk-jakt-och-fiske/skog": {
     "opinions": [
@@ -1344,7 +1344,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/jordbruk-jakt-och-fiske/skog",
     "fetchDate": "2023-09-17T17:52:35.531Z",
     "party": "c",
-    "subject": "Jordbruk, Jakt och Fiske"
+    "subject": "jordbruk-jakt-och-fiske"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/jordbruk-jakt-och-fiske/vapen": {
     "opinions": [
@@ -1356,7 +1356,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/jordbruk-jakt-och-fiske/vapen",
     "fetchDate": "2023-09-17T17:52:40.456Z",
     "party": "c",
-    "subject": "Jordbruk, Jakt och Fiske"
+    "subject": "jordbruk-jakt-och-fiske"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/jordbruk-jakt-och-fiske/varg-och-andra-rovdjur": {
     "opinions": [
@@ -1368,7 +1368,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/jordbruk-jakt-och-fiske/varg-och-andra-rovdjur",
     "fetchDate": "2023-09-17T17:52:39.730Z",
     "party": "c",
-    "subject": "Jordbruk, Jakt och Fiske"
+    "subject": "jordbruk-jakt-och-fiske"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/jordbruk-jakt-och-fiske/vattenbruk": {
     "opinions": [
@@ -1380,7 +1380,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/jordbruk-jakt-och-fiske/vattenbruk",
     "fetchDate": "2023-09-17T17:52:35.835Z",
     "party": "c",
-    "subject": "Jordbruk, Jakt och Fiske"
+    "subject": "jordbruk-jakt-och-fiske"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/jamstalldhet/metoo": {
     "opinions": [
@@ -1393,7 +1393,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/jamstalldhet/metoo",
     "fetchDate": "2023-09-17T17:52:38.234Z",
     "party": "c",
-    "subject": "Jämställdhet och diskriminering"
+    "subject": "jamstalldhet-och-diskriminering"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/jamstalldhet/abort": {
     "opinions": [
@@ -1405,7 +1405,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/jamstalldhet/abort",
     "fetchDate": "2023-09-17T17:52:36.914Z",
     "party": "c",
-    "subject": "Vård och Omsorg"
+    "subject": "vard-och-omsorg"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/jamstalldhet/foraldraforsakring": {
     "opinions": [
@@ -1417,7 +1417,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/jamstalldhet/foraldraforsakring",
     "fetchDate": "2023-09-17T17:52:40.118Z",
     "party": "c",
-    "subject": "Familjen"
+    "subject": "familjen"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/jamstalldhet/hbtqi-fragor": {
     "opinions": [
@@ -1429,7 +1429,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/jamstalldhet/hbtqi-fragor",
     "fetchDate": "2023-09-17T17:52:36.955Z",
     "party": "c",
-    "subject": "Jämställdhet och diskriminering"
+    "subject": "jamstalldhet-och-diskriminering"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/vard-och-omsorg/jamstalld-vard": {
     "opinions": [
@@ -1441,7 +1441,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/vard-och-omsorg/jamstalld-vard",
     "fetchDate": "2023-09-17T17:52:38.751Z",
     "party": "c",
-    "subject": "Vård och Omsorg"
+    "subject": "vard-och-omsorg"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/jamstalldhet/kvotering": {
     "opinions": [
@@ -1453,7 +1453,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/jamstalldhet/kvotering",
     "fetchDate": "2023-09-17T17:52:40.484Z",
     "party": "c",
-    "subject": "Jämställdhet och diskriminering"
+    "subject": "jamstalldhet-och-diskriminering"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/lag-och-ratt/mans-vald-mot-kvinnor": {
     "opinions": [
@@ -1465,7 +1465,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/lag-och-ratt/mans-vald-mot-kvinnor",
     "fetchDate": "2023-09-17T17:52:40.356Z",
     "party": "c",
-    "subject": "Lag och rätt"
+    "subject": "lag-och-ratt"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/lag-och-ratt/prostitution": {
     "opinions": [
@@ -1477,7 +1477,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/lag-och-ratt/prostitution",
     "fetchDate": "2023-09-17T17:52:39.062Z",
     "party": "c",
-    "subject": "Lag och rätt"
+    "subject": "lag-och-ratt"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/lag-och-ratt/sexualbrott": {
     "opinions": [
@@ -1489,7 +1489,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/lag-och-ratt/sexualbrott",
     "fetchDate": "2023-09-17T17:52:40.154Z",
     "party": "c",
-    "subject": "Lag och rätt"
+    "subject": "lag-och-ratt"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/klimat": {
     "opinions": [
@@ -1501,7 +1501,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/klimat",
     "fetchDate": "2023-09-17T17:52:40.470Z",
     "party": "c",
-    "subject": "Miljö och klimat"
+    "subject": "miljo-och-klimat"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/klimat/klimatpolitik-i-eu": {
     "opinions": [
@@ -1513,7 +1513,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/klimat/klimatpolitik-i-eu",
     "fetchDate": "2023-09-17T17:52:38.629Z",
     "party": "c",
-    "subject": "Europa"
+    "subject": "europa"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/klimat/klimatpolitik-internationellt": {
     "opinions": [
@@ -1525,7 +1525,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/klimat/klimatpolitik-internationellt",
     "fetchDate": "2023-09-17T17:52:39.459Z",
     "party": "c",
-    "subject": "Miljö och klimat"
+    "subject": "miljo-och-klimat"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/kultur-media-och-idrott": {
     "opinions": [
@@ -1537,7 +1537,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/kultur-media-och-idrott",
     "fetchDate": "2023-09-17T17:52:40.136Z",
     "party": "c",
-    "subject": "Kultur, media, och idrott"
+    "subject": "kultur-media-och-idrott"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/kultur-media-och-idrott/ideella-organisationer": {
     "opinions": [
@@ -1549,7 +1549,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/kultur-media-och-idrott/ideella-organisationer",
     "fetchDate": "2023-09-17T17:52:38.321Z",
     "party": "c",
-    "subject": "Kultur, media, och idrott"
+    "subject": "kultur-media-och-idrott"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/kultur-media-och-idrott/idrott": {
     "opinions": [
@@ -1561,7 +1561,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/kultur-media-och-idrott/idrott",
     "fetchDate": "2023-09-17T17:52:38.682Z",
     "party": "c",
-    "subject": "Kultur, media, och idrott"
+    "subject": "kultur-media-och-idrott"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/kultur-media-och-idrott/kultur": {
     "opinions": [
@@ -1573,7 +1573,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/kultur-media-och-idrott/kultur",
     "fetchDate": "2023-09-17T17:52:35.856Z",
     "party": "c",
-    "subject": "Kultur, media, och idrott"
+    "subject": "kultur-media-och-idrott"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/kultur-media-och-idrott/massmedia-och-public-service": {
     "opinions": [
@@ -1585,7 +1585,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/kultur-media-och-idrott/massmedia-och-public-service",
     "fetchDate": "2023-09-17T17:52:38.583Z",
     "party": "c",
-    "subject": "Kultur, media, och idrott"
+    "subject": "kultur-media-och-idrott"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/lag-och-ratt": {
     "opinions": [
@@ -1597,7 +1597,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/lag-och-ratt",
     "fetchDate": "2023-09-17T17:52:40.244Z",
     "party": "c",
-    "subject": "Lag och rätt"
+    "subject": "lag-och-ratt"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/lag-och-ratt/brottsforebyggande": {
     "opinions": [
@@ -1609,7 +1609,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/lag-och-ratt/brottsforebyggande",
     "fetchDate": "2023-09-17T17:52:39.985Z",
     "party": "c",
-    "subject": "Lag och rätt"
+    "subject": "lag-och-ratt"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/lag-och-ratt/hedersrelaterade-brott": {
     "opinions": [
@@ -1621,7 +1621,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/lag-och-ratt/hedersrelaterade-brott",
     "fetchDate": "2023-09-17T17:52:39.232Z",
     "party": "c",
-    "subject": "Lag och rätt"
+    "subject": "lag-och-ratt"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/lag-och-ratt/konsumentpolitik": {
     "opinions": [
@@ -1632,7 +1632,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/lag-och-ratt/konsumentpolitik",
     "fetchDate": "2023-09-17T17:52:39.871Z",
     "party": "c",
-    "subject": "Konsumentpolitik"
+    "subject": "konsumentpolitik"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/lag-och-ratt/kriminalvarden": {
     "opinions": [
@@ -1644,7 +1644,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/lag-och-ratt/kriminalvarden",
     "fetchDate": "2023-09-17T17:52:40.534Z",
     "party": "c",
-    "subject": "Lag och rätt"
+    "subject": "lag-och-ratt"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/lag-och-ratt/miljobrott": {
     "opinions": [
@@ -1656,7 +1656,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/lag-och-ratt/miljobrott",
     "fetchDate": "2023-09-17T17:52:38.336Z",
     "party": "c",
-    "subject": "Lag och rätt"
+    "subject": "lag-och-ratt"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/lag-och-ratt/manniskohandel": {
     "opinions": [
@@ -1668,7 +1668,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/lag-och-ratt/manniskohandel",
     "fetchDate": "2023-09-17T17:52:38.857Z",
     "party": "c",
-    "subject": "Lag och rätt"
+    "subject": "lag-och-ratt"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/lag-och-ratt/organiserad-brottslighet": {
     "opinions": [
@@ -1680,7 +1680,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/lag-och-ratt/organiserad-brottslighet",
     "fetchDate": "2023-09-17T17:52:35.431Z",
     "party": "c",
-    "subject": "Lag och rätt"
+    "subject": "lag-och-ratt"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/lag-och-ratt/polisen": {
     "opinions": [
@@ -1693,7 +1693,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/lag-och-ratt/polisen",
     "fetchDate": "2023-09-17T17:52:40.717Z",
     "party": "c",
-    "subject": "Lag och rätt"
+    "subject": "lag-och-ratt"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/lag-och-ratt/rattssakerhet": {
     "opinions": [
@@ -1705,7 +1705,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/lag-och-ratt/rattssakerhet",
     "fetchDate": "2023-09-17T17:52:39.973Z",
     "party": "c",
-    "subject": "Lag och rätt"
+    "subject": "lag-och-ratt"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/lag-och-ratt/terrorism": {
     "opinions": [
@@ -1718,7 +1718,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/lag-och-ratt/terrorism",
     "fetchDate": "2023-09-17T17:52:39.625Z",
     "party": "c",
-    "subject": "Lag och rätt"
+    "subject": "lag-och-ratt"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/lag-och-ratt/upphovsratt": {
     "opinions": [
@@ -1730,7 +1730,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/lag-och-ratt/upphovsratt",
     "fetchDate": "2023-09-17T17:52:37.637Z",
     "party": "c",
-    "subject": "Lag och rätt"
+    "subject": "lag-och-ratt"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/landsbygd": {
     "opinions": [
@@ -1742,7 +1742,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/landsbygd",
     "fetchDate": "2023-09-17T17:52:40.112Z",
     "party": "c",
-    "subject": "Landsbygd"
+    "subject": "landsbygd"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/vard-och-omsorg/valfrihet-i-valfarden": {
     "opinions": [
@@ -1754,7 +1754,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/vard-och-omsorg/valfrihet-i-valfarden",
     "fetchDate": "2023-09-17T17:52:40.115Z",
     "party": "c",
-    "subject": "Vård och Omsorg"
+    "subject": "vard-och-omsorg"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/landsbygd/vard-pa-landsbygden": {
     "opinions": [
@@ -1766,7 +1766,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/landsbygd/vard-pa-landsbygden",
     "fetchDate": "2023-09-17T17:52:38.948Z",
     "party": "c",
-    "subject": "Vård och Omsorg"
+    "subject": "vard-och-omsorg"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/mat": {
     "opinions": [
@@ -1778,7 +1778,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/mat",
     "fetchDate": "2023-09-17T17:52:38.356Z",
     "party": "c",
-    "subject": "Jordbruk, Jakt och Fiske"
+    "subject": "jordbruk-jakt-och-fiske"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/mat/antibiotika": {
     "opinions": [
@@ -1790,7 +1790,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/mat/antibiotika",
     "fetchDate": "2023-09-17T17:52:40.382Z",
     "party": "c",
-    "subject": "Jordbruk, Jakt och Fiske"
+    "subject": "jordbruk-jakt-och-fiske"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/mat/djurvalfard": {
     "opinions": [
@@ -1802,7 +1802,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/mat/djurvalfard",
     "fetchDate": "2023-09-17T17:52:40.283Z",
     "party": "c",
-    "subject": "Miljö och klimat"
+    "subject": "miljo-och-klimat"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/mat/hallbar-mat": {
     "opinions": [
@@ -1814,7 +1814,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/mat/hallbar-mat",
     "fetchDate": "2023-09-17T17:52:35.618Z",
     "party": "c",
-    "subject": "Jordbruk, Jakt och Fiske"
+    "subject": "jordbruk-jakt-och-fiske"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/mat/livsmedelsproduktion": {
     "opinions": [
@@ -1826,7 +1826,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/mat/livsmedelsproduktion",
     "fetchDate": "2023-09-17T17:52:40.179Z",
     "party": "c",
-    "subject": "Näringsliv"
+    "subject": "naringsliv"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/mat/ursprungsmarkning": {
     "opinions": [
@@ -1838,7 +1838,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/mat/ursprungsmarkning",
     "fetchDate": "2023-09-17T17:52:36.967Z",
     "party": "c",
-    "subject": "Jordbruk, Jakt och Fiske"
+    "subject": "jordbruk-jakt-och-fiske"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/migration-och-integration": {
     "opinions": [
@@ -1851,7 +1851,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/migration-och-integration",
     "fetchDate": "2023-09-17T17:52:40.542Z",
     "party": "c",
-    "subject": "Migration och Integration"
+    "subject": "migration-och-integration"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/migration-och-integration/anhoriginvandring": {
     "opinions": [
@@ -1863,7 +1863,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/migration-och-integration/anhoriginvandring",
     "fetchDate": "2023-09-17T17:52:36.952Z",
     "party": "c",
-    "subject": "Migration och Integration"
+    "subject": "migration-och-integration"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/migration-och-integration/arbetskraftinvandring": {
     "opinions": [
@@ -1875,7 +1875,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/migration-och-integration/arbetskraftinvandring",
     "fetchDate": "2023-09-17T17:52:40.703Z",
     "party": "c",
-    "subject": "Migration och Integration"
+    "subject": "migration-och-integration"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/migration-och-integration/en-sammanhallen-asylprocess": {
     "opinions": [
@@ -1887,7 +1887,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/migration-och-integration/en-sammanhallen-asylprocess",
     "fetchDate": "2023-09-17T17:52:39.991Z",
     "party": "c",
-    "subject": "Migration och Integration"
+    "subject": "migration-och-integration"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/migration-och-integration/integration": {
     "opinions": [
@@ -1900,7 +1900,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/migration-och-integration/integration",
     "fetchDate": "2023-09-17T17:52:40.003Z",
     "party": "c",
-    "subject": "Migration och Integration"
+    "subject": "migration-och-integration"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/migration-och-integration/migration": {
     "opinions": [
@@ -1912,7 +1912,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/migration-och-integration/migration",
     "fetchDate": "2023-09-17T17:52:36.824Z",
     "party": "c",
-    "subject": "Migration och Integration"
+    "subject": "migration-och-integration"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/migration-och-integration/manniskor-som-flyr-fran-krig-och-fortryck": {
     "opinions": [
@@ -1924,7 +1924,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/migration-och-integration/manniskor-som-flyr-fran-krig-och-fortryck",
     "fetchDate": "2023-09-17T17:52:37.122Z",
     "party": "c",
-    "subject": "Migration och Integration"
+    "subject": "migration-och-integration"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/migration-och-integration/reformer-for-integration": {
     "opinions": [],
@@ -1932,7 +1932,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/migration-och-integration/reformer-for-integration",
     "fetchDate": "2023-09-17T17:52:40.453Z",
     "party": "c",
-    "subject": "Migration och Integration"
+    "subject": "migration-och-integration"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/migration-och-integration/tiggeri": {
     "opinions": [
@@ -1944,7 +1944,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/migration-och-integration/tiggeri",
     "fetchDate": "2023-09-17T17:52:38.632Z",
     "party": "c",
-    "subject": "Migration och Integration"
+    "subject": "migration-och-integration"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/miljo": {
     "opinions": [
@@ -1956,7 +1956,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/miljo",
     "fetchDate": "2023-09-17T17:52:39.059Z",
     "party": "c",
-    "subject": "Miljö och klimat"
+    "subject": "miljo-och-klimat"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/miljo/biologisk-mangfald": {
     "opinions": [
@@ -1968,7 +1968,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/miljo/biologisk-mangfald",
     "fetchDate": "2023-09-17T17:52:39.656Z",
     "party": "c",
-    "subject": "Miljö och klimat"
+    "subject": "miljo-och-klimat"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/miljo/cirkular-ekonomi": {
     "opinions": [
@@ -1980,7 +1980,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/miljo/cirkular-ekonomi",
     "fetchDate": "2023-09-17T17:52:39.979Z",
     "party": "c",
-    "subject": "Ekonomi och Skatter"
+    "subject": "ekonomi-och-skatter"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/miljo/giftfri-vardag": {
     "opinions": [
@@ -1992,7 +1992,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/miljo/giftfri-vardag",
     "fetchDate": "2023-09-17T17:52:40.714Z",
     "party": "c",
-    "subject": "Miljö och klimat"
+    "subject": "miljo-och-klimat"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/miljo/havsmiljo": {
     "opinions": [
@@ -2004,7 +2004,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/miljo/havsmiljo",
     "fetchDate": "2023-09-17T17:52:39.618Z",
     "party": "c",
-    "subject": "Miljö och klimat"
+    "subject": "miljo-och-klimat"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/miljo/hallbart-skogsbruk": {
     "opinions": [
@@ -2016,7 +2016,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/miljo/hallbart-skogsbruk",
     "fetchDate": "2023-09-17T17:52:36.900Z",
     "party": "c",
-    "subject": "Miljö och klimat"
+    "subject": "miljo-och-klimat"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/miljo/lokalt-sjalvbestammande": {
     "opinions": [
@@ -2028,7 +2028,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/miljo/lokalt-sjalvbestammande",
     "fetchDate": "2023-09-17T17:52:39.144Z",
     "party": "c",
-    "subject": "Miljö och klimat"
+    "subject": "miljo-och-klimat"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/miljo/mat-och-miljo": {
     "opinions": [
@@ -2040,7 +2040,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/miljo/mat-och-miljo",
     "fetchDate": "2023-09-17T17:52:38.624Z",
     "party": "c",
-    "subject": "Miljö och klimat"
+    "subject": "miljo-och-klimat"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/miljo/miljolagstiftning": {
     "opinions": [
@@ -2052,7 +2052,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/miljo/miljolagstiftning",
     "fetchDate": "2023-09-17T17:52:37.030Z",
     "party": "c",
-    "subject": "Miljö och klimat"
+    "subject": "miljo-och-klimat"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/miljo/nedskrapning": {
     "opinions": [
@@ -2064,7 +2064,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/miljo/nedskrapning",
     "fetchDate": "2023-09-17T17:52:38.951Z",
     "party": "c",
-    "subject": "Miljö och klimat"
+    "subject": "miljo-och-klimat"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/miljo/offentliga-sektorns-roll-i-klimatarbetet": {
     "opinions": [
@@ -2076,7 +2076,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/miljo/offentliga-sektorns-roll-i-klimatarbetet",
     "fetchDate": "2023-09-17T17:52:38.851Z",
     "party": "c",
-    "subject": "Miljö och klimat"
+    "subject": "miljo-och-klimat"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/miljo/rent-vatten": {
     "opinions": [
@@ -2088,7 +2088,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/miljo/rent-vatten",
     "fetchDate": "2023-09-17T17:52:35.935Z",
     "party": "c",
-    "subject": "Miljö och klimat"
+    "subject": "miljo-och-klimat"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/seniorpolitiskt-manifest": {
     "opinions": [],
@@ -2096,7 +2096,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/seniorpolitiskt-manifest",
     "fetchDate": "2023-09-17T17:52:37.351Z",
     "party": "c",
-    "subject": "Äldrepolitik"
+    "subject": "aldrepolitik"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/trygghetssystem": {
     "opinions": [
@@ -2108,7 +2108,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/trygghetssystem",
     "fetchDate": "2023-09-17T17:52:38.848Z",
     "party": "c",
-    "subject": "Trygghetssystem och Välfärd"
+    "subject": "trygghetssystem-och-valfard"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/trygghetssystem/a-kassa-och-omstallningsforsakring": {
     "opinions": [
@@ -2119,7 +2119,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/trygghetssystem/a-kassa-och-omstallningsforsakring",
     "fetchDate": "2023-09-17T17:52:37.354Z",
     "party": "c",
-    "subject": "Trygghetssystem och Välfärd"
+    "subject": "trygghetssystem-och-valfard"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/trygghetssystem/ekonomiskt-bistand": {
     "opinions": [
@@ -2131,7 +2131,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/trygghetssystem/ekonomiskt-bistand",
     "fetchDate": "2023-09-17T17:52:36.526Z",
     "party": "c",
-    "subject": "Trygghetssystem och Välfärd"
+    "subject": "trygghetssystem-och-valfard"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/trygghetssystem/pensioner": {
     "opinions": [
@@ -2143,7 +2143,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/trygghetssystem/pensioner",
     "fetchDate": "2023-09-17T17:52:35.852Z",
     "party": "c",
-    "subject": "Äldrepolitik"
+    "subject": "aldrepolitik"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/trygghetssystem/sjukforsakring": {
     "opinions": [
@@ -2155,7 +2155,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/trygghetssystem/sjukforsakring",
     "fetchDate": "2023-09-17T17:52:39.743Z",
     "party": "c",
-    "subject": "Trygghetssystem och Välfärd"
+    "subject": "trygghetssystem-och-valfard"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/utbildning": {
     "opinions": [
@@ -2167,7 +2167,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/utbildning",
     "fetchDate": "2023-09-17T17:52:40.693Z",
     "party": "c",
-    "subject": "Utbildning"
+    "subject": "utbildning"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/utbildning/elevhalsa-och-mobbning": {
     "opinions": [
@@ -2179,7 +2179,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/utbildning/elevhalsa-och-mobbning",
     "fetchDate": "2023-09-17T17:52:39.740Z",
     "party": "c",
-    "subject": "Utbildning"
+    "subject": "utbildning"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/utbildning/forskning": {
     "opinions": [
@@ -2191,7 +2191,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/utbildning/forskning",
     "fetchDate": "2023-09-17T17:52:40.253Z",
     "party": "c",
-    "subject": "Utbildning"
+    "subject": "utbildning"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/utbildning/fritids": {
     "opinions": [
@@ -2203,7 +2203,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/utbildning/fritids",
     "fetchDate": "2023-09-17T17:52:40.546Z",
     "party": "c",
-    "subject": "Utbildning"
+    "subject": "utbildning"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/utbildning/forskola": {
     "opinions": [
@@ -2215,7 +2215,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/utbildning/forskola",
     "fetchDate": "2023-09-17T17:52:38.408Z",
     "party": "c",
-    "subject": "Utbildning"
+    "subject": "utbildning"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/utbildning/grundskola": {
     "opinions": [
@@ -2227,7 +2227,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/utbildning/grundskola",
     "fetchDate": "2023-09-17T17:52:35.894Z",
     "party": "c",
-    "subject": "Utbildning"
+    "subject": "utbildning"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/utbildning/gymnasieskola": {
     "opinions": [
@@ -2239,7 +2239,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/utbildning/gymnasieskola",
     "fetchDate": "2023-09-17T17:52:39.615Z",
     "party": "c",
-    "subject": "Utbildning"
+    "subject": "utbildning"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/utbildning/hogre-utbildning": {
     "opinions": [
@@ -2251,7 +2251,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/utbildning/hogre-utbildning",
     "fetchDate": "2023-09-17T17:52:40.366Z",
     "party": "c",
-    "subject": "Utbildning"
+    "subject": "utbildning"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/utbildning/it-och-skola": {
     "opinions": [
@@ -2263,7 +2263,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/utbildning/it-och-skola",
     "fetchDate": "2023-09-17T17:52:36.961Z",
     "party": "c",
-    "subject": "Utbildning"
+    "subject": "utbildning"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/utbildning/larare-och-rektorer": {
     "opinions": [
@@ -2275,7 +2275,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/utbildning/larare-och-rektorer",
     "fetchDate": "2023-09-17T17:52:40.696Z",
     "party": "c",
-    "subject": "Utbildning"
+    "subject": "utbildning"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/utbildning/skola-som-leder-till-jobb": {
     "opinions": [
@@ -2287,7 +2287,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/utbildning/skola-som-leder-till-jobb",
     "fetchDate": "2023-09-17T17:52:38.570Z",
     "party": "c",
-    "subject": "Utbildning"
+    "subject": "utbildning"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/utbildning/studiemedel": {
     "opinions": [
@@ -2299,7 +2299,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/utbildning/studiemedel",
     "fetchDate": "2023-09-17T17:52:40.467Z",
     "party": "c",
-    "subject": "Utbildning"
+    "subject": "utbildning"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/utbildning/utbildning-for-nyanlanda-elever": {
     "opinions": [
@@ -2311,7 +2311,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/utbildning/utbildning-for-nyanlanda-elever",
     "fetchDate": "2023-09-17T17:52:40.729Z",
     "party": "c",
-    "subject": "Utbildning"
+    "subject": "utbildning"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/utbildning/valfrihet-i-skolan": {
     "opinions": [
@@ -2323,7 +2323,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/utbildning/valfrihet-i-skolan",
     "fetchDate": "2023-09-17T17:52:35.640Z",
     "party": "c",
-    "subject": "Utbildning"
+    "subject": "utbildning"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/utbildning/vuxenutbildning": {
     "opinions": [
@@ -2335,7 +2335,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/utbildning/vuxenutbildning",
     "fetchDate": "2023-09-17T17:52:38.339Z",
     "party": "c",
-    "subject": "Utbildning"
+    "subject": "utbildning"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/utrikes--och-bistandsfragor": {
     "opinions": [
@@ -2347,7 +2347,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/utrikes--och-bistandsfragor",
     "fetchDate": "2023-09-17T17:52:38.530Z",
     "party": "c",
-    "subject": "Utrikes- och biståndsfrågor"
+    "subject": "utrikes--och-bistandsfragor"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/utrikes--och-bistandsfragor/bistand": {
     "opinions": [
@@ -2359,7 +2359,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/utrikes--och-bistandsfragor/bistand",
     "fetchDate": "2023-09-17T17:52:38.248Z",
     "party": "c",
-    "subject": "Utrikes- och biståndsfrågor"
+    "subject": "utrikes--och-bistandsfragor"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/utrikes--och-bistandsfragor/fn": {
     "opinions": [
@@ -2371,7 +2371,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/utrikes--och-bistandsfragor/fn",
     "fetchDate": "2023-09-17T17:52:35.796Z",
     "party": "c",
-    "subject": "Utrikes- och biståndsfrågor"
+    "subject": "utrikes--och-bistandsfragor"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/utrikes--och-bistandsfragor/handel": {
     "opinions": [
@@ -2383,7 +2383,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/utrikes--och-bistandsfragor/handel",
     "fetchDate": "2023-09-17T17:52:38.960Z",
     "party": "c",
-    "subject": "Näringsliv"
+    "subject": "naringsliv"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/utrikes--och-bistandsfragor/krigsmaterielexport": {
     "opinions": [
@@ -2395,7 +2395,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/utrikes--och-bistandsfragor/krigsmaterielexport",
     "fetchDate": "2023-09-17T17:52:38.757Z",
     "party": "c",
-    "subject": "Utrikes- och biståndsfrågor"
+    "subject": "utrikes--och-bistandsfragor"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/utrikes--och-bistandsfragor/nedrustning-och-karnvapen": {
     "opinions": [
@@ -2407,7 +2407,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/utrikes--och-bistandsfragor/nedrustning-och-karnvapen",
     "fetchDate": "2023-09-17T17:52:38.092Z",
     "party": "c",
-    "subject": "Utrikes- och biståndsfrågor"
+    "subject": "utrikes--och-bistandsfragor"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/utrikes--och-bistandsfragor/utrikespolitik": {
     "opinions": [
@@ -2419,7 +2419,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/utrikes--och-bistandsfragor/utrikespolitik",
     "fetchDate": "2023-09-17T17:52:40.168Z",
     "party": "c",
-    "subject": "Utrikes- och biståndsfrågor"
+    "subject": "utrikes--och-bistandsfragor"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/vard-och-omsorg": {
     "opinions": [
@@ -2431,7 +2431,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/vard-och-omsorg",
     "fetchDate": "2023-09-17T17:52:38.333Z",
     "party": "c",
-    "subject": "Vård och Omsorg"
+    "subject": "vard-och-omsorg"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/vard-och-omsorg/alkoholpolitik": {
     "opinions": [
@@ -2443,7 +2443,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/vard-och-omsorg/alkoholpolitik",
     "fetchDate": "2023-09-17T17:52:40.434Z",
     "party": "c",
-    "subject": "Vård och Omsorg"
+    "subject": "vard-och-omsorg"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/vard-och-omsorg/anhoriga": {
     "opinions": [
@@ -2455,7 +2455,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/vard-och-omsorg/anhoriga",
     "fetchDate": "2023-09-17T17:52:37.027Z",
     "party": "c",
-    "subject": "Vård och Omsorg"
+    "subject": "vard-och-omsorg"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/vard-och-omsorg/apotek": {
     "opinions": [
@@ -2467,7 +2467,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/vard-och-omsorg/apotek",
     "fetchDate": "2023-09-17T17:52:35.361Z",
     "party": "c",
-    "subject": "Vård och Omsorg"
+    "subject": "vard-och-omsorg"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/vard-och-omsorg/dodshjalp": {
     "opinions": [
@@ -2478,7 +2478,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/vard-och-omsorg/dodshjalp",
     "fetchDate": "2023-09-17T17:52:39.452Z",
     "party": "c",
-    "subject": "Vård och Omsorg"
+    "subject": "vard-och-omsorg"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/vard-och-omsorg/folkhalsa": {
     "opinions": [
@@ -2490,7 +2490,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/vard-och-omsorg/folkhalsa",
     "fetchDate": "2023-09-17T17:52:39.141Z",
     "party": "c",
-    "subject": "Vård och Omsorg"
+    "subject": "vard-och-omsorg"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/vard-och-omsorg/funktionsnedsattningar": {
     "opinions": [
@@ -2502,7 +2502,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/vard-och-omsorg/funktionsnedsattningar",
     "fetchDate": "2023-09-17T17:52:38.349Z",
     "party": "c",
-    "subject": "Vård och Omsorg"
+    "subject": "vard-och-omsorg"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/vard-och-omsorg/forlossningsvard": {
     "opinions": [
@@ -2514,7 +2514,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/vard-och-omsorg/forlossningsvard",
     "fetchDate": "2023-09-17T17:52:38.673Z",
     "party": "c",
-    "subject": "Vård och Omsorg"
+    "subject": "vard-och-omsorg"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/vard-och-omsorg/hemloshet": {
     "opinions": [
@@ -2526,7 +2526,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/vard-och-omsorg/hemloshet",
     "fetchDate": "2023-09-17T17:52:40.263Z",
     "party": "c",
-    "subject": "Vård och Omsorg"
+    "subject": "vard-och-omsorg"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/vard-och-omsorg/missbruk": {
     "opinions": [
@@ -2538,7 +2538,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/vard-och-omsorg/missbruk",
     "fetchDate": "2023-09-17T17:52:38.359Z",
     "party": "c",
-    "subject": "Vård och Omsorg"
+    "subject": "vard-och-omsorg"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/vard-och-omsorg/primarvarden": {
     "opinions": [
@@ -2550,7 +2550,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/vard-och-omsorg/primarvarden",
     "fetchDate": "2023-09-17T17:52:40.459Z",
     "party": "c",
-    "subject": "Vård och Omsorg"
+    "subject": "vard-och-omsorg"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/vard-och-omsorg/psykisk-ohalsa": {
     "opinions": [
@@ -2562,7 +2562,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/vard-och-omsorg/psykisk-ohalsa",
     "fetchDate": "2023-09-17T17:52:35.874Z",
     "party": "c",
-    "subject": "Vård och Omsorg"
+    "subject": "vard-och-omsorg"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/vard-och-omsorg/sjukvard": {
     "opinions": [
@@ -2574,7 +2574,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/vard-och-omsorg/sjukvard",
     "fetchDate": "2023-09-17T17:52:37.821Z",
     "party": "c",
-    "subject": "Vård och Omsorg"
+    "subject": "vard-och-omsorg"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/vard-och-omsorg/socialtjanst": {
     "opinions": [
@@ -2586,7 +2586,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/vard-och-omsorg/socialtjanst",
     "fetchDate": "2023-09-17T17:52:36.695Z",
     "party": "c",
-    "subject": "Vård och Omsorg"
+    "subject": "vard-och-omsorg"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/vard-och-omsorg/tandvard": {
     "opinions": [
@@ -2598,7 +2598,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/vard-och-omsorg/tandvard",
     "fetchDate": "2023-09-17T17:52:40.349Z",
     "party": "c",
-    "subject": "Vård och Omsorg"
+    "subject": "vard-och-omsorg"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/vard-och-omsorg/vardkoer": {
     "opinions": [
@@ -2610,7 +2610,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/vard-och-omsorg/vardkoer",
     "fetchDate": "2023-09-17T17:52:40.148Z",
     "party": "c",
-    "subject": "Vård och Omsorg"
+    "subject": "vard-och-omsorg"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/vard-och-omsorg/vardpersonalen": {
     "opinions": [
@@ -2622,7 +2622,7 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/vard-och-omsorg/vardpersonalen",
     "fetchDate": "2023-09-17T17:52:39.599Z",
     "party": "c",
-    "subject": "Vård och Omsorg"
+    "subject": "vard-och-omsorg"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/vard-och-omsorg/aldreomsorg": {
     "opinions": [
@@ -2635,6 +2635,6 @@
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/vard-och-omsorg/aldreomsorg",
     "fetchDate": "2023-09-17T17:52:39.621Z",
     "party": "c",
-    "subject": "Äldrepolitik"
+    "subject": "aldrepolitik"
   }
 }

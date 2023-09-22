@@ -7,34 +7,15 @@ import kd from "./parties/kd.json";
 import c from "./parties/c.json";
 import v from "./parties/v.json";
 import subjects from "./subjects.json";
-
-enum Party {
-  S = "s",
-  SD = "sd",
-  M = "m",
-  MP = "mp",
-  L = "l",
-  KD = "kd",
-  C = "c",
-  V = "v",
-}
-
-export interface Subject {
-  name: string;
-  relatedSubjects: string[];
-}
-
-export interface Standpoint {
-  title: string;
-  url: string;
-  opinions: string[];
-  fetchDate: string;
-  party: string;
-  subject?: string;
-}
+import type { Standpoint } from "./types";
+import { Party, type Subject } from "./types";
 
 export function getSubjects(): Subject[] {
   return Object.values(subjects);
+}
+
+export function getSubject(id: string): Subject | undefined {
+  return getSubjects().find((subject) => subject.id === id);
 }
 
 function getPartyData(abbreviation: string) {
@@ -60,7 +41,21 @@ function getPartyData(abbreviation: string) {
 }
 
 export function readPartyStandpoints(abbreviation: Party): Standpoint[] {
-  return Object.values(getPartyData(abbreviation) as unknown);
+  return Object.values(getPartyData(abbreviation));
+}
+
+export function getStandpointsForSubject(subject: string) {
+  return Object.values(Party)
+    .sort()
+    .reduce<Record<Party, Standpoint[]>>(
+      (prev, party) => ({
+        ...prev,
+        [party]: readPartyStandpoints(party).filter(
+          (standpoint) => standpoint.subject === subject,
+        ),
+      }),
+      {} as Record<Party, Standpoint[]>,
+    );
 }
 
 export function readPartyDataForSubject(party: Party, subjectName: string) {
@@ -70,4 +65,13 @@ export function readPartyDataForSubject(party: Party, subjectName: string) {
 
 export function readAllStandpoints(): Standpoint[] {
   return Object.values(Party).map(readPartyStandpoints).flat();
+}
+
+export function readNotCategorizedStandpoints() {
+  const standpoints = readAllStandpoints();
+  return standpoints.filter((standpoint) => standpoint.subject === undefined);
+}
+
+export function readSubjects(): Subject[] {
+  return Object.values(subjects);
 }

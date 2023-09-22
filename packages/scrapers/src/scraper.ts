@@ -2,7 +2,7 @@ import type { Cheerio, CheerioAPI, Element } from "cheerio";
 import type {
   PartyData,
   PartyDataWithoutPartyName,
-} from "@partiguiden/party-data/writer";
+} from "@partiguiden/party-data/types";
 import * as cheerio from "cheerio";
 
 interface ScraperArgs {

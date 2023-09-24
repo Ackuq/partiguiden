@@ -7,6 +7,9 @@ import {
 import { ERROR_404_TITLE } from "@lib/constants";
 import PageTitle from "@components/page-title";
 import PartyStandpoints from "./party-standpoints";
+import { Divider } from "@components/common/divider";
+import Link from "next/link";
+import { routes } from "@lib/navigation";
 
 interface PageProps {
   params: {
@@ -40,16 +43,33 @@ export default function Standpoints({ params: { id } }: PageProps) {
   return (
     <main>
       <PageTitle>{subject.name}</PageTitle>
-      <div className="container">
-        <div className="grid gap-4">
-          {Object.entries(standpoints).map(([party, standpoints]) => (
-            <PartyStandpoints
-              key={party}
-              party={party as Party}
-              standpoints={standpoints}
-            />
-          ))}
-        </div>
+      <div className="container mb-6 grid gap-4">
+        {Object.entries(standpoints).map(([party, standpoints]) => (
+          <PartyStandpoints
+            key={party}
+            party={party as Party}
+            standpoints={standpoints}
+          />
+        ))}
+        {subject.relatedSubjects.length > 0 && (
+          <>
+            <Divider />
+            <div>
+              <p className="text-primary mb-2 text-xl ">
+                Relaterade sakområden
+              </p>
+              <ul className="text-primary list-inside list-disc">
+                {subject.relatedSubjects.map((related) => (
+                  <li key={related}>
+                    <Link href={routes.standpoint(related)}>
+                      {getSubject(related)?.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </>
+        )}
       </div>
     </main>
   );

@@ -5,8 +5,9 @@ import { partyColors } from "@partiguiden/party-data/utils";
 const config: Config = {
   darkMode: "class",
   content: [
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./lib/styles/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
   ],
   theme: {
     container: {

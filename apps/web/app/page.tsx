@@ -1,29 +1,15 @@
 import { BaseCard } from "@components/card";
-import Typed from "../src/components/Typed";
+import Typed from "@components/common/typed";
 import Link from "next/link";
 import { routes } from "@lib/navigation";
+import PageTitle from "@components/common/page-title";
+import Container from "@components/common/container";
 
 export const metadata = {
   title: "Partiguiden | Rösta rätt",
   description:
     "Vad tar Sveriges partier för ståndpunkter i sakfrågor? På Partiguiden kan du hitta och jämföra vad partierns åsikter för att hitta det parti du sympatiserar mest med.",
 };
-
-function PageTitleContainer() {
-  return (
-    <h2 className="bg-primary dark:bg-primary-elevated-dark mb-4 py-6 text-center text-xl font-light leading-10 text-white shadow-sm sm:text-3xl">
-      Hur vill Sveriges partier förbättra
-      <br />
-      <Typed
-        strings={["miljön?", "jämlikheten?", "vården?", "Sverige?"]}
-        typeSpeed={100}
-        backSpeed={50}
-        showCursor={false}
-      />
-      &nbsp;
-    </h2>
-  );
-}
 
 // TODO: Fetch this from google
 const featured = [
@@ -36,8 +22,18 @@ const featured = [
 export default function IndexPage() {
   return (
     <main>
-      <PageTitleContainer />
-      <div className="container grid gap-4">
+      <PageTitle>
+        Hur vill Sveriges partier förbättra
+        <br />
+        <Typed
+          strings={["miljön?", "jämlikheten?", "vården?", "Sverige?"]}
+          typeSpeed={100}
+          backSpeed={50}
+          showCursor={false}
+        />
+        &nbsp;
+      </PageTitle>
+      <Container className="grid gap-4">
         <BaseCard className="w-full">
           <h3 className="pb-4 text-center text-2xl sm:text-3xl">
             Vilket parti ska man rösta på?
@@ -64,7 +60,7 @@ export default function IndexPage() {
             ))}
           </div>
         </BaseCard>
-      </div>
+      </Container>
     </main>
   );
 }

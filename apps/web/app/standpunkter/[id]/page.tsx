@@ -5,11 +5,13 @@ import {
   getSubject,
 } from "@partiguiden/party-data/reader";
 import { ERROR_404_TITLE } from "@lib/constants";
-import PageTitle from "@components/page-title";
+import PageTitle from "@components/common/page-title";
 import PartyStandpoints from "./party-standpoints";
 import { Divider } from "@components/common/divider";
 import Link from "next/link";
 import { routes } from "@lib/navigation";
+import Container from "@components/common/container";
+import BreadcrumbsSocialMediaShare from "@components/common/breadcrumbs-social-media-share";
 
 interface PageProps {
   params: {
@@ -43,7 +45,16 @@ export default function Standpoints({ params: { id } }: PageProps) {
   return (
     <main>
       <PageTitle>{subject.name}</PageTitle>
-      <div className="container mb-6 grid gap-4">
+      <Container className="grid gap-4">
+        <BreadcrumbsSocialMediaShare
+          breadcrumbsProps={{
+            links: [{ href: routes.standpoints, title: "Ståndpunkter" }],
+            current: subject.name,
+          }}
+          socialMediaProps={{
+            title: subject.name,
+          }}
+        />
         {Object.entries(standpoints).map(([party, standpoints]) => (
           <PartyStandpoints
             key={party}
@@ -70,7 +81,7 @@ export default function Standpoints({ params: { id } }: PageProps) {
             </div>
           </>
         )}
-      </div>
+      </Container>
     </main>
   );
 }

@@ -1,4 +1,4 @@
-import { githubProfile, linkedIn } from "../src/lib/socials";
+import { githubProfile, linkedIn } from "@lib/socials";
 import GithubIcon from "@components/icons/github";
 import LinkedInIcon from "@components/icons/linkedIn";
 

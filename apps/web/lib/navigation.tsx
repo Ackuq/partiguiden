@@ -1,3 +1,4 @@
+import PartyIcon from "@components/party/icon";
 import {
   HomeIcon,
   PencilSquareIcon,
@@ -8,6 +9,8 @@ import {
   ChatBubbleLeftRightIcon,
   ScaleIcon,
 } from "@heroicons/react/24/solid";
+import { Party } from "@partiguiden/party-data/types";
+import { getPartyName } from "@partiguiden/party-data/utils";
 
 export const routes = {
   index: "/",
@@ -21,9 +24,13 @@ export const routes = {
   standpoint(id: string) {
     return `/standpunkter/${id}`;
   },
-  party: "/party/[party]",
+  party(party: Party) {
+    return `/parti/${party}`;
+  },
   members: "/member",
-  member: "/member/[id]",
+  member(id: string) {
+    return `/ledamot/${id}`;
+  },
   memberStatsYear: "/member-stats/year",
   memberStatsPeriod: "/member-stats/period",
   document: "/document/[id]",
@@ -31,18 +38,31 @@ export const routes = {
   debate: "/debate/[id]",
 };
 
-export const mainNavigation = [
+export interface RouteEntry {
+  href: string;
+  title: string;
+  Icon?: React.ElementType;
+}
+
+export type NavigationEntry =
+  | RouteEntry
+  | { title: string; subPages: RouteEntry[] };
+
+export const mainNavigation: NavigationEntry[] = [
   { href: routes.index, title: "Hem", Icon: HomeIcon },
   {
     href: routes.standpoints,
     title: "Partiernas Ståndpunkter",
     Icon: PencilSquareIcon,
   },
-  // {
-  //   href: routes.party,
-  //   title: "Partierna",
-  //   Icon: UserGroupIcon,
-  // },
+  {
+    title: "Partierna",
+    subPages: Object.values(Party).map((party) => ({
+      title: getPartyName(party),
+      href: routes.party(party),
+      Icon: () => <PartyIcon party={party} />,
+    })),
+  },
   { href: routes.decisions, title: "Riksdagsbeslut", Icon: DocumentCheckIcon },
   {
     href: routes.votes,

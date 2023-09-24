@@ -48,12 +48,18 @@ export function getStandpointsForSubject(subject: string) {
   return Object.values(Party)
     .sort()
     .reduce<Record<Party, Standpoint[]>>(
-      (prev, party) => ({
-        ...prev,
-        [party]: readPartyStandpoints(party).filter(
+      (prev, party) => {
+        const partyStandpoints = readPartyStandpoints(party).filter(
           (standpoint) => standpoint.subject === subject,
-        ),
-      }),
+        );
+        if (partyStandpoints.length === 0) {
+          return prev;
+        }
+        return {
+          ...prev,
+          [party]: partyStandpoints,
+        };
+      },
       {} as Record<Party, Standpoint[]>,
     );
 }

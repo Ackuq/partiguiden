@@ -1,15 +1,13 @@
 "use client";
 
 import { mainNavigation } from "@lib/navigation";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { useCallback, useLayoutEffect, useRef, useState } from "react";
 import { ArrowRightIcon, ArrowLeftIcon } from "@heroicons/react/24/solid";
+import TabEntry from "./tab-entry";
 
 const SCROLL_STEP = 300;
 
 export default function TabNavigation() {
-  const pathname = usePathname();
   const [showLeftButton, setShowLeftButton] = useState(false);
   const [showRightButton, setShowRightButton] = useState(false);
   const navRef = useRef<HTMLElement>(null);
@@ -76,15 +74,8 @@ export default function TabNavigation() {
         ref={navRef}
         onScroll={onScroll}
       >
-        {mainNavigation.map(({ href, title }) => (
-          <Link
-            key={href}
-            href={href}
-            aria-current={href === pathname && "page"}
-            className="aria-current-page:border-b-2 border-primary-light dark:border-primary-elevated-light min-w-[90px] flex-shrink-0 whitespace-nowrap p-4 text-sm uppercase hover:opacity-80"
-          >
-            {title}
-          </Link>
+        {mainNavigation.map((item) => (
+          <TabEntry key={item.title} item={item} />
         ))}
       </nav>
       {showRightButton ? (

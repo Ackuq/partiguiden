@@ -21,7 +21,7 @@ export default function SocialMediaShare({ title }: SocialMediaShareProps) {
     (pathname ?? "/");
 
   return (
-    <div className="ml-auto flex gap-2">
+    <div className="flex justify-end gap-2">
       <FacebookShareButton url={path} quote={title}>
         <FacebookIcon size={size} round />
       </FacebookShareButton>

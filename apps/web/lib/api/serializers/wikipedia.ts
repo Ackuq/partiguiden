@@ -1,4 +1,4 @@
-import { JSDOM } from "jsdom";
+import * as cheerio from "cheerio";
 import type { Leader } from "@lib/api/types/member";
 import type { WikipediaInfoBox } from "@lib/api/types/wikipedia";
 import { getMemberQuery } from "../controllers/members";
@@ -61,17 +61,16 @@ export const getInfoBoxAttr = async (
   data: WikipediaInfoBoxResponse,
   party: Party,
 ): Promise<WikipediaInfoBox> => {
-  const dom = new JSDOM(data.parse.text["*"]);
+  const $ = cheerio.load(data.parse.text["*"]);
 
-  const rowHeaders = dom.window.document.body.getElementsByTagName("th");
+  const rowHeaders = $("th");
   let website = "";
   const leaders: Leader[] = [];
   const ideology: string[] = [];
 
-  // eslint-disable-next-line no-restricted-syntax
   for (const header of rowHeaders) {
     /* Remove spaces since HTML spaces are treated differently */
-    const title = header.textContent?.replace(/[[\s]/g, "");
+    const title = $(header).text()?.replace(/[[\s]/g, "");
     const item = header.nextSibling;
 
     switch (title) {
@@ -80,14 +79,11 @@ export const getInfoBoxAttr = async (
         if (!item) {
           break;
         }
-        for (const ideologyNode of item.childNodes) {
-          if (
-            ideologyNode.nodeName !== "A" ||
-            ideologyNode.textContent === null
-          ) {
+        for (const ideologyNode of $(item).children()) {
+          if (ideologyNode.name !== "a" || $(ideologyNode).text() === null) {
             continue;
           }
-          ideology.push(ideologyNode.textContent);
+          ideology.push($(ideologyNode).text());
         }
         break;
       case "Partiledare":
@@ -98,9 +94,9 @@ export const getInfoBoxAttr = async (
         if (!item) {
           break;
         }
-        for (const leaderNode of item.childNodes) {
-          const name = leaderNode.textContent;
-          if (leaderNode.nodeName !== "A" || !name) {
+        for (const leaderNode of $(item).children()) {
+          const name = $(leaderNode).text();
+          if (leaderNode.name !== "a" || !name) {
             continue;
           }
           const [firstName, ...lastName] = name
@@ -113,13 +109,16 @@ export const getInfoBoxAttr = async (
         break;
       case "Webbplats":
         // Website is defined on the next row
-        const siteElement = header.parentElement?.nextElementSibling;
+        const siteElement = header.parent?.nextSibling;
         if (!siteElement) {
           continue;
         }
+        const $siteElement = $(siteElement);
+        const linkElement = $siteElement.find("a");
+
         website = (
-          siteElement.querySelector("a")?.getAttribute("href") ??
-          siteElement.textContent ??
+          linkElement.attr("href") ??
+          $siteElement.text() ??
           ""
         ).replace("http://", "https://");
     }

@@ -28,7 +28,7 @@ export const routes = {
   party(party: Party) {
     return `/parti/${party}`;
   },
-  members: "/member",
+  members: "/ledamot",
   member(id: string) {
     return `/ledamot/${id}`;
   },

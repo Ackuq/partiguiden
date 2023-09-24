@@ -1,4 +1,4 @@
-import PageTitle from "@components/page-title";
+import PageTitle from "@components/common/page-title";
 import { getSubjects } from "@partiguiden/party-data/reader";
 import { PencilSquareIcon } from "@heroicons/react/24/solid";
 import Link from "next/link";
@@ -33,7 +33,7 @@ export default function Subjects() {
   return (
     <main>
       <PageTitle Icon={PencilSquareIcon}>Partiernas Ståndpunkter</PageTitle>
-      <div className="mb-8 sm:container">
+      <div className="mb-4 sm:container">
         <div className="border-l-primary grid grid-cols-1 border-l-2 border-t-2 border-t-slate-300 dark:border-t-slate-700 md:grid-cols-2">
           {subjects.map((subject) => (
             <Link

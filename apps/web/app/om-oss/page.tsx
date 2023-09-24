@@ -1,9 +1,10 @@
 import { githubFrontend, githubProfile, linkedIn } from "@lib/socials";
-import PageTitle from "@components/page-title";
+import PageTitle from "@components/common/page-title";
 import { BaseCard } from "@components/card";
 import React from "react";
 import { InformationCircleIcon } from "@heroicons/react/24/solid";
 import ExternalLink from "@components/common/external-link";
+import Container from "@components/common/container";
 
 export const metadata = {
   title: "Om oss | Partiguiden",
@@ -15,7 +16,7 @@ export default function AboutUs() {
   return (
     <main>
       <PageTitle Icon={InformationCircleIcon}>Om oss</PageTitle>
-      <div className="container mt-4">
+      <Container>
         <BaseCard className="grid gap-3">
           <h3 className="text-2xl">Om Partiguiden</h3>
           <p>
@@ -71,7 +72,7 @@ export default function AboutUs() {
             <ExternalLink href={githubFrontend}>{githubFrontend}</ExternalLink>.
           </p>
         </BaseCard>
-      </div>
+      </Container>
     </main>
   );
 }

@@ -1,5 +1,6 @@
 import { BaseCard } from "@components/card";
-import PageTitle from "@components/page-title";
+import Container from "@components/common/container";
+import PageTitle from "@components/common/page-title";
 import { CodeBracketIcon } from "@heroicons/react/24/solid";
 
 export const metadata = {
@@ -12,7 +13,7 @@ export default function CookiePolicy() {
   return (
     <>
       <PageTitle Icon={CodeBracketIcon}>Cookie-policy</PageTitle>
-      <div className="container mt-4">
+      <Container>
         <BaseCard className="grid gap-2">
           <p>
             Partiguiden använder webbkakor från Google för att kunna analysera
@@ -24,7 +25,7 @@ export default function CookiePolicy() {
             inte identifera användare.
           </p>
         </BaseCard>
-      </div>
+      </Container>
     </>
   );
 }

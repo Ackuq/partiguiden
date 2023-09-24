@@ -11,6 +11,7 @@ import { Divider } from "@components/common/divider";
 import Link from "next/link";
 import { routes } from "@lib/navigation";
 import Container from "@components/common/container";
+import BreadcrumbsSocialMediaShare from "@components/common/breadcrumbs-social-media-share";
 
 interface PageProps {
   params: {
@@ -45,6 +46,15 @@ export default function Standpoints({ params: { id } }: PageProps) {
     <main>
       <PageTitle>{subject.name}</PageTitle>
       <Container className="grid gap-4">
+        <BreadcrumbsSocialMediaShare
+          breadcrumbsProps={{
+            links: [{ href: routes.standpoints, title: "Ståndpunkter" }],
+            current: subject.name,
+          }}
+          socialMediaProps={{
+            title: subject.name,
+          }}
+        />
         {Object.entries(standpoints).map(([party, standpoints]) => (
           <PartyStandpoints
             key={party}

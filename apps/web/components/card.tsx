@@ -9,10 +9,10 @@ export function BaseCard({
 }: BaseCardProps) {
   return (
     <div
-      className={`dark:bg-background-elevated-dark rounded bg-white shadow-md ${className}`}
+      className={`dark:bg-background-elevated-dark rounded bg-white p-4 shadow-md ${className}`}
       {...props}
     >
-      <div className="px-4 py-6">{children}</div>
+      {children}
     </div>
   );
 }

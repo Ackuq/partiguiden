@@ -25,10 +25,12 @@ export const routes = {
     return `/standpunkter/${id}`;
   },
   party(party: Party) {
-    return `/party/${party}`;
+    return `/parti/${party}`;
   },
   members: "/member",
-  member: "/member/[id]",
+  member(id: string) {
+    return `/ledamot/${id}`;
+  },
   memberStatsYear: "/member-stats/year",
   memberStatsPeriod: "/member-stats/period",
   document: "/document/[id]",

@@ -11,7 +11,7 @@ export const metadata = {
 
 export default function CookiePolicy() {
   return (
-    <>
+    <main>
       <PageTitle Icon={CodeBracketIcon}>Cookie-policy</PageTitle>
       <Container>
         <BaseCard className="grid gap-2">
@@ -26,6 +26,6 @@ export default function CookiePolicy() {
           </p>
         </BaseCard>
       </Container>
-    </>
+    </main>
   );
 }

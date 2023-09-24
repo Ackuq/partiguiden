@@ -1,7 +1,6 @@
-import type { PartyAbbreviation } from "../../utils/parties";
+import type { Party } from "@partiguiden/party-data/types";
 
-// eslint-disable-next-line import/prefer-default-export
-export const wikipediaPartyMap: Record<Lowercase<PartyAbbreviation>, string> = {
+export const wikipediaPartyMap: Record<Party, string> = {
   s: "Socialdemokraterna_(Sverige)",
   m: "Moderaterna",
   sd: "Sverigedemokraterna",

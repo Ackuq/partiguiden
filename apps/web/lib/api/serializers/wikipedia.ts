@@ -1,8 +1,8 @@
 import { JSDOM } from "jsdom";
-import type { Leader } from "../../types/member";
-import type { PartyAbbreviation } from "../../utils/parties";
-import type { WikipediaInfoBox } from "../../types/party";
+import type { Leader } from "@lib/api/types/member";
+import type { WikipediaInfoBox } from "@lib/api/types/wikipedia";
 import { getMemberQuery } from "../controllers/members";
+import type { Party } from "@partiguiden/party-data/types";
 
 interface WikipediaAbstractResponse {
   query: {
@@ -30,7 +30,7 @@ const getLeader = (
   firstName: string,
   lastName: string,
   role: string,
-  party: Lowercase<PartyAbbreviation>,
+  party: Party,
 ): Promise<Leader> => {
   const query = {
     fnamn: firstName,
@@ -59,7 +59,7 @@ interface WikipediaInfoBoxResponse {
 
 export const getInfoBoxAttr = async (
   data: WikipediaInfoBoxResponse,
-  party: Lowercase<PartyAbbreviation>,
+  party: Party,
 ): Promise<WikipediaInfoBox> => {
   const dom = new JSDOM(data.parse.text["*"]);
 

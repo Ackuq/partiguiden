@@ -4,15 +4,22 @@ import type { Party } from "@partiguiden/party-data/types";
 
 interface PartyIconProps {
   party: Party;
+  size?: number;
+  className?: string;
 }
 
-export default function PartyIcon({ party }: PartyIconProps) {
+export default function PartyIcon({
+  party,
+  size = 25,
+  className,
+}: PartyIconProps) {
   return (
     <Image
       src={partyLogo(party)}
-      width={30}
-      height={30}
+      width={size}
+      height={size}
       alt={`${party} logo`}
+      className={className}
     />
   );
 }

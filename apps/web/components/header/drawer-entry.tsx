@@ -2,10 +2,11 @@ import { ChevronDownIcon } from "@heroicons/react/24/solid";
 import type { NavigationEntry, RouteEntry } from "@lib/navigation";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { twMerge } from "tailwind-merge";
 
-const drawerEntryClassName = "flex w-full items-center gap-6 px-4 text-lg";
+const drawerEntryClassName =
+  "aria-current-page:text-primary dark:aria-current-page:text-primary-light flex w-full items-center gap-6 px-4 text-lg";
 
 interface DropdownProps {
   title: string;
@@ -14,8 +15,11 @@ interface DropdownProps {
 }
 
 function Dropdown({ routes, title, Icon }: DropdownProps) {
+  const routePaths = useMemo(() => routes.map((route) => route.href), [routes]);
   const pathname = usePathname();
-  const [isVisible, setIsVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState(
+    routePaths.includes(pathname ?? ""),
+  );
 
   function toggleVisible() {
     setIsVisible((prevState) => !prevState);
@@ -26,8 +30,10 @@ function Dropdown({ routes, title, Icon }: DropdownProps) {
   }
 
   useEffect(() => {
-    close();
-  }, [pathname]);
+    if (!routePaths.includes(pathname ?? "")) {
+      close();
+    }
+  }, [pathname, routePaths]);
 
   return (
     <div data-active={isVisible} className="group flex flex-col gap-3">
@@ -46,6 +52,7 @@ function Dropdown({ routes, title, Icon }: DropdownProps) {
         <Link
           key={route.href}
           href={route.href}
+          aria-current={route.href === pathname && "page"}
           className={twMerge(
             drawerEntryClassName,
             "pl-6",
@@ -65,6 +72,7 @@ interface DrawerEntryProps {
 }
 
 export default function DrawerEntry({ item }: DrawerEntryProps) {
+  const pathname = usePathname();
   if ("subPages" in item) {
     return (
       <Dropdown routes={item.subPages} title={item.title} Icon={item.Icon} />
@@ -72,7 +80,11 @@ export default function DrawerEntry({ item }: DrawerEntryProps) {
   }
 
   return (
-    <Link href={item.href} className={drawerEntryClassName}>
+    <Link
+      href={item.href}
+      aria-current={item.href === pathname && "page"}
+      className={drawerEntryClassName}
+    >
       <item.Icon className="h-5 w-5" />
       {item.title}
     </Link>

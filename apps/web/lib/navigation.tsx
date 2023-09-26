@@ -8,6 +8,7 @@ import {
   DocumentCheckIcon,
   ChatBubbleLeftRightIcon,
   ScaleIcon,
+  UserGroupIcon,
 } from "@heroicons/react/24/solid";
 import { Party } from "@partiguiden/party-data/types";
 import { getPartyName } from "@partiguiden/party-data/utils";
@@ -41,12 +42,12 @@ export const routes = {
 export interface RouteEntry {
   href: string;
   title: string;
-  Icon?: React.ElementType;
+  Icon: React.ElementType;
 }
 
 export type NavigationEntry =
   | RouteEntry
-  | { title: string; subPages: RouteEntry[] };
+  | { title: string; Icon: React.ElementType; subPages: RouteEntry[] };
 
 export const mainNavigation: NavigationEntry[] = [
   { href: routes.index, title: "Hem", Icon: HomeIcon },
@@ -62,6 +63,7 @@ export const mainNavigation: NavigationEntry[] = [
       href: routes.party(party),
       Icon: () => <PartyIcon party={party} />,
     })),
+    Icon: UserGroupIcon,
   },
   { href: routes.decisions, title: "Riksdagsbeslut", Icon: DocumentCheckIcon },
   {

@@ -6,8 +6,9 @@ import type { NavigationEntry, RouteEntry } from "@lib/navigation";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import { twMerge } from "tailwind-merge";
 
-const className =
+const tabClassName =
   "aria-current-page:border-b-2 border-primary-light dark:border-primary-elevated-light min-w-[90px] flex-shrink-0 whitespace-nowrap p-4 text-sm uppercase hover:opacity-80";
 
 interface DropdownProps {
@@ -31,7 +32,7 @@ function Dropdown({ routes, title }: DropdownProps) {
   return (
     <div ref={ref}>
       <button
-        className={`${className} inline-flex gap-2`}
+        className={twMerge(tabClassName, "inline-flex gap-2")}
         onClick={handleClick}
       >
         {title} <ChevronDownIcon className="h-4 w-4 self-center" />
@@ -73,7 +74,7 @@ export default function TabEntry({ item }: TabEntryProps) {
       key={item.href}
       href={item.href}
       aria-current={item.href === pathname && "page"}
-      className={className}
+      className={tabClassName}
     >
       {item.title}
     </Link>

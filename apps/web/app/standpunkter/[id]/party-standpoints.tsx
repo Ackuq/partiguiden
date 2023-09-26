@@ -1,6 +1,6 @@
 "use client";
 
-import { BaseCard } from "@components/card";
+import { Card } from "@components/card";
 import { ChevronUpIcon } from "@heroicons/react/24/solid";
 import { dateString } from "@lib/dates";
 import {
@@ -45,7 +45,7 @@ export default function PartyStandpoints({
       {visible && (
         <div className="grid gap-3">
           {standpoints.map((standpoint) => (
-            <BaseCard key={standpoint.url} className="grid gap-5">
+            <Card key={standpoint.url} className="grid gap-5">
               <p className="text-2xl">{standpoint.title}</p>
               {standpoint.opinions.length > 0 ? (
                 <ul
@@ -69,7 +69,7 @@ export default function PartyStandpoints({
                 </a>
                 <span>Datan hämtades {dateString(standpoint.fetchDate)}</span>
               </div>
-            </BaseCard>
+            </Card>
           ))}
         </div>
       )}

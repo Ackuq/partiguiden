@@ -26,6 +26,7 @@ const config: Config = {
             dark: colors.slate[900],
             light: "#339388",
           },
+          dark: "#00554b",
           DEFAULT: "#00796b",
           light: "#80cbc4",
         },
@@ -54,6 +55,7 @@ const config: Config = {
           primary: colors.slate[50],
         },
       },
+
       minWidth: {
         screen: "100vw",
       },

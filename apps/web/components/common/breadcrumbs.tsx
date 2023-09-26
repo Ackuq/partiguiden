@@ -2,6 +2,10 @@ import { ChevronRightIcon, HomeIcon } from "@heroicons/react/20/solid";
 import { routes } from "@lib/navigation";
 import Link from "next/link";
 
+const BreadcrumbDivider = () => (
+  <ChevronRightIcon className="h-4 w-4 sm:h-5 sm:w-5" />
+);
+
 export interface BreadcrumbsProps {
   links?: {
     href: string;
@@ -13,16 +17,16 @@ export interface BreadcrumbsProps {
 export default function Breadcrumbs({ links, current }: BreadcrumbsProps) {
   return (
     <nav aria-label="Breadcrumbs">
-      <ol className="inline-flex items-center gap-1 text-slate-700 dark:text-slate-300 ">
+      <ol className="sm:text-md inline-flex flex-wrap items-center gap-1 text-sm text-slate-700 dark:text-slate-300 ">
         <li>
           <Link
             href={routes.index}
             className="flex items-center hover:opacity-75"
           >
-            <HomeIcon className="-mt-0.5 mr-2 h-4 w-4" /> Hem
+            <HomeIcon className="-mt-0.5 mr-1 h-3 w-3 sm:h-4 sm:w-4" /> Hem
           </Link>
         </li>
-        <ChevronRightIcon className="h-5 w-5" />
+        <BreadcrumbDivider />
         {links?.map((link) => (
           <>
             <li key={link.href}>
@@ -30,10 +34,10 @@ export default function Breadcrumbs({ links, current }: BreadcrumbsProps) {
                 {link.title}
               </Link>
             </li>
-            <ChevronRightIcon className="h-5 w-5" />
+            <BreadcrumbDivider />
           </>
         ))}
-        <li>{current}</li>
+        <li className="whitespace-nowrap">{current}</li>
       </ol>
     </nav>
   );

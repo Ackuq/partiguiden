@@ -1,4 +1,4 @@
-import { BaseCard } from "@components/card";
+import { Card } from "@components/card";
 import Container from "@components/common/container";
 import PageTitle from "@components/common/page-title";
 import { ExclamationCircleIcon } from "@heroicons/react/24/solid";
@@ -14,12 +14,12 @@ export default function Error404() {
         404 - Sidan hittades inte
       </PageTitle>
       <Container>
-        <BaseCard>
+        <Card>
           <p className="text-center text-lg">
             Sidan du letade har kanske blivit borttagen, eller skrev du in en
             felaktig URL.
           </p>
-        </BaseCard>
+        </Card>
       </Container>
     </main>
   );

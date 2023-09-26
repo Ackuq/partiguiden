@@ -1,15 +1,16 @@
+import { twMerge } from "tailwind-merge";
+
 type BaseCardProps = React.PropsWithChildren<
   React.HTMLAttributes<HTMLDivElement>
 >;
 
-export function BaseCard({
-  children,
-  className = "",
-  ...props
-}: BaseCardProps) {
+export function Card({ children, className = "", ...props }: BaseCardProps) {
   return (
     <div
-      className={`dark:bg-background-elevated-dark rounded bg-white p-4 shadow-md ${className}`}
+      className={twMerge(
+        "dark:bg-background-elevated-dark rounded bg-white p-4 shadow-md",
+        className,
+      )}
       {...props}
     >
       {children}

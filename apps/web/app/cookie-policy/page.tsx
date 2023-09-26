@@ -1,4 +1,4 @@
-import { BaseCard } from "@components/card";
+import { Card } from "@components/card";
 import Container from "@components/common/container";
 import PageTitle from "@components/common/page-title";
 import { CodeBracketIcon } from "@heroicons/react/24/solid";
@@ -14,7 +14,7 @@ export default function CookiePolicy() {
     <main>
       <PageTitle Icon={CodeBracketIcon}>Cookie-policy</PageTitle>
       <Container>
-        <BaseCard className="grid gap-2">
+        <Card className="grid gap-2">
           <p>
             Partiguiden använder webbkakor från Google för att kunna analysera
             användares interaktion med hemsidan i syftet att kunna
@@ -24,7 +24,7 @@ export default function CookiePolicy() {
             Informationen som delas är krypterad och helt anonym, vi kan alltså
             inte identifera användare.
           </p>
-        </BaseCard>
+        </Card>
       </Container>
     </main>
   );

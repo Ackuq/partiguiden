@@ -1,4 +1,4 @@
-import { BaseCard } from "@components/card";
+import { Card } from "@components/card";
 import Container from "@components/common/container";
 import { Divider } from "@components/common/divider";
 import ExternalLink from "@components/common/external-link";
@@ -50,7 +50,7 @@ export default async function PartyPage({
       </PageTitle>
       <Container className="grid gap-4">
         <SocialMediaShare title={party.name} />
-        <BaseCard className="grid gap-3">
+        <Card className="grid gap-3">
           {party.website && (
             <>
               <div>
@@ -86,8 +86,8 @@ export default async function PartyPage({
               </ExternalLink>
             </span>
           </div>
-        </BaseCard>
-        <BaseCard>
+        </Card>
+        <Card>
           <h4 className="mb-4 text-center text-2xl">Ledning</h4>
           <div
             className={`grid grid-cols-2 gap-2 sm:grid-cols-3 ${
@@ -98,7 +98,7 @@ export default async function PartyPage({
               <Leader key={leader.id} leader={leader} />
             ))}
           </div>
-        </BaseCard>
+        </Card>
       </Container>
     </main>
   );

@@ -1,4 +1,4 @@
-import { BaseCard } from "@components/card";
+import { Card } from "@components/card";
 import Typed from "@components/common/typed";
 import Link from "next/link";
 import { routes } from "@lib/navigation";
@@ -34,7 +34,7 @@ export default function IndexPage() {
         &nbsp;
       </PageTitle>
       <Container className="grid gap-4">
-        <BaseCard className="w-full">
+        <Card className="w-full">
           <h3 className="pb-4 text-center text-2xl sm:text-3xl">
             Vilket parti ska man rösta på?
           </h3>
@@ -43,12 +43,12 @@ export default function IndexPage() {
             På Partiguiden kan du läsa om vad partierna tycker enligt sina
             partiprogram och samt se hur de röstar i riksdagsvoteringar.
           </p>
-        </BaseCard>
-        <BaseCard>
+        </Card>
+        <Card>
           <h3 className="pb-4 text-center text-2xl sm:text-3xl">
             Mest besökta ämnen de senaste 30 dagarna
           </h3>
-          <div className="grid grid-cols-2 gap-6 text-center">
+          <div className="grid gap-3 text-center sm:grid-cols-2 sm:gap-6">
             {featured.map((subject) => (
               <Link
                 key={subject.id}
@@ -59,7 +59,7 @@ export default function IndexPage() {
               </Link>
             ))}
           </div>
-        </BaseCard>
+        </Card>
       </Container>
     </main>
   );

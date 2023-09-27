@@ -1,6 +1,6 @@
 import "./global.css";
 import { Roboto } from "next/font/google";
-import { Suspense, type PropsWithChildren } from "react";
+import type { PropsWithChildren } from "react";
 import Head from "./head";
 import Footer from "./footer";
 import Header from "@components/header/header";
@@ -22,7 +22,7 @@ export default function RootLayout({ children }: PropsWithChildren) {
       >
         <ThemeProvider attribute="class">
           <Header />
-          <Suspense fallback={<p>Loading...</p>}>{children}</Suspense>
+          {children}
           <Footer />
         </ThemeProvider>
       </body>

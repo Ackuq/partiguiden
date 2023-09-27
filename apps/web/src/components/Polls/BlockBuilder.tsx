@@ -53,6 +53,7 @@ const legendFormatter: Formatter = (value, entry: Payload) => {
       src={PARTY_LOGOS_LOW_RES[entry.value.toUpperCase() as PartyAbbreviation]}
       alt={`${entry.value} logo`}
       width={40}
+      height={40}
       style={{
         filter: `grayscale(${entry.inactive ? "75%" : 0})`,
       }}

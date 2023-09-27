@@ -5,8 +5,6 @@ import Container from "@mui/material/Container";
 
 import PollIcon from "@mui/icons-material/Poll";
 
-import moment from "moment";
-
 import type { AveragePoll, BlocksAverage, MonthlyAverage } from "../lib/polls";
 import {
   createBlockAverage,
@@ -47,19 +45,19 @@ export const getStaticProps: GetStaticProps<{
   blockAverage: BlocksAverage;
   historicPolls: MonthlyAverage;
 }> = async () => {
-  const today = moment();
-  const twoMonthsAgo = moment().subtract(2, "months");
-  const fourYearsAgo = moment().subtract(4, "years");
+  const today = new Date();
+  const twoMonthsAgo = new Date();
+  twoMonthsAgo.setMonth(today.getMonth() - 2);
+  const fourYearsAgo = new Date();
+  fourYearsAgo.setFullYear(today.getFullYear() - 4);
 
   const polls = await getPolls();
 
   const historicPolls = getMonthlyAverage(
-    getWithin(polls, fourYearsAgo.toDate(), today.toDate(), true),
+    getWithin(polls, fourYearsAgo, today, true),
   );
 
-  const currentAverage = getAverage(
-    getWithin(polls, twoMonthsAgo.toDate(), today.toDate()),
-  );
+  const currentAverage = getAverage(getWithin(polls, twoMonthsAgo, today));
   const blockAverage = createBlockAverage(currentAverage);
 
   return {

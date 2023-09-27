@@ -13,6 +13,7 @@ import type { Standpoint } from "@partiguiden/party-data/types";
 import type { Party } from "@partiguiden/party-data/types";
 import { getPartyName } from "@partiguiden/party-data/utils";
 import { useState } from "react";
+import { twMerge } from "tailwind-merge";
 
 interface PartyStandpointsProps {
   party: Party;
@@ -58,16 +59,22 @@ export default function PartyStandpoints({
               ) : (
                 <p>Inga ståndpunkter hittades</p>
               )}
-              <div className="flex justify-between">
+              <div className="flex flex-wrap">
                 <a
-                  className={`${textColor[party]} ${backgroundHover[party]} rounded p-2 text-sm font-medium uppercase transition-colors`}
+                  className={twMerge(
+                    "whitespace-nowrap rounded p-2 text-sm font-medium uppercase transition-colors",
+                    textColor[party],
+                    backgroundHover[party],
+                  )}
                   target="_blank"
                   rel="noopener noreferrer"
                   href={standpoint.url}
                 >
                   Läs mer på partiets hemsida
                 </a>
-                <span>Datan hämtades {dateString(standpoint.fetchDate)}</span>
+                <span className="ml-auto self-end whitespace-nowrap text-xs sm:text-sm">
+                  Datan hämtades {dateString(standpoint.fetchDate)}
+                </span>
               </div>
             </Card>
           ))}

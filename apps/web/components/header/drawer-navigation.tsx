@@ -1,50 +1,44 @@
 "use client";
 
-import { EllipsisVerticalIcon, XMarkIcon } from "@heroicons/react/24/solid";
+import { XMarkIcon } from "@heroicons/react/24/solid";
 import { mainNavigation } from "@lib/navigation";
-import { useEffect, useState } from "react";
+import { useContext, useEffect } from "react";
 import DrawerEntry from "./drawer-entry";
 import { twMerge } from "tailwind-merge";
-import { usePathname } from "next/navigation";
+import { DrawerContext } from "./drawer-context";
 
 export default function DrawerNavigation() {
-  const pathname = usePathname();
-  const [showDrawer, setShowDrawer] = useState(false);
-
-  function toggleDrawer(event: React.MouseEvent) {
-    event.stopPropagation();
-    setShowDrawer((prevState) => !prevState);
-  }
+  const { closeDrawer, drawerIsOpen } = useContext(DrawerContext);
 
   useEffect(() => {
-    if (showDrawer) {
+    if (drawerIsOpen) {
       document.body.style.overflow = "hidden";
     } else {
-      document.body.style.overflow = "unset";
+      document.body.style.overflow = "";
     }
-  }, [showDrawer]);
-
-  useEffect(() => {
-    setShowDrawer(false);
-  }, [pathname]);
+  }, [drawerIsOpen]);
 
   return (
-    <div className="group sm:hidden" data-show={showDrawer}>
-      <EllipsisVerticalIcon onClick={toggleDrawer} className="h-8 w-8 " />
+    <div
+      className={"text-font-primary group"}
+      data-show={drawerIsOpen}
+      aria-hidden={!drawerIsOpen}
+    >
       <div
-        onClick={toggleDrawer}
+        onClick={closeDrawer}
         className={twMerge(
-          "fixed left-0 top-0 z-30 hidden h-full w-full backdrop-blur-md",
+          "fixed left-0 top-0 z-50 hidden h-full w-full backdrop-blur-md",
           "group-data-[show=true]:block group-data-[show=true]:backdrop-blur-md",
         )}
       />
       <div
         className={twMerge(
-          "bg-primary dark:bg-background-elevated-dark animate-drawer fixed -right-[18rem] top-0 z-40 h-full w-[18rem]",
-          "transition-[right] group-data-[show=true]:right-0",
+          "bg-primary dark:bg-background-elevated-dark fixed right-0 top-0 z-50 h-full w-[18rem] overflow-y-scroll",
+          "translate-x-[18rem] transition-transform group-data-[show=true]:translate-x-0",
+          "motion-reduce:transition-none",
         )}
       >
-        <button onClick={toggleDrawer} className="absolute right-4 top-4">
+        <button onClick={closeDrawer} className="absolute right-4 top-4">
           <XMarkIcon className="text-red h-8 w-8" />
         </button>
         <nav className="flex flex-col gap-3 pt-12">

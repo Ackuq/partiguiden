@@ -61,7 +61,7 @@ export default function TabNavigation() {
   }, []);
 
   return (
-    <div className="hidden flex-1 items-end sm:flex">
+    <div className="hidden items-end sm:flex">
       {showLeftButton ? (
         <button className="h-14 w-20" onClick={handleScrollLeft}>
           <ArrowLeftIcon className="m-auto h-6 w-6" />
@@ -70,12 +70,12 @@ export default function TabNavigation() {
         <div className="h-14 w-20" />
       )}
       <nav
-        className="scrollbar-hide flex gap-3 overflow-scroll scroll-smooth text-center"
+        className="scrollbar-hide flex gap-3 overflow-x-scroll scroll-smooth text-center"
         ref={navRef}
         onScroll={onScroll}
       >
         {mainNavigation.map((item) => (
-          <TabEntry key={item.title} item={item} />
+          <TabEntry key={item.title} item={item} navRef={navRef} />
         ))}
       </nav>
       {showRightButton ? (

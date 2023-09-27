@@ -17,13 +17,12 @@ export default function MemberImage({ member }: MemberImageProps) {
   const [fallback, setFallback] = useState(false);
 
   return (
-    <div className="relative mx-auto h-[10rem] w-[10rem]">
+    <div className="xs:h-32  xs:w-32 relative mx-auto h-24 w-24 sm:h-40 sm:w-40">
       {!fallback ? (
         <Image
           src={member.pictureUrl}
           alt={`${member.firstName} ${member.lastName}`}
           fill
-          sizes="10rem"
           className="rounded-full object-cover"
           onError={() => setFallback(true)}
         />

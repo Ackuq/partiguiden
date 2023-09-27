@@ -5,19 +5,24 @@ import useOutsideClick from "@lib/hooks/use-outside-click";
 import type { NavigationEntry, RouteEntry } from "@lib/navigation";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { twMerge } from "tailwind-merge";
 
-const tabClassName =
-  "aria-current-page:border-b-2 border-primary-light dark:border-primary-elevated-light min-w-[90px] flex-shrink-0 whitespace-nowrap p-4 text-sm uppercase hover:opacity-80";
+const tabClassName = twMerge(
+  "min-w-[90px] flex-shrink-0 whitespace-nowrap p-4 text-sm uppercase hover:opacity-80",
+  "border-primary-light dark:border-primary-elevated-light",
+  "aria-current-page:border-b-2",
+);
 
 interface DropdownProps {
   title: string;
   routes: RouteEntry[];
+  navRef: React.RefObject<HTMLElement | null>;
 }
 
-function Dropdown({ routes, title }: DropdownProps) {
+function Dropdown({ routes, title, navRef }: DropdownProps) {
   const [isVisible, setIsVisible] = useState(false);
+  const [xPosition, setXPosition] = useState<number>();
 
   function handleClick() {
     setIsVisible((prevState) => !prevState);
@@ -29,6 +34,18 @@ function Dropdown({ routes, title }: DropdownProps) {
 
   const ref = useOutsideClick<HTMLDivElement>(handleClose);
 
+  function handleScroll() {
+    const currentX = ref.current?.getBoundingClientRect().x;
+    setXPosition(currentX);
+  }
+
+  useEffect(() => {
+    if (!navRef.current) return;
+
+    navRef.current.addEventListener("scroll", handleScroll);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   return (
     <div ref={ref}>
       <button
@@ -39,13 +56,24 @@ function Dropdown({ routes, title }: DropdownProps) {
       </button>
       <ul
         data-is-visible={isVisible}
-        className="bg-background-elevated-light dark:bg-background-elevated-dark-200 text-font-light dark:text-font-primary absolute mt-1 flex-col rounded shadow-md data-[is-visible=true]:flex data-[is-visible=false]:hidden"
+        style={
+          isVisible && xPosition !== undefined
+            ? {
+                left: xPosition,
+              }
+            : undefined
+        }
+        className={twMerge(
+          "absolute mt-1 flex-col rounded shadow-md",
+          "bg-background-elevated-light dark:bg-background-elevated-dark-200 text-font-light dark:text-font-primary",
+          "data-[is-visible=true]:flex data-[is-visible=false]:hidden",
+        )}
       >
         {routes.map(({ href, title, Icon }) => (
           <li key={href} className="text-left">
             <Link
               href={href}
-              className="inline-flex items-center gap-2 px-3 py-2 hover:opacity-75"
+              className="flex items-center gap-2 px-3 py-2 hover:opacity-75"
               onClick={handleClose}
             >
               {Icon && <Icon />}
@@ -60,13 +88,16 @@ function Dropdown({ routes, title }: DropdownProps) {
 
 interface TabEntryProps {
   item: NavigationEntry;
+  navRef: React.RefObject<HTMLElement | null>;
 }
 
-export default function TabEntry({ item }: TabEntryProps) {
+export default function TabEntry({ item, navRef }: TabEntryProps) {
   const pathname = usePathname();
 
   if ("subPages" in item) {
-    return <Dropdown routes={item.subPages} title={item.title} />;
+    return (
+      <Dropdown routes={item.subPages} title={item.title} navRef={navRef} />
+    );
   }
 
   return (

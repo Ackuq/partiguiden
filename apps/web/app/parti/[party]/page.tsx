@@ -68,7 +68,7 @@ export default async function PartyPage({
             <span className="text-xs">
               Källa{" "}
               <ExternalLink href="https://www.wikipedia.org/">
-                Wikipedia
+                https://www.wikipedia.org/
               </ExternalLink>
             </span>
           </div>

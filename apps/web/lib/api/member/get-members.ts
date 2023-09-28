@@ -4,10 +4,7 @@ import { cache } from "react";
 import type { PersonListMany } from "../parliament/types";
 import parseMemberListEntry from "./parsers/member-list-entry";
 
-// Revalidate data at most once per day (60 * 60 * 24)s
-export const revalidate = 86400;
-
-const getMembers = cache(async function (party: Uppercase<Party> | "" = "") {
+const getMembers = async (party: Uppercase<Party> | "" = "") => {
   const query = new URLSearchParams({
     parti: party,
     utformat: "json",
@@ -21,6 +18,9 @@ const getMembers = cache(async function (party: Uppercase<Party> | "" = "") {
   const data: PersonListMany = await response.json();
   const members = data.personlista.person;
   return members.map(parseMemberListEntry);
-});
+};
 
-export default getMembers;
+// Revalidate data at most once per day (60 * 60 * 24)s
+export const revalidate = 86400;
+
+export default cache(getMembers);

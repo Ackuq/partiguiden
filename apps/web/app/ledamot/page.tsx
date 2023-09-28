@@ -9,6 +9,9 @@ export const metadata = {
     "Här kan du ta reda på information om ledamöterna i riksdagen, samt se vilka ledamöter är aktiva för varje parti",
 };
 
+// Revalidate data at most once per day (60 * 60 * 24)s
+export const revalidate = 86400;
+
 export default async function MembersPage() {
   const members = await getMembers();
 

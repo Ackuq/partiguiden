@@ -11,26 +11,28 @@ function firstLetterOfSentences(s: string) {
     .join("");
 }
 
-interface MemberImageProps {
+type MemberImageProps = React.PropsWithChildren<{
   member: MemberListEntry;
   className?: string;
-}
+  sizes?: string;
+}>;
 
-export default function MemberImage({ member, className }: MemberImageProps) {
+export default function MemberImage({
+  member,
+  className,
+  children,
+  sizes = "(min-width: 640px) 10rem, 6rem",
+}: MemberImageProps) {
   const [fallback, setFallback] = useState(false);
 
   return (
-    <div
-      className={twMerge(
-        "xs:h-32 xs:w-32 relative h-24 w-24 sm:h-40 sm:w-40",
-        className,
-      )}
-    >
+    <div className={twMerge("relative h-24 w-24 sm:h-40 sm:w-40", className)}>
       {!fallback ? (
         <Image
           src={member.pictureUrl}
           alt={`${member.firstName} ${member.lastName}`}
           fill
+          sizes={sizes}
           className="rounded-full object-cover"
           onError={() => setFallback(true)}
         />
@@ -42,6 +44,7 @@ export default function MemberImage({ member, className }: MemberImageProps) {
           </span>
         </div>
       )}
+      {children}
     </div>
   );
 }

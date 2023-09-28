@@ -9,8 +9,8 @@ export default function Header() {
   return (
     <DrawerContextProvider>
       <DrawerNavigation />
-      <div className="bg-primary dark:bg-background-elevated-dark absolute h-14 w-full sm:h-24"></div>
-      <header className="sticky top-0 z-10 flex h-14 shadow-md sm:h-24">
+      <div className="bg-primary dark:bg-background-elevated-dark h-header sm:h-header-sm absolute w-full"></div>
+      <header className="h-header sm:h-header-sm sticky top-0 z-10 flex shadow-md">
         <div className="bg-primary/80 text-font-dark dark:bg-background-elevated-dark/75 flex h-full w-full flex-col backdrop-blur-md">
           <div className="container flex flex-1 items-center">
             <MainLogo />

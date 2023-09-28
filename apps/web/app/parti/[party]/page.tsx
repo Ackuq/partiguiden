@@ -103,3 +103,11 @@ export default async function PartyPage({
     </main>
   );
 }
+
+export async function generateStaticParams() {
+  const parties = Object.values(Party);
+
+  return parties.map((party) => ({
+    party,
+  }));
+}

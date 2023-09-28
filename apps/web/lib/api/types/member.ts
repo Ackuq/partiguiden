@@ -30,22 +30,6 @@ export interface Task {
   to: string;
 }
 
-export interface MemberResponse {
-  id: string;
-  sourceId: string;
-  firstName: string;
-  lastName: string;
-  pictureUrl: string;
-  pictureUrlLowRes: string;
-  age: number;
-  party: Party | "-";
-  district: string;
-  status: string;
-  information: Information[];
-  tasks: Task[];
-  isLeader: boolean;
-}
-
 export interface MemberListEntry {
   id: string;
   firstName: string;
@@ -55,6 +39,14 @@ export interface MemberListEntry {
   party: Party | "-";
   district: string;
   status: string;
+}
+
+export interface MemberResponse extends MemberListEntry {
+  sourceId: string;
+  pictureUrlLowRes: string;
+  information: Information[];
+  tasks: Task[];
+  isLeader: boolean;
 }
 
 export interface MemberAbsenceResponse extends MemberListEntry {

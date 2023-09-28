@@ -1,4 +1,7 @@
-import { memberController } from "@lib/api/controllers/members";
+import {
+  memberController,
+  membersController,
+} from "@lib/api/controllers/members";
 import { ERROR_404_TITLE } from "@lib/constants";
 import { notFound } from "next/navigation";
 
@@ -38,4 +41,12 @@ export default async function MemberPage({ params: { id } }: PageProps) {
       {member.firstName} {member.lastName}
     </h1>
   );
+}
+
+export async function generateStaticParams() {
+  const members = await membersController();
+
+  return members.map((member) => ({
+    id: member.id,
+  }));
 }

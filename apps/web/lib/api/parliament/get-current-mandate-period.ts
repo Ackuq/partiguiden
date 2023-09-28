@@ -1,21 +1,5 @@
-import type {
-  ParliamentYearResponse,
-  ParliamentYearsResponse,
-} from "../types/parliament";
-
-const fetchParliamentYears = (): Promise<ParliamentYearsResponse> => {
-  return fetch(
-    "http://data.riksdagen.se/sv/koder/?typ=riksmote&utformat=json",
-  ).then((res) => res.json());
-};
-
-export const getLatestParliamentYear = async (): Promise<string> => {
-  const parliamentYears = await fetchParliamentYears();
-  // The results is sorted in ascending order, chronologically
-  const latestParliamentYear =
-    parliamentYears.riksmoten.riksmote.pop() as ParliamentYearResponse;
-  return latestParliamentYear.riksmote;
-};
+import getParliamentYears from "./get-parliament-years";
+import type { ParliamentYearResponse } from "./types";
 
 export interface MandatePeriod {
   latestParliamentYear: string;
@@ -23,8 +7,8 @@ export interface MandatePeriod {
   period: string;
 }
 
-export const getLatestMandatePeriod = async (): Promise<MandatePeriod> => {
-  const parliamentYears = await fetchParliamentYears();
+export const getCurrentMandatePeriod = async (): Promise<MandatePeriod> => {
+  const parliamentYears = await getParliamentYears();
   // The results is sorted in ascending order, chronologically
   const latestParliamentYear =
     parliamentYears.riksmoten.riksmote.pop() as ParliamentYearResponse;

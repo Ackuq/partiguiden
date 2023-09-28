@@ -1,7 +1,8 @@
 import { getPartyName } from "@partiguiden/party-data/utils";
 import type { Party } from "@partiguiden/party-data/types";
-import type { PartyData } from "../types/party";
-import { getWikipediaAbstract, getWikipediaInfoBox } from "./wikipedia";
+import getWikipediaAbstract from "../wikipedia/get-abstract";
+import getWikipediaInfoBox from "../wikipedia/get-info-box";
+import type { PartyData } from "./types";
 
 export const getParty = (party: Party): Promise<PartyData> => {
   return Promise.all([

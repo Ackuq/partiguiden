@@ -1,5 +1,5 @@
 "use client";
-import type { MemberListEntry } from "@lib/api/types/member";
+import type { MemberListEntry } from "@lib/api/member/types";
 import Image from "next/image";
 import { useState } from "react";
 import { twMerge } from "tailwind-merge";

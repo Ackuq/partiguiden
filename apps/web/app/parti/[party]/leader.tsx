@@ -1,5 +1,5 @@
 "use client";
-import type { Leader } from "@lib/api/types/member";
+import type { Leader } from "@lib/api/member/types";
 import Link from "next/link";
 import { routes } from "@lib/navigation";
 import MemberImage from "@components/parliament/member-image";

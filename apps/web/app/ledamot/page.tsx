@@ -1,7 +1,7 @@
 import PageTitle from "@components/common/page-title";
-import { membersController } from "@lib/api/controllers/members";
 import MemberCard from "./member-card";
 import Filter from "@components/common/filter";
+import getMembers from "@lib/api/member/get-members";
 
 export const metadata = {
   title: "Riksdagsledamöter | Partiguiden",
@@ -10,7 +10,7 @@ export const metadata = {
 };
 
 export default async function MembersPage() {
-  const members = await membersController();
+  const members = await getMembers();
 
   return (
     <main>

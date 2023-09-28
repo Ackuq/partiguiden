@@ -1,5 +1,5 @@
-import type { Leader } from "./member";
-import type { WikipediaInfoBox } from "./wikipedia";
+import type { Leader } from "../member/types";
+import type { WikipediaInfoBox } from "../wikipedia/types";
 
 export interface ParliamentPartyData {
   website?: string;

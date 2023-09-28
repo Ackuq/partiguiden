@@ -1,7 +1,5 @@
-import {
-  memberController,
-  membersController,
-} from "@lib/api/controllers/members";
+import getMember from "@lib/api/member/get-member";
+import getMembers from "@lib/api/member/get-members";
 import { ERROR_404_TITLE } from "@lib/constants";
 import { notFound } from "next/navigation";
 
@@ -12,7 +10,7 @@ interface PageProps {
 }
 
 export async function generateMetadata({ params: { id } }: PageProps) {
-  const member = await memberController(id);
+  const member = await getMember(id);
 
   if (!member) {
     return {
@@ -31,7 +29,7 @@ export async function generateMetadata({ params: { id } }: PageProps) {
 }
 
 export default async function MemberPage({ params: { id } }: PageProps) {
-  const member = await memberController(id);
+  const member = await getMember(id);
   if (!member) {
     return notFound();
   }
@@ -44,7 +42,7 @@ export default async function MemberPage({ params: { id } }: PageProps) {
 }
 
 export async function generateStaticParams() {
-  const members = await membersController();
+  const members = await getMembers();
 
   return members.map((member) => ({
     id: member.id,

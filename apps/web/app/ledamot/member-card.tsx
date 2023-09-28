@@ -1,5 +1,5 @@
 import MemberImage from "@components/parliament/member-image";
-import type { MemberListEntry } from "@lib/api/types/member";
+import type { MemberListEntry } from "@lib/api/member/types";
 import { partyLogo } from "@lib/assets";
 import { routes } from "@lib/navigation";
 import Image from "next/image";

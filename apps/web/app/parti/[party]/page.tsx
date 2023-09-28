@@ -5,12 +5,12 @@ import ExternalLink from "@components/common/external-link";
 import PageTitle from "@components/common/page-title";
 import SocialMediaShare from "@components/common/social-media-share";
 import PartyIcon from "@components/party/icon";
-import { partyController } from "@lib/api/controllers/party";
 import { ERROR_404_TITLE } from "@lib/constants";
 import { Party } from "@partiguiden/party-data/types";
 import { getPartyName } from "@partiguiden/party-data/utils";
 import { notFound } from "next/navigation";
 import Leader from "./leader";
+import { getParty } from "@lib/api/party/get-party";
 
 interface PageProps {
   params: {
@@ -37,7 +37,7 @@ export default async function PartyPage({
   if (!Object.values(Party).includes(partyAbbreviation)) {
     return notFound();
   }
-  const party = await partyController(partyAbbreviation);
+  const party = await getParty(partyAbbreviation);
 
   return (
     <main>

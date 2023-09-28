@@ -2,8 +2,7 @@ import type {
   AbsenceLeaderboard,
   MemberAbsenceResponse,
   MemberAbsenceResponseNullSafe,
-} from "../types/member";
-import { PARLIAMENT_BASE_URL } from "@lib/constants";
+} from "../types";
 
 // We are only interested in primary members
 const ignoreStatus = ["Tjänstgörande ersättare"];
@@ -24,13 +23,4 @@ export const createMemberAbsenceLeaderboard = (
   const leastAbsence = sortedDescending.slice(0, limit);
   const mostAbsence = sortedDescending.slice(-limit).reverse();
   return { mostAbsence, leastAbsence };
-};
-
-export const parsePictureUrl = (pictureUrl: string) => {
-  const parsed = pictureUrl?.replace("http://", "https://");
-  // Sometimes the picture url does not include the domain
-  if (!parsed?.includes(PARLIAMENT_BASE_URL)) {
-    return parsed?.replace("https://", PARLIAMENT_BASE_URL);
-  }
-  return parsed;
 };

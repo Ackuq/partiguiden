@@ -1,4 +1,4 @@
-import type { Leader } from "./member";
+import type { Leader } from "../member/types";
 
 export interface WikipediaInfoBox {
   website?: string;

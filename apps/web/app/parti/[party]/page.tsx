@@ -14,11 +14,15 @@ import { getParty } from "@lib/api/party/get-party";
 
 interface PageProps {
   params: {
-    party: Party;
+    party: Lowercase<Party>;
   };
 }
 
-export async function generateMetadata({ params: { party } }: PageProps) {
+export async function generateMetadata({
+  params: { party: partyAbbreviation },
+}: PageProps) {
+  const party = partyAbbreviation.toUpperCase() as Party;
+
   if (!Object.values(Party).includes(party)) {
     return { title: ERROR_404_TITLE };
   }
@@ -32,8 +36,10 @@ export async function generateMetadata({ params: { party } }: PageProps) {
 }
 
 export default async function PartyPage({
-  params: { party: partyAbbreviation },
+  params: { party: partyAbbreviationLowercase },
 }: PageProps) {
+  const partyAbbreviation =
+    partyAbbreviationLowercase.toLocaleUpperCase() as Party;
   if (!Object.values(Party).includes(partyAbbreviation)) {
     return notFound();
   }
@@ -108,6 +114,6 @@ export async function generateStaticParams() {
   const parties = Object.values(Party);
 
   return parties.map((party) => ({
-    party,
+    party: party.toLocaleLowerCase(),
   }));
 }

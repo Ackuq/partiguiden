@@ -26,7 +26,7 @@ export const routes = {
     return `/standpunkter/${id}`;
   },
   party(party: Party) {
-    return `/parti/${party}`;
+    return `/parti/${party.toLocaleLowerCase()}`;
   },
   members: "/ledamot",
   member(id: string) {

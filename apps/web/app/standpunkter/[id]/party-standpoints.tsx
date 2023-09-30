@@ -49,9 +49,7 @@ export default function PartyStandpoints({
             <Card key={standpoint.url} className="grid gap-5">
               <p className="text-2xl">{standpoint.title}</p>
               {standpoint.opinions.length > 0 ? (
-                <ul
-                  className={`${marker[party]} grid list-inside list-disc gap-3`}
-                >
+                <ul className={`${marker[party]} ml-4 grid list-disc gap-3`}>
                   {standpoint.opinions.map((opinion) => (
                     <li key={opinion}>{opinion}</li>
                   ))}

@@ -40,11 +40,11 @@ export default function Filter() {
       <button
         onClick={openDrawer}
         className={twMerge(
-          "bg-background-light dark:bg-background-elevated-dark fixed bottom-4 right-4 z-50 rounded-full p-2 shadow-md",
+          "bg-background-light dark:bg-background-elevated-dark fixed bottom-4 right-4 z-50 rounded-full p-4 shadow-md",
           "sm:hidden",
         )}
       >
-        <AdjustmentsHorizontalIcon className="h-12 w-12" />
+        <AdjustmentsHorizontalIcon className="h-10 w-10" />
       </button>
       <div
         className={twMerge(

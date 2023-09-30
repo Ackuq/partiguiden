@@ -9,6 +9,8 @@ import Container from "@components/common/container";
 import Statistics from "./statistics";
 import getMemberWithAbsence from "@lib/api/member/get-member-with-absence";
 import getMemberDocuments from "@lib/api/documents/get-member-documents";
+import Biography from "./biography";
+import Tabs from "./tabs";
 
 interface PageProps {
   params: {
@@ -60,7 +62,12 @@ export default async function MemberPage({ params: { id } }: PageProps) {
             title: `${member.firstName} ${member.lastName}`,
           }}
         />
-        <Statistics member={member} documentCount={memberDocuments.count} />
+        <Statistics
+          absence={member.absence}
+          documentCount={memberDocuments.count}
+        />
+        <Biography memberInformation={member.information} />
+        <Tabs memberId={member.id} initialDocuments={memberDocuments} />
       </Container>
     </main>
   );

@@ -21,14 +21,11 @@ function StatisticsCard({
 }
 
 interface Props {
-  member: MemberDetailedResponse;
+  absence: MemberDetailedResponse["absence"];
   documentCount: number;
 }
 
-export default function Statistics({
-  member: { absence },
-  documentCount,
-}: Props) {
+export default function Statistics({ absence, documentCount }: Props) {
   return (
     <div className="flex flex-wrap gap-4">
       {absence.mandatePeriod.value !== null && (

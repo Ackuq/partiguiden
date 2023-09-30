@@ -5,12 +5,12 @@ export default function parseMemberDocument(
   document: DocumentListEntry,
 ): MemberDocument {
   const {
-    organ: authority,
+    organ: committee,
     dokumentnamn: title,
     undertitel: subtitle,
     notisrubrik: altTitle,
     id,
   } = document;
-
-  return { authority, title, subtitle, altTitle, id };
+  console.log(committee);
+  return { committee, title, subtitle, altTitle, id };
 }

@@ -8,7 +8,7 @@ interface ProfileProps {
 export default function Profile({ member }: ProfileProps) {
   return (
     <div className="grid justify-center gap-1 text-center">
-      <div className="bg-primary absolute h-28 w-full sm:h-36" />
+      <div className="bg-primary dark:bg-primary-dark absolute h-28 w-full sm:h-36" />
       <MemberImage
         member={member}
         className="mx-auto mt-8 h-40 w-40 sm:h-56 sm:w-56"

@@ -1,7 +1,7 @@
 import type { Party } from "@partiguiden/party-data/types";
 
 export interface MemberDocument {
-  authority: string | null;
+  committee: string | null;
   title: string;
   subtitle: string;
   altTitle: string;
@@ -21,7 +21,7 @@ export interface Information {
 }
 
 export interface Task {
-  authorityCode: string;
+  committee: string;
   role: string;
   content: Array<string>;
   status: string | null;

@@ -1,12 +1,11 @@
 import { PARLIAMENT_BASE_URL } from "@lib/constants";
-import type { Party } from "@partiguiden/party-data/types";
 import { parseMember } from "./parsers/member";
-import type { PersonListSingle } from "../parliament/types";
+import type { MemberParty, PersonListSingle } from "../parliament/types";
 
 interface Query {
   fnamn: string;
   enamn: string;
-  parti: Party;
+  parti: MemberParty;
   rdlstatus?: string;
 }
 

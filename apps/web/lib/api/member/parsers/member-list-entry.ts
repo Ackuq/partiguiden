@@ -1,7 +1,6 @@
 import type { Person } from "@lib/api/parliament/types";
 import type { MemberListEntry } from "../types";
 import parsePictureUrl from "./image";
-import type { Party } from "@partiguiden/party-data/types";
 
 export default function parseMemberListEntry(data: Person): MemberListEntry {
   const {
@@ -23,7 +22,7 @@ export default function parseMemberListEntry(data: Person): MemberListEntry {
     lastName,
     pictureUrl: parsePictureUrl(pictureUrl),
     age,
-    party: party.toLowerCase() as Party | "-",
+    party,
     district,
     status,
   };

@@ -1,6 +1,5 @@
 import type { MemberResponse } from "../types";
 import parsePictureUrl from "./image";
-import type { Party } from "@partiguiden/party-data/types";
 import parseInformation from "./information";
 import parseTask from "./task";
 import type { Person } from "@lib/api/parliament/types";
@@ -51,7 +50,7 @@ export const parseMember = (data: Person): MemberResponse => {
     pictureUrl: parsePictureUrl(pictureUrl),
     pictureUrlLowRes: parsePictureUrl(pictureUrlLowRes),
     age,
-    party: party.toLowerCase() as Party | "-",
+    party,
     district,
     status,
     information,

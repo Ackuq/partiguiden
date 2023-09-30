@@ -11,7 +11,7 @@ import {
   UserGroupIcon,
 } from "@heroicons/react/24/solid";
 import { Party } from "@partiguiden/party-data/types";
-import { getPartyName } from "@partiguiden/party-data/utils";
+import { partyNames } from "@partiguiden/party-data/utils";
 
 export const routes = {
   index: "/",
@@ -59,7 +59,7 @@ export const mainNavigation: NavigationEntry[] = [
   {
     title: "Partierna",
     subPages: Object.values(Party).map((party) => ({
-      title: getPartyName(party),
+      title: partyNames[party],
       href: routes.party(party),
       Icon: () => <PartyIcon party={party} />,
     })),

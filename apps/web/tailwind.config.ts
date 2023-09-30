@@ -67,10 +67,8 @@ const config: Config = {
     },
     extend: {
       colors: themeColors,
-
       height: themeHeight,
       width: themeWidth,
-
       translate: {
         ...themeWidth,
       },

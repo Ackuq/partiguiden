@@ -1,12 +1,12 @@
 export enum Party {
-  S = "s",
-  SD = "sd",
-  M = "m",
-  MP = "mp",
-  L = "l",
-  KD = "kd",
-  C = "c",
-  V = "v",
+  S = "S",
+  SD = "SD",
+  M = "M",
+  MP = "MP",
+  L = "L",
+  KD = "KD",
+  C = "C",
+  V = "V",
 }
 
 export interface Subject {

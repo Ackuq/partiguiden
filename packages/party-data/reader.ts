@@ -19,7 +19,7 @@ export function getSubject(id: string): Subject | undefined {
 }
 
 function getPartyData(abbreviation: string) {
-  switch (abbreviation.toLocaleLowerCase()) {
+  switch (abbreviation.toLocaleUpperCase()) {
     case Party.S:
       return s;
     case Party.SD:

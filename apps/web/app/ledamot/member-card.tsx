@@ -20,9 +20,9 @@ export default function MemberCard({ member }: Props) {
       )}
     >
       <div className="mb-10">
-        <div className="font-bold">Valkrets</div>
+        <div className="font-medium">Valkrets</div>
         <div>{member.district}</div>
-        <div className="mt-2 font-bold">Ålder</div>
+        <div className="mt-2 font-medium">Ålder</div>
         <div>{member.age}</div>
       </div>
       <MemberImage

@@ -7,7 +7,7 @@ import SocialMediaShare from "@components/common/social-media-share";
 import PartyIcon from "@components/party/icon";
 import { ERROR_404_TITLE } from "@lib/constants";
 import { Party } from "@partiguiden/party-data/types";
-import { getPartyName } from "@partiguiden/party-data/utils";
+import { partyNames } from "@partiguiden/party-data/utils";
 import { notFound } from "next/navigation";
 import Leader from "./leader";
 import { getParty } from "@lib/api/party/get-party";
@@ -23,7 +23,7 @@ export async function generateMetadata({ params: { party } }: PageProps) {
     return { title: ERROR_404_TITLE };
   }
 
-  const partyName = getPartyName(party);
+  const partyName = partyNames[party];
 
   return {
     title: `${partyName} | Party | Partiguiden`,

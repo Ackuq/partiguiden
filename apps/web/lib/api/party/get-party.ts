@@ -1,4 +1,4 @@
-import { getPartyName } from "@partiguiden/party-data/utils";
+import { partyNames } from "@partiguiden/party-data/utils";
 import type { Party } from "@partiguiden/party-data/types";
 import getWikipediaAbstract from "../wikipedia/get-abstract";
 import getWikipediaInfoBox from "../wikipedia/get-info-box";
@@ -12,7 +12,7 @@ export const getParty = (party: Party): Promise<PartyData> => {
     return {
       abstract,
       ...infoBox,
-      name: getPartyName(party),
+      name: partyNames[party],
     };
   });
 };

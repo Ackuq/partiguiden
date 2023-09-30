@@ -1,14 +1,13 @@
-interface LinkedInIconProps {
-  size?: number;
-}
+import type { IconProps } from "./types";
 
-export default function LinkedInIcon({ size = 28 }: LinkedInIconProps) {
+export default function LinkedInIcon({ size = 28, className }: IconProps) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       height={size}
       width={size}
       viewBox="0 0 72 72"
+      className={className}
     >
       <path
         d="M8,72 L64,72 C68.418278,72 72,68.418278 72,64 L72,8 C72,3.581722 68.418278,-8.11624501e-16 64,0 L8,0 C3.581722,8.11624501e-16 -5.41083001e-16,3.581722 0,8 L0,64 C5.41083001e-16,68.418278 3.581722,72 8,72 Z"

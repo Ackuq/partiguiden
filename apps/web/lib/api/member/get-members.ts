@@ -1,10 +1,9 @@
 import { PARLIAMENT_BASE_URL } from "@lib/constants";
-import type { Party } from "@partiguiden/party-data/types";
 import { cache } from "react";
-import type { PersonListMany } from "../parliament/types";
+import type { MemberParty, PersonListMany } from "../parliament/types";
 import parseMemberListEntry from "./parsers/member-list-entry";
 
-const getMembers = async (party: Uppercase<Party> | "" = "") => {
+const getMembers = async (party: MemberParty | "" = "") => {
   const query = new URLSearchParams({
     parti: party,
     utformat: "json",

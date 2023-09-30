@@ -1,7 +1,9 @@
 import PageTitle from "@components/common/page-title";
-import Filter from "@components/common/filter";
+import Filter from "@components/filter";
 import getMembers from "@lib/api/member/get-members";
 import MemberList from "./member-list";
+import { FilterContextProvider } from "@components/filter/filter-context";
+import { partyFilterToggles } from "./filter-toggles";
 
 export const metadata = {
   title: "Riksdagsledamöter | Partiguiden",
@@ -19,9 +21,11 @@ export default async function MembersPage() {
     <main>
       <PageTitle>Riksdagsledamöter</PageTitle>
 
-      <div className="mx-4 mb-4 flex gap-2 xl:container xl:mx-auto">
-        <MemberList members={members} />
-        <Filter />
+      <div className="mx-4 mb-4 flex gap-2 2xl:container 2xl:mx-auto">
+        <FilterContextProvider initialToggles={partyFilterToggles}>
+          <MemberList members={members} />
+          <Filter />
+        </FilterContextProvider>
       </div>
     </main>
   );

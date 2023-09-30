@@ -1,33 +1,20 @@
 "use client";
 
 import { mainNavigation } from "@lib/navigation";
-import { useCallback, useLayoutEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { ArrowRightIcon, ArrowLeftIcon } from "@heroicons/react/24/solid";
 import TabEntry from "./tab-entry";
 
 const SCROLL_STEP = 300;
+const leftDivId = "navbar-left-boundary";
+const rightDivId = "navbar-right-boundary";
 
 export default function TabNavigation() {
+  const leftDivRef = useRef<HTMLDivElement>(null);
+  const rightDivRef = useRef<HTMLDivElement>(null);
   const [showLeftButton, setShowLeftButton] = useState(false);
   const [showRightButton, setShowRightButton] = useState(false);
   const navRef = useRef<HTMLElement>(null);
-
-  const onScroll = useCallback<React.UIEventHandler<HTMLElement>>((event) => {
-    if (event.currentTarget.scrollLeft > 0) {
-      setShowLeftButton(true);
-    } else if (event.currentTarget.scrollLeft <= 0) {
-      setShowLeftButton(false);
-    }
-
-    if (
-      event.currentTarget.scrollWidth - event.currentTarget.scrollLeft <=
-      event.currentTarget.clientWidth
-    ) {
-      setShowRightButton(false);
-    } else {
-      setShowRightButton(true);
-    }
-  }, []);
 
   const handleScrollRight = useCallback<
     React.MouseEventHandler<HTMLElement>
@@ -41,22 +28,33 @@ export default function TabNavigation() {
     navRef.current?.scrollBy({ left: -SCROLL_STEP });
   }, []);
 
-  useLayoutEffect(() => {
-    function resizeHandler() {
-      if (navRef.current?.clientWidth === navRef.current?.scrollWidth) {
-        setShowRightButton(false);
-      } else if (
-        navRef.current &&
-        navRef.current?.clientWidth < navRef.current?.scrollWidth
-      ) {
-        setShowRightButton(true);
-      }
+  useEffect(() => {
+    if (!leftDivRef.current || !rightDivRef.current) {
+      return;
     }
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.target.id === rightDivId) {
+          if (entry.isIntersecting) {
+            setShowRightButton(false);
+            return;
+          }
+          setShowRightButton(true);
+        }
+        if (entry.target.id === leftDivId) {
+          if (entry.isIntersecting) {
+            setShowLeftButton(false);
+            return;
+          }
+          setShowLeftButton(true);
+        }
+      });
+    });
+    observer.observe(leftDivRef.current);
+    observer.observe(rightDivRef.current);
 
-    window.addEventListener("resize", resizeHandler);
-    resizeHandler();
     return () => {
-      window.removeEventListener("resize", resizeHandler);
+      observer.disconnect();
     };
   }, []);
 
@@ -72,11 +70,12 @@ export default function TabNavigation() {
       <nav
         className="scrollbar-hide flex gap-3 overflow-x-scroll scroll-smooth text-center"
         ref={navRef}
-        onScroll={onScroll}
       >
+        <div id={leftDivId} ref={leftDivRef} />
         {mainNavigation.map((item) => (
           <TabEntry key={item.title} item={item} navRef={navRef} />
         ))}
+        <div id={rightDivId} className="min-w-[1px]" ref={rightDivRef} />
       </nav>
       {showRightButton ? (
         <button className="h-14 w-20" onClick={handleScrollRight}>

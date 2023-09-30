@@ -1,11 +1,11 @@
-import type { Party } from "@partiguiden/party-data/types";
 import type { MemberAbsenceResponse } from "./types";
 import getMembers from "./get-members";
 import getAbsence from "./get-absence";
+import type { MemberParty } from "../parliament/types";
 
 interface Query {
   parliamentYears: string[];
-  party: Uppercase<Party> | "";
+  party: MemberParty | "";
 }
 
 export default async function membersWithAbsenceController({

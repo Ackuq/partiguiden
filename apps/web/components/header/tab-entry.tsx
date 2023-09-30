@@ -10,8 +10,8 @@ import { twMerge } from "tailwind-merge";
 
 const tabClassName = twMerge(
   "min-w-[90px] flex-shrink-0 whitespace-nowrap p-4 text-sm uppercase hover:opacity-80",
-  "border-primary-light dark:border-primary-elevated-light",
-  "aria-current-page:border-b-2",
+  "ring-primary-dark dark:ring-primary border-primary-light dark:border-primary-elevated-light",
+  "aria-current-page:border-b-2 outline-none ring-inset ring-primary focus:ring-2",
 );
 
 interface DropdownProps {

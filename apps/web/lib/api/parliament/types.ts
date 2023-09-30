@@ -1,5 +1,7 @@
 import type { Party } from "@partiguiden/party-data/types";
 
+export type MemberParty = Party | "-";
+
 export interface Document {
   hangar_id: number;
   dok_id: string;
@@ -164,7 +166,7 @@ export interface DocumentReference {
 }
 
 export interface Statement {
-  parti: Uppercase<Party>;
+  parti: MemberParty;
   parent_ardome_id: string;
   tumnagel: string;
   tumnagel_stor: string;
@@ -192,7 +194,7 @@ export interface Vote {
   efternamn: string;
   valkrets: string;
   iort: string;
-  parti: Uppercase<Party>;
+  parti: MemberParty;
   banknummer: string;
   kon: string;
   fodd: string;
@@ -226,7 +228,7 @@ export interface StatementDocument {
     anforande_id: string;
     anforande_nummer: string;
     talare: string;
-    parti: Uppercase<Party>;
+    parti: MemberParty;
     anforandetext: string;
     intressent_id: string;
     rel_dok_id: string;
@@ -248,7 +250,7 @@ export interface Person {
   tilltalsnamn: string;
   sorteringsnamn: string;
   iort: string;
-  parti: Uppercase<Party>;
+  parti: MemberParty;
   valkrets: string;
   status: string;
   person_url_xml: string;

@@ -1,8 +1,7 @@
-interface GithubIconProps {
-  size?: number;
-}
+import { twMerge } from "tailwind-merge";
+import type { IconProps } from "./types";
 
-export default function GithubIcon({ size = 28 }: GithubIconProps) {
+export default function GithubIcon({ size = 28, className }: IconProps) {
   return (
     <svg
       width={size}
@@ -10,7 +9,7 @@ export default function GithubIcon({ size = 28 }: GithubIconProps) {
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 98 98"
       fill="#24292f"
-      className="fill-black dark:fill-white"
+      className={twMerge("fill-black dark:fill-white", className)}
     >
       <path
         fillRule="evenodd"

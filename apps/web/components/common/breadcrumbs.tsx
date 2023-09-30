@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import { ChevronRightIcon, HomeIcon } from "@heroicons/react/20/solid";
 import { routes } from "@lib/navigation";
 import Link from "next/link";
@@ -28,14 +29,14 @@ export default function Breadcrumbs({ links, current }: BreadcrumbsProps) {
         </li>
         <BreadcrumbDivider />
         {links?.map((link) => (
-          <>
+          <Fragment key={link.href}>
             <li key={link.href}>
               <Link href={link.href} className="hover:opacity-75">
                 {link.title}
               </Link>
             </li>
             <BreadcrumbDivider />
-          </>
+          </Fragment>
         ))}
         <li className="whitespace-nowrap">{current}</li>
       </ol>

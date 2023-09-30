@@ -33,8 +33,8 @@ export default function DrawerNavigation() {
       />
       <div
         className={twMerge(
-          "bg-primary dark:bg-background-elevated-dark fixed right-0 top-0 z-50 h-full w-[18rem] overflow-y-scroll",
-          "translate-x-[18rem] transition-transform group-data-[show=true]:translate-x-0",
+          "bg-primary dark:bg-background-elevated-dark w-drawer fixed right-0 top-0 z-50 h-full overflow-y-scroll",
+          "translate-x-drawer transition-transform group-data-[show=true]:translate-x-0",
           "motion-reduce:transition-none",
         )}
       >

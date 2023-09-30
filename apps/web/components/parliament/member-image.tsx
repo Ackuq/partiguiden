@@ -1,6 +1,8 @@
-import type { MemberResponse } from "@lib/api/types/member";
+"use client";
+import type { MemberListEntry } from "@lib/api/member/types";
 import Image from "next/image";
 import { useState } from "react";
+import { twMerge } from "tailwind-merge";
 
 function firstLetterOfSentences(s: string) {
   return s
@@ -9,20 +11,28 @@ function firstLetterOfSentences(s: string) {
     .join("");
 }
 
-interface MemberImageProps {
-  member: MemberResponse;
-}
+type MemberImageProps = React.PropsWithChildren<{
+  member: MemberListEntry;
+  className?: string;
+  sizes?: string;
+}>;
 
-export default function MemberImage({ member }: MemberImageProps) {
+export default function MemberImage({
+  member,
+  className,
+  children,
+  sizes = "(min-width: 640px) 10rem, 6rem",
+}: MemberImageProps) {
   const [fallback, setFallback] = useState(false);
 
   return (
-    <div className="xs:h-32  xs:w-32 relative mx-auto h-24 w-24 sm:h-40 sm:w-40">
+    <div className={twMerge("relative h-24 w-24 sm:h-40 sm:w-40", className)}>
       {!fallback ? (
         <Image
           src={member.pictureUrl}
           alt={`${member.firstName} ${member.lastName}`}
           fill
+          sizes={sizes}
           className="rounded-full object-cover"
           onError={() => setFallback(true)}
         />
@@ -34,6 +44,7 @@ export default function MemberImage({ member }: MemberImageProps) {
           </span>
         </div>
       )}
+      {children}
     </div>
   );
 }

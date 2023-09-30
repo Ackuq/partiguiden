@@ -4,7 +4,7 @@ import type { PartyData, PartyDataWithoutPartyName, Standpoint } from "./types";
 const PARTIES_DIRECTORY = `${__dirname}/parties`;
 
 const partyFileName = (abbreviation: string) =>
-  `${PARTIES_DIRECTORY}/${abbreviation.toLocaleLowerCase()}.json`;
+  `${PARTIES_DIRECTORY}/${abbreviation.toLocaleUpperCase()}.json`;
 
 /**
  * Function to append, update, or delete party data, with a new snapshot.

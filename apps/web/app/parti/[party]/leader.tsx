@@ -1,5 +1,5 @@
 "use client";
-import type { Leader } from "@lib/api/types/member";
+import type { Leader } from "@lib/api/member/types";
 import Link from "next/link";
 import { routes } from "@lib/navigation";
 import MemberImage from "@components/parliament/member-image";
@@ -14,7 +14,7 @@ export default function Leader({ leader }: LeaderProps) {
       href={routes.member(leader.id)}
       className="hover:bg-background-elevated-light dark:hover:bg-background-elevated-dark-200 grid gap-2 rounded py-2 text-center transition-colors"
     >
-      <MemberImage member={leader} />
+      <MemberImage member={leader} className="mx-auto" />
 
       <p className="text-lg">
         {leader.firstName} {leader.lastName}

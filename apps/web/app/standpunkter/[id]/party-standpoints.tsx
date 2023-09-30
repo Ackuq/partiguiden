@@ -11,7 +11,7 @@ import {
 } from "@lib/styles/party";
 import type { Standpoint } from "@partiguiden/party-data/types";
 import type { Party } from "@partiguiden/party-data/types";
-import { getPartyName } from "@partiguiden/party-data/utils";
+import { partyNames } from "@partiguiden/party-data/utils";
 import { useState } from "react";
 import { twMerge } from "tailwind-merge";
 
@@ -36,7 +36,7 @@ export default function PartyStandpoints({
         onClick={handleClick}
         className={`${borderBottom[party]} flex w-full items-center justify-between border-b-2 py-3 pl-2 text-start text-3xl font-light`}
       >
-        {getPartyName(party)}
+        {partyNames[party]}
         <ChevronUpIcon
           data-active={visible ? "true" : "false"}
           className="mr-2 h-6 w-6 transition-transform duration-300 data-[active=true]:rotate-180"

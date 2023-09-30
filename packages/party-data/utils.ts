@@ -1,25 +1,15 @@
 import { Party } from "./types";
 
-export function getPartyName(party: Party): string {
-  switch (party) {
-    case Party.C:
-      return "Centerpartiet";
-    case Party.KD:
-      return "Kristdemokraterna";
-    case Party.L:
-      return "Liberalerna";
-    case Party.M:
-      return "Moderaterna";
-    case Party.MP:
-      return "Miljöpartiet";
-    case Party.S:
-      return "Socialdemokraterna";
-    case Party.SD:
-      return "Sverigedemokraterna";
-    case Party.V:
-      return "Vänsterpartiet";
-  }
-}
+export const partyNames: Record<Party, string> = {
+  [Party.S]: "Socialdemokraterna",
+  [Party.SD]: "Sverigedemokraterna",
+  [Party.M]: "Moderaterna",
+  [Party.MP]: "Miljöpartiet",
+  [Party.L]: "Liberalerna",
+  [Party.KD]: "Kristdemokraterna",
+  [Party.C]: "Centerpartiet",
+  [Party.V]: "Vänsterpartiet",
+};
 
 export const partyColors = {
   [Party.C]: "#1e824c",

@@ -3,6 +3,7 @@ import type { Party } from "@partiguiden/party-data/types";
 import {
   getStandpointsForSubject,
   getSubject,
+  getSubjects,
 } from "@partiguiden/party-data/reader";
 import { ERROR_404_TITLE } from "@lib/constants";
 import PageTitle from "@components/common/page-title";
@@ -84,4 +85,12 @@ export default function Standpoints({ params: { id } }: PageProps) {
       </Container>
     </main>
   );
+}
+
+export async function generateStaticParams() {
+  const subjects = getSubjects();
+
+  return subjects.map((subject) => ({
+    id: subject.id,
+  }));
 }

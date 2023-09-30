@@ -1,7 +1,7 @@
 import type { Config } from "tailwindcss";
 import colors from "tailwindcss/colors";
 import { partyColors } from "@partiguiden/party-data/utils";
-import { committeeInfo } from "@lib/committes";
+import { committeeColors } from "./lib/committes";
 
 const themeColors = {
   primary: {
@@ -15,6 +15,9 @@ const themeColors = {
   },
   party: {
     ...partyColors,
+  },
+  committee: {
+    ...committeeColors,
   },
   background: {
     elevated: {

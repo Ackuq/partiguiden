@@ -11,6 +11,5 @@ export default function parseMemberDocument(
     notisrubrik: altTitle,
     id,
   } = document;
-  console.log(committee);
   return { committee, title, subtitle, altTitle, id };
 }

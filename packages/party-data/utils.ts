@@ -11,7 +11,7 @@ export const partyNames: Record<Party, string> = {
   [Party.V]: "Vänsterpartiet",
 };
 
-export const partyColors = {
+export const partyColors: Record<Party, string> = {
   [Party.C]: "#1e824c",
   [Party.KD]: "#22a7f0",
   [Party.L]: "#5c97bf",

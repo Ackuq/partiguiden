@@ -56,6 +56,7 @@ export default function Filter() {
           "group-data-[drawer-visible=false]:sm:sticky group-data-[drawer-visible=false]:sm:transform-none",
           "group-data-[drawer-visible=false]:sm:z-0 group-data-[drawer-visible=false]:sm:h-min group-data-[drawer-visible=false]:sm:w-auto",
           "group-data-[drawer-visible=false]:sm:min-w-[17rem] group-data-[drawer-visible=false]:sm:rounded-sm group-data-[drawer-visible=false]:sm:pt-0",
+          "sm:transition-none",
         )}
       >
         <button

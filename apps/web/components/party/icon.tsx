@@ -1,25 +1,28 @@
 import Image from "next/image";
 import { partyLogo } from "@lib/assets";
 import type { Party } from "@partiguiden/party-data/types";
+import { twMerge } from "tailwind-merge";
 
 interface PartyIconProps {
   party: Party;
-  size?: number;
   className?: string;
+  sizes?: string;
 }
 
 export default function PartyIcon({
   party,
-  size = 25,
   className,
+  sizes = "24px",
 }: PartyIconProps) {
   return (
-    <Image
-      src={partyLogo(party)}
-      width={size}
-      height={size}
-      alt={`${party} logo`}
-      className={className}
-    />
+    <div className={twMerge("relative h-6 w-6", className)}>
+      <Image
+        src={partyLogo(party)}
+        fill
+        sizes={sizes}
+        className="object-cover"
+        alt={`${party} logga`}
+      />
+    </div>
   );
 }

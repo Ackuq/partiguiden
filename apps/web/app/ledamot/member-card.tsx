@@ -27,7 +27,7 @@ export default function MemberCard({ member }: Props) {
       </div>
       <MemberImage
         member={member}
-        sizes="(min-width: 640px) 10rem, 8rem"
+        sizes="(min-width: 640px) 160px, 128px"
         className="mb-1 ml-auto h-32 w-32 sm:h-40 sm:w-40"
       >
         {member.party !== "-" && (

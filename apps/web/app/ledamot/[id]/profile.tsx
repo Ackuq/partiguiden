@@ -12,7 +12,7 @@ export default function Profile({ member }: ProfileProps) {
       <MemberImage
         member={member}
         className="mx-auto mt-8 h-40 w-40 sm:h-56 sm:w-56"
-        sizes="(min-width: 640px) 14rem, 10rem"
+        sizes="(min-width: 640px) 224px, 160px"
       />
       <div className="mt-4 text-lg font-medium sm:text-xl">
         {member.status}

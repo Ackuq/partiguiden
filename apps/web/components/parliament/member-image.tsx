@@ -21,7 +21,7 @@ export default function MemberImage({
   member,
   className,
   children,
-  sizes = "(min-width: 640px) 10rem, 6rem",
+  sizes = "(min-width: 640px) 160px, 96px",
 }: MemberImageProps) {
   const [fallback, setFallback] = useState(false);
 

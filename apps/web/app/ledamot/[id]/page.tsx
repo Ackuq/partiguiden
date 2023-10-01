@@ -11,6 +11,7 @@ import getMemberWithAbsence from "@lib/api/member/get-member-with-absence";
 import getMemberDocuments from "@lib/api/documents/get-member-documents";
 import Biography from "./biography";
 import Tabs from "./tabs";
+import getMemberTwitterFeed from "@lib/api/wikidata/get-member-twitter-feed";
 
 interface PageProps {
   params: {
@@ -40,9 +41,11 @@ export async function generateMetadata({ params: { id } }: PageProps) {
 export default async function MemberPage({ params: { id } }: PageProps) {
   const memberPromise = getMemberWithAbsence(id);
   const memberDocumentsPromise = getMemberDocuments({ id, page: 1 });
-  const [member, memberDocuments] = await Promise.all([
+  const memberTwitterPromise = getMemberTwitterFeed(id);
+  const [member, memberDocuments, memberTwitter] = await Promise.all([
     memberPromise,
     memberDocumentsPromise,
+    memberTwitterPromise,
   ]);
 
   if (!member) {
@@ -67,7 +70,11 @@ export default async function MemberPage({ params: { id } }: PageProps) {
           documentCount={memberDocuments.count}
         />
         <Biography memberInformation={member.information} />
-        <Tabs memberId={member.id} initialDocuments={memberDocuments} />
+        <Tabs
+          memberId={member.id}
+          initialDocuments={memberDocuments}
+          twitterFeed={memberTwitter.results.bindings[0]}
+        />
       </Container>
     </main>
   );

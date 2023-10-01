@@ -4,6 +4,8 @@ import { Card } from "@components/common/card";
 import type { MemberDocuments } from "@lib/api/member/types";
 import { useState } from "react";
 import Documents from "./documents";
+import type { TwitterResult } from "@lib/api/wikidata/types";
+import TwitterFeed from "./twitter-feed";
 
 enum Tab {
   Document = "document-tab",
@@ -13,9 +15,14 @@ enum Tab {
 interface Props {
   memberId: string;
   initialDocuments: MemberDocuments;
+  twitterFeed?: TwitterResult;
 }
 
-export default function Tabs({ memberId, initialDocuments }: Props) {
+export default function Tabs({
+  memberId,
+  initialDocuments,
+  twitterFeed,
+}: Props) {
   const [activeTab, setActiveTab] = useState(Tab.Document);
 
   function setTab(event: React.MouseEvent) {
@@ -49,6 +56,7 @@ export default function Tabs({ memberId, initialDocuments }: Props) {
       {activeTab === Tab.Document && (
         <Documents initialDocuments={initialDocuments} memberId={memberId} />
       )}
+      {activeTab === Tab.Twitter && <TwitterFeed twitterFeed={twitterFeed} />}
     </Card>
   );
 }

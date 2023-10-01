@@ -58,7 +58,9 @@ function generatePagination(currentPage: number, max: number) {
     pagination.push(SeparatorType.SeparatorEnd);
   }
 
-  pagination.push(lastPage);
+  if (lastPage !== firstPage) {
+    pagination.push(lastPage);
+  }
 
   return pagination;
 }
@@ -117,6 +119,7 @@ export default function Pagination({
 
       <button
         aria-label="Nästa sida"
+        disabled={current === total}
         onClick={createOnChange(current + 1)}
         className="disabled:opacity-60"
       >

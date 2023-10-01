@@ -5,7 +5,7 @@ import { getCurrentMandatePeriod } from "../parliament/get-current-mandate-perio
 
 export default async function getMemberWithAbsence(
   id: string,
-): Promise<MemberDetailedResponse | null> {
+): Promise<MemberDetailedResponse | undefined> {
   // Get latest parliament year and mandate period
   const mandatePeriod = await getCurrentMandatePeriod();
 
@@ -27,7 +27,7 @@ export default async function getMemberWithAbsence(
     ]);
 
   if (!memberData) {
-    return null;
+    return undefined;
   }
 
   return {

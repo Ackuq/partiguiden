@@ -1,7 +1,8 @@
+import type { Committee } from "@lib/committes";
 import type { Party } from "@partiguiden/party-data/types";
 
 export interface MemberDocument {
-  committee: string | null;
+  committee?: Committee;
   title: string;
   subtitle: string;
   altTitle: string;
@@ -11,20 +12,20 @@ export interface MemberDocument {
 export interface MemberDocuments {
   pages: number;
   count: number;
-  documents: Array<MemberDocument>;
+  documents: MemberDocument[];
 }
 
 export interface Information {
   code: string;
-  content: Array<string>;
+  content: string[];
   type: string;
 }
 
 export interface Task {
   committee: string;
   role: string;
-  content: Array<string>;
-  status: string | null;
+  content: string[];
+  status?: string;
   type: string;
   from: string;
   to: string;
@@ -50,7 +51,7 @@ export interface MemberResponse extends MemberListEntry {
 }
 
 export interface MemberAbsenceResponse extends MemberListEntry {
-  absence: number | null;
+  absence?: number;
 }
 
 export enum AbsencePeriod {
@@ -58,7 +59,7 @@ export enum AbsencePeriod {
   parliamentYear = "riksmöte",
 }
 export interface Absence {
-  value: number | null;
+  value?: number;
   description: string;
 }
 

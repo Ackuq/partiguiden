@@ -1,6 +1,6 @@
 import { githubFrontend, githubProfile, linkedIn } from "@lib/socials";
 import PageTitle from "@components/common/page-title";
-import { Card } from "@components/card";
+import { Card } from "@components/common/card";
 import React from "react";
 import { InformationCircleIcon } from "@heroicons/react/24/solid";
 import ExternalLink from "@components/common/external-link";

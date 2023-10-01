@@ -1,4 +1,4 @@
-import { Card } from "@components/card";
+import { Card } from "@components/common/card";
 import type { MemberDetailedResponse } from "@lib/api/member/types";
 import { twMerge } from "tailwind-merge";
 

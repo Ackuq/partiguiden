@@ -1,6 +1,6 @@
 "use client";
 
-import { Card } from "@components/card";
+import { Card } from "@components/common/card";
 import type { MemberDocuments } from "@lib/api/member/types";
 import { useState } from "react";
 import Documents from "./documents";

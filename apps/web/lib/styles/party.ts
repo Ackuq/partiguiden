@@ -1,6 +1,6 @@
 import { Party } from "@partiguiden/party-data/types";
 
-export const borderBottom = {
+export const partyBorderBottom: { [K in Party]: `border-b-party-${K}` } = {
   [Party.C]: "border-b-party-C",
   [Party.KD]: "border-b-party-KD",
   [Party.L]: "border-b-party-L",
@@ -9,9 +9,9 @@ export const borderBottom = {
   [Party.S]: "border-b-party-S",
   [Party.SD]: "border-b-party-SD",
   [Party.V]: "border-b-party-V",
-} as const;
+};
 
-export const textColor = {
+export const partyTextColor: { [K in Party]: `text-party-${K}` } = {
   [Party.C]: "text-party-C",
   [Party.KD]: "text-party-KD",
   [Party.L]: "text-party-L",
@@ -22,7 +22,7 @@ export const textColor = {
   [Party.V]: "text-party-V",
 } as const;
 
-export const background = {
+export const partyBackground: { [K in Party]: `bg-party-${K}` } = {
   [Party.C]: "bg-party-C",
   [Party.KD]: "bg-party-KD",
   [Party.L]: "bg-party-L",
@@ -33,18 +33,19 @@ export const background = {
   [Party.V]: "bg-party-V",
 } as const;
 
-export const backgroundHover = {
-  [Party.C]: "hover:bg-party-C/25",
-  [Party.KD]: "hover:bg-party-KD/25",
-  [Party.L]: "hover:bg-party-L/25",
-  [Party.M]: "hover:bg-party-M/25",
-  [Party.MP]: "hover:bg-party-MP/25",
-  [Party.S]: "hover:bg-party-S/25",
-  [Party.SD]: "hover:bg-party-SD/25",
-  [Party.V]: "hover:bg-party-V/25",
-} as const;
+export const partyBackgroundHover: { [K in Party]: `hover:bg-party-${K}/25` } =
+  {
+    [Party.C]: "hover:bg-party-C/25",
+    [Party.KD]: "hover:bg-party-KD/25",
+    [Party.L]: "hover:bg-party-L/25",
+    [Party.M]: "hover:bg-party-M/25",
+    [Party.MP]: "hover:bg-party-MP/25",
+    [Party.S]: "hover:bg-party-S/25",
+    [Party.SD]: "hover:bg-party-SD/25",
+    [Party.V]: "hover:bg-party-V/25",
+  } as const;
 
-export const marker = {
+export const partyMarker: { [K in Party]: `marker:text-party-${K}` } = {
   [Party.C]: "marker:text-party-C",
   [Party.KD]: "marker:text-party-KD",
   [Party.L]: "marker:text-party-L",

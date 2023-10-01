@@ -34,9 +34,16 @@ export const routes = {
   },
   memberStatsYear: "/member-stats/year",
   memberStatsPeriod: "/member-stats/period",
-  document: "/document/[id]",
+  document(id: string) {
+    return `/document/${id}`;
+  },
   debates: "/debate",
   debate: "/debate/[id]",
+  api: {
+    memberDocument(id: string, page: number) {
+      return `/api/member/${id}/documents/${page}`;
+    },
+  },
 };
 
 export interface RouteEntry {

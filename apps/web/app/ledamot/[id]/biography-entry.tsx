@@ -25,9 +25,9 @@ export default function BiographyEntry({ information }: Props) {
         {information.code}
         <ChevronDownIcon className="h-4 w-4 transition-transform group-aria-[expanded=true]:rotate-180" />
       </div>
-      <div className="px-4 pb-6 pt-2 group-aria-[expanded=false]:hidden">
+      <p className="px-4 pb-6 pt-2 group-aria-[expanded=false]:hidden">
         {information.content}
-      </div>
+      </p>
     </button>
   );
 }

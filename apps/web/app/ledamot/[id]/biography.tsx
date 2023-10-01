@@ -1,4 +1,4 @@
-import { Card } from "@components/card";
+import { Card } from "@components/common/card";
 import type { Information } from "@lib/api/member/types";
 import BiographyEntry from "./biography-entry";
 

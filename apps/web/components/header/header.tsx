@@ -1,4 +1,4 @@
-import ThemeToggle from "@components/theme-toggle";
+import ThemeToggle from "./theme-toggle";
 import TabNavigation from "./tab-navigation";
 import DrawerNavigation from "./drawer-navigation";
 import MainLogo from "./main-logo";

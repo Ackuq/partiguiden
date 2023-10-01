@@ -1,4 +1,4 @@
-import { Card } from "@components/card";
+import { Card } from "@components/common/card";
 import Container from "@components/common/container";
 import PageTitle from "@components/common/page-title";
 import { ExclamationCircleIcon } from "@heroicons/react/24/solid";

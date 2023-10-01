@@ -1,5 +1,5 @@
 import { PARLIAMENT_BASE_URL } from "@lib/constants";
-import { cache } from "react";
+import { unstable_cache as cache } from "next/cache";
 import type { MemberParty, PersonListMany } from "../parliament/types";
 import parseMemberListEntry from "./parsers/member-list-entry";
 
@@ -10,16 +10,13 @@ const getMembers = async (party: MemberParty | "" = "") => {
     sort: "sorteringsnamn",
   });
 
-  const response = await fetch(`${PARLIAMENT_BASE_URL}/personlista/?${query}`, {
-    // The response will be too large to cache
-    next: { revalidate: 0 },
-  });
+  const response = await fetch(`${PARLIAMENT_BASE_URL}/personlista/?${query}`);
   const data: PersonListMany = await response.json();
   const members = data.personlista.person;
   return members.map(parseMemberListEntry);
 };
 
-// Revalidate data at most once per day (60 * 60 * 24)s
-export const revalidate = 86400;
-
-export default cache(getMembers);
+export default cache(getMembers, ["get-members"], {
+  // Once per day
+  revalidate: 60 * 60 * 24,
+});

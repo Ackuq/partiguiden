@@ -131,7 +131,6 @@ export const extractVotesNew = (row: NewVotingRow[]): VotingDict => {
     voting[votingGroupName] = partyVotes;
   });
   voting["total"] = total;
-  console.log(voting["total"]);
   return voting;
 };
 

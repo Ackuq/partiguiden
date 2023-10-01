@@ -18,8 +18,10 @@ export const routes = {
   cookiePolicy: "/cookie-policy",
   aboutUs: "/om-oss",
   polls: "/polls",
-  votes: "/voteringar",
-  vote: "/vote/[id]/[bet]",
+  votes: "/votering",
+  vote(id: string, bet: number) {
+    return `/votering/${id}/${bet}`;
+  },
   decisions: "/decisions",
   standpoints: "/standpunkter",
   standpoint(id: string) {

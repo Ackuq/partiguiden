@@ -49,7 +49,11 @@ export default async function PartyPage({
     <main>
       <PageTitle
         Icon={() => (
-          <PartyIcon className="mx-auto" size={50} party={partyAbbreviation} />
+          <PartyIcon
+            className="mx-auto mb-2 h-12 w-12 sm:h-16 sm:w-16"
+            sizes="(min-width: 640px) 64px, 48px"
+            party={partyAbbreviation}
+          />
         )}
       >
         {party.name}

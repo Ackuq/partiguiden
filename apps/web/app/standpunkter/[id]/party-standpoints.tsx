@@ -1,13 +1,13 @@
 "use client";
 
-import { Card } from "@components/card";
+import { Card } from "@components/common/card";
 import { ChevronUpIcon } from "@heroicons/react/24/solid";
 import { dateString } from "@lib/dates";
 import {
-  backgroundHover,
-  borderBottom,
-  marker,
-  textColor,
+  partyBackgroundHover,
+  partyBorderBottom,
+  partyMarker,
+  partyTextColor,
 } from "@lib/styles/party";
 import type { Standpoint } from "@partiguiden/party-data/types";
 import type { Party } from "@partiguiden/party-data/types";
@@ -34,13 +34,14 @@ export default function PartyStandpoints({
     <>
       <button
         onClick={handleClick}
-        className={`${borderBottom[party]} flex w-full items-center justify-between border-b-2 py-3 pl-2 text-start text-3xl font-light`}
+        aria-expanded={visible ? "true" : "false"}
+        className={twMerge(
+          partyBorderBottom[party],
+          "group flex w-full items-center justify-between border-b-2 py-3 pl-2 text-start text-3xl font-light",
+        )}
       >
         {partyNames[party]}
-        <ChevronUpIcon
-          data-active={visible ? "true" : "false"}
-          className="mr-2 h-6 w-6 transition-transform duration-300 data-[active=true]:rotate-180"
-        />
+        <ChevronUpIcon className="mr-2 h-6 w-6 transition-transform duration-300 group-aria-[expanded=true]:rotate-180" />
       </button>
 
       {visible && (
@@ -50,7 +51,7 @@ export default function PartyStandpoints({
               <p className="text-2xl">{standpoint.title}</p>
               {standpoint.opinions.length > 0 ? (
                 <ul
-                  className={`${marker[party]} grid list-inside list-disc gap-3`}
+                  className={`${partyMarker[party]} ml-4 grid list-disc gap-3`}
                 >
                   {standpoint.opinions.map((opinion) => (
                     <li key={opinion}>{opinion}</li>
@@ -63,8 +64,8 @@ export default function PartyStandpoints({
                 <a
                   className={twMerge(
                     "whitespace-nowrap rounded p-2 text-sm font-medium uppercase transition-colors",
-                    textColor[party],
-                    backgroundHover[party],
+                    partyTextColor[party],
+                    partyBackgroundHover[party],
                   )}
                   target="_blank"
                   rel="noopener noreferrer"

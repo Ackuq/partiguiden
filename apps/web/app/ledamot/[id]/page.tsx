@@ -2,6 +2,16 @@ import getMember from "@lib/api/member/get-member";
 import getMembers from "@lib/api/member/get-members";
 import { ERROR_404_TITLE } from "@lib/constants";
 import { notFound } from "next/navigation";
+import Profile from "./profile";
+import BreadcrumbsSocialMediaShare from "@components/common/breadcrumbs-social-media-share";
+import { routes } from "@lib/navigation";
+import Container from "@components/common/container";
+import Statistics from "./statistics";
+import getMemberWithAbsence from "@lib/api/member/get-member-with-absence";
+import getMemberDocuments from "@lib/api/documents/get-member-documents";
+import Biography from "./biography";
+import Tabs from "./tabs";
+import getMemberTwitterFeed from "@lib/api/wikidata/get-member-twitter-feed";
 
 interface PageProps {
   params: {
@@ -29,15 +39,44 @@ export async function generateMetadata({ params: { id } }: PageProps) {
 }
 
 export default async function MemberPage({ params: { id } }: PageProps) {
-  const member = await getMember(id);
+  const memberPromise = getMemberWithAbsence(id);
+  const memberDocumentsPromise = getMemberDocuments({ id, page: 1 });
+  const memberTwitterPromise = getMemberTwitterFeed(id);
+  const [member, memberDocuments, memberTwitter] = await Promise.all([
+    memberPromise,
+    memberDocumentsPromise,
+    memberTwitterPromise,
+  ]);
+
   if (!member) {
     return notFound();
   }
-  // TODO: Implement
+
   return (
-    <h1>
-      {member.firstName} {member.lastName}
-    </h1>
+    <main>
+      <Profile member={member} />
+      <Container className="grid gap-4">
+        <BreadcrumbsSocialMediaShare
+          breadcrumbsProps={{
+            current: `${member.firstName} ${member.lastName}`,
+            links: [{ title: "Ledamöter", href: routes.members }],
+          }}
+          socialMediaProps={{
+            title: `${member.firstName} ${member.lastName}`,
+          }}
+        />
+        <Statistics
+          absence={member.absence}
+          documentCount={memberDocuments.count}
+        />
+        <Biography memberInformation={member.information} />
+        <Tabs
+          memberId={member.id}
+          initialDocuments={memberDocuments}
+          twitterFeed={memberTwitter.results.bindings[0]}
+        />
+      </Container>
+    </main>
   );
 }
 

@@ -3,7 +3,7 @@ import type { Task } from "../types";
 
 export default function parseTask(unparsed: PersonTask): Task {
   const {
-    organ_kod: authorityCode,
+    organ_kod: committee,
     roll_kod: role,
     status,
     uppgift: content,
@@ -20,7 +20,7 @@ export default function parseTask(unparsed: PersonTask): Task {
       : [];
 
   return {
-    authorityCode,
+    committee,
     role,
     content: parsedContent,
     status,

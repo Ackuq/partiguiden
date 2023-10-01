@@ -1,4 +1,4 @@
-import { Card } from "@components/card";
+import { Card } from "@components/common/card";
 import Container from "@components/common/container";
 import { Divider } from "@components/common/divider";
 import ExternalLink from "@components/common/external-link";

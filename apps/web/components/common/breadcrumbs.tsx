@@ -17,7 +17,7 @@ export interface BreadcrumbsProps {
 
 export default function Breadcrumbs({ links, current }: BreadcrumbsProps) {
   return (
-    <nav aria-label="Breadcrumbs">
+    <nav aria-label="Brödsmulor">
       <ol className="sm:text-md inline-flex flex-wrap items-center gap-1 text-sm text-slate-700 dark:text-slate-300 ">
         <li>
           <Link

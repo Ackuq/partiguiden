@@ -1,6 +1,7 @@
 import type { Config } from "tailwindcss";
 import colors from "tailwindcss/colors";
 import { partyColors } from "@partiguiden/party-data/utils";
+import { committeeColors, committeeColorsDark } from "./lib/committes";
 
 const themeColors = {
   primary: {
@@ -14,6 +15,12 @@ const themeColors = {
   },
   party: {
     ...partyColors,
+  },
+  committee: {
+    ...committeeColors,
+    dark: {
+      ...committeeColorsDark,
+    },
   },
   background: {
     elevated: {
@@ -40,6 +47,7 @@ const themeColors = {
 
 const themeHeight = {
   header: "3.5rem",
+  "header-with-margin": "4.5rem",
   "header-sm": "6rem",
   "header-sm-with-margin": "7rem",
 };

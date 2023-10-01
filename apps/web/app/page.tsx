@@ -1,9 +1,10 @@
-import { Card } from "@components/card";
+import { Card } from "@components/common/card";
 import Typed from "@components/common/typed";
 import Link from "next/link";
 import { routes } from "@lib/navigation";
 import PageTitle from "@components/common/page-title";
 import Container from "@components/common/container";
+import { twMerge } from "tailwind-merge";
 
 export const metadata = {
   title: "Partiguiden | Rösta rätt",
@@ -53,7 +54,10 @@ export default function IndexPage() {
               <Link
                 key={subject.id}
                 href={routes.standpoint(subject.id)}
-                className="bg-background-elevated-light dark:bg-background-elevated-dark-200 rounded py-3 shadow-md transition-opacity hover:opacity-70"
+                className={twMerge(
+                  "bg-background-elevated-light rounded py-3 shadow-md transition-opacity hover:opacity-70",
+                  "dark:bg-background-elevated-dark-200 dark:shadow-slate-900",
+                )}
               >
                 {subject.name}
               </Link>

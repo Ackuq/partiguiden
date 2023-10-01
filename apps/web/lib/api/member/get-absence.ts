@@ -9,7 +9,7 @@ interface Query {
 export default async function getAbsence({
   id,
   parliamentYears,
-}: Query): Promise<number | null> {
+}: Query): Promise<number | undefined> {
   const query = new URLSearchParams({
     iid: id,
     rm: parliamentYears.join(","),

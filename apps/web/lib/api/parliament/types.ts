@@ -1,3 +1,4 @@
+import type { Committee } from "@lib/committes";
 import type { Party } from "@partiguiden/party-data/types";
 
 export type MemberParty = Party | "-";
@@ -372,7 +373,7 @@ export interface DocumentListEntry {
   relurl: string;
   titel: string;
   rm: string;
-  organ: string;
+  organ: Committee;
   relaterat_id: string;
   doktyp: string;
   typ: string;

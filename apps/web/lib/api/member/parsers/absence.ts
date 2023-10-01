@@ -2,7 +2,7 @@ import type { VoteListGroupedSingle } from "@lib/api/parliament/types";
 
 export default function serializeAbsence(
   data: VoteListGroupedSingle,
-): number | null {
+): number | undefined {
   if (data.voteringlista.votering) {
     const votes = data.voteringlista.votering;
     const total =
@@ -15,5 +15,4 @@ export default function serializeAbsence(
       10
     );
   }
-  return null;
 }

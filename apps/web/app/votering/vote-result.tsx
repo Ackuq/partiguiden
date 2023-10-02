@@ -41,16 +41,18 @@ export default function VoteResult({ votes }: Props) {
     <div className="flex flex-col sm:flex-row">
       <ResultColumn
         className={twMerge(
-          "bg-green-200 dark:bg-green-700",
-          votes.winner !== "yes" && "bg-slate-200 dark:bg-slate-600",
+          "bg-voting-yes-light dark:bg-voting-yes-dark",
+          votes.winner !== "yes" &&
+            "bg-voting-losing dark:bg-voting-losing-dark",
         )}
         title="JA"
         votes={votes.yes}
       />
       <ResultColumn
         className={twMerge(
-          "bg-red-200 dark:bg-red-800",
-          votes.winner !== "no" && "bg-slate-200 dark:bg-slate-600",
+          "bg-voting-no-light dark:bg-voting-no-dark",
+          votes.winner !== "no" &&
+            "bg-voting-losing dark:bg-voting-losing-dark",
         )}
         title="NEJ"
         votes={votes.no}

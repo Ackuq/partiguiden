@@ -1,5 +1,6 @@
 import { withSentryConfig } from "@sentry/nextjs";
 import bundleAnalyzer from "@next/bundle-analyzer";
+import redirects from "./config/redirect.mjs";
 
 const withBundleAnalyzer = bundleAnalyzer({
   enabled: process.env.ANALYZE === "true",
@@ -8,6 +9,7 @@ const withBundleAnalyzer = bundleAnalyzer({
 let moduleExports = withBundleAnalyzer({
   productionBrowserSourceMaps: true,
   transpilePackages: ["@partiguiden/party-data"],
+  redirects,
   basePath: "",
   images: {
     remotePatterns: [

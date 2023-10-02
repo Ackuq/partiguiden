@@ -15,7 +15,7 @@ export interface Document {
   dokumentnamn: string;
   debattnamn: string;
   tempbeteckning: string;
-  organ: string;
+  organ: Committee;
   mottagare: string;
   nummer: string;
   slutnummer: string;

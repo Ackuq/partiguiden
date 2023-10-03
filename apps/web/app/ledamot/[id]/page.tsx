@@ -1,5 +1,5 @@
 import getMember from "@lib/api/member/get-member";
-import getMembers from "@lib/api/member/get-members";
+// import getMembers from "@lib/api/member/get-members";
 import { ERROR_404_TITLE } from "@lib/constants";
 import { notFound } from "next/navigation";
 import Profile from "./profile";
@@ -80,10 +80,10 @@ export default async function MemberPage({ params: { id } }: PageProps) {
   );
 }
 
-export async function generateStaticParams() {
-  const members = await getMembers();
+// export async function generateStaticParams() {
+//   const members = await getMembers();
 
-  return members.map((member) => ({
-    id: member.id,
-  }));
-}
+//   return members.map((member) => ({
+//     id: member.id,
+//   }));
+// }

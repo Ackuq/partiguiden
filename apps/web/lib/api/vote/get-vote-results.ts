@@ -6,7 +6,7 @@ import parseVoteResult from "./parsers/vote-result";
 export default async function getVoteResult(
   id: string,
   num: number,
-): Promise<VoteResultsResponse> {
+): Promise<VoteResultsResponse | undefined> {
   const response = await fetch(
     `${PARLIAMENT_BASE_URL}/dokumentstatus/${id}.json`,
   );

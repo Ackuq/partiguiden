@@ -17,6 +17,7 @@ export type VotingResult = {
 };
 
 export interface VoteResultsResponse {
+  allVotes: VotingDict;
   results: VotingResult;
   subtitle: string;
 }
@@ -47,7 +48,7 @@ export interface VoteList {
 export interface Vote {
   title: string;
   description: string;
-  committee: Committee;
+  committee?: Committee;
   propositionText: string;
   processedDocuments: ProcessedDocument[];
   appendix: DocumentAttachment[];

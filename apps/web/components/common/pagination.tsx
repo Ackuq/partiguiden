@@ -105,7 +105,7 @@ export default function Pagination({
             disabled={page === current}
             aria-current={page === current}
             className={twMerge(
-              "h-6 w-6 rounded-full text-xs transition-colors sm:h-8 sm:w-8",
+              "h-6 w-6 rounded-full text-sm transition-colors sm:h-8 sm:w-8",
               "aria-[current=true]:bg-slate-200 dark:aria-[current=true]:bg-slate-600",
               "hover:bg-slate-200 dark:hover:bg-slate-600",
             )}

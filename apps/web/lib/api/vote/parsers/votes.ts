@@ -3,11 +3,13 @@ import type {
   DocumentListEntry,
 } from "@lib/api/parliament/types";
 import type { VoteList, VoteListEntry } from "../types";
-import titleTrim from "../utilts/title-trim";
+import titleTrim from "../utils/title-trim";
 import getVoteResult from "../get-vote-results";
 import { Committee } from "@lib/committes";
 
-async function parseVote(data: DocumentListEntry): Promise<VoteListEntry> {
+async function parseVote(
+  data: DocumentListEntry,
+): Promise<VoteListEntry | undefined> {
   const { beteckning: denomination, id } = data;
   const title: string = titleTrim(data.sokdata.titel);
   const proposition = parseInt(data.tempbeteckning, 10);
@@ -18,9 +20,19 @@ async function parseVote(data: DocumentListEntry): Promise<VoteListEntry> {
     ? data.organ
     : undefined;
 
-  const { results, subtitle } = await getVoteResult(documentId, proposition);
+  const voteResult = await getVoteResult(documentId, proposition);
 
-  return { title, results, committee, documentId, proposition, subtitle };
+  if (voteResult === undefined) {
+    return;
+  }
+
+  return {
+    title,
+    committee,
+    documentId,
+    proposition,
+    ...voteResult,
+  };
 }
 
 export function parseVotes(data: DocumentList): Promise<VoteList> {
@@ -41,6 +53,6 @@ export function parseVotes(data: DocumentList): Promise<VoteList> {
 
   return Promise.all(votesPromises).then((votes) => ({
     pages,
-    votes,
+    votes: votes.filter((vote): vote is VoteListEntry => vote !== undefined),
   }));
 }

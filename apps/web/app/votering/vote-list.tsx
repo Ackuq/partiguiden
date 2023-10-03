@@ -7,6 +7,7 @@ import { useRouter } from "next/navigation";
 import { useEffect } from "react";
 import Vote from "./vote";
 import Pagination from "@components/common/pagination";
+import { useIsMount } from "@lib/hooks/use-is-mount";
 
 interface QueryParameters {
   search: string;
@@ -40,9 +41,13 @@ interface Props {
 
 export default function VoteList({ votes, currentPage }: Props) {
   const router = useRouter();
+  const isMount = useIsMount();
   const { search, toggles } = useFilterContext();
 
   useEffect(() => {
+    if (isMount) {
+      return;
+    }
     const debounce = setTimeout(() => {
       const query = buildQueryParameters({ search, toggles });
       router.replace(`${routes.votes}?${query}`);
@@ -50,6 +55,7 @@ export default function VoteList({ votes, currentPage }: Props) {
     return () => {
       clearTimeout(debounce);
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [router, search, toggles]);
 
   function onChangePage(newPage: number) {

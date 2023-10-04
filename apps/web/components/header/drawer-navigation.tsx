@@ -19,22 +19,18 @@ export default function DrawerNavigation() {
   }, [drawerIsOpen]);
 
   return (
-    <div
-      className={"text-font-primary group"}
-      data-show={drawerIsOpen}
-      aria-hidden={!drawerIsOpen}
-    >
+    <div className="text-font-primary group" aria-expanded={drawerIsOpen}>
       <div
         onClick={closeDrawer}
         className={twMerge(
           "fixed left-0 top-0 z-50 hidden h-full w-full backdrop-blur-md",
-          "group-data-[show=true]:block group-data-[show=true]:backdrop-blur-md",
+          "group-aria-expanded:block group-aria-expanded:backdrop-blur-md",
         )}
       />
       <div
         className={twMerge(
           "bg-primary dark:bg-background-elevated-dark w-drawer fixed right-0 top-0 z-50 h-full overflow-y-scroll",
-          "translate-x-drawer transition-transform group-data-[show=true]:translate-x-0",
+          "translate-x-drawer transition-transform group-aria-expanded:translate-x-0",
           "motion-reduce:transition-none",
         )}
       >

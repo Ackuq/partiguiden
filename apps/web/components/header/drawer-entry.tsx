@@ -38,16 +38,14 @@ function Dropdown({ routes, title, Icon }: DropdownProps) {
   }, [pathname, routePaths]);
 
   return (
-    <div data-active={isVisible} className="group flex flex-col gap-3">
+    <div
+      aria-expanded={isVisible}
+      className="group/dropdown flex flex-col gap-3"
+    >
       <button onClick={toggleVisible} className={drawerEntryClassName}>
         <Icon className="h-5 w-5" />
         {title}
-        <ChevronDownIcon
-          className={twMerge(
-            "ml-auto h-4 w-4 self-center",
-            "group-data-[active=true]:rotate-180",
-          )}
-        />
+        <ChevronDownIcon className="ml-auto h-4 w-4 self-center group-aria-expanded/dropdown:rotate-180" />
       </button>
 
       {routes.map((route) => (
@@ -58,7 +56,7 @@ function Dropdown({ routes, title, Icon }: DropdownProps) {
           className={twMerge(
             drawerEntryClassName,
             "pl-6",
-            "group-data-[active=false]:hidden",
+            "group-aria-[expanded=false]/dropdown:hidden",
           )}
         >
           <route.Icon />

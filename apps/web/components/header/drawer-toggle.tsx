@@ -8,6 +8,11 @@ export default function DrawerToggle() {
   const { openDrawer } = useContext(DrawerContext);
 
   return (
-    <EllipsisVerticalIcon onClick={openDrawer} className="h-8 w-8 sm:hidden " />
+    <button aria-label="Öppna meny">
+      <EllipsisVerticalIcon
+        onClick={openDrawer}
+        className="h-8 w-8 sm:hidden "
+      />
+    </button>
   );
 }

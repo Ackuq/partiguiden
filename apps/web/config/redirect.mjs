@@ -48,6 +48,11 @@ const redirects = async () => {
       destination: "/ledamot/statistik/mandatperiod",
       permanent: true,
     },
+    {
+      source: "/decisions",
+      destination: "/riksdagsbeslut",
+      permanent: true,
+    },
   ];
 };
 

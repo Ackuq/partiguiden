@@ -73,12 +73,14 @@ interface PaginationProps {
   current: number;
   total: number;
   onChange: (page: number) => void;
+  className?: string;
 }
 
 export default function Pagination({
   current,
   total,
   onChange,
+  className,
 }: PaginationProps) {
   function createOnChange(page: number) {
     return () => onChange(page);
@@ -87,7 +89,7 @@ export default function Pagination({
   const pagination = generatePagination(current, total);
 
   return (
-    <nav className="mx-auto flex gap-2">
+    <nav className={twMerge("mx-auto flex gap-2", className)}>
       <button
         aria-label="Föregående sida"
         disabled={current === 1}

@@ -1,20 +1,15 @@
 import PageTitle from "@components/common/page-title";
+import Filter from "@components/filter";
 import { FilterContextProvider } from "@components/filter/filter-context";
-import { ScaleIcon } from "@heroicons/react/24/solid";
-import { getVotes } from "@lib/api/vote/get-votes";
+import { DocumentCheckIcon } from "@heroicons/react/24/solid";
+import getDecisions from "@lib/api/decisions/get-decisions";
 import {
   parseNumberSearchParam,
   parseStringArraySearchParam,
   parseStringSearchParam,
 } from "@lib/utils/search-params";
-import VoteList from "./vote-list";
-import Filter from "@components/filter";
+import DecisionList from "./decision-list";
 import initialFilterToggles from "@components/filter/initial-filter-toggles";
-
-export const metadata = {
-  title: "Voteringar | Partiguiden",
-  description: "Hur har partierna röstat i voteringar? Ta reda på det här",
-};
 
 interface Props {
   searchParams: {
@@ -24,27 +19,32 @@ interface Props {
   };
 }
 
-export default async function Votes({ searchParams }: Props) {
+export default async function Decisions({ searchParams }: Props) {
   const page = parseNumberSearchParam(searchParams.sida) ?? 1;
   const search = parseStringSearchParam(searchParams.sok);
   const committees = parseStringArraySearchParam(searchParams.utskott);
-  const votes = await getVotes({ search, page, committees });
+  const decisions = await getDecisions({ search, page, committees });
 
   const filterToggles = initialFilterToggles(committees);
 
   return (
     <main>
-      <PageTitle Icon={ScaleIcon}>Voteringar</PageTitle>
-
+      <PageTitle Icon={DocumentCheckIcon}>Riksdagsbesult</PageTitle>
       <div className="mx-4 mb-4 flex gap-2 2xl:container 2xl:mx-auto">
         <FilterContextProvider
           initialSearch={search}
           initialToggles={filterToggles}
         >
-          <VoteList currentPage={page} votes={votes} />
+          <DecisionList currentPage={page} decisions={decisions} />
           <Filter />
         </FilterContextProvider>
       </div>
     </main>
   );
 }
+
+export const metadata = {
+  title: "Riksdagsbeslut | Partiguiden",
+  description:
+    "Vad tar riksdagen för beslut? Här hittar du en sammanfattning på de senaste besluten som tas upp i riksdagen.",
+};

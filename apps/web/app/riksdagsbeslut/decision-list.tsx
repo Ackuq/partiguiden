@@ -1,21 +1,21 @@
 "use client";
 
+import Pagination from "@components/common/pagination";
 import { useFilterContext } from "@components/filter/filter-context";
-import type { VoteList } from "@lib/api/vote/types";
+import type { Decisions } from "@lib/api/decisions/types";
+import { useIsMount } from "@lib/hooks/use-is-mount";
 import { routes } from "@lib/navigation";
+import { buildSearchParameters } from "@lib/utils/search-params";
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";
-import Vote from "./vote";
-import Pagination from "@components/common/pagination";
-import { useIsMount } from "@lib/hooks/use-is-mount";
-import { buildSearchParameters } from "@lib/utils/search-params";
+import Decision from "./decision";
 
 interface Props {
   currentPage: number;
-  votes: VoteList;
+  decisions: Decisions;
 }
 
-export default function VoteList({ votes, currentPage }: Props) {
+export default function DecisionList({ decisions, currentPage }: Props) {
   const router = useRouter();
   const isMount = useIsMount();
   const { search, toggles } = useFilterContext();
@@ -26,7 +26,7 @@ export default function VoteList({ votes, currentPage }: Props) {
     }
     const debounce = setTimeout(() => {
       const query = buildSearchParameters({ search, toggles });
-      router.replace(`${routes.votes}?${query}`);
+      router.replace(`${routes.decisions}?${query}`);
     }, 500);
     return () => {
       clearTimeout(debounce);
@@ -36,10 +36,10 @@ export default function VoteList({ votes, currentPage }: Props) {
 
   function onChangePage(newPage: number) {
     const query = buildSearchParameters({ search, toggles, page: newPage });
-    router.push(`${routes.votes}?${query}`);
+    router.push(`${routes.decisions}?${query}`);
   }
 
-  if (votes.pages === 0) {
+  if (decisions.pages === 0) {
     return (
       <p className="flex-1 text-center text-xl sm:text-2xl">
         Inga voteringar hittades
@@ -51,15 +51,15 @@ export default function VoteList({ votes, currentPage }: Props) {
     <div className="flex flex-1 flex-col gap-4">
       <Pagination
         current={currentPage}
-        total={votes.pages}
+        total={decisions.pages}
         onChange={onChangePage}
       />
-      {votes.votes.map((vote) => (
-        <Vote key={`${vote.documentId}:${vote.proposition}`} vote={vote} />
+      {decisions.decisions.map((decision) => (
+        <Decision key={decision.id} decision={decision} />
       ))}
       <Pagination
         current={currentPage}
-        total={votes.pages}
+        total={decisions.pages}
         onChange={onChangePage}
         className="mt-auto"
       />

@@ -22,7 +22,7 @@ export const routes = {
   vote(id: string, bet: number) {
     return `/votering/${id}/${bet}`;
   },
-  decisions: "/decisions",
+  decisions: "/riksdagsbeslut",
   standpoints: "/standpunkter",
   standpoint(id: string) {
     return `/standpunkter/${id}`;

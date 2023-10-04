@@ -48,7 +48,7 @@ function Dropdown({ routes, title, navRef }: DropdownProps) {
   }, []);
 
   return (
-    <div ref={ref}>
+    <div ref={ref} aria-expanded={isVisible} className="group">
       <button
         className={twMerge(tabClassName, "inline-flex gap-2")}
         onClick={handleClick}
@@ -56,7 +56,6 @@ function Dropdown({ routes, title, navRef }: DropdownProps) {
         {title} <ChevronDownIcon className="h-4 w-4 self-center" />
       </button>
       <ul
-        data-is-visible={isVisible}
         style={
           isVisible && xPosition !== undefined
             ? {
@@ -67,7 +66,7 @@ function Dropdown({ routes, title, navRef }: DropdownProps) {
         className={twMerge(
           "absolute mt-1 flex-col rounded shadow-md",
           "bg-background-elevated-light dark:bg-background-elevated-dark-200 text-font-light dark:text-font-primary",
-          "data-[is-visible=true]:flex data-[is-visible=false]:hidden",
+          "group-aria-expanded:flex group-aria-[expanded=false]:hidden",
         )}
       >
         {routes.map(({ href, title, Icon }) => (

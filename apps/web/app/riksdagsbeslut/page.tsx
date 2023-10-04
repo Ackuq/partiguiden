@@ -43,6 +43,8 @@ export default async function Decisions({ searchParams }: Props) {
   );
 }
 
+export const dynamic = "force-dynamic";
+
 export const metadata = {
   title: "Riksdagsbeslut | Partiguiden",
   description:

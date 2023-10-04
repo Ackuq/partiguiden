@@ -11,11 +11,6 @@ import VoteList from "./vote-list";
 import Filter from "@components/filter";
 import initialFilterToggles from "@components/filter/initial-filter-toggles";
 
-export const metadata = {
-  title: "Voteringar | Partiguiden",
-  description: "Hur har partierna röstat i voteringar? Ta reda på det här",
-};
-
 interface Props {
   searchParams: {
     sok?: string | string[];
@@ -48,3 +43,10 @@ export default async function Votes({ searchParams }: Props) {
     </main>
   );
 }
+
+export const dynamic = "force-dynamic";
+
+export const metadata = {
+  title: "Voteringar | Partiguiden",
+  description: "Hur har partierna röstat i voteringar? Ta reda på det här",
+};

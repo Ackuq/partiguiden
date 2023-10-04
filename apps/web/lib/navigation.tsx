@@ -37,7 +37,7 @@ export const routes = {
   memberStatisticsYear: "/ledamot/statistik/riksmote",
   memberStatisticsPeriod: "/ledamot/statistik/mandatperiod",
   document(id: string) {
-    return `/document/${id}`;
+    return `/dokument/${id}`;
   },
   debates: "/debate",
   debate: "/debate/[id]",

@@ -4,6 +4,8 @@ import getMembers from "@lib/api/member/get-members";
 import MemberList from "./member-list";
 import { FilterContextProvider } from "@components/filter/filter-context";
 import { partyFilterToggles } from "./filter-toggles";
+import { UserCircleIcon } from "@heroicons/react/24/solid";
+import MemberNavigation from "./member-navigation";
 
 export const metadata = {
   title: "Riksdagsledamöter | Partiguiden",
@@ -19,8 +21,10 @@ export default async function MembersPage() {
 
   return (
     <main>
-      <PageTitle>Riksdagsledamöter</PageTitle>
-
+      <PageTitle className="mb-0" Icon={UserCircleIcon}>
+        Riksdagsledamöter
+      </PageTitle>
+      <MemberNavigation value={0} />
       <div className="mx-4 mb-4 flex gap-2 2xl:container 2xl:mx-auto">
         <FilterContextProvider initialToggles={partyFilterToggles}>
           <MemberList members={members} />

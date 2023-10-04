@@ -38,6 +38,16 @@ const redirects = async () => {
       destination: "/parti/:party*",
       permanent: true,
     },
+    {
+      source: "/member-statistics-year",
+      destination: "/ledamot/statistik/riksmote",
+      permanent: true,
+    },
+    {
+      source: "/member-statistics-period",
+      destination: "/ledamot/statistik/mandatperiod",
+      permanent: true,
+    },
   ];
 };
 

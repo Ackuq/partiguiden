@@ -28,6 +28,9 @@ let moduleExports = withBundleAnalyzer({
  */
 const sentryWebpackPluginOptions = {
   silent: true,
+  widenClientFileUpload: true,
+  hideSourceMaps: true,
+  disableLogger: true,
 };
 
 if (process.env.VERCEL) {

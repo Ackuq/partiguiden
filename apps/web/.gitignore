@@ -1,3 +1,6 @@
 # Ignore files which are automatically generated on build time
 /public/robots.txt
 /public/sitemap*.xml
+
+# Sentry Auth Token
+.sentryclirc

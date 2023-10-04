@@ -4,8 +4,8 @@ import getAbsence from "./get-absence";
 import type { MemberParty } from "../parliament/types";
 
 interface Query {
-  parliamentYears: string[];
-  party: MemberParty | "";
+  parliamentYears?: string[];
+  party?: MemberParty | "";
 }
 
 export default async function membersWithAbsenceController({

@@ -34,8 +34,8 @@ export const routes = {
   member(id: string) {
     return `/ledamot/${id}`;
   },
-  memberStatsYear: "/member-stats/year",
-  memberStatsPeriod: "/member-stats/period",
+  memberStatisticsYear: "/ledamot/statistik/riksmote",
+  memberStatisticsPeriod: "/ledamot/statistik/mandatperiod",
   document(id: string) {
     return `/document/${id}`;
   },

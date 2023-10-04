@@ -21,7 +21,7 @@ export default function AboutUs() {
           <h3 className="text-2xl">Om Partiguiden</h3>
           <p>
             Denna tjänst är skapad och underhålls av Axel Pettersson (
-            <ExternalLink href={linkedIn}>LinkedIn</ExternalLink>,&nbsp;
+            <ExternalLink href={linkedIn}>LinkedIn</ExternalLink>,{" "}
             <ExternalLink href={githubProfile}>GitHub</ExternalLink>
             ).
           </p>
@@ -39,16 +39,16 @@ export default function AboutUs() {
           <h4 className="text-xl">Datakällor</h4>
           <p>
             Informationen som presenteras på sidan är information från
-            partiernas egna hemsidor samt information från&nbsp;
+            partiernas egna hemsidor samt information från{" "}
             <ExternalLink href="https://data.riksdagen.se/">
               Riksdagens öppna API
             </ExternalLink>
-            . Viss data om partierna är tagen från&nbsp;
+            . Viss data om partierna är tagen från{" "}
             <ExternalLink href="https://wikipedia.se/">Wikipedia</ExternalLink>.
             Dataunderlaget för opinionsundersökningar hämtas genom ett dataset
-            som underhålls av Hampus Nilsson, utvecklaren av&nbsp;
+            som underhålls av Hampus Nilsson, utvecklaren av{" "}
             <ExternalLink href="https://val.digital/">val.digital</ExternalLink>
-            , och finns publikt på&nbsp;
+            , och finns publikt på{" "}
             <ExternalLink href="https://github.com/hampusborgos/SwedishPolls">
               GitHub
             </ExternalLink>
@@ -58,7 +58,7 @@ export default function AboutUs() {
           <p>
             I dagsläget är detta projekt finansierat av de annonser som visas på
             diverse delsidor. Annonserna hanteras av Google via deras
-            annonssystem&nbsp;
+            annonssystem{" "}
             <ExternalLink href="https://www.google.com/adsense/start/">
               AdSense
             </ExternalLink>
@@ -68,7 +68,7 @@ export default function AboutUs() {
           <p>
             För att kunna uppnå en god nivå av förtrående och transparans så är
             alla delar av detta projekt open source på GitHub, som du kan hitta
-            på&nbsp;
+            på{" "}
             <ExternalLink href={githubFrontend}>{githubFrontend}</ExternalLink>.
           </p>
         </Card>

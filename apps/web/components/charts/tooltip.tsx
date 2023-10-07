@@ -1,5 +1,6 @@
 import { Divider } from "@components/common/divider";
 import type { TooltipProps } from "recharts";
+import { twMerge } from "tailwind-merge";
 
 type ValueType = string | number;
 type NameType = string;
@@ -7,17 +8,29 @@ type NameType = string;
 interface EntryProps {
   name?: NameType;
   value?: ValueType;
+  unit?: React.ReactNode;
+  nameFormatter?: (name: string) => string;
+  valueFormatter?: (value: string | number) => string;
 }
 
-function Entry({ name, value }: EntryProps) {
+function Entry({
+  name,
+  value,
+  unit,
+  nameFormatter,
+  valueFormatter,
+}: EntryProps) {
   if (!name || value === undefined) {
     return;
   }
 
   return (
     <li className="flex gap-2">
-      <span>{name}:</span>
-      <span>{value}</span>
+      <span>{nameFormatter ? nameFormatter(name) : name}:</span>
+      <span>
+        {valueFormatter ? valueFormatter(value) : value}
+        {unit}
+      </span>
     </li>
   );
 }
@@ -25,15 +38,39 @@ function Entry({ name, value }: EntryProps) {
 export default function CustomTooltip({
   label,
   payload,
-}: TooltipProps<ValueType, NameType>) {
+  labelFormatter,
+  nameFormatter,
+  valueFormatter,
+  Details,
+}: TooltipProps<ValueType, NameType> & {
+  Details?: React.ElementType<{
+    payload: typeof payload;
+  }>;
+  nameFormatter?: (name: string) => string;
+  valueFormatter?: (value: string | number) => string;
+}) {
   return (
     <div className="dark:bg-background-dark rounded-sm bg-white shadow-lg">
-      <div className="px-3 pb-1 pt-2">{label}</div>
-      <Divider />
-      <ul className="grid px-3 pb-2 pt-1">
+      {label && (
+        <>
+          <div className="px-3 pb-1 pt-2">
+            {labelFormatter ? labelFormatter(label, payload ?? []) : label}
+          </div>
+          <Divider />
+        </>
+      )}
+      <ul className={twMerge("grid px-3 pb-2 pt-1", !label && "pt-2")}>
         {payload?.map((data) => (
-          <Entry key={data.dataKey} name={data.name} value={data.value} />
+          <Entry
+            key={data.dataKey}
+            name={data.name}
+            value={data.value}
+            unit={data.unit}
+            nameFormatter={nameFormatter}
+            valueFormatter={valueFormatter}
+          />
         ))}
+        {Details && <Details payload={payload} />}
       </ul>
     </div>
   );

@@ -1,4 +1,4 @@
-interface BarrierLabelProps {
+interface Props {
   offset?: number;
   viewBox?: {
     height: number;
@@ -9,11 +9,11 @@ interface BarrierLabelProps {
   title: string;
 }
 
-const BarrierLabel: React.FC<BarrierLabelProps> = ({
+export default function ReferenceLineLabel({
   offset = 0,
   viewBox = { x: 0, y: 0, width: 0, height: 0 },
   title,
-}) => {
+}: Props) {
   const width = 70;
   const height = 25;
 
@@ -36,11 +36,4 @@ const BarrierLabel: React.FC<BarrierLabelProps> = ({
       </text>
     </g>
   );
-};
-
-BarrierLabel.defaultProps = {
-  offset: 0,
-  viewBox: { x: 0, y: 0, width: 0, height: 0 },
-};
-
-export default BarrierLabel;
+}

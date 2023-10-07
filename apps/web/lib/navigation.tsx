@@ -17,7 +17,7 @@ export const routes = {
   index: "/",
   cookiePolicy: "/cookie-policy",
   aboutUs: "/om-oss",
-  polls: "/polls",
+  polls: "/opinionsundersokningar",
   votes: "/votering",
   vote(id: string, bet: number) {
     return `/votering/${id}/${bet}`;

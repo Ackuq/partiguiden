@@ -58,6 +58,11 @@ const redirects = async () => {
       destination: "/dokument/:id",
       permanent: true,
     },
+    {
+      source: "/polls",
+      destination: "/opinionsundersokningar",
+      permanent: true,
+    },
   ];
 };
 

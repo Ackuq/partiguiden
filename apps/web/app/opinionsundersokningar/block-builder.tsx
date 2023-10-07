@@ -1,0 +1,119 @@
+"use client";
+import ReferenceLineLabel from "@components/charts/reference-line-label";
+import CustomTooltip from "@components/charts/tooltip";
+import type { AveragePoll } from "@lib/api/polls/types";
+import type { Party } from "@partiguiden/party-data/types";
+import { partyColors, partyNames } from "@partiguiden/party-data/utils";
+import type { LegendProps } from "recharts";
+import Image from "next/image";
+import {
+  Bar,
+  BarChart,
+  CartesianGrid,
+  Legend,
+  ReferenceLine,
+  ResponsiveContainer,
+  Tooltip,
+  XAxis,
+  YAxis,
+} from "recharts";
+import { partyLogo } from "@lib/assets";
+import { useState } from "react";
+
+interface Props {
+  currentMonthAverage: AveragePoll;
+}
+
+type StackedData = Record<Party | "total", number>;
+
+const toStackedData = (data: AveragePoll, included: Party[]): StackedData => {
+  const withParties = data.reduce(
+    (prev, current) => ({ ...prev, [current.party]: current.value }),
+    {} as StackedData,
+  );
+  const total = (included
+    .map((party) => withParties[party])
+    .reduce((prev, curr) => prev + curr, 0)
+    .toFixed(2) + "%") as unknown as number;
+  return { ...withParties, total };
+};
+
+export default function BlockBuilder({ currentMonthAverage }: Props) {
+  const [included, setIncluded] = useState<Party[]>([]);
+
+  const includeParty = (party: Party) => {
+    setIncluded((prev) => [...prev, party]);
+  };
+
+  const removeParty = (party: Party) => {
+    setIncluded((prev) => prev.filter((p) => p !== party));
+  };
+
+  const onClick: LegendProps["onClick"] = (data) => {
+    const party = data.value;
+    if (included.includes(party)) {
+      removeParty(party);
+    } else {
+      includeParty(party);
+    }
+  };
+
+  const stackedData = toStackedData(currentMonthAverage, included);
+
+  return (
+    <div className="h-[40rem]">
+      <ResponsiveContainer>
+        <BarChart data={[stackedData]}>
+          <CartesianGrid strokeDasharray="3 3" />
+          <XAxis dataKey="total" />
+          <YAxis type="number" unit="%" domain={[0, 100]} width={40} />
+          <Tooltip
+            content={
+              <CustomTooltip
+                nameFormatter={(name) => partyNames[name as Party]}
+              />
+            }
+            cursor={false}
+          />
+          {currentMonthAverage.map((partyPoll) => (
+            <Bar
+              hide={!included.includes(partyPoll.party)}
+              dataKey={partyPoll.party}
+              stackId="a"
+              key={partyPoll.party}
+              fill={partyColors[partyPoll.party]}
+              unit="%"
+            />
+          ))}
+          <Legend
+            formatter={(_value, entry) => {
+              const partyName = partyNames[entry.value as Party];
+              return (
+                <Image
+                  src={partyLogo(entry.value)}
+                  alt={`${partyName} logo`}
+                  width={40}
+                  height={40}
+                  style={{
+                    filter: `grayscale(${
+                      "inactive" in entry && entry.inactive ? "75%" : 0
+                    })`,
+                  }}
+                />
+              );
+            }}
+            onClick={onClick}
+            iconSize={0}
+          />
+          <ReferenceLine
+            y={50}
+            stroke="black"
+            strokeWidth={2}
+            label={<ReferenceLineLabel title="50%" />}
+            textAnchor="middle"
+          />
+        </BarChart>
+      </ResponsiveContainer>
+    </div>
+  );
+}

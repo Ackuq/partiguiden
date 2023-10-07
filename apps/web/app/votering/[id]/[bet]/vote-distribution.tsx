@@ -55,23 +55,25 @@ export default function VoteDistribution({ voting }: Props) {
   }
 
   return (
-    <ResponsiveContainer height={500}>
-      <BarChart data={data} layout="vertical">
-        <CartesianGrid strokeDasharray="3 3" />
-        <XAxis type="number" />
-        <YAxis
-          type="category"
-          dataKey="name"
-          tick={<PartySymbolTick vertical />}
-          width={30}
-        />
-        <Tooltip content={CustomTooltip} cursor={false} />
-        <Legend content={CustomLegend} />
-        <Bar dataKey="Ja" stackId="a" fill={votingColors.yes} />
-        <Bar dataKey="Nej" stackId="a" fill={votingColors.no} />
-        <Bar dataKey="Avstående" stackId="a" fill={votingColors.refrain} />
-        <Bar dataKey="Frånvarande" stackId="a" fill={votingColors.absent} />
-      </BarChart>
-    </ResponsiveContainer>
+    <div className="h-[26rem] sm:h-[30rem]">
+      <ResponsiveContainer>
+        <BarChart data={data} layout="vertical">
+          <CartesianGrid strokeDasharray="3 3" />
+          <XAxis type="number" />
+          <YAxis
+            type="category"
+            dataKey="name"
+            tick={<PartySymbolTick vertical />}
+            width={30}
+          />
+          <Tooltip content={CustomTooltip} cursor={false} />
+          <Legend content={CustomLegend} />
+          <Bar dataKey="Ja" stackId="a" fill={votingColors.yes} />
+          <Bar dataKey="Nej" stackId="a" fill={votingColors.no} />
+          <Bar dataKey="Avstående" stackId="a" fill={votingColors.refrain} />
+          <Bar dataKey="Frånvarande" stackId="a" fill={votingColors.absent} />
+        </BarChart>
+      </ResponsiveContainer>
+    </div>
   );
 }

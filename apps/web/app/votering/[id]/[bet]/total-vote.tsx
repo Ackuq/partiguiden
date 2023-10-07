@@ -42,7 +42,7 @@ export default function TotalVote({ voting }: Props) {
   const data = parseData(voting);
 
   return (
-    <div className="h-24">
+    <div className="h-[6.5rem] sm:h-24">
       <ResponsiveContainer>
         <BarChart data={[data]} layout="vertical">
           <XAxis type="number" domain={[0, 349]} tickCount={10} />

@@ -26,7 +26,16 @@ const PartySymbolTick = ({
     Y -= 5;
   }
 
-  return <image x={`${X}`} y={`${Y}`} href={href} width="30" height="30" />;
+  return (
+    <image
+      x={`${X}`}
+      y={`${Y}`}
+      href={href}
+      className="h-6 w-6 sm:h-8 sm:w-8"
+      width="30"
+      height="30"
+    />
+  );
 };
 
 export default PartySymbolTick;

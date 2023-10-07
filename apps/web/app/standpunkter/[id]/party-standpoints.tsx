@@ -1,7 +1,7 @@
 "use client";
 
 import { Card } from "@components/common/card";
-import { ChevronUpIcon } from "@heroicons/react/24/solid";
+import { ChevronDownIcon } from "@heroicons/react/24/solid";
 import { dateString } from "@lib/dates";
 import {
   partyBackgroundHover,
@@ -41,7 +41,7 @@ export default function PartyStandpoints({
         )}
       >
         {partyNames[party]}
-        <ChevronUpIcon className="mr-2 h-6 w-6 transition-transform duration-300 group-aria-[expanded=true]:rotate-180" />
+        <ChevronDownIcon className="mr-2 h-6 w-6 transition-transform duration-300 group-aria-[expanded=true]:rotate-180" />
       </button>
 
       {visible && (

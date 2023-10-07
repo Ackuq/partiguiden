@@ -1,5 +1,4 @@
 import type { Party } from "@partiguiden/party-data/types";
-import type { MemberResponse } from "../member/types";
 import type { Committee } from "@lib/committes";
 
 export interface Debate {
@@ -25,23 +24,36 @@ export interface Participant {
   party: Party | "-";
 }
 
-export interface DebateListEntry {
-  title: string;
-  committee?: Committee;
-  subtitle: string;
+export type Speaker = {
   id: string;
-  session: string;
-  denomination: string;
-  paragraph: string;
-  paragraphTitle: string;
-  textUrl: string;
-  webTVIds: string[];
-  debate: Debate[];
-  debateName: string;
-  sender?: MemberResponse;
+  firstName: string;
+  lastName: string;
+  party: Party | "-";
+  imageUrl: string;
+};
+
+export interface DebateListEntry {
+  id: string;
+  title: string;
+  subtitle: string;
+  type?: string;
+  committee?: Committee;
+  sender?: Speaker;
   date: string;
-  systemDate: string;
 }
+
+export type DebateEntry = {
+  id: string;
+  title: string;
+  subtitle: string;
+  type: string;
+  date: string;
+  webTVUrl: string;
+  speakers: {
+    [id: string]: Speaker;
+  };
+  statements: DebateStatement[];
+};
 
 export interface DebateListResponse {
   pages: number;
@@ -57,9 +69,3 @@ export interface Speech {
 }
 
 export type DebateStatement = Debate & { speech: Speech };
-
-export type DebateEntry = Omit<DebateListEntry, "debate"> & {
-  protocolId?: string;
-  speakers: Record<string, MemberResponse>;
-  statements: DebateStatement[];
-};

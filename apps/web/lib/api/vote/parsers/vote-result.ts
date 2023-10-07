@@ -1,33 +1,37 @@
 import type {
   NewVotingRow,
-  NewVotingTable,
   OldVotingRow,
+  DocumentStatus,
+  DocumentProposalTable,
   OldVotingTable,
-  VoteDocumentStatus,
-  VotingTable,
 } from "@lib/api/parliament/types";
 import type { VoteResultsResponse } from "../types";
 import { getMaxVote } from "../utils/get-max-vote";
 import extractVotes from "../utils/extract-votes";
 
-function getVotingRow(votingTable: VotingTable): NewVotingRow[] | OldVotingRow {
-  if ((<NewVotingTable>votingTable).tbody !== undefined) {
-    return (<NewVotingTable>votingTable).tbody.tr;
+function getVotingRow(
+  votingTable: DocumentProposalTable,
+): NewVotingRow[] | OldVotingRow {
+  if ("tbody" in votingTable && votingTable.tbody !== undefined) {
+    return votingTable.tbody.tr;
   }
   return (<OldVotingTable>votingTable).tr;
 }
 
 export default function parseVoteResult(
-  data: VoteDocumentStatus,
+  data: DocumentStatus,
   num: number,
 ): VoteResultsResponse | undefined {
   const { dokumentstatus } = data;
+  if (!dokumentstatus.dokutskottsforslag) {
+    return;
+  }
   const { utskottsforslag } = dokumentstatus.dokutskottsforslag;
   const voteObject = Array.isArray(utskottsforslag)
     ? utskottsforslag[num - 1]
     : utskottsforslag;
 
-  if (!voteObject) {
+  if (!voteObject || !voteObject.votering_sammanfattning_html) {
     return undefined;
   }
 

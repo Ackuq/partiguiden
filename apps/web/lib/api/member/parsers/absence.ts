@@ -1,7 +1,7 @@
-import type { VoteListGroupedSingle } from "@lib/api/parliament/types";
+import type { VoteringNameGroupLookup } from "@lib/api/parliament/types";
 
 export default function serializeAbsence(
-  data: VoteListGroupedSingle,
+  data: VoteringNameGroupLookup,
 ): number | undefined {
   if (data.voteringlista.votering) {
     const votes = data.voteringlista.votering;

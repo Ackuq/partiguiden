@@ -1,4 +1,4 @@
-import type { VoteDocumentStatus } from "@lib/api/parliament/types";
+import type { DocumentStatus } from "@lib/api/parliament/types";
 import stripJsonComments from "strip-json-comments";
 
 export default async function checkIfVotesExist(url: string): Promise<boolean> {
@@ -8,7 +8,7 @@ export default async function checkIfVotesExist(url: string): Promise<boolean> {
     },
   });
   const text = await response.text();
-  const data: VoteDocumentStatus = JSON.parse(stripJsonComments(text));
+  const data: DocumentStatus = JSON.parse(stripJsonComments(text));
 
   const { dokumentstatus } = data;
 

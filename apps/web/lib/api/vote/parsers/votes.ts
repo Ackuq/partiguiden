@@ -16,8 +16,8 @@ async function parseVote(
 
   const documentId = `${id.substring(0, 2)}01${denomination.split("p")[0]}`;
 
-  const committee = Object.values(Committee).includes(data.organ)
-    ? data.organ
+  const committee = Object.values(Committee).includes(data.organ as Committee)
+    ? (data.organ as Committee)
     : undefined;
 
   const voteResult = await getVoteResult(documentId, proposition);

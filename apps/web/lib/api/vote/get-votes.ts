@@ -1,5 +1,6 @@
 import { PARLIAMENT_BASE_URL } from "@lib/constants";
 import { parseVotes } from "./parsers/votes";
+import type { DocumentList } from "../parliament/types";
 
 interface Query {
   search?: string;
@@ -29,7 +30,7 @@ export async function getVotes({ search, committees, page }: Query) {
     },
   );
 
-  const data = await response.json();
+  const data: DocumentList = await response.json();
 
   return parseVotes(data);
 }

@@ -18,9 +18,9 @@ export default function DebateCard({ debate }: Props) {
         <div className="flex justify-between gap-2 p-2">
           <div>
             <p className="text-xs text-slate-700 dark:text-slate-400 sm:text-sm">
-              {debate.debateName}
+              {debate.type}
             </p>
-            <p>{debate.paragraphTitle}</p>
+            <p>{debate.title}</p>
             {debate.subtitle && (
               <p className="text-xs text-slate-700 dark:text-slate-400 sm:text-sm">
                 {debate.subtitle}
@@ -29,7 +29,9 @@ export default function DebateCard({ debate }: Props) {
           </div>
           {debate.sender && (
             <MemberImage
-              member={debate.sender}
+              imageUrl={debate.sender.imageUrl}
+              firstName={debate.sender.firstName}
+              lastName={debate.sender.lastName}
               sizes="(min-width: 640px) 96px, 80px"
               className="h-20 w-20 flex-shrink-0 sm:h-24 sm:w-24"
             >

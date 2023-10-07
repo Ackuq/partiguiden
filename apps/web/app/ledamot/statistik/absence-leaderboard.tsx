@@ -96,7 +96,9 @@ function MemberListEntry({ member, variant }: MemberListEntryProps) {
         )}
       >
         <MemberImage
-          member={member}
+          imageUrl={member.pictureUrl}
+          firstName={member.firstName}
+          lastName={member.lastName}
           sizes="80px"
           className="h-20 w-20 sm:h-20 sm:w-20"
         >

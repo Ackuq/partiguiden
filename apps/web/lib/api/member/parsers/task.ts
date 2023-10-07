@@ -1,7 +1,7 @@
-import type { PersonTask } from "@lib/api/parliament/types";
+import type { MemberTask } from "@lib/api/parliament/types";
 import type { Task } from "../types";
 
-export default function parseTask(unparsed: PersonTask): Task {
+export default function parseTask(unparsed: MemberTask): Task {
   const {
     organ_kod: committee,
     roll_kod: role,

@@ -1,5 +1,5 @@
 import getParliamentYears from "./get-parliament-years";
-import type { ParliamentYearResponse } from "./types";
+import type { RiksmoteItem } from "./types";
 
 export interface MandatePeriod {
   latestParliamentYear: string;
@@ -11,18 +11,16 @@ export const getCurrentMandatePeriod = async (): Promise<MandatePeriod> => {
   const parliamentYears = await getParliamentYears();
   // The results is sorted in ascending order, chronologically
   const latestParliamentYear =
-    parliamentYears.riksmoten.riksmote.pop() as ParliamentYearResponse;
+    parliamentYears.riksmoten.riksmote.pop() as RiksmoteItem;
   const mandatePeriod: MandatePeriod = {
     parliamentYears: [latestParliamentYear.riksmote],
     period: latestParliamentYear.mandatperiod,
     latestParliamentYear: latestParliamentYear.riksmote,
   };
-  let parliamentYear =
-    parliamentYears.riksmoten.riksmote.pop() as ParliamentYearResponse;
+  let parliamentYear = parliamentYears.riksmoten.riksmote.pop() as RiksmoteItem;
   while (parliamentYear.mandatperiod === mandatePeriod.period) {
     mandatePeriod.parliamentYears.push(parliamentYear.riksmote);
-    parliamentYear =
-      parliamentYears.riksmoten.riksmote.pop() as ParliamentYearResponse;
+    parliamentYear = parliamentYears.riksmoten.riksmote.pop() as RiksmoteItem;
   }
   return mandatePeriod;
 };

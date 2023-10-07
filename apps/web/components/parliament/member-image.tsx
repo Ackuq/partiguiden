@@ -1,5 +1,4 @@
 "use client";
-import type { MemberListEntry } from "@lib/api/member/types";
 import Image from "next/image";
 import { useState } from "react";
 import { twMerge } from "tailwind-merge";
@@ -12,13 +11,17 @@ function firstLetterOfSentences(s: string) {
 }
 
 type MemberImageProps = React.PropsWithChildren<{
-  member: MemberListEntry;
+  imageUrl: string;
+  firstName: string;
+  lastName: string;
   className?: string;
   sizes?: string;
 }>;
 
 export default function MemberImage({
-  member,
+  imageUrl,
+  firstName,
+  lastName,
   className,
   children,
   sizes = "(min-width: 640px) 160px, 96px",
@@ -29,8 +32,8 @@ export default function MemberImage({
     <div className={twMerge("relative h-24 w-24 sm:h-40 sm:w-40", className)}>
       {!fallback ? (
         <Image
-          src={member.pictureUrl}
-          alt={`${member.firstName} ${member.lastName}`}
+          src={imageUrl}
+          alt={`${firstName} ${lastName}`}
           fill
           sizes={sizes}
           className="rounded-full object-cover"
@@ -39,8 +42,8 @@ export default function MemberImage({
       ) : (
         <div className="bg-primary inline-flex h-full w-full items-center justify-center rounded-full">
           <span className="text-xl">
-            {firstLetterOfSentences(member.firstName)}
-            {firstLetterOfSentences(member.lastName)}
+            {firstLetterOfSentences(firstName)}
+            {firstLetterOfSentences(lastName)}
           </span>
         </div>
       )}

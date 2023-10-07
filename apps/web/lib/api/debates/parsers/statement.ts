@@ -1,7 +1,7 @@
-import type { Statement } from "@lib/api/parliament/types";
+import type { DocumentListSpeeches } from "@lib/api/parliament/types";
 import type { Debate } from "../types";
 
-export default function parseStatement(data: Statement): Debate {
+export default function parseStatement(data: DocumentListSpeeches): Debate {
   return {
     party: data.parti,
     parentId: data.parent_ardome_id,

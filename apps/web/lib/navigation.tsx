@@ -39,8 +39,10 @@ export const routes = {
   document(id: string) {
     return `/dokument/${id}`;
   },
-  debates: "/debate",
-  debate: "/debate/[id]",
+  debates: "/debatter",
+  debate(id: string) {
+    return `/debatter/${id}`;
+  },
   api: {
     memberDocument(id: string, page: number) {
       return `/api/member/${id}/documents/${page}`;

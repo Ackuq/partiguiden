@@ -63,6 +63,16 @@ const redirects = async () => {
       destination: "/opinionsundersokningar",
       permanent: true,
     },
+    {
+      source: "/debate",
+      destination: "/debatter",
+      permanent: true,
+    },
+    {
+      source: "/debate/:id",
+      destination: "/debatter/:id",
+      permanent: true,
+    },
   ];
 };
 

@@ -1,27 +1,18 @@
 "use client";
-
-import { useEffect } from "react";
-import enableAds from "./enable-ads";
 import { ADSENSE_CLIENT_ID, RESPONSIVE_AD_SLOT_ID } from "@lib/constants";
+import useAds from "./use-ads";
+import shouldRenderAd from "./should-render-ad";
 
 interface Props {
   className?: string;
 }
 
 export default function ResponsiveAd({ className }: Props) {
-  useEffect(() => {
-    if (enableAds()) {
-      try {
-        (window.adsbygoogle = window.adsbygoogle || []).push({});
-      } catch (error) {
-        // Ignore error
-      }
-    }
-  }, []);
+  useAds();
 
   return (
     <div className={className}>
-      {enableAds() ? (
+      {shouldRenderAd() ? (
         <ins
           className="adsbygoogle"
           style={{ display: "block" }}

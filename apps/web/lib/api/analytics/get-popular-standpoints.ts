@@ -1,11 +1,12 @@
 import type { protos } from "@google-analytics/data";
+import { unstable_cache as cache } from "next/cache";
 import initializeAnalyticsClient from "./utils/initialize-analytics-client";
 import { getSubject } from "@partiguiden/party-data/reader";
 import type { Subject } from "@partiguiden/party-data/types";
 
 const GA4_PROPERTY = process.env.GA4_ANALYTICS_PROPERTY;
 
-export default async function getPopularStandpoints() {
+async function getPopularStandpoints() {
   if (!GA4_PROPERTY) {
     console.warn("No GA4 property set");
     return;
@@ -70,3 +71,8 @@ export default async function getPopularStandpoints() {
 
   return standpoints;
 }
+
+export default cache(getPopularStandpoints, ["get-popular-standpoints"], {
+  // Once per day
+  revalidate: 60 * 60 * 24,
+});

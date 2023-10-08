@@ -52,7 +52,7 @@ export default async function Vote({ params: { id, bet } }: Props) {
             title: `${id} förslagspunkt ${betNumber}`,
           }}
         />
-        <Card className="mt-4 flex flex-col gap-2">
+        <Card className="flex flex-col gap-2">
           <TotalVote voting={vote.voting.total} />
           <h4 className="text-xl sm:text-2xl">Utskottets förslag</h4>
           <p>{vote.propositionText}</p>

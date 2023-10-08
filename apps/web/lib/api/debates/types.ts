@@ -1,28 +1,47 @@
 import type { Party } from "@partiguiden/party-data/types";
 import type { Committee } from "@lib/committes";
+import type { MemberParty } from "../parliament/types";
 
-export interface Debate {
-  party: Party | "-";
-  parentId: string;
-  thumbnail: string;
-  thumbnailLarge: string;
-  id: string;
-  thumbnailUrl: string;
-  number: string;
-  dateTime: string;
-  time: string;
-  seconds: string;
-  speaker: string;
-  videoUrl: string;
-  personId: string;
-  text: string;
-}
+/**
+ * List response
+ */
 
-export interface Participant {
+export type DebateListResponse = {
+  pages: number;
+  debates: DebateListEntry[];
+};
+
+export type DebateListEntry = {
   id: string;
-  name: string;
-  party: Party | "-";
-}
+  title: string;
+  subtitle: string;
+  type?: string;
+  committee?: Committee;
+  sender?: Speaker;
+  date: string;
+};
+
+/**
+ * Single entry response
+ */
+
+export type Debate = {
+  id: string;
+  title: string;
+  subtitle: string;
+  type?: string;
+  date: string;
+  webTVUrl: string;
+  senderId?: string;
+  speakers: {
+    [id: string]: Speaker;
+  };
+  statements: DebateStatement[];
+};
+
+/**
+ * Common types
+ */
 
 export type Speaker = {
   id: string;
@@ -32,40 +51,14 @@ export type Speaker = {
   imageUrl: string;
 };
 
-export interface DebateListEntry {
-  id: string;
-  title: string;
-  subtitle: string;
-  type?: string;
-  committee?: Committee;
-  sender?: Speaker;
-  date: string;
-}
-
-export type DebateEntry = {
-  id: string;
-  title: string;
-  subtitle: string;
-  type: string;
-  date: string;
-  webTVUrl: string;
-  speakers: {
-    [id: string]: Speaker;
-  };
-  statements: DebateStatement[];
-};
-
-export interface DebateListResponse {
-  pages: number;
-  debates: DebateListEntry[];
-}
-
-export interface Speech {
+export type Speech = {
+  party: MemberParty;
   speaker: string;
   speakerId: string;
   text: string;
+};
+
+export type DebateStatement = Speech & {
   number: string;
   date: string;
-}
-
-export type DebateStatement = Debate & { speech: Speech };
+};

@@ -2,22 +2,6 @@ import type { MemberParty } from "./members";
 
 export type DocumentList = {
   dokumentlista: {
-    "@ms": string;
-    "@version": string;
-    "@q": string;
-    "@varning": string;
-    "@datum": string;
-    "@nasta_sida": string;
-    "@sida": string;
-    "@sidor": string;
-    "@traff_fran": string;
-    "@traff_till": string;
-    "@traffar": string;
-    "@dPre": string;
-    "@dSol": string;
-    "@dDt": string;
-    "@dR": string;
-    facettlista: null;
     dokument: DocumentListEntry[];
   };
 };

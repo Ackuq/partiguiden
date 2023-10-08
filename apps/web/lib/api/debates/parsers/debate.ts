@@ -1,37 +1,77 @@
-import type { DocumentStatus } from "@lib/api/parliament/types";
-import type { DebateEntry } from "../types";
+import type { DocumentList } from "@lib/api/parliament/types";
+import type { Debate, DebateStatement } from "../types";
 import getSpeaker from "../get-speaker";
+import getProtocols from "@lib/api/parliament/get-protocols";
+import getSpeech from "../get-speech";
 
 export default async function parseDebate(
-  data: DocumentStatus,
-): Promise<DebateEntry> {
-  const { dokument: document, dokintressent: participants } =
-    data.dokumentstatus;
+  data: DocumentList,
+): Promise<Debate | undefined> {
+  const document = data.dokumentlista.dokument?.[0];
+
+  if (!document) {
+    return;
+  }
+
   const {
     dok_id: id,
     titel: title,
-    subtitel: subtitle,
+    undertitel: subtitle,
     debattnamn: type,
     datum: date,
   } = document;
 
-  if (participants) {
-    const senderId = participants.intressent.find(
-      (e) => e.roll === "undertecknare",
-    )?.intressent_id;
-    const answererId = participants.intressent.find(
-      (e) => e.roll === "besvaradav",
-    )?.intressent_id;
-    const recipientId = participants.intressent.find(
-      (e) => e.roll === "stalldtill",
-    )?.intressent_id;
+  const protocols = await getProtocols({
+    rm: document.rm,
+    from: document.debattdag,
+    to: document.debattdag,
+  });
+  const protocolId = protocols?.dokumentlista.dokument?.[0].id;
 
-    const senderPromise = senderId ? getSpeaker(senderId) : undefined;
-    const answererPromise = answererId ? getSpeaker(answererId) : undefined;
-    const recipientPromise = recipientId ? getSpeaker(recipientId) : undefined;
-  }
+  const senderId = document.dokintressent?.intressent.find(
+    (intressent) => intressent.roll === "undertecknare",
+  )?.intressent_id;
+
+  const speechesPromises: Promise<DebateStatement>[] = protocolId
+    ? document.debatt?.anforande?.map((statement) =>
+        getSpeech(protocolId, statement.anf_nummer).then((data) => {
+          if (!data) {
+            return Promise.reject();
+          }
+          return {
+            ...data,
+            number: statement.anf_nummer,
+            date: statement.anf_datumtid,
+          };
+        }),
+      ) ?? []
+    : [];
+
+  const speakerIds = new Set(
+    document.debatt?.anforande.map((speech) => speech.intressent_id),
+  );
+  const speakerPromises = [...speakerIds].map(getSpeaker);
 
   const webTVUrl = `https://www.riksdagen.se/views/pages/embedpage.aspx?did=${id}`;
+
+  const [speakerList, speechesList] = await Promise.all([
+    Promise.allSettled(speakerPromises),
+    Promise.allSettled(speechesPromises),
+  ]);
+
+  const speakers = speakerList.reduce((prev, current) => {
+    if (current.status === "rejected" || current.value === undefined) {
+      return prev;
+    }
+    return { ...prev, [current.value.id]: current.value };
+  }, {});
+
+  const statements = speechesList
+    .filter(
+      (speech): speech is PromiseFulfilledResult<DebateStatement> =>
+        speech.status === "fulfilled",
+    )
+    .map((speech) => speech.value);
 
   return {
     id,
@@ -40,5 +80,8 @@ export default async function parseDebate(
     type,
     date,
     webTVUrl,
+    senderId,
+    speakers,
+    statements,
   };
 }

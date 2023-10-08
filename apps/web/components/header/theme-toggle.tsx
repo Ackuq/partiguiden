@@ -23,6 +23,7 @@ export default function ThemeToggle({ className }: ThemeToggleProps) {
 
   return (
     <button
+      aria-label="Ändra tema"
       className={twMerge("justify-self-end hover:cursor-pointer", className)}
       onClick={() => {
         setTheme(theme === "light" ? "dark" : "light");

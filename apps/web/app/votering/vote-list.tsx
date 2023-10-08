@@ -9,6 +9,7 @@ import Vote from "./vote";
 import Pagination from "@components/common/pagination";
 import { useIsMount } from "@lib/hooks/use-is-mount";
 import { buildSearchParameters } from "@lib/utils/search-params";
+import FlowAdWrapper from "@components/ads/flow-ad-wrapper";
 
 interface Props {
   currentPage: number;
@@ -54,8 +55,13 @@ export default function VoteList({ votes, currentPage }: Props) {
         total={votes.pages}
         onChange={onChangePage}
       />
-      {votes.votes.map((vote) => (
-        <Vote key={`${vote.documentId}:${vote.proposition}`} vote={vote} />
+      {votes.votes.map((vote, index) => (
+        <FlowAdWrapper
+          index={index}
+          key={`${vote.documentId}:${vote.proposition}`}
+        >
+          <Vote vote={vote} />
+        </FlowAdWrapper>
       ))}
       <Pagination
         current={currentPage}

@@ -9,6 +9,17 @@ export enum Party {
   V = "V",
 }
 
+export const partySortOrder = [
+  Party.S,
+  Party.SD,
+  Party.M,
+  Party.V,
+  Party.C,
+  Party.KD,
+  Party.MP,
+  Party.L,
+];
+
 export interface Subject {
   id: string;
   name: string;

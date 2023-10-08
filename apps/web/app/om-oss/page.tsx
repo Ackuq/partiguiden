@@ -5,6 +5,7 @@ import React from "react";
 import { InformationCircleIcon } from "@heroicons/react/24/solid";
 import ExternalLink from "@components/common/external-link";
 import Container from "@components/common/container";
+import ResponsiveAd from "@components/ads/responsive-ad";
 
 export const metadata = {
   title: "Om oss | Partiguiden",
@@ -72,6 +73,7 @@ export default function AboutUs() {
             <ExternalLink href={githubFrontend}>{githubFrontend}</ExternalLink>.
           </p>
         </Card>
+        <ResponsiveAd className="mt-4" />
       </Container>
     </main>
   );

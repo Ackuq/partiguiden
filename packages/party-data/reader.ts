@@ -8,7 +8,7 @@ import c from "./parties/C.json";
 import v from "./parties/V.json";
 import subjects from "./subjects.json";
 import type { Standpoint } from "./types";
-import { Party, type Subject } from "./types";
+import { Party, partySortOrder, type Subject } from "./types";
 
 export function getSubjects(): Subject[] {
   return Object.values(subjects);
@@ -45,23 +45,21 @@ export function readPartyStandpoints(abbreviation: Party): Standpoint[] {
 }
 
 export function getStandpointsForSubject(subject: string) {
-  return Object.values(Party)
-    .sort()
-    .reduce<Record<Party, Standpoint[]>>(
-      (prev, party) => {
-        const partyStandpoints = readPartyStandpoints(party).filter(
-          (standpoint) => standpoint.subject === subject,
-        );
-        if (partyStandpoints.length === 0) {
-          return prev;
-        }
-        return {
-          ...prev,
-          [party]: partyStandpoints,
-        };
-      },
-      {} as Record<Party, Standpoint[]>,
-    );
+  return partySortOrder.reduce<Record<Party, Standpoint[]>>(
+    (prev, party) => {
+      const partyStandpoints = readPartyStandpoints(party).filter(
+        (standpoint) => standpoint.subject === subject,
+      );
+      if (partyStandpoints.length === 0) {
+        return prev;
+      }
+      return {
+        ...prev,
+        [party]: partyStandpoints,
+      };
+    },
+    {} as Record<Party, Standpoint[]>,
+  );
 }
 
 export function readPartyDataForSubject(party: Party, subjectName: string) {

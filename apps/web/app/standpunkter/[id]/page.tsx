@@ -13,6 +13,7 @@ import Link from "next/link";
 import { routes } from "@lib/navigation";
 import Container from "@components/common/container";
 import BreadcrumbsSocialMediaShare from "@components/common/breadcrumbs-social-media-share";
+import ResponsiveAd from "@components/ads/responsive-ad";
 
 interface PageProps {
   params: {
@@ -63,6 +64,7 @@ export default function Standpoints({ params: { id } }: PageProps) {
             standpoints={standpoints}
           />
         ))}
+        <ResponsiveAd />
         {subject.relatedSubjects.length > 0 && (
           <>
             <Divider />

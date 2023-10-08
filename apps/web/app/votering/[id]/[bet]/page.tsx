@@ -11,6 +11,7 @@ import Link from "next/link";
 import type { ProcessedDocument, VoteAppendixItem } from "@lib/api/vote/types";
 import Accordion from "@components/common/accordion";
 import VoteDistribution from "./vote-distribution";
+import ResponsiveAd from "@components/ads/responsive-ad";
 
 interface Props {
   params: {
@@ -52,6 +53,7 @@ export default async function Vote({ params: { id, bet } }: Props) {
             title: `${id} förslagspunkt ${betNumber}`,
           }}
         />
+        <ResponsiveAd className="mb-4" />
         <Card className="flex flex-col gap-2">
           <TotalVote voting={vote.voting.total} />
           <h4 className="text-xl sm:text-2xl">Utskottets förslag</h4>
@@ -82,6 +84,7 @@ export default async function Vote({ params: { id, bet } }: Props) {
             </>
           )}
         </Card>
+        <ResponsiveAd className="mt-4" />
       </Container>
     </main>
   );

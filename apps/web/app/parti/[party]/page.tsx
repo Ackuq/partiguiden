@@ -11,6 +11,7 @@ import { partyNames } from "@partiguiden/party-data/utils";
 import { notFound } from "next/navigation";
 import Leader from "./leader";
 import { getParty } from "@lib/api/party/get-party";
+import ResponsiveAd from "@components/ads/responsive-ad";
 
 interface PageProps {
   params: {
@@ -60,6 +61,7 @@ export default async function PartyPage({
       </PageTitle>
       <Container className="grid gap-4">
         <SocialMediaShare title={party.name} />
+        <ResponsiveAd />
         <Card className="grid gap-3">
           {party.website && (
             <>
@@ -109,6 +111,7 @@ export default async function PartyPage({
             ))}
           </div>
         </Card>
+        <ResponsiveAd />
       </Container>
     </main>
   );

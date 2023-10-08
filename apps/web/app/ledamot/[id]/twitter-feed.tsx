@@ -5,13 +5,6 @@ import type { TwitterResult } from "@lib/api/wikidata/types";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 
-declare global {
-  interface Window {
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    twttr: any;
-  }
-}
-
 interface Props {
   twitterFeed?: TwitterResult;
 }

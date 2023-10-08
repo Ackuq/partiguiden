@@ -17,15 +17,7 @@
     "url": "https://github.com/Ackuq/partiguiden.git"
   },
   "dependencies": {
-    "@emotion/cache": "11.11.0",
-    "@emotion/react": "11.11.1",
-    "@emotion/server": "11.11.0",
-    "@emotion/styled": "11.11.0",
     "@heroicons/react": "^2.0.18",
-    "@mui/icons-material": "5.14.11",
-    "@mui/material": "5.14.11",
-    "@mui/system": "5.14.11",
-    "@next/bundle-analyzer": "13.5.3",
     "@partiguiden/party-data": "workspace:*",
     "@sentry/nextjs": "7.72.0",
     "cheerio": "1.0.0-rc.12",
@@ -36,11 +28,11 @@
     "react-share": "4.4.1",
     "recharts": "2.8.0",
     "strip-json-comments": "5.0.1",
-    "swr": "2.2.4",
     "tailwind-merge": "^1.14.0",
     "typed.js": "2.0.16"
   },
   "devDependencies": {
+    "@next/bundle-analyzer": "13.5.3",
     "@partiguiden/eslint-config-base": "workspace:*",
     "@partiguiden/tsconfig": "workspace:*",
     "@types/gtag.js": "0.0.14",

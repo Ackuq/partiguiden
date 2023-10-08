@@ -9,8 +9,11 @@ export default function FlowAd() {
 
   // Flow ads need at least 250px of width to render
   return (
-    // @ts-expect-error This is explicitly checked by the google ad
-    <div align="center">
+    <div
+      // @ts-expect-error This is explicitly checked by the google ad
+      align="center"
+      className="[&:has(ins[data-ad-status='unfilled'])]:hidden"
+    >
       {shouldRenderAd() ? (
         <ins
           className="adsbygoogle"

@@ -104,7 +104,7 @@ function MemberListEntry({ member, variant }: MemberListEntryProps) {
         >
           {member.party !== "-" && (
             <Image
-              className="absolute left-0"
+              className="absolute left-0 top-0"
               width={25}
               height={25}
               src={partyLogo(member.party)}

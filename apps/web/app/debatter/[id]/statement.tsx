@@ -44,7 +44,7 @@ export default function Statement({ statement, speaker, isSender }: Props) {
             {speaker.party !== "-" && (
               <Image
                 className={twMerge(
-                  "absolute right-0 h-auto w-6 sm:w-8",
+                  "absolute right-0 top-0 h-auto w-6 sm:w-8",
                   isSender && "left-0",
                 )}
                 width={32}

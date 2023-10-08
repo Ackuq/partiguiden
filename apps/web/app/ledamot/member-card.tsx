@@ -34,7 +34,7 @@ export default function MemberCard({ member }: Props) {
       >
         {member.party !== "-" && (
           <Image
-            className="absolute left-0"
+            className="absolute left-0 top-0"
             width={40}
             height={40}
             src={partyLogo(member.party)}

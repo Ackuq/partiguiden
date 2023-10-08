@@ -33,22 +33,26 @@ export default async function parseDebate(
   )?.intressent_id;
 
   const speechesPromises: Promise<DebateStatement>[] = protocolId
-    ? document.debatt?.anforande?.map((statement) =>
-        getSpeech(protocolId, statement.anf_nummer).then((data) => {
-          if (!data) {
-            return Promise.reject();
-          }
-          return {
-            ...data,
-            number: statement.anf_nummer,
-            date: statement.anf_datumtid,
-          };
-        }),
-      ) ?? []
+    ? document.debatt?.anforande
+        ?.filter((speech) => speech.talare !== "TALMANNEN")
+        .map((statement) =>
+          getSpeech(protocolId, statement.anf_nummer).then((data) => {
+            if (!data) {
+              return Promise.reject();
+            }
+            return {
+              ...data,
+              number: statement.anf_nummer,
+              date: statement.anf_datumtid,
+            };
+          }),
+        ) ?? []
     : [];
 
   const speakerIds = new Set(
-    document.debatt?.anforande.map((speech) => speech.intressent_id),
+    document.debatt?.anforande
+      .filter((speech) => speech.talare !== "TALMANNEN")
+      .map((speech) => speech.intressent_id),
   );
   const speakerPromises = [...speakerIds].map(getSpeaker);
 
@@ -66,13 +70,14 @@ export default async function parseDebate(
     return { ...prev, [current.value.id]: current.value };
   }, {});
 
+  // TODO: Handle speeches from talmannen as well
   const statements = speechesList
     .filter(
       (speech): speech is PromiseFulfilledResult<DebateStatement> =>
         speech.status === "fulfilled",
     )
-    .map((speech) => speech.value);
-
+    .map((speech) => speech.value)
+    .filter((speech) => speech.speakerId !== "");
   return {
     id,
     title,

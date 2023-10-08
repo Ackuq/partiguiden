@@ -51,14 +51,16 @@ export default async function DebatePage({ params: { id } }: Props) {
             <>
               <Divider />
               <h3 className="text-lg sm:text-xl">Debatt i text</h3>
-              {debate.statements.map((statement) => (
-                <Statement
-                  key={statement.number}
-                  isSender={statement.speakerId === debate.senderId}
-                  speaker={debate.speakers[statement.speakerId]}
-                  statement={statement}
-                />
-              ))}
+              <ul className="flex flex-col gap-4">
+                {debate.statements.map((statement) => (
+                  <Statement
+                    key={statement.number}
+                    isSender={statement.speakerId === debate.senderId}
+                    speaker={debate.speakers[statement.speakerId]}
+                    statement={statement}
+                  />
+                ))}
+              </ul>
             </>
           )}
         </Card>

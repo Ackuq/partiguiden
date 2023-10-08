@@ -13,6 +13,8 @@ export default function ResponsiveAd({ className }: Props) {
 
   return (
     <div
+      // @ts-expect-error This is explicitly checked by the google ad
+      align="center"
       className={twMerge(
         "[&:has(ins[data-ad-status='unfilled'])]:hidden",
         className,

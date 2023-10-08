@@ -1,8 +1,23 @@
-import type { DocumentList } from "@lib/api/parliament/types";
+import type {
+  DocumentList,
+  DocumentListEntry,
+} from "@lib/api/parliament/types";
 import type { Debate, DebateStatement } from "../types";
 import getSpeaker from "../get-speaker";
 import getProtocols from "@lib/api/parliament/get-protocols";
 import getSpeech from "../get-speech";
+
+function getSpeechesDocuments(document: DocumentListEntry) {
+  const debate = document.debatt;
+  if (!debate) {
+    return [];
+  }
+  const speechesDocuments = debate.anforande;
+  if (Array.isArray(speechesDocuments)) {
+    return speechesDocuments;
+  }
+  return [speechesDocuments];
+}
 
 export default async function parseDebate(
   data: DocumentList,
@@ -32,9 +47,11 @@ export default async function parseDebate(
     (intressent) => intressent.roll === "undertecknare",
   )?.intressent_id;
 
+  const speechesDocuments = getSpeechesDocuments(document);
+
   const speechesPromises: Promise<DebateStatement>[] = protocolId
-    ? document.debatt?.anforande
-        ?.filter((speech) => speech.talare !== "TALMANNEN")
+    ? speechesDocuments
+        .filter((speech) => speech.talare !== "TALMANNEN")
         .map((statement) =>
           getSpeech(protocolId, statement.anf_nummer).then((data) => {
             if (!data) {
@@ -50,9 +67,7 @@ export default async function parseDebate(
     : [];
 
   const speakerIds = new Set(
-    document.debatt?.anforande
-      .filter((speech) => speech.talare !== "TALMANNEN")
-      .map((speech) => speech.intressent_id),
+    speechesDocuments.map((speech) => speech.intressent_id),
   );
   const speakerPromises = [...speakerIds].map(getSpeaker);
 

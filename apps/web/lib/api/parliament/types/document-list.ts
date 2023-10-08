@@ -79,7 +79,7 @@ export type DocumentListEntry = {
   debattsekunder: string;
   ardometyp: string;
   reservationer: string;
-  debatt: { anforande: DocumentListSpeeches[] } | null;
+  debatt: { anforande: DocumentListSpeeches[] | DocumentListSpeeches } | null;
   debattnamn?: string;
   dokumentnamn: string;
 };

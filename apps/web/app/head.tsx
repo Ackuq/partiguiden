@@ -43,23 +43,6 @@ export default function Head() {
         content="#1e293b"
         media="(prefers-color-scheme: dark)"
       />
-      <style>
-        {`
-        #__next {     
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-orient: vertical;
-          -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-          flex-direction: column;
-          min-height: 100%; 
-        }
-        a:not(:hover) {
-          text-decoration: none;
-        }
-      `}
-      </style>
       {process.env.NEXT_PUBLIC_VERCEL_ENV !== "production" && (
         <>
           {/* Disable indexing of all non-production sites */}

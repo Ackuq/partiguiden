@@ -14,3 +14,7 @@
     scrollbar-width: none; /* Firefox */
   }
 }
+
+ins.adsbygoogle[data-ad-status="unfilled"] {
+  display: none !important;
+}

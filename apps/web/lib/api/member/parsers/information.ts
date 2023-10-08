@@ -1,8 +1,8 @@
-import type { PersonInformation } from "@lib/api/parliament/types";
+import type { MemberInformation } from "@lib/api/parliament/types";
 import type { Information } from "../types";
 
 export default function parseInformation(
-  unparsed: PersonInformation,
+  unparsed: MemberInformation,
 ): Information {
   const { kod: code, uppgift: content, typ: type } = unparsed;
   const parsedContent =

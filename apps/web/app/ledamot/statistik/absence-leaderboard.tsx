@@ -96,13 +96,15 @@ function MemberListEntry({ member, variant }: MemberListEntryProps) {
         )}
       >
         <MemberImage
-          member={member}
+          imageUrl={member.pictureUrl}
+          firstName={member.firstName}
+          lastName={member.lastName}
           sizes="80px"
           className="h-20 w-20 sm:h-20 sm:w-20"
         >
           {member.party !== "-" && (
             <Image
-              className="absolute left-0"
+              className="absolute left-0 top-0"
               width={25}
               height={25}
               src={partyLogo(member.party)}

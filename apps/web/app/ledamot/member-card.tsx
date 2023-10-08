@@ -26,13 +26,15 @@ export default function MemberCard({ member }: Props) {
         <div>{member.age}</div>
       </div>
       <MemberImage
-        member={member}
+        imageUrl={member.pictureUrl}
+        firstName={member.firstName}
+        lastName={member.lastName}
         sizes="(min-width: 640px) 160px, 128px"
         className="mb-1 ml-auto h-32 w-32 sm:h-40 sm:w-40"
       >
         {member.party !== "-" && (
           <Image
-            className="absolute left-0"
+            className="absolute left-0 top-0"
             width={40}
             height={40}
             src={partyLogo(member.party)}

@@ -17,6 +17,12 @@ export enum Committee {
   UFöU = "UFöU",
 }
 
+export function getCommittee(value: string): Committee | undefined {
+  return Object.values(Committee).includes(value as Committee)
+    ? (value as Committee)
+    : undefined;
+}
+
 export interface CommitteeInformation {
   name: string;
   desc: string;

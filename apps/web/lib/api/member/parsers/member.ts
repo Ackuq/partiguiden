@@ -2,7 +2,7 @@ import type { MemberResponse } from "../types";
 import parsePictureUrl from "./image";
 import parseInformation from "./information";
 import parseTask from "./task";
-import type { Person } from "@lib/api/parliament/types";
+import type { MemberData } from "@lib/api/parliament/types";
 
 const notAcceptedTasks = [
   "sv",
@@ -13,7 +13,7 @@ const notAcceptedTasks = [
   "Tjänstetelefon",
 ];
 
-export const parseMember = (data: Person): MemberResponse => {
+export const parseMember = (data: MemberData): MemberResponse => {
   const {
     intressent_id: id,
     tilltalsnamn: firstName,

@@ -1,6 +1,6 @@
 import { PARLIAMENT_BASE_URL } from "@lib/constants";
 import { parseMember } from "./parsers/member";
-import type { MemberParty, PersonListSingle } from "../parliament/types";
+import type { MemberParty, MemberLookup } from "../parliament/types";
 
 interface Query {
   fnamn: string;
@@ -22,7 +22,7 @@ export default async function searchMember(parameters: Query) {
   const response = await fetch(`${PARLIAMENT_BASE_URL}/personlista/?${query}`, {
     next: { revalidate: 60 * 60 * 24 },
   });
-  const data: PersonListSingle = await response.json();
+  const data: MemberLookup = await response.json();
   if (data.personlista.person) {
     return parseMember(data.personlista.person);
   }

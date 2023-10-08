@@ -1,8 +1,10 @@
-import type { Person } from "@lib/api/parliament/types";
+import type { MemberData } from "@lib/api/parliament/types";
 import type { MemberListEntry } from "../types";
 import parsePictureUrl from "./image";
 
-export default function parseMemberListEntry(data: Person): MemberListEntry {
+export default function parseMemberListEntry(
+  data: MemberData,
+): MemberListEntry {
   const {
     intressent_id: id,
     tilltalsnamn: firstName,

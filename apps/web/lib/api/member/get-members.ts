@@ -1,6 +1,6 @@
 import { PARLIAMENT_BASE_URL } from "@lib/constants";
 import { unstable_cache as cache } from "next/cache";
-import type { MemberParty, PersonListMany } from "../parliament/types";
+import type { MemberList, MemberParty } from "../parliament/types";
 import parseMemberListEntry from "./parsers/member-list-entry";
 
 const getMembers = async (party: MemberParty | "" = "") => {
@@ -11,7 +11,7 @@ const getMembers = async (party: MemberParty | "" = "") => {
   });
 
   const response = await fetch(`${PARLIAMENT_BASE_URL}/personlista/?${query}`);
-  const data: PersonListMany = await response.json();
+  const data: MemberList = await response.json();
   const members = data.personlista.person;
   return members.map(parseMemberListEntry);
 };

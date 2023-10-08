@@ -1,5 +1,5 @@
 import type { Party } from "@partiguiden/party-data/types";
-import type { DocumentAttachment } from "../parliament/types";
+import type { DocumentAppendix } from "../parliament/types";
 import type { Committee } from "@lib/committes";
 
 export type VoteDescription = "yes" | "no" | "refrain" | "absent";
@@ -51,7 +51,7 @@ export interface Vote {
   committee?: Committee;
   propositionText: string;
   processedDocuments: ProcessedDocument[];
-  appendix: DocumentAttachment[];
+  appendix: DocumentAppendix[];
   decision: string;
   voting: VotingDict;
 }

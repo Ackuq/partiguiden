@@ -13,8 +13,8 @@ export default function parseMemberDocument(
     id,
   } = document;
 
-  const committee = Object.values(Committee).includes(organ)
-    ? organ
+  const committee = Object.values(Committee).includes(organ as Committee)
+    ? (organ as Committee)
     : undefined;
 
   return { committee, title, subtitle, altTitle, id };

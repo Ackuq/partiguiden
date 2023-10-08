@@ -13,7 +13,7 @@ export default function BreadcrumbsSocialMediaShare({
   socialMediaProps,
 }: BreadcrumbsSocialMediaShareProps) {
   return (
-    <div className="flex flex-wrap items-center justify-between gap-2">
+    <div className="mb-2 flex flex-wrap items-center justify-between gap-2">
       <Breadcrumbs {...breadcrumbsProps} />
       <SocialMediaShare {...socialMediaProps} />
     </div>

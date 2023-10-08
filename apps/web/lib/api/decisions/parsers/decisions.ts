@@ -22,8 +22,8 @@ async function parseDecision(data: DocumentListEntry): Promise<Decision> {
   const jsonUrl = `https:${textUrl}`.replace(".text", ".json");
   const votesExists = await checkIfVotesExist(jsonUrl);
 
-  const committee = Object.values(Committee).includes(organ)
-    ? organ
+  const committee = Object.values(Committee).includes(organ as Committee)
+    ? (organ as Committee)
     : undefined;
 
   return {

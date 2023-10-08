@@ -10,7 +10,8 @@ import {
   ScaleIcon,
   UserGroupIcon,
 } from "@heroicons/react/24/solid";
-import { Party } from "@partiguiden/party-data/types";
+import type { Party } from "@partiguiden/party-data/types";
+import { partySortOrder } from "@partiguiden/party-data/types";
 import { partyNames } from "@partiguiden/party-data/utils";
 
 export const routes = {
@@ -69,7 +70,7 @@ export const mainNavigation: NavigationEntry[] = [
   },
   {
     title: "Partierna",
-    subPages: Object.values(Party).map((party) => ({
+    subPages: partySortOrder.map((party) => ({
       title: partyNames[party],
       href: routes.party(party),
       Icon: () => <PartyIcon party={party} />,

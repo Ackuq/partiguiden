@@ -4,6 +4,7 @@ import MemberCard from "./member-card";
 import { useFilterContext } from "@components/filter/filter-context";
 import { useEffect, useMemo, useRef, useState } from "react";
 import type { MemberParty } from "@lib/api/parliament/types";
+import ResponsiveAd from "@components/ads/responsive-ad";
 
 interface Props {
   members: MemberListEntry[];
@@ -62,10 +63,15 @@ export default function MemberList({ members }: Props) {
 
   return (
     <ul className="grid flex-1 grid-cols-1 gap-4 lg:grid-cols-2 xl:grid-cols-3">
-      {filteredMembers.slice(0, amount).map((member) => (
-        <li key={member.id}>
-          <MemberCard member={member} />
-        </li>
+      {filteredMembers.slice(0, amount).map((member, index) => (
+        <>
+          {index % 12 === 0 && (
+            <ResponsiveAd className="lg:col-span-2 xl:col-span-3" />
+          )}
+          <li key={member.id}>
+            <MemberCard member={member} />
+          </li>
+        </>
       ))}
       <div ref={endRef} />
     </ul>

@@ -8,6 +8,7 @@ import { buildSearchParameters } from "@lib/utils/search-params";
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";
 import DebateCard from "./debate-card";
+import FlowAdWrapper from "@components/ads/flow-ad-wrapper";
 
 interface Props {
   currentPage: number;
@@ -46,8 +47,10 @@ export default function DebateList({ debates, currentPage }: Props) {
         total={debates.pages}
         onChange={onChangePage}
       />
-      {debates.debates.map((debate) => (
-        <DebateCard key={debate.id} debate={debate} />
+      {debates.debates.map((debate, index) => (
+        <FlowAdWrapper key={debate.id} index={index}>
+          <DebateCard debate={debate} />
+        </FlowAdWrapper>
       ))}
       <Pagination
         current={currentPage}

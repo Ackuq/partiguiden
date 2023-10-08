@@ -9,6 +9,7 @@ import { buildSearchParameters } from "@lib/utils/search-params";
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";
 import Decision from "./decision";
+import FlowAdWrapper from "@components/ads/flow-ad-wrapper";
 
 interface Props {
   currentPage: number;
@@ -54,8 +55,10 @@ export default function DecisionList({ decisions, currentPage }: Props) {
         total={decisions.pages}
         onChange={onChangePage}
       />
-      {decisions.decisions.map((decision) => (
-        <Decision key={decision.id} decision={decision} />
+      {decisions.decisions.map((decision, index) => (
+        <FlowAdWrapper key={decision.id} index={index}>
+          <Decision decision={decision} />
+        </FlowAdWrapper>
       ))}
       <Pagination
         current={currentPage}

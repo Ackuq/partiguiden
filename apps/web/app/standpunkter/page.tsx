@@ -3,6 +3,7 @@ import { getSubjects } from "@partiguiden/party-data/reader";
 import { PencilSquareIcon } from "@heroicons/react/24/solid";
 import Link from "next/link";
 import { routes } from "@lib/navigation";
+import ResponsiveAd from "@components/ads/responsive-ad";
 
 export const metadata = {
   title: "Partiernas ståndpunkter | Partiguiden",
@@ -47,6 +48,7 @@ export default function Subjects() {
             </Link>
           ))}
         </div>
+        <ResponsiveAd className="mt-4" />
       </div>
     </main>
   );

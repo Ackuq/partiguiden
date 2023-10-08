@@ -7,6 +7,7 @@ import getPolls from "@lib/api/polls/get-polls";
 import HistoricPolls from "./historic-polls";
 import BlockBuilder from "./block-builder";
 import BlockStatistics from "./block-statistics";
+import ResponsiveAd from "@components/ads/responsive-ad";
 
 export const metadata = {
   title: "Opinionsundersökningar | Partiguiden",
@@ -28,6 +29,7 @@ export default async function PollPage() {
           </h4>
           <MonthPoll currentMonthAverage={currentMonthAverage} />
         </Card>
+        <ResponsiveAd />
         <Card>
           <h4 className="mb-3 text-center text-xl sm:text-2xl">
             Historiskt genomsnitt (senaste 4 åren)
@@ -49,6 +51,8 @@ export default async function PollPage() {
             blockAverage={blockAverage}
           />
         </Card>
+
+        <ResponsiveAd />
       </Container>
     </main>
   );

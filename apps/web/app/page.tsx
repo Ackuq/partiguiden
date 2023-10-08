@@ -5,6 +5,7 @@ import { routes } from "@lib/navigation";
 import PageTitle from "@components/common/page-title";
 import Container from "@components/common/container";
 import { twMerge } from "tailwind-merge";
+import ResponsiveAd from "@components/ads/responsive-ad";
 
 export const metadata = {
   title: "Partiguiden | Rösta rätt",
@@ -64,6 +65,7 @@ export default function IndexPage() {
             ))}
           </div>
         </Card>
+        <ResponsiveAd />
       </Container>
     </main>
   );

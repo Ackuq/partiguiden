@@ -12,6 +12,7 @@ import getMemberDocuments from "@lib/api/documents/get-member-documents";
 import Biography from "./biography";
 import Tabs from "./tabs";
 import getMemberTwitterFeed from "@lib/api/wikidata/get-member-twitter-feed";
+import ResponsiveAd from "@components/ads/responsive-ad";
 
 interface PageProps {
   params: {
@@ -70,6 +71,7 @@ export default async function MemberPage({ params: { id } }: PageProps) {
           documentCount={memberDocuments.count}
         />
         <Biography memberInformation={member.information} />
+        <ResponsiveAd />
         <Tabs
           memberId={member.id}
           initialDocuments={memberDocuments}
@@ -79,11 +81,3 @@ export default async function MemberPage({ params: { id } }: PageProps) {
     </main>
   );
 }
-
-// export async function generateStaticParams() {
-//   const members = await getMembers();
-
-//   return members.map((member) => ({
-//     id: member.id,
-//   }));
-// }

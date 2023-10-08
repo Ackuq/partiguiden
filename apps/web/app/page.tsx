@@ -6,6 +6,7 @@ import PageTitle from "@components/common/page-title";
 import Container from "@components/common/container";
 import { twMerge } from "tailwind-merge";
 import ResponsiveAd from "@components/ads/responsive-ad";
+import getPopularStandpoints from "@lib/api/analytics/get-popular-standpoints";
 
 export const metadata = {
   title: "Partiguiden | Rösta rätt",
@@ -13,15 +14,9 @@ export const metadata = {
     "Vad tar Sveriges partier för ståndpunkter i sakfrågor? På Partiguiden kan du hitta och jämföra vad partierns åsikter för att hitta det parti du sympatiserar mest med.",
 };
 
-// TODO: Fetch this from google
-const featured = [
-  { id: "ekonomi-och-skatter", name: "Ekonomi och Skatter" },
-  { id: "lag-och-ratt", name: "Lag och rätt" },
-  { id: "migration-och-integration", name: "Migration och Integration" },
-  { id: "miljo-och-klimat", name: "Miljö och klimat" },
-];
+export default async function IndexPage() {
+  const popular = await getPopularStandpoints();
 
-export default function IndexPage() {
   return (
     <main>
       <PageTitle>
@@ -51,7 +46,7 @@ export default function IndexPage() {
             Mest besökta ämnen de senaste 30 dagarna
           </h3>
           <div className="grid gap-3 text-center sm:grid-cols-2 sm:gap-6">
-            {featured.map((subject) => (
+            {popular?.map((subject) => (
               <Link
                 key={subject.id}
                 href={routes.standpoint(subject.id)}

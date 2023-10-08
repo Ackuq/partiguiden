@@ -1,5 +1,6 @@
 import type { MemberLookup } from "@lib/api/parliament/types";
 import type { Speaker } from "../types";
+import parsePictureUrl from "@lib/api/member/parsers/image";
 
 export default function parseSpeaker(data: MemberLookup): Speaker {
   const {
@@ -14,7 +15,7 @@ export default function parseSpeaker(data: MemberLookup): Speaker {
     id,
     firstName,
     lastName,
-    imageUrl,
+    imageUrl: parsePictureUrl(imageUrl),
     party,
   };
 }

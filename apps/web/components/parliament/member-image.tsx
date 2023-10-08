@@ -26,7 +26,7 @@ export default function MemberImage({
   children,
   sizes = "(min-width: 640px) 160px, 96px",
 }: MemberImageProps) {
-  const [fallback, setFallback] = useState(true);
+  const [fallback, setFallback] = useState(false);
 
   return (
     <div className={twMerge("relative h-24 w-24 sm:h-40 sm:w-40", className)}>

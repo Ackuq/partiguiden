@@ -12,7 +12,7 @@ export default function initializeAnalyticsClient() {
   return new BetaAnalyticsDataClient({
     credentials: {
       client_email: SERVICE_ACCOUNT_CLIENT_EMAIL,
-      private_key: SERVICE_ACCOUNT_PRIVATE_KEY,
+      private_key: SERVICE_ACCOUNT_PRIVATE_KEY.replace(/\\n/g, "\n"),
     },
   });
 }

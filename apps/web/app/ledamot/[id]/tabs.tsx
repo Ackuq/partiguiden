@@ -32,7 +32,7 @@ export default function Tabs({
   }
 
   return (
-    <Card className="p-0">
+    <Card className="overflow-visible p-0">
       <div className="flex" role="tablist">
         <button
           role="tab"

@@ -13,7 +13,11 @@ import Link from "next/link";
 import { routes } from "@lib/navigation";
 import Container from "@components/common/container";
 import BreadcrumbsSocialMediaShare from "@components/common/breadcrumbs-social-media-share";
-import ResponsiveAd from "@components/ads/responsive-ad";
+import dynamic from "next/dynamic";
+
+const ResponsiveAd = dynamic(() => import("@components/ads/responsive-ad"), {
+  ssr: false,
+});
 
 interface PageProps {
   params: {

@@ -11,7 +11,11 @@ import Link from "next/link";
 import type { ProcessedDocument, VoteAppendixItem } from "@lib/api/vote/types";
 import Accordion from "@components/common/accordion";
 import VoteDistribution from "./vote-distribution";
-import ResponsiveAd from "@components/ads/responsive-ad";
+import dynamic from "next/dynamic";
+
+const ResponsiveAd = dynamic(() => import("@components/ads/responsive-ad"), {
+  ssr: false,
+});
 
 interface Props {
   params: {

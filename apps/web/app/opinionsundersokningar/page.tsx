@@ -7,7 +7,11 @@ import getPolls from "@lib/api/polls/get-polls";
 import HistoricPolls from "./historic-polls";
 import BlockBuilder from "./block-builder";
 import BlockStatistics from "./block-statistics";
-import ResponsiveAd from "@components/ads/responsive-ad";
+import dynamic from "next/dynamic";
+
+const ResponsiveAd = dynamic(() => import("@components/ads/responsive-ad"), {
+  ssr: false,
+});
 
 export const metadata = {
   title: "Opinionsundersökningar | Partiguiden",

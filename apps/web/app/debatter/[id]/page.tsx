@@ -7,7 +7,11 @@ import getDebate from "@lib/api/debates/get-debate";
 import { routes } from "@lib/navigation";
 import { notFound } from "next/navigation";
 import Statement from "./statement";
-import ResponsiveAd from "@components/ads/responsive-ad";
+import dynamic from "next/dynamic";
+
+const ResponsiveAd = dynamic(() => import("@components/ads/responsive-ad"), {
+  ssr: false,
+});
 
 interface Props {
   params: {

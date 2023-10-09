@@ -11,7 +11,11 @@ import { partyNames } from "@partiguiden/party-data/utils";
 import { notFound } from "next/navigation";
 import Leader from "./leader";
 import { getParty } from "@lib/api/party/get-party";
-import ResponsiveAd from "@components/ads/responsive-ad";
+import dynamic from "next/dynamic";
+
+const ResponsiveAd = dynamic(() => import("@components/ads/responsive-ad"), {
+  ssr: false,
+});
 
 interface PageProps {
   params: {

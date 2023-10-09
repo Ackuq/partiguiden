@@ -19,7 +19,7 @@ export default async function DebateListWrapper({
   const filterToggles = initialFilterToggles(committees);
 
   return (
-    <div className="mx-4 mb-4 flex gap-2 2xl:container 2xl:mx-auto">
+    <div className="mx-4 mb-4 block gap-2 2xl:container sm:flex 2xl:mx-auto">
       <FilterContextProvider
         initialSearch={search}
         initialToggles={filterToggles}

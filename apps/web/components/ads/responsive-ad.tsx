@@ -10,7 +10,7 @@ export default function ResponsiveAd() {
     <div
       // @ts-expect-error This is explicitly checked by the google ad
       align="center"
-      className="hidden [&:has(ins[data-ad-status='unfilled'])]:hidden"
+      className="[&:has(ins[data-ad-status='unfilled'])]:hidden"
     >
       {shouldRenderAd() ? (
         <ins

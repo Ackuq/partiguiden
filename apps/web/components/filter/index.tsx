@@ -61,6 +61,7 @@ export default function Filter() {
       >
         <button
           onClick={closeDrawer}
+          aria-label="Stäng filtermeny"
           className={twMerge(
             "absolute right-4 top-4",
             "group-aria-[expanded=false]:sm:hidden",

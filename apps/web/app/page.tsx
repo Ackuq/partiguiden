@@ -32,9 +32,9 @@ export default async function IndexPage() {
       </PageTitle>
       <Container className="flex flex-col gap-4">
         <Card className="w-full">
-          <h3 className="pb-4 text-center text-2xl sm:text-3xl">
+          <h2 className="pb-4 text-center text-2xl sm:text-3xl">
             Vilket parti ska man rösta på?
-          </h3>
+          </h2>
           <p>
             Vilket parti ska man rösta på? Och vad tycker partierna egentligen?
             På Partiguiden kan du läsa om vad partierna tycker enligt sina

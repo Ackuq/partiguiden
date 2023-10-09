@@ -34,7 +34,11 @@ export default function DrawerNavigation() {
           "motion-reduce:transition-none",
         )}
       >
-        <button onClick={closeDrawer} className="absolute right-4 top-4">
+        <button
+          onClick={closeDrawer}
+          aria-label="Stäng meny"
+          className="absolute right-4 top-4"
+        >
           <XMarkIcon className="text-red h-8 w-8" />
         </button>
         <nav className="flex flex-col gap-3 pt-12">

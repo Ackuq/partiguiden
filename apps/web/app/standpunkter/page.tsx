@@ -3,11 +3,7 @@ import { getSubjects } from "@partiguiden/party-data/reader";
 import { PencilSquareIcon } from "@heroicons/react/24/solid";
 import Link from "next/link";
 import { routes } from "@lib/navigation";
-import dynamic from "next/dynamic";
-
-const ResponsiveAd = dynamic(() => import("@components/ads/responsive-ad"), {
-  ssr: false,
-});
+import { ResponsiveAd } from "@components/ads";
 
 export const metadata = {
   title: "Partiernas ståndpunkter | Partiguiden",

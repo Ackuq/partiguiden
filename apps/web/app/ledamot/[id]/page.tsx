@@ -12,11 +12,7 @@ import getMemberDocuments from "@lib/api/documents/get-member-documents";
 import Biography from "./biography";
 import Tabs from "./tabs";
 import getMemberTwitterFeed from "@lib/api/wikidata/get-member-twitter-feed";
-import dynamic from "next/dynamic";
-
-const ResponsiveAd = dynamic(() => import("@components/ads/responsive-ad"), {
-  ssr: false,
-});
+import { ResponsiveAd } from "@components/ads";
 
 interface PageProps {
   params: {

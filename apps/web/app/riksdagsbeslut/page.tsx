@@ -10,6 +10,7 @@ import {
 } from "@lib/utils/search-params";
 import DecisionList from "./decision-list";
 import initialFilterToggles from "@components/filter/initial-filter-toggles";
+import sleep from "@lib/utils/sleep";
 
 interface Props {
   searchParams: {
@@ -26,7 +27,7 @@ export default async function Decisions({ searchParams }: Props) {
   const decisions = await getDecisions({ search, page, committees });
 
   const filterToggles = initialFilterToggles(committees);
-
+  await sleep(1000);
   return (
     <main>
       <PageTitle Icon={DocumentCheckIcon}>Riksdagsbesult</PageTitle>

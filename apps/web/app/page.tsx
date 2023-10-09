@@ -6,11 +6,7 @@ import PageTitle from "@components/common/page-title";
 import Container from "@components/common/container";
 import { twMerge } from "tailwind-merge";
 import getPopularStandpoints from "@lib/api/analytics/get-popular-standpoints";
-import dynamic from "next/dynamic";
-
-const ResponsiveAd = dynamic(() => import("@components/ads/responsive-ad"), {
-  ssr: false,
-});
+import { ResponsiveAd } from "@components/ads";
 
 export const metadata = {
   title: "Partiguiden | Rösta rätt",

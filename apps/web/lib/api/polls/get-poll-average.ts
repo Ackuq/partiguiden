@@ -1,4 +1,4 @@
-import { Party } from "@partiguiden/party-data/types";
+import { Party, partySortOrder } from "@partiguiden/party-data/types";
 import type { AveragePoll, Poll, PollDetails, Polls } from "./types";
 
 function initializePartyTotal(): Record<Party, PollDetails[]> {
@@ -24,7 +24,8 @@ function aggregatePollData(
 function calculateAveragePerParty(
   partyTotal: Record<Party, PollDetails[]>,
 ): AveragePoll {
-  return Object.entries(partyTotal).map(([party, details]) => {
+  return partySortOrder.map((party) => {
+    const details = partyTotal[party];
     const sum = details.reduce((prev, curr) => prev + curr.value, 0);
     return {
       party: party as Party,

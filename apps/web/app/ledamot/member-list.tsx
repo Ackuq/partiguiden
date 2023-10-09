@@ -4,11 +4,7 @@ import MemberCard from "./member-card";
 import { useFilterContext } from "@components/filter/filter-context";
 import { useEffect, useMemo, useRef, useState } from "react";
 import type { MemberParty } from "@lib/api/parliament/types";
-import dynamic from "next/dynamic";
-
-const ResponsiveAd = dynamic(() => import("@components/ads/responsive-ad"), {
-  ssr: false,
-});
+import { ResponsiveAd } from "@components/ads";
 
 interface Props {
   members: MemberListEntry[];

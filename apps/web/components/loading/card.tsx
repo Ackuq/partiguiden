@@ -8,7 +8,7 @@ export default function LoadingCard({ className }: Props) {
   return (
     <div
       className={twMerge(
-        "h-10 animate-pulse bg-slate-200 dark:bg-slate-900",
+        "h-28 animate-pulse rounded bg-slate-200 dark:bg-slate-800",
         className,
       )}
     />

@@ -40,6 +40,14 @@ export default function DebateList({ debates, currentPage }: Props) {
     router.push(`${routes.debates}?${query}`);
   }
 
+  if (debates.pages === 0) {
+    return (
+      <p className="flex-1 text-center text-xl sm:text-2xl">
+        Inga debatter hittades
+      </p>
+    );
+  }
+
   return (
     <div className="flex flex-1 flex-col gap-4">
       <Pagination

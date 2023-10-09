@@ -35,10 +35,10 @@ export default function Decision({ decision }: Props) {
         </div>
         <ChevronDownIcon className="h-6 w-6 flex-shrink-0 transition-transform group-aria-expanded:rotate-180 sm:h-8 sm:w-8" />
       </button>
-      <Divider aria-hidden={!visible} className="group-aria-hidden:hidden" />
+      <Divider aria-hidden={!visible} className="aria-hidden:hidden" />
       <div
         aria-hidden={!visible}
-        className="flex flex-col gap-4 px-4 pb-4 group-aria-hidden:hidden"
+        className="flex flex-col gap-4 px-4 pb-4 aria-hidden:hidden"
       >
         {decision.paragraph && (
           <div

@@ -66,7 +66,9 @@ export default function MemberList({ members }: Props) {
       {filteredMembers.slice(0, amount).map((member, index) => (
         <Fragment key={member.id}>
           {index % 12 === 0 && (
-            <ResponsiveAd className="lg:col-span-2 xl:col-span-3" />
+            <div className="lg:col-span-2 xl:col-span-3">
+              <ResponsiveAd />
+            </div>
           )}
           <MemberCard member={member} />
         </Fragment>

@@ -33,8 +33,8 @@ export default async function DebatePage({ params: { id } }: Props) {
           }}
           socialMediaProps={{ title: `Debatt ${id}` }}
         />
-        <ResponsiveAd className="mb-4" />
-        <Card className="flex flex-col gap-4">
+        <ResponsiveAd />
+        <Card className="my-4 flex flex-col gap-4">
           <div>
             <p className="text-xs text-slate-700 dark:text-slate-300 sm:text-sm">
               {debate.type} {debate.date}
@@ -66,7 +66,7 @@ export default async function DebatePage({ params: { id } }: Props) {
             </>
           )}
         </Card>
-        <ResponsiveAd className="mt-4" />
+        <ResponsiveAd />
       </Container>
     </main>
   );

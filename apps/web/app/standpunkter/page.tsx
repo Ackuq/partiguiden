@@ -34,8 +34,8 @@ export default function Subjects() {
   return (
     <main>
       <PageTitle Icon={PencilSquareIcon}>Partiernas Ståndpunkter</PageTitle>
-      <div className="mb-4 sm:container">
-        <div className="border-l-primary grid grid-cols-1 border-l-2 border-t-2 border-t-slate-300 dark:border-t-slate-700 md:grid-cols-2">
+      <div className="mb-4 sm:container ">
+        <div className="border-l-primary mb-4 grid grid-cols-1 border-l-2 border-t-2 border-t-slate-300 dark:border-t-slate-700 md:grid-cols-2">
           {subjects.map((subject) => (
             <Link
               key={subject.id}
@@ -48,7 +48,7 @@ export default function Subjects() {
             </Link>
           ))}
         </div>
-        <ResponsiveAd className="mt-4" />
+        <ResponsiveAd />
       </div>
     </main>
   );

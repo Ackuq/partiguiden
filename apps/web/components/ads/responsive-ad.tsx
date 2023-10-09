@@ -2,23 +2,15 @@
 import { ADSENSE_CLIENT_ID, RESPONSIVE_AD_SLOT_ID } from "@lib/constants";
 import useAds from "./use-ads";
 import shouldRenderAd from "./should-render-ad";
-import { twMerge } from "tailwind-merge";
 
-interface Props {
-  className?: string;
-}
-
-export default function ResponsiveAd({ className }: Props) {
+export default function ResponsiveAd() {
   useAds();
 
   return (
     <div
       // @ts-expect-error This is explicitly checked by the google ad
       align="center"
-      className={twMerge(
-        "[&:has(ins[data-ad-status='unfilled'])]:hidden",
-        className,
-      )}
+      className="hidden [&:has(ins[data-ad-status='unfilled'])]:hidden"
     >
       {shouldRenderAd() ? (
         <ins

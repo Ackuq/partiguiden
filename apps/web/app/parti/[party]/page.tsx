@@ -11,11 +11,7 @@ import { partyNames } from "@partiguiden/party-data/utils";
 import { notFound } from "next/navigation";
 import Leader from "./leader";
 import { getParty } from "@lib/api/party/get-party";
-import dynamic from "next/dynamic";
-
-const ResponsiveAd = dynamic(() => import("@components/ads/responsive-ad"), {
-  ssr: false,
-});
+import { ResponsiveAd } from "@components/ads";
 
 interface PageProps {
   params: {
@@ -63,10 +59,10 @@ export default async function PartyPage({
       >
         {party.name}
       </PageTitle>
-      <Container className="grid gap-4">
+      <Container className="flex flex-col gap-4">
         <SocialMediaShare title={party.name} />
         <ResponsiveAd />
-        <Card className="grid gap-3">
+        <Card className="flex flex-col gap-3">
           {party.website && (
             <>
               <div>

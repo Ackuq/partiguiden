@@ -6,11 +6,7 @@ import PageTitle from "@components/common/page-title";
 import Container from "@components/common/container";
 import { twMerge } from "tailwind-merge";
 import getPopularStandpoints from "@lib/api/analytics/get-popular-standpoints";
-import dynamic from "next/dynamic";
-
-const ResponsiveAd = dynamic(() => import("@components/ads/responsive-ad"), {
-  ssr: false,
-});
+import { ResponsiveAd } from "@components/ads";
 
 export const metadata = {
   title: "Partiguiden | Rösta rätt",
@@ -34,7 +30,7 @@ export default async function IndexPage() {
         />
         &nbsp;
       </PageTitle>
-      <Container className="grid gap-4">
+      <Container className="flex flex-col gap-4">
         <Card className="w-full">
           <h3 className="pb-4 text-center text-2xl sm:text-3xl">
             Vilket parti ska man rösta på?

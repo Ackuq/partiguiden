@@ -1,6 +1,4 @@
-import dynamic from "next/dynamic";
-
-const FlowAd = dynamic(() => import("./flow-ad"), { ssr: false });
+import { FlowAd } from ".";
 
 type Props = React.PropsWithChildren<{
   index: number;

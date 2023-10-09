@@ -15,9 +15,6 @@ import { getThemeVotingColors } from "@lib/colors/voting";
 import CustomTooltip from "@components/charts/tooltip";
 import CustomLegend from "@components/charts/legend";
 
-const animationDelay = 2;
-const animationDuration = 2;
-
 const parseData = (voting: VotingEntry) => ({
   name: "Totalt",
   Ja: voting.yes,
@@ -50,35 +47,26 @@ export default function TotalVote({ voting }: Props) {
           <Tooltip cursor={false} content={CustomTooltip} />
           <Legend content={CustomLegend} />
           <Bar
-            animationDuration={data.Ja * animationDuration}
-            animationEasing="linear"
+            isAnimationActive={false}
             dataKey="Ja"
             stackId="a"
             fill={colors.yes}
             className="fill-voting-yes dark:fill-voting-yes-dark"
           />
           <Bar
-            animationBegin={data.Ja * animationDelay}
-            animationDuration={data.Nej * animationDuration}
-            animationEasing="linear"
+            isAnimationActive={false}
             dataKey="Nej"
             stackId="a"
             fill={colors.no}
           />
           <Bar
-            animationBegin={(data.Ja + data.Nej) * animationDelay}
-            animationDuration={data.Avstående * animationDuration}
-            animationEasing="linear"
+            isAnimationActive={false}
             dataKey="Avstående"
             stackId="a"
             fill={colors.refrain}
           />
           <Bar
-            animationBegin={
-              (data.Ja + data.Nej + data.Avstående) * animationDelay
-            }
-            animationDuration={data.Frånvarande * animationDuration}
-            animationEasing="linear"
+            isAnimationActive={false}
             dataKey="Frånvarande"
             stackId="a"
             fill={colors.absent}

@@ -6,7 +6,7 @@ import { createMemberAbsenceLeaderboard } from "@lib/api/member/utils/absence-le
 import { getCurrentParliamentYear } from "@lib/api/parliament/get-current-parliament-year";
 import AbsenceLeaderboard from "../absence-leaderboard";
 import { AbsencePeriod } from "@lib/api/member/types";
-import MemberNavigation from "@app/ledamot/member-navigation";
+import MemberNavigation from "@app/ledamot/components/member-navigation";
 
 export const metadata = {
   title: "Ledamotstatistik riksmöte | Partiguiden",

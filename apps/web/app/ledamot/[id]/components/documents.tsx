@@ -52,7 +52,7 @@ export default function Documents({ initialDocuments, memberId }: Props) {
 
   return (
     <div
-      className="scroll-mt-header-with-margin sm:scroll-mt-header-sm-with-margin m-4 grid gap-4"
+      className="scroll-mt-header-with-margin sm:scroll-mt-header-sm-with-margin m-4 flex flex-col gap-4"
       ref={containerRef}
     >
       <Pagination

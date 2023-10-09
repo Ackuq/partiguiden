@@ -6,14 +6,26 @@ import PageTitle from "@components/common/page-title";
 import getVote from "@lib/api/vote/get-vote";
 import { routes } from "@lib/navigation";
 import { notFound } from "next/navigation";
-import TotalVote from "./total-vote";
 import Link from "next/link";
 import type { ProcessedDocument, VoteAppendixItem } from "@lib/api/vote/types";
 import Accordion from "@components/common/accordion";
-import VoteDistribution from "./vote-distribution";
 import dynamic from "next/dynamic";
 
 const ResponsiveAd = dynamic(() => import("@components/ads/responsive-ad"), {
+  ssr: false,
+});
+
+const TotalVote = dynamic(() => import("./total-vote"), {
+  ssr: false,
+  loading: () => (
+    <div role="status" className="h-[6.5rem] sm:h-24">
+      <div className="h-10 bg-slate-200 dark:bg-slate-900" />
+      <div className="mt-2 h-6 bg-slate-200 dark:bg-slate-900"></div>
+    </div>
+  ),
+});
+
+const VoteDistribution = dynamic(() => import("./vote-distribution"), {
   ssr: false,
 });
 
@@ -57,8 +69,8 @@ export default async function Vote({ params: { id, bet } }: Props) {
             title: `${id} förslagspunkt ${betNumber}`,
           }}
         />
-        <ResponsiveAd className="mb-4" />
-        <Card className="flex flex-col gap-2">
+        <ResponsiveAd />
+        <Card className="my-4 flex flex-col gap-2">
           <TotalVote voting={vote.voting.total} />
           <h4 className="text-xl sm:text-2xl">Utskottets förslag</h4>
           <p>{vote.propositionText}</p>
@@ -88,7 +100,7 @@ export default async function Vote({ params: { id, bet } }: Props) {
             </>
           )}
         </Card>
-        <ResponsiveAd className="mt-4" />
+        <ResponsiveAd />
       </Container>
     </main>
   );

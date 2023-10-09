@@ -2,21 +2,17 @@ import getMember from "@lib/api/member/get-member";
 // import getMembers from "@lib/api/member/get-members";
 import { ERROR_404_TITLE } from "@lib/constants";
 import { notFound } from "next/navigation";
-import Profile from "./profile";
+import Profile from "./components/profile";
 import BreadcrumbsSocialMediaShare from "@components/common/breadcrumbs-social-media-share";
 import { routes } from "@lib/navigation";
 import Container from "@components/common/container";
-import Statistics from "./statistics";
+import Statistics from "./components/statistics";
 import getMemberWithAbsence from "@lib/api/member/get-member-with-absence";
 import getMemberDocuments from "@lib/api/documents/get-member-documents";
-import Biography from "./biography";
-import Tabs from "./tabs";
+import Biography from "./components/biography";
+import Tabs from "./components/tabs";
 import getMemberTwitterFeed from "@lib/api/wikidata/get-member-twitter-feed";
-import dynamic from "next/dynamic";
-
-const ResponsiveAd = dynamic(() => import("@components/ads/responsive-ad"), {
-  ssr: false,
-});
+import { ResponsiveAd } from "@components/ads";
 
 interface PageProps {
   params: {
@@ -60,7 +56,7 @@ export default async function MemberPage({ params: { id } }: PageProps) {
   return (
     <main>
       <Profile member={member} />
-      <Container className="grid gap-4">
+      <Container className="flex flex-col gap-4">
         <BreadcrumbsSocialMediaShare
           breadcrumbsProps={{
             current: `${member.firstName} ${member.lastName}`,

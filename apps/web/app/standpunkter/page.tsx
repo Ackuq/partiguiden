@@ -3,11 +3,7 @@ import { getSubjects } from "@partiguiden/party-data/reader";
 import { PencilSquareIcon } from "@heroicons/react/24/solid";
 import Link from "next/link";
 import { routes } from "@lib/navigation";
-import dynamic from "next/dynamic";
-
-const ResponsiveAd = dynamic(() => import("@components/ads/responsive-ad"), {
-  ssr: false,
-});
+import { ResponsiveAd } from "@components/ads";
 
 export const metadata = {
   title: "Partiernas ståndpunkter | Partiguiden",
@@ -38,8 +34,8 @@ export default function Subjects() {
   return (
     <main>
       <PageTitle Icon={PencilSquareIcon}>Partiernas Ståndpunkter</PageTitle>
-      <div className="mb-4 sm:container">
-        <div className="border-l-primary grid grid-cols-1 border-l-2 border-t-2 border-t-slate-300 dark:border-t-slate-700 md:grid-cols-2">
+      <div className="mb-4 sm:container ">
+        <div className="border-l-primary mb-4 grid grid-cols-1 border-l-2 border-t-2 border-t-slate-300 dark:border-t-slate-700 md:grid-cols-2">
           {subjects.map((subject) => (
             <Link
               key={subject.id}
@@ -52,7 +48,7 @@ export default function Subjects() {
             </Link>
           ))}
         </div>
-        <ResponsiveAd className="mt-4" />
+        <ResponsiveAd />
       </div>
     </main>
   );

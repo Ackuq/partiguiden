@@ -5,11 +5,7 @@ import React from "react";
 import { InformationCircleIcon } from "@heroicons/react/24/solid";
 import ExternalLink from "@components/common/external-link";
 import Container from "@components/common/container";
-import dynamic from "next/dynamic";
-
-const ResponsiveAd = dynamic(() => import("@components/ads/responsive-ad"), {
-  ssr: false,
-});
+import { ResponsiveAd } from "@components/ads";
 
 export const metadata = {
   title: "Om oss | Partiguiden",
@@ -22,7 +18,7 @@ export default function AboutUs() {
     <main>
       <PageTitle Icon={InformationCircleIcon}>Om oss</PageTitle>
       <Container>
-        <Card className="grid gap-3">
+        <Card className="mb-4 flex flex-col gap-3">
           <h3 className="text-2xl">Om Partiguiden</h3>
           <p>
             Denna tjänst är skapad och underhålls av Axel Pettersson (
@@ -77,7 +73,7 @@ export default function AboutUs() {
             <ExternalLink href={githubFrontend}>{githubFrontend}</ExternalLink>.
           </p>
         </Card>
-        <ResponsiveAd className="mt-4" />
+        <ResponsiveAd />
       </Container>
     </main>
   );

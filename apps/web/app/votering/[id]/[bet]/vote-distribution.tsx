@@ -68,10 +68,30 @@ export default function VoteDistribution({ voting }: Props) {
           />
           <Tooltip content={CustomTooltip} cursor={false} />
           <Legend content={CustomLegend} />
-          <Bar dataKey="Ja" stackId="a" fill={votingColors.yes} />
-          <Bar dataKey="Nej" stackId="a" fill={votingColors.no} />
-          <Bar dataKey="Avstående" stackId="a" fill={votingColors.refrain} />
-          <Bar dataKey="Frånvarande" stackId="a" fill={votingColors.absent} />
+          <Bar
+            isAnimationActive={false}
+            dataKey="Ja"
+            stackId="a"
+            fill={votingColors.yes}
+          />
+          <Bar
+            isAnimationActive={false}
+            dataKey="Nej"
+            stackId="a"
+            fill={votingColors.no}
+          />
+          <Bar
+            isAnimationActive={false}
+            dataKey="Avstående"
+            stackId="a"
+            fill={votingColors.refrain}
+          />
+          <Bar
+            isAnimationActive={false}
+            dataKey="Frånvarande"
+            stackId="a"
+            fill={votingColors.absent}
+          />
         </BarChart>
       </ResponsiveContainer>
     </div>

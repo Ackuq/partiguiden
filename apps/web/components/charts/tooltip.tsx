@@ -59,7 +59,7 @@ export default function CustomTooltip({
           <Divider />
         </>
       )}
-      <ul className={twMerge("grid px-3 pb-2 pt-1", !label && "pt-2")}>
+      <ul className={twMerge("flex flex-col px-3 pb-2 pt-1", !label && "pt-2")}>
         {payload?.map((data) => (
           <Entry
             key={data.dataKey}

@@ -7,7 +7,7 @@ interface ProfileProps {
 
 export default function Profile({ member }: ProfileProps) {
   return (
-    <div className="grid justify-center gap-1 text-center">
+    <div className="flex flex-col justify-center gap-1 text-center">
       <div className="bg-primary dark:bg-primary-dark absolute h-28 w-full sm:h-36" />
       <MemberImage
         imageUrl={member.pictureUrl}

@@ -56,7 +56,7 @@ export default async function MemberPage({ params: { id } }: PageProps) {
   return (
     <main>
       <Profile member={member} />
-      <Container className="grid gap-4">
+      <Container className="flex flex-col gap-4">
         <BreadcrumbsSocialMediaShare
           breadcrumbsProps={{
             current: `${member.firstName} ${member.lastName}`,

@@ -59,10 +59,10 @@ export default async function PartyPage({
       >
         {party.name}
       </PageTitle>
-      <Container className="grid gap-4">
+      <Container className="flex flex-col gap-4">
         <SocialMediaShare title={party.name} />
         <ResponsiveAd />
-        <Card className="grid gap-3">
+        <Card className="flex flex-col gap-3">
           {party.website && (
             <>
               <div>

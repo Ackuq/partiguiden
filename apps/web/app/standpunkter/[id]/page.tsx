@@ -47,7 +47,7 @@ export default function Standpoints({ params: { id } }: PageProps) {
   return (
     <main>
       <PageTitle>{subject.name}</PageTitle>
-      <Container className="grid gap-4">
+      <Container className="flex flex-col gap-4">
         <BreadcrumbsSocialMediaShare
           breadcrumbsProps={{
             links: [{ href: routes.standpoints, title: "Ståndpunkter" }],

@@ -18,7 +18,7 @@ export default function AboutUs() {
     <main>
       <PageTitle Icon={InformationCircleIcon}>Om oss</PageTitle>
       <Container>
-        <Card className="mb-4 grid gap-3">
+        <Card className="mb-4 flex flex-col gap-3">
           <h3 className="text-2xl">Om Partiguiden</h3>
           <p>
             Denna tjänst är skapad och underhålls av Axel Pettersson (

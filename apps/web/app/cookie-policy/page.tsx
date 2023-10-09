@@ -14,7 +14,7 @@ export default function CookiePolicy() {
     <main>
       <PageTitle Icon={CodeBracketIcon}>Cookie-policy</PageTitle>
       <Container>
-        <Card className="grid gap-2">
+        <Card className="flex flex-col gap-2">
           <p>
             Partiguiden använder webbkakor från Google för att kunna analysera
             användares interaktion med hemsidan i syftet att kunna

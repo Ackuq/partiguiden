@@ -30,7 +30,7 @@ export default async function IndexPage() {
         />
         &nbsp;
       </PageTitle>
-      <Container className="grid gap-4">
+      <Container className="flex flex-col gap-4">
         <Card className="w-full">
           <h3 className="pb-4 text-center text-2xl sm:text-3xl">
             Vilket parti ska man rösta på?

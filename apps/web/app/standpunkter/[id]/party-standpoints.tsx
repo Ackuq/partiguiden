@@ -45,13 +45,13 @@ export default function PartyStandpoints({
       </button>
 
       {visible && (
-        <div className="grid gap-3">
+        <div className="flex flex-col gap-3">
           {standpoints.map((standpoint) => (
-            <Card key={standpoint.url} className="grid gap-5">
+            <Card key={standpoint.url} className="flex flex-col gap-5">
               <p className="text-2xl">{standpoint.title}</p>
               {standpoint.opinions.length > 0 ? (
                 <ul
-                  className={`${partyMarker[party]} ml-4 grid list-disc gap-3`}
+                  className={`${partyMarker[party]} ml-4 flex list-disc flex-col gap-3`}
                 >
                   {standpoint.opinions.map((opinion) => (
                     <li key={opinion}>{opinion}</li>

@@ -5,7 +5,7 @@ import membersWithAbsenceController from "@lib/api/member/get-members-with-absen
 import { createMemberAbsenceLeaderboard } from "@lib/api/member/utils/absence-leaderboard";
 import AbsenceLeaderboard from "../absence-leaderboard";
 import { AbsencePeriod } from "@lib/api/member/types";
-import MemberNavigation from "@app/ledamot/member-navigation";
+import MemberNavigation from "@app/ledamot/components/member-navigation";
 import { getCurrentMandatePeriod } from "@lib/api/parliament/get-current-mandate-period";
 
 export const metadata = {

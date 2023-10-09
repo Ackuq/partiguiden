@@ -18,7 +18,7 @@ const LOADING_BARS = [
   "h-56",
 ];
 
-const BlockStatistics = dynamic(() => import("./block-statistics"), {
+const BlockStatistics = dynamic(() => import("./components/block-statistics"), {
   ssr: false,
   loading: () => (
     <div
@@ -27,7 +27,7 @@ const BlockStatistics = dynamic(() => import("./block-statistics"), {
     />
   ),
 });
-const BlockBuilder = dynamic(() => import("./block-builder"), {
+const BlockBuilder = dynamic(() => import("./components//block-builder"), {
   ssr: false,
   loading: () => (
     <div
@@ -36,7 +36,7 @@ const BlockBuilder = dynamic(() => import("./block-builder"), {
     />
   ),
 });
-const HistoricPolls = dynamic(() => import("./historic-polls"), {
+const HistoricPolls = dynamic(() => import("./components//historic-polls"), {
   ssr: false,
   loading: () => (
     <div
@@ -45,7 +45,7 @@ const HistoricPolls = dynamic(() => import("./historic-polls"), {
     />
   ),
 });
-const MonthPoll = dynamic(() => import("./month-poll"), {
+const MonthPoll = dynamic(() => import("./components//month-poll"), {
   loading: () => (
     <div role="status" className="ml-[40px] flex h-96 items-end sm:h-[30rem]">
       {LOADING_BARS.map((height) => (

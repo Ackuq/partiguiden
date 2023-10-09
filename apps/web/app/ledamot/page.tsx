@@ -1,20 +1,27 @@
 import PageTitle from "@components/common/page-title";
 import Filter from "@components/filter";
 import getMembers from "@lib/api/member/get-members";
-import MemberList from "./member-list";
+import MemberList from "./components/member-list";
+import type { FilterToggle } from "@components/filter/filter-context";
 import { FilterContextProvider } from "@components/filter/filter-context";
-import { partyFilterToggles } from "./filter-toggles";
 import { UserCircleIcon } from "@heroicons/react/24/solid";
-import MemberNavigation from "./member-navigation";
+import MemberNavigation from "./components/member-navigation";
+import type { MemberParty } from "@lib/api/parliament/types";
+import { partyNames } from "@partiguiden/party-data/utils";
+import { partySortOrder } from "@partiguiden/party-data/types";
 
-export const metadata = {
-  title: "Riksdagsledamöter | Partiguiden",
-  description:
-    "Här kan du ta reda på information om ledamöterna i riksdagen, samt se vilka ledamöter är aktiva för varje parti",
-};
+const order = [...partySortOrder, "-"] as const;
 
-// Revalidate data at most once per day (60 * 60 * 24)s
-export const revalidate = 86400;
+const partyFilterToggles: FilterToggle<MemberParty> = order.reduce(
+  (prev, party) => ({
+    ...prev,
+    [party]: {
+      title: party === "-" ? "Partilösa" : partyNames[party],
+      value: false,
+    },
+  }),
+  {} as FilterToggle<MemberParty>,
+);
 
 export default async function MembersPage() {
   const members = await getMembers();
@@ -34,3 +41,12 @@ export default async function MembersPage() {
     </main>
   );
 }
+
+export const metadata = {
+  title: "Riksdagsledamöter | Partiguiden",
+  description:
+    "Här kan du ta reda på information om ledamöterna i riksdagen, samt se vilka ledamöter är aktiva för varje parti",
+};
+
+// Revalidate data at most once per day (60 * 60 * 24)s
+export const revalidate = 86400;

@@ -5,7 +5,7 @@ import {
   parseStringArraySearchParam,
   parseStringSearchParam,
 } from "@lib/utils/search-params";
-import DecisionListWrapper from "./decision-list-wrapper";
+import DecisionListWrapper from "./components/decision-list-wrapper";
 import { Suspense } from "react";
 import LoadingListWithFilter from "@components/loading/list-with-filter";
 

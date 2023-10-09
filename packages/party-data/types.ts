@@ -18,7 +18,7 @@ export const partySortOrder = [
   Party.KD,
   Party.MP,
   Party.L,
-];
+] as const;
 
 export interface Subject {
   id: string;

@@ -7,7 +7,7 @@ import {
 } from "@lib/utils/search-params";
 import { Suspense } from "react";
 import LoadingListWithFilter from "@components/loading/list-with-filter";
-import VoteListWrapper from "./vote-list-wrapper";
+import VoteListWrapper from "./components/vote-list-wrapper";
 
 interface Props {
   searchParams: {

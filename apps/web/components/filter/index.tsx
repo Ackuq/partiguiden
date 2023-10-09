@@ -29,12 +29,12 @@ export default function Filter() {
   }
 
   return (
-    <div aria-expanded={drawerVisible} className="group">
+    <div aria-hidden={!drawerVisible} className="group">
       <div
         onClick={closeDrawer}
         className={twMerge(
           "fixed left-0 top-0 z-50 hidden h-full w-full backdrop-blur-md",
-          "group-aria-expanded:block group-aria-expanded:backdrop-blur-md",
+          "group-aria-visible:block group-aria-visible:backdrop-blur-md",
         )}
       />
       <button
@@ -50,12 +50,12 @@ export default function Filter() {
         className={twMerge(
           "top-0 z-50 h-screen overflow-y-scroll shadow-sm",
           "dark:bg-background-elevated-dark bg-white transition-transform",
-          "w-drawer translate-x-drawer fixed right-0 pt-12 group-aria-expanded:translate-x-0",
+          "w-drawer translate-x-drawer group-aria-visible:translate-x-0 fixed right-0 pt-12",
           // Desktop styles, disable when drawer-visible=true in order to correctly render the site when resized.
-          "group-aria-[expanded=false]:sm:top-header-sm-with-margin group-aria-[expanded=false]:sm:max-h-full-without-header",
-          "group-aria-[expanded=false]:sm:sticky group-aria-[expanded=false]:sm:transform-none",
-          "group-aria-[expanded=false]:sm:z-0 group-aria-[expanded=false]:sm:h-min group-aria-[expanded=false]:sm:w-auto",
-          "group-aria-[expanded=false]:sm:min-w-[17rem] group-aria-[expanded=false]:sm:rounded-sm group-aria-[expanded=false]:sm:pt-0",
+          "group-aria-hidden:sm:top-header-sm-with-margin group-aria-hidden:sm:max-h-full-without-header",
+          "group-aria-hidden:sm:sticky group-aria-hidden:sm:transform-none",
+          "group-aria-hidden:sm:z-0 group-aria-hidden:sm:h-min group-aria-hidden:sm:w-auto",
+          "group-aria-hidden:sm:min-w-[17rem] group-aria-hidden:sm:rounded-sm group-aria-hidden:sm:pt-0",
           "sm:transition-none",
         )}
       >
@@ -64,7 +64,7 @@ export default function Filter() {
           aria-label="Stäng filtermeny"
           className={twMerge(
             "absolute right-4 top-4",
-            "group-aria-[expanded=false]:sm:hidden",
+            "group-aria-hidden:sm:hidden",
           )}
         >
           <XMarkIcon className="text-red h-8 w-8" />

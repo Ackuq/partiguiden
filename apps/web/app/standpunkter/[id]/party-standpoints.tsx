@@ -34,7 +34,7 @@ export default function PartyStandpoints({
     <>
       <button
         onClick={handleClick}
-        aria-expanded={visible ? "true" : "false"}
+        aria-expanded={visible}
         className={twMerge(
           partyBorderBottom[party],
           "group flex w-full items-center justify-between border-b-2 py-3 pl-2 text-start text-3xl font-light",

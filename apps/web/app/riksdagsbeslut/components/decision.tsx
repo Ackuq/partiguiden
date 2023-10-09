@@ -19,12 +19,13 @@ export default function Decision({ decision }: Props) {
   }
 
   return (
-    <Card className="group p-0" aria-expanded={visible}>
+    <Card className="p-0">
       <CommitteeHeader committee={decision.committee} />
 
       <button
-        className="flex w-full justify-between gap-4 p-4 text-left"
+        className="group flex w-full justify-between gap-4 p-4 text-left"
         onClick={toggleVisible}
+        aria-expanded={visible}
       >
         <div>
           <p className="text-md mb-2 sm:text-lg">{decision.paragraphTitle}</p>
@@ -34,8 +35,11 @@ export default function Decision({ decision }: Props) {
         </div>
         <ChevronDownIcon className="h-6 w-6 flex-shrink-0 transition-transform group-aria-expanded:rotate-180 sm:h-8 sm:w-8" />
       </button>
-      <Divider className="group-aria-[expanded=false]:hidden" />
-      <div className="flex flex-col gap-4 px-4 pb-4 group-aria-[expanded=false]:hidden">
+      <Divider aria-hidden={!visible} className="group-aria-hidden:hidden" />
+      <div
+        aria-hidden={!visible}
+        className="flex flex-col gap-4 px-4 pb-4 group-aria-hidden:hidden"
+      >
         {decision.paragraph && (
           <div
             className="text-sm [&_p]:my-4"

@@ -29,16 +29,17 @@ export default function Filter() {
   }
 
   return (
-    <div aria-expanded={drawerVisible} className="group">
+    <div data-mobile-hidden={!drawerVisible} className="group">
       <div
         onClick={closeDrawer}
         className={twMerge(
           "fixed left-0 top-0 z-50 hidden h-full w-full backdrop-blur-md",
-          "group-aria-expanded:block group-aria-expanded:backdrop-blur-md",
+          "group-data-[mobile-hidden=false]:block group-data-[mobile-hidden=false]:backdrop-blur-md",
         )}
       />
       <button
         onClick={openDrawer}
+        aria-label="Öppna filtermeny"
         className={twMerge(
           "bg-background-light dark:bg-background-elevated-dark fixed bottom-4 right-4 z-50 rounded-full p-4 shadow-md",
           "sm:hidden",
@@ -50,20 +51,21 @@ export default function Filter() {
         className={twMerge(
           "top-0 z-50 h-screen overflow-y-scroll shadow-sm",
           "dark:bg-background-elevated-dark bg-white transition-transform",
-          "w-drawer translate-x-drawer fixed right-0 pt-12 group-aria-expanded:translate-x-0",
+          "w-drawer translate-x-drawer fixed right-0 pt-12 group-data-[mobile-hidden=false]:translate-x-0",
           // Desktop styles, disable when drawer-visible=true in order to correctly render the site when resized.
-          "group-aria-[expanded=false]:sm:top-header-sm-with-margin group-aria-[expanded=false]:sm:max-h-full-without-header",
-          "group-aria-[expanded=false]:sm:sticky group-aria-[expanded=false]:sm:transform-none",
-          "group-aria-[expanded=false]:sm:z-0 group-aria-[expanded=false]:sm:h-min group-aria-[expanded=false]:sm:w-auto",
-          "group-aria-[expanded=false]:sm:min-w-[17rem] group-aria-[expanded=false]:sm:rounded-sm group-aria-[expanded=false]:sm:pt-0",
+          "group-data-[mobile-hidden=true]:sm:top-header-sm-with-margin group-data-[mobile-hidden=true]:sm:max-h-full-without-header",
+          "group-data-[mobile-hidden=true]:sm:sticky group-data-[mobile-hidden=true]:sm:transform-none",
+          "group-data-[mobile-hidden=true]:sm:z-0 group-data-[mobile-hidden=true]:sm:h-min group-data-[mobile-hidden=true]:sm:w-auto",
+          "group-data-[mobile-hidden=true]:sm:min-w-[17rem] group-data-[mobile-hidden=true]:sm:rounded-sm group-data-[mobile-hidden=true]:sm:pt-0",
           "sm:transition-none",
         )}
       >
         <button
           onClick={closeDrawer}
+          aria-label="Stäng filtermeny"
           className={twMerge(
             "absolute right-4 top-4",
-            "group-aria-[expanded=false]:sm:hidden",
+            "group-data-[mobile-hidden=true]:sm:hidden",
           )}
         >
           <XMarkIcon className="text-red h-8 w-8" />

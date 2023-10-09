@@ -15,10 +15,11 @@ export default function Accordion({ children, title }: AccordionProps) {
   }
 
   return (
-    <div aria-expanded={visible} className="group">
+    <div>
       <button
         onClick={toggleVisible}
-        className="bg-background-elevated-light dark:bg-background-elevated-dark-200 flex w-full items-center justify-between rounded px-4 py-3 text-xl sm:text-2xl"
+        aria-expanded={visible}
+        className="bg-background-elevated-light dark:bg-background-elevated-dark-200 group flex w-full items-center justify-between rounded px-4 py-3 text-xl sm:text-2xl"
       >
         <span>{title}</span>
         <ChevronDownIcon className="inline h-6 w-6 transition-transform group-aria-expanded:rotate-180" />

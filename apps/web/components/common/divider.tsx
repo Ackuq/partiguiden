@@ -1,13 +1,13 @@
 import { twMerge } from "tailwind-merge";
 
-interface DividerProps {
-  className?: string;
-}
-
-export const Divider = ({ className = "" }: DividerProps) => {
+export const Divider = ({
+  className = "",
+  ...rest
+}: React.HTMLAttributes<HTMLHRElement>) => {
   return (
     <hr
       className={twMerge("border-slate-400 dark:border-slate-600", className)}
+      {...rest}
     />
   );
 };

@@ -43,7 +43,7 @@ export default function DecisionList({ decisions, currentPage }: Props) {
   if (decisions.pages === 0) {
     return (
       <p className="flex-1 text-center text-xl sm:text-2xl">
-        Inga voteringar hittades
+        Inga beslut hittades
       </p>
     );
   }

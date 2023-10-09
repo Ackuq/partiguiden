@@ -108,6 +108,7 @@ const config: Config = {
       aria: {
         "current-page": "current=page",
         "current-false": "current=false",
+        visible: "hidden=false",
       },
     },
   },

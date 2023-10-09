@@ -72,7 +72,7 @@ export default async function Vote({ params: { id, bet } }: Props) {
         <ResponsiveAd />
         <Card className="my-4 flex flex-col gap-2">
           <TotalVote voting={vote.voting.total} />
-          <h4 className="text-xl sm:text-2xl">Utskottets förslag</h4>
+          <h2 className="text-xl sm:text-2xl">Utskottets förslag</h2>
           <p>{vote.propositionText}</p>
           <Divider />
           {vote.processedDocuments.length > 0 && (
@@ -85,10 +85,10 @@ export default async function Vote({ params: { id, bet } }: Props) {
             <VoteDistribution voting={vote.voting} />
           </Accordion>
           <Divider />
-          <h4 className="text-xl sm:text-2xl">Beslut</h4>
+          <h2 className="text-xl sm:text-2xl">Beslut</h2>
           <p>{vote.decision}</p>
           <Divider />
-          <h4 className="text-xl sm:text-2xl">Beslut i korthet</h4>
+          <h2 className="text-xl sm:text-2xl">Beslut i korthet</h2>
           <div
             dangerouslySetInnerHTML={{ __html: vote.description }}
             className="[&>p:not(:last-child)]:mb-4"
@@ -96,6 +96,7 @@ export default async function Vote({ params: { id, bet } }: Props) {
           {vote.appendix && (
             <>
               <Divider />
+              <h3 className="text-xl sm:text-2xl">Bilagor</h3>
               <Appendix documents={vote.appendix} />
             </>
           )}
@@ -127,21 +128,18 @@ function Documents({ documents }: { documents: ProcessedDocument[] }) {
 
 function Appendix({ documents }: { documents: VoteAppendixItem[] }) {
   return (
-    <>
-      <h4 className="text-xl sm:text-2xl">Bilagor</h4>
-      <div>
-        {documents.map((document) => (
-          <a
-            className="text-primary-dark dark:text-primary-light"
-            href={document.fil_url}
-            key={document.fil_url}
-            target="_blank"
-            rel="noopener"
-          >
-            {document.titel} {document.dok_id}
-          </a>
-        ))}
-      </div>
-    </>
+    <div>
+      {documents.map((document) => (
+        <a
+          className="text-primary-dark dark:text-primary-light"
+          href={document.fil_url}
+          key={document.fil_url}
+          target="_blank"
+          rel="noopener"
+        >
+          {document.titel} {document.dok_id}
+        </a>
+      ))}
+    </div>
   );
 }

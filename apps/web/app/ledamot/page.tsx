@@ -32,7 +32,7 @@ export default async function MembersPage() {
         Riksdagsledamöter
       </PageTitle>
       <MemberNavigation value={0} />
-      <div className="mx-4 mb-4 block gap-2 2xl:container sm:flex 2xl:mx-auto">
+      <div className="mx-4 mb-4 block items-start gap-2 2xl:container sm:flex 2xl:mx-auto">
         <FilterContextProvider initialToggles={partyFilterToggles}>
           <MemberList members={members} />
           <Filter />

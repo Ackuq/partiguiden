@@ -61,7 +61,11 @@ export default function TabNavigation() {
   return (
     <div className="hidden items-end sm:flex">
       {showLeftButton ? (
-        <button className="h-14 w-20" onClick={handleScrollLeft}>
+        <button
+          className="h-14 w-20"
+          onClick={handleScrollLeft}
+          aria-label="Scrolla vänster"
+        >
           <ArrowLeftIcon className="m-auto h-6 w-6" />
         </button>
       ) : (
@@ -78,7 +82,11 @@ export default function TabNavigation() {
         <div id={rightDivId} className="min-w-[1px]" ref={rightDivRef} />
       </nav>
       {showRightButton ? (
-        <button className="h-14 w-20" onClick={handleScrollRight}>
+        <button
+          className="h-14 w-20"
+          onClick={handleScrollRight}
+          aria-label="Scrolla höger"
+        >
           <ArrowRightIcon className="m-auto h-6 w-6" />
         </button>
       ) : (

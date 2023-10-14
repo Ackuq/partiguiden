@@ -21,6 +21,7 @@ export default function DrawerNavigation() {
   return (
     <div className="text-font-primary group" aria-hidden={!drawerIsOpen}>
       <div
+        aria-hidden="true"
         onClick={closeDrawer}
         className={twMerge(
           "fixed left-0 top-0 z-50 hidden h-full w-full backdrop-blur-md",

@@ -3,7 +3,7 @@ import LoadingCard from "./card";
 export default function LoadingListWithFilter() {
   return (
     <div
-      role="loading"
+      role="status"
       className="mx-4 mb-4 flex gap-2 2xl:container 2xl:mx-auto"
     >
       <div className="flex w-full flex-col gap-4">

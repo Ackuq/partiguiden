@@ -32,6 +32,7 @@ export default function Filter() {
     <div data-mobile-hidden={!drawerVisible} className="group">
       <div
         onClick={closeDrawer}
+        aria-hidden="true"
         className={twMerge(
           "fixed left-0 top-0 z-50 hidden h-full w-full backdrop-blur-md",
           "group-data-[mobile-hidden=false]:block group-data-[mobile-hidden=false]:backdrop-blur-md",

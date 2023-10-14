@@ -69,10 +69,10 @@ export default function Standpoints({ params: { id } }: PageProps) {
           <>
             <Divider />
             <div>
-              <p className="text-primary mb-2 text-xl ">
+              <p className="text-primary dark:text-primary-light mb-2 text-xl">
                 Relaterade sakområden
               </p>
-              <ul className="text-primary list-inside list-disc">
+              <ul className="text-primary dark:text-primary-light list-inside list-disc">
                 {subject.relatedSubjects.map((related) => (
                   <li key={related}>
                     <Link href={routes.standpoint(related)}>

@@ -19,7 +19,7 @@ export default function AboutUs() {
       <PageTitle Icon={InformationCircleIcon}>Om oss</PageTitle>
       <Container>
         <Card className="mb-4 flex flex-col gap-3">
-          <h3 className="text-2xl">Om Partiguiden</h3>
+          <h2 className="text-2xl">Om Partiguiden</h2>
           <p>
             Denna tjänst är skapad och underhålls av Axel Pettersson (
             <ExternalLink href={linkedIn}>LinkedIn</ExternalLink>,{" "}
@@ -37,7 +37,7 @@ export default function AboutUs() {
             Utvecklingen av sidan påbörjades som ett fritidsprojekt år 2017 för
             att utveckla kunskaper inom webbutveckling.
           </p>
-          <h4 className="text-xl">Datakällor</h4>
+          <h3 className="text-xl">Datakällor</h3>
           <p>
             Informationen som presenteras på sidan är information från
             partiernas egna hemsidor samt information från{" "}
@@ -55,7 +55,7 @@ export default function AboutUs() {
             </ExternalLink>
             .
           </p>
-          <h4 className="text-xl">Annonser</h4>
+          <h3 className="text-xl">Annonser</h3>
           <p>
             I dagsläget är detta projekt finansierat av de annonser som visas på
             diverse delsidor. Annonserna hanteras av Google via deras
@@ -65,7 +65,7 @@ export default function AboutUs() {
             </ExternalLink>
             .
           </p>
-          <h4 className="text-xl">Open source</h4>
+          <h3 className="text-xl">Open source</h3>
           <p>
             För att kunna uppnå en god nivå av förtrående och transparans så är
             alla delar av detta projekt open source på GitHub, som du kan hitta

@@ -66,7 +66,7 @@ export default async function PartyPage({
           {party.website && (
             <>
               <div>
-                <h5 className="text-xl">Hemsida</h5>
+                <h2 className="text-xl">Hemsida</h2>
                 <ExternalLink href={party.website}>
                   {party.website}
                 </ExternalLink>
@@ -75,7 +75,7 @@ export default async function PartyPage({
             </>
           )}
           <div>
-            <h5 className="text-xl">Ideologi</h5>
+            <h2 className="text-xl">Ideologi</h2>
             <p>{party.ideology.join(", ")}</p>
             <span className="text-xs">
               Källa{" "}
@@ -86,7 +86,7 @@ export default async function PartyPage({
           </div>
           <Divider />
           <div>
-            <h5 className="text-xl">Biografi</h5>
+            <h2 className="text-xl">Biografi</h2>
             <div
               className="[&>p]:my-2"
               dangerouslySetInnerHTML={{ __html: party.abstract }}
@@ -100,7 +100,7 @@ export default async function PartyPage({
           </div>
         </Card>
         <Card>
-          <h4 className="mb-4 text-center text-2xl">Ledning</h4>
+          <h3 className="mb-4 text-center text-2xl">Ledning</h3>
           <div
             className={`grid grid-cols-2 gap-2 sm:grid-cols-3 ${
               party.leaders.length > 3 ? "md:grid-cols-4" : ""

@@ -24,7 +24,7 @@ export default function Leader({ leader }: LeaderProps) {
       <p className="text-lg">
         {leader.firstName} {leader.lastName}
       </p>
-      {leader.role && <p className="self-end">{leader.role}</p>}
+      {leader.role && <p className="mt-auto">{leader.role}</p>}
     </Link>
   );
 }

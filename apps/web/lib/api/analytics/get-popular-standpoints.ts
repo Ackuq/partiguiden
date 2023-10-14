@@ -38,8 +38,8 @@ async function getPopularStandpoints() {
       filter: {
         fieldName: "pagePathPlusQueryString",
         stringFilter: {
-          matchType: "PARTIAL_REGEXP",
-          value: "standpunkter/.+",
+          matchType: "BEGINS_WITH",
+          value: "/standpunkter/",
         },
       },
     },

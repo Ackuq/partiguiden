@@ -105,7 +105,11 @@ export default function TabEntry({ item, navRef }: TabEntryProps) {
     <Link
       key={item.href}
       href={item.href}
-      aria-current={item.href === pathname && "page"}
+      aria-current={
+        (item.href === pathname ||
+          new RegExp(`^${item.href}/.*`).test(pathname)) &&
+        "page"
+      }
       className={tabClassName}
     >
       {item.title}

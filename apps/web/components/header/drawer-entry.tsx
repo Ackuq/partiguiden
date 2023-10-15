@@ -84,7 +84,11 @@ export default function DrawerEntry({ item }: DrawerEntryProps) {
   return (
     <Link
       href={item.href}
-      aria-current={item.href === pathname && "page"}
+      aria-current={
+        (item.href === pathname ||
+          new RegExp(`^${item.href}/.*`).test(pathname)) &&
+        "page"
+      }
       className={drawerEntryClassName}
     >
       <item.Icon className="h-5 w-5" />

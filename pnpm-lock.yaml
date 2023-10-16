@@ -80,8 +80,8 @@ importers:
         specifier: 0.0.16
         version: 0.0.16
       '@types/node':
-        specifier: 20.8.5
-        version: 20.8.5
+        specifier: 20.8.6
+        version: 20.8.6
       '@types/react':
         specifier: 18.2.28
         version: 18.2.28
@@ -140,11 +140,11 @@ importers:
         specifier: workspace:*
         version: link:../tsconfig
       '@types/node':
-        specifier: 20.8.5
-        version: 20.8.5
+        specifier: 20.8.6
+        version: 20.8.6
       ts-node:
         specifier: ^10.9.1
-        version: 10.9.1(@types/node@20.8.5)(typescript@5.2.2)
+        version: 10.9.1(@types/node@20.8.6)(typescript@5.2.2)
 
   packages/scrapers:
     devDependencies:
@@ -158,8 +158,8 @@ importers:
         specifier: workspace:*
         version: link:../tsconfig
       '@types/node':
-        specifier: 20.8.5
-        version: 20.8.5
+        specifier: 20.8.6
+        version: 20.8.6
       cheerio:
         specifier: 1.0.0-rc.12
         version: 1.0.0-rc.12
@@ -168,7 +168,7 @@ importers:
         version: 3.11.174
       ts-node:
         specifier: ^10.9.1
-        version: 10.9.1(@types/node@20.8.5)(typescript@5.2.2)
+        version: 10.9.1(@types/node@20.8.6)(typescript@5.2.2)
 
   packages/tsconfig: {}
 
@@ -253,7 +253,7 @@ packages:
     engines: {node: ^8.13.0 || >=10.10.0}
     dependencies:
       '@grpc/proto-loader': 0.7.10
-      '@types/node': 20.8.5
+      '@types/node': 20.8.6
     dev: false
 
   /@grpc/proto-loader@0.7.10:
@@ -321,7 +321,7 @@ packages:
     dependencies:
       '@inquirer/type': 1.1.5
       '@types/mute-stream': 0.0.2
-      '@types/node': 20.8.5
+      '@types/node': 20.8.6
       '@types/wrap-ansi': 3.0.0
       ansi-escapes: 4.3.2
       chalk: 4.1.2
@@ -926,11 +926,11 @@ packages:
   /@types/mute-stream@0.0.2:
     resolution: {integrity: sha512-FpiGjk6+IOrN0lZEfUUjdra1csU1VxwYFj4S0Zj+TJpu5x5mZW30RkEZojTadrNZHNmpCHgoE62IQZAH0OeuIA==}
     dependencies:
-      '@types/node': 20.8.5
+      '@types/node': 20.8.6
     dev: true
 
-  /@types/node@20.8.5:
-    resolution: {integrity: sha512-SPlobFgbidfIeOYlzXiEjSYeIJiOCthv+9tSQVpvk4PAdIIc+2SmjNVzWXk9t0Y7dl73Zdf+OgXKHX9XtkqUpw==}
+  /@types/node@20.8.6:
+    resolution: {integrity: sha512-eWO4K2Ji70QzKUqRy6oyJWUeB7+g2cRagT3T/nxYibYcT4y2BDL8lqolRXjTHmkZCdJfIPaY73KbJAZmcryxTQ==}
     dependencies:
       undici-types: 5.25.3
 
@@ -4210,7 +4210,7 @@ packages:
       '@protobufjs/path': 1.1.2
       '@protobufjs/pool': 1.1.0
       '@protobufjs/utf8': 1.1.0
-      '@types/node': 20.8.5
+      '@types/node': 20.8.6
       long: 5.2.3
     dev: false
 
@@ -4907,7 +4907,7 @@ packages:
     resolution: {integrity: sha512-Y/arvbn+rrz3JCKl9C4kVNfTfSm2/mEp5FSz5EsZSANGPSlQrpRI5M4PKF+mJnE52jOO90PnPSc3Ur3bTQw0gA==}
     dev: true
 
-  /ts-node@10.9.1(@types/node@20.8.5)(typescript@5.2.2):
+  /ts-node@10.9.1(@types/node@20.8.6)(typescript@5.2.2):
     resolution: {integrity: sha512-NtVysVPkxxrwFGUUxGYhfux8k78pQB3JqYBXlLRZgdGUqTO5wU/UyHop5p70iEbGhB7q5KmiZiU0Y3KlJrScEw==}
     hasBin: true
     peerDependencies:
@@ -4926,7 +4926,7 @@ packages:
       '@tsconfig/node12': 1.0.11
       '@tsconfig/node14': 1.0.3
       '@tsconfig/node16': 1.0.4
-      '@types/node': 20.8.5
+      '@types/node': 20.8.6
       acorn: 8.10.0
       acorn-walk: 8.2.0
       arg: 4.1.3

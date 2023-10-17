@@ -23,7 +23,7 @@
     "@sentry/nextjs": "7.73.0",
     "cheerio": "1.0.0-rc.12",
     "encoding": "^0.1.13",
-    "next": "13.5.4",
+    "next": "13.5.5",
     "next-themes": "^0.2.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",

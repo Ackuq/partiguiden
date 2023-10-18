@@ -38,7 +38,7 @@
     "@next/bundle-analyzer": "13.5.5",
     "@partiguiden/eslint-config-base": "workspace:*",
     "@partiguiden/tsconfig": "workspace:*",
-    "@types/gtag.js": "0.0.16",
+    "@types/gtag.js": "0.0.17",
     "@types/node": "20.8.6",
     "@types/react": "18.2.28",
     "autoprefixer": "^10.4.16",

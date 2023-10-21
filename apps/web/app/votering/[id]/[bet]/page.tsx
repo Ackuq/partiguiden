@@ -70,7 +70,6 @@ export default async function Vote({ params: { id, bet } }: Props) {
             title: `${id} förslagspunkt ${betNumber}`,
           }}
         />
-        <ResponsiveAd />
         <Card className="my-4 flex flex-col gap-2">
           <TotalVote voting={vote.voting.total} />
           <h2 className="text-xl sm:text-2xl">Utskottets förslag</h2>

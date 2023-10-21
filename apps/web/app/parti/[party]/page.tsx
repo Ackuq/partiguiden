@@ -63,7 +63,6 @@ export default async function PartyPage({
       </PageTitle>
       <Container className="flex flex-col gap-4">
         <SocialMediaShare title={party.name} />
-        <ResponsiveAd />
         <Card className="flex flex-col gap-3">
           {party.website && (
             <>
@@ -101,6 +100,7 @@ export default async function PartyPage({
             </span>
           </div>
         </Card>
+        <ResponsiveAd />
         <Card>
           <h3 className="mb-4 text-center text-2xl">Ledning</h3>
           <div

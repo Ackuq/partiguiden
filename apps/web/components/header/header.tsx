@@ -1,9 +1,9 @@
-import ThemeToggle from "./theme-toggle";
-import TabNavigation from "./tab-navigation";
-import DrawerNavigation from "./drawer-navigation";
-import MainLogo from "./main-logo";
 import { DrawerContextProvider } from "./drawer-context";
+import DrawerNavigation from "./drawer-navigation";
 import DrawerToggle from "./drawer-toggle";
+import MainLogo from "./main-logo";
+import TabNavigation from "./tab-navigation";
+import ThemeToggle from "./theme-toggle";
 
 export default function Header() {
   return (

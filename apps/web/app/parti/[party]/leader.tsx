@@ -1,11 +1,13 @@
 "use client";
-import type { Leader } from "@lib/api/member/types";
+
 import Link from "next/link";
-import { routes } from "@lib/navigation";
+
 import MemberImage from "@components/parliament/member-image";
+import type { Leader as TLeader } from "@lib/api/member/types";
+import { routes } from "@lib/navigation";
 
 interface LeaderProps {
-  leader: Leader;
+  leader: TLeader;
 }
 
 export default function Leader({ leader }: LeaderProps) {

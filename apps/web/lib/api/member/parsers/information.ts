@@ -1,4 +1,5 @@
 import type { MemberInformation } from "@lib/api/parliament/types";
+
 import type { Information } from "../types";
 
 export default function parseInformation(

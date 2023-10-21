@@ -1,4 +1,5 @@
 import { PARLIAMENT_BASE_URL } from "@lib/constants";
+
 import type { SpeechDocumentResponse } from "../parliament/types/speech";
 import parseSpeech from "./parsers/speech";
 import type { Speech } from "./types";

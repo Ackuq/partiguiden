@@ -1,4 +1,5 @@
 import { WIKIDATA_QUERY_URL } from "@lib/constants";
+
 import type { TwitterResult, WikidataResponse } from "./types";
 
 export default async function getMemberTwitterFeed(memberId: string) {

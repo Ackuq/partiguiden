@@ -1,8 +1,10 @@
 import * as cheerio from "cheerio";
+
+import type { Leader } from "@lib/api/member/types";
 import type { Party } from "@partiguiden/party-data/types";
+
 import type { WikipediaInfoBox } from "../types";
 import parseLeader from "./leader";
-import type { Leader } from "@lib/api/member/types";
 
 interface WikipediaInfoBoxResponse {
   parse: {

@@ -1,10 +1,12 @@
 "use client";
+
+import Link from "next/link";
+import { useRef, useState } from "react";
+
 import { Card, CommitteeHeader } from "@components/common/card";
 import Pagination from "@components/common/pagination";
 import type { MemberDocument, MemberDocuments } from "@lib/api/member/types";
 import { routes } from "@lib/navigation";
-import Link from "next/link";
-import { useRef, useState } from "react";
 
 interface DocumentProps {
   document: MemberDocument;

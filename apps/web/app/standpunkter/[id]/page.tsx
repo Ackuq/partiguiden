@@ -1,19 +1,21 @@
+import Link from "next/link";
 import { notFound } from "next/navigation";
-import type { Party } from "@partiguiden/party-data/types";
+
+import { ResponsiveAd } from "@components/ads";
+import BreadcrumbsSocialMediaShare from "@components/common/breadcrumbs-social-media-share";
+import Container from "@components/common/container";
+import { Divider } from "@components/common/divider";
+import PageTitle from "@components/common/page-title";
+import { ERROR_404_TITLE } from "@lib/constants";
+import { routes } from "@lib/navigation";
 import {
   getStandpointsForSubject,
   getSubject,
   getSubjects,
 } from "@partiguiden/party-data/reader";
-import { ERROR_404_TITLE } from "@lib/constants";
-import PageTitle from "@components/common/page-title";
+import type { Party } from "@partiguiden/party-data/types";
+
 import PartyStandpoints from "./party-standpoints";
-import { Divider } from "@components/common/divider";
-import Link from "next/link";
-import { routes } from "@lib/navigation";
-import Container from "@components/common/container";
-import BreadcrumbsSocialMediaShare from "@components/common/breadcrumbs-social-media-share";
-import { ResponsiveAd } from "@components/ads";
 
 interface PageProps {
   params: {

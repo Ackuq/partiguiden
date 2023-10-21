@@ -1,12 +1,13 @@
-import { Card } from "@components/common/card";
-import Typed from "@components/common/typed";
 import Link from "next/link";
-import { routes } from "@lib/navigation";
-import PageTitle from "@components/common/page-title";
-import Container from "@components/common/container";
 import { twMerge } from "tailwind-merge";
-import getPopularStandpoints from "@lib/api/analytics/get-popular-standpoints";
+
 import { ResponsiveAd } from "@components/ads";
+import { Card } from "@components/common/card";
+import Container from "@components/common/container";
+import PageTitle from "@components/common/page-title";
+import Typed from "@components/common/typed";
+import getPopularStandpoints from "@lib/api/analytics/get-popular-standpoints";
+import { routes } from "@lib/navigation";
 
 export const metadata = {
   title: "Partiguiden | Rösta rätt",

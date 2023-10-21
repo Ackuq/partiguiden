@@ -1,11 +1,8 @@
 "use client";
-import ReferenceLineLabel from "@components/charts/reference-line-label";
-import CustomTooltip from "@components/charts/tooltip";
-import type { AveragePoll } from "@lib/api/polls/types";
-import type { Party } from "@partiguiden/party-data/types";
-import { partyColors, partyNames } from "@partiguiden/party-data/utils";
-import type { LegendProps } from "recharts";
+
 import Image from "next/image";
+import { useState } from "react";
+import type { LegendProps } from "recharts";
 import {
   Bar,
   BarChart,
@@ -17,8 +14,13 @@ import {
   XAxis,
   YAxis,
 } from "recharts";
+
+import ReferenceLineLabel from "@components/charts/reference-line-label";
+import CustomTooltip from "@components/charts/tooltip";
+import type { AveragePoll } from "@lib/api/polls/types";
 import { partyLogo } from "@lib/assets";
-import { useState } from "react";
+import type { Party } from "@partiguiden/party-data/types";
+import { partyColors, partyNames } from "@partiguiden/party-data/utils";
 
 interface Props {
   currentMonthAverage: AveragePoll;

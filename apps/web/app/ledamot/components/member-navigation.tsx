@@ -1,5 +1,6 @@
-import { routes } from "@lib/navigation";
 import Link from "next/link";
+
+import { routes } from "@lib/navigation";
 
 const tabs = [
   { label: "Ledamöter", route: routes.members },

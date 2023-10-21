@@ -1,7 +1,8 @@
 import type { DocumentListEntry } from "@lib/api/parliament/types";
-import type { DebateListEntry } from "../types";
-import { Committee } from "@lib/committes";
+import { Committee } from "@lib/committees";
+
 import getSpeaker from "../get-speaker";
+import type { DebateListEntry } from "../types";
 
 export default async function parseDebateListEntry(
   data: DocumentListEntry,

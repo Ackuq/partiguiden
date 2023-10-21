@@ -1,4 +1,5 @@
 import type { CheerioAPI } from "cheerio";
+
 import Scraper from "../scraper";
 
 export default class VScraper extends Scraper {

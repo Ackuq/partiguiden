@@ -1,8 +1,9 @@
+import type { MemberData } from "@lib/api/parliament/types";
+
 import type { MemberResponse } from "../types";
 import parsePictureUrl from "./image";
 import parseInformation from "./information";
 import parseTask from "./task";
-import type { MemberData } from "@lib/api/parliament/types";
 
 const notAcceptedTasks = [
   "sv",

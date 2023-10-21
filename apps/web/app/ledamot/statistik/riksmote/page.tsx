@@ -1,12 +1,14 @@
+import { UserCircleIcon } from "@heroicons/react/24/solid";
+
+import MemberNavigation from "@app/ledamot/components/member-navigation";
 import Container from "@components/common/container";
 import PageTitle from "@components/common/page-title";
-import { UserCircleIcon } from "@heroicons/react/24/solid";
 import membersWithAbsenceController from "@lib/api/member/get-members-with-absence";
+import { AbsencePeriod } from "@lib/api/member/types";
 import { createMemberAbsenceLeaderboard } from "@lib/api/member/utils/absence-leaderboard";
 import { getCurrentParliamentYear } from "@lib/api/parliament/get-current-parliament-year";
+
 import AbsenceLeaderboard from "../absence-leaderboard";
-import { AbsencePeriod } from "@lib/api/member/types";
-import MemberNavigation from "@app/ledamot/components/member-navigation";
 
 export const metadata = {
   title: "Ledamotstatistik riksmöte | Partiguiden",

@@ -1,6 +1,6 @@
-import { githubProfile, linkedIn } from "@lib/socials";
 import GithubIcon from "@components/icons/github";
 import LinkedInIcon from "@components/icons/linkedIn";
+import { githubProfile, linkedIn } from "@lib/socials";
 
 export default function Footer() {
   return (

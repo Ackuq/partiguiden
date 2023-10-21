@@ -1,9 +1,10 @@
 import type { Cheerio, CheerioAPI, Element } from "cheerio";
+import * as cheerio from "cheerio";
+
 import type {
   PartyData,
   PartyDataWithoutPartyName,
 } from "@partiguiden/party-data/types";
-import * as cheerio from "cheerio";
 
 interface ScraperArgs {
   baseUrl: string;

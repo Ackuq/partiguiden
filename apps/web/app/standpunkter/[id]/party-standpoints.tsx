@@ -1,7 +1,10 @@
 "use client";
 
-import { Card } from "@components/common/card";
 import { ChevronDownIcon } from "@heroicons/react/24/solid";
+import { useState } from "react";
+import { twMerge } from "tailwind-merge";
+
+import { Card } from "@components/common/card";
 import { dateString } from "@lib/dates";
 import {
   partyBackgroundHover,
@@ -12,8 +15,6 @@ import {
 import type { Standpoint } from "@partiguiden/party-data/types";
 import type { Party } from "@partiguiden/party-data/types";
 import { partyNames } from "@partiguiden/party-data/utils";
-import { useState } from "react";
-import { twMerge } from "tailwind-merge";
 
 interface PartyStandpointsProps {
   party: Party;

@@ -1,4 +1,4 @@
-import type { Committee } from "@lib/committes";
+import type { Committee } from "@lib/committees";
 import type { Party } from "@partiguiden/party-data/types";
 
 export interface MemberDocument {

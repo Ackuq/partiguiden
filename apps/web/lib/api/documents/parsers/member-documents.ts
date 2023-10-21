@@ -1,5 +1,6 @@
 import type { MemberDocuments } from "@lib/api/member/types";
 import type { DocumentList } from "@lib/api/parliament/types";
+
 import parseMemberDocument from "./member-document";
 
 export default function parseMemberDocuments(

@@ -1,4 +1,5 @@
 import { twMerge } from "tailwind-merge";
+
 import type { IconProps } from "./types";
 
 export default function GithubIcon({ size = 28, className }: IconProps) {

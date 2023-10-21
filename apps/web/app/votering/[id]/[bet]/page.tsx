@@ -1,15 +1,16 @@
+import dynamic from "next/dynamic";
+import Link from "next/link";
+import { notFound } from "next/navigation";
+
+import Accordion from "@components/common/accordion";
 import BreadcrumbsSocialMediaShare from "@components/common/breadcrumbs-social-media-share";
 import { Card } from "@components/common/card";
 import Container from "@components/common/container";
 import { Divider } from "@components/common/divider";
 import PageTitle from "@components/common/page-title";
 import getVote from "@lib/api/vote/get-vote";
-import { routes } from "@lib/navigation";
-import { notFound } from "next/navigation";
-import Link from "next/link";
 import type { ProcessedDocument, VoteAppendixItem } from "@lib/api/vote/types";
-import Accordion from "@components/common/accordion";
-import dynamic from "next/dynamic";
+import { routes } from "@lib/navigation";
 
 const ResponsiveAd = dynamic(() => import("@components/ads/responsive-ad"), {
   ssr: false,

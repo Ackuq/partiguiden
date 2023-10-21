@@ -1,15 +1,16 @@
-import { Card } from "@components/common/card";
-import MemberImage from "@components/parliament/member-image";
-import type {
-  AbsenceLeaderboard as TAbsenceLeaderboard,
-  AbsencePeriod,
-  MemberAbsenceResponse,
-} from "@lib/api/member/types";
-import { partyLogo } from "@lib/assets";
-import { routes } from "@lib/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import { twMerge } from "tailwind-merge";
+
+import { Card } from "@components/common/card";
+import MemberImage from "@components/parliament/member-image";
+import type {
+  AbsencePeriod,
+  MemberAbsenceResponse,
+  AbsenceLeaderboard as TAbsenceLeaderboard,
+} from "@lib/api/member/types";
+import { partyLogo } from "@lib/assets";
+import { routes } from "@lib/navigation";
 
 interface Props {
   leaderboard: TAbsenceLeaderboard;

@@ -1,4 +1,5 @@
 import { PARLIAMENT_BASE_URL } from "@lib/constants";
+
 import type { MemberLookup } from "../parliament/types";
 
 export default async function fetchMember(id: string) {

@@ -1,8 +1,8 @@
+import { twMerge } from "tailwind-merge";
+
 import PartyIcon from "@components/party/icon";
 import type { VotingResult } from "@lib/api/vote/types";
 import type { Party } from "@partiguiden/party-data/types";
-
-import { twMerge } from "tailwind-merge";
 
 interface ResultColumnProps {
   votes: Party[];

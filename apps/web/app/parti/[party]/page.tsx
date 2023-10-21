@@ -1,3 +1,6 @@
+import { notFound } from "next/navigation";
+
+import { ResponsiveAd } from "@components/ads";
 import { Card } from "@components/common/card";
 import Container from "@components/common/container";
 import { Divider } from "@components/common/divider";
@@ -5,13 +8,12 @@ import ExternalLink from "@components/common/external-link";
 import PageTitle from "@components/common/page-title";
 import SocialMediaShare from "@components/common/social-media-share";
 import PartyIcon from "@components/party/icon";
+import { getParty } from "@lib/api/party/get-party";
 import { ERROR_404_TITLE } from "@lib/constants";
 import { Party } from "@partiguiden/party-data/types";
 import { partyNames } from "@partiguiden/party-data/utils";
-import { notFound } from "next/navigation";
+
 import Leader from "./leader";
-import { getParty } from "@lib/api/party/get-party";
-import { ResponsiveAd } from "@components/ads";
 
 interface PageProps {
   params: {

@@ -1,6 +1,7 @@
-import { committeeInfo, type Committee } from "@lib/committes";
-import { committeeBackground } from "@lib/styles/committees";
 import { twMerge } from "tailwind-merge";
+
+import { type Committee, committeeInfo } from "@lib/committees";
+import { committeeBackground } from "@lib/styles/committees";
 
 type CardHeaderProps = React.PropsWithChildren<{
   className?: string;

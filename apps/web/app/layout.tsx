@@ -1,11 +1,13 @@
-import "./global.css";
 import { Roboto } from "next/font/google";
 import type { PropsWithChildren } from "react";
-import Head from "./head";
-import Footer from "./footer";
+import { twMerge } from "tailwind-merge";
+
 import Header from "@components/header/header";
 import { ThemeProvider } from "@components/providers/theme-provider";
-import { twMerge } from "tailwind-merge";
+
+import Footer from "./footer";
+import "./global.css";
+import Head from "./head";
 
 const roboto = Roboto({
   weight: ["300", "400", "500", "700"],

@@ -1,4 +1,5 @@
 import type { DocumentReference } from "@lib/api/parliament/types";
+
 import type { ProcessedDocument } from "../types";
 
 interface ReferencesResponse {

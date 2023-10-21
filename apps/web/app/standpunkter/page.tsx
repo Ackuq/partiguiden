@@ -1,9 +1,10 @@
-import PageTitle from "@components/common/page-title";
-import { getSubjects } from "@partiguiden/party-data/reader";
 import { PencilSquareIcon } from "@heroicons/react/24/solid";
 import Link from "next/link";
-import { routes } from "@lib/navigation";
+
 import { ResponsiveAd } from "@components/ads";
+import PageTitle from "@components/common/page-title";
+import { routes } from "@lib/navigation";
+import { getSubjects } from "@partiguiden/party-data/reader";
 
 export const metadata = {
   title: "Partiernas ståndpunkter | Partiguiden",

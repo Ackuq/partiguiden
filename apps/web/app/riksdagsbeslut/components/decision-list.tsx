@@ -1,15 +1,17 @@
 "use client";
 
+import { useRouter } from "next/navigation";
+import { useEffect } from "react";
+
+import FlowAdWrapper from "@components/ads/flow-ad-wrapper";
 import Pagination from "@components/common/pagination";
 import { useFilterContext } from "@components/filter/filter-context";
 import type { Decisions } from "@lib/api/decisions/types";
 import { useIsMount } from "@lib/hooks/use-is-mount";
 import { routes } from "@lib/navigation";
 import { buildSearchParameters } from "@lib/utils/search-params";
-import { useRouter } from "next/navigation";
-import { useEffect } from "react";
+
 import Decision from "./decision";
-import FlowAdWrapper from "@components/ads/flow-ad-wrapper";
 
 interface Props {
   currentPage: number;

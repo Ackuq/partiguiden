@@ -1,8 +1,9 @@
 "use client";
 
 import { ChevronDownIcon } from "@heroicons/react/24/solid";
-import type { Information } from "@lib/api/member/types";
 import { useState } from "react";
+
+import type { Information } from "@lib/api/member/types";
 
 interface Props {
   information: Information;

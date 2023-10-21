@@ -1,6 +1,7 @@
+import { twMerge } from "tailwind-merge";
+
 import { Card } from "@components/common/card";
 import type { MemberDetailedResponse } from "@lib/api/member/types";
-import { twMerge } from "tailwind-merge";
 
 interface StatisticsCardProps {
   value: string;

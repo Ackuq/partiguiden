@@ -1,12 +1,13 @@
 "use client";
 
 import { ChevronDownIcon } from "@heroicons/react/24/solid";
-import useOutsideClick from "@lib/hooks/use-outside-click";
-import type { NavigationEntry, RouteEntry } from "@lib/navigation";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { twMerge } from "tailwind-merge";
+
+import useOutsideClick from "@lib/hooks/use-outside-click";
+import type { NavigationEntry, RouteEntry } from "@lib/navigation";
 
 const tabClassName = twMerge(
   "min-w-[90px] flex-shrink-0 whitespace-nowrap p-4 text-sm uppercase hover:opacity-80",

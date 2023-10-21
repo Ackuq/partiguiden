@@ -1,6 +1,7 @@
-import { Divider } from "@components/common/divider";
 import type { TooltipProps } from "recharts";
 import { twMerge } from "tailwind-merge";
+
+import { Divider } from "@components/common/divider";
 
 type ValueType = string | number;
 type NameType = string;

@@ -1,4 +1,5 @@
 import { PARLIAMENT_BASE_URL } from "@lib/constants";
+
 import parseDecisions from "./parsers/decisions";
 
 interface Query {

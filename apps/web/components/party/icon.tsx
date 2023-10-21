@@ -1,7 +1,8 @@
 import Image from "next/image";
+import { twMerge } from "tailwind-merge";
+
 import { partyLogo } from "@lib/assets";
 import type { Party } from "@partiguiden/party-data/types";
-import { twMerge } from "tailwind-merge";
 
 interface PartyIconProps {
   party: Party;

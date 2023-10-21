@@ -1,11 +1,12 @@
+import getProtocols from "@lib/api/parliament/get-protocols";
 import type {
   DocumentList,
   DocumentListEntry,
 } from "@lib/api/parliament/types";
-import type { Debate, DebateStatement } from "../types";
+
 import getSpeaker from "../get-speaker";
-import getProtocols from "@lib/api/parliament/get-protocols";
 import getSpeech from "../get-speech";
+import type { Debate, DebateStatement } from "../types";
 
 function getSpeechesDocuments(document: DocumentListEntry) {
   const debate = document.debatt;

@@ -1,14 +1,14 @@
-import s from "./parties/S.json";
-import sd from "./parties/SD.json";
+import c from "./parties/C.json";
+import kd from "./parties/KD.json";
+import l from "./parties/L.json";
 import m from "./parties/M.json";
 import mp from "./parties/MP.json";
-import l from "./parties/L.json";
-import kd from "./parties/KD.json";
-import c from "./parties/C.json";
+import s from "./parties/S.json";
+import sd from "./parties/SD.json";
 import v from "./parties/V.json";
 import subjects from "./subjects.json";
 import type { Standpoint } from "./types";
-import { Party, partySortOrder, type Subject } from "./types";
+import { Party, type Subject, partySortOrder } from "./types";
 
 export function getSubjects(): Subject[] {
   return Object.values(subjects);

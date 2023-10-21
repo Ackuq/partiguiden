@@ -1,5 +1,6 @@
-import type { DocumentStatus } from "@lib/api/parliament/types";
 import stripJsonComments from "strip-json-comments";
+
+import type { DocumentStatus } from "@lib/api/parliament/types";
 
 export default async function checkIfVotesExist(url: string): Promise<boolean> {
   const response = await fetch(url, {

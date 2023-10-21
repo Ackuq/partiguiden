@@ -1,13 +1,15 @@
-import PageTitle from "@components/common/page-title";
 import { DocumentCheckIcon } from "@heroicons/react/24/solid";
+import { Suspense } from "react";
+
+import PageTitle from "@components/common/page-title";
+import LoadingListWithFilter from "@components/loading/list-with-filter";
 import {
   parseNumberSearchParam,
   parseStringArraySearchParam,
   parseStringSearchParam,
 } from "@lib/utils/search-params";
+
 import DecisionListWrapper from "./components/decision-list-wrapper";
-import { Suspense } from "react";
-import LoadingListWithFilter from "@components/loading/list-with-filter";
 
 interface Props {
   searchParams: {

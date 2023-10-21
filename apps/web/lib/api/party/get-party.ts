@@ -1,5 +1,6 @@
-import { partyNames } from "@partiguiden/party-data/utils";
 import type { Party } from "@partiguiden/party-data/types";
+import { partyNames } from "@partiguiden/party-data/utils";
+
 import getWikipediaAbstract from "../wikipedia/get-abstract";
 import getWikipediaInfoBox from "../wikipedia/get-info-box";
 import type { PartyData } from "./types";

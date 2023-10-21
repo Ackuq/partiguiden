@@ -1,8 +1,9 @@
-import type { Party } from "@partiguiden/party-data/types";
 import sleep from "@lib/utils/sleep";
+import type { Party } from "@partiguiden/party-data/types";
+
+import { getInfoBoxAttr } from "./parsers/info-box";
 import type { WikipediaInfoBox } from "./types";
 import { wikipediaPartyMap } from "./utils/party-map";
-import { getInfoBoxAttr } from "./parsers/info-box";
 
 export default async function getWikipediaInfoBox(
   party: Party,

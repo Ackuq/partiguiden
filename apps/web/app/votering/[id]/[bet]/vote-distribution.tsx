@@ -1,9 +1,5 @@
 "use client";
-import CustomLegend from "@components/charts/legend";
-import PartySymbolTick from "@components/charts/party-symbol-tick";
-import CustomTooltip from "@components/charts/tooltip";
-import type { VotingDict } from "@lib/api/vote/types";
-import { getThemeVotingColors } from "@lib/colors/voting";
+
 import { useTheme } from "next-themes";
 import {
   Bar,
@@ -15,6 +11,12 @@ import {
   XAxis,
   YAxis,
 } from "recharts";
+
+import CustomLegend from "@components/charts/legend";
+import PartySymbolTick from "@components/charts/party-symbol-tick";
+import CustomTooltip from "@components/charts/tooltip";
+import type { VotingDict } from "@lib/api/vote/types";
+import { getThemeVotingColors } from "@lib/colors/voting";
 
 interface Result {
   name: string;

@@ -1,4 +1,5 @@
 import type { SpeechDocumentResponse } from "@lib/api/parliament/types/speech";
+
 import type { Speech } from "../types";
 
 export default function parseSpeech(response: SpeechDocumentResponse): Speech {

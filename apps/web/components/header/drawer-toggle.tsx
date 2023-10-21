@@ -1,8 +1,9 @@
 "use client";
 
-import { useContext } from "react";
-import { DrawerContext } from "./drawer-context";
 import { EllipsisVerticalIcon } from "@heroicons/react/24/solid";
+import { useContext } from "react";
+
+import { DrawerContext } from "./drawer-context";
 
 export default function DrawerToggle() {
   const { openDrawer } = useContext(DrawerContext);

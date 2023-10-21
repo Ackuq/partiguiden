@@ -1,15 +1,16 @@
-import PartyIcon from "@components/party/icon";
 import {
-  HomeIcon,
-  PencilSquareIcon,
-  UserCircleIcon,
   ChartBarIcon,
-  InformationCircleIcon,
-  DocumentCheckIcon,
   ChatBubbleLeftRightIcon,
+  DocumentCheckIcon,
+  HomeIcon,
+  InformationCircleIcon,
+  PencilSquareIcon,
   ScaleIcon,
+  UserCircleIcon,
   UserGroupIcon,
 } from "@heroicons/react/24/solid";
+
+import PartyIcon from "@components/party/icon";
 import type { Party } from "@partiguiden/party-data/types";
 import { partySortOrder } from "@partiguiden/party-data/types";
 import { partyNames } from "@partiguiden/party-data/utils";

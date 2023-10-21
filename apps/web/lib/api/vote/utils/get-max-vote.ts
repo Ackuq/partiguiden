@@ -1,4 +1,5 @@
 import { Party } from "@partiguiden/party-data/types";
+
 import type { VoteDescription, VotingDict, VotingResult } from "../types";
 
 const decisions: VoteDescription[] = ["yes", "no", "refrain"];

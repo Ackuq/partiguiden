@@ -1,10 +1,11 @@
+import Image from "next/image";
+import Link from "next/link";
+import { twMerge } from "tailwind-merge";
+
 import MemberImage from "@components/parliament/member-image";
 import type { MemberListEntry } from "@lib/api/member/types";
 import { partyLogo } from "@lib/assets";
 import { routes } from "@lib/navigation";
-import Image from "next/image";
-import Link from "next/link";
-import { twMerge } from "tailwind-merge";
 
 interface Props {
   member: MemberListEntry;

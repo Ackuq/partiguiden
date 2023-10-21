@@ -1,3 +1,6 @@
+import { notFound } from "next/navigation";
+
+import { ResponsiveAd } from "@components/ads";
 import BreadcrumbsSocialMediaShare from "@components/common/breadcrumbs-social-media-share";
 import { Card } from "@components/common/card";
 import Container from "@components/common/container";
@@ -5,9 +8,8 @@ import { Divider } from "@components/common/divider";
 import PageTitle from "@components/common/page-title";
 import getDebate from "@lib/api/debates/get-debate";
 import { routes } from "@lib/navigation";
-import { notFound } from "next/navigation";
+
 import Statement from "./statement";
-import { ResponsiveAd } from "@components/ads";
 
 interface Props {
   params: {

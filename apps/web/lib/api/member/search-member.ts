@@ -1,6 +1,7 @@
 import { PARLIAMENT_BASE_URL } from "@lib/constants";
+
+import type { MemberLookup, MemberParty } from "../parliament/types";
 import { parseMember } from "./parsers/member";
-import type { MemberParty, MemberLookup } from "../parliament/types";
 
 interface Query {
   fnamn: string;

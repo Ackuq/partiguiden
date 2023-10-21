@@ -2,6 +2,7 @@
 
 import { MagnifyingGlassIcon } from "@heroicons/react/24/solid";
 import { twMerge } from "tailwind-merge";
+
 import { useFilterContext } from "./filter-context";
 
 export default function SearchFilter() {

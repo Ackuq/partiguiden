@@ -1,10 +1,11 @@
-import { Card, CommitteeHeader } from "@components/common/card";
 import Image from "next/image";
+import Link from "next/link";
+
+import { Card, CommitteeHeader } from "@components/common/card";
 import MemberImage from "@components/parliament/member-image";
 import type { DebateListEntry } from "@lib/api/debates/types";
 import { partyLogo } from "@lib/assets";
 import { routes } from "@lib/navigation";
-import Link from "next/link";
 
 interface Props {
   debate: DebateListEntry;

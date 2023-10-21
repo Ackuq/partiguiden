@@ -1,4 +1,4 @@
-import { Committee } from "@lib/committes";
+import { Committee } from "@lib/committees";
 
 export const committeeBackground: {
   [K in Committee]: `bg-committee-${K} dark:bg-committee-dark-${K}`;

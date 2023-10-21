@@ -2,9 +2,10 @@ import type {
   DocumentList,
   DocumentListEntry,
 } from "@lib/api/parliament/types";
-import checkIfVotesExist from "../utils/check-if-vote-exists";
+import { Committee } from "@lib/committees";
+
 import type { Decision, Decisions } from "../types";
-import { Committee } from "@lib/committes";
+import checkIfVotesExist from "../utils/check-if-vote-exists";
 
 async function parseDecision(data: DocumentListEntry): Promise<Decision> {
   const {

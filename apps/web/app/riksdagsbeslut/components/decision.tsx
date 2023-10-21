@@ -1,16 +1,19 @@
 "use client";
-import { PrimaryButton } from "@components/common/button";
-import { Card, CommitteeHeader } from "@components/common/card";
-import { Divider } from "@components/common/divider";
+
 import { ChevronDownIcon } from "@heroicons/react/24/solid";
-import type { Decision } from "@lib/api/decisions/types";
-import { routes } from "@lib/navigation";
 import Link from "next/link";
 import { useState } from "react";
 
+import { PrimaryButton } from "@components/common/button";
+import { Card, CommitteeHeader } from "@components/common/card";
+import { Divider } from "@components/common/divider";
+import type { Decision as TDecision } from "@lib/api/decisions/types";
+import { routes } from "@lib/navigation";
+
 interface Props {
-  decision: Decision;
+  decision: TDecision;
 }
+
 export default function Decision({ decision }: Props) {
   const [visible, setVisible] = useState(false);
 

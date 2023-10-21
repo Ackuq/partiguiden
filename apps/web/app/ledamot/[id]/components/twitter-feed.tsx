@@ -1,9 +1,10 @@
 "use client";
 
-import Loading from "@components/common/loading";
-import type { TwitterResult } from "@lib/api/wikidata/types";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
+
+import Loading from "@components/common/loading";
+import type { TwitterResult } from "@lib/api/wikidata/types";
 
 interface Props {
   twitterFeed?: TwitterResult;

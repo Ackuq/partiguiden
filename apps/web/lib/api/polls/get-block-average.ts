@@ -1,4 +1,5 @@
-import { newBlocks, type Blocks, classicBlocks } from "@lib/utils/blocks";
+import { type Blocks, classicBlocks, newBlocks } from "@lib/utils/blocks";
+
 import type { AveragePoll } from "./types";
 import type { BlockAverage, BlocksAverage } from "./types";
 

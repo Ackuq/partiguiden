@@ -1,8 +1,10 @@
 "use client";
 
-import { mainNavigation } from "@lib/navigation";
+import { ArrowLeftIcon, ArrowRightIcon } from "@heroicons/react/24/solid";
 import { useCallback, useEffect, useRef, useState } from "react";
-import { ArrowRightIcon, ArrowLeftIcon } from "@heroicons/react/24/solid";
+
+import { mainNavigation } from "@lib/navigation";
+
 import TabEntry from "./tab-entry";
 
 const SCROLL_STEP = 300;

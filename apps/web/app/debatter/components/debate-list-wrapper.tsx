@@ -1,8 +1,9 @@
-import { FilterContextProvider } from "@components/filter/filter-context";
 import Filter from "@components/filter";
+import { FilterContextProvider } from "@components/filter/filter-context";
 import initialFilterToggles from "@components/filter/initial-filter-toggles";
-import DebateList from "./debate-list";
 import getDebates from "@lib/api/debates/get-debates";
+
+import DebateList from "./debate-list";
 
 interface Props {
   search?: string;

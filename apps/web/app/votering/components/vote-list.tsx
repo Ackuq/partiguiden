@@ -1,19 +1,21 @@
 "use client";
 
-import { useFilterContext } from "@components/filter/filter-context";
-import type { VoteList } from "@lib/api/vote/types";
-import { routes } from "@lib/navigation";
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";
-import Vote from "./vote";
-import Pagination from "@components/common/pagination";
-import { useIsMount } from "@lib/hooks/use-is-mount";
-import { buildSearchParameters } from "@lib/utils/search-params";
+
 import FlowAdWrapper from "@components/ads/flow-ad-wrapper";
+import Pagination from "@components/common/pagination";
+import { useFilterContext } from "@components/filter/filter-context";
+import type { VoteList as TVoteList } from "@lib/api/vote/types";
+import { useIsMount } from "@lib/hooks/use-is-mount";
+import { routes } from "@lib/navigation";
+import { buildSearchParameters } from "@lib/utils/search-params";
+
+import Vote from "./vote";
 
 interface Props {
   currentPage: number;
-  votes: VoteList;
+  votes: TVoteList;
 }
 
 export default function VoteList({ votes, currentPage }: Props) {

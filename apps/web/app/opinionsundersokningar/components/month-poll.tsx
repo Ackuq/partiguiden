@@ -1,4 +1,5 @@
 "use client";
+
 import {
   Bar,
   BarChart,
@@ -10,12 +11,13 @@ import {
   XAxis,
   YAxis,
 } from "recharts";
+
 import PartySymbolTick from "@components/charts/party-symbol-tick";
-import type { AveragePoll } from "@lib/api/polls/types";
-import { partyColors, partyNames } from "@partiguiden/party-data/utils";
 import ReferenceLineLabel from "@components/charts/reference-line-label";
 import CustomTooltip from "@components/charts/tooltip";
+import type { AveragePoll } from "@lib/api/polls/types";
 import type { Party } from "@partiguiden/party-data/types";
+import { partyColors, partyNames } from "@partiguiden/party-data/utils";
 
 interface Props {
   currentMonthAverage: AveragePoll;

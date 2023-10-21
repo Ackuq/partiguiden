@@ -1,4 +1,5 @@
 import type { MemberData } from "@lib/api/parliament/types";
+
 import type { MemberListEntry } from "../types";
 import parsePictureUrl from "./image";
 

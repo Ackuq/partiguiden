@@ -1,8 +1,10 @@
 "use client";
 
 import { twMerge } from "tailwind-merge";
-import { useFilterContext } from "./filter-context";
+
 import CheckMark from "@components/icons/check-mark";
+
+import { useFilterContext } from "./filter-context";
 
 export default function SearchToggles() {
   const { toggles, updateToggle } = useFilterContext();

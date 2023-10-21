@@ -1,10 +1,12 @@
 "use client";
 
+import { useState } from "react";
+
 import { Card } from "@components/common/card";
 import type { MemberDocuments } from "@lib/api/member/types";
-import { useState } from "react";
-import Documents from "./documents";
 import type { TwitterResult } from "@lib/api/wikidata/types";
+
+import Documents from "./documents";
 import TwitterFeed from "./twitter-feed";
 
 enum Tab {

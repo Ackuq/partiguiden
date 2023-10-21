@@ -1,8 +1,5 @@
 "use client";
-import CustomTooltip from "@components/charts/tooltip";
-import type { MonthlyAverage } from "@lib/api/polls/types";
-import { Party } from "@partiguiden/party-data/types";
-import { partyColors } from "@partiguiden/party-data/utils";
+
 import { useTheme } from "next-themes";
 import React, { useState } from "react";
 import type { LegendProps } from "recharts";
@@ -17,6 +14,11 @@ import {
   YAxis,
 } from "recharts";
 import colors from "tailwindcss/colors";
+
+import CustomTooltip from "@components/charts/tooltip";
+import type { MonthlyAverage } from "@lib/api/polls/types";
+import { Party } from "@partiguiden/party-data/types";
+import { partyColors } from "@partiguiden/party-data/utils";
 
 interface Props {
   historicPolls: MonthlyAverage;

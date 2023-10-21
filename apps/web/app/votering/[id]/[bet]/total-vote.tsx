@@ -1,5 +1,6 @@
 "use client";
 
+import { useTheme } from "next-themes";
 import {
   Bar,
   BarChart,
@@ -9,11 +10,11 @@ import {
   XAxis,
   YAxis,
 } from "recharts";
-import type { VotingEntry } from "@lib/api/vote/types";
-import { useTheme } from "next-themes";
-import { getThemeVotingColors } from "@lib/colors/voting";
-import CustomTooltip from "@components/charts/tooltip";
+
 import CustomLegend from "@components/charts/legend";
+import CustomTooltip from "@components/charts/tooltip";
+import type { VotingEntry } from "@lib/api/vote/types";
+import { getThemeVotingColors } from "@lib/colors/voting";
 
 const parseData = (voting: VotingEntry) => ({
   name: "Totalt",

@@ -1,13 +1,14 @@
 "use client";
 
-import { twMerge } from "tailwind-merge";
-import SearchFilter from "./search";
-import SearchToggles from "./toggles";
-import { useEffect, useState } from "react";
 import {
   AdjustmentsHorizontalIcon,
   XMarkIcon,
 } from "@heroicons/react/24/solid";
+import { useEffect, useState } from "react";
+import { twMerge } from "tailwind-merge";
+
+import SearchFilter from "./search";
+import SearchToggles from "./toggles";
 
 export default function Filter() {
   const [drawerVisible, setDrawerVisible] = useState(false);

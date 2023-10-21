@@ -1,11 +1,13 @@
 "use client";
 
 import { XMarkIcon } from "@heroicons/react/24/solid";
-import { mainNavigation } from "@lib/navigation";
 import { useContext, useEffect } from "react";
-import DrawerEntry from "./drawer-entry";
 import { twMerge } from "tailwind-merge";
+
+import { mainNavigation } from "@lib/navigation";
+
 import { DrawerContext } from "./drawer-context";
+import DrawerEntry from "./drawer-entry";
 
 export default function DrawerNavigation() {
   const { closeDrawer, drawerIsOpen } = useContext(DrawerContext);

@@ -1,6 +1,7 @@
 import { PARLIAMENT_BASE_URL } from "@lib/constants";
-import { parseVotes } from "./parsers/votes";
+
 import type { DocumentList } from "../parliament/types";
+import { parseVotes } from "./parsers/votes";
 
 interface Query {
   search?: string;

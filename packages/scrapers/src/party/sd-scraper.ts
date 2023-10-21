@@ -1,6 +1,8 @@
 import * as pdfjs from "pdfjs-dist";
-import Scraper from "../scraper";
+
 import type { PartyDataWithoutPartyName } from "@partiguiden/party-data/types";
+
+import Scraper from "../scraper";
 
 type SectionDestination = [
   { num: number; gen: number },

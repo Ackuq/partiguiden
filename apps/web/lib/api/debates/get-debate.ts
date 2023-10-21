@@ -1,7 +1,8 @@
 import { PARLIAMENT_BASE_URL } from "@lib/constants";
+
 import type { DocumentList } from "../parliament/types";
-import parseDebate from "./parsers/debate";
 import { DEBATE_DOCUMENT_TYPES } from "./constants";
+import parseDebate from "./parsers/debate";
 import type { Debate } from "./types";
 
 export default async function getDebate(

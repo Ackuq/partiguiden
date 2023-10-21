@@ -1,10 +1,11 @@
 "use client";
 
+import { Cell, Pie, PieChart, ResponsiveContainer, Tooltip } from "recharts";
+
 import CustomTooltip from "@components/charts/tooltip";
 import type { AveragePoll, BlocksAverage } from "@lib/api/polls/types";
-import { allBlocks, type Blocks } from "@lib/utils/blocks";
+import { type Blocks, allBlocks } from "@lib/utils/blocks";
 import { partyColors, partyNames } from "@partiguiden/party-data/utils";
-import { Cell, Pie, PieChart, ResponsiveContainer, Tooltip } from "recharts";
 
 function blockSort(blocks: Blocks["values"]) {
   return function (a: AveragePoll[number], b: AveragePoll[number]) {

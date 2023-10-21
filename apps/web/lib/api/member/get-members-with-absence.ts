@@ -1,7 +1,7 @@
-import type { MemberAbsenceResponse } from "./types";
-import getMembers from "./get-members";
-import getAbsence from "./get-absence";
 import type { MemberParty } from "../parliament/types";
+import getAbsence from "./get-absence";
+import getMembers from "./get-members";
+import type { MemberAbsenceResponse } from "./types";
 
 interface Query {
   parliamentYears?: string[];

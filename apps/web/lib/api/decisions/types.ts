@@ -1,4 +1,4 @@
-import type { Committee } from "@lib/committes";
+import type { Committee } from "@lib/committees";
 
 export interface Decision {
   id: string;

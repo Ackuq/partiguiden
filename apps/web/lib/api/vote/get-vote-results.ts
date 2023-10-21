@@ -1,7 +1,9 @@
-import { PARLIAMENT_BASE_URL } from "@lib/constants";
 import stripJsonComments from "strip-json-comments";
-import type { VoteResultsResponse } from "./types";
+
+import { PARLIAMENT_BASE_URL } from "@lib/constants";
+
 import parseVoteResult from "./parsers/vote-result";
+import type { VoteResultsResponse } from "./types";
 
 export default async function getVoteResult(
   id: string,

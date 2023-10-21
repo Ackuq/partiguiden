@@ -1,18 +1,20 @@
+import { notFound } from "next/navigation";
+
+import { ResponsiveAd } from "@components/ads";
+import BreadcrumbsSocialMediaShare from "@components/common/breadcrumbs-social-media-share";
+import Container from "@components/common/container";
+import getMemberDocuments from "@lib/api/documents/get-member-documents";
 import getMember from "@lib/api/member/get-member";
+import getMemberWithAbsence from "@lib/api/member/get-member-with-absence";
+import getMemberTwitterFeed from "@lib/api/wikidata/get-member-twitter-feed";
 // import getMembers from "@lib/api/member/get-members";
 import { ERROR_404_TITLE } from "@lib/constants";
-import { notFound } from "next/navigation";
-import Profile from "./components/profile";
-import BreadcrumbsSocialMediaShare from "@components/common/breadcrumbs-social-media-share";
 import { routes } from "@lib/navigation";
-import Container from "@components/common/container";
-import Statistics from "./components/statistics";
-import getMemberWithAbsence from "@lib/api/member/get-member-with-absence";
-import getMemberDocuments from "@lib/api/documents/get-member-documents";
+
 import Biography from "./components/biography";
+import Profile from "./components/profile";
+import Statistics from "./components/statistics";
 import Tabs from "./components/tabs";
-import getMemberTwitterFeed from "@lib/api/wikidata/get-member-twitter-feed";
-import { ResponsiveAd } from "@components/ads";
 
 interface PageProps {
   params: {

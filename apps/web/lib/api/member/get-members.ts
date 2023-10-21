@@ -1,5 +1,7 @@
-import { PARLIAMENT_BASE_URL } from "@lib/constants";
 import { unstable_cache as cache } from "next/cache";
+
+import { PARLIAMENT_BASE_URL } from "@lib/constants";
+
 import type { MemberList, MemberParty } from "../parliament/types";
 import parseMemberListEntry from "./parsers/member-list-entry";
 

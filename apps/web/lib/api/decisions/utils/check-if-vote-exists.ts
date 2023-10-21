@@ -19,13 +19,20 @@ export default async function checkIfVotesExist(url: string): Promise<boolean> {
 
   const { utskottsforslag: suggestions } = dokumentstatus.dokutskottsforslag;
 
-  if (!Array.isArray(suggestions) && suggestions.votering_id !== null) {
+  if (
+    !Array.isArray(suggestions) &&
+    suggestions.votering_id !== null &&
+    suggestions.votering_id !== ""
+  ) {
     return true;
   }
 
   if (Array.isArray(suggestions)) {
     for (let i = 0; i < suggestions.length; i += 1) {
-      if (suggestions[i].votering_id !== null) {
+      if (
+        suggestions[i].votering_id !== null &&
+        suggestions[i].votering_id !== ""
+      ) {
         return true;
       }
     }

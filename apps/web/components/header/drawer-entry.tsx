@@ -7,7 +7,7 @@ import { twMerge } from "tailwind-merge";
 
 const drawerEntryClassName = twMerge(
   "flex w-full items-center gap-6 px-4 text-lg",
-  "aria-current-page:text-slate-300 dark:aria-current-page:text-primary-light ",
+  "dark:aria-current-page:text-primary-light ",
 );
 
 interface DropdownProps {

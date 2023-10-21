@@ -7,9 +7,7 @@ export default function Footer() {
     <footer className="bg-primary dark:bg-primary-elevated-dark mt-auto flex flex-col gap-3 py-6 text-center text-white">
       <span>© Axel Pettersson 2023</span>
       <span>
-        <a href="mailto:hello@partiguiden.se" aria-label="Maila Partiguiden">
-          hello@partiguiden.se
-        </a>
+        <a href="mailto:hello@partiguiden.se">hello@partiguiden.se</a>
       </span>
       <span className="flex items-center justify-center gap-3">
         <a

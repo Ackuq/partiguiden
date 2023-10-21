@@ -2,10 +2,11 @@ import type {
   DocumentList,
   DocumentListEntry,
 } from "@lib/api/parliament/types";
+import { Committee } from "@lib/committees";
+
+import getVoteResult from "../get-vote-results";
 import type { VoteList, VoteListEntry } from "../types";
 import titleTrim from "../utils/title-trim";
-import getVoteResult from "../get-vote-results";
-import { Committee } from "@lib/committes";
 
 async function parseVote(
   data: DocumentListEntry,

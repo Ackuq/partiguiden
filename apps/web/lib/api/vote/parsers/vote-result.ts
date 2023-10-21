@@ -1,13 +1,14 @@
 import type {
+  DocumentProposalTable,
+  DocumentStatus,
   NewVotingRow,
   OldVotingRow,
-  DocumentStatus,
-  DocumentProposalTable,
   OldVotingTable,
 } from "@lib/api/parliament/types";
+
 import type { VoteResultsResponse } from "../types";
-import { getMaxVote } from "../utils/get-max-vote";
 import extractVotes from "../utils/extract-votes";
+import { getMaxVote } from "../utils/get-max-vote";
 
 function getVotingRow(
   votingTable: DocumentProposalTable,
@@ -15,7 +16,7 @@ function getVotingRow(
   if ("tbody" in votingTable && votingTable.tbody !== undefined) {
     return votingTable.tbody.tr;
   }
-  return (<OldVotingTable>votingTable).tr;
+  return (votingTable as OldVotingTable).tr;
 }
 
 export default function parseVoteResult(

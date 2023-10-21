@@ -1,6 +1,7 @@
 import Script from "next/script";
-import * as gtag from "@lib/gtag";
+
 import { ADSENSE_CLIENT_ID } from "@lib/constants";
+import * as gtag from "@lib/gtag";
 
 export default function Head() {
   return (

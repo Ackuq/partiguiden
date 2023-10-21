@@ -1,8 +1,9 @@
-import { FilterContextProvider } from "@components/filter/filter-context";
-import VoteList from "./vote-list";
 import Filter from "@components/filter";
+import { FilterContextProvider } from "@components/filter/filter-context";
 import initialFilterToggles from "@components/filter/initial-filter-toggles";
 import { getVotes } from "@lib/api/vote/get-votes";
+
+import VoteList from "./vote-list";
 
 interface Props {
   search?: string;

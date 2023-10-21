@@ -1,6 +1,7 @@
 import { PARLIAMENT_BASE_URL } from "@lib/constants";
-import parseDebates from "./parsers/debates";
+
 import { DEBATE_DOCUMENT_TYPES } from "./constants";
+import parseDebates from "./parsers/debates";
 
 interface Query {
   search?: string;

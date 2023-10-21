@@ -1,5 +1,6 @@
+import type { Committee } from "@lib/committees";
 import type { Party } from "@partiguiden/party-data/types";
-import type { Committee } from "@lib/committes";
+
 import type { MemberParty } from "../parliament/types";
 
 /**

@@ -1,5 +1,6 @@
-import { routes } from "@lib/navigation";
 import Link from "next/link";
+
+import { routes } from "@lib/navigation";
 
 const tabs = [
   { label: "Ledamöter", route: routes.members },
@@ -21,7 +22,7 @@ export default function MemberNavigation({ value }: Props) {
             className="py-3 first-of-type:ml-auto last-of-type:mr-auto"
           >
             <Link
-              className="aria-current-page:border-b-2 border-primary-light dark:border-primary px-4 py-3 text-sm uppercase"
+              className="aria-current-page:border-b-2 border-teal-600 dark:border-teal-700 px-4 py-3 text-sm uppercase"
               aria-current={index === value ? "page" : "false"}
               href={tab.route}
             >

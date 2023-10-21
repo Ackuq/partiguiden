@@ -1,10 +1,12 @@
 "use client";
 
+import { useState } from "react";
+
 import { Card } from "@components/common/card";
 import type { MemberDocuments } from "@lib/api/member/types";
-import { useState } from "react";
-import Documents from "./documents";
 import type { TwitterResult } from "@lib/api/wikidata/types";
+
+import Documents from "./documents";
 import TwitterFeed from "./twitter-feed";
 
 enum Tab {
@@ -39,7 +41,7 @@ export default function Tabs({
           aria-selected={activeTab === Tab.Document}
           id={Tab.Document}
           onClick={setTab}
-          className="border-primary flex-1 py-4 aria-selected:border-b-2"
+          className="border-teal-700 flex-1 py-4 aria-selected:border-b-2"
         >
           Dokument
         </button>
@@ -48,7 +50,7 @@ export default function Tabs({
           aria-selected={activeTab === Tab.Twitter}
           id={Tab.Twitter}
           onClick={setTab}
-          className="border-primary flex-1 py-4 aria-selected:border-b-2"
+          className="border-teal-700 flex-1 py-4 aria-selected:border-b-2"
         >
           Twitter-flöde
         </button>

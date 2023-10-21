@@ -1,4 +1,5 @@
-import { Committee, committeeInfo } from "@lib/committes";
+import { Committee, committeeInfo } from "@lib/committees";
+
 import type { FilterToggle } from "./filter-context";
 
 export default function initialFilterToggles(

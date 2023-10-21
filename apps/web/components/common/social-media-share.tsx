@@ -1,11 +1,12 @@
 "use client";
+
+import { usePathname } from "next/navigation";
 import {
   FacebookIcon,
   FacebookShareButton,
   TwitterIcon,
   TwitterShareButton,
 } from "react-share";
-import { usePathname } from "next/navigation";
 
 const size = 45;
 

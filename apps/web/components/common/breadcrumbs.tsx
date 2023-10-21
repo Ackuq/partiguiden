@@ -1,7 +1,8 @@
-import { Fragment } from "react";
 import { ChevronRightIcon, HomeIcon } from "@heroicons/react/20/solid";
-import { routes } from "@lib/navigation";
 import Link from "next/link";
+import { Fragment } from "react";
+
+import { routes } from "@lib/navigation";
 
 const BreadcrumbDivider = () => (
   <ChevronRightIcon className="h-4 w-4 sm:h-5 sm:w-5" />

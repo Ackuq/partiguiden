@@ -1,6 +1,6 @@
-import type { MemberResponse } from "./types";
-import { parseMember } from "./parsers/member";
 import fetchMember from "./fetch-member";
+import { parseMember } from "./parsers/member";
+import type { MemberResponse } from "./types";
 
 export default async function getMember(
   id: string,

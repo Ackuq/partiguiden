@@ -1,15 +1,16 @@
-import { Card } from "@components/common/card";
-import MemberImage from "@components/parliament/member-image";
-import type {
-  AbsenceLeaderboard as TAbsenceLeaderboard,
-  AbsencePeriod,
-  MemberAbsenceResponse,
-} from "@lib/api/member/types";
-import { partyLogo } from "@lib/assets";
-import { routes } from "@lib/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import { twMerge } from "tailwind-merge";
+
+import { Card } from "@components/common/card";
+import MemberImage from "@components/parliament/member-image";
+import type {
+  AbsencePeriod,
+  MemberAbsenceResponse,
+  AbsenceLeaderboard as TAbsenceLeaderboard,
+} from "@lib/api/member/types";
+import { partyLogo } from "@lib/assets";
+import { routes } from "@lib/navigation";
 
 interface Props {
   leaderboard: TAbsenceLeaderboard;
@@ -64,7 +65,7 @@ function AbsenceLeaderboardContent({
 }: AbsenceLeaderboardContentProps) {
   return (
     <Card className="p-0">
-      <div className="bg-primary dark:bg-primary-dark text-font-primary p-4">
+      <div className="bg-teal-700 dark:bg-teal-900 p-4 text-slate-50">
         <h4 className="text-lg">{title}</h4>
         <p className="text-sm text-slate-300">
           För {period} {description}
@@ -91,7 +92,7 @@ function MemberListEntry({ member, variant }: MemberListEntryProps) {
         href={routes.member(member.id)}
         className={twMerge(
           "flex items-center gap-4 px-4 py-2",
-          "hover:bg-background-elevated-light-100 dark:hover:bg-background-elevated-dark-200 transition-[background-color_box-shadow]",
+          "transition-[background-color_box-shadow] hover:bg-slate-100 dark:hover:bg-slate-700",
           "hover:shadow-xl dark:shadow-slate-900",
         )}
       >

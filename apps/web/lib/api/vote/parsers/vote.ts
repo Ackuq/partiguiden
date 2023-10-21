@@ -1,8 +1,9 @@
 import type { DocumentStatus } from "@lib/api/parliament/types";
+import { getCommittee } from "@lib/committees";
+
 import type { Vote } from "../types";
 import createReferences from "../utils/create-references";
 import parseVoteResult from "./vote-result";
-import { getCommittee } from "@lib/committes";
 
 export default function parseVote(
   data: DocumentStatus,

@@ -1,8 +1,9 @@
 "use client";
 
 import { ADSENSE_CLIENT_ID, FLOW_AD_SLOT_ID } from "@lib/constants";
-import useAds from "./use-ads";
+
 import shouldRenderAd from "./should-render-ad";
+import useAds from "./use-ads";
 
 export default function FlowAd() {
   useAds();

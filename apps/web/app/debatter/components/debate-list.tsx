@@ -1,14 +1,17 @@
 "use client";
+
+import { useRouter } from "next/navigation";
+import { useEffect } from "react";
+
+import FlowAdWrapper from "@components/ads/flow-ad-wrapper";
 import Pagination from "@components/common/pagination";
 import { useFilterContext } from "@components/filter/filter-context";
 import type { DebateListResponse } from "@lib/api/debates/types";
 import { useIsMount } from "@lib/hooks/use-is-mount";
 import { routes } from "@lib/navigation";
 import { buildSearchParameters } from "@lib/utils/search-params";
-import { useRouter } from "next/navigation";
-import { useEffect } from "react";
+
 import DebateCard from "./debate-card";
-import FlowAdWrapper from "@components/ads/flow-ad-wrapper";
 
 interface Props {
   currentPage: number;

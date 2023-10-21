@@ -14,7 +14,7 @@ export default function Loading({
       <svg
         aria-hidden="true"
         className={twMerge(
-          "fill-primary h-28 w-28 animate-spin text-slate-200 dark:text-gray-600",
+          "fill-teal-700 h-28 w-28 animate-spin text-slate-200 dark:text-gray-600",
           className,
         )}
         viewBox="0 0 100 100"

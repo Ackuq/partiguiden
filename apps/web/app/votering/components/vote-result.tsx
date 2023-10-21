@@ -1,8 +1,8 @@
+import { twMerge } from "tailwind-merge";
+
 import PartyIcon from "@components/party/icon";
 import type { VotingResult } from "@lib/api/vote/types";
 import type { Party } from "@partiguiden/party-data/types";
-
-import { twMerge } from "tailwind-merge";
 
 interface ResultColumnProps {
   votes: Party[];
@@ -41,18 +41,18 @@ export default function VoteResult({ votes }: Props) {
     <div className="flex flex-col sm:flex-row">
       <ResultColumn
         className={twMerge(
-          "bg-voting-yes-light dark:bg-voting-yes-dark",
+          "bg-emerald-600 dark:bg-emerald-700 text-white",
           votes.winner !== "yes" &&
-            "bg-voting-losing dark:bg-voting-losing-dark",
+            "bg-slate-200 dark:bg-slate-600 text-black dark:text-white",
         )}
         title="JA"
         votes={votes.yes}
       />
       <ResultColumn
         className={twMerge(
-          "bg-voting-no-light dark:bg-voting-no-dark",
+          "bg-red-500 dark:bg-red-600 text-white",
           votes.winner !== "no" &&
-            "bg-voting-losing dark:bg-voting-losing-dark",
+            "bg-slate-200 dark:bg-slate-600 text-black dark:text-white",
         )}
         title="NEJ"
         votes={votes.no}

@@ -1,12 +1,14 @@
+import { UserCircleIcon } from "@heroicons/react/24/solid";
+
+import MemberNavigation from "@app/ledamot/components/member-navigation";
 import Container from "@components/common/container";
 import PageTitle from "@components/common/page-title";
-import { UserCircleIcon } from "@heroicons/react/24/solid";
 import membersWithAbsenceController from "@lib/api/member/get-members-with-absence";
-import { createMemberAbsenceLeaderboard } from "@lib/api/member/utils/absence-leaderboard";
-import AbsenceLeaderboard from "../absence-leaderboard";
 import { AbsencePeriod } from "@lib/api/member/types";
-import MemberNavigation from "@app/ledamot/components/member-navigation";
+import { createMemberAbsenceLeaderboard } from "@lib/api/member/utils/absence-leaderboard";
 import { getCurrentMandatePeriod } from "@lib/api/parliament/get-current-mandate-period";
+
+import AbsenceLeaderboard from "../absence-leaderboard";
 
 export const metadata = {
   title: "Ledamotstatistik mandatperiod | Partiguiden",
@@ -33,7 +35,7 @@ export default async function MemberStatisticsParliamentYear() {
       <Container>
         <AbsenceLeaderboard
           leaderboard={absenceLeaderboard}
-          period={AbsencePeriod.parliamentYear}
+          period={AbsencePeriod.mandatePeriod}
           description={latestMandatePeriod.period}
         />
       </Container>

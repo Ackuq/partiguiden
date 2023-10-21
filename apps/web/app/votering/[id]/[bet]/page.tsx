@@ -1,15 +1,16 @@
+import dynamic from "next/dynamic";
+import Link from "next/link";
+import { notFound } from "next/navigation";
+
+import Accordion from "@components/common/accordion";
 import BreadcrumbsSocialMediaShare from "@components/common/breadcrumbs-social-media-share";
 import { Card } from "@components/common/card";
 import Container from "@components/common/container";
 import { Divider } from "@components/common/divider";
 import PageTitle from "@components/common/page-title";
 import getVote from "@lib/api/vote/get-vote";
-import { routes } from "@lib/navigation";
-import { notFound } from "next/navigation";
-import Link from "next/link";
 import type { ProcessedDocument, VoteAppendixItem } from "@lib/api/vote/types";
-import Accordion from "@components/common/accordion";
-import dynamic from "next/dynamic";
+import { routes } from "@lib/navigation";
 
 const ResponsiveAd = dynamic(() => import("@components/ads/responsive-ad"), {
   ssr: false,
@@ -69,7 +70,6 @@ export default async function Vote({ params: { id, bet } }: Props) {
             title: `${id} förslagspunkt ${betNumber}`,
           }}
         />
-        <ResponsiveAd />
         <Card className="my-4 flex flex-col gap-2">
           <TotalVote voting={vote.voting.total} />
           <h2 className="text-xl sm:text-2xl">Utskottets förslag</h2>
@@ -115,7 +115,7 @@ function Documents({ documents }: { documents: ProcessedDocument[] }) {
           <li key={document.id}>
             <Link
               href={routes.document(document.id)}
-              className="text-primary-dark dark:text-primary-light ml-4"
+              className="text-teal-900 dark:text-teal-200 ml-4 hover:underline"
             >
               [{index}] {document.label}
             </Link>
@@ -131,7 +131,7 @@ function Appendix({ documents }: { documents: VoteAppendixItem[] }) {
     <div>
       {documents.map((document) => (
         <a
-          className="text-primary-dark dark:text-primary-light"
+          className="text-teal-900 dark:text-teal-200 hover:underline"
           href={document.fil_url}
           key={document.fil_url}
           target="_blank"

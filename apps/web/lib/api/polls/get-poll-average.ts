@@ -1,4 +1,5 @@
 import { Party, partySortOrder } from "@partiguiden/party-data/types";
+
 import type { AveragePoll, Poll, PollDetails, Polls } from "./types";
 
 function initializePartyTotal(): Record<Party, PollDetails[]> {

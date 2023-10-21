@@ -1,4 +1,5 @@
 import type { MemberTask } from "@lib/api/parliament/types";
+
 import type { Task } from "../types";
 
 export default function parseTask(unparsed: MemberTask): Task {

@@ -1,6 +1,7 @@
+import { twMerge } from "tailwind-merge";
+
 import { Card } from "@components/common/card";
 import type { MemberDetailedResponse } from "@lib/api/member/types";
-import { twMerge } from "tailwind-merge";
 
 interface StatisticsCardProps {
   value: string;
@@ -28,13 +29,13 @@ interface Props {
 export default function Statistics({ absence, documentCount }: Props) {
   return (
     <div className="flex flex-wrap gap-4">
-      {absence.mandatePeriod.value !== null && (
+      {absence.mandatePeriod.value !== undefined && (
         <StatisticsCard
           value={`${absence.mandatePeriod.value}%`}
           description={`Voteringsnärvaro mandatperiod ${absence.mandatePeriod.description}`}
         />
       )}
-      {absence.parliamentYear.value !== null && (
+      {absence.parliamentYear.value !== undefined && (
         <StatisticsCard
           value={`${absence.parliamentYear.value}%`}
           description={`Voteringsnärvaro riksmöte ${absence.parliamentYear.description}`}

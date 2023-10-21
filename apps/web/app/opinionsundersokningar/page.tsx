@@ -1,11 +1,12 @@
+import { ChartBarIcon } from "@heroicons/react/24/solid";
+import dynamic from "next/dynamic";
+import { twMerge } from "tailwind-merge";
+
 import { ResponsiveAd } from "@components/ads";
 import { Card } from "@components/common/card";
 import Container from "@components/common/container";
 import PageTitle from "@components/common/page-title";
-import { ChartBarIcon } from "@heroicons/react/24/solid";
 import getPolls from "@lib/api/polls/get-polls";
-import dynamic from "next/dynamic";
-import { twMerge } from "tailwind-merge";
 
 const LOADING_BARS = [
   "h-80",

@@ -1,6 +1,7 @@
-import { Divider } from "@components/common/divider";
 import type { TooltipProps } from "recharts";
 import { twMerge } from "tailwind-merge";
+
+import { Divider } from "@components/common/divider";
 
 type ValueType = string | number;
 type NameType = string;
@@ -50,7 +51,7 @@ export default function CustomTooltip({
   valueFormatter?: (value: string | number) => string;
 }) {
   return (
-    <div className="dark:bg-background-dark rounded-sm bg-white shadow-lg">
+    <div className="rounded-sm bg-white shadow-lg dark:bg-slate-950">
       {label && (
         <>
           <div className="px-3 pb-1 pt-2">

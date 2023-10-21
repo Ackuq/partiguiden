@@ -1,7 +1,8 @@
-import type { Party } from "@partiguiden/party-data/types";
 import sleep from "@lib/utils/sleep";
-import { wikipediaPartyMap } from "./utils/party-map";
+import type { Party } from "@partiguiden/party-data/types";
+
 import parseAbstract from "./parsers/abstract";
+import { wikipediaPartyMap } from "./utils/party-map";
 
 export default async function getWikipediaAbstract(
   party: Party,

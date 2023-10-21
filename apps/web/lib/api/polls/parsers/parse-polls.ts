@@ -1,4 +1,5 @@
 import type { Party } from "@partiguiden/party-data/types";
+
 import type { Polls } from "../types";
 
 enum CSVIndex {

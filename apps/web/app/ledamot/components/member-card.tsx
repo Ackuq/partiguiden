@@ -1,10 +1,11 @@
+import Image from "next/image";
+import Link from "next/link";
+import { twMerge } from "tailwind-merge";
+
 import MemberImage from "@components/parliament/member-image";
 import type { MemberListEntry } from "@lib/api/member/types";
 import { partyLogo } from "@lib/assets";
 import { routes } from "@lib/navigation";
-import Image from "next/image";
-import Link from "next/link";
-import { twMerge } from "tailwind-merge";
 
 interface Props {
   member: MemberListEntry;
@@ -16,7 +17,7 @@ export default function MemberCard({ member }: Props) {
       href={routes.member(member.id)}
       className={twMerge(
         "relative flex rounded p-4 shadow-md",
-        "dark:bg-background-elevated-dark bg-white",
+        "bg-white dark:bg-slate-800",
       )}
     >
       <div className="mb-10">
@@ -44,7 +45,7 @@ export default function MemberCard({ member }: Props) {
       </MemberImage>
       <div
         className={twMerge(
-          "text-font-dark absolute bottom-0 left-0 w-full rounded-b p-2",
+          "absolute bottom-0 left-0 w-full rounded-b p-2 text-slate-50",
           "bg-slate-600/70 backdrop-blur-sm dark:bg-slate-900/75",
         )}
       >

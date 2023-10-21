@@ -1,6 +1,8 @@
 "use client";
+
 import { usePathname, useSearchParams } from "next/navigation";
 import { useEffect } from "react";
+
 import { ADSENSE_CLIENT_ID } from "@lib/constants";
 
 function enableAds(): boolean {

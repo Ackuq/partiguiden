@@ -1,5 +1,6 @@
 "use client";
 
+import { useTheme } from "next-themes";
 import {
   Bar,
   BarChart,
@@ -9,11 +10,11 @@ import {
   XAxis,
   YAxis,
 } from "recharts";
-import type { VotingEntry } from "@lib/api/vote/types";
-import { useTheme } from "next-themes";
-import { getThemeVotingColors } from "@lib/colors/voting";
-import CustomTooltip from "@components/charts/tooltip";
+
 import CustomLegend from "@components/charts/legend";
+import CustomTooltip from "@components/charts/tooltip";
+import type { VotingEntry } from "@lib/api/vote/types";
+import { getThemeVotingColors } from "@lib/colors/voting";
 
 const parseData = (voting: VotingEntry) => ({
   name: "Totalt",
@@ -29,6 +30,7 @@ interface Props {
 
 export default function TotalVote({ voting }: Props) {
   const { theme } = useTheme();
+
   /* Special case if all is 0 */
   if (Object.values(voting).every((v) => v === 0)) {
     return null;
@@ -51,7 +53,6 @@ export default function TotalVote({ voting }: Props) {
             dataKey="Ja"
             stackId="a"
             fill={colors.yes}
-            className="fill-voting-yes dark:fill-voting-yes-dark"
           />
           <Bar
             isAnimationActive={false}

@@ -8,7 +8,7 @@ export default function ExternalLink({ href, children }: ExternalLinkProps) {
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="text-primary dark:text-primary-light underline"
+      className="text-teal-700 dark:text-teal-200 underline"
     >
       {children}
     </a>

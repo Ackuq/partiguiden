@@ -1,14 +1,16 @@
+import { UserCircleIcon } from "@heroicons/react/24/solid";
+
 import PageTitle from "@components/common/page-title";
 import Filter from "@components/filter";
-import getMembers from "@lib/api/member/get-members";
-import MemberList from "./components/member-list";
 import type { FilterToggle } from "@components/filter/filter-context";
 import { FilterContextProvider } from "@components/filter/filter-context";
-import { UserCircleIcon } from "@heroicons/react/24/solid";
-import MemberNavigation from "./components/member-navigation";
+import getMembers from "@lib/api/member/get-members";
 import type { MemberParty } from "@lib/api/parliament/types";
-import { partyNames } from "@partiguiden/party-data/utils";
 import { partySortOrder } from "@partiguiden/party-data/types";
+import { partyNames } from "@partiguiden/party-data/utils";
+
+import MemberList from "./components/member-list";
+import MemberNavigation from "./components/member-navigation";
 
 const order = [...partySortOrder, "-"] as const;
 

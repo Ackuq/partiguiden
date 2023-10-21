@@ -1,13 +1,14 @@
 import { ChevronDownIcon } from "@heroicons/react/24/solid";
-import type { NavigationEntry, RouteEntry } from "@lib/navigation";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useMemo, useState } from "react";
 import { twMerge } from "tailwind-merge";
 
+import type { NavigationEntry, RouteEntry } from "@lib/navigation";
+
 const drawerEntryClassName = twMerge(
   "flex w-full items-center gap-6 px-4 text-lg",
-  "aria-current-page:text-slate-300 dark:aria-current-page:text-primary-light ",
+  "dark:aria-current-page:text-teal-200 ",
 );
 
 interface DropdownProps {

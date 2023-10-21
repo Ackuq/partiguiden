@@ -1,6 +1,7 @@
-import { committeeInfo, type Committee } from "@lib/committes";
-import { committeeBackground } from "@lib/styles/committees";
 import { twMerge } from "tailwind-merge";
+
+import { type Committee, committeeInfo } from "@lib/committees";
+import { committeeBackground } from "@lib/styles/committees";
 
 type CardHeaderProps = React.PropsWithChildren<{
   className?: string;
@@ -25,7 +26,7 @@ export function CommitteeHeader({ committee }: CommitteeHeaderProps) {
   const info = committeeInfo[committee];
   return (
     <CardHeader
-      className={twMerge("text-font-dark", committeeBackground[committee])}
+      className={twMerge("text-slate-50", committeeBackground[committee])}
     >
       {info.desc}
     </CardHeader>
@@ -41,7 +42,7 @@ export function Card({ children, className = "", ...props }: BaseCardProps) {
     <div
       className={twMerge(
         "overflow-hidden rounded bg-white p-4 shadow-md",
-        "dark:bg-background-elevated-dark",
+        "dark:bg-slate-800",
         className,
       )}
       {...props}

@@ -1,4 +1,5 @@
 import { PARLIAMENT_BASE_URL } from "@lib/constants";
+
 import serializeAbsence from "./parsers/absence";
 
 interface Query {

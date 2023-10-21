@@ -1,6 +1,7 @@
 import type { NewVotingRow, OldVotingRow } from "@lib/api/parliament/types";
-import type { VotingDict, VotingEntry, VotingGroup } from "../types";
 import { Party } from "@partiguiden/party-data/types";
+
+import type { VotingDict, VotingEntry, VotingGroup } from "../types";
 
 function votingGroupRemap(partyName: string): VotingGroup {
   switch (partyName) {
@@ -65,10 +66,10 @@ export default function extractVotes(
   }
   // New only contains `td`
   if (row.every((col) => Object.hasOwn(col, "td"))) {
-    return extractVotesNew(<NewVotingRow[]>row);
+    return extractVotesNew(row as NewVotingRow[]);
   }
   const voting = {} as VotingDict;
-  const [, , ...entries] = <OldVotingRow>row;
+  const [, , ...entries] = row as OldVotingRow;
 
   entries.forEach((entry) => {
     const { td } = entry;

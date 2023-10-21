@@ -1,8 +1,10 @@
 import type { protos } from "@google-analytics/data";
 import { unstable_cache as cache } from "next/cache";
-import initializeAnalyticsClient from "./utils/initialize-analytics-client";
+
 import { getSubject } from "@partiguiden/party-data/reader";
 import type { Subject } from "@partiguiden/party-data/types";
+
+import initializeAnalyticsClient from "./utils/initialize-analytics-client";
 
 const GA4_PROPERTY = process.env.GA4_ANALYTICS_PROPERTY;
 

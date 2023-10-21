@@ -1,10 +1,13 @@
 "use client";
 
+import { useTheme } from "next-themes";
+import { Cell, Pie, PieChart, ResponsiveContainer, Tooltip } from "recharts";
+
 import CustomTooltip from "@components/charts/tooltip";
 import type { AveragePoll, BlocksAverage } from "@lib/api/polls/types";
-import { allBlocks, type Blocks } from "@lib/utils/blocks";
-import { partyColors, partyNames } from "@partiguiden/party-data/utils";
-import { Cell, Pie, PieChart, ResponsiveContainer, Tooltip } from "recharts";
+import { getThemePartyColors } from "@lib/colors/party";
+import { type Blocks, allBlocks } from "@lib/utils/blocks";
+import { partyNames } from "@partiguiden/party-data/utils";
 
 function blockSort(blocks: Blocks["values"]) {
   return function (a: AveragePoll[number], b: AveragePoll[number]) {
@@ -30,6 +33,8 @@ const Block: React.FC<BlockProps> = ({
   blockAverage,
   blocks,
 }) => {
+  const { theme } = useTheme();
+  const partyColors = getThemePartyColors(theme);
   const sortedAverage = [...currentMonthAverage].sort(blockSort(blocks.values));
 
   return (

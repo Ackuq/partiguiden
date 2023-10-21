@@ -1,11 +1,9 @@
 "use client";
-import ReferenceLineLabel from "@components/charts/reference-line-label";
-import CustomTooltip from "@components/charts/tooltip";
-import type { AveragePoll } from "@lib/api/polls/types";
-import type { Party } from "@partiguiden/party-data/types";
-import { partyColors, partyNames } from "@partiguiden/party-data/utils";
-import type { LegendProps } from "recharts";
+
+import { useTheme } from "next-themes";
 import Image from "next/image";
+import { useState } from "react";
+import type { LegendProps } from "recharts";
 import {
   Bar,
   BarChart,
@@ -17,8 +15,14 @@ import {
   XAxis,
   YAxis,
 } from "recharts";
+
+import ReferenceLineLabel from "@components/charts/reference-line-label";
+import CustomTooltip from "@components/charts/tooltip";
+import type { AveragePoll } from "@lib/api/polls/types";
 import { partyLogo } from "@lib/assets";
-import { useState } from "react";
+import { getThemePartyColors } from "@lib/colors/party";
+import type { Party } from "@partiguiden/party-data/types";
+import { partyNames } from "@partiguiden/party-data/utils";
 
 interface Props {
   currentMonthAverage: AveragePoll;
@@ -39,6 +43,8 @@ const toStackedData = (data: AveragePoll, included: Party[]): StackedData => {
 };
 
 export default function BlockBuilder({ currentMonthAverage }: Props) {
+  const { theme } = useTheme();
+  const partyColors = getThemePartyColors(theme);
   const [included, setIncluded] = useState<Party[]>([]);
 
   const includeParty = (party: Party) => {

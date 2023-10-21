@@ -1,11 +1,12 @@
-import { githubFrontend, githubProfile, linkedIn } from "@lib/socials";
-import PageTitle from "@components/common/page-title";
-import { Card } from "@components/common/card";
-import React from "react";
 import { InformationCircleIcon } from "@heroicons/react/24/solid";
-import ExternalLink from "@components/common/external-link";
-import Container from "@components/common/container";
+import React from "react";
+
 import { ResponsiveAd } from "@components/ads";
+import { Card } from "@components/common/card";
+import Container from "@components/common/container";
+import ExternalLink from "@components/common/external-link";
+import PageTitle from "@components/common/page-title";
+import { githubFrontend, githubProfile, linkedIn } from "@lib/socials";
 
 export const metadata = {
   title: "Om oss | Partiguiden",

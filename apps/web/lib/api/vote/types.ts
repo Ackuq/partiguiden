@@ -1,6 +1,7 @@
+import type { Committee } from "@lib/committees";
 import type { Party } from "@partiguiden/party-data/types";
+
 import type { DocumentAppendix } from "../parliament/types";
-import type { Committee } from "@lib/committes";
 
 export type VoteDescription = "yes" | "no" | "refrain" | "absent";
 

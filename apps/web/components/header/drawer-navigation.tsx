@@ -1,11 +1,13 @@
 "use client";
 
 import { XMarkIcon } from "@heroicons/react/24/solid";
-import { mainNavigation } from "@lib/navigation";
 import { useContext, useEffect } from "react";
-import DrawerEntry from "./drawer-entry";
 import { twMerge } from "tailwind-merge";
+
+import { mainNavigation } from "@lib/navigation";
+
 import { DrawerContext } from "./drawer-context";
+import DrawerEntry from "./drawer-entry";
 
 export default function DrawerNavigation() {
   const { closeDrawer, drawerIsOpen } = useContext(DrawerContext);
@@ -19,7 +21,7 @@ export default function DrawerNavigation() {
   }, [drawerIsOpen]);
 
   return (
-    <div className="text-font-primary group" aria-hidden={!drawerIsOpen}>
+    <div className="group text-slate-50" aria-hidden={!drawerIsOpen}>
       <div
         aria-hidden="true"
         onClick={closeDrawer}
@@ -31,7 +33,7 @@ export default function DrawerNavigation() {
       <div
         aria-modal
         className={twMerge(
-          "bg-primary dark:bg-background-elevated-dark w-drawer fixed right-0 top-0 z-50 h-full overflow-y-scroll",
+          "bg-teal-700 w-drawer fixed right-0 top-0 z-50 h-full overflow-y-scroll dark:bg-slate-800",
           "translate-x-drawer group-aria-visible:translate-x-0 transition-transform",
           "motion-reduce:transition-none",
         )}

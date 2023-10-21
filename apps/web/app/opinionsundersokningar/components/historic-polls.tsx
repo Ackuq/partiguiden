@@ -1,8 +1,5 @@
 "use client";
-import CustomTooltip from "@components/charts/tooltip";
-import type { MonthlyAverage } from "@lib/api/polls/types";
-import { Party } from "@partiguiden/party-data/types";
-import { partyColors } from "@partiguiden/party-data/utils";
+
 import { useTheme } from "next-themes";
 import React, { useState } from "react";
 import type { LegendProps } from "recharts";
@@ -18,12 +15,18 @@ import {
 } from "recharts";
 import colors from "tailwindcss/colors";
 
+import CustomTooltip from "@components/charts/tooltip";
+import type { MonthlyAverage } from "@lib/api/polls/types";
+import { getThemePartyColors } from "@lib/colors/party";
+import { Party } from "@partiguiden/party-data/types";
+
 interface Props {
   historicPolls: MonthlyAverage;
 }
 
 export default function HistoricPolls({ historicPolls }: Props) {
   const { theme } = useTheme();
+  const partyColors = getThemePartyColors(theme);
   const [hide, setHide] = useState<Party[]>([]);
 
   const hideParty = (party: Party) => {
@@ -63,7 +66,7 @@ export default function HistoricPolls({ historicPolls }: Props) {
           ))}
           <Brush
             dataKey="date"
-            className="[&_text]:fill-font-light [&_text]:dark:fill-font-dark"
+            className="[&_text]:fill-slate-950 [&_text]:dark:fill-slate-50"
             fill={theme === "dark" ? colors.slate[500] : "white"}
             stroke={theme === "dark" ? colors.slate[900] : colors.slate[500]}
           />

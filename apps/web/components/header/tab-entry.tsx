@@ -1,16 +1,17 @@
 "use client";
 
 import { ChevronDownIcon } from "@heroicons/react/24/solid";
-import useOutsideClick from "@lib/hooks/use-outside-click";
-import type { NavigationEntry, RouteEntry } from "@lib/navigation";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { twMerge } from "tailwind-merge";
 
+import useOutsideClick from "@lib/hooks/use-outside-click";
+import type { NavigationEntry, RouteEntry } from "@lib/navigation";
+
 const tabClassName = twMerge(
   "min-w-[90px] flex-shrink-0 whitespace-nowrap p-4 text-sm uppercase hover:opacity-80",
-  "border-primary-light dark:border-primary-elevated-light focus-visible:-outline-offset-2 focus-visible:outline-2",
+  "border-teal-500 focus-visible:outline-2 focus-visible:-outline-offset-2 dark:border-teal-600",
   "aria-current-page:border-b-2",
 );
 
@@ -66,7 +67,7 @@ function Dropdown({ routes, title, navRef }: DropdownProps) {
         }
         className={twMerge(
           "absolute mt-1 flex-col rounded shadow-md ",
-          "bg-background-elevated-light dark:bg-background-elevated-dark-200 text-font-light dark:text-font-primary",
+          "bg-slate-100 text-slate-950 dark:bg-slate-700 dark:text-slate-50",
           "flex aria-hidden:hidden",
         )}
       >

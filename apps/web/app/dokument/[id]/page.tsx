@@ -1,8 +1,9 @@
+import { twMerge } from "tailwind-merge";
+
 import Container from "@components/common/container";
 import PageTitle from "@components/common/page-title";
 import SocialMediaShare from "@components/common/social-media-share";
 import getDocumentHtml from "@lib/api/documents/get-document-html";
-import { twMerge } from "tailwind-merge";
 
 interface Props {
   params: {
@@ -27,7 +28,7 @@ export default async function Document({ params: { id } }: Props) {
         <div
           dangerouslySetInnerHTML={{ __html: document }}
           className={twMerge(
-            "dark:[&_*]:!text-font-dark dark:[&_*]:!border-font-dark",
+            "dark:[&_*]:!border-slate-50 dark:[&_*]:!text-slate-50",
           )}
         />
       </Container>

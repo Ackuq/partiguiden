@@ -1,7 +1,7 @@
 "use client";
 
-import { useTheme } from "next-themes";
 import { MoonIcon, SunIcon } from "@heroicons/react/24/solid";
+import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 import { twMerge } from "tailwind-merge";
 

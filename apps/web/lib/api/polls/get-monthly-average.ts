@@ -1,4 +1,5 @@
 import { Party } from "@partiguiden/party-data/types";
+
 import type { MonthlyAverage, Poll, Polls } from "./types";
 
 function initializePollResults(): { [party in Party]: number[] } {

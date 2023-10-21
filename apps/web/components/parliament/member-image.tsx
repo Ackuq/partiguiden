@@ -1,4 +1,5 @@
 "use client";
+
 import Image from "next/image";
 import { useState } from "react";
 import { twMerge } from "tailwind-merge";
@@ -40,7 +41,7 @@ export default function MemberImage({
           onError={() => setFallback(true)}
         />
       ) : (
-        <div className="bg-primary inline-flex h-full w-full items-center justify-center rounded-full">
+        <div className="bg-teal-700 inline-flex h-full w-full items-center justify-center rounded-full">
           <span className="text-xl">
             {firstLetterOfSentences(firstName)}
             {firstLetterOfSentences(lastName)}

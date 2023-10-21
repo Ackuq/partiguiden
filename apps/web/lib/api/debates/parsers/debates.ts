@@ -1,4 +1,5 @@
 import type { DocumentList } from "@lib/api/parliament/types";
+
 import parseDebateListEntry from "./debate-list-entry";
 
 export default async function parseDebates(data: DocumentList) {

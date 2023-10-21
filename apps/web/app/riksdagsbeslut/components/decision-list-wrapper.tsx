@@ -1,8 +1,9 @@
-import { FilterContextProvider } from "@components/filter/filter-context";
-import DecisionList from "./decision-list";
 import Filter from "@components/filter";
-import getDecisions from "@lib/api/decisions/get-decisions";
+import { FilterContextProvider } from "@components/filter/filter-context";
 import initialFilterToggles from "@components/filter/initial-filter-toggles";
+import getDecisions from "@lib/api/decisions/get-decisions";
+
+import DecisionList from "./decision-list";
 
 interface Props {
   search?: string;

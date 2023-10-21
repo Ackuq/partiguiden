@@ -1,7 +1,8 @@
 import { Separator, select } from "@inquirer/prompts";
-import { readSubjects, readNotCategorizedStandpoints } from "./reader";
-import { updateStandpoint } from "./writer";
+
+import { readNotCategorizedStandpoints, readSubjects } from "./reader";
 import type { Standpoint } from "./types";
+import { updateStandpoint } from "./writer";
 
 const promptTemplate = (
   standpoint: Standpoint,

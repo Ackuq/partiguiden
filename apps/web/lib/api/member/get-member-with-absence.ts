@@ -1,7 +1,7 @@
-import type { MemberDetailedResponse } from "./types";
+import { getCurrentMandatePeriod } from "../parliament/get-current-mandate-period";
 import getAbsence from "./get-absence";
 import getMember from "./get-member";
-import { getCurrentMandatePeriod } from "../parliament/get-current-mandate-period";
+import type { MemberDetailedResponse } from "./types";
 
 export default async function getMemberWithAbsence(
   id: string,

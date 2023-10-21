@@ -1,12 +1,13 @@
-import { Card } from "@components/common/card";
-import Typed from "@components/common/typed";
 import Link from "next/link";
-import { routes } from "@lib/navigation";
-import PageTitle from "@components/common/page-title";
-import Container from "@components/common/container";
 import { twMerge } from "tailwind-merge";
-import getPopularStandpoints from "@lib/api/analytics/get-popular-standpoints";
+
 import { ResponsiveAd } from "@components/ads";
+import { Card } from "@components/common/card";
+import Container from "@components/common/container";
+import PageTitle from "@components/common/page-title";
+import Typed from "@components/common/typed";
+import getPopularStandpoints from "@lib/api/analytics/get-popular-standpoints";
+import { routes } from "@lib/navigation";
 
 export const metadata = {
   title: "Partiguiden | Rösta rätt",
@@ -51,8 +52,8 @@ export default async function IndexPage() {
                 key={subject.id}
                 href={routes.standpoint(subject.id)}
                 className={twMerge(
-                  "bg-background-elevated-light rounded py-3 shadow-md transition-opacity hover:opacity-70",
-                  "dark:bg-background-elevated-dark-200 dark:shadow-slate-900",
+                  "rounded bg-slate-100 py-3 shadow-md transition-opacity hover:opacity-70",
+                  "dark:bg-slate-700 dark:shadow-slate-900",
                 )}
               >
                 {subject.name}

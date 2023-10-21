@@ -1,13 +1,11 @@
 import colors from "tailwindcss/colors";
 
-export const votingColors = {
+const votingColors = {
   yes: {
-    light: colors.emerald[300],
     DEFAULT: colors.teal[500],
     dark: colors.teal[700],
   },
   no: {
-    light: colors.red[200],
     DEFAULT: colors.red[500],
     dark: colors.red[800],
   },
@@ -18,10 +16,6 @@ export const votingColors = {
   absent: {
     DEFAULT: colors.gray[700],
     dark: colors.gray[400],
-  },
-  losing: {
-    DEFAULT: colors.slate[200],
-    dark: colors.slate[600],
   },
 };
 
@@ -35,6 +29,8 @@ export function getThemeVotingColors(
       ...prev,
       [current]: votingColors[current][theme === "dark" ? "dark" : "DEFAULT"],
     }),
-    { yes: "", no: "", refrain: "", absent: "", losing: "" },
+    { yes: "", no: "", refrain: "", absent: "" },
   );
 }
+
+export default votingColors;

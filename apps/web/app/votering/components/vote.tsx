@@ -1,8 +1,10 @@
+import Link from "next/link";
+
 import { Card, CommitteeHeader } from "@components/common/card";
 import type { VoteListEntry } from "@lib/api/vote/types";
-import VoteResult from "./vote-result";
-import Link from "next/link";
 import { routes } from "@lib/navigation";
+
+import VoteResult from "./vote-result";
 
 interface Props {
   vote: VoteListEntry;

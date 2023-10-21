@@ -1,10 +1,13 @@
 "use client";
-import type { MemberListEntry } from "@lib/api/member/types";
-import MemberCard from "./member-card";
-import { useFilterContext } from "@components/filter/filter-context";
+
 import { Fragment, useEffect, useMemo, useRef, useState } from "react";
-import type { MemberParty } from "@lib/api/parliament/types";
+
 import { ResponsiveAd } from "@components/ads";
+import { useFilterContext } from "@components/filter/filter-context";
+import type { MemberListEntry } from "@lib/api/member/types";
+import type { MemberParty } from "@lib/api/parliament/types";
+
+import MemberCard from "./member-card";
 
 interface Props {
   members: MemberListEntry[];

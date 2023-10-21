@@ -13,7 +13,7 @@ export default function PageTitle({
   return (
     <div
       className={twMerge(
-        "bg-primary mb-4 py-4 text-center text-white dark:bg-slate-800",
+        "bg-teal-700 mb-4 py-4 text-center text-white dark:bg-slate-800",
         className,
       )}
     >

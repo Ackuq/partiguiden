@@ -4,7 +4,7 @@ import { githubProfile, linkedIn } from "@lib/socials";
 
 export default function Footer() {
   return (
-    <footer className="bg-primary mt-auto flex flex-col gap-3 py-6 text-center text-white dark:bg-slate-900">
+    <footer className="bg-teal-700 mt-auto flex flex-col gap-3 py-6 text-center text-white dark:bg-slate-900">
       <span>© Axel Pettersson 2023</span>
       <span>
         <a href="mailto:hello@partiguiden.se">hello@partiguiden.se</a>

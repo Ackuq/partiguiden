@@ -11,7 +11,7 @@ import type { NavigationEntry, RouteEntry } from "@lib/navigation";
 
 const tabClassName = twMerge(
   "min-w-[90px] flex-shrink-0 whitespace-nowrap p-4 text-sm uppercase hover:opacity-80",
-  "border-primary-light focus-visible:outline-2 focus-visible:-outline-offset-2 dark:border-teal-600",
+  "border-teal-500 focus-visible:outline-2 focus-visible:-outline-offset-2 dark:border-teal-600",
   "aria-current-page:border-b-2",
 );
 

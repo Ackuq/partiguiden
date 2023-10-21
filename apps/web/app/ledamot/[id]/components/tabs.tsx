@@ -41,7 +41,7 @@ export default function Tabs({
           aria-selected={activeTab === Tab.Document}
           id={Tab.Document}
           onClick={setTab}
-          className="border-primary flex-1 py-4 aria-selected:border-b-2"
+          className="border-teal-700 flex-1 py-4 aria-selected:border-b-2"
         >
           Dokument
         </button>
@@ -50,7 +50,7 @@ export default function Tabs({
           aria-selected={activeTab === Tab.Twitter}
           id={Tab.Twitter}
           onClick={setTab}
-          className="border-primary flex-1 py-4 aria-selected:border-b-2"
+          className="border-teal-700 flex-1 py-4 aria-selected:border-b-2"
         >
           Twitter-flöde
         </button>

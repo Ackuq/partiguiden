@@ -6,11 +6,6 @@ import { committeeColors, committeeColorsDark } from "./lib/colors/committee";
 import { votingColors } from "./lib/colors/voting";
 
 const themeColors = {
-  primary: {
-    dark: "#00554b",
-    DEFAULT: "#00796b",
-    light: "#80cbc4",
-  },
   party: {
     ...partyColors,
   },

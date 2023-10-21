@@ -38,7 +38,7 @@ export default function PartyStandpoints({
         aria-expanded={visible}
         className={twMerge(
           partyBorderBottom[party],
-          "slate-950 group flex w-full items-center justify-between border-b-2 py-3 pl-2 text-start text-3xl",
+          "font-light group flex w-full items-center justify-between border-b-2 py-3 pl-2 text-start text-3xl",
         )}
       >
         {partyNames[party]}

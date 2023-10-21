@@ -35,7 +35,7 @@ export default function SearchToggles() {
               className={twMerge(
                 "relative h-4 w-4 rounded border-[1.5px] bg-transparent",
                 "border-slate-600 dark:border-slate-400",
-                "group-data-[checked=true]:bg-primary group-data-[checked=true]:border-0",
+                "group-data-[checked=true]:bg-teal-700 group-data-[checked=true]:border-0",
               )}
             >
               <CheckMark

@@ -116,7 +116,7 @@ function Documents({ documents }: { documents: ProcessedDocument[] }) {
           <li key={document.id}>
             <Link
               href={routes.document(document.id)}
-              className="text-primary-dark dark:text-primary-light ml-4"
+              className="text-teal-900 dark:text-teal-200 ml-4 hover:underline"
             >
               [{index}] {document.label}
             </Link>
@@ -132,7 +132,7 @@ function Appendix({ documents }: { documents: VoteAppendixItem[] }) {
     <div>
       {documents.map((document) => (
         <a
-          className="text-primary-dark dark:text-primary-light"
+          className="text-teal-900 dark:text-teal-200 hover:underline"
           href={document.fil_url}
           key={document.fil_url}
           target="_blank"

@@ -65,7 +65,7 @@ function AbsenceLeaderboardContent({
 }: AbsenceLeaderboardContentProps) {
   return (
     <Card className="p-0">
-      <div className="bg-primary dark:bg-primary-dark p-4 text-slate-50">
+      <div className="bg-teal-700 dark:bg-teal-900 p-4 text-slate-50">
         <h4 className="text-lg">{title}</h4>
         <p className="text-sm text-slate-300">
           För {period} {description}

@@ -6,50 +6,6 @@ import * as gtag from "@lib/gtag";
 export default function Head() {
   return (
     <head>
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
-      <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-      <link
-        rel="apple-touch-icon"
-        sizes="180x180"
-        href="/static/icons/apple-touch-icon.png"
-      />
-      <link
-        rel="icon"
-        type="image/png"
-        href="/static/icons/favicon-32x32.png"
-        sizes="32x32"
-      />
-      <link
-        rel="icon"
-        type="image/png"
-        href="/static/icons/favicon-16x16.png"
-        sizes="16x16"
-      />
-      <link
-        rel="mask-icon"
-        href="/static/icons/safari-pinned-tab.svg"
-        color="#5bbad5"
-      />
-      <link rel="manifest" href="/manifest.webmanifest" />
-
-      <meta property="og:image" content="/static/images/partiguiden_logo.png" />
-      <meta
-        name="theme-color"
-        content="#00796b"
-        media="(prefers-color-scheme: light)"
-      />
-      <meta
-        name="theme-color"
-        content="#1e293b"
-        media="(prefers-color-scheme: dark)"
-      />
-      {process.env.NEXT_PUBLIC_VERCEL_ENV !== "production" && (
-        <>
-          {/* Disable indexing of all non-production sites */}
-          <meta name="robots" content="noindex" />
-        </>
-      )}
       <Script
         id="twttr-init"
         strategy="afterInteractive"

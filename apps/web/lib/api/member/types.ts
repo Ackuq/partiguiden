@@ -44,7 +44,6 @@ export interface MemberListEntry {
 
 export interface MemberResponse extends MemberListEntry {
   sourceId: string;
-  pictureUrlLowRes: string;
   information: Information[];
   tasks: Task[];
   isLeader: boolean;

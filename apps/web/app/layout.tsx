@@ -1,6 +1,7 @@
 import { Roboto } from "next/font/google";
 import type { PropsWithChildren } from "react";
 import { twMerge } from "tailwind-merge";
+import colors from "tailwindcss/colors";
 
 import Header from "@components/header/header";
 import { ThemeProvider } from "@components/providers/theme-provider";
@@ -15,6 +16,23 @@ const roboto = Roboto({
   display: "swap",
   fallback: ["Helvetica", "Arial", "sans-serif"],
 });
+
+export const metadata = {
+  viewport: {
+    width: "device-width",
+    initialScale: 1,
+  },
+  icons: [
+    {
+      url: "/apple-icon",
+    },
+  ],
+  metadataBase: new URL("https://partiguiden.nu"),
+  themeColor: [
+    { media: "(prefers-color-scheme: dark)", color: colors.slate[800] },
+    { media: "(prefers-color-scheme: light)", color: colors.teal[700] },
+  ],
+};
 
 export default function RootLayout({ children }: PropsWithChildren) {
   return (

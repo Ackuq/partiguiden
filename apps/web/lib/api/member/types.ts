@@ -70,10 +70,6 @@ export interface MemberDetailedResponse extends MemberResponse {
   };
 }
 
-export interface MemberAbsenceResponseNullSafe extends MemberResponse {
-  absence: number;
-}
-
 export interface AbsenceLeaderboard {
   mostAbsence: MemberAbsenceResponse[];
   leastAbsence: MemberAbsenceResponse[];

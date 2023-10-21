@@ -7,7 +7,6 @@ import getMemberDocuments from "@lib/api/documents/get-member-documents";
 import getMember from "@lib/api/member/get-member";
 import getMemberWithAbsence from "@lib/api/member/get-member-with-absence";
 import getMemberTwitterFeed from "@lib/api/wikidata/get-member-twitter-feed";
-// import getMembers from "@lib/api/member/get-members";
 import { ERROR_404_TITLE } from "@lib/constants";
 import { routes } from "@lib/navigation";
 

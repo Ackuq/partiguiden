@@ -17,8 +17,8 @@ import colors from "tailwindcss/colors";
 
 import CustomTooltip from "@components/charts/tooltip";
 import type { MonthlyAverage } from "@lib/api/polls/types";
+import { getThemePartyColors } from "@lib/colors/party";
 import { Party } from "@partiguiden/party-data/types";
-import { partyColors } from "@partiguiden/party-data/utils";
 
 interface Props {
   historicPolls: MonthlyAverage;
@@ -26,6 +26,7 @@ interface Props {
 
 export default function HistoricPolls({ historicPolls }: Props) {
   const { theme } = useTheme();
+  const partyColors = getThemePartyColors(theme);
   const [hide, setHide] = useState<Party[]>([]);
 
   const hideParty = (party: Party) => {

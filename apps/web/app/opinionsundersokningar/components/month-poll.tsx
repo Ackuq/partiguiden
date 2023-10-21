@@ -1,5 +1,6 @@
 "use client";
 
+import { useTheme } from "next-themes";
 import {
   Bar,
   BarChart,
@@ -16,14 +17,17 @@ import PartySymbolTick from "@components/charts/party-symbol-tick";
 import ReferenceLineLabel from "@components/charts/reference-line-label";
 import CustomTooltip from "@components/charts/tooltip";
 import type { AveragePoll } from "@lib/api/polls/types";
+import { getThemePartyColors } from "@lib/colors/party";
 import type { Party } from "@partiguiden/party-data/types";
-import { partyColors, partyNames } from "@partiguiden/party-data/utils";
+import { partyNames } from "@partiguiden/party-data/utils";
 
 interface Props {
   currentMonthAverage: AveragePoll;
 }
 
 export default function MonthPoll({ currentMonthAverage }: Props) {
+  const { theme } = useTheme();
+  const partyColors = getThemePartyColors(theme);
   return (
     <div className="h-96 sm:h-[30rem]">
       <ResponsiveContainer>

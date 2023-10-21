@@ -9,7 +9,7 @@ const partyColors: Record<Party, { DEFAULT: string; dark: string }> = {
   },
   [Party.SD]: {
     DEFAULT: colors.amber[400],
-    dark: colors.amber[600],
+    dark: colors.amber[400],
   },
   [Party.M]: {
     DEFAULT: colors.blue[600],
@@ -38,3 +38,13 @@ const partyColors: Record<Party, { DEFAULT: string; dark: string }> = {
 };
 
 export default partyColors;
+
+export function getThemePartyColors(theme?: string): Record<Party, string> {
+  return Object.values(Party).reduce(
+    (prev, current) => ({
+      ...prev,
+      [current]: partyColors[current][theme === "dark" ? "dark" : "DEFAULT"],
+    }),
+    {} as Record<Party, string>,
+  );
+}

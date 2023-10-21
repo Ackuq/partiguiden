@@ -1,8 +1,4 @@
-import type {
-  AbsenceLeaderboard,
-  MemberAbsenceResponse,
-  MemberAbsenceResponseNullSafe,
-} from "../types";
+import type { AbsenceLeaderboard, MemberAbsenceResponse } from "../types";
 
 // We are only interested in primary members
 const ignoreStatus = ["Tjänstgörande ersättare"];
@@ -12,12 +8,12 @@ export const createMemberAbsenceLeaderboard = (
   limit: number,
 ): AbsenceLeaderboard => {
   // Remove nulls
-  const membersNullSafe = members.filter(
-    (member): member is MemberAbsenceResponseNullSafe =>
-      member.absence !== null && !ignoreStatus.includes(member.status),
+  const membersWithAbsence = members.filter(
+    (member): member is MemberAbsenceResponse & { absence: number } =>
+      member.absence !== undefined && !ignoreStatus.includes(member.status),
   );
   // Descending order, top will have the least voting absence
-  const sortedDescending = membersNullSafe.sort(
+  const sortedDescending = membersWithAbsence.sort(
     (a, b) => b.absence - a.absence,
   );
   const leastAbsence = sortedDescending.slice(0, limit);

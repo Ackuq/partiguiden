@@ -29,13 +29,13 @@ interface Props {
 export default function Statistics({ absence, documentCount }: Props) {
   return (
     <div className="flex flex-wrap gap-4">
-      {absence.mandatePeriod.value !== null && (
+      {absence.mandatePeriod.value !== undefined && (
         <StatisticsCard
           value={`${absence.mandatePeriod.value}%`}
           description={`Voteringsnärvaro mandatperiod ${absence.mandatePeriod.description}`}
         />
       )}
-      {absence.parliamentYear.value !== null && (
+      {absence.parliamentYear.value !== undefined && (
         <StatisticsCard
           value={`${absence.parliamentYear.value}%`}
           description={`Voteringsnärvaro riksmöte ${absence.parliamentYear.description}`}

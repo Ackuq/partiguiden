@@ -2,7 +2,6 @@ import type { Config } from "tailwindcss";
 
 import committeeColors from "./lib/colors/committee";
 import partyColors from "./lib/colors/party";
-import votingColors from "./lib/colors/voting";
 
 const themeHeight = {
   header: "3.5rem",
@@ -42,9 +41,6 @@ const config: Config = {
         },
         committee: {
           ...committeeColors,
-        },
-        voting: {
-          ...votingColors,
         },
       },
       height: themeHeight,

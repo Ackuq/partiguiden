@@ -35,7 +35,7 @@ export default async function MemberStatisticsParliamentYear() {
       <Container>
         <AbsenceLeaderboard
           leaderboard={absenceLeaderboard}
-          period={AbsencePeriod.parliamentYear}
+          period={AbsencePeriod.mandatePeriod}
           description={latestMandatePeriod.period}
         />
       </Container>

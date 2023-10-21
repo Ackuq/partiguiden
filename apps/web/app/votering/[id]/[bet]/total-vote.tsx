@@ -30,6 +30,7 @@ interface Props {
 
 export default function TotalVote({ voting }: Props) {
   const { theme } = useTheme();
+
   /* Special case if all is 0 */
   if (Object.values(voting).every((v) => v === 0)) {
     return null;
@@ -52,7 +53,6 @@ export default function TotalVote({ voting }: Props) {
             dataKey="Ja"
             stackId="a"
             fill={colors.yes}
-            className="fill-voting-yes dark:fill-voting-yes-dark"
           />
           <Bar
             isAnimationActive={false}

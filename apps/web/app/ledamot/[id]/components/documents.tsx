@@ -14,7 +14,7 @@ interface DocumentProps {
 
 function Document({ document }: DocumentProps) {
   return (
-    <Link href={routes.document(document.id)}>
+    <Link href={routes.document(document.id)} prefetch={false}>
       <Card className="p-0 transition-opacity hover:opacity-75 dark:shadow-slate-900">
         <CommitteeHeader committee={document.committee} />
         <div className="p-4 ">

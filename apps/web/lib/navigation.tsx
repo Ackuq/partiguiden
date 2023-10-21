@@ -55,6 +55,7 @@ export const routes = {
 export interface RouteEntry {
   href: string;
   title: string;
+  disablePrefetch?: boolean;
   Icon: React.ElementType;
 }
 
@@ -98,6 +99,7 @@ export const mainNavigation: NavigationEntry[] = [
     href: routes.polls,
     title: "Opinionsundersökningar",
     Icon: ChartBarIcon,
+    disablePrefetch: true,
   },
   { href: routes.aboutUs, title: "Om oss", Icon: InformationCircleIcon },
 ];

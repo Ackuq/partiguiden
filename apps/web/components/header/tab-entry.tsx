@@ -71,14 +71,15 @@ function Dropdown({ routes, title, navRef }: DropdownProps) {
           "flex aria-hidden:hidden",
         )}
       >
-        {routes.map(({ href, title, Icon }) => (
-          <li key={href} className="text-left">
+        {routes.map((route) => (
+          <li key={route.href} className="text-left">
             <Link
-              href={href}
+              prefetch={!route.disablePrefetch}
+              href={route.href}
               className="flex items-center gap-2 px-3 py-2 hover:opacity-75"
               onClick={handleClose}
             >
-              {Icon && <Icon />}
+              {route.Icon && <route.Icon />}
               {title}
             </Link>
           </li>
@@ -104,6 +105,7 @@ export default function TabEntry({ item, navRef }: TabEntryProps) {
 
   return (
     <Link
+      prefetch={item.disablePrefetch}
       key={item.href}
       href={item.href}
       aria-current={

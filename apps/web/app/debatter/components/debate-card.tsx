@@ -11,7 +11,7 @@ interface Props {
 
 export default function DebateCard({ debate }: Props) {
   return (
-    <Link href={routes.debate(debate.id)}>
+    <Link href={routes.debate(debate.id)} prefetch={false}>
       <Card className="p-0">
         {debate.committee && <CommitteeHeader committee={debate.committee} />}
         <div className="flex justify-between gap-2 p-2">

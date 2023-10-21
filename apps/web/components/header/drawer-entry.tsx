@@ -52,6 +52,7 @@ function Dropdown({ routes, title, Icon }: DropdownProps) {
 
       {routes.map((route) => (
         <Link
+          prefetch={!route.disablePrefetch}
           aria-hidden={!isVisible}
           key={route.href}
           href={route.href}
@@ -84,6 +85,7 @@ export default function DrawerEntry({ item }: DrawerEntryProps) {
 
   return (
     <Link
+      prefetch={!item.disablePrefetch}
       href={item.href}
       aria-current={
         (item.href === pathname ||

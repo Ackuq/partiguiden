@@ -2,6 +2,7 @@ import { PARLIAMENT_BASE_URL } from "@lib/constants";
 
 import { DEBATE_DOCUMENT_TYPES } from "./constants";
 import parseDebates from "./parsers/debates";
+import type { DebateListResponse } from "./types";
 
 interface Query {
   search?: string;
@@ -13,7 +14,7 @@ export default async function getDebates({
   search = "",
   committees = [],
   page = 1,
-}: Query) {
+}: Query): Promise<DebateListResponse> {
   const query = new URLSearchParams({
     doktyp: DEBATE_DOCUMENT_TYPES,
     webbtv: "1",

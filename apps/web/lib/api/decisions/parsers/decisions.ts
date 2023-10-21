@@ -1,3 +1,5 @@
+import PromisePool from "@supercharge/promise-pool";
+
 import type {
   DocumentList,
   DocumentListEntry,
@@ -39,20 +41,24 @@ async function parseDecision(data: DocumentListEntry): Promise<Decision> {
   };
 }
 
-export default function parseDecisions(data: DocumentList): Promise<Decisions> {
+export default async function parseDecisions(
+  data: DocumentList,
+): Promise<Decisions> {
   const { dokumentlista } = data;
-  const { dokument: document } = dokumentlista;
+  const { dokument: documents } = dokumentlista;
 
   const pages = parseInt(dokumentlista["@sidor"], 10);
 
-  if (!document || pages === 0) {
+  if (!documents || pages === 0) {
     return Promise.resolve({ decisions: [], pages });
   }
 
-  const decisionPromises = document.map(parseDecision);
+  const decisions = await PromisePool.withConcurrency(10)
+    .for(documents)
+    .process(parseDecision);
 
-  return Promise.all(decisionPromises).then((decisions) => ({
-    decisions,
+  return {
+    decisions: decisions.results,
     pages,
-  }));
+  };
 }

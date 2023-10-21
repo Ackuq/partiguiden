@@ -30,6 +30,9 @@ importers:
       '@sentry/nextjs':
         specifier: 7.74.1
         version: 7.74.1(encoding@0.1.13)(next@13.5.6)(react@18.2.0)
+      '@supercharge/promise-pool':
+        specifier: ^3.1.0
+        version: 3.1.0
       cheerio:
         specifier: 1.0.0-rc.12
         version: 1.0.0-rc.12
@@ -957,6 +960,11 @@ packages:
     transitivePeerDependencies:
       - encoding
       - supports-color
+    dev: false
+
+  /@supercharge/promise-pool@3.1.0:
+    resolution: {integrity: sha512-gB3NukbIcYzRtPoE6dx9svQYPodxvnfQlaaQd8N/z87E6WaMfRE7o5HwB+LZ+KeM0nsNAq1n4TmBtfz1VCUR+Q==}
+    engines: {node: '>=8'}
     dev: false
 
   /@swc/helpers@0.5.2:

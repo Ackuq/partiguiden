@@ -1,3 +1,5 @@
+import { PromisePool } from "@supercharge/promise-pool";
+
 import type { MemberParty } from "../parliament/types";
 import getAbsence from "./get-absence";
 import getMembers from "./get-members";
@@ -13,14 +15,12 @@ export default async function membersWithAbsenceController({
   party = "",
 }: Query): Promise<MemberAbsenceResponse[]> {
   const members = await getMembers(party);
-  const absencePromises = members.map((member) =>
-    getAbsence({ id: member.id, parliamentYears }),
-  );
+  const absence = await PromisePool.withConcurrency(30)
+    .for(members)
+    .process(async (member) => ({
+      ...member,
+      absence: await getAbsence({ id: member.id, parliamentYears }),
+    }));
 
-  const absence = await Promise.all(absencePromises);
-
-  return members.map((member, index) => ({
-    ...member,
-    absence: absence[index],
-  }));
+  return absence.results;
 }

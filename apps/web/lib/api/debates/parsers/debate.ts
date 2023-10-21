@@ -1,3 +1,5 @@
+import PromisePool from "@supercharge/promise-pool";
+
 import getProtocols from "@lib/api/parliament/get-protocols";
 import type {
   DocumentList,
@@ -6,7 +8,7 @@ import type {
 
 import getSpeaker from "../get-speaker";
 import getSpeech from "../get-speech";
-import type { Debate, DebateStatement } from "../types";
+import type { Debate } from "../types";
 
 function getSpeechesDocuments(document: DocumentListEntry) {
   const debate = document.debatt;
@@ -50,50 +52,48 @@ export default async function parseDebate(
 
   const speechesDocuments = getSpeechesDocuments(document);
 
-  const speechesPromises: Promise<DebateStatement>[] = protocolId
-    ? speechesDocuments
-        .filter((speech) => speech.talare !== "TALMANNEN")
-        .map((statement) =>
-          getSpeech(protocolId, statement.anf_nummer).then((data) => {
-            if (!data) {
-              return Promise.reject();
-            }
-            return {
-              ...data,
-              number: statement.anf_nummer,
-              date: statement.anf_datumtid,
-            };
-          }),
-        ) ?? []
-    : [];
+  const speechesPromises = PromisePool.withConcurrency(10)
+    .for(speechesDocuments.filter((speech) => speech.talare !== "TALMANNEN"))
+    .process(async (statement) => {
+      if (!protocolId) {
+        return Promise.reject();
+      }
+      const speech = await getSpeech(protocolId, statement.anf_nummer);
+      if (!speech) {
+        return Promise.reject();
+      }
+      return {
+        ...speech,
+        number: statement.anf_nummer,
+        date: statement.anf_datumtid,
+      };
+    });
 
   const speakerIds = new Set(
     speechesDocuments.map((speech) => speech.intressent_id),
   );
-  const speakerPromises = [...speakerIds].map(getSpeaker);
+  const speakerPromises = PromisePool.withConcurrency(10)
+    .for(speakerIds)
+    .process(getSpeaker);
 
   const webTVUrl = `https://www.riksdagen.se/views/pages/embedpage.aspx?did=${id}`;
 
   const [speakerList, speechesList] = await Promise.all([
-    Promise.allSettled(speakerPromises),
-    Promise.allSettled(speechesPromises),
+    speakerPromises,
+    speechesPromises,
   ]);
 
-  const speakers = speakerList.reduce((prev, current) => {
-    if (current.status === "rejected" || current.value === undefined) {
+  const speakers = speakerList.results.reduce((prev, current) => {
+    if (current === undefined) {
       return prev;
     }
-    return { ...prev, [current.value.id]: current.value };
+    return { ...prev, [current.id]: current };
   }, {});
 
   // TODO: Handle speeches from talmannen as well
-  const statements = speechesList
-    .filter(
-      (speech): speech is PromiseFulfilledResult<DebateStatement> =>
-        speech.status === "fulfilled",
-    )
-    .map((speech) => speech.value)
-    .filter((speech) => speech.speakerId !== "");
+  const statements = speechesList.results.filter(
+    (speech) => speech.speakerId !== "",
+  );
   return {
     id,
     title,

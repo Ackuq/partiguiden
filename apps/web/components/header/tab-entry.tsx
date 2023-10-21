@@ -66,7 +66,7 @@ function Dropdown({ routes, title, navRef }: DropdownProps) {
         }
         className={twMerge(
           "absolute mt-1 flex-col rounded shadow-md ",
-          "bg-background-elevated-light dark:bg-background-elevated-dark-200 text-font-light dark:text-font-primary",
+          "bg-background-elevated-light dark:bg-background-elevated-dark-200 text-slate-950 dark:text-slate-50",
           "flex aria-hidden:hidden",
         )}
       >

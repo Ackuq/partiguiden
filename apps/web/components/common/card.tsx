@@ -25,7 +25,7 @@ export function CommitteeHeader({ committee }: CommitteeHeaderProps) {
   const info = committeeInfo[committee];
   return (
     <CardHeader
-      className={twMerge("text-font-dark", committeeBackground[committee])}
+      className={twMerge("text-slate-50", committeeBackground[committee])}
     >
       {info.desc}
     </CardHeader>

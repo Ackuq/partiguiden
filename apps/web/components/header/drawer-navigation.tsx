@@ -19,7 +19,7 @@ export default function DrawerNavigation() {
   }, [drawerIsOpen]);
 
   return (
-    <div className="text-font-primary group" aria-hidden={!drawerIsOpen}>
+    <div className="group text-slate-50" aria-hidden={!drawerIsOpen}>
       <div
         aria-hidden="true"
         onClick={closeDrawer}

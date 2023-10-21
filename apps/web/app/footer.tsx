@@ -14,7 +14,7 @@ export default function Footer() {
           href={linkedIn}
           target="_blank"
           rel="noopener noreferrer"
-          aria-label="Skaparend LinkedIn profil"
+          aria-label="Skaparens LinkedIn profil"
         >
           <LinkedInIcon />
         </a>

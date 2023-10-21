@@ -44,7 +44,7 @@ export default function MemberCard({ member }: Props) {
       </MemberImage>
       <div
         className={twMerge(
-          "text-font-dark absolute bottom-0 left-0 w-full rounded-b p-2",
+          "absolute bottom-0 left-0 w-full rounded-b p-2 text-slate-50",
           "bg-slate-600/70 backdrop-blur-sm dark:bg-slate-900/75",
         )}
       >

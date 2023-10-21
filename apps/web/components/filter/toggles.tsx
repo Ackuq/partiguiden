@@ -37,7 +37,7 @@ export default function SearchToggles() {
               )}
             >
               <CheckMark
-                className="fill-font-dark dark:fill-font-light absolute inset-0 m-auto group-data-[checked=false]:hidden"
+                className="absolute inset-0 m-auto fill-slate-50 group-data-[checked=false]:hidden dark:fill-slate-950"
                 size={14}
               />
             </div>

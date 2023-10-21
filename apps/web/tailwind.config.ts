@@ -39,11 +39,6 @@ const themeColors = {
     dark: colors.slate[950],
     light: colors.slate[50],
   },
-  font: {
-    dark: colors.slate[50],
-    light: colors.slate[950],
-    primary: colors.slate[50],
-  },
   voting: {
     ...votingColors,
   },

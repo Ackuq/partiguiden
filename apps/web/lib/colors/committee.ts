@@ -1,4 +1,4 @@
-import { Committee } from "../committes";
+import { Committee } from "../committees";
 
 export const committeeColors: Record<Committee, string> = {
   [Committee.AU]: "#3498db",

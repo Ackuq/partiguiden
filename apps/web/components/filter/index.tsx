@@ -42,7 +42,7 @@ export default function Filter() {
         onClick={openDrawer}
         aria-label="Öppna filtermeny"
         className={twMerge(
-          "bg-background-light dark:bg-background-elevated-dark fixed bottom-4 right-4 z-50 rounded-full p-4 shadow-md",
+          "fixed bottom-4 right-4 z-50 rounded-full bg-slate-50 p-4 shadow-md dark:bg-slate-800",
           "sm:hidden",
         )}
       >
@@ -51,7 +51,7 @@ export default function Filter() {
       <div
         className={twMerge(
           "top-0 z-50 h-screen overflow-y-scroll shadow-sm",
-          "dark:bg-background-elevated-dark bg-white transition-transform",
+          "bg-white transition-transform dark:bg-slate-800",
           "w-drawer translate-x-drawer fixed right-0 pt-12 group-data-[mobile-hidden=false]:translate-x-0",
           // Desktop styles, disable when drawer-visible=true in order to correctly render the site when resized.
           "group-data-[mobile-hidden=true]:sm:top-header-sm-with-margin group-data-[mobile-hidden=true]:sm:max-h-full-without-header",

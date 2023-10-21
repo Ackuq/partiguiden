@@ -1,4 +1,11 @@
 {
-  "plugins": ["prettier-plugin-tailwindcss"],
-  "trailingComma": "all"
+  "plugins": [
+    "prettier-plugin-tailwindcss",
+    "@trivago/prettier-plugin-sort-imports"
+  ],
+  "trailingComma": "all",
+  "tailwindFunctions": ["twMerge"],
+  "importOrder": ["^(@partiguiden|@app|@components|@lib)/(.*)$", "^[./]"],
+  "importOrderSeparation": true,
+  "importOrderSortSpecifiers": true
 }

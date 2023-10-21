@@ -1,15 +1,12 @@
 import type { Config } from "tailwindcss";
-import colors from "tailwindcss/colors";
+
 import { partyColors } from "@partiguiden/party-data/utils";
-import { votingColors } from "./lib/colors/voting";
+
 import { committeeColors, committeeColorsDark } from "./lib/colors/committee";
+import { votingColors } from "./lib/colors/voting";
 
 const themeColors = {
   primary: {
-    elevated: {
-      dark: colors.slate[900],
-      light: "#339388",
-    },
     dark: "#00554b",
     DEFAULT: "#00796b",
     light: "#80cbc4",
@@ -22,22 +19,6 @@ const themeColors = {
     dark: {
       ...committeeColorsDark,
     },
-  },
-  background: {
-    elevated: {
-      dark: {
-        DEFAULT: colors.slate[800],
-        100: colors.slate[800],
-        200: colors.slate[700],
-      },
-      light: {
-        DEFAULT: colors.slate[100],
-        100: colors.slate[100],
-        200: colors.slate[200],
-      },
-    },
-    dark: colors.slate[950],
-    light: colors.slate[50],
   },
   voting: {
     ...votingColors,

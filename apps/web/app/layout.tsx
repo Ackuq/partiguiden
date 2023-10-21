@@ -21,7 +21,7 @@ export default function RootLayout({ children }: PropsWithChildren) {
       <body
         className={twMerge(
           roboto.className,
-          "bg-background-light dark:bg-background-dark flex min-h-screen flex-col text-slate-950 dark:text-slate-50",
+          "flex min-h-screen flex-col bg-slate-50 text-slate-950 dark:bg-slate-950 dark:text-slate-50",
         )}
       >
         <ThemeProvider attribute="class">

@@ -15,9 +15,9 @@ const shiftColors = [
   "[&:nth-child(3n)]:bg-gray-100",
   "[&:nth-child(3n+1)]:bg-gray-200",
   "[&:nth-child(3n+2)]:bg-gray-200/60",
-  "dark:[&:nth-child(3n)]:bg-background-elevated-dark",
-  "dark:[&:nth-child(3n+1)]:bg-background-elevated-dark",
-  "dark:[&:nth-child(3n+2)]:bg-background-elevated-dark",
+  "dark:[&:nth-child(3n)]:bg-slate-800",
+  "dark:[&:nth-child(3n+1)]:bg-slate-800",
+  "dark:[&:nth-child(3n+2)]:bg-slate-800",
 ].join(" ");
 
 export default function Subjects() {

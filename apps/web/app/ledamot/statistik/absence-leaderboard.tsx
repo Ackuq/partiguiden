@@ -91,7 +91,7 @@ function MemberListEntry({ member, variant }: MemberListEntryProps) {
         href={routes.member(member.id)}
         className={twMerge(
           "flex items-center gap-4 px-4 py-2",
-          "hover:bg-background-elevated-light-100 dark:hover:bg-background-elevated-dark-200 transition-[background-color_box-shadow]",
+          "transition-[background-color_box-shadow] hover:bg-slate-100 dark:hover:bg-slate-700",
           "hover:shadow-xl dark:shadow-slate-900",
         )}
       >

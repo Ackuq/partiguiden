@@ -41,7 +41,7 @@ export function Card({ children, className = "", ...props }: BaseCardProps) {
     <div
       className={twMerge(
         "overflow-hidden rounded bg-white p-4 shadow-md",
-        "dark:bg-background-elevated-dark",
+        "dark:bg-slate-800",
         className,
       )}
       {...props}

@@ -31,7 +31,7 @@ export default function DrawerNavigation() {
       <div
         aria-modal
         className={twMerge(
-          "bg-primary dark:bg-background-elevated-dark w-drawer fixed right-0 top-0 z-50 h-full overflow-y-scroll",
+          "bg-primary w-drawer fixed right-0 top-0 z-50 h-full overflow-y-scroll dark:bg-slate-800",
           "translate-x-drawer group-aria-visible:translate-x-0 transition-transform",
           "motion-reduce:transition-none",
         )}

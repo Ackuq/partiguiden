@@ -1,10 +1,8 @@
-import Image from "next/image";
 import Link from "next/link";
 import { twMerge } from "tailwind-merge";
 
 import MemberImage from "@components/parliament/member-image";
 import type { DebateStatement, Speaker } from "@lib/api/debates/types";
-import { partyLogo } from "@lib/assets";
 import { routes } from "@lib/navigation";
 
 interface Props {
@@ -44,22 +42,11 @@ export default function Statement({ statement, speaker, isSender }: Props) {
           imageUrl={speaker.imageUrl}
           firstName={speaker.firstName}
           lastName={speaker.lastName}
+          party={speaker.party}
+          logoDirection={isSender ? "left" : "right"}
           sizes="(min-width: 640px) 80px, 64px"
           className="mb-1 ml-auto h-16 w-16 sm:h-20 sm:w-20"
-        >
-          {speaker.party !== "-" && (
-            <Image
-              className={twMerge(
-                "absolute right-0 top-0 h-auto w-6 sm:w-8",
-                isSender && "left-0",
-              )}
-              width={32}
-              height={32}
-              src={partyLogo(speaker.party)}
-              alt="Partisymbol"
-            />
-          )}
-        </MemberImage>
+        />
         <p className="text-center text-sm">
           {speaker.firstName} {speaker.lastName}
         </p>

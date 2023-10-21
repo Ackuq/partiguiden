@@ -1,10 +1,8 @@
-import Image from "next/image";
 import Link from "next/link";
 
 import { Card, CommitteeHeader } from "@components/common/card";
 import MemberImage from "@components/parliament/member-image";
 import type { DebateListEntry } from "@lib/api/debates/types";
-import { partyLogo } from "@lib/assets";
 import { routes } from "@lib/navigation";
 
 interface Props {
@@ -33,19 +31,10 @@ export default function DebateCard({ debate }: Props) {
               imageUrl={debate.sender.imageUrl}
               firstName={debate.sender.firstName}
               lastName={debate.sender.lastName}
+              party={debate.sender.party}
               sizes="(min-width: 640px) 96px, 80px"
               className="h-20 w-20 flex-shrink-0 sm:h-24 sm:w-24"
-            >
-              {debate.sender.party !== "-" && (
-                <Image
-                  className="absolute left-0 top-0"
-                  width={25}
-                  height={25}
-                  src={partyLogo(debate.sender.party)}
-                  alt="Partisymbol"
-                />
-              )}
-            </MemberImage>
+            />
           )}
         </div>
       </Card>

@@ -46,7 +46,7 @@ export default async function DebatePage({ params: { id } }: Props) {
           <Divider />
           <iframe
             src={debate.webTVUrl}
-            className="mx-auto h-[400px] w-full sm:h-[342px] sm:w-[608px] md:h-[360px] md:w-[640px] 2xl:h-[540px] 2xl:w-[960px]"
+            className="mx-auto h-[400px] w-full sm:h-[342px] sm:w-[576px] md:h-[360px] md:w-[640px] 2xl:h-[540px] 2xl:w-[960px]"
             allowFullScreen={true}
             title={`${debate.type} ${debate.date} från Riksdagen om ${debate.title}`}
           />

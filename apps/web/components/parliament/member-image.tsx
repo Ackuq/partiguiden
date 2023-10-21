@@ -4,6 +4,10 @@ import Image from "next/image";
 import { useState } from "react";
 import { twMerge } from "tailwind-merge";
 
+import { partyLogo } from "@lib/assets";
+import type { Party } from "@partiguiden/party-data/types";
+import { partyNames } from "@partiguiden/party-data/utils";
+
 function firstLetterOfSentences(s: string) {
   return s
     .split(" ")
@@ -11,20 +15,23 @@ function firstLetterOfSentences(s: string) {
     .join("");
 }
 
-type MemberImageProps = React.PropsWithChildren<{
+type MemberImageProps = {
   imageUrl: string;
   firstName: string;
   lastName: string;
+  party?: Party | "-";
+  logoDirection?: "left" | "right";
   className?: string;
   sizes?: string;
-}>;
+};
 
 export default function MemberImage({
   imageUrl,
   firstName,
   lastName,
   className,
-  children,
+  logoDirection = "left",
+  party,
   sizes = "(min-width: 640px) 160px, 96px",
 }: MemberImageProps) {
   const [fallback, setFallback] = useState(false);
@@ -48,7 +55,18 @@ export default function MemberImage({
           </span>
         </div>
       )}
-      {children}
+      {party && party !== "-" && (
+        <Image
+          className={twMerge(
+            "absolute top-0 w-[33%]",
+            logoDirection === "left" ? "left-0" : "right-0",
+          )}
+          width={64}
+          height={64}
+          src={partyLogo(party)}
+          alt={`${partyNames[party]}s logga`}
+        />
+      )}
     </div>
   );
 }

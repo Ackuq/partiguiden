@@ -3,6 +3,7 @@ import { twMerge } from "tailwind-merge";
 
 import { partyLogo } from "@lib/assets";
 import type { Party } from "@partiguiden/party-data/types";
+import { partyNames } from "@partiguiden/party-data/utils";
 
 interface PartyIconProps {
   party: Party;
@@ -22,7 +23,7 @@ export default function PartyIcon({
         fill
         sizes={sizes}
         className="object-cover"
-        alt={`${party} logga`}
+        alt={`${partyNames[party]}s logga`}
       />
     </div>
   );

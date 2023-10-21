@@ -1,24 +1,8 @@
 import type { Config } from "tailwindcss";
 
-import { partyColors } from "@partiguiden/party-data/utils";
-
-import { committeeColors, committeeColorsDark } from "./lib/colors/committee";
-import { votingColors } from "./lib/colors/voting";
-
-const themeColors = {
-  party: {
-    ...partyColors,
-  },
-  committee: {
-    ...committeeColors,
-    dark: {
-      ...committeeColorsDark,
-    },
-  },
-  voting: {
-    ...votingColors,
-  },
-};
+import committeeColors from "./lib/colors/committee";
+import partyColors from "./lib/colors/party";
+import votingColors from "./lib/colors/voting";
 
 const themeHeight = {
   header: "3.5rem",
@@ -52,7 +36,17 @@ const config: Config = {
       },
     },
     extend: {
-      colors: themeColors,
+      colors: {
+        party: {
+          ...partyColors,
+        },
+        committee: {
+          ...committeeColors,
+        },
+        voting: {
+          ...votingColors,
+        },
+      },
       height: themeHeight,
       width: themeWidth,
       translate: {

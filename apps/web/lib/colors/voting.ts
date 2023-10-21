@@ -1,6 +1,6 @@
 import colors from "tailwindcss/colors";
 
-export const votingColors = {
+const votingColors = {
   yes: {
     light: colors.emerald[300],
     DEFAULT: colors.teal[500],
@@ -38,3 +38,5 @@ export function getThemeVotingColors(
     { yes: "", no: "", refrain: "", absent: "", losing: "" },
   );
 }
+
+export default votingColors;

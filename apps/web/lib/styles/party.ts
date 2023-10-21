@@ -1,57 +1,60 @@
 import { Party } from "@partiguiden/party-data/types";
 
-export const partyBorderBottom: { [K in Party]: `border-b-party-${K}` } = {
-  [Party.C]: "border-b-party-C",
-  [Party.KD]: "border-b-party-KD",
-  [Party.L]: "border-b-party-L",
-  [Party.M]: "border-b-party-M",
-  [Party.MP]: "border-b-party-MP",
-  [Party.S]: "border-b-party-S",
-  [Party.SD]: "border-b-party-SD",
-  [Party.V]: "border-b-party-V",
+type PartyColorStyleProp<S extends string, E extends string = ""> = {
+  [P in Party]: `${S}-party-${P}${E} dark:${S}-party-${P}-dark${E}`;
 };
 
-export const partyTextColor: { [K in Party]: `text-party-${K}` } = {
-  [Party.C]: "text-party-C",
-  [Party.KD]: "text-party-KD",
-  [Party.L]: "text-party-L",
-  [Party.M]: "text-party-M",
-  [Party.MP]: "text-party-MP",
-  [Party.S]: "text-party-S",
-  [Party.SD]: "text-party-SD",
-  [Party.V]: "text-party-V",
-} as const;
+export const partyBorderBottom: PartyColorStyleProp<"border-b"> = {
+  [Party.S]: "border-b-party-S dark:border-b-party-S-dark",
+  [Party.SD]: "border-b-party-SD dark:border-b-party-SD-dark",
+  [Party.M]: "border-b-party-M dark:border-b-party-M-dark",
+  [Party.MP]: "border-b-party-MP dark:border-b-party-MP-dark",
+  [Party.L]: "border-b-party-L dark:border-b-party-L-dark",
+  [Party.KD]: "border-b-party-KD dark:border-b-party-KD-dark",
+  [Party.C]: "border-b-party-C dark:border-b-party-C-dark",
+  [Party.V]: "border-b-party-V dark:border-b-party-V-dark",
+};
 
-export const partyBackground: { [K in Party]: `bg-party-${K}` } = {
-  [Party.C]: "bg-party-C",
-  [Party.KD]: "bg-party-KD",
-  [Party.L]: "bg-party-L",
-  [Party.M]: "bg-party-M",
-  [Party.MP]: "bg-party-MP",
-  [Party.S]: "bg-party-S",
-  [Party.SD]: "bg-party-SD",
-  [Party.V]: "bg-party-V",
-} as const;
+export const partyTextColor: PartyColorStyleProp<"text"> = {
+  [Party.S]: "text-party-S dark:text-party-S-dark",
+  [Party.SD]: "text-party-SD dark:text-party-SD-dark",
+  [Party.M]: "text-party-M dark:text-party-M-dark",
+  [Party.MP]: "text-party-MP dark:text-party-MP-dark",
+  [Party.L]: "text-party-L dark:text-party-L-dark",
+  [Party.KD]: "text-party-KD dark:text-party-KD-dark",
+  [Party.C]: "text-party-C dark:text-party-C-dark",
+  [Party.V]: "text-party-V dark:text-party-V-dark",
+};
 
-export const partyBackgroundHover: { [K in Party]: `hover:bg-party-${K}/25` } =
-  {
-    [Party.C]: "hover:bg-party-C/25",
-    [Party.KD]: "hover:bg-party-KD/25",
-    [Party.L]: "hover:bg-party-L/25",
-    [Party.M]: "hover:bg-party-M/25",
-    [Party.MP]: "hover:bg-party-MP/25",
-    [Party.S]: "hover:bg-party-S/25",
-    [Party.SD]: "hover:bg-party-SD/25",
-    [Party.V]: "hover:bg-party-V/25",
-  } as const;
+export const partyBackground: PartyColorStyleProp<"bg"> = {
+  [Party.S]: "bg-party-S dark:bg-party-S-dark",
+  [Party.SD]: "bg-party-SD dark:bg-party-SD-dark",
+  [Party.M]: "bg-party-M dark:bg-party-M-dark",
+  [Party.MP]: "bg-party-MP dark:bg-party-MP-dark",
+  [Party.L]: "bg-party-L dark:bg-party-L-dark",
+  [Party.KD]: "bg-party-KD dark:bg-party-KD-dark",
+  [Party.C]: "bg-party-C dark:bg-party-C-dark",
+  [Party.V]: "bg-party-V dark:bg-party-V-dark",
+};
 
-export const partyMarker: { [K in Party]: `marker:text-party-${K}` } = {
-  [Party.C]: "marker:text-party-C",
-  [Party.KD]: "marker:text-party-KD",
-  [Party.L]: "marker:text-party-L",
-  [Party.M]: "marker:text-party-M",
-  [Party.MP]: "marker:text-party-MP",
-  [Party.S]: "marker:text-party-S",
-  [Party.SD]: "marker:text-party-SD",
-  [Party.V]: "marker:text-party-V",
+export const partyBackgroundHover: PartyColorStyleProp<"hover:bg", "/25"> = {
+  [Party.S]: "hover:bg-party-S/25 dark:hover:bg-party-S-dark/25",
+  [Party.SD]: "hover:bg-party-SD/25 dark:hover:bg-party-SD-dark/25",
+  [Party.M]: "hover:bg-party-M/25 dark:hover:bg-party-M-dark/25",
+  [Party.MP]: "hover:bg-party-MP/25 dark:hover:bg-party-MP-dark/25",
+  [Party.L]: "hover:bg-party-L/25 dark:hover:bg-party-L-dark/25",
+  [Party.KD]: "hover:bg-party-KD/25 dark:hover:bg-party-KD-dark/25",
+  [Party.C]: "hover:bg-party-C/25 dark:hover:bg-party-C-dark/25",
+  [Party.V]: "hover:bg-party-V/25 dark:hover:bg-party-V-dark/25",
+};
+
+export const partyMarker: PartyColorStyleProp<"marker:text"> = {
+  [Party.S]: "marker:text-party-S dark:marker:text-party-S-dark",
+  [Party.SD]: "marker:text-party-SD dark:marker:text-party-SD-dark",
+  [Party.M]: "marker:text-party-M dark:marker:text-party-M-dark",
+  [Party.MP]: "marker:text-party-MP dark:marker:text-party-MP-dark",
+  [Party.L]: "marker:text-party-L dark:marker:text-party-L-dark",
+  [Party.KD]: "marker:text-party-KD dark:marker:text-party-KD-dark",
+  [Party.C]: "marker:text-party-C dark:marker:text-party-C-dark",
+  [Party.V]: "marker:text-party-V dark:marker:text-party-V-dark",
 };

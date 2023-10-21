@@ -1,5 +1,5 @@
 import type { Party } from "@partiguiden/party-data/types";
 
 export function partyLogo(party: Party) {
-  return `/static/images/party-logos/${party}.png`;
+  return `/party-logos/${party}.png`;
 }

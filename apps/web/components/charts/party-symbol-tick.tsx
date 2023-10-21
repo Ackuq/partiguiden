@@ -1,6 +1,8 @@
+import type { Party } from "@partiguiden/party-data/types";
+
 interface Props {
   payload?: {
-    value: string;
+    value: Party;
   };
   x?: string;
   y?: string;
@@ -9,13 +11,13 @@ interface Props {
 
 const PartySymbolTick = ({
   vertical = false,
-  payload: { value } = { value: "" },
+  payload,
   x = "0",
   y = "0",
 }: Props) => {
-  const href = value
-    ? `/static/images/party-logos/${value.toUpperCase()}-low-res.png`
-    : "";
+  if (!payload?.value) return;
+  const party = payload.value;
+
   let X = parseInt(x, 10);
   let Y = parseInt(y, 10);
   if (vertical) {
@@ -30,10 +32,10 @@ const PartySymbolTick = ({
     <image
       x={`${X}`}
       y={`${Y}`}
-      href={href}
+      href={`/party-logos/${party}-64.png`}
       className="h-6 w-6 sm:h-8 sm:w-8"
-      width="30"
-      height="30"
+      width="32"
+      height="32"
     />
   );
 };

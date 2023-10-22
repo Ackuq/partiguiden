@@ -21,23 +21,6 @@ interface PageProps {
   };
 }
 
-export async function generateMetadata({
-  params: { party: partyAbbreviation },
-}: PageProps) {
-  const party = partyAbbreviation.toUpperCase() as Party;
-
-  if (!Object.values(Party).includes(party)) {
-    return { title: ERROR_404_TITLE };
-  }
-
-  const partyName = partyNames[party];
-
-  return {
-    title: `${partyName} | Party | Partiguiden`,
-    description: `Vilka är ${partyName} och vad är deras ideologi? Läs på om dem här!`,
-  };
-}
-
 export default async function PartyPage({
   params: { party: partyAbbreviationLowercase },
 }: PageProps) {
@@ -118,6 +101,25 @@ export default async function PartyPage({
     </main>
   );
 }
+
+export async function generateMetadata({
+  params: { party: partyAbbreviation },
+}: PageProps) {
+  const party = partyAbbreviation.toUpperCase() as Party;
+
+  if (!Object.values(Party).includes(party)) {
+    return { title: ERROR_404_TITLE };
+  }
+
+  const partyName = partyNames[party];
+
+  return {
+    title: `${partyName} | Party | Partiguiden`,
+    description: `Vilka är ${partyName} och vad är deras ideologi? Läs på om dem här!`,
+  };
+}
+
+export const dynamicParams = false;
 
 export async function generateStaticParams() {
   const parties = Object.values(Party);

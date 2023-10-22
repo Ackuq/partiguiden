@@ -11,12 +11,6 @@ interface Props {
   };
 }
 
-export function generateMetadata({ params: { id } }: Props) {
-  return {
-    title: `${id} | Dokument | Partiguiden`,
-  };
-}
-
 export default async function Document({ params: { id } }: Props) {
   const document = await getDocumentHtml(id);
 
@@ -34,4 +28,12 @@ export default async function Document({ params: { id } }: Props) {
       </Container>
     </main>
   );
+}
+
+export const runtime = "edge";
+
+export function generateMetadata({ params: { id } }: Props) {
+  return {
+    title: `${id} | Dokument | Partiguiden`,
+  };
 }

@@ -74,6 +74,8 @@ export default async function DebatePage({ params: { id } }: Props) {
   );
 }
 
+export const runtime = "edge";
+
 export function generateMetadata({ params: { id } }: Props) {
   return {
     title: `${id} | Debatt | Partiguiden`,

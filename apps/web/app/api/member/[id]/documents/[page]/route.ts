@@ -20,3 +20,5 @@ export async function GET(
   const memberDocuments = await getMemberDocuments({ id, page: pageInt });
   return Response.json(memberDocuments);
 }
+
+export const runtime = "edge";

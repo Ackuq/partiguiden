@@ -1,5 +1,4 @@
 import dynamic from "next/dynamic";
-import Link from "next/link";
 import { notFound } from "next/navigation";
 
 import Accordion from "@components/common/accordion";
@@ -9,14 +8,16 @@ import Container from "@components/common/container";
 import { Divider } from "@components/common/divider";
 import PageTitle from "@components/common/page-title";
 import getVote from "@lib/api/vote/get-vote";
-import type { ProcessedDocument, VoteAppendixItem } from "@lib/api/vote/types";
 import { routes } from "@lib/navigation";
+
+import { Appendix } from "./components/appendix";
+import { Documents } from "./components/documents";
 
 const ResponsiveAd = dynamic(() => import("@components/ads/responsive-ad"), {
   ssr: false,
 });
 
-const TotalVote = dynamic(() => import("./total-vote"), {
+const TotalVote = dynamic(() => import("./components/total-vote"), {
   ssr: false,
   loading: () => (
     <div role="status" className="h-[6.5rem] sm:h-24">
@@ -26,21 +27,17 @@ const TotalVote = dynamic(() => import("./total-vote"), {
   ),
 });
 
-const VoteDistribution = dynamic(() => import("./vote-distribution"), {
-  ssr: false,
-});
+const VoteDistribution = dynamic(
+  () => import("./components/vote-distribution"),
+  {
+    ssr: false,
+  },
+);
 
 interface Props {
   params: {
     id: string;
     bet: string;
-  };
-}
-
-export function generateMetadata({ params: { id, bet } }: Props) {
-  return {
-    title: `${id} förslagpunkt ${bet} | Votering | Partiguiden`,
-    description: `Hur har partiernat röstat i voteringen ${id} förslagspunkt ${bet}`,
   };
 }
 
@@ -107,39 +104,11 @@ export default async function Vote({ params: { id, bet } }: Props) {
   );
 }
 
-function Documents({ documents }: { documents: ProcessedDocument[] }) {
-  return (
-    <Accordion title="Behandlade dokument">
-      <ul>
-        {documents.map((document, index) => (
-          <li key={document.id}>
-            <Link
-              href={routes.document(document.id)}
-              className="text-teal-900 dark:text-teal-200 ml-4 hover:underline"
-            >
-              [{index}] {document.label}
-            </Link>
-          </li>
-        ))}
-      </ul>
-    </Accordion>
-  );
-}
+export const runtime = "edge";
 
-function Appendix({ documents }: { documents: VoteAppendixItem[] }) {
-  return (
-    <div>
-      {documents.map((document) => (
-        <a
-          className="text-teal-900 dark:text-teal-200 hover:underline"
-          href={document.fil_url}
-          key={document.fil_url}
-          target="_blank"
-          rel="noopener"
-        >
-          {document.titel} {document.dok_id}
-        </a>
-      ))}
-    </div>
-  );
+export function generateMetadata({ params: { id, bet } }: Props) {
+  return {
+    title: `${id} förslagpunkt ${bet} | Votering | Partiguiden`,
+    description: `Hur har partiernat röstat i voteringen ${id} förslagspunkt ${bet}`,
+  };
 }

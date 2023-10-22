@@ -104,8 +104,6 @@ export default async function Vote({ params: { id, bet } }: Props) {
   );
 }
 
-export const runtime = "edge";
-
 export function generateMetadata({ params: { id, bet } }: Props) {
   return {
     title: `${id} förslagpunkt ${bet} | Votering | Partiguiden`,

@@ -39,9 +39,10 @@ export default async function DebatesPage({ searchParams }: Props) {
   );
 }
 
+export const runtime = "edge";
+export const dynamic = "force-dynamic";
+
 export const metadata = {
   title: "Debatter | Partiguiden",
   description: "Här hittar du en lista på de senaste debatterna i riksdagen.",
 };
-
-export const dynamic = "force-dynamic";

@@ -35,6 +35,7 @@ export default function Votes({ searchParams }: Props) {
 }
 
 export const dynamic = "force-dynamic";
+export const runtime = "edge";
 
 export const metadata = {
   title: "Voteringar | Partiguiden",

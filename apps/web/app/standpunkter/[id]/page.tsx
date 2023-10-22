@@ -23,21 +23,6 @@ interface PageProps {
   };
 }
 
-export async function generateMetadata({ params: { id } }: PageProps) {
-  const subject = getSubject(id);
-
-  if (!subject) {
-    return {
-      title: ERROR_404_TITLE,
-    };
-  }
-
-  return {
-    title: `${subject.name} | Ämne | Partiguiden`,
-    description: `Vad tar Sveriges partier för ståndpunkter inom sakområdet ${subject.name}? Här hittar du informationen du behöver för att kunna jämföra och hitta det parti du sympatiserar med mest!`,
-  };
-}
-
 export default function Standpoints({ params: { id } }: PageProps) {
   const subject = getSubject(id);
   if (!subject) {
@@ -93,6 +78,23 @@ export default function Standpoints({ params: { id } }: PageProps) {
     </main>
   );
 }
+
+export async function generateMetadata({ params: { id } }: PageProps) {
+  const subject = getSubject(id);
+
+  if (!subject) {
+    return {
+      title: ERROR_404_TITLE,
+    };
+  }
+
+  return {
+    title: `${subject.name} | Ämne | Partiguiden`,
+    description: `Vad tar Sveriges partier för ståndpunkter inom sakområdet ${subject.name}? Här hittar du informationen du behöver för att kunna jämföra och hitta det parti du sympatiserar med mest!`,
+  };
+}
+
+export const dynamicParams = false;
 
 export async function generateStaticParams() {
   const subjects = getSubjects();

@@ -17,23 +17,6 @@ const roboto = Roboto({
   fallback: ["Helvetica", "Arial", "sans-serif"],
 });
 
-export const metadata = {
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-  },
-  icons: [
-    {
-      url: "/apple-icon",
-    },
-  ],
-  metadataBase: new URL("https://partiguiden.nu"),
-  themeColor: [
-    { media: "(prefers-color-scheme: dark)", color: colors.slate[800] },
-    { media: "(prefers-color-scheme: light)", color: colors.teal[700] },
-  ],
-};
-
 export default function RootLayout({ children }: PropsWithChildren) {
   return (
     <html lang="sv" suppressHydrationWarning>
@@ -53,3 +36,20 @@ export default function RootLayout({ children }: PropsWithChildren) {
     </html>
   );
 }
+
+export const metadata = {
+  viewport: {
+    width: "device-width",
+    initialScale: 1,
+  },
+  icons: [
+    {
+      url: "/apple-icon",
+    },
+  ],
+  metadataBase: new URL("https://partiguiden.nu"),
+  themeColor: [
+    { media: "(prefers-color-scheme: dark)", color: colors.slate[800] },
+    { media: "(prefers-color-scheme: light)", color: colors.teal[700] },
+  ],
+};

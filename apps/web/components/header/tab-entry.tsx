@@ -80,7 +80,7 @@ function Dropdown({ routes, title, navRef }: DropdownProps) {
               onClick={handleClose}
             >
               {route.Icon && <route.Icon />}
-              {title}
+              {route.title}
             </Link>
           </li>
         ))}

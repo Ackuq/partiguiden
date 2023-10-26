@@ -19,7 +19,7 @@
     "@inquirer/prompts": "^3.2.0",
     "@partiguiden/eslint-config-base": "workspace:*",
     "@partiguiden/tsconfig": "workspace:*",
-    "@types/node": "20.8.8",
+    "@types/node": "20.8.9",
     "ts-node": "^10.9.1"
   }
 }

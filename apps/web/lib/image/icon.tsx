@@ -1,7 +1,7 @@
-import { ImageResponse } from "next/server";
+import { ImageResponse } from "next/og";
 import colors from "tailwindcss/colors";
 
-export default async function xPartiguidenIcon(size: number) {
+export default async function PartiguidenIcon(size: number) {
   const robotoMedium = fetch(
     new URL("./fonts/Roboto-Bold.ttf", import.meta.url),
   ).then((res) => res.arrayBuffer());

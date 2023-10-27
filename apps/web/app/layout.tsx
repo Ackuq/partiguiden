@@ -37,19 +37,20 @@ export default function RootLayout({ children }: PropsWithChildren) {
   );
 }
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: [
+    { media: "(prefers-color-scheme: dark)", color: colors.slate[800] },
+    { media: "(prefers-color-scheme: light)", color: colors.teal[700] },
+  ],
+};
+
 export const metadata = {
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-  },
   icons: [
     {
       url: "/apple-icon",
     },
   ],
   metadataBase: new URL("https://partiguiden.nu"),
-  themeColor: [
-    { media: "(prefers-color-scheme: dark)", color: colors.slate[800] },
-    { media: "(prefers-color-scheme: light)", color: colors.teal[700] },
-  ],
 };

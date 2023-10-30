@@ -20,7 +20,7 @@
     "@google-analytics/data": "^4.0.1",
     "@heroicons/react": "^2.0.18",
     "@partiguiden/party-data": "workspace:*",
-    "@sentry/nextjs": "7.75.1",
+    "@sentry/nextjs": "7.76.0",
     "@supercharge/promise-pool": "^3.1.0",
     "cheerio": "1.0.0-rc.12",
     "encoding": "^0.1.13",
@@ -32,7 +32,7 @@
     "recharts": "2.9.0",
     "request": "^2.88.2",
     "strip-json-comments": "5.0.1",
-    "tailwind-merge": "^1.14.0",
+    "tailwind-merge": "^2.0.0",
     "typed.js": "2.0.16"
   },
   "devDependencies": {

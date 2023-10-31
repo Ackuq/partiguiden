@@ -36,7 +36,7 @@
     "typed.js": "2.0.16"
   },
   "devDependencies": {
-    "@next/bundle-analyzer": "14.0.0",
+    "@next/bundle-analyzer": "14.0.1",
     "@partiguiden/eslint-config-base": "workspace:*",
     "@partiguiden/tsconfig": "workspace:*",
     "@types/gtag.js": "0.0.17",

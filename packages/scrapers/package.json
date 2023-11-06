@@ -15,7 +15,7 @@
     "@partiguiden/tsconfig": "workspace:*",
     "@types/node": "20.8.10",
     "cheerio": "1.0.0-rc.12",
-    "pdfjs-dist": "3.11.174",
+    "pdfjs-dist": "4.0.189",
     "ts-node": "^10.9.1"
   }
 }

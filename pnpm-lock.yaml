@@ -19,8 +19,8 @@ importers:
   apps/web:
     dependencies:
       '@google-analytics/data':
-        specifier: ^4.0.1
-        version: 4.0.1(encoding@0.1.13)
+        specifier: ^4.1.0
+        version: 4.1.0(encoding@0.1.13)
       '@heroicons/react':
         specifier: ^2.0.18
         version: 2.0.18(react@18.2.0)
@@ -376,8 +376,8 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
 
-  /@google-analytics/data@4.0.1(encoding@0.1.13):
-    resolution: {integrity: sha512-YhxMQuno21LF7W9sLZMPBuxJoRQ/A50kFvGJuZUmD4girm5PyEQDpew6vooUh7GjMcfpvM8b1XIIFk6pyFaBjA==}
+  /@google-analytics/data@4.1.0(encoding@0.1.13):
+    resolution: {integrity: sha512-OMHSfqKi1a7OSjpc1n3MSynuPnfLrzYa8euEp2mrRH2XRzjFnHoQ0smiLOy3GSwGVbzT0ps8juNcT72I2nZjjQ==}
     engines: {node: '>=14.0.0'}
     dependencies:
       google-gax: 4.0.4(encoding@0.1.13)

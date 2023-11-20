@@ -23,7 +23,7 @@ export default function SocialMediaShare({ title }: SocialMediaShareProps) {
 
   return (
     <div className="flex justify-end gap-2">
-      <FacebookShareButton url={path} quote={title}>
+      <FacebookShareButton url={path} title={title}>
         <FacebookIcon size={size} round />
       </FacebookShareButton>
       <TwitterShareButton url={path} title={title}>

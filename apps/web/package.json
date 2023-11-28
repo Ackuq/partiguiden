@@ -20,7 +20,7 @@
     "@google-analytics/data": "^4.1.0",
     "@heroicons/react": "^2.0.18",
     "@partiguiden/party-data": "workspace:*",
-    "@sentry/nextjs": "7.81.1",
+    "@sentry/nextjs": "7.82.0",
     "@supercharge/promise-pool": "^3.1.0",
     "cheerio": "1.0.0-rc.12",
     "encoding": "^0.1.13",

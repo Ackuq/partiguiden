@@ -5,7 +5,7 @@
   "author": "Axel Pettersson",
   "license": "ISC",
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --experimental-https",
     "start": "next start",
     "build": "next build",
     "postbuild": "next-sitemap",

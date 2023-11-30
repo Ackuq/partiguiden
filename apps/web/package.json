@@ -28,7 +28,7 @@
     "next-themes": "^0.2.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-share": "5.0.2",
+    "react-share": "5.0.3",
     "recharts": "2.10.2",
     "request": "^2.88.2",
     "strip-json-comments": "5.0.1",

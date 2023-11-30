@@ -52,8 +52,8 @@ importers:
         specifier: 18.2.0
         version: 18.2.0(react@18.2.0)
       react-share:
-        specifier: 5.0.2
-        version: 5.0.2(react@18.2.0)
+        specifier: 5.0.3
+        version: 5.0.3(react@18.2.0)
       recharts:
         specifier: 2.10.2
         version: 2.10.2(prop-types@15.8.1)(react-dom@18.2.0)(react@18.2.0)
@@ -4460,8 +4460,8 @@ packages:
     resolution: {integrity: sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==}
     dev: false
 
-  /react-share@5.0.2(react@18.2.0):
-    resolution: {integrity: sha512-4v6SqM2CfUqtOjBhV0iVELTR55zgCmfZ7qDHtpuT+Cb1boUBIh6D1WWUrLdb00v3f/52O6QppcVYt5ZGFkB/KQ==}
+  /react-share@5.0.3(react@18.2.0):
+    resolution: {integrity: sha512-8BFkzfd8zNrO6JMP4Dwrt2sTSrRGQ9bNrU3K0riAwRJe4U/Z8/ryjKuhP2jLoHsfxj38MsPuyEQiVlIHVIICvw==}
     peerDependencies:
       react: ^17 || ^18
     dependencies:

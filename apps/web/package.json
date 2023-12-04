@@ -17,10 +17,10 @@
     "url": "https://github.com/Ackuq/partiguiden.git"
   },
   "dependencies": {
-    "@google-analytics/data": "^4.1.0",
+    "@google-analytics/data": "^4.2.0",
     "@heroicons/react": "^2.0.18",
     "@partiguiden/party-data": "workspace:*",
-    "@sentry/nextjs": "7.83.0",
+    "@sentry/nextjs": "7.84.0",
     "@supercharge/promise-pool": "^3.1.0",
     "cheerio": "1.0.0-rc.12",
     "encoding": "^0.1.13",
@@ -29,10 +29,10 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-share": "5.0.3",
-    "recharts": "2.10.2",
+    "recharts": "2.10.3",
     "request": "^2.88.2",
     "strip-json-comments": "5.0.1",
-    "tailwind-merge": "^2.0.0",
+    "tailwind-merge": "^2.1.0",
     "typed.js": "2.1.0"
   },
   "devDependencies": {

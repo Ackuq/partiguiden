@@ -32,7 +32,7 @@
     "recharts": "2.10.4",
     "request": "^2.88.2",
     "strip-json-comments": "5.0.1",
-    "tailwind-merge": "^2.2.0",
+    "tailwind-merge": "^2.2.1",
     "typed.js": "2.1.0"
   },
   "devDependencies": {

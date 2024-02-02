@@ -83,11 +83,11 @@ importers:
         specifier: 0.0.18
         version: 0.0.18
       '@types/node':
-        specifier: 20.11.13
-        version: 20.11.13
+        specifier: 20.11.16
+        version: 20.11.16
       '@types/react':
-        specifier: 18.2.48
-        version: 18.2.48
+        specifier: 18.2.51
+        version: 18.2.51
       autoprefixer:
         specifier: ^10.4.17
         version: 10.4.17(postcss@8.4.33)
@@ -140,11 +140,11 @@ importers:
         specifier: workspace:*
         version: link:../tsconfig
       '@types/node':
-        specifier: 20.11.13
-        version: 20.11.13
+        specifier: 20.11.16
+        version: 20.11.16
       ts-node:
         specifier: ^10.9.2
-        version: 10.9.2(@types/node@20.11.13)(typescript@5.3.3)
+        version: 10.9.2(@types/node@20.11.16)(typescript@5.3.3)
 
   packages/scrapers:
     devDependencies:
@@ -158,8 +158,8 @@ importers:
         specifier: workspace:*
         version: link:../tsconfig
       '@types/node':
-        specifier: 20.11.13
-        version: 20.11.13
+        specifier: 20.11.16
+        version: 20.11.16
       cheerio:
         specifier: 1.0.0-rc.12
         version: 1.0.0-rc.12
@@ -168,7 +168,7 @@ importers:
         version: 4.0.379
       ts-node:
         specifier: ^10.9.2
-        version: 10.9.2(@types/node@20.11.13)(typescript@5.3.3)
+        version: 10.9.2(@types/node@20.11.16)(typescript@5.3.3)
 
   packages/tsconfig: {}
 
@@ -391,7 +391,7 @@ packages:
     engines: {node: ^8.13.0 || >=10.10.0}
     dependencies:
       '@grpc/proto-loader': 0.7.10
-      '@types/node': 20.11.13
+      '@types/node': 20.11.16
     dev: false
 
   /@grpc/proto-loader@0.7.10:
@@ -459,7 +459,7 @@ packages:
     dependencies:
       '@inquirer/type': 1.1.6
       '@types/mute-stream': 0.0.4
-      '@types/node': 20.11.13
+      '@types/node': 20.11.16
       '@types/wrap-ansi': 3.0.0
       ansi-escapes: 4.3.2
       chalk: 4.1.2
@@ -1123,11 +1123,11 @@ packages:
   /@types/mute-stream@0.0.4:
     resolution: {integrity: sha512-CPM9nzrCPPJHQNA9keH9CVkVI+WR5kMa+7XEs5jcGQ0VoAGnLv242w8lIVgwAEfmE4oufJRaTc9PNLQl0ioAow==}
     dependencies:
-      '@types/node': 20.11.13
+      '@types/node': 20.11.16
     dev: true
 
-  /@types/node@20.11.13:
-    resolution: {integrity: sha512-5G4zQwdiQBSWYTDAH1ctw2eidqdhMJaNsiIDKHFr55ihz5Trl2qqR8fdrT732yPBho5gkNxXm67OxWFBqX9aPg==}
+  /@types/node@20.11.16:
+    resolution: {integrity: sha512-gKb0enTmRCzXSSUJDq6/sPcqrfCv2mkkG6Jt/clpn5eiCbKTY+SgZUxo+p8ZKMof5dCp9vHQUAB7wOUTod22wQ==}
     dependencies:
       undici-types: 5.26.5
 
@@ -1135,8 +1135,8 @@ packages:
     resolution: {integrity: sha512-kMpQpfZKSCBqltAJwskgePRaYRFukDkm1oItcAbC3gNELR20XIBcN9VRgg4+m8DKsTfkWeA4m4Imp4DDuWy7FQ==}
     dev: true
 
-  /@types/react@18.2.48:
-    resolution: {integrity: sha512-qboRCl6Ie70DQQG9hhNREz81jqC1cs9EVNcjQ1AU+jH6NFfSAhVVbrrY/+nSF+Bsk4AOwm9Qa61InvMCyV+H3w==}
+  /@types/react@18.2.51:
+    resolution: {integrity: sha512-XeoMaU4CzyjdRr3c4IQQtiH7Rpo18V07rYZUucEZQwOUEtGgTXv7e6igQiQ+xnV6MbMe1qjEmKdgMNnfppnXfg==}
     dependencies:
       '@types/prop-types': 15.7.8
       '@types/scheduler': 0.16.4
@@ -4505,7 +4505,7 @@ packages:
       '@protobufjs/path': 1.1.2
       '@protobufjs/pool': 1.1.0
       '@protobufjs/utf8': 1.1.0
-      '@types/node': 20.11.13
+      '@types/node': 20.11.16
       long: 5.2.3
     dev: false
 
@@ -5215,7 +5215,7 @@ packages:
     resolution: {integrity: sha512-Y/arvbn+rrz3JCKl9C4kVNfTfSm2/mEp5FSz5EsZSANGPSlQrpRI5M4PKF+mJnE52jOO90PnPSc3Ur3bTQw0gA==}
     dev: true
 
-  /ts-node@10.9.2(@types/node@20.11.13)(typescript@5.3.3):
+  /ts-node@10.9.2(@types/node@20.11.16)(typescript@5.3.3):
     resolution: {integrity: sha512-f0FFpIdcHgn8zcPSbf1dRevwt047YMnaiJM3u2w2RewrB+fob/zePZcrOyQoLMMO7aBIddLcQIEK5dYjkLnGrQ==}
     hasBin: true
     peerDependencies:
@@ -5234,7 +5234,7 @@ packages:
       '@tsconfig/node12': 1.0.11
       '@tsconfig/node14': 1.0.3
       '@tsconfig/node16': 1.0.4
-      '@types/node': 20.11.13
+      '@types/node': 20.11.16
       acorn: 8.10.0
       acorn-walk: 8.2.0
       arg: 4.1.3

@@ -16,7 +16,7 @@
     "./types": "./types.ts"
   },
   "devDependencies": {
-    "@inquirer/prompts": "^4.2.1",
+    "@inquirer/prompts": "^4.3.0",
     "@partiguiden/eslint-config-base": "workspace:*",
     "@partiguiden/tsconfig": "workspace:*",
     "@types/node": "20.11.26",

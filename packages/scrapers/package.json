@@ -13,9 +13,9 @@
     "@partiguiden/eslint-config-base": "workspace:*",
     "@partiguiden/party-data": "workspace:*",
     "@partiguiden/tsconfig": "workspace:*",
-    "@types/node": "20.12.4",
+    "@types/node": "20.12.7",
     "cheerio": "1.0.0-rc.12",
-    "pdfjs-dist": "4.0.379",
+    "pdfjs-dist": "4.1.392",
     "ts-node": "^10.9.2"
   }
 }

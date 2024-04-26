@@ -69,6 +69,9 @@ export const metadata = {
     "Vad tar Sveriges partier för ståndpunkter i sakfrågor? På Partiguiden kan du hitta och jämföra vad partierns åsikter för att hitta det parti du sympatiserar mest med.",
 };
 
+// Revalidate data at most once per day (60 * 60 * 24)s
+export const revalidate = 86400;
+
 export default async function PollPage() {
   const { currentMonthAverage, historicPolls, blockAverage } = await getPolls();
 

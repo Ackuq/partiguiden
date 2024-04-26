@@ -22,7 +22,7 @@ export default function GlobalError({
   }, [error]);
 
   return (
-    <html>
+    <html lang="sv">
       <body>
         <main>
           <PageTitle Icon={ExclamationCircleIcon}>

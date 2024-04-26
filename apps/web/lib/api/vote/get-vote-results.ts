@@ -11,6 +11,9 @@ export default async function getVoteResult(
 ): Promise<VoteResultsResponse | undefined> {
   const response = await fetch(
     `${PARLIAMENT_BASE_URL}/dokumentstatus/${id}.json`,
+    {
+      cache: "no-store",
+    },
   );
   const text = await response.text();
   const data = JSON.parse(stripJsonComments(text));

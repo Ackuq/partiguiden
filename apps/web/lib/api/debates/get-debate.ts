@@ -19,9 +19,7 @@ export default async function getDebate(
   const response = await fetch(
     `${PARLIAMENT_BASE_URL}/dokumentlista/?${query}`,
     {
-      next: {
-        revalidate: 60 * 60 * 24 * 7,
-      },
+      cache: "no-store",
     },
   );
 

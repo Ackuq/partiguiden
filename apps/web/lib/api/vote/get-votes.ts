@@ -25,9 +25,7 @@ export async function getVotes({ search, committees, page }: Query) {
   const response = await fetch(
     `${PARLIAMENT_BASE_URL}/dokumentlista/?${query}`,
     {
-      next: {
-        revalidate: 60 * 60,
-      },
+      cache: "no-store",
     },
   );
 

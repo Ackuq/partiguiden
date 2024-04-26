@@ -11,6 +11,9 @@ export default async function getVote(
 ): Promise<Vote | undefined> {
   const response = await fetch(
     `${PARLIAMENT_BASE_URL}/dokumentstatus/${id}.json`,
+    {
+      cache: "no-store",
+    },
   );
   if (response.status === 404) {
     return undefined;

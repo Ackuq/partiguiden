@@ -10,7 +10,7 @@
     "build": "next build",
     "postbuild": "next-sitemap",
     "typecheck": "tsc",
-    "lint": "next lint"
+    "lint": "eslint"
   },
   "repository": {
     "type": "git",

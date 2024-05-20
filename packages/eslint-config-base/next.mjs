@@ -11,8 +11,6 @@ export default tseslint.config(
   eslint.configs.recommended,
   ...tseslint.configs.recommended,
   // @ts-ignore
-  ...fixupConfigRules(flatCompat.extends("plugin:jsx-a11y/strict")),
-  // @ts-ignore
   ...fixupConfigRules(flatCompat.extends("next/core-web-vitals")),
   eslintPluginPrettierRecommended,
 );

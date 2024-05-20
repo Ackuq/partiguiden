@@ -86,7 +86,7 @@ export default abstract class Scraper implements ScraperArgs {
     });
 
     const html = await response.text();
-    const opinions = this.getOpinions(await cheerio.load(html));
+    const opinions = this.getOpinions(cheerio.load(html));
 
     return {
       opinions,
@@ -102,7 +102,7 @@ export default abstract class Scraper implements ScraperArgs {
       headers: { "Content-Type": "text/plain; charset=UTF-8" },
     });
     const html = await response.text();
-    const $ = await cheerio.load(html);
+    const $ = cheerio.load(html);
     const $elements = $(this.listSelector);
 
     console.info(`Found ${$elements.length} list elements`);

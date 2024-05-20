@@ -19,7 +19,7 @@ export function getSubject(id: string): Subject | undefined {
 }
 
 function getPartyData(abbreviation: string) {
-  switch (abbreviation.toLocaleUpperCase()) {
+  switch (abbreviation.toLocaleUpperCase() as Party) {
     case Party.S:
       return s;
     case Party.SD:
@@ -37,7 +37,6 @@ function getPartyData(abbreviation: string) {
     case Party.KD:
       return kd;
   }
-  throw new Error(`No such party ${abbreviation}`);
 }
 
 export function readPartyStandpoints(abbreviation: Party): Standpoint[] {

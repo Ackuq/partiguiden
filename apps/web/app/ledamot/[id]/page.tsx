@@ -78,9 +78,9 @@ export async function generateMetadata({ params: { id } }: PageProps) {
     member?.lastName ?? ""
   }`.trim();
   return {
-    title: `${!!memberName ? `${memberName} |` : ""} Ledamot | Partiguiden`,
+    title: `${memberName ? `${memberName} |` : ""} Ledamot | Partiguiden`,
     description: `Här kan du ta reda på information om ledamot${
-      !!memberName ? ` ${memberName}` : ""
+      memberName ? ` ${memberName}` : ""
     }. Se vilka dokument som hen har varit med och skapat och samt voteringsnärvaro.`,
   };
 }

@@ -31,8 +31,7 @@ export const getInfoBoxAttr = async (
     const item = header.nextSibling;
 
     switch (title) {
-      case "Politiskideologi":
-        // eslint-disable-next-line no-restricted-syntax
+      case "Politiskideologi": {
         if (!item) {
           break;
         }
@@ -43,11 +42,12 @@ export const getInfoBoxAttr = async (
           ideology.push($(ideologyNode).text());
         }
         break;
+      }
       case "Partiledare":
       case "Partiordförande":
       case "Partisekreterare":
       case "Gruppledare":
-      case "Språkrör":
+      case "Språkrör": {
         if (!item) {
           break;
         }
@@ -64,7 +64,8 @@ export const getInfoBoxAttr = async (
           );
         }
         break;
-      case "Webbplats":
+      }
+      case "Webbplats": {
         // Website is defined on the next row
         const siteElement = header.parent?.nextSibling;
         if (!siteElement) {
@@ -78,6 +79,7 @@ export const getInfoBoxAttr = async (
           $siteElement.text() ??
           ""
         ).replace("http://", "https://");
+      }
     }
   }
 

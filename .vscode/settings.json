@@ -10,5 +10,6 @@
   },
   "tailwindCSS.experimental.classRegex": [
     ["(?:twMerge|twJoin)\\(([^\\);]*)[\\);]", "[`'\"`]([^'\"`,;]*)[`'\"`]"]
-  ]
+  ],
+  "eslint.experimental.useFlatConfig": true
 }

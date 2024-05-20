@@ -20,7 +20,7 @@ export default function createReferences(
   const referencedDocuments: Array<string> = [];
 
   let match;
-  // eslint-disable-next-line no-cond-assign
+
   while ((match = referenceRegex.exec(proposition))) {
     if (!referencedDocuments.includes(match[0])) {
       referencedDocuments.push(match[0]);

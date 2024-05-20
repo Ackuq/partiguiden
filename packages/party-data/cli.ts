@@ -64,9 +64,10 @@ async function main() {
     { clearPromptOnDone: true },
   );
   switch (choice) {
-    case Action.Categorize:
-      categorize();
+    case Action.Categorize: {
+      await categorize();
+    }
   }
 }
 
-main();
+void main();

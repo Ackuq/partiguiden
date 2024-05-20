@@ -7,10 +7,16 @@ import tseslint from "typescript-eslint";
 
 const flatCompat = new FlatCompat();
 
-export default tseslint.config(
+const config = tseslint.config(
   eslint.configs.recommended,
-  ...tseslint.configs.recommended,
+  ...tseslint.configs.recommendedTypeChecked,
   // @ts-ignore
   ...fixupConfigRules(flatCompat.extends("next/core-web-vitals")),
   eslintPluginPrettierRecommended,
+  {
+    files: ["**/*.js", "**/*.mjs"],
+    ...tseslint.configs.disableTypeChecked,
+  },
 );
+
+export default config;

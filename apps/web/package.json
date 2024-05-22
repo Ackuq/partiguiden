@@ -40,7 +40,7 @@
     "@partiguiden/eslint-config-base": "workspace:*",
     "@partiguiden/tsconfig": "workspace:*",
     "@types/gtag.js": "0.0.19",
-    "@types/node": "20.12.10",
+    "@types/node": "20.12.12",
     "@types/react": "18.3.2",
     "autoprefixer": "10.4.19",
     "next-sitemap": "4.2.3",

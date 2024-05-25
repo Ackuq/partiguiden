@@ -16,10 +16,10 @@
     "./types": "./types.ts"
   },
   "devDependencies": {
-    "@inquirer/prompts": "5.0.2",
+    "@inquirer/prompts": "5.0.4",
     "@partiguiden/eslint-config-base": "workspace:*",
     "@partiguiden/tsconfig": "workspace:*",
-    "@types/node": "20.12.10",
+    "@types/node": "20.12.12",
     "ts-node": "10.9.2"
   }
 }

@@ -1,5 +1,3 @@
-import { fixupConfigRules } from "@eslint/compat";
-import { FlatCompat } from "@eslint/eslintrc";
 import eslint from "@eslint/js";
 import eslintPluginPrettierRecommended from "eslint-plugin-prettier/recommended";
 import tseslint from "typescript-eslint";
@@ -25,6 +23,10 @@ const config = tseslint.config(
         tsconfigRootDir: import.meta.dirname,
       },
     },
+  },
+  {
+    name: "Ignores",
+    ignores: ["**/.next", "**/out", "**/build", "**/.turbo"],
   },
 );
 

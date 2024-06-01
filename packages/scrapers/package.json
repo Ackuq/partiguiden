@@ -8,7 +8,7 @@
     "scrape:all": "ts-node src/index.ts -p all",
     "lint": "pnpm lint:tsc && pnpm lint:eslint",
     "lint:eslint": "eslint",
-    "lint:tsc": "tsc --noEmit"
+    "lint:tsc": "tsc"
   },
   "dependencies": {
     "@partiguiden/party-data": "workspace:*",

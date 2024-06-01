@@ -7,7 +7,7 @@
     "cli": "ts-node cli.ts",
     "lint": "pnpm lint:tsc && pnpm lint:eslint",
     "lint:eslint": "eslint",
-    "lint:tsc": "tsc --noEmit"
+    "lint:tsc": "tsc"
   },
   "exports": {
     ".": "./index.ts",

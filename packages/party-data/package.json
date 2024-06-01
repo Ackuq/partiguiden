@@ -5,8 +5,6 @@
   "main": "index.ts",
   "scripts": {
     "cli": "ts-node cli.ts",
-    "lint": "pnpm lint:tsc && pnpm lint:eslint",
-    "lint:eslint": "eslint",
     "lint:tsc": "tsc"
   },
   "exports": {

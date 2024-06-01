@@ -9,8 +9,6 @@
     "start": "next start",
     "build": "next build",
     "postbuild": "next-sitemap",
-    "lint": "pnpm lint:tsc && pnpm lint:eslint",
-    "lint:eslint": "eslint",
     "lint:tsc": "tsc"
   },
   "repository": {

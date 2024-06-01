@@ -6,8 +6,6 @@
   "scripts": {
     "scrape": "ts-node src/index.ts",
     "scrape:all": "ts-node src/index.ts -p all",
-    "lint": "pnpm lint:tsc && pnpm lint:eslint",
-    "lint:eslint": "eslint",
     "lint:tsc": "tsc"
   },
   "dependencies": {

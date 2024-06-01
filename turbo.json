@@ -4,14 +4,9 @@
     "build": {
       "outputs": [".next/**", "!.next/cache/**", "dist/**"]
     },
-    "lint": {
-      "outputs": []
-    },
     "dev": {
       "cache": false
     },
-    "start": {
-      "cache": false
-    }
+    "lint:tsc": {}
   }
 }

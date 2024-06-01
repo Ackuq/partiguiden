@@ -2,7 +2,9 @@ import { KnipConfig } from "knip";
 
 const config: KnipConfig = {
   workspaces: {
-    ".": {},
+    ".": {
+      prettier: true,
+    },
     "apps/web": {
       // Additional entry points
       entry: ["next-sitemap.config.js"],

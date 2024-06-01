@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Contains data that powers Partiguiden",
   "scripts": {
-    "cli": "ts-node scripts/cli.ts",
+    "cli": "tsx scripts/cli.ts",
     "lint:tsc": "tsc"
   },
   "exports": {
@@ -17,6 +17,6 @@
   },
   "devDependencies": {
     "@types/node": "20.12.13",
-    "ts-node": "10.9.2"
+    "tsx": "4.11.0"
   }
 }

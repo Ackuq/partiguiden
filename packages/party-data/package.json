@@ -1,24 +1,20 @@
 {
   "name": "@partiguiden/party-data",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.ts",
+  "description": "Contains data that powers Partiguiden",
   "scripts": {
-    "cli": "ts-node cli.ts",
+    "cli": "tsx scripts/cli.ts",
     "lint:tsc": "tsc"
   },
   "exports": {
-    ".": "./index.ts",
-    "./utils": "./utils.ts",
-    "./reader": "./reader.ts",
-    "./writer": "./writer.ts",
-    "./types": "./types.ts"
-  },
-  "dependencies": {
-    "@inquirer/prompts": "5.0.4"
+    "./utils": "./src/utils.ts",
+    "./reader": "./src/reader.ts",
+    "./writer": "./src/writer.ts",
+    "./types": "./src/types.ts"
   },
   "devDependencies": {
+    "@inquirer/prompts": "5.0.4",
     "@types/node": "20.12.13",
-    "ts-node": "10.9.2"
+    "tsx": "4.11.0"
   }
 }

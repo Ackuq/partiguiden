@@ -19,13 +19,8 @@ const nextConfigs = nextCoreWebVitals.map((config) => {
 
 const config = tseslint.config(
   eslint.configs.recommended,
-  ...tseslint.configs.recommendedTypeChecked,
+  ...tseslint.configs.recommended,
   eslintPluginPrettierRecommended,
-  {
-    name: "Disable type checking for JS files",
-    files: ["**/*.js", "**/*.mjs", "apps/web/**/*"],
-    ...tseslint.configs.disableTypeChecked,
-  },
   {
     files: ["apps/web/**/*"],
     extends: [...nextConfigs],

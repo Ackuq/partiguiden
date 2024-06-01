@@ -1,12 +1,12 @@
-import c from "./parties/C.json";
-import kd from "./parties/KD.json";
-import l from "./parties/L.json";
-import m from "./parties/M.json";
-import mp from "./parties/MP.json";
-import s from "./parties/S.json";
-import sd from "./parties/SD.json";
-import v from "./parties/V.json";
-import subjects from "./subjects.json";
+import c from "./data/parties/C.json";
+import kd from "./data/parties/KD.json";
+import l from "./data/parties/L.json";
+import m from "./data/parties/M.json";
+import mp from "./data/parties/MP.json";
+import s from "./data/parties/S.json";
+import sd from "./data/parties/SD.json";
+import v from "./data/parties/V.json";
+import subjects from "./data/subjects.json";
 import type { Standpoint } from "./types";
 import { Party, type Subject, partySortOrder } from "./types";
 

@@ -14,6 +14,9 @@ const config: KnipConfig = {
         project: ["lib/colors/**/*"],
       },
     },
+    "packages/party-data": {
+      entry: ["scripts/cli.ts"],
+    },
   },
 };
 

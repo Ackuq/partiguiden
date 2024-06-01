@@ -2,7 +2,7 @@ import * as fs from "node:fs";
 
 import type { PartyData, PartyDataWithoutPartyName, Standpoint } from "./types";
 
-const PARTIES_DIRECTORY = `${__dirname}/parties`;
+const PARTIES_DIRECTORY = `${__dirname}/data/parties`;
 
 const partyFileName = (abbreviation: string) =>
   `${PARTIES_DIRECTORY}/${abbreviation.toLocaleUpperCase()}.json`;

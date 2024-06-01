@@ -4,7 +4,7 @@ export interface SpeechDocumentResponse {
   anforande: SpeechDocument;
 }
 
-export interface SpeechDocument {
+interface SpeechDocument {
   dok_hangar_id: string;
   dok_id: string;
   dok_titel: string;

@@ -69,5 +69,3 @@ export function FilterContextProvider<K extends string>({
 export function useFilterContext<K extends string>(): IFilterContext<K> {
   return useContext<IFilterContext<K>>(FilterContext);
 }
-
-export default FilterContext;

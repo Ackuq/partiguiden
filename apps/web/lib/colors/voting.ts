@@ -32,5 +32,3 @@ export function getThemeVotingColors(
     { yes: "", no: "", refrain: "", absent: "" },
   );
 }
-
-export default votingColors;

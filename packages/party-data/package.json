@@ -5,8 +5,9 @@
   "main": "index.ts",
   "scripts": {
     "cli": "ts-node cli.ts",
-    "typecheck": "tsc --noEmit",
-    "lint": "eslint"
+    "lint": "pnpm lint:tsc && pnpm lint:eslint",
+    "lint:eslint": "eslint",
+    "lint:tsc": "tsc --noEmit"
   },
   "exports": {
     ".": "./index.ts",
@@ -15,8 +16,10 @@
     "./writer": "./writer.ts",
     "./types": "./types.ts"
   },
+  "dependencies": {
+    "@inquirer/prompts": "5.0.4"
+  },
   "devDependencies": {
-    "@inquirer/prompts": "5.0.4",
     "@partiguiden/eslint-config-base": "workspace:*",
     "@partiguiden/tsconfig": "workspace:*",
     "@types/node": "20.12.13",

@@ -16,7 +16,7 @@ export type DocumentStatus = {
   };
 };
 
-export type Document = {
+type Document = {
   hangar_id: string;
   dok_id: string;
   rm: string;
@@ -48,7 +48,7 @@ export type Document = {
   utskottsforslag_url_xml?: string;
 };
 
-export type DocumentProposal = {
+type DocumentProposal = {
   punkt: string;
   rubrik: string;
   forslag: string;
@@ -84,7 +84,7 @@ export type NewVotingRow = {
   td: string[];
 };
 
-export type NewVotingTable = {
+type NewVotingTable = {
   caption: {
     b: string;
     br: null;
@@ -112,7 +112,7 @@ export type OldVotingTable = {
 
 export type DocumentProposalTable = NewVotingTable | OldVotingTable;
 
-export type DocumentActivity = {
+type DocumentActivity = {
   kod: string;
   namn: string;
   datum: string;
@@ -121,7 +121,7 @@ export type DocumentActivity = {
   process: string;
 };
 
-export type DocumentParticipant = {
+type DocumentParticipant = {
   intressent_id: string;
   namn: string;
   partibet: string;
@@ -129,7 +129,7 @@ export type DocumentParticipant = {
   roll: string;
 };
 
-export type DocumentInformation = {
+type DocumentInformation = {
   kod: string;
   namn: string;
   text: string;

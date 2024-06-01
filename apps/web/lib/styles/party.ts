@@ -26,17 +26,6 @@ export const partyTextColor: PartyColorStyleProp<"text"> = {
   [Party.V]: "text-party-V dark:text-party-V-dark",
 };
 
-export const partyBackground: PartyColorStyleProp<"bg"> = {
-  [Party.S]: "bg-party-S dark:bg-party-S-dark",
-  [Party.SD]: "bg-party-SD dark:bg-party-SD-dark",
-  [Party.M]: "bg-party-M dark:bg-party-M-dark",
-  [Party.MP]: "bg-party-MP dark:bg-party-MP-dark",
-  [Party.L]: "bg-party-L dark:bg-party-L-dark",
-  [Party.KD]: "bg-party-KD dark:bg-party-KD-dark",
-  [Party.C]: "bg-party-C dark:bg-party-C-dark",
-  [Party.V]: "bg-party-V dark:bg-party-V-dark",
-};
-
 export const partyBackgroundHover: PartyColorStyleProp<"hover:bg", "/25"> = {
   [Party.S]: "hover:bg-party-S/25 dark:hover:bg-party-S-dark/25",
   [Party.SD]: "hover:bg-party-SD/25 dark:hover:bg-party-SD-dark/25",

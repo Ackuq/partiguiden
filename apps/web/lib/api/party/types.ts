@@ -1,7 +1,7 @@
 import type { Leader } from "../member/types";
 import type { WikipediaInfoBox } from "../wikipedia/types";
 
-export interface ParliamentPartyData {
+interface ParliamentPartyData {
   website?: string;
   leaders: Array<Leader>;
 }

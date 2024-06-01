@@ -7,7 +7,7 @@ type CardHeaderProps = React.PropsWithChildren<{
   className?: string;
 }>;
 
-export function CardHeader({ children, className }: CardHeaderProps) {
+function CardHeader({ children, className }: CardHeaderProps) {
   return (
     <div className={twMerge("w-full px-4 py-1", className)}>
       <span>{children}</span>

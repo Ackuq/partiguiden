@@ -84,7 +84,7 @@ export type DocumentListEntry = {
   dokumentnamn: string;
 };
 
-export type SearchData = {
+type SearchData = {
   titel: string;
   undertitel: string;
   soktyp: string;
@@ -104,7 +104,7 @@ export type SearchData = {
   kalenderprio: string;
 };
 
-export type DocumentListSpeeches = {
+type DocumentListSpeeches = {
   parti: MemberParty;
   parent_ardome_id: string;
   tumnagel: string;
@@ -121,14 +121,14 @@ export type DocumentListSpeeches = {
   anf_text: string;
 };
 
-export type DocumentListParticipant = {
+type DocumentListParticipant = {
   roll: string;
   namn: string;
   partibet: string;
   intressent_id: string;
 };
 
-export type DocumentListFileAppendix = {
+type DocumentListFileAppendix = {
   typ: string;
   namn: string;
   storlek: string;

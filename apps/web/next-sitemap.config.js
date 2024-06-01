@@ -1,6 +1,5 @@
 /** @type {import('next-sitemap').IConfig} */
-
-module.exports = {
+const config = {
   siteUrl: process.env.NEXT_PUBLIC_BASE_PATH || "https://partiguiden.nu",
   generateRobotsTxt: true,
   robotsTxtOptions: {
@@ -10,3 +9,5 @@ module.exports = {
         : [{ userAgent: "*", disallow: "/" }],
   },
 };
+
+module.exports = config;

@@ -6,9 +6,7 @@
   "scripts": {
     "scrape": "ts-node src/index.ts",
     "scrape:all": "ts-node src/index.ts -p all",
-    "lint": "pnpm lint:tsc && pnpm lint:eslint",
-    "lint:eslint": "eslint",
-    "lint:tsc": "tsc --noEmit"
+    "lint:tsc": "tsc"
   },
   "dependencies": {
     "@partiguiden/party-data": "workspace:*",
@@ -16,8 +14,6 @@
     "pdfjs-dist": "4.3.136"
   },
   "devDependencies": {
-    "@partiguiden/eslint-config-base": "workspace:*",
-    "@partiguiden/tsconfig": "workspace:*",
     "@types/node": "20.12.13",
     "ts-node": "10.9.2"
   }

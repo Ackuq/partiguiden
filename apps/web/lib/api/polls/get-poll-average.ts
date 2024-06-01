@@ -15,7 +15,7 @@ function aggregatePollData(
 ) {
   Object.entries(poll.data).forEach(([party, value]) => {
     partyTotal[party as Party].push({
-      value: value!,
+      value: value,
       institute: poll.institute,
       publishedDate: poll.publishedDate,
     });

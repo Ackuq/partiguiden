@@ -5,9 +5,7 @@
   "main": "index.ts",
   "scripts": {
     "cli": "ts-node cli.ts",
-    "lint": "pnpm lint:tsc && pnpm lint:eslint",
-    "lint:eslint": "eslint",
-    "lint:tsc": "tsc --noEmit"
+    "lint:tsc": "tsc"
   },
   "exports": {
     ".": "./index.ts",
@@ -20,8 +18,6 @@
     "@inquirer/prompts": "5.0.4"
   },
   "devDependencies": {
-    "@partiguiden/eslint-config-base": "workspace:*",
-    "@partiguiden/tsconfig": "workspace:*",
     "@types/node": "20.12.13",
     "ts-node": "10.9.2"
   }

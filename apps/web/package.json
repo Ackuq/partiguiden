@@ -9,8 +9,6 @@
     "start": "next start",
     "build": "next build",
     "postbuild": "next-sitemap",
-    "lint": "pnpm lint:tsc && pnpm lint:eslint",
-    "lint:eslint": "eslint",
     "lint:tsc": "tsc"
   },
   "repository": {
@@ -39,8 +37,6 @@
   },
   "devDependencies": {
     "@next/bundle-analyzer": "14.2.3",
-    "@partiguiden/eslint-config-base": "workspace:*",
-    "@partiguiden/tsconfig": "workspace:*",
     "@types/node": "20.12.13",
     "@types/react": "18.3.3",
     "autoprefixer": "10.4.19",

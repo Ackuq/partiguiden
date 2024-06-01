@@ -25,6 +25,9 @@ export default abstract class Scraper implements ScraperArgs {
 
   protected getOpinions($: CheerioAPI): string[] {
     // Test tags until we found a result
+    if (!this.opinionTags) {
+      return [];
+    }
     for (const tag of this.opinionTags) {
       const $opinionElements = $(tag);
       if ($opinionElements.length > 0) {

@@ -17,7 +17,19 @@ const config: KnipConfig = {
         project: ["lib/colors/**/*"],
       },
     },
-    "packages/*": {},
+    "packages/eslint-config-base": {
+      ignoreDependencies: ["eslint-config-next"],
+    },
+    "packages/scrapers": {
+      ignoreBinaries: ["eslint"],
+      ignoreDependencies: ["@typescript-eslint/utils"],
+      eslint: true,
+    },
+    "packages/party-data": {
+      ignoreBinaries: ["eslint"],
+      ignoreDependencies: ["@typescript-eslint/utils"],
+      eslint: true,
+    },
   },
 };
 

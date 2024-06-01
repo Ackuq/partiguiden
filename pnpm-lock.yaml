@@ -107,10 +107,13 @@ importers:
         version: 4.2.3(next@14.2.3(@babel/core@7.24.6)(@opentelemetry/api@1.8.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
 
   packages/eslint-config-base:
-    devDependencies:
+    dependencies:
       '@eslint/compat':
         specifier: 1.0.3
         version: 1.0.3
+      '@eslint/eslintrc':
+        specifier: 3.1.0
+        version: 3.1.0
       '@eslint/js':
         specifier: 9.3.0
         version: 9.3.0
@@ -131,10 +134,11 @@ importers:
         version: 7.11.0(eslint@9.3.0)(typescript@5.4.5)
 
   packages/party-data:
-    devDependencies:
+    dependencies:
       '@inquirer/prompts':
         specifier: 5.0.4
         version: 5.0.4
+    devDependencies:
       '@partiguiden/eslint-config-base':
         specifier: workspace:*
         version: link:../eslint-config-base
@@ -149,25 +153,26 @@ importers:
         version: 10.9.2(@types/node@20.12.13)(typescript@5.4.5)
 
   packages/scrapers:
-    devDependencies:
-      '@partiguiden/eslint-config-base':
-        specifier: workspace:*
-        version: link:../eslint-config-base
+    dependencies:
       '@partiguiden/party-data':
         specifier: workspace:*
         version: link:../party-data
-      '@partiguiden/tsconfig':
-        specifier: workspace:*
-        version: link:../tsconfig
-      '@types/node':
-        specifier: 20.12.13
-        version: 20.12.13
       cheerio:
         specifier: 1.0.0-rc.12
         version: 1.0.0-rc.12
       pdfjs-dist:
         specifier: 4.3.136
         version: 4.3.136(encoding@0.1.13)
+    devDependencies:
+      '@partiguiden/eslint-config-base':
+        specifier: workspace:*
+        version: link:../eslint-config-base
+      '@partiguiden/tsconfig':
+        specifier: workspace:*
+        version: link:../tsconfig
+      '@types/node':
+        specifier: 20.12.13
+        version: 20.12.13
       ts-node:
         specifier: 10.9.2
         version: 10.9.2(@types/node@20.12.13)(typescript@5.4.5)

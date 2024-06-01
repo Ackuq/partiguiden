@@ -12,10 +12,8 @@
     "./writer": "./src/writer.ts",
     "./types": "./src/types.ts"
   },
-  "dependencies": {
-    "@inquirer/prompts": "5.0.4"
-  },
   "devDependencies": {
+    "@inquirer/prompts": "5.0.4",
     "@types/node": "20.12.13",
     "tsx": "4.11.0"
   }

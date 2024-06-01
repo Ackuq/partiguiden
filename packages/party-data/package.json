@@ -1,8 +1,7 @@
 {
   "name": "@partiguiden/party-data",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.ts",
+  "description": "Contains data that powers Partiguiden",
   "scripts": {
     "cli": "ts-node scripts/cli.ts",
     "lint:tsc": "tsc"

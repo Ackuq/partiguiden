@@ -8,7 +8,7 @@ const config = tseslint.config(
   eslintPluginPrettierRecommended,
   {
     name: "Disable type checking for JS files",
-    files: ["**/*.js", "**/*.mjs"],
+    files: ["**/*.js", "**/*.mjs", "apps/web/**/*"],
     ...tseslint.configs.disableTypeChecked,
   },
   //...fixupConfigRules(flatCompat.extends("next/core-web-vitals")),

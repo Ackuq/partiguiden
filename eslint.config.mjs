@@ -19,8 +19,13 @@ const nextConfigs = nextCoreWebVitals.map((config) => {
 
 const config = tseslint.config(
   eslint.configs.recommended,
-  ...tseslint.configs.recommended,
+  ...tseslint.configs.recommendedTypeChecked,
   eslintPluginPrettierRecommended,
+  {
+    name: "Disable typecheck for JS files",
+    files: ["**/*.js", "**/*.mjs"],
+    ...tseslint.configs.disableTypeChecked,
+  },
   {
     files: ["apps/web/**/*"],
     extends: [...nextConfigs],
@@ -33,6 +38,7 @@ const config = tseslint.config(
   {
     languageOptions: {
       parserOptions: {
+        allowAutomaticSingleRunInference: true,
         project: [
           "./tsconfig.json",
           "./apps/*/tsconfig.json",

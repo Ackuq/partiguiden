@@ -21,6 +21,7 @@ if (!party) {
 
 const parties = party === "all" ? Object.keys(scrapers) : [party];
 
+// eslint-disable-next-line @typescript-eslint/no-misused-promises
 parties.forEach(async (abbreviation) => {
   if (!Object.keys(scrapers).includes(abbreviation.toLowerCase())) {
     throw new Error(`No scraper created for party ${abbreviation}`);

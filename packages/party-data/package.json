@@ -4,15 +4,14 @@
   "description": "",
   "main": "index.ts",
   "scripts": {
-    "cli": "ts-node cli.ts",
+    "cli": "ts-node scripts/cli.ts",
     "lint:tsc": "tsc"
   },
   "exports": {
-    ".": "./index.ts",
-    "./utils": "./utils.ts",
-    "./reader": "./reader.ts",
-    "./writer": "./writer.ts",
-    "./types": "./types.ts"
+    "./utils": "./src/utils.ts",
+    "./reader": "./src/reader.ts",
+    "./writer": "./src/writer.ts",
+    "./types": "./src/types.ts"
   },
   "dependencies": {
     "@inquirer/prompts": "5.0.4"

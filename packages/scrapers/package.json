@@ -16,7 +16,6 @@
     "pdfjs-dist": "4.3.136"
   },
   "devDependencies": {
-    "@partiguiden/eslint-config-base": "workspace:*",
     "@types/node": "20.12.13",
     "ts-node": "10.9.2"
   }

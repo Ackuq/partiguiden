@@ -39,7 +39,6 @@
   },
   "devDependencies": {
     "@next/bundle-analyzer": "14.2.3",
-    "@partiguiden/eslint-config-base": "workspace:*",
     "@types/node": "20.12.13",
     "@types/react": "18.3.3",
     "autoprefixer": "10.4.19",

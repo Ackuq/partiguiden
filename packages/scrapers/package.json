@@ -6,8 +6,9 @@
   "scripts": {
     "scrape": "ts-node src/index.ts",
     "scrape:all": "ts-node src/index.ts -p all",
-    "typecheck": "tsc --noEmit",
-    "lint": "eslint"
+    "lint": "pnpm lint:tsc && pnpm lint:eslint",
+    "lint:eslint": "eslint",
+    "lint:tsc": "tsc --noEmit"
   },
   "devDependencies": {
     "@partiguiden/eslint-config-base": "workspace:*",

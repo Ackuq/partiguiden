@@ -1,7 +1,7 @@
 import type { Config } from "tailwindcss";
 
-import committeeColors from "./lib/colors/committee";
-import partyColors from "./lib/colors/party";
+import { committeeColors } from "./lib/colors/committee";
+import { partyColors } from "./lib/colors/party";
 
 const themeHeight = {
   header: "3.5rem",

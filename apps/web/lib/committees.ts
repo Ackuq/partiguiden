@@ -23,7 +23,7 @@ export function getCommittee(value: string): Committee | undefined {
     : undefined;
 }
 
-export interface CommitteeInformation {
+interface CommitteeInformation {
   name: string;
   desc: string;
 }

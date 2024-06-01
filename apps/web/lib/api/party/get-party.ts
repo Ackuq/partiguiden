@@ -17,7 +17,3 @@ export const getParty = (party: Party): Promise<PartyData> => {
     };
   });
 };
-
-export const partyController = (party: Party): Promise<PartyData> => {
-  return getParty(party);
-};

@@ -2,7 +2,10 @@ import colors from "tailwindcss/colors";
 
 import { Party } from "@partiguiden/party-data/types";
 
-const partyColors: Record<Party, { DEFAULT: string; dark: string }> = {
+/**
+ * @internal
+ */
+export const partyColors: Record<Party, { DEFAULT: string; dark: string }> = {
   [Party.S]: {
     DEFAULT: colors.rose[600],
     dark: colors.rose[700],
@@ -36,8 +39,6 @@ const partyColors: Record<Party, { DEFAULT: string; dark: string }> = {
     dark: colors.red[700],
   },
 };
-
-export default partyColors;
 
 export function getThemePartyColors(theme?: string): Record<Party, string> {
   return Object.values(Party).reduce(

@@ -43,8 +43,7 @@ pnpm dev # Runs the command `next dev` (https://nextjs.org/docs/api-reference/cl
 This project uses [ESLint](https://eslint.org) and [Prettier](https://prettier.io) for code linting and formatting. The configuration for ESLint can be found in the file [.eslintrc](./.eslintrc) and for Prettier in the file [.prettierrc](./.prettierrc). To check linting and formatting of the project, run the command:
 
 ```sh
-pnpm typecheck # Will run the commands `tsc` for type checking
-pnpm lint # Will run `eslint` for linting and code formatting
+pnpm lint # Will run `eslint` and `tsc` for linting and type checking
 pnpm format:check # Checks that formatting is OK
 ```
 

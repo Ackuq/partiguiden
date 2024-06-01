@@ -4,12 +4,12 @@
   "description": "Monorepo for all Partiguiden",
   "author": "Axel Pettersson",
   "license": "ISC",
-  "packageManager": "pnpm@9.1.2",
+  "packageManager": "pnpm@9.1.4",
   "scripts": {
     "dev": "turbo dev",
     "build": "turbo build",
     "lint": "turbo lint",
-    "typecheck": "turbo typecheck",
+    "knip": "knip",
     "format:write": "prettier -w '**/*.{js,ts,tsx,md,json,css}'",
     "format:check": "prettier -c '**/*.{js,ts,tsx,md,json,css}'"
   },
@@ -17,6 +17,7 @@
     "turbo": "1.13.3"
   },
   "devDependencies": {
+    "knip": "5.17.3",
     "typescript": "5.4.5"
   }
 }

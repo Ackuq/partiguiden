@@ -1,6 +1,9 @@
 import { Committee } from "../committees";
 
-const committeeColors: Record<Committee, { DEFAULT: string; dark: string }> = {
+export const committeeColors: Record<
+  Committee,
+  { DEFAULT: string; dark: string }
+> = {
   [Committee.AU]: { DEFAULT: "#3498db", dark: "#236a95" },
   [Committee.CU]: { DEFAULT: "#f39c12", dark: "#9f650d" },
   [Committee.FiU]: { DEFAULT: "#1abc9c", dark: "#126f65" },
@@ -18,5 +21,3 @@ const committeeColors: Record<Committee, { DEFAULT: string; dark: string }> = {
   [Committee.UU]: { DEFAULT: "#f53b57", dark: "#d01739" },
   [Committee.UFöU]: { DEFAULT: "#ffa801", dark: "#b07300" },
 };
-
-export default committeeColors;

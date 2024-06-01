@@ -57,7 +57,7 @@ export enum AbsencePeriod {
   mandatePeriod = "mandatperiod",
   parliamentYear = "riksmöte",
 }
-export interface Absence {
+interface Absence {
   value?: number;
   description: string;
 }

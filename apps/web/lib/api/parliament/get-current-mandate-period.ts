@@ -1,7 +1,7 @@
 import getParliamentYears from "./get-parliament-years";
 import type { RiksmoteItem } from "./types";
 
-export interface MandatePeriod {
+interface MandatePeriod {
   latestParliamentYear: string;
   parliamentYears: string[];
   period: string;

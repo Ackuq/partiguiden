@@ -27,13 +27,11 @@ jobs:
           cache: pnpm
 
       - name: Install dependencies
-        working-directory: packages/party-data
-        run: pnpm install --frozen-lockfile
+        run: pnpm --filter="@partiguiden/scrapers" install --frozen-lockfile
 
       - name: Run scrapers
-        working-directory: packages/party-data
         # TODO: Enable all parties
-        run: pnpm scrape --party M
+        run: pnpm --filter="@partiguiden/scrapers" run scrape --party M
 
       - name: Run action to potentially create PR
         uses: ./actions/update-standpoints

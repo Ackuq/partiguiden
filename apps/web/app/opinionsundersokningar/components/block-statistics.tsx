@@ -7,7 +7,7 @@ import CustomTooltip from "@components/charts/tooltip";
 import type { AveragePoll, BlocksAverage } from "@lib/api/polls/types";
 import { getThemePartyColors } from "@lib/colors/party";
 import { type Blocks, allBlocks } from "@lib/utils/blocks";
-import type { partyNames } from "@partiguiden/party-data/utils";
+import { partyNames } from "@partiguiden/party-data/utils";
 
 function blockSort(blocks: Blocks["values"]) {
   return function (a: AveragePoll[number], b: AveragePoll[number]) {

@@ -42,7 +42,7 @@ async function categorize() {
       { clearPromptOnDone: true },
     );
     standpoint.subject = choice;
-    updateStandpoint(standpoint.party, standpoint);
+    await updateStandpoint(standpoint.party, standpoint);
   }
 }
 

@@ -1,0 +1,5 @@
+name: Update Standpoints
+description: Script that updates the party standpoints
+runs:
+  using: node20
+  main: dist/index.mjs

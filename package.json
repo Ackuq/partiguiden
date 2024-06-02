@@ -12,8 +12,8 @@
     "lint:eslint": "eslint",
     "lint:tsc": "turbo lint:tsc",
     "knip": "knip",
-    "format:write": "prettier -w '**/*.{js,ts,tsx,md,json,css}'",
-    "format:check": "prettier -c '**/*.{js,ts,tsx,md,json,css}'"
+    "format:write": "prettier -w '**/*.{js,mjs,ts,tsx,md,json,css}'",
+    "format:check": "prettier -c '**/*.{js,mjs,ts,tsx,md,json,css}'"
   },
   "devDependencies": {
     "@eslint/js": "9.4.0",

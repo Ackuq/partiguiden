@@ -807,9 +807,7 @@
     "subject": "utrikes--och-bistandsfragor"
   },
   "https://www.mp.se/politik/vinster-i-valfarden/": {
-    "opinions": [
-      "att vinster i välfärden ska stanna i välfärden."
-    ],
+    "opinions": ["att vinster i välfärden ska stanna i välfärden."],
     "title": "Vinster i välfärden",
     "url": "https://www.mp.se/politik/vinster-i-valfarden/",
     "fetchDate": "2023-09-17T17:52:36.532Z",

@@ -824,9 +824,7 @@
     "subject": "naringsliv"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/foretagande/rut--och-rot-avdrag": {
-    "opinions": [
-      "Fortsätta bredda RUT till att gälla fler tjänster"
-    ],
+    "opinions": ["Fortsätta bredda RUT till att gälla fler tjänster"],
     "title": "RUT- och ROT-avdrag",
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/foretagande/rut--och-rot-avdrag",
     "fetchDate": "2023-09-17T17:52:40.000Z",

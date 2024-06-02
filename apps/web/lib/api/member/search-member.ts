@@ -20,9 +20,12 @@ export default async function searchMember(parameters: Query) {
     utformat: "json",
   });
 
-  const response = await fetch(`${PARLIAMENT_BASE_URL}/personlista/?${query}`, {
-    next: { revalidate: 60 * 60 * 24 },
-  });
+  const response = await fetch(
+    `${PARLIAMENT_BASE_URL}/personlista/?${query.toString()}`,
+    {
+      next: { revalidate: 60 * 60 * 24 },
+    },
+  );
   const data: MemberLookup = await response.json();
   if (data.personlista.person) {
     return parseMember(data.personlista.person);

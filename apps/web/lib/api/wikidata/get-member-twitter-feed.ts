@@ -21,7 +21,7 @@ export default async function getMemberTwitterFeed(memberId: string) {
     query: sparqlQuery,
   });
 
-  const response = await fetch(`${WIKIDATA_QUERY_URL}?${query}`, {
+  const response = await fetch(`${WIKIDATA_QUERY_URL}?${query.toString()}`, {
     headers: { Accept: "application/sparql-results+json" },
     next: {
       // Revalidate once per week

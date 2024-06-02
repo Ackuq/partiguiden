@@ -24,7 +24,7 @@ export default async function getProtocols({
   });
 
   const response = await fetch(
-    `${PARLIAMENT_BASE_URL}/dokumentlista/?${query}`,
+    `${PARLIAMENT_BASE_URL}/dokumentlista/?${query.toString()}`,
   );
 
   if (!response.ok) {

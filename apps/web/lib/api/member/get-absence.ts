@@ -19,7 +19,7 @@ export default async function getAbsence({
   });
 
   const response = await fetch(
-    `${PARLIAMENT_BASE_URL}/voteringlista/?${query}`,
+    `${PARLIAMENT_BASE_URL}/voteringlista/?${query.toString()}`,
     {
       next: { revalidate: 60 * 60 * 24 },
     },

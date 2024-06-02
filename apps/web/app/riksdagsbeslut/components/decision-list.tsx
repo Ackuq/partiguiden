@@ -29,7 +29,7 @@ export default function DecisionList({ decisions, currentPage }: Props) {
     }
     const debounce = setTimeout(() => {
       const query = buildSearchParameters({ search, toggles });
-      router.replace(`${routes.decisions}?${query}`);
+      router.replace(`${routes.decisions}?${query.toString()}`);
     }, 500);
     return () => {
       clearTimeout(debounce);
@@ -39,7 +39,7 @@ export default function DecisionList({ decisions, currentPage }: Props) {
 
   function onChangePage(newPage: number) {
     const query = buildSearchParameters({ search, toggles, page: newPage });
-    router.push(`${routes.decisions}?${query}`);
+    router.push(`${routes.decisions}?${query.toString()}`);
   }
 
   if (decisions.pages === 0) {

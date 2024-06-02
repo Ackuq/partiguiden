@@ -18,7 +18,7 @@ export default async function getMemberDocuments({ id, page }: Query) {
   });
 
   const response = await fetch(
-    `${PARLIAMENT_BASE_URL}/dokumentlista/?${query}`,
+    `${PARLIAMENT_BASE_URL}/dokumentlista/?${query.toString()}`,
     { cache: "no-store" },
   );
   const data = await response.json();

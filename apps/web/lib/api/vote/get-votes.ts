@@ -23,7 +23,7 @@ export async function getVotes({ search, committees, page }: Query) {
   }
 
   const response = await fetch(
-    `${PARLIAMENT_BASE_URL}/dokumentlista/?${query}`,
+    `${PARLIAMENT_BASE_URL}/dokumentlista/?${query.toString()}`,
     {
       cache: "no-store",
     },

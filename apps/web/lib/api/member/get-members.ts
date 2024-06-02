@@ -12,7 +12,9 @@ const getMembers = async (party: MemberParty | "" = "") => {
     sort: "sorteringsnamn",
   });
 
-  const response = await fetch(`${PARLIAMENT_BASE_URL}/personlista/?${query}`);
+  const response = await fetch(
+    `${PARLIAMENT_BASE_URL}/personlista/?${query.toString()}`,
+  );
   const data: MemberList = await response.json();
   const members = data.personlista.person;
   return members.map(parseMemberListEntry);

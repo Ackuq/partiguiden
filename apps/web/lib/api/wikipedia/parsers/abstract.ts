@@ -1,4 +1,4 @@
-interface WikipediaAbstractResponse {
+export interface WikipediaAbstractResponse {
   query: {
     pages: Record<
       number,

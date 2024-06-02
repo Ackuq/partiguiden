@@ -19,7 +19,7 @@ interface Props {
   };
 }
 
-export default async function DebatesPage({ searchParams }: Props) {
+export default function DebatesPage({ searchParams }: Props) {
   const page = parseNumberSearchParam(searchParams.sida) ?? 1;
   const search = parseStringSearchParam(searchParams.sok);
   const committees = parseStringArraySearchParam(searchParams.utskott);

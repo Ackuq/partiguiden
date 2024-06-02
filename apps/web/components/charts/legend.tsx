@@ -24,9 +24,8 @@ export default function CustomLegend({ payload }: DefaultLegendContentProps) {
     <ul className="flex flex-wrap items-center justify-center gap-x-3">
       {payload?.map((data) => (
         <Entry
-          // eslint-disable-next-line @typescript-eslint/no-explicit-any
-          key={(data as any).dataKey}
-          value={data.value}
+          key={data.dataKey as string}
+          value={data.value as string}
           color={data.color}
         />
       ))}

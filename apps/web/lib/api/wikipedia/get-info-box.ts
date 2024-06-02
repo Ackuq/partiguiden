@@ -1,6 +1,7 @@
 import sleep from "@lib/utils/sleep";
 import type { Party } from "@partiguiden/party-data/types";
 
+import type { WikipediaInfoBoxResponse } from "./parsers/info-box";
 import { getInfoBoxAttr } from "./parsers/info-box";
 import type { WikipediaInfoBox } from "./types";
 import { wikipediaPartyMap } from "./utils/party-map";
@@ -20,6 +21,6 @@ export default async function getWikipediaInfoBox(
     await sleep(1000);
     return getWikipediaInfoBox(party);
   }
-  const data = await response.json();
+  const data = (await response.json()) as WikipediaInfoBoxResponse;
   return getInfoBoxAttr(data, party);
 }

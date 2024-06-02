@@ -23,6 +23,10 @@ const baseConfig = tseslint.config({
       "warn",
       { prefer: "type-imports", fixStyle: "separate-type-imports" },
     ],
+    "@typescript-eslint/no-misused-promises": [
+      "error",
+      { checksVoidReturn: { attributes: false } },
+    ],
   },
 });
 

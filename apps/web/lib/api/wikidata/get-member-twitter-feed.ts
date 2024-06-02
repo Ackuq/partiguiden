@@ -28,6 +28,6 @@ export default async function getMemberTwitterFeed(memberId: string) {
       revalidate: 60 * 60 * 24 * 7,
     },
   });
-  const data: WikidataResponse<TwitterResult> = await response.json();
+  const data = (await response.json()) as WikidataResponse<TwitterResult>;
   return data;
 }

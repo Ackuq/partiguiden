@@ -6,7 +6,7 @@ import type { Party } from "@partiguiden/party-data/types";
 import type { WikipediaInfoBox } from "../types";
 import parseLeader from "./leader";
 
-interface WikipediaInfoBoxResponse {
+export interface WikipediaInfoBoxResponse {
   parse: {
     text: {
       "*": string;

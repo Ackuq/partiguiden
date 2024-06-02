@@ -19,7 +19,7 @@ interface Props {
   };
 }
 
-export default async function Decisions({ searchParams }: Props) {
+export default function Decisions({ searchParams }: Props) {
   const page = parseNumberSearchParam(searchParams.sida) ?? 1;
   const search = parseStringSearchParam(searchParams.sok);
   const committees = parseStringArraySearchParam(searchParams.utskott);

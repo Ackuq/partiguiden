@@ -46,7 +46,7 @@ export default function Documents({ initialDocuments, memberId }: Props) {
       `${window.location.origin}${routes.api.memberDocument(memberId, page)}`,
       { next: { revalidate: 60 * 60 * 24 } },
     );
-    const newDocuments: MemberDocuments = await response.json();
+    const newDocuments = (await response.json()) as MemberDocuments;
     setPage(page);
     setDocuments(newDocuments.documents);
     containerRef.current?.scrollIntoView();

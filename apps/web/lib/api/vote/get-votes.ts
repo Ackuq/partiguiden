@@ -29,7 +29,7 @@ export async function getVotes({ search, committees, page }: Query) {
     },
   );
 
-  const data: DocumentList = await response.json();
+  const data = (await response.json()) as DocumentList;
 
   return parseVotes(data);
 }

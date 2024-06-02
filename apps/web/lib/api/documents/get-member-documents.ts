@@ -1,5 +1,7 @@
 import { PARLIAMENT_BASE_URL } from "@lib/constants";
+import { body } from "@lib/utils/json";
 
+import type { DocumentList } from "../parliament/types";
 import parseMemberDocuments from "./parsers/member-documents";
 
 interface Query {
@@ -18,10 +20,10 @@ export default async function getMemberDocuments({ id, page }: Query) {
   });
 
   const response = await fetch(
-    `${PARLIAMENT_BASE_URL}/dokumentlista/?${query}`,
+    `${PARLIAMENT_BASE_URL}/dokumentlista/?${query.toString()}`,
     { cache: "no-store" },
   );
-  const data = await response.json();
+  const data = await body<DocumentList>(response);
 
   return parseMemberDocuments(data);
 }

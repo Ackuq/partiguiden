@@ -22,15 +22,15 @@ export default function TwitterFeed({ twitterFeed }: Props) {
       if (container) {
         container.innerHTML = "";
       }
-      window.twttr.widgets
-        .createTimeline(
+      void window.twttr.widgets
+        ?.createTimeline(
           {
             sourceType: "profile",
             screenName: twitterHandle,
           },
           container,
           {
-            theme: theme.theme,
+            theme: theme.theme as "light" | "dark",
             chrome: "nofooter noborders",
           },
         )

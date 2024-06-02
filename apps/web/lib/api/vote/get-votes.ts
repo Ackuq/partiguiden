@@ -1,4 +1,5 @@
 import { PARLIAMENT_BASE_URL } from "@lib/constants";
+import { body } from "@lib/utils/json";
 
 import type { DocumentList } from "../parliament/types";
 import { parseVotes } from "./parsers/votes";
@@ -23,13 +24,13 @@ export async function getVotes({ search, committees, page }: Query) {
   }
 
   const response = await fetch(
-    `${PARLIAMENT_BASE_URL}/dokumentlista/?${query}`,
+    `${PARLIAMENT_BASE_URL}/dokumentlista/?${query.toString()}`,
     {
       cache: "no-store",
     },
   );
 
-  const data: DocumentList = await response.json();
+  const data = await body<DocumentList>(response);
 
   return parseVotes(data);
 }

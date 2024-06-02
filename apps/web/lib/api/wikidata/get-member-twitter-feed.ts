@@ -1,4 +1,5 @@
 import { WIKIDATA_QUERY_URL } from "@lib/constants";
+import { body } from "@lib/utils/json";
 
 import type { TwitterResult, WikidataResponse } from "./types";
 
@@ -21,13 +22,13 @@ export default async function getMemberTwitterFeed(memberId: string) {
     query: sparqlQuery,
   });
 
-  const response = await fetch(`${WIKIDATA_QUERY_URL}?${query}`, {
+  const response = await fetch(`${WIKIDATA_QUERY_URL}?${query.toString()}`, {
     headers: { Accept: "application/sparql-results+json" },
     next: {
       // Revalidate once per week
       revalidate: 60 * 60 * 24 * 7,
     },
   });
-  const data: WikidataResponse<TwitterResult> = await response.json();
+  const data = await body<WikidataResponse<TwitterResult>>(response);
   return data;
 }

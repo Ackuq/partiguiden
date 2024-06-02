@@ -29,7 +29,7 @@ export default function DebateList({ debates, currentPage }: Props) {
     }
     const debounce = setTimeout(() => {
       const query = buildSearchParameters({ search, toggles });
-      router.replace(`${routes.debates}?${query}`);
+      router.replace(`${routes.debates}?${query.toString()}`);
     }, 500);
 
     return () => {
@@ -40,7 +40,7 @@ export default function DebateList({ debates, currentPage }: Props) {
 
   function onChangePage(newPage: number) {
     const query = buildSearchParameters({ search, toggles, page: newPage });
-    router.push(`${routes.debates}?${query}`);
+    router.push(`${routes.debates}?${query.toString()}`);
   }
 
   if (debates.pages === 0) {

@@ -102,7 +102,7 @@ export default async function PartyPage({
   );
 }
 
-export async function generateMetadata({
+export function generateMetadata({
   params: { party: partyAbbreviation },
 }: PageProps) {
   const party = partyAbbreviation.toUpperCase() as Party;
@@ -121,7 +121,7 @@ export async function generateMetadata({
 
 export const dynamicParams = false;
 
-export async function generateStaticParams() {
+export function generateStaticParams() {
   const parties = Object.values(Party);
 
   return parties.map((party) => ({

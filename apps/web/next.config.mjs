@@ -1,3 +1,4 @@
+// @ts-check
 import bundleAnalyzer from "@next/bundle-analyzer";
 import { withSentryConfig } from "@sentry/nextjs";
 
@@ -25,7 +26,7 @@ let moduleExports = withBundleAnalyzer({
 });
 
 /**
- * @type {Partial<import('@sentry/nextjs').SentryWebpackPluginOptions>}
+ * @type {Parameters<typeof withSentryConfig>[1]}
  */
 const sentryWebpackPluginOptions = {
   silent: true,

@@ -7,6 +7,7 @@ import { Card, CommitteeHeader } from "@components/common/card";
 import Pagination from "@components/common/pagination";
 import type { MemberDocument, MemberDocuments } from "@lib/api/member/types";
 import { routes } from "@lib/navigation";
+import { body } from "@lib/utils/json";
 
 interface DocumentProps {
   document: MemberDocument;
@@ -46,7 +47,7 @@ export default function Documents({ initialDocuments, memberId }: Props) {
       `${window.location.origin}${routes.api.memberDocument(memberId, page)}`,
       { next: { revalidate: 60 * 60 * 24 } },
     );
-    const newDocuments: MemberDocuments = await response.json();
+    const newDocuments = await body<MemberDocuments>(response);
     setPage(page);
     setDocuments(newDocuments.documents);
     containerRef.current?.scrollIntoView();

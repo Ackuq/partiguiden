@@ -1,9 +1,11 @@
-import { KnipConfig } from "knip";
+import type { KnipConfig } from "knip";
 
 const config: KnipConfig = {
   workspaces: {
     ".": {
-      ignoreDependencies: ["eslint-config-next"],
+      eslint: {
+        project: ["tooling/eslint/**/*"],
+      },
     },
     "apps/web": {
       // Additional entry points

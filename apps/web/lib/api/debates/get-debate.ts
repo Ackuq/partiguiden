@@ -1,4 +1,5 @@
 import { PARLIAMENT_BASE_URL } from "@lib/constants";
+import { body } from "@lib/utils/json";
 
 import type { DocumentList } from "../parliament/types";
 import { DEBATE_DOCUMENT_TYPES } from "./constants";
@@ -17,7 +18,7 @@ export default async function getDebate(
   });
 
   const response = await fetch(
-    `${PARLIAMENT_BASE_URL}/dokumentlista/?${query}`,
+    `${PARLIAMENT_BASE_URL}/dokumentlista/?${query.toString()}`,
     {
       cache: "no-store",
     },
@@ -27,6 +28,6 @@ export default async function getDebate(
     return;
   }
 
-  const data: DocumentList = await response.json();
+  const data = await body<DocumentList>(response);
   return parseDebate(data);
 }

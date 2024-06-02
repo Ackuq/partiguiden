@@ -56,7 +56,7 @@ export default function BlockBuilder({ currentMonthAverage }: Props) {
   };
 
   const onClick: LegendProps["onClick"] = (data) => {
-    const party = data.value;
+    const party = data.value as Party;
     if (included.includes(party)) {
       removeParty(party);
     } else {
@@ -93,10 +93,11 @@ export default function BlockBuilder({ currentMonthAverage }: Props) {
           ))}
           <Legend
             formatter={(_value, entry) => {
-              const partyName = partyNames[entry.value as Party];
+              const party = entry.value as Party;
+              const partyName = partyNames[party];
               return (
                 <Image
-                  src={partyLogo(entry.value)}
+                  src={partyLogo(party)}
                   alt={`${partyName} logo`}
                   width={40}
                   height={40}

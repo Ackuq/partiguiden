@@ -79,7 +79,7 @@ export default function Standpoints({ params: { id } }: PageProps) {
   );
 }
 
-export async function generateMetadata({ params: { id } }: PageProps) {
+export function generateMetadata({ params: { id } }: PageProps) {
   const subject = getSubject(id);
 
   if (!subject) {
@@ -96,7 +96,7 @@ export async function generateMetadata({ params: { id } }: PageProps) {
 
 export const dynamicParams = false;
 
-export async function generateStaticParams() {
+export function generateStaticParams() {
   const subjects = getSubjects();
 
   return subjects.map((subject) => ({

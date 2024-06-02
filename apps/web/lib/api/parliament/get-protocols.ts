@@ -1,4 +1,5 @@
 import { PARLIAMENT_BASE_URL } from "@lib/constants";
+import { body } from "@lib/utils/json";
 
 import type { DocumentList } from "./types";
 
@@ -24,12 +25,12 @@ export default async function getProtocols({
   });
 
   const response = await fetch(
-    `${PARLIAMENT_BASE_URL}/dokumentlista/?${query}`,
+    `${PARLIAMENT_BASE_URL}/dokumentlista/?${query.toString()}`,
   );
 
   if (!response.ok) {
     return;
   }
 
-  return response.json();
+  return body<DocumentList>(response);
 }

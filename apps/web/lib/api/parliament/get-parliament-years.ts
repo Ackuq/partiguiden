@@ -1,3 +1,5 @@
+import { body } from "@lib/utils/json";
+
 import type { Riksmoten } from "./types";
 
 export default async function getParliamentYears(): Promise<Riksmoten> {
@@ -6,5 +8,5 @@ export default async function getParliamentYears(): Promise<Riksmoten> {
     { next: { revalidate: 86400 } },
   );
 
-  return response.json();
+  return body<Riksmoten>(response);
 }

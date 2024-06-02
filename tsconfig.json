@@ -1,17 +1,30 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
-    "module": "ESNext",
-    "moduleResolution": "Node",
-    "strict": true,
-    "allowJs": true,
-    "noEmit": true,
-    "skipLibCheck": true,
-    "resolveJsonModule": true,
+    /** Base Options **/
     "esModuleInterop": true,
+    "skipLibCheck": true,
+    "target": "ESNext",
+    "lib": ["ESNext"],
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "moduleDetection": "force",
+    "isolatedModules": true,
+    "forceConsistentCasingInFileNames": true,
+
+    /** Keep TSC performant in monorepos **/
+    "incremental": true,
+    "disableSourceOfProjectReferenceRedirect": true,
+
+    /** Strictness **/
+    "strict": true,
+    "checkJs": true,
     "noImplicitAny": true,
     "noImplicitThis": true,
-    "forceConsistentCasingInFileNames": true
+
+    /** Transpile using Bundler **/
+    "module": "Preserve",
+    "moduleResolution": "Bundler",
+    "noEmit": true
   },
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", ".next"]
 }

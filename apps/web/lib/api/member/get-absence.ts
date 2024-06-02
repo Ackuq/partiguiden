@@ -1,5 +1,7 @@
 import { PARLIAMENT_BASE_URL } from "@lib/constants";
+import { body } from "@lib/utils/json";
 
+import type { VoteringNameGroupLookup } from "../parliament/types";
 import serializeAbsence from "./parsers/absence";
 
 interface Query {
@@ -19,7 +21,7 @@ export default async function getAbsence({
   });
 
   const response = await fetch(
-    `${PARLIAMENT_BASE_URL}/voteringlista/?${query}`,
+    `${PARLIAMENT_BASE_URL}/voteringlista/?${query.toString()}`,
     {
       next: { revalidate: 60 * 60 * 24 },
     },
@@ -32,6 +34,6 @@ export default async function getAbsence({
     throw new Error("Något gick fel med anropet till Riksdagens API");
   }
 
-  const data = await response.json();
+  const data = await body<VoteringNameGroupLookup>(response);
   return serializeAbsence(data);
 }

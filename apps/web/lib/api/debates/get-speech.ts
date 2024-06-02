@@ -1,4 +1,5 @@
 import { PARLIAMENT_BASE_URL } from "@lib/constants";
+import { body } from "@lib/utils/json";
 
 import type { SpeechDocumentResponse } from "../parliament/types/speech";
 import parseSpeech from "./parsers/speech";
@@ -20,6 +21,6 @@ export default async function getSpeech(
     return;
   }
 
-  const data: SpeechDocumentResponse = await response.json();
+  const data = await body<SpeechDocumentResponse>(response);
   return parseSpeech(data);
 }

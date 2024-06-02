@@ -1,7 +1,9 @@
 import stripJsonComments from "strip-json-comments";
 
 import { PARLIAMENT_BASE_URL } from "@lib/constants";
+import { parse } from "@lib/utils/json";
 
+import type { DocumentStatus } from "../parliament/types";
 import parseVoteResult from "./parsers/vote-result";
 import type { VoteResultsResponse } from "./types";
 
@@ -16,7 +18,7 @@ export default async function getVoteResult(
     },
   );
   const text = await response.text();
-  const data = JSON.parse(stripJsonComments(text));
+  const data = parse<DocumentStatus>(stripJsonComments(text));
 
   return parseVoteResult(data, num);
 }

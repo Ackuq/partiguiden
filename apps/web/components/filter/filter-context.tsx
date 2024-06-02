@@ -1,6 +1,6 @@
 "use client";
 
-import { createContext, useContext, useMemo, useState } from "react";
+import React, { createContext, useContext, useMemo, useState } from "react";
 
 interface ToggleValue {
   title: string;
@@ -67,5 +67,5 @@ export function FilterContextProvider<K extends string>({
 }
 
 export function useFilterContext<K extends string>(): IFilterContext<K> {
-  return useContext<IFilterContext<K>>(FilterContext);
+  return useContext(FilterContext as React.Context<IFilterContext<K>>);
 }

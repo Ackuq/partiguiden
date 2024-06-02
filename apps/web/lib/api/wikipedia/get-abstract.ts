@@ -1,6 +1,8 @@
+import { body } from "@lib/utils/json";
 import sleep from "@lib/utils/sleep";
 import type { Party } from "@partiguiden/party-data/types";
 
+import type { WikipediaAbstractResponse } from "./parsers/abstract";
 import parseAbstract from "./parsers/abstract";
 import { wikipediaPartyMap } from "./utils/party-map";
 
@@ -19,7 +21,7 @@ export default async function getWikipediaAbstract(
     await sleep(1000);
     return getWikipediaAbstract(party);
   }
-  const data = await response.json();
+  const data = await body<WikipediaAbstractResponse>(response);
 
   return parseAbstract(data);
 }

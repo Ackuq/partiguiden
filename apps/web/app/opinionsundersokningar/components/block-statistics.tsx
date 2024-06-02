@@ -69,7 +69,11 @@ const Block: React.FC<BlockProps> = ({
               className="stroke-transparent"
               innerRadius="95%"
               outerRadius="105%"
-              label={(data) => `${data.payload.value.toFixed(2)}%`}
+              label={(data) => {
+                // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
+                const value = data.payload.value as number;
+                return `${value.toFixed(2)}%`;
+              }}
             >
               {blocks.values.map((block: Blocks["values"][number]) => (
                 <Cell key={block.name} fill={block.color} />

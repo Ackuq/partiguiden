@@ -1,5 +1,9 @@
 name: Update Standpoints
 description: Script that updates the party standpoints
+inputs:
+  github-token:
+    description: GitHub token
+    required: true
 runs:
   using: node20
   main: dist/index.mjs

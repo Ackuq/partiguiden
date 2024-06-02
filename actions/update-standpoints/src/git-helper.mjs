@@ -29,7 +29,7 @@ export async function push() {
   await exec(command);
 }
 
-export async function hasDiff() {
+export async function checkHasDiff() {
   const command = ["diff", "--quiet"];
   const output = await exec(command);
   // Exit code 1 means there are differences

@@ -15,7 +15,7 @@ function firstLetterOfSentences(s: string) {
     .join("");
 }
 
-type MemberImageProps = {
+interface MemberImageProps {
   imageUrl: string;
   firstName: string;
   lastName: string;
@@ -23,7 +23,7 @@ type MemberImageProps = {
   logoDirection?: "left" | "right";
   className?: string;
   sizes?: string;
-};
+}
 
 export default function MemberImage({
   imageUrl,

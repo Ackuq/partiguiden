@@ -6,7 +6,8 @@ import { Cell, Pie, PieChart, ResponsiveContainer, Tooltip } from "recharts";
 import CustomTooltip from "@components/charts/tooltip";
 import type { AveragePoll, BlocksAverage } from "@lib/api/polls/types";
 import { getThemePartyColors } from "@lib/colors/party";
-import { type Blocks, allBlocks } from "@lib/utils/blocks";
+import { allBlocks } from "@lib/utils/blocks";
+import type { Blocks } from "@lib/utils/blocks";
 import { partyNames } from "@partiguiden/party-data/utils";
 
 function blockSort(blocks: Blocks["values"]) {

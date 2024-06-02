@@ -38,7 +38,7 @@ export default function parsePolls(csv: string, lastDate: Date): Polls {
   const lastYear = lastDate.getFullYear();
   const lastMonth = lastDate.getMonth();
 
-  const header = rows.shift() as string;
+  const header = rows.shift()!;
   const partyOrder = header
     .split(",")
     .slice(CSVIndex.PartyStart, CSVIndex.PartyEnd) as Party[];

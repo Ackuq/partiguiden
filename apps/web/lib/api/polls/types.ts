@@ -1,23 +1,21 @@
 import type { Blocks } from "@lib/utils/blocks";
 import type { Party } from "@partiguiden/party-data/types";
 
-export type Poll = {
+export interface Poll {
   publishedDate: Date;
   institute: string;
   data: {
     [party in Party]?: number;
   };
-};
+}
 
-export type Polls = {
-  [year: number]: { [month: number]: Poll[] };
-};
+export type Polls = Record<number, Record<number, Poll[]>>;
 
-export type PollDetails = {
+export interface PollDetails {
   value: number;
   institute: string;
   publishedDate: Date;
-};
+}
 
 export type AveragePoll = {
   party: Party;

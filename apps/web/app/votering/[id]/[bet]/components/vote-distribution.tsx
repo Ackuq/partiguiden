@@ -27,7 +27,7 @@ interface Result {
 }
 
 const createData = (voting: VotingDict) => {
-  const result: Array<Result> = [];
+  const result: Result[] = [];
 
   (Object.keys(voting) as (keyof VotingDict)[]).forEach((party) => {
     if (party !== "noParty" && party !== "total") {

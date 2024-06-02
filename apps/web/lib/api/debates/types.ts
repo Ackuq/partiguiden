@@ -7,12 +7,12 @@ import type { MemberParty } from "../parliament/types";
  * List response
  */
 
-export type DebateListResponse = {
+export interface DebateListResponse {
   pages: number;
   debates: DebateListEntry[];
-};
+}
 
-export type DebateListEntry = {
+export interface DebateListEntry {
   id: string;
   title: string;
   subtitle: string;
@@ -20,13 +20,13 @@ export type DebateListEntry = {
   committee?: Committee;
   sender?: Speaker;
   date: string;
-};
+}
 
 /**
  * Single entry response
  */
 
-export type Debate = {
+export interface Debate {
   id: string;
   title: string;
   subtitle: string;
@@ -34,30 +34,28 @@ export type Debate = {
   date: string;
   webTVUrl: string;
   senderId?: string;
-  speakers: {
-    [id: string]: Speaker;
-  };
+  speakers: Record<string, Speaker>;
   statements: DebateStatement[];
-};
+}
 
 /**
  * Common types
  */
 
-export type Speaker = {
+export interface Speaker {
   id: string;
   firstName: string;
   lastName: string;
   party: Party | "-";
   imageUrl: string;
-};
+}
 
-export type Speech = {
+export interface Speech {
   party: MemberParty;
   speaker: string;
   speakerId: string;
   text: string;
-};
+}
 
 export type DebateStatement = Speech & {
   number: string;

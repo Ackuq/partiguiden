@@ -3,10 +3,10 @@ import Breadcrumbs from "./breadcrumbs";
 import type { SocialMediaShareProps } from "./social-media-share";
 import SocialMediaShare from "./social-media-share";
 
-type BreadcrumbsSocialMediaShareProps = {
+interface BreadcrumbsSocialMediaShareProps {
   breadcrumbsProps: BreadcrumbsProps;
   socialMediaProps: SocialMediaShareProps;
-};
+}
 
 export default function BreadcrumbsSocialMediaShare({
   breadcrumbsProps,

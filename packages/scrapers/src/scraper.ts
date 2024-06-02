@@ -20,7 +20,7 @@ export default abstract class Scraper implements ScraperArgs {
   abstract listPath: string;
   abstract listSelector: string;
   opinionTags?: string[];
-  absoluteUrls: boolean = false;
+  absoluteUrls = false;
   pathRegex?: RegExp;
 
   protected getOpinions($: CheerioAPI): string[] {

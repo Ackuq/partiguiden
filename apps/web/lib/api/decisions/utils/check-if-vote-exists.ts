@@ -29,11 +29,8 @@ export default async function checkIfVotesExist(url: string): Promise<boolean> {
   }
 
   if (Array.isArray(suggestions)) {
-    for (let i = 0; i < suggestions.length; i += 1) {
-      if (
-        suggestions[i].votering_id !== null &&
-        suggestions[i].votering_id !== ""
-      ) {
+    for (const suggestion of suggestions) {
+      if (suggestion.votering_id !== null && suggestion.votering_id !== "") {
         return true;
       }
     }

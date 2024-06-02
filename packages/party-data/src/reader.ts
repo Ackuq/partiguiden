@@ -8,7 +8,8 @@ import sd from "./data/parties/SD.json";
 import v from "./data/parties/V.json";
 import subjects from "./data/subjects.json";
 import type { Standpoint } from "./types";
-import { Party, type Subject, partySortOrder } from "./types";
+import { Party, partySortOrder } from "./types";
+import type { Subject } from "./types";
 
 export function getSubjects(): Subject[] {
   return Object.values(subjects);

@@ -1,14 +1,14 @@
-export type Riksmoten = {
+export interface Riksmoten {
   riksmoten: {
     "@systemdatum": string;
     riksmote: RiksmoteItem[];
   };
-};
+}
 
-export type RiksmoteItem = {
+interface RiksmoteItem {
   riksmote: string;
   id: string;
   start: string;
   slut: string;
   mandatperiod: string;
-};
+}

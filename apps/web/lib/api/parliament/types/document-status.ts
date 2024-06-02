@@ -1,4 +1,4 @@
-export type DocumentStatus = {
+export interface DocumentStatus {
   dokumentstatus: {
     dokument: Document;
     dokutskottsforslag?: {
@@ -14,9 +14,9 @@ export type DocumentStatus = {
     dokbilaga?: { bilaga: DocumentAppendix[] };
     dokreferens?: { referens: DocumentReference[] };
   };
-};
+}
 
-type Document = {
+interface Document {
   hangar_id: string;
   dok_id: string;
   rm: string;
@@ -46,9 +46,9 @@ type Document = {
   dokument_url_html: string;
   dokumentstatus_url_xml: string;
   utskottsforslag_url_xml?: string;
-};
+}
 
-type DocumentProposal = {
+interface DocumentProposal {
   punkt: string;
   rubrik: string;
   forslag: string;
@@ -67,11 +67,11 @@ type DocumentProposal = {
   beslutsregelkvot: string;
   beslutsregelparagraf: string;
   punkttyp: string;
-};
+}
 
 export type OldVotingRow = [
   {
-    th: Array<string>;
+    th: string[];
   },
   {
     td: { h4: string; p: string };
@@ -79,12 +79,12 @@ export type OldVotingRow = [
   ...{ td: string[] }[],
 ];
 
-export type NewVotingRow = {
+export interface NewVotingRow {
   th: string;
   td: string[];
-};
+}
 
-type NewVotingTable = {
+interface NewVotingTable {
   caption: {
     b: string;
     br: null;
@@ -104,40 +104,40 @@ type NewVotingTable = {
       td: string[];
     };
   };
-};
+}
 
-export type OldVotingTable = {
+export interface OldVotingTable {
   tr: OldVotingRow;
-};
+}
 
 export type DocumentProposalTable = NewVotingTable | OldVotingTable;
 
-type DocumentActivity = {
+interface DocumentActivity {
   kod: string;
   namn: string;
   datum: string;
   status: string;
   ordning: string;
   process: string;
-};
+}
 
-type DocumentParticipant = {
+interface DocumentParticipant {
   intressent_id: string;
   namn: string;
   partibet: string;
   ordning: string;
   roll: string;
-};
+}
 
-type DocumentInformation = {
+interface DocumentInformation {
   kod: string;
   namn: string;
   text: string;
   dok_id: string;
   systemdatum: string;
-};
+}
 
-export type DocumentAppendix = {
+export interface DocumentAppendix {
   dok_id: string;
   subtitel: string;
   filnamn: string;
@@ -145,9 +145,9 @@ export type DocumentAppendix = {
   filtyp: string;
   titel: string;
   fil_url: string;
-};
+}
 
-export type DocumentReference = {
+export interface DocumentReference {
   referenstyp: string;
   uppgift: string;
   ref_dok_id: string;
@@ -158,4 +158,4 @@ export type DocumentReference = {
   ref_dok_subtitel: string;
   ref_dok_subtyp: string;
   ref_dok_dokumentnamn: string;
-};
+}

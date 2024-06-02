@@ -48,13 +48,13 @@ function extractVotesNew(row: NewVotingRow[]): VotingDict {
       refrain: +td[2],
       absent: +td[3],
     };
-    total["yes"] = total["yes"] + partyVotes["yes"];
-    total["no"] = total["no"] + partyVotes["no"];
-    total["refrain"] = total["refrain"] + partyVotes["refrain"];
-    total["absent"] = total["absent"] + partyVotes["absent"];
+    total.yes = total.yes + partyVotes.yes;
+    total.no = total.no + partyVotes.no;
+    total.refrain = total.refrain + partyVotes.refrain;
+    total.absent = total.absent + partyVotes.absent;
     voting[votingGroupName] = partyVotes;
   });
-  voting["total"] = total;
+  voting.total = total;
   return voting;
 }
 

@@ -22,8 +22,8 @@ const FilterContext = createContext<IFilterContext<any>>({
   search: "",
   toggles: {},
   activeToggles: [],
-  updateSearch: () => {},
-  updateToggle: () => {},
+  updateSearch: () => void {},
+  updateToggle: () => void {},
 });
 
 type FilterContextProps<K extends string> = React.PropsWithChildren<{

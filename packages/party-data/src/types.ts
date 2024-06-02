@@ -35,12 +35,8 @@ export interface Standpoint {
   subject?: string;
 }
 
-export interface SubjectData {
-  [id: string]: Subject;
-}
+export type SubjectData = Record<string, Subject>;
 
-export interface PartyData {
-  [url: string]: Standpoint;
-}
+export type PartyData = Record<string, Standpoint>;
 
 export type PartyDataWithoutPartyName = Omit<Standpoint, "party">;

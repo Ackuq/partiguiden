@@ -1,4 +1,5 @@
 import { PARLIAMENT_BASE_URL } from "@lib/constants";
+import { body } from "@lib/utils/json";
 
 import type { DocumentList } from "./types";
 
@@ -31,5 +32,5 @@ export default async function getProtocols({
     return;
   }
 
-  return response.json();
+  return body<DocumentList>(response);
 }

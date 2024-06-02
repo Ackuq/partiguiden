@@ -1,4 +1,5 @@
 import { WIKIDATA_QUERY_URL } from "@lib/constants";
+import { body } from "@lib/utils/json";
 
 import type { TwitterResult, WikidataResponse } from "./types";
 
@@ -28,6 +29,6 @@ export default async function getMemberTwitterFeed(memberId: string) {
       revalidate: 60 * 60 * 24 * 7,
     },
   });
-  const data = (await response.json()) as WikidataResponse<TwitterResult>;
+  const data = await body<WikidataResponse<TwitterResult>>(response);
   return data;
 }

@@ -48,24 +48,25 @@ export default function MonthPoll({ currentMonthAverage }: Props) {
             content={
               <CustomTooltip
                 Details={({ payload }) => {
-                  const details = payload?.[0]?.payload?.details;
+                  const item = payload?.[0]?.payload as
+                    | AveragePoll[number]
+                    | undefined;
+                  const details = item?.details;
                   if (!details) {
                     return;
                   }
                   return (
                     <>
                       <hr className="dark:border-slate-500" />
-                      {(details as AveragePoll[number]["details"]).map(
-                        (data) => (
-                          <li key={data.institute} className="flex gap-2">
-                            <span>{data.institute}:</span>
-                            <span>
-                              {data.value}% (
-                              {data.publishedDate.toISOString().split("T")[0]})
-                            </span>
-                          </li>
-                        ),
-                      )}
+                      {details.map((data) => (
+                        <li key={data.institute} className="flex gap-2">
+                          <span>{data.institute}:</span>
+                          <span>
+                            {data.value}% (
+                            {data.publishedDate.toISOString().split("T")[0]})
+                          </span>
+                        </li>
+                      ))}
                     </>
                   );
                 }}

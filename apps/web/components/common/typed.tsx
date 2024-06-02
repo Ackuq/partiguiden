@@ -13,6 +13,7 @@ const Typed: React.FC<any> = ({ ...options }) => {
     <span
       ref={(ref) => {
         if (ref && !typed.current) {
+          // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
           typed.current = new TypedJS(ref, options);
         }
       }}

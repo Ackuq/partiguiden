@@ -1,4 +1,5 @@
 import { PARLIAMENT_BASE_URL } from "@lib/constants";
+import { body } from "@lib/utils/json";
 
 import type { MemberLookup, MemberParty } from "../parliament/types";
 import { parseMember } from "./parsers/member";
@@ -26,7 +27,7 @@ export default async function searchMember(parameters: Query) {
       next: { revalidate: 60 * 60 * 24 },
     },
   );
-  const data: MemberLookup = await response.json();
+  const data = await body<MemberLookup>(response);
   if (data.personlista.person) {
     return parseMember(data.personlista.person);
   }

@@ -1,6 +1,7 @@
 import { unstable_cache as cache } from "next/cache";
 
 import { PARLIAMENT_BASE_URL } from "@lib/constants";
+import { body } from "@lib/utils/json";
 
 import type { MemberList, MemberParty } from "../parliament/types";
 import parseMemberListEntry from "./parsers/member-list-entry";
@@ -15,7 +16,7 @@ const getMembers = async (party: MemberParty | "" = "") => {
   const response = await fetch(
     `${PARLIAMENT_BASE_URL}/personlista/?${query.toString()}`,
   );
-  const data: MemberList = await response.json();
+  const data = await body<MemberList>(response);
   const members = data.personlista.person;
   return members.map(parseMemberListEntry);
 };

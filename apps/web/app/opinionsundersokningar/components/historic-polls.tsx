@@ -38,7 +38,7 @@ export default function HistoricPolls({ historicPolls }: Props) {
   };
 
   const onClick: LegendProps["onClick"] = (data) => {
-    const party = data.value;
+    const party = data.value as Party;
     if (hide.includes(party)) {
       showParty(party);
     } else {

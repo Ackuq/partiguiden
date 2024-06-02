@@ -5,7 +5,7 @@ export interface Riksmoten {
   };
 }
 
-export interface RiksmoteItem {
+interface RiksmoteItem {
   riksmote: string;
   id: string;
   start: string;

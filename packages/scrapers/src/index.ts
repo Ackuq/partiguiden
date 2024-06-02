@@ -21,8 +21,7 @@ if (!party) {
 
 const parties = party === "all" ? Object.keys(scrapers) : [party];
 
-// eslint-disable-next-line @typescript-eslint/no-misused-promises
-parties.forEach(async (abbreviation) => {
+const promises = parties.map(async (abbreviation) => {
   if (!Object.keys(scrapers).includes(abbreviation.toLowerCase())) {
     throw new Error(`No scraper created for party ${abbreviation}`);
   }
@@ -39,5 +38,19 @@ parties.forEach(async (abbreviation) => {
     }`,
   );
 
-  writePartyData(abbreviation, data);
+  return writePartyData(abbreviation, data);
 });
+
+async function main() {
+  const settledPromises = await Promise.allSettled(promises);
+  const rejectedPromises = settledPromises.filter(
+    (promise): promise is PromiseRejectedResult =>
+      promise.status === "rejected",
+  );
+  for (const promise of rejectedPromises) {
+    console.error("Error when scraping party data", promise.reason);
+  }
+  console.log("Done scraping party data");
+}
+
+void main();

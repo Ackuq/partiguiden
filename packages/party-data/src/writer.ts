@@ -1,4 +1,5 @@
 import * as fs from "node:fs";
+import * as prettier from "prettier";
 
 import type { PartyData, PartyDataWithoutPartyName, Standpoint } from "./types";
 
@@ -10,10 +11,10 @@ const partyFileName = (abbreviation: string) =>
 /**
  * Function to append, update, or delete party data, with a new snapshot.
  */
-export function writePartyData(
+export async function writePartyData(
   abbreviation: string,
   list: PartyDataWithoutPartyName[],
-): string {
+): Promise<string> {
   const data = list.reduce((prev, current) => {
     const entry: PartyData[string] = {
       ...current,
@@ -27,7 +28,7 @@ export function writePartyData(
   const fileName = partyFileName(abbreviation);
 
   if (!fs.existsSync(fileName)) {
-    fs.writeFileSync(fileName, JSON.stringify(data, null, 2) + "\n");
+    await writeJSON(fileName, data);
     return fileName;
   }
   const storedData = JSON.parse(
@@ -64,15 +65,24 @@ export function writePartyData(
     result.fetchDate = incomingData.fetchDate;
     storedData[link] = result;
   }
-  fs.writeFileSync(fileName, JSON.stringify(storedData, null, 2) + "\n");
+  await writeJSON(fileName, storedData);
   return fileName;
 }
 
-export function updateStandpoint(abbreviation: string, standpoint: Standpoint) {
+export async function updateStandpoint(
+  abbreviation: string,
+  standpoint: Standpoint,
+) {
   const fileName = partyFileName(abbreviation);
   const storedData = JSON.parse(
     fs.readFileSync(fileName).toString(),
   ) as PartyData;
   storedData[standpoint.url] = standpoint;
-  fs.writeFileSync(fileName, JSON.stringify(storedData, null, 2) + "\n");
+  await writeJSON(fileName, storedData);
+}
+
+async function writeJSON(fileName: string, data: unknown) {
+  const json = JSON.stringify(data);
+  const formattedData = await prettier.format(json, { parser: "json" });
+  fs.writeFileSync(fileName, formattedData);
 }

@@ -18,6 +18,7 @@ const config: KnipConfig = {
     },
     "packages/party-data": {
       entry: ["scripts/cli.ts"],
+      ignoreDependencies: ["prettier"],
     },
   },
 };

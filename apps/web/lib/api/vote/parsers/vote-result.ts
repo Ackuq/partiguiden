@@ -32,7 +32,7 @@ export default function parseVoteResult(
     ? utskottsforslag[num - 1]
     : utskottsforslag;
 
-  if (!voteObject || !voteObject.votering_sammanfattning_html) {
+  if (!voteObject?.votering_sammanfattning_html) {
     return undefined;
   }
 

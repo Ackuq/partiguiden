@@ -1,7 +1,6 @@
 // @ts-check
 import eslint from "@eslint/js";
 import importPlugin from "eslint-plugin-import";
-import eslintPluginPrettierRecommended from "eslint-plugin-prettier/recommended";
 import tseslint from "typescript-eslint";
 
 const baseConfig = tseslint.config({
@@ -12,7 +11,7 @@ const baseConfig = tseslint.config({
   extends: [
     eslint.configs.recommended,
     ...tseslint.configs.recommendedTypeChecked,
-    eslintPluginPrettierRecommended,
+    ...tseslint.configs.stylisticTypeChecked,
   ],
   rules: {
     "@typescript-eslint/no-unused-vars": [
@@ -27,6 +26,7 @@ const baseConfig = tseslint.config({
       "error",
       { checksVoidReturn: { attributes: false } },
     ],
+    "import/consistent-type-specifier-style": ["error", "prefer-top-level"],
   },
 });
 

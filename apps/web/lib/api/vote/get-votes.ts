@@ -15,9 +15,9 @@ export async function getVotes({ search, committees, page }: Query) {
     doktyp: "votering",
     sortorder: "desc",
     utformat: "json",
-    sok: search || "",
+    sok: search ?? "",
     sort: search ? "rel" : "datum",
-    p: page?.toString() || "",
+    p: page?.toString() ?? "",
   });
   for (const committe of committees) {
     query.append("org", committe);

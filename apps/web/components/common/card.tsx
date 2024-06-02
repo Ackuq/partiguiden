@@ -1,6 +1,7 @@
 import { twMerge } from "tailwind-merge";
 
-import { type Committee, committeeInfo } from "@lib/committees";
+import { committeeInfo } from "@lib/committees";
+import type { Committee } from "@lib/committees";
 import { committeeBackground } from "@lib/styles/committees";
 
 type CardHeaderProps = React.PropsWithChildren<{
@@ -15,9 +16,9 @@ function CardHeader({ children, className }: CardHeaderProps) {
   );
 }
 
-type CommitteeHeaderProps = {
+interface CommitteeHeaderProps {
   committee?: Committee | null;
-};
+}
 
 export function CommitteeHeader({ committee }: CommitteeHeaderProps) {
   if (!committee) {

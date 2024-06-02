@@ -3,7 +3,7 @@ import type { WikipediaInfoBox } from "../wikipedia/types";
 
 interface ParliamentPartyData {
   website?: string;
-  leaders: Array<Leader>;
+  leaders: Leader[];
 }
 
 export interface PartyData extends ParliamentPartyData, WikipediaInfoBox {

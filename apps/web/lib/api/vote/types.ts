@@ -11,11 +11,11 @@ export type VotingGroup = Party | "noParty" | "total";
 
 export type VotingDict = Record<VotingGroup, VotingEntry>;
 
-export type VotingResult = {
+export interface VotingResult {
   yes: Party[];
   no: Party[];
   winner: "yes" | "no" | "draw";
-};
+}
 
 export interface VoteResultsResponse {
   allVotes: VotingDict;

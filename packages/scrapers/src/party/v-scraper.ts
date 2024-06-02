@@ -17,7 +17,7 @@ export default class VScraper extends Scraper {
     const $preamble = $articleBody.find(
       "div.ArticleBody-module--preamble--\\+K5Nt",
     );
-    if ($preamble && $preamble.children().length) {
+    if ($preamble?.children().length) {
       return $preamble
         .children()
         .toArray()

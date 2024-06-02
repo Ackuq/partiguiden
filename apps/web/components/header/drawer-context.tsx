@@ -11,8 +11,8 @@ interface IDrawerContext {
 
 export const DrawerContext = createContext<IDrawerContext>({
   drawerIsOpen: false,
-  openDrawer: () => {},
-  closeDrawer: () => {},
+  openDrawer: () => void {},
+  closeDrawer: () => void {},
 });
 
 export const DrawerContextProvider = ({

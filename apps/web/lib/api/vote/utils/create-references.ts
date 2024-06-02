@@ -17,7 +17,7 @@ export default function createReferences(
   /* Matches for example: 2019/20:3635 */
   const referenceRegex = /[0-9]{4}\/[0-9]{2}:[A-ö]{0,4}[0-9]{0,4}/gm;
 
-  const referencedDocuments: Array<string> = [];
+  const referencedDocuments: string[] = [];
 
   let match;
 
@@ -27,7 +27,7 @@ export default function createReferences(
     }
   }
 
-  const processedDocuments: Array<ProcessedDocument> = [];
+  const processedDocuments: ProcessedDocument[] = [];
 
   for (let i = 0; i < referencedDocuments.length; i += 1) {
     const sectionStart = proposition.indexOf(referencedDocuments[i]);

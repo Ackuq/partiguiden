@@ -1,6 +1,6 @@
 import type { MemberParty } from "./members";
 
-export type DocumentList = {
+export interface DocumentList {
   dokumentlista: {
     "@ms": string;
     "@version": string;
@@ -19,9 +19,9 @@ export type DocumentList = {
     "@dR": string;
     dokument: DocumentListEntry[];
   };
-};
+}
 
-export type DocumentListEntry = {
+export interface DocumentListEntry {
   traff: string;
   domain: string;
   database: string;
@@ -82,9 +82,9 @@ export type DocumentListEntry = {
   debatt: { anforande: DocumentListSpeeches[] | DocumentListSpeeches } | null;
   debattnamn?: string;
   dokumentnamn: string;
-};
+}
 
-type SearchData = {
+interface SearchData {
   titel: string;
   undertitel: string;
   soktyp: string;
@@ -102,9 +102,9 @@ type SearchData = {
   parti_logotyp_img_alt: string;
   parti_mandat: string;
   kalenderprio: string;
-};
+}
 
-type DocumentListSpeeches = {
+interface DocumentListSpeeches {
   parti: MemberParty;
   parent_ardome_id: string;
   tumnagel: string;
@@ -119,18 +119,18 @@ type DocumentListSpeeches = {
   video_url: string;
   intressent_id: string;
   anf_text: string;
-};
+}
 
-type DocumentListParticipant = {
+interface DocumentListParticipant {
   roll: string;
   namn: string;
   partibet: string;
   intressent_id: string;
-};
+}
 
-type DocumentListFileAppendix = {
+interface DocumentListFileAppendix {
   typ: string;
   namn: string;
   storlek: string;
   url: string;
-};
+}

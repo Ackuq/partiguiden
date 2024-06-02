@@ -5,11 +5,14 @@ import baseConfig from "./tooling/eslint/base.mjs";
 import nextConfig from "./tooling/eslint/next.mjs";
 
 const config = tseslint.config(...baseConfig, ...nextConfig, {
+  linterOptions: {
+    reportUnusedDisableDirectives: true,
+  },
   languageOptions: {
     parserOptions: {
       project: [
+        "./apps/web/tsconfig.json",
         "./tsconfig.json",
-        "./apps/*/tsconfig.json",
         "./packages/*/tsconfig.json",
       ],
       tsconfigRootDir: import.meta.dirname,

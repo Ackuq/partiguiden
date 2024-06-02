@@ -25,6 +25,11 @@ const nextConfig = tseslint.config(
       // TypeError: context.getAncestors is not a function
       "@next/next/no-duplicate-head": "off",
     },
+    settings: {
+      next: {
+        rootDir: nextApps.map((app) => `${app}/`),
+      },
+    },
   },
   {
     name: "Ignores",

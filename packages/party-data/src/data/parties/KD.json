@@ -508,11 +508,11 @@
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/elevhalsa": {
     "opinions": [
-      "Elevhälsan måste rustas för att långsiktigt kunna möta och stödja barn och unga med psykisk ohälsa. En väl utvecklad elevhälsovård främjar det förebyggande arbetet med detta. Vi vill ge landstingen/regionerna ett samlat uppdrag för hela barn- och ungdomshälsovården. Det innebär att elevhälsan inte längre får skolan som huvudman. Skolsköterskan, skolläkare, kurator och skolpsykologer bör finnas ute i verksamheterna men bör ha samma huvudman som övrig vårdpersonal. Den samlade barn- och ungdomshälsan ska ha ett nära samarbete med skolledningar, lärare, specialpedagoger och kommunernas socialtjänst. Vi vill även införa en elevhälsogaranti som innebär att en elev ska kunna komma i kontakt med elevhälsan inom ett dygn. Dessa förslag ingår i Tidöavtalet och är ett prioriterat arbete inom Regeringskansliet. "
+      "Elevhälsan måste rustas för att långsiktigt kunna möta och stödja barn och unga med psykisk ohälsa. En väl utvecklad elevhälsovård främjar det förebyggande arbetet med detta. Vi vill ge regionerna ett samlat uppdrag för hela barn- och ungdomshälsovården. Det innebär att elevhälsan inte längre får skolan som huvudman. Skolsköterskan, skolläkare, kurator och skolpsykologer bör finnas ute i verksamheterna men bör ha samma huvudman som övrig vårdpersonal. Den samlade barn- och ungdomshälsan ska ha ett nära samarbete med skolledningar, lärare, specialpedagoger och kommunernas socialtjänst. Vi vill även införa en elevhälsogaranti som innebär att en elev ska kunna komma i kontakt med elevhälsan inom ett dygn. Dessa förslag ingår i Tidöavtalet och är ett prioriterat arbete inom Regeringskansliet. "
     ],
     "title": "Elevhälsa",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/elevhalsa",
-    "fetchDate": "2023-09-17T17:52:40.092Z",
+    "fetchDate": "2024-06-02T17:16:23.667Z",
     "party": "KD",
     "subject": "vard-och-omsorg"
   },
@@ -2397,11 +2397,12 @@
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/vard-till-papperslosa": {
     "opinions": [
-      "Vår uppfattning är att alla som befinner sig i vårt land ska ha rätt till grundläggande vård. Många landsting har funnit sätt att ge papperslösa vård, men det behövs en nationell lagstiftning som innebär att landstingen får en lagstadgad uppgift att erbjuda vård också till papperslösa. En sådan infördes på kristdemokratiskt initiativ den 1 juli 2013."
+      "Kristdemokraterna anser att det är viktigt att personer som inte har tillstånd att vara i Sverige, ändå har rätt till sjukvård och tandvård som inte kan vänta. Barn under 18 år erbjuds samma vård som alla andra barn som bor i regionen. På Kristdemokraternas initiativ fick regionerna en skyldighet att erbjuda vård till papperslösa i den lag som infördes i juli 2013.",
+      "Regeringen har gett i uppdrag att utreda och se över tandvård för asylsökande och vissa personer utan uppehållstillstånd. Utredaren ska analysera och föreslå hur de särregler som gäller för avgifter för tandvård för asylsökande och för vissa utlänningar som vistas i Sverige utan nödvändiga tillstånd kan tas bort, utan att det påverkar rätten till tandvård som inte kan anstå."
     ],
     "title": "Vård till papperslösa",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/vard-till-papperslosa",
-    "fetchDate": "2023-09-17T17:52:41.587Z",
+    "fetchDate": "2024-06-02T17:16:21.093Z",
     "party": "KD",
     "subject": "vard-och-omsorg"
   },
@@ -2554,5 +2555,15 @@
     "fetchDate": "2023-09-17T17:52:42.725Z",
     "party": "KD",
     "subject": "miljo-och-klimat"
+  },
+  "https://kristdemokraterna.se/var-politik/politik-a-till-o/informationsplikt": {
+    "opinions": [
+      "Kristdemokraterna anser att det är viktigt med ett effektivt återvändandearbete, för att motverka olovlig vistelse i landet. Regeringen har tillsatt en utredare ska lämna förslag som innebär ett utökat informationsutbyte. I uppdraget ingår att ta ställning till vilket behov som kan finnas av undantag från informations-skyldigheten där den skulle strida mot ömmande värden, t.ex. inom sjukvården. Utredaren ska bedöma vilka situationer det kan vara fråga om och lämna sitt förslag i september 2024."
+    ],
+    "title": "Informationsplikt",
+    "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/informationsplikt",
+    "fetchDate": "2024-06-02T17:16:24.247Z",
+    "party": "KD",
+    "subject": "migration-och-integration"
   }
 }

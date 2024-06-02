@@ -9,19 +9,18 @@
   },
   "https://www.socialdemokraterna.se/var-politik/a-till-o/a-kassan": {
     "opinions": [
-      "permanenta den tillfälliga förstärkningen av a-kassan som infördes under pandemin, så att fler löntagare kan få ut 80 procent av sin lön om de blir av med jobbet",
       "att a-kassan ska stimulera till omställning på arbetsmarknaden. Den som är arbetslös ska få ut ersättning från försäkringen under en omställningsperiod",
       "att a-kassan ska administreras av de fackliga organisationerna",
       "att fler ska vara med i a-kassan",
       "införa avdragsrätt för fackföreningsavgiften",
       "att a-kassan ska vara en frivillig försäkring som är gemensamt finansierad.",
-      "förstärkt a-kassan till och med hela 2022. Ersättningarna har höjts och villkoren förändrats så att fler deltids- och timanställda omfattas",
+      "gjort flera förbättringar av arbetslöshetsförsäkringen – både vad gäller ersättningar och villkor",
       "lagt förslag om att göra det billigare att vara med i a-kassan",
       "minskat antalet karensdagar i arbetslöshetsförsäkringen."
     ],
     "title": "A-kassan",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/a-kassan",
-    "fetchDate": "2023-09-17T17:52:39.358Z",
+    "fetchDate": "2024-06-02T17:16:21.654Z",
     "party": "S",
     "subject": "trygghetssystem-och-valfard"
   },
@@ -75,21 +74,22 @@
   },
   "https://www.socialdemokraterna.se/var-politik/a-till-o/arbetsformedlingen": {
     "opinions": [
+      "hejda privatiseringen och återta kontrollen över arbetsmarknadspolitiken",
+      "dubbla antalet deltagare i arbetsmarknadsutbildning",
       "att Arbetsförmedlingen aktivt ska matcha arbetslösa med de jobb som finns",
       "att Arbetsförmedlingen ska ge alla individuellt stöd från dag ett och ha tid att arbeta utifrån de behov som finns",
       "att Arbetsförmedlingen ska ha en kontinuerlig fysisk närvaro och god tillgänglighet i hela landet.",
       "tillfört mer resurser till Arbetsförmedlingen, bland annat för att säkerställa ändamålsenlig lokal närvaro och likvärdig service i hela landet",
       "gett Arbetsförmedlingen i uppdrag att se över hur myndigheten kan förstärka stödet till personer som är långtidsarbetslösa, särskilt i områden med socioekonomiska utmaningar",
-      "satsningar för att fler arbetslösa ska få del av matchningstjänster och arbetsmarknadsutbildningar",
+      "satsningar för att fler arbetslösa ska få del av arbetsmarknadsutbildningar",
       "satsat på introduktionsjobb och extratjänster",
       "infört intensivåret som ska bidra till att nyanlända snabbare kommer in på arbetsmarknaden",
       "skapat tiotusentals extratjänster med kollektivavtalade villkor",
-      "avskaffat den ineffektiva arbetsmarknadsåtgärden \"Fas 3\" som infördes av den borgerliga regeringen Reinfeldt 2007 och som fick omfattande kritik för att vara verkningslös och kränkande",
       "tillfört mer resurser till arbetslivsforskningen."
     ],
     "title": "Arbetsförmedlingen",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/arbetsformedlingen",
-    "fetchDate": "2023-09-17T17:52:38.006Z",
+    "fetchDate": "2024-06-02T17:16:20.616Z",
     "party": "S",
     "subject": "jobb"
   },
@@ -119,7 +119,6 @@
     "opinions": [
       "förbättra den fysiska och psykosociala arbetsmiljön genom stärkt arbetsmiljöarbete och satsningar på förebyggande arbete, tillsynsarbete och arbetslivsforskning",
       "se över arbetsmiljöreglerna, ur ett jämställdhetsperspektiv, för att att förbättra arbetsmiljön inom kvinnodominerade sektorer",
-      "minska antalet osäkra anställningar genom att ta bort allmän visstidsanställning och reglera hyvling, där arbetsgivare ger de anställda färre arbetstimmar istället för att säga upp och på så sätt kringgår turordningsregler och uppsägningstid, inhyrning samt rätten till heltid",
       "se över arbetsmiljöansvaret inom gig-ekonomin. Arbetsgivare ska inte kunna smita undan arbetsmiljöansvaret genom att gömma sig bakom en app",
       "att alla anställda inom vård och äldreomsorg ska få kostnadsfria arbetskläder och arbetsskor",
       "uppvärdera skyddsombudens roll",
@@ -135,7 +134,7 @@
     ],
     "title": "Arbetsmiljö",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/arbetsmiljo",
-    "fetchDate": "2023-09-17T17:52:39.175Z",
+    "fetchDate": "2024-06-02T17:16:20.347Z",
     "party": "S",
     "subject": "jobb"
   },
@@ -143,7 +142,6 @@
     "opinions": [
       "att normen på svensk arbetsmarknad ska vara att anställningar är tillsvidare på heltid och omfattas av kollektivavtal",
       "begränsa möjligheten till delade turer, en arbetsform som innebär att arbetsdagen delas upp i två eller flera arbetspass med flera timmars obetalt uppehåll mellan passen",
-      "att företrädesrätten vid återanställning inte ska gå att sätta ur spel när arbetsgivare hyr in personal från bemanningsföretag",
       "införa avdragsrätt för fackföreningsavgiften",
       "ha ordning och reda på svensk arbetsmarknad och få stopp på lönedumpning, skattefusk och utnyttjandet av svensk och utländsk arbetskraft",
       "att parterna förhandlar om frågor som rör arbetsmarknaden – det är den svenska modellen",
@@ -157,7 +155,7 @@
     ],
     "title": "Arbetsrätt",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/arbetsratt",
-    "fetchDate": "2023-09-17T17:52:37.678Z",
+    "fetchDate": "2024-06-02T17:16:19.778Z",
     "party": "S",
     "subject": "jobb"
   },
@@ -308,40 +306,43 @@
   },
   "https://www.socialdemokraterna.se/var-politik/a-till-o/djurskydd": {
     "opinions": [
-      "värna djurskyddslagen",
-      "ha en stark djurtillsyn så att lagar och regler efterlevs",
+      "värna djurskyddslagen haven stark djurtillsyn så att lagar och regler efterlevs",
       "värna den nya djurskyddslag som slår fast att djur ska kunna bete sig naturligt och ta fram krav på märkning av katter",
       "göra det obligatoriskt att vid alla offentliga upphandlingar av animaliska livsmedel ställa krav på att produktionen har skett med höga krav på djurskydd och låg användning av antibiotika – precis som i Sverige.",
+      "värna det svenska beteskravet som bidrar till djurvälfärden i jordbruket",
+      "se till att djurskyddskontrollen ska vara rättssäker, likvärdig och effektiv",
+      "införa kamerövervakning vid slakterier",
       "agera kraftfullt i EU för att högre krav ska ställas på djurvälfärd och djurhälsa bland annat hårdare krav på transporterna.",
       "infört en ny modern djurskyddslag med skärpta krav på naturligt beteende och att beteendestörningar inte ska förekomma. Vi har förbjudit elefanter och sjölejon på cirkus",
-      "föreslagit en obligatorisk märkning och registrering av katter som införs den 1 januari 2023",
-      "den verksamhet som byggts upp vid 3R-centret med att sprida kunskap om 3R-frågor, att stödja de djurförsöksetiska nämnderna och de lokala djurskyddsorganen, är av stor vikt för djurskyddet av försöksdjuren liksom för att successivt kunna minska behovet av djurförsök. Därför satsar vi på en fortsatt finansiering av Sveriges 3R-center vid Jordbruksverket med 15 miljoner kronor per år under åren 2021–2023",
+      "föreslagit en obligatorisk märkning och registrering av katter som infördes den 1 januari 2023",
+      "uppmanat högerregeringen att överväga en ny utredning för att undersöka om nuvarande hundavel är förenlig med gällande djurskyddslagstiftning. Vi socialdemokrater vill att konkreta förslag på åtgärder som säkerställer djurskyddet ska redovisas.",
       "tagit strid i EU för ökade djurskyddskrav till exempel vid transporter och minskad antibiotikaanvändning."
     ],
     "title": "Djurskydd",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/djurskydd",
-    "fetchDate": "2023-09-17T17:52:39.387Z",
+    "fetchDate": "2024-06-02T17:16:21.395Z",
     "party": "S",
     "subject": "jordbruk-jakt-och-fiske"
   },
   "https://www.socialdemokraterna.se/var-politik/a-till-o/ekonomi": {
     "opinions": [
-      "den starka svenska ekonomin ger förutsättningar för att möta kriser tillsammans",
-      "vi investerar för att stärka Sveriges totalförsvar",
-      "stöd till Ukraina och ett ordnat mottagande i hela landet ",
-      "lindra krigets konsekvenser för svenska hushåll och företag ",
-      "vända på varje sten, driva på klimatomställningen och ta tillbaka den demokratiska kontrollen över välfärden",
-      "värna Sveriges finanspolitiska ramverk för att trygga välfärden när krisen slår till.",
-      "amorterat av statsskulden i goda tider och använt vår gemensamma ekonomiska styrka för att rädda liv, jobb och välfärd",
-      "räddat hundratusentals jobb med krisåtgärder som bland annat korttidspermitteringen",
-      "investerat historiskt mycket pengar i sjukvård, äldreomsorg och skola för att krisen inte ska leda till nedskärningar",
-      "lagt fram ett kraftfullt grönt återstartspaket för den svenska ekonomin",
-      "tagit initiativ till ett högkostnadsskydd för elpriser för svenska hushåll och företag",
-      "läs mer om vårt åtgärdspaket för höga bränslepriser och el här"
+      "En ekonomisk politik för vanligt folk, så att Sverige håller ihop genom krisen",
+      "Stöd till välfärden för att säkerställa trygghet i livets alla skeden",
+      "Insatser för att stoppa gängvåldet och bryta nyrekryteringen till gängen",
+      "Att möta lågkonjunkturen med en aktiv politik och bygga Sverige rikare.",
+      "Hushållen är hårt pressade – när regeringen sätter sig på läktaren sätter vi vanligt folk först.",
+      "Regeringens svältkur för välfärden slår hårt. Vi föreslår ett systemskifte för att trygga välfärdens finansiering.",
+      "Sverige har blivit fattigare. Vi har en plan för att få upp tillväxten, skapa fler jobb och ta Sverige ur krisen.",
+      "Sverige har blivit farligare. Vi vill satsa miljardbelopp på att stoppa nyrekryteringen, sätta in akuta åtgärder och få stopp på det dödliga våldet.",
+      "amorterat av statsskulden i goda tider och använt vår gemensamma ekonomiska styrka för att rädda liv, jobb och välfärd under pandemin.",
+      "räddat hundratusentals jobb med krisåtgärder som bland annat korttidspermitteringen.",
+      "investerat historiskt mycket pengar i sjukvård, äldreomsorg och skola för att krisen inte ska leda till nedskärningar.",
+      "lagt fram ett kraftfullt grönt återstartspaket för den svenska ekonomin.",
+      "tagit initiativ till ett högkostnadsskydd för elpriser för svenska hushåll och företag."
     ],
     "title": "Ekonomi",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/ekonomi",
-    "fetchDate": "2023-09-17T17:52:38.481Z",
+    "fetchDate": "2024-06-02T17:16:21.286Z",
     "party": "S",
     "subject": "ekonomi-och-skatter"
   },
@@ -366,33 +367,34 @@
   },
   "https://www.socialdemokraterna.se/var-politik/a-till-o/energipolitik": {
     "opinions": [
-      "Införa ett högkostnadsskydd mot de höga elpriserna för svenska hushåll och företag.",
-      "Göra om EU:s elmarknad. Genom att koppla bort priset på el från de ryska gaspriserna kan elpriserna halveras i södra Sverige. Något Sverige drivit i EU-förhandlingar och nu fått med oss de andra EU-länderna på.",
-      "Bygga ut elproduktionen av alla slag. Vindkraft långt ute till havs kan bidra med mycket energi. Kommuner som medverkar till utbyggnad av vindkraftverk ska kunna få ekonomiskt stöd. Vi behöver också värna vattenkraften och se till att solpanelerna blir fler, bland annat på offentliga och kommersiella byggnader. Kärnkraften är en viktig del av svensk elproduktion och kommer att så vara under lång tid framöver. Vi ser positivt på de initiativ som nu tas för att undersöka potentialen framåt i samtliga energislag. Efter valet vill vi se en ny energiöverenskommelse för Sveriges bästa och vill därför föra energipolitiska samtal med andra partier om allt från vindkraft till kärnkraft.",
-      "Riva de byråkratiska hindren för mer el. Långsamma tillståndsprocesser ska röjas undan. Vi vill minst fördubbla takten i utbyggnaden av elnätet. Samtidigt är det viktigt att kostnaderna för utbyggnaden av elnätet är rimliga för elkunderna, oavsett var i landet man bor. En översyn av indelningen av elprisområden ska göras. Vi vill se till att intäkterna från kapacitetsavgifter som inte används för nätinvesteringar används både för att minska prisskillnaderna och sänka kostnaderna.",
-      "Underlätta familjers energieffektivisering. Det finns stora vinster i att energieffektivisera sitt hem, både för samhället i stort och för den egna ekonomin."
+      "Bygga ut elproduktionen av alla slag. Vindkraft långt ute till havs kan bidra med mycket energi. Det behövs ekonomiska incitament för att kommuner ska medverka till utbyggnad av vindkraftverk. Vi behöver också värna vattenkraften, öka effektuttaget ur befintliga kraftverk och se till att solpanelerna blir fler, bland annat på offentliga och kommersiella byggnader. Kärnkraften är en viktig del av svensk elproduktion och kommer att så vara under lång tid framöver. Redan idag kan fler reaktorer byggas om någon vill investera och det finns potential att effekthöja befintlig kärnkraft. Vi ser positivt på de initiativ som nu tas för att undersöka potentialen framåt i samtliga energislag. Vi vill se en ny energiöverenskommelse för Sveriges bästa och vill därför föra energipolitiska samtal med andra partier om allt från vindkraft till kärnkraft.",
+      "Riva de byråkratiska hindren för mer el. Långsamma tillståndsprocesser ska röjas undan. Vi vill minst fördubbla takten i utbyggnaden av elnätet. Samtidigt är det viktigt att kostnaderna för utbyggnaden av elnätet är rimliga för elkunderna, oavsett var i landet man bor. En översyn av indelningen av elprisområden pågår. Vi har sett till att intäkterna från kapacitetsavgifter som inte används för nätinvesteringar kunnat användas både för att minska prisskillnaderna och för att sänka kostnaderna för elkunderna. Tyvärr har inte regeringen säkerställt att denna möjlighet finns kvar.",
+      "Underlätta familjers energieffektivisering. Det finns stora vinster i att energieffektivisera sitt hem, både för samhället i stort och för den egna ekonomin. Vi har förslagit ökat stöd till energieffektivisering i flerfamiljshus och att styra om ett förstärkt ROT-avdrag till energieffektivisering.",
+      "En stabil energiförsörjning är viktig för ett starkare samhälle. Hur vi producerar vår energi är avgörande för Sveriges förmåga att klara klimatomställningen. När allt fler sektorer ska ställa om produktionen för minskade utsläpp kommer tillgången till el att bli en avgörande faktor. Sverige har goda förutsättningar för att klara den omställningen. Vi har stora möjligheter till mer förnybar energi och en energisektor som ligger i framkant.",
+      "Göra om och effektivisera EU:s elmarknad. Fler elkunder ska få möjlighet till fasta kontrakt. Vi vill införa Folkhemsel så att vanliga hushåll ges möjlighet att köpa el långsiktigt till rimliga och stabila priser."
     ],
     "title": "Energipolitik",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/energipolitik",
-    "fetchDate": "2023-09-17T17:52:39.674Z",
+    "fetchDate": "2024-06-02T17:16:21.962Z",
     "party": "S",
     "subject": "energi"
   },
   "https://www.socialdemokraterna.se/var-politik/a-till-o/eu": {
     "opinions": [
-      "att fler européer ska ha ett arbete att gå till",
-      "att EU stöttar Ukraina militärt, humanitärt och finansiellt",
-      "att EU ökar samarbetet för att stoppa den organiserade brottsligheten.",
-      "att alla EU-länder lever upp till grundläggande demokratiska värderingar",
-      "fortsätta riva handelshinder och dra nytta av den fria rörligheten för varor och tjänster",
-      "arbeta för att EU ska bli bäst i världen på digitalisering",
-      "att EU tar en ledarroll i världen med en ambitiös klimat- och miljöpolitik",
-      "att EU stärker sitt säkerhetssamarbete",
-      "upprätta en gemensam, ansvarsfull och solidarisk flykting- och migrationspolitik i EU."
+      "Fortsätta stödja Ukraina så länge som det krävs",
+      "Ställa krav på att alla EU:s medlemsländer och kandidatländer ska leva upp till grundläggande demokratiska värderingar",
+      "Införa en Lex Navalnyj där EU tar större ansvar för att stötta individer och organisationer som jobbar för demokrati i Ryssland och Belarus",
+      "Använda vinsterna som genereras från de enorma frysta ryska centralbankstillgångarna för att köpa artilleriammunition till Ukraina",
+      "Öka det rättsliga samarbetet och polissamarbetet inom EU för att mer effektivt bekämpa den gränsöverskridande brottsligheten",
+      "Växla upp i kampen mot kriminalitet och utnyttjande på arbetsmarknaden, så kallas arbetslivskriminalitet",
+      "Värna svenska jobb och stå upp för svenska kollektivavtal",
+      "Förbättra förutsättningarna att studera och arbeta runtom i Europa",
+      "Skärpa EU:s klimatmål till 2040 i linje med Sveriges klimatmål",
+      "Reformera EU:s gemensamma jordbrukspolitik så att vi säkrar livsmedelsproduktionen genom ett hållbart och lönsamt jordbruk"
     ],
     "title": "EU",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/eu",
-    "fetchDate": "2023-09-17T17:52:39.927Z",
+    "fetchDate": "2024-06-02T17:16:20.427Z",
     "party": "S",
     "subject": "europa"
   },
@@ -623,18 +625,18 @@
   },
   "https://www.socialdemokraterna.se/var-politik/a-till-o/foretagande-och-entreprenorskap": {
     "opinions": [
-      "ge småföretag och entreprenörer bättre förutsättningar att växa och utvecklas",
-      "förenkla regelverken så att fler företag kan växa och anställa",
-      "att samhället ska stötta småföretag så att de vågar investera och anställa",
+      "ge småföretag och entreprenörer bättre förutsättningar att växa och utvecklas.",
+      "förenkla regelverken så att fler företag kan växa och anställa.",
+      "att samhället ska stötta småföretag så att de vågar investera och anställa.",
       "att Sverige fortsättningsvis ska vara ett starkt startup-land.",
       "öka möjligheterna för företagen att finansiera expansion.",
-      "infört ett växa-bidrag som gör det billigare för småföretag att anställa sin första medarbetare",
-      "genomfört skattelättnader för personaloptioner",
-      "förenklat regelkrånglet genom att ta tillvara digitaliseringen. Bland annat är det nu möjligt för företagare att lämna in sina årsrapporteringar digitalt, något som inte varit möjligt tidigare."
+      "införde ett växa-bidrag som gjorde det billigare för småföretag att anställa sin första medarbetare.",
+      "genomförde skattelättnader för personaloptioner.",
+      "förenklade regelkrånglet genom att ta tillvara digitaliseringen. Bland annat är det nu möjligt för företagare att lämna in sina årsrapporteringar digitalt, något som inte varit möjligt tidigare."
     ],
     "title": "Företagande och entreprenörskap",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/foretagande-och-entreprenorskap",
-    "fetchDate": "2023-09-17T17:52:39.683Z",
+    "fetchDate": "2024-06-02T17:16:21.940Z",
     "party": "S",
     "subject": "naringsliv"
   },
@@ -874,19 +876,20 @@
   },
   "https://www.socialdemokraterna.se/var-politik/a-till-o/industri": {
     "opinions": [
-      "öka tempot i industrins omställning: industrikliv, snabbare och enklare tillståndsprocesser med mera",
-      "satsa minst 100 miljarder i gröna kreditgarantier",
-      "införa ett driftsstöd för bio-CCS, investeringarna för att fånga in, avskilja och lagra klimatutsläpp ska öka",
-      "att industrin fortsättningsvis ska vara viktig för svensk tillväxt och jobbskapande",
+      "öka tempot i industrins omställning: industrikliv, snabbare och enklare tillståndsprocesser.",
+      "underlätta för mer fossilfri elproduktion och utbyggnad av elnät.",
+      "satsa minst 100 miljarder i gröna kreditgarantier.",
+      "införa ett driftsstöd för bio-CCS, investeringarna för att fånga in, avskilja och lagra klimatutsläpp ska öka.",
+      "att industrin fortsättningsvis ska vara viktig för svensk tillväxt och jobbskapande.",
       "att fler personer i Sverige ska vara sysselsatta inom industrin.",
-      "beslutat om en nyindustrialiseringsstrategi, som bidragit till att stärka industrins konkurrenskraft och göra investeringar i svensk industri mer attraktiva",
-      "infört Industriklivet som inneburit stora och viktiga satsningar och stöd till utveckling av innovativa och teknikskiftande lösningar. Industriklivet fokuserar på långsiktiga och riskfyllda projekt vilket innebär att företagen behöver kunna säkra flerårig finansiering",
+      "beslutat en nyindustrialiseringsstrategi, som kan bidra till att stärka industrins konkurrenskraft och göra investeringar i svensk industri mer attraktiva.",
+      "infört Industriklivet som inneburit stora och viktiga satsningar och stöd till utveckling av innovativa och teknikskiftande lösningar. Industriklivet fokuserar på långsiktiga och riskfyllda projekt vilket innebär att företagen behöver kunna säkra flerårig finansiering.",
       "infört gröna kreditgarantier som varit avgörande för stora industriinvesteringar i hela landet. Hybrit, LKAB, SSAB, H2GS, Volvo Cars, Northvolt har alla erhållit någon form av statligt stöd som en del i sina investeringar.",
       "tydliga satsningar för att stödja omställningen av processindustri och teknikutveckling."
     ],
     "title": "Industri",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/industri",
-    "fetchDate": "2023-09-17T17:52:38.471Z",
+    "fetchDate": "2024-06-02T17:16:21.726Z",
     "party": "S",
     "subject": "naringsliv"
   },
@@ -913,18 +916,18 @@
   },
   "https://www.socialdemokraterna.se/var-politik/a-till-o/innovation": {
     "opinions": [
-      "stärka innovationsklimatet, öka konkurrenskraften och utveckla olika samarbeten",
-      "utveckla fler företagsinkubatorer",
+      "stärka innovationsklimatet, öka konkurrenskraften och utveckla olika samarbeten.",
+      "utveckla fler företagsinkubatorer.",
       "satsa på forskning och högre utbildning i hela landet.",
-      "skapat strategiska samverkansprogram, som är ett tvärsektoriellt initiativ som ska genomföras och delfinansieras av näringsliv och offentlig verksamhet",
-      "lanserat strategin Smart industri – en ny industrialiseringsstrategi för Sverige",
-      "lanserat strategin Framtidens industri – en strategi för grön och digital omställning",
-      "infört Industriklivet, som är regeringens långsiktiga satsning för att minska industrins processrelaterade utsläpp och uppnå negativa utsläpp av växthusgaser. De stöd som kan sökas rör forsknings- och innovationsprojekt. Exempelvis satsningen Hybrit, som handlar om att producera stål utan fossila bränslen",
-      "höjt basanslagen till forskning och infört tioåriga, nationella forskningsprogram för viktiga näringar och samhällsutmaningar. Två viktiga områden är klimatutmaningen samt att förbättra vård- och omsorgssektorn."
+      "skapade strategiska samverkansprogram, dvs ett tvärsektoriellt initiativ som genomförs och delfinansieras av näringsliv och offentlig verksamhet",
+      "lanserade strategin Smart industri – en ny industrialiseringsstrategi för Sverige",
+      "lanserade strategin Framtidens industri – en strategi för grön och digital omställning",
+      "införde Industriklivet, en långsiktig satsning för att minska industrins processrelaterade utsläpp och uppnå negativa utsläpp av växthusgaser. De stöd som kan sökas rör forsknings- och innovationsprojekt. Exempelvis satsningen Hybrit, som handlar om att producera stål utan fossila bränslen",
+      "höjde basanslagen till forskning och införde tioåriga, nationella forskningsprogram för viktiga näringar och samhällsutmaningar. Två viktiga områden var klimatutmaningen samt förbättrad vård- och omsorgssektorn."
     ],
     "title": "Innovation",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/innovation",
-    "fetchDate": "2023-09-17T17:52:40.058Z",
+    "fetchDate": "2024-06-02T17:16:21.276Z",
     "party": "S",
     "subject": "jobb"
   },
@@ -953,14 +956,20 @@
   },
   "https://www.socialdemokraterna.se/var-politik/a-till-o/israel-och-palestina": {
     "opinions": [
-      "att de israelisk-palestinska fredssamtalen börjar igen",
-      "se en tvåstatslösning, där Israel och Palestina kan leva sida vid sida i fred och säkerhet.",
+      "få till en omedelbar vapenvila så civilbefolkningen på Gaza kan få hjälp",
+      "att gisslan ovillkorligen och omedelbart släpps",
+      "att Sverige ökar det humanitära biståndet till Gaza",
+      "att bosättarvåldet på Västbanken upphör",
+      "fortsätter med sanktioner mot våldsamma bosättare",
+      "stödjer de oberoende utredningarna av folkrättsbrott och kräver att ansvariga ställs inför rätta",
+      "att EU ser över sina handelsavtal med Israel för att stoppa handel med varor från bosättningarna på de ockuperade områdena",
       "att ockupationen av Västbanken och Östra Jerusalem samt blockaden av Gaza upphör",
-      "att Israels folkrättsligt illegala bosättningspolitik upphör omedelbart ."
+      "att Israels folkrättsligt illegala bosättningspolitik omedelbart upphör",
+      "att de de israelisk-palestinska fredssamtalen återupptas med siktet inställt på en tvåstatslösning"
     ],
     "title": "Israel och Palestina",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/israel-och-palestina",
-    "fetchDate": "2023-09-17T17:52:39.820Z",
+    "fetchDate": "2024-06-02T17:16:20.565Z",
     "party": "S",
     "subject": "utrikes--och-bistandsfragor"
   },
@@ -1089,15 +1098,17 @@
   },
   "https://www.socialdemokraterna.se/var-politik/a-till-o/klimat": {
     "opinions": [
+      "kombinera att både göra det billigare att kunna använda bilen för vanligt folk i glesbygd, samtidigt som vi stadigt pressar ner utsläppen och skapar nya jobb och stärker Sveriges beredskap. Därför presenterar vi en helt ny modell för inblandning av biodrivmedel i Sverige – Sverigebränslet",
       "ha dubbelt så många publika laddstolpar till 2030. Socialdemokraterna vill införa ett laddstolpemål om att minst fördubbla antalet publika laddstolpar till 2030",
       "driva på för att göra det enklare att använda elbil med en mer enhetlig hantering av laddare och appar för elbilsanvändare",
       "införa ett ekonomiskt stöd för åtgärder som förbättrar energiprestandan i flerbostadshus",
-      "göra fortsatta klimatinvesteringar",
-      "ha en stärkt klimatberedskap. Förbättrade investeringar för klimatberedskap och extremväder",
+      "satsa 500 miljoner kr mer än regeringen och SD på industriklivet för att möjliggöra omställning för svenska företag. Vi vill fortsatt ha kvar medel till klimatklivet för en hållbar och utökad laddinfrastruktur",
+      "satsa 100 miljoner kr mer än regeringen och SD på att stärka klimatberedskapen för kommuner som drabbas av skyfall och extremoväder och vi vill även införa en beredskapsgeneral för krishantering",
       "ha ett reformerat reseavdrag: Reseavdraget behöver bli bättre och enklare, och omfatta fler. Vi socialdemokrater vill fullfölja den största reformen av reseavdraget på flera decennier",
       "ha avgiftsfri kollektivtrafik för gymnasieelever och studenter under sommaren",
-      "göra omfattande investeringar i både ny och befintlig järnväg. Den största järnvägssatsningen i modern tid. Vi vill fortsätta med den historiska nationella infrastrukturplan som vi har sjösatt i regeringsställning där vi ökar investeringstakten för mer och bättre järnväg",
+      "göra omfattande investeringar i både ny och befintlig järnväg. Vi vill fortsätta med den historiska nationella infrastrukturplan som vi har sjösatt i regeringsställning där vi ökar investeringstakten för mer och bättre järnväg",
       "göra fortsatta investeringar i den gröna omställningen för att skapa tiotusentals nya jobb för vanligt folk i hela landet. Hela samhället tjänar på att svensk industri blir världsledande.",
+      "att tillståndsprocesser ska effektiviseras för både befintliga och nya verksamheter för att Sveriges konkurrenskraft ska stärkas och den gröna omställningen ska kunna genomföras. Till exempel ska nya gruvor kunna öppnas för att säkra tillgång till nödvändiga och innovationskritiska metaller och mineraler. Att snabba på och förenkla tillståndsprocesser är en viktig del för att öka takten i investeringarna och jobben som näringslivet planerar för hamnar i Sverige och inte i andra länder. ",
       "nått en bred klimatpolitisk uppgörelse som är en av de mest ambitiösa i världen",
       "infört ett nytt system med miljöbilsbonusar och infört krav på inblandning av förnybara biobränslen i bensin och diesel vid pumpen",
       "kraftigt investerat för klimatet, bland annat genom lokala klimatinvesteringar över hela landet",
@@ -1105,7 +1116,6 @@
       "anslagit det största stödet per capita i världen till FN:s globala gröna fond för klimatåtgärder i fattiga länder",
       "industrins gröna omställning är avgörande om vi ska bli världens första fossilfria välfärdsland. Därför har vi gjort flera satsningar på industriprojekt som biodrivmedel, plastreturraffinaderier, vätgasproduktion, återvinningsanläggningar och batteriproduktion",
       "som del av industrisatsningarna finns programmet ”Industriklivet” som stöttar industrins omställning till nollutsläpp genom tekniksprång. Det är en nödvändighet om Sverige ska nå målet om nettonollutsläpp till senast 2045. För att stötta industrins omställning till fossilfrihet satsar den socialdemokratiskt ledda regeringen på att bredda Industriklivet med 217 miljoner kronor under 2022 till totalt 909 miljoner kronor",
-      "reduktionsplikten innebär att drivmedelsleverantörer varje år måste minska växthusgasutsläppen från bensin och diesel genom inblandning av hållbara biodrivmedel. Utsläppen av växthusgaser från transportsektorn och arbetsmaskiner, står tillsammans för nära 40 procent av Sveriges utsläpp av växthusgaser. Reduktionsplikten är ett av våra viktigaste styrmedel för att minska utsläppen ",
       "föreslagit satsningar på avskiljning, infångning och lagring av biogen koldioxid (så kallad bio-CCS). Satsningen omfattar 6 miljarder kronor under perioden 2026–2040 ",
       "genomfört flera satsningar på Biogas. Biogas är en förnybar energikälla med mycket hög miljöprestanda. En stor del av det material som används för att framställa biogas kommer från lantbruket och livsmedelskedjan, till exempel gödsel, rester från mejerier, livsmedelsförädling och slakterier. Dessa näringar har en central roll i omställningen till en cirkulär och biobaserad ekonomi i Sverige. I arbetet med att nå dit kommer svensk landsbygd att vara avgörande",
       "satsat 200 miljoner kronor under 2021 till investeringar i testbäddar för bioraffinaderier så att svenska företag kan kommersialisera nya hållbara lösningar. Satsningen bidrar till företagsetableringar och internationella investeringar, samt etableringen av ett centrum i världsklass för en resurseffektiv, giftfri och cirkulär bioekonomi",
@@ -1113,7 +1123,7 @@
     ],
     "title": "Klimat",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/klimat",
-    "fetchDate": "2023-09-17T17:52:38.383Z",
+    "fetchDate": "2024-06-02T17:16:21.204Z",
     "party": "S",
     "subject": "miljo-och-klimat"
   },
@@ -1214,13 +1224,16 @@
   },
   "https://www.socialdemokraterna.se/var-politik/a-till-o/karnkraft": {
     "opinions": [
-      "Säkra tillgången till stabil, billig el genom att använda all säker och hållbar elproduktion vi har.",
-      "Kärnkraften är en viktig del av svensk elproduktion och kommer att så vara under lång tid framöver. Vi ser positivt på de initiativ som nu tas för att undersöka potentialen framåt i samtliga energislag. Efter valet vill vi se en ny energiöverenskommelse för Sveriges bästa, och vill därför föra energipolitiska samtal med andra partier om allt från vindkraft till kärnkraft.",
-      "Sveriges elförsörjning måste tryggas, det är alltid vår första prioritet. Socialdemokraterna är teknikoptimistiska och ser positivt på forskning och utveckling. Vi vill se mer förnybar energi, energieffektivisering, energilagring och ökad flexibilitet i elsystemet innanen succesiv utfasning av kärnkraften är möjlig."
+      "Säkra tillgången till stabil, billig fossilfri el genom att använda all säker och hållbar elproduktion vi har tillgång till.",
+      "Kärnkraften är en viktig del av svensk elproduktion och kommer att så vara under lång tid framöver. Vi ser positivt på de initiativ som nu tas för att undersöka potentialen framåt i samtliga energislag Vi har länge pekat på behovet av en ny energiöverenskommelse för Sveriges bästa, och vill därför föra energipolitiska samtal med andra partier om alla kraftslag, från vindkraft till kärnkraft.",
+      "Sveriges elförsörjning måste tryggas, det är och har alltid varit vår första prioritet inom energipolitiken. Socialdemokraterna är teknikoptimistiska och ser positivt på forskning och utveckling. Vi vill se mer fossilfri energi, energieffektivisering, energilagring och ökad flexibilitet i elsystemet. ",
+      "Energi från vind, sol och biobränslen har stor potential att byggas ut under lång tid framöver. Det är också inom förnybara energikällor som investeringsviljan är som störst – till exempel för havsbaserad vindkraft. Det är grön och billig elproduktion som kan komma igång snabbt, här och nu. Men även kärnkraft utgör en viktig del av svensk elproduktion och kommer att fortsätta vara det under lång tid framöver. ",
+      "För att klara industrins gröna omställning och konkurrenskraft har vi föreslagit ett nytt energipolitiskt mål om ytterligare minst 60 TWh fossilfri kraft till 2030. Vi menar att detta är något som behövs för att inte Sverige nu ska gå miste om nya investeringar och fler arbetstillfällen.",
+      "Vårt mål är att Sverige ska bli världens första fossilfria välfärdsnation. År 2045 ska Sverige inte ha några nettoutsläpp av växthusgaser till atmosfären, för att därefter uppnå negativa utsläpp."
     ],
     "title": "Kärnkraft",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/karnkraft",
-    "fetchDate": "2023-09-17T17:52:37.762Z",
+    "fetchDate": "2024-06-02T17:16:22.043Z",
     "party": "S",
     "subject": "energi"
   },
@@ -1350,9 +1363,13 @@
   "https://www.socialdemokraterna.se/var-politik/a-till-o/miljo": {
     "opinions": [
       "minska utsläppen av växthusgaser. Sverige ska bli den första fossilfria välfärdsnationen",
+      "satsa 500 miljoner kr mer än regeringen och SD på att stärka friluftslivet och skötseln av naturreservat, nationalparker och vandringsleder genom skydd och åtgärder av värdefull natur",
+      "skapa fler naturnära jobb i hela landet, inriktade på natur- och skogsvårdande skötsel",
+      "sats 30 miljoner kr mer än regeringen och SD på miljövövervakning. Vi ser ett akut behov att ha en robust och pålitlig miljöövervakning, särskilt med tanke på de snabba klimatförändringarna som påverkar ekosystem och biologisk mångfald.",
       "driva på för tuffare kemikalieregler i EU och införa inhemska skatter på farliga ämnen",
       "minska övergödningen av haven och skydda vårt rena dricksvatten",
-      "bevara mer värdefull natur och marina områden för att rädda den biologiska mångfalden.",
+      "bevara mer värdefull natur och marina områden för att rädda den biologiska mångfalden",
+      "stärka arbetet vid flera myndigheter för att förebygga, förhindra och bekämpa olika former av brottslighet kopplat till avfall.",
       "en historiskt stor förstärkning av investeringarna för miljön med fördubblad miljöbudget och kraftigt höjda anslag för att skydda natur, stödja klimatinvesteringarna och minska mängden farliga kemikalier",
       "satsat 400 miljoner kronor under 2021 för att stärka friluftslivet och skötseln av naturreservat, nationalparker och vandringsleder",
       "skapat naturnära jobb i hela landet, inriktade på natur- och skogsvårdande skötsel satsade vi 180 miljoner kronor under 2021",
@@ -1365,7 +1382,7 @@
     ],
     "title": "Miljö",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/miljo",
-    "fetchDate": "2023-09-17T17:52:37.555Z",
+    "fetchDate": "2024-06-02T17:16:20.692Z",
     "party": "S",
     "subject": "miljo-och-klimat"
   },
@@ -1504,13 +1521,13 @@
   "https://www.socialdemokraterna.se/var-politik/a-till-o/naringspolitik-och-konkurrenskraft": {
     "opinions": [
       "att företagsklimatet i Sverige främjar uppstart av nya företag, att företagen växer, att företagen får möjlighet att anställa fler och exporterar sina varor och tjänster i högre grad. På så sätt skapas det fler jobb i Sverige",
-      "att öka samverkan mellan offentliga aktörer, näringsliv och akademi och därmed skapa nya, innovativa lösningar som stärker konkurrenskraften och bidrar till en hållbar utveckling samt skapar fler jobb",
+      "att samverkan ökar mellan offentliga aktörer, näringsliv och akademi och därmed skapar nya, innovativa lösningar som stärker konkurrenskraften och bidrar till en hållbar utveckling samt fler jobb",
       "stärka företagens omställningsförmåga och konkurrenskraft när marknader förändras. Svenska företag ska vara ledande inom den digitala utvecklingen och i att utnyttja digitaliseringens möjligheter",
       "att kompetensförsörjningssystemet ska möta industrins behov och främja dess långsiktiga utveckling och att Sverige ska vara ledande i forskning inom områden som bidrar till att stärka den industriella produktionen av varor och tjänster i Sverige."
     ],
     "title": "Näringspolitik och konkurrenskraft",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/naringspolitik-och-konkurrenskraft",
-    "fetchDate": "2023-09-17T17:52:37.475Z",
+    "fetchDate": "2024-06-02T17:16:20.966Z",
     "party": "S",
     "subject": "naringsliv"
   },
@@ -1575,7 +1592,6 @@
       "fortsatt verka för ett starkt och oberoende public service, bland annat genom grundlagsskydd",
       "att public service ska ha ett fortsatt brett utbud och spegla hela landet",
       "att public service ska fortsätta att utveckla nya verksamheter för att nå medborgare som inte tar del av public services utbud idag",
-      "utveckla ett nytt plattformsoberoende mediestöd för god journalistik i hela landet",
       "införa en evenemangslista med förutbestämda OS, VM- och EM-tävlingar samt vissa kulturprogram som måste sändas i fria kanaler.",
       "moderniserat radio- och TV-avgiften för att säkra långsiktig finansiering och oberoende",
       "genomfört mediestöd för journalistik i hela landet, samt för innovations- och utvecklingsstöd",
@@ -1584,7 +1600,7 @@
     ],
     "title": "Public service och kommersiell media",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/public-service-och-kommersiell-media",
-    "fetchDate": "2023-09-17T17:52:38.279Z",
+    "fetchDate": "2024-06-02T17:16:21.221Z",
     "party": "S",
     "subject": "kultur-media-och-idrott"
   },
@@ -1736,11 +1752,14 @@
       "under valperioden sänkt skatten för boende i glest befolkade områden för att värna landsbygden och infört en skattereduktion med fokus på låg- och medelinkomsttagare",
       "tagit ett avgörande steg för att ta bort skatteklyftan för personer med sjuk- eller aktivitetsersättning. Det högerkonservativa blockets ändring i budgeten för 2022 gjorde att klyftan inte helt slöts",
       "gjort skatten mer rättvis mellan svenska löntagare och personal som hyrs in från utlandet",
-      "genomfört åtgärder för att förhindra och försvåra skattefusk och felaktig folkbokföring, inte minst genom förstärkta resurser till Skatteverket."
+      "genomfört åtgärder för att förhindra och försvåra skattefusk och felaktig folkbokföring, inte minst genom förstärkta resurser till Skatteverket.",
+      "Föreslagit en bankskatt på bankernas övervinster där pengarna skulle gå tillbaka till hushållen.",
+      "Föreslagit ett reformerat rotavdrag för lägre elräkningar.",
+      "Föreslagit en rättvis skattesänkning för vanligt folk."
     ],
     "title": "Skatter",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/skatter",
-    "fetchDate": "2023-09-17T17:52:37.302Z",
+    "fetchDate": "2024-06-02T17:16:20.841Z",
     "party": "S",
     "subject": "ekonomi-och-skatter"
   },
@@ -1840,20 +1859,19 @@
   },
   "https://www.socialdemokraterna.se/var-politik/a-till-o/sakerhetspolitik": {
     "opinions": [
-      "att säkerhetspolitiken ska värna Sveriges självständighet",
-      "att säkerhetspolitiken ska vara stabil och långsiktig",
-      "att säkerhetspolitiken ska bidra till stabilitet i vårt närområde",
-      "att säkerhetspolitiken ska bidra till global fred, säkerhet och utveckling",
-      "att säkerhetspolitiken ska utvecklas för att stå emot de alltmer komplexa säkerhetshoten.",
-      "föreslagit att anslaget till det militära försvaret ska öka till två procent av BNP.",
+      "att säkerhetspolitiken värnar Sveriges självständighet och frihet",
+      "att säkerhetspolitiken är stabil och långsiktig",
+      "att säkerhetspolitiken bidrar till stabilitet i vårt närområde",
+      "att säkerhetspolitiken bidrar till global fred, säkerhet och utveckling",
+      "att säkerhetspolitiken utvecklas för att stå emot de alltmer komplexa säkerhetshoten.",
+      "föreslagit och fått igenom att anslaget till det militära försvaret ska öka till två procent av BNP.",
       "avsatt resurser för att Sveriges försvarsförmåga kraftigt ska förstärkas och sett till att vi är mitt uppe i den största militära upprustningen sedan 1950-talet",
       "återinfört värnplikten för att trygga tillgången till utbildad personal inom försvaret",
-      "sett till så att flera regementen har öppnat, att fler soldater utbildas och att nytt försvarsmateriel köps in och tillverkas inom den svenska försvarsindustrin.",
-      ""
+      "sett till så att flera regementen har öppnat, att fler soldater utbildas och att nytt försvarsmateriel köps in och tillverkas inom den svenska försvarsindustrin."
     ],
     "title": "Säkerhetspolitik",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/sakerhetspolitik",
-    "fetchDate": "2023-09-17T17:52:38.516Z",
+    "fetchDate": "2024-06-02T17:16:21.306Z",
     "party": "S",
     "subject": "lag-och-ratt"
   },
@@ -1954,7 +1972,7 @@
   },
   "https://www.socialdemokraterna.se/var-politik/a-till-o/vindkraft": {
     "opinions": [
-      "uppnå 100 procent förnybar elproduktion till år 2040",
+      "tillföra ytterligare minst 60 TWh fossilfri kraft till 2030",
       "att Sverige senast år 2045 inte har några nettoutsläpp av växthusgaser till atmosfären, för att därefter uppnå negativa utsläpp",
       "ta höjd för en fördubblad elanvändning",
       "ha stabila och konkurrenskraftiga elpriser",
@@ -1962,7 +1980,7 @@
     ],
     "title": "Vindkraft",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/vindkraft",
-    "fetchDate": "2023-09-17T17:52:38.737Z",
+    "fetchDate": "2024-06-02T17:16:21.184Z",
     "party": "S",
     "subject": "energi"
   },
@@ -2096,5 +2114,24 @@
     "fetchDate": "2023-09-17T17:52:38.986Z",
     "party": "S",
     "subject": "aldrepolitik"
+  },
+  "https://www.socialdemokraterna.se/var-politik/a-till-o/kriget-i-ukraina": {
+    "opinions": [
+      "att Sverige ska fortsätta ge Ukraina finansiellt, militärt och humanitärt stöd. ",
+      "att Sverige ska skicka JAS Gripen-plan till Ukraina.",
+      "se statliga garantier för att försvarsindustrin ska öka sin produktionskapacitet och upprätta direktproduktion av ammunition och vapen till Ukraina.",
+      "att Sverige ska bidra med resurser och kompetens till återuppbyggnaden av Ukraina.",
+      "att Sverige arbetar med att stödja Ukraina i det reformarbete som krävs för att bli medlem i EU.",
+      "använda de frysta ryska centralbankstillgångarna på över 260 miljarder euro som säkerhet för lån för att stötta Ukraina.",
+      "att avkastningen från de frysta ryska tillgångar som finns i Europa ska kunna användas för att köpa ammunition till Ukraina.",
+      "omprioritera inom EU:s budget för att stötta Ukraina, främst för ammunitionsproduktion.",
+      "att EU omgående påbörjar arbetet med nästa stödpaket till Ukraina.",
+      "att EU fortsätter sätta ekonomisk press på Ryssland genom utökade sanktioner och arbetar för ett ansvarsutkrävande av Rysslands krigsförbrytelser."
+    ],
+    "title": "Kriget i Ukraina",
+    "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/kriget-i-ukraina",
+    "fetchDate": "2024-06-02T17:16:20.575Z",
+    "party": "S",
+    "subject": "utrikes--och-bistandsfragor"
   }
 }

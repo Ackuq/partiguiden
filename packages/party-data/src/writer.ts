@@ -13,11 +13,11 @@ const partyFileName = (abbreviation: string) =>
 export function writePartyData(
   abbreviation: string,
   list: PartyDataWithoutPartyName[],
-) {
+): string {
   const data = list.reduce((prev, current) => {
     const entry: PartyData[string] = {
       ...current,
-      party: abbreviation,
+      party: abbreviation.toLocaleUpperCase(),
     };
     return {
       ...prev,
@@ -28,7 +28,7 @@ export function writePartyData(
 
   if (!fs.existsSync(fileName)) {
     fs.writeFileSync(fileName, JSON.stringify(data, null, 2) + "\n");
-    return;
+    return fileName;
   }
   const storedData = JSON.parse(
     fs.readFileSync(fileName).toString(),
@@ -65,6 +65,7 @@ export function writePartyData(
     storedData[link] = result;
   }
   fs.writeFileSync(fileName, JSON.stringify(storedData, null, 2) + "\n");
+  return fileName;
 }
 
 export function updateStandpoint(abbreviation: string, standpoint: Standpoint) {

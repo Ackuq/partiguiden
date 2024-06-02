@@ -35,18 +35,6 @@
     "party": "C",
     "subject": "bostad"
   },
-  "https://www.centerpartiet.se/var-politik/politik-a-o/bostad/bostader-i-hela-landet": {
-    "opinions": [
-      "Förenkla värderingsreglerna för bostadsbyggande på landsbygden",
-      "Införa enklare byggregler utanför detaljplanelagt område",
-      "Slopa fastighetsavgiften de första fem åren för den som tar över ett hus som stått öde"
-    ],
-    "title": "Bostäder i hela landet",
-    "url": "https://www.centerpartiet.se/var-politik/politik-a-o/bostad/bostader-i-hela-landet",
-    "fetchDate": "2023-09-17T17:52:35.816Z",
-    "party": "C",
-    "subject": "bostad"
-  },
   "https://www.centerpartiet.se/var-politik/politik-a-o/bostad/hyresratter": {
     "opinions": [
       "Införa fri hyressättning i nybyggda hyresbostäder",
@@ -203,37 +191,38 @@
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/digitalisering/artificiell-intelligens-ai": {
     "opinions": [
+      "Att det tillsätts en AI-kommission för att utreda reglering av artificiell intelligens.",
       "Att det utbildas fler med kompetens inom AI på såväl yrkesutbildningar och yrkeshögskolor som universitet och högskolor.",
       "Investera mer för att möjliggöra ökad användning av AI inom välfärden.",
       "Öka mängden tillgänglig öppen data, samtidigt som vi tar hänsyn till den personliga integriteten, för att AI ska nå sin fulla potential."
     ],
     "title": "Artificiell intelligens (AI)",
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/digitalisering/artificiell-intelligens-ai",
-    "fetchDate": "2023-09-17T17:52:39.491Z",
+    "fetchDate": "2024-06-02T17:16:23.346Z",
     "party": "C",
     "subject": "it-och-mobiltelefoni"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/digitalisering/cybersakerhet": {
     "opinions": [
-      "Se en solidarisk säkerhetspolitik i en orolig värld.",
+      "Att den som utför cyberattacker alltid ska avslöjas när vi vet vem det är som gjort det.",
       "Stärka Sveriges försvar mot cyberattacker.",
-      "Se en cybersäkerhet för hela samhället där näringsliv och det offentliga arbetar tillsammans."
+      "Se en cybersäkerhet inom energisektorn."
     ],
     "title": "Cybersäkerhet",
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/digitalisering/cybersakerhet",
-    "fetchDate": "2023-09-17T17:52:40.277Z",
+    "fetchDate": "2024-06-02T17:16:23.209Z",
     "party": "C",
     "subject": "it-och-mobiltelefoni"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/digitalisering/digitalisering-i-skolan": {
     "opinions": [
       "Att digitaliseringens möjligheter ses i alla delar av utbildningsväsendet.",
-      "Ha en långsiktig satsning på ett nationellt digitalt lärarlyft.",
-      "Att fjärrundervisning ska tillåtas i alla relevanta ämnen."
+      "Att fjärrundervisning ska tillåtas i alla relevanta ämnen.",
+      "Införa spetsklasser på distans."
     ],
     "title": "Digitalisering i skolan",
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/digitalisering/digitalisering-i-skolan",
-    "fetchDate": "2023-09-17T17:52:40.446Z",
+    "fetchDate": "2024-06-02T17:16:25.331Z",
     "party": "C",
     "subject": "utbildning"
   },
@@ -454,25 +443,26 @@
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/energi": {
     "opinions": [
-      "Anta ett planeringsmål för att fördubbla elproduktionen av alla klimatsmara energikällor till 2030, varav 50 TWh ska tillkomma redan nästa mandatperiod",
-      "Att vi snabbt påbörjar nya energisamtal för att Sverige ska ha en långsiktig energipolitik",
+      "Införa en kriskommission för fördubblad energiproduktion.",
+      "Att regeringen omgående bjuder in till nya energisamtal för att Sverige ska ha en långsiktig energipolitik",
       "Öka exporten av grön el till Europa"
     ],
     "title": "Energi",
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/energi",
-    "fetchDate": "2023-09-17T17:52:35.917Z",
+    "fetchDate": "2024-06-02T17:16:25.282Z",
     "party": "C",
     "subject": "energi"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/energi/bioenergi": {
     "opinions": [
-      "Kraftigt öka den svenska produktionen av biodrivmedel genom att inför ett långsiktigt produktionsstöd för ny produktion av biodrivmedel .",
-      "Slopa skatten för de biodrivmedel som blandas in i reduktionsplikten för att sänka priset på drivmedel.",
-      "Fördubbla produktionen av biogas till 2030 och bredda användningen."
+      "Öka utbudet av biobränslen.      ",
+      "Sänka reduktionspliktsavgiften.",
+      "Ta bort koldioxidskatetn för biobränslen inom reduktionsplikten.",
+      "Sänka momsen på biobränslen till den lägsta nivån."
     ],
     "title": "Bioenergi",
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/energi/bioenergi",
-    "fetchDate": "2023-09-17T17:52:39.399Z",
+    "fetchDate": "2024-06-02T17:16:25.159Z",
     "party": "C",
     "subject": "energi"
   },
@@ -491,32 +481,24 @@
   "https://www.centerpartiet.se/var-politik/politik-a-o/energi/energioverenskommelsen": {
     "opinions": [
       "Se en ny, bred och långsiktig energiöverenskommelse över partigränserna",
-      "Rejält öka andelen förnybar energi, för dubbelt så mycket elproduktion till 2030 i Sverige.",
       "Att Sverige får ett robust elsystem som bidrar till att klara klimatutmaningen"
     ],
     "title": "Energiöverenskommelsen",
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/energi/energioverenskommelsen",
-    "fetchDate": "2023-09-17T17:52:36.964Z",
-    "party": "C",
-    "subject": "energi"
-  },
-  "https://www.centerpartiet.se/var-politik/politik-a-o/energi/fornybar-energi": {
-    "opinions": [],
-    "title": "Förnybar energi",
-    "url": "https://www.centerpartiet.se/var-politik/politik-a-o/energi/fornybar-energi",
-    "fetchDate": "2023-09-17T17:52:39.865Z",
+    "fetchDate": "2024-06-02T17:16:23.200Z",
     "party": "C",
     "subject": "energi"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/energi/grona-transporter": {
     "opinions": [
-      "Minska fossilberoendet i transportsektorn",
-      "Att transportsektorns utsläppsmål nås genom att kombinera styrmedel som påskyndar elektrifieringen, ökar inblandningen av biobaserade drivmedel och stärker transporteffektiviteten",
-      "Att det ska löna sig att välja klimateffektiva transporter"
+      "Minska fossilberoendet i transportsektorn.",
+      "Införa en klimatbonus för bilbyte – alla ska ha möjlighet att köra miljöbil.",
+      "Kraftigt bygga ut laddinfrastrukturen.",
+      "Att det ska löna sig att välja klimateffektiva transporter."
     ],
     "title": "Gröna transporter",
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/energi/grona-transporter",
-    "fetchDate": "2023-09-17T17:52:40.707Z",
+    "fetchDate": "2024-06-02T17:16:17.294Z",
     "party": "C",
     "subject": "energi"
   },
@@ -544,61 +526,50 @@
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/energi/karnkraft": {
     "opinions": [
-      "Ge Svenska Kraftnät i uppdrag att bygga ut ledningskapaciteten för att öka effekten från befintlig kärnkraft",
+      "Att målet om 100 procent fossilfri elproduktion till 2040 ändras till ett mer ambitiöst mål om ett 100 procent fossilfritt energisystem till 2040.",
+      "Ge Svenska kraftnät i uppdrag att bygga ut ledningskapaciteten för att öka effekten från befintlig kärnkraft",
       "Att kärnkraften ska bära sina kostnader, utan statliga stöd",
       "Att en ny energiöverenskommelse görs, för långsiktiga spelregler framåt"
     ],
     "title": "Kärnkraft",
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/energi/karnkraft",
-    "fetchDate": "2023-09-17T17:52:39.645Z",
+    "fetchDate": "2024-06-02T17:16:23.614Z",
     "party": "C",
     "subject": "energi"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/energi/solenergi": {
     "opinions": [
-      "Öka andelen solel i Sverige, med ett mål på 15 TWh redan under kommande mandatperiod",
-      "Minska regelkrånglet och avskaffa energiskatten för dig som använder din egenproducerade solenergi",
-      "Andelsägare i solcellsanläggningar ska ges samma villkor som villaägare"
+      "Öka produktionen av solel i Sverige, från cirka 1,5 TWh idag till 30 TWh år 2030.",
+      "Andelsägare i solcellsanläggningar ska ges samma villkor som villaägare.",
+      "Minska regelkrånglet och avskaffa energiskatten för dig som använder din egenproducerade solenergi."
     ],
     "title": "Solenergi",
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/energi/solenergi",
-    "fetchDate": "2023-09-17T17:52:40.166Z",
-    "party": "C",
-    "subject": "energi"
-  },
-  "https://www.centerpartiet.se/var-politik/politik-a-o/energi/sankta-elpriser": {
-    "opinions": [
-      "Ge hushåll med direktverkande el möjlighet att kunna göra avdrag på 50 procent av kostnaden för att installera fjärrvärme eller värmepump",
-      "Fördubbla elproduktionenen genom alla klimatsmarta energikällor - redan nästa mandatperiod kan ytterligare 50 TWh tillkomma",
-      "Att Svenska kraftnät använder sina överskott till att handla upp kraftvärmereserven fullt ut och få ner priserna"
-    ],
-    "title": "Sänkta elpriser",
-    "url": "https://www.centerpartiet.se/var-politik/politik-a-o/energi/sankta-elpriser",
-    "fetchDate": "2023-09-17T17:52:40.556Z",
+    "fetchDate": "2024-06-02T17:16:23.334Z",
     "party": "C",
     "subject": "energi"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/energi/vattenkraft": {
     "opinions": [
       "Att vattenkraften ska ha moderna villkor där miljöhänsyn balanseras mot vattenkraftens nytta.",
-      "Att minska regelkrånglet för vattenkraften för att värna lönsamheten och andra samhällsmål.",
+      "Minska regelkrånglet för vattenkraften för att värna lönsamheten och andra samhällsmål.",
       "Att mer av skatteintäkterna från vattenkraftproduktionen ska stanna i de regioner där den produceras."
     ],
     "title": "Vattenkraft",
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/energi/vattenkraft",
-    "fetchDate": "2023-09-17T17:52:37.903Z",
+    "fetchDate": "2024-06-02T17:16:20.064Z",
     "party": "C",
     "subject": "energi"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/energi/vindkraft": {
     "opinions": [
-      "Snabba på utbyggnaden av vindkraft för att se till att Sverige kan möta det ökande elbehovet, inklusive havsbaserad vindkraft",
-      "Att fastighetsskatten för industri- och elproducerande fastigheter ska gå tillbaka till regioner och kommuner, och ge närboende som påverkas ersättning",
-      "Förbättra samexistensen mellan Försvarsmaktens intressen och vindkraften"
+      "Snabba på utbyggnaden av vindkraft, inklusive havsbaserad vindkraft, för att se till att Sverige kan möta det ökande elbehovet.",
+      "Att fastighetsskatten för industri- och elproducerande fastigheter ska gå tillbaka till regioner och kommuner, och ge närboende som påverkas ersättning.",
+      "Inför villkorade tillstånd för ny vindkraft från Försvarsmakten."
     ],
     "title": "Vindkraft",
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/energi/vindkraft",
-    "fetchDate": "2023-09-17T17:52:40.127Z",
+    "fetchDate": "2024-06-02T17:16:24.945Z",
     "party": "C",
     "subject": "energi"
   },
@@ -619,7 +590,8 @@
     "title": "För liberala värderingar",
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/europa-och-eu/for-liberala-varderingar",
     "fetchDate": "2023-09-17T17:52:37.905Z",
-    "party": "C"
+    "party": "C",
+    "subject": "europa"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/europa-och-eu/for-fri-rorlighet": {
     "opinions": [],
@@ -687,12 +659,12 @@
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/europa-och-eu/for-bankunion-men-inte-euro": {
     "opinions": [
-      "Att Sverige fortsatt säger nej till att införa euro som valuta.",
-      "Att Sverige ska gå med i EU:s bankunio"
+      "att Sverige går med i EU:s bankunion. ",
+      "utreda för- och nackdelarna med en svensk euroanslutning."
     ],
     "title": "För bankunion, men inte euro",
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/europa-och-eu/for-bankunion-men-inte-euro",
-    "fetchDate": "2023-09-17T17:52:40.379Z",
+    "fetchDate": "2024-06-02T17:16:23.073Z",
     "party": "C",
     "subject": "europa"
   },
@@ -793,13 +765,13 @@
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/foretagande": {
     "opinions": [
-      "Införa en ny företagsform, så kallade ingångsföretag, med förenklade skatteregler.",
+      "Införa en ny företagsform, så kallade mikroföretag, med förenklade skatteregler.",
       "Se över skatter, avgifter och avdrag för att skapa en mer konkurrensneutral och modern lagstiftning för våra företag.",
       "Att Skatteverket erbjuder möjlighet att digitalt betala in skatt kontinuerligt och i realtid få information om ersättningar i trygghetssystemen."
     ],
     "title": "Företagande",
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/foretagande",
-    "fetchDate": "2023-09-17T17:52:36.940Z",
+    "fetchDate": "2024-06-02T17:16:16.931Z",
     "party": "C",
     "subject": "naringsliv"
   },
@@ -842,17 +814,19 @@
   "https://www.centerpartiet.se/var-politik/politik-a-o/foretagande/regelforenklingar-for-foretag": {
     "opinions": [
       "Göra de fungerande regellättnader som införts under coronapandemin permanenta",
-      "Förstärka Regelrådet och att det får ökade befogenheter, för att minska den offentliga byråkratin",
+      "Förstärka Regelrådet så att det får ökade befogenheter, för att minska den offentliga byråkratin",
       "Se över systemet med överklaganden så att det blir mer effektivt"
     ],
     "title": "Regelförenklingar för företag",
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/foretagande/regelforenklingar-for-foretag",
-    "fetchDate": "2023-09-17T17:52:40.477Z",
+    "fetchDate": "2024-06-02T17:16:23.307Z",
     "party": "C",
     "subject": "naringsliv"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/foretagande/rut--och-rot-avdrag": {
-    "opinions": ["Fortsätta bredda RUT till att gälla fler tjänster"],
+    "opinions": [
+      "Fortsätta bredda RUT till att gälla fler tjänster"
+    ],
     "title": "RUT- och ROT-avdrag",
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/foretagande/rut--och-rot-avdrag",
     "fetchDate": "2023-09-17T17:52:40.000Z",
@@ -862,11 +836,12 @@
   "https://www.centerpartiet.se/var-politik/politik-a-o/foretagande/sankta-kostnader-for-att-anstalla": {
     "opinions": [
       "Fortsätta att sänka arbetsgivaravgiften för de första anställda i ett företag.",
-      "Slopa arbetsgivaravgifter för att anställa långtidsarbetslösa."
+      "Slopa arbetsgivaravgifter för att anställa långtidsarbetslösa.",
+      "Sänka arbetsavgiften för jobb med låga inkomster."
     ],
     "title": "Sänkta kostnader för att anställa",
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/foretagande/sankta-kostnader-for-att-anstalla",
-    "fetchDate": "2023-09-17T17:52:37.766Z",
+    "fetchDate": "2024-06-02T17:16:17.332Z",
     "party": "C",
     "subject": "naringsliv"
   },
@@ -922,11 +897,11 @@
     "opinions": [
       "Att kompetens både ska utvecklas och tas till vara bättre.",
       "Att 40 procent av de värnpliktiga är kvinnor senast år 2030.",
-      "Att stödet till veteraner och deras anhöriga blir bättre."
+      "Att värnpliktiga och officersrekryter får bättre villkor."
     ],
     "title": "Personalförsörjning",
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/forsvar/personalforsorjning",
-    "fetchDate": "2023-09-17T17:52:38.869Z",
+    "fetchDate": "2024-06-02T17:16:23.955Z",
     "party": "C",
     "subject": "forsvar"
   },
@@ -956,13 +931,13 @@
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/infrastruktur-och-trafik": {
     "opinions": [
+      "Se ett Sverigelyft för att få till en fungerande infrastruktur i hela landet",
       "Att bara bilar som går på el och förnybara drivmedel säljs i Sverige år 2030",
-      "Att satsningar på transportinfrastruktur ska öka i hela landet",
-      "Rusta upp den befintliga järnvägen och bygga nya stambanor för höghastighetståg"
+      "Rusta upp den befintliga järnvägen och bygga nya stambanor"
     ],
     "title": "Infrastruktur och trafik",
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/infrastruktur-och-trafik",
-    "fetchDate": "2023-09-17T17:52:39.449Z",
+    "fetchDate": "2024-06-02T17:16:23.681Z",
     "party": "C",
     "subject": "infrastruktur-och-trafik"
   },
@@ -1038,13 +1013,14 @@
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/infrastruktur-och-trafik/jarnvag": {
     "opinions": [
+      "Se ett Sverigelyft för att få till en fungerande infrastruktur i hela landet",
       "Bygga nya stambanor på ett sätt som integrerar dem och deras trafik med befintligt järnvägssystem",
       "Förstärka och förbättra det svenska järnvägsnätet för en ökad punktlighet och ökad framkomlighet",
-      "Att Trafikverket anslår medel till järnvägsunderhåll avseende lokala banor"
+      "Åtgärda underhållsskulden"
     ],
     "title": "Järnväg",
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/infrastruktur-och-trafik/jarnvag",
-    "fetchDate": "2023-09-17T17:52:40.359Z",
+    "fetchDate": "2024-06-02T17:16:23.417Z",
     "party": "C",
     "subject": "infrastruktur-och-trafik"
   },
@@ -1106,12 +1082,13 @@
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/infrastruktur-och-trafik/vagar": {
     "opinions": [
+      "Se ett Sverigelyft för att få till en fungerande infrastruktur i hela landet",
       "Satsa på att underhålla och investera i nya vägar",
       "Förstärka underhållet av enskilda vägar"
     ],
     "title": "Vägar",
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/infrastruktur-och-trafik/vagar",
-    "fetchDate": "2023-09-17T17:52:39.068Z",
+    "fetchDate": "2024-06-02T17:16:25.222Z",
     "party": "C",
     "subject": "infrastruktur-och-trafik"
   },
@@ -1149,13 +1126,6 @@
     "fetchDate": "2023-09-17T17:52:38.163Z",
     "party": "C",
     "subject": "it-och-mobiltelefoni"
-  },
-  "https://www.centerpartiet.se/var-politik/politik-a-o/januariavtalet": {
-    "opinions": [],
-    "title": "Januariavtalet",
-    "url": "https://www.centerpartiet.se/var-politik/politik-a-o/januariavtalet",
-    "fetchDate": "2023-09-17T17:52:40.240Z",
-    "party": "C"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/jobb": {
     "opinions": [
@@ -1288,13 +1258,13 @@
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/jordbruk-jakt-och-fiske/fiske": {
     "opinions": [
-      "Att det småskaliga fiskets regler och administration ska förenklas",
-      "Snabba på omställningen till mer skonsamma fiskeredskap och -metoder",
-      "Att det industriella trålfisket ska flyttas ut till tolvmilsgränsen"
+      "Stoppa det storskaliga överfisket i våra hav och längs våra kuster.",
+      "Se en ökad jakt på säl och skarv.",
+      "Att det småskaliga fiskets regler och administration ska förenklas."
     ],
     "title": "Fiske",
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/jordbruk-jakt-och-fiske/fiske",
-    "fetchDate": "2023-09-17T17:52:37.908Z",
+    "fetchDate": "2024-06-02T17:16:23.154Z",
     "party": "C",
     "subject": "jordbruk-jakt-och-fiske"
   },
@@ -1313,24 +1283,24 @@
   "https://www.centerpartiet.se/var-politik/politik-a-o/jordbruk-jakt-och-fiske/jakt": {
     "opinions": [
       "Att beslut om jakt ska fattas nära dem som berörs av viltstammarna.",
-      "Att Svenska Jägareförbundet fortsatt ska ha ett allmänt uppdrag att sköta delar av jakt- och viltvården i Sverige.",
+      "Se över jaktlagen.",
       "Inrätta en Viltmyndighet, för en bättre fungerande jakt."
     ],
     "title": "Jakt",
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/jordbruk-jakt-och-fiske/jakt",
-    "fetchDate": "2023-09-17T17:52:36.946Z",
+    "fetchDate": "2024-06-02T17:16:25.178Z",
     "party": "C",
     "subject": "jordbruk-jakt-och-fiske"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/jordbruk-jakt-och-fiske/jordbruk-och-livsmedel": {
     "opinions": [
-      "Sänka kostnaderna och göra det enklare att driva jordbruk",
+      "Att vi producerar åtminstone 80 procent av den mat som vi konsumerar.",
       "Att övriga EU-länder ska närma sig Sveriges höga krav på miljö- och djurskyddsområdet",
       "Förenkla och påskynda omställningen till ett fossiloberoende jordbruk"
     ],
     "title": "Jordbruk och livsmedel",
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/jordbruk-jakt-och-fiske/jordbruk-och-livsmedel",
-    "fetchDate": "2023-09-17T17:52:40.567Z",
+    "fetchDate": "2024-06-02T17:16:19.965Z",
     "party": "C",
     "subject": "jordbruk-jakt-och-fiske"
   },
@@ -1409,13 +1379,13 @@
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/jamstalldhet/foraldraforsakring": {
     "opinions": [
-      "Ha en enkel, modern och tydlig föräldraförsäkring som fokuserar på barnets bästa.",
-      "Att den lägsta föräldrapenningen ska höjas i framtiden när ekonomin i Sverige gör det möjligt.",
-      "Att ett jämt uttag av föräldraförsäkringen nås genom att införa en tredubblad jämställdhetsbonus, att föräldraförsäkringen öppnas upp för ytterligare två närstående och att det införs en VAB-bonus."
+      "Att föräldraförsäkringen ska vara anpassad till vårt moderna samhälle och olika familjekonstellationer, samt premiera ett jämställt uttag av föräldradagar.",
+      "Att 80 procent av föräldraledigheten ska tas ut innan barnet fyller tre år",
+      "Avskaffa den så kallade snabbhetspremien."
     ],
     "title": "Föräldraförsäkring",
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/jamstalldhet/foraldraforsakring",
-    "fetchDate": "2023-09-17T17:52:40.118Z",
+    "fetchDate": "2024-06-02T17:16:23.426Z",
     "party": "C",
     "subject": "familjen"
   },
@@ -1423,11 +1393,11 @@
     "opinions": [
       "Värna möjligheterna för personer med olika typer av sexuell läggning att bilda familj.",
       "Öka kunskaperna i vården om HBTQI-personer.",
-      "Se över möjligheten för barn att behålla kontakten med en varaktig social förälder."
+      "Se över möjligheten för vissa barn att ha fler än två vårdnadshavare."
     ],
     "title": "HBTQI-frågor",
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/jamstalldhet/hbtqi-fragor",
-    "fetchDate": "2023-09-17T17:52:36.955Z",
+    "fetchDate": "2024-06-02T17:16:23.173Z",
     "party": "C",
     "subject": "jamstalldhet-och-diskriminering"
   },
@@ -1493,25 +1463,26 @@
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/klimat": {
     "opinions": [
-      "Att klimatmålen i Sverige och EU skärps och att det långsiktiga målet bör vara att nå klimatneutralitet 2040",
-      "Att fasa ut fossila subventioner och öka investeringar i grön teknik som kan bryta fossilberoendet",
-      "Påskynda utvecklingen av tekniken med minusutsläpp som kan minska utsläppen i atmosfären"
+      "Att klimatmålen i Sverige och EU skärps och att det långsiktiga målet bör vara att nå klimatneutralitet 2040.",
+      "Att fasa ut fossila subventioner och öka investeringar i grön teknik som kan bryta fossilberoendet.",
+      "Påskynda utvecklingen av tekniken med minusutsläpp som kan minska utsläppen i atmosfären.",
+      "Fasa ut fossila bränslen och införa ett förbud för all användning av fossila bränslen för energiproduktion från 2035 samt öka takten på utfasningen av fossila material."
     ],
     "title": "Klimat",
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/klimat",
-    "fetchDate": "2023-09-17T17:52:40.470Z",
+    "fetchDate": "2024-06-02T17:16:23.573Z",
     "party": "C",
     "subject": "miljo-och-klimat"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/klimat/klimatpolitik-i-eu": {
     "opinions": [
-      "Skärpa prissättningen av koldioxid inom EU:s handel med utsläppsrätter och bredda systemet till fler sektorer",
-      "Införa ett handelssystem där den aktör som genererar ett minusutsläpp får betalt för det",
-      "Öka koldioxidtransparensen i EU"
+      "Dra in EU-finansiering till de medlemsländer som inte gör sin del av klimatarbetet.",
+      "Se ett mål om att EU:s utsläpp ska minska med 95 procent till 2040, jämfört med 1990 års utsläpp, samt införa nationella, tekniska, kolsänkemål för alla EU:s medlemsländer.",
+      "Att produkter inom EU förses med en klimatdeklaration som visar mängden koldioxidutsläpp som produkten gett upphov till."
     ],
     "title": "Klimatpolitik i EU",
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/klimat/klimatpolitik-i-eu",
-    "fetchDate": "2023-09-17T17:52:38.629Z",
+    "fetchDate": "2024-06-02T17:16:25.123Z",
     "party": "C",
     "subject": "europa"
   },
@@ -1717,18 +1688,6 @@
     "title": "Terrorism",
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/lag-och-ratt/terrorism",
     "fetchDate": "2023-09-17T17:52:39.625Z",
-    "party": "C",
-    "subject": "lag-och-ratt"
-  },
-  "https://www.centerpartiet.se/var-politik/politik-a-o/lag-och-ratt/upphovsratt": {
-    "opinions": [
-      "Modernisera upphovsrätten",
-      "Se till att upphovsmän som gör musik, filmer och dataspel får betalt",
-      "Stärka och försvara friheten att yttra sig"
-    ],
-    "title": "Upphovsrätt",
-    "url": "https://www.centerpartiet.se/var-politik/politik-a-o/lag-och-ratt/upphovsratt",
-    "fetchDate": "2023-09-17T17:52:37.637Z",
     "party": "C",
     "subject": "lag-och-ratt"
   },
@@ -1972,13 +1931,13 @@
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/miljo/cirkular-ekonomi": {
     "opinions": [
+      "Göra det enklare att göra hållbara val genom bättre miljöinformation på varor.",
       "Införa kvotplikter på återvunnet material i ny produktion.",
-      "Göra det lättare att lämna in sitt avfall, med vetskapen att det kommer till användning.",
-      "Låta fler företag sköta avfallshanteringen och långsiktigt avskaffa det kommunala avfallsmonopolet."
+      "Göra det lättare att lämna in sitt avfall, med vetskapen att det kommer till användning."
     ],
     "title": "Cirkulär ekonomi",
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/miljo/cirkular-ekonomi",
-    "fetchDate": "2023-09-17T17:52:39.979Z",
+    "fetchDate": "2024-06-02T17:16:23.851Z",
     "party": "C",
     "subject": "ekonomi-och-skatter"
   },
@@ -2219,13 +2178,13 @@
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/utbildning/grundskola": {
     "opinions": [
-      "Förbättra insatserna för elever som inte når kunskapsmålen.",
-      "Öka tryggheten och studieron.",
-      "Säkerställa mer rättvisande betyg."
+      "Förbättra insatserna för elever som inte når kunskapsmålen",
+      "Öka tryggheten och studieron",
+      "Säkerställa mer rättvisande betyg"
     ],
     "title": "Grundskola",
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/utbildning/grundskola",
-    "fetchDate": "2023-09-17T17:52:35.894Z",
+    "fetchDate": "2024-06-02T17:16:16.900Z",
     "party": "C",
     "subject": "utbildning"
   },
@@ -2267,13 +2226,13 @@
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/utbildning/larare-och-rektorer": {
     "opinions": [
-      "Se karriärtjänster för rektorer och lärare i skolor med låga resultat",
-      "Att lärare och skolledare ska garanteras kompetensutveckling",
-      "Se tydliga karriärvägar för lärare och skolledare"
+      "Att lärare och rektorer får bättre arbetsvillkor och garanterad kompetensutveckling",
+      "Införa ett nationellt riktmärke för antal medarbetare per rektor",
+      "Se karriärtjänster för rektorer och lärare i skolor med låga resultat"
     ],
     "title": "Lärare och rektorer",
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/utbildning/larare-och-rektorer",
-    "fetchDate": "2023-09-17T17:52:40.696Z",
+    "fetchDate": "2024-06-02T17:16:23.439Z",
     "party": "C",
     "subject": "utbildning"
   },
@@ -2315,13 +2274,13 @@
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/utbildning/valfrihet-i-skolan": {
     "opinions": [
-      "Utveckla det fria skolvalet",
-      "Införa ett obligatoriskt, aktivt och samordnat skolval",
-      "Stärka Skolinspektionens möjligheter att agera mot skolor med brister."
+      "Införa ett obligatoriskt och gemensamt skolval",
+      "Stärka möjligheten för mindre friskolor att etablera sig",
+      "Stoppa vinstutdelning vid kvalitetsbrister"
     ],
     "title": "Valfrihet i skolan",
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/utbildning/valfrihet-i-skolan",
-    "fetchDate": "2023-09-17T17:52:35.640Z",
+    "fetchDate": "2024-06-02T17:16:25.359Z",
     "party": "C",
     "subject": "utbildning"
   },
@@ -2435,25 +2394,25 @@
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/vard-och-omsorg/alkoholpolitik": {
     "opinions": [
-      "Tillåta gårdsförsäljning av alkoholhaltiga drycker och göra det enklare för små bryggerier",
-      "Att det ska bli enklare för lanthandlare att bli systembolagsombud",
-      "Behålla Systembolaget som statligt monopol"
+      "Behålla Systembolaget som statligt monopol och stärka det förebyggande arbetet",
+      "Tillåta gårdsförsäljning av alkoholhaltiga drycker och göra det enklare för lanthandlare att bli systembolagsombud",
+      "Minska regelkrånglet och samtidigt stärka tillsynen med krogbranschen"
     ],
     "title": "Alkoholpolitik",
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/vard-och-omsorg/alkoholpolitik",
-    "fetchDate": "2023-09-17T17:52:40.434Z",
+    "fetchDate": "2024-06-02T17:16:25.390Z",
     "party": "C",
     "subject": "vard-och-omsorg"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/vard-och-omsorg/anhoriga": {
     "opinions": [
-      "Att det tas fram en nationell strategi för stöd till anhörigvårdare",
+      "Att det tas fram en ny nationell strategi för stöd till anhörigvårdare",
       "Att en ny lag om ersättning för vård av nära anhörig (”VAN”) utreds",
       "Ge bättre stöd till barn som är anhöriga"
     ],
     "title": "Anhöriga",
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/vard-och-omsorg/anhoriga",
-    "fetchDate": "2023-09-17T17:52:37.027Z",
+    "fetchDate": "2024-06-02T17:16:25.002Z",
     "party": "C",
     "subject": "vard-och-omsorg"
   },
@@ -2466,17 +2425,6 @@
     "title": "Apotek",
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/vard-och-omsorg/apotek",
     "fetchDate": "2023-09-17T17:52:35.361Z",
-    "party": "C",
-    "subject": "vard-och-omsorg"
-  },
-  "https://www.centerpartiet.se/var-politik/politik-a-o/vard-och-omsorg/dodshjalp": {
-    "opinions": [
-      "Att den svenska vården inte erbjuder aktiv dödshjälp.",
-      "Att alla döende patienter ska få god vård i livets slutskede."
-    ],
-    "title": "Dödshjälp",
-    "url": "https://www.centerpartiet.se/var-politik/politik-a-o/vard-och-omsorg/dodshjalp",
-    "fetchDate": "2023-09-17T17:52:39.452Z",
     "party": "C",
     "subject": "vard-och-omsorg"
   },
@@ -2636,5 +2584,17 @@
     "fetchDate": "2023-09-17T17:52:39.621Z",
     "party": "C",
     "subject": "aldrepolitik"
+  },
+  "https://www.centerpartiet.se/var-politik/politik-a-o/bostad/bostadsbrist": {
+    "opinions": [
+      "Förenkla värderingsreglerna för bostadsbyggande på landsbygden",
+      "Införa enklare byggregler utanför detaljplanelagt område",
+      "Slopa fastighetsavgiften de första fem åren för den som tar över ett hus som stått öde"
+    ],
+    "title": "Bostäder i hela landet",
+    "url": "https://www.centerpartiet.se/var-politik/politik-a-o/bostad/bostadsbrist",
+    "fetchDate": "2024-06-02T17:16:23.337Z",
+    "party": "C",
+    "subject": "bostad"
   }
 }

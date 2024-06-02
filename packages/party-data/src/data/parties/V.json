@@ -209,11 +209,11 @@
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/eu/": {
     "opinions": [
-      "EU begränsar demokratin och prioriterar företagens intressen framför miljön, arbetsrätten, folkhälsan och konsumentintressena."
+      "I EU arbetar Vänsterpartiet för samma saker som här hemma: en mer effektiv klimatpolitik, en tryggare arbetsmarknad och bättre livsvillkor för vanliga människor."
     ],
     "title": "EU",
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/eu/",
-    "fetchDate": "2023-09-17T17:52:40.044Z",
+    "fetchDate": "2024-06-02T17:16:19.268Z",
     "party": "V",
     "subject": "europa"
   },
@@ -911,5 +911,13 @@
     "fetchDate": "2023-09-17T17:52:37.457Z",
     "party": "V",
     "subject": "aldrepolitik"
+  },
+  "https://www.vansterpartiet.se/var-politik/politik-a-o/israel-och-palestina/": {
+    "opinions": [],
+    "title": "Israel och Palestina",
+    "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/israel-och-palestina/",
+    "fetchDate": "2024-06-02T17:16:17.671Z",
+    "party": "V",
+    "subject": "utrikes--och-bistandsfragor"
   }
 }

@@ -1,10 +1,13 @@
 name: Update Standpoints
 
 on:
-  schedule:
-    # Run every day in the morning
-    - cron: "0 6 * * *" # UTC
+  #schedule:
+  # Run every day in the morning
+  #- cron: "0 6 * * *" # UTC
   workflow_dispatch:
+  push:
+    branches:
+      - automatic-updating
 
 jobs:
   update-standpoints:

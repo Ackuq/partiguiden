@@ -4,4 +4,7 @@
 /******/ 
 /************************************************************************/
 var __webpack_exports__ = {};
+// @ts-check
+
+console.log("Hello from update-standpoints!");
 

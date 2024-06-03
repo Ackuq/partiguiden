@@ -116,16 +116,19 @@ export default abstract class Scraper implements ScraperArgs {
         this.getStandpointPage($($element as cheerio.Element)),
       );
     const result = await Promise.allSettled(promises);
+    const failed = result.filter(
+      (promiseResult): promiseResult is PromiseRejectedResult =>
+        promiseResult.status === "rejected",
+    );
+    for (const fail of failed) {
+      console.error("Promise failed with reason:", fail.reason);
+    }
     const resolved = result
       .filter(
         (
           promiseResult,
-        ): promiseResult is PromiseFulfilledResult<PartyData[string]> => {
-          if (promiseResult.status === "fulfilled") {
-            return true;
-          }
-          return false;
-        },
+        ): promiseResult is PromiseFulfilledResult<PartyData[string]> =>
+          promiseResult.status === "fulfilled",
       )
       .map((fulfilled) => fulfilled.value);
     return resolved;

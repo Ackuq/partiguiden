@@ -19,7 +19,7 @@ export async function setGitIdentity(name, email) {
  */
 export async function checkIfBranchExists(branch) {
   const command = ["rev-parse", "--verify", branch];
-  const output = await exec(command, false);
+  const output = await exec(command, { ignoreReturnCode: true });
   return output.exitCode === 0;
 }
 
@@ -70,7 +70,7 @@ export async function forcePush(branch) {
 
 export async function checkHasDiff() {
   const command = ["diff", "--exit-code", "--stat"];
-  const output = await exec(command, false);
+  const output = await exec(command, { ignoreReturnCode: true });
   // Exit code 1 means there are differences
   return output.exitCode === 1;
 }
@@ -78,14 +78,11 @@ export async function checkHasDiff() {
 /**
  * Run a git command
  * @param {string[]} command
- * @param {boolean} throwOnError
+ * @param {import("@actions/exec").ExecOptions} options
  */
-async function exec(command, throwOnError = true) {
+async function exec(command, options = {}) {
   core.info(`Running \`git ${command.join(" ")}\``);
-  const response = await getExecOutput("git", command, {
-    failOnStdErr: throwOnError,
-    ignoreReturnCode: throwOnError,
-  });
+  const response = await getExecOutput("git", command, options);
 
   return response;
 }

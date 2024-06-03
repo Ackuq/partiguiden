@@ -18,7 +18,7 @@ export async function setGitIdentity(name, email) {
  * @param {string} branch
  */
 export async function checkIfBranchExists(branch) {
-  const command = ["rev-parse", "--verify", branch];
+  const command = ["ls-remote", "--exit-code", "--heads", "origin", branch];
   const output = await exec(command, { ignoreReturnCode: true });
   return output.exitCode === 0;
 }

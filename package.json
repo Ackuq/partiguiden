@@ -22,7 +22,7 @@
     "eslint": "9.4.0",
     "eslint-plugin-import": "2.29.1",
     "eslint-plugin-react": "7.34.2",
-    "eslint-plugin-react-hooks": "5.1.0-rc-6d3110b4d9-20240531",
+    "eslint-plugin-react-hooks": "5.1.0-rc-935180c7e0-20240524",
     "typescript-eslint": "7.11.0",
     "knip": "5.17.3",
     "prettier": "3.3.0",

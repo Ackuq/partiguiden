@@ -1,5 +1,5 @@
 // @ts-check
-import github from "@actions/github";
+import core from "@actions/core";
 
 import { BRANCH_NAME, MAIN_BRANCH, TEMP_BRANCH_NAME } from "./constants.mjs";
 import {
@@ -12,34 +12,43 @@ import {
   push,
 } from "./git-helper.mjs";
 
-const hasDiff = await checkHasDiff();
+core.startGroup("Checking if changes exist");
 
+const hasDiff = await checkHasDiff();
 if (!hasDiff) {
-  console.log("No changes detected, exiting...");
+  core.info("No changes detected, exiting...");
   process.exit(0);
 }
+core.info("Changes detected, continuing...");
+core.endGroup();
 
+core.startGroup("Create branch and commit changes");
 const branchExists = await checkIfBranchExists(BRANCH_NAME);
 if (branchExists) {
-  console.log(`Branch ${BRANCH_NAME} already exists, rebasing...`);
+  core.info(`Branch ${BRANCH_NAME} already exists, rebasing...`);
   // Create temp branch to store changes
   await createBranch(TEMP_BRANCH_NAME, MAIN_BRANCH);
   // Checkout temp branch
   await checkout(TEMP_BRANCH_NAME);
 } else {
-  console.log(`Branch ${BRANCH_NAME} does not exist, creating...`);
+  core.info(`Branch ${BRANCH_NAME} does not exist, creating...`);
   // Create branch
   await createBranch(BRANCH_NAME, MAIN_BRANCH);
 }
 // Add and commit changes
 await commit("Update standpoints");
+core.endGroup();
 
+core.startGroup("Push changes");
 // Push changes
 if (branchExists) {
+  core.info(`Force pushing changes to ${BRANCH_NAME}...`);
   await forcePush(`${TEMP_BRANCH_NAME}:${BRANCH_NAME}`);
 } else {
+  core.info(`Pushing changes to ${BRANCH_NAME}...`);
   await push();
 }
+core.endGroup();
 
 // Create pull request
 // TODO

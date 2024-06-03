@@ -27874,13 +27874,11 @@ module.exports = parseParams
 /* harmony export */ __nccwpck_require__.d(__webpack_exports__, {
 /* harmony export */   "BP": () => (/* binding */ BRANCH_NAME),
 /* harmony export */   "J1": () => (/* binding */ GIT_USERNAME),
-/* harmony export */   "QH": () => (/* binding */ MAIN_BRANCH),
 /* harmony export */   "gK": () => (/* binding */ TEMP_BRANCH_NAME),
 /* harmony export */   "oT": () => (/* binding */ GIT_EMAIL)
 /* harmony export */ });
 // @ts-check
 
-const MAIN_BRANCH = "main";
 const BRANCH_NAME = "action-update-standpoints";
 const TEMP_BRANCH_NAME = `temp-${BRANCH_NAME}`;
 
@@ -27931,12 +27929,10 @@ async function checkIfBranchExists(branch) {
 }
 
 /**
- *
  * @param {string} branch
- * @param {string} base
  */
-async function createBranch(branch, base) {
-  const command = ["checkout", "-b", branch, base];
+async function createBranch(branch) {
+  const command = ["checkout", "-b", branch];
   await exec(command);
 }
 
@@ -28028,12 +28024,12 @@ const branchExists = await (0,_git_helper_mjs__WEBPACK_IMPORTED_MODULE_2__/* .ch
 if (branchExists) {
   _actions_core__WEBPACK_IMPORTED_MODULE_0__.info(`Branch ${_constants_mjs__WEBPACK_IMPORTED_MODULE_1__/* .BRANCH_NAME */ .BP} already exists, rebasing...`);
   _actions_core__WEBPACK_IMPORTED_MODULE_0__.info("Creating temp branch to store changes");
-  await (0,_git_helper_mjs__WEBPACK_IMPORTED_MODULE_2__/* .createBranch */ .Qj)(_constants_mjs__WEBPACK_IMPORTED_MODULE_1__/* .TEMP_BRANCH_NAME */ .gK, _constants_mjs__WEBPACK_IMPORTED_MODULE_1__/* .MAIN_BRANCH */ .QH);
+  await (0,_git_helper_mjs__WEBPACK_IMPORTED_MODULE_2__/* .createBranch */ .Qj)(_constants_mjs__WEBPACK_IMPORTED_MODULE_1__/* .TEMP_BRANCH_NAME */ .gK);
   _actions_core__WEBPACK_IMPORTED_MODULE_0__.info("Checking out temporary branch");
   await (0,_git_helper_mjs__WEBPACK_IMPORTED_MODULE_2__/* .checkout */ .JE)(_constants_mjs__WEBPACK_IMPORTED_MODULE_1__/* .TEMP_BRANCH_NAME */ .gK);
 } else {
   _actions_core__WEBPACK_IMPORTED_MODULE_0__.info(`Branch ${_constants_mjs__WEBPACK_IMPORTED_MODULE_1__/* .BRANCH_NAME */ .BP} does not exist, creating...`);
-  await (0,_git_helper_mjs__WEBPACK_IMPORTED_MODULE_2__/* .createBranch */ .Qj)(_constants_mjs__WEBPACK_IMPORTED_MODULE_1__/* .BRANCH_NAME */ .BP, _constants_mjs__WEBPACK_IMPORTED_MODULE_1__/* .MAIN_BRANCH */ .QH);
+  await (0,_git_helper_mjs__WEBPACK_IMPORTED_MODULE_2__/* .createBranch */ .Qj)(_constants_mjs__WEBPACK_IMPORTED_MODULE_1__/* .BRANCH_NAME */ .BP);
 }
 await (0,_git_helper_mjs__WEBPACK_IMPORTED_MODULE_2__/* .commit */ .th)("Update standpoints");
 _actions_core__WEBPACK_IMPORTED_MODULE_0__.endGroup();

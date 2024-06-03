@@ -24,12 +24,10 @@ export async function checkIfBranchExists(branch) {
 }
 
 /**
- *
  * @param {string} branch
- * @param {string} base
  */
-export async function createBranch(branch, base) {
-  const command = ["checkout", "-b", branch, base];
+export async function createBranch(branch) {
+  const command = ["checkout", "-b", branch];
   await exec(command);
 }
 

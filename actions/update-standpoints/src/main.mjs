@@ -6,7 +6,7 @@ import {
   COMMIT_MESSAGE,
   GIT_EMAIL,
   GIT_USERNAME,
-  MAIN_BRANCH,
+  PR_BASE,
   TEMP_BRANCH_NAME,
 } from "./constants.mjs";
 import {
@@ -19,6 +19,7 @@ import {
   push,
   setGitIdentity,
 } from "./git-helper.mjs";
+import { createPullRequest, findOpenPullRequest } from "./github-helper.mjs";
 
 core.startGroup("Checking if changes exist");
 const hasDiff = await checkHasDiff();
@@ -33,7 +34,7 @@ core.startGroup("Setting git identity");
 await setGitIdentity(GIT_USERNAME, GIT_EMAIL);
 core.endGroup();
 
-core.startGroup("Create branch and commit changes");
+core.startGroup("Creating / updating branch and commit changes");
 const branchExists = await checkIfBranchExists(BRANCH_NAME);
 if (branchExists) {
   core.info(`Branch ${BRANCH_NAME} already exists, rebasing...`);
@@ -48,8 +49,7 @@ if (branchExists) {
 await commit(COMMIT_MESSAGE);
 core.endGroup();
 
-core.startGroup("Push changes");
-// Push changes
+core.startGroup("Pushing changes");
 if (branchExists) {
   core.info(`Force pushing changes to ${BRANCH_NAME}...`);
   await forcePush(`${TEMP_BRANCH_NAME}:${BRANCH_NAME}`);
@@ -59,5 +59,17 @@ if (branchExists) {
 }
 core.endGroup();
 
-// Create pull request
-// TODO
+core.startGroup("Creating pull request");
+core.info("Checking if pull request already exists...");
+const existingPR = await findOpenPullRequest();
+if (existingPR) {
+  core.info(`Pull request #${existingPR.number} already exists`);
+  core.info(`URL: ${existingPR.html_url}`);
+  process.exit(0);
+}
+core.info("Pull request does not exist, creating...");
+const data = await createPullRequest();
+core.info(
+  `Pull request created for ${BRANCH_NAME} to ${PR_BASE}. URL: ${data.html_url}`,
+);
+core.endGroup();

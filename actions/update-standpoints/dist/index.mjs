@@ -27976,7 +27976,7 @@ async function forcePush(branch) {
 }
 
 async function checkHasDiff() {
-  const command = ["diff", "--quiet"];
+  const command = ["diff", "--exit-code", "--stat"];
   const output = await exec(command, false);
   // Exit code 1 means there are differences
   return output.exitCode === 1;
@@ -27990,19 +27990,10 @@ async function checkHasDiff() {
 async function exec(command, throwOnError = true) {
   _actions_core__WEBPACK_IMPORTED_MODULE_0__.info(`Running \`git ${command.join(" ")}\``);
   const response = await (0,_actions_exec__WEBPACK_IMPORTED_MODULE_1__.getExecOutput)("git", command, {
-    cwd: getWorkspacePath(),
     failOnStdErr: throwOnError,
   });
 
   return response;
-}
-
-function getWorkspacePath() {
-  const githubWorkspacePath = process.env["GITHUB_WORKSPACE"];
-  if (!githubWorkspacePath) {
-    throw new Error("GITHUB_WORKSPACE not defined");
-  }
-  return githubWorkspacePath;
 }
 
 

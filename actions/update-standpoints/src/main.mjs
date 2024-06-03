@@ -38,10 +38,8 @@ core.startGroup("Creating / updating branch and commit changes");
 const branchExists = await checkIfBranchExists(BRANCH_NAME);
 if (branchExists) {
   core.info(`Branch ${BRANCH_NAME} already exists...`);
-  core.info("Creating temp branch to store changes");
+  core.info("Creating and checking out temp branch to store changes");
   await createBranch(TEMP_BRANCH_NAME);
-  core.info("Checking out temporary branch");
-  await checkout(TEMP_BRANCH_NAME);
 } else {
   core.info(`Branch ${BRANCH_NAME} does not exist, creating...`);
   await createBranch(BRANCH_NAME);

@@ -32159,7 +32159,6 @@ const GIT_EMAIL = "github-actions[bot]@users.noreply.github.com";
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __nccwpck_require__) => {
 
 /* harmony export */ __nccwpck_require__.d(__webpack_exports__, {
-/* harmony export */   "JE": () => (/* binding */ checkout),
 /* harmony export */   "Pp": () => (/* binding */ checkIfBranchExists),
 /* harmony export */   "Qj": () => (/* binding */ createBranch),
 /* harmony export */   "VF": () => (/* binding */ push),
@@ -32168,6 +32167,7 @@ const GIT_EMAIL = "github-actions[bot]@users.noreply.github.com";
 /* harmony export */   "q7": () => (/* binding */ forcePush),
 /* harmony export */   "th": () => (/* binding */ commit)
 /* harmony export */ });
+/* unused harmony export checkout */
 /* harmony import */ var _actions_core__WEBPACK_IMPORTED_MODULE_0__ = __nccwpck_require__(4237);
 /* harmony import */ var _actions_exec__WEBPACK_IMPORTED_MODULE_1__ = __nccwpck_require__(4260);
 // @ts-check
@@ -32339,10 +32339,8 @@ _actions_core__WEBPACK_IMPORTED_MODULE_0__.startGroup("Creating / updating branc
 const branchExists = await (0,_git_helper_mjs__WEBPACK_IMPORTED_MODULE_2__/* .checkIfBranchExists */ .Pp)(_constants_mjs__WEBPACK_IMPORTED_MODULE_1__/* .BRANCH_NAME */ .BP);
 if (branchExists) {
   _actions_core__WEBPACK_IMPORTED_MODULE_0__.info(`Branch ${_constants_mjs__WEBPACK_IMPORTED_MODULE_1__/* .BRANCH_NAME */ .BP} already exists...`);
-  _actions_core__WEBPACK_IMPORTED_MODULE_0__.info("Creating temp branch to store changes");
+  _actions_core__WEBPACK_IMPORTED_MODULE_0__.info("Creating and checking out temp branch to store changes");
   await (0,_git_helper_mjs__WEBPACK_IMPORTED_MODULE_2__/* .createBranch */ .Qj)(_constants_mjs__WEBPACK_IMPORTED_MODULE_1__/* .TEMP_BRANCH_NAME */ .gK);
-  _actions_core__WEBPACK_IMPORTED_MODULE_0__.info("Checking out temporary branch");
-  await (0,_git_helper_mjs__WEBPACK_IMPORTED_MODULE_2__/* .checkout */ .JE)(_constants_mjs__WEBPACK_IMPORTED_MODULE_1__/* .TEMP_BRANCH_NAME */ .gK);
 } else {
   _actions_core__WEBPACK_IMPORTED_MODULE_0__.info(`Branch ${_constants_mjs__WEBPACK_IMPORTED_MODULE_1__/* .BRANCH_NAME */ .BP} does not exist, creating...`);
   await (0,_git_helper_mjs__WEBPACK_IMPORTED_MODULE_2__/* .createBranch */ .Qj)(_constants_mjs__WEBPACK_IMPORTED_MODULE_1__/* .BRANCH_NAME */ .BP);

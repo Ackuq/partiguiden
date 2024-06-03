@@ -84,11 +84,8 @@ async function exec(command, throwOnError = true) {
   core.info(`Running \`git ${command.join(" ")}\``);
   const response = await getExecOutput("git", command, {
     cwd: getWorkspacePath(),
+    failOnStdErr: throwOnError,
   });
-
-  if (throwOnError && response.exitCode !== 0) {
-    throw new Error(`Error running git command: ${response.stderr}`);
-  }
 
   return response;
 }

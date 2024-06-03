@@ -84,6 +84,7 @@ async function exec(command, throwOnError = true) {
   core.info(`Running \`git ${command.join(" ")}\``);
   const response = await getExecOutput("git", command, {
     failOnStdErr: throwOnError,
+    ignoreReturnCode: throwOnError,
   });
 
   return response;

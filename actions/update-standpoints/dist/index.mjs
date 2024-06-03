@@ -27991,6 +27991,7 @@ async function exec(command, throwOnError = true) {
   _actions_core__WEBPACK_IMPORTED_MODULE_0__.info(`Running \`git ${command.join(" ")}\``);
   const response = await (0,_actions_exec__WEBPACK_IMPORTED_MODULE_1__.getExecOutput)("git", command, {
     failOnStdErr: throwOnError,
+    ignoreReturnCode: throwOnError,
   });
 
   return response;

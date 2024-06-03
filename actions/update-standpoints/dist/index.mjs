@@ -30422,14 +30422,33 @@ module.exports = parseParams
 
 /***/ }),
 
+/***/ 1934:
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __nccwpck_require__) => {
+
+/* harmony export */ __nccwpck_require__.d(__webpack_exports__, {
+/* harmony export */   "BP": () => (/* binding */ BRANCH_NAME),
+/* harmony export */   "QH": () => (/* binding */ MAIN_BRANCH),
+/* harmony export */   "gK": () => (/* binding */ TEMP_BRANCH_NAME)
+/* harmony export */ });
+// @ts-check
+
+const MAIN_BRANCH = "main";
+const BRANCH_NAME = "action-update-standpoints";
+const TEMP_BRANCH_NAME = `temp-${BRANCH_NAME}`;
+
+
+/***/ }),
+
 /***/ 9388:
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __nccwpck_require__) => {
 
 /* harmony export */ __nccwpck_require__.d(__webpack_exports__, {
-/* harmony export */   "IH": () => (/* binding */ add),
 /* harmony export */   "JE": () => (/* binding */ checkout),
+/* harmony export */   "Pp": () => (/* binding */ checkIfBranchExists),
+/* harmony export */   "Qj": () => (/* binding */ createBranch),
 /* harmony export */   "VF": () => (/* binding */ push),
 /* harmony export */   "q1": () => (/* binding */ checkHasDiff),
+/* harmony export */   "q7": () => (/* binding */ forcePush),
 /* harmony export */   "th": () => (/* binding */ commit)
 /* harmony export */ });
 /* harmony import */ var _actions_exec__WEBPACK_IMPORTED_MODULE_0__ = __nccwpck_require__(8649);
@@ -30437,17 +30456,30 @@ module.exports = parseParams
 
 
 /**
- * Create a new branch
  * @param {string} branch
- * @param {string} startPoint
  */
-async function checkout(branch, startPoint) {
-  const command = ["checkout", "-b", branch, startPoint];
+async function checkIfBranchExists(branch) {
+  const command = ["rev-parse", "--verify", branch];
+  const output = await exec(command, false);
+  return output.exitCode === 0;
+}
+
+/**
+ *
+ * @param {string} branch
+ * @param {string} base
+ */
+async function createBranch(branch, base) {
+  const command = ["checkout", "-b", branch, base];
   await exec(command);
 }
 
-async function add() {
-  const command = ["add", "."];
+/**
+ * Checkout existing branch
+ * @param {string} branch
+ */
+async function checkout(branch) {
+  const command = ["checkout", branch];
   await exec(command);
 }
 
@@ -30455,18 +30487,31 @@ async function add() {
  * @param {string} message
  */
 async function commit(message) {
+  const addCommand = ["add", "."];
+  await exec(addCommand);
   const command = ["commit", "-m", message];
   await exec(command);
 }
 
+/**
+ * Push to the current branch
+ */
 async function push() {
   const command = ["push", "--set-upstream", "origin", "HEAD"];
   await exec(command);
 }
 
+/**
+ * @param {string} branch
+ */
+async function forcePush(branch) {
+  const command = ["push", "--force", "origin", branch];
+  await exec(command);
+}
+
 async function checkHasDiff() {
   const command = ["diff", "--quiet"];
-  const output = await exec(command);
+  const output = await exec(command, false);
   // Exit code 1 means there are differences
   return output.exitCode === 1;
 }
@@ -30474,9 +30519,16 @@ async function checkHasDiff() {
 /**
  * Run a git command
  * @param {string[]} command
+ * @param {boolean} throwOnError
  */
-function exec(command) {
-  return (0,_actions_exec__WEBPACK_IMPORTED_MODULE_0__.getExecOutput)("git", command);
+async function exec(command, throwOnError = true) {
+  const response = await (0,_actions_exec__WEBPACK_IMPORTED_MODULE_0__.getExecOutput)("git", command);
+
+  if (throwOnError && response.exitCode !== 0) {
+    throw new Error(`Error running git command: ${response.stderr}`);
+  }
+
+  return response;
 }
 
 
@@ -30487,27 +30539,45 @@ function exec(command) {
 
 __nccwpck_require__.a(__webpack_module__, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {
 /* harmony import */ var _actions_github__WEBPACK_IMPORTED_MODULE_0__ = __nccwpck_require__(7131);
-/* harmony import */ var _git_helper_mjs__WEBPACK_IMPORTED_MODULE_1__ = __nccwpck_require__(9388);
+/* harmony import */ var _constants_mjs__WEBPACK_IMPORTED_MODULE_1__ = __nccwpck_require__(1934);
+/* harmony import */ var _git_helper_mjs__WEBPACK_IMPORTED_MODULE_2__ = __nccwpck_require__(9388);
 // @ts-check
 
 
 
 
-const hasDiff = await (0,_git_helper_mjs__WEBPACK_IMPORTED_MODULE_1__/* .checkHasDiff */ .q1)();
+
+const hasDiff = await (0,_git_helper_mjs__WEBPACK_IMPORTED_MODULE_2__/* .checkHasDiff */ .q1)();
 
 if (!hasDiff) {
   console.log("No changes detected, exiting...");
   process.exit(0);
 }
 
-const runId = _actions_github__WEBPACK_IMPORTED_MODULE_0__.context.runId;
-const branchName = `update-standpoints-${runId}`;
+const branchExists = await (0,_git_helper_mjs__WEBPACK_IMPORTED_MODULE_2__/* .checkIfBranchExists */ .Pp)(_constants_mjs__WEBPACK_IMPORTED_MODULE_1__/* .BRANCH_NAME */ .BP);
+if (branchExists) {
+  console.log(`Branch ${_constants_mjs__WEBPACK_IMPORTED_MODULE_1__/* .BRANCH_NAME */ .BP} already exists, rebasing...`);
+  // Create temp branch to store changes
+  await (0,_git_helper_mjs__WEBPACK_IMPORTED_MODULE_2__/* .createBranch */ .Qj)(_constants_mjs__WEBPACK_IMPORTED_MODULE_1__/* .TEMP_BRANCH_NAME */ .gK, _constants_mjs__WEBPACK_IMPORTED_MODULE_1__/* .MAIN_BRANCH */ .QH);
+  // Checkout temp branch
+  await (0,_git_helper_mjs__WEBPACK_IMPORTED_MODULE_2__/* .checkout */ .JE)(_constants_mjs__WEBPACK_IMPORTED_MODULE_1__/* .TEMP_BRANCH_NAME */ .gK);
+} else {
+  console.log(`Branch ${_constants_mjs__WEBPACK_IMPORTED_MODULE_1__/* .BRANCH_NAME */ .BP} does not exist, creating...`);
+  // Create branch
+  await (0,_git_helper_mjs__WEBPACK_IMPORTED_MODULE_2__/* .createBranch */ .Qj)(_constants_mjs__WEBPACK_IMPORTED_MODULE_1__/* .BRANCH_NAME */ .BP, _constants_mjs__WEBPACK_IMPORTED_MODULE_1__/* .MAIN_BRANCH */ .QH);
+}
+// Add and commit changes
+await (0,_git_helper_mjs__WEBPACK_IMPORTED_MODULE_2__/* .commit */ .th)("Update standpoints");
 
-// Checkout and push changes
-await (0,_git_helper_mjs__WEBPACK_IMPORTED_MODULE_1__/* .checkout */ .JE)(branchName, "main");
-await (0,_git_helper_mjs__WEBPACK_IMPORTED_MODULE_1__/* .add */ .IH)();
-await (0,_git_helper_mjs__WEBPACK_IMPORTED_MODULE_1__/* .commit */ .th)("Update standpoints");
-await (0,_git_helper_mjs__WEBPACK_IMPORTED_MODULE_1__/* .push */ .VF)();
+// Push changes
+if (branchExists) {
+  await (0,_git_helper_mjs__WEBPACK_IMPORTED_MODULE_2__/* .forcePush */ .q7)(`${_constants_mjs__WEBPACK_IMPORTED_MODULE_1__/* .TEMP_BRANCH_NAME */ .gK}:${_constants_mjs__WEBPACK_IMPORTED_MODULE_1__/* .BRANCH_NAME */ .BP}`);
+} else {
+  await (0,_git_helper_mjs__WEBPACK_IMPORTED_MODULE_2__/* .push */ .VF)();
+}
+
+// Create pull request
+// TODO
 
 __webpack_async_result__();
 } catch(e) { __webpack_async_result__(e); } }, 1);

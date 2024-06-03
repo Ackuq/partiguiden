@@ -1,8 +1,17 @@
+# Next.JS files
+/.next
+/out
+next-env.d.ts
+
+# Build files
+/build
+
 # Ignore files which are automatically generated on build time
 /public/robots.txt
 /public/sitemap*.xml
 
 # Sentry Auth Token
-.sentryclirc
+/.sentryclirc
 
-certificates
+# SSL certificates
+/certificates

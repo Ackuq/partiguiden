@@ -1,8 +1,19 @@
 import { parseArgs } from "node:util";
+import { Agent, setGlobalDispatcher } from "undici";
 
 import { writePartyData } from "@partiguiden/party-data/writer";
 
 import scrapers from "./scrapers";
+
+/**
+ * Modify the global dispatcher to allow for more concurrent requests
+ */
+
+setGlobalDispatcher(
+  new Agent({
+    connectTimeout: 30_000, // 30 seconds
+  }),
+);
 
 const {
   values: { party },

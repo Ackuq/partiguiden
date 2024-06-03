@@ -28,13 +28,3 @@ export default class VScraper extends Scraper {
     return [];
   }
 }
-
-//         actions = soup.select_one("p:-soup-contains('Vänsterpartiet vill bland annat:') + p")
-//         if actions is None:
-//             actions = soup.select_one("p:-soup-contains('Vänsterpartiet vill bland annat:')")
-//         if actions is not None:
-//             opinions = opinions + [
-//                 text.strip()
-//                 for text in actions.text.replace("• ", "").replace("Vänsterpartiet vill bland annat:\n", "").split("\n")
-//             ]
-//         return opinions

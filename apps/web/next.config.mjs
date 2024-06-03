@@ -13,16 +13,6 @@ let moduleExports = withBundleAnalyzer({
   transpilePackages: ["@partiguiden/party-data"],
   redirects,
   basePath: "",
-  images: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "data.riksdagen.se",
-        port: "",
-        pathname: "/filarkiv/bilder/**",
-      },
-    ],
-  },
 });
 
 /**

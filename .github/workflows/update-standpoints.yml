@@ -31,8 +31,7 @@ jobs:
         run: pnpm --filter="@partiguiden/scrapers" install --frozen-lockfile
 
       - name: Run scrapers
-        # TODO: Enable all parties
-        run: pnpm --filter="@partiguiden/scrapers" run scrape --party M
+        run: pnpm --filter="@partiguiden/scrapers" run scrape:all
 
       - name: Run action to potentially create PR
         uses: ./actions/update-standpoints

@@ -3,6 +3,7 @@ import core from "@actions/core";
 
 import {
   BRANCH_NAME,
+  COMMIT_MESSAGE,
   GIT_EMAIL,
   GIT_USERNAME,
   MAIN_BRANCH,
@@ -44,7 +45,7 @@ if (branchExists) {
   core.info(`Branch ${BRANCH_NAME} does not exist, creating...`);
   await createBranch(BRANCH_NAME);
 }
-await commit("Update standpoints");
+await commit(COMMIT_MESSAGE);
 core.endGroup();
 
 core.startGroup("Push changes");

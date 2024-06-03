@@ -27874,12 +27874,14 @@ module.exports = parseParams
 /* harmony export */ __nccwpck_require__.d(__webpack_exports__, {
 /* harmony export */   "BP": () => (/* binding */ BRANCH_NAME),
 /* harmony export */   "J1": () => (/* binding */ GIT_USERNAME),
+/* harmony export */   "bd": () => (/* binding */ COMMIT_MESSAGE),
 /* harmony export */   "gK": () => (/* binding */ TEMP_BRANCH_NAME),
 /* harmony export */   "oT": () => (/* binding */ GIT_EMAIL)
 /* harmony export */ });
 // @ts-check
+const COMMIT_MESSAGE = "chore(party-data): Update standpoints";
 
-const BRANCH_NAME = "action-update-standpoints";
+const BRANCH_NAME = "action/update-standpoints";
 const TEMP_BRANCH_NAME = `temp-${BRANCH_NAME}`;
 
 const GIT_USERNAME = "github-actions[bot]";
@@ -28031,7 +28033,7 @@ if (branchExists) {
   _actions_core__WEBPACK_IMPORTED_MODULE_0__.info(`Branch ${_constants_mjs__WEBPACK_IMPORTED_MODULE_1__/* .BRANCH_NAME */ .BP} does not exist, creating...`);
   await (0,_git_helper_mjs__WEBPACK_IMPORTED_MODULE_2__/* .createBranch */ .Qj)(_constants_mjs__WEBPACK_IMPORTED_MODULE_1__/* .BRANCH_NAME */ .BP);
 }
-await (0,_git_helper_mjs__WEBPACK_IMPORTED_MODULE_2__/* .commit */ .th)("Update standpoints");
+await (0,_git_helper_mjs__WEBPACK_IMPORTED_MODULE_2__/* .commit */ .th)(_constants_mjs__WEBPACK_IMPORTED_MODULE_1__/* .COMMIT_MESSAGE */ .bd);
 _actions_core__WEBPACK_IMPORTED_MODULE_0__.endGroup();
 
 _actions_core__WEBPACK_IMPORTED_MODULE_0__.startGroup("Push changes");

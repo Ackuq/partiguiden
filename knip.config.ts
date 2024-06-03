@@ -20,6 +20,9 @@ const config: KnipConfig = {
       entry: ["scripts/cli.ts"],
       ignoreDependencies: ["prettier"],
     },
+    "actions/update-standpoints": {
+      ignore: ["dist/**/*"],
+    },
   },
 };
 

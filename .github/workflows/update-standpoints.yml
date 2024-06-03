@@ -1,0 +1,39 @@
+name: Update Standpoints
+
+on:
+  schedule:
+    # Run every day in the morning
+    - cron: "0 6 * * *" # UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  update-standpoints:
+    name: Update Standpoints
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Prepare pnpm
+        uses: pnpm/action-setup@v4
+
+      - name: Setup node
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm --filter="@partiguiden/scrapers" install --frozen-lockfile
+
+      - name: Run scrapers
+        run: pnpm --filter="@partiguiden/scrapers" run scrape:all
+
+      - name: Run action to potentially create PR
+        uses: ./actions/update-standpoints
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}

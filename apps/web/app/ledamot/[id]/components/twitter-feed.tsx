@@ -45,7 +45,11 @@ export default function TwitterFeed({ twitterFeed }: Props) {
   const twitterHandle = twitterFeed?.twitterHandle.value;
 
   if (!twitterHandle) {
-    return <p className="text-center text-lg">Inget Twitterkonto hittades.</p>;
+    return (
+      <div className="m-4">
+        <p className="text-center text-lg">Inget Twitterkonto hittades.</p>
+      </div>
+    );
   }
 
   return (

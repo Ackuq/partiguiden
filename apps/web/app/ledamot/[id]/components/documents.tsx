@@ -53,6 +53,14 @@ export default function Documents({ initialDocuments, memberId }: Props) {
     containerRef.current?.scrollIntoView();
   }
 
+  if (initialDocuments.pages === 0) {
+    return (
+      <div className="m-4">
+        <p className="text-center text-lg">Inga dokument hittades.</p>
+      </div>
+    );
+  }
+
   return (
     <div
       className="scroll-mt-header-with-margin sm:scroll-mt-header-sm-with-margin m-4 flex flex-col gap-4"

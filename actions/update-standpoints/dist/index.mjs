@@ -27873,14 +27873,19 @@ module.exports = parseParams
 
 /* harmony export */ __nccwpck_require__.d(__webpack_exports__, {
 /* harmony export */   "BP": () => (/* binding */ BRANCH_NAME),
+/* harmony export */   "J1": () => (/* binding */ GIT_USERNAME),
 /* harmony export */   "QH": () => (/* binding */ MAIN_BRANCH),
-/* harmony export */   "gK": () => (/* binding */ TEMP_BRANCH_NAME)
+/* harmony export */   "gK": () => (/* binding */ TEMP_BRANCH_NAME),
+/* harmony export */   "oT": () => (/* binding */ GIT_EMAIL)
 /* harmony export */ });
 // @ts-check
 
 const MAIN_BRANCH = "main";
 const BRANCH_NAME = "action-update-standpoints";
 const TEMP_BRANCH_NAME = `temp-${BRANCH_NAME}`;
+
+const GIT_USERNAME = "github-actions[bot]";
+const GIT_EMAIL = "github-actions[bot]@users.noreply.github.com";
 
 
 /***/ }),
@@ -27893,13 +27898,28 @@ const TEMP_BRANCH_NAME = `temp-${BRANCH_NAME}`;
 /* harmony export */   "Pp": () => (/* binding */ checkIfBranchExists),
 /* harmony export */   "Qj": () => (/* binding */ createBranch),
 /* harmony export */   "VF": () => (/* binding */ push),
+/* harmony export */   "a9": () => (/* binding */ setGitIdentity),
 /* harmony export */   "q1": () => (/* binding */ checkHasDiff),
 /* harmony export */   "q7": () => (/* binding */ forcePush),
 /* harmony export */   "th": () => (/* binding */ commit)
 /* harmony export */ });
-/* harmony import */ var _actions_exec__WEBPACK_IMPORTED_MODULE_0__ = __nccwpck_require__(4260);
+/* harmony import */ var _actions_core__WEBPACK_IMPORTED_MODULE_0__ = __nccwpck_require__(4237);
+/* harmony import */ var _actions_exec__WEBPACK_IMPORTED_MODULE_1__ = __nccwpck_require__(4260);
 // @ts-check
 
+
+
+/**
+ * @param {string} name
+ * @param {string} email
+ */
+
+async function setGitIdentity(name, email) {
+  const command = ["config", "--local", "user.name", name];
+  await exec(command);
+  const emailCommand = ["config", "--local", "user.email", email];
+  await exec(emailCommand);
+}
 
 /**
  * @param {string} branch
@@ -27968,7 +27988,8 @@ async function checkHasDiff() {
  * @param {boolean} throwOnError
  */
 async function exec(command, throwOnError = true) {
-  const response = await (0,_actions_exec__WEBPACK_IMPORTED_MODULE_0__.getExecOutput)("git", command);
+  _actions_core__WEBPACK_IMPORTED_MODULE_0__.info(`Running \`git ${command.join(" ")}\``);
+  const response = await (0,_actions_exec__WEBPACK_IMPORTED_MODULE_1__.getExecOutput)("git", command);
 
   if (throwOnError && response.exitCode !== 0) {
     throw new Error(`Error running git command: ${response.stderr}`);
@@ -27994,7 +28015,6 @@ __nccwpck_require__.a(__webpack_module__, async (__webpack_handle_async_dependen
 
 
 _actions_core__WEBPACK_IMPORTED_MODULE_0__.startGroup("Checking if changes exist");
-
 const hasDiff = await (0,_git_helper_mjs__WEBPACK_IMPORTED_MODULE_2__/* .checkHasDiff */ .q1)();
 if (!hasDiff) {
   _actions_core__WEBPACK_IMPORTED_MODULE_0__.info("No changes detected, exiting...");
@@ -28003,13 +28023,17 @@ if (!hasDiff) {
 _actions_core__WEBPACK_IMPORTED_MODULE_0__.info("Changes detected, continuing...");
 _actions_core__WEBPACK_IMPORTED_MODULE_0__.endGroup();
 
+_actions_core__WEBPACK_IMPORTED_MODULE_0__.startGroup("Setting git identity");
+await (0,_git_helper_mjs__WEBPACK_IMPORTED_MODULE_2__/* .setGitIdentity */ .a9)(_constants_mjs__WEBPACK_IMPORTED_MODULE_1__/* .GIT_USERNAME */ .J1, _constants_mjs__WEBPACK_IMPORTED_MODULE_1__/* .GIT_EMAIL */ .oT);
+_actions_core__WEBPACK_IMPORTED_MODULE_0__.endGroup();
+
 _actions_core__WEBPACK_IMPORTED_MODULE_0__.startGroup("Create branch and commit changes");
 const branchExists = await (0,_git_helper_mjs__WEBPACK_IMPORTED_MODULE_2__/* .checkIfBranchExists */ .Pp)(_constants_mjs__WEBPACK_IMPORTED_MODULE_1__/* .BRANCH_NAME */ .BP);
 if (branchExists) {
   _actions_core__WEBPACK_IMPORTED_MODULE_0__.info(`Branch ${_constants_mjs__WEBPACK_IMPORTED_MODULE_1__/* .BRANCH_NAME */ .BP} already exists, rebasing...`);
-  // Create temp branch to store changes
+  _actions_core__WEBPACK_IMPORTED_MODULE_0__.info("Creating temp branch to store changes");
   await (0,_git_helper_mjs__WEBPACK_IMPORTED_MODULE_2__/* .createBranch */ .Qj)(_constants_mjs__WEBPACK_IMPORTED_MODULE_1__/* .TEMP_BRANCH_NAME */ .gK, _constants_mjs__WEBPACK_IMPORTED_MODULE_1__/* .MAIN_BRANCH */ .QH);
-  // Checkout temp branch
+  _actions_core__WEBPACK_IMPORTED_MODULE_0__.info("Checking out temporary branch");
   await (0,_git_helper_mjs__WEBPACK_IMPORTED_MODULE_2__/* .checkout */ .JE)(_constants_mjs__WEBPACK_IMPORTED_MODULE_1__/* .TEMP_BRANCH_NAME */ .gK);
 } else {
   _actions_core__WEBPACK_IMPORTED_MODULE_0__.info(`Branch ${_constants_mjs__WEBPACK_IMPORTED_MODULE_1__/* .BRANCH_NAME */ .BP} does not exist, creating...`);

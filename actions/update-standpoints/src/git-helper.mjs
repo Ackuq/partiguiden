@@ -1,5 +1,18 @@
 // @ts-check
+import core from "@actions/core";
 import { getExecOutput } from "@actions/exec";
+
+/**
+ * @param {string} name
+ * @param {string} email
+ */
+
+export async function setGitIdentity(name, email) {
+  const command = ["config", "--local", "user.name", name];
+  await exec(command);
+  const emailCommand = ["config", "--local", "user.email", email];
+  await exec(emailCommand);
+}
 
 /**
  * @param {string} branch
@@ -68,6 +81,7 @@ export async function checkHasDiff() {
  * @param {boolean} throwOnError
  */
 async function exec(command, throwOnError = true) {
+  core.info(`Running \`git ${command.join(" ")}\``);
   const response = await getExecOutput("git", command);
 
   if (throwOnError && response.exitCode !== 0) {

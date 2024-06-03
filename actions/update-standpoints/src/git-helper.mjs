@@ -2,17 +2,30 @@
 import { getExecOutput } from "@actions/exec";
 
 /**
- * Create a new branch
  * @param {string} branch
- * @param {string} startPoint
  */
-export async function checkout(branch, startPoint) {
-  const command = ["checkout", "-b", branch, startPoint];
+export async function checkIfBranchExists(branch) {
+  const command = ["rev-parse", "--verify", branch];
+  const output = await exec(command, false);
+  return output.exitCode === 0;
+}
+
+/**
+ *
+ * @param {string} branch
+ * @param {string} base
+ */
+export async function createBranch(branch, base) {
+  const command = ["checkout", "-b", branch, base];
   await exec(command);
 }
 
-export async function add() {
-  const command = ["add", "."];
+/**
+ * Checkout existing branch
+ * @param {string} branch
+ */
+export async function checkout(branch) {
+  const command = ["checkout", branch];
   await exec(command);
 }
 
@@ -20,18 +33,31 @@ export async function add() {
  * @param {string} message
  */
 export async function commit(message) {
+  const addCommand = ["add", "."];
+  await exec(addCommand);
   const command = ["commit", "-m", message];
   await exec(command);
 }
 
+/**
+ * Push to the current branch
+ */
 export async function push() {
   const command = ["push", "--set-upstream", "origin", "HEAD"];
   await exec(command);
 }
 
+/**
+ * @param {string} branch
+ */
+export async function forcePush(branch) {
+  const command = ["push", "--force", "origin", branch];
+  await exec(command);
+}
+
 export async function checkHasDiff() {
   const command = ["diff", "--quiet"];
-  const output = await exec(command);
+  const output = await exec(command, false);
   // Exit code 1 means there are differences
   return output.exitCode === 1;
 }
@@ -39,7 +65,14 @@ export async function checkHasDiff() {
 /**
  * Run a git command
  * @param {string[]} command
+ * @param {boolean} throwOnError
  */
-function exec(command) {
-  return getExecOutput("git", command);
+async function exec(command, throwOnError = true) {
+  const response = await getExecOutput("git", command);
+
+  if (throwOnError && response.exitCode !== 0) {
+    throw new Error(`Error running git command: ${response.stderr}`);
+  }
+
+  return response;
 }

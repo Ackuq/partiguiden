@@ -12,7 +12,6 @@ import {
 import {
   checkHasDiff,
   checkIfBranchExists,
-  checkout,
   commit,
   createBranch,
   forcePush,
@@ -41,7 +40,9 @@ if (branchExists) {
   core.info("Creating and checking out temp branch to store changes");
   await createBranch(TEMP_BRANCH_NAME);
 } else {
-  core.info(`Branch ${BRANCH_NAME} does not exist, creating...`);
+  core.info(
+    `Branch ${BRANCH_NAME} does not exist, creating and checking out...`,
+  );
   await createBranch(BRANCH_NAME);
 }
 await commit(COMMIT_MESSAGE);

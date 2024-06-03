@@ -1,7 +1,7 @@
 import core from "@actions/core";
 import github from "@actions/github";
 
-import { BRANCH_NAME, PR_BASE, PR_BODY, PR_TITLE } from "./constants.mjs";
+import { BRANCH_NAME, COMMIT_MESSAGE, PR_BASE, PR_BODY } from "./constants.mjs";
 
 const { context } = github;
 
@@ -12,7 +12,7 @@ export async function createPullRequest() {
   const { data } = await client.rest.pulls.create({
     owner: context.repo.owner,
     repo: context.repo.repo,
-    title: PR_TITLE,
+    title: COMMIT_MESSAGE,
     body: PR_BODY,
     head: BRANCH_NAME,
     base: PR_BASE,

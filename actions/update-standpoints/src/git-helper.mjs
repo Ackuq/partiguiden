@@ -32,15 +32,6 @@ export async function createBranch(branch) {
 }
 
 /**
- * Checkout existing branch
- * @param {string} branch
- */
-export async function checkout(branch) {
-  const command = ["checkout", branch];
-  await exec(command);
-}
-
-/**
  * @param {string} message
  */
 export async function commit(message) {

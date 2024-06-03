@@ -2,7 +2,7 @@
   "name": "@partiguiden/update-standpoints",
   "version": "1.0.0",
   "description": "Github Action for updating standpoints and creating pull requests",
-  "main": "dist/main.mjs",
+  "main": "dist/index.mjs",
   "scripts": {
     "build": "ncc build src/main.mjs -o dist",
     "build:watch": "pnpm run build --watch"

@@ -4,11 +4,13 @@
   "description": "Monorepo for all Partiguiden",
   "author": "Axel Pettersson",
   "license": "ISC",
-  "packageManager": "pnpm@9.1.4",
+  "packageManager": "pnpm@9.2.0",
   "scripts": {
     "dev": "turbo dev",
     "build": "turbo build",
-    "lint": "pnpm lint:eslint && pnpm lint:tsc",
+    "clean": "git clean -xdf node_modules",
+    "clean:all": "turbo clean",
+    "lint": "pnpm run lint:eslint && pnpm run lint:tsc",
     "lint:eslint": "eslint",
     "lint:tsc": "turbo lint:tsc",
     "knip": "knip",
@@ -24,11 +26,11 @@
     "eslint-plugin-import": "2.29.1",
     "eslint-plugin-react": "7.34.2",
     "eslint-plugin-react-hooks": "5.1.0-rc-6d3110b4d9-20240531",
-    "typescript-eslint": "7.12.0",
     "knip": "5.17.4",
-    "prettier": "3.3.0",
+    "prettier": "3.3.1",
     "prettier-plugin-tailwindcss": "0.6.1",
-    "turbo": "1.13.3",
-    "typescript": "5.4.5"
+    "turbo": "2.0.1",
+    "typescript": "5.4.5",
+    "typescript-eslint": "7.12.0"
   }
 }

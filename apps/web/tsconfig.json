@@ -12,7 +12,9 @@
       "@app/*": ["./app/*"],
       "@components/*": ["./components/*"],
       "@lib/*": ["./lib/*"]
-    }
+    },
+    "tsBuildInfoFile": "node_modules/.cache/tsbuildinfo.json"
   },
-  "include": [".", ".next/types/**/*.ts"]
+  "include": [".", ".next/types/**/*.ts"],
+  "exclude": ["node_modules", ".next"]
 }

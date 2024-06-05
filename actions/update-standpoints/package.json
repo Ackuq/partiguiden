@@ -5,7 +5,8 @@
   "main": "dist/index.mjs",
   "scripts": {
     "build": "ncc build src/main.mjs -o dist",
-    "build:watch": "pnpm run build --watch"
+    "build:watch": "pnpm run build --watch",
+    "clean": "rm -rf .turbo node_modules"
   },
   "dependencies": {
     "@actions/core": "1.10.1",

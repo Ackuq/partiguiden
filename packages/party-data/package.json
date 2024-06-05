@@ -4,6 +4,7 @@
   "description": "Contains data that powers Partiguiden",
   "scripts": {
     "cli": "tsx scripts/cli.ts",
+    "clean": "rm -rf .turbo node_modules",
     "lint:tsc": "tsc"
   },
   "exports": {
@@ -14,7 +15,7 @@
   },
   "devDependencies": {
     "@inquirer/prompts": "5.0.5",
-    "@types/node": "20.14.1",
+    "@types/node": "20.14.2",
     "tsx": "4.11.2"
   }
 }

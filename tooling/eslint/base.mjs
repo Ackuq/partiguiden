@@ -1,12 +1,14 @@
 // @ts-check
 import eslint from "@eslint/js";
 import importPlugin from "eslint-plugin-import";
+import turboPlugin from "eslint-plugin-turbo";
 import tseslint from "typescript-eslint";
 
 const baseConfig = tseslint.config({
   files: ["**/*.js", "**/*.ts", "**/*.tsx"],
   plugins: {
     import: importPlugin,
+    turbo: turboPlugin,
   },
   extends: [
     eslint.configs.recommended,
@@ -14,6 +16,7 @@ const baseConfig = tseslint.config({
     ...tseslint.configs.stylisticTypeChecked,
   ],
   rules: {
+    ...turboPlugin.configs.recommended.rules,
     "@typescript-eslint/no-unused-vars": [
       "error",
       { argsIgnorePattern: "^_", varsIgnorePattern: "^_" },

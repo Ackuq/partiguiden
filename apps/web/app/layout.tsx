@@ -5,10 +5,12 @@ import colors from "tailwindcss/colors";
 
 import Header from "@components/header/header";
 import { ThemeProvider } from "@components/providers/theme-provider";
+import { AdSense } from "@components/scripts/Adsense";
+import { GA } from "@components/scripts/GA";
+import { Twittr } from "@components/scripts/Twittr";
 
 import Footer from "./footer";
 import "./global.css";
-import Head from "./head";
 
 const roboto = Roboto({
   weight: ["300", "400", "500", "700"],
@@ -20,7 +22,9 @@ const roboto = Roboto({
 export default function RootLayout({ children }: PropsWithChildren) {
   return (
     <html lang="sv" suppressHydrationWarning>
-      <Head />
+      <head>
+        <AdSense />
+      </head>
       <body
         className={twMerge(
           roboto.className,
@@ -33,6 +37,8 @@ export default function RootLayout({ children }: PropsWithChildren) {
           <Footer />
         </ThemeProvider>
       </body>
+      <Twittr />
+      <GA />
     </html>
   );
 }

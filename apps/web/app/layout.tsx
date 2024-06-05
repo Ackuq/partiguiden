@@ -5,7 +5,7 @@ import colors from "tailwindcss/colors";
 
 import Header from "@components/header/header";
 import { ThemeProvider } from "@components/providers/theme-provider";
-import { AdSense } from "@components/scripts/Adsense";
+import { AdSense } from "@components/scripts/AdSense";
 import { GA } from "@components/scripts/GA";
 import { Twittr } from "@components/scripts/Twittr";
 

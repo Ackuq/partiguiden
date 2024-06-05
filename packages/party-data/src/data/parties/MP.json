@@ -736,29 +736,26 @@
   },
   "https://www.mp.se/politik/tid-att-leva/": {
     "opinions": [
-      "sänka normalarbetstiden,",
-      "göra det lättare att påverka sin arbetstid och sina arbetsvillkor,",
-      "ge möjlighet att vara ledig från jobbet för utvecklingstid med ersättning."
+      "Sänka normalarbetstiden.",
+      "Göra det lättare att påverka sin arbetstid och sina arbetsvillkor."
     ],
     "title": "Tid att leva",
     "url": "https://www.mp.se/politik/tid-att-leva/",
-    "fetchDate": "2023-09-17T17:52:36.706Z",
+    "fetchDate": "2024-06-05T06:24:54.983Z",
     "party": "MP",
     "subject": "vard-och-omsorg"
   },
   "https://www.mp.se/politik/trafik/": {
     "opinions": [
-      "förbättra möjligheten att cykla och resa med kollektivtrafik",
-      "minska biltrafiken, framförallt i de stora städerna",
-      "fasa ut nyförsäljning av bensin- och dieseldrivna bilar senast 2025",
-      "att den sista droppen fossil bensin säljs i Sverige senast år 2030",
-      "​​minska flygets klimatpåverkan, höj flygskatten",
-      "rusta upp och bygga ut järnvägen i Sverige och EU",
-      "flytta mer gods från lastbil och bil till tåg och sjöfart"
+      "Höja flygskatten för minskade utsläpp och fördela pengar till järnvägen.",
+      "Sälj statens andel i SAS.",
+      "Flytta mer gods från vägtrafik till tåg och sjöfart",
+      "Minska antalet onödiga transporter.",
+      "Främja utvecklingen för elflyg och göra sjöfarten fossilfri."
     ],
     "title": "Trafik",
     "url": "https://www.mp.se/politik/trafik/",
-    "fetchDate": "2023-09-17T17:52:37.282Z",
+    "fetchDate": "2024-06-05T06:24:55.416Z",
     "party": "MP",
     "subject": "infrastruktur-och-trafik"
   },

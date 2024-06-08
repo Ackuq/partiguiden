@@ -13,9 +13,12 @@
     "./writer": "./src/writer.ts",
     "./types": "./src/types.ts"
   },
+  "dependencies": {
+    "prettier": "3.3.1"
+  },
   "devDependencies": {
     "@inquirer/prompts": "5.0.5",
     "@types/node": "20.14.2",
-    "tsx": "4.13.0"
+    "tsx": "4.14.0"
   }
 }

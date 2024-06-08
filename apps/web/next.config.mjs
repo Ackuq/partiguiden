@@ -23,6 +23,13 @@ let moduleExports = withBundleAnalyzer({
       },
     ],
   },
+  webpack: function (config) {
+    // Remove once the `Critical dependency: the request of a dependency is an expression` warning is fixed
+    const ignoreRule = { module: /@opentelemetry\/instrumentation/ };
+    config.ignoreWarnings = config.ignoreWarnings || [];
+    config.ignoreWarnings.push(ignoreRule);
+    return config;
+  },
 });
 
 /**

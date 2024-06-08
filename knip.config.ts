@@ -11,14 +11,12 @@ const config: KnipConfig = {
       // Additional entry points
       entry: ["next-sitemap.config.js"],
       ignore: ["config/**/*"],
-      ignoreDependencies: ["request", "encoding"],
       tailwind: {
         project: ["lib/colors/**/*"],
       },
     },
     "packages/party-data": {
       entry: ["scripts/cli.ts"],
-      ignoreDependencies: ["prettier"],
     },
     "actions/update-standpoints": {
       ignore: ["dist/**/*"],

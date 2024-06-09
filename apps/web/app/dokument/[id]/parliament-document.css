@@ -466,19 +466,19 @@
       font-size: 9.5pt;
     }
     .parliament-R1 {
-      @apply mb-4 text-lg;
+      @apply mb-4 text-xl font-bold;
     }
     .parliament-R1bilaga {
-      @apply mb-4 text-lg;
+      @apply mb-4 text-xl font-bold;
     }
     .parliament-R2 {
-      @apply mt-4 text-sm;
+      @apply mt-4 text-xl font-medium;
     }
     .parliament-R3 {
-      @apply mt-2 text-sm;
+      @apply mt-4 text-xl font-medium;
     }
     .parliament-R4 {
-      @apply mt-1 text-sm;
+      @apply mt-2 text-lg font-medium;
     }
     .parliament-R5 {
       @apply mt-1 text-sm;
@@ -847,115 +847,73 @@
       @apply text-teal-800 dark:text-teal-500;
     }
     span.parliament-KommentarerChar {
-      font-family: "Verdana";
-      font-size: 10pt;
+      @apply text-sm;
     }
     span.parliament-NormalkursivChar {
-      font-family: "Verdana";
-      font-size: 9.5pt;
-      font-style: italic;
+      @apply text-sm italic;
     }
     span.parliament-NormaltindragChar {
-      font-family: "Verdana";
-      font-size: 9.5pt;
+      @apply text-sm;
     }
     span.parliament-OrdfrandenChar {
-      font-family: "Verdana";
-      font-size: 9.5pt;
-      font-style: italic;
+      @apply text-sm italic;
     }
     span.parliament-OrtochDatumChar {
-      font-family: "Verdana";
-      font-size: 9.5pt;
+      @apply text-sm;
     }
     span.parliament-PlaceholderText {
-      color: #808080;
+      @apply text-slate-600 dark:text-slate-400;
     }
     span.parliament-PVgnarChar {
-      font-family: "Verdana";
-      font-size: 9.5pt;
+      @apply text-sm;
     }
     span.parliament-ReservationshnvisningChar {
-      font-family: "Verdana";
-      font-size: 9.5pt;
-      font-style: italic;
+      @apply text-sm italic;
     }
     span.parliament-Rubrik1Char {
-      font-family: "Verdana";
-      font-size: 16pt;
+      @apply text-xl;
     }
     span.parliament-Rubrik1DokumentinformationChar {
-      font-family: "Verdana";
-      font-size: 16pt;
+      @apply text-xl;
     }
     span.parliament-Rubrik2Char {
-      font-family: "Verdana";
-      font-size: 13.5pt;
+      @apply text-lg;
     }
     span.parliament-Rubrik3Char {
-      font-family: "Verdana";
-      font-size: 10.5pt;
-      font-weight: bold;
+      @apply text-sm;
     }
     span.parliament-Rubrik4Char {
-      font-family: "Verdana";
-      font-size: 10.5pt;
-      font-style: italic;
-      color: #000000;
+      @apply text-sm italic;
     }
     span.parliament-Rubrik5Char {
-      font-family: "Verdana";
-      font-size: 9.5pt;
-      font-weight: bold;
+      @apply text-sm font-bold;
     }
     span.parliament-Rubrik6Char {
-      font-family: "Verdana";
-      font-size: 9.5pt;
-      font-style: italic;
-      color: #000000;
+      @apply text-sm italic;
     }
     span.parliament-Rubrik7Char {
-      font-family: "Verdana";
-      font-size: 9.5pt;
-      font-style: italic;
-      color: #243f60;
+      @apply text-sm italic;
     }
     span.parliament-Rubrik8Char {
-      font-family: "Verdana";
-      font-size: 9pt;
-      color: #272727;
+      @apply text-sm;
     }
     span.parliament-Rubrik9Char {
-      font-family: "Verdana";
-      font-size: 9pt;
-      font-style: italic;
-      color: #272727;
+      @apply text-sm italic;
     }
     span.parliament-RubrikChar {
-      font-family: "Verdana";
-      font-size: 20pt;
-      letter-spacing: -0.5pt;
+      @apply text-2xl;
     }
     span.parliament-SidfotChar {
-      font-family: "Verdana";
-      font-size: 9.5pt;
+      @apply text-sm;
     }
     span.parliament-SidhuvudChar {
-      font-family: "Verdana";
-      font-size: 7.5pt;
-      font-variant: small-caps;
+      @apply text-sm;
     }
     span.parliament-Tabell-Upphjttecken {
-      font-family: "Verdana";
-      font-variant: normal;
-      text-decoration: none;
-      text-transform: none;
-      vertical-align: super;
-      display: inline;
+      @apply inline transform-none align-super no-underline;
     }
     span.parliament-VapenChar {
-      font-family: "Verdana";
-      font-size: 16pt;
+      @apply text-xl;
     }
     span.parliament-tBilagaJA {
       @apply text-black dark:text-white;

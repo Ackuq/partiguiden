@@ -183,7 +183,6 @@
     page-break-inside: avoid;
     page-break-after: avoid;
     line-height: 8pt;
-
     font-size: 8pt;
     font-weight: normal;
     font-style: italic;
@@ -191,11 +190,9 @@
   .DokumentRubrik {
     margin-top: 6pt;
     margin-bottom: 24pt;
-    text-align: left;
-    line-height: normal;
     border-bottom: 0.75pt solid #000000;
     padding-bottom: 4pt;
-    font-size: 18pt;
+    font-size: 24px;
   }
   .Dokumentbeteckning {
     font-size: 16px;
@@ -1038,10 +1035,6 @@
     font-weight: bold;
     font-style: normal;
   }
-  span.Hyperlink {
-    text-decoration: none;
-    color: #000000;
-  }
   span.KommentarerChar {
     font-size: 10pt;
   }
@@ -1058,9 +1051,6 @@
   }
   span.OrtochDatumChar {
     font-size: 9.5pt;
-  }
-  span.PlaceholderText {
-    color: #808080;
   }
   span.PVgnarChar {
     font-size: 9.5pt;
@@ -1131,14 +1121,36 @@
   span.VapenChar {
     font-size: 16pt;
   }
-  span.tBilagaJA {
-    color: #000000;
+
+  /*
+   * Colors
+   */
+  span.PlaceholderText {
+    color: #808080;
   }
-  span.tSidrubrikJA {
-    color: #000000;
+  @media (prefers-color-scheme: dark) {
+    span.Hyperlink {
+      /* TODO: Use teal color from TW */
+      color: #ffffff;
+    }
+    span.tBilagaJA {
+      color: #ffffff;
+    }
+    span.tSidrubrikJA {
+      color: #ffffff;
+    }
   }
-  .PlainTable1 {
-  }
-  .TableGrid {
+
+  @media (prefers-color-scheme: light) {
+    span.Hyperlink {
+      /* TODO: Use teal color from TW */
+      color: #000000;
+    }
+    span.tBilagaJA {
+      color: #000000;
+    }
+    span.tSidrubrikJA {
+      color: #000000;
+    }
   }
 }

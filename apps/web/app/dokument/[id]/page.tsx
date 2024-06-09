@@ -6,6 +6,8 @@ import SocialMediaShare from "@components/common/social-media-share";
 import getDocumentHtml from "@lib/api/documents/get-document-html";
 import { getDocumentJson } from "@lib/api/documents/get-document-json";
 
+import "./parliament-document.css";
+
 interface Props {
   params: {
     id: string;
@@ -27,6 +29,7 @@ export default async function Document({ params: { id } }: Props) {
         <SocialMediaShare title={`${data.id}: ${data.title}`} />
         <div
           dangerouslySetInnerHTML={{ __html: html }}
+          id="document-content"
           className={twMerge(
             "dark:[&_*]:!border-slate-50 dark:[&_*]:!text-slate-50",
           )}

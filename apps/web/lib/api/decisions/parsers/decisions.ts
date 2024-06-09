@@ -13,7 +13,7 @@ async function parseDecision(data: DocumentListEntry): Promise<Decision> {
   const {
     titel: title,
     organ,
-    id,
+    dok_id: id,
     rm: session,
     beteckning: denomination,
     notis: paragraph,

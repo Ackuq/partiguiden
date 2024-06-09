@@ -60,11 +60,11 @@ export default async function Vote({ params: { id, bet } }: Props) {
       <Container>
         <BreadcrumbsSocialMediaShare
           breadcrumbsProps={{
-            current: `${id} förslagspunk ${betNumber}`,
+            current: `${vote.id} förslagspunkt ${betNumber}`,
             links: [{ href: routes.votes, title: "Voteringar" }],
           }}
           socialMediaProps={{
-            title: `${id} förslagspunkt ${betNumber}`,
+            title: `${vote.id} förslagspunkt ${betNumber}`,
           }}
         />
         <Card className="my-4 flex flex-col gap-2">
@@ -105,8 +105,9 @@ export default async function Vote({ params: { id, bet } }: Props) {
 }
 
 export function generateMetadata({ params: { id, bet } }: Props) {
+  const urlDecodedId = decodeURIComponent(id);
   return {
-    title: `${id} förslagpunkt ${bet} | Votering | Partiguiden`,
-    description: `Hur har partiernat röstat i voteringen ${id} förslagspunkt ${bet}`,
+    title: `${urlDecodedId} förslagpunkt ${bet} | Votering | Partiguiden`,
+    description: `Hur har partiernat röstat i voteringen ${urlDecodedId} förslagspunkt ${bet}`,
   };
 }

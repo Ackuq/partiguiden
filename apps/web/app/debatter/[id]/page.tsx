@@ -26,14 +26,14 @@ export default async function DebatePage({ params: { id } }: Props) {
 
   return (
     <main>
-      <PageTitle>Debatt angående {id}</PageTitle>
+      <PageTitle>Debatt angående {debate.id}</PageTitle>
       <Container>
         <BreadcrumbsSocialMediaShare
           breadcrumbsProps={{
             links: [{ href: routes.debates, title: "Debatter" }],
-            current: id,
+            current: debate.id,
           }}
-          socialMediaProps={{ title: `Debatt ${id}` }}
+          socialMediaProps={{ title: `Debatt ${debate.id}` }}
         />
         <ResponsiveAd />
         <Card className="my-4 flex flex-col gap-4">
@@ -77,8 +77,9 @@ export default async function DebatePage({ params: { id } }: Props) {
 export const runtime = "edge";
 
 export function generateMetadata({ params: { id } }: Props) {
+  const urlDecodedId = decodeURIComponent(id);
   return {
-    title: `${id} | Debatt | Partiguiden`,
-    description: `Här kan du ta reda på information om debatt ${id}.`,
+    title: `${urlDecodedId} | Debatt | Partiguiden`,
+    description: `Här kan du ta reda på information om debatt ${urlDecodedId}.`,
   };
 }

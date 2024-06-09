@@ -16,11 +16,11 @@ export default async function Document({ params: { id } }: Props) {
 
   return (
     <main>
-      <PageTitle>Dokument {id}</PageTitle>
+      <PageTitle>Dokument {document.id}</PageTitle>
       <Container>
-        <SocialMediaShare title={`Dokument ${id}`} />
+        <SocialMediaShare title={`Dokument ${document.id}`} />
         <div
-          dangerouslySetInnerHTML={{ __html: document }}
+          dangerouslySetInnerHTML={{ __html: document.html }}
           className={twMerge(
             "dark:[&_*]:!border-slate-50 dark:[&_*]:!text-slate-50",
           )}
@@ -33,7 +33,8 @@ export default async function Document({ params: { id } }: Props) {
 export const runtime = "edge";
 
 export function generateMetadata({ params: { id } }: Props) {
+  const idDecoded = decodeURIComponent(id);
   return {
-    title: `${id} | Dokument | Partiguiden`,
+    title: `${idDecoded} | Dokument | Partiguiden`,
   };
 }

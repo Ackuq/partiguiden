@@ -18,7 +18,7 @@ export default function parseVote(
   const {
     dokumentstatus: {
       dokutskottsforslag,
-      dokument: { organ },
+      dokument: { dok_id: document_id, organ },
       dokreferens,
       dokuppgift,
       dokbilaga,
@@ -51,6 +51,7 @@ export default function parseVote(
   });
 
   return {
+    id: document_id,
     title: title?.text ?? "",
     description: description?.text ?? "",
     committee: getCommittee(organ),

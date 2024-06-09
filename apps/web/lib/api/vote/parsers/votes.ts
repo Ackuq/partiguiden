@@ -11,7 +11,7 @@ import titleTrim from "../utils/title-trim";
 async function parseVote(
   data: DocumentListEntry,
 ): Promise<VoteListEntry | undefined> {
-  const { beteckning: denomination, id } = data;
+  const { beteckning: denomination, dok_id: id } = data;
   const title: string = titleTrim(data.sokdata.titel);
   const proposition = parseInt(data.tempbeteckning, 10);
 

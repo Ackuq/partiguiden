@@ -1,9 +1,18 @@
 import { PARLIAMENT_BASE_URL } from "@lib/constants";
 
-export default async function getDocumentHtml(id: string): Promise<string> {
+interface DocumentHTML {
+  id: string;
+  html: string;
+}
+
+export default async function getDocumentHtml(
+  id: string,
+): Promise<DocumentHTML> {
   const response = await fetch(`${PARLIAMENT_BASE_URL}/dokument/${id}`, {
     cache: "no-store",
   });
 
-  return response.text();
+  const urlDecodedId = decodeURIComponent(id);
+
+  return { id: urlDecodedId, html: await response.text() };
 }

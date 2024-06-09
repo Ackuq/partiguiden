@@ -1,7 +1,10 @@
-#document-content {
+@tailwind components;
+
+/* #document-content { */
+@layer components {
   /*
-   * Heading styles
-   */
+     * Heading styles
+     */
   .Heading7 {
     margin-top: 2pt;
     margin-bottom: 0pt;
@@ -9,7 +12,6 @@
     page-break-inside: avoid;
     page-break-after: avoid;
     line-height: 12.5pt;
-
     font-size: 9.5pt;
     font-weight: normal;
     font-style: italic;
@@ -43,16 +45,6 @@
   /*
    * Paragraph styles
    */
-  .Avsnittsrubrik {
-    margin-top: 0pt;
-    margin-bottom: 27.7pt;
-    text-align: left;
-    page-break-before: always;
-    page-break-after: avoid;
-    line-height: normal;
-
-    font-size: 16pt;
-  }
   .Avvikandemeningrubrik {
     margin-top: 0pt;
     margin-bottom: 3.1pt;
@@ -187,16 +179,6 @@
     font-weight: normal;
     font-style: italic;
   }
-  .DokumentRubrik {
-    margin-top: 6pt;
-    margin-bottom: 24pt;
-    border-bottom: 0.75pt solid #000000;
-    padding-bottom: 4pt;
-    font-size: 24px;
-  }
-  .Dokumentbeteckning {
-    font-size: 16px;
-  }
   .Fluglort {
     margin-top: 0.1pt;
     margin-bottom: 0pt;
@@ -288,19 +270,8 @@
     margin-bottom: 0pt;
     text-align: justify;
     line-height: normal;
-
-    font-size: 7.5pt;
     font-variant: small-caps;
-  }
-  .Innehllsfrteckning {
-    margin-top: 0pt;
-    margin-bottom: 17.7pt;
-    text-align: left;
-    page-break-before: always;
-    page-break-after: auto;
-    line-height: normal;
-
-    font-size: 16pt;
+    @apply text-xs;
   }
   .Kanslikommentar {
     margin-top: 3.1pt;
@@ -356,112 +327,7 @@
     font-size: 9.5pt;
     font-style: italic;
   }
-  .Mellanrum {
-    margin-top: 0pt;
-    margin-bottom: 0pt;
-    text-align: left;
-    page-break-before: auto;
-    page-break-after: auto;
-    line-height: 1pt;
-    widows: 0;
-    orphans: 0;
 
-    font-size: 1pt;
-    font-variant: small-caps;
-    text-decoration: none;
-    color: #ffffff;
-  }
-  .NormalIndent {
-    margin-top: 0pt;
-    margin-bottom: 0pt;
-    text-indent: 11.35pt;
-    text-align: justify;
-    line-height: 12.5pt;
-
-    font-size: 9.5pt;
-  }
-  .Normalinskjuten {
-    margin-top: 0pt;
-    margin-left: 22.1pt;
-    margin-bottom: 0pt;
-    text-align: justify;
-    line-height: 12.5pt;
-
-    font-size: 9.5pt;
-  }
-  .Normalinskjutenindrag {
-    margin-top: 0pt;
-    margin-left: 22.1pt;
-    margin-bottom: 0pt;
-    text-indent: 11.35pt;
-    text-align: justify;
-    line-height: 12.5pt;
-
-    font-size: 9.5pt;
-  }
-  .Normalinskjutenkursiv {
-    margin-top: 6pt;
-    margin-bottom: 0pt;
-    line-height: normal;
-
-    font-size: 10pt;
-    font-style: italic;
-  }
-  .Normalkursiv {
-    margin-top: 3.1pt;
-    margin-bottom: 0pt;
-    text-align: left;
-    line-height: 12.5pt;
-
-    font-size: 9.5pt;
-    font-style: italic;
-  }
-  .Normalruta {
-    margin: 3.1pt 5.65pt 0pt;
-    text-align: justify;
-    page-break-inside: avoid;
-    page-break-after: avoid;
-    line-height: 12.5pt;
-    border: 0.75pt solid #000000;
-    padding: 4pt;
-
-    font-size: 10.5pt;
-    -aw-border: 0.5pt single;
-  }
-  .Normalrutafet {
-    margin: 3.1pt 5.65pt 0pt;
-    text-align: justify;
-    page-break-inside: avoid;
-    page-break-after: avoid;
-    line-height: 12.5pt;
-    border: 0.75pt solid #000000;
-    padding: 4pt;
-
-    font-size: 10.5pt;
-    font-weight: bold;
-    -aw-border: 0.5pt single;
-  }
-  .Normalrutaindrag {
-    margin: 0pt 5.65pt;
-    text-indent: 11.35pt;
-    text-align: justify;
-    page-break-inside: avoid;
-    page-break-after: avoid;
-    line-height: 12.5pt;
-    border: 0.75pt solid #000000;
-    padding: 4pt;
-
-    font-size: 10.5pt;
-    -aw-border: 0.5pt single;
-  }
-  .Normalutanluftfre {
-    margin-top: 0pt;
-    margin-bottom: 0pt;
-    text-align: justify;
-    line-height: 12.5pt;
-
-    font-size: 9.5pt;
-  }
   .NormalNoll {
     margin-top: 0pt;
     margin-bottom: 3.1pt;
@@ -559,82 +425,6 @@
 
     font-size: 9.5pt;
   }
-  .R1 {
-    margin-top: 3.1pt;
-    margin-bottom: 12pt;
-    text-align: left;
-    page-break-after: avoid;
-    line-height: 12.5pt;
-
-    font-size: 16pt;
-  }
-  .R1bilaga {
-    margin-top: 3.1pt;
-    margin-bottom: 12pt;
-    text-align: left;
-    page-break-after: auto;
-    line-height: 12.5pt;
-
-    font-size: 16pt;
-  }
-  .R2 {
-    margin-top: 20pt;
-    margin-bottom: 6pt;
-    text-align: left;
-    page-break-inside: avoid;
-    page-break-after: avoid;
-    line-height: 12.5pt;
-
-    font-size: 13.5pt;
-  }
-  .R3 {
-    margin-top: 20pt;
-    margin-bottom: 3.1pt;
-    text-align: left;
-    page-break-inside: avoid;
-    page-break-after: avoid;
-    line-height: 12.5pt;
-
-    font-size: 10.5pt;
-    font-weight: bold;
-  }
-  .R4 {
-    margin-top: 15pt;
-    margin-bottom: 3.1pt;
-    text-align: left;
-    page-break-inside: avoid;
-    page-break-after: avoid;
-    line-height: 12.5pt;
-
-    font-size: 10.5pt;
-    font-weight: normal;
-    font-style: italic;
-    color: #000000;
-  }
-  .R5 {
-    margin-top: 6.25pt;
-    margin-bottom: 0pt;
-    text-align: left;
-    page-break-inside: avoid;
-    page-break-after: avoid;
-    line-height: 12.5pt;
-
-    font-size: 9.5pt;
-    font-weight: bold;
-  }
-  .R6 {
-    margin-top: 6.25pt;
-    margin-bottom: 0pt;
-    text-align: left;
-    page-break-inside: avoid;
-    page-break-after: avoid;
-    line-height: 12.5pt;
-
-    font-size: 9.5pt;
-    font-weight: normal;
-    font-style: italic;
-    color: #000000;
-  }
   .Reservationshnvisning {
     margin-top: 0pt;
     margin-bottom: 8pt;
@@ -654,16 +444,6 @@
 
     font-size: 10.5pt;
     font-weight: bold;
-  }
-  .Rubrik1Dokumentinformation {
-    margin-top: 0pt;
-    margin-bottom: 0pt;
-    text-align: left;
-    page-break-inside: avoid;
-    page-break-after: avoid;
-    line-height: 12.5pt;
-
-    font-size: 16pt;
   }
   .Rubrik1bilaga {
     margin-top: 0pt;
@@ -742,15 +522,6 @@
     font-size: 10.5pt;
     font-weight: bold;
   }
-  .Sammanfattning {
-    margin-top: 3.1pt;
-    margin-bottom: 12pt;
-    text-align: left;
-    page-break-after: auto;
-    line-height: 12.5pt;
-
-    font-size: 16pt;
-  }
   .Sidhuvudhgerstlld {
     margin-top: 0pt;
     margin-bottom: 0pt;
@@ -787,79 +558,6 @@
 
     font-size: 10.5pt;
     font-weight: bold;
-  }
-  .TOC1 {
-    margin-top: 0pt;
-    margin-right: 28.35pt;
-    margin-bottom: 0pt;
-    text-align: left;
-    line-height: normal;
-
-    font-size: 9.5pt;
-  }
-  .TOC2 {
-    margin: 0pt 28.35pt 0pt 5.65pt;
-    text-align: left;
-    line-height: normal;
-
-    font-size: 9.5pt;
-  }
-  .TOC3 {
-    margin: 0pt 28.35pt 0pt 11.35pt;
-    text-align: left;
-    line-height: normal;
-
-    font-size: 9.5pt;
-  }
-  .TOC4 {
-    margin: 0pt 28.35pt 0pt 17pt;
-    text-align: left;
-    line-height: normal;
-
-    font-size: 9.5pt;
-  }
-  .TOC5 {
-    margin: 0pt 28.35pt 0pt 22.7pt;
-    text-align: left;
-    line-height: normal;
-
-    font-size: 9.5pt;
-  }
-  .TOC6 {
-    margin-top: 0pt;
-    margin-left: 47.65pt;
-    margin-bottom: 0pt;
-    text-align: left;
-    line-height: normal;
-
-    font-size: 9.5pt;
-  }
-  .TOC7 {
-    margin-top: 0pt;
-    margin-right: 28.35pt;
-    margin-bottom: 0pt;
-    text-align: left;
-    line-height: normal;
-
-    font-size: 9.5pt;
-  }
-  .TOC8 {
-    margin-top: 0pt;
-    margin-right: 28.35pt;
-    margin-bottom: 0pt;
-    text-align: left;
-    line-height: normal;
-
-    font-size: 9.5pt;
-  }
-  .TOC9 {
-    margin-top: 0pt;
-    margin-left: 8.5pt;
-    margin-bottom: 0pt;
-    text-align: left;
-    line-height: normal;
-
-    font-size: 9.5pt;
   }
   .TOCHeading {
     margin-top: 3.1pt;
@@ -1128,29 +826,5 @@
   span.PlaceholderText {
     color: #808080;
   }
-  @media (prefers-color-scheme: dark) {
-    span.Hyperlink {
-      /* TODO: Use teal color from TW */
-      color: #ffffff;
-    }
-    span.tBilagaJA {
-      color: #ffffff;
-    }
-    span.tSidrubrikJA {
-      color: #ffffff;
-    }
-  }
-
-  @media (prefers-color-scheme: light) {
-    span.Hyperlink {
-      /* TODO: Use teal color from TW */
-      color: #000000;
-    }
-    span.tBilagaJA {
-      color: #000000;
-    }
-    span.tSidrubrikJA {
-      color: #000000;
-    }
-  }
 }
+/* } */

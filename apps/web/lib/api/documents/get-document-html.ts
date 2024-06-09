@@ -1,6 +1,7 @@
 import * as cheerio from "cheerio";
 
 import { PARLIAMENT_BASE_URL } from "@lib/constants";
+import { addStylesToDocument } from "@lib/styles/document";
 
 export default async function getDocumentHtml(id: string): Promise<string> {
   const response = await fetch(`${PARLIAMENT_BASE_URL}/dokument/${id}`, {
@@ -22,6 +23,21 @@ export default async function getDocumentHtml(id: string): Promise<string> {
       $(element).attr("src", src.replace("http://", "https://"));
     }
   });
+  // Transform TOC `Bilaga [number]<br>[title]` to `Bilaga [number]: [title]`
+  $('[class^="TOC"]').each((_, element) => {
+    const text = $(element).text();
+    const match = text.match(/Bilaga (\d+)(.+)/);
+    if (match) {
+      // Remove the redundant elements
+      $(element).children("span").remove();
+      $(element).children("br").remove();
+      const linkText = $(element).children("a").children("span");
+      // Replace the text with the new format
+      $(linkText).text(`Bilaga ${match[1]}: ${match[2]}`);
+    }
+  });
+
+  addStylesToDocument($);
 
   return $.html();
 }

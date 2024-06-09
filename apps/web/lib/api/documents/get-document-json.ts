@@ -10,7 +10,6 @@ export const getDocumentJson = async (id: string) => {
       cache: "force-cache",
     },
   );
-  console.log(`https://data.riksdagen.se/dokument/${id}.json`);
 
   const data = await body<DocumentStatus>(response);
 

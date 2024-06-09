@@ -16,10 +16,16 @@ export default function Statement({ statement, speaker, isSender }: Props) {
     <li
       className={twMerge("flex gap-[1.125rem]", isSender && "flex-row-reverse")}
     >
-      <div>
+      <div
+        className={twMerge(
+          "flex flex-col",
+          "ml-auto",
+          isSender && "ml-0 mr-auto",
+        )}
+      >
         <div
           className={twMerge(
-            "relative rounded bg-slate-100 p-2 text-sm shadow-sm dark:bg-slate-900",
+            "relative rounded bg-slate-100 p-2 text-sm shadow-sm dark:bg-slate-900 flex-1",
             "[&>p]:my-2",
             "after:absolute  after:top-6 after:h-0 after:w-0 after:border-[1.125rem] after:border-transparent after:content-['']",
             "after:right-[-2.25rem] after:border-l-slate-100 dark:after:border-l-slate-900",

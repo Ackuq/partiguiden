@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import dynamic from "next/dynamic";
 import { notFound } from "next/navigation";
 
@@ -104,10 +105,21 @@ export default async function Vote({ params: { id, bet } }: Props) {
   );
 }
 
-export function generateMetadata({ params: { id, bet } }: Props) {
-  const urlDecodedId = decodeURIComponent(id);
+export async function generateMetadata({
+  params: { id, bet },
+}: Props): Promise<Metadata> {
+  const betNumber = parseInt(bet);
+  if (Number.isNaN(betNumber)) {
+    return notFound();
+  }
+  const vote = await getVote(id, betNumber);
+
+  if (!vote) {
+    return {};
+  }
+
   return {
-    title: `${urlDecodedId} förslagpunkt ${bet} | Votering | Partiguiden`,
-    description: `Hur har partiernat röstat i voteringen ${urlDecodedId} förslagspunkt ${bet}`,
+    title: `${vote.title} förslagspunkt ${bet} | Votering | Partiguiden`,
+    description: `Hur har partiernat röstat i voteringen ${vote.title} förslagspunkt ${bet}? Läs mer om voteringen här.`,
   };
 }

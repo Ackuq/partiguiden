@@ -1,7 +1,6 @@
 import * as cheerio from "cheerio";
 
 import { PARLIAMENT_BASE_URL } from "@lib/constants";
-import { addStylesToDocument } from "@lib/styles/document";
 
 export default async function getDocumentHtml(id: string): Promise<string> {
   const response = await fetch(`${PARLIAMENT_BASE_URL}/dokument/${id}`, {
@@ -37,7 +36,11 @@ export default async function getDocumentHtml(id: string): Promise<string> {
     }
   });
 
-  addStylesToDocument($);
+  // Transform all of the class names to be prefixed with `parliament-`
+  $("[class]").each((_, element) => {
+    const classes = $(element).attr("class")?.split(" ") ?? [];
+    $(element).attr("class", classes.map((c) => `parliament-${c}`).join(" "));
+  });
 
   return $.html();
 }

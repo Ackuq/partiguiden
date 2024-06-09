@@ -4,6 +4,8 @@ import SocialMediaShare from "@components/common/social-media-share";
 import getDocumentHtml from "@lib/api/documents/get-document-html";
 import { getDocumentJson } from "@lib/api/documents/get-document-json";
 
+import "./parliament-document.css";
+
 interface Props {
   params: {
     id: string;

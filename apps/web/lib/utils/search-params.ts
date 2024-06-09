@@ -20,9 +20,9 @@ export function parseStringSearchParam(
     return undefined;
   }
   if (Array.isArray(param)) {
-    return param[0];
+    return decodeURIComponent(param[0]);
   }
-  return param;
+  return decodeURIComponent(param);
 }
 
 export function parseStringArraySearchParam(
@@ -32,9 +32,9 @@ export function parseStringArraySearchParam(
     return [];
   }
   if (Array.isArray(param)) {
-    return param;
+    return param.map(decodeURIComponent);
   }
-  return [param];
+  return [decodeURIComponent(param)];
 }
 
 interface SearchParameters {

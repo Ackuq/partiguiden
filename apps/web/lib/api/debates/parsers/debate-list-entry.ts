@@ -8,7 +8,7 @@ export default async function parseDebateListEntry(
   data: DocumentListEntry,
 ): Promise<DebateListEntry> {
   const {
-    id,
+    dok_id: id,
     titel: title,
     organ,
     undertitel: subtitle,

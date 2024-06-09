@@ -54,7 +54,7 @@ export default function Decision({ decision }: Props) {
         </Link>
         {decision.votesExists && (
           <Link
-            href={`${routes.votes}?sok=${decision.voteSearchTerm}`}
+            href={`${routes.votes}?sok=${encodeURIComponent(decision.voteSearchTerm)}`}
             target="_blank"
           >
             <PrimaryButton>Läs mer om voteringarna</PrimaryButton>

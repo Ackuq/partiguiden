@@ -47,6 +47,7 @@ export interface VoteList {
 }
 
 export interface Vote {
+  id: string;
   title: string;
   description: string;
   committee?: Committee;

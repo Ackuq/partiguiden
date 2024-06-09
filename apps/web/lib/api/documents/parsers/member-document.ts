@@ -10,7 +10,7 @@ export default function parseMemberDocument(
     dokumentnamn: title,
     undertitel: subtitle,
     notisrubrik: altTitle,
-    id,
+    dok_id: id,
   } = document;
 
   const committee = Object.values(Committee).includes(organ as Committee)

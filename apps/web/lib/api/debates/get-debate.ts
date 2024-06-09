@@ -1,5 +1,6 @@
 import { PARLIAMENT_BASE_URL } from "@lib/constants";
 import { body } from "@lib/utils/json";
+import { urlEncodedToParliamentId } from "@lib/utils/parliament-id";
 
 import type { DocumentList } from "../parliament/types";
 import { DEBATE_DOCUMENT_TYPES } from "./constants";
@@ -13,7 +14,7 @@ export default async function getDebate(
     doktyp: DEBATE_DOCUMENT_TYPES,
     webbtv: "1",
     utformat: "json",
-    sok: id,
+    sok: urlEncodedToParliamentId(id),
     sort: "datum",
   });
 

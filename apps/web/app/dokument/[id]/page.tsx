@@ -4,6 +4,7 @@ import Container from "@components/common/container";
 import PageTitle from "@components/common/page-title";
 import SocialMediaShare from "@components/common/social-media-share";
 import getDocumentHtml from "@lib/api/documents/get-document-html";
+import { getDocumentJson } from "@lib/api/documents/get-document-json";
 
 interface Props {
   params: {
@@ -12,15 +13,20 @@ interface Props {
 }
 
 export default async function Document({ params: { id } }: Props) {
-  const document = await getDocumentHtml(id);
+  const [html, data] = await Promise.all([
+    getDocumentHtml(id),
+    getDocumentJson(id),
+  ]);
 
   return (
     <main>
-      <PageTitle>Dokument {document.id}</PageTitle>
+      <PageTitle>
+        {data.id}: {data.title}
+      </PageTitle>
       <Container>
-        <SocialMediaShare title={`Dokument ${document.id}`} />
+        <SocialMediaShare title={`${data.id}: ${data.title}`} />
         <div
-          dangerouslySetInnerHTML={{ __html: document.html }}
+          dangerouslySetInnerHTML={{ __html: html }}
           className={twMerge(
             "dark:[&_*]:!border-slate-50 dark:[&_*]:!text-slate-50",
           )}
@@ -32,9 +38,9 @@ export default async function Document({ params: { id } }: Props) {
 
 export const runtime = "edge";
 
-export function generateMetadata({ params: { id } }: Props) {
-  const idDecoded = decodeURIComponent(id);
+export async function generateMetadata({ params: { id } }: Props) {
+  const data = await getDocumentJson(id);
   return {
-    title: `${idDecoded} | Dokument | Partiguiden`,
+    title: `${data.id}: ${data.title} | Dokument | Partiguiden`,
   };
 }

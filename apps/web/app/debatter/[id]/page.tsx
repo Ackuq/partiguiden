@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
 import { ResponsiveAd } from "@components/ads";
@@ -26,7 +27,7 @@ export default async function DebatePage({ params: { id } }: Props) {
 
   return (
     <main>
-      <PageTitle>Debatt angående {debate.id}</PageTitle>
+      <PageTitle>{debate.title}</PageTitle>
       <Container>
         <BreadcrumbsSocialMediaShare
           breadcrumbsProps={{
@@ -37,13 +38,6 @@ export default async function DebatePage({ params: { id } }: Props) {
         />
         <ResponsiveAd />
         <Card className="my-4 flex flex-col gap-4">
-          <div>
-            <p className="text-xs text-slate-700 dark:text-slate-300 sm:text-sm">
-              {debate.type} {debate.date}
-            </p>
-            <h2 className="text-lg sm:text-xl">{debate.title}</h2>
-          </div>
-          <Divider />
           <iframe
             src={debate.webTVUrl}
             className="mx-auto h-[400px] w-full sm:h-[342px] sm:w-[576px] md:h-[360px] md:w-[640px] 2xl:h-[540px] 2xl:w-[960px]"
@@ -74,12 +68,16 @@ export default async function DebatePage({ params: { id } }: Props) {
   );
 }
 
-export const runtime = "edge";
+export async function generateMetadata({
+  params: { id },
+}: Props): Promise<Metadata> {
+  const debate = await getDebate(id);
+  if (!debate) {
+    return {};
+  }
 
-export function generateMetadata({ params: { id } }: Props) {
-  const urlDecodedId = decodeURIComponent(id);
   return {
-    title: `${urlDecodedId} | Debatt | Partiguiden`,
-    description: `Här kan du ta reda på information om debatt ${urlDecodedId}.`,
+    title: `${debate.title} | Debatt | Partiguiden`,
+    description: `Här kan du ta reda på information om debatt ${debate.id}.`,
   };
 }

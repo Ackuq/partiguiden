@@ -13,7 +13,7 @@ export default async function getVote(
   const response = await fetch(
     `${PARLIAMENT_BASE_URL}/dokumentstatus/${id}.json`,
     {
-      cache: "no-store",
+      cache: "force-cache",
     },
   );
   if (response.status === 404) {

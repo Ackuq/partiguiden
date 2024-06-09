@@ -45,7 +45,9 @@ export default function Documents({ initialDocuments, memberId }: Props) {
   async function changePage(page: number) {
     const response = await fetch(
       `${window.location.origin}${routes.api.memberDocument(memberId, page)}`,
-      { next: { revalidate: 60 * 60 * 24 } },
+      {
+        next: { revalidate: 60 * 60 * 24 },
+      },
     );
     const newDocuments = await body<MemberDocuments>(response);
     setPage(page);

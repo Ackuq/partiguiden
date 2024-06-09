@@ -15,6 +15,11 @@ const getMembers = async (party: MemberParty | "" = "") => {
 
   const response = await fetch(
     `${PARLIAMENT_BASE_URL}/personlista/?${query.toString()}`,
+    {
+      next: {
+        revalidate: 60 * 60 * 24, // Once per day
+      },
+    },
   );
   const data = await body<MemberList>(response);
   const members = data.personlista.person;

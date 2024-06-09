@@ -26,6 +26,11 @@ export default async function getProtocols({
 
   const response = await fetch(
     `${PARLIAMENT_BASE_URL}/dokumentlista/?${query.toString()}`,
+    {
+      next: {
+        revalidate: 60 * 60 * 24, // Once per day
+      },
+    },
   );
 
   if (!response.ok) {

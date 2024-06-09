@@ -23,6 +23,9 @@ let moduleExports = withBundleAnalyzer({
       },
     ],
   },
+  experimental: {
+    reactCompiler: true,
+  },
   webpack: function (config) {
     // Remove once the `Critical dependency: the request of a dependency is an expression` warning is fixed
     const ignoreRule = { module: /@opentelemetry\/instrumentation/ };

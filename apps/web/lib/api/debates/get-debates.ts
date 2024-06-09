@@ -33,6 +33,9 @@ export default async function getDebates({
 
   const response = await fetch(
     `${PARLIAMENT_BASE_URL}/dokumentlista/?${query.toString()}`,
+    {
+      cache: "no-store",
+    },
   );
 
   const data = await body<DocumentList>(response);

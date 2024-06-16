@@ -775,56 +775,55 @@
   },
   "https://www.mp.se/politik/utrikespolitik-och-global-rattvisa/": {
     "opinions": [
-      "att Sverige och EU ska vara en stark internationell röst för jämställdhet, demokrati och mänskliga rättigheter",
-      "att Sverige ska vara en ledande kraft i den globala klimatomställningen och investera resurser i klimat- och miljöarbete i fattiga länder",
-      "att Sverige ska bedriva en rättvis och miljömässigt hållbar handel",
-      "ställa skarpare krav och sätta hårdare villkor i Sveriges och EU:s utrikes- och handelspolitik för att driva på det globala klimatarbetet, bevara biologisk mångfald, främja demokrati och mänskliga rättigheter, stärka djurskyddet och minska de globala klyftorna.",
-      "inte att Sverige ska anpassa sin utrikespolitik efter auktoritära staters krav för kunna att bli medlem i Nato och Sverige ska inte börja sälja vapen till Turkiet.",
-      "utveckla och förstärka Sveriges feministiska utrikes- och utvecklingspolitik.",
-      "att utvecklingssamarbetet ska bidra till att bekämpa fattigdom, förebygga och hantera klimatförändringarna, bevara och skapa fred, förebygga konflikter, bygga upp demokratiska samhällen och motverka korruption."
+      "Att Sverige och EU ska vara en stark internationell röst för jämställdhet, demokrati och mänskliga rättigheter",
+      "Att Sverige ska vara en ledande kraft i den globala klimatomställningen och investera resurser i klimat- och miljöarbete i fattiga länder",
+      "Att Sverige ska bedriva en rättvis och miljömässigt hållbar handel",
+      "Ställa skarpare krav och sätta hårdare villkor i Sveriges och EU:s utrikes- och handelspolitik för att driva på det globala klimatarbetet, bevara biologisk mångfald, främja demokrati och mänskliga rättigheter, stärka djurskyddet och minska de globala klyftorna.",
+      "Återinföra Sveriges feministiska utrikes- och utvecklingspolitik.",
+      "Att utvecklingssamarbetet ska bidra till att bekämpa fattigdom, förebygga och hantera klimatförändringarna, bevara och skapa fred, förebygga konflikter, bygga upp demokratiska samhällen och motverka korruption."
     ],
     "title": "Utrikespolitik",
     "url": "https://www.mp.se/politik/utrikespolitik-och-global-rattvisa/",
-    "fetchDate": "2023-09-17T17:52:38.711Z",
+    "fetchDate": "2024-06-16T06:24:04.906Z",
     "party": "MP",
     "subject": "utrikes--och-bistandsfragor"
   },
   "https://www.mp.se/politik/vapenexport/": {
     "opinions": [
-      "stoppa EU-ländernas vapenexport till diktaturer",
-      "driva fredsfrämjande samarbeten och verka för global nedrustning",
-      "att Sverige och EU är ledande i etiska krav på vår vapenexport",
-      "att Sverige verkar för ökade materielsamarbeten och delade utvecklingskostnader med andra länder",
-      "att Sverige inom EU verkar för en gemensam försvarsmarknad, ökad öppenhet och minskad korruption.",
-      "ratificera konventionen om kärnvapenförbud och arbeta för ett totalförbud mot att använda autonoma vapensystem.",
-      "införa en lag som förbjuder kärnvapen på svensk mark."
+      "Stoppa EU-ländernas vapenexport till diktaturer.",
+      "Driva fredsfrämjande samarbeten och verka för global nedrustning.",
+      "Att Sverige och EU är ledande i etiska krav på vår vapenexport.",
+      "Att Sverige verkar för ökade materielsamarbeten och delade utvecklingskostnader med andra länder.",
+      "Att Sverige inom EU verkar för en gemensam försvarsmarknad, ökad öppenhet och minskad korruption.",
+      "Ratificera konventionen om kärnvapenförbud och arbeta för ett totalförbud mot att använda autonoma vapensystem.",
+      "Införa en lag som förbjuder kärnvapen på svensk mark."
     ],
     "title": "Vapenexport",
     "url": "https://www.mp.se/politik/vapenexport/",
-    "fetchDate": "2023-09-17T17:52:41.297Z",
+    "fetchDate": "2024-06-16T06:24:00.035Z",
     "party": "MP",
     "subject": "utrikes--och-bistandsfragor"
   },
   "https://www.mp.se/politik/vinster-i-valfarden/": {
-    "opinions": ["att vinster i välfärden ska stanna i välfärden."],
+    "opinions": ["Att vinster i välfärden ska stanna i välfärden."],
     "title": "Vinster i välfärden",
     "url": "https://www.mp.se/politik/vinster-i-valfarden/",
-    "fetchDate": "2023-09-17T17:52:36.532Z",
+    "fetchDate": "2024-06-16T06:24:05.305Z",
     "party": "MP",
     "subject": "trygghetssystem-och-valfard"
   },
   "https://www.mp.se/politik/aldrepolitik/": {
     "opinions": [
-      "att äldre får fortsätta bestämma över sitt boende och hur man vill leva sitt liv",
-      "att äldre som behöver hjälp får trygg hjälp efter behov",
-      "se bättre arbetsvillkor för de som jobbar inom äldreomsorgen",
-      "att den som vill, kan och orkar ska ha möjlighet att jobba längre än till 67 år.",
-      "förbättra vård och omsorg för äldre och stärka resurserna till hemsjukvården.",
-      "anpassa äldreboenden, skolor och förskolor för att klara skyfall och hetta."
+      "Att äldre får fortsätta bestämma över sitt boende och hur man vill leva sitt liv.",
+      "Att äldre som behöver hjälp får trygg hjälp efter behov.",
+      "Se bättre arbetsvillkor för de som jobbar inom äldreomsorgen.",
+      "Att den som vill, kan och orkar ska ha möjlighet att jobba längre än till 67 år.",
+      "Förbättra vård och omsorg för äldre och stärka resurserna till hemsjukvården.",
+      "Anpassa äldreboenden, skolor och förskolor för att klara skyfall och hetta."
     ],
     "title": "Äldre",
     "url": "https://www.mp.se/politik/aldrepolitik/",
-    "fetchDate": "2023-09-17T17:52:39.787Z",
+    "fetchDate": "2024-06-16T06:23:59.850Z",
     "party": "MP",
     "subject": "aldrepolitik"
   }

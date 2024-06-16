@@ -30,8 +30,8 @@ importers:
         specifier: 7.34.2
         version: 7.34.2(eslint@9.4.0)
       eslint-plugin-react-hooks:
-        specifier: 5.1.0-rc-6d3110b4d9-20240531
-        version: 5.1.0-rc-6d3110b4d9-20240531(eslint@9.4.0)
+        specifier: 5.1.0-rc.0
+        version: 5.1.0-rc.0(eslint@9.4.0)
       eslint-plugin-turbo:
         specifier: 2.0.3
         version: 2.0.3(eslint@9.4.0)
@@ -2039,8 +2039,8 @@ packages:
       '@typescript-eslint/parser':
         optional: true
 
-  eslint-plugin-react-hooks@5.1.0-rc-6d3110b4d9-20240531:
-    resolution: {integrity: sha512-T+BumDMkARa7Sy4ULDus/IdqDHkwVo6DZqispBSarOa1tV+8rJ5utTM0EZ8Nmr1Zk/vW2YlUC1XBvmEJvgATAg==}
+  eslint-plugin-react-hooks@5.1.0-rc.0:
+    resolution: {integrity: sha512-xBc+mRT2KSyzKm78GyaOFPyF4EnSRfTSmre88Ak8jG1HnpNGEiHETbCuXih8Xl796DryrJej/8IdW4oQ+m5kPg==}
     engines: {node: '>=10'}
     peerDependencies:
       eslint: ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0-0 || ^9.0.0
@@ -6129,7 +6129,7 @@ snapshots:
       - eslint-import-resolver-webpack
       - supports-color
 
-  eslint-plugin-react-hooks@5.1.0-rc-6d3110b4d9-20240531(eslint@9.4.0):
+  eslint-plugin-react-hooks@5.1.0-rc.0(eslint@9.4.0):
     dependencies:
       eslint: 9.4.0
 

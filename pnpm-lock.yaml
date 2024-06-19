@@ -76,8 +76,8 @@ importers:
         specifier: 4.7.0
         version: 4.7.0(encoding@0.1.13)
       '@heroicons/react':
-        specifier: 2.1.3
-        version: 2.1.3(react@18.3.1)
+        specifier: 2.1.4
+        version: 2.1.4(react@18.3.1)
       '@next/third-parties':
         specifier: 14.2.4
         version: 14.2.4(next@14.2.4(@babel/core@7.24.7)(@opentelemetry/api@1.9.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
@@ -168,8 +168,8 @@ importers:
         specifier: 4.3.136
         version: 4.3.136(encoding@0.1.13)
       undici:
-        specifier: 6.19.0
-        version: 6.19.0
+        specifier: 6.19.2
+        version: 6.19.2
     devDependencies:
       '@types/node':
         specifier: 20.14.2
@@ -502,8 +502,8 @@ packages:
     engines: {node: '>=6'}
     hasBin: true
 
-  '@heroicons/react@2.1.3':
-    resolution: {integrity: sha512-fEcPfo4oN345SoqdlCDdSa4ivjaKbk0jTd+oubcgNxnNgAfzysfwWfQUr+51wigiWHQQRiZNd1Ao0M5Y3M2EGg==}
+  '@heroicons/react@2.1.4':
+    resolution: {integrity: sha512-ju0wj0wwrUTMQ2Yceyrma7TKuI3BpSjp+qKqV81K9KGcUHdvTMdiwfRc2cwXBp3uXtKuDZkh0v03nWOQnJFv2Q==}
     peerDependencies:
       react: '>= 16'
 
@@ -3707,8 +3707,8 @@ packages:
     resolution: {integrity: sha512-72RFADWFqKmUb2hmmvNODKL3p9hcB6Gt2DOQMis1SEBaV6a4MH8soBvzg+95CYhCKPFedut2JY9bMfrDl9D23g==}
     engines: {node: '>=14.0'}
 
-  undici@6.19.0:
-    resolution: {integrity: sha512-9gGwbSLgYMjp4r6M5P9bhqhx1E+RyUIHqZE0r7BmrRoqroJUG6xlVu5TXH9DnwmCPLkcaVNrcYtxUE9d3InnyQ==}
+  undici@6.19.2:
+    resolution: {integrity: sha512-JfjKqIauur3Q6biAtHJ564e3bWa8VvT+7cSiOJHFbX4Erv6CLGDpg8z+Fmg/1OI/47RA+GI2QZaF48SSaLvyBA==}
     engines: {node: '>=18.17'}
 
   unescape-js@1.1.4:
@@ -4229,7 +4229,7 @@ snapshots:
       protobufjs: 7.3.0
       yargs: 17.7.2
 
-  '@heroicons/react@2.1.3(react@18.3.1)':
+  '@heroicons/react@2.1.4(react@18.3.1)':
     dependencies:
       react: 18.3.1
 
@@ -7918,7 +7918,7 @@ snapshots:
     dependencies:
       '@fastify/busboy': 2.1.1
 
-  undici@6.19.0: {}
+  undici@6.19.2: {}
 
   unescape-js@1.1.4:
     dependencies:

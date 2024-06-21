@@ -15,7 +15,7 @@
     "undici": "6.19.2"
   },
   "devDependencies": {
-    "@types/node": "20.14.6",
-    "tsx": "4.15.6"
+    "@types/node": "20.14.7",
+    "tsx": "4.15.7"
   }
 }

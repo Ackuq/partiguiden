@@ -10,7 +10,7 @@
     "build": "turbo build",
     "clean": "git clean -xdf node_modules",
     "clean:all": "turbo clean",
-    "lint": "pnpm run lint:eslint && pnpm run lint:tsc",
+    "lint": "pnpm run  '/^lint:.*/'",
     "lint:eslint": "eslint",
     "lint:tsc": "turbo lint:tsc",
     "knip": "knip",
@@ -27,11 +27,11 @@
     "eslint-plugin-react": "7.34.3",
     "eslint-plugin-react-hooks": "5.1.0-rc-6d3110b4d9-20240531",
     "eslint-plugin-turbo": "2.0.4",
-    "knip": "5.22.0",
+    "knip": "5.22.2",
     "prettier": "3.3.2",
     "prettier-plugin-tailwindcss": "0.6.5",
     "turbo": "2.0.4",
-    "typescript": "5.4.5",
+    "typescript": "5.5.2",
     "typescript-eslint": "7.13.1"
   }
 }

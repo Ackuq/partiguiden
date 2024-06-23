@@ -25,14 +25,16 @@ export default async function getDocumentHtml(id: string): Promise<string> {
   // Transform TOC `Bilaga [number]<br>[title]` to `Bilaga [number]: [title]`
   $('[class^="TOC"]').each((_, element) => {
     const text = $(element).text();
-    const match = text.match(/Bilaga (\d+)(.+)/);
+    const match = text.match(/Bilaga(?: (\d+))?(.+)/);
+
     if (match) {
       // Remove the redundant elements
       $(element).children("span").remove();
       $(element).children("br").remove();
       const linkText = $(element).children("a").children("span");
+      const prefix = match[1] ? `Bilaga ${match[1]}: ` : "Bilaga: ";
       // Replace the text with the new format
-      $(linkText).text(`Bilaga ${match[1]}: ${match[2]}`);
+      $(linkText).text(`${prefix}${match[2]}`);
     }
   });
 
@@ -40,6 +42,14 @@ export default async function getDocumentHtml(id: string): Promise<string> {
   $("[class]").each((_, element) => {
     const classes = $(element).attr("class")?.split(" ") ?? [];
     $(element).attr("class", classes.map((c) => `parliament-${c}`).join(" "));
+  });
+
+  // Change spans with only spaces to contain a single thin space
+  $("span").each((_, element) => {
+    const text = $(element).text();
+    if (text.match(/^\s+$/)) {
+      $(element).text("\u2009");
+    }
   });
 
   return $.html();

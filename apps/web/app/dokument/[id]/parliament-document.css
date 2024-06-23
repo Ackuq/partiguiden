@@ -2,6 +2,10 @@
 
 #document-content {
   @layer components {
+    p {
+      @apply text-sm;
+    }
+
     .parliament-Heading7 {
       margin-top: 2pt;
       margin-bottom: 0pt;
@@ -41,7 +45,7 @@
       color: #272727;
     }
     .parliament-Avsnittsrubrik {
-      @apply mb-4 mt-2 text-xl;
+      @apply mb-2 mt-2 text-xl;
     }
     .parliament-Avvikandemeningrubrik {
       margin-top: 0pt;
@@ -63,18 +67,7 @@
       font-size: 8pt;
     }
     .parliament-Bilaga {
-      margin-top: 0pt;
-      margin-bottom: 0pt;
-      text-align: left;
-      page-break-before: always;
-      page-break-after: avoid;
-      line-height: normal;
-      widows: 0;
-      orphans: 0;
-      font-family: "Verdana";
-      font-size: 8pt;
-      font-variant: small-caps;
-      text-decoration: underline;
+      @apply mb-2 mt-2 text-3xl;
     }
     .parliament-Bilagerubrik {
       margin-top: 0pt;
@@ -146,14 +139,7 @@
       font-size: 10pt;
     }
     .parliament-Deltagare {
-      margin-top: 0pt;
-      margin-bottom: 0pt;
-      text-align: justify;
-      page-break-inside: avoid;
-      page-break-after: avoid;
-      line-height: 9.5pt;
-      font-family: "Verdana";
-      font-size: 9.5pt;
+      @apply text-sm leading-tight;
     }
     .parliament-Diagram-Rubrik {
       margin-top: 8pt;
@@ -179,7 +165,7 @@
       font-style: italic;
     }
     .parliament-DokumentRubrik {
-      @apply mb-4 mt-2 border-b-2 border-black text-2xl dark:border-white;
+      @apply mb-2 mt-2 border-b-2 border-black text-2xl dark:border-white;
     }
     .parliament-Dokumentbeteckning {
       @apply text-lg;
@@ -282,7 +268,7 @@
       font-variant: small-caps;
     }
     .parliament-Innehllsfrteckning {
-      @apply mb-4 text-xl;
+      @apply mb-2 text-xl;
     }
     .parliament-Kanslikommentar {
       margin-top: 3.1pt;
@@ -342,7 +328,7 @@
       @apply text-[1px];
     }
     .parliament-NormalIndent {
-      @apply indent-3 text-sm;
+      @apply my-2 indent-3 text-sm;
     }
     .parliament-Normalinskjuten {
       @apply text-sm;
@@ -369,13 +355,7 @@
       @apply text-sm;
     }
     .parliament-NormalNoll {
-      margin-top: 0pt;
-      margin-bottom: 3.1pt;
-      text-align: left;
-      line-height: 12.5pt;
-      font-family: "Verdana";
-      font-size: 10.5pt;
-      font-weight: bold;
+      @apply mr-2 text-base font-bold;
     }
     .parliament-NumlistaTOC {
       margin: 3.1pt 28.35pt 0pt 0pt;
@@ -386,15 +366,7 @@
       font-size: 9.5pt;
     }
     .parliament-Ordfranden {
-      margin-top: 3.1pt;
-      margin-bottom: 22pt;
-      text-align: left;
-      page-break-inside: avoid;
-      page-break-after: avoid;
-      line-height: normal;
-      font-family: "Verdana";
-      font-size: 9.5pt;
-      font-style: italic;
+      @apply mb-2 mt-1 text-sm;
     }
     .parliament-OrtochDatum {
       margin-top: 18pt;
@@ -407,14 +379,7 @@
       font-size: 9.5pt;
     }
     .parliament-Punktlistabomb {
-      margin-top: 6.25pt;
-      margin-left: 14.2pt;
-      margin-bottom: 6.25pt;
-      text-indent: -14.2pt;
-      text-align: justify;
-      line-height: 12.5pt;
-      font-family: "Verdana";
-      font-size: 9.5pt;
+      @apply my-2 ml-2 -indent-2 text-sm;
     }
     .parliament-Punktlistagemener {
       margin-top: 6.25pt;
@@ -427,14 +392,7 @@
       font-size: 9.5pt;
     }
     .parliament-Punktlistalinje {
-      margin-top: 6.25pt;
-      margin-left: 14.2pt;
-      margin-bottom: 6.25pt;
-      text-indent: -14.2pt;
-      text-align: justify;
-      line-height: 12.5pt;
-      font-family: "Verdana";
-      font-size: 9.5pt;
+      @apply my-2 ml-4 -indent-3 text-sm;
     }
     .parliament-Punktlistasiffra {
       margin-top: 6.25pt;
@@ -447,14 +405,7 @@
       font-size: 9.5pt;
     }
     .parliament-PVgnar {
-      margin-top: 3.1pt;
-      margin-bottom: 26pt;
-      text-align: left;
-      page-break-inside: avoid;
-      page-break-after: avoid;
-      line-height: normal;
-      font-family: "Verdana";
-      font-size: 9.5pt;
+      @apply mb-2 mt-1 text-sm;
     }
     .parliament-Quote {
       margin-top: 6.1pt;
@@ -466,16 +417,16 @@
       font-size: 9.5pt;
     }
     .parliament-R1 {
-      @apply mb-4 text-xl font-bold;
+      @apply mb-2 text-xl font-bold;
     }
     .parliament-R1bilaga {
-      @apply mb-4 text-xl font-bold;
+      @apply mb-2 text-xl font-bold;
     }
     .parliament-R2 {
-      @apply mt-4 text-xl font-medium;
+      @apply mt-2 text-xl font-medium;
     }
     .parliament-R3 {
-      @apply mt-4 text-xl font-medium;
+      @apply mt-2 text-xl font-medium;
     }
     .parliament-R4 {
       @apply mt-2 text-lg font-medium;
@@ -810,38 +761,29 @@
       text-decoration: underline;
     }
     span.parliament-BrdtextChar {
-      font-family: "Verdana";
-      font-size: 9.5pt;
+      @apply text-sm;
     }
     span.parliament-BrdtextChar1 {
-      font-family: "Verdana";
-      font-size: 9.5pt;
+      @apply text-sm;
     }
     span.parliament-Brdtextmedindrag2Char {
-      font-family: "Verdana";
-      font-size: 9.5pt;
+      @apply text-sm;
     }
     span.parliament-CitatChar {
-      font-family: "Verdana";
-      font-size: 9.5pt;
+      @apply text-sm;
     }
     span.parliament-DokumentRubrikChar {
       font-family: "Verdana";
       font-size: 18pt;
     }
     span.parliament-FotnotstextChar {
-      font-family: "Verdana";
-      font-size: 8pt;
+      @apply text-xs;
     }
     span.parliament-FotnotstextindragChar {
-      font-family: "Verdana";
-      font-size: 8pt;
+      @apply text-xs;
     }
     span.parliament-FrslagspunktChar {
-      font-family: "Verdana";
-      font-size: 9.5pt;
-      font-weight: bold;
-      font-style: normal;
+      @apply text-sm font-bold;
     }
     span.parliament-Hyperlink {
       @apply text-teal-800 dark:text-teal-500;
@@ -859,7 +801,7 @@
       @apply text-sm italic;
     }
     span.parliament-OrtochDatumChar {
-      @apply text-sm;
+      @apply text-base;
     }
     span.parliament-PlaceholderText {
       @apply text-slate-600 dark:text-slate-400;

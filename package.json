@@ -26,12 +26,12 @@
     "eslint-plugin-import": "2.29.1",
     "eslint-plugin-react": "7.34.3",
     "eslint-plugin-react-hooks": "5.1.0-rc-6d3110b4d9-20240531",
-    "eslint-plugin-turbo": "2.0.4",
-    "knip": "5.22.2",
+    "eslint-plugin-turbo": "2.0.5",
+    "knip": "5.22.3",
     "prettier": "3.3.2",
     "prettier-plugin-tailwindcss": "0.6.5",
-    "turbo": "2.0.4",
+    "turbo": "2.0.5",
     "typescript": "5.5.2",
-    "typescript-eslint": "7.13.1"
+    "typescript-eslint": "7.14.1"
   }
 }

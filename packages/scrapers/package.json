@@ -12,7 +12,7 @@
     "@partiguiden/party-data": "workspace:*",
     "cheerio": "1.0.0-rc.12",
     "pdfjs-dist": "4.4.168",
-    "undici": "6.19.2"
+    "undici": "6.19.4"
   },
   "devDependencies": {
     "@types/node": "20.14.11",

@@ -1,6 +1,7 @@
 "use client";
 
-import React, { useRef } from "react";
+import type React from "react";
+import { useRef } from "react";
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 import TypedJS from "typed.js";

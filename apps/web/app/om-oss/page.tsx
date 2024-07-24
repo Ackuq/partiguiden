@@ -1,5 +1,4 @@
 import { InformationCircleIcon } from "@heroicons/react/24/solid";
-import React from "react";
 
 import { ResponsiveAd } from "@components/ads";
 import { Card } from "@components/common/card";

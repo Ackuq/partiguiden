@@ -1,7 +1,7 @@
 "use client";
 
 import { useTheme } from "next-themes";
-import React, { useState } from "react";
+import { useState } from "react";
 import type { LegendProps } from "recharts";
 import {
   Brush,

@@ -165,8 +165,8 @@ importers:
         specifier: 1.0.0-rc.12
         version: 1.0.0-rc.12
       pdfjs-dist:
-        specifier: 4.4.168
-        version: 4.4.168(encoding@0.1.13)
+        specifier: 4.5.136
+        version: 4.5.136(encoding@0.1.13)
       undici:
         specifier: 6.19.4
         version: 6.19.4
@@ -2840,8 +2840,8 @@ packages:
     resolution: {integrity: sha512-Fl2z/BHvkTNvkuBzYTpTuirHZg6wW9z8+4SND/3mDTEcYbbNKWAy21dz9D3ePNNwrrK8pqZO5vLPZ1hLF6T7XA==}
     engines: {node: '>=6'}
 
-  pdfjs-dist@4.4.168:
-    resolution: {integrity: sha512-MbkAjpwka/dMHaCfQ75RY1FXX3IewBVu6NGZOcxerRFlaBiIkZmUoR0jotX5VUzYZEXAGzSFtknWs5xRKliXPA==}
+  pdfjs-dist@4.5.136:
+    resolution: {integrity: sha512-V1BALcAN/FmxBEShLxoP73PlQZAZtzlaNfRbRhJrKvXzjLC5VaIlBAQUJuWP8iaYUmIdmdLHmt3E2TBglxOm3w==}
     engines: {node: '>=18'}
 
   pg-int8@1.0.1:
@@ -6826,7 +6826,7 @@ snapshots:
   path2d@0.2.1:
     optional: true
 
-  pdfjs-dist@4.4.168(encoding@0.1.13):
+  pdfjs-dist@4.5.136(encoding@0.1.13):
     optionalDependencies:
       canvas: 2.11.2(encoding@0.1.13)
       path2d: 0.2.1

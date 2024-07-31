@@ -222,19 +222,6 @@
     "party": "M",
     "subject": "trygghetssystem-och-valfard"
   },
-  "https://moderaterna.se/var-politik/en-gron-hoger/": {
-    "opinions": [
-      "I ökad utsträckning förebygga och hantera klimatförändringar genom att utöka och effektivisera Sveriges klimatbistånd",
-      "Sverige tydligt och aktivt ska försvara det svenska självbestämmandet över skogen i EU",
-      "Satsa på storskalig infångning och lagring av koldioxid, så kallad bio-CCS. Lagring av koldioxid tjänster bör kunna sälja vidare på en frivilligmarknad",
-      "Satsa på industri- och klimatklivet"
-    ],
-    "title": "En grön höger",
-    "url": "https://moderaterna.se/var-politik/en-gron-hoger/",
-    "fetchDate": "2024-06-02T17:16:21.593Z",
-    "party": "M",
-    "subject": "miljo-och-klimat"
-  },
   "https://moderaterna.se/var-politik/forskning-och-innovation/": {
     "opinions": [
       "Skapa bättre förutsättningar för forskning i världsklass",
@@ -246,19 +233,6 @@
     "fetchDate": "2024-06-02T17:16:19.522Z",
     "party": "M",
     "subject": "utbildning"
-  },
-  "https://moderaterna.se/var-politik/foretagsklimat/": {
-    "opinions": [
-      "Förenkla och förkorta tillståndsprocesser samt minska byråkratin för företagare – politiken ska tydligt styra mot minskad administrativ börda och minskade kostnader",
-      "Möjliggöra för fler företag att kunna använda sig av reglerna för personaloptioner, förenklade 3:12-regler samt forskningsavdrag",
-      "Värna konkurrenskraftiga företagsskatter och kapitalskatter samt stärka kompetensförsörjningen",
-      "Arbeta för att korta myndigheternas handläggningstider"
-    ],
-    "title": "Företagsklimat",
-    "url": "https://moderaterna.se/var-politik/foretagsklimat/",
-    "fetchDate": "2024-06-02T17:16:19.512Z",
-    "party": "M",
-    "subject": "jobb"
   },
   "https://moderaterna.se/var-politik/halso-och-sjukvard-samt-psykiatri/": {
     "opinions": [
@@ -313,31 +287,6 @@
     "fetchDate": "2024-06-02T17:16:22.052Z",
     "party": "M",
     "subject": "aldrepolitik"
-  },
-  "https://moderaterna.se/var-politik/skatt/": {
-    "opinions": [
-      "Jobbskatteavdraget ska fortsätta förstärkas, vilket innebär sänkt skatt för alla som arbetar",
-      "Grundavdraget ska fortsätta förstärkas, vilket innebär sänkt skatt för alla som har arbetat",
-      "Skattebefria sparande upp till 300 000 kronor på ISK.",
-      "Avskaffa skadliga symbolskatter Läs mer om vår politik och vad regeringen gör just nu på området genom att klicka här"
-    ],
-    "title": "Skatt",
-    "url": "https://moderaterna.se/var-politik/skatt/",
-    "fetchDate": "2024-06-02T17:16:20.864Z",
-    "party": "M",
-    "subject": "ekonomi-och-skatter"
-  },
-  "https://moderaterna.se/var-politik/socialforsakringar-och-bidrag/": {
-    "opinions": [
-      "Alla som uppbär försörjningsstöd av arbetsmarknadsskäl ska delta i aktiviteter motsvarande sin arbetsförmåga för att få fullt bidrag",
-      "Rehabiliteringsinsatserna ska vara mer aktiva och ska präglas av tydliga tidsgränser",
-      "Modernisera föräldraförsäkringen för att främja jämställdheten"
-    ],
-    "title": "Socialförsäkringar och bidrag",
-    "url": "https://moderaterna.se/var-politik/socialforsakringar-och-bidrag/",
-    "fetchDate": "2024-06-02T17:16:19.614Z",
-    "party": "M",
-    "subject": "trygghetssystem-och-valfard"
   },
   "https://moderaterna.se/var-politik/valfardsbrottslighet/": {
     "opinions": [

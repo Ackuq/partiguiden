@@ -56,11 +56,13 @@ export default async function parseDebate(
     .for(speechesDocuments.filter((speech) => speech.talare !== "TALMANNEN"))
     .process(async (statement) => {
       if (!protocolId) {
-        return Promise.reject();
+        return Promise.reject(
+          new Error("No protocolId available, cannot find speeches"),
+        );
       }
       const speech = await getSpeech(protocolId, statement.anf_nummer);
       if (!speech) {
-        return Promise.reject();
+        return Promise.reject(new Error("No speech for statement found"));
       }
       return {
         ...speech,

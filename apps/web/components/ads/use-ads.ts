@@ -23,7 +23,7 @@ export default function useAds() {
     }
     try {
       (window.adsbygoogle = window.adsbygoogle || []).push({});
-    } catch (error) {
+    } catch {
       // Ignore error
     }
   }, [pathname, searchParams]);

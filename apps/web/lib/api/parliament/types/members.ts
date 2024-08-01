@@ -52,7 +52,7 @@ export interface MemberTask {
   typ: string;
   from: string;
   tom: string;
-  // eslint-disable-next-line @typescript-eslint/ban-types
+  // eslint-disable-next-line @typescript-eslint/no-empty-object-type
   uppgift: ({} | string)[];
   intressent_id: string;
   hangar_id: string;
@@ -64,7 +64,7 @@ export interface MemberTask {
 
 export interface MemberInformation {
   kod: string;
-  // eslint-disable-next-line @typescript-eslint/ban-types
+  // eslint-disable-next-line @typescript-eslint/no-empty-object-type
   uppgift: ({} | string)[];
   typ: string;
   intressent_id: string;

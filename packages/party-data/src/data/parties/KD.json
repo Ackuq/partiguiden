@@ -881,11 +881,13 @@
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/forsvar": {
     "opinions": [
-      "Sverige ska alltid ha ett starkt försvar. Människans ofullkomlighet gör att vi aldrig på förhand kan veta vad omvärlden har för avsikter för oss. Sverige är värt att kunna försvara. Att garantera medborgarnas säkerhet och att försvara de territoriella gränserna är en av statens viktigaste uppgifter och ett starkt försvar av Sverige innebär också ett starkt försvar av friheten, demokratin och respekten för människovärdet. Det kommer att krävas stora resursförstärkningar för att vi ska ha förmåga att försvara hela Sverige. Kristdemokraterna står därför bakom målet att försvarsanslaget ska uppgå till 2 procent av BNP så snart som möjligt. Vi förespråkar ett svenskt medlemskap i Nato. Detta krävs för att det svenska försvaret ska ha en sådan organisation, omfattning och sammansättning att det kan försvara Sverige, samverka med andra och verka krigsavhållande vid säkerhetspolitiska kriser i närområdet. Ett Natomedlemskap ger Sverige försvarsgarantier som vi inte kan vara utan."
+      "Sverige ska alltid ha ett starkt försvar. Människans ofullkomlighet gör att vi aldrig på förhand kan veta vad omvärlden har för avsikter gällande oss.",
+      "Att garantera medborgarnas säkerhet och att försvara de territoriella gränserna är statens kärnuppgift och ett starkt försvar av Sverige innebär också ett starkt försvar av friheten, demokratin och respekten för människovärdet. Det kommer att krävas mycket omfattande resursförstärkningar för att vi ska ha förmåga att försvara hela Sverige. Kristdemokraterna ser därför att målet om att spendera 2 procent av BNP på försvaret ska vara ett golv, och inte ett tak.",
+      "Kristdemokraterna är varma anhängare av det svenska medlemskapet i Nato, och kämpade länge för att detta skulle bli verklighet innan Sverige anslöts."
     ],
     "title": "Försvar",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/forsvar",
-    "fetchDate": "2023-09-17T17:52:42.817Z",
+    "fetchDate": "2024-08-13T06:27:24.302Z",
     "party": "KD",
     "subject": "forsvar"
   },
@@ -1585,12 +1587,11 @@
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/nato": {
     "opinions": [
-      "Kristdemokraterna förespråkar ett svenskt Natomedlemskap. Detta är något vi har kämpat för länge. Vi kan inte på egen hand trygga vår säkerhet i en situation där våra gränser och intressen hotas av ett militärt angrepp. Säkerhet byggs tillsammans med andra. Nato är den främsta garanten för fred, säkerhet och militär förmåga i vår del av världen. Ett svenskt medlemskap medför att vi fullt ut kan planera, synkronisera och öva tillsammans med våra grannar.Vi har ett bra samarbete med Nato idag. Men bara ett fullvärdigt medlemskap ger Sverige de säkerhetsgarantier som krävs för att kunna försvara vårt land.",
-      ""
+      "Kristdemokraterna är varma anhängare av det svenska Natomedlemskapet, och kämpade länge för att detta skulle bli verklighet innan Sverige anslöts. Säkerhet byggs tillsammans med andra. Nato är den främsta garanten för fred, säkerhet och militär förmåga i vår del av världen, och detta är särskilt avgörande för mindre stater som riskerar att stå ensamma mot aggressiva stormakter. Vi kan inte på egen hand trygga vår säkerhet i en situation där våra gränser och intressen hotas av ett militärt angrepp. Det svenska medlemskapet har medfört att vi fullt ut kan planera, synkronisera och öva tillsammans med våra grannar."
     ],
     "title": "Nato",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/nato",
-    "fetchDate": "2023-09-17T17:52:41.749Z",
+    "fetchDate": "2024-08-13T06:27:21.724Z",
     "party": "KD",
     "subject": "forsvar"
   },
@@ -2147,11 +2148,11 @@
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/sakerhetspolitik": {
     "opinions": [
-      "Inför en alltmer komplex hotbild byggs fred och säkerhet genom samverkan. EU, Nato och FN är nödvändiga komponenter för att bibehålla demokrati och självständighet i Europa. Kristdemokraterna säger ja till EU:s försvarssamarbete om exempelvis gemensamt framtagande av försvarsmateriel och om att förenkla truppförflyttningar – men vi säger nej till en gemensam EU-armé. Istället förespråkar vi ett svenskt medlemskap i Nato. Kristdemokraterna är positiva till ansvarsfulla internationella insatser, som syftar till fred, frihet och mänskliga rättigheter. Vi vill vara med och försvara för våra medmänniskor utomlands."
+      "Inför en alltmer komplex hotbild byggs fred och säkerhet genom samverkan. EU och Nato, samt i vissa fall FN, är avgörande komponenter för att bibehålla demokrati och självständighet i Europa. Kristdemokraterna förespråkar att EU uppgraderar sitt försvarssamarbete genom att införa en försvarskommissionär och ett cyberförsvar samt tar stora steg för att utöka den gemensamma försvarsmaterielproduktionen inom Europa. Detta behov har tydliggjorts i och med det ryska aggressionskriget i Ukraina. Vi säger samtidigt nej till en gemensam EU-armé. Nato är den främsta garanten för Europas försvar och skall så förbli, men EU bör i allt högre utsträckning fylla en kompletterande roll till Nato i syfte att utgöra Natos europeiska ben. Kristdemokraterna är positiva till ansvarsfulla internationella insatser i EU-regi, som syftar till att värna fred, frihet och mänskliga rättigheter."
     ],
     "title": "Säkerhetspolitik",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/sakerhetspolitik",
-    "fetchDate": "2023-09-17T17:52:42.786Z",
+    "fetchDate": "2024-08-13T06:27:26.181Z",
     "party": "KD",
     "subject": "forsvar"
   },
@@ -2277,11 +2278,11 @@
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/utrikespolitik": {
     "opinions": [
-      "Svensk utrikespolitik ska utgå från värderingar. Sverige ska stå upp för och försvara universella värden såsom mänskliga fri- och rättigheter, demokrati och rättsstatens principer för att stärka fred, frihet och välstånd. Kristdemokraterna arbetar för att ge arbetet för mänskliga fri- och rättigheter ökad tyngd inom Sveriges utrikes- och utvecklingspolitiska arbete. Så länge medmänniskor i vår omvärld lever under ofrihet och förtryck, samt lider av fattigdom, svält och svåra sjukdomar, så krävs större ansträngningar. För att främja världsfreden, välståndet och ansvarsfullt förvalta våra gemensamma resurser krävs mer av internationellt samarbete, ex. inom EU, Nato, OSSE och FN."
+      "Svensk utrikespolitik ska utgå från att stå upp för och försvara svenska och västerländska värderingar i en tid när dessa utmanas som mest. Detta inbegriper värden såsom mänskliga fri- och rättigheter, demokrati och rättsstatens principer i syfte att stärka fred, frihet och välstånd över hela världen. Kristdemokraterna arbetar för att ge arbetet för mänskliga fri- och rättigheter ökad tyngd inom Sveriges utrikes- och utvecklingspolitiska arbete. Så länge medmänniskor i vår omvärld lever under ofrihet och förtryck, samt lider av fattigdom, svält och svåra sjukdomar, så krävs större ansträngningar. För att främja världsfreden, välståndet och ansvarsfullt förvalta våra gemensamma resurser krävs mer av internationellt samarbete. Detta kanaliseras i synnerhet genom Sveriges medlemskap i EU och Nato, men även inom internationella forum såsom OSSE och FN."
     ],
     "title": "Utrikespolitik",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/utrikespolitik",
-    "fetchDate": "2023-09-17T17:52:42.108Z",
+    "fetchDate": "2024-08-13T06:27:27.227Z",
     "party": "KD",
     "subject": "utrikes--och-bistandsfragor"
   },

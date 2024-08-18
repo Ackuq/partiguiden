@@ -10,12 +10,13 @@
   },
   "dependencies": {
     "@partiguiden/party-data": "workspace:*",
-    "cheerio": "1.0.0-rc.12",
+    "cheerio": "1.0.0",
     "pdfjs-dist": "4.5.136",
     "undici": "6.19.7"
   },
   "devDependencies": {
     "@types/node": "22.3.0",
+    "domhandler": "5.0.3",
     "tsx": "4.17.0"
   }
 }

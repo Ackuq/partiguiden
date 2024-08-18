@@ -1,5 +1,6 @@
-import type { Cheerio, CheerioAPI, Element } from "cheerio";
+import type { Cheerio, CheerioAPI } from "cheerio";
 import * as cheerio from "cheerio";
+import type { Element } from "domhandler";
 
 import type {
   PartyData,
@@ -112,9 +113,7 @@ export default abstract class Scraper implements ScraperArgs {
 
     const promises = $elements
       .toArray()
-      .map(($element) =>
-        this.getStandpointPage($($element as cheerio.Element)),
-      );
+      .map(($element) => this.getStandpointPage($($element as Element)));
     const result = await Promise.allSettled(promises);
     const failed = result.filter(
       (promiseResult): promiseResult is PromiseRejectedResult =>

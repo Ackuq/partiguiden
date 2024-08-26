@@ -117,6 +117,9 @@ importers:
       tailwind-merge:
         specifier: 2.5.2
         version: 2.5.2
+      tailwindcss:
+        specifier: 3.4.10
+        version: 3.4.10(ts-node@10.9.2(@types/node@22.5.0)(typescript@5.5.4))
       typed.js:
         specifier: 2.1.0
         version: 2.1.0
@@ -139,9 +142,6 @@ importers:
       postcss:
         specifier: 8.4.41
         version: 8.4.41
-      tailwindcss:
-        specifier: 3.4.10
-        version: 3.4.10(ts-node@10.9.2(@types/node@22.5.0)(typescript@5.5.4))
 
   packages/party-data:
     dependencies:

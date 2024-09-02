@@ -37,10 +37,10 @@
   },
   "devDependencies": {
     "@next/bundle-analyzer": "14.2.7",
-    "@types/node": "22.5.1",
-    "@types/react": "18.3.4",
+    "@types/node": "22.5.2",
+    "@types/react": "18.3.5",
     "autoprefixer": "10.4.20",
     "next-sitemap": "4.2.3",
-    "postcss": "8.4.41"
+    "postcss": "8.4.44"
   }
 }

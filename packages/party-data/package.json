@@ -17,8 +17,8 @@
     "prettier": "3.3.3"
   },
   "devDependencies": {
-    "@inquirer/prompts": "5.4.0",
-    "@types/node": "22.5.2",
-    "tsx": "4.19.0"
+    "@inquirer/prompts": "5.5.0",
+    "@types/node": "22.5.4",
+    "tsx": "4.19.1"
   }
 }

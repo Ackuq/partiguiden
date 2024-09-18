@@ -825,5 +825,12 @@
     "fetchDate": "2024-06-16T06:23:59.850Z",
     "party": "MP",
     "subject": "aldrepolitik"
+  },
+  "https://www.mp.se/politik/antirasism/": {
+    "opinions": [],
+    "title": "Antirasism",
+    "url": "https://www.mp.se/politik/antirasism/",
+    "fetchDate": "2024-09-18T06:28:48.554Z",
+    "party": "MP"
   }
 }

@@ -1,8 +1,8 @@
 /**
  * @type {import("next").NextConfig["redirects"]}
  */
-const redirects = async () => {
-  return [
+const redirects = () => {
+  return Promise.resolve([
     {
       source: "/member/",
       destination: "/ledamot",
@@ -73,7 +73,7 @@ const redirects = async () => {
       destination: "/debatter/:id",
       permanent: true,
     },
-  ];
+  ]);
 };
 
 export default redirects;

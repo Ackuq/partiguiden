@@ -1,3 +1,4 @@
+/* global process */
 // @ts-check
 import core from "@actions/core";
 

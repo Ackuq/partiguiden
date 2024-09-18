@@ -17,13 +17,13 @@ declare module "eslint-plugin-import" {
 }
 
 declare module "eslint-plugin-react" {
-  import type { Config } from "typescript-eslint";
+  import type { ConfigWithExtends } from "typescript-eslint";
 
   export const configs: {
     flat: {
-      all: Config;
-      recommended: Config;
-      "jsx-runtime": Config;
+      all: ConfigWithExtends;
+      recommended: ConfigWithExtends;
+      "jsx-runtime": ConfigWithExtends;
     };
   };
   export const rules: Record<string, Rule.RuleModule>;

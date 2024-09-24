@@ -21,7 +21,7 @@
     "@heroicons/react": "2.1.5",
     "@next/third-parties": "14.2.13",
     "@partiguiden/party-data": "workspace:*",
-    "@sentry/nextjs": "8.30.0",
+    "@sentry/nextjs": "8.31.0",
     "@supercharge/promise-pool": "3.2.0",
     "cheerio": "1.0.0",
     "next": "14.2.13",
@@ -31,7 +31,7 @@
     "react-share": "5.1.0",
     "recharts": "2.12.7",
     "strip-json-comments": "5.0.1",
-    "tailwindcss": "3.4.12",
+    "tailwindcss": "3.4.13",
     "tailwind-merge": "2.5.2",
     "typed.js": "2.1.0"
   },

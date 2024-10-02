@@ -1,10 +1,4 @@
 {
   "editor.tabSize": 2,
   "typescript.tsdk": "node_modules/typescript/lib",
-  "[css]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "tailwindCSS.experimental.classRegex": [
-    ["(?:twMerge|twJoin)\\(([^\\);]*)[\\);]", "[`'\"`]([^'\"`,;]*)[`'\"`]"]
-  ]
 }

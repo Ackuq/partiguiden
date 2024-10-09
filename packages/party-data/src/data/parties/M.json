@@ -109,34 +109,6 @@
     "party": "M",
     "subject": "infrastruktur-och-trafik"
   },
-  "https://moderaterna.se/var-politik/integration/": {
-    "opinions": [
-      "Införa kvalificering till välfärden för nyanlända. Full tillgång till svenska bidrag och förmåner bör man enbart få genom eget arbete eller genom permanent och laglig bosättning i landet ",
-      "Den som står längst ifrån arbetsmarknaden ska delta i aktiviteter som för personen närmre arbetsmarknaden – exempelvis språk, praktik eller samhällsnyttiga insatser",
-      "Införande av språkkrav och obligatorisk samhällsorientering med prov för att få permanent uppehållstillstånd respektive medborgarskap",
-      "Begränsa rätten till betald tolk. Har man permanent uppehållstillstånd i Sverige ska rätten till tolk – med vissa undantag – upphöra",
-      "Införa bidragstak, så att det alltid lönar sig att gå från bidrag till jobb"
-    ],
-    "title": "Integration",
-    "url": "https://moderaterna.se/var-politik/integration/",
-    "fetchDate": "2024-06-02T17:16:20.186Z",
-    "party": "M",
-    "subject": "migration-och-integration"
-  },
-  "https://moderaterna.se/var-politik/migrationspolitik/": {
-    "opinions": [
-      "Anpassa det svenska regelverket för beviljande av asyl och asylförfarandet till miniminivån enligt EU-rätten",
-      "Nyanlända ska kvalificera sig till välfärden genom att arbeta",
-      "Skärpa kraven för anhöriginvandring genom bland annat ett högre försörjningskrav ",
-      "Främja högkvalificerad arbetskraftsinvandring som Sverige är i behov av. Samtidigt höjer vi lönegolvet för arbetskraftsinvandring från länder utanför EU ",
-      "Öka möjligheterna att återkalla uppehållstillstånd, till exempel när en person har begått brott, har samröre med eller deltar i kriminella eller extremistiska organisationer eller har fått sitt uppehållstillstånd på falska grunder/uppgifter"
-    ],
-    "title": "Migration",
-    "url": "https://moderaterna.se/var-politik/migrationspolitik/",
-    "fetchDate": "2024-06-02T17:16:21.826Z",
-    "party": "M",
-    "subject": "migration-och-integration"
-  },
   "https://moderaterna.se/var-politik/kultur/": {
     "opinions": [
       "Skapa bättre förutsättningar för de kulturella och kreativa branscherna genom tillväxtvänlig näringspolitik",

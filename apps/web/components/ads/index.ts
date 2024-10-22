@@ -1,3 +1,5 @@
+"use client";
+
 import dynamic from "next/dynamic";
 
 import LoadingFlowAd from "@components/loading/flow-ad";

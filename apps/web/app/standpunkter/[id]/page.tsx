@@ -17,13 +17,17 @@ import type { Party } from "@partiguiden/party-data/types";
 
 import PartyStandpoints from "./party-standpoints";
 
+type Params = Promise<{
+  id: string;
+}>;
+
 interface PageProps {
-  params: {
-    id: string;
-  };
+  params: Params;
 }
 
-export default function Standpoints({ params: { id } }: PageProps) {
+export default async function Standpoints({ params }: PageProps) {
+  const { id } = await params;
+
   const subject = getSubject(id);
   if (!subject) {
     return notFound();
@@ -79,7 +83,9 @@ export default function Standpoints({ params: { id } }: PageProps) {
   );
 }
 
-export function generateMetadata({ params: { id } }: PageProps) {
+export async function generateMetadata({ params }: PageProps) {
+  const { id } = await params;
+
   const subject = getSubject(id);
 
   if (!subject) {

@@ -6,13 +6,17 @@ import SocialMediaShare from "@components/common/social-media-share";
 import getDocumentHtml from "@lib/api/documents/get-document-html";
 import { getDocumentJson } from "@lib/api/documents/get-document-json";
 
+type Params = Promise<{
+  id: string;
+}>;
+
 interface Props {
-  params: {
-    id: string;
-  };
+  params: Params;
 }
 
-export default async function Document({ params: { id } }: Props) {
+export default async function Document({ params }: Props) {
+  const { id } = await params;
+
   const [html, data] = await Promise.all([
     getDocumentHtml(id),
     getDocumentJson(id),
@@ -38,7 +42,11 @@ export default async function Document({ params: { id } }: Props) {
 
 export const runtime = "edge";
 
-export async function generateMetadata({ params: { id } }: Props) {
+export async function generateMetadata(props: Props) {
+  const params = await props.params;
+
+  const { id } = params;
+
   const data = await getDocumentJson(id);
   return {
     title: `${data.id}: ${data.title} | Dokument | Partiguiden`,

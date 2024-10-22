@@ -1,16 +1,17 @@
 import getMemberDocuments from "@lib/api/documents/get-member-documents";
 
+type Params = Promise<{
+  id: string;
+  page: string;
+}>;
+
 interface Payload {
-  params: {
-    id: string;
-    page: string;
-  };
+  params: Params;
 }
 
-export async function GET(
-  _request: Request,
-  { params: { id, page } }: Payload,
-) {
+export async function GET(_request: Request, { params }: Payload) {
+  const { id, page } = await params;
+
   const pageInt = parseInt(page);
 
   if (Number.isNaN(pageInt)) {

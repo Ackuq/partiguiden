@@ -15,15 +15,17 @@ import { partyNames } from "@partiguiden/party-data/utils";
 
 import Leader from "./leader";
 
+type Params = Promise<{
+  party: Lowercase<Party>;
+}>;
+
 interface PageProps {
-  params: {
-    party: Lowercase<Party>;
-  };
+  params: Params;
 }
 
-export default async function PartyPage({
-  params: { party: partyAbbreviationLowercase },
-}: PageProps) {
+export default async function PartyPage({ params }: PageProps) {
+  const { party: partyAbbreviationLowercase } = await params;
+
   const partyAbbreviation =
     partyAbbreviationLowercase.toLocaleUpperCase() as Party;
   if (!Object.values(Party).includes(partyAbbreviation)) {
@@ -102,9 +104,9 @@ export default async function PartyPage({
   );
 }
 
-export function generateMetadata({
-  params: { party: partyAbbreviation },
-}: PageProps) {
+export async function generateMetadata({ params }: PageProps) {
+  const { party: partyAbbreviation } = await params;
+
   const party = partyAbbreviation.toUpperCase() as Party;
 
   if (!Object.values(Party).includes(party)) {

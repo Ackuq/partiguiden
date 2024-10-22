@@ -35,14 +35,18 @@ const VoteDistribution = dynamic(
   },
 );
 
+type Params = Promise<{
+  id: string;
+  bet: string;
+}>;
+
 interface Props {
-  params: {
-    id: string;
-    bet: string;
-  };
+  params: Params;
 }
 
-export default async function Vote({ params: { id, bet } }: Props) {
+export default async function Vote({ params }: Props) {
+  const { id, bet } = await params;
+
   const betNumber = parseInt(bet);
   if (Number.isNaN(betNumber)) {
     return notFound();
@@ -105,9 +109,11 @@ export default async function Vote({ params: { id, bet } }: Props) {
   );
 }
 
-export async function generateMetadata({
-  params: { id, bet },
-}: Props): Promise<Metadata> {
+export async function generateMetadata(props: Props): Promise<Metadata> {
+  const params = await props.params;
+
+  const { id, bet } = params;
+
   const betNumber = parseInt(bet);
   if (Number.isNaN(betNumber)) {
     return notFound();

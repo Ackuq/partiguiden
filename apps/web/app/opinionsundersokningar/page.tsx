@@ -1,10 +1,15 @@
 import { ChartBarIcon } from "@heroicons/react/24/solid";
 
+import { ResponsiveAd } from "@components/ads";
+import { Card } from "@components/common/card";
 import Container from "@components/common/container";
 import PageTitle from "@components/common/page-title";
 import getPolls from "@lib/api/polls/get-polls";
 
-import Graphs from "./graphs";
+import BlockBuilder from "./components/block-builder/without-ssr";
+import BlockStatistics from "./components/block-statistics/without-ssr";
+import HistoricPolls from "./components/historic-polls/without-ssr";
+import MonthPoll from "./components/month-poll/without-ssr";
 
 export const metadata = {
   title: "Opinionsundersökningar | Partiguiden",
@@ -23,11 +28,36 @@ export default async function PollPage() {
       <PageTitle Icon={ChartBarIcon}>Opinionsundersökningar</PageTitle>
 
       <Container className="flex flex-col gap-4">
-        <Graphs
-          currentMonthAverage={currentMonthAverage}
-          historicPolls={historicPolls}
-          blockAverage={blockAverage}
-        />
+        <Card>
+          <h4 className="mb-3 text-center text-xl sm:text-2xl">
+            Senaste mätningar
+          </h4>
+          <MonthPoll currentMonthAverage={currentMonthAverage} />
+        </Card>
+        <ResponsiveAd />
+        <Card>
+          <h4 className="mb-3 text-center text-xl sm:text-2xl">
+            Historiskt genomsnitt (senaste 4 åren)
+          </h4>
+          <HistoricPolls historicPolls={historicPolls} />
+        </Card>
+        <Card>
+          <h4 className="mb-3 text-center text-xl sm:text-2xl">
+            Bygg din egna regering
+          </h4>
+          <BlockBuilder currentMonthAverage={currentMonthAverage} />
+        </Card>
+        <Card className="overflow-visible">
+          <h4 className="mb-3 text-center text-xl sm:text-2xl">
+            Blockskillnad (senaste mätningar)
+          </h4>
+          <BlockStatistics
+            currentMonthAverage={currentMonthAverage}
+            blockAverage={blockAverage}
+          />
+        </Card>
+
+        <ResponsiveAd />
       </Container>
     </main>
   );

@@ -70,10 +70,8 @@ export default async function MemberPage({ params }: PageProps) {
 
 export const runtime = "edge";
 
-export async function generateMetadata(props: PageProps) {
-  const params = await props.params;
-
-  const { id } = params;
+export async function generateMetadata({ params }: PageProps) {
+  const { id } = await params;
 
   const member = await getMember(id);
 

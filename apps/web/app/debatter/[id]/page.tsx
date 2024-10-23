@@ -72,10 +72,8 @@ export default async function DebatePage({ params }: Props) {
   );
 }
 
-export async function generateMetadata(props: Props): Promise<Metadata> {
-  const params = await props.params;
-
-  const { id } = params;
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { id } = await params;
 
   const debate = await getDebate(id);
   if (!debate) {

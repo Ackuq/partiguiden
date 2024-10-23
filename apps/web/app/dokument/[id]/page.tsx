@@ -42,10 +42,8 @@ export default async function Document({ params }: Props) {
 
 export const runtime = "edge";
 
-export async function generateMetadata(props: Props) {
-  const params = await props.params;
-
-  const { id } = params;
+export async function generateMetadata({ params }: Props) {
+  const { id } = await params;
 
   const data = await getDocumentJson(id);
   return {

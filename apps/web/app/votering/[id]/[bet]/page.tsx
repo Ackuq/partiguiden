@@ -90,10 +90,8 @@ export default async function Vote({ params }: Props) {
   );
 }
 
-export async function generateMetadata(props: Props): Promise<Metadata> {
-  const params = await props.params;
-
-  const { id, bet } = params;
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { id, bet } = await params;
 
   const betNumber = parseInt(bet);
   if (Number.isNaN(betNumber)) {

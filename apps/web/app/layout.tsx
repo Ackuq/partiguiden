@@ -19,6 +19,9 @@ const roboto = Roboto({
   fallback: ["Helvetica", "Arial", "sans-serif"],
 });
 
+// Cache all fetch requests by default
+export const fetchCache = "default-cache";
+
 export default function RootLayout({ children }: PropsWithChildren) {
   return (
     <html lang="sv" suppressHydrationWarning>

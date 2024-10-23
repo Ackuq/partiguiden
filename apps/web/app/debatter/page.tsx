@@ -11,18 +11,21 @@ import {
 
 import DebateListWrapper from "./components/debate-list-wrapper";
 
+type SearchParams = Promise<{
+  sok?: string | string[];
+  sida?: string | string[];
+  utskott?: string | string[];
+}>;
+
 interface Props {
-  searchParams: {
-    sok?: string | string[];
-    sida?: string | string[];
-    utskott?: string | string[];
-  };
+  searchParams: SearchParams;
 }
 
-export default function DebatesPage({ searchParams }: Props) {
-  const page = parseNumberSearchParam(searchParams.sida) ?? 1;
-  const search = parseStringSearchParam(searchParams.sok);
-  const committees = parseStringArraySearchParam(searchParams.utskott);
+export default async function DebatesPage({ searchParams }: Props) {
+  const { sida, sok, utskott } = await searchParams;
+  const page = parseNumberSearchParam(sida) ?? 1;
+  const search = parseStringSearchParam(sok);
+  const committees = parseStringArraySearchParam(utskott);
 
   return (
     <main>

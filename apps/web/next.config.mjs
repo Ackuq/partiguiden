@@ -25,9 +25,6 @@ let nextConfig = withBundleAnalyzer({
       },
     ],
   },
-  experimental: {
-    instrumentationHook: true,
-  },
 });
 
 export default withSentryConfig(nextConfig, {

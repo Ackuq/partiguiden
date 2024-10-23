@@ -12,13 +12,17 @@ import { routes } from "@lib/navigation";
 
 import Statement from "./statement";
 
+type Params = Promise<{
+  id: string;
+}>;
+
 interface Props {
-  params: {
-    id: string;
-  };
+  params: Params;
 }
 
-export default async function DebatePage({ params: { id } }: Props) {
+export default async function DebatePage({ params }: Props) {
+  const { id } = await params;
+
   const debate = await getDebate(id);
 
   if (!debate) {
@@ -68,9 +72,9 @@ export default async function DebatePage({ params: { id } }: Props) {
   );
 }
 
-export async function generateMetadata({
-  params: { id },
-}: Props): Promise<Metadata> {
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { id } = await params;
+
   const debate = await getDebate(id);
   if (!debate) {
     return {};

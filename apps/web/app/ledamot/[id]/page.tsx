@@ -15,13 +15,17 @@ import Profile from "./components/profile";
 import Statistics from "./components/statistics";
 import Tabs from "./components/tabs";
 
+type Params = Promise<{
+  id: string;
+}>;
+
 interface PageProps {
-  params: {
-    id: string;
-  };
+  params: Params;
 }
 
-export default async function MemberPage({ params: { id } }: PageProps) {
+export default async function MemberPage({ params }: PageProps) {
+  const { id } = await params;
+
   const memberPromise = getMemberWithAbsence(id);
   const memberDocumentsPromise = getMemberDocuments({ id, page: 1 });
   const memberTwitterPromise = getMemberTwitterFeed(id);
@@ -66,7 +70,9 @@ export default async function MemberPage({ params: { id } }: PageProps) {
 
 export const runtime = "edge";
 
-export async function generateMetadata({ params: { id } }: PageProps) {
+export async function generateMetadata({ params }: PageProps) {
+  const { id } = await params;
+
   const member = await getMember(id);
 
   if (!member) {

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-import dynamic from "next/dynamic";
 import { notFound } from "next/navigation";
 
+import { ResponsiveAd } from "@components/ads";
 import Accordion from "@components/common/accordion";
 import BreadcrumbsSocialMediaShare from "@components/common/breadcrumbs-social-media-share";
 import { Card } from "@components/common/card";
@@ -13,36 +13,21 @@ import { routes } from "@lib/navigation";
 
 import { Appendix } from "./components/appendix";
 import { Documents } from "./components/documents";
+import TotalVote from "./components/total-vote/without-ssr";
+import VoteDistribution from "./components/vote-distribution/without-ssr";
 
-const ResponsiveAd = dynamic(() => import("@components/ads/responsive-ad"), {
-  ssr: false,
-});
-
-const TotalVote = dynamic(() => import("./components/total-vote"), {
-  ssr: false,
-  loading: () => (
-    <div role="status" className="h-[6.5rem] sm:h-24">
-      <div className="h-10 bg-slate-200 dark:bg-slate-900" />
-      <div className="mt-2 h-6 bg-slate-200 dark:bg-slate-900"></div>
-    </div>
-  ),
-});
-
-const VoteDistribution = dynamic(
-  () => import("./components/vote-distribution"),
-  {
-    ssr: false,
-  },
-);
+type Params = Promise<{
+  id: string;
+  bet: string;
+}>;
 
 interface Props {
-  params: {
-    id: string;
-    bet: string;
-  };
+  params: Params;
 }
 
-export default async function Vote({ params: { id, bet } }: Props) {
+export default async function Vote({ params }: Props) {
+  const { id, bet } = await params;
+
   const betNumber = parseInt(bet);
   if (Number.isNaN(betNumber)) {
     return notFound();
@@ -105,9 +90,9 @@ export default async function Vote({ params: { id, bet } }: Props) {
   );
 }
 
-export async function generateMetadata({
-  params: { id, bet },
-}: Props): Promise<Metadata> {
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { id, bet } = await params;
+
   const betNumber = parseInt(bet);
   if (Number.isNaN(betNumber)) {
     return notFound();

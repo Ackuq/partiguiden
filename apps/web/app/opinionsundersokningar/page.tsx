@@ -1,6 +1,4 @@
 import { ChartBarIcon } from "@heroicons/react/24/solid";
-import dynamic from "next/dynamic";
-import { twMerge } from "tailwind-merge";
 
 import { ResponsiveAd } from "@components/ads";
 import { Card } from "@components/common/card";
@@ -8,60 +6,10 @@ import Container from "@components/common/container";
 import PageTitle from "@components/common/page-title";
 import getPolls from "@lib/api/polls/get-polls";
 
-const LOADING_BARS = [
-  "h-80",
-  "h-64",
-  "h-60",
-  "h-72",
-  "h-48",
-  "h-96",
-  "h-32",
-  "h-56",
-];
-
-const BlockStatistics = dynamic(() => import("./components/block-statistics"), {
-  ssr: false,
-  loading: () => (
-    <div
-      role="status"
-      className="h-52 w-full animate-pulse bg-slate-200 dark:bg-slate-900 sm:h-80"
-    />
-  ),
-});
-const BlockBuilder = dynamic(() => import("./components//block-builder"), {
-  ssr: false,
-  loading: () => (
-    <div
-      role="status"
-      className="h-[43rem] w-full animate-pulse bg-slate-200 dark:bg-slate-900"
-    />
-  ),
-});
-const HistoricPolls = dynamic(() => import("./components//historic-polls"), {
-  ssr: false,
-  loading: () => (
-    <div
-      role="status"
-      className="h-[30rem] w-full animate-pulse bg-slate-200 dark:bg-slate-900"
-    />
-  ),
-});
-const MonthPoll = dynamic(() => import("./components//month-poll"), {
-  loading: () => (
-    <div role="status" className="ml-[40px] flex h-96 items-end sm:h-[30rem]">
-      {LOADING_BARS.map((height) => (
-        <div
-          key={height}
-          className={twMerge(
-            "mx-2 flex-1 animate-pulse bg-slate-200 dark:bg-slate-900",
-            height,
-          )}
-        />
-      ))}
-    </div>
-  ),
-  ssr: false,
-});
+import BlockBuilder from "./components/block-builder/without-ssr";
+import BlockStatistics from "./components/block-statistics/without-ssr";
+import HistoricPolls from "./components/historic-polls/without-ssr";
+import MonthPoll from "./components/month-poll/without-ssr";
 
 export const metadata = {
   title: "Opinionsundersökningar | Partiguiden",

@@ -2,13 +2,13 @@ import { Party } from "@partiguiden/party-data/types";
 
 import type { MonthlyAverage, Poll, Polls } from "./types";
 
-function initializePollResults(): { [party in Party]: number[] } {
+function initializePollResults(): Record<Party, number[]> {
   return Object.values(Party).reduce(
     (acc, party) => {
       acc[party] = [];
       return acc;
     },
-    {} as { [party in Party]: number[] },
+    {} as Record<Party, number[]>,
   );
 }
 

@@ -4,9 +4,7 @@ import type { Party } from "@partiguiden/party-data/types";
 export interface Poll {
   publishedDate: Date;
   institute: string;
-  data: {
-    [party in Party]?: number;
-  };
+  data: Partial<Record<Party, number>>;
 }
 
 export type Polls = Record<number, Record<number, Poll[]>>;
@@ -23,9 +21,7 @@ export type AveragePoll = {
   details: PollDetails[];
 }[];
 
-export type MonthlyAverage = ({ date: string } & {
-  [party in Party]: string;
-})[];
+export type MonthlyAverage = ({ date: string } & Record<Party, string>)[];
 
 export type BlockAverage = {
   name: Blocks["values"][number]["name"];

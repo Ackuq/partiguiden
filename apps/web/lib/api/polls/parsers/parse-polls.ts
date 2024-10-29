@@ -62,7 +62,7 @@ export default function parsePolls(csv: string, lastDate: Date): Polls {
       polls[year][month] = [];
     }
     const partyRows = fields.slice(CSVIndex.PartyStart, CSVIndex.PartyEnd);
-    const data = partyRows.reduce<{ [P in Party]?: number }>(
+    const data = partyRows.reduce<Partial<Record<Party, number>>>(
       (prev, current, index) => {
         const value = parseFloat(current);
         if (Number.isNaN(value)) {

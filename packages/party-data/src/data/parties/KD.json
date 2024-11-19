@@ -274,16 +274,6 @@
     "party": "KD",
     "subject": "utbildning"
   },
-  "https://kristdemokraterna.se/var-politik/politik-a-till-o/biologisk-mangfald": {
-    "opinions": [
-      "I dag överutnyttjas och utarmas ekosystem i världen. Även i Sverige behöver vissa arter och områden skyddas. Vi vill att staten på ett bättre sätt prioriterar det skyddsvärda vilket gör att vi kan förbättra ersättningen till markägaren. Det är också viktigt att finna nya vägar att kompensera lantbruket för miljötjänster, till exempel bevarande av biologisk mångfald och minskad klimatpåverkan."
-    ],
-    "title": "Biologisk mångfald",
-    "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/biologisk-mangfald",
-    "fetchDate": "2023-09-17T17:52:42.880Z",
-    "party": "KD",
-    "subject": "miljo-och-klimat"
-  },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/bistand-och-utvecklingssamarbete": {
     "opinions": [
       "Svensk utvecklingspolitik ska ha demokrati och mänskliga rättigheter som utgångspunkt och mål. Så länge medmänniskor i vår omvärld tvingas leva under förtryck, fattigdom, svält och svåra sjukdomar krävs större gemensamma ansträngningar. Demokrati, ekonomisk frihet och rättsstatliga principer möjliggör att fler människor kan resa sig ur fattigdom och förtryck samt känna hopp om en bättre framtid. Ett starkt, långsiktigt och effektivt utvecklingssamarbete som möjliggör ekonomisk tillväxt är nödvändigt för att utrota fattigdomen. Utvecklingsstödet behöver i högre utsträckning kanaliseras genom det civila samhället och den privata sektorn. Kristdemokraterna stödjer målet att 1 % av BNI ska avsättas för bistånd i statens budget. Tillsammans med ansträngningar för att åstadkomma fri handel kan vi på så vis möjliggöra högre välstånd och en mer rättvis värld."
@@ -296,11 +286,12 @@
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/bostad": {
     "opinions": [
-      "Under många år har det byggts för lite i Sverige, vilket har lett till bostadsbrist och långa bostadsköer. Det saknas idag billiga bostäder i Sverige, men vi har också ett kraftigt underskott av villor. Kristdemokraterna vill se fler aktörer på marknaden som pressar priserna tillsammans samt stärka det regionala inflytandet över bostadsplaneringen och förenkla regelkrånglet. Vi vill skapa långsiktiga villkor för såväl byggande som förvaltning och ägande. Det är genom en utökad tillgång till byggbar mark och sänkta trösklar in på bostadsmarknaden som vi kan lösa de knutar som finns idag."
+      "Under många år har det byggts för lite i Sverige, vilket har lett till bostadsbrist och långa bostadsköer. Det saknas idag billiga bostäder i Sverige, men vi har också ett kraftigt underskott av villor. Kristdemokraterna vill se fler aktörer på marknaden som pressar priserna tillsammans, samt stärka det regionala inflytandet över bostadsplaneringen och förenkla regelkrånglet. Vi vill skapa långsiktiga villkor för såväl byggande som förvaltning och ägande. Det är genom en utökad tillgång till byggbar mark och sänkta trösklar in på bostadsmarknaden som vi kan lösa de knutar som finns idag.",
+      "Bostadssegregationen måste brytas. Kristdemokraterna vill skapa mer blandade boendemiljöer med olika upplåtelseformer ifråga om funktioner och upplåtelseformer. Nästan hälften av kvinnorna i socialt utsatta områden uppger att de är otrygga på kvällstid i sitt eget bostadsområde, enligt statistik från Brå. Vi behöver ta tillbaka tryggheten i dessa områden. Det behövs fler poliser och fler trygghetsskapande åtgärder som till exempel bättre belysning. Vi vill även förändra lagstiftningen kring ägarlägenheter, så att de kan bildas ur befintligt hyresbestånd. Idag dominerar hyreslägenheter i utsatta områden. Att underlätta ägande ökar välstånd och trivsel, vilket får positiva effekter för integrationen."
     ],
     "title": "Bostad",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/bostad",
-    "fetchDate": "2023-09-17T17:52:41.952Z",
+    "fetchDate": "2024-11-19T06:30:25.942Z",
     "party": "KD",
     "subject": "bostad"
   },
@@ -311,16 +302,6 @@
     "title": "Bostadsbidrag",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/bostadsbidrag",
     "fetchDate": "2023-09-17T17:52:42.100Z",
-    "party": "KD",
-    "subject": "bostad"
-  },
-  "https://kristdemokraterna.se/var-politik/politik-a-till-o/bostadssegregation": {
-    "opinions": [
-      "Bostadssegregationen måste brytas. Kristdemokraterna vill skapa mer blandade boendemiljöer med olika upplåtelseformer ifråga om funktioner och upplåtelseformer. Nästan hälften av kvinnorna i socialt utsatta områden uppger att de är otrygga på kvällstid i sitt eget bostadsområde, enligt statistik från Brå. Vi behöver ta tillbaka tryggheten i dessa områden. Det behövs fler poliser och fler trygghetsskapande åtgärder såsom bättre belysning. Vi vill även förändra lagstiftningen kring ägarlägenheter, så att de kan bildas ur befintligt hyresbestånd. Idag dominerar hyreslägenheter i utsatta områden. Att underlätta ägande ökar välstånd och trivsel vilket får positiva effekter för integrationen."
-    ],
-    "title": "Bostadssegregation",
-    "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/bostadssegregation",
-    "fetchDate": "2023-09-17T17:52:40.934Z",
     "party": "KD",
     "subject": "bostad"
   },
@@ -425,23 +406,14 @@
     "party": "KD",
     "subject": "jamstalldhet-och-diskriminering"
   },
-  "https://kristdemokraterna.se/var-politik/politik-a-till-o/djurforsok": {
-    "opinions": [
-      "Kristdemokraterna anser att djurförsök endast ska ske under kontrollerade former för vetenskapliga syften och där de inte kan ersättas med andra metoder."
-    ],
-    "title": "Djurförsök",
-    "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/djurforsok",
-    "fetchDate": "2023-09-17T17:52:41.027Z",
-    "party": "KD",
-    "subject": "miljo-och-klimat"
-  },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/djurskydd": {
     "opinions": [
-      "Djur ska alltid behandlas med respekt och omtanke och aldrig utsättas för onödigt lidande, stress eller smärta. Ansvaret för djurens välmående ligger ytterst på djurägaren. Kristdemokraterna vill att EU ska stärka djurskyddslagstiftningen och främja investeringar för förbättrat djurskydd samt att EU ska motarbeta plågsamma men även långa djurtransporter. Sverige bör utnyttja möjligheten att utveckla metoder för slakt på gård eller genom mobila och gårdsnära slakterier."
+      "Djur ska alltid behandlas med respekt och omtanke och aldrig utsättas för onödigt lidande, stress eller smärta. Ansvaret för djurens välmående ligger ytterst på djurägaren. Kristdemokraterna anser att djurförsök endast ska ske under kontrollerade former för vetenskapliga syften och där de inte kan ersättas med andra metoder.",
+      "Kristdemokraterna vill att EU ska stärka djurskyddslagstiftningen och främja investeringar för förbättrat djurskydd samt att EU ska motarbeta plågsamma men även långa djurtransporter. Sverige bör utnyttja möjligheten att utveckla metoder för slakt på gård eller genom mobila och gårdsnära slakterier."
     ],
     "title": "Djurskydd",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/djurskydd",
-    "fetchDate": "2023-09-17T17:52:42.995Z",
+    "fetchDate": "2024-11-19T06:30:29.714Z",
     "party": "KD",
     "subject": "jordbruk-jakt-och-fiske"
   },
@@ -486,16 +458,6 @@
     "party": "KD",
     "subject": "vard-och-omsorg"
   },
-  "https://kristdemokraterna.se/var-politik/politik-a-till-o/ekologiskt-lantbruk": {
-    "opinions": [
-      "Det ekologiska lantbruket spelar en viktig roll för att utveckla nya hållbara brukningsmetoder. Kristdemokraterna är positiva till att den ekologiska odlingen ökar och att nya ekologiska metoder kan anammas inom det konventionella lantbruket."
-    ],
-    "title": "Ekologiskt lantbruk",
-    "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/ekologiskt-lantbruk",
-    "fetchDate": "2023-09-17T17:52:41.555Z",
-    "party": "KD",
-    "subject": "jordbruk-jakt-och-fiske"
-  },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/ekonomisk-politik": {
     "opinions": [
       "Kristdemokraternas ekonomiska politik bygger på det som vi kallar social marknadsekonomi. Det innebär att marknadsekonomin måste kombineras med en socialt ansvarsfull politik för att bidra med välfärd och en rimlig levnadsnivå för alla. Skatte- och bidragssystem ska utformas så att människors egen kraft och engagemang uppmuntras och bidragsberoende motverkas."
@@ -516,36 +478,6 @@
     "party": "KD",
     "subject": "vard-och-omsorg"
   },
-  "https://kristdemokraterna.se/var-politik/politik-a-till-o/elmarknad": {
-    "opinions": [
-      "Nuvarande elmarknad har varit bra på att leverera MWh (energi) men elmarknaden har hittills inte gett incitament för att säkerställa MW (effekt) och driftsäkerhet – nu sätter vi fokus på att göra just detta genom ett batteri av åtgärder."
-    ],
-    "title": "Elmarknad",
-    "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/elmarknad",
-    "fetchDate": "2023-09-17T17:52:40.844Z",
-    "party": "KD",
-    "subject": "energi"
-  },
-  "https://kristdemokraterna.se/var-politik/politik-a-till-o/elpris": {
-    "opinions": [
-      "Genom att tillföra mer planerbar elproduktion bygger vi en trygg och leveranssäker elmarknad. Elprisstöden var ett sätt att möta den akuta kostnadskrisen för hushållen. En sänkning av energiskatten bör övervägas när ekonomin så tillåter."
-    ],
-    "title": "Elpris",
-    "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/elpris",
-    "fetchDate": "2023-09-17T17:52:42.839Z",
-    "party": "KD",
-    "subject": "energi"
-  },
-  "https://kristdemokraterna.se/var-politik/politik-a-till-o/elsystem": {
-    "opinions": [
-      "Elsystemet saknar förmåga att expandera och ansluta nya industrier. Sverige kan idag inte nyttja elnätskapaciteten för att föra över el mellan elområden. Elproduktion på rätt ställe med rätt egenskaper behövs för höga överföringar mellan elområden. Mer planerbar effekt behöver byggas."
-    ],
-    "title": "Elsystem",
-    "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/elsystem",
-    "fetchDate": "2023-09-17T17:52:38.935Z",
-    "party": "KD",
-    "subject": "energi"
-  },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/emu-och-euron": {
     "opinions": [
       "Om Sverige bör gå mot ett fullt EMU- medlemskap och införa euron är upp till det svenska folket att avgöra i folkomröstning. Kristdemokraterna är inte för ett inträde i EMU och ett införande av euron som valuta och ser det inte som aktuellt under överskådlig tid. Innan diskussioner om detta kan föras måste de ekonomiska problem som omgärdar medlemsländerna lösas och överstatligheten motverkas."
@@ -555,16 +487,6 @@
     "fetchDate": "2023-09-17T17:52:43.285Z",
     "party": "KD",
     "subject": "europa"
-  },
-  "https://kristdemokraterna.se/var-politik/politik-a-till-o/energi": {
-    "opinions": [
-      "Kristdemokraterna vill se en energipolitik med långsiktiga och stabila spelregler, som möjliggör klimatomställning och tryggar energiförsörjningen för hushåll och företag till kostnadseffektiva priser. Vi vill att befintliga reaktorer ska livstidsförlängas och starta processen med att bygga nya reaktorer. Det är viktigt att forskningsmedel även kommer kärnkraften till del. Vi förespråkar en svensk färdplan för en ny kärnkraftsgeneration, den så kallade fjärde generationen, som inkluderar frågan om en svensk forskningsanläggning. Marknadens funktionssätt bör ses över. Dagens modell ger betalt för energi, medan det saknas incitament att tillhandahålla kvalitet och effekt. I en ny modell skulle alla planerbara kraftslag få ersättning för sina bidrag till leveranssäkerheten. Förnybar produktion som vind och sol behövs också och kompletterar de planerbara."
-    ],
-    "title": "Energi",
-    "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/energi",
-    "fetchDate": "2023-09-17T17:52:42.161Z",
-    "party": "KD",
-    "subject": "energi"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/energieffektivisering": {
     "opinions": [
@@ -688,11 +610,12 @@
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/fiske": {
     "opinions": [
-      "Kristdemokraterna anser att fisk i första hand ska fiskas för människoföda. Fångsternas storlek ska vara hållbara i förhållande till bestånden av respektive art. Ett för stort fiskeuttag gynnar ingen, utan resulterar långsiktigt i att såväl fisken som fisket dör ut. Kristdemokraterna vill minska byråkratin och regelkrånglet för yrkesfiskarna och värna det kustnära fisket."
+      "Kristdemokraterna anser att fisk i första hand ska fiskas för människoföda. Fångsternas storlek ska vara hållbara i förhållande till bestånden av respektive art. Ett för stort fiskeuttag gynnar ingen, utan resulterar långsiktigt i att såväl fisken som fisket dör ut. Kristdemokraterna vill minska byråkratin och regelkrånglet för yrkesfiskarna och värna det kustnära fisket.",
+      "Hur mycket som får fiskas av olika arter bestäms efter förhandling inom EU. Kristdemokraterna vill att kvoternas storlek ska ligga i det lägsta spannet enligt de rekommendationer som det vetenskapliga rådet ICES anger."
     ],
     "title": "Fiske",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/fiske",
-    "fetchDate": "2023-09-17T17:52:43.373Z",
+    "fetchDate": "2024-11-19T06:30:25.548Z",
     "party": "KD",
     "subject": "jordbruk-jakt-och-fiske"
   },
@@ -836,16 +759,6 @@
     "title": "Företagande",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/foretagande",
     "fetchDate": "2023-09-17T17:52:41.453Z",
-    "party": "KD",
-    "subject": "naringsliv"
-  },
-  "https://kristdemokraterna.se/var-politik/politik-a-till-o/foretagsskatt": {
-    "opinions": [
-      "För att Sverige ska vara ett tilltalande land att investera och starta företag i måste skattesatsen på företagande och kapital ligga på attraktiva nivåer jämfört med omvärlden. Allt för höga skatter kan leda till att företag och kapital flyttar utomlands. Därför bör bland annat 3:12-reglerna förbättras. Vi föreslår mer konkurrenskraftiga skatter på delägarskap för nyckelpersoner i växande företag, det vill säga bättre regler för personaloptioner, samt att det införs ett särskilt \"entreprenörskapskonto\" med syfte att förenkla för entreprenörer."
-    ],
-    "title": "Företagsskatt",
-    "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/foretagsskatt",
-    "fetchDate": "2023-09-17T17:52:42.134Z",
     "party": "KD",
     "subject": "naringsliv"
   },
@@ -1276,11 +1189,11 @@
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/klimat": {
     "opinions": [
-      "Klimatfrågan är vår tids största utmaning. Kristdemokraterna har medverkat till EU:s beslut om Fit for 55. För att nå målet krävs en samhällsomställning för att kraftigt reducera vår klimatpåverkan. Kristdemokraterna vill bl a öka satsningarna på biobränsle, bygga ny kärnkraft, vätgas, eldrift av bilar och lastbilar, samt utveckling av infångning och lagring av koldioxid."
+      "Klimatfrågan är vår tids största utmaning. Kristdemokraterna har medverkat till EU:s beslut om Fit for 55. För att nå målet krävs en samhällsomställning för att kraftigt reducera vår klimatpåverkan. Kristdemokraterna vill bland annat öka satsningarna på biobränsle, bygga ny kärnkraft, utveckla utsläppshandeln, elektrifiera fordonsflottan, samt utveckla infångning och lagring av koldioxid."
     ],
     "title": "Klimat",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/klimat",
-    "fetchDate": "2023-09-17T17:52:40.975Z",
+    "fetchDate": "2024-11-19T06:30:28.166Z",
     "party": "KD",
     "subject": "miljo-och-klimat"
   },
@@ -1476,11 +1389,12 @@
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/miljopolitik": {
     "opinions": [
-      "Kristdemokraternas miljöpolitik utgår från förvaltarskapstanken, den genomsyrar alla våra ställningstaganden. Vårt mål är att världen ska kunna lämnas till kommande generationer i ett bättre skick än vi själva fick ta emot den. Det är viktigt att satsa resurser på forskning och utveckling av förnybara drivmedel och energikällor. Det är också viktigt att bevara och främja den biologiska mångfalden så att våra ekosystem stärks."
+      "En bärande del av det kristdemokratiska idéarvet är förvaltarskapstanken. Klimatförändringen är en av vår tids största miljöutmaningar. Kristdemokraterna har därför satt ambitiösa mål för att minska utsläppen, nationellt och på EU-nivå. Utöver miljöfrågan som utsläppen av växthusgaser utgör, följer det etiska problemet att det främst är världens fattigaste människor som betalar det högsta priset när jordens medeltemperatur ökar.",
+      "Hoten mot den biologiska mångfalden är tillsammans med övergödningen en omfattande utmaning ur ett globalt perspektiv. I Sverige bidrar våra skogar och vår landsbygd, exempelvis våra hagmarker, till denna mångfald."
     ],
     "title": "Miljöpolitik",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/miljopolitik",
-    "fetchDate": "2023-09-17T17:52:41.143Z",
+    "fetchDate": "2024-11-19T06:30:25.406Z",
     "party": "KD",
     "subject": "miljo-och-klimat"
   },
@@ -1595,16 +1509,6 @@
     "party": "KD",
     "subject": "forsvar"
   },
-  "https://kristdemokraterna.se/var-politik/politik-a-till-o/naturskydd": {
-    "opinions": [
-      "Hotade växt- och djurarter eller naturtyper kan behöva skyddas för att bevara den biologiska mångfalden. Sverige har åtagits sig, bland annat i Nagoyaöverenskommelsen, att bidra till detta. Viktigt att det finns ett antal olika alternativa skyddsåtgärder att välja bland och att skälig ersättning ges till dem som avstår mark eller vårdar skyddade områden för att dessa skall bestå över tid."
-    ],
-    "title": "Naturskydd",
-    "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/naturskydd",
-    "fetchDate": "2023-09-17T17:52:43.177Z",
-    "party": "KD",
-    "subject": "miljo-och-klimat"
-  },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/nordiskt-samarbete": {
     "opinions": [
       "De nordiska länderna binds samman av en gemensam historia och ett gemensamt kulturarv. Kristdemokraterna vill se ett fortsatt nära samarbete med våra nordiska grannländer, där vi tillsammans arbetar för en ökad rörlighet och möter centrala utmaningar. Vi vill se ett effektivt och fokuserat samarbete inom områden där vi tillsammans kan göra en verklig skillnad. Samverkan i Norden bör därför fokusera på gränssamarbete och även innefatta försvars- och säkerhetspolitiska frågor."
@@ -1638,11 +1542,11 @@
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/offentlig-upphandling": {
     "opinions": [
-      "Upphandling av tjänster för offentlig verksamhet måste ske på ett öppet, rättssäkert och transparant sätt. Det är viktigt att alla aktörer har möjlighet att lämna sina bud i samband med upphandling och att det finns en fungerande konkurrens. Stat, region och kommuner måste också få förstärkta förutsättningar för att ta etiska, miljömässiga och sociala hänsyn i upphandlingar. Hinder som höga kostnader och kort tidsram för att ta fram anbud måste motverkas."
+      "Upphandling av tjänster för offentlig verksamhet måste ske på ett öppet, rättssäkert och transparant sätt. Det är viktigt att alla aktörer har möjlighet att lämna sina bud i samband med en upphandling och att det finns en fungerande konkurrens. Staten, regionerna och kommunerna måste också få förstärkta förutsättningar för att ta etiska, miljömässiga och social hänsyn i upphandlingar. Hinder som höga kostnader och kort tidsram för att ta fram anbud måste motverkas. ”Bästa pris” och ”lägsta pris” är inte automatiskt samma sak, man måste väga in vad man får för pengarna."
     ],
     "title": "Offentlig upphandling",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/offentlig-upphandling",
-    "fetchDate": "2024-08-09T06:27:29.979Z",
+    "fetchDate": "2024-11-19T06:30:29.772Z",
     "party": "KD",
     "subject": "naringsliv"
   },
@@ -1725,16 +1629,6 @@
     "fetchDate": "2023-09-17T17:52:39.970Z",
     "party": "KD",
     "subject": "vard-och-omsorg"
-  },
-  "https://kristdemokraterna.se/var-politik/politik-a-till-o/privatisering-av-statliga-bolag": {
-    "opinions": [
-      "Kristdemokraterna är för ett ökat privat ägande. Det stärker det civila samhället, förbättrar ekonomins funktionssätt och tydliggör rollfördelningen mellan det privata och offentliga. När det är möjligt att uppnå ett bra pris ska statliga företag som verkar på konkurrensutsatta marknader säljas i den takt som är bra för företagen, deras anställda och till nytta för folkhushållet."
-    ],
-    "title": "Privatisering av statliga bolag",
-    "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/privatisering-av-statliga-bolag",
-    "fetchDate": "2023-09-17T17:52:42.008Z",
-    "party": "KD",
-    "subject": "naringsliv"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/privat-vard": {
     "opinions": [
@@ -1978,11 +1872,12 @@
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/skogsbruk": {
     "opinions": [
-      "Skogsbruket är en av våra viktigaste näringar som ska bedrivas utifrån de två jämställda målen gällande miljö och produktion, detta för att skogsbruket ska vara hållbart över tid samt främja biologisk mångfald. Skogen är en nyckelresurs på färdvägen mot koldioxidneutralitet."
+      "Skogsbruket och skogsindustrin är näringar som svarar för de största nettoexportinkomsterna i Sverige. Det ger jobb på landsbygden och en hållbar utveckling i hela landet. Skogen skall också svara mot efterfrågan på människors behov av rekreation och leverera viktiga ekosystemtjänster.",
+      "Skogen är en viktig del i Sveriges klimatarbete. När skog växer binder den koldioxid som fortsätter att lagras i produkter av trä. Nästan alltid ersätter de svenska skogsprodukterna något som är mindre hållbart. När vi till exempel ersätter produkter av olja med produkter av trä, minskar vår klimatpåverkan. Produkter från svenskt skogsbruk bidrar till att uppnå de globala hållbarhetsmålen."
     ],
     "title": "Skogsbruk",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/skogsbruk",
-    "fetchDate": "2023-09-17T17:52:42.003Z",
+    "fetchDate": "2024-11-19T06:30:28.018Z",
     "party": "KD",
     "subject": "miljo-och-klimat"
   },
@@ -2268,11 +2163,11 @@
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/ursprungsmarkning": {
     "opinions": [
-      "Kristdemokraterna anser att konsumenterna har rätt att veta varifrån maten de äter kommer och hur djuren vuxit upp och var fisken fångats. Därför bör det införas en obligatorisk ursprungsmärkning av kött och fisk på restauranger, i storhushåll och inom livsmedelsindustrin. Kommuner och regioner ska på menyerna inom sina verksamheter uppge ursprungsland för de köttråvaror som använts."
+      "Kristdemokraterna anser att konsumenterna har rätt att veta varifrån maten de äter kommer ifrån, hur djuren vuxit upp och var fisken fångats. Därför har Kristdemokraterna i regeringsställning gett i uppdrag åt Livsmedelsverket att det ska införas en obligatorisk ursprungsmärkning av kött på restauranger och i storhushåll. Alla restauranger ska uppge i menyn vilket ursprungsland köttråvarorna kommer från som används vid tillagningen av maten."
     ],
     "title": "Ursprungsmärkning",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/ursprungsmarkning",
-    "fetchDate": "2023-09-17T17:52:42.071Z",
+    "fetchDate": "2024-11-19T06:30:28.739Z",
     "party": "KD",
     "subject": "jordbruk-jakt-och-fiske"
   },
@@ -2285,16 +2180,6 @@
     "fetchDate": "2024-08-13T06:27:27.227Z",
     "party": "KD",
     "subject": "utrikes--och-bistandsfragor"
-  },
-  "https://kristdemokraterna.se/var-politik/politik-a-till-o/utslappsratter": {
-    "opinions": [
-      "EU:s system (ETS) för handel med utsläppsrätter har som mål att minska utsläppen av växthusgaser. Vi anser att alla växthusgaser bör omfattas av handelssystemet, att hela transportsektorn samt andra sektorer med stora utsläpp bör omfattas och att handelssystemet på lång sikt bör vara ett globalt system. Likaså behöver Sverige prioritera arbetet med att få fler länder, utanför EU, att ansluta sig till ETS. Särskilt angeläget är detta vad gäller flyget."
-    ],
-    "title": "Utsläppsrätter",
-    "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/utslappsratter",
-    "fetchDate": "2023-09-17T17:52:43.162Z",
-    "party": "KD",
-    "subject": "miljo-och-klimat"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/vaccinationer": {
     "opinions": [
@@ -2348,11 +2233,11 @@
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/vattenkraft": {
     "opinions": [
-      "Vattenkraften fyller en mycket viktig roll i Sveriges energisystem. Även den småskaliga vattenkraften är viktig. Kristdemokraterna har i regering infört ett välbehövligt moratorium för vattenkraftens miljöomprövning. Vi vill se en bättre balans mellan exempelvis fiskens behov av vandringsvägar och å andra sidan elproduktion, kultur- och miljöintressen."
+      "Vattenkraften fyller en mycket viktig roll i Sveriges energisystem – den är fossilfri, stabil och planerbar. Även den småskaliga vattenkraften är viktig. Vi vill se en bättre balans mellan till exempel fiskens behov av vandringsvägar och elproduktion, kultur- och miljöintressen. Vattendirektivet har i många fall tolkats onödigt hårt av svenska myndigheter och ett omtag av detta behövs."
     ],
     "title": "Vattenkraft",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/vattenkraft",
-    "fetchDate": "2023-09-17T17:52:43.358Z",
+    "fetchDate": "2024-11-19T06:30:29.174Z",
     "party": "KD",
     "subject": "energi"
   },
@@ -2477,16 +2362,6 @@
     "party": "KD",
     "subject": "demokrati"
   },
-  "https://kristdemokraterna.se/var-politik/politik-a-till-o/atervinning": {
-    "opinions": [
-      "Kristdemokraterna anser att avfall ska ses som en resurs. Vi vill inrätta kretsloppsparker i kommunerna för att öka återbruk och återvinning. Genom att återvinna avfall bidrar vi till hållbarhet inom ramen för kretsloppssamhället. Avfallshierarkin som ska följas, vilket innebär att vi i första hand ska återanvända, därefter materialåtervinna, förbränna med energiutvinning och som sista lösning deponera."
-    ],
-    "title": "Återvinning",
-    "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/atervinning",
-    "fetchDate": "2023-09-17T17:52:41.695Z",
-    "party": "KD",
-    "subject": "miljo-och-klimat"
-  },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/aganderatt": {
     "opinions": [
       "Kristdemokraterna anser att äganderätten är en grundläggande rättighet. Vi värnar om rätten att få bestämma över, och få avkastning för, sin idé, sin mark eller egendom. Detta är också en av anledningarna till att vi motsätter oss att politiken ska få bestämma över hur den som äger ett företag ska forma sin styrelse. Ägandet främjar förvaltarskapet, ett större personligt ansvarstagande, men ger också en personlig frihet. Därför är det angeläget att det personliga ägandet uppmuntras framför det offentliga och institutionella ägandet."
@@ -2566,5 +2441,25 @@
     "fetchDate": "2024-06-02T17:16:24.247Z",
     "party": "KD",
     "subject": "migration-och-integration"
+  },
+  "https://kristdemokraterna.se/var-politik/politik-a-till-o/el---produktion-och-priser": {
+    "opinions": [
+      "Kristdemokraterna vill att Sverige ska bli världens första fossilfria och industrialiserade välfärdsnation. För det krävs fossilfri el till rimliga stabila priser, och att vi bygger ut vårt elsystem på ett konkurrenskraftigt och samhällsekonomiskt effektivt sätt. Sverige behöver ha ett elsystem med en utformning som kan matcha efterfrågan på el till konkurrenskraftiga priser årets alla dagar, oavsett väder och vind. Alla fossilfria energislag behövs.",
+      "Kristdemokraterna har i regeringsställning på två år fattat mer än 50 beslut om åtgärder som stärker energiförsörjningen på både kort och lång sikt. Vi räddar kraftproduktion som finns, värnar vår vattenkraft och skapar stabila förutsättningar för befintlig kärnkraft. Vi underlättar tillståndsprocesser för att bygga nät och skapar förutsättningar för kommuner och regioner att underlätta återuppbyggnaden av ett leveranssäkert elsystem som levererar stabila konkurrenskraftiga elpriser. Mer produktion och elnät på rätt ställen med rätt egenskaper behövs och är av högsta prioritet."
+    ],
+    "title": "El - produktion och priser",
+    "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/el---produktion-och-priser",
+    "fetchDate": "2024-11-19T06:30:15.833Z",
+    "party": "KD"
+  },
+  "https://kristdemokraterna.se/var-politik/politik-a-till-o/gron-omstallning": {
+    "opinions": [
+      "En storskalig elektrifiering av fordonsflottan och den tunga tillverkningsindustrin är en brygga till det klimatneutrala samhället.",
+      "Kristdemokraterna vill att Sverige ska bli världens första fossilfria och industrialiserade välfärdsnation. För det krävs fossilfri el till rimliga stabila elpriser, och att vi bygger ut vårt elsystem på ett konkurrenskraftigt och samhällsekonomiskt effektivt sätt."
+    ],
+    "title": "Grön omställning",
+    "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/gron-omstallning",
+    "fetchDate": "2024-11-19T06:30:29.451Z",
+    "party": "KD"
   }
 }

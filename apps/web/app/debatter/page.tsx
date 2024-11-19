@@ -42,7 +42,6 @@ export default async function DebatesPage({ searchParams }: Props) {
   );
 }
 
-export const runtime = "edge";
 export const dynamic = "force-dynamic";
 
 export const metadata = {

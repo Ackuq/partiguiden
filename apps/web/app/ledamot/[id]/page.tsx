@@ -68,8 +68,6 @@ export default async function MemberPage({ params }: PageProps) {
   );
 }
 
-export const runtime = "edge";
-
 export async function generateMetadata({ params }: PageProps) {
   const { id } = await params;
 

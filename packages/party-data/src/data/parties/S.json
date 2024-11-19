@@ -2133,5 +2133,19 @@
     "fetchDate": "2024-06-02T17:16:20.575Z",
     "party": "S",
     "subject": "utrikes--och-bistandsfragor"
+  },
+  "https://www.socialdemokraterna.se/var-politik/a-till-o/brottsforebyggande": {
+    "opinions": [
+      "Satsa minst lika mycket på att bryta nyrekryteringen som på polisen",
+      "Se till att kommuner och regioner har tillräckliga resurser för att kunna göra sitt jobb",
+      "Punktmarkera unga på väg in i kriminalitet",
+      "Införa brottsförebyggande insatser redan från fem års ålder",
+      "Ta tillbaka den demokratiska kontrollen över skolan",
+      "Ha skolsocionomer på de skolor som har de tuffaste förutsättningarna"
+    ],
+    "title": "Brottsförebyggande",
+    "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/brottsforebyggande",
+    "fetchDate": "2024-11-19T06:30:23.772Z",
+    "party": "S"
   }
 }

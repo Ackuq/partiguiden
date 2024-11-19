@@ -40,8 +40,6 @@ export default async function Document({ params }: Props) {
   );
 }
 
-export const runtime = "edge";
-
 export async function generateMetadata({ params }: Props) {
   const { id } = await params;
 

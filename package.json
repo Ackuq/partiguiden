@@ -4,7 +4,7 @@
   "description": "Monorepo for all Partiguiden",
   "author": "Axel Pettersson",
   "license": "ISC",
-  "packageManager": "pnpm@9.10.0",
+  "packageManager": "pnpm@9.13.2",
   "scripts": {
     "dev": "turbo dev",
     "build": "turbo build",
@@ -18,21 +18,21 @@
     "format:check": "prettier -c '**/*.{js,mjs,ts,tsx,md,json,css}'"
   },
   "devDependencies": {
-    "@eslint/js": "9.14.0",
-    "@next/eslint-plugin-next": "15.0.2",
+    "@eslint/js": "9.15.0",
+    "@next/eslint-plugin-next": "15.0.3",
     "@trivago/prettier-plugin-sort-imports": "4.3.0",
     "@types/eslint__js": "8.42.3",
-    "eslint": "9.14.0",
+    "eslint": "9.15.0",
     "eslint-plugin-import": "2.31.0",
     "eslint-plugin-react": "7.37.2",
     "eslint-plugin-react-hooks": "5.1.0-rc-6d3110b4d9-20240531",
-    "eslint-plugin-turbo": "2.2.3",
-    "knip": "5.36.3",
+    "eslint-plugin-turbo": "2.3.0",
+    "knip": "5.37.1",
     "prettier": "3.3.3",
-    "prettier-plugin-tailwindcss": "0.6.8",
-    "turbo": "2.2.3",
+    "prettier-plugin-tailwindcss": "0.6.9",
+    "turbo": "2.3.0",
     "typescript": "5.6.3",
-    "typescript-eslint": "8.13.0"
+    "typescript-eslint": "8.15.0"
   },
   "pnpm": {
     "overrides": {

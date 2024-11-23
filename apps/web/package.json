@@ -17,7 +17,7 @@
     "url": "https://github.com/Ackuq/partiguiden.git"
   },
   "dependencies": {
-    "@google-analytics/data": "4.10.0",
+    "@google-analytics/data": "4.11.0",
     "@heroicons/react": "2.2.0",
     "@next/third-parties": "15.0.3",
     "@partiguiden/party-data": "workspace:*",

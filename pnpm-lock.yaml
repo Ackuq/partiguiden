@@ -76,8 +76,8 @@ importers:
   apps/web:
     dependencies:
       '@google-analytics/data':
-        specifier: 4.10.0
-        version: 4.10.0(encoding@0.1.13)
+        specifier: 4.11.0
+        version: 4.11.0(encoding@0.1.13)
       '@heroicons/react':
         specifier: 2.2.0
         version: 2.2.0(react@19.0.0-rc-69d4b800-20241021)
@@ -503,8 +503,8 @@ packages:
     resolution: {integrity: sha512-vBZP4NlzfOlerQTnba4aqZoMhE/a9HY7HRqoOPaETQcSQuWEIyZMHGfVu6w9wGtGK5fED5qRs2DteVCjOH60sA==}
     engines: {node: '>=14'}
 
-  '@google-analytics/data@4.10.0':
-    resolution: {integrity: sha512-/+1mNxHTpDaBpODz/8spr0rLLyhaI6xFMfLpawTjccrrInADnFGoCch/xnp6WM+b1DYO2bXvW2/AvoDn35hmdA==}
+  '@google-analytics/data@4.11.0':
+    resolution: {integrity: sha512-vjfHJfD/BlA1PshCAex0GfHllN9jggTqPj57tii2KzjeOIh8hfZlkw9G0HQB9F9rJoyZU5HgI2a00573yaz8YQ==}
     engines: {node: '>=14.0.0'}
 
   '@grpc/grpc-js@1.12.2':
@@ -4190,7 +4190,7 @@ snapshots:
 
   '@fastify/busboy@2.1.1': {}
 
-  '@google-analytics/data@4.10.0(encoding@0.1.13)':
+  '@google-analytics/data@4.11.0(encoding@0.1.13)':
     dependencies:
       google-gax: 4.4.1(encoding@0.1.13)
     transitivePeerDependencies:

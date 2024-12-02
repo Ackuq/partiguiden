@@ -25,7 +25,7 @@
     "eslint": "9.16.0",
     "eslint-plugin-import": "2.31.0",
     "eslint-plugin-react": "7.37.2",
-    "eslint-plugin-react-hooks": "5.1.0-rc-6d3110b4d9-20240531",
+    "eslint-plugin-react-hooks": "5.1.0-rc.1",
     "eslint-plugin-turbo": "2.3.3",
     "knip": "5.38.3",
     "prettier": "3.4.1",

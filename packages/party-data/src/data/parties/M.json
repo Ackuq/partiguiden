@@ -82,19 +82,6 @@
     "party": "M",
     "subject": "jamstalldhet-och-diskriminering"
   },
-  "https://moderaterna.se/var-politik/idrott/": {
-    "opinions": [
-      "Utöka samarbetet mellan skola, fritidshem, idrotts-och friluftsorganisationer så att fler unga börjar idrotta och får en god grund för ett aktivt friluftsliv",
-      "Genomföra en ny idrottspolitisk utredning och ta fram en Elitidrottsstrategi",
-      "Säkerställa att det är möjligt för elitidrottare att kombinera studier i gymnasieskolan och i högre utbildning med sin idrottssatsning",
-      "Motverka matchfixning, olicensierat spelande och andra kriminella element inom idrotten"
-    ],
-    "title": "Idrott",
-    "url": "https://moderaterna.se/var-politik/idrott/",
-    "fetchDate": "2024-06-02T17:16:21.240Z",
-    "party": "M",
-    "subject": "kultur-media-och-idrott"
-  },
   "https://moderaterna.se/var-politik/infrastruktur/": {
     "opinions": [
       "Vi hållbart ska investera i vägar, järnväg, hamnar och flygplatser",
@@ -172,14 +159,6 @@
     "party": "M",
     "subject": "jobb"
   },
-  "https://moderaterna.se/var-politik/brott-och-straff/": {
-    "opinions": [],
-    "title": "Brott och straff",
-    "url": "https://moderaterna.se/var-politik/brott-och-straff/",
-    "fetchDate": "2024-06-02T17:16:20.636Z",
-    "party": "M",
-    "subject": "lag-och-ratt"
-  },
   "https://moderaterna.se/var-politik/brottsforebyggande-atgarder/": {
     "opinions": [
       "Stöd ska sättas in tidigt, redan i mödra- och barnvården",
@@ -206,18 +185,6 @@
     "fetchDate": "2024-06-02T17:16:21.593Z",
     "party": "M",
     "subject": "miljo-och-klimat"
-  },
-  "https://moderaterna.se/var-politik/forskning-och-innovation/": {
-    "opinions": [
-      "Skapa bättre förutsättningar för forskning i världsklass",
-      "Underlätta rekryteringen av doktorander och forskare från andra länder",
-      "Satsa på forskning för att möta samhällsutmaningarna"
-    ],
-    "title": "Forskning och innovation",
-    "url": "https://moderaterna.se/var-politik/forskning-och-innovation/",
-    "fetchDate": "2024-06-02T17:16:19.522Z",
-    "party": "M",
-    "subject": "utbildning"
   },
   "https://moderaterna.se/var-politik/foretagsklimat/": {
     "opinions": [

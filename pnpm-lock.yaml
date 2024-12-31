@@ -109,8 +109,8 @@ importers:
         specifier: 19.0.0-rc-69d4b800-20241021
         version: 19.0.0-rc-69d4b800-20241021(react@19.0.0-rc-69d4b800-20241021)
       react-share:
-        specifier: 5.1.1
-        version: 5.1.1(react@19.0.0-rc-69d4b800-20241021)
+        specifier: 5.1.2
+        version: 5.1.2(react@19.0.0-rc-69d4b800-20241021)
       recharts:
         specifier: 2.15.0
         version: 2.15.0(react-dom@19.0.0-rc-69d4b800-20241021(react@19.0.0-rc-69d4b800-20241021))(react@19.0.0-rc-69d4b800-20241021)
@@ -3327,10 +3327,10 @@ packages:
   react-is@19.0.0-rc-69d4b800-20241021:
     resolution: {integrity: sha512-aa07RwFePjPGNw0QEdTGYD9MFJHXUOqtKwSGZbNFZIUcsQRCXNudFvv/Ywv+Hp0KM60J4rTdF6+zew3pZAMm1g==}
 
-  react-share@5.1.1:
-    resolution: {integrity: sha512-9rX6X4FiLwKi/eygTx6TWEKv0EuL15AdP6vnFMw5sA4UwTja0mgV4N3gAbkE9+5n3ry7BsBBeOnhaXbJ+jn9kQ==}
+  react-share@5.1.2:
+    resolution: {integrity: sha512-qwMT72LrGvDsg3E5lKlvUcXH4YWqjLcqlinxIomGaey2SoS/1/DBkTpan3TyzX9gDr0dcp1bl+z5LbdOOE4bmA==}
     peerDependencies:
-      react: ^17 || ^18
+      react: ^17 || ^18 || ^19
 
   react-smooth@4.0.1:
     resolution: {integrity: sha512-OE4hm7XqR0jNOq3Qmk9mFLyd6p2+j6bvbPJ7qlB7+oo0eNcL2l7WQzG6MBnT3EXY6xzkLMUBec3AfewJdA0J8w==}
@@ -7550,7 +7550,7 @@ snapshots:
 
   react-is@19.0.0-rc-69d4b800-20241021: {}
 
-  react-share@5.1.1(react@19.0.0-rc-69d4b800-20241021):
+  react-share@5.1.2(react@19.0.0-rc-69d4b800-20241021):
     dependencies:
       classnames: 2.5.1
       jsonp: 0.2.1

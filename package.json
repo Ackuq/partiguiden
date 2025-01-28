@@ -4,7 +4,7 @@
   "description": "Monorepo for all Partiguiden",
   "author": "Axel Pettersson",
   "license": "ISC",
-  "packageManager": "pnpm@9.13.2",
+  "packageManager": "pnpm@10.1.0+sha512.c89847b0667ddab50396bbbd008a2a43cf3b581efd59cf5d9aa8923ea1fb4b8106c041d540d08acb095037594d73ebc51e1ec89ee40c88b30b8a66c0fae0ac1b",
   "scripts": {
     "dev": "turbo dev",
     "build": "turbo build",
@@ -18,25 +18,25 @@
     "format:check": "prettier -c '**/*.{js,mjs,ts,tsx,md,json,css}'"
   },
   "devDependencies": {
-    "@eslint/js": "9.18.0",
-    "@next/eslint-plugin-next": "15.1.5",
-    "@trivago/prettier-plugin-sort-imports": "5.2.1",
+    "@eslint/js": "9.19.0",
+    "@next/eslint-plugin-next": "15.1.6",
+    "@trivago/prettier-plugin-sort-imports": "5.2.2",
     "@types/eslint__js": "8.42.3",
-    "eslint": "9.18.0",
+    "eslint": "9.19.0",
     "eslint-plugin-import": "2.31.0",
     "eslint-plugin-react": "7.37.4",
     "eslint-plugin-react-hooks": "5.1.0",
-    "eslint-plugin-turbo": "2.3.3",
-    "knip": "5.42.3",
+    "eslint-plugin-turbo": "2.3.4",
+    "knip": "5.43.6",
     "prettier": "3.4.2",
-    "prettier-plugin-tailwindcss": "0.6.10",
-    "turbo": "2.3.3",
+    "prettier-plugin-tailwindcss": "0.6.11",
+    "turbo": "2.3.4",
     "typescript": "5.7.3",
-    "typescript-eslint": "8.21.0"
+    "typescript-eslint": "8.22.0"
   },
   "pnpm": {
     "overrides": {
-      "react-is": "19.0.0-rc-69d4b800-20241021"
+      "react-is": "19.0.0"
     }
   }
 }

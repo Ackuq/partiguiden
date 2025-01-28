@@ -36,7 +36,7 @@ export default function Decision({ decision }: Props) {
             {decision.title}
           </p>
         </div>
-        <ChevronDownIcon className="h-6 w-6 flex-shrink-0 transition-transform group-aria-expanded:rotate-180 sm:h-8 sm:w-8" />
+        <ChevronDownIcon className="h-6 w-6 shrink-0 transition-transform group-aria-expanded:rotate-180 sm:h-8 sm:w-8" />
       </button>
       <Divider aria-hidden={!visible} className="aria-hidden:hidden" />
       <div

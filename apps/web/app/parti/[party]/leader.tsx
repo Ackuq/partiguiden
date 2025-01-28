@@ -14,7 +14,7 @@ export default function Leader({ leader }: LeaderProps) {
   return (
     <Link
       href={routes.member(leader.id)}
-      className="flex flex-col gap-2 rounded py-2 text-center transition-colors hover:bg-slate-100 dark:hover:bg-slate-700"
+      className="flex flex-col gap-2 rounded-sm py-2 text-center transition-colors hover:bg-slate-100 dark:hover:bg-slate-700"
     >
       <MemberImage
         imageUrl={leader.pictureUrl}

@@ -51,14 +51,14 @@ export default function Filter() {
       </button>
       <div
         className={twMerge(
-          "top-0 z-50 h-screen overflow-y-scroll shadow-sm",
+          "top-0 z-50 h-screen overflow-y-scroll shadow-xs",
           "bg-white transition-transform dark:bg-slate-800",
           "w-drawer translate-x-drawer fixed right-0 pt-12 group-data-[mobile-hidden=false]:translate-x-0",
           // Desktop styles, disable when drawer-visible=true in order to correctly render the site when resized.
-          "group-data-[mobile-hidden=true]:sm:top-header-sm-with-margin group-data-[mobile-hidden=true]:sm:max-h-full-without-header",
-          "group-data-[mobile-hidden=true]:sm:sticky group-data-[mobile-hidden=true]:sm:transform-none",
-          "group-data-[mobile-hidden=true]:sm:z-0 group-data-[mobile-hidden=true]:sm:h-min group-data-[mobile-hidden=true]:sm:w-auto",
-          "group-data-[mobile-hidden=true]:sm:min-w-[17rem] group-data-[mobile-hidden=true]:sm:rounded-sm group-data-[mobile-hidden=true]:sm:pt-0",
+          "sm:group-data-[mobile-hidden=true]:top-header-sm-with-margin sm:group-data-[mobile-hidden=true]:max-h-full-without-header",
+          "sm:group-data-[mobile-hidden=true]:sticky sm:group-data-[mobile-hidden=true]:transform-none",
+          "sm:group-data-[mobile-hidden=true]:z-0 sm:group-data-[mobile-hidden=true]:h-min sm:group-data-[mobile-hidden=true]:w-auto",
+          "sm:group-data-[mobile-hidden=true]:min-w-[17rem] sm:group-data-[mobile-hidden=true]:rounded-xs sm:group-data-[mobile-hidden=true]:pt-0",
           "sm:transition-none",
         )}
       >
@@ -67,7 +67,7 @@ export default function Filter() {
           aria-label="Stäng filtermeny"
           className={twMerge(
             "absolute right-4 top-4",
-            "group-data-[mobile-hidden=true]:sm:hidden",
+            "sm:group-data-[mobile-hidden=true]:hidden",
           )}
         >
           <XMarkIcon className="text-red h-8 w-8" />

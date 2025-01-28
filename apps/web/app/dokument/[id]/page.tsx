@@ -32,7 +32,7 @@ export default async function Document({ params }: Props) {
         <div
           dangerouslySetInnerHTML={{ __html: html }}
           className={twMerge(
-            "dark:[&_*]:!border-slate-50 dark:[&_*]:!text-slate-50",
+            "dark:**:border-slate-50! dark:**:text-slate-50!",
           )}
         />
       </Container>

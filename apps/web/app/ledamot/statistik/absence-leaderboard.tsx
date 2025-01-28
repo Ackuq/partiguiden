@@ -85,7 +85,7 @@ interface MemberListEntryProps {
 
 function MemberListEntry({ member, variant }: MemberListEntryProps) {
   return (
-    <li className="dark:border-slate-600 [&:not(:last-child)]:border-b-[1px]">
+    <li className="dark:border-slate-600 not-last:border-b-[1px]">
       <Link
         href={routes.member(member.id)}
         className={twMerge(

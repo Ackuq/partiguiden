@@ -14,7 +14,7 @@ export default function MemberCard({ member }: Props) {
     <Link
       href={routes.member(member.id)}
       className={twMerge(
-        "relative flex rounded p-4 shadow-md",
+        "relative flex rounded-sm p-4 shadow-md",
         "bg-white dark:bg-slate-800",
       )}
     >
@@ -35,7 +35,7 @@ export default function MemberCard({ member }: Props) {
       <div
         className={twMerge(
           "absolute bottom-0 left-0 w-full rounded-b p-2 text-slate-50",
-          "bg-slate-600/70 backdrop-blur-sm dark:bg-slate-900/75",
+          "bg-slate-600/70 backdrop-blur-xs dark:bg-slate-900/75",
         )}
       >
         {member.firstName} {member.lastName}

@@ -42,7 +42,7 @@ export default function PartyStandpoints({
         )}
       >
         {partyNames[party]}
-        <ChevronDownIcon className="mr-2 h-6 w-6 transition-transform duration-300 group-aria-[expanded=true]:rotate-180" />
+        <ChevronDownIcon className="mr-2 h-6 w-6 transition-transform duration-300 group-aria-expanded:rotate-180" />
       </button>
 
       {visible && (
@@ -64,7 +64,7 @@ export default function PartyStandpoints({
               <div className="flex flex-wrap">
                 <a
                   className={twMerge(
-                    "whitespace-nowrap rounded p-2 text-sm font-medium uppercase transition-colors",
+                    "whitespace-nowrap rounded-sm p-2 text-sm font-medium uppercase transition-colors",
                     partyTextColor[party],
                     partyBackgroundHover[party],
                   )}

@@ -1,7 +1,6 @@
-/**
- * @type {import("next").NextConfig["redirects"]}
- */
-const redirects = () => {
+import type { NextConfig } from "next";
+
+const redirects: NextConfig["redirects"] = () => {
   return Promise.resolve([
     {
       source: "/member/",

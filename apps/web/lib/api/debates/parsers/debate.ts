@@ -5,6 +5,7 @@ import type {
   DocumentList,
   DocumentListEntry,
 } from "@lib/api/parliament/types";
+import slugify from "@lib/utils/slugify";
 
 import getSpeaker from "../get-speaker";
 import getSpeech from "../get-speech";
@@ -78,7 +79,10 @@ export default async function parseDebate(
     .for(speakerIds)
     .process(getSpeaker);
 
-  const webTVUrl = `https://www.riksdagen.se/views/pages/embedpage.aspx?did=${id}`;
+  const slugCategory = type ? slugify(type) : "debatt-om-forslag";
+  const slugTitle = slugify(title);
+
+  const webTVUrl = `https://www.riksdagen.se/sv/webb-tv/video/${slugCategory}/${slugTitle}_${id.toLocaleLowerCase()}/embed/`;
 
   const [speakerList, speechesList] = await Promise.all([
     speakerPromises,
@@ -96,6 +100,7 @@ export default async function parseDebate(
   const statements = speechesList.results.filter(
     (speech) => speech.speakerId !== "",
   );
+
   return {
     id,
     title,

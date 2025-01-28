@@ -31,9 +31,7 @@ export default async function Document({ params }: Props) {
         <SocialMediaShare title={`${data.id}: ${data.title}`} />
         <div
           dangerouslySetInnerHTML={{ __html: html }}
-          className={twMerge(
-            "dark:**:border-slate-50! dark:**:text-slate-50!",
-          )}
+          className={twMerge("dark:**:border-slate-50! dark:**:text-slate-50!")}
         />
       </Container>
     </main>

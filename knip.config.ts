@@ -14,7 +14,7 @@ const config: KnipConfig = {
       tailwind: {
         project: ["lib/colors/**/*"],
       },
-      ignoreDependencies: ["@tailwindcss/postcss"],
+      ignoreDependencies: ["postcss"],
     },
     "packages/party-data": {
       entry: ["scripts/cli.ts"],

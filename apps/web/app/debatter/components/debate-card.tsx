@@ -33,7 +33,7 @@ export default function DebateCard({ debate }: Props) {
               lastName={debate.sender.lastName}
               party={debate.sender.party}
               sizes="(min-width: 640px) 96px, 80px"
-              className="h-20 w-20 flex-shrink-0 sm:h-24 sm:w-24"
+              className="h-20 w-20 shrink-0 sm:h-24 sm:w-24"
             />
           )}
         </div>

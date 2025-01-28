@@ -16,7 +16,7 @@ export function PrimaryButton({ children, className }: BaseButtonProps) {
   return (
     <BaseButton
       className={twMerge(
-        "bg-teal-700 dark:bg-teal-900 w-full rounded px-2 py-3 text-white",
+        "bg-teal-700 dark:bg-teal-900 w-full rounded-sm px-2 py-3 text-white",
         className,
       )}
     >

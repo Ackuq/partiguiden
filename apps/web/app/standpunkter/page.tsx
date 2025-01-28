@@ -13,12 +13,12 @@ export const metadata = {
 };
 
 const shiftColors = [
-  "[&:nth-child(3n)]:bg-gray-100",
-  "[&:nth-child(3n+1)]:bg-gray-200",
-  "[&:nth-child(3n+2)]:bg-gray-200/60",
-  "dark:[&:nth-child(3n)]:bg-slate-800",
-  "dark:[&:nth-child(3n+1)]:bg-slate-800",
-  "dark:[&:nth-child(3n+2)]:bg-slate-800",
+  "nth-[3n]:bg-gray-100",
+  "nth-[3n+1]:bg-gray-200",
+  "nth-[3n+2]:bg-gray-200/60",
+  "dark:nth-[3n]:bg-slate-800",
+  "dark:nth-[3n+1]:bg-slate-800",
+  "dark:nth-[3n+2]:bg-slate-800",
 ].join(" ");
 
 export default function Subjects() {
@@ -43,7 +43,7 @@ export default function Subjects() {
               href={routes.standpoint(subject.id)}
               className={`${shiftColors} group`}
             >
-              <span className="to-teal-700 group:hover:transition-all inline-block bg-gradient-to-l from-transparent from-50% to-50% bg-[length:200%_100%] bg-right px-3 py-4 duration-300 group-hover:bg-left group-hover:text-white">
+              <span className="to-teal-700 group:hover:transition-all inline-block bg-linear-to-l from-transparent from-50% to-50% bg-[length:200%_100%] bg-right px-3 py-4 duration-300 group-hover:bg-left group-hover:text-white">
                 {subject.name}
               </span>
             </Link>

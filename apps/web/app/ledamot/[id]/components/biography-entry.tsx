@@ -24,7 +24,7 @@ export default function BiographyEntry({ information }: Props) {
     >
       <div className="flex items-center justify-between p-4">
         {information.code}
-        <ChevronDownIcon className="h-4 w-4 transition-transform group-aria-[expanded=true]:rotate-180" />
+        <ChevronDownIcon className="h-4 w-4 transition-transform group-aria-expanded:rotate-180" />
       </div>
       <p className="px-4 pb-6 pt-2 group-aria-[expanded=false]:hidden">
         {information.content}

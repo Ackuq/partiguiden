@@ -66,7 +66,7 @@ export default function HistoricPolls({ historicPolls }: Props) {
           ))}
           <Brush
             dataKey="date"
-            className="[&_text]:fill-slate-950 [&_text]:dark:fill-slate-50"
+            className="[&_text]:fill-slate-950 dark:[&_text]:fill-slate-50"
             fill={theme === "dark" ? colors.slate[500] : "white"}
             stroke={theme === "dark" ? colors.slate[900] : colors.slate[500]}
           />

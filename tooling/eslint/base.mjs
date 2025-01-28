@@ -14,15 +14,7 @@ const baseConfig = tseslint.config(
   },
   ...tseslint.configs.recommendedTypeChecked,
   ...tseslint.configs.stylisticTypeChecked,
-  {
-    name: "Turbo plugin",
-    plugins: {
-      turbo: turboPlugin,
-    },
-    rules: {
-      ...turboPlugin.configs.recommended.rules,
-    },
-  },
+  turboPlugin.configs["flat/recommended"],
   {
     name: "Typescript ESLint overrides",
     rules: {

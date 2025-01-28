@@ -20,7 +20,7 @@ export default function SearchFilter() {
         className={twMerge(
           "border-gray-300 text-gray-900",
           "ring-teal-700 dark:text-white dark:placeholder-gray-400",
-          "w-full border-b-2 bg-transparent p-3 pl-10 text-lg outline-none ring-inset focus:ring-2",
+          "w-full border-b-2 bg-transparent p-3 pl-10 text-lg outline-hidden ring-inset focus:ring-2",
         )}
         onChange={handleChange}
         placeholder="Sök"

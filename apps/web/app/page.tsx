@@ -52,7 +52,7 @@ export default async function IndexPage() {
                 key={subject.id}
                 href={routes.standpoint(subject.id)}
                 className={twMerge(
-                  "rounded bg-slate-100 py-3 shadow-md transition-opacity hover:opacity-70",
+                  "rounded-sm bg-slate-100 py-3 shadow-md transition-opacity hover:opacity-70",
                   "dark:bg-slate-700 dark:shadow-slate-900",
                 )}
               >

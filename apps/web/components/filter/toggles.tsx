@@ -27,13 +27,13 @@ export default function SearchToggles() {
             className={twMerge(
               "group flex w-full cursor-pointer items-center gap-3 p-3 text-sm font-medium",
               "text-gray-900 transition-[background-color] dark:text-gray-300",
-              "hover:bg-teal-600/25 hover:dark:bg-slate-900/50",
+              "hover:bg-teal-600/25 dark:hover:bg-slate-900/50",
             )}
             data-checked={value}
           >
             <div
               className={twMerge(
-                "relative h-4 w-4 rounded border-[1.5px] bg-transparent",
+                "relative h-4 w-4 rounded-sm border-[1.5px] bg-transparent",
                 "border-slate-600 dark:border-slate-400",
                 "group-data-[checked=true]:bg-teal-700 group-data-[checked=true]:border-0",
               )}

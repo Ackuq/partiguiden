@@ -51,7 +51,7 @@ export default function CustomTooltip({
   valueFormatter?: (value: string | number) => string;
 }) {
   return (
-    <div className="rounded-sm bg-white shadow-lg dark:bg-slate-950">
+    <div className="rounded-xs bg-white shadow-lg dark:bg-slate-950">
       {label && (
         <>
           <div className="px-3 pb-1 pt-2">

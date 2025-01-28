@@ -5,7 +5,7 @@
   "author": "Axel Pettersson",
   "license": "ISC",
   "scripts": {
-    "dev": "next dev --turbopack --experimental-https",
+    "dev": "next dev --experimental-https",
     "clean": "git clean -xdf .next .turbo node_modules",
     "start": "next start",
     "build": "next build",

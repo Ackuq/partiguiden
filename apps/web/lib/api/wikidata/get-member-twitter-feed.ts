@@ -23,12 +23,16 @@ export default async function getMemberTwitterFeed(memberId: string) {
   });
 
   const response = await fetch(`${WIKIDATA_QUERY_URL}?${query.toString()}`, {
-    headers: { Accept: "application/sparql-results+json" },
+    headers: {
+      Accept: "application/sparql-results+json",
+      "user-agent": "partiguiden/1.0",
+    },
     next: {
       // Revalidate once per week
       revalidate: 60 * 60 * 24 * 7,
     },
   });
+  console.log(response.url);
   const data = await body<WikidataResponse<TwitterResult>>(response);
   return data;
 }

@@ -1,5 +1,3 @@
-/* global process */
-// @ts-check
 import bundleAnalyzer from "@next/bundle-analyzer";
 import { withSentryConfig } from "@sentry/nextjs";
 
@@ -9,7 +7,7 @@ const withBundleAnalyzer = bundleAnalyzer({
   enabled: process.env.ANALYZE === "true",
 });
 
-let nextConfig = withBundleAnalyzer({
+const nextConfig = withBundleAnalyzer({
   productionBrowserSourceMaps: true,
 
   transpilePackages: ["@partiguiden/party-data"],

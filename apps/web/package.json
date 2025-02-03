@@ -31,7 +31,7 @@
     "react-share": "5.1.2",
     "recharts": "2.15.1",
     "strip-json-comments": "5.0.1",
-    "tailwind-merge": "2.6.0",
+    "tailwind-merge": "3.0.1",
     "tailwindcss": "4.0.0",
     "typed.js": "2.1.0"
   },

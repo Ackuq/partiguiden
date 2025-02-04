@@ -18,7 +18,7 @@
   },
   "devDependencies": {
     "@inquirer/prompts": "7.3.1",
-    "@types/node": "22.13.0",
+    "@types/node": "22.13.1",
     "tsx": "4.19.2"
   }
 }

@@ -34,7 +34,7 @@ export default function RootLayout({ children }: PropsWithChildren) {
           "flex min-h-dvh flex-col bg-slate-50 text-slate-950 dark:bg-slate-950 dark:text-slate-50",
         )}
       >
-        <ThemeProvider attribute="class">
+        <ThemeProvider attribute="data-theme">
           <Header />
           {children}
           <Footer />

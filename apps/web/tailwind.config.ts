@@ -1,10 +1,6 @@
 import type { Config } from "tailwindcss";
 
-import { committeeColors } from "./lib/colors/committee";
-import { partyColors } from "./lib/colors/party";
-
 const config: Config = {
-  darkMode: "class",
   content: [
     "./lib/styles/**/*.{ts,tsx}",
     "./components/**/*.{ts,tsx}",
@@ -24,14 +20,6 @@ const config: Config = {
       },
     },
     extend: {
-      colors: {
-        party: {
-          ...partyColors,
-        },
-        committee: {
-          ...committeeColors,
-        },
-      },
       aria: {
         "current-page": "current=page",
         "current-false": "current=false",

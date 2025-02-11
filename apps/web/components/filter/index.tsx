@@ -51,14 +51,15 @@ export default function Filter() {
       </button>
       <div
         className={twMerge(
-          "top-0 z-50 h-screen overflow-y-scroll shadow-xs",
+          "top-0 z-50 h-dvh overflow-y-scroll shadow-xs",
           "bg-white transition-transform dark:bg-slate-800",
-          "w-drawer translate-x-drawer fixed right-0 pt-12 group-data-[mobile-hidden=false]:translate-x-0",
+          "w-drawer translate-x-(--width-drawer) fixed right-0 pt-12 group-data-[mobile-hidden=false]:translate-x-0",
           // Desktop styles, disable when drawer-visible=true in order to correctly render the site when resized.
           "sm:group-data-[mobile-hidden=true]:top-header-sm-with-margin sm:group-data-[mobile-hidden=true]:max-h-full-without-header",
           "sm:group-data-[mobile-hidden=true]:sticky sm:group-data-[mobile-hidden=true]:transform-none",
           "sm:group-data-[mobile-hidden=true]:z-0 sm:group-data-[mobile-hidden=true]:h-min sm:group-data-[mobile-hidden=true]:w-auto",
           "sm:group-data-[mobile-hidden=true]:min-w-[17rem] sm:group-data-[mobile-hidden=true]:rounded-xs sm:group-data-[mobile-hidden=true]:pt-0",
+          "sm:group-data-[mobile-hidden=true]:translate-x-0",
           "sm:transition-none",
         )}
       >

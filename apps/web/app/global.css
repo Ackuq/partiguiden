@@ -34,3 +34,26 @@
 ins.adsbygoogle[data-ad-status="unfilled"] {
   display: none !important;
 }
+
+@theme {
+  /* Colors */
+
+  /* Sizing */
+  --height-header: 3.5rem;
+  --height-header-with-margin: 4.5rem;
+  --height-header-sm: 6rem;
+  --height-header-sm-with-margin: 7rem;
+  --width-drawer: 18rem;
+
+  --height-full-with-header: calc(100vh - var(--height-header-sm-with-margin));
+  --height-full-with-header: calc(100dvh - var(--height-header-with-margin));
+
+  /* Spacing */
+  --spacing-full-without-header: calc(
+    100dvh - var(--height-header-sm-with-margin)
+  );
+  --spacing-header: var(--height-header);
+  --spacing-header-with-margin: var(--height-header-with-margin);
+  --spacing-header-sm: var(--height-header-sm);
+  --spacing-header-sm-with-margin: var(--height-header-sm-with-margin);
+}

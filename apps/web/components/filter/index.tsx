@@ -59,6 +59,7 @@ export default function Filter() {
           "sm:group-data-[mobile-hidden=true]:sticky sm:group-data-[mobile-hidden=true]:transform-none",
           "sm:group-data-[mobile-hidden=true]:z-0 sm:group-data-[mobile-hidden=true]:h-min sm:group-data-[mobile-hidden=true]:w-auto",
           "sm:group-data-[mobile-hidden=true]:min-w-[17rem] sm:group-data-[mobile-hidden=true]:rounded-xs sm:group-data-[mobile-hidden=true]:pt-0",
+          "sm:group-data-[mobile-hidden=true]:translate-x-0",
           "sm:transition-none",
         )}
       >

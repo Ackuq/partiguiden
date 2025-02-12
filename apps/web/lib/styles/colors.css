@@ -1,0 +1,105 @@
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+:root {
+  --party-S-color: var(--color-rose-600);
+  --party-SD-color: var(--color-amber-400);
+  --party-M-color: var(--color-blue-600);
+  --party-MP-color: var(--color-green-600);
+  --party-L-color: var(--color-cyan-600);
+  --party-KD-color: var(--color-sky-600);
+  --party-C-color: var(--color-emerald-800);
+  --party-V-color: var(--color-red-700);
+
+  --committee-AU-color: #3498db;
+  --committee-CU-color: #f39c12;
+  --committee-FiU-color: #1abc9c;
+  --committee-FöU-color: #2980b9;
+  --committee-JuU-color: #34495e;
+  --committee-KU-color: #d35400;
+  --committee-KrU-color: #8e44ad;
+  --committee-MJU-color: #27ae60;
+  --committee-NU-color: #f1c40f;
+  --committee-SkU-color: #575fcf;
+  --committee-SfU-color: #ef5777;
+  --committee-SoU-color: #ff5e57;
+  --committee-TU-color: #3c40c6;
+  --committee-UbU-color: #808e9b;
+  --committee-UU-color: #f53b57;
+  --committee-UFöU-color: #ffa801;
+}
+
+[data-theme="dark"] {
+  --party-S-color: var(--color-rose-700);
+  --party-SD-color: var(--color-amber-400);
+  --party-M-color: var(--color-blue-700);
+  --party-MP-color: var(--color-green-700);
+  --party-L-color: var(--color-cyan-600);
+  --party-KD-color: var(--color-sky-700);
+  --party-C-color: var(--color-emerald-900);
+  --party-V-color: var(--color-red-800);
+
+  --committee-AU-color: #236a95;
+  --committee-CU-color: #9f650d;
+  --committee-FiU-color: #126f65;
+  --committee-FöU-color: #1a597d;
+  --committee-JuU-color: #232f40;
+  --committee-KU-color: #8a3500;
+  --committee-KrU-color: #602274;
+  --committee-MJU-color: #1a723a;
+  --committee-NU-color: #9d870b;
+  --committee-SkU-color: #39399a;
+  --committee-SfU-color: #a33257;
+  --committee-SoU-color: #d03a3a;
+  --committee-TU-color: #27238b;
+  --committee-UbU-color: #535860;
+  --committee-UU-color: #d01739;
+  --committee-UFöU-color: #b07300;
+}
+
+@theme {
+  /* Colors */
+  --color-party-S: var(--party-S-color);
+  --color-party-SD: var(--party-SD-color);
+  --color-party-M: var(--party-M-color);
+  --color-party-MP: var(--party-MP-color);
+  --color-party-L: var(--party-L-color);
+  --color-party-KD: var(--party-KD-color);
+  --color-party-C: var(--party-C-color);
+  --color-party-V: var(--party-V-color);
+
+  --color-committee-AU: var(--committee-AU-color);
+  --color-committee-CU: var(--committee-CU-color);
+  --color-committee-FiU: var(--committee-FiU-color);
+  --color-committee-FöU: var(--committee-FöU-color);
+  --color-committee-JuU: var(--committee-JuU-color);
+  --color-committee-KU: var(--committee-KU-color);
+  --color-committee-KrU: var(--committee-KrU-color);
+  --color-committee-MJU: var(--committee-MJU-color);
+  --color-committee-NU: var(--committee-NU-color);
+  --color-committee-SkU: var(--committee-SkU-color);
+  --color-committee-SfU: var(--committee-SfU-color);
+  --color-committee-SoU: var(--committee-SoU-color);
+  --color-committee-TU: var(--committee-TU-color);
+  --color-committee-UbU: var(--committee-UbU-color);
+  --color-committee-UU: var(--committee-UU-color);
+  --color-committee-UFöU: var(--committee-UFöU-color);
+
+  /* Sizing */
+  --height-header: 3.5rem;
+  --height-header-with-margin: 4.5rem;
+  --height-header-sm: 6rem;
+  --height-header-sm-with-margin: 7rem;
+  --width-drawer: 18rem;
+
+  --height-full-with-header: calc(100vh - var(--height-header-sm-with-margin));
+  --height-full-with-header: calc(100dvh - var(--height-header-with-margin));
+
+  /* Spacing */
+  --spacing-full-without-header: calc(
+    100dvh - var(--height-header-sm-with-margin)
+  );
+  --spacing-header: var(--height-header);
+  --spacing-header-with-margin: var(--height-header-with-margin);
+  --spacing-header-sm: var(--height-header-sm);
+  --spacing-header-sm-with-margin: var(--height-header-sm-with-margin);
+}

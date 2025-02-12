@@ -105,10 +105,10 @@ export default function Pagination({
             key={page}
             onClick={createOnChange(page)}
             disabled={page === current}
-            aria-current={page === current}
+            aria-current={page === current ? "page" : "false"}
             className={twMerge(
               "h-6 w-6 rounded-full text-sm transition-colors sm:h-8 sm:w-8",
-              "aria-current:bg-slate-200 dark:aria-current:bg-slate-600",
+              "aria-[current=page]:bg-slate-200 dark:aria-[current=page]:bg-slate-600",
               "hover:bg-slate-200 dark:hover:bg-slate-600",
             )}
           >

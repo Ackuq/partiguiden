@@ -1,2 +1,4 @@
 # Github Action build output
 actions/*/dist
+# Next output
+apps/web/.next

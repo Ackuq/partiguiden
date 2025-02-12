@@ -8,6 +8,7 @@ import parseTask from "./task";
 const notAcceptedTasks = [
   "sv",
   "en",
+  "HarBild",
   "KandiderarINastaVal",
   "Officiell e-postadress",
   "Föräldrar",

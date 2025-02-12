@@ -4,8 +4,8 @@ import { usePathname } from "next/navigation";
 import {
   FacebookIcon,
   FacebookShareButton,
-  TwitterIcon,
   TwitterShareButton,
+  XIcon,
 } from "react-share";
 
 const size = 45;
@@ -27,7 +27,7 @@ export default function SocialMediaShare({ title }: SocialMediaShareProps) {
         <FacebookIcon size={size} round />
       </FacebookShareButton>
       <TwitterShareButton url={path} title={title}>
-        <TwitterIcon size={size} round />
+        <XIcon size={size} round />
       </TwitterShareButton>
     </div>
   );

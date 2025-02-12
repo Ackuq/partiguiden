@@ -10,9 +10,8 @@ const config: KnipConfig = {
     "apps/web": {
       // Additional entry points
       entry: ["next-sitemap.config.js"],
-      ignore: ["config/**/*"],
-      tailwind: {
-        project: ["lib/colors/**/*"],
+      next: {
+        project: ["config/**/*"],
       },
       ignoreDependencies: ["postcss"],
     },

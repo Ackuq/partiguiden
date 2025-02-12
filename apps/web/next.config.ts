@@ -9,7 +9,6 @@ const withBundleAnalyzer = bundleAnalyzer({
 
 const nextConfig = withBundleAnalyzer({
   productionBrowserSourceMaps: true,
-
   transpilePackages: ["@partiguiden/party-data"],
   redirects,
   basePath: "",

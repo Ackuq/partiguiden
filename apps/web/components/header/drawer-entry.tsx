@@ -8,7 +8,7 @@ import type { NavigationEntry, RouteEntry } from "@lib/navigation";
 
 const drawerEntryClassName = twMerge(
   "flex w-full items-center gap-6 px-4 text-lg",
-  "dark:aria-current-page:text-teal-200 ",
+  "dark:aria-[current=page]:text-teal-200 ",
 );
 
 interface DropdownProps {

@@ -32,7 +32,7 @@ export default async function getMemberTwitterFeed(memberId: string) {
       revalidate: 60 * 60 * 24 * 7,
     },
   });
-  console.log(response.url);
+
   const data = await body<WikidataResponse<TwitterResult>>(response);
   return data;
 }

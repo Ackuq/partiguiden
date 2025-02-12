@@ -2120,7 +2120,8 @@
     "title": "El - produktion och priser",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/el---produktion-och-priser",
     "fetchDate": "2024-11-19T06:30:15.833Z",
-    "party": "KD"
+    "party": "KD",
+    "subject": "energi"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/gron-omstallning": {
     "opinions": [
@@ -2130,7 +2131,8 @@
     "title": "Grön omställning",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/gron-omstallning",
     "fetchDate": "2024-11-19T06:30:29.451Z",
-    "party": "KD"
+    "party": "KD",
+    "subject": "miljo-och-klimat"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/drivmedelspriser": {
     "opinions": [
@@ -2139,7 +2141,8 @@
     "title": "Drivmedelspriser",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/drivmedelspriser",
     "fetchDate": "2025-02-12T21:11:52.830Z",
-    "party": "KD"
+    "party": "KD",
+    "subject": "konsumentpolitik"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/kamerabevakning": {
     "opinions": [
@@ -2148,7 +2151,8 @@
     "title": "Kamerabevakning",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/kamerabevakning",
     "fetchDate": "2025-02-12T21:11:46.628Z",
-    "party": "KD"
+    "party": "KD",
+    "subject": "lag-och-ratt"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/medborgarskap": {
     "opinions": [
@@ -2157,7 +2161,8 @@
     "title": "Medborgarskap",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/medborgarskap",
     "fetchDate": "2025-02-12T21:11:56.684Z",
-    "party": "KD"
+    "party": "KD",
+    "subject": "migration-och-integration"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/skolan": {
     "opinions": [
@@ -2166,6 +2171,7 @@
     "title": "Skolan",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/skolan",
     "fetchDate": "2025-02-12T21:11:57.417Z",
-    "party": "KD"
+    "party": "KD",
+    "subject": "utbildning"
   }
 }

@@ -1899,7 +1899,8 @@
     "title": "Bibliotek",
     "url": "https://www.liberalerna.se/politik/bibliotek",
     "fetchDate": "2024-10-10T06:29:33.084Z",
-    "party": "L"
+    "party": "L",
+    "subject": "utbildning"
   },
   "https://www.liberalerna.se/politik/energieffektivisering": {
     "opinions": [
@@ -1912,7 +1913,8 @@
     "title": "Energieffektivisering",
     "url": "https://www.liberalerna.se/politik/energieffektivisering",
     "fetchDate": "2024-10-10T06:29:29.501Z",
-    "party": "L"
+    "party": "L",
+    "subject": "energi"
   },
   "https://www.liberalerna.se/politik/glesbygd": {
     "opinions": [
@@ -1926,7 +1928,8 @@
     "title": "Glesbygd",
     "url": "https://www.liberalerna.se/politik/glesbygd",
     "fetchDate": "2024-10-10T06:29:28.771Z",
-    "party": "L"
+    "party": "L",
+    "subject": "landsbygd"
   },
   "https://www.liberalerna.se/politik/hogre-utbildning": {
     "opinions": [
@@ -1938,7 +1941,8 @@
     "title": "Högre utbildning",
     "url": "https://www.liberalerna.se/politik/hogre-utbildning",
     "fetchDate": "2024-10-10T06:29:22.522Z",
-    "party": "L"
+    "party": "L",
+    "subject": "utbildning"
   },
   "https://www.liberalerna.se/politik/konsumenters-rattigheter": {
     "opinions": [
@@ -1951,7 +1955,8 @@
     "title": "Konsumenters rättigheter",
     "url": "https://www.liberalerna.se/politik/konsumenters-rattigheter",
     "fetchDate": "2024-10-10T06:29:36.068Z",
-    "party": "L"
+    "party": "L",
+    "subject": "konsumentpolitik"
   },
   "https://www.liberalerna.se/politik/rasism": {
     "opinions": [
@@ -1964,7 +1969,8 @@
     "title": "Rasism",
     "url": "https://www.liberalerna.se/politik/rasism",
     "fetchDate": "2024-10-10T06:29:35.540Z",
-    "party": "L"
+    "party": "L",
+    "subject": "jamstalldhet-och-diskriminering"
   },
   "https://www.liberalerna.se/politik/reduktionsplikten": {
     "opinions": [
@@ -1977,7 +1983,8 @@
     "title": "Reduktionsplikten",
     "url": "https://www.liberalerna.se/politik/reduktionsplikten",
     "fetchDate": "2024-10-10T06:29:34.895Z",
-    "party": "L"
+    "party": "L",
+    "subject": "miljo-och-klimat"
   },
   "https://www.liberalerna.se/politik/torv": {
     "opinions": [
@@ -1991,6 +1998,7 @@
     "title": "Torv",
     "url": "https://www.liberalerna.se/politik/torv",
     "fetchDate": "2024-10-10T06:29:33.044Z",
-    "party": "L"
+    "party": "L",
+    "subject": "miljo-och-klimat"
   }
 }

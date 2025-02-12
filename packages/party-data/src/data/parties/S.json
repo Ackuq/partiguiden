@@ -2130,7 +2130,8 @@
     "title": "Brottsförebyggande",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/brottsforebyggande",
     "fetchDate": "2024-11-19T06:30:23.772Z",
-    "party": "S"
+    "party": "S",
+    "subject": "lag-och-ratt"
   },
   "https://www.socialdemokraterna.se/var-politik/a-till-o/gangkriminalitet": {
     "opinions": [
@@ -2149,6 +2150,7 @@
     "title": "Gängkriminalitet",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/gangkriminalitet",
     "fetchDate": "2024-12-02T06:32:15.177Z",
-    "party": "S"
+    "party": "S",
+    "subject": "lag-och-ratt"
   }
 }

@@ -914,7 +914,8 @@
     "title": "A-kassa",
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/a-kassa/",
     "fetchDate": "2025-02-12T21:05:58.696Z",
-    "party": "V"
+    "party": "V",
+    "subject": "trygghetssystem-och-valfard"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/bankskatt/": {
     "opinions": [
@@ -923,7 +924,8 @@
     "title": "Bankskatt",
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/bankskatt/",
     "fetchDate": "2025-02-12T21:09:31.290Z",
-    "party": "V"
+    "party": "V",
+    "subject": "ekonomi-och-skatter"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/studiemedel/": {
     "opinions": [
@@ -932,7 +934,8 @@
     "title": "Studiemedel",
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/studiemedel/",
     "fetchDate": "2025-02-12T21:09:32.251Z",
-    "party": "V"
+    "party": "V",
+    "subject": "utbildning"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/ukraina/": {
     "opinions": [
@@ -941,6 +944,7 @@
     "title": "Ukraina",
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/ukraina/",
     "fetchDate": "2025-02-12T21:09:31.653Z",
-    "party": "V"
+    "party": "V",
+    "subject": "utrikes--och-bistandsfragor"
   }
 }

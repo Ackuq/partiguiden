@@ -25,6 +25,14 @@ export default class VScraper extends Scraper {
         .filter((text) => text !== "");
     }
 
+    const $strongParagraphs = $articleBody.find("p strong");
+    if ($strongParagraphs.length) {
+      return $strongParagraphs
+        .toArray()
+        .map(($paragraph) => $($paragraph).text().trim())
+        .filter((text) => text !== "");
+    }
+
     return [];
   }
 }

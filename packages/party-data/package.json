@@ -14,7 +14,7 @@
     "./types": "./src/types.ts"
   },
   "dependencies": {
-    "prettier": "3.5.0"
+    "prettier": "3.5.1"
   },
   "devDependencies": {
     "@inquirer/prompts": "7.3.1",

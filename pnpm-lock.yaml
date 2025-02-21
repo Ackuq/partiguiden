@@ -109,8 +109,8 @@ importers:
         specifier: 19.0.0
         version: 19.0.0(react@19.0.0)
       react-share:
-        specifier: 5.2.0
-        version: 5.2.0(react@19.0.0)
+        specifier: 5.2.1
+        version: 5.2.1(react@19.0.0)
       recharts:
         specifier: 2.15.1
         version: 2.15.1(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
@@ -121,8 +121,8 @@ importers:
         specifier: 3.0.1
         version: 3.0.1
       tailwindcss:
-        specifier: 4.0.6
-        version: 4.0.6
+        specifier: 4.0.7
+        version: 4.0.7
       typed.js:
         specifier: 2.1.0
         version: 2.1.0
@@ -3242,8 +3242,8 @@ packages:
   react-is@19.0.0:
     resolution: {integrity: sha512-H91OHcwjZsbq3ClIDHMzBShc1rotbfACdWENsmEf0IFvZ3FgGPtdHMcsv45bQ1hAbgdfiA8SnxTKfDS+x/8m2g==}
 
-  react-share@5.2.0:
-    resolution: {integrity: sha512-0gFXnW1qMO4BITbf0lSX03J0GWmYPRqMXcP9obl+T+8nvFeOpqhiow8tGryeY9vx35fprQvri0Q0fkqb3t9uag==}
+  react-share@5.2.1:
+    resolution: {integrity: sha512-M69VhqBLpY89zgkOmuXz67EfVYHNTcVALMUirTRpVAUxRrkJicYl3OKp6ZM8dNYl86VrzXrArzoiwbyubJRYqg==}
     peerDependencies:
       react: ^17 || ^18 || ^19
 
@@ -3542,6 +3542,9 @@ packages:
 
   tailwindcss@4.0.6:
     resolution: {integrity: sha512-mysewHYJKaXgNOW6pp5xon/emCsfAMnO8WMaGKZZ35fomnR/T5gYnRg2/yRTTrtXiEl1tiVkeRt0eMO6HxEZqw==}
+
+  tailwindcss@4.0.7:
+    resolution: {integrity: sha512-yH5bPPyapavo7L+547h3c4jcBXcrKwybQRjwdEIVAd9iXRvy/3T1CC6XSQEgZtRySjKfqvo3Cc0ZF1DTheuIdA==}
 
   tapable@2.2.1:
     resolution: {integrity: sha512-GNzQvQTOIP6RyTfE2Qxb8ZVlNmw0n88vp1szwWRimP02mnTsx3Wtn5qRdqY9w2XduFNUgvOwhNnQsjwCp+kqaQ==}
@@ -7145,7 +7148,7 @@ snapshots:
 
   react-is@19.0.0: {}
 
-  react-share@5.2.0(react@19.0.0):
+  react-share@5.2.1(react@19.0.0):
     dependencies:
       classnames: 2.5.1
       jsonp: 0.2.1
@@ -7529,6 +7532,8 @@ snapshots:
   tailwind-merge@3.0.1: {}
 
   tailwindcss@4.0.6: {}
+
+  tailwindcss@4.0.7: {}
 
   tapable@2.2.1: {}
 

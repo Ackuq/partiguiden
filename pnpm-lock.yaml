@@ -19,7 +19,7 @@ importers:
         version: 15.1.7
       '@trivago/prettier-plugin-sort-imports':
         specifier: 5.2.2
-        version: 5.2.2(prettier@3.5.1)
+        version: 5.2.2(prettier@3.5.2)
       eslint:
         specifier: 9.20.1
         version: 9.20.1(jiti@2.4.2)
@@ -39,11 +39,11 @@ importers:
         specifier: 5.44.4
         version: 5.44.4(@types/node@22.13.4)(typescript@5.7.3)
       prettier:
-        specifier: 3.5.1
-        version: 3.5.1
+        specifier: 3.5.2
+        version: 3.5.2
       prettier-plugin-tailwindcss:
         specifier: 0.6.11
-        version: 0.6.11(@trivago/prettier-plugin-sort-imports@5.2.2(prettier@3.5.1))(prettier@3.5.1)
+        version: 0.6.11(@trivago/prettier-plugin-sort-imports@5.2.2(prettier@3.5.2))(prettier@3.5.2)
       turbo:
         specifier: 2.4.2
         version: 2.4.2
@@ -115,11 +115,11 @@ importers:
         specifier: 5.0.1
         version: 5.0.1
       tailwind-merge:
-        specifier: 3.0.1
-        version: 3.0.1
+        specifier: 3.0.2
+        version: 3.0.2
       tailwindcss:
-        specifier: 4.0.7
-        version: 4.0.7
+        specifier: 4.0.8
+        version: 4.0.8
       typed.js:
         specifier: 2.1.0
         version: 2.1.0
@@ -146,8 +146,8 @@ importers:
   packages/party-data:
     dependencies:
       prettier:
-        specifier: 3.5.1
-        version: 3.5.1
+        specifier: 3.5.2
+        version: 3.5.2
     devDependencies:
       '@inquirer/prompts':
         specifier: 7.3.2
@@ -3197,8 +3197,8 @@ packages:
       prettier-plugin-svelte:
         optional: true
 
-  prettier@3.5.1:
-    resolution: {integrity: sha512-hPpFQvHwL3Qv5AdRvBFMhnKo4tYxp0ReXiPn2bxkiohEX6mBeBwEpBSQTkD458RaaDKQMYSp4hX4UtfUTA5wDw==}
+  prettier@3.5.2:
+    resolution: {integrity: sha512-lc6npv5PH7hVqozBR7lkBNOGXV9vMwROAPlumdBkX0wTbbzPu/U1hk5yL8p2pt4Xoc+2mkT8t/sow2YrV/M5qg==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -3537,11 +3537,14 @@ packages:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
 
-  tailwind-merge@3.0.1:
-    resolution: {integrity: sha512-AvzE8FmSoXC7nC+oU5GlQJbip2UO7tmOhOfQyOmPhrStOGXHU08j8mZEHZ4BmCqY5dWTCo4ClWkNyRNx1wpT0g==}
+  tailwind-merge@3.0.2:
+    resolution: {integrity: sha512-l7z+OYZ7mu3DTqrL88RiKrKIqO3NcpEO8V/Od04bNpvk0kiIFndGEoqfuzvj4yuhRkHKjRkII2z+KS2HfPcSxw==}
 
   tailwindcss@4.0.7:
     resolution: {integrity: sha512-yH5bPPyapavo7L+547h3c4jcBXcrKwybQRjwdEIVAd9iXRvy/3T1CC6XSQEgZtRySjKfqvo3Cc0ZF1DTheuIdA==}
+
+  tailwindcss@4.0.8:
+    resolution: {integrity: sha512-Me7N5CKR+D2A1xdWA5t5+kjjT7bwnxZOE6/yDI/ixJdJokszsn2n++mdU5yJwrsTpqFX2B9ZNMBJDwcqk9C9lw==}
 
   tapable@2.2.1:
     resolution: {integrity: sha512-GNzQvQTOIP6RyTfE2Qxb8ZVlNmw0n88vp1szwWRimP02mnTsx3Wtn5qRdqY9w2XduFNUgvOwhNnQsjwCp+kqaQ==}
@@ -5148,7 +5151,7 @@ snapshots:
 
   '@tootallnate/once@2.0.0': {}
 
-  '@trivago/prettier-plugin-sort-imports@5.2.2(prettier@3.5.1)':
+  '@trivago/prettier-plugin-sort-imports@5.2.2(prettier@3.5.2)':
     dependencies:
       '@babel/generator': 7.26.8
       '@babel/parser': 7.26.8
@@ -5156,7 +5159,7 @@ snapshots:
       '@babel/types': 7.26.8
       javascript-natural-sort: 0.7.1
       lodash: 4.17.21
-      prettier: 3.5.1
+      prettier: 3.5.2
     transitivePeerDependencies:
       - supports-color
 
@@ -7089,13 +7092,13 @@ snapshots:
 
   prelude-ls@1.2.1: {}
 
-  prettier-plugin-tailwindcss@0.6.11(@trivago/prettier-plugin-sort-imports@5.2.2(prettier@3.5.1))(prettier@3.5.1):
+  prettier-plugin-tailwindcss@0.6.11(@trivago/prettier-plugin-sort-imports@5.2.2(prettier@3.5.2))(prettier@3.5.2):
     dependencies:
-      prettier: 3.5.1
+      prettier: 3.5.2
     optionalDependencies:
-      '@trivago/prettier-plugin-sort-imports': 5.2.2(prettier@3.5.1)
+      '@trivago/prettier-plugin-sort-imports': 5.2.2(prettier@3.5.2)
 
-  prettier@3.5.1: {}
+  prettier@3.5.2: {}
 
   pretty-ms@9.2.0:
     dependencies:
@@ -7526,9 +7529,11 @@ snapshots:
 
   supports-preserve-symlinks-flag@1.0.0: {}
 
-  tailwind-merge@3.0.1: {}
+  tailwind-merge@3.0.2: {}
 
   tailwindcss@4.0.7: {}
+
+  tailwindcss@4.0.8: {}
 
   tapable@2.2.1: {}
 

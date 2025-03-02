@@ -15,7 +15,7 @@
     "undici": "7.4.0"
   },
   "devDependencies": {
-    "@types/node": "22.13.5",
+    "@types/node": "22.13.8",
     "domhandler": "5.0.3",
     "tsx": "4.19.3"
   }

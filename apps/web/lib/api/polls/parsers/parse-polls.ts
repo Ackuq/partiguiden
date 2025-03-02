@@ -51,6 +51,10 @@ export default function parsePolls(csv: string, lastDate: Date): Polls {
     const year = parseInt(yearString);
     const month = parseInt(monthString) - 1;
 
+    if (Number.isNaN(year) || Number.isNaN(month)) {
+      continue;
+    }
+
     if ((year === lastYear && month < lastMonth) || year < lastYear) {
       break;
     }

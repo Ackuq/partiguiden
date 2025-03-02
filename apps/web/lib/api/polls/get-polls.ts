@@ -5,7 +5,7 @@ import parsePolls from "./parsers/parse-polls";
 import { getWithin } from "./utils/get-within";
 
 const POLLS_URL =
-  "https://raw.githubusercontent.com/hampusborgos/SwedishPolls/master/Data/Polls.csv";
+  "https://raw.githubusercontent.com/MansMeg/SwedishPolls/refs/heads/master/Data/Polls.csv";
 
 export default async function getPolls() {
   const response = await fetch(POLLS_URL, {

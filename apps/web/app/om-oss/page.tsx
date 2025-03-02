@@ -47,10 +47,8 @@ export default function AboutUs() {
             . Viss data om partierna är tagen från{" "}
             <ExternalLink href="https://wikipedia.se/">Wikipedia</ExternalLink>.
             Dataunderlaget för opinionsundersökningar hämtas genom ett dataset
-            som underhålls av Hampus Nilsson, utvecklaren av{" "}
-            <ExternalLink href="https://val.digital/">val.digital</ExternalLink>
-            , och finns publikt på{" "}
-            <ExternalLink href="https://github.com/hampusborgos/SwedishPolls">
+            som underhålls av Måns Magnusson och finns publikt på{" "}
+            <ExternalLink href="https://github.com/MansMeg/SwedishPolls">
               GitHub
             </ExternalLink>
             .

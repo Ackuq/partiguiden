@@ -10,7 +10,8 @@ import SocialMediaShare from "@components/common/social-media-share";
 import PartyIcon from "@components/party/icon";
 import { getParty } from "@lib/api/party/get-party";
 import { ERROR_404_TITLE } from "@lib/constants";
-import { Party } from "@partiguiden/party-data/types";
+import type { Party } from "@partiguiden/party-data/types";
+import { parties } from "@partiguiden/party-data/types";
 import { partyNames } from "@partiguiden/party-data/utils";
 
 import Leader from "./leader";
@@ -28,7 +29,8 @@ export default async function PartyPage({ params }: PageProps) {
 
   const partyAbbreviation =
     partyAbbreviationLowercase.toLocaleUpperCase() as Party;
-  if (!Object.values(Party).includes(partyAbbreviation)) {
+
+  if (!Object.values(parties).includes(partyAbbreviation)) {
     return notFound();
   }
   const party = await getParty(partyAbbreviation);
@@ -109,7 +111,7 @@ export async function generateMetadata({ params }: PageProps) {
 
   const party = partyAbbreviation.toUpperCase() as Party;
 
-  if (!Object.values(Party).includes(party)) {
+  if (!Object.values(parties).includes(party)) {
     return { title: ERROR_404_TITLE };
   }
 
@@ -124,9 +126,7 @@ export async function generateMetadata({ params }: PageProps) {
 export const dynamicParams = false;
 
 export function generateStaticParams() {
-  const parties = Object.values(Party);
-
-  return parties.map((party) => ({
+  return Object.values(parties).map((party) => ({
     party: party.toLocaleLowerCase(),
   }));
 }

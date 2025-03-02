@@ -1,8 +1,8 @@
 import { Separator, select } from "@inquirer/prompts";
 
-import { readNotCategorizedStandpoints, readSubjects } from "../src/reader";
-import type { Standpoint } from "../src/types";
-import { updateStandpoint } from "../src/writer";
+import { readNotCategorizedStandpoints, readSubjects } from "../src/reader.ts";
+import type { Standpoint } from "../src/types.ts";
+import { updateStandpoint } from "../src/writer.ts";
 
 const promptTemplate = (
   standpoint: Standpoint,
@@ -46,9 +46,9 @@ async function categorize() {
   }
 }
 
-enum Action {
-  Categorize = "categorize",
-}
+const actions = {
+  Categorize: "categorize",
+} as const;
 
 async function main() {
   const choice = await select(
@@ -56,7 +56,7 @@ async function main() {
       message: "What do you want to do",
       choices: [
         {
-          value: Action.Categorize,
+          value: actions.Categorize,
           description: "Categorize uncategorized standpoints",
         },
       ],
@@ -64,7 +64,7 @@ async function main() {
     { clearPromptOnDone: true },
   );
   switch (choice) {
-    case Action.Categorize: {
+    case actions.Categorize: {
       await categorize();
     }
   }

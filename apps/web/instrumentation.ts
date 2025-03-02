@@ -10,3 +10,5 @@ export function register() {
     environment: process.env.NEXT_PUBLIC_VERCEL_ENV,
   });
 }
+
+export const onRequestError = Sentry.captureRequestError;

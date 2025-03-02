@@ -1,11 +1,11 @@
-import CScraper from "./party/c-scraper";
-import KDScraper from "./party/kd-scraper";
-import LScraper from "./party/l-scraper";
-import MScraper from "./party/m-scraper";
-import MPScraper from "./party/mp-scraper";
-import SScraper from "./party/s-scraper";
-import SDScraper from "./party/sd-scraper";
-import VScraper from "./party/v-scraper";
+import CScraper from "./party/c-scraper.ts";
+import KDScraper from "./party/kd-scraper.ts";
+import LScraper from "./party/l-scraper.ts";
+import MScraper from "./party/m-scraper.ts";
+import MPScraper from "./party/mp-scraper.ts";
+import SScraper from "./party/s-scraper.ts";
+import SDScraper from "./party/sd-scraper.ts";
+import VScraper from "./party/v-scraper.ts";
 
 const scrapers = {
   s: new SScraper(),

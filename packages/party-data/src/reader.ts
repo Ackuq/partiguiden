@@ -1,15 +1,15 @@
-import c from "./data/parties/C.json";
-import kd from "./data/parties/KD.json";
-import l from "./data/parties/L.json";
-import m from "./data/parties/M.json";
-import mp from "./data/parties/MP.json";
-import s from "./data/parties/S.json";
-import sd from "./data/parties/SD.json";
-import v from "./data/parties/V.json";
-import subjects from "./data/subjects.json";
-import type { Standpoint } from "./types";
-import { Party, partySortOrder } from "./types";
-import type { Subject } from "./types";
+import c from "./data/parties/C.json" with { type: "json" };
+import kd from "./data/parties/KD.json" with { type: "json" };
+import l from "./data/parties/L.json" with { type: "json" };
+import m from "./data/parties/M.json" with { type: "json" };
+import mp from "./data/parties/MP.json" with { type: "json" };
+import s from "./data/parties/S.json" with { type: "json" };
+import sd from "./data/parties/SD.json" with { type: "json" };
+import v from "./data/parties/V.json" with { type: "json" };
+import subjects from "./data/subjects.json" with { type: "json" };
+import type { Party, Standpoint } from "./types.ts";
+import { parties, partySortOrder } from "./types.ts";
+import type { Subject } from "./types.ts";
 
 export function getSubjects(): Subject[] {
   return Object.values(subjects);
@@ -20,23 +20,27 @@ export function getSubject(id: string): Subject | undefined {
 }
 
 function getPartyData(abbreviation: string) {
-  switch (abbreviation.toLocaleUpperCase() as Party) {
-    case Party.S:
+  switch (abbreviation.toLocaleUpperCase()) {
+    case parties.S:
       return s;
-    case Party.SD:
+    case parties.SD:
       return sd;
-    case Party.M:
+    case parties.M:
       return m;
-    case Party.MP:
+    case parties.MP:
       return mp;
-    case Party.C:
+    case parties.C:
       return c;
-    case Party.L:
+    case parties.L:
       return l;
-    case Party.V:
+    case parties.V:
       return v;
-    case Party.KD:
+    case parties.KD:
       return kd;
+    default:
+      throw new Error(
+        `No party with abbreviation ${abbreviation.toLocaleUpperCase()}`,
+      );
   }
 }
 
@@ -68,7 +72,7 @@ export function readPartyDataForSubject(party: Party, subjectName: string) {
 }
 
 export function readAllStandpoints(): Standpoint[] {
-  return Object.values(Party).map(readPartyStandpoints).flat();
+  return Object.values(parties).map(readPartyStandpoints).flat();
 }
 
 export function readNotCategorizedStandpoints() {

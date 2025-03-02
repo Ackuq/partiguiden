@@ -1,6 +1,6 @@
 import type { CheerioAPI } from "cheerio";
 
-import Scraper from "../scraper";
+import Scraper from "../scraper.ts";
 
 export default class VScraper extends Scraper {
   baseUrl = "https://www.vansterpartiet.se";

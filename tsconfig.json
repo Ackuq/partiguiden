@@ -7,9 +7,12 @@
     "lib": ["ESNext"],
     "allowJs": true,
     "resolveJsonModule": true,
-    "moduleDetection": "force",
     "isolatedModules": true,
     "forceConsistentCasingInFileNames": true,
+
+    /** Module **/
+    "module": "NodeNext",
+    "moduleResolution": "nodenext",
 
     /** Keep TSC performant in monorepos **/
     "incremental": true,
@@ -21,9 +24,11 @@
     "noImplicitAny": true,
     "noImplicitThis": true,
 
-    /** Transpile using Bundler **/
-    "module": "Preserve",
-    "moduleResolution": "Bundler",
+    /* Allow node running **/
+    "erasableSyntaxOnly": true,
+    "allowImportingTsExtensions": true,
+
+    /** Emit Options **/
     "noEmit": true
   },
   "exclude": ["node_modules"]

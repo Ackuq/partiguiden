@@ -2,8 +2,9 @@
   "name": "@partiguiden/party-data",
   "version": "1.0.0",
   "description": "Contains data that powers Partiguiden",
+  "type": "module",
   "scripts": {
-    "cli": "tsx scripts/cli.ts",
+    "cli": "node --experimental-strip-types scripts/cli.ts",
     "clean": "rm -rf .turbo node_modules",
     "lint:tsc": "tsc"
   },
@@ -18,7 +19,6 @@
   },
   "devDependencies": {
     "@inquirer/prompts": "7.3.2",
-    "@types/node": "22.13.5",
-    "tsx": "4.19.3"
+    "@types/node": "22.13.8"
   }
 }

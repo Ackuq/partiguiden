@@ -1,4 +1,4 @@
-import Scraper from "../scraper";
+import Scraper from "../scraper.ts";
 
 export default class MScraper extends Scraper {
   baseUrl = "https://moderaterna.se";

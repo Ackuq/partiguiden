@@ -1,6 +1,15 @@
 {
-  "extends": "../../tsconfig.json",
   "compilerOptions": {
+    /** Paths **/
+    "paths": {
+      "@app/*": ["./app/*"],
+      "@components/*": ["./components/*"],
+      "@lib/*": ["./lib/*"]
+    },
+    /** Base Options **/
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "target": "ESNext",
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "jsx": "preserve",
     "plugins": [
@@ -8,11 +17,24 @@
         "name": "next"
       }
     ],
-    "paths": {
-      "@app/*": ["./app/*"],
-      "@components/*": ["./components/*"],
-      "@lib/*": ["./lib/*"]
-    },
+    "isolatedModules": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowJs": true,
+    "incremental": true,
+
+    /** Module **/
+    "module": "Preserve",
+    "moduleResolution": "bundler",
+    /** Strictness **/
+    "strict": true,
+    "checkJs": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    /** Allow node running **/
+    "allowImportingTsExtensions": true,
+    /** Emit Options **/
+    "noEmit": true,
+    /** Cache */
     "tsBuildInfoFile": "node_modules/.cache/tsbuildinfo.json"
   },
   "include": [".", ".next/types/**/*.ts"],

@@ -1,12 +1,13 @@
 import type { NewVotingRow, OldVotingRow } from "@lib/api/parliament/types";
-import { Party } from "@partiguiden/party-data/types";
+import type { Party } from "@partiguiden/party-data/types";
+import { parties } from "@partiguiden/party-data/types";
 
 import type { VotingDict, VotingEntry, VotingGroup } from "../types";
 
 function votingGroupRemap(partyName: string): VotingGroup {
   switch (partyName) {
     case "fp":
-      return Party.L;
+      return parties.L;
     case "-":
       return "noParty";
     case "Totalt":
@@ -16,7 +17,7 @@ function votingGroupRemap(partyName: string): VotingGroup {
   }
 }
 
-const votingGroup = [...Object.values(Party), "noParty", "total"] as const;
+const votingGroup = [...Object.values(parties), "noParty", "total"] as const;
 
 const defaultVotingEntry: VotingEntry = {
   yes: 0,

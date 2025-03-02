@@ -1,4 +1,4 @@
-import Scraper from "../scraper";
+import Scraper from "../scraper.ts";
 
 export default class SScraper extends Scraper {
   baseUrl = "https://www.socialdemokraterna.se";

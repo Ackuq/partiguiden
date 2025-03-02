@@ -1,9 +1,10 @@
-import { Party, partySortOrder } from "@partiguiden/party-data/types";
+import type { Party } from "@partiguiden/party-data/types";
+import { parties, partySortOrder } from "@partiguiden/party-data/types";
 
 import type { AveragePoll, Poll, PollDetails, Polls } from "./types";
 
 function initializePartyTotal(): Record<Party, PollDetails[]> {
-  return Object.values(Party).reduce(
+  return Object.values(parties).reduce(
     (prev, party) => ({ ...prev, [party]: [] }),
     {} as Record<Party, PollDetails[]>,
   );

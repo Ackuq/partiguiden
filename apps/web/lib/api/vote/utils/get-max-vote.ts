@@ -1,4 +1,4 @@
-import { Party } from "@partiguiden/party-data/types";
+import { parties } from "@partiguiden/party-data/types";
 
 import type { VoteDescription, VotingDict, VotingResult } from "../types";
 
@@ -18,7 +18,7 @@ export const getMaxVote = (votes: VotingDict): VotingResult => {
   }
 
   /* Decide on what parties voted for */
-  for (const party of Object.values(Party)) {
+  for (const party of Object.values(parties)) {
     if (!(party in votes)) {
       continue;
     }

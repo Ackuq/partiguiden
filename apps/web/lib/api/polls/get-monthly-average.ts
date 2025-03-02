@@ -1,9 +1,10 @@
-import { Party } from "@partiguiden/party-data/types";
+import type { Party } from "@partiguiden/party-data/types";
+import { parties } from "@partiguiden/party-data/types";
 
 import type { MonthlyAverage, Poll, Polls } from "./types";
 
 function initializePollResults(): Record<Party, number[]> {
-  return Object.values(Party).reduce(
+  return Object.values(parties).reduce(
     (acc, party) => {
       acc[party] = [];
       return acc;

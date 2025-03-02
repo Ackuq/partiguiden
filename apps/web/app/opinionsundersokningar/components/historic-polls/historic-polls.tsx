@@ -18,7 +18,8 @@ import colors from "tailwindcss/colors";
 import CustomTooltip from "@components/charts/tooltip";
 import type { MonthlyAverage } from "@lib/api/polls/types";
 import { partyColors } from "@lib/colors/party";
-import { Party } from "@partiguiden/party-data/types";
+import type { Party } from "@partiguiden/party-data/types";
+import { parties } from "@partiguiden/party-data/types";
 
 interface Props {
   historicPolls: MonthlyAverage;
@@ -53,7 +54,7 @@ export default function HistoricPolls({ historicPolls }: Props) {
           <YAxis type="number" unit="%" width={35} />
           <Tooltip content={<CustomTooltip />} cursor={false} />
           <Legend fill="#000" onClick={onClick} />
-          {Object.values(Party).map((party) => (
+          {Object.values(parties).map((party) => (
             <Line
               key={party}
               dataKey={party}

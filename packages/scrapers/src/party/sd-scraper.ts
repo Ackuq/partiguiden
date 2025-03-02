@@ -2,7 +2,7 @@ import * as pdfjs from "pdfjs-dist/legacy/build/pdf.mjs";
 
 import type { PartyDataWithoutPartyName } from "@partiguiden/party-data/types";
 
-import Scraper from "../scraper";
+import Scraper from "../scraper.ts";
 
 type SectionDestination = [
   { num: number; gen: number },

@@ -2,9 +2,10 @@
   "name": "@partiguiden/scrapers",
   "version": "1.0.0",
   "description": "Scripts for scraping data from parties and their websites",
+  "type": "module",
   "scripts": {
-    "scrape": "tsx src/index.ts",
-    "scrape:all": "tsx src/index.ts -p all",
+    "scrape": "node --experimental-strip-types src/index.ts",
+    "scrape:all": "node --experimental-strip-types src/index.ts -p all",
     "clean": "rm -rf .turbo node_modules",
     "lint:tsc": "tsc"
   },
@@ -16,7 +17,6 @@
   },
   "devDependencies": {
     "@types/node": "22.13.8",
-    "domhandler": "5.0.3",
-    "tsx": "4.19.3"
+    "domhandler": "5.0.3"
   }
 }

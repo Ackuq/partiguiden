@@ -1,12 +1,13 @@
-import { Party } from "@partiguiden/party-data/types";
+import type { Party } from "@partiguiden/party-data/types";
+import { parties } from "@partiguiden/party-data/types";
 
 export const wikipediaPartyMap: Record<Party, string> = {
-  [Party.S]: "Socialdemokraterna_(Sverige)",
-  [Party.M]: "Moderaterna",
-  [Party.SD]: "Sverigedemokraterna",
-  [Party.C]: "Centerpartiet",
-  [Party.V]: "Vänsterpartiet",
-  [Party.KD]: "Kristdemokraterna_(Sverige)",
-  [Party.L]: "Liberalerna",
-  [Party.MP]: "Miljöpartiet",
+  [parties.S]: "Socialdemokraterna_(Sverige)",
+  [parties.M]: "Moderaterna",
+  [parties.SD]: "Sverigedemokraterna",
+  [parties.C]: "Centerpartiet",
+  [parties.V]: "Vänsterpartiet",
+  [parties.KD]: "Kristdemokraterna_(Sverige)",
+  [parties.L]: "Liberalerna",
+  [parties.MP]: "Miljöpartiet",
 };

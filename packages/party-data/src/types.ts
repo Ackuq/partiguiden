@@ -1,23 +1,24 @@
-export enum Party {
-  S = "S",
-  SD = "SD",
-  M = "M",
-  MP = "MP",
-  L = "L",
-  KD = "KD",
-  C = "C",
-  V = "V",
-}
+export const parties = {
+  S: "S",
+  SD: "SD",
+  M: "M",
+  MP: "MP",
+  L: "L",
+  KD: "KD",
+  C: "C",
+  V: "V",
+} as const;
+export type Party = (typeof parties)[keyof typeof parties];
 
 export const partySortOrder = [
-  Party.S,
-  Party.SD,
-  Party.M,
-  Party.V,
-  Party.C,
-  Party.KD,
-  Party.MP,
-  Party.L,
+  parties.S,
+  parties.SD,
+  parties.M,
+  parties.V,
+  parties.C,
+  parties.KD,
+  parties.MP,
+  parties.L,
 ] as const;
 
 export interface Subject {

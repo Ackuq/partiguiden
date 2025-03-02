@@ -1,9 +1,13 @@
 import * as fs from "node:fs";
 import * as prettier from "prettier";
 
-import type { PartyData, PartyDataWithoutPartyName, Standpoint } from "./types";
+import type {
+  PartyData,
+  PartyDataWithoutPartyName,
+  Standpoint,
+} from "./types.ts";
 
-const PARTIES_DIRECTORY = `${__dirname}/data/parties`;
+const PARTIES_DIRECTORY = `${import.meta.dirname}/data/parties`;
 
 const partyFileName = (abbreviation: string) =>
   `${PARTIES_DIRECTORY}/${abbreviation.toLocaleUpperCase()}.json`;

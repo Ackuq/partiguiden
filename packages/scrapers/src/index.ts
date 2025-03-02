@@ -3,7 +3,7 @@ import { Agent, setGlobalDispatcher } from "undici";
 
 import { writePartyData } from "@partiguiden/party-data/writer";
 
-import scrapers from "./scrapers";
+import scrapers from "./scrapers.ts";
 
 /**
  * Modify the global dispatcher to allow for more concurrent requests

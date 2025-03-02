@@ -2,7 +2,7 @@
   "$schema": "https://turbo.build/schema.json",
   "tasks": {
     "build": {
-      "env": ["NEXT_PUBLIC_*", "GA4_*", "SENTRY_DSN", "ANALYZE", "VERCEL"],
+      "env": ["NEXT_PUBLIC_*", "GA4_*", "SENTRY_*", "ANALYZE", "VERCEL"],
       "dependsOn": ["^build"],
       "outputs": [".next/**", "!.next/cache/**", "dist/**"],
       "inputs": ["$TURBO_DEFAULT$", ".env", ".env.local"]

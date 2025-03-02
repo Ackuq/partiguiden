@@ -1,4 +1,5 @@
-import { Party, parties } from "@partiguiden/party-data/types";
+import type { Party } from "@partiguiden/party-data/types";
+import { parties } from "@partiguiden/party-data/types";
 
 type PartyColorStyleProp<S extends string, E extends string = ""> = {
   [P in Party]: `${S}-party-${P}${E} dark:${S}-party-${P}-dark${E}`;

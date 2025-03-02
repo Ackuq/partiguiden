@@ -1,25 +1,23 @@
 "use client";
 
 import type React from "react";
-import { useRef } from "react";
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-ignore
+import { useEffect, useRef } from "react";
+import type { TypedOptions } from "typed.js";
 import TypedJS from "typed.js";
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-const Typed: React.FC<any> = ({ ...options }) => {
-  const typed = useRef<TypedJS | null>(null);
+const Typed: React.FC<TypedOptions> = ({ ...options }) => {
+  const el = useRef(null);
 
-  return (
-    <span
-      ref={(ref) => {
-        if (ref && !typed.current) {
-          // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
-          typed.current = new TypedJS(ref, options);
-        }
-      }}
-    />
-  );
+  useEffect(() => {
+    const typed = new TypedJS(el.current, options);
+
+    return () => {
+      typed.destroy();
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  return <span ref={el} />;
 };
 
 export default Typed;

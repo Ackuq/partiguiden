@@ -82,19 +82,6 @@
     "party": "M",
     "subject": "jamstalldhet-och-diskriminering"
   },
-  "https://moderaterna.se/var-politik/idrott/": {
-    "opinions": [
-      "Utöka samarbetet mellan skola, fritidshem, idrotts-och friluftsorganisationer så att fler unga börjar idrotta och får en god grund för ett aktivt friluftsliv",
-      "Genomföra en ny idrottspolitisk utredning och ta fram en Elitidrottsstrategi",
-      "Säkerställa att det är möjligt för elitidrottare att kombinera studier i gymnasieskolan och i högre utbildning med sin idrottssatsning",
-      "Motverka matchfixning, olicensierat spelande och andra kriminella element inom idrotten"
-    ],
-    "title": "Idrott",
-    "url": "https://moderaterna.se/var-politik/idrott/",
-    "fetchDate": "2024-06-02T17:16:21.240Z",
-    "party": "M",
-    "subject": "kultur-media-och-idrott"
-  },
   "https://moderaterna.se/var-politik/infrastruktur/": {
     "opinions": [
       "Vi hållbart ska investera i vägar, järnväg, hamnar och flygplatser",
@@ -245,18 +232,6 @@
     "fetchDate": "2024-06-02T17:16:20.861Z",
     "party": "M",
     "subject": "vard-och-omsorg"
-  },
-  "https://moderaterna.se/var-politik/hogskola-och-universitet/": {
-    "opinions": [
-      "Skapa ett nytt resurstilldelningssystem som premierar kvalitet",
-      "En översyn görs av utdelningen av studiemedel i syfte att stärka incitamentsstrukturerna för studenter",
-      "Utreda möjligheterna att undanröja hinder för ett ökat samarbete mellan lärosäten och bilda utbildningskluster"
-    ],
-    "title": "Högskola och universitet",
-    "url": "https://moderaterna.se/var-politik/hogskola-och-universitet/",
-    "fetchDate": "2024-06-02T17:16:21.972Z",
-    "party": "M",
-    "subject": "utbildning"
   },
   "https://moderaterna.se/var-politik/medborgarskap/": {
     "opinions": [

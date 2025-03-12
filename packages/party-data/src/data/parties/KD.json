@@ -144,21 +144,12 @@
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/asyl": {
     "opinions": [
-      "Sverige ska ge skydd till människor som flyr undan förföljelse, krig och förtryck. Asylprövningen måste vara rättssäker, och den som saknar skyddsskäl måste lämna landet. Den som söker asyl ska från dag ett delta i ett asylprogram med svenskundervisning, samhällsorientering och arbete. Den som beviljas asyl ska få ett tillfälligt uppehållstillstånd under tre år med rätt till familjeåterförening. Kristdemokraterna vill återinföra en humanitär skyddsgrund liknande regeln om synnerligen och särskilt ömmande omständigheter som möjliggör skydd för de allra mest utsatta."
+      "Sverige ska ge skydd till människor som flyr undan förföljelse, krig och förtryck. Asylprövningen måste vara rättssäker, och den som saknar skyddsskäl måste lämna landet. Den som söker asyl ska delta i ett asylprogram med svenskundervisning, samhällsorientering och arbete. Den som beviljas asyl ska få ett tillfälligt uppehållstillstånd under tre år med rätt till familjeåterförening. Kristdemokraterna vill återinföra en humanitär skyddsgrund liknande regeln om synnerligen och särskilt ömmande omständigheter som möjliggör skydd för de allra mest utsatta.",
+      "Alla som söker asyl i Sverige ska hänvisas till asylansökningsområden nära våra stora gränsövergångar. Där registreras asylansökan och det görs en första bedömning av ärendena. På så sätt får vi en snabbare registrering och en beslutsprocess som är både rättssäker och effektiv."
     ],
     "title": "Asyl",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/asyl",
-    "fetchDate": "2023-09-17T17:52:42.203Z",
-    "party": "KD",
-    "subject": "migration-och-integration"
-  },
-  "https://kristdemokraterna.se/var-politik/politik-a-till-o/asylansokningsomraden": {
-    "opinions": [
-      "Alla som söker asyl i Sverige ska hänvisas till asylansökningsområden nära våra stora gränsövergångar. Där registreras asylansökan och det görs en första bedömning av ärendena. På så sätt får vi en snabbare registrering och en beslutsprocess som är både rättssäker och effektiv."
-    ],
-    "title": "Asylansökningsområden",
-    "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/asylansokningsomraden",
-    "fetchDate": "2023-09-17T17:52:42.409Z",
+    "fetchDate": "2025-03-12T06:30:19.074Z",
     "party": "KD",
     "subject": "migration-och-integration"
   },
@@ -561,11 +552,11 @@
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/flyktingar": {
     "opinions": [
-      "För att motverka irreguljär migration och människosmuggling samt skydda de allra mest utsatta vill Kristdemokraterna att olika system för säkra och lagliga vägar blir den huvudsakliga metoden för utlänningar att söka asyl i Sverige. Kvotflyktingsystemet, tillsammans med humanitära mottagandeprogram och sponsorskapsprogram, är system som säkerställer att de i störst behov av skydd kan prioriteras och sättas i säkerhet. Vidarebosättning av kvotflyktingar möjliggör dessutom en säker, organiserad och förberedd överföring av skyddsbehövande personer till det mottagande landet. Vidare anser vi att asylrätten bör vara i fokus vid en omformulering av migrationspolitiken på internationell nivå."
+      "För att motverka irreguljär migration och människosmuggling samt skydda de allra mest utsatta, vill Kristdemokraterna att olika system för säkra och lagliga vägar blir den huvudsakliga metoden att söka asyl i Sverige. Kvotflyktingsystemet, tillsammans med humanitära mottagandeprogram och sponsorskapsprogram, är system som säkerställer att de i stort behov av skydd kan prioriteras och sättas i säkerhet. Vidarebosättning av kvotflyktingar möjliggör dessutom en säker, organiserad och förberedd ordning för skyddsbehövande personers resa till det mottagande landet. Vidare anser vi att asylrätten bör vara i fokus vid en omformulering av migrationspolitiken på internationell nivå."
     ],
     "title": "Flyktingar",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/flyktingar",
-    "fetchDate": "2023-09-17T17:52:42.757Z",
+    "fetchDate": "2025-03-12T06:30:10.926Z",
     "party": "KD",
     "subject": "migration-och-integration"
   },
@@ -745,11 +736,12 @@
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/foraldraforsakring": {
     "opinions": [
-      "Det är föräldrarna – inte politiker – som bäst kan avgöra hur föräldrapenningdagar ska användas. Vi säger därför nej till kvotering av föräldraförsäkringen. Vi vill istället göra föräldraförsäkringen mer flexibel. Föräldrar ska fritt kunna överlåta föräldrapenningdagar till varandra eller till andra närstående som exempelvis mor-, farföräldrar eller en bonuspappa. Föräldraledigas inkomst ska skyddas under tre år och rätten till föräldraledighet på heltid utvidgas till tre år. Samtliga föräldrapenningdagar ska kunna användas som dubbeldagar."
+      "Kristdemokraterna menar att tiden är inne för att successivt förlänga föräldraförsäkringen. Vårt mål är att förlänga dagens föräldraförsäkring med 6 månader - från 13 till 19 månader. Ett första steg är att förlänga föräldraförsäkringen med 30 dagar.",
+      "Det är föräldrarna – inte politiker – som bäst kan avgöra hur föräldrapenningdagar ska fördelas. Vi säger därför nej till kvotering av föräldraförsäkringen. Staten ska inte bestämma vem som ska vara hemma med barnen. Vi vill tvärtom göra föräldraförsäkringen mer flexibel. Föräldrar ska fritt kunna överlåta föräldrapenningdagar till varandra eller till andra närstående som exempelvis mor-, farföräldrar eller en bonuspappa. Kristdemokraterna har varit drivande i regeringen för att fördubbla dubbeldagarna, från 30 till 60 dagar. Föräldraledigas SGI-grundade inkomst ska skyddas under tre år och rätten till föräldraledighet på heltid utvidgas till tre år. Pensionssystemet skyddar föräldrars pensionsrätt under småbarnsåren. Det innebär att även om du väljer att vara hemma lite längre med dina barn eller väljer att arbeta deltid så behåller du din tidigare pensionsrätt i fyra år efter barnets födelse. Det kallas barnrättsår i pensionssystemet. Kristdemokraterna vill utöka med ytterligare ett barnrättsår till totalt fem år. För att undvika pensionsfällor beroende på ojämnt uttag av föräldraledighet vill Kristdemokraterna dessutom att all intjänad pension under småbarnsåren ska delas lika mellan barnets föräldrar."
     ],
     "title": "Föräldraförsäkring",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/foraldraforsakring",
-    "fetchDate": "2023-09-17T17:52:41.221Z",
+    "fetchDate": "2025-03-12T06:30:11.373Z",
     "party": "KD",
     "subject": "familjen"
   },
@@ -2173,5 +2165,32 @@
     "fetchDate": "2025-02-12T21:11:57.417Z",
     "party": "KD",
     "subject": "utbildning"
+  },
+  "https://kristdemokraterna.se/var-politik/politik-a-till-o/eus-migrationspakt": {
+    "opinions": [
+      "EU-samarbetet bygger på en grundprincip om fri rörlighet inom unionens gränser. Som en följd av detta blir också migration och gränshantering i hög grad en gemensam angelägenhet. EU:s migrationspakt behöver utvecklas och stärka skyddet av vår gemensamma yttre gräns. Asylinvandringen ska primärt hanteras genom kvotflyktingsystem, samt en möjlighet att förlägga asylprocessen till tredje land. EU:s yttre gräns behöver stärkas, för att skapa förutsättningar att klara integrationen med jobb, språk och ett gemensamt etiskt modersmål. Vi kallar denna uppdaterade migrationspakt för migrationspakten 2.0."
+    ],
+    "title": "EU:s migrationspakt",
+    "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/eus-migrationspakt",
+    "fetchDate": "2025-03-12T06:30:19.273Z",
+    "party": "KD"
+  },
+  "https://kristdemokraterna.se/var-politik/politik-a-till-o/frontex": {
+    "opinions": [
+      "EU:s gemensamma gränsövervakning bör genom Frontex på sikt stärkas och antalet gränspoliser växa till 30 000."
+    ],
+    "title": "Frontex",
+    "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/frontex",
+    "fetchDate": "2025-03-12T06:30:19.118Z",
+    "party": "KD"
+  },
+  "https://kristdemokraterna.se/var-politik/politik-a-till-o/kvotflyktingsystem": {
+    "opinions": [
+      "Europa behöver värna asylrätten och se till att de med störst skyddsbehov har möjlighet att söka skydd i Europa. Kristdemokraterna förordar ett kvotflyktingsystem på EU-nivå. Vi måste skapa tydliga, förutsägbara, långsiktiga och hållbara lagliga vägar att söka asyl."
+    ],
+    "title": "Kvotflyktingsystem",
+    "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/kvotflyktingsystem",
+    "fetchDate": "2025-03-12T06:30:19.530Z",
+    "party": "KD"
   }
 }

@@ -19,7 +19,7 @@
   },
   "devDependencies": {
     "@eslint/js": "9.22.0",
-    "@next/eslint-plugin-next": "15.2.2",
+    "@next/eslint-plugin-next": "15.2.3",
     "@trivago/prettier-plugin-sort-imports": "5.2.2",
     "eslint": "9.22.0",
     "eslint-plugin-import": "2.31.0",

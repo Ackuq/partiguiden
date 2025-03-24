@@ -18,10 +18,10 @@
     "format:check": "prettier -c '**/*.{js,mjs,ts,tsx,md,json,css}'"
   },
   "devDependencies": {
-    "@eslint/js": "9.22.0",
+    "@eslint/js": "9.23.0",
     "@next/eslint-plugin-next": "15.2.3",
     "@trivago/prettier-plugin-sort-imports": "5.2.2",
-    "eslint": "9.22.0",
+    "eslint": "9.23.0",
     "eslint-plugin-import": "2.31.0",
     "eslint-plugin-react": "7.37.4",
     "eslint-plugin-react-hooks": "5.2.0",

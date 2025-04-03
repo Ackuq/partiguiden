@@ -118,8 +118,8 @@ importers:
         specifier: 3.1.0
         version: 3.1.0
       tailwindcss:
-        specifier: 4.0.17
-        version: 4.0.17
+        specifier: 4.1.1
+        version: 4.1.1
       typed.js:
         specifier: 2.1.0
         version: 2.1.0
@@ -168,8 +168,8 @@ importers:
         specifier: 5.1.91
         version: 5.1.91
       undici:
-        specifier: 7.6.0
-        version: 7.6.0
+        specifier: 7.7.0
+        version: 7.7.0
     devDependencies:
       '@types/node':
         specifier: 22.13.15
@@ -3490,6 +3490,9 @@ packages:
   tailwindcss@4.0.17:
     resolution: {integrity: sha512-OErSiGzRa6rLiOvaipsDZvLMSpsBZ4ysB4f0VKGXUrjw2jfkJRd6kjRKV2+ZmTCNvwtvgdDam5D7w6WXsdLJZw==}
 
+  tailwindcss@4.1.1:
+    resolution: {integrity: sha512-QNbdmeS979Efzim2g/bEvfuh+fTcIdp1y7gA+sb6OYSW74rt7Cr7M78AKdf6HqWT3d5AiTb7SwTT3sLQxr4/qw==}
+
   tapable@2.2.1:
     resolution: {integrity: sha512-GNzQvQTOIP6RyTfE2Qxb8ZVlNmw0n88vp1szwWRimP02mnTsx3Wtn5qRdqY9w2XduFNUgvOwhNnQsjwCp+kqaQ==}
     engines: {node: '>=6'}
@@ -3648,8 +3651,8 @@ packages:
     resolution: {integrity: sha512-q/1rj5D0/zayJB2FraXdaWxbhWiNKDvu8naDT2dl1yTlvJp4BLtOcp2a5BvgGNQpYYJzau7tf1WgKv3b+7mqpQ==}
     engines: {node: '>=18.17'}
 
-  undici@7.6.0:
-    resolution: {integrity: sha512-gaFsbThjrDGvAaD670r81RZro/s6H2PVZF640Qn0p5kZK+/rim7/mmyfp2W7VB5vOMaFM8vuFBJUaMlaZTYHlA==}
+  undici@7.7.0:
+    resolution: {integrity: sha512-tZ6+5NBq4KH35rr46XJ2JPFKxfcBlYNaqLF/wyWIO9RMHqqU/gx/CLB1Y2qMcgB8lWw/bKHa7qzspqCN7mUHvA==}
     engines: {node: '>=20.18.1'}
 
   universal-user-agent@6.0.1:
@@ -7456,6 +7459,8 @@ snapshots:
 
   tailwindcss@4.0.17: {}
 
+  tailwindcss@4.1.1: {}
+
   tapable@2.2.1: {}
 
   teeny-request@10.0.0:
@@ -7611,7 +7616,7 @@ snapshots:
 
   undici@6.21.1: {}
 
-  undici@7.6.0: {}
+  undici@7.7.0: {}
 
   universal-user-agent@6.0.1: {}
 

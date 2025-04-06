@@ -13,6 +13,8 @@ const config: KnipConfig = {
       next: {
         project: ["config/**/*"],
       },
+      // TODO: Remove when instrumentation-client is supported by knip
+      ignore: ["instrumentation-client.ts"],
       ignoreDependencies: ["postcss"],
     },
     "packages/party-data": {

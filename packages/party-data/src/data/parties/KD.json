@@ -1853,11 +1853,11 @@
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/uppehallstillstand": {
     "opinions": [
-      "Kristdemokraterna vill ha tidsbegränsande uppehållstillstånd som huvudregel för alla skyddskategorier förutom kvotflyktingar. Utgångspunkten är att skydd ska ges under den tid den asylsökande inte kan återvända hem. Om en skyddsbehövande med uppehållstillstånd integreras i det svenska samhället genom att lära sig det svenska språket, ta till sig den svenska kulturen och samhällsgemenskapen, försörja sig själv, klarlägga sin identitet samt klarar en vandelsprövning ska personen kunna ansöka om och förvärva ett permanent uppehållstillstånd. Om en person inte integreras i samhället och skyddsbehovet inte kvarstår måste utgångspunkten vara att personen återvänder till ursprungslandet."
+      "Kristdemokraterna vill ha tidsbegränsande uppehållstillstånd som huvudregel för alla skyddskategorier förutom kvotflyktingar. Utgångspunkten är att skydd ska ges under den tid den asylsökande inte kan återvända till hemlandet. Om en skyddsbehövande med uppehållstillstånd integreras i det svenska samhället genom att lära sig det svenska språket, ta till sig den svenska kulturen och samhällsgemenskapen, försörja sig själv, klarlägga sin identitet samt klarar en vandelsprövning, ska personen kunna ansöka om medborgarskap. Om en person inte integreras i samhället och skyddsbehovet inte kvarstår måste utgångspunkten vara att personen ska återvända till ursprungslandet."
     ],
     "title": "Uppehållstillstånd",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/uppehallstillstand",
-    "fetchDate": "2023-09-17T17:52:42.672Z",
+    "fetchDate": "2025-04-06T06:29:47.557Z",
     "party": "KD",
     "subject": "migration-och-integration"
   },
@@ -2064,11 +2064,13 @@
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/aldre": {
     "opinions": [
-      "Det finns ingen åldersgräns som upphäver rätten att bestämma över sin vardag. Äldre ska få känna välbefinnande och ha inflytande över vilka omsorgsinsatser som ges, oavsett i vilken kommun de bor. Alla ska få ett värdigt bemötande, ett tryggt boende och nära till läkarkontakter inom äldreomsorgen."
+      "Ett samhälle där alla kan åldras i trygghet och värdighet är ett angeläget mål för Kristdemokraterna.",
+      "Med den demografiska utmaningen är det viktigt att fler äldre i någon mån stannar kvar på arbetsmarknaden. Både förutsättningar och incitament behöver bli bättre för att få äldre att stanna kvar längre i arbetslivet. Arbetslivet behöver bli bättre på att ta tillvara äldres kompentens, förbättra arbetsmiljön så att fler orkar och vill arbeta längre, samt göra det mer förmånligt att arbeta längre och anställa äldre.",
+      "Ett välfärdssamhälle kan i hög grad bedömas utifrån kriterier som respekt, tillvaratagande och omsorg om den äldre generationen. Äldre ska kunna leva ett aktivt liv och ha inflytande i samhället och över sin vardag. Äldre ska få känna välbefinnande och ha inflytande över vilka omsorgsinsatser som ges, oavsett i vilken kommun de bor. Alla ska få ett värdigt bemötande, ett tryggt boende och nära till läkarkontakter inom äldreomsorgen."
     ],
     "title": "Äldre",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/aldre",
-    "fetchDate": "2023-09-17T17:52:43.265Z",
+    "fetchDate": "2025-04-06T06:29:46.348Z",
     "party": "KD",
     "subject": "aldrepolitik"
   },
@@ -2148,11 +2150,11 @@
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/medborgarskap": {
     "opinions": [
-      "Medborgarskapet har en stor betydelse både rättsligt och symboliskt. Det innebär en delaktighet i en större gemenskap, med skyldigheter och rättigheter gentemot andra. Kristdemokraterna vill uppvärdera medborgarskapet och ställa högre krav för att beviljas medborgarskap, exempelvis språkkrav och godkänt prov i samhällsorientering. Medborgarskapet ska även kunna återkallas, för den med dubbla medborgarskap, som begått systemhotande brottslighet eller vars medborgarskap beviljats till följd av oriktiga uppgifter."
+      "Medborgarskapet innebär en delaktighet i en större gemenskap, med skyldigheter och rättigheter gentemot andra. Kristdemokraterna vill uppvärdera medborgarskapet genom att ställa högre krav för att beviljas medborgarskap. Godkänt prov i svenska och samhällsorientering ska vara ett krav. Tiden man ska ha bott i Sverige för att kunna ansöka om medborgarskap ska utökas från fem till åtta år. Vi föreslår också att ett försörjningskrav införs och att kravet på ett hederligt leverne skärps. Personer med permanent uppehållstillstånd ska kunna hindras att få svenskt medborgarskap om de begått allvarliga eller upprepade brott. Då medborgarskapet är av stor vikt måste det även vara möjligt för domstol att kunna återkalla det. Det ska kunna ske för dem med dubbelt medborgarskap som begått exempelvis terroristbrott eller systemhotande brottslighet såsom grova brott i gängmiljö, eller vars medborgarskap beviljats till följd av oriktiga uppgifter."
     ],
     "title": "Medborgarskap",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/medborgarskap",
-    "fetchDate": "2025-02-12T21:11:56.684Z",
+    "fetchDate": "2025-04-06T06:29:46.417Z",
     "party": "KD",
     "subject": "migration-och-integration"
   },
@@ -2191,6 +2193,15 @@
     "title": "Kvotflyktingsystem",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/kvotflyktingsystem",
     "fetchDate": "2025-03-12T06:30:19.530Z",
+    "party": "KD"
+  },
+  "https://kristdemokraterna.se/var-politik/politik-a-till-o/valsystem": {
+    "opinions": [
+      "Valsystemet ska vara proportionellt och därmed utformat så att varje röst i princip tillmäts lika värde. Valhemligheten ska skyddas. Ett starkt inslag av personval bör finnas. Kristdemokraterna tycker att dagens rösträttsålder, 18 år, är bra. Rösträtten är kopplad till myndighetsåldern. Det innebär också ett samband mellan rättigheter och skyldigheter. Tanken är att när man får nya rättigheter, får man samtidigt nya skyldigheter. Vi vill att man ska kunna rösta det år man fyller 18, istället för som idag när man måste ha fyllt 18 år för att få rösta. Vi tycker att folkomröstningar kan vara en bra form av direktdemokrati och de bör användas när det är lämpligt och praktiskt möjligt. Kristdemokraterna vill ändra valsystemet så att dagens fasta mandatperioder istället blir rullande. Det skulle innebära att mandatperioden blir fyra år även efter ett extra val."
+    ],
+    "title": "Valsystem",
+    "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/valsystem",
+    "fetchDate": "2025-04-06T06:29:44.036Z",
     "party": "KD"
   }
 }

@@ -7,7 +7,7 @@ export default async function parseLeader(
   lastName: string,
   role: string,
   party: Party,
-): Promise<Leader> {
+): Promise<Leader | null> {
   const member = await searchMember({
     fnamn: firstName,
     enamn: lastName,
@@ -16,7 +16,8 @@ export default async function parseLeader(
   });
 
   if (member === null) {
-    throw new Error("Couldn't find member");
+    console.error("Couldn't find member", { firstName, lastName, role });
+    return null;
   }
 
   return { role, ...member };

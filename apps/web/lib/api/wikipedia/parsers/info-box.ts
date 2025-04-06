@@ -59,9 +59,19 @@ export const getInfoBoxAttr = async (
           const [firstName, ...lastName] = name
             .replace(/\[\d+\]/g, "")
             .split(" ");
-          leaders.push(
-            await parseLeader(firstName, lastName.join(" "), title, party),
+
+          const parsedLeader = await parseLeader(
+            firstName,
+            lastName.join(" "),
+            title,
+            party,
           );
+
+          if (parsedLeader === null) {
+            continue;
+          }
+
+          leaders.push(parsedLeader);
         }
         break;
       }

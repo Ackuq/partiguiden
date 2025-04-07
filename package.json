@@ -18,19 +18,19 @@
     "format:check": "prettier -c '**/*.{js,mjs,ts,tsx,md,json,css}'"
   },
   "devDependencies": {
-    "@eslint/js": "9.23.0",
+    "@eslint/js": "9.24.0",
     "@next/eslint-plugin-next": "15.2.4",
     "@trivago/prettier-plugin-sort-imports": "5.2.2",
-    "eslint": "9.23.0",
+    "eslint": "9.24.0",
     "eslint-plugin-import": "2.31.0",
     "eslint-plugin-react": "7.37.5",
     "eslint-plugin-react-hooks": "5.2.0",
     "eslint-plugin-turbo": "2.5.0",
-    "knip": "5.46.5",
+    "knip": "5.47.0",
     "prettier": "3.5.3",
     "prettier-plugin-tailwindcss": "0.6.11",
     "turbo": "2.5.0",
-    "typescript": "5.8.2",
+    "typescript": "5.8.3",
     "typescript-eslint": "8.29.0"
   }
 }

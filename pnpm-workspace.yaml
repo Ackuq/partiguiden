@@ -2,10 +2,11 @@ packages:
   - apps/*
   - packages/*
   - actions/*
-overrides:
-  react-is: 19.0.0
 onlyBuiltDependencies:
   - "@sentry/cli"
+  - "@tailwindcss/oxide"
   - esbuild
   - protobufjs
   - sharp
+overrides:
+  react-is: 19.0.0

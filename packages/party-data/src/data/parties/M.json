@@ -15,15 +15,15 @@
   },
   "https://moderaterna.se/var-politik/bostader/": {
     "opinions": [
-      "Liberalisera strandskyddslagstiftningen för att öka tillgången på byggbar mark",
-      "Tillfälligt höja ROT-avdraget för att stötta byggbranschen och hushållen",
-      "Höja bolånetaket för att det ska bli lättare att komma in på den ägda bostadsmarknaden",
-      "Skapa fler vägar till ägt boende genom hyrköp och ägarlägenheter",
-      "Utöka möjligheterna för fastighetsägare att säga upp hyresgäster som begår brott i eller i närheten av bostaden för att göra bostadsområden tryggare"
+      "Förenkla byggreglerna för att det ska bli billigare och gå snabbare att bygga bostäder",
+      "Liberalisera strandskyddslagstiftningen för att öka tillgången till byggbar mark.",
+      "Skapa ett fungerande regelverk för hyressättning",
+      "Höja bolånetaket för att det ska bli lättare att komma in på den ägda bostadsmarknaden",
+      "Skapa fler vägar till ägt boende genom hyrköp och ägarlägenheter"
     ],
     "title": "Bostadspolitik",
     "url": "https://moderaterna.se/var-politik/bostader/",
-    "fetchDate": "2024-06-02T17:16:19.104Z",
+    "fetchDate": "2025-05-25T06:30:39.933Z",
     "party": "M",
     "subject": "bostad"
   },
@@ -33,17 +33,19 @@
       "Garantera nybyggd kärnkraft rätten till drift och elproduktion under hela sin tekniska livslängd – om staten tvingar fram en nedläggning ska ägaren har rätt till skadestånd",
       "Ta fram ett regelverk för små modulära reaktorer (SMR), som medger typgodkännande",
       "Se över elmarknaden så att planerbara kraftslag som kärn- och vattenkraft får betalt för förmågan att producera el under årets alla timmar",
-      "Stoppa omprövningen av vattenkraftens befintliga miljötillstånd och nedmonteringen av befintlig vattenkraft"
+      "Stoppa omprövningen av vattenkraftens befintliga miljötillstånd och nedmonteringen av befintlig vattenkraft",
+      "Ge ersättning till närboende och fastighetsägare som drabbas negativt av vindkraftsetableringar"
     ],
     "title": "Energi",
     "url": "https://moderaterna.se/var-politik/energi/",
-    "fetchDate": "2024-06-02T17:16:18.900Z",
+    "fetchDate": "2025-05-25T06:30:54.440Z",
     "party": "M",
     "subject": "energi"
   },
   "https://moderaterna.se/var-politik/eu/": {
     "opinions": [
       "Öka EU:s stöd till Ukraina och press på Ryssland",
+      "EU:s gemensamma försvars-, utrikes- och säkerhetspolitik blir starkare",
       "Förstärka kontrollen vid EU:s yttre gräns, få effektivare asylprocesser på plats samt öka återvändandet",
       "Stärka företagsklimatet i Europa genom minskad regelbörda och färre handelshinder",
       "EU ska ha en tydlig klimatagenda som ger industri och samhälle rätt förutsättningar att ställa om",
@@ -51,34 +53,36 @@
     ],
     "title": "EU",
     "url": "https://moderaterna.se/var-politik/eu/",
-    "fetchDate": "2024-06-02T17:16:20.630Z",
+    "fetchDate": "2025-05-25T06:30:38.281Z",
     "party": "M",
     "subject": "utrikes--och-bistandsfragor"
   },
   "https://moderaterna.se/var-politik/forsvar/": {
     "opinions": [
-      "Stärka alla delar av det militära försvaret, bl.a. genom att säkerställa försörjning av kompetent personal med goda anställningsvillkor, mer modern utrustning och en ökad övningsverksamhet",
-      "Sträva efter en bred parlamentarisk förankring av den nya säkerhetspolitiska hållningen, inte minst genom försvarsberedningen",
-      "Slutföra den militära integrationen med Nato och vara en aktiv medlem som bidrar till alliansens avskräckning och försvar ",
-      "Sverige över tid ska ha ett försvarsanslag som garanterar en stark försvarsförmåga. Två procent av BNP till försvaret ska ses som ett golv och inte ett tak",
-      "Lära oss av kriget i Ukraina exempelvis gällande värdet av ett starkt luftförsvar, behovet av att satsa på ny teknik som drönare, att kunna bemöta cyberangrepp, ha ett tillräckligt skydd för vår infrastruktur och att ha en väl fungerande försvarsunderrättelse"
+      "Stärka alla delar av det militära försvaret, bl.a. genom att säkerställa försörjning av kompetent personal med goda anställningsvillkor, mer modern utrustning och en ökad övningsverksamhet.",
+      "Sträva efter en bred parlamentarisk förankring av den nya säkerhetspolitiska hållningen, inte minst genom försvarsberedningen.",
+      "Slutföra den militära integrationen med Nato och vara en aktiv medlem som bidrar till alliansens avskräckning och försvar. ",
+      "Sverige över tid ska ha ett försvarsanslag som garanterar en stark försvarsförmåga. Försvarsanslaget kommer stegvis att öka till 2,6 procent av BNP. Utvecklingen av säkerhetsläget är det som avgör om det kan behövas mer resurser till försvaret.",
+      "Lära oss av kriget i Ukraina exempelvis gällande värdet av ett starkt luftförsvar, behovet av att satsa på ny teknik som drönare, att kunna bemöta cyberangrepp, ha ett tillräckligt skydd för vår infrastruktur och att ha en väl fungerande försvarsunderrättelse."
     ],
     "title": "Försvar",
     "url": "https://moderaterna.se/var-politik/forsvar/",
-    "fetchDate": "2024-06-02T17:16:20.702Z",
+    "fetchDate": "2025-05-25T06:30:54.397Z",
     "party": "M",
     "subject": "forsvar"
   },
   "https://moderaterna.se/var-politik/hbtq/": {
     "opinions": [
       "Altruistiskt surrogatmödraskap ska vara möjligt i Sverige. Precis som vid adoptioner bör det föregås en omsorgsfull lämplighetsprövning",
-      "Alla offentliga bidrag och föreningar och organisationer som hatar eller hotar hbtqi-personer ska stoppas. Vi vill göra en bred översyn av regelverken ",
-      "Införa obligatorisk samhällskunskap för nyanlända där bland annat hbtqi-personers rättigheter klargörs ",
-      "Moderaterna föreslår att den som vill byta juridiskt kön ska genomgå en enklare medicinsk utredning hos till exempel läkare eller psykolog – i stället för att genomgå utredningar som kan ta flera år för att få en medicinsk diagnos"
+      "Ändra i riktlinjerna för blodgivning så att sexuell läggning inte längre ska vara avgörande för vem som får donera blod",
+      "Stoppa alla offentliga bidrag till föreningar och organisationer som hatar eller hotar HBTQ-personer. Vi vill göra en bred översyn av regelverken ",
+      "Införa obligatorisk samhällskunskap för nyanlända där HBTQ-personers rättigheter är en självklar del ",
+      "All familjelagstiftning ska vara könsneutral",
+      "Stå upp för HBTQ-personers rättigheter i världen – Sverige ska vara en röst för frihet och mot förtryck"
     ],
     "title": "HBTQ",
     "url": "https://moderaterna.se/var-politik/hbtq/",
-    "fetchDate": "2024-06-02T17:16:21.965Z",
+    "fetchDate": "2025-05-25T06:30:54.444Z",
     "party": "M",
     "subject": "jamstalldhet-och-diskriminering"
   },
@@ -97,27 +101,29 @@
   },
   "https://moderaterna.se/var-politik/infrastruktur/": {
     "opinions": [
-      "Vi hållbart ska investera i vägar, järnväg, hamnar och flygplatser",
-      "Tågen ska gå i tid och vägarna ska gå att köra säkert på",
+      "Hållbart investera i vägar, järnväg, hamnar och flygplatser",
+      "Tågen ska gå i tid och vägarna ska vara säkra att köra på",
+      "Minska underhållsskulden i svensk infrastruktur",
       "Att ha den infrastruktur som krävs för ett starkt försvar",
-      "Snabba på utbyggnaden av laddinfrastruktur, vätgas- och biodrivmedelstillverkning",
+      "Skynda på utbyggnaden av laddinfrastruktur, vätgas- och biodrivmedelstillverkning",
       "Möjliggöra den gröna omställningen med fossilfri el från sol, vind, vatten och utbyggd kärnkraft"
     ],
     "title": "Infrastruktur",
     "url": "https://moderaterna.se/var-politik/infrastruktur/",
-    "fetchDate": "2024-06-02T17:16:19.515Z",
+    "fetchDate": "2025-05-25T06:30:54.524Z",
     "party": "M",
     "subject": "infrastruktur-och-trafik"
   },
   "https://moderaterna.se/var-politik/kultur/": {
     "opinions": [
       "Skapa bättre förutsättningar för de kulturella och kreativa branscherna genom tillväxtvänlig näringspolitik",
+      "Uppvärdera bildningens betydelse i ett framgångsrikt samhälle",
       "Prioritera barn och ungas läsförmåga genom tillgång till fler böcker och bemannade skolbibliotek  ",
       "Skydda, bevara och tillgängliggöra vårt gemensamma kulturarv "
     ],
     "title": "Kultur",
     "url": "https://moderaterna.se/var-politik/kultur/",
-    "fetchDate": "2024-06-02T17:16:21.237Z",
+    "fetchDate": "2025-05-25T06:30:54.536Z",
     "party": "M",
     "subject": "kultur-media-och-idrott"
   },
@@ -149,34 +155,40 @@
   "https://moderaterna.se/var-politik/tillvaxt/": {
     "opinions": [
       "Skydda äganderätten och företagsfriheten",
-      "Säkerställa att regler är effektiva och uppfyller ett tydligt syfte",
+      "Säkerställa att regler som påverkar företagande och utveckling är effektiva, uppfyller ett tydligt syfte och innebär en så liten börda som möjligt",
       "Värna konkurrenskraftiga företagsskatter och kapitalskatter samt stärka kompetensförsörjningen"
     ],
     "title": "Tillväxt",
     "url": "https://moderaterna.se/var-politik/tillvaxt/",
-    "fetchDate": "2024-06-02T17:16:22.058Z",
+    "fetchDate": "2025-05-25T06:30:38.414Z",
     "party": "M",
     "subject": "naringsliv"
   },
   "https://moderaterna.se/var-politik/arbetslinjen/": {
     "opinions": [
-      "Sänka skatten på arbete för alla som arbetar, särskilt för dem med låga och medelstora inkomster",
-      "Införa bidragstak så att det alltid ska löna sig mer att arbeta än att leva på bidrag. Summan av olika bidrag får aldrig bli högre än lönen från ett arbete",
-      "Bekämpa långtidsarbetslösheten med effektiva nystartsjobb, aktivitetskrav, en fungerande utbildningsplikt och en jobbpremie som innebär att det ska löna sig för långtidsarbetslösa att gå från bidrag till jobb",
-      "Se till att den som uppbär försörjningsstöd av arbetsmarknadsskäl deltar i aktiviteter för att få fullt bidrag",
-      "Skapa en arbetsmarknad som är öppen för alla. Möjligheterna på arbetsmarknaden begränsas ofta för människor som har synliga eller osynliga funktionsnedsättningar – varje människas arbetsförmåga ska tas tillvara"
+      "Sänka skatten på arbete – så att det alltid lönar sig mer att arbeta, särskilt för dem med låga och medelstora inkomster",
+      "Införa ett bidragstak – summan av olika bidrag får aldrig bli högre än lönen från ett arbete",
+      "Bekämpa långtidsarbetslösheten – genom nystartsjobb, tydliga aktivitetskrav, en fungerande utbildningsplikt och en jobbpremie som gör att det lönar sig för långtidsarbetslösa att gå från bidrag till jobb ",
+      "Införa krav på aktiviteter – för att få fullt bidrag ska den som får försörjningsstöd av arbetsmarknadsskäl bidra utifrån sin förmåga.",
+      "Skapa en arbetsmarknad som är öppen för alla – där varje människas arbetsförmåga tas tillvara, oavsett synliga eller osynliga funktionsnedsättningar."
     ],
     "title": "Arbetslinjen",
     "url": "https://moderaterna.se/var-politik/arbetslinjen/",
-    "fetchDate": "2024-06-02T17:16:21.819Z",
+    "fetchDate": "2025-05-25T06:30:38.833Z",
     "party": "M",
     "subject": "jobb"
   },
   "https://moderaterna.se/var-politik/brott-och-straff/": {
-    "opinions": [],
+    "opinions": [
+      "Fokus byts från förövare till brottsoffer och samhällets behov av skydd",
+      "Straffen ska spegla brottens allvar och framstå som rimliga och rättvis",
+      "Bygga en effektivare brottsbekämpning som har mer resurser och bättre verktyg, samtidigt som vi värnar rättssäkerheten",
+      "Öka tryggheten bl.a. genom att fler brott utreds och klaras upp",
+      "Lika mycket satsningar görs på att förebygga som att bekämpa brott"
+    ],
     "title": "Brott och straff",
     "url": "https://moderaterna.se/var-politik/brott-och-straff/",
-    "fetchDate": "2024-06-02T17:16:20.636Z",
+    "fetchDate": "2025-05-25T06:30:38.719Z",
     "party": "M",
     "subject": "lag-och-ratt"
   },
@@ -198,12 +210,14 @@
     "opinions": [
       "I ökad utsträckning förebygga och hantera klimatförändringar genom att utöka och effektivisera Sveriges klimatbistånd",
       "Sverige tydligt och aktivt ska försvara det svenska självbestämmandet över skogen i EU",
+      "Främja ett hållbart och konkurrenskraftigt jordbruk genom innovation och rättssäkra regler, för ökad självförsörjning och stärkt beredskap",
+      "Stärka förutsättningarna för ett hållbart fiske genom evidensbaserade kvotbeslut, regler som motverkar utfiskning och stöd till småskaligt kustnära fiske.",
       "Satsa på storskalig infångning och lagring av koldioxid, så kallad bio-CCS. Lagring av koldioxid tjänster bör kunna sälja vidare på en frivilligmarknad",
       "Satsa på industri- och klimatklivet"
     ],
     "title": "En grön höger",
     "url": "https://moderaterna.se/var-politik/en-gron-hoger/",
-    "fetchDate": "2024-06-02T17:16:21.593Z",
+    "fetchDate": "2025-05-25T06:30:54.412Z",
     "party": "M",
     "subject": "miljo-och-klimat"
   },
@@ -236,13 +250,13 @@
     "opinions": [
       "Patienten ska få en trygg och tillgänglig vård i rätt tid av hög kvalitet",
       "Prioritera en jämställd vård med fokus på kvinnors sjukdomar och hälsa, samt en förstärkt förlossningsvård",
-      "Ta bort köerna till barn- och ungdomspsykiatrin",
+      "Ta bort köerna till barn- och ungdomspsykiatrin och följ upp den nationella strategin och handlingsplanen för psykisk hälsa och suicidprevention",
       "Förstärka cancervården och barncancervården i syfte att minska dödligheten i cancer",
-      "Minska administration, krångel och byråkrati inom sjukvården"
+      "Minska administration, krångel och byråkrati inom sjukvården för att öka patientens inflytande och minska personalens arbetsbelastning"
     ],
     "title": "Hälso- och sjukvård samt psykiatri",
     "url": "https://moderaterna.se/var-politik/halso-och-sjukvard-samt-psykiatri/",
-    "fetchDate": "2024-06-02T17:16:20.861Z",
+    "fetchDate": "2025-05-25T06:30:54.560Z",
     "party": "M",
     "subject": "vard-och-omsorg"
   },
@@ -261,115 +275,112 @@
   "https://moderaterna.se/var-politik/medborgarskap/": {
     "opinions": [
       "Förbättra skyddet och statusen för det svenska medborgarskapet",
-      "Utreda möjligheten att återkalla medborgarskap",
-      "Införa krav på kunskaper i svenska och samhällskunskap",
-      "Skärpa kraven på hederligt levnadssätt",
-      "Införa villkor om egenförsörjning för att få medborgarskap"
+      "Återkalla medborgarskap för brottslingar med dubbelt medborgarskap som allvarligt skadar statens vitala intressen eller som delats ut på felaktiga grunder",
+      "Införa krav på kunskaper i svenska och samhällskunskap, skärpa kraven på hederligt levnadssätt, och införa villkor om egenförsörjning för att få medborgarskap"
     ],
     "title": "Medborgarskap",
     "url": "https://moderaterna.se/var-politik/medborgarskap/",
-    "fetchDate": "2024-06-02T17:16:22.061Z",
+    "fetchDate": "2025-05-25T06:30:39.328Z",
     "party": "M",
     "subject": "migration-och-integration"
   },
   "https://moderaterna.se/var-politik/pensioner/": {
     "opinions": [
       "Värna arbetslinjen i pensionssystemet – det ska alltid löna sig bättre att ha arbetat än att inte ha gjort det",
-      "Pensionerna ska höjas. Skatten på pension ska inte vara högre än på arbete. Moderaterna är den enda garanten för ordentligt sänkt skatt på pension ",
+      "Stärka pensionärernas ekonomi. Skatten på pension ska inte vara högre än på arbete. Moderaterna är den enda garanten för ordentligt sänkt skatt på pension ",
       "Införa en gas i pensionssystemet – så att pensionerna kan stärkas när Sveriges ekonomi är god",
       "Driva på för ett mer jämställt arbetsliv som leder till mer jämställda pensioner",
-      "Det är viktigt att äldre medarbetares kompetens, erfarenhet och stora värde behålls på arbetsmarknaden. Därför gör vi det mer lönsamt att fortsätta arbeta längre upp i åldrarna"
+      "Det är viktigt att äldre medarbetares kompetens, erfarenhet och stora värde behålls på arbetsmarknaden. Därför gör vi det mer lönsamt att fortsätta arbeta längre upp i åldrarna och har gjort det möjligt att pausa utbetalning av tjänstepension fr.o.m. år 2025"
     ],
     "title": "Pensioner",
     "url": "https://moderaterna.se/var-politik/pensioner/",
-    "fetchDate": "2024-06-02T17:16:22.052Z",
+    "fetchDate": "2025-05-25T06:30:54.656Z",
     "party": "M",
     "subject": "aldrepolitik"
   },
   "https://moderaterna.se/var-politik/skatt/": {
     "opinions": [
-      "Jobbskatteavdraget ska fortsätta förstärkas, vilket innebär sänkt skatt för alla som arbetar",
-      "Grundavdraget ska fortsätta förstärkas, vilket innebär sänkt skatt för alla som har arbetat",
-      "Skattebefria sparande upp till 300 000 kronor på ISK.",
-      "Avskaffa skadliga symbolskatter Läs mer om vår politik och vad regeringen gör just nu på området genom att klicka här"
+      "Skatterna ska vara låga, effektiva och aldrig avkräva medborgarna mer än nödvändigt.",
+      "Det alltid ska löna sig att arbeta. Regeringen har genomfört ett nionde jobbskatteavdrag, vilket innebär sänkt skatt för alla som arbetar. Regeringen har även sänkt marginalskatterna, vilket bidrar till ökad tillväxt och att det lönar sig att utbilda sig och anstränga sig lite extra.",
+      "Det alltid ska löna sig att ha arbetat. Grundavdraget för pensionärer har stärkts, vilket innebär sänkt skatt för alla som har arbetat."
     ],
     "title": "Skatt",
     "url": "https://moderaterna.se/var-politik/skatt/",
-    "fetchDate": "2024-06-02T17:16:20.864Z",
+    "fetchDate": "2025-05-25T06:30:54.501Z",
     "party": "M",
     "subject": "ekonomi-och-skatter"
   },
   "https://moderaterna.se/var-politik/socialforsakringar-och-bidrag/": {
     "opinions": [
       "Alla som uppbär försörjningsstöd av arbetsmarknadsskäl ska delta i aktiviteter motsvarande sin arbetsförmåga för att få fullt bidrag",
-      "Rehabiliteringsinsatserna ska vara mer aktiva och ska präglas av tydliga tidsgränser",
-      "Modernisera föräldraförsäkringen för att främja jämställdheten"
+      "Rehabiliteringsinsatserna ska vara mer aktiva och präglas av tydliga tidsgränser",
+      "Modernisera föräldraförsäkringen för att främja jämställdhet"
     ],
     "title": "Socialförsäkringar och bidrag",
     "url": "https://moderaterna.se/var-politik/socialforsakringar-och-bidrag/",
-    "fetchDate": "2024-06-02T17:16:19.614Z",
+    "fetchDate": "2025-05-25T06:30:54.532Z",
     "party": "M",
     "subject": "trygghetssystem-och-valfard"
   },
   "https://moderaterna.se/var-politik/valfardsbrottslighet/": {
     "opinions": [
+      "Den nyinrättade utbetalningsmyndigheten ska fortsätta sitt uppdrag att upptäcka, förebygga och förhindra felaktiga utbetalningar",
       "Förbättra folkbokföringen och ta fram en nationell lägesbild över vilka som befinner i Sverige",
-      "Inrätta en utbetalningsmyndighet som upptäcker, förebygger och förhindrar felaktiga utbetalningar",
+      "Stoppa oseriösa eller kriminella aktörer genom att bl.a. införa generell tillståndsplikt inom välfärdssektorn  ",
       "Göra det lättare att dela information mellan myndigheter för att motverka bidragsbrottslighet",
-      "Skärpa straffen för bidragsbrott ",
-      "Införa generell tillståndsplikt inom välfärdssektorn  "
+      "Skärpa straffen för bidragsbrott "
     ],
     "title": "Välfärdsbrottslighet",
     "url": "https://moderaterna.se/var-politik/valfardsbrottslighet/",
-    "fetchDate": "2024-06-02T17:16:21.822Z",
+    "fetchDate": "2025-05-25T06:30:54.387Z",
     "party": "M",
     "subject": "lag-och-ratt"
   },
   "https://moderaterna.se/var-politik/aldreomsorg-och-aldrevard/": {
     "opinions": [
-      "Stärka den medicinska kompetensen och kontinuiteten i äldreomsorgen",
+      "Stärka den medicinska kompetensen och kontinuiteten i bemanningen i äldreomsorgen",
       "Ta fram och genomföra språkkrav inom äldreomsorg och äldrevård",
       "Prioritera satsningar på vällagad mat inom äldreomsorg och äldrevård",
-      "Prioritera verksamhetsnära forskning som rör omvårdnad och omsorg av äldre",
-      "Stärka och utveckla den förebyggande äldrevården med ett särskilt fokus på prevention av fallolyckor      "
+      "Prioritera verksamhetsnära forskning som rör omvårdnad och omsorg av äldre och genomföra den utvecklade nationella demensstrategin",
+      "Stärka och utveckla den förebyggande äldrevården med ett särskilt fokus på prevention av fallolyckor     "
     ],
     "title": "Äldreomsorg och äldrevård",
     "url": "https://moderaterna.se/var-politik/aldreomsorg-och-aldrevard/",
-    "fetchDate": "2024-06-02T17:16:21.362Z",
+    "fetchDate": "2025-05-25T06:30:54.429Z",
     "party": "M",
     "subject": "aldrepolitik"
   },
   "https://moderaterna.se/var-politik/socialtjanst-och-social-omsorg/": {
     "opinions": [
       "Barnens bästa ska prioriteras och synliggöras i lagstiftningen, och barnen ska vara egna rättighetsbärare",
-      "Ta fram och implementera en ny socialtjänstlag med fokus på det förebyggande arbetet samt riva sekretess mellan socialtjänst, skola och polis för att möjliggöra informationsutbyte",
+      "Implementera en ny socialtjänstlag med fokus på det förebyggande arbetet samt riva sekretesshinder mellan socialtjänst, skola och polis för att möjliggöra informationsutbyte",
       "Reformera den statliga barn- och ungdomsvården så att barn och unga ges den vård och stöd som de behöver, och samtidigt införa ungdomsfängelser för dem som begått grova brott",
-      "Förstärka arbetet med att ta fram fler familjehem ",
+      "Förstärka arbetet med att ta fram fler familjehem",
       "Prioritera skolsociala team i syfte att bygga förtroende, öka tilliten till skolan och socialtjänsten samt säkerställa en trygg skolmiljö"
     ],
     "title": "Socialtjänst",
     "url": "https://moderaterna.se/var-politik/socialtjanst-och-social-omsorg/",
-    "fetchDate": "2024-06-03T19:18:41.443Z",
+    "fetchDate": "2025-05-25T06:30:54.550Z",
     "party": "M",
     "subject": "vard-och-omsorg"
   },
   "https://moderaterna.se/var-politik/integration/": {
     "opinions": [
-      "Införa kvalificering till välfärden för nyanlända. Full tillgång till svenska bidrag och förmåner bör man enbart få genom eget arbete eller genom permanent och laglig bosättning i landet ",
-      "Den som står längst ifrån arbetsmarknaden ska delta i aktiviteter som för personen närmre arbetsmarknaden – exempelvis språk, praktik eller samhällsnyttiga insatser",
-      "Införande av språkkrav och obligatorisk samhällsorientering med prov för att få permanent uppehållstillstånd respektive medborgarskap",
+      "Införa kvalificering till välfärden för nyanlända– full tillgång till svenska bidrag och förmåner ska man bara få genom eget arbete eller permanent och laglig bosättning.",
+      "Aktivera de som står längst från arbetsmarknaden – genom språkstudier, praktik eller samhällsnyttiga insatser som för dem närmare ett jobb.",
+      "Införa språkkrav och obligatorisk samhällsorientering med godkänt prov för att få permanent uppehållstillstånd respektive medborgarskap",
       "Begränsa rätten till betald tolk. Har man permanent uppehållstillstånd i Sverige ska rätten till tolk – med vissa undantag – upphöra",
       "Införa bidragstak, så att det alltid lönar sig att gå från bidrag till jobb"
     ],
     "title": "Integration",
     "url": "https://moderaterna.se/var-politik/integration/",
-    "fetchDate": "2024-10-10T06:29:38.446Z",
+    "fetchDate": "2025-05-25T06:30:54.529Z",
     "party": "M",
     "subject": "migration-och-integration"
   },
   "https://moderaterna.se/var-politik/migrationspolitik/": {
     "opinions": [
-      "Anpassa det svenska regelverket för beviljande av asyl och asylförfarandet till miniminivån enligt EU-rätten",
+      "Anpassa det svenska regelverket för beviljande av asyl och asylförfarandet till EU-rättens miniminivå",
       "Nyanlända ska kvalificera sig till välfärden genom att arbeta",
       "Skärpa kraven för anhöriginvandring genom bland annat ett högre försörjningskrav ",
       "Främja högkvalificerad arbetskraftsinvandring som Sverige är i behov av. Samtidigt höjer vi lönegolvet för arbetskraftsinvandring från länder utanför EU ",
@@ -377,8 +388,22 @@
     ],
     "title": "Migration",
     "url": "https://moderaterna.se/var-politik/migrationspolitik/",
-    "fetchDate": "2024-10-10T06:29:37.003Z",
+    "fetchDate": "2025-05-25T06:30:54.643Z",
     "party": "M",
     "subject": "migration-och-integration"
+  },
+  "https://moderaterna.se/var-politik/jamstalldhet/": {
+    "opinions": [
+      "Skatter och bidrag ska utformas så att familjer inte förlorar på att kvinnor börjar arbeta",
+      "Modernisera socialförsäkringarna för att främja jämställdheten och värna flexibiliteten i föräldraförsäkringen",
+      "Minska det ofrivilliga deltidsarbetet, så att fler kvinnor kan stärka sin ekonomiska egenmakt",
+      "Straffskalorna med särskilt fokus på vålds- och sexualbrott ska återspegla brottens allvar",
+      "Införa obligatorisk häktning för grov kvinnofridskränkning",
+      "Skärpa straffen mot hedersrelaterat våld och förtryck och utvidga reseförbudet för barn och unga"
+    ],
+    "title": "Jämställdhet",
+    "url": "https://moderaterna.se/var-politik/jamstalldhet/",
+    "fetchDate": "2025-05-25T06:30:39.836Z",
+    "party": "M"
   }
 }

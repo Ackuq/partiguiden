@@ -1704,7 +1704,8 @@
     "title": "AI och teknikutveckling",
     "url": "https://www.liberalerna.se/politik/ai",
     "fetchDate": "2025-05-25T06:30:36.240Z",
-    "party": "L"
+    "party": "L",
+    "subject": "it-och-mobiltelefoni"
   },
   "https://www.liberalerna.se/politik/politikbostader-2": {
     "opinions": [
@@ -1719,7 +1720,8 @@
     "title": "Bostad",
     "url": "https://www.liberalerna.se/politik/politikbostader-2",
     "fetchDate": "2025-05-25T06:30:36.845Z",
-    "party": "L"
+    "party": "L",
+    "subject": "bostad"
   },
   "https://www.liberalerna.se/politik/energi-2": {
     "opinions": [
@@ -1733,7 +1735,8 @@
     "title": "Energi",
     "url": "https://www.liberalerna.se/politik/energi-2",
     "fetchDate": "2025-05-25T06:30:42.546Z",
-    "party": "L"
+    "party": "L",
+    "subject": "energi"
   },
   "https://www.liberalerna.se/politik/forlossningsvard": {
     "opinions": [
@@ -1746,7 +1749,8 @@
     "title": "Förlossningsvård",
     "url": "https://www.liberalerna.se/politik/forlossningsvard",
     "fetchDate": "2025-05-25T06:30:37.715Z",
-    "party": "L"
+    "party": "L",
+    "subject": "vard-och-omsorg"
   },
   "https://www.liberalerna.se/politik/ukraina": {
     "opinions": [
@@ -1758,6 +1762,7 @@
     "title": "Ukraina",
     "url": "https://www.liberalerna.se/politik/ukraina",
     "fetchDate": "2025-05-25T06:30:42.522Z",
-    "party": "L"
+    "party": "L",
+    "subject": "utrikes--och-bistandsfragor"
   }
 }

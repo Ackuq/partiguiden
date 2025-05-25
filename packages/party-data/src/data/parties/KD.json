@@ -2175,7 +2175,8 @@
     "title": "EU:s migrationspakt",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/eus-migrationspakt",
     "fetchDate": "2025-03-12T06:30:19.273Z",
-    "party": "KD"
+    "party": "KD",
+    "subject": "utrikes--och-bistandsfragor"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/frontex": {
     "opinions": [
@@ -2184,7 +2185,8 @@
     "title": "Frontex",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/frontex",
     "fetchDate": "2025-03-12T06:30:19.118Z",
-    "party": "KD"
+    "party": "KD",
+    "subject": "utrikes--och-bistandsfragor"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/kvotflyktingsystem": {
     "opinions": [
@@ -2193,7 +2195,8 @@
     "title": "Kvotflyktingsystem",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/kvotflyktingsystem",
     "fetchDate": "2025-03-12T06:30:19.530Z",
-    "party": "KD"
+    "party": "KD",
+    "subject": "migration-och-integration"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/valsystem": {
     "opinions": [
@@ -2202,6 +2205,7 @@
     "title": "Valsystem",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/valsystem",
     "fetchDate": "2025-04-06T06:29:44.036Z",
-    "party": "KD"
+    "party": "KD",
+    "subject": "demokrati"
   }
 }

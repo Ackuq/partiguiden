@@ -18,7 +18,7 @@
     "prettier": "3.5.3"
   },
   "devDependencies": {
-    "@inquirer/prompts": "7.5.2",
-    "@types/node": "22.15.21"
+    "@inquirer/prompts": "7.5.3",
+    "@types/node": "22.15.23"
   }
 }

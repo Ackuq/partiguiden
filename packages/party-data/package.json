@@ -19,6 +19,6 @@
   },
   "devDependencies": {
     "@inquirer/prompts": "7.5.3",
-    "@types/node": "22.15.29"
+    "@types/node": "22.15.30"
   }
 }

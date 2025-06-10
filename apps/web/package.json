@@ -39,7 +39,7 @@
     "@next/bundle-analyzer": "15.3.3",
     "@tailwindcss/postcss": "4.1.8",
     "@types/node": "22.15.30",
-    "@types/react": "19.1.6",
+    "@types/react": "19.1.7",
     "next-sitemap": "4.2.3",
     "postcss": "8.5.4"
   }

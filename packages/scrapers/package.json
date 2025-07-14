@@ -12,8 +12,8 @@
   "dependencies": {
     "@partiguiden/party-data": "workspace:*",
     "cheerio": "1.1.0",
-    "pdfjs-dist": "5.3.31",
-    "undici": "7.10.0"
+    "pdfjs-dist": "5.3.93",
+    "undici": "7.11.0"
   },
   "devDependencies": {
     "@types/node": "22.15.30",

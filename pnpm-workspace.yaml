@@ -6,7 +6,6 @@ onlyBuiltDependencies:
   - "@sentry/cli"
   - "@tailwindcss/oxide"
   - esbuild
+  - oxc-resolver
   - protobufjs
   - sharp
-overrides:
-  react-is: 19.0.0

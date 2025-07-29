@@ -1,5 +1,6 @@
 import type { Party } from "@partiguiden/party-data/types";
 import { parties, partySortOrder } from "@partiguiden/party-data/types";
+import { partyNames } from "@partiguiden/party-data/utils";
 
 import type { AveragePoll, Poll, PollDetails, Polls } from "./types";
 
@@ -29,8 +30,10 @@ function calculateAveragePerParty(
   return partySortOrder.map((party) => {
     const details = partyTotal[party];
     const sum = details.reduce((prev, curr) => prev + curr.value, 0);
+    const name = partyNames[party] || party;
     return {
-      party: party as Party,
+      party,
+      name,
       value: parseFloat((sum / details.length).toFixed(2)),
       details: details.sort(
         (a, b) => a.publishedDate.getTime() - b.publishedDate.getTime(),

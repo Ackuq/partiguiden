@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import type { LegendProps } from "recharts";
 import {
   Bar,
@@ -16,7 +16,7 @@ import {
 } from "recharts";
 
 import ReferenceLineLabel from "@components/charts/reference-line-label";
-import CustomTooltip from "@components/charts/tooltip";
+import { useCustomTooltip } from "@components/charts/tooltip";
 import type { AveragePoll } from "@lib/api/polls/types";
 import { partyLogo } from "@lib/assets";
 import { partyColors } from "@lib/colors/party";
@@ -61,7 +61,16 @@ export default function BlockBuilder({ currentMonthAverage }: Props) {
     }
   };
 
-  const stackedData = toStackedData(currentMonthAverage, included);
+  const stackedData = useMemo(
+    () => toStackedData(currentMonthAverage, included),
+    [currentMonthAverage, included],
+  );
+
+  const nameFormatter = (name: string) => {
+    return partyNames[name as Party] || name;
+  };
+
+  const CustomTooltip = useCustomTooltip({ nameFormatter });
 
   return (
     <div className="h-[40rem]">
@@ -70,14 +79,7 @@ export default function BlockBuilder({ currentMonthAverage }: Props) {
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="total" />
           <YAxis type="number" unit="%" domain={[0, 100]} width={40} />
-          <Tooltip
-            content={
-              <CustomTooltip
-                nameFormatter={(name) => partyNames[name as Party]}
-              />
-            }
-            cursor={false}
-          />
+          <Tooltip content={CustomTooltip} cursor={false} />
           {currentMonthAverage.map((partyPoll) => (
             <Bar
               hide={!included.includes(partyPoll.party)}

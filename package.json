@@ -18,19 +18,19 @@
     "format:check": "prettier -c '**/*.{js,mjs,ts,tsx,md,json,css}'"
   },
   "devDependencies": {
-    "@eslint/js": "9.32.0",
-    "@next/eslint-plugin-next": "15.4.4",
-    "@trivago/prettier-plugin-sort-imports": "5.2.2",
-    "eslint": "9.32.0",
-    "eslint-plugin-import": "2.32.0",
-    "eslint-plugin-react": "7.37.5",
-    "eslint-plugin-react-hooks": "5.2.0",
-    "eslint-plugin-turbo": "2.5.5",
-    "knip": "5.62.0",
-    "prettier": "3.6.2",
-    "prettier-plugin-tailwindcss": "0.6.14",
-    "turbo": "2.5.5",
-    "typescript": "5.8.3",
-    "typescript-eslint": "8.38.0"
+    "@eslint/js": "catalog:",
+    "@next/eslint-plugin-next": "catalog:",
+    "@trivago/prettier-plugin-sort-imports": "catalog:",
+    "eslint": "catalog:",
+    "eslint-plugin-import": "catalog:",
+    "eslint-plugin-react": "catalog:",
+    "eslint-plugin-react-hooks": "catalog:",
+    "eslint-plugin-turbo": "catalog:",
+    "knip": "catalog:",
+    "prettier": "catalog:",
+    "prettier-plugin-tailwindcss": "catalog:",
+    "turbo": "catalog:",
+    "typescript": "catalog:",
+    "typescript-eslint": "catalog:"
   }
 }

@@ -11,12 +11,12 @@
   },
   "dependencies": {
     "@partiguiden/party-data": "workspace:*",
-    "cheerio": "1.1.2",
-    "pdfjs-dist": "5.4.54",
-    "undici": "7.12.0"
+    "cheerio": "catalog:",
+    "pdfjs-dist": "catalog:",
+    "undici": "catalog:"
   },
   "devDependencies": {
-    "@types/node": "22.16.5",
-    "domhandler": "5.0.3"
+    "@types/node": "catalog:",
+    "domhandler": "catalog:"
   }
 }

@@ -14,7 +14,11 @@ import {
 
 import PartySymbolTick from "@components/charts/party-symbol-tick";
 import ReferenceLineLabel from "@components/charts/reference-line-label";
-import CustomTooltip from "@components/charts/tooltip";
+import type {
+  CustomTooltipDetails,
+  CustomTooltipPayload,
+} from "@components/charts/tooltip";
+import { useCustomTooltip } from "@components/charts/tooltip";
 import type { AveragePoll } from "@lib/api/polls/types";
 import { partyColors } from "@lib/colors/party";
 import type { Party } from "@partiguiden/party-data/types";
@@ -24,7 +28,36 @@ interface Props {
   currentMonthAverage: AveragePoll;
 }
 
+interface BarItem extends CustomTooltipPayload {
+  payload: AveragePoll[number] | undefined;
+}
+
+const Details: CustomTooltipDetails<BarItem> = ({ payload }) => {
+  const item = payload?.[0]?.payload;
+  const details = item?.details;
+  if (!details) {
+    return;
+  }
+  return (
+    <>
+      <hr className="dark:border-slate-500" />
+      {details.map((data) => (
+        <li key={data.institute} className="flex gap-2">
+          <span>{data.institute}:</span>
+          <span>
+            {data.value}% ({data.publishedDate.toISOString().split("T")[0]})
+          </span>
+        </li>
+      ))}
+    </>
+  );
+};
+
 export default function MonthPoll({ currentMonthAverage }: Props) {
+  const CustomToolTip = useCustomTooltip({
+    Details,
+  });
+
   return (
     <div className="h-96 sm:h-[30rem]">
       <ResponsiveContainer>
@@ -42,33 +75,7 @@ export default function MonthPoll({ currentMonthAverage }: Props) {
             labelFormatter={(label) => {
               return partyNames[label as Party];
             }}
-            content={
-              <CustomTooltip
-                Details={({ payload }) => {
-                  const item = payload?.[0]?.payload as
-                    | AveragePoll[number]
-                    | undefined;
-                  const details = item?.details;
-                  if (!details) {
-                    return;
-                  }
-                  return (
-                    <>
-                      <hr className="dark:border-slate-500" />
-                      {details.map((data) => (
-                        <li key={data.institute} className="flex gap-2">
-                          <span>{data.institute}:</span>
-                          <span>
-                            {data.value}% (
-                            {data.publishedDate.toISOString().split("T")[0]})
-                          </span>
-                        </li>
-                      ))}
-                    </>
-                  );
-                }}
-              />
-            }
+            content={CustomToolTip}
           />
           <Bar dataKey="value" name="Genomsnitt" legendType="none" unit="%">
             {currentMonthAverage.map((partyPoll) => (

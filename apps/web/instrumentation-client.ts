@@ -7,3 +7,5 @@ Sentry.init({
   tracesSampleRate: 0.05,
   environment: process.env.NEXT_PUBLIC_VERCEL_ENV,
 });
+
+export const onRouterTransitionStart = Sentry.captureRouterTransitionStart;

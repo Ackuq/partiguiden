@@ -1,8 +1,10 @@
 "use client";
 
+import { useCallback, useMemo } from "react";
 import { Cell, Pie, PieChart, ResponsiveContainer, Tooltip } from "recharts";
+import type { PieLabelProps } from "recharts/types/polar/Pie";
 
-import CustomTooltip from "@components/charts/tooltip";
+import { useCustomTooltip } from "@components/charts/tooltip";
 import type { AveragePoll, BlocksAverage } from "@lib/api/polls/types";
 import { partyColors } from "@lib/colors/party";
 import { allBlocks } from "@lib/utils/blocks";
@@ -33,7 +35,23 @@ const Block: React.FC<BlockProps> = ({
   blockAverage,
   blocks,
 }) => {
-  const sortedAverage = [...currentMonthAverage].sort(blockSort(blocks.values));
+  const sortedAverage = useMemo(
+    () => [...currentMonthAverage].sort(blockSort(blocks.values)),
+    [currentMonthAverage, blocks.values],
+  );
+
+  const valueFormatter = useCallback(
+    (value: string | number) =>
+      typeof value === "number" ? `${value.toFixed(2)}%` : `${value}%"`,
+    [],
+  );
+
+  const CustomTooltip = useCustomTooltip({ valueFormatter });
+
+  const renderCustomLabel = useCallback((data: PieLabelProps) => {
+    const value = (data.payload as { value: number }).value;
+    return `${value.toFixed(2)}%`;
+  }, []);
 
   return (
     <>
@@ -67,28 +85,13 @@ const Block: React.FC<BlockProps> = ({
               className="stroke-transparent"
               innerRadius="95%"
               outerRadius="105%"
-              label={(data) => {
-                // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
-                const value = data.payload.value as number;
-                return `${value.toFixed(2)}%`;
-              }}
+              label={renderCustomLabel}
             >
               {blocks.values.map((block: Blocks["values"][number]) => (
                 <Cell key={block.name} fill={block.color} />
               ))}
             </Pie>
-            <Tooltip
-              content={
-                <CustomTooltip
-                  valueFormatter={(value) =>
-                    typeof value === "number"
-                      ? `${value.toFixed(2)}%`
-                      : `${value}%"`
-                  }
-                />
-              }
-              cursor={false}
-            />
+            <Tooltip content={CustomTooltip} cursor={false} />
           </PieChart>
         </ResponsiveContainer>
       </div>

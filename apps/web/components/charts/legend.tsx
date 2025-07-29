@@ -24,8 +24,8 @@ export default function CustomLegend({ payload }: DefaultLegendContentProps) {
     <ul className="flex flex-wrap items-center justify-center gap-x-3">
       {payload?.map((data) => (
         <Entry
-          key={data.dataKey as string}
-          value={data.value as string}
+          key={(data.dataKey as string) ?? data.value ?? ""}
+          value={data.value!}
           color={data.color}
         />
       ))}

@@ -1,4 +1,5 @@
-import type { TooltipProps } from "recharts";
+import { useCallback } from "react";
+import type { TooltipContentProps } from "recharts";
 import { twMerge } from "tailwind-merge";
 
 import { Divider } from "@components/common/divider";
@@ -36,20 +37,36 @@ function Entry({
   );
 }
 
-export default function CustomTooltip({
+export interface CustomTooltipPayload {
+  dataKey: string;
+  name: string;
+  value: string | number;
+  unit?: string;
+}
+
+export type CustomTooltipDetails<T extends CustomTooltipPayload> =
+  React.ElementType<{
+    payload: T[];
+  }>;
+
+type CustomTooltipProps<T extends CustomTooltipPayload> = Omit<
+  TooltipContentProps<ValueType, NameType>,
+  "payload"
+> & {
+  payload: T[];
+  Details?: CustomTooltipDetails<T>;
+  nameFormatter?: (name: string) => string;
+  valueFormatter?: (value: string | number) => string;
+};
+
+export default function CustomTooltip<T extends CustomTooltipPayload>({
   label,
   payload,
   labelFormatter,
   nameFormatter,
   valueFormatter,
   Details,
-}: TooltipProps<ValueType, NameType> & {
-  Details?: React.ElementType<{
-    payload: typeof payload;
-  }>;
-  nameFormatter?: (name: string) => string;
-  valueFormatter?: (value: string | number) => string;
-}) {
+}: CustomTooltipProps<T>) {
   return (
     <div className="rounded-xs bg-white shadow-lg dark:bg-slate-950">
       {label && (
@@ -63,7 +80,7 @@ export default function CustomTooltip({
       <ul className={twMerge("flex flex-col px-3 pb-2 pt-1", !label && "pt-2")}>
         {payload?.map((data) => (
           <Entry
-            key={data.dataKey}
+            key={data.name}
             name={data.name}
             value={data.value}
             unit={data.unit}
@@ -75,4 +92,29 @@ export default function CustomTooltip({
       </ul>
     </div>
   );
+}
+
+type UseCustomToolTip<T extends CustomTooltipPayload> = Pick<
+  CustomTooltipProps<T>,
+  "nameFormatter" | "valueFormatter" | "Details"
+>;
+
+export function useCustomTooltip<T extends CustomTooltipPayload>({
+  nameFormatter,
+  valueFormatter,
+  Details,
+}: UseCustomToolTip<T>) {
+  const ToolTip = useCallback(
+    (props: TooltipContentProps<ValueType, NameType>) => (
+      <CustomTooltip
+        {...props}
+        nameFormatter={nameFormatter}
+        valueFormatter={valueFormatter}
+        Details={Details}
+      />
+    ),
+    [nameFormatter, valueFormatter, Details],
+  );
+
+  return ToolTip;
 }

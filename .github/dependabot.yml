@@ -26,6 +26,10 @@ updates:
       time: "06:00"
       timezone: "Europe/Stockholm"
     open-pull-requests-limit: 10
+    ignore:
+      - dependency-name: "@types/node"
+        versions:
+          - "*"
 
   - package-ecosystem: github-actions
     directory: "/"

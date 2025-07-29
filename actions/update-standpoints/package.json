@@ -9,11 +9,11 @@
     "clean": "rm -rf .turbo node_modules"
   },
   "dependencies": {
-    "@actions/core": "1.11.1",
-    "@actions/exec": "1.1.1",
-    "@actions/github": "6.0.1"
+    "@actions/core": "catalog:",
+    "@actions/exec": "catalog:",
+    "@actions/github": "catalog:"
   },
   "devDependencies": {
-    "@vercel/ncc": "0.38.3"
+    "@vercel/ncc": "catalog:"
   }
 }

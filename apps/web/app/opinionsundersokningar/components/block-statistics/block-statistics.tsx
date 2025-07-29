@@ -91,6 +91,7 @@ const Block: React.FC<BlockProps> = ({
                 <Cell key={block.name} fill={block.color} />
               ))}
             </Pie>
+            {/* TODO: This tooltip shows data on same index on hover, should only show data for the hovered segment */}
             <Tooltip content={CustomTooltip} cursor={false} />
           </PieChart>
         </ResponsiveContainer>

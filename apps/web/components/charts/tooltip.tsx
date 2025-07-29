@@ -38,7 +38,6 @@ function Entry({
 }
 
 export interface CustomTooltipPayload {
-  dataKey: string;
   name: string;
   value: string | number;
   unit?: string;
@@ -66,7 +65,9 @@ export default function CustomTooltip<T extends CustomTooltipPayload>({
   nameFormatter,
   valueFormatter,
   Details,
+  ...rest
 }: CustomTooltipProps<T>) {
+  console.log(payload, rest);
   return (
     <div className="rounded-xs bg-white shadow-lg dark:bg-slate-950">
       {label && (

@@ -17,6 +17,7 @@ export interface PollDetails {
 
 export type AveragePoll = {
   party: Party;
+  name: string;
   value: number;
   details: PollDetails[];
 }[];

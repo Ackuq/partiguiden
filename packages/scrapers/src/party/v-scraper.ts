@@ -27,7 +27,7 @@ export default class VScraper extends Scraper {
 
     const $firstParagraph = $articleBody.find("p").first();
     if ($firstParagraph.length) {
-      return [$firstParagraph.text().trim()];
+      return [this.cleanText($firstParagraph.text())];
     }
 
     return [];

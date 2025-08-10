@@ -24,6 +24,13 @@ export default abstract class Scraper implements ScraperArgs {
   absoluteUrls = false;
   pathRegex?: RegExp;
 
+  /**
+   * Normalize whitespace in text.
+   */
+  protected cleanText(text: string): string {
+    return text.replace(/\s+/g, " ").trim();
+  }
+
   protected getOpinions($: CheerioAPI): string[] {
     // Test tags until we found a result
     if (!this.opinionTags) {
@@ -58,9 +65,9 @@ export default abstract class Scraper implements ScraperArgs {
   protected async getStandpointPage(
     $link: Cheerio<Element>,
   ): Promise<PartyDataWithoutPartyName> {
-    let title = $link.text();
+    let title = this.cleanText($link.text());
 
-    if (title.trim() === "") {
+    if (title === "") {
       title = $link.attr("title") ?? "";
     }
 
@@ -111,9 +118,11 @@ export default abstract class Scraper implements ScraperArgs {
 
     console.info(`Found ${$elements.length} list elements`);
 
-    const promises = $elements
-      .toArray()
-      .map(($element) => this.getStandpointPage($($element as Element)));
+    const links = $elements.toArray();
+
+    const promises = links.map(($element) =>
+      this.getStandpointPage($($element as Element)),
+    );
     const result = await Promise.allSettled(promises);
     const failed = result.filter(
       (promiseResult): promiseResult is PromiseRejectedResult =>

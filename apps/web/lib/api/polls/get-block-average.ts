@@ -17,12 +17,12 @@ function generateBlockAverage(average: AveragePoll) {
           block.parties.includes(party),
         );
         const newAverage = prev;
-        newAverage[blockIndex].value += value;
+        newAverage[blockIndex].data += value;
         return newAverage;
       },
       blocks.values.map((block: Blocks["values"][number]) => ({
         name: block.name,
-        value: 0,
+        data: 0,
       })) as BlockAverage,
     );
   };

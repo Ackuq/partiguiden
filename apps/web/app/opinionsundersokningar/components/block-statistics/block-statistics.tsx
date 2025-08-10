@@ -1,11 +1,15 @@
 "use client";
 
-import { useCallback, useMemo } from "react";
+import { useMemo } from "react";
 import { Cell, Pie, PieChart, ResponsiveContainer, Tooltip } from "recharts";
 import type { PieLabelProps } from "recharts/types/polar/Pie";
 
 import { useCustomTooltip } from "@components/charts/tooltip";
-import type { AveragePoll, BlocksAverage } from "@lib/api/polls/types";
+import type {
+  AveragePoll,
+  BlockAverage,
+  BlocksAverage,
+} from "@lib/api/polls/types";
 import { partyColors } from "@lib/colors/party";
 import { allBlocks } from "@lib/utils/blocks";
 import type { Blocks } from "@lib/utils/blocks";
@@ -24,9 +28,20 @@ function blockSort(blocks: Blocks["values"]) {
     return 0;
   };
 }
+
+function renderCustomLabel(data: PieLabelProps) {
+  const payload = data.payload as BlockAverage[number] | AveragePoll[number];
+  const value = "value" in payload ? payload.value : payload.data;
+  return `${value.toFixed(2)}%`;
+}
+
+function formatValue(value: string | number) {
+  return typeof value === "number" ? `${value.toFixed(2)}%` : `${value}%"`;
+}
+
 interface BlockProps {
   currentMonthAverage: AveragePoll;
-  blockAverage: BlocksAverage[number];
+  blockAverage: BlockAverage;
   blocks: Blocks;
 }
 
@@ -40,18 +55,7 @@ const Block: React.FC<BlockProps> = ({
     [currentMonthAverage, blocks.values],
   );
 
-  const valueFormatter = useCallback(
-    (value: string | number) =>
-      typeof value === "number" ? `${value.toFixed(2)}%` : `${value}%"`,
-    [],
-  );
-
-  const CustomTooltip = useCustomTooltip({ valueFormatter });
-
-  const renderCustomLabel = useCallback((data: PieLabelProps) => {
-    const value = (data.payload as { value: number }).value;
-    return `${value.toFixed(2)}%`;
-  }, []);
+  const CustomTooltip = useCustomTooltip({ valueFormatter: formatValue });
 
   return (
     <>
@@ -77,7 +81,7 @@ const Block: React.FC<BlockProps> = ({
               ))}
             </Pie>
             <Pie
-              dataKey="value"
+              dataKey="data"
               startAngle={180}
               endAngle={0}
               data={blockAverage}
@@ -91,7 +95,6 @@ const Block: React.FC<BlockProps> = ({
                 <Cell key={block.name} fill={block.color} />
               ))}
             </Pie>
-            {/* TODO: This tooltip shows data on same index on hover, should only show data for the hovered segment */}
             <Tooltip content={CustomTooltip} cursor={false} />
           </PieChart>
         </ResponsiveContainer>

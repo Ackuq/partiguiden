@@ -26,7 +26,7 @@ export type MonthlyAverage = ({ date: string } & Record<Party, string>)[];
 
 export type BlockAverage = {
   name: Blocks["values"][number]["name"];
-  value: number;
+  data: number;
 }[];
 
 export type BlocksAverage = [BlockAverage, BlockAverage];

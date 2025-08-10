@@ -2580,5 +2580,16 @@
     "fetchDate": "2024-06-02T17:16:23.337Z",
     "party": "C",
     "subject": "bostad"
+  },
+  "https://www.centerpartiet.se/var-politik/politik-a-o/utbildning/utbildning-for-nyanlanda-elever": {
+    "opinions": [
+      "Obligatorisk intensivundervisning i svenska och återkommande språkscreening",
+      "Språkkrav för förskolepersonal",
+      "Stärkt modersmålsundervisning "
+    ],
+    "title": "Utbildning för nyanlända elever",
+    "url": "https://www.centerpartiet.se/var-politik/politik-a-o/utbildning/utbildning-for-nyanlanda-elever",
+    "fetchDate": "2025-08-10T17:54:24.466Z",
+    "party": "C"
   }
 }

@@ -22,5 +22,6 @@
       "cache": false
     }
   },
-  "globalEnv": ["NODE_ENV"]
+  "globalEnv": ["NODE_ENV"],
+  "globalPassThroughEnv": ["COREPACK_HOME"]
 }

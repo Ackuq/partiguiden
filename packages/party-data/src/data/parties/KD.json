@@ -19,16 +19,6 @@
     "party": "KD",
     "subject": "familjen"
   },
-  "https://kristdemokraterna.se/var-politik/politik-a-till-o/a-kassa": {
-    "opinions": [
-      "A-kassan ska vara en tydlig omställningsförsäkring som stärker arbetslinjen och ger incitament att återgå till arbete. Kristdemokraterna vill ha en allmän och obligatorisk a-kassa som omfattar fler än idag. Ersättningsnivåerna bör vara konjunkturbaserade."
-    ],
-    "title": "A-kassa",
-    "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/a-kassa",
-    "fetchDate": "2025-02-12T21:11:52.691Z",
-    "party": "KD",
-    "subject": "trygghetssystem-och-valfard"
-  },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/amorteringskrav": {
     "opinions": [
       "Nuvarande amorteringskrav är för stränga och gör tröskeln till det ägda boendet för hög för många hushåll. Vi vill att det förstärkta amorteringskravet tas bort och att det görs en översyn av de samlade kreditrestriktionerna för att hitta en bra balans mellan människors behov av boende och den finansiella stabiliteten. Vi vill även införa så kallade ”Startlån”, som finns i flera länder, med syfte att yngre hushåll, och personer med låga men stabila inkomster, kan ta steget till det ägda boendet."
@@ -99,16 +89,6 @@
     "fetchDate": "2025-02-12T21:11:58.021Z",
     "party": "KD",
     "subject": "jobb"
-  },
-  "https://kristdemokraterna.se/var-politik/politik-a-till-o/arbetskraftsinvandring": {
-    "opinions": [
-      "Sverige behöver fler företag som startar, växer och anställer. Det ställer krav på ett konkurrenskraftigt näringsklimat men också på tillgång till kvalificerad arbetskraft. Det är angeläget att stoppa kompetensutvisningarna av utländsk arbetskraft. För att komma tillrätta med fusk/utnyttjande, undanträngning av invånare i utanförskap vill vi se ett lönegolv på 35 000/mån för arbetskraftsinvandring, med undantag för bristyrken (ex. säsongsarbeten samt vissa vårdyrken). Vi vill ta bort möjligheten till spårbyte. Systemet utnyttjas felaktigt bland annat genom falska arbetstillstånd kan lämna människor i väldigt utsatta situationer."
-    ],
-    "title": "Arbetskraftsinvandring",
-    "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/arbetskraftsinvandring",
-    "fetchDate": "2023-09-17T17:52:42.607Z",
-    "party": "KD",
-    "subject": "migration-och-integration"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/arbetsmarknad": {
     "opinions": [
@@ -235,16 +215,6 @@
     "party": "KD",
     "subject": "utbildning"
   },
-  "https://kristdemokraterna.se/var-politik/politik-a-till-o/bildning": {
-    "opinions": [
-      "Vårt skolsystem ska värna ett klassiskt bildningsideal som tar avstånd från relativism som urholkar kunskapens egenvärde. Klassisk bildning är viktig inte minst i ett samhälle där människor från många kulturella, etniska och religiösa grupper lever tillsammans. För att uppvärdera bildningen måste lärdoms- och bildningstraditionen respekteras – inte förlöjligas och raljeras över. Innan man kritiserar måste man förstå vad det är man kritiserar. Kunskap och fakta bör alltså komma steget innan analysen."
-    ],
-    "title": "Bildning",
-    "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/bildning",
-    "fetchDate": "2023-09-17T17:52:42.897Z",
-    "party": "KD",
-    "subject": "utbildning"
-  },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/bistand-och-utvecklingssamarbete": {
     "opinions": [
       "Svensk utvecklingspolitik ska ha demokrati och mänskliga rättigheter som utgångspunkt och mål. Så länge medmänniskor i vår omvärld tvingas leva under förtryck, fattigdom, svält och svåra sjukdomar krävs större gemensamma ansträngningar. Demokrati, ekonomisk frihet och rättsstatliga principer möjliggör att fler människor kan resa sig ur fattigdom och förtryck samt känna hopp om en bättre framtid. Ett starkt, långsiktigt och effektivt utvecklingssamarbete som möjliggör ekonomisk tillväxt är nödvändigt för att utrota fattigdomen. Utvecklingsstödet behöver i högre utsträckning kanaliseras genom det civila samhället och den privata sektorn. Kristdemokraterna stödjer målet att 1 % av BNI ska avsättas för bistånd i statens budget. Tillsammans med ansträngningar för att åstadkomma fri handel kan vi på så vis möjliggöra högre välstånd och en mer rättvis värld."
@@ -266,16 +236,6 @@
     "party": "KD",
     "subject": "bostad"
   },
-  "https://kristdemokraterna.se/var-politik/politik-a-till-o/bostadsbidrag": {
-    "opinions": [
-      "Bostadsbidraget är det familjepolitiska stöd som bäst når barnhushåll med låg ekonomisk standard. Tack vare Kristdemokraterna har ersättningen till de mest ekonomiskt utsatta familjerna och unga vuxna höjts. Vi vill ytterligare höja bostadsbidraget för barnfamiljer med svag ekonomi samt höja inkomsttaket så att fler kan komma ifråga för bidraget."
-    ],
-    "title": "Bostadsbidrag",
-    "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/bostadsbidrag",
-    "fetchDate": "2023-09-17T17:52:42.100Z",
-    "party": "KD",
-    "subject": "bostad"
-  },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/bredband": {
     "opinions": [
       "Kristdemokraterna vill att Sverige ska bli världsbäst på att använda digitaliseringens möjligheter. Det förutsätter tillgång till ett robust bredband över hela landet. Detta är viktigt för att samtliga invånare får jämlika villkor för att bo och verka i olika delar i landet. Där det inte finns lönsamhet för privata företag att bygga ut bredband, bör staten påskynda utbyggnaden av bredband och mobil uppkoppling. Regeringen måste säkerställa att invånarna i landsbygderna får fungerande bredbandsuppkoppling i samband med att kopparnätet monteras ned. Vi anser inte att någon ska klippas bort från nätet innan en minst lika bra uppkoppling kan erbjudas."
@@ -293,16 +253,6 @@
     "title": "Brottsbekämpning",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/brottsbekampning",
     "fetchDate": "2025-02-12T21:11:59.639Z",
-    "party": "KD",
-    "subject": "lag-och-ratt"
-  },
-  "https://kristdemokraterna.se/var-politik/politik-a-till-o/brottsforebyggande-atgarder": {
-    "opinions": [
-      "Det brottsförebyggande arbetet är avgörande för att skapa ett tryggt samhälle. Familjen är den viktigaste brottsförebyggaren: det är där normer och värderingar förvärvas. Kristdemokraterna arbetar aktivt för att stärka familjernas roll och barnperspektivet genom utbyggda föräldrastödsprogram, skärpt föräldraansvar, en ny socialtjänstlag och bryta den gangsterkultur som lockar barn och unga in i gängens klor. Barn och unga ska ges en meningsfull fritid med idrott och kultur, som alternativ till gängen. Samarbetet mellan föräldrar, skola, civilsamhälle och polis ska stärkas för att tidigt fånga upp barn och unga på glid. Flyttprogram bör införas för att hjälpa en hel familj att flytta om barnet fastnat i gängkriminalitet. Fler måste ges möjlighet att lämna det kriminella livet bakom sig genom avhopparprogram och en kriminalvård som förbereder för ett laglydigt liv, samtidigt som återfall möts med tydliga åtgärder."
-    ],
-    "title": "Brottsförebyggande åtgärder",
-    "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/brottsforebyggande-atgarder",
-    "fetchDate": "2025-02-12T21:11:55.080Z",
     "party": "KD",
     "subject": "lag-och-ratt"
   },
@@ -356,17 +306,6 @@
     "party": "KD",
     "subject": "it-och-mobiltelefoni"
   },
-  "https://kristdemokraterna.se/var-politik/politik-a-till-o/djurskydd": {
-    "opinions": [
-      "Djur ska alltid behandlas med respekt och omtanke och aldrig utsättas för onödigt lidande, stress eller smärta. Ansvaret för djurens välmående ligger ytterst på djurägaren. Kristdemokraterna anser att djurförsök endast ska ske under kontrollerade former för vetenskapliga syften och där de inte kan ersättas med andra metoder.",
-      "Kristdemokraterna vill att EU ska stärka djurskyddslagstiftningen och främja investeringar för förbättrat djurskydd samt att EU ska motarbeta plågsamma men även långa djurtransporter. Sverige bör utnyttja möjligheten att utveckla metoder för slakt på gård eller genom mobila och gårdsnära slakterier."
-    ],
-    "title": "Djurskydd",
-    "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/djurskydd",
-    "fetchDate": "2024-11-19T06:30:29.714Z",
-    "party": "KD",
-    "subject": "jordbruk-jakt-och-fiske"
-  },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/dodshjalp": {
     "opinions": [
       "Sjukvårdens uppgift är att bota, lindra och trösta. Aktiv dödshjälp (eutanasi) och assisterade självmord är, och skall fortsatt vara förbjudet. Att däremot ge en döende patient smärtstillande preparat är inte dödshjälp även om det, som en konsekvens, i vissa fall kan förkorta livet. Detta får dock inte vara syftet. Patientens vilja ska väga tungt och en patient som motsätter sig behandling ska respekteras."
@@ -408,16 +347,6 @@
     "party": "KD",
     "subject": "ekonomi-och-skatter"
   },
-  "https://kristdemokraterna.se/var-politik/politik-a-till-o/elevhalsa": {
-    "opinions": [
-      "Elevhälsan måste rustas för att långsiktigt kunna möta och stödja barn och unga med psykisk ohälsa. En väl utvecklad elevhälsovård främjar det förebyggande arbetet med detta. Vi vill ge regionerna ett samlat uppdrag för hela barn- och ungdomshälsovården. Det innebär att elevhälsan inte längre får skolan som huvudman. Skolsköterskan, skolläkare, kurator och skolpsykologer bör finnas ute i verksamheterna men bör ha samma huvudman som övrig vårdpersonal. Den samlade barn- och ungdomshälsan ska ha ett nära samarbete med skolledningar, lärare, specialpedagoger och kommunernas socialtjänst. Vi vill även införa en elevhälsogaranti som innebär att en elev ska kunna komma i kontakt med elevhälsan inom ett dygn. Dessa förslag ingår i Tidöavtalet och är ett prioriterat arbete inom Regeringskansliet."
-    ],
-    "title": "Elevhälsa",
-    "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/elevhalsa",
-    "fetchDate": "2025-02-12T21:11:59.500Z",
-    "party": "KD",
-    "subject": "vard-och-omsorg"
-  },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/emu-och-euron": {
     "opinions": [
       "Den gemensamma valutan är en förlängning av EU:s gemensamma marknad. Kristdemokraterna är dock av uppfattningen att folkomröstningsutfallet från 2003 fortsatt ska respekteras och att det för närvarande inte är aktuellt för Sverige att ansluta sig till eurosamarbetet."
@@ -437,36 +366,6 @@
     "fetchDate": "2023-09-17T17:52:41.740Z",
     "party": "KD",
     "subject": "energi"
-  },
-  "https://kristdemokraterna.se/var-politik/politik-a-till-o/ensamkommande-barn": {
-    "opinions": [
-      "Kristdemokraterna anser att ensamkommande barn bör förordnas en god man inom 24 timmar från barnets ankomst. Vidare anser vi att ensamkommande barn och ungdomar i första hand ska placeras i familjehem. Kristdemokraterna har föreslagit att fler familjehem med beredskap att ta hand om dessa barn och unga ska rekryteras och utbildas. För att avlasta kommunernas socialtjänst krävs en förnyad ansvarsfördelning och nya arbetsformer. Vi anser därför att en nationell krissocialjour bör inrättas som kan ge extra hjälp när kommunerna bedömer att de behöver extra hjälp. Detta kan minimera riskerna för att barnens trygghet och rättssäkerheten åsidosätts."
-    ],
-    "title": "Ensamkommande barn",
-    "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/ensamkommande-barn",
-    "fetchDate": "2023-09-17T17:52:41.010Z",
-    "party": "KD",
-    "subject": "migration-och-integration"
-  },
-  "https://kristdemokraterna.se/var-politik/politik-a-till-o/enskilda-avlopp": {
-    "opinions": [
-      "Reglerna för enskilda avlopp behöver ändras så att nytillkommen bebyggelse utanför tätorterna inte hindras av byråkratiska skäl. Den som har ett enskilt avlopp som uppfyller gällande miljö- och hälsokrav ska i normalfallet inte kunna påtvingas ett kommunalt avlopp. Det ska vara omvänd bevisbörda för myndigheter gentemot privatpersoner med enskilda avlopp, det vill säga att myndigheten ska visa att det sker utsläpp i otillåten omfattning för att de ska kunna ålägga ägaren att ändra sitt avlopp. Statliga lånegarantier bör ges till fastighetsägare med begränsad ekonomi som behöver uppgradera icke-miljögodkända äldre avlopp."
-    ],
-    "title": "Enskilda avlopp",
-    "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/enskilda-avlopp",
-    "fetchDate": "2023-09-17T17:52:42.715Z",
-    "party": "KD",
-    "subject": "miljo-och-klimat"
-  },
-  "https://kristdemokraterna.se/var-politik/politik-a-till-o/enskilda-vagar": {
-    "opinions": [
-      "De enskilda vägarna har en mycket stor betydelse för Sverige. Det måste finnas regelverk som skapar möjlighet för tillräckliga resurser för investeringar och underhåll i enskilda vägar. Staten bör utöka sin medfinansiering av de enskilda vägarna. Samtidigt är det viktigt att staten sköter om sina egna vägar i hela landet. Kristdemokraterna motsätter sig försök att vältra över statliga vägar till enskilt huvudmannaskap, vilket skulle skada landsbygdens förutsättningar."
-    ],
-    "title": "Enskilda vägar",
-    "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/enskilda-vagar",
-    "fetchDate": "2023-09-17T17:52:42.509Z",
-    "party": "KD",
-    "subject": "landsbygd"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/eu": {
     "opinions": [
@@ -509,26 +408,6 @@
     "party": "KD",
     "subject": "familjen"
   },
-  "https://kristdemokraterna.se/var-politik/politik-a-till-o/fastighetsskatt": {
-    "opinions": [
-      "Kristdemokraterna var starkt pådrivande för att avskaffa den orättvisa och oförutsägbara fastighetsskatten på boende. Skatten gjorde att människor som arbetat och sparat ett helt liv för att bo i sina egna hem på ålderns höst istället tvingades att sälja på grund av skatten. Med den betydligt lägre kommunala avgiften finns i stället en trygghet och förutsägbarhet för boende i egna hem och flerfamiljshus. För att undanröja hotet om framtida ny statlig fastighetsskatt vill vi även avskaffa fastighetstaxeringen av boende."
-    ],
-    "title": "Fastighetsskatt",
-    "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/fastighetsskatt",
-    "fetchDate": "2023-09-17T17:52:42.079Z",
-    "party": "KD",
-    "subject": "ekonomi-och-skatter"
-  },
-  "https://kristdemokraterna.se/var-politik/politik-a-till-o/feminism": {
-    "opinions": [
-      "Kristdemokraterna är ett parti för full jämställdhet mellan män och kvinnor. Feminismen har många inriktningar och ordet feminist har olika betydelser. Vi ser med oro på den idag växande vänsterfeminismen, där medborgarnas frihet ska begränsas till förmån för identitetspolitik och de genusteoretiska visionerna."
-    ],
-    "title": "Feminism",
-    "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/feminism",
-    "fetchDate": "2025-02-12T21:11:49.620Z",
-    "party": "KD",
-    "subject": "jamstalldhet-och-diskriminering"
-  },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/fiske": {
     "opinions": [
       "Kristdemokraterna anser att fisk i första hand ska fiskas för människoföda. Fångsternas storlek ska vara hållbara i förhållande till bestånden av respektive art. Ett för stort fiskeuttag gynnar ingen, utan resulterar långsiktigt i att såväl fisken som fisket dör ut. Kristdemokraterna vill minska byråkratin och regelkrånglet för yrkesfiskarna och värna det kustnära fisket.",
@@ -549,26 +428,6 @@
     "fetchDate": "2023-09-17T17:52:41.731Z",
     "party": "KD",
     "subject": "infrastruktur-och-trafik"
-  },
-  "https://kristdemokraterna.se/var-politik/politik-a-till-o/flyktingar": {
-    "opinions": [
-      "För att motverka irreguljär migration och människosmuggling samt skydda de allra mest utsatta, vill Kristdemokraterna att olika system för säkra och lagliga vägar blir den huvudsakliga metoden att söka asyl i Sverige. Kvotflyktingsystemet, tillsammans med humanitära mottagandeprogram och sponsorskapsprogram, är system som säkerställer att de i stort behov av skydd kan prioriteras och sättas i säkerhet. Vidarebosättning av kvotflyktingar möjliggör dessutom en säker, organiserad och förberedd ordning för skyddsbehövande personers resa till det mottagande landet. Vidare anser vi att asylrätten bör vara i fokus vid en omformulering av migrationspolitiken på internationell nivå."
-    ],
-    "title": "Flyktingar",
-    "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/flyktingar",
-    "fetchDate": "2025-03-12T06:30:10.926Z",
-    "party": "KD",
-    "subject": "migration-och-integration"
-  },
-  "https://kristdemokraterna.se/var-politik/politik-a-till-o/folkhalsa": {
-    "opinions": [
-      "Folkhälsan påverkas av en lång rad politiska åtgärder inom exempelvis arbetsmarknad, miljö, ekonomi och den enskildes möjligheter att påverka sin egen vardag. Ett stort ansvar för hälsan ligger på den enskilde, men vården, liksom skolan och andra myndigheter, måste i större utsträckning stötta enskilda till bättre levnadsvanor som att sluta röka, minska sitt alkoholintag, äta nyttigare och röra sig mer."
-    ],
-    "title": "Folkhälsa",
-    "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/folkhalsa",
-    "fetchDate": "2023-09-17T17:52:42.986Z",
-    "party": "KD",
-    "subject": "vard-och-omsorg"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/folkhogskolor": {
     "opinions": [
@@ -600,16 +459,6 @@
     "party": "KD",
     "subject": "utbildning"
   },
-  "https://kristdemokraterna.se/var-politik/politik-a-till-o/fossilfri-energi": {
-    "opinions": [
-      "Kristdemokraterna vill att Sverige år 2040 ska ha en hållbar och resurseffektiv energiförsörjning utan nettoutsläpp av växthusgaser i atmosfären. Alla fossilfria alternativ kommer att behövas. Därför är det bra att riksdagen nu beslutat om ett sådant mål."
-    ],
-    "title": "Fossilfri energi",
-    "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/fossilfri-energi",
-    "fetchDate": "2023-09-17T17:52:41.151Z",
-    "party": "KD",
-    "subject": "energi"
-  },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/frihandel": {
     "opinions": [
       "En friare världshandel med rättvisa villkor är en förutsättning för att fler människor ska kunna resa sig ur fattigdom. Det är genom handel med andra som välståndet ökar. Handelshinder som tullar och exportsubventioner ska motverkas.",
@@ -631,26 +480,6 @@
     "party": "KD",
     "subject": "utbildning"
   },
-  "https://kristdemokraterna.se/var-politik/politik-a-till-o/fritidskort": {
-    "opinions": [
-      "Kristdemokraterna har länge arbetat för att införa ett fritidskort för alla barn mellan 8-16 år, laddat med ekonomiskt stöd för deltagaravgifter i ledarledda aktiviteter i föreningslivet, samt kulturskolan. Stödets storlek kommer variera utifrån hushållets ekonomi. De barn som finns i hushåll i ekonomisk utsatthet kommer få ett betydligt större stöd laddat på kortet. Detta kommer att ge alla barn goda möjligheter att delta i fritidsaktiviteter som ger både positiv samvaro och möjlighet till motion. Detta är en del i det förebyggande arbetet mot psykisk ohälsa och ensamhet hos barn och unga. Kristdemokraterna har fått gehör för sin politik i regeringen och Fritidskortet tas nu fram för att alla barn ska få ett ekonomiskt stöd för att delta i fritid-, idrotts- och kulturaktiviteter. Det är en viktig och stor reform, och regeringen avsätter nödvändiga medel för dess genomförande."
-    ],
-    "title": "Fritidskort",
-    "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/fritidskort",
-    "fetchDate": "2025-02-12T21:11:59.735Z",
-    "party": "KD",
-    "subject": "kultur-media-och-idrott"
-  },
-  "https://kristdemokraterna.se/var-politik/politik-a-till-o/ftt---finansiell-transaktionsskatt": {
-    "opinions": [
-      "Kristdemokraterna säger nej till en finansiell transaktionsskatt då den endast har effekt om alla finansiella marknader i hela världsekonomin är med på den. Att införa FTT gör att stora delar av den finansiella sektorn helt enkelt flyttar till ett annat land. Det är också tveksamt om det finns ett egenvärde i att minska antalet transaktioner på finansmarknaden vilket är en av effekterna med FTT."
-    ],
-    "title": "FTT – finansiell transaktionsskatt",
-    "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/ftt---finansiell-transaktionsskatt",
-    "fetchDate": "2023-09-17T17:52:39.396Z",
-    "party": "KD",
-    "subject": "ekonomi-och-skatter"
-  },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/funktionsnedsattning": {
     "opinions": [
       "Kristdemokraterna står för en människosyn som utgår från människans okränkbara värde och att alla människor är olika. Utifrån sina egna villkor ska alla ha rätt till full delaktighet i samhället och jämlika levnadsvillkor. Personer med funktionsnedsättning ska ges bättre möjlighet till jobb och studier. Det ger livskvalitet, självbestämmande och delaktighet i samhället."
@@ -660,17 +489,6 @@
     "fetchDate": "2023-09-17T17:52:42.117Z",
     "party": "KD",
     "subject": "vard-och-omsorg"
-  },
-  "https://kristdemokraterna.se/var-politik/politik-a-till-o/forenta-nationerna-fn": {
-    "opinions": [
-      "FN-samarbetet är en viktig del av svensk utrikespolitik. Behovet av en världsorganisation som forum för dialog och för att ta gemensamt ansvar för globala utmaningar är stort. FN är en central aktör i arbetet för en fredligare, säkrare och en mer rättvis och hållbar värld. FN:s deklaration om de mänskliga rättigheterna och Agenda 2030 är utgångspunkten i arbetet för att förbättra förtryckta och fattiga människors livssituation. Det vilar ett tungt ansvar på FN:s säkerhetsråd att säkerställa att internationell humanitär rätt liksom att principen ”Skyldighet att skydda” (Responsibility to protect) efterlevs så att krigsförbrytelser, pågående folkmord, etnisk rensning och brott mot mänskligheten kan stoppas. FN:s säkerhetsråd har alltför ofta brustit i handlingskraft när de allra viktigaste värdena stått på spel. Sverige ska därför bidra till fredsfrämjande, säkerhetsfrämjande och konfliktförebyggande insatser inom FN och för att FN mer effektivt ska kunna visa handlingskraft bör vetorätten i säkerhetsrådet begränsas.",
-      "Tydliga brister finns i FN:s råd för mänskliga rättigheter, främst på grund av att rådet består av medlemsländer som konsekvent bryter mot de rättigheter rådet är utsett att försvara. Sverige bör, som den stora givare vi är, spela en aktiv roll i reformeringen av FN-systemet och verka för att särskilda kriterier införs för en plats i MR-rådet."
-    ],
-    "title": "Förenta Nationerna (FN)",
-    "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/forenta-nationerna-fn",
-    "fetchDate": "2023-09-17T17:52:40.861Z",
-    "party": "KD",
-    "subject": "utrikes--och-bistandsfragor"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/foretagande": {
     "opinions": [
@@ -712,18 +530,6 @@
     "party": "KD",
     "subject": "utbildning"
   },
-  "https://kristdemokraterna.se/var-politik/politik-a-till-o/forsvar": {
-    "opinions": [
-      "Sverige ska alltid ha ett starkt försvar. Människans ofullkomlighet gör att vi aldrig på förhand kan veta vad omvärlden har för avsikter gällande oss.",
-      "Att garantera medborgarnas säkerhet och att försvara de territoriella gränserna är statens kärnuppgift och ett starkt försvar av Sverige innebär också ett starkt försvar av friheten, demokratin och respekten för människovärdet. . Kristdemokraterna och regeringen har aviserat kraftigt utökade försvarssatsningar som sammanlagt kommer uppgå till 5% av BNP – 3,5% till militära utgifter och 1,5% till försvarsrelaterade utgifter. Detta är nödvändigt för att vi ska kunna ha förmåga att försvara hela Sverige och samtidigt uppfylla våra alliansförpliktelser som Natomedlemmar.",
-      "Kristdemokraterna är varma anhängare av det svenska medlemskapet i Nato, och kämpade länge för att detta skulle bli verklighet innan Sverige anslöts."
-    ],
-    "title": "Försvar",
-    "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/forsvar",
-    "fetchDate": "2025-08-10T17:54:40.429Z",
-    "party": "KD",
-    "subject": "forsvar"
-  },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/forsvarsmaterielexport": {
     "opinions": [
       "Den svenska försvarsindustrin och försvarsmaterielexporten är viktig för vårt lands försvarsförmåga. Kristdemokraterna anser att säkerhetspolitiska hänsyn skall ligga till grund för försvarsmaterielexporten. Vi motsätter oss dock export av krigsmateriel till diktaturer, där grundläggande mänskliga fri- och rättigheter inte respekteras. Efter påtryckningar från bland annat Kristdemokraterna har det därför införts ett demokratikriterium för prövningen av svensk krigsmaterielexport."
@@ -742,16 +548,6 @@
     "title": "Föräldraförsäkring",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/foraldraforsakring",
     "fetchDate": "2025-03-12T06:30:11.373Z",
-    "party": "KD",
-    "subject": "familjen"
-  },
-  "https://kristdemokraterna.se/var-politik/politik-a-till-o/foraldrastod": {
-    "opinions": [
-      "Föräldrarna är de viktigaste personerna i barnets liv. Det offentliga ska inte ta över föräldrarnas roll. Däremot ska det offentliga erbjuda stöd och hjälp i föräldrarnas viktiga uppgift. Vi vill att förstagångsföräldrar ska få en familjerådgivningscheck för två besök som de kan nyttja om de vill. Vi vill utöka utbudet av föräldrautbildningar och göra det obligatorisk för kommunerna att erbjuda föräldrautbildningar, när barnen är små och under tonårstiden. I regeringen driver vi på för att alla kommuner ska ha föräldraskapsstödsprogram, vilket vi också fått med övriga partier på, genom den satsning som går ut till kommuner och regioner för förstärkta föräldraskapsstödjande insatser."
-    ],
-    "title": "Föräldrastöd",
-    "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/foraldrastod",
-    "fetchDate": "2025-02-12T21:11:54.101Z",
     "party": "KD",
     "subject": "familjen"
   },
@@ -775,16 +571,6 @@
     "party": "KD",
     "subject": "demokrati"
   },
-  "https://kristdemokraterna.se/var-politik/politik-a-till-o/gruvor": {
-    "opinions": [
-      "Klimatomställningen börjar med gruvnäringen. Sverige ska bli bättre på att använda de tillgångar som finns. Med högt ställda krav på miljö och hänsyn till lokalbefolkning kan Sverige flytta fram sina positioner som gruvnation. En översyn av minerallagen bör göras i syfte att stärka markägarens ställning vid prospektering."
-    ],
-    "title": "Gruvor",
-    "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/gruvor",
-    "fetchDate": "2023-09-17T17:52:41.860Z",
-    "party": "KD",
-    "subject": "miljo-och-klimat"
-  },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/gardsforsaljning": {
     "opinions": [
       "Gårdsförsäljning av alkoholhaltiga drycker har utretts tre gånger, och senaste förslaget presenterades 2021. Regeringen har nu föreslagit att införa gårdsförsäljning, samtidigt som Systembolagets monopol värnas. För Kristdemokraterna har det varit en viktig fråga att inte äventyra Systembolagets detaljhandelsmonopol, samtidigt som man kan gynna småskalig och hantverksmässig produktion."
@@ -804,36 +590,6 @@
     "fetchDate": "2025-02-12T21:11:52.623Z",
     "party": "KD",
     "subject": "lag-och-ratt"
-  },
-  "https://kristdemokraterna.se/var-politik/politik-a-till-o/hbt-": {
-    "opinions": [
-      "Kristdemokraternas politik utgår från att varje person är unik och oersättlig. Alla har samma absoluta och okränkbara värde oavsett kön, ålder, social position, etnisk och religiös tillhörighet eller sexuell läggning. Utifrån vår människosyn vill vi värna alla människors liv, frihet och värdighet. Våld, diskriminering och uttalanden som kränker hbt+-personers människovärde strider mot vår ideologi."
-    ],
-    "title": "HBT+",
-    "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/hbt-",
-    "fetchDate": "2023-09-17T17:52:42.384Z",
-    "party": "KD",
-    "subject": "jamstalldhet-och-diskriminering"
-  },
-  "https://kristdemokraterna.se/var-politik/politik-a-till-o/hedersrelaterat-vald": {
-    "opinions": [
-      "Hedersrelaterat våld, där kvinnor eller män som inte underordnar sig vissa bestämmelser bestraffas, är en av de mest extrema formerna av förtryck. Lagstiftningen mot hedersrelaterat våld och förtryck behöver skärpas. Stödet till utsatta behöver förbättras och myndigheternas arbete effektiviseras. Kristdemokraterna vill införa en specialenhet mot tvångsäktenskap hos polisen. Kusinäktenskap ska inte tillåtas. Det behövs fler skyddade boende och mer resurser till utbildning kring våld och hedersrelaterat våld bland personal inom stat, kommun och landsting."
-    ],
-    "title": "Hedersrelaterat våld",
-    "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/hedersrelaterat-vald",
-    "fetchDate": "2025-02-12T21:11:59.783Z",
-    "party": "KD",
-    "subject": "jamstalldhet-och-diskriminering"
-  },
-  "https://kristdemokraterna.se/var-politik/politik-a-till-o/hemloshet": {
-    "opinions": [
-      "Enligt socialtjänstlagen ska kommunen i sin verksamhet främja den enskildes rätt till arbete, bostad och utbildning. Den som drabbats av hemlöshet har oftast även andra problem och kommunerna måste bli bättre på att se helheten. \"Bostad först\" är en metod som visat goda resultat och bör därför användas av alla kommuner."
-    ],
-    "title": "Hemlöshet",
-    "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/hemloshet",
-    "fetchDate": "2023-09-17T17:52:43.153Z",
-    "party": "KD",
-    "subject": "jamstalldhet-och-diskriminering"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/hemsjukvard": {
     "opinions": [
@@ -886,16 +642,6 @@
     "party": "KD",
     "subject": "bostad"
   },
-  "https://kristdemokraterna.se/var-politik/politik-a-till-o/haktning": {
-    "opinions": [
-      "Kristdemokraterna vill se enklare regler för häktning och obligatorisk häktning i fler fall. Gränsen för obligatorisk häktning bör sänkas till ett straffvärde på ett års fängelse. Kristdemokraterna vill även utreda hur storleken på skadestånd vid felaktig häktning ska kunna kopplas till om den misstänkte har medverkat i förundersökningen. Det är inte rimligt att den misstänkte tiger och väntar ut häktningen för att på så sätt ”maximera” ersättningen. Om den häktade själv bidrar till förlängd häktningstid bör detta påverka ersättningsnivån."
-    ],
-    "title": "Häktning",
-    "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/haktning",
-    "fetchDate": "2023-09-17T17:52:42.062Z",
-    "party": "KD",
-    "subject": "lag-och-ratt"
-  },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/hoghastighetstag": {
     "opinions": [
       "Kristdemokraterna anser att banor för höghastighetståg inte ska byggas. I stället vill vi prioritera en fortsatt upprustning av befintliga järnvägar, samt utbyggnad av nya sträckor som behövs för att öka kapaciteten och funktionaliteten i det svenska järnvägsnätet."
@@ -926,16 +672,6 @@
     "party": "KD",
     "subject": "jobb"
   },
-  "https://kristdemokraterna.se/var-politik/politik-a-till-o/innovation": {
-    "opinions": [
-      "Sverige är ett av världens bästa länder på innovation men bland de sämsta på att kommersialisera dessa . Kristdemokraterna vill stärka samverkan mellan universitet, forskningsinstitut och näringsliv och se nya gemensamma forskningsprogram som återspeglar näringslivets behov och där staten deltar som betydande finansiär. Ett särskilt fokus ska vara på de små och medelstora företagen."
-    ],
-    "title": "Innovation",
-    "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/innovation",
-    "fetchDate": "2023-09-17T17:52:43.171Z",
-    "party": "KD",
-    "subject": "naringsliv"
-  },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/integration": {
     "opinions": [
       "Sverige behöver en ny inriktning i integrationspolitiken, med ökad kravställning med fokus på värderingar och att hantera kulturella krockar. Integration kan inte enbart reduceras till ekonomiska faktorer och huruvida man har en inkomst och kan tala svenska. Nej, det handlar om att bli en del av samhället. Överföringen av våra grundvärderingar ska därför påbörjas tidigt i form av samhällsorientering. Det behövs även ett ökat stöd till civilsamhällets olika integrationsinsatser. Det är våra gemensamma normer och värderingar som håller ihop samhället och den som kommer till Sverige behöver förstå och omfamna dessa värden."
@@ -943,16 +679,6 @@
     "title": "Integration",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/integration",
     "fetchDate": "2025-02-12T21:11:57.126Z",
-    "party": "KD",
-    "subject": "migration-och-integration"
-  },
-  "https://kristdemokraterna.se/var-politik/politik-a-till-o/invandring": {
-    "opinions": [
-      "Kristdemokraterna anser att migrationspolitiken ska vara långsiktigt ansvarsfull, rättssäker, human och överblickbar. De senaste åren har dock visat på motsatsen. Sverige har tagit emot fler asylsökande än vi klarat av att integrera, inte tagit krafttag mot utnyttjandet av asylsystemet och framväxten av parallellsamhällen. Kristdemokraterna vill därför ha en stram migrationspolitik. Vi vill kraftigt begränsa den totala migrationen till Sverige med ett mål på nordiska nivåer. Inom dessa nivåer är det rimligt att prioritera de mest utsatta flyktingarna. Säkra och lagliga vägar, så som kvotflyktingssystemet, bör därför vara den huvudsakliga metoden för utlänningar att söka asyl i Sverige. Utgångspunkten är att flyktingar och alternativt skyddsbehövande söker skydd i första säkra land, att värna asylrätten, att försvara öppenheten och den fria rörligheten inom EU genom stärkt kontroll av EU:s yttre gräns. Vi vill motverka irreguljär migration, motverka människosmuggling och ett större fokus på att hjälpa flyktingar i närområdet."
-    ],
-    "title": "Invandring",
-    "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/invandring",
-    "fetchDate": "2023-09-17T17:52:41.884Z",
     "party": "KD",
     "subject": "migration-och-integration"
   },
@@ -986,26 +712,6 @@
     "party": "KD",
     "subject": "jordbruk-jakt-och-fiske"
   },
-  "https://kristdemokraterna.se/var-politik/politik-a-till-o/jamstalldhet": {
-    "opinions": [
-      "Kristdemokraternas jämställdhetspolitik utgår från alla människors lika värde. Både män och kvinnor ska ha makt över sina liv och makt att forma sina liv utifrån egna önskemål. Ett jämställt förhållningssätt grundläggs i familjen. Kristdemokraterna anser att det behövs en ny jämställdhetspolitik som belyser de problem som vanliga kvinnor möter och brottas med, snarare än symbolpolitik. Fokus i jämställdhetspolitiken bör ligga på att bekämpa sjukskrivningstalen bland kvinnor, våld i nära relationer, svårigheterna att kombinera karriär och familjeliv, bristerna i kvinnosjukvården, kvinnors låga pensioner och oron över de alltför stora barngrupperna i förskolan."
-    ],
-    "title": "Jämställdhet",
-    "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/jamstalldhet",
-    "fetchDate": "2025-02-12T21:11:54.265Z",
-    "party": "KD",
-    "subject": "jamstalldhet-och-diskriminering"
-  },
-  "https://kristdemokraterna.se/var-politik/politik-a-till-o/jarnvag": {
-    "opinions": [
-      "Järnvägen är ett omtyckt och klimateffektivt transportslag som behöver utvecklas mot större kapacitet och driftsäkerhet. Kristdemokraterna verkar för att en större andel av person- och godstransporter ska gå på järnväg. Vi vill prioritera en fortsatt upprustning av befintliga järnvägar, samt utbyggnad av nya sträckor som behövs för att öka kapaciteten och funktionaliteten."
-    ],
-    "title": "Järnväg",
-    "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/jarnvag",
-    "fetchDate": "2023-09-17T17:52:43.205Z",
-    "party": "KD",
-    "subject": "infrastruktur-och-trafik"
-  },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/klassikerlista": {
     "opinions": [
       "I en tid av individualiserad mediekonsumtion och ökad kulturell mångfald ökar behovet av gemensamma referenspunkter och gemensamma värden. Kristdemokraterna föreslår att skolan ska införa en klassikerlista. En lista med litterära verk – men också filmer och musik, från hela världen, som alla elever bör ha tagit del av under sin skolgång.",
@@ -1027,26 +733,6 @@
     "party": "KD",
     "subject": "miljo-och-klimat"
   },
-  "https://kristdemokraterna.se/var-politik/politik-a-till-o/kollektivtrafik": {
-    "opinions": [
-      "Kristdemokraterna vill se en utbyggd kollektivtrafik som möjliggör att fler invånare i mindre orter kan utnyttja den."
-    ],
-    "title": "Kollektivtrafik",
-    "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/kollektivtrafik",
-    "fetchDate": "2023-09-17T17:52:43.250Z",
-    "party": "KD",
-    "subject": "infrastruktur-och-trafik"
-  },
-  "https://kristdemokraterna.se/var-politik/politik-a-till-o/kommunala-skatteutjamningssystemet": {
-    "opinions": [
-      "Sveriges kommuner har olika förutsättningar när det gäller skattekraft och demografi. Därför behövs ett utjämningssystem som ger alla Sveriges kommuner ekonomiska förutsättningar för att leverera trygg vård och omsorg, en välfungerande skola och trygga uppväxtvillkor för barn och ungdomar. Dagens utjämningssystem bör ses över i sin helhet och en proposition väntas från regeringen under 2025. Kristdemokraterna driver på för att utjämningen ska ta hänsyn till tillväxtfaktorer."
-    ],
-    "title": "Kommunala skatteutjämningssystemet",
-    "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/kommunala-skatteutjamningssystemet",
-    "fetchDate": "2025-02-12T21:11:59.837Z",
-    "party": "KD",
-    "subject": "ekonomi-och-skatter"
-  },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/konsumentpolitik": {
     "opinions": [
       "Kristdemokraterna vill ha en konsumentpolitik där både konsumentens och näringsidkarens intressen beaktas. Konsumenten ska inte hamna i ett underläge gentemot näringsidkaren. Samtidigt får inte åtgärderna vara så långtgående att de försvårar näringslivets villkor och svensk konkurrenskraft. Kristdemokraterna ser att konsumentmakt och valfrihet är mål som bara kan tillgodoses inom ramen för marknadsekonomin. En väl fungerande marknad är därför den bästa förutsättningen för att tillgodose konsumenternas önskemål om bra produkter till låga priser med god service."
@@ -1066,16 +752,6 @@
     "fetchDate": "2023-09-17T17:52:42.562Z",
     "party": "KD",
     "subject": "konsumentpolitik"
-  },
-  "https://kristdemokraterna.se/var-politik/politik-a-till-o/kriminalvarden": {
-    "opinions": [
-      "Kriminalvården har en central roll i att bryta den kriminella banan och förbereda för ett laglydigt liv. Tiden inom kriminalvården ska användas på ett meningsfullt sätt genom utbildning, arbetsträning och behandlingsprogram mot alkohol och narkotika. Satsningar på kriminalvården bör ses som ett sätt att minska brottsligheten i framtiden. Samtidigt ska fängelsevistelsen vara så pass repressiv att brottet sonas och den dömde lär sig om rätt och fel. Dagens platsbrist i Kriminalvården kräver att vi bygger fler fängelser. Kristdemokraterna vill även hyra fängelseplatser utomlands och att fler svenska fängelsestraff ska avtjänas i dömda utlänningars hemländer."
-    ],
-    "title": "Kriminalvården",
-    "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/kriminalvarden",
-    "fetchDate": "2025-02-12T21:11:51.644Z",
-    "party": "KD",
-    "subject": "vard-och-omsorg"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/kristdemokraterna": {
     "opinions": [
@@ -1127,16 +803,6 @@
     "party": "KD",
     "subject": "energi"
   },
-  "https://kristdemokraterna.se/var-politik/politik-a-till-o/landsbygd": {
-    "opinions": [
-      "Kristdemokraterna vill att människor ska kunna bo och leva i hela Sverige. På landsbygden finns energikällorna, mineralerna som behövs i den hållbara tekniken och den växtlighet som tillhandahåller livsmedel, energi, rekreation och inte minst en livsmiljö för de arter som vi delar vårt land med. Genom att lyfta undan de hinder som idag finns för livet på landet kan vi få en positiv utveckling som gynnar hela vårt land, inklusive städerna."
-    ],
-    "title": "Landsbygd",
-    "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/landsbygd",
-    "fetchDate": "2023-09-17T17:52:43.304Z",
-    "party": "KD",
-    "subject": "landsbygd"
-  },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/lov": {
     "opinions": [
       "Lagen Om Valfrihetssystem (LOV), innebär att omsorgstagaren är den som ska få välja vem som ska ge omsorg samtidigt som kommunen är ytterst ansvarig för omsorgen. LOV kan tillämpas på bland annat omsorgs- och stödverksamhet för äldre och för personer med funktionsnedsättning samt på hälso- och sjukvårdstjänster. Vi vill förenkla för idéburna företag och organisationer att verka i välfärden."
@@ -1156,26 +822,6 @@
     "fetchDate": "2025-02-12T21:11:54.186Z",
     "party": "KD",
     "subject": "utbildning"
-  },
-  "https://kristdemokraterna.se/var-politik/politik-a-till-o/maxtaxan": {
-    "opinions": [
-      "Kristdemokraterna vill se över maxtaxans utformning, inte minst i syfte att minska barngruppernas storlek. Målet bör vara att barn som är tre år inte ska behöva tillhöra grupper som är större än 12 barn, och bland de större barnen inte fler än 15 barn. Sedan maxtaxan på förskolan infördes 2002 har inkomsttaket för föräldrar bara höjts marginellt samtidigt som barngruppernas storlek ökat kraftigt. Vi har tidigare föreslagit att taket i maxtaxan borde höjas."
-    ],
-    "title": "Maxtaxan",
-    "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/maxtaxan",
-    "fetchDate": "2025-02-12T21:11:52.657Z",
-    "party": "KD",
-    "subject": "ekonomi-och-skatter"
-  },
-  "https://kristdemokraterna.se/var-politik/politik-a-till-o/migration": {
-    "opinions": [
-      "Kristdemokraterna vill värna öppenheten och den fria rörligheten inom EU genom stärkt kontroll av EU:s yttre gräns. Vi vill att säkra och lagliga vägar, så som kvotflyktingssystemet, ska vara den huvudsakliga metoden för utlänningar att söka asyl i Sverige. Samtidigt ska vi kunna känna oss trygga i att asylprövningen är rättssäker och att den som saknar skyddsskäl och får nej på sin asylansökan också lämnar landet. Sverige bör ha ett asylmottagande som hamnar på nordisk genomsnittsnivå. Vi vill främja kvalificerad arbetskraftsinvandring. Vi vill stoppa kompetensutvisningarna och samtidigt skärpa reglerna för arbetskraftsinvandring för att motverka fusk/utnyttjande och undanträngning av invånare i utanförskap."
-    ],
-    "title": "Migration",
-    "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/migration",
-    "fetchDate": "2023-09-17T17:52:42.475Z",
-    "party": "KD",
-    "subject": "migration-och-integration"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/miljopolitik": {
     "opinions": [
@@ -1249,77 +895,6 @@
     "party": "KD",
     "subject": "lag-och-ratt"
   },
-  "https://kristdemokraterna.se/var-politik/politik-a-till-o/narkotika": {
-    "opinions": [
-      "Vi vill ha ett narkotikafritt samhälle och arbetar för att stoppa alla tendenser till drogliberalisering. Insatserna ska riktas främst mot de som profiterar på narkotikan, smugglarna och försäljarna. Det behövs ett förebyggande arbete, en bra vård och behandling om man fastnat i missbruk, och en brottsbekämpande insats från tull och polis. Hittills har samhället ofta legat steget efter, men vi tar kampen mot nya substanser. I regeringsställning har vi skärpt straffen för de som säljer narkotika samt kriminaliserat beställning för eget bruk även som försöksbrott."
-    ],
-    "title": "Narkotika",
-    "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/narkotika",
-    "fetchDate": "2025-02-12T21:11:48.783Z",
-    "party": "KD",
-    "subject": "lag-och-ratt"
-  },
-  "https://kristdemokraterna.se/var-politik/politik-a-till-o/nationella-prov": {
-    "opinions": [
-      "De nationella proven ska utgöra ett stöd vid betygsättningen men läraren ska även fortsättningsvis kunna göra en samlad bedömning. Digitaliserade prov med extern rättning är steg som kan leda till ökad likvärdighet i bedömningen av de nationella proven."
-    ],
-    "title": "Nationella prov",
-    "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/nationella-prov",
-    "fetchDate": "2023-09-17T17:52:41.355Z",
-    "party": "KD",
-    "subject": "forsvar"
-  },
-  "https://kristdemokraterna.se/var-politik/politik-a-till-o/nato": {
-    "opinions": [
-      "Kristdemokraterna är varma anhängare av det svenska Natomedlemskapet, och kämpade länge för att detta skulle bli verklighet innan Sverige anslöts. Säkerhet byggs tillsammans med andra. Nato är den främsta garanten för fred, säkerhet och militär förmåga i vår del av världen, och detta är särskilt avgörande för mindre stater som riskerar att stå ensamma mot aggressiva stormakter. Vi kan inte på egen hand trygga vår säkerhet i en situation där våra gränser och intressen hotas av ett militärt angrepp. Det svenska medlemskapet har medfört att vi fullt ut kan planera, synkronisera och öva tillsammans med våra grannar."
-    ],
-    "title": "Nato",
-    "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/nato",
-    "fetchDate": "2024-08-13T06:27:21.724Z",
-    "party": "KD",
-    "subject": "forsvar"
-  },
-  "https://kristdemokraterna.se/var-politik/politik-a-till-o/nordiskt-samarbete": {
-    "opinions": [
-      "De nordiska länderna binds samman av en gemensam historia och ett gemensamt kulturarv. Kristdemokraterna vill se ett fortsatt nära samarbete med våra nordiska grannländer, där vi tillsammans arbetar för en ökad rörlighet och möter centrala utmaningar. Vi vill se ett effektivt och fokuserat samarbete inom områden där vi tillsammans kan göra en verklig skillnad. Samverkan i Norden bör därför fokusera på gränssamarbete och även innefatta försvars- och säkerhetspolitiska frågor."
-    ],
-    "title": "Nordiskt samarbete",
-    "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/nordiskt-samarbete",
-    "fetchDate": "2023-09-17T17:52:41.875Z",
-    "party": "KD",
-    "subject": "utrikes--och-bistandsfragor"
-  },
-  "https://kristdemokraterna.se/var-politik/politik-a-till-o/namndeman": {
-    "opinions": [
-      "Kort info om KD:s politik rörande nämndemän. ",
-      "Kristdemokraterna är positiva till systemet med nämndemän. Det stärker det allmänna rättsmedvetandet och ger medborgarna insyn och delaktighet i rättsskipningen. Nämndemän ska vara engagerade i sitt domaruppdrag och inte ta med sig sina politiska åsikter in i rättssalen."
-    ],
-    "title": "Nämndemän",
-    "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/namndeman",
-    "fetchDate": "2025-02-12T21:11:57.252Z",
-    "party": "KD",
-    "subject": "lag-och-ratt"
-  },
-  "https://kristdemokraterna.se/var-politik/politik-a-till-o/offentlig-upphandling": {
-    "opinions": [
-      "Upphandling av tjänster för offentlig verksamhet måste ske på ett öppet, rättssäkert och transparant sätt. Det är viktigt att alla aktörer har möjlighet att lämna sina bud i samband med en upphandling och att det finns en fungerande konkurrens. Staten, regionerna och kommunerna måste också få förstärkta förutsättningar för att ta etiska, miljömässiga och social hänsyn i upphandlingar. Hinder som höga kostnader och kort tidsram för att ta fram anbud måste motverkas. ”Bästa pris” och ”lägsta pris” är inte automatiskt samma sak, man måste väga in vad man får för pengarna."
-    ],
-    "title": "Offentlig upphandling",
-    "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/offentlig-upphandling",
-    "fetchDate": "2024-11-19T06:30:29.772Z",
-    "party": "KD",
-    "subject": "naringsliv"
-  },
-  "https://kristdemokraterna.se/var-politik/politik-a-till-o/parboendegaranti": {
-    "opinions": [
-      "Sedan en tid tillbaka har äldre par där båda är i behov av äldreboende rätt att få bo tillsammans. Varje kommun måste arbeta aktivt så att det par som levt ett liv tillsammans kan fortsätta göra det om de så önskar även när den ene behöver särskilt boende."
-    ],
-    "title": "Parboendegaranti",
-    "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/parboendegaranti",
-    "fetchDate": "2023-09-17T17:52:39.691Z",
-    "party": "KD",
-    "subject": "vard-och-omsorg"
-  },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/pension": {
     "opinions": [
       "Sverige har i dag ett pensionssystem som är långsiktigt hållbart och det vill Kristdemokraterna fortsätta att värna. Vi har länge arbetat för att skatten för pensionärer ska sänkas så att den hamnar på samma nivå som för löntagare. Vi har varit med och höjt garantipensionen och föreslår ett förbättrat bostadstillägg för pensionärer. Kristdemokraterna vill att intjänad pensionsrätt under småbarnsåren ska delas lika mellan barnets föräldrar för att undvika pensionsfällor beroende på olika uttag av föräldraledighet. Det finns en risk att föräldrar som väljer att vara hemma lite längre med sina barn straffas negativt i form av lägre pension. Därför innehåller pensionssystemet en regel som kallas pensionsrätt för barnaår. Det innebär att föräldrar som väljer att vara hemma och ta hand om sina barn lite längre, tjänar in full pensionsrätt de fyra första åren efter barnets födelse, oavsett om föräldern arbetar deltid eller är hemma och tar hand om sitt barn. Kristdemokraterna vill införa ytterligare ett barnarättsår i pensionssystemet. Vi vill även höja jämförelseinkomsten."
@@ -1327,36 +902,6 @@
     "title": "Pension",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/pension",
     "fetchDate": "2025-02-12T21:11:48.372Z",
-    "party": "KD",
-    "subject": "aldrepolitik"
-  },
-  "https://kristdemokraterna.se/var-politik/politik-a-till-o/polisen": {
-    "opinions": [
-      "Polisen står i frontlinjen mot den grova brottsligheten med uppgift att förebygga brott, upprätthålla ordningen samt att utreda och beivra brott. Sverige behöver fler poliser och polistillväxten behöver fortsätta. Kristdemokraterna vill ha en polistäthet på minst EU-genomsnittet. Polisens utåtriktade brottsförebyggande arbete och samarbete med socialtjänsten och skolan ska ges en hög prioritet. Polisen behöver även kraftfullare verktyg. Kristdemokraterna har drivit på för att hemliga tvångsmedel införts för fler brott och fått nya lagar som vistelseförbud och säkerhetszoner på plats. Polisen bör även få modern utrustning, tillgång till kamerabevakning på fler platser och alternativa icke-dödliga vapen för att kunna gripa våldsverkare. Samtliga poliser måste också få personlig skyddsutrustning och förstärkningsvapen för sin egen säkerhet. Kränkningsersättning ska i högre utsträckning utbetalas till poliser som utsätts för våld och hot i tjänsten. Polisens uppdrag bör renodlas och avlastas på en mängd områden, exempelvis handläggning av vapenlicenser, transporter av berusade personer, fångtransporter och larm om psykiskt sjuka."
-    ],
-    "title": "Polisen",
-    "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/polisen",
-    "fetchDate": "2025-02-12T21:11:59.567Z",
-    "party": "KD",
-    "subject": "lag-och-ratt"
-  },
-  "https://kristdemokraterna.se/var-politik/politik-a-till-o/posten": {
-    "opinions": [
-      "Det är av yttersta vikt att det levereras post i hela landet samt att posten även fungerar om exempelvis elnätet av någon anledning inte fungerar. Vi vill ta ett helhetsgrepp på posthanteringen utifrån tillgänglighet, säkerhet, framtida behov och möjligheter samt kostnader."
-    ],
-    "title": "Posten",
-    "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/posten",
-    "fetchDate": "2023-09-17T17:52:41.101Z",
-    "party": "KD",
-    "subject": "kultur-media-och-idrott"
-  },
-  "https://kristdemokraterna.se/var-politik/politik-a-till-o/premiepension": {
-    "opinions": [
-      "Premiepension är den del av det allmänna pensionssystemet som den enskilde själv rår över och väljer hur det investeras. Det är viktigt att behålla premiepensionerna på dagens nivå för att pensionssystemet ska vara hållbart även för dem som idag har långt kvar till pensionen. Kristdemokraterna vill att den totala intjänade premiepensionen fördelas lika (om de inte begär något annat)mellan makar som har gemensamma barn under tolv år. Detta skulle kompensera kvinnorna som i genomsnitt har haft lägre lön och i högre utsträckning arbetat deltid samt tagit ett större ansvar för hemarbetet och omsorgen om barnen."
-    ],
-    "title": "Premiepension",
-    "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/premiepension",
-    "fetchDate": "2023-09-17T17:52:39.588Z",
     "party": "KD",
     "subject": "aldrepolitik"
   },
@@ -1450,16 +995,6 @@
     "party": "KD",
     "subject": "jamstalldhet-och-diskriminering"
   },
-  "https://kristdemokraterna.se/var-politik/politik-a-till-o/reseavdrag": {
-    "opinions": [
-      "Vi har agerat för att utöka den övre gränsen för pendlingsavstånd, och vi har i regeringen drivit på för att avdraget höjts från 18 till 25 kronor per mil."
-    ],
-    "title": "Reseavdrag",
-    "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/reseavdrag",
-    "fetchDate": "2025-02-12T21:11:52.865Z",
-    "party": "KD",
-    "subject": "ekonomi-och-skatter"
-  },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/riskkapital": {
     "opinions": [
       "Tillgången till finansiering är avgörande för företags möjligheter att starta och växa. Kristdemokraterna och Alliansen införde ett riskkapitalavdrag – ett investeraravdrag – för dem som väljer att investera och satsa kapital i nya affärsidéer. Nu vill vi se över beloppsgränserna för att maximera investeraravdragets möjligheter, bland annat så att det går att använda även för mindre investerare som äger tillsammans med andra som juridisk person. Vi vill också att det statliga riskkapitalet stramas upp så att det alltid investeras parallellt med privat riskkapital. Kristdemokraterna arbetar för att förtydliga reglerna kring ”Carried interest”, som handlar om hur riskkapitalbolagets eventuella vinst ska beskattas när de investerat i ett bolag."
@@ -1479,36 +1014,6 @@
     "fetchDate": "2025-02-12T21:11:59.755Z",
     "party": "KD",
     "subject": "ekonomi-och-skatter"
-  },
-  "https://kristdemokraterna.se/var-politik/politik-a-till-o/rovdjursforvaltning": {
-    "opinions": [
-      "Sveriges fem stora rovdjur lever alla i ett mer eller mindre ansträngt förhållande till de människor de delar livsutrymmet med. Det är viktigt att rovdjursstammarna utgör livskraftiga populationer samtidigt som rovdjurspolitiken måste få acceptans och formas i nära samverkan med de människor som berörs. Därför behöver den lokala nivåns inflytande över rovdjursförvaltningen öka."
-    ],
-    "title": "Rovdjursförvaltning",
-    "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/rovdjursforvaltning",
-    "fetchDate": "2023-09-17T17:52:43.000Z",
-    "party": "KD",
-    "subject": "jordbruk-jakt-och-fiske"
-  },
-  "https://kristdemokraterna.se/var-politik/politik-a-till-o/ranteavdrag": {
-    "opinions": [
-      "Hushållens ekonomi är nu hårt pressad och därför bör ränteavdragen för bolån för närvarande behållas på nuvarande nivå. För att underlätta för familjer och ungdomar att köpa sin första bostad vill vi att möjligheten att belåna bostaden med bostaden som säkerhet utökas från 85–90 procent av bostadens värde. På sätt undviker hushållen dyra lån utan säkerhet. Ränteavdragen för konsumtionslån kommer att fasas ut under två års tid. Kristdemokraterna menar att det förhöjda amorteringskravet ska bort."
-    ],
-    "title": "Ränteavdrag",
-    "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/ranteavdrag",
-    "fetchDate": "2025-02-12T21:11:57.381Z",
-    "party": "KD",
-    "subject": "ekonomi-och-skatter"
-  },
-  "https://kristdemokraterna.se/var-politik/politik-a-till-o/rattsvasendet": {
-    "opinions": [
-      "Kristdemokraterna arbetar intensivt för att ta tillbaka den trygghet som raserats. Rättsväsendets myndigheter spelar en avgörande roll i detta arbete. I regeringsställning har vi gjort historiska satsningar på rättsväsendet, som ska växa från 69 till 100 miljarder kronor Länk till annan webbplats. åren 2023–2027. Att Sverige behöver fler poliser är väl etablerat sedan länge. Men vi behöver också fler åklagare, fler domare, förstärkningar av Säpo och en utbyggd kriminalvård med fler fängelseplatser."
-    ],
-    "title": "Rättsväsendet",
-    "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/rattsvasendet",
-    "fetchDate": "2025-02-12T21:11:59.617Z",
-    "party": "KD",
-    "subject": "lag-och-ratt"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/samhallsplanering-och-byggande": {
     "opinions": [
@@ -1550,26 +1055,6 @@
     "party": "KD",
     "subject": "lag-och-ratt"
   },
-  "https://kristdemokraterna.se/var-politik/politik-a-till-o/sfi-svenska-for-invandrare": {
-    "opinions": [
-      "SFI är första steget för att lära sig svenska och en nyckel för att integreras. Kristdemokraterna vill se en ökad kravställning i SFI och vill införa SFI och samhällsorientering direkt på asylboenden. Att kunna svenska ska vara ett krav för att bli medborgare. Samtidigt som vi ökar kraven behöver SFI-utbildningen också kunna anpassas bättre utifrån den enskildes livssituation och kunskapsnivå. Vi vill till exempel införa obligatorisk SFI med bebis under föräldraledigheten."
-    ],
-    "title": "SFI/Svenska för invandrare",
-    "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/sfi-svenska-for-invandrare",
-    "fetchDate": "2025-02-12T21:11:59.278Z",
-    "party": "KD",
-    "subject": "migration-och-integration"
-  },
-  "https://kristdemokraterna.se/var-politik/politik-a-till-o/sjukforsakring": {
-    "opinions": [
-      "Kristdemokraternas utgångspunkt är att sjukförsäkringen ska vara trygg för den som saknar arbetsförmåga på grund av sjukdom. Vi arbetar för ett sjukförsäkringssystem där vi ser till människors möjligheter i stället för att bara se hinder och problem. Det är viktigt med aktiva insatser så att sjukskrivna kan komma tillbaka i arbete. Sjukförsäkringen måste därför ge drivkrafter för att ta till vara individens arbetsförmåga och erbjuda fler vägar tillbaka till arbete."
-    ],
-    "title": "Sjukförsäkring",
-    "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/sjukforsakring",
-    "fetchDate": "2023-09-17T17:52:41.831Z",
-    "party": "KD",
-    "subject": "vard-och-omsorg"
-  },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/sjukvard": {
     "opinions": [
       "Hälso- och sjukvårdens uppgift är att erbjuda en behovsanpassad, tillgänglig och effektiv vård av god kvalitet. Bota, lindra och trösta är sjukvårdens huvuduppgift och alla ska kunna känna trygghet och tillit till att den offentligt finansierade vården kan möta behoven. Grundprincipen är att hälso- och sjukvården ska vara solidariskt finansierad och behovsstyrd. Förebyggande arbete, vård på patientens villkor och kvalitet och patientsäkerhet, är några för oss prioriterade områden. Kristdemokraterna driver sedan lång tid tillbaka frågan om ett statligt huvudmannaansvar för sjukvården, för att skapa en mer jämlik och tillgänglig vård."
@@ -1579,26 +1064,6 @@
     "fetchDate": "2025-02-12T21:11:59.332Z",
     "party": "KD",
     "subject": "vard-och-omsorg"
-  },
-  "https://kristdemokraterna.se/var-politik/politik-a-till-o/sjofart": {
-    "opinions": [
-      "Svensk sjöfart är en mycket viktig näring för Sveriges utveckling samt konkurrenskraft och har stor betydelse för det svenska transportsystemet. En stark handelsflotta behövs av flera skäl, inte minst för att möjliggöra goda förutsättningar för import och export men också utifrån miljösynpunkt och sjösäkerhet. Sveriges inre vattenvägar behöver stärkas."
-    ],
-    "title": "Sjöfart",
-    "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/sjofart",
-    "fetchDate": "2023-09-17T17:52:42.230Z",
-    "party": "KD",
-    "subject": "infrastruktur-och-trafik"
-  },
-  "https://kristdemokraterna.se/var-politik/politik-a-till-o/skatter": {
-    "opinions": [
-      "Skatter ska finansiera välfärden och offentliga utgifter samt styra den ekonomiska utvecklingen i en social och ekologisk riktning. Skattesystemet bör utformas så att det stimulerar arbete, hederlighet, sparande och företagande. Den enskilde ska i största möjliga utsträckning få behålla sin egen lön innan kompletterande bidrag betalas ut. Kristdemokraterna är för lägre skatt för invånarna och arbetar för principen om hälften kvar. Vi har upprepade gånger varit med och sänkt skatten för vanliga löntagare."
-    ],
-    "title": "Skatter",
-    "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/skatter",
-    "fetchDate": "2025-02-12T21:11:52.230Z",
-    "party": "KD",
-    "subject": "ekonomi-och-skatter"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/skogsbruk": {
     "opinions": [
@@ -1618,16 +1083,6 @@
     "title": "Skola",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/skola",
     "fetchDate": "2023-09-17T17:52:42.733Z",
-    "party": "KD",
-    "subject": "utbildning"
-  },
-  "https://kristdemokraterna.se/var-politik/politik-a-till-o/skolmat": {
-    "opinions": [
-      "Skolmaten är viktig, och den ska självklart vara näringsriktig och god. Vi tycker att det är kommunerna som ska bestämma hur mycket pengar de ska satsa på skolmaten."
-    ],
-    "title": "Skolmat",
-    "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/skolmat",
-    "fetchDate": "2023-09-17T17:52:42.171Z",
     "party": "KD",
     "subject": "utbildning"
   },
@@ -1671,16 +1126,6 @@
     "party": "KD",
     "subject": "naringsliv"
   },
-  "https://kristdemokraterna.se/var-politik/politik-a-till-o/smahus": {
-    "opinions": [
-      "Småhus är bostadsdrömmen för en majoritet av svenskarna, ändå domineras bostadsbeståndet av flerbostadshus. Kristdemokraterna vill se ett ökat byggande av småhus och vi vill därför införa en planeringsstimulans för att öka kommunernas arbete med att planlägga mark för småhus. På så vis kan människors boendedrömmar realiseras i större utsträckning."
-    ],
-    "title": "Småhus",
-    "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/smahus",
-    "fetchDate": "2023-09-17T17:52:42.799Z",
-    "party": "KD",
-    "subject": "bostad"
-  },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/socialforsakring": {
     "opinions": [
       "Välfärdspolitiken ska vara generell i det avseendet att den ska ge en grundläggande trygghet för alla - vid sjukdom, arbetslöshet, arbetsskada och pension. Fördelningspolitiska åtgärder ska riktas till den som har störst behov av stöd och hjälp och utformas så att människors egen kraft, eget ansvar och engagemang uppmuntras, och att bidragsberoende motverkas."
@@ -1710,16 +1155,6 @@
     "fetchDate": "2023-09-17T17:52:42.427Z",
     "party": "KD",
     "subject": "kultur-media-och-idrott"
-  },
-  "https://kristdemokraterna.se/var-politik/politik-a-till-o/statligt-agande-statliga-bolag": {
-    "opinions": [
-      "Kristdemokraterna vill minska det statliga ägandet av bolag som verkar på en konkurrensutsatt marknad. Offentligt ägande innebär att staten sitter på dubbla stolar genom att både vara domare och spelare i näringslivet. Därför bör företag som verkar på en konkurrensutsatt marknad drivas i privat regi. Företag där det finns särskilda samhällsintressen, till exempel systembolaget, bör fortsätta ägas i statlig regi."
-    ],
-    "title": "Statligt ägande/statliga bolag",
-    "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/statligt-agande-statliga-bolag",
-    "fetchDate": "2023-09-17T17:52:43.382Z",
-    "party": "KD",
-    "subject": "naringsliv"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/strandskydd": {
     "opinions": [
@@ -1751,16 +1186,6 @@
     "party": "KD",
     "subject": "forsvar"
   },
-  "https://kristdemokraterna.se/var-politik/politik-a-till-o/tandvard": {
-    "opinions": [
-      "Det statliga stödet till tandvården ska riktas till att stödja den förebyggande tandvården genom regelbundna besök (allmänt tandvårdsbidrag) och att sänka tandvårdskostnaderna för personer med de största behoven (högkostnadsskyddet eller särskilt stöd). Ingen ska behöva avstå från att gå till tandläkaren för att man har stora problem. Vi vill också att tandvårdens högkostnadsskydd förstärks för att mer efterlikna det i övrig vård, och där äldre med sämst munhälsa prioriteras. För barn och unga ska tandvården vara kostnadsfri."
-    ],
-    "title": "Tandvård",
-    "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/tandvard",
-    "fetchDate": "2025-02-12T21:11:50.417Z",
-    "party": "KD",
-    "subject": "vard-och-omsorg"
-  },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/terrorbekampning": {
     "opinions": [
       "Sverige måste ta krafttag mot terrorism och dess grogrund. Miljöer som främjar radikalisering och parallellsamhällen ska motverkas. Säpo och Polisen ska ges rätt verktyg för att kunna upptäcka planer och personer innan terrorbrott begås. Inga offentliga bidrag ska gå till extremistiska organisationer. Staten måste även agera för att stoppa utländsk finansiering av moskéer och islamistiska föreningar som är en bidragande orsak till framväxten av extremism. Det ska vara möjligt att beslagta pass för personer som misstänks ansluta sig till terrororganisationer utomlands och straffen ska vara kännbara om man deltar i terrorverksamhet. Fler ska kunna fråntas sitt medborgarskap och medborgare som strider för terrororganisationer ska kunna dömas för landsförräderi."
@@ -1791,26 +1216,6 @@
     "party": "KD",
     "subject": "naringsliv"
   },
-  "https://kristdemokraterna.se/var-politik/politik-a-till-o/tobak": {
-    "opinions": [
-      "Det ska vara svårt att börja och lätt att sluta röka. Dessutom ska det i möjligaste mån förhindras att någon utsätts för passiv rökning. Barn och unga ska varken börjar röka eller använda andra nikotinprodukter. Exponeringsförbud för röktobak och höjda punktskatter tillsammans med ett nationellt kompetenscenter för ANDTS-prevention är viktiga delar inom området. Kristdemokraternas mål är att minska skadorna kopplade till tobak och nikotin. Det behöver bedrivas ett starkt förebyggande arbete så att unga varken väljer att börja eller använda nikotinprodukter. Cigaretter och röktobak utgör en relativt större hälsofara i förhållande till snus."
-    ],
-    "title": "Tobak",
-    "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/tobak",
-    "fetchDate": "2025-02-12T21:11:57.368Z",
-    "party": "KD",
-    "subject": "vard-och-omsorg"
-  },
-  "https://kristdemokraterna.se/var-politik/politik-a-till-o/trafiksakerhet": {
-    "opinions": [
-      "Kristdemokraterna anser att arbetet med att förverkliga Nollvisionen om antalet omkomna och allvarligt skadade i trafiken måste intensifieras för att nå etappmålet för 2030. Målet är att antalet omkomna i trafiken ska halveras till max 133 personer, jämfört med medelvärdet perioden 2017-2019. Viktiga åtgärder för att förbättra trafiksäkerheten är att minska alkoholen i trafiken, upprusta och förbättra vägnätet samt kontroll och efterlevnad av hastighetsbegränsningarna."
-    ],
-    "title": "Trafiksäkerhet",
-    "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/trafiksakerhet",
-    "fetchDate": "2023-09-17T17:52:43.196Z",
-    "party": "KD",
-    "subject": "infrastruktur-och-trafik"
-  },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/tullen": {
     "opinions": [
       "Tullen har en avgörande roll i att stoppa narkotika, skjutvapen och andra illegala varor från att nå de kriminella gängen och driva våldet i vårt samhälle. Kristdemokraterna har drivit på för att ge Tullen utökade befogenheter att delta i det brottsbekämpande arbetet. En ny tullbefogenhetslag infördes hösten 2024. Vi har även gett polisen utökade möjligheter att göra inre utlänningskontroller och ingripa mot exempelvis smuggling eller utförsel av stöldgods."
@@ -1830,16 +1235,6 @@
     "fetchDate": "2023-09-17T17:52:42.418Z",
     "party": "KD",
     "subject": "kultur-media-och-idrott"
-  },
-  "https://kristdemokraterna.se/var-politik/politik-a-till-o/ungdomsarbetsloshet": {
-    "opinions": [
-      "Att få in en fot på arbetsmarknaden är helt avgörande för möjligheten att kunna bygga upp ett fungerande liv som vuxen. Utan arbete är det svårt att ordna med ett eget boende, att bygga upp en stabil privatekonomi och att bilda familj. Kristdemokraterna vill satsa mer på lärlingsutbildningar och lärlingsanställningar. Det är också viktigt att stärka kopplingen mellan skolan och näringslivet."
-    ],
-    "title": "Ungdomsarbetslöshet",
-    "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/ungdomsarbetsloshet",
-    "fetchDate": "2025-02-12T21:11:57.238Z",
-    "party": "KD",
-    "subject": "jobb"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/ungdomsmottagningar": {
     "opinions": [
@@ -1880,26 +1275,6 @@
     "fetchDate": "2024-08-13T06:27:27.227Z",
     "party": "KD",
     "subject": "utrikes--och-bistandsfragor"
-  },
-  "https://kristdemokraterna.se/var-politik/politik-a-till-o/vaccinationer": {
-    "opinions": [
-      "Det är barnets målsman som avgör om barnet ska vaccineras eller inte, men det svenska vaccinationsprogrammet rekommenderas till alla barn. Sjukdomarna som ingår är allvarliga och kan orsaka bestående skador. Rotavirusinfektion, difteri, stelkramp, kikhosta, polio, Hib, pneumokocker, mässling, påssjuka och röda hund ingår i det allmänna programmet, samt HPV. Därutöver rekommenderas vaccination mot hepatit b till alla spädbarn och vaccination vid ökad risk för smitta, exempelvis mot covid-19 och influensa. Vi vill också införa ett allmänt vaccinationsprogram för äldre personer."
-    ],
-    "title": "Vaccinationer",
-    "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/vaccinationer",
-    "fetchDate": "2025-02-12T21:11:47.652Z",
-    "party": "KD",
-    "subject": "vard-och-omsorg"
-  },
-  "https://kristdemokraterna.se/var-politik/politik-a-till-o/valfrihet": {
-    "opinions": [
-      "En vårdsökande ska kunna välja vilken vårdcentral man vill tillhöra och vilken hemtjänstutförare eller vilket äldreboende man vill bo på. Vi välkomnar privata, ideella och kooperativa alternativ som komplement till den kommunala verksamheten. För den som inte vill eller kan välja finns alltid den kommunala omsorgen och den lokala vårdcentralen som är skyldig att ge invånarna erforderlig service. Kommunen och regionen är alltid ytterst ansvarig för vården och omsorgen, oavsett vem som utför tjänsten."
-    ],
-    "title": "Valfrihet",
-    "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/valfrihet",
-    "fetchDate": "2025-02-12T21:11:59.507Z",
-    "party": "KD",
-    "subject": "vard-och-omsorg"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/vanvard": {
     "opinions": [
@@ -1961,37 +1336,6 @@
     "party": "KD",
     "subject": "trygghetssystem-och-valfard"
   },
-  "https://kristdemokraterna.se/var-politik/politik-a-till-o/vald-i-nara-relationer": {
-    "opinions": [
-      "Våld mot kvinnor och allt våld i nära relationer är oacceptabelt och måste bekämpas med full kraft. De som utsätts för våld ska få rätt stöd. Det ska finnas kraftfulla verktyg såsom utvidgade kontaktförbud och rättsväsendet ska prioritera snabb och effektiv handläggning av dessa fall. Vi vill även uppmuntra frivilligorganisationernas arbete med utsatta personer genom att se till att kommunerna säkrar tillgången till lokaler, skyddade boenden och handledare."
-    ],
-    "title": "Våld i nära relationer",
-    "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/vald-i-nara-relationer",
-    "fetchDate": "2025-02-12T21:11:59.258Z",
-    "party": "KD",
-    "subject": "lag-och-ratt"
-  },
-  "https://kristdemokraterna.se/var-politik/politik-a-till-o/vard-till-papperslosa": {
-    "opinions": [
-      "Kristdemokraterna anser att det är viktigt att personer som inte har tillstånd att vara i Sverige, ändå har rätt till sjukvård och tandvård som inte kan vänta. Barn under 18 år erbjuds samma vård som alla andra barn som bor i regionen. På Kristdemokraternas initiativ fick regionerna en skyldighet att erbjuda vård till papperslösa i den lag som infördes i juli 2013.",
-      "Regeringen gav i uppdrag till utredare att se över hur de särregler som gäller för tandvård för asylsökande och personer utan nödvändiga tillstånd kan tas bort, utan att det påverkar rätt till tandvård som inte kan anstå. Utredaren har lämnat förslag och det bereds inom Regeringskansliet."
-    ],
-    "title": "Vård till papperslösa",
-    "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/vard-till-papperslosa",
-    "fetchDate": "2025-02-12T21:11:52.705Z",
-    "party": "KD",
-    "subject": "vard-och-omsorg"
-  },
-  "https://kristdemokraterna.se/var-politik/politik-a-till-o/vagar": {
-    "opinions": [
-      "Bra kommunikationer och ett välrustat vägnät är viktigt för att Sverige ska kunna utveckla välståndet, öka tillväxten och sysselsättningen. Standarden på vägnätet är därför avgörande för att företag ska kunna ha kvar verksamhet även på mindre orter. Det finmaskiga vägnätet är viktigt för en levande landsbygd, därför behöver vägunderhållet på landsbygden öka. Vi vill därför öka stödet till de enskilda vägarna."
-    ],
-    "title": "Vägar",
-    "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/vagar",
-    "fetchDate": "2023-09-17T17:52:42.268Z",
-    "party": "KD",
-    "subject": "infrastruktur-och-trafik"
-  },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/vardighetsgaranti": {
     "opinions": [
       "Enligt socialtjänstlagen ska omsorgen om äldre inriktas på att äldre personer får leva ett värdigt liv och känna välbefinnande (värdegrund). Kristdemokraterna har länge drivit frågan att varje kommun ska ha en värdighetsgaranti i äldreomsorgen. Garantin innebär en utfästelse om vad den äldre kan förvänta sig i omsorgen och en förbindelse om kompensation ifall kommunen inte lever upp till denna kvalitetsnivå."
@@ -2011,16 +1355,6 @@
     "fetchDate": "2023-09-17T17:52:40.793Z",
     "party": "KD",
     "subject": "forsvar"
-  },
-  "https://kristdemokraterna.se/var-politik/politik-a-till-o/varnskatt": {
-    "opinions": [
-      "Kristdemokraterna tycker inte att någon ska behöva betala mer än 50 procent i högsta marginalskatt. Vi vill inte återinföra värnskatten."
-    ],
-    "title": "Värnskatt",
-    "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/varnskatt",
-    "fetchDate": "2023-09-17T17:52:41.754Z",
-    "party": "KD",
-    "subject": "ekonomi-och-skatter"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/yrkesprogram": {
     "opinions": [
@@ -2094,18 +1428,6 @@
     "party": "KD",
     "subject": "miljo-och-klimat"
   },
-  "https://kristdemokraterna.se/var-politik/politik-a-till-o/informationsplikt": {
-    "opinions": [
-      "Kristdemokraterna anser att det är viktigt med ett effektivt återvändandearbete, för att motverka olovlig vistelse i landet. Regeringen tillsatte en utredare för att lämna förslag som innebär ett utökat informationsutbyte. I uppdraget ingick att ta ställning till vilket behov som kan finnas av undantag från informations-skyldigheten där den skulle strida mot ömmande värden, till exempel inom sjukvården.",
-      "Utredaren har lämnat sitt förslag och har bedömt att skola, sjukvård och socialtjänst inte ska omfattas av det utökade informationsutbytet. Det är i enlighet med utredningens direktiv som gav utredaren i uppdrag att beakta ömmande värden, såsom sjukvården, och ta fram förslag i enlighet med Sveriges internationella åtaganden.",
-      "Vi är glada att utredaren kom fram till samma slutsats som vi har gjort. Dessutom är regeringens samarbetspartier överens om att verksamheterna vård, skola, socialtjänst och bibliotek ska undantas från den föreslagna informationsplikten."
-    ],
-    "title": "Informationsplikt",
-    "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/informationsplikt",
-    "fetchDate": "2025-02-12T21:11:51.436Z",
-    "party": "KD",
-    "subject": "migration-och-integration"
-  },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/el---produktion-och-priser": {
     "opinions": [
       "Kristdemokraterna vill att Sverige ska bli världens första fossilfria och industrialiserade välfärdsnation. För det krävs fossilfri el till rimliga stabila priser, och att vi bygger ut vårt elsystem på ett konkurrenskraftigt och samhällsekonomiskt effektivt sätt. Sverige behöver ha ett elsystem med en utformning som kan matcha efterfrågan på el till konkurrenskraftiga priser årets alla dagar, oavsett väder och vind. Alla fossilfria energislag behövs.",
@@ -2116,17 +1438,6 @@
     "fetchDate": "2024-11-19T06:30:15.833Z",
     "party": "KD",
     "subject": "energi"
-  },
-  "https://kristdemokraterna.se/var-politik/politik-a-till-o/gron-omstallning": {
-    "opinions": [
-      "En storskalig elektrifiering av fordonsflottan och den tunga tillverkningsindustrin är en brygga till det klimatneutrala samhället.",
-      "Kristdemokraterna vill att Sverige ska bli världens första fossilfria och industrialiserade välfärdsnation. För det krävs fossilfri el till rimliga stabila elpriser, och att vi bygger ut vårt elsystem på ett konkurrenskraftigt och samhällsekonomiskt effektivt sätt."
-    ],
-    "title": "Grön omställning",
-    "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/gron-omstallning",
-    "fetchDate": "2024-11-19T06:30:29.451Z",
-    "party": "KD",
-    "subject": "miljo-och-klimat"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/drivmedelspriser": {
     "opinions": [
@@ -2167,26 +1478,6 @@
     "fetchDate": "2025-02-12T21:11:57.417Z",
     "party": "KD",
     "subject": "utbildning"
-  },
-  "https://kristdemokraterna.se/var-politik/politik-a-till-o/eus-migrationspakt": {
-    "opinions": [
-      "EU-samarbetet bygger på en grundprincip om fri rörlighet inom unionens gränser. Som en följd av detta blir också migration och gränshantering i hög grad en gemensam angelägenhet. EU:s migrationspakt behöver utvecklas och stärka skyddet av vår gemensamma yttre gräns. Asylinvandringen ska primärt hanteras genom kvotflyktingsystem, samt en möjlighet att förlägga asylprocessen till tredje land. EU:s yttre gräns behöver stärkas, för att skapa förutsättningar att klara integrationen med jobb, språk och ett gemensamt etiskt modersmål. Vi kallar denna uppdaterade migrationspakt för migrationspakten 2.0."
-    ],
-    "title": "EU:s migrationspakt",
-    "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/eus-migrationspakt",
-    "fetchDate": "2025-03-12T06:30:19.273Z",
-    "party": "KD",
-    "subject": "utrikes--och-bistandsfragor"
-  },
-  "https://kristdemokraterna.se/var-politik/politik-a-till-o/frontex": {
-    "opinions": [
-      "EU:s gemensamma gränsövervakning bör genom Frontex på sikt stärkas och antalet gränspoliser växa till 30 000."
-    ],
-    "title": "Frontex",
-    "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/frontex",
-    "fetchDate": "2025-03-12T06:30:19.118Z",
-    "party": "KD",
-    "subject": "utrikes--och-bistandsfragor"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/kvotflyktingsystem": {
     "opinions": [

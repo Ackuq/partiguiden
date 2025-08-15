@@ -1,12 +1,4 @@
 {
-  "https://www.socialdemokraterna.se/var-politik/a-till-o/abort": {
-    "opinions": [],
-    "title": "Abort",
-    "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/abort",
-    "fetchDate": "2023-09-17T17:52:39.845Z",
-    "party": "S",
-    "subject": "vard-och-omsorg"
-  },
   "https://www.socialdemokraterna.se/var-politik/a-till-o/a-kassan": {
     "opinions": [
       "att a-kassan ska stimulera till omställning på arbetsmarknaden. Den som är arbetslös ska få ut ersättning från försäkringen under en omställningsperiod",
@@ -41,60 +33,6 @@
     "party": "S",
     "subject": "konsumentpolitik"
   },
-  "https://www.socialdemokraterna.se/var-politik/a-till-o/antirasism-och-framlingsfientlighet": {
-    "opinions": [
-      "införa ett förbud mot rasistiska organisationer.",
-      "Polismyndigheten och Säkerhetspolisen har fått särskilda uppdrag för att motverka hatbrott, våldsbejakande extremism och andra former av hot mot vårt öppna och demokratiska samhälle",
-      "antagit en nationell plan mot rasism, liknande former av fientlighet och hatbrott",
-      "inrättat ett nationellt centrum mot våldsbejakande extremism vid Brottsförebyggande rådet",
-      "gett Statens historiska museer i uppdrag att inrätta ett muséum om Förintelsen.",
-      "utrett ett förbud mot rasistiska organisationer inom ramen för nuvarande grundlag"
-    ],
-    "title": "Antirasism och främlingsfientlighet",
-    "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/antirasism-och-framlingsfientlighet",
-    "fetchDate": "2023-09-17T17:52:39.028Z",
-    "party": "S",
-    "subject": "jamstalldhet-och-diskriminering"
-  },
-  "https://www.socialdemokraterna.se/var-politik/a-till-o/apotek": {
-    "opinions": [
-      "att apotek ska finnas tillgängliga i hela landet",
-      "att alla patienter ska ha tillgång till läkemedelskunnig personal på apoteken för rådgivning och för att få de receptbelagda läkemedel du behöver inom 24 timmar",
-      "att apoteken, genom rådgivning och andra tjänster, ska bidra till att alla får en trygg vård och en säker läkemedelsanvändning.",
-      "att 300 Riksapotek inrättas för att säkerställa tillgång till medicin även i en krissituation.",
-      "inte försämra högkostnadsskyddet för läkemedel",
-      "införde en bestämmelse, i den nya apotekslagen, om att farmaceuten ska vara den som lämnar information och rådgivning vid expedieringen av recept",
-      "såg till att ansvaret för att läkemedel för en enskild kund skulle kunna expedieras inom 24 timmar från beställning, flyttades över till läkemedelsleverantörerna. Detta för att du snabbare ska få dina läkemedel",
-      "beslutade att apotekens huvuduppdrag tydligt ska slås fast i lag och vara kopplat till läkemedel",
-      "införde mer generösa regler för apoteksombud på glesbygden."
-    ],
-    "title": "Apotek",
-    "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/apotek",
-    "fetchDate": "2025-04-06T06:29:45.865Z",
-    "party": "S",
-    "subject": "vard-och-omsorg"
-  },
-  "https://www.socialdemokraterna.se/var-politik/a-till-o/arbetsformedlingen": {
-    "opinions": [
-      "hejda privatiseringen och återta kontrollen över arbetsmarknadspolitiken",
-      "dubbla antalet deltagare i arbetsmarknadsutbildning",
-      "att Arbetsförmedlingen aktivt ska matcha arbetslösa med de jobb som finns",
-      "att Arbetsförmedlingen ska ge alla individuellt stöd från dag ett och ha tid att arbeta utifrån de behov som finns",
-      "att Arbetsförmedlingen ska ha en kontinuerlig fysisk närvaro och god tillgänglighet i hela landet.",
-      "tillfört mer resurser till Arbetsförmedlingen, bland annat för att säkerställa ändamålsenlig lokal närvaro och likvärdig service i hela landet",
-      "gett Arbetsförmedlingen i uppdrag att se över hur myndigheten kan förstärka stödet till personer som är långtidsarbetslösa, särskilt i områden med socioekonomiska utmaningar",
-      "satsningar för att fler arbetslösa ska få del av arbetsmarknadsutbildningar",
-      "satsat på introduktionsjobb och extratjänster",
-      "infört intensivåret som ska bidra till att nyanlända snabbare kommer in på arbetsmarknaden",
-      "skapat tiotusentals extratjänster med kollektivavtalade villkor",
-      "tillfört mer resurser till arbetslivsforskningen."
-    ],
-    "title": "Arbetsförmedlingen",
-    "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/arbetsformedlingen",
-    "fetchDate": "2024-06-02T17:16:20.616Z",
-    "party": "S",
-    "subject": "jobb"
-  },
   "https://www.socialdemokraterna.se/var-politik/a-till-o/arbetskraftsinvandring": {
     "opinions": [
       "att arbetskraftsinvandring bara ska tillåtas när det inte går att hitta rätt personer i Sverige",
@@ -116,29 +54,6 @@
     "fetchDate": "2023-09-17T17:52:39.377Z",
     "party": "S",
     "subject": "migration-och-integration"
-  },
-  "https://www.socialdemokraterna.se/var-politik/a-till-o/arbetsmiljo": {
-    "opinions": [
-      "förbättra den fysiska och psykosociala arbetsmiljön genom stärkt arbetsmiljöarbete och satsningar på förebyggande arbete, tillsynsarbete och arbetslivsforskning",
-      "se över arbetsmiljöreglerna, ur ett jämställdhetsperspektiv, för att att förbättra arbetsmiljön inom kvinnodominerade sektorer",
-      "se över arbetsmiljöansvaret inom gig-ekonomin. Arbetsgivare ska inte kunna smita undan arbetsmiljöansvaret genom att gömma sig bakom en app",
-      "att alla anställda inom vård och äldreomsorg ska få kostnadsfria arbetskläder och arbetsskor",
-      "uppvärdera skyddsombudens roll",
-      "bekämpa arbetslivskriminaliteten. Svensk arbetsmarknad ska inte vara en fristad för kriminella aktörer",
-      "öka tillgången till företagshälsovård och säkerställa en jämställd företagshälsovård för både kvinnor och män.",
-      "tagit fram en nollvision för dödsolyckor på jobbet",
-      "minskat möjligheten att stapla visstidsanställningar på varandra",
-      "kraftigt ökat resurserna till Arbetsmiljöverket",
-      "en kraftfull satsning på att bekämpa arbetslivskriminaliteten",
-      "rivit upp lex Laval",
-      "höjt företagsboten för allvarliga arbetsmiljöbrott markant",
-      "startat en arbetsmiljökunskapsmyndighet i Gävle för att samla och utveckla kunskap."
-    ],
-    "title": "Arbetsmiljö",
-    "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/arbetsmiljo",
-    "fetchDate": "2024-06-02T17:16:20.347Z",
-    "party": "S",
-    "subject": "jobb"
   },
   "https://www.socialdemokraterna.se/var-politik/a-till-o/arbetsratt": {
     "opinions": [
@@ -306,48 +221,6 @@
     "party": "S",
     "subject": "it-och-mobiltelefoni"
   },
-  "https://www.socialdemokraterna.se/var-politik/a-till-o/djurskydd": {
-    "opinions": [
-      "värna djurskyddslagen haven stark djurtillsyn så att lagar och regler efterlevs",
-      "värna den nya djurskyddslag som slår fast att djur ska kunna bete sig naturligt och ta fram krav på märkning av katter",
-      "göra det obligatoriskt att vid alla offentliga upphandlingar av animaliska livsmedel ställa krav på att produktionen har skett med höga krav på djurskydd och låg användning av antibiotika – precis som i Sverige.",
-      "värna det svenska beteskravet som bidrar till djurvälfärden i jordbruket",
-      "se till att djurskyddskontrollen ska vara rättssäker, likvärdig och effektiv",
-      "införa kamerövervakning vid slakterier",
-      "agera kraftfullt i EU för att högre krav ska ställas på djurvälfärd och djurhälsa bland annat hårdare krav på transporterna.",
-      "infört en ny modern djurskyddslag med skärpta krav på naturligt beteende och att beteendestörningar inte ska förekomma. Vi har förbjudit elefanter och sjölejon på cirkus",
-      "föreslagit en obligatorisk märkning och registrering av katter som infördes den 1 januari 2023",
-      "uppmanat högerregeringen att överväga en ny utredning för att undersöka om nuvarande hundavel är förenlig med gällande djurskyddslagstiftning. Vi socialdemokrater vill att konkreta förslag på åtgärder som säkerställer djurskyddet ska redovisas.",
-      "tagit strid i EU för ökade djurskyddskrav till exempel vid transporter och minskad antibiotikaanvändning."
-    ],
-    "title": "Djurskydd",
-    "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/djurskydd",
-    "fetchDate": "2024-06-02T17:16:21.395Z",
-    "party": "S",
-    "subject": "jordbruk-jakt-och-fiske"
-  },
-  "https://www.socialdemokraterna.se/var-politik/a-till-o/ekonomi": {
-    "opinions": [
-      "En ekonomisk politik för vanligt folk, så att Sverige håller ihop genom krisen",
-      "Stöd till välfärden för att säkerställa trygghet i livets alla skeden",
-      "Insatser för att stoppa gängvåldet och bryta nyrekryteringen till gängen",
-      "Att möta lågkonjunkturen med en aktiv politik och bygga Sverige rikare.",
-      "Hushållen är hårt pressade – när regeringen sätter sig på läktaren sätter vi vanligt folk först.",
-      "Regeringens svältkur för välfärden slår hårt. Vi föreslår ett systemskifte för att trygga välfärdens finansiering.",
-      "Sverige har blivit fattigare. Vi har en plan för att få upp tillväxten, skapa fler jobb och ta Sverige ur krisen.",
-      "Sverige har blivit farligare. Vi vill satsa miljardbelopp på att stoppa nyrekryteringen, sätta in akuta åtgärder och få stopp på det dödliga våldet.",
-      "amorterat av statsskulden i goda tider och använt vår gemensamma ekonomiska styrka för att rädda liv, jobb och välfärd under pandemin.",
-      "räddat hundratusentals jobb med krisåtgärder som bland annat korttidspermitteringen.",
-      "investerat historiskt mycket pengar i sjukvård, äldreomsorg och skola för att krisen inte ska leda till nedskärningar.",
-      "lagt fram ett kraftfullt grönt återstartspaket för den svenska ekonomin.",
-      "tagit initiativ till ett högkostnadsskydd för elpriser för svenska hushåll och företag."
-    ],
-    "title": "Ekonomi",
-    "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/ekonomi",
-    "fetchDate": "2024-06-02T17:16:21.286Z",
-    "party": "S",
-    "subject": "ekonomi-och-skatter"
-  },
   "https://www.socialdemokraterna.se/var-politik/a-till-o/ekonomiskt-bistand": {
     "opinions": [
       "investera i utbildning, till exempel kommunal vuxenutbildning eller olika yrkesutbildningar, så att fler får chansen att ta de jobb som finns",
@@ -366,20 +239,6 @@
     "fetchDate": "2023-09-17T17:52:39.802Z",
     "party": "S",
     "subject": "jobb"
-  },
-  "https://www.socialdemokraterna.se/var-politik/a-till-o/energipolitik": {
-    "opinions": [
-      "Bygga ut elproduktionen av alla slag. Vindkraft långt ute till havs kan bidra med mycket energi. Det behövs ekonomiska incitament för att kommuner ska medverka till utbyggnad av vindkraftverk. Vi behöver också värna vattenkraften, öka effektuttaget ur befintliga kraftverk och se till att solpanelerna blir fler, bland annat på offentliga och kommersiella byggnader. Kärnkraften är en viktig del av svensk elproduktion och kommer att så vara under lång tid framöver. Redan idag kan fler reaktorer byggas om någon vill investera och det finns potential att effekthöja befintlig kärnkraft. Vi ser positivt på de initiativ som nu tas för att undersöka potentialen framåt i samtliga energislag. Vi vill se en ny energiöverenskommelse för Sveriges bästa och vill därför föra energipolitiska samtal med andra partier om allt från vindkraft till kärnkraft.",
-      "Riva de byråkratiska hindren för mer el. Långsamma tillståndsprocesser ska röjas undan. Vi vill minst fördubbla takten i utbyggnaden av elnätet. Samtidigt är det viktigt att kostnaderna för utbyggnaden av elnätet är rimliga för elkunderna, oavsett var i landet man bor. En översyn av indelningen av elprisområden pågår. Vi har sett till att intäkterna från kapacitetsavgifter som inte används för nätinvesteringar kunnat användas både för att minska prisskillnaderna och för att sänka kostnaderna för elkunderna. Tyvärr har inte regeringen säkerställt att denna möjlighet finns kvar.",
-      "Underlätta familjers energieffektivisering. Det finns stora vinster i att energieffektivisera sitt hem, både för samhället i stort och för den egna ekonomin. Vi har förslagit ökat stöd till energieffektivisering i flerfamiljshus och att styra om ett förstärkt ROT-avdrag till energieffektivisering.",
-      "En stabil energiförsörjning är viktig för ett starkare samhälle. Hur vi producerar vår energi är avgörande för Sveriges förmåga att klara klimatomställningen. När allt fler sektorer ska ställa om produktionen för minskade utsläpp kommer tillgången till el att bli en avgörande faktor. Sverige har goda förutsättningar för att klara den omställningen. Vi har stora möjligheter till mer förnybar energi och en energisektor som ligger i framkant.",
-      "Göra om och effektivisera EU:s elmarknad. Fler elkunder ska få möjlighet till fasta kontrakt. Vi vill införa Folkhemsel så att vanliga hushåll ges möjlighet att köpa el långsiktigt till rimliga och stabila priser."
-    ],
-    "title": "Energipolitik",
-    "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/energipolitik",
-    "fetchDate": "2024-06-02T17:16:21.962Z",
-    "party": "S",
-    "subject": "energi"
   },
   "https://www.socialdemokraterna.se/var-politik/a-till-o/eu": {
     "opinions": [
@@ -461,24 +320,6 @@
     "party": "S",
     "subject": "jamstalldhet-och-diskriminering"
   },
-  "https://www.socialdemokraterna.se/var-politik/a-till-o/feministisk-utrikespolitik": {
-    "opinions": [
-      "att Sverige ska vara ledande i FN:s arbete för ekonomisk jämställdhet och för att flytta fram positionerna för kvinnors rättigheter globalt.",
-      "att Sverige ska fortsätta att driva på arbetet för ett stärkt jämställdhetsperspektiv i FN.",
-      "att kvinnor får en mer framträdande roll i det förebyggande, fredsskapande och fredsbevarande arbetet.",
-      "att Sverige ska fortsätta arbetet med att bekämpa allt sexuellt våld, både vid konflikter och i fredstid.",
-      "inrättat ett internationellt kvinnligt medlingsnätverk.",
-      "stärkt EU:s arbete för jämställdhet och kvinnor, fred och säkerhet.",
-      "bidragit till mer fokus på kvinnor, fred och säkerhet i FN:s säkerhetsråd.",
-      "bidragit med miljardstöd till det globala arbetet för kvinnors och flickors rättigheter.",
-      "stärkt jämställdhetsarbetet i de globala klimat- och miljöfonderna."
-    ],
-    "title": "Feministisk utrikespolitik",
-    "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/feministisk-utrikespolitik",
-    "fetchDate": "2023-09-17T17:52:37.016Z",
-    "party": "S",
-    "subject": "utrikes--och-bistandsfragor"
-  },
   "https://www.socialdemokraterna.se/var-politik/a-till-o/fn": {
     "opinions": [
       "reformera FN:s säkerhetsråd för att bättre återspegla dagens värld",
@@ -507,23 +348,6 @@
     "party": "S",
     "subject": "utbildning"
   },
-  "https://www.socialdemokraterna.se/var-politik/a-till-o/folkhogskola": {
-    "opinions": [
-      "fortsätta att öka antalet platser inom folkhögskolan",
-      "göra det möjligt för studieförbund och folkhögskolor att finnas över hela landet",
-      "göra det möjligt att läsa en hel gymnasieutbildning på folkhögskola direkt efter grundskolan",
-      "att fler satsningar ska göras för att stärka folkhögskolelärarna och folkhögskolepedagogiken.",
-      "byggt ut folkhögskolan med 8 000 nya platser",
-      "höjt studiebidraget för studerande på folkhögskolan med 300 kronor i månaden",
-      "investerat i studiemotiverande kurser, folkbildningsinsatser och svenskundervisning",
-      "satsat på ”Svenska Från Dag Ett” och ”Vardagssvenska” för att ge asylsökande svenskundervisning under asylprocessen."
-    ],
-    "title": "Folkhögskola",
-    "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/folkhogskola",
-    "fetchDate": "2023-09-17T17:52:39.709Z",
-    "party": "S",
-    "subject": "utbildning"
-  },
   "https://www.socialdemokraterna.se/var-politik/a-till-o/folkrorelse-och-civilsamhalle": {
     "opinions": [
       "värna civilsamhällets självständighet och särart",
@@ -544,29 +368,6 @@
     "party": "S",
     "subject": "kultur-media-och-idrott"
   },
-  "https://www.socialdemokraterna.se/var-politik/a-till-o/forskning": {
-    "opinions": [
-      "främja forskning av hög kvalitet i hela landet",
-      "höja nivån för forskningsresurser till alla universitet och högskolor",
-      "stå upp för den fria forskningen och den akademiska friheten.",
-      "stärka grundforskning och den behovsnära forskningen",
-      "arbeta med tioåriga forskningspolitiska överenskommelser så att Sverige får en långsiktig forsknings- och innovationspolitik",
-      "förbättra doktoranders och forskares arbetsvillkor och stärka jämställdheten inom forskningen",
-      "stödja forskningen för att möjliggöra framkomsten av nya idéer och innovationer som svar på våra stora samhällsutmaningar som exempelvis klimatkrisen.",
-      "stärkt den fria forskningen",
-      "ökat de ekonomiska incitamenten för forskningssamverkan",
-      "förbättrat akademins samverkan, jämställdhet och doktoranders arbetsvillkor",
-      "stärkt den akademiska friheten",
-      "infört tioåriga nationella forskningsprogram för viktiga näringar och samhällsutmaningar som exempelvis klimat, hälsa, brottslighet och segregation",
-      "investerat i humanistisk och samhällsvetenskaplig forskning, jämställdhet och doktoranders villkor",
-      "förstärkt svensk forskning med en ekonomisk nivåhöjning på tio procent fram till 2024."
-    ],
-    "title": "Forskning",
-    "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/forskning",
-    "fetchDate": "2023-09-17T17:52:39.367Z",
-    "party": "S",
-    "subject": "utbildning"
-  },
   "https://www.socialdemokraterna.se/var-politik/a-till-o/friskolor": {
     "opinions": [
       "förbjuda vinstuttag ur skolan så att skattepengar som är avsedda för skolan stannar i skolan",
@@ -585,45 +386,6 @@
     "fetchDate": "2023-09-17T17:52:39.545Z",
     "party": "S",
     "subject": "utbildning"
-  },
-  "https://www.socialdemokraterna.se/var-politik/a-till-o/fritidshem": {
-    "opinions": [
-      "höja personaltätheten och stärka kvaliteten i fritidshemmen",
-      "införa nationella riktmärken för elevgruppernas storlek och satsa 500 miljoner kronor per år på mer personal på fritids",
-      "anställa fritidsutvecklare i alla kommuner som ansvarar för att skapa fler meningsfulla fritidsaktiviteter och göra fritidshemsverksamheten mer relevant för mellanstadieelever",
-      "synliggöra fritidshemmens lärandeuppdrag och att personalen får tid för att planera och utveckla verksamheten",
-      "att rätten till fritidshem efter skoldagen ska gälla oavsett om föräldrarna har arbete eller inte",
-      "att fritidsverksamhet ska finnas både före och efter skoltid samt under skollov",
-      "stärka samverkan mellan fritidshemmen, kulturlivet och idrottsrörelsen.",
-      "investerat 500 miljoner kronor per år i mer personal och stärkt kvalitet i fritidshemmen            ",
-      "tillfört ett särskilt kapitel i läroplanen för att tydliggöra och kvalitetssäkra fritidshemmens verksamhet",
-      "minskat barngrupperna och anställt fler pedagoger",
-      "rustat upp lokaler och utemiljöer",
-      "infört att också fritidspedagoger ska omfattas av lärarlegitimationsreglerna."
-    ],
-    "title": "Fritidshem",
-    "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/fritidshem",
-    "fetchDate": "2023-09-17T17:52:39.342Z",
-    "party": "S",
-    "subject": "kultur-media-och-idrott"
-  },
-  "https://www.socialdemokraterna.se/var-politik/a-till-o/funktionsnedsattning": {
-    "opinions": [
-      "reformera LSS, lagen om stöd och service till vissa funktionshindrade, för att få en tydligare lagstiftning som ger bättre möjligheter för barn och vuxna med funktionsnedsättning att leva ett självständigt liv och vara delaktiga i samhällslivet",
-      "att människor som behöver hjälp för att leva ett fritt och oberoende liv ska få det – LSS ska även fortsättningsvis vara en rättighetslagstiftning",
-      "förbättra och stärka möjligheten till utbildning för personer med funktionsnedsättning",
-      "se en samordnad kraftsamling för att människor med funktionsnedsättning ska få stöd att komma in på, eller tillbaka till, arbetsmarknaden.",
-      "beslutat om stärkt rätt till personlig assistans och rätt till assistans för egenvård som sammantaget beräknas ge ytterligare 2 000 personer rätt till personlig assistans",
-      "höjt lönebidraget, något som är viktigt för att skapa förutsättningar för fler personer med funktionsnedsättning att etablera sig på arbetsmarknaden",
-      "höjt grundnivån i sjuk- och aktivitetsersättningen för att minska de ekonomiska klyftorna",
-      "sänkt skatten för personer med sjuk- och aktivitetsersättning. Därmed minskar orättvisan mellan de som arbetar och de som får den här ersättningen",
-      "tillsatt en statlig utredning för att se över ett statligt huvudmannaskap för personlig assistans. Den ska redovisa sitt resultat under våren 2023."
-    ],
-    "title": "Funktionsnedsättning",
-    "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/funktionsnedsattning",
-    "fetchDate": "2023-09-17T17:52:37.981Z",
-    "party": "S",
-    "subject": "vard-och-omsorg"
   },
   "https://www.socialdemokraterna.se/var-politik/a-till-o/foretagande-och-entreprenorskap": {
     "opinions": [
@@ -664,25 +426,6 @@
     "title": "Förskola",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/forskola",
     "fetchDate": "2023-09-17T17:52:39.001Z",
-    "party": "S",
-    "subject": "utbildning"
-  },
-  "https://www.socialdemokraterna.se/var-politik/a-till-o/forskoleklass": {
-    "opinions": [
-      "minska klasstorlekarna och anställa mer personal",
-      "investera i lärarna och deras förutsättningar för planering och kollegialt samarbete",
-      "öka undervisningstiden i förskoleklasserna",
-      "öka tillgången till specialpedagogiskt stöd i förskoleklasserna",
-      "utveckla förskolepedagogiken och förskoleklassens unika roll som brygga mellan förskola och skola.",
-      "förlängt skolplikten genom att göra förskoleklassen obligatorisk för alla sexåringar",
-      "tillfört ett särskilt kapitel i läroplanen för att tydliggöra och kvalitetssäkra förskoleklassernas verksamhet",
-      "minskat barngrupperna och anställt fler pedagoger",
-      "satsat på kompetensutveckling av lärarna i förskoleklasserna",
-      "investerat särskilt i de förskoleklasser som har svårast förutsättningar."
-    ],
-    "title": "Förskoleklass",
-    "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/forskoleklass",
-    "fetchDate": "2023-09-17T17:52:37.897Z",
     "party": "S",
     "subject": "utbildning"
   },
@@ -750,36 +493,6 @@
     "fetchDate": "2023-09-17T17:52:38.071Z",
     "party": "S",
     "subject": "utbildning"
-  },
-  "https://www.socialdemokraterna.se/var-politik/a-till-o/havsmiljo": {
-    "opinions": [
-      "att kraftfulla åtgärder mot övergödning genomförs",
-      "ta fram nya metoder för att minska läkemedelsresterna i avloppsvattnet",
-      "fortsätta insatserna mot överfiske, minska bottentrålning och satsa på mer fiskodling",
-      "skapa fler marina reservat som skyddar haven och fisket",
-      "att utsläpp av läkemedelsrester till miljön ska minimeras. Regeringen vill öka takten i uppgraderingen av de kommunala avloppsreningsverken så att de kan ta hand om läkemedel och andra svårnedbrytbara ämnen. Regeringen föreslår därför att satsningen på avancerad rening förstärks med ytterligare 75 miljoner kronor per år 2022 och 2023",
-      "trygga en säker dricksvattenförsörjning med anledning av klimatförändringarna. Regeringen föreslår nu en förstärkning och förlängning av länsstyrelsernas arbete med dricksvattenförsörjningen och vattenskyddet med 80 miljoner kronor per år under perioden 2022–2024.",
-      "under mandatperioden har regeringen gjort historiskt stora satsningar för att skydda och sköta av värdefull natur, hav och vatten.",
-      "Fler än 750 naturreservat har inrättats, arealen av skyddade marina områden har dubblerats och drygt 13 procent av havsområdet har fått skydd",
-      "satsat 80 miljoner kronor 2020 på att förstärka miljöövervakningen av hav och vatten",
-      "infört ett förbud mot mikroplaster i kosmetika och vidtagit andra åtgärder för minskad plastanvändning",
-      "antagit en plastskatt för att minska plastutsläppen i hav och natur",
-      "uppdragit åt Havs- och vattenmyndigheten att utreda och föreslå ändringar i förordningen för fisket, vattenbruket och fiskerinäringen, för att genomföra ett generellt förbud mot bottentrålning i marina skyddade områden innanför trålgränsen",
-      "förstärkt lokala vattenvårdsprojekt (LOVA) med 100 miljoner kronor år 2022, 150 miljoner kronor 2023 och 150 miljoner kronor 2024. (LOVA-projekten leder bland annat till att minska övergödningen genom att minska tillförseln av fosfor och kväve till sjöar, vattendrag och kuster)",
-      "för åren 2023-2025 satsar regeringen 35 miljoner kronor för arbetet med marina kartor för att säkerställa skyddet för kust och hav",
-      "regeringen föreslår att anslaget för Havs- och vattenmyndigheten ökar med 12,2 miljoner kronor för år 2022 för att förstärka den svenska fiskerikontrollen. Samtidigt föreslår regeringen att även Kustbevakningen, som har ansvar för den sjögående fiskerikontrollen, får förstärkning i samma syfte. Dessa satsningar behövs för att säkerställa att de fiskeregler som satts upp efterlevs",
-      "regeringen föreslår att anslaget för Havs- och vattenmyndigheten förstärks med 8 miljoner kronor per år 2022–2024 för att genomföra försök med kamerabevakning av fiskefartyg. Detta för att se till att utkastförbudet efterlevs samt införa nödvändiga regleringar när det gäller fisket för att nå bevarandemålen i marina skyddade områden",
-      "ett flertal åtgärder har vidtagits inom EU för att minska fisket. I Sverige finns ett begränsat antal tillstånd kvar för ålfiske. Regeringen föreslår nu ett frivilligt program med ersättning för ålfiskefångster. För detta ändamål förstärks anslaget \"Åtgärder för havs- och vattenmiljön\" med sex miljoner kronor per år 2022-2024",
-      "regeringen föreslår att 15 miljoner kronor per år 2022-2024 avsätts för kommunernas arbete med strandstädning",
-      "regeringen föreslår också en satsning om 20 miljoner kronor per år 2022-2024 för att samla in och återvinna uttjänta fiskeredskap och övergivna fritidsbåtar",
-      "regeringen satsade 105 miljoner kronor mer under 2021 i arbetet med invasiva arter i akvatisk miljö",
-      "förorenade områden och miljöfarliga vrak riskerar att hota människors hälsa, den biologiska mångfalden samt havs- och vattenmiljön. Därför satsade vi 350 miljoner kronor 2021 för att öka takten i saneringsarbetet av de mest förorenade miljöskulderna på land, i hav och vatten."
-    ],
-    "title": "Havsmiljö",
-    "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/havsmiljo",
-    "fetchDate": "2023-09-17T17:52:37.629Z",
-    "party": "S",
-    "subject": "jordbruk-jakt-och-fiske"
   },
   "https://www.socialdemokraterna.se/var-politik/a-till-o/hbtq-fragor": {
     "opinions": [
@@ -858,24 +571,6 @@
     "party": "S",
     "subject": "utbildning"
   },
-  "https://www.socialdemokraterna.se/var-politik/a-till-o/idrott": {
-    "opinions": [
-      "att avgifterna ska hållas låga så att alla har möjlighet att delta",
-      "att tjejer och killar kan utöva idrott på lika villkor",
-      "att alla får 30 minuters daglig fysisk aktivitet i skolan eller på fritids",
-      "satsa på idrott och friluftsliv för äldre",
-      "inrätta en så kallad evenemangslista",
-      "öka resurserna till idrotten så att skolan eller kommunen kan anställa fler idrottsledare i utsatta områden.",
-      "under 2022 nästa dubblerade S-regeringen anslaget till friluftslivsorganisationer",
-      "ökat statens insatser så att idrotten kan arbeta med integration och nyanlända",
-      "tagit fram ett idrottspolitiskt program - \"Fler i rörelse\". Länk till annan webbplats."
-    ],
-    "title": "Idrott",
-    "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/idrott",
-    "fetchDate": "2023-09-17T17:52:38.204Z",
-    "party": "S",
-    "subject": "kultur-media-och-idrott"
-  },
   "https://www.socialdemokraterna.se/var-politik/a-till-o/industri": {
     "opinions": [
       "öka tempot i industrins omställning: industrikliv, snabbare och enklare tillståndsprocesser.",
@@ -895,27 +590,6 @@
     "party": "S",
     "subject": "naringsliv"
   },
-  "https://www.socialdemokraterna.se/var-politik/a-till-o/infrastruktur": {
-    "opinions": [
-      "se omfattande investeringar i såväl ny som befintlig järnväg – öka investeringstakten för mer och bättre järnväg",
-      "förbättra järnvägsunderhåll och vägunderhåll",
-      "bygga nya stambanor i södra och norra Sverige",
-      "ha säker trafik och schyssta villkor inom transportbranschen",
-      "öka satsningen på publika laddstolpar",
-      "se mer enhetlig hantering av laddare och appar för elbilsanvändare",
-      "att ungdomar ska få gratis kollektivtrafik under somrarna",
-      "investerat cirka 900 miljarder kronor i infrastrukturen fram till år 2033 - 176 miljarder mer än i den förergående nationella planen",
-      "satsat på underhåll av vägar och järnvägar samt bättre kollektivtrafik på landsbygden",
-      "storsatsat på järnvägen, återinfört nattågsavgångar, påbörjat satsningen på nattåg till Europa och förbättrat järnvägsunderhållet.",
-      "förbjudit handhållen mobil under bilkörning",
-      "skapat bättre förutsättningar för yrkestrafiken genom att mångdubbla antalet laddpunkter för elbilar och byggt ut laddinfrastrukturen för att påskynda elektrifieringen av tunga vägtransporter inom de mest trafikerade områdena."
-    ],
-    "title": "Infrastruktur",
-    "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/infrastruktur",
-    "fetchDate": "2023-09-17T17:52:37.813Z",
-    "party": "S",
-    "subject": "infrastruktur-och-trafik"
-  },
   "https://www.socialdemokraterna.se/var-politik/a-till-o/innovation": {
     "opinions": [
       "stärka innovationsklimatet, öka konkurrenskraften och utveckla olika samarbeten.",
@@ -932,29 +606,6 @@
     "fetchDate": "2024-06-02T17:16:21.276Z",
     "party": "S",
     "subject": "jobb"
-  },
-  "https://www.socialdemokraterna.se/var-politik/a-till-o/integration": {
-    "opinions": [
-      "att alla som kan jobba ska jobba. Det gäller alla, oavsett var du kommer ifrån eller kön",
-      "korta vägen till jobb genom språk, utbildning och bostad",
-      "att inte några områden ska vara särskilt utsatta",
-      "öka stödet till kommunerna för bra utbildning och socialt stöd till nyanlända barn och ungdomar",
-      "att alla kommuner ska bidra i mottagandet och arbeta för en snabb etablering",
-      "att dagens modell med eget boende (EBO-lagen) ska avvecklas och ersättas med ett bättre system som motverkar segregation.",
-      "inrättat ett snabbspår för nyanlända, tillsammans med arbetsmarknadens parter, så att de med kompetens inom bristyrken snabbt kan få kompletterande utbildning, praktik och arbete",
-      "skapat etableringsjobb för att få fler nyanlända och långtidsarbetslösa i arbete",
-      "infört en språkplikt för alla nyanlända. Alla som lever i Sverige ska kunna svenska",
-      "infört en utbildingsplikt för nyanlända. Den som tackar nej till en utbildning som behövs för bli att anställningsbar kan få sin ersättning indragen",
-      "infört moderna beredskapsjobb inom statliga myndigheter",
-      "sett över samhällsorienteringen för mer fokus på rådande normer och värderingar i Sverige",
-      "tillfört resurser för att rusta upp miljonprogrammen",
-      "riktade insatser för att få fler nyanlända kvinnor i arbete."
-    ],
-    "title": "Integration",
-    "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/integration",
-    "fetchDate": "2023-09-17T17:52:38.140Z",
-    "party": "S",
-    "subject": "migration-och-integration"
   },
   "https://www.socialdemokraterna.se/var-politik/a-till-o/israel-och-palestina": {
     "opinions": [
@@ -990,53 +641,6 @@
     "title": "Jakt och viltvård",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/jakt-och-viltvard",
     "fetchDate": "2023-09-17T17:52:38.826Z",
-    "party": "S",
-    "subject": "jordbruk-jakt-och-fiske"
-  },
-  "https://www.socialdemokraterna.se/var-politik/a-till-o/jobb": {
-    "opinions": [
-      "skapa fler jobb i hela landet. Det ska vara schyssta villkor och löner som det går att leva på",
-      "skapa fler trygga jobb inom vården och äldreomsorgen, anställa fler undersköterskor, sjuksköterskor och läkare, så att vårdköerna kan kortas",
-      "öka tryggheten på arbetsmarknaden och minska stress och psykisk ohälsa i arbetslivet",
-      "att de som jobbar inom vård och äldreomsorg ska ha den skyddsutrustning som krävs för att utföra sitt arbete på ett tryggt och säkert sätt",
-      "inte att någon ska dö eller skadas på jobbet. Vi vill att de regionala skyddsombuden får utökad tillträdesrätt",
-      "skärpa reglerna för arbetskraftsinvandring. Vi vill införa en arbetsmarknadsprövning för arbetskraftsinvandring och slopa möjligheten för personer som fått avslag på asylansökan att få ett uppehållstillstånd för arbete",
-      "få slut på arbetslivskriminaliteten och skärpa straffavgifterna för arbetsgivare som använder sig av utländsk arbetskraft utan arbetstillstånd",
-      "att den som är utan jobb och behöver stöd i sitt arbetssökande ska få det. Vi vill säkerställa den lokala närvaron för arbetsförmedlingen",
-      "förbättra systemet med korttidsarbete vid eventuella lågkonjunkturer så att löntagare kan kompetensutveckla sig samtidigt som de behåller sin anställning",
-      "införa aktivitetskrav i försörjningsstödet. Vi behöver kraftfulla åtgärder för att bryta mönstret där människor lever länge på ekonomiskt bistånd. Det handlar bland annat om att socialtjänsten ska ställa utökade krav på att delta i kommunala arbetsmarknadsinsatser som bidrar till att bryta isolering, förbättra hälsa och främja integration för utrikesfödda kvinnor och män.",
-      "den socialdemokratiskt ledda regeringens industrisatsningar hargjort en grön, industriell revolution möjlig som skapat tusentals nya jobb i hela landet",
-      "infört heltid som norm",
-      "förstärkt a-kassan, skapat fler platser på universitet och högskolor och fört en aktiv arbetsmarknadspolitik",
-      "avskaffat allmän visstid och begränsat möjligheterna till hyvling av arbetstiden",
-      "tagit krafttag mot arbetslivskriminaliteten",
-      "förstärkt Arbetsförmedlingen för att bland annat säkerställa lokal närvaro och likvärdig service i hela landet",
-      "satsat på Yrkesvux för att möta de stora behoven av gymnasialt yrkesutbildade såsom undersköterskor, elektriker och yrkesförare. Vi ökar också möjligheterna till högskoleutbildning och studiestöd",
-      "satsningar på introduktionsjobb och extratjänster",
-      "sett till att det finns goda möjligheter till omskolning om du blir arbetslös mitt i livet. Den som blir arbetslös eller sjuk ska möta goda möjligheter och tydliga krav, inte fattigdom och hopplöshet",
-      "utvidgat lånet till körkortsutbildning till ungdomar 19–20 år med gymnasieexamen för att fler unga ska ta körkort och därmed stärka sin ställning på arbetsmarknaden",
-      "satsat på sommarjobb för unga",
-      "sett till att svenska villkor och löner ska gälla för alla som jobbar här. Vi har fått igenom viktiga lagförändringar som skapar mer ordning och reda på den svenska arbetsmarknaden."
-    ],
-    "title": "Jobb",
-    "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/jobb",
-    "fetchDate": "2023-09-17T17:52:37.401Z",
-    "party": "S",
-    "subject": "jobb"
-  },
-  "https://www.socialdemokraterna.se/var-politik/a-till-o/jordbruk": {
-    "opinions": [
-      "utnyttja möjligheten för en ökad svensk livsmedelsproduktion.",
-      "aviserat satsningar på sammanlagt 60 miljarder kronor på framtidens jordbruk, där cirka 45 miljarder kronor utgör medel från EU och cirka 15 miljarder kronor är svensk finansiering. Utöver dessa medel satsar regeringen under samma period (2023–2027) cirka 4,3 miljarder kronor på nationella insatser för jordbruket, miljön och utvecklingen i Sveriges landsbygder",
-      "lagt fram en långsiktig livsmedelsstrategi som innehåller satsningar på 846 miljoner för åren 2020–2025 så att livsmedelsproduktionen i Sverige kan öka. Dessutom gjordes ytterligare satsningar på totalt 114 miljoner kronor under 2020",
-      "föreslog 200 miljoner kronor i stöd till produktion av biogas under 2021",
-      "med anledning av Rysslands invasion av Ukraina har kostnaderna för insatsvaror inom jordbruket ökat kraftigt. Därför tog den socialdemokratiska regeringen initiativ till ett krispaket på drygt 2 miljarder kronor till jordbruket och ett stöd på 40 miljoner kronor till yrkesfisket",
-      "vi har vidtagit flera åtgärder för att stärka såväl privatpersoner som företag. Bland annat har vi lagt fram förslag om att tillfälligt sänka skatten på bensin och diesel från och med maj månad. Men vi har också presenterat ett förslag om en särskild drivmedelskompensation på 1 000 kronor för att lindra konsekvenserna av dagens höga drivmedelspriser. I gles- och landsbygdsområden, där människor är särskilt beroende av bilen, föreslog vi en högre kompensation om 1 500 kronor men det förslaget röstades ned av de högerkonservativa partierna i Sveriges riksdag",
-      "för att säkra den svenska livsmedelsproduktionen lade vi i februari 2022 fram ett stödpaket om 1 miljard kronor."
-    ],
-    "title": "Jordbruk",
-    "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/jordbruk",
-    "fetchDate": "2023-09-17T17:52:39.181Z",
     "party": "S",
     "subject": "jordbruk-jakt-och-fiske"
   },
@@ -1078,27 +682,6 @@
     "party": "S",
     "subject": "infrastruktur-och-trafik"
   },
-  "https://www.socialdemokraterna.se/var-politik/a-till-o/kemikalier": {
-    "opinions": [
-      "förbjuda PFAS i hela EU.",
-      "att Sverige inför nödvändiga förbud mot farliga kemikalier.",
-      "införa skatter som minskar användningen av farliga kemikalier.",
-      "att EU:s kemikaliestrategi skyndsamt implementeras så att skadliga ämnen ersätts och fasas ut.",
-      "driva på inom EU för skärpta kemikalielagar.",
-      "ge Kemikalieinspektionen utvidgade möjligheter att kontrollera produkter, inte minst de som importeras.",
-      "göra platser där barn vistas dagligen, till exempel förskolor och skolor, giftfria.",
-      "satsat på flera åtgärder för att minska spridningen av PFAS. I satsningen ingick åtgärder för att öka åtgärdstakten för sanering av områden som förorenats av PFAS, stödja teknikutvecklingen och få tillstånd mer forskning på området för att fylla de kunskapsluckor som fortfarande finns",
-      "förbjudit bisfenol A i vattenrör och förbjudit mikroplatser i kosmetika",
-      "infört en skatt på farliga kemikalier i elektronik",
-      "påverkat EU att förbjuda bly i vissa konsumentprodukter",
-      "tillsatt en utredning som lämnat förslag på hur en skatt på skadliga kemikalier i kläder och skor kan utformas."
-    ],
-    "title": "Kemikalier",
-    "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/kemikalier",
-    "fetchDate": "2025-02-12T21:11:58.183Z",
-    "party": "S",
-    "subject": "miljo-och-klimat"
-  },
   "https://www.socialdemokraterna.se/var-politik/a-till-o/klimat": {
     "opinions": [
       "kombinera att både göra det billigare att kunna använda bilen för vanligt folk i glesbygd, samtidigt som vi stadigt pressar ner utsläppen och skapar nya jobb och stärker Sveriges beredskap. Därför presenterar vi en helt ny modell för inblandning av biodrivmedel i Sverige – Sverigebränslet",
@@ -1130,22 +713,6 @@
     "party": "S",
     "subject": "miljo-och-klimat"
   },
-  "https://www.socialdemokraterna.se/var-politik/a-till-o/kollektivavtal": {
-    "opinions": [
-      "säkerställa goda arbetsvillkor och öka tryggheten på jobbet för alla som arbetar i Sverige. Då är det avgörande att det finns kollektivavtal som reglerar spelreglerna på arbetsmarknaden",
-      "att svenska fackförbund alltid ska kunna kräva svenska kollektivavtal, ytterst med stöd av eventuella stridsåtgärder, dock med de begränsningar som följer av EU-rätten.",
-      "stoppat krav på försämrade anställningsvillkor när det gäller både lön och trygghet för ungdomar och nyanlända",
-      "stoppat och motverkat lönedumpning och diskriminering av utländska arbetstagare",
-      "tillsammans med arbetsmarknadens parter har vi funnit långsiktiga lösningar som gör att nyanlända kan komma in på arbetsmarknaden fortare",
-      "rivit upp lex Laval",
-      "drivit frågan om kollektivavtal som krav vid upphandling."
-    ],
-    "title": "Kollektivavtal",
-    "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/kollektivavtal",
-    "fetchDate": "2023-09-17T17:52:37.887Z",
-    "party": "S",
-    "subject": "trygghetssystem-och-valfard"
-  },
   "https://www.socialdemokraterna.se/var-politik/a-till-o/kompetensforsorjning": {
     "opinions": [
       "ha en statlig aktiv arbetsmarknadspolitik i hela landet. Oavsett var i landet man bor ska man snabbt kunna få stöd att komma i jobb",
@@ -1165,49 +732,6 @@
     "fetchDate": "2023-09-17T17:52:38.080Z",
     "party": "S",
     "subject": "utbildning"
-  },
-  "https://www.socialdemokraterna.se/var-politik/a-till-o/konsumentfragor": {
-    "opinions": [
-      "att det finns konsumentvägledning i varje kommun, mindre kommuner kan samverka med varandra",
-      "att det ska vara möjligt att fortsätta använda kontanter, oavsett var i landet vi bor",
-      "att övergången till ett samhälle med allt mindre kontanter måste ske på ett sätt så att ingen lämnas efter. I första hand ska det hanteras av bankerna, men om det inte fungerar kan en lagstiftning inte uteslutas",
-      "kartlägga förekomsten av könsstereotyp och sexistisk reklam och överväga om det behövs ytterligare åtgärder i form av utvecklad självreglering och utbildningsinsatser. Om det inte fungerar är vi beredda att överväga lagstiftning",
-      "se över reglerna för uppsägningstider för medlems- och abonnemangstjänster",
-      "överväga krav på tillgänglighet på kundtjänst för abonnemang och medlemstjänster.",
-      "åtgärder kring snabblån (sms-lån) som innebär att ett räntetak införs, med en gräns på 40 procentenheter över referensräntan. Även ett kostnadstak har införts. Räntor, avgifter och inkassokostnader får aldrig överstiga det ursprungliga kreditbeloppet",
-      "ett skriftlighetskrav vid telefonförsäljning har införts",
-      "konsumentombudsmannen har fått möjlighet att under vissa förutsättningar omedelbart (utan att först gå till domstol) förbjuda företag att ägna sig åt otillåtna marknadsföringsmetoder",
-      "tagit fram en strategi mot överskuldsättning som omfattar bland annat en ny skuldsaneringslag och satsningar på förebyggande arbete för att motverka överskuldsättning. Den nya lagen ska få fler svårt skuldsatta att ansöka om och genomgå skuldsanering. Detta sker bland annat genom att kravet på överskuldsättning har nyanserats, gäldenärens betalningar underlättats och två betalningsfria månader införts",
-      "tagit fram en strategi för cirkulär ekonomi, där det finns ett antal förslag för att varors livslängd ska kunna förlängas genom exempelvis reparationer. Det viktigaste är dock att konsumenterna har en lagstadgad rätt till längre reklamationstid. Genom den nya konsumentköplagen förlängs den omvända bevisbördan från sex månader till två år. Detta underlättar för konsumenterna att, med rätten på sin sida, reklamera produkter och sätta press på företagen att skapa hållbara produkter. Det är bra både för miljön och plånboken."
-    ],
-    "title": "Konsumentfrågor",
-    "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/konsumentfragor",
-    "fetchDate": "2023-09-17T17:52:39.010Z",
-    "party": "S",
-    "subject": "konsumentpolitik"
-  },
-  "https://www.socialdemokraterna.se/var-politik/a-till-o/kultur": {
-    "opinions": [
-      "utveckla kulturlivet i hela landet och öka stödet till allmänna samlingslokaler och mötesplatser",
-      "utveckla kultursamverkansmodellen",
-      "införa fri entré till regionala museer",
-      "utveckla konstnärernas villkor",
-      "utveckla kultur- och musikskolan",
-      "återinfört fri entré på statliga museer",
-      "satsat på musik- och kulturskolan",
-      "stärkt kultursamverkansmodellen",
-      "fördubblat det statliga bidraget till kulturskolan",
-      "förbättrat de kulturellt yrkesverksammas villkor",
-      "infört filmproduktionsincitament",
-      "inrättat ”Sveriges museum om förintelsen”",
-      "satsat på bibliotek och läsfrämjande insatser",
-      "tagit fram ett kulturpolitiskt program Länk till annan webbplats, öppnas i nytt fönster."
-    ],
-    "title": "Kultur",
-    "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/kultur",
-    "fetchDate": "2023-09-17T17:52:38.903Z",
-    "party": "S",
-    "subject": "kultur-media-och-idrott"
   },
   "https://www.socialdemokraterna.se/var-politik/a-till-o/kyrkor-och-trossamfund": {
     "opinions": [
@@ -1306,20 +830,6 @@
     "party": "S",
     "subject": "utbildning"
   },
-  "https://www.socialdemokraterna.se/var-politik/a-till-o/laxor": {
-    "opinions": [
-      "att alla elever erbjuds läxhjälp oavsett vilken skola de går på",
-      "införa en läxhjälpsgaranti för alla elever i årskurs 6–9 som riskerar att inte bli behöriga till gymnasieskolan. Dessa elever ska vara garanterade minst två timmars läxhjälp i veckan.",
-      "investerat närmare 400 miljoner kronor per år i läxhjälpsstöd i grund- och gymnasieskolan så att alla elever kan få hjälp med läxor efter ordinarie undervisningstid. Under 2021 fick lovskolan och läxhjälpen ytterligare 170 miljoner kronor i bidrag",
-      "ökat anslagen till ideella föreningar som ger läxhjälp",
-      "avskaffat läx-RUT, det vill säga möjligheten att göra skatteavdrag för läxhjälp. Skattepengar ska inte gå till privat undervisning."
-    ],
-    "title": "Läxor",
-    "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/laxor",
-    "fetchDate": "2023-09-17T17:52:37.344Z",
-    "party": "S",
-    "subject": "utbildning"
-  },
   "https://www.socialdemokraterna.se/var-politik/a-till-o/mat": {
     "opinions": [
       "öka svensk livsmedelsproduktion och genomföra en offensiv satsning på ekologisk sådan",
@@ -1358,32 +868,6 @@
     "fetchDate": "2023-09-17T17:52:39.219Z",
     "party": "S",
     "subject": "migration-och-integration"
-  },
-  "https://www.socialdemokraterna.se/var-politik/a-till-o/miljo": {
-    "opinions": [
-      "minska utsläppen av växthusgaser. Sverige ska bli den första fossilfria välfärdsnationen",
-      "satsa 500 miljoner kr mer än regeringen och SD på att stärka friluftslivet och skötseln av naturreservat, nationalparker och vandringsleder genom skydd och åtgärder av värdefull natur",
-      "skapa fler naturnära jobb i hela landet, inriktade på natur- och skogsvårdande skötsel",
-      "sats 30 miljoner kr mer än regeringen och SD på miljövövervakning. Vi ser ett akut behov att ha en robust och pålitlig miljöövervakning, särskilt med tanke på de snabba klimatförändringarna som påverkar ekosystem och biologisk mångfald.",
-      "driva på för tuffare kemikalieregler i EU och införa inhemska skatter på farliga ämnen",
-      "minska övergödningen av haven och skydda vårt rena dricksvatten",
-      "bevara mer värdefull natur och marina områden för att rädda den biologiska mångfalden",
-      "stärka arbetet vid flera myndigheter för att förebygga, förhindra och bekämpa olika former av brottslighet kopplat till avfall.",
-      "en historiskt stor förstärkning av investeringarna för miljön med fördubblad miljöbudget och kraftigt höjda anslag för att skydda natur, stödja klimatinvesteringarna och minska mängden farliga kemikalier",
-      "satsat 400 miljoner kronor under 2021 för att stärka friluftslivet och skötseln av naturreservat, nationalparker och vandringsleder",
-      "skapat naturnära jobb i hela landet, inriktade på natur- och skogsvårdande skötsel satsade vi 180 miljoner kronor under 2021",
-      "breda, historiska överenskommelser om klimatet, energin och livsmedelsproduktionen",
-      "tagit ledarrollen för klimat och miljö inom EU och i FN",
-      "satsar 600 miljoner kronor på fler naturreservat för att skydda värdefull natur",
-      "återskapat våtmarker som bidrar till stora, positiva effekter på klimatet och den biologisk mångfalden. Därför ökade vi satsningen på att restaurera våtmarker med 350 miljoner kronor under 2021",
-      "den S-ledda regeringen satsade 50 miljoner kronor under 2021 för att stärka arbetet med bekämpningen av främmande arter",
-      "föreslagit en satsning på 50 miljoner kronor för att stärka arbetet vid flera myndigheter för att förebygga, förhindra och bekämpa olika former av brottslighet kopplat till avfall."
-    ],
-    "title": "Miljö",
-    "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/miljo",
-    "fetchDate": "2024-06-02T17:16:20.692Z",
-    "party": "S",
-    "subject": "miljo-och-klimat"
   },
   "https://www.socialdemokraterna.se/var-politik/a-till-o/manskliga-rattigheter": {
     "opinions": [
@@ -1432,30 +916,6 @@
     "fetchDate": "2023-09-17T17:52:37.224Z",
     "party": "S",
     "subject": "lag-och-ratt"
-  },
-  "https://www.socialdemokraterna.se/var-politik/a-till-o/nationella-prov": {
-    "opinions": [
-      "stoppa provfusket och öka rättssäkerheten",
-      "digitalisera de nationella proven",
-      "att de nationella proven ska stödja lärarna och bidra till en likvärdig betygsättning.",
-      "avskaffat de mest kritiserade nationella proven, minskat antalet obligatoriska prov på gymnasiet och infört frivilliga bedömningsstöd",
-      "påbörjat digitaliseringen av de nationella proven",
-      "stärkt betygens likvärdighet genom att resultaten på de nationella proven särskilt ska beaktas vid betygssättning",
-      "infört extern rättning av de nationella proven."
-    ],
-    "title": "Nationella prov",
-    "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/nationella-prov",
-    "fetchDate": "2023-09-17T17:52:37.668Z",
-    "party": "S",
-    "subject": "utbildning"
-  },
-  "https://www.socialdemokraterna.se/var-politik/a-till-o/nato": {
-    "opinions": [],
-    "title": "Nato",
-    "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/nato",
-    "fetchDate": "2023-09-17T17:52:37.753Z",
-    "party": "S",
-    "subject": "forsvar"
   },
   "https://www.socialdemokraterna.se/var-politik/a-till-o/nedrustning": {
     "opinions": [
@@ -1508,37 +968,6 @@
     "party": "S",
     "subject": "migration-och-integration"
   },
-  "https://www.socialdemokraterna.se/var-politik/a-till-o/naringspolitik-och-konkurrenskraft": {
-    "opinions": [
-      "att företagsklimatet i Sverige främjar uppstart av nya företag, att företagen växer, att företagen får möjlighet att anställa fler och exporterar sina varor och tjänster i högre grad. På så sätt skapas det fler jobb i Sverige",
-      "att samverkan ökar mellan offentliga aktörer, näringsliv och akademi och därmed skapar nya, innovativa lösningar som stärker konkurrenskraften och bidrar till en hållbar utveckling samt fler jobb",
-      "stärka företagens omställningsförmåga och konkurrenskraft när marknader förändras. Svenska företag ska vara ledande inom den digitala utvecklingen och i att utnyttja digitaliseringens möjligheter",
-      "att kompetensförsörjningssystemet ska möta industrins behov och främja dess långsiktiga utveckling och att Sverige ska vara ledande i forskning inom områden som bidrar till att stärka den industriella produktionen av varor och tjänster i Sverige."
-    ],
-    "title": "Näringspolitik och konkurrenskraft",
-    "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/naringspolitik-och-konkurrenskraft",
-    "fetchDate": "2024-06-02T17:16:20.966Z",
-    "party": "S",
-    "subject": "naringsliv"
-  },
-  "https://www.socialdemokraterna.se/var-politik/a-till-o/pension": {
-    "opinions": [
-      "bygga ut pensionstillägget för att göra det mer lönsamt att ha arbetat under arbetslivet. Det är en viktig princip i vårt pensionssystem",
-      "att alla ska få minst 70 procent av slutlönen i pension",
-      "höja inbetalningarna till pensionssystemet",
-      "införa en gas i pensionssystemet, dvs att pensionen blir högre när det blir överskott i pensionssystemet, på samma sätt som den så kallade bromsen gör att pensionerna blir lägre när det riskerar att bli underskott i systemet.",
-      "höjt garantipensionen med 1 000 kronor per månad från den 1 augusti 2022",
-      "höjt bostadstillägget med 100 kronor för ensamstående och 50 kronor för sammanboende från den 1 augusti 2022",
-      "gjort premiepensionen bättre och tryggare",
-      "infört ett pensionstillägg på upp till 600 kr i månaden för dem som har jobbat ett helt yrkesliv men ändå har låg pension",
-      "infört trygghetspension, som innebär att den som är över 60 år och som slitit ut sig i jobbet och inte klarar att arbeta ända fram till pensionsåldern, enklare kan få sjukersättning."
-    ],
-    "title": "Pension",
-    "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/pension",
-    "fetchDate": "2023-09-17T17:52:38.832Z",
-    "party": "S",
-    "subject": "aldrepolitik"
-  },
   "https://www.socialdemokraterna.se/var-politik/a-till-o/polisen": {
     "opinions": [
       "Ökad lokal polisiär närvaro, särskilt i utsatta områden.",
@@ -1574,23 +1003,6 @@
     "party": "S",
     "subject": "vard-och-omsorg"
   },
-  "https://www.socialdemokraterna.se/var-politik/a-till-o/public-service-och-kommersiell-media": {
-    "opinions": [
-      "fortsatt verka för ett starkt och oberoende public service, bland annat genom grundlagsskydd",
-      "att public service ska ha ett fortsatt brett utbud och spegla hela landet",
-      "att public service ska fortsätta att utveckla nya verksamheter för att nå medborgare som inte tar del av public services utbud idag",
-      "införa en evenemangslista med förutbestämda OS, VM- och EM-tävlingar samt vissa kulturprogram som måste sändas i fria kanaler.",
-      "moderniserat radio- och TV-avgiften för att säkra långsiktig finansiering och oberoende",
-      "genomfört mediestöd för journalistik i hela landet, samt för innovations- och utvecklingsstöd",
-      "låtit utreda ett nytt, förbättrat press- och mediestöd anpassat för det moderna medielandskapet",
-      "tillfälligt förstärkt stöd till media för att de skulle ha större möjlighet att klara annonstappet under pandemin."
-    ],
-    "title": "Public service och kommersiell media",
-    "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/public-service-och-kommersiell-media",
-    "fetchDate": "2024-06-02T17:16:21.221Z",
-    "party": "S",
-    "subject": "kultur-media-och-idrott"
-  },
   "https://www.socialdemokraterna.se/var-politik/a-till-o/rektorer": {
     "opinions": [
       "att rektorer och skolledare i hela skolsystemet får kontinuerlig och obligatorisk kompetensutveckling",
@@ -1609,24 +1021,6 @@
     "title": "Rektorer",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/rektorer",
     "fetchDate": "2023-09-17T17:52:39.133Z",
-    "party": "S",
-    "subject": "utbildning"
-  },
-  "https://www.socialdemokraterna.se/var-politik/a-till-o/religiosa-friskolor": {
-    "opinions": [
-      "förbjuda religiösa friskolor.",
-      "ett demokrativillkor införs i prövningen så att aktörer som förespråkar våld, diskriminering eller påverkan mot vårt demokratiska styrelseskick aldrig får driva skola",
-      "ett förslag om stopp för nya konfessionella friskolor har lagts fram",
-      "skärpt kraven på kontroll på att barn som inte vill delta i konfessionella inslag ska erbjudas andra aktiviteter",
-      "infört krav på att huvudmannen ska anmäla skolans inriktning till skolregistret.",
-      "presenterat ett lagförslag om att införa etableringsstopp för fristående skolor och fristående fritidshem med konfessionell inriktning",
-      "skärpt ägar- och ledningsprövningen med krav på insikt, lämplighet och ekonomiska förutsättningar för den som vill bedriva skolverksamhet",
-      "förtydligat i läroplanen att utbildningen och undervisningen inte ska dela upp barn och elever utifrån könstillhörighet och förtydligat ansvaret att arbeta för jämställdhet",
-      "infört ökade möjligheter att stänga skolor med allvarliga brister."
-    ],
-    "title": "Religiösa friskolor",
-    "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/religiosa-friskolor",
-    "fetchDate": "2023-09-17T17:52:39.836Z",
     "party": "S",
     "subject": "utbildning"
   },
@@ -1691,64 +1085,6 @@
     "fetchDate": "2023-09-17T17:52:39.200Z",
     "party": "S",
     "subject": "trygghetssystem-och-valfard"
-  },
-  "https://www.socialdemokraterna.se/var-politik/a-till-o/sjukvard": {
-    "opinions": [
-      "göra så att vården kommer närmare dig genom att utveckla vård- och hälsocentralerna så de kan ge dig mer och snabbare vård. Det gör vi till exempel med en fast läkarkontakt, bokning av tid via 1177och snabbare hjälp vid psykisk ohälsa",
-      "stärka rätten till en egen fast läkare på din vård- och hälsocentral. Vårt långsiktiga mål är att alla ska ha sin namngivna läkare",
-      "stärka och utveckla 1177 som en integrerad del av regionens vård, bland annat genom att minst halvera den genomsnittliga nationella väntetiden. Det långsiktiga målet är att ingen ska behöva vänta mer än tre minuter",
-      "utveckla vårdgarantin. Du ska aldrig behöva vänta mer än 14 dagar på besked om en tid till undersökning, planerade besök eller operation i den specialiserade vården",
-      "införa ett mål om en barnmorska per födande i de regioner där vi styr. Föräldrarna ska inte lämnas ensamma i förlossningsrummet, utan få det stöd som de behöver.",
-      "skärpa vårdgarantin så att den även omfattar undersökning, som exempelvis röntgen",
-      "stoppa privatiseringar av akutsjukhus och gräddfiler i vården",
-      "öka antalet utbildade personal och styra om resurser för att fler ska kunna utbildas till välfärdsyrken. Möjligheten att vidareutbilda sig eller specialisera sig behöver också öka. Vi vill även höja kvaliteten i vård- och lärarutbildningarna",
-      "stärka den demokratiska kontrollen genom att se till att också privata välfärdsaktörer tar emot studenter på utbildning och praktik inom högskolan och yrkesvux. Alla aktörer ska vara med och bidra till att välfärdens medarbetare får fler kollegor",
-      "att alla offentliga och privata vårdgivare ska använda sig av journalsystem som fungerar gemensamt och sätta tydligare standarder för enklare och ökad kommunikation av hälsodata",
-      "att alla ska erbjudas en hälsoundersökning på sin vårdcentral det året man fyller 60 år. Särskilda insatser ska göras för att deltagandet ska bli högt och jämlikt.",
-      "en historisk satsning på hälso- och sjukvården genom 13 miljarder kronor i ökade satsningar för bland annat fler anställda, bättre arbetsvillkor, kortade vårdköer, stärkt psykiatri och en bättre förlossningsvård",
-      "förra mandatperioden investerade vi 35 miljarder kronor i välfärden",
-      "under 2020 genomfördes en rekordstor investering i välfärden genom 38,5 miljarder kronor till kommuner och landsting som ökar till 41,5 miljarder kronor år 2021",
-      "för 2020 har vi tillfört ytterligare 26 miljarder kronor i generella bidrag, varav 12,5 miljarder är permanenta anslagsökningar som kommer kommuner och regioner till del även kommande år. Det är viktiga tillskott för att ge kommunsektorn långsiktiga planeringsförutsättningar och upprätthålla samhällsviktiga funktioner såsom vård, skola och omsorg",
-      "under 2021 tillfördes regionerna fyra miljarder kronor årligen för att vård som tvingats skjutas upp på grund av Coronaviruset ska kunna genomföras så att människor får tillgång till den vård som man har behov av och har fått beslutad. Denna satsning ökar till 6 miljarder kronor 2022",
-      "två miljarder kronor avsätts för fortsatt testning och smittspårning av covid-19",
-      "ambulanssjukvården förstärks med 100 miljoner kronor",
-      "cancersjukvården förstärks med ytterligare 100 miljoner kronor till de tidigare 500 miljoner kronor",
-      "satsat på fler sjuksköterskor, specialistsjuksköterskor, barnmorskor och undersköterskor samt byggt ut läkarutbildningen",
-      "påbörjat ett långsiktigt arbete för att stärka den nära vården, så att du ska kunna få mer hjälp på din hälso- eller vårdcentral",
-      "infört avgiftsfri cellprovtagning i hela landet inom ramen för det nationella screeningprogrammet mot livmoderhalscancer",
-      "infört avgiftsfria läkemedel för alla barn under 18 år",
-      "infört ett särskilt vaccinationsprogram med avgiftsfri pneumokock-vaccinering för medicinska riskgrupper och 75-åringar från hösten 2022",
-      "infört ägar- och ledningsprövning så att oseriösa aktörer inte kan bedriva välfärdstjänster för våra gemensamma skattepengar",
-      "infört meddelarskydd för all personal i offentligt finansierad verksamhet."
-    ],
-    "title": "Sjukvård",
-    "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/sjukvard",
-    "fetchDate": "2023-09-17T17:52:37.535Z",
-    "party": "S",
-    "subject": "vard-och-omsorg"
-  },
-  "https://www.socialdemokraterna.se/var-politik/a-till-o/skatter": {
-    "opinions": [
-      "att nya resurser till välfärden går före skattesänkningar och skattesubventioner",
-      "att progressiviteten i skattesystemet vårdas",
-      "att skatteklyftorna i inkomstbeskattningen avskaffas",
-      "att skattefusk och skatteundandragande bekämpas",
-      "att en blocköverskridande skattereform kommer till stånd",
-      "inte återinföra fastighetsskatten.",
-      "tagit bort skatteklyftan mellan pension och lön för personer över 65 år, klyftan är helt borta från 2023",
-      "under valperioden sänkt skatten för boende i glest befolkade områden för att värna landsbygden och infört en skattereduktion med fokus på låg- och medelinkomsttagare",
-      "tagit ett avgörande steg för att ta bort skatteklyftan för personer med sjuk- eller aktivitetsersättning. Det högerkonservativa blockets ändring i budgeten för 2022 gjorde att klyftan inte helt slöts",
-      "gjort skatten mer rättvis mellan svenska löntagare och personal som hyrs in från utlandet",
-      "genomfört åtgärder för att förhindra och försvåra skattefusk och felaktig folkbokföring, inte minst genom förstärkta resurser till Skatteverket.",
-      "Föreslagit en bankskatt på bankernas övervinster där pengarna skulle gå tillbaka till hushållen.",
-      "Föreslagit ett reformerat rotavdrag för lägre elräkningar.",
-      "Föreslagit en rättvis skattesänkning för vanligt folk."
-    ],
-    "title": "Skatter",
-    "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/skatter",
-    "fetchDate": "2024-06-02T17:16:20.841Z",
-    "party": "S",
-    "subject": "ekonomi-och-skatter"
   },
   "https://www.socialdemokraterna.se/var-politik/a-till-o/skog": {
     "opinions": [
@@ -1823,26 +1159,6 @@
     "party": "S",
     "subject": "vard-och-omsorg"
   },
-  "https://www.socialdemokraterna.se/var-politik/a-till-o/studiemedel": {
-    "opinions": [
-      "höja bidragsdelen av studiemedlet och stärka hela studiemedelssystemet så att ännu fler kan ha råd att studera vidare",
-      "utveckla och förbättra studiemedelssystemet så att alla kan bygga på sina kunskaper eller välja en ny yrkesbana under hela sitt arbetsliv",
-      "förbättra tryggheten vid studier och möjligheten till deltidssjukskrivning för studenter",
-      "minska snedrekryteringen till högre utbildning.",
-      "infört ett nytt omställningsstudiestöd som möjliggör omställning eller kompetensutveckling med 80 procent av lönen i upp till ett år",
-      "höjt bidragsdelen med 300 kronor per månaden",
-      "stärkt tryggheten för studenter vid sjukdom",
-      "infört ett rekryterande studiestartsstöd för arbetslösa med stort utbildningsbehov",
-      "lagt fram ett förslag för att införa ett nytt omställningsstudiestöd för yrkesverksamma, som med studiebidrag och studielån kan studera med upp till 80 procent av tidigare lön under ett år",
-      "ökat studiebidragsdelen för akademiker som läser till lärare samt infört utbildningsbidrag för vissa ämneslärarinriktningar",
-      "infört CSN-lån för körkort."
-    ],
-    "title": "Studiemedel",
-    "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/studiemedel",
-    "fetchDate": "2023-09-17T17:52:37.963Z",
-    "party": "S",
-    "subject": "utbildning"
-  },
   "https://www.socialdemokraterna.se/var-politik/a-till-o/sakerhetspolitik": {
     "opinions": [
       "att säkerhetspolitiken värnar Sveriges självständighet och frihet",
@@ -1891,23 +1207,6 @@
     "fetchDate": "2023-09-17T17:52:37.175Z",
     "party": "S",
     "subject": "trygghetssystem-och-valfard"
-  },
-  "https://www.socialdemokraterna.se/var-politik/a-till-o/ungdomsarbetsloshet": {
-    "opinions": [
-      "att alla barn, oavsett föräldrar eller bostadsområde, ska få en utbildning som ger bästa möjliga förutsättningar inför vuxenlivet. Hög och jämlik kunskap är också grundläggande för vår ekonomi och för jobben",
-      "att möjligheten att utbilda sig, med ett tydligt fokus på bristyrken, ska öka på alla nivåer",
-      "stärka insatserna för unga som varken arbetar eller studerar",
-      "införa aktivitetsplikt för rätt till försörjningsstöd.",
-      "infört och uppfyllt en 90-dagarsgaranti för unga. Den som är ung och utan arbete ska få stöd direkt och inom 90 dagar erbjudas ett riktigt jobb eller en utbildning som leder till jobb",
-      "infört utbildningskontrakt för att få unga som saknar gymnasiekompetens att avsluta sin gymnasieutbildning",
-      "infört bristyrkesutbildningar som utformas i nära samverkan med näringslivet och fackliga organisationer liksom utbyggd yrkesutbildning",
-      "startat ett kunskapslyft bland annat genom fler platser inom yrkesvux, komvux och folkhögskola samt ha fler högskoleplatser så att unga kan skaffa sig den kompetens som efterfrågas."
-    ],
-    "title": "Ungdomsarbetslöshet",
-    "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/ungdomsarbetsloshet",
-    "fetchDate": "2023-09-17T17:52:39.518Z",
-    "party": "S",
-    "subject": "jobb"
   },
   "https://www.socialdemokraterna.se/var-politik/a-till-o/ungdomsran": {
     "opinions": [
@@ -2018,47 +1317,6 @@
     "party": "S",
     "subject": "utbildning"
   },
-  "https://www.socialdemokraterna.se/var-politik/a-till-o/valfard": {
-    "opinions": [
-      "ta tillbaka den demokratiska kontrollen över välfärden och stoppa vinstjakten i välfärden",
-      "stoppa utförsäljningar och gräddfiler i vården",
-      "investera i en bättre välfärd. Vi vill anställa fler undersköterskor, sjuksköterskor och läkare, så vårdköerna kan kortas. Och fler lärare, så att eleverna lär sig mer",
-      "korta vårdköerna. Vi gör det genom att ge vård efter behov – inte plånbok. Den som är i störst behov av att träffa en läkare, få en operation eller en behandling ska gå först, inte den som har råd att betala för en dyr vårdförsäkring",
-      "införa fast omsorgskontakt i hemtjänsten, mer social samvaro och satsa på idrott och friluftsliv för äldre",
-      "offentlighetsprincipen och krav på öppen bokföring ska gälla för friskolor såväl som privata utförare i vård och omsorg, och samma krav ska ställas på privata som offentliga aktörer.",
-      "ökat de generella statsbidragen till kommuner och landsting för att höja kvaliteten i välfärden",
-      "satsat på att öka bemanningen och stärka kompetensen bland personalen inom vård och äldreomsorg",
-      "infört bland annat gratis mediciner för barn, fördubblat tandvårdsbidrag, kostnadsfri screening för livmoderhalscancer och avgiftsfri öppenvård från 85 år",
-      "infört en trygghetspension som ska ge ekonomisk trygghet för dem som slitit ut sig i arbetslivet och inte orkar jobba hela vägen fram till pension",
-      "vi har nyligen höjt garantipensionen och taket i bostadstillägg. Dessutom har vi avskaffat den så kallade pensionärsskatten och infört ett särskilt pensionstillägg",
-      "satsat på fler anställda med bättre arbetsvillkor, kortade vårdköer, en bättre förlossningsvård och en stor öronmärkt satsning på en mer jämlik och tillgänglig cancervård",
-      "anställt fler lärare och minskat barngrupperna i förskolan."
-    ],
-    "title": "Välfärd",
-    "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/valfard",
-    "fetchDate": "2023-09-17T17:52:39.945Z",
-    "party": "S",
-    "subject": "trygghetssystem-och-valfard"
-  },
-  "https://www.socialdemokraterna.se/var-politik/a-till-o/yrkesutbildning": {
-    "opinions": [
-      "stärka branschkopplingen inom gymnasieskolans yrkesprogram och utveckla fler yrkescollege",
-      "att alla program i gymnasieskolan ska ge högskolebehörighet",
-      "att alla elever på yrkesprogram ska få en praktik av hög kvalitet",
-      "att yrkesvux byggs ut",
-      "att yrkeshögskolan utvecklas med fler utbildningsplatser, större flexibilitet och bättre planeringsförutsättningar.",
-      "genomfört ett Kunskapslyft med över 96 000 nya utbildningsplatser inom vuxenutbildning, yrkeshögskola, folkhögskola och högskola",
-      "förbättrat möjligheten till regionala yrkesvuxutbildningar. Från den 1 januari 2021 finansierar staten sju platser av tio och kommunerna tre",
-      "infört en rätt till kompletterande vuxenutbildning som även omfattar behörighet till Yrkeshögskolan",
-      "infört specialiserade branschskolor för vissa yrkesutbildningsinriktningar",
-      "utvecklat WorldSkills Sweden och Yrkeslandslaget tillsammans med LO och Svenskt Näringsliv. "
-    ],
-    "title": "Yrkesutbildning",
-    "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/yrkesutbildning",
-    "fetchDate": "2023-09-17T17:52:39.037Z",
-    "party": "S",
-    "subject": "utbildning"
-  },
   "https://www.socialdemokraterna.se/var-politik/a-till-o/aldre": {
     "opinions": [
       "bygga fler äldreboenden och utveckla en jämlik och jämställd äldreomsorg med hög kvalitet i hela landet",
@@ -2075,29 +1333,6 @@
     "title": "Äldre",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/aldre",
     "fetchDate": "2023-09-17T17:52:40.069Z",
-    "party": "S",
-    "subject": "aldrepolitik"
-  },
-  "https://www.socialdemokraterna.se/var-politik/a-till-o/aldreomsorg": {
-    "opinions": [
-      "stoppa vinstjakten i äldreomsorgen och förbättra personalens villkor för att öka tryggheten för de äldre",
-      "införa en fast omsorgskontakt i hemtjänsten och mer social samvaro genom en satsning på idrott och friluftsliv för äldre",
-      "anställa fler inom äldreomsorgen, förbättra arbetsvillkoren och stärka deras kunskap och kompetens",
-      "avskaffa minutscheman i hemtjänsten och garanterad tillsvidareanställning på heltid till alla som slutför vård- och omsorgsprogrammet som undersköterskor",
-      "ta fram en långsiktig kvalitetsplan för äldreomsorgen. Vårt mål är en jämlik och jämställd äldreomsorg med hög kvalitet i hela landet",
-      "bygga fler äldreboenden.",
-      "permanent resurstillskott till äldreomsorgen med 4 miljarder kronor årligen",
-      "ett äldreomsorgslyft för fler trygga medarbetare och en tryggare äldreomsorg",
-      "infört en återhämtningsbonus i sjukvården och äldreomsorgen för att främja ett hållbart arbetsliv för dem som arbetar inom hälso- och sjukvården",
-      "infört ett investeringsstöd för fler äldreboenden",
-      "förenklat möjligheten för kommuner att ge hemtjänst till äldre utan omfattande behovsprövning",
-      "infört ett särskilt vaccinationsprogram från hösten 2022 med avgiftsfri pneumokockvaccinering för medicinska riskgrupper och 75-åringar",
-      "tillsatt en utredning för att stoppa vinstjakten inom hälso- och sjukvården",
-      "underlättat för idéburen verksamhet att bedriva offentligt finansierad välfärd."
-    ],
-    "title": "Äldreomsorg",
-    "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/aldreomsorg",
-    "fetchDate": "2023-09-17T17:52:38.986Z",
     "party": "S",
     "subject": "aldrepolitik"
   },

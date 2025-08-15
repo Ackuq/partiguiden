@@ -1,76 +1,4 @@
 {
-  "https://moderaterna.se/var-politik/bistand/": {
-    "opinions": [
-      "Fokusera biståndet till länder, organisationer och tematiska områden där det kan göra konkret nytta",
-      "Öka andelen humanitärt bistånd",
-      "Prioritera insatser som stödjer arbetet för demokrati och mänskliga rättigheter",
-      "Utöka och effektivisera klimatbiståndet",
-      "Införa en ny budgeteringsprincip för biståndet som innefattar en fyraårig budgetram och högre transparens"
-    ],
-    "title": "Bistånd",
-    "url": "https://moderaterna.se/var-politik/bistand/",
-    "fetchDate": "2024-06-02T17:16:20.247Z",
-    "party": "M",
-    "subject": "utrikes--och-bistandsfragor"
-  },
-  "https://moderaterna.se/var-politik/bostader/": {
-    "opinions": [
-      "Förenkla byggreglerna för att det ska bli billigare och gå snabbare att bygga bostäder",
-      "Liberalisera strandskyddslagstiftningen för att öka tillgången till byggbar mark.",
-      "Skapa ett fungerande regelverk för hyressättning",
-      "Höja bolånetaket för att det ska bli lättare att komma in på den ägda bostadsmarknaden",
-      "Skapa fler vägar till ägt boende genom hyrköp och ägarlägenheter"
-    ],
-    "title": "Bostadspolitik",
-    "url": "https://moderaterna.se/var-politik/bostader/",
-    "fetchDate": "2025-05-25T06:30:39.933Z",
-    "party": "M",
-    "subject": "bostad"
-  },
-  "https://moderaterna.se/var-politik/energi/": {
-    "opinions": [
-      "Ge kärnkraften rätt politiska, regulatoriska och ekonomiska förutsättningar. Det ska byggas ny kärnkraft i Sverige",
-      "Garantera nybyggd kärnkraft rätten till drift och elproduktion under hela sin tekniska livslängd – om staten tvingar fram en nedläggning ska ägaren har rätt till skadestånd",
-      "Ta fram ett regelverk för små modulära reaktorer (SMR), som medger typgodkännande",
-      "Se över elmarknaden så att planerbara kraftslag som kärn- och vattenkraft får betalt för förmågan att producera el under årets alla timmar",
-      "Stoppa omprövningen av vattenkraftens befintliga miljötillstånd och nedmonteringen av befintlig vattenkraft",
-      "Ge ersättning till närboende och fastighetsägare som drabbas negativt av vindkraftsetableringar"
-    ],
-    "title": "Energi",
-    "url": "https://moderaterna.se/var-politik/energi/",
-    "fetchDate": "2025-05-25T06:30:54.440Z",
-    "party": "M",
-    "subject": "energi"
-  },
-  "https://moderaterna.se/var-politik/eu/": {
-    "opinions": [
-      "Öka EU:s stöd till Ukraina och press på Ryssland",
-      "EU:s gemensamma försvars-, utrikes- och säkerhetspolitik blir starkare",
-      "Förstärka kontrollen vid EU:s yttre gräns, få effektivare asylprocesser på plats samt öka återvändandet",
-      "Stärka företagsklimatet i Europa genom minskad regelbörda och färre handelshinder",
-      "EU ska ha en tydlig klimatagenda som ger industri och samhälle rätt förutsättningar att ställa om",
-      "Värna den fria rörligheten för hederliga människor genom att försvåra att den missbrukas av kriminella och den organiserade brottsligheten"
-    ],
-    "title": "EU",
-    "url": "https://moderaterna.se/var-politik/eu/",
-    "fetchDate": "2025-05-25T06:30:38.281Z",
-    "party": "M",
-    "subject": "utrikes--och-bistandsfragor"
-  },
-  "https://moderaterna.se/var-politik/forsvar/": {
-    "opinions": [
-      "Stärka alla delar av det militära försvaret, bl.a. genom att säkerställa försörjning av kompetent personal med goda anställningsvillkor, mer modern utrustning och en ökad övningsverksamhet.",
-      "Sträva efter en bred parlamentarisk förankring av den nya säkerhetspolitiska hållningen, inte minst genom försvarsberedningen.",
-      "Slutföra den militära integrationen med Nato och vara en aktiv medlem som bidrar till alliansens avskräckning och försvar. ",
-      "Sverige över tid ska ha ett försvarsanslag som garanterar en stark försvarsförmåga. Försvarsanslaget kommer stegvis att öka till 2,6 procent av BNP. Utvecklingen av säkerhetsläget är det som avgör om det kan behövas mer resurser till försvaret.",
-      "Lära oss av kriget i Ukraina exempelvis gällande värdet av ett starkt luftförsvar, behovet av att satsa på ny teknik som drönare, att kunna bemöta cyberangrepp, ha ett tillräckligt skydd för vår infrastruktur och att ha en väl fungerande försvarsunderrättelse."
-    ],
-    "title": "Försvar",
-    "url": "https://moderaterna.se/var-politik/forsvar/",
-    "fetchDate": "2025-05-25T06:30:54.397Z",
-    "party": "M",
-    "subject": "forsvar"
-  },
   "https://moderaterna.se/var-politik/hbtq/": {
     "opinions": [
       "Altruistiskt surrogatmödraskap ska vara möjligt i Sverige. Precis som vid adoptioner bör det föregås en omsorgsfull lämplighetsprövning",
@@ -86,84 +14,6 @@
     "party": "M",
     "subject": "jamstalldhet-och-diskriminering"
   },
-  "https://moderaterna.se/var-politik/idrott/": {
-    "opinions": [
-      "Utöka samarbetet mellan skola, fritidshem, idrotts-och friluftsorganisationer så att fler unga börjar idrotta och får en god grund för ett aktivt friluftsliv",
-      "Genomföra en ny idrottspolitisk utredning och ta fram en Elitidrottsstrategi",
-      "Säkerställa att det är möjligt för elitidrottare att kombinera studier i gymnasieskolan och i högre utbildning med sin idrottssatsning",
-      "Motverka matchfixning, olicensierat spelande och andra kriminella element inom idrotten"
-    ],
-    "title": "Idrott",
-    "url": "https://moderaterna.se/var-politik/idrott/",
-    "fetchDate": "2024-06-02T17:16:21.240Z",
-    "party": "M",
-    "subject": "kultur-media-och-idrott"
-  },
-  "https://moderaterna.se/var-politik/infrastruktur/": {
-    "opinions": [
-      "Hållbart investera i vägar, järnväg, hamnar och flygplatser",
-      "Tågen ska gå i tid och vägarna ska vara säkra att köra på",
-      "Minska underhållsskulden i svensk infrastruktur",
-      "Att ha den infrastruktur som krävs för ett starkt försvar",
-      "Skynda på utbyggnaden av laddinfrastruktur, vätgas- och biodrivmedelstillverkning",
-      "Möjliggöra den gröna omställningen med fossilfri el från sol, vind, vatten och utbyggd kärnkraft"
-    ],
-    "title": "Infrastruktur",
-    "url": "https://moderaterna.se/var-politik/infrastruktur/",
-    "fetchDate": "2025-05-25T06:30:54.524Z",
-    "party": "M",
-    "subject": "infrastruktur-och-trafik"
-  },
-  "https://moderaterna.se/var-politik/kultur/": {
-    "opinions": [
-      "Skapa bättre förutsättningar för de kulturella och kreativa branscherna genom tillväxtvänlig näringspolitik",
-      "Uppvärdera bildningens betydelse i ett framgångsrikt samhälle",
-      "Prioritera barn och ungas läsförmåga genom tillgång till fler böcker och bemannade skolbibliotek  ",
-      "Skydda, bevara och tillgängliggöra vårt gemensamma kulturarv "
-    ],
-    "title": "Kultur",
-    "url": "https://moderaterna.se/var-politik/kultur/",
-    "fetchDate": "2025-05-25T06:30:54.536Z",
-    "party": "M",
-    "subject": "kultur-media-och-idrott"
-  },
-  "https://moderaterna.se/var-politik/skola/": {
-    "opinions": [
-      "Återupprätta kunskapsfokusKurs- och ämnesplaner ska ha ett tydligt fokus på konkreta mätbara faktakunskaperTidiga insatser och nivågrupperingar för att barn ska få rätt stöd.Spetsklasser för elever med behov av högre taktCentralt rättade nationella prov som mäter elevernas kunskaper på ett rättvist sätt\n\nSkolinspektion som mäter kvalitet\n\n",
-      "Kurs- och ämnesplaner ska ha ett tydligt fokus på konkreta mätbara faktakunskaper",
-      "Tidiga insatser och nivågrupperingar för att barn ska få rätt stöd.",
-      "Spetsklasser för elever med behov av högre takt",
-      "Centralt rättade nationella prov som mäter elevernas kunskaper på ett rättvist sätt",
-      "Skolinspektion som mäter kvalitet",
-      "Stärka lärarrollenHöjd status genom stärkt auktoritetFristående lärarutbildningar med mer praktikHögre krav på lärarutbildningen\n\nAvlastning och minskad administrativ börda\n\n",
-      "Höjd status genom stärkt auktoritet",
-      "Fristående lärarutbildningar med mer praktik",
-      "Högre krav på lärarutbildningen",
-      "Avlastning och minskad administrativ börda",
-      "3. Öka trygghet och studiero i klassrummetStörre befogenheter till rektorer och lärareSkärpta ordningsreglerMätbara kunskaper vilket minskar stressen\n\nUtbyggd elevhälsa\n\n",
-      "Större befogenheter till rektorer och lärare",
-      "Skärpta ordningsregler",
-      "Mätbara kunskaper vilket minskar stressen",
-      "Utbyggd elevhälsa"
-    ],
-    "title": "Skola",
-    "url": "https://moderaterna.se/var-politik/skola/",
-    "fetchDate": "2024-06-02T17:16:21.764Z",
-    "party": "M",
-    "subject": "utbildning"
-  },
-  "https://moderaterna.se/var-politik/tillvaxt/": {
-    "opinions": [
-      "Skydda äganderätten och företagsfriheten",
-      "Säkerställa att regler som påverkar företagande och utveckling är effektiva, uppfyller ett tydligt syfte och innebär en så liten börda som möjligt",
-      "Värna konkurrenskraftiga företagsskatter och kapitalskatter samt stärka kompetensförsörjningen"
-    ],
-    "title": "Tillväxt",
-    "url": "https://moderaterna.se/var-politik/tillvaxt/",
-    "fetchDate": "2025-05-25T06:30:38.414Z",
-    "party": "M",
-    "subject": "naringsliv"
-  },
   "https://moderaterna.se/var-politik/arbetslinjen/": {
     "opinions": [
       "Sänka skatten på arbete – så att det alltid lönar sig mer att arbeta, särskilt för dem med låga och medelstora inkomster",
@@ -177,100 +27,6 @@
     "fetchDate": "2025-05-25T06:30:38.833Z",
     "party": "M",
     "subject": "jobb"
-  },
-  "https://moderaterna.se/var-politik/brott-och-straff/": {
-    "opinions": [
-      "Fokus byts från förövare till brottsoffer och samhällets behov av skydd",
-      "Straffen ska spegla brottens allvar och framstå som rimliga och rättvis",
-      "Bygga en effektivare brottsbekämpning som har mer resurser och bättre verktyg, samtidigt som vi värnar rättssäkerheten",
-      "Öka tryggheten bl.a. genom att fler brott utreds och klaras upp",
-      "Lika mycket satsningar görs på att förebygga som att bekämpa brott"
-    ],
-    "title": "Brott och straff",
-    "url": "https://moderaterna.se/var-politik/brott-och-straff/",
-    "fetchDate": "2025-05-25T06:30:38.719Z",
-    "party": "M",
-    "subject": "lag-och-ratt"
-  },
-  "https://moderaterna.se/var-politik/brottsforebyggande-atgarder/": {
-    "opinions": [
-      "Stöd ska sättas in tidigt, redan i mödra- och barnvården",
-      "Satsa på familjehem och skolsociala team",
-      "Riva sekretesshinder för att möjliggöra bättre samverkan",
-      "Det förebyggande arbetet ska vara långsiktigt och evidensbaserat",
-      "Att få en ny socialtjänstlag på plats med fokus på förbyggande arbete och tidiga insatser"
-    ],
-    "title": "Brottsförebyggande åtgärder",
-    "url": "https://moderaterna.se/var-politik/brottsforebyggande-atgarder/",
-    "fetchDate": "2024-06-02T17:16:20.660Z",
-    "party": "M",
-    "subject": "trygghetssystem-och-valfard"
-  },
-  "https://moderaterna.se/var-politik/en-gron-hoger/": {
-    "opinions": [
-      "I ökad utsträckning förebygga och hantera klimatförändringar genom att utöka och effektivisera Sveriges klimatbistånd",
-      "Sverige tydligt och aktivt ska försvara det svenska självbestämmandet över skogen i EU",
-      "Främja ett hållbart och konkurrenskraftigt jordbruk genom innovation och rättssäkra regler, för ökad självförsörjning och stärkt beredskap",
-      "Stärka förutsättningarna för ett hållbart fiske genom evidensbaserade kvotbeslut, regler som motverkar utfiskning och stöd till småskaligt kustnära fiske.",
-      "Satsa på storskalig infångning och lagring av koldioxid, så kallad bio-CCS. Lagring av koldioxid tjänster bör kunna sälja vidare på en frivilligmarknad",
-      "Satsa på industri- och klimatklivet"
-    ],
-    "title": "En grön höger",
-    "url": "https://moderaterna.se/var-politik/en-gron-hoger/",
-    "fetchDate": "2025-05-25T06:30:54.412Z",
-    "party": "M",
-    "subject": "miljo-och-klimat"
-  },
-  "https://moderaterna.se/var-politik/forskning-och-innovation/": {
-    "opinions": [
-      "Skapa bättre förutsättningar för forskning i världsklass",
-      "Underlätta rekryteringen av doktorander och forskare från andra länder",
-      "Satsa på forskning för att möta samhällsutmaningarna"
-    ],
-    "title": "Forskning och innovation",
-    "url": "https://moderaterna.se/var-politik/forskning-och-innovation/",
-    "fetchDate": "2024-06-02T17:16:19.522Z",
-    "party": "M",
-    "subject": "utbildning"
-  },
-  "https://moderaterna.se/var-politik/foretagsklimat/": {
-    "opinions": [
-      "Förenkla och förkorta tillståndsprocesser samt minska byråkratin för företagare – politiken ska tydligt styra mot minskad administrativ börda och minskade kostnader",
-      "Möjliggöra för fler företag att kunna använda sig av reglerna för personaloptioner, förenklade 3:12-regler samt forskningsavdrag",
-      "Värna konkurrenskraftiga företagsskatter och kapitalskatter samt stärka kompetensförsörjningen",
-      "Arbeta för att korta myndigheternas handläggningstider"
-    ],
-    "title": "Företagsklimat",
-    "url": "https://moderaterna.se/var-politik/foretagsklimat/",
-    "fetchDate": "2024-06-02T17:16:19.512Z",
-    "party": "M",
-    "subject": "jobb"
-  },
-  "https://moderaterna.se/var-politik/halso-och-sjukvard-samt-psykiatri/": {
-    "opinions": [
-      "Patienten ska få en trygg och tillgänglig vård i rätt tid av hög kvalitet",
-      "Prioritera en jämställd vård med fokus på kvinnors sjukdomar och hälsa, samt en förstärkt förlossningsvård",
-      "Ta bort köerna till barn- och ungdomspsykiatrin och följ upp den nationella strategin och handlingsplanen för psykisk hälsa och suicidprevention",
-      "Förstärka cancervården och barncancervården i syfte att minska dödligheten i cancer",
-      "Minska administration, krångel och byråkrati inom sjukvården för att öka patientens inflytande och minska personalens arbetsbelastning"
-    ],
-    "title": "Hälso- och sjukvård samt psykiatri",
-    "url": "https://moderaterna.se/var-politik/halso-och-sjukvard-samt-psykiatri/",
-    "fetchDate": "2025-05-25T06:30:54.560Z",
-    "party": "M",
-    "subject": "vard-och-omsorg"
-  },
-  "https://moderaterna.se/var-politik/hogskola-och-universitet/": {
-    "opinions": [
-      "Skapa ett nytt resurstilldelningssystem som premierar kvalitet",
-      "En översyn görs av utdelningen av studiemedel i syfte att stärka incitamentsstrukturerna för studenter",
-      "Utreda möjligheterna att undanröja hinder för ett ökat samarbete mellan lärosäten och bilda utbildningskluster"
-    ],
-    "title": "Högskola och universitet",
-    "url": "https://moderaterna.se/var-politik/hogskola-och-universitet/",
-    "fetchDate": "2024-06-02T17:16:21.972Z",
-    "party": "M",
-    "subject": "utbildning"
   },
   "https://moderaterna.se/var-politik/medborgarskap/": {
     "opinions": [
@@ -298,18 +54,6 @@
     "party": "M",
     "subject": "aldrepolitik"
   },
-  "https://moderaterna.se/var-politik/skatt/": {
-    "opinions": [
-      "Skatterna ska vara låga, effektiva och aldrig avkräva medborgarna mer än nödvändigt.",
-      "Det alltid ska löna sig att arbeta. Regeringen har genomfört ett nionde jobbskatteavdrag, vilket innebär sänkt skatt för alla som arbetar. Regeringen har även sänkt marginalskatterna, vilket bidrar till ökad tillväxt och att det lönar sig att utbilda sig och anstränga sig lite extra.",
-      "Det alltid ska löna sig att ha arbetat. Grundavdraget för pensionärer har stärkts, vilket innebär sänkt skatt för alla som har arbetat."
-    ],
-    "title": "Skatt",
-    "url": "https://moderaterna.se/var-politik/skatt/",
-    "fetchDate": "2025-05-25T06:30:54.501Z",
-    "party": "M",
-    "subject": "ekonomi-och-skatter"
-  },
   "https://moderaterna.se/var-politik/socialforsakringar-och-bidrag/": {
     "opinions": [
       "Alla som uppbär försörjningsstöd av arbetsmarknadsskäl ska delta i aktiviteter motsvarande sin arbetsförmåga för att få fullt bidrag",
@@ -335,34 +79,6 @@
     "fetchDate": "2025-05-25T06:30:54.387Z",
     "party": "M",
     "subject": "lag-och-ratt"
-  },
-  "https://moderaterna.se/var-politik/aldreomsorg-och-aldrevard/": {
-    "opinions": [
-      "Stärka den medicinska kompetensen och kontinuiteten i bemanningen i äldreomsorgen",
-      "Ta fram och genomföra språkkrav inom äldreomsorg och äldrevård",
-      "Prioritera satsningar på vällagad mat inom äldreomsorg och äldrevård",
-      "Prioritera verksamhetsnära forskning som rör omvårdnad och omsorg av äldre och genomföra den utvecklade nationella demensstrategin",
-      "Stärka och utveckla den förebyggande äldrevården med ett särskilt fokus på prevention av fallolyckor     "
-    ],
-    "title": "Äldreomsorg och äldrevård",
-    "url": "https://moderaterna.se/var-politik/aldreomsorg-och-aldrevard/",
-    "fetchDate": "2025-05-25T06:30:54.429Z",
-    "party": "M",
-    "subject": "aldrepolitik"
-  },
-  "https://moderaterna.se/var-politik/socialtjanst-och-social-omsorg/": {
-    "opinions": [
-      "Barnens bästa ska prioriteras och synliggöras i lagstiftningen, och barnen ska vara egna rättighetsbärare",
-      "Implementera en ny socialtjänstlag med fokus på det förebyggande arbetet samt riva sekretesshinder mellan socialtjänst, skola och polis för att möjliggöra informationsutbyte",
-      "Reformera den statliga barn- och ungdomsvården så att barn och unga ges den vård och stöd som de behöver, och samtidigt införa ungdomsfängelser för dem som begått grova brott",
-      "Förstärka arbetet med att ta fram fler familjehem",
-      "Prioritera skolsociala team i syfte att bygga förtroende, öka tilliten till skolan och socialtjänsten samt säkerställa en trygg skolmiljö"
-    ],
-    "title": "Socialtjänst",
-    "url": "https://moderaterna.se/var-politik/socialtjanst-och-social-omsorg/",
-    "fetchDate": "2025-05-25T06:30:54.550Z",
-    "party": "M",
-    "subject": "vard-och-omsorg"
   },
   "https://moderaterna.se/var-politik/integration/": {
     "opinions": [
@@ -391,20 +107,5 @@
     "fetchDate": "2025-05-25T06:30:54.643Z",
     "party": "M",
     "subject": "migration-och-integration"
-  },
-  "https://moderaterna.se/var-politik/jamstalldhet/": {
-    "opinions": [
-      "Skatter och bidrag ska utformas så att familjer inte förlorar på att kvinnor börjar arbeta",
-      "Modernisera socialförsäkringarna för att främja jämställdheten och värna flexibiliteten i föräldraförsäkringen",
-      "Minska det ofrivilliga deltidsarbetet, så att fler kvinnor kan stärka sin ekonomiska egenmakt",
-      "Straffskalorna med särskilt fokus på vålds- och sexualbrott ska återspegla brottens allvar",
-      "Införa obligatorisk häktning för grov kvinnofridskränkning",
-      "Skärpa straffen mot hedersrelaterat våld och förtryck och utvidga reseförbudet för barn och unga"
-    ],
-    "title": "Jämställdhet",
-    "url": "https://moderaterna.se/var-politik/jamstalldhet/",
-    "fetchDate": "2025-05-25T06:30:39.836Z",
-    "party": "M",
-    "subject": "jamstalldhet-och-diskriminering"
   }
 }

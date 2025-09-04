@@ -2113,10 +2113,14 @@
     "subject": "trygghetssystem-och-valfard"
   },
   "https://www.centerpartiet.se/var-politik/politik-a-o/utbildning": {
-    "opinions": [],
+    "opinions": [
+      "Stärka rektorer och lärare – de är avgörande för elevens skolframgång",
+      "Ge elever, föräldrar och lärare valfrihet",
+      "Att utbildning ska leda till jobb"
+    ],
     "title": "Utbildning",
     "url": "https://www.centerpartiet.se/var-politik/politik-a-o/utbildning",
-    "fetchDate": "2025-09-03T06:32:55.120Z",
+    "fetchDate": "2025-09-04T06:32:39.845Z",
     "party": "C",
     "subject": "utbildning"
   },

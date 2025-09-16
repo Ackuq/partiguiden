@@ -2,7 +2,7 @@
 
 import { useMemo } from "react";
 import { Cell, Pie, PieChart, ResponsiveContainer, Tooltip } from "recharts";
-import type { PieLabelProps } from "recharts/types/polar/Pie";
+import type { Props as LabelProps } from "recharts/types/component/Label";
 
 import { useCustomTooltip } from "@components/charts/tooltip";
 import type {
@@ -29,10 +29,11 @@ function blockSort(blocks: Blocks["values"]) {
   };
 }
 
-function renderCustomLabel(data: PieLabelProps) {
-  const payload = data.payload as BlockAverage[number] | AveragePoll[number];
-  const value = "value" in payload ? payload.value : payload.data;
-  return `${value.toFixed(2)}%`;
+function renderCustomLabel({ value }: LabelProps) {
+  if (typeof value === "number") {
+    return `${value.toFixed(2)}%`;
+  }
+  return `${value}%"`;
 }
 
 function formatValue(value: string | number) {

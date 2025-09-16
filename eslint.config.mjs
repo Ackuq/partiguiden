@@ -25,6 +25,13 @@ const config = tseslint.config(
     },
   },
   {
+    name: "Next.js environment",
+    files: ["./apps/web/next-env.d.ts"],
+    rules: {
+      "@typescript-eslint/triple-slash-reference": "off",
+    },
+  },
+  {
     name: "Ignore actions dist",
     ignores: ["actions/*/dist"],
   },

@@ -760,15 +760,14 @@
   },
   "https://www.mp.se/politik/tag/": {
     "opinions": [
-      "rusta upp och bygga ut järnvägen i hela landet",
-      "bygga ut och rusta upp befintlig järnväg och bygga nya stambanor för höghastighetståg",
-      "införa mål för tåg i tid",
-      "behålla nattågen i Sverige och starta nattåg till Europa",
-      "binda ihop hela Europa med tåg."
+      "rusta upp spåren och bygga ut järnvägen i hela landet inklusive nya stambanor",
+      "uppnå Trafikverkets mål för tåg i tid",
+      "fler tåg på spåren och utveckla nattågen både i Sverige och ut i Europa",
+      "binda ihop Europa med tåg"
     ],
     "title": "Tåg",
     "url": "https://www.mp.se/politik/tag/",
-    "fetchDate": "2023-09-17T17:52:35.611Z",
+    "fetchDate": "2025-09-16T06:33:52.812Z",
     "party": "MP",
     "subject": "infrastruktur-och-trafik"
   },

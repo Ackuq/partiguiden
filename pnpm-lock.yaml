@@ -55,8 +55,8 @@ catalogs:
       specifier: 19.1.13
       version: 19.1.13
     '@vercel/ncc':
-      specifier: 0.38.3
-      version: 0.38.3
+      specifier: 0.38.4
+      version: 0.38.4
     cheerio:
       specifier: 1.1.2
       version: 1.1.2
@@ -200,7 +200,7 @@ importers:
     devDependencies:
       '@vercel/ncc':
         specifier: 'catalog:'
-        version: 0.38.3
+        version: 0.38.4
 
   apps/web:
     dependencies:
@@ -1846,8 +1846,8 @@ packages:
     resolution: {integrity: sha512-T+S1KqRD4sg/bHfLwrpF/K3gQLBM1n7Rp7OjjikjTEssI2YJzQpi5WXoynOaQ93ERIuq3O8RBTOUYDKszUCEHw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  '@vercel/ncc@0.38.3':
-    resolution: {integrity: sha512-rnK6hJBS6mwc+Bkab+PGPs9OiS0i/3kdTO+CkI8V0/VrW3vmz7O2Pxjw/owOlmo6PKEIxRSeZKv/kuL9itnpYA==}
+  '@vercel/ncc@0.38.4':
+    resolution: {integrity: sha512-8LwjnlP39s08C08J5NstzriPvW1SP8Zfpp1BvC2sI35kPeZnHfxVkCwu4/+Wodgnd60UtT1n8K8zw+Mp7J9JmQ==}
     hasBin: true
 
   '@webassemblyjs/ast@1.14.1':
@@ -5699,7 +5699,7 @@ snapshots:
       '@typescript-eslint/types': 8.43.0
       eslint-visitor-keys: 4.2.1
 
-  '@vercel/ncc@0.38.3': {}
+  '@vercel/ncc@0.38.4': {}
 
   '@webassemblyjs/ast@1.14.1':
     dependencies:

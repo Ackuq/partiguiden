@@ -7,20 +7,28 @@ updates:
         dependency-type: "production"
         update-types:
           - major
+        patterns:
+          - "*"
       production-dependencies-minor:
         dependency-type: "production"
         update-types:
           - minor
           - patch
+        patterns:
+          - "*"
       development-dependencies-major:
         dependency-type: "development"
         update-types:
           - major
+        patterns:
+          - "*"
       development-dependencies-minor:
         dependency-type: "development"
         update-types:
           - minor
           - patch
+        patterns:
+          - "*"
     schedule:
       interval: daily
       time: "06:00"

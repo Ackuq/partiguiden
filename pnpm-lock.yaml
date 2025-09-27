@@ -277,13 +277,13 @@ importers:
 
   packages/party-data:
     dependencies:
+      '@inquirer/prompts':
+        specifier: 'catalog:'
+        version: 7.8.6(@types/node@24.5.2)
       prettier:
         specifier: 'catalog:'
         version: 3.6.2
     devDependencies:
-      '@inquirer/prompts':
-        specifier: 'catalog:'
-        version: 7.8.6(@types/node@24.5.2)
       '@types/node':
         specifier: 'catalog:'
         version: 24.5.2

@@ -8,6 +8,9 @@
     "clean": "rm -rf .turbo node_modules",
     "lint:tsc": "tsc"
   },
+  "bin": {
+    "party-data": "scripts/cli.ts"
+  },
   "exports": {
     "./utils": "./src/utils.ts",
     "./reader": "./src/reader.ts",
@@ -15,10 +18,10 @@
     "./types": "./src/types.ts"
   },
   "dependencies": {
-    "prettier": "catalog:"
+    "prettier": "catalog:",
+    "@inquirer/prompts": "catalog:"
   },
   "devDependencies": {
-    "@inquirer/prompts": "catalog:",
     "@types/node": "catalog:"
   }
 }

@@ -7,29 +7,29 @@ catalog:
   "@actions/core": 1.11.1
   "@actions/exec": 1.1.1
   "@actions/github": 6.0.1
-  "@eslint/js": 9.35.0
+  "@eslint/js": 9.36.0
   "@google-analytics/data": 5.2.0
   "@heroicons/react": 2.2.0
   "@inquirer/prompts": 7.8.6
-  "@next/bundle-analyzer": 15.5.3
-  "@next/eslint-plugin-next": 15.5.3
-  "@next/third-parties": 15.5.3
-  "@sentry/nextjs": 10.11.0
+  "@next/bundle-analyzer": 15.5.4
+  "@next/eslint-plugin-next": 15.5.4
+  "@next/third-parties": 15.5.4
+  "@sentry/nextjs": 10.15.0
   "@supercharge/promise-pool": 3.2.0
   "@tailwindcss/postcss": 4.1.13
   "@trivago/prettier-plugin-sort-imports": 5.2.2
   "@types/node": 22.16.5
-  "@types/react": 19.1.13
-  "@vercel/ncc": 0.38.3
+  "@types/react": 19.1.14
+  "@vercel/ncc": 0.38.4
   cheerio: 1.1.2
   domhandler: 5.0.3
-  eslint: 9.35.0
+  eslint: 9.36.0
   eslint-plugin-import: 2.32.0
   eslint-plugin-react: 7.37.5
   eslint-plugin-react-hooks: 5.2.0
-  eslint-plugin-turbo: 2.5.6
-  knip: 5.63.1
-  next: 15.5.3
+  eslint-plugin-turbo: 2.5.8
+  knip: 5.64.1
+  next: 15.5.4
   next-sitemap: 4.2.3
   next-themes: 0.4.6
   pdfjs-dist: 5.4.149
@@ -39,14 +39,14 @@ catalog:
   react: 19.1.1
   react-dom: 19.1.1
   react-share: 5.2.2
-  recharts: 3.2.0
+  recharts: 3.2.1
   strip-json-comments: 5.0.3
   tailwind-merge: 3.3.1
   tailwindcss: 4.1.13
-  turbo: 2.5.6
+  turbo: 2.5.8
   typed.js: 2.1.0
   typescript: 5.9.2
-  typescript-eslint: 8.43.0
+  typescript-eslint: 8.44.1
   undici: 7.16.0
 
 catalogMode: strict

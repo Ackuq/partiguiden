@@ -13,6 +13,7 @@ const config: KnipConfig = {
       next: {
         project: ["config/**/*"],
       },
+      ignoreDependencies: ["protobufjs"],
     },
     "actions/update-standpoints": {
       ignore: ["dist/**/*"],

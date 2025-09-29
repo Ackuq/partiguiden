@@ -41,6 +41,7 @@
     "@types/node": "catalog:",
     "@types/react": "catalog:",
     "next-sitemap": "catalog:",
-    "postcss": "catalog:"
+    "postcss": "catalog:",
+    "protobufjs": "catalog:"
   }
 }

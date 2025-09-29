@@ -102,6 +102,9 @@ catalogs:
     prettier-plugin-tailwindcss:
       specifier: 0.6.14
       version: 0.6.14
+    protobufjs:
+      specifier: 7.5.4
+      version: 7.5.4
     react:
       specifier: 19.1.1
       version: 19.1.1
@@ -274,6 +277,9 @@ importers:
       postcss:
         specifier: 'catalog:'
         version: 8.5.6
+      protobufjs:
+        specifier: 'catalog:'
+        version: 7.5.4
 
   packages/party-data:
     dependencies:
@@ -7357,7 +7363,7 @@ snapshots:
       '@protobufjs/path': 1.1.2
       '@protobufjs/pool': 1.1.0
       '@protobufjs/utf8': 1.1.0
-      '@types/node': 22.18.6
+      '@types/node': 24.5.2
       long: 5.3.2
 
   proxy-from-env@1.1.0: {}

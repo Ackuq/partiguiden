@@ -2,9 +2,10 @@
 import eslint from "@eslint/js";
 import importPlugin from "eslint-plugin-import";
 import turboPlugin from "eslint-plugin-turbo";
+import { defineConfig } from "eslint/config";
 import tseslint from "typescript-eslint";
 
-const baseConfig = tseslint.config(
+const baseConfig = defineConfig(
   eslint.configs.recommended,
   {
     name: "Import plugin",
@@ -12,8 +13,8 @@ const baseConfig = tseslint.config(
       import: importPlugin,
     },
   },
-  ...tseslint.configs.recommendedTypeChecked,
-  ...tseslint.configs.stylisticTypeChecked,
+  tseslint.configs.recommendedTypeChecked,
+  tseslint.configs.stylisticTypeChecked,
   turboPlugin.configs["flat/recommended"],
   {
     name: "Typescript ESLint overrides",

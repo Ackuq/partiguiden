@@ -1,13 +1,13 @@
 // @ts-check
 import reactPlugin from "eslint-plugin-react";
 import reactHooksPlugin from "eslint-plugin-react-hooks";
-import tseslint from "typescript-eslint";
+import { defineConfig } from "eslint/config";
 
 const reactApps = ["apps/web"];
 
 const files = reactApps.flatMap((app) => [`${app}/**/*.ts`, `${app}/**/*.tsx`]);
 
-const reactConfig = tseslint.config(
+const reactConfig = defineConfig(
   {
     name: "React plugins",
     files,
@@ -19,7 +19,7 @@ const reactConfig = tseslint.config(
     plugins: {
       "react-hooks": reactHooksPlugin,
     },
-    rules: reactHooksPlugin.configs.recommended.rules,
+    extends: ["react-hooks/recommended"],
   },
 );
 

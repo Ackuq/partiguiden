@@ -1,13 +1,13 @@
 // @ts-check
 import nextPlugin from "@next/eslint-plugin-next";
-import tseslint from "typescript-eslint";
+import { defineConfig } from "eslint/config";
 
 const nextApps = ["apps/web"];
 
 const files = nextApps.flatMap((app) => [`${app}/**/*.ts`, `${app}/**/*.tsx`]);
 const ignores = nextApps.map((app) => `**/${app}/.next`);
 
-const nextConfig = tseslint.config(
+const nextConfig = defineConfig(
   {
     name: "Next plugin",
     files,

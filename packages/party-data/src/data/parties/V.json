@@ -444,12 +444,10 @@
     "subject": "migration-och-integration"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/jamlikhet/": {
-    "opinions": [
-      "Vänsterpartiet arbetar för att skapa ett samhälle för alla – inte bara några få. Vi tycker det är fel att en liten elit har hur mycket pengar som helst, samtidigt som många familjer behöver vända på varenda krona för att få vardagen att gå ihop."
-    ],
+    "opinions": [],
     "title": "Jämlikhet",
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/jamlikhet/",
-    "fetchDate": "2023-09-17T17:52:35.547Z",
+    "fetchDate": "2025-10-02T06:33:37.142Z",
     "party": "V",
     "subject": "jamstalldhet-och-diskriminering"
   },

@@ -34,6 +34,7 @@ function Dropdown({ routes, title, Icon }: DropdownProps) {
 
   useEffect(() => {
     if (!routePaths.includes(pathname ?? "")) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       close();
     }
   }, [pathname, routePaths]);

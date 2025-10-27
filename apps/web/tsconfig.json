@@ -11,7 +11,7 @@
     "skipLibCheck": true,
     "target": "ESNext",
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
-    "jsx": "preserve",
+    "jsx": "react-jsx",
     "plugins": [
       {
         "name": "next"
@@ -21,7 +21,6 @@
     "forceConsistentCasingInFileNames": true,
     "allowJs": true,
     "incremental": true,
-
     /** Module **/
     "module": "Preserve",
     "moduleResolution": "bundler",
@@ -37,6 +36,6 @@
     /** Cache */
     "tsBuildInfoFile": "node_modules/.cache/tsbuildinfo.json"
   },
-  "include": [".", ".next/types/**/*.ts"],
+  "include": [".", ".next/types/**/*.ts", ".next/dev/types/**/*.ts"],
   "exclude": ["node_modules", ".next"]
 }

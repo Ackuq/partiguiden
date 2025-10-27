@@ -1,13 +1,12 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 
 import FlowAdWrapper from "@components/ads/flow-ad-wrapper";
 import Pagination from "@components/common/pagination";
 import { useFilterContext } from "@components/filter/filter-context";
 import type { DebateListResponse } from "@lib/api/debates/types";
-import { useIsMount } from "@lib/hooks/use-is-mount";
 import { routes } from "@lib/navigation";
 import { buildSearchParameters } from "@lib/utils/search-params";
 
@@ -19,12 +18,13 @@ interface Props {
 }
 
 export default function DebateList({ debates, currentPage }: Props) {
+  const hasMounted = useRef(false);
   const router = useRouter();
-  const isMount = useIsMount();
   const { search, toggles } = useFilterContext();
 
   useEffect(() => {
-    if (isMount) {
+    if (!hasMounted.current) {
+      hasMounted.current = true;
       return;
     }
     const debounce = setTimeout(() => {
@@ -35,7 +35,6 @@ export default function DebateList({ debates, currentPage }: Props) {
     return () => {
       clearTimeout(debounce);
     };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [router, search, toggles]);
 
   function onChangePage(newPage: number) {

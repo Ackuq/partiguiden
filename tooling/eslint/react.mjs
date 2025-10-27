@@ -14,12 +14,9 @@ const reactConfig = defineConfig(
     ...reactPlugin.configs.flat["jsx-runtime"],
   },
   {
-    files,
     name: "React Hooks plugin",
-    plugins: {
-      "react-hooks": reactHooksPlugin,
-    },
-    extends: ["react-hooks/recommended"],
+    files,
+    ...reactHooksPlugin.configs.flat.recommended,
   },
 );
 

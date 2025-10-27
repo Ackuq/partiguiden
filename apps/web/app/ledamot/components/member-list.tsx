@@ -35,6 +35,7 @@ export default function MemberList({ members }: Props) {
   }, [search, activeToggles, members]);
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setAmount(MEMBERS_STEP);
   }, [search, activeToggles, members]);
 

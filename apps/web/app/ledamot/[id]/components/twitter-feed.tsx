@@ -17,6 +17,7 @@ export default function TwitterFeed({ twitterFeed }: Props) {
   useEffect(() => {
     const twitterHandle = twitterFeed?.twitterHandle.value;
     if (twitterHandle) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setLoading(true);
       const container = document.getElementById("twitterContainer");
       if (container) {

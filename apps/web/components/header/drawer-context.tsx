@@ -30,6 +30,7 @@ export const DrawerContextProvider = ({
   }
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     closeDrawer();
   }, [pathname]);
 

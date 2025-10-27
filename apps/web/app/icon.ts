@@ -1,7 +1,5 @@
 import PartiguidenIcon from "@lib/image/icon";
 
-export const runtime = "edge";
-
 export const contentType = "image/png";
 
 const configurations = [32, 48, 72, 128, 192, 384, 512];

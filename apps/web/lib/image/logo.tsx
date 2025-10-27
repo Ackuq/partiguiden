@@ -1,4 +1,5 @@
 import { ImageResponse } from "next/og";
+import { readFile } from "node:fs/promises";
 import colors from "tailwindcss/colors";
 
 interface Size {
@@ -7,9 +8,9 @@ interface Size {
 }
 
 export default async function PartiguidenLogo({ width, height }: Size) {
-  const robotoMedium = fetch(
+  const robotoMedium = await readFile(
     new URL("./fonts/Roboto-Bold.ttf", import.meta.url),
-  ).then((res) => res.arrayBuffer());
+  );
 
   return new ImageResponse(
     (
@@ -35,7 +36,7 @@ export default async function PartiguidenLogo({ width, height }: Size) {
       fonts: [
         {
           name: "Roboto",
-          data: await robotoMedium,
+          data: robotoMedium,
           style: "normal",
           weight: 700,
         },

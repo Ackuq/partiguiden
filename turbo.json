@@ -17,7 +17,7 @@
     },
     "lint:tsc": {
       "dependsOn": [],
-      "outputs": ["node_modules/.cache/tsbuildinfo.json"]
+      "outputs": [".cache/tsbuildinfo.json"]
     },
     "clean": {
       "cache": false

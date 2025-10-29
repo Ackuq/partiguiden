@@ -24,6 +24,7 @@
     "typescript-eslint": "catalog:"
   },
   "devDependencies": {
+    "@partiguiden/tsconfig": "workspace:*",
     "@types/node": "catalog:"
   }
 }

@@ -39,6 +39,7 @@
   "devDependencies": {
     "@next/bundle-analyzer": "catalog:",
     "@partiguiden/eslint-config": "workspace:*",
+    "@partiguiden/tsconfig": "workspace:*",
     "@tailwindcss/postcss": "catalog:",
     "@types/node": "catalog:",
     "@types/react": "catalog:",

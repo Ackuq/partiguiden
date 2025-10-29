@@ -1,35 +1,5 @@
 {
-  "compilerOptions": {
-    /** Base Options **/
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "target": "ESNext",
-    "lib": ["ESNext"],
-    "allowJs": true,
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "forceConsistentCasingInFileNames": true,
-
-    /** Module **/
-    "module": "NodeNext",
-    "moduleResolution": "nodenext",
-
-    /** Keep TSC performant in monorepos **/
-    "incremental": true,
-    "disableSourceOfProjectReferenceRedirect": true,
-
-    /** Strictness **/
-    "strict": true,
-    "checkJs": true,
-    "noImplicitAny": true,
-    "noImplicitThis": true,
-
-    /* Allow node running **/
-    "erasableSyntaxOnly": true,
-    "allowImportingTsExtensions": true,
-
-    /** Emit Options **/
-    "noEmit": true
-  },
-  "exclude": ["node_modules"]
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "@partiguiden/tsconfig/tsconfig.base.json",
+  "exclude": ["actions", "apps", "packages", "tooling"]
 }

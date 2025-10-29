@@ -24,6 +24,7 @@
   },
   "devDependencies": {
     "@partiguiden/eslint-config": "workspace:*",
+    "@partiguiden/tsconfig": "workspace:*",
     "@types/node": "catalog:",
     "eslint": "catalog:"
   }

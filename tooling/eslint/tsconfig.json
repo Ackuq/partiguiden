@@ -1,6 +1,6 @@
 {
-  "extends": "../../tsconfig.json",
-  "compilerOptions": {
-    "tsBuildInfoFile": "node_modules/.cache/tsbuildinfo.json"
-  }
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "@partiguiden/tsconfig/tsconfig.base.json",
+  "include": ["."],
+  "exclude": ["node_modules"]
 }

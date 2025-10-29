@@ -1,15 +1,8 @@
 {
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "@partiguiden/tsconfig/tsconfig.base.json",
   "compilerOptions": {
-    /** Paths **/
-    "paths": {
-      "@app/*": ["./app/*"],
-      "@components/*": ["./components/*"],
-      "@lib/*": ["./lib/*"]
-    },
-    /** Base Options **/
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "target": "ESNext",
+    "erasableSyntaxOnly": false,
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "jsx": "react-jsx",
     "plugins": [
@@ -17,24 +10,11 @@
         "name": "next"
       }
     ],
-    "isolatedModules": true,
-    "forceConsistentCasingInFileNames": true,
-    "allowJs": true,
-    "incremental": true,
-    /** Module **/
-    "module": "Preserve",
-    "moduleResolution": "bundler",
-    /** Strictness **/
-    "strict": true,
-    "checkJs": true,
-    "noImplicitAny": true,
-    "noImplicitThis": true,
-    /** Allow node running **/
-    "allowImportingTsExtensions": true,
-    /** Emit Options **/
-    "noEmit": true,
-    /** Cache */
-    "tsBuildInfoFile": "node_modules/.cache/tsbuildinfo.json"
+    "paths": {
+      "@app/*": ["./app/*"],
+      "@components/*": ["./components/*"],
+      "@lib/*": ["./lib/*"]
+    }
   },
   "include": [".", ".next/types/**/*.ts", ".next/dev/types/**/*.ts"],
   "exclude": ["node_modules", ".next"]

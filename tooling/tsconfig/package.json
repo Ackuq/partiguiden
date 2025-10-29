@@ -1,0 +1,7 @@
+{
+  "name": "@partiguiden/tsconfig",
+  "private": true,
+  "files": [
+    "*.json"
+  ]
+}

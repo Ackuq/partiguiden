@@ -18,19 +18,13 @@
     "format:check": "prettier -c '**/*.{js,mjs,ts,tsx,md,json,css}'"
   },
   "devDependencies": {
-    "@eslint/js": "catalog:",
-    "@next/eslint-plugin-next": "catalog:",
+    "@partiguiden/eslint-config": "workspace:*",
     "@trivago/prettier-plugin-sort-imports": "catalog:",
     "eslint": "catalog:",
-    "eslint-plugin-import": "catalog:",
-    "eslint-plugin-react": "catalog:",
-    "eslint-plugin-react-hooks": "catalog:",
-    "eslint-plugin-turbo": "catalog:",
     "knip": "catalog:",
     "prettier": "catalog:",
     "prettier-plugin-tailwindcss": "catalog:",
     "turbo": "catalog:",
-    "typescript": "catalog:",
-    "typescript-eslint": "catalog:"
+    "typescript": "catalog:"
   }
 }

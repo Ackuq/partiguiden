@@ -2,6 +2,7 @@ packages:
   - apps/*
   - packages/*
   - actions/*
+  - tooling/*
 
 catalog:
   "@actions/core": 1.11.1
@@ -24,6 +25,7 @@ catalog:
   cheerio: 1.1.2
   domhandler: 5.0.3
   eslint: 9.38.0
+  eslint-config-next: ^16.0.1
   eslint-plugin-import: 2.32.0
   eslint-plugin-react: 7.37.5
   eslint-plugin-react-hooks: 7.0.1
@@ -59,6 +61,7 @@ onlyBuiltDependencies:
   - oxc-resolver
   - protobufjs
   - sharp
+  - unrs-resolver
 
 updateConfig:
   ignoreDependencies:

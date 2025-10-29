@@ -43,6 +43,7 @@
     "@tailwindcss/postcss": "catalog:",
     "@types/node": "catalog:",
     "@types/react": "catalog:",
+    "babel-plugin-react-compiler": "catalog:",
     "eslint": "catalog:",
     "next-sitemap": "catalog:",
     "postcss": "catalog:",

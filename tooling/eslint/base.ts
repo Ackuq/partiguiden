@@ -1,5 +1,4 @@
 import eslint from "@eslint/js";
-import { ESLint } from "eslint";
 import importPlugin from "eslint-plugin-import";
 import turboPlugin from "eslint-plugin-turbo";
 import { defineConfig } from "eslint/config";
@@ -9,6 +8,7 @@ const baseConfig = defineConfig(
   {
     files: ["**/*.js", "**/*.cjs", "**/*.mjs", "**/*.ts"],
     plugins: {
+      // @ts-expect-error -- Colliding eslint versions
       import: importPlugin,
     },
     extends: [

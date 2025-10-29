@@ -6,6 +6,7 @@ import { defineConfig } from "eslint/config";
 const actionConfig = defineConfig({
   files: ["**/*.js", "**/*.cjs", "**/*.mjs"],
   plugins: {
+    // @ts-expect-error -- Colliding eslint versions
     import: importPlugin,
   },
   extends: [

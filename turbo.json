@@ -11,8 +11,12 @@
       "persistent": true,
       "cache": false
     },
+    "lint:eslint": {
+      "dependsOn": [],
+      "outputs": []
+    },
     "lint:tsc": {
-      "dependsOn": ["^lint:tsc"],
+      "dependsOn": [],
       "outputs": ["node_modules/.cache/tsbuildinfo.json"]
     },
     "clean": {

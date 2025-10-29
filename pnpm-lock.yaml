@@ -64,7 +64,7 @@ catalogs:
       specifier: 9.38.0
       version: 9.38.0
     eslint-config-next:
-      specifier: ^16.0.1
+      specifier: 16.0.1
       version: 16.0.1
     eslint-plugin-import:
       specifier: 2.32.0

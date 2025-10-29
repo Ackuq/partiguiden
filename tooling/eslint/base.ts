@@ -1,4 +1,5 @@
 import eslint from "@eslint/js";
+import { ESLint } from "eslint";
 import importPlugin from "eslint-plugin-import";
 import turboPlugin from "eslint-plugin-turbo";
 import { defineConfig } from "eslint/config";

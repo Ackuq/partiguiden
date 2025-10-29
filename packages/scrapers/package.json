@@ -7,6 +7,7 @@
     "scrape": "node --experimental-strip-types src/index.ts",
     "scrape:all": "node --experimental-strip-types src/index.ts -p all",
     "clean": "rm -rf .turbo node_modules",
+    "lint:eslint": "eslint",
     "lint:tsc": "tsc"
   },
   "dependencies": {
@@ -16,7 +17,9 @@
     "undici": "catalog:"
   },
   "devDependencies": {
+    "@partiguiden/eslint-config": "workspace:*",
     "@types/node": "catalog:",
-    "domhandler": "catalog:"
+    "domhandler": "catalog:",
+    "eslint": "catalog:"
   }
 }

@@ -6,7 +6,8 @@
   "scripts": {
     "build": "ncc build src/main.mjs -o dist",
     "build:watch": "pnpm run build --watch",
-    "clean": "rm -rf .turbo node_modules"
+    "clean": "rm -rf .turbo node_modules",
+    "lint:eslint": "eslint"
   },
   "dependencies": {
     "@actions/core": "catalog:",
@@ -14,6 +15,8 @@
     "@actions/github": "catalog:"
   },
   "devDependencies": {
-    "@vercel/ncc": "catalog:"
+    "@partiguiden/eslint-config": "workspace:*",
+    "@vercel/ncc": "catalog:",
+    "eslint": "catalog:"
   }
 }

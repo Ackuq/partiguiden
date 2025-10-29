@@ -1,4 +1,3 @@
-// @ts-check
 import eslint from "@eslint/js";
 import importPlugin from "eslint-plugin-import";
 import turboPlugin from "eslint-plugin-turbo";
@@ -6,18 +5,19 @@ import { defineConfig } from "eslint/config";
 import tseslint from "typescript-eslint";
 
 const baseConfig = defineConfig(
-  eslint.configs.recommended,
   {
-    name: "Import plugin",
+    files: ["**/*.js", "**/*.cjs", "**/*.mjs", "**/*.ts"],
     plugins: {
+      // @ts-expect-error -- Colliding eslint versions
       import: importPlugin,
     },
-  },
-  tseslint.configs.recommendedTypeChecked,
-  tseslint.configs.stylisticTypeChecked,
-  turboPlugin.configs["flat/recommended"],
-  {
-    name: "Typescript ESLint overrides",
+    extends: [
+      eslint.configs.recommended,
+      tseslint.configs.recommended,
+      tseslint.configs.recommendedTypeChecked,
+      tseslint.configs.stylisticTypeChecked,
+      turboPlugin.configs["flat/recommended"],
+    ],
     rules: {
       "@typescript-eslint/no-unused-vars": [
         "error",
@@ -32,6 +32,15 @@ const baseConfig = defineConfig(
         { checksVoidReturn: { attributes: false } },
       ],
       "import/consistent-type-specifier-style": ["error", "prefer-top-level"],
+    },
+  },
+  {
+    linterOptions: { reportUnusedDisableDirectives: true },
+    languageOptions: {
+      parserOptions: {
+        projectService: true,
+        tsconfigRootDir: import.meta.dirname,
+      },
     },
   },
 );

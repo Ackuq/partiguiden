@@ -10,6 +10,7 @@
     "start": "next start",
     "build": "next build",
     "postbuild": "next-sitemap",
+    "lint:eslint": "eslint",
     "lint:tsc": "tsc"
   },
   "repository": {
@@ -37,9 +38,11 @@
   },
   "devDependencies": {
     "@next/bundle-analyzer": "catalog:",
+    "@partiguiden/eslint-config": "workspace:*",
     "@tailwindcss/postcss": "catalog:",
     "@types/node": "catalog:",
     "@types/react": "catalog:",
+    "eslint": "catalog:",
     "next-sitemap": "catalog:",
     "postcss": "catalog:",
     "protobufjs": "catalog:"

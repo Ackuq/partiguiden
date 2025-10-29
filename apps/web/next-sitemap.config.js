@@ -1,4 +1,3 @@
-/* global process module */
 // @ts-check
 
 /** @type {import('next-sitemap').IConfig} */

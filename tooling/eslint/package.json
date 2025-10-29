@@ -1,0 +1,29 @@
+{
+  "name": "@partiguiden/eslint-config",
+  "version": "1.0.0",
+  "type": "module",
+  "exports": {
+    "./action": "./action.ts",
+    "./base": "./base.ts",
+    "./next": "./next.ts",
+    "./react": "./react.ts"
+  },
+  "scripts": {
+    "clean": "rm -rf .turbo node_modules",
+    "lint:eslint": "eslint",
+    "lint:tsc": "tsc"
+  },
+  "dependencies": {
+    "@eslint/js": "catalog:",
+    "eslint": "catalog:",
+    "eslint-config-next": "catalog:",
+    "eslint-plugin-import": "catalog:",
+    "eslint-plugin-react": "catalog:",
+    "eslint-plugin-react-hooks": "catalog:",
+    "eslint-plugin-turbo": "catalog:",
+    "typescript-eslint": "catalog:"
+  },
+  "devDependencies": {
+    "@types/node": "catalog:"
+  }
+}

@@ -6,6 +6,7 @@
   "scripts": {
     "cli": "node --experimental-strip-types scripts/cli.ts",
     "clean": "rm -rf .turbo node_modules",
+    "lint:eslint": "eslint",
     "lint:tsc": "tsc"
   },
   "bin": {
@@ -18,10 +19,12 @@
     "./types": "./src/types.ts"
   },
   "dependencies": {
-    "prettier": "catalog:",
-    "@inquirer/prompts": "catalog:"
+    "@inquirer/prompts": "catalog:",
+    "prettier": "catalog:"
   },
   "devDependencies": {
-    "@types/node": "catalog:"
+    "@partiguiden/eslint-config": "workspace:*",
+    "@types/node": "catalog:",
+    "eslint": "catalog:"
   }
 }

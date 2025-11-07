@@ -788,17 +788,16 @@
   },
   "https://www.mp.se/politik/vapenexport/": {
     "opinions": [
-      "Stoppa EU-ländernas vapenexport till diktaturer.",
-      "Driva fredsfrämjande samarbeten och verka för global nedrustning.",
+      "Att Sverige ska vara en stark aktör för fredsfrämjande arbete och verka för global nedrustning.",
       "Att Sverige och EU är ledande i etiska krav på vår vapenexport.",
-      "Att Sverige verkar för ökade materielsamarbeten och delade utvecklingskostnader med andra länder.",
-      "Att Sverige inom EU verkar för en gemensam försvarsmarknad, ökad öppenhet och minskad korruption.",
-      "Ratificera konventionen om kärnvapenförbud och arbeta för ett totalförbud mot att använda autonoma vapensystem.",
-      "Införa en lag som förbjuder kärnvapen på svensk mark."
+      "Att Sverige ratificerar konventionen om kärnvapenförbud.",
+      "Att Sverige inför en lag som förbjuder kärnvapen på svensk mark.",
+      "Att Sverige verkar för ett globalt förbud mot dödliga autonoma vapen.",
+      "Att Sverige inom EU verkar för en gemensam försvarsmarknad, ökade materielsamarbeten och delade utvecklingskostnader med andra länder."
     ],
     "title": "Vapenexport",
     "url": "https://www.mp.se/politik/vapenexport/",
-    "fetchDate": "2024-06-16T06:24:00.035Z",
+    "fetchDate": "2025-11-07T06:35:13.131Z",
     "party": "MP",
     "subject": "utrikes--och-bistandsfragor"
   },

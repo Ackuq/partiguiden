@@ -3,7 +3,6 @@ import reactHooks from "eslint-plugin-react-hooks";
 import { defineConfig } from "eslint/config";
 
 const reactConfig = defineConfig(
-  // @ts-expect-error -- Colliding eslint versions
   {
     files: ["**/*.jsx", "**/*.tsx"],
     name: "React plugins",

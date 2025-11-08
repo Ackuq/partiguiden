@@ -8,7 +8,6 @@ const baseConfig = defineConfig(
   {
     files: ["**/*.js", "**/*.cjs", "**/*.mjs", "**/*.ts"],
     plugins: {
-      // @ts-expect-error -- Colliding eslint versions
       import: importPlugin,
     },
     extends: [

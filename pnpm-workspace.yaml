@@ -11,7 +11,7 @@ catalog:
   "@eslint/js": 9.39.1
   "@google-analytics/data": 5.2.1
   "@heroicons/react": 2.2.0
-  "@inquirer/prompts": 7.9.0
+  "@inquirer/prompts": 7.10.0
   "@next/bundle-analyzer": 16.0.1
   "@next/third-parties": 16.0.1
   "@sentry/nextjs": 10.23.0
@@ -43,7 +43,7 @@ catalog:
   react-share: 5.2.2
   recharts: 3.3.0
   strip-json-comments: 5.0.3
-  tailwind-merge: 3.3.1
+  tailwind-merge: 3.4.0
   tailwindcss: 4.1.17
   turbo: 2.6.0
   typed.js: 2.1.0

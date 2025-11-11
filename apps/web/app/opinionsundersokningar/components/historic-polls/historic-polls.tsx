@@ -47,7 +47,7 @@ export default function HistoricPolls({ historicPolls }: Props) {
   };
 
   return (
-    <div className="h-[30rem]">
+    <div className="h-120">
       <ResponsiveContainer>
         <LineChart data={historicPolls}>
           <XAxis type="category" dataKey="date" />

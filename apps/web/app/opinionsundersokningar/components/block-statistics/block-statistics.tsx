@@ -1,8 +1,14 @@
 "use client";
 
 import { useMemo } from "react";
-import { Cell, Pie, PieChart, ResponsiveContainer, Tooltip } from "recharts";
-import type { Props as LabelProps } from "recharts/types/component/Label";
+import {
+  Cell,
+  Pie,
+  PieChart,
+  PieLabelRenderProps,
+  ResponsiveContainer,
+  Tooltip,
+} from "recharts";
 
 import { useCustomTooltip } from "@components/charts/tooltip";
 import type {
@@ -29,7 +35,7 @@ function blockSort(blocks: Blocks["values"]) {
   };
 }
 
-function renderCustomLabel({ value }: LabelProps) {
+function renderCustomLabel({ value }: PieLabelRenderProps) {
   if (typeof value === "number") {
     return `${value.toFixed(2)}%`;
   }

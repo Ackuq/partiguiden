@@ -57,7 +57,7 @@ export default function VoteDistribution({ voting }: Props) {
   }
 
   return (
-    <div className="h-[26rem] sm:h-[30rem]">
+    <div className="h-104 sm:h-120">
       <ResponsiveContainer>
         <BarChart data={data} layout="vertical">
           <CartesianGrid strokeDasharray="3 3" />

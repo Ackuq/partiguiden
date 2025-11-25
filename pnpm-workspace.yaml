@@ -11,7 +11,7 @@ catalog:
   "@eslint/js": 9.39.1
   "@google-analytics/data": 5.2.1
   "@heroicons/react": 2.2.0
-  "@inquirer/prompts": 7.10.1
+  "@inquirer/prompts": 8.0.1
   "@next/bundle-analyzer": 16.0.3
   "@next/third-parties": 16.0.3
   "@sentry/nextjs": 10.27.0

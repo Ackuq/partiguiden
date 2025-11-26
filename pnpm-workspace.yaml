@@ -21,6 +21,7 @@ catalog:
   "@types/node": 24.9.2
   "@types/react": 19.2.6
   "@vercel/ncc": 0.38.4
+  babel-plugin-react-compiler: 1.0.0
   cheerio: 1.1.2
   domhandler: 5.0.3
   eslint: 9.39.1

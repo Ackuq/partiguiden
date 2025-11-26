@@ -5,22 +5,23 @@ packages:
   - tooling/*
 
 catalog:
-  "@actions/core": 1.11.1
-  "@actions/exec": 1.1.1
-  "@actions/github": 6.0.1
-  "@eslint/js": 9.39.1
-  "@google-analytics/data": 5.2.1
-  "@heroicons/react": 2.2.0
-  "@inquirer/prompts": 8.0.1
-  "@next/bundle-analyzer": 16.0.3
-  "@next/third-parties": 16.0.3
-  "@sentry/nextjs": 10.27.0
-  "@supercharge/promise-pool": 3.2.0
-  "@tailwindcss/postcss": 4.1.17
-  "@trivago/prettier-plugin-sort-imports": 6.0.0
-  "@types/node": 24.9.2
-  "@types/react": 19.2.6
-  "@vercel/ncc": 0.38.4
+  '@actions/core': 1.11.1
+  '@actions/exec': 1.1.1
+  '@actions/github': 6.0.1
+  '@eslint/js': 9.39.1
+  '@google-analytics/data': 5.2.1
+  '@heroicons/react': 2.2.0
+  '@inquirer/prompts': 8.0.1
+  '@next/bundle-analyzer': 16.0.3
+  '@next/third-parties': 16.0.3
+  '@sentry/nextjs': 10.27.0
+  '@supercharge/promise-pool': 3.2.0
+  '@tailwindcss/postcss': 4.1.17
+  '@trivago/prettier-plugin-sort-imports': 6.0.0
+  '@types/node': 24.9.2
+  '@types/react': 19.2.6
+  '@vercel/ncc': 0.38.4
+  babel-plugin-react-compiler: ^1.0.0
   cheerio: 1.1.2
   domhandler: 5.0.3
   eslint: 9.39.1
@@ -54,8 +55,8 @@ catalog:
 catalogMode: strict
 
 onlyBuiltDependencies:
-  - "@sentry/cli"
-  - "@tailwindcss/oxide"
+  - '@sentry/cli'
+  - '@tailwindcss/oxide'
   - esbuild
   - oxc-resolver
   - protobufjs
@@ -64,4 +65,4 @@ onlyBuiltDependencies:
 
 updateConfig:
   ignoreDependencies:
-    - "@types/node"
+    - '@types/node'

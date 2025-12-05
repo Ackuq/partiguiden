@@ -13,23 +13,21 @@ export default async function PartiguidenLogo({ width, height }: Size) {
   );
 
   return new ImageResponse(
-    (
-      <div
-        style={{
-          fontSize: 192,
-          fontWeight: 700,
-          color: colors.teal[700],
-          background: "white",
-          width: "100%",
-          height: "100%",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-        }}
-      >
-        Partiguiden
-      </div>
-    ),
+    <div
+      style={{
+        fontSize: 192,
+        fontWeight: 700,
+        color: colors.teal[700],
+        background: "white",
+        width: "100%",
+        height: "100%",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+      }}
+    >
+      Partiguiden
+    </div>,
     {
       width,
       height,

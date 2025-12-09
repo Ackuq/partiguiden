@@ -12,8 +12,8 @@ catalog:
   "@google-analytics/data": 5.2.1
   "@heroicons/react": 2.2.0
   "@inquirer/prompts": 8.0.2
-  "@next/bundle-analyzer": 16.0.7
-  "@next/third-parties": 16.0.7
+  "@next/bundle-analyzer": 16.0.8
+  "@next/third-parties": 16.0.8
   "@sentry/nextjs": 10.29.0
   "@supercharge/promise-pool": 3.2.0
   "@tailwindcss/postcss": 4.1.17
@@ -25,13 +25,13 @@ catalog:
   cheerio: 1.1.2
   domhandler: 5.0.3
   eslint: 9.39.1
-  eslint-config-next: 16.0.7
+  eslint-config-next: 16.0.8
   eslint-plugin-import: 2.32.0
   eslint-plugin-react: 7.37.5
   eslint-plugin-react-hooks: 7.0.1
   eslint-plugin-turbo: 2.6.3
-  knip: 5.71.0
-  next: 16.0.7
+  knip: 5.72.0
+  next: 16.0.8
   next-sitemap: 4.2.3
   next-themes: 0.4.6
   pdfjs-dist: 5.4.449
@@ -49,7 +49,7 @@ catalog:
   turbo: 2.6.3
   typed.js: 2.1.0
   typescript: 5.9.3
-  typescript-eslint: 8.48.1
+  typescript-eslint: 8.49.0
   undici: 7.16.0
 
 catalogMode: strict

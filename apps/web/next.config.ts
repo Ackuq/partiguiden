@@ -31,7 +31,6 @@ export default withSentryConfig(nextConfig, {
   webpack: {
     treeshake: {
       removeDebugLogging: true,
-    }
-  }
+    },
+  },
 });
-

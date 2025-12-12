@@ -5,33 +5,33 @@ packages:
   - tooling/*
 
 catalog:
-  "@actions/core": 1.11.1
-  "@actions/exec": 1.1.1
+  "@actions/core": 2.0.1
+  "@actions/exec": 2.0.0
   "@actions/github": 6.0.1
   "@eslint/js": 9.39.1
   "@google-analytics/data": 5.2.1
   "@heroicons/react": 2.2.0
   "@inquirer/prompts": 8.0.2
-  "@next/bundle-analyzer": 16.0.7
-  "@next/third-parties": 16.0.7
-  "@sentry/nextjs": 10.29.0
+  "@next/bundle-analyzer": 16.0.10
+  "@next/third-parties": 16.0.10
+  "@sentry/nextjs": 10.30.0
   "@supercharge/promise-pool": 3.2.0
-  "@tailwindcss/postcss": 4.1.17
+  "@tailwindcss/postcss": 4.1.18
   "@trivago/prettier-plugin-sort-imports": 6.0.0
-  "@types/node": 24.9.2
+  "@types/node": 24.10.3
   "@types/react": 19.2.7
   "@vercel/ncc": 0.38.4
   babel-plugin-react-compiler: 1.0.0
   cheerio: 1.1.2
   domhandler: 5.0.3
   eslint: 9.39.1
-  eslint-config-next: 16.0.7
+  eslint-config-next: 16.0.10
   eslint-plugin-import: 2.32.0
   eslint-plugin-react: 7.37.5
   eslint-plugin-react-hooks: 7.0.1
   eslint-plugin-turbo: 2.6.3
-  knip: 5.71.0
-  next: 16.0.7
+  knip: 5.73.3
+  next: 16.0.10
   next-sitemap: 4.2.3
   next-themes: 0.4.6
   pdfjs-dist: 5.4.449
@@ -39,17 +39,17 @@ catalog:
   prettier: 3.7.4
   prettier-plugin-tailwindcss: 0.7.2
   protobufjs: 7.5.4
-  react: 19.2.1
-  react-dom: 19.2.1
+  react: 19.2.3
+  react-dom: 19.2.3
   react-share: 5.2.2
   recharts: 3.5.1
   strip-json-comments: 5.0.3
   tailwind-merge: 3.4.0
-  tailwindcss: 4.1.17
+  tailwindcss: 4.1.18
   turbo: 2.6.3
   typed.js: 2.1.0
   typescript: 5.9.3
-  typescript-eslint: 8.48.1
+  typescript-eslint: 8.49.0
   undici: 7.16.0
 
 catalogMode: strict

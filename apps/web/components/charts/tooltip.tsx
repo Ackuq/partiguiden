@@ -48,9 +48,10 @@ export type CustomTooltipDetails<T extends CustomTooltipPayload> =
     payload: readonly T[];
   }>;
 
-type CustomTooltipProps<T extends CustomTooltipPayload> = 
-  TooltipContentProps<ValueType, NameType>
- & {
+type CustomTooltipProps<T extends CustomTooltipPayload> = TooltipContentProps<
+  ValueType,
+  NameType
+> & {
   Details?: CustomTooltipDetails<T>;
   nameFormatter?: (name: string) => string;
   valueFormatter?: (value: string | number) => string;

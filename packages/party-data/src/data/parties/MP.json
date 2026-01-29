@@ -110,20 +110,6 @@
     "party": "MP",
     "subject": "forsvar"
   },
-  "https://www.mp.se/politik/covid-19/": {
-    "opinions": [
-      "Sjukvården och äldreomsorgen samlade kapacitet behöver förstärkas, långsiktigt och permanent.",
-      "Alla ska ha tillgång till vaccinationer och begriplig information.",
-      "Fri- och rättigheter ska värnas –  inskränkningar ska inte ske längre än absolut nödvändigt.",
-      "Viktigt är att göra satsningar på skola, kultur och idrott under pandemier.",
-      "Solidariteten ska vara stark mellan länder i världen både före, under och efter kriser."
-    ],
-    "title": "Covid-19",
-    "url": "https://www.mp.se/politik/covid-19/",
-    "fetchDate": "2023-09-17T17:52:35.596Z",
-    "party": "MP",
-    "subject": "vard-och-omsorg"
-  },
   "https://www.mp.se/politik/demokrati-och-mr/": {
     "opinions": [
       "Säkerställa alla människors fri- och rättigheter.",

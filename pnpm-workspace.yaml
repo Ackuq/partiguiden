@@ -5,9 +5,9 @@ packages:
   - tooling/*
 
 catalog:
-  "@actions/core": 2.0.2
-  "@actions/exec": 2.0.0
-  "@actions/github": 6.0.1
+  "@actions/core": 3.0.0
+  "@actions/exec": 3.0.0
+  "@actions/github": 9.0.0
   "@eslint/js": 9.39.2
   "@google-analytics/data": 5.2.1
   "@heroicons/react": 2.2.0
@@ -47,7 +47,7 @@ catalog:
   tailwind-merge: 3.4.0
   tailwindcss: 4.1.18
   turbo: 2.7.4
-  typed.js: 2.1.0
+  typed.js: 3.0.0
   typescript: 5.9.3
   typescript-eslint: 8.53.0
   undici: 7.18.2

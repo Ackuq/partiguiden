@@ -48,13 +48,3 @@ jobs:
             git diff --ignore-space-at-eol --text actions/**/dist/
             exit 1
           fi
-
-      # If `dist/` was different than expected, upload the expected version as a
-      # workflow artifact.
-      - if: ${{ failure() && steps.diff.outcome == 'failure' }}
-        name: Upload Artifact
-        id: upload
-        uses: actions/upload-artifact@v5
-        with:
-          name: dist
-          path: actions/**/dist/

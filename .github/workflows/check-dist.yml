@@ -1,4 +1,4 @@
-name: Check Transpiled Action JavaScript
+name: Check Transpiled JavaScript
 
 on:
   pull_request:
@@ -13,7 +13,7 @@ permissions:
 
 jobs:
   check-dist:
-    name: Check dist/
+    name: Check action dist/
     runs-on: ubuntu-latest
 
     steps:

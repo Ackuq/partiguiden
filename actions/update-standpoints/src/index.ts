@@ -19,6 +19,8 @@ import {
 } from "./git-helper.js";
 import { createPullRequest, findOpenPullRequest } from "./github-helper.js";
 
+console.log("FOR TESTING");
+
 core.startGroup("Checking if changes exist");
 const hasDiff = await checkHasDiff();
 if (!hasDiff) {

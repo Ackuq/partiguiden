@@ -192,7 +192,8 @@
     "title": "Bostadspolitik",
     "url": "https://moderaterna.se/var-politik/bostadspolitik/",
     "fetchDate": "2026-02-01T13:56:28.455Z",
-    "party": "M"
+    "party": "M",
+    "subject": "bostad"
   },
   "https://moderaterna.se/var-politik/demokrati/": {
     "opinions": [
@@ -216,7 +217,8 @@
     "title": "Demokrati, rättsstat och förvaltning",
     "url": "https://moderaterna.se/var-politik/demokrati/",
     "fetchDate": "2026-02-01T13:56:28.396Z",
-    "party": "M"
+    "party": "M",
+    "subject": "demokrati"
   },
   "https://moderaterna.se/var-politik/ekonomisk-politik-och-foretagande/": {
     "opinions": [
@@ -236,7 +238,8 @@
     "title": "Ekonomisk politik och företagande",
     "url": "https://moderaterna.se/var-politik/ekonomisk-politik-och-foretagande/",
     "fetchDate": "2026-02-01T13:56:28.555Z",
-    "party": "M"
+    "party": "M",
+    "subject": "ekonomi-och-skatter"
   },
   "https://moderaterna.se/var-politik/forebyggande-arbete/": {
     "opinions": [
@@ -263,7 +266,8 @@
     "title": "Förebyggande arbete",
     "url": "https://moderaterna.se/var-politik/forebyggande-arbete/",
     "fetchDate": "2026-02-01T13:56:27.051Z",
-    "party": "M"
+    "party": "M",
+    "subject": "lag-och-ratt"
   },
   "https://moderaterna.se/var-politik/forsvar-och-krisberedskap/": {
     "opinions": [
@@ -296,7 +300,8 @@
     "title": "Försvar och krisberedskap",
     "url": "https://moderaterna.se/var-politik/forsvar-och-krisberedskap/",
     "fetchDate": "2026-02-01T13:56:11.241Z",
-    "party": "M"
+    "party": "M",
+    "subject": "forsvar"
   },
   "https://moderaterna.se/var-politik/grona-naringar-landsbygd-och-jakt/": {
     "opinions": [
@@ -322,7 +327,8 @@
     "title": "Gröna näringar, landsbygd och jakt",
     "url": "https://moderaterna.se/var-politik/grona-naringar-landsbygd-och-jakt/",
     "fetchDate": "2026-02-01T13:56:10.197Z",
-    "party": "M"
+    "party": "M",
+    "subject": "jordbruk-jakt-och-fiske"
   },
   "https://moderaterna.se/var-politik/halso-och-sjukvard-2/": {
     "opinions": [
@@ -354,7 +360,8 @@
     "title": "Hälso- och sjukvård",
     "url": "https://moderaterna.se/var-politik/halso-och-sjukvard-2/",
     "fetchDate": "2026-02-01T13:56:28.493Z",
-    "party": "M"
+    "party": "M",
+    "subject": "vard-och-omsorg"
   },
   "https://moderaterna.se/var-politik/jobb-och-arbetsmarknad/": {
     "opinions": [
@@ -375,7 +382,8 @@
     "title": "Jobb och arbetsmarknad",
     "url": "https://moderaterna.se/var-politik/jobb-och-arbetsmarknad/",
     "fetchDate": "2026-02-01T13:56:28.325Z",
-    "party": "M"
+    "party": "M",
+    "subject": "jobb"
   },
   "https://moderaterna.se/var-politik/klimat-miljo-och-energi/": {
     "opinions": [
@@ -402,7 +410,8 @@
     "title": "Klimat, miljö och energi",
     "url": "https://moderaterna.se/var-politik/klimat-miljo-och-energi/",
     "fetchDate": "2026-02-01T13:56:28.642Z",
-    "party": "M"
+    "party": "M",
+    "subject": "miljo-och-klimat"
   },
   "https://moderaterna.se/var-politik/lag-och-ordning-2/": {
     "opinions": [
@@ -427,7 +436,8 @@
     "title": "Lag och ordning",
     "url": "https://moderaterna.se/var-politik/lag-och-ordning-2/",
     "fetchDate": "2026-02-01T13:56:28.501Z",
-    "party": "M"
+    "party": "M",
+    "subject": "lag-och-ratt"
   },
   "https://moderaterna.se/var-politik/migration/": {
     "opinions": [
@@ -452,7 +462,8 @@
     "title": "Migration",
     "url": "https://moderaterna.se/var-politik/migration/",
     "fetchDate": "2026-02-01T13:56:28.506Z",
-    "party": "M"
+    "party": "M",
+    "subject": "migration-och-integration"
   },
   "https://moderaterna.se/var-politik/sjukforsakring-2/": {
     "opinions": [
@@ -466,7 +477,8 @@
     "title": "Sjukförsäkring",
     "url": "https://moderaterna.se/var-politik/sjukforsakring-2/",
     "fetchDate": "2026-02-01T13:56:28.424Z",
-    "party": "M"
+    "party": "M",
+    "subject": "vard-och-omsorg"
   },
   "https://moderaterna.se/var-politik/skola-och-utbildning/": {
     "opinions": [
@@ -498,7 +510,8 @@
     "title": "Skola och utbildning",
     "url": "https://moderaterna.se/var-politik/skola-och-utbildning/",
     "fetchDate": "2026-02-01T13:56:28.389Z",
-    "party": "M"
+    "party": "M",
+    "subject": "utbildning"
   },
   "https://moderaterna.se/var-politik/trafik-och-infrastruktur/": {
     "opinions": [
@@ -522,7 +535,8 @@
     "title": "Trafik och infrastruktur",
     "url": "https://moderaterna.se/var-politik/trafik-och-infrastruktur/",
     "fetchDate": "2026-02-01T13:56:28.213Z",
-    "party": "M"
+    "party": "M",
+    "subject": "infrastruktur-och-trafik"
   },
   "https://moderaterna.se/var-politik/utrikespolitik/": {
     "opinions": [
@@ -543,7 +557,8 @@
     "title": "Utrikespolitik",
     "url": "https://moderaterna.se/var-politik/utrikespolitik/",
     "fetchDate": "2026-02-01T13:56:28.573Z",
-    "party": "M"
+    "party": "M",
+    "subject": "utrikes--och-bistandsfragor"
   },
   "https://moderaterna.se/var-politik/aldres-villkor-och-pensioner/": {
     "opinions": [
@@ -571,6 +586,7 @@
     "title": "Äldres villkor och pensioner",
     "url": "https://moderaterna.se/var-politik/aldres-villkor-och-pensioner/",
     "fetchDate": "2026-02-01T13:56:28.467Z",
-    "party": "M"
+    "party": "M",
+    "subject": "aldrepolitik"
   }
 }

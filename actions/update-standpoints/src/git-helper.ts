@@ -1,40 +1,25 @@
-// @ts-check
-import core from "@actions/core";
-import { getExecOutput } from "@actions/exec";
+import * as core from "@actions/core";
+import { ExecOptions, getExecOutput } from "@actions/exec";
 
-/**
- * @param {string} name
- * @param {string} email
- */
-
-export async function setGitIdentity(name, email) {
+export async function setGitIdentity(name: string, email: string) {
   const command = ["config", "--local", "user.name", name];
   await exec(command);
   const emailCommand = ["config", "--local", "user.email", email];
   await exec(emailCommand);
 }
 
-/**
- * @param {string} branch
- */
-export async function checkIfBranchExists(branch) {
+export async function checkIfBranchExists(branch: string) {
   const command = ["ls-remote", "--exit-code", "--heads", "origin", branch];
   const output = await exec(command, { ignoreReturnCode: true });
   return output.exitCode === 0;
 }
 
-/**
- * @param {string} branch
- */
-export async function createBranch(branch) {
+export async function createBranch(branch: string) {
   const command = ["checkout", "-b", branch];
   await exec(command);
 }
 
-/**
- * @param {string} message
- */
-export async function commit(message) {
+export async function commit(message: string) {
   const addCommand = ["add", "."];
   await exec(addCommand);
   const command = ["commit", "-m", message];
@@ -52,7 +37,7 @@ export async function push() {
 /**
  * @param {string} branch
  */
-export async function forcePush(branch) {
+export async function forcePush(branch: string) {
   const command = ["push", "--force", "origin", branch];
   await exec(command);
 }
@@ -64,12 +49,7 @@ export async function checkHasDiff() {
   return output.exitCode === 1;
 }
 
-/**
- * Run a git command
- * @param {string[]} command
- * @param {import("@actions/exec").ExecOptions} options
- */
-async function exec(command, options = {}) {
+async function exec(command: string[], options: ExecOptions = {}) {
   core.info(`Running \`git ${command.join(" ")}\``);
   const response = await getExecOutput("git", command, options);
 

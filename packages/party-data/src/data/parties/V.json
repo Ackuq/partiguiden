@@ -919,7 +919,8 @@
     "title": "Politikerlön och partiskatt",
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/politikerlon-och-partiskatt/",
     "fetchDate": "2025-08-11T06:39:53.959Z",
-    "party": "V"
+    "party": "V",
+    "subject": "ekonomi-och-skatter"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/ai/": {
     "opinions": [
@@ -928,7 +929,8 @@
     "title": "AI",
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/ai/",
     "fetchDate": "2026-02-01T13:51:16.572Z",
-    "party": "V"
+    "party": "V",
+    "subject": "it-och-mobiltelefoni"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/barns-och-ungas-ratt-i-samhallets-vard/": {
     "opinions": [
@@ -937,7 +939,8 @@
     "title": "Barns och ungas rätt i samhällets vård",
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/barns-och-ungas-ratt-i-samhallets-vard/",
     "fetchDate": "2026-02-01T13:51:21.013Z",
-    "party": "V"
+    "party": "V",
+    "subject": "familjen"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/bedragerier/": {
     "opinions": [
@@ -946,7 +949,8 @@
     "title": "Bedrägerier",
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/bedragerier/",
     "fetchDate": "2026-02-01T13:51:15.658Z",
-    "party": "V"
+    "party": "V",
+    "subject": "lag-och-ratt"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/elpriset/": {
     "opinions": [
@@ -960,7 +964,8 @@
     "title": "Elpriset",
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/elpriset/",
     "fetchDate": "2026-02-01T13:51:19.250Z",
-    "party": "V"
+    "party": "V",
+    "subject": "energi"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/fiske/": {
     "opinions": [
@@ -969,7 +974,8 @@
     "title": "Fiske",
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/fiske/",
     "fetchDate": "2026-02-01T13:51:18.625Z",
-    "party": "V"
+    "party": "V",
+    "subject": "jordbruk-jakt-och-fiske"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/fred/": {
     "opinions": [
@@ -978,7 +984,8 @@
     "title": "Fred",
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/fred/",
     "fetchDate": "2026-02-01T13:51:21.192Z",
-    "party": "V"
+    "party": "V",
+    "subject": "utrikes--och-bistandsfragor"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/kemikalier/": {
     "opinions": [
@@ -987,7 +994,8 @@
     "title": "Kemikalier",
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/kemikalier/",
     "fetchDate": "2026-02-01T13:51:19.849Z",
-    "party": "V"
+    "party": "V",
+    "subject": "miljo-och-klimat"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/rasistiska-organisationer/": {
     "opinions": [
@@ -996,7 +1004,8 @@
     "title": "Rasistiska organisationer",
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/rasistiska-organisationer/",
     "fetchDate": "2026-02-01T13:51:20.155Z",
-    "party": "V"
+    "party": "V",
+    "subject": "jamstalldhet-och-diskriminering"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/trygg-pa-jobbet-och-trygga-anstallningar/": {
     "opinions": [
@@ -1005,13 +1014,15 @@
     "title": "Trygg på jobbet och trygga anställningar",
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/trygg-pa-jobbet-och-trygga-anstallningar/",
     "fetchDate": "2026-02-01T13:51:18.663Z",
-    "party": "V"
+    "party": "V",
+    "subject": "jobb"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/ostersjon-och-havsfragor/": {
     "opinions": [],
     "title": "Östersjön och havsfrågor",
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/ostersjon-och-havsfragor/",
     "fetchDate": "2026-02-01T13:51:21.241Z",
-    "party": "V"
+    "party": "V",
+    "subject": "miljo-och-klimat"
   }
 }

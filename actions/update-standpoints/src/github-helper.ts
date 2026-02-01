@@ -1,7 +1,7 @@
-import core from "@actions/core";
-import github from "@actions/github";
+import * as core from "@actions/core";
+import * as github from "@actions/github";
 
-import { BRANCH_NAME, COMMIT_MESSAGE, PR_BASE, PR_BODY } from "./constants.mjs";
+import { BRANCH_NAME, COMMIT_MESSAGE, PR_BASE, PR_BODY } from "./constants.js";
 
 const { context } = github;
 

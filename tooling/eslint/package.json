@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "type": "module",
   "exports": {
-    "./action": "./action.ts",
     "./base": "./base.ts",
     "./next": "./next.ts",
     "./react": "./react.ts"

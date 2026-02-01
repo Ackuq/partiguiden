@@ -2,12 +2,13 @@
   "name": "@partiguiden/update-standpoints",
   "version": "1.0.0",
   "description": "Github Action for updating standpoints and creating pull requests",
-  "main": "dist/index.mjs",
+  "main": "dist/index.js",
   "scripts": {
-    "build": "ncc build src/main.mjs -o dist",
-    "build:watch": "pnpm run build --watch",
+    "bundle": "pnpm dlx rimraf dist && rollup --config rollup.config.ts --configPlugin @rollup/plugin-typescript",
+    "bundle:watch": "pnpm run bundle --watch",
     "clean": "rm -rf .turbo node_modules",
-    "lint:eslint": "eslint"
+    "lint:eslint": "eslint",
+    "lint:tsc": "tsc"
   },
   "dependencies": {
     "@actions/core": "catalog:",
@@ -16,7 +17,10 @@
   },
   "devDependencies": {
     "@partiguiden/eslint-config": "workspace:*",
-    "@vercel/ncc": "catalog:",
-    "eslint": "catalog:"
+    "@rollup/plugin-commonjs": "catalog:",
+    "@rollup/plugin-node-resolve": "catalog:",
+    "@rollup/plugin-typescript": "catalog:",
+    "eslint": "catalog:",
+    "rollup": "catalog:"
   }
 }

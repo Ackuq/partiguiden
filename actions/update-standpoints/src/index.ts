@@ -1,6 +1,4 @@
-/* global process */
-// @ts-check
-import core from "@actions/core";
+import * as core from "@actions/core";
 
 import {
   BRANCH_NAME,
@@ -9,7 +7,7 @@ import {
   GIT_USERNAME,
   PR_BASE,
   TEMP_BRANCH_NAME,
-} from "./constants.mjs";
+} from "./constants.js";
 import {
   checkHasDiff,
   checkIfBranchExists,
@@ -18,8 +16,8 @@ import {
   forcePush,
   push,
   setGitIdentity,
-} from "./git-helper.mjs";
-import { createPullRequest, findOpenPullRequest } from "./github-helper.mjs";
+} from "./git-helper.js";
+import { createPullRequest, findOpenPullRequest } from "./github-helper.js";
 
 core.startGroup("Checking if changes exist");
 const hasDiff = await checkHasDiff();

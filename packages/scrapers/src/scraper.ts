@@ -62,9 +62,9 @@ export default abstract class Scraper implements ScraperArgs {
     return href;
   }
 
-  protected async getStandpointPage(
+  protected async getStandpointPageData(
     $link: Cheerio<Element>,
-  ): Promise<PartyDataWithoutPartyName> {
+  ): Promise<Omit<PartyDataWithoutPartyName, "opinions"> & { html: string }> {
     let title = this.cleanText($link.text());
 
     if (title === "") {
@@ -97,31 +97,40 @@ export default abstract class Scraper implements ScraperArgs {
     });
 
     const html = await response.text();
-    const opinions = this.getOpinions(cheerio.load(html));
 
     return {
-      opinions,
       title,
       url,
       fetchDate: new Date().toISOString(),
       subject: undefined,
+      html,
     };
   }
 
-  async getPages(): Promise<PartyDataWithoutPartyName[]> {
-    const response = await fetch(this.baseUrl + this.listPath, {
-      headers: { "Content-Type": "text/plain; charset=UTF-8" },
-    });
-    const html = await response.text();
-    const $ = cheerio.load(html);
-    const $elements = $(this.listSelector);
+  protected async getStandpointPage(
+    $link: Cheerio<Element>,
+  ): Promise<PartyDataWithoutPartyName[]> {
+    const { title, url, html, fetchDate, subject } =
+      await this.getStandpointPageData($link);
+    const opinions = this.getOpinions(cheerio.load(html));
 
-    console.info(`Found ${$elements.length} list elements`);
+    return [
+      {
+        opinions,
+        title,
+        url,
+        fetchDate,
+        subject,
+      },
+    ];
+  }
 
-    const links = $elements.toArray();
-
-    const promises = links.map(($element) =>
-      this.getStandpointPage($($element as Element)),
+  protected async handleLinks(
+    $: CheerioAPI,
+    elements: Element[],
+  ): Promise<PartyDataWithoutPartyName[]> {
+    const promises = elements.map((element) =>
+      this.getStandpointPage($(element)),
     );
     const result = await Promise.allSettled(promises);
     const failed = result.filter(
@@ -135,10 +144,24 @@ export default abstract class Scraper implements ScraperArgs {
       .filter(
         (
           promiseResult,
-        ): promiseResult is PromiseFulfilledResult<PartyData[string]> =>
+        ): promiseResult is PromiseFulfilledResult<PartyData[string][]> =>
           promiseResult.status === "fulfilled",
       )
       .map((fulfilled) => fulfilled.value);
-    return resolved;
+
+    return resolved.flat();
+  }
+
+  async getPages(): Promise<PartyDataWithoutPartyName[]> {
+    const response = await fetch(this.baseUrl + this.listPath, {
+      headers: { "Content-Type": "text/plain; charset=UTF-8" },
+    });
+    const html = await response.text();
+    const $ = cheerio.load(html);
+    const $elements = $<Element, string>(this.listSelector);
+
+    console.info(`Found ${$elements.length} list elements`);
+
+    return this.handleLinks($, $elements.toArray());
   }
 }

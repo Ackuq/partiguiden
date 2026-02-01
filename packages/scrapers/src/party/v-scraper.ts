@@ -6,6 +6,7 @@ export default class VScraper extends Scraper {
   baseUrl = "https://www.vansterpartiet.se";
   listPath = "/var-politik/politik-a-o/";
   listSelector = ".politik-kb a.el-link";
+  absoluteUrls = true;
 
   protected getOpinions($: CheerioAPI): string[] {
     const $main = $("main");
@@ -22,7 +23,9 @@ export default class VScraper extends Scraper {
       return $strongParagraphs
         .toArray()
         .map(($paragraph) => $($paragraph).text().trim())
-        .filter((text) => text !== "");
+        .filter(
+          (text) => text !== "" && text !== "Läs mer:" && text !== "Läs mer",
+        );
     }
 
     const $firstParagraph = $articleBody.find("p").first();

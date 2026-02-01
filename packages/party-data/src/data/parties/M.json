@@ -1,410 +1,576 @@
 {
-  "https://moderaterna.se/var-politik/bistand/": {
-    "opinions": [
-      "Fokusera biståndet till länder, organisationer och tematiska områden där det kan göra konkret nytta",
-      "Öka andelen humanitärt bistånd",
-      "Prioritera insatser som stödjer arbetet för demokrati och mänskliga rättigheter",
-      "Utöka och effektivisera klimatbiståndet",
-      "Införa en ny budgeteringsprincip för biståndet som innefattar en fyraårig budgetram och högre transparens"
-    ],
-    "title": "Bistånd",
-    "url": "https://moderaterna.se/var-politik/bistand/",
-    "fetchDate": "2024-06-02T17:16:20.247Z",
-    "party": "M",
-    "subject": "utrikes--och-bistandsfragor"
-  },
-  "https://moderaterna.se/var-politik/bostader/": {
-    "opinions": [
-      "Förenkla byggreglerna för att det ska bli billigare och gå snabbare att bygga bostäder",
-      "Liberalisera strandskyddslagstiftningen för att öka tillgången till byggbar mark.",
-      "Skapa ett fungerande regelverk för hyressättning",
-      "Höja bolånetaket för att det ska bli lättare att komma in på den ägda bostadsmarknaden",
-      "Skapa fler vägar till ägt boende genom hyrköp och ägarlägenheter"
-    ],
-    "title": "Bostadspolitik",
-    "url": "https://moderaterna.se/var-politik/bostader/",
-    "fetchDate": "2025-05-25T06:30:39.933Z",
-    "party": "M",
-    "subject": "bostad"
-  },
-  "https://moderaterna.se/var-politik/energi/": {
-    "opinions": [
-      "Ge kärnkraften rätt politiska, regulatoriska och ekonomiska förutsättningar. Det ska byggas ny kärnkraft i Sverige",
-      "Garantera nybyggd kärnkraft rätten till drift och elproduktion under hela sin tekniska livslängd – om staten tvingar fram en nedläggning ska ägaren har rätt till skadestånd",
-      "Ta fram ett regelverk för små modulära reaktorer (SMR), som medger typgodkännande",
-      "Se över elmarknaden så att planerbara kraftslag som kärn- och vattenkraft får betalt för förmågan att producera el under årets alla timmar",
-      "Stoppa omprövningen av vattenkraftens befintliga miljötillstånd och nedmonteringen av befintlig vattenkraft",
-      "Ge ersättning till närboende och fastighetsägare som drabbas negativt av vindkraftsetableringar"
-    ],
-    "title": "Energi",
-    "url": "https://moderaterna.se/var-politik/energi/",
-    "fetchDate": "2025-05-25T06:30:54.440Z",
-    "party": "M",
-    "subject": "energi"
-  },
   "https://moderaterna.se/var-politik/eu/": {
     "opinions": [
-      "Öka EU:s stöd till Ukraina och press på Ryssland",
-      "EU:s gemensamma försvars-, utrikes- och säkerhetspolitik blir starkare",
-      "Förstärka kontrollen vid EU:s yttre gräns, få effektivare asylprocesser på plats samt öka återvändandet",
-      "Stärka företagsklimatet i Europa genom minskad regelbörda och färre handelshinder",
-      "EU ska ha en tydlig klimatagenda som ger industri och samhälle rätt förutsättningar att ställa om",
-      "Värna den fria rörligheten för hederliga människor genom att försvåra att den missbrukas av kriminella och den organiserade brottsligheten"
+      "EU:s andel av världsekonomin har minskat med mer än en tredjedel på 20 år och endast fyra av världens 50 högst värderade techbolag är europeiska.",
+      "Om alla medlemsländer bara implementerade de beslut som redan tagits om fri rörlighet för varor och tjänster, skulle EU:s BNP öka med 3–5 procent. ",
+      "Europas ekonomi behöver växa för att vi ska ha råd att upprätthålla vår säkerhet och försvara våra gemensamma värden",
+      "Fortsätta riva hinder på den inre marknaden, etablera fler frihandelsavtal och minska företagens regelbörda.",
+      "Verka för att ökad tillväxt och långsiktig konkurrenskraft ska genomsyra all EU-politik.",
+      "Minska svensk överimplementering av EU-regler med hjälp av Implementeringsrådet.",
+      "För att nå klimatneutralitet 2050 har EU världens mest ambitiösa klimatpaket, Fit for 55. 94 procent av världens koldioxidutsläpp kommer från länder utanför unionen.",
+      "För att möta klimatmålen måste många länder fasa ut fossila bränslen. I Sverige handlar det främst om att bygga vidare på vårt nästintill fossilfria elsystem.",
+      "Varje satsad klimatkrona inom Europeiska unionen måste göra största möjliga nytta och riktas till att lösa de allvarligaste problemen. ",
+      "Utforma EU:s klimat- och miljöpolitik som en hållbar tillväxtstrategi för hela Europa, där ambitiösa klimatsatsningar går hand i hand med en stark ekonomi.",
+      "Ge kärnkraften lika goda förutsättningar som förnybar energi, både vad gäller finansiering och klassificering. ",
+      "Stå upp för det svenska självbestämmandet över skogen och de svenska skogsägarnas rätt att bruka sin skog.",
+      "Hälften av alla bostadsinbrott i Sverige begås av utländska stöldligor och en stor andel av vapnen och narkotikan som är i omlopp i landet smugglas hit via Europeiska unionen.",
+      "Den fria rörligheten inom Europeiska unionen ska gälla för hederliga människor, men kriminella ska inte kunna utnyttja den i brottsliga syften. ",
+      "Förstärka Europeiska unionens polismyndighet, Europol, med både resurser och personal och göra den till en verkligt operativ polis.  ",
+      "Upprätta EU-gemensamma varningslistor med individer som utgör en reell risk på grund av samröre med organiserad brottslighet eller våldsbejakande extremism. ",
+      "Det ryska anfallskriget mot Ukraina är inne på sitt fjärde år, där Ryssland backas upp av andra auktoritära stater med vapen och soldater.",
+      "Parallellt med kriget i Ukraina gör Ryssland allt de kan för att inifrån destabilisera EU och dess grannländer. ",
+      "För att försvara Ukraina och Europa behöver hela den europeiska försvarsindustrin och motståndskraften stärkas.",
+      "Skärpa sanktioner mot den ryska skuggflottan, mot rysk flytande naturgas och mot viktiga individer samt ge avkastningen från de frysta ryska tillgångarna till Ukraina.",
+      "Ta nya steg i processen för Ukrainas och Moldaviens EU-medlemskap."
     ],
     "title": "EU",
     "url": "https://moderaterna.se/var-politik/eu/",
-    "fetchDate": "2025-05-25T06:30:38.281Z",
+    "fetchDate": "2026-02-01T13:56:28.605Z",
     "party": "M",
     "subject": "utrikes--och-bistandsfragor"
   },
-  "https://moderaterna.se/var-politik/forsvar/": {
-    "opinions": [
-      "Stärka alla delar av det militära försvaret, bl.a. genom att säkerställa försörjning av kompetent personal med goda anställningsvillkor, mer modern utrustning och en ökad övningsverksamhet.",
-      "Sträva efter en bred parlamentarisk förankring av den nya säkerhetspolitiska hållningen, inte minst genom försvarsberedningen.",
-      "Slutföra den militära integrationen med Nato och vara en aktiv medlem som bidrar till alliansens avskräckning och försvar. ",
-      "Sverige över tid ska ha ett försvarsanslag som garanterar en stark försvarsförmåga. Försvarsanslaget kommer stegvis att öka till 2,6 procent av BNP. Utvecklingen av säkerhetsläget är det som avgör om det kan behövas mer resurser till försvaret.",
-      "Lära oss av kriget i Ukraina exempelvis gällande värdet av ett starkt luftförsvar, behovet av att satsa på ny teknik som drönare, att kunna bemöta cyberangrepp, ha ett tillräckligt skydd för vår infrastruktur och att ha en väl fungerande försvarsunderrättelse."
-    ],
-    "title": "Försvar",
-    "url": "https://moderaterna.se/var-politik/forsvar/",
-    "fetchDate": "2025-05-25T06:30:54.397Z",
-    "party": "M",
-    "subject": "forsvar"
-  },
   "https://moderaterna.se/var-politik/hbtq/": {
     "opinions": [
-      "Altruistiskt surrogatmödraskap ska vara möjligt i Sverige. Precis som vid adoptioner bör det föregås en omsorgsfull lämplighetsprövning",
-      "Ändra i riktlinjerna för blodgivning så att sexuell läggning inte längre ska vara avgörande för vem som får donera blod",
-      "Stoppa alla offentliga bidrag till föreningar och organisationer som hatar eller hotar HBTQ-personer. Vi vill göra en bred översyn av regelverken ",
-      "Införa obligatorisk samhällskunskap för nyanlända där HBTQ-personers rättigheter är en självklar del ",
-      "All familjelagstiftning ska vara könsneutral",
-      "Stå upp för HBTQ-personers rättigheter i världen – Sverige ska vara en röst för frihet och mot förtryck"
+      "I dag avvisas kategoriskt friskt blod från män som har sex med män, samtidigt som det råder blodbrist i sjukvården. I snitt behövs en blodpåse i minuten samtidigt som endast 2–3 procent av Sveriges befolkning är aktiva blodgivare.  ",
+      "Lagstiftningen har legat efter när det kommer till familjebildning. I dag hamnar många familjer som skaffar barn genom surrogatmoderskap utomlands i en rättsosäker situation, där både föräldrar och barn hamnar i kläm.",
+      "Ändra riktlinjerna för blodgivning så att sexuell läggning inte längre ska vara avgörande för vem som får donera blod. Regeringen har gett Socialstyrelsen uppdraget, som ska redovisas i mars 2026.",
+      "Möjliggöra altruistiskt surrogatmödraskap i Sverige. Precis som vid adoptioner bör det föregås en omsorgsfull lämplighetsprövning.",
+      "Vi riskerar att tappa viktiga framsteg som gjorts för hbtq-personers frihet på grund av bristande integration och ett ökat utanförskap.",
+      "Det finns platser i Sverige där människor i dag inte tillåts hålla hand med vem man vill eller visa en regnbågsflagga.",
+      "Alla offentliga bidrag till föreningar och organisationer som hatar eller hotar hbtq-personer ska stoppas. Vi vill göra en bred översyn av regelverken.",
+      "Införa obligatorisk samhällskunskap för nyanlända där bland annat hbtq-personers rättigheter klargörs. Omvändelseterapi som sker under hot eller tvång inte ska förekomma. ",
+      "Öka kunskapen om hatbrottslagstiftningen i hela rättsväsendet och skärpa lagstiftning riktad mot hedersrelaterat förtryck och hedersrelaterade maktstrukturer.",
+      "På många håll i världen lever hbtq-personer under hot och förtryck.",
+      "Flera länder har dödsstraff för homosexuella handlingar, däribland Iran, Saudiarabien och Jemen.",
+      "Stärka kvalitet, enhetlighet och rättssäkerhet i asylprocessen, där bland annat bedömningen av ärenden gällande hbtq-personer ingår. ",
+      "Att Sverige ska stå upp för hbtq-personers rättigheter utomlands, inte minst gentemot de länder som tydligt bryter mot de mänskliga rättigheterna. Vi ska fortsätta att kraftfullt driva hbtq-frågor, såsom erkännandet av samkönade äktenskap och partnerskap, inom EU, Europarådet och i FN-systemet.",
+      "Att biståndet i högre grad ska användas som ett politiskt redskap för att påverka andra länder i rätt riktning, bland annat kopplat till dessa frågor."
     ],
-    "title": "HBTQ",
+    "title": "HBTQ-frågor",
     "url": "https://moderaterna.se/var-politik/hbtq/",
-    "fetchDate": "2025-05-25T06:30:54.444Z",
+    "fetchDate": "2026-02-01T13:56:28.525Z",
     "party": "M",
     "subject": "jamstalldhet-och-diskriminering"
   },
   "https://moderaterna.se/var-politik/idrott/": {
     "opinions": [
-      "Utöka samarbetet mellan skola, fritidshem, idrotts-och friluftsorganisationer så att fler unga börjar idrotta och får en god grund för ett aktivt friluftsliv",
-      "Genomföra en ny idrottspolitisk utredning och ta fram en Elitidrottsstrategi",
-      "Säkerställa att det är möjligt för elitidrottare att kombinera studier i gymnasieskolan och i högre utbildning med sin idrottssatsning",
-      "Motverka matchfixning, olicensierat spelande och andra kriminella element inom idrotten"
+      "Svenska barn är i dag mer stillasittande än våra pensionärer. I socioekonomiskt utsatta områden deltar bara hälften av barnen mellan tolv och 18 år i föreningsidrott. Motsvarande siffra i mer resursstarka områden är 67 procent.",
+      "Enligt den statliga utredningen ”Varje rörelse räknas” är det bara två av tio barn i Sverige som når upp till en timmes pulshöjande aktivitet per dag.",
+      "Alla barn har rätt till rörelse och delaktighet. Det är viktigt för ungas utveckling och lägger grunden för en hälsosam livsstil. ",
+      "Att alla barn ska ha möjlighet att delta i föreningsidrott, friluftslivsaktiviteter eller kulturskolan för rörelse och delaktighet. Alla barn, oavsett ekonomiska förutsättningar, kan få ett fritidskort på 500 kronor per år. Två månader efter införandet hade fritidskortet nyttjats av 255 000 barn och unga.",
+      "Särskilt underlätta för barn i socioekonomiskt utsatta familjer att delta i föreningsaktiviteter genom ett förhöjt fritidskort. Barn som är folkbokförda i hushåll där vårdnadshavaren fick bostadsbidrag någon gång under förra året kan få 2 000 kronor per år. Två månader efter införandet av kortet hade 35 000 barn beviljats detta kort. Det motsvarar 30 skolklasser.  ",
+      "Se över regler som bromsar utvecklingen av nya multifunktionella idrottsanläggningar, exempelvis bullerregler, samt utreda en statlig investeringsfond för tillskapandet av fler idrottsanläggningar. För 2026 och 2027 satsar regeringen 250 miljoner kronor per år för fler idrottsanläggningar.",
+      "Svenskarna är ett friluftsfolk. År 2022 besökte 2,9 miljoner människor våra svenska nationalparker. Det är fler personer än vad som går på en allsvensk fotbollsmatch under en säsong. ",
+      "Nio av tio svenskar ägnar sig åt friluftsliv och fyra av tio är ute i skog och mark regelbundet. Men antalet barn som regelbundet vistas i naturen har på två decennier minskat från 80 procent till 50 procent. Människor födda i ett annat land deltar mindre än inrikes födda. ",
+      "Genom att göra den redan skyddade tätortsnära naturen mer tillgänglig skapar vi goda rekreationsmöjligheter och plats för friluftsliv i människors vardag.",
+      "Skapa bättre förutsättningar för människor att vistas i naturen och föra naturen närmare människor. Därför tar vi fram ett friluftspolitiskt program.",
+      "Stärka barn och ungas förutsättningar för friluftsliv, särskilt i utanförskapsområden. Därför satsar regeringen 90 miljoner kronor per år på ökad simkunnighet och fem miljoner per år för friluftsorganisationernas aktiviteter i dessa områden för 2026–2028.",
+      "Stärka kunskapen om allemansrätten och hur vi rör oss ansvarsfullt i naturen med hänsyn tagen till äganderätten."
     ],
-    "title": "Idrott",
+    "title": "Idrott och friluftsliv",
     "url": "https://moderaterna.se/var-politik/idrott/",
-    "fetchDate": "2024-06-02T17:16:21.240Z",
+    "fetchDate": "2026-02-01T13:56:10.158Z",
     "party": "M",
     "subject": "kultur-media-och-idrott"
-  },
-  "https://moderaterna.se/var-politik/infrastruktur/": {
-    "opinions": [
-      "Hållbart investera i vägar, järnväg, hamnar och flygplatser",
-      "Tågen ska gå i tid och vägarna ska vara säkra att köra på",
-      "Minska underhållsskulden i svensk infrastruktur",
-      "Att ha den infrastruktur som krävs för ett starkt försvar",
-      "Skynda på utbyggnaden av laddinfrastruktur, vätgas- och biodrivmedelstillverkning",
-      "Möjliggöra den gröna omställningen med fossilfri el från sol, vind, vatten och utbyggd kärnkraft"
-    ],
-    "title": "Infrastruktur",
-    "url": "https://moderaterna.se/var-politik/infrastruktur/",
-    "fetchDate": "2025-05-25T06:30:54.524Z",
-    "party": "M",
-    "subject": "infrastruktur-och-trafik"
   },
   "https://moderaterna.se/var-politik/kultur/": {
     "opinions": [
-      "Skapa bättre förutsättningar för de kulturella och kreativa branscherna genom tillväxtvänlig näringspolitik",
-      "Uppvärdera bildningens betydelse i ett framgångsrikt samhälle",
-      "Prioritera barn och ungas läsförmåga genom tillgång till fler böcker och bemannade skolbibliotek  ",
-      "Skydda, bevara och tillgängliggöra vårt gemensamma kulturarv "
+      "Grunden för all bildning är att kunna läsa och förstå det man läser, men i dag lämnar var fjärde elev grundskolan utan tillräckliga läskunskaper.",
+      "Regeringen har möjliggjort inköp av närmare 9 miljoner böcker till skolorna per år. Lässatsningarna har bidragit till att försäljningen av barn- och ungdomslitteratur ökade med 35 procent tredje kvartalet 2025. ",
+      "Genom att byta ut de digitala skärmarna i skolan mot fysiska böcker och läromedel stärks barns och ungas läsförmåga, men också författarna och bokhandlarna.",
+      "Möjliggöra för alla människors bildning. Regeringen har låtit ta fram en kulturkanon med 100 verk av särskild betydelse för vår svenska kultur samt förslag om hur kanon kan implementeras.",
+      "Stärka folkbibliotekens läsfrämjande insatser. Därför fördubblar vi anslaget till 80 miljoner kronor i budgeten för 2026. ",
+      "Att alla barn ska få tillgång till böcker, läsning och det skrivna ordet, oavsett socioekonomiska förutsättningar. Därför förstärker vi det ekonomiska stödet till Berättarministeriet till 30 miljoner 2026.",
+      "Kungliga operans renovering visar hur offentliga och privata aktörer kan samverka kring finansiering av kultur. Genom 300 miljoner kronor i privata donationer får Operan en andra scen.",
+      "I dag är hushållen de främsta privata finansiärerna av kulturen genom biljettköp och entréavgifter. Var tredje krona till kulturen kommer från hushållen. ",
+      "Genom att öka kultursektorns möjlighet till fler intäktskällor stärker vi kulturens frihet och oberoende. ",
+      "Fortsätta stärka hushållens ekonomi genom att hårt arbetande människor får sänkt skatt på vanliga inkomster.",
+      "Möjliggöra för fler samarbeten mellan näringsliv och kultur. Regeringen ser därför över regelverket om skattereduktion för gåvor till kulturell verksamhet och ett så kallat matchningssystem, där det offentliga förstärker monetära gåvor från privata aktörer. ",
+      "Förbättra möjligheterna för sponsring av kulturlivet. Regeringen ser därför över möjligheterna till avdrag eller annan skattelättnad för sponsring.",
+      "Ett av tio svenska företag återfinns i de kulturella och kreativa branscherna som omsätter 650 miljarder kronor per år och sysselsätter 250 000 personer.",
+      "Sverige är världens näst största nettoexportör av musik. Dessutom har var fjärde person i världen spelat ett svenskt dataspel.",
+      "Med en kulturpolitik som skapar bättre förutsättningar för de kulturella och kreativa branscherna gynnas hela Sverige och svensk ekonomi.",
+      "Att Sverige fortsatt ska ligga i framkant inom de kulturella och kreativa branscherna. Genom vår strategi med vision för 2030, en sänkning av dansbandsmomsen och ett samlat grepp om immaterialrättsfrågor fortsätter vi stärka förutsättningarna för de kulturella och kreativa branscherna.",
+      "Möjliggöra för svenska aktörer att skydda och kommersialisera sina immateriella tillgångar. Därför tar vi krafttag mot illegal IP-TV som kostar rättighetsinnehavarna uppemot 1,5 miljarder kronor per år.  ",
+      "Öka närvaron av svensk kultur i internationella sammanhang och underlätta för små och medelstora företag som vill verka utomlands."
     ],
     "title": "Kultur",
     "url": "https://moderaterna.se/var-politik/kultur/",
-    "fetchDate": "2025-05-25T06:30:54.536Z",
+    "fetchDate": "2026-02-01T13:56:27.371Z",
     "party": "M",
     "subject": "kultur-media-och-idrott"
   },
-  "https://moderaterna.se/var-politik/skola/": {
-    "opinions": [
-      "Återupprätta kunskapsfokusKurs- och ämnesplaner ska ha ett tydligt fokus på konkreta mätbara faktakunskaperTidiga insatser och nivågrupperingar för att barn ska få rätt stöd.Spetsklasser för elever med behov av högre taktCentralt rättade nationella prov som mäter elevernas kunskaper på ett rättvist sätt\n\nSkolinspektion som mäter kvalitet\n\n",
-      "Kurs- och ämnesplaner ska ha ett tydligt fokus på konkreta mätbara faktakunskaper",
-      "Tidiga insatser och nivågrupperingar för att barn ska få rätt stöd.",
-      "Spetsklasser för elever med behov av högre takt",
-      "Centralt rättade nationella prov som mäter elevernas kunskaper på ett rättvist sätt",
-      "Skolinspektion som mäter kvalitet",
-      "Stärka lärarrollenHöjd status genom stärkt auktoritetFristående lärarutbildningar med mer praktikHögre krav på lärarutbildningen\n\nAvlastning och minskad administrativ börda\n\n",
-      "Höjd status genom stärkt auktoritet",
-      "Fristående lärarutbildningar med mer praktik",
-      "Högre krav på lärarutbildningen",
-      "Avlastning och minskad administrativ börda",
-      "3. Öka trygghet och studiero i klassrummetStörre befogenheter till rektorer och lärareSkärpta ordningsreglerMätbara kunskaper vilket minskar stressen\n\nUtbyggd elevhälsa\n\n",
-      "Större befogenheter till rektorer och lärare",
-      "Skärpta ordningsregler",
-      "Mätbara kunskaper vilket minskar stressen",
-      "Utbyggd elevhälsa"
-    ],
-    "title": "Skola",
-    "url": "https://moderaterna.se/var-politik/skola/",
-    "fetchDate": "2024-06-02T17:16:21.764Z",
-    "party": "M",
-    "subject": "utbildning"
-  },
-  "https://moderaterna.se/var-politik/tillvaxt/": {
-    "opinions": [
-      "Skydda äganderätten och företagsfriheten",
-      "Säkerställa att regler som påverkar företagande och utveckling är effektiva, uppfyller ett tydligt syfte och innebär en så liten börda som möjligt",
-      "Värna konkurrenskraftiga företagsskatter och kapitalskatter samt stärka kompetensförsörjningen"
-    ],
-    "title": "Tillväxt",
-    "url": "https://moderaterna.se/var-politik/tillvaxt/",
-    "fetchDate": "2025-05-25T06:30:38.414Z",
-    "party": "M",
-    "subject": "naringsliv"
-  },
-  "https://moderaterna.se/var-politik/arbetslinjen/": {
-    "opinions": [
-      "Sänka skatten på arbete – så att det alltid lönar sig mer att arbeta, särskilt för dem med låga och medelstora inkomster",
-      "Införa ett bidragstak – summan av olika bidrag får aldrig bli högre än lönen från ett arbete",
-      "Bekämpa långtidsarbetslösheten – genom nystartsjobb, tydliga aktivitetskrav, en fungerande utbildningsplikt och en jobbpremie som gör att det lönar sig för långtidsarbetslösa att gå från bidrag till jobb ",
-      "Införa krav på aktiviteter – för att få fullt bidrag ska den som får försörjningsstöd av arbetsmarknadsskäl bidra utifrån sin förmåga.",
-      "Skapa en arbetsmarknad som är öppen för alla – där varje människas arbetsförmåga tas tillvara, oavsett synliga eller osynliga funktionsnedsättningar."
-    ],
-    "title": "Arbetslinjen",
-    "url": "https://moderaterna.se/var-politik/arbetslinjen/",
-    "fetchDate": "2025-05-25T06:30:38.833Z",
-    "party": "M",
-    "subject": "jobb"
-  },
-  "https://moderaterna.se/var-politik/brott-och-straff/": {
-    "opinions": [
-      "Fokus byts från förövare till brottsoffer och samhällets behov av skydd",
-      "Straffen ska spegla brottens allvar och framstå som rimliga och rättvis",
-      "Bygga en effektivare brottsbekämpning som har mer resurser och bättre verktyg, samtidigt som vi värnar rättssäkerheten",
-      "Öka tryggheten bl.a. genom att fler brott utreds och klaras upp",
-      "Lika mycket satsningar görs på att förebygga som att bekämpa brott"
-    ],
-    "title": "Brott och straff",
-    "url": "https://moderaterna.se/var-politik/brott-och-straff/",
-    "fetchDate": "2025-05-25T06:30:38.719Z",
-    "party": "M",
-    "subject": "lag-och-ratt"
-  },
-  "https://moderaterna.se/var-politik/brottsforebyggande-atgarder/": {
-    "opinions": [
-      "Stöd ska sättas in tidigt, redan i mödra- och barnvården",
-      "Satsa på familjehem och skolsociala team",
-      "Riva sekretesshinder för att möjliggöra bättre samverkan",
-      "Det förebyggande arbetet ska vara långsiktigt och evidensbaserat",
-      "Att få en ny socialtjänstlag på plats med fokus på förbyggande arbete och tidiga insatser"
-    ],
-    "title": "Brottsförebyggande åtgärder",
-    "url": "https://moderaterna.se/var-politik/brottsforebyggande-atgarder/",
-    "fetchDate": "2024-06-02T17:16:20.660Z",
-    "party": "M",
-    "subject": "trygghetssystem-och-valfard"
-  },
-  "https://moderaterna.se/var-politik/en-gron-hoger/": {
-    "opinions": [
-      "I ökad utsträckning förebygga och hantera klimatförändringar genom att utöka och effektivisera Sveriges klimatbistånd",
-      "Sverige tydligt och aktivt ska försvara det svenska självbestämmandet över skogen i EU",
-      "Främja ett hållbart och konkurrenskraftigt jordbruk genom innovation och rättssäkra regler, för ökad självförsörjning och stärkt beredskap",
-      "Stärka förutsättningarna för ett hållbart fiske genom evidensbaserade kvotbeslut, regler som motverkar utfiskning och stöd till småskaligt kustnära fiske.",
-      "Satsa på storskalig infångning och lagring av koldioxid, så kallad bio-CCS. Lagring av koldioxid tjänster bör kunna sälja vidare på en frivilligmarknad",
-      "Satsa på industri- och klimatklivet"
-    ],
-    "title": "En grön höger",
-    "url": "https://moderaterna.se/var-politik/en-gron-hoger/",
-    "fetchDate": "2025-05-25T06:30:54.412Z",
-    "party": "M",
-    "subject": "miljo-och-klimat"
-  },
-  "https://moderaterna.se/var-politik/forskning-och-innovation/": {
-    "opinions": [
-      "Skapa bättre förutsättningar för forskning i världsklass",
-      "Underlätta rekryteringen av doktorander och forskare från andra länder",
-      "Satsa på forskning för att möta samhällsutmaningarna"
-    ],
-    "title": "Forskning och innovation",
-    "url": "https://moderaterna.se/var-politik/forskning-och-innovation/",
-    "fetchDate": "2024-06-02T17:16:19.522Z",
-    "party": "M",
-    "subject": "utbildning"
-  },
-  "https://moderaterna.se/var-politik/foretagsklimat/": {
-    "opinions": [
-      "Förenkla och förkorta tillståndsprocesser samt minska byråkratin för företagare – politiken ska tydligt styra mot minskad administrativ börda och minskade kostnader",
-      "Möjliggöra för fler företag att kunna använda sig av reglerna för personaloptioner, förenklade 3:12-regler samt forskningsavdrag",
-      "Värna konkurrenskraftiga företagsskatter och kapitalskatter samt stärka kompetensförsörjningen",
-      "Arbeta för att korta myndigheternas handläggningstider"
-    ],
-    "title": "Företagsklimat",
-    "url": "https://moderaterna.se/var-politik/foretagsklimat/",
-    "fetchDate": "2024-06-02T17:16:19.512Z",
-    "party": "M",
-    "subject": "jobb"
-  },
-  "https://moderaterna.se/var-politik/halso-och-sjukvard-samt-psykiatri/": {
-    "opinions": [
-      "Patienten ska få en trygg och tillgänglig vård i rätt tid av hög kvalitet",
-      "Prioritera en jämställd vård med fokus på kvinnors sjukdomar och hälsa, samt en förstärkt förlossningsvård",
-      "Ta bort köerna till barn- och ungdomspsykiatrin och följ upp den nationella strategin och handlingsplanen för psykisk hälsa och suicidprevention",
-      "Förstärka cancervården och barncancervården i syfte att minska dödligheten i cancer",
-      "Minska administration, krångel och byråkrati inom sjukvården för att öka patientens inflytande och minska personalens arbetsbelastning"
-    ],
-    "title": "Hälso- och sjukvård samt psykiatri",
-    "url": "https://moderaterna.se/var-politik/halso-och-sjukvard-samt-psykiatri/",
-    "fetchDate": "2025-05-25T06:30:54.560Z",
-    "party": "M",
-    "subject": "vard-och-omsorg"
-  },
-  "https://moderaterna.se/var-politik/hogskola-och-universitet/": {
-    "opinions": [
-      "Skapa ett nytt resurstilldelningssystem som premierar kvalitet",
-      "En översyn görs av utdelningen av studiemedel i syfte att stärka incitamentsstrukturerna för studenter",
-      "Utreda möjligheterna att undanröja hinder för ett ökat samarbete mellan lärosäten och bilda utbildningskluster"
-    ],
-    "title": "Högskola och universitet",
-    "url": "https://moderaterna.se/var-politik/hogskola-och-universitet/",
-    "fetchDate": "2024-06-02T17:16:21.972Z",
-    "party": "M",
-    "subject": "utbildning"
-  },
-  "https://moderaterna.se/var-politik/medborgarskap/": {
-    "opinions": [
-      "Förbättra skyddet och statusen för det svenska medborgarskapet",
-      "Återkalla medborgarskap för brottslingar med dubbelt medborgarskap som allvarligt skadar statens vitala intressen eller som delats ut på felaktiga grunder",
-      "Införa krav på kunskaper i svenska och samhällskunskap, skärpa kraven på hederligt levnadssätt, och införa villkor om egenförsörjning för att få medborgarskap"
-    ],
-    "title": "Medborgarskap",
-    "url": "https://moderaterna.se/var-politik/medborgarskap/",
-    "fetchDate": "2025-05-25T06:30:39.328Z",
-    "party": "M",
-    "subject": "migration-och-integration"
-  },
-  "https://moderaterna.se/var-politik/pensioner/": {
-    "opinions": [
-      "Värna arbetslinjen i pensionssystemet – det ska alltid löna sig bättre att ha arbetat än att inte ha gjort det",
-      "Stärka pensionärernas ekonomi. Skatten på pension ska inte vara högre än på arbete. Moderaterna är den enda garanten för ordentligt sänkt skatt på pension ",
-      "Införa en gas i pensionssystemet – så att pensionerna kan stärkas när Sveriges ekonomi är god",
-      "Driva på för ett mer jämställt arbetsliv som leder till mer jämställda pensioner",
-      "Det är viktigt att äldre medarbetares kompetens, erfarenhet och stora värde behålls på arbetsmarknaden. Därför gör vi det mer lönsamt att fortsätta arbeta längre upp i åldrarna och har gjort det möjligt att pausa utbetalning av tjänstepension fr.o.m. år 2025"
-    ],
-    "title": "Pensioner",
-    "url": "https://moderaterna.se/var-politik/pensioner/",
-    "fetchDate": "2025-05-25T06:30:54.656Z",
-    "party": "M",
-    "subject": "aldrepolitik"
-  },
-  "https://moderaterna.se/var-politik/skatt/": {
-    "opinions": [
-      "Skatterna ska vara låga, effektiva och aldrig avkräva medborgarna mer än nödvändigt.",
-      "Det alltid ska löna sig att arbeta. Regeringen har genomfört ett nionde jobbskatteavdrag, vilket innebär sänkt skatt för alla som arbetar. Regeringen har även sänkt marginalskatterna, vilket bidrar till ökad tillväxt och att det lönar sig att utbilda sig och anstränga sig lite extra.",
-      "Det alltid ska löna sig att ha arbetat. Grundavdraget för pensionärer har stärkts, vilket innebär sänkt skatt för alla som har arbetat."
-    ],
-    "title": "Skatt",
-    "url": "https://moderaterna.se/var-politik/skatt/",
-    "fetchDate": "2025-05-25T06:30:54.501Z",
-    "party": "M",
-    "subject": "ekonomi-och-skatter"
-  },
-  "https://moderaterna.se/var-politik/socialforsakringar-och-bidrag/": {
-    "opinions": [
-      "Alla som uppbär försörjningsstöd av arbetsmarknadsskäl ska delta i aktiviteter motsvarande sin arbetsförmåga för att få fullt bidrag",
-      "Rehabiliteringsinsatserna ska vara mer aktiva och präglas av tydliga tidsgränser",
-      "Modernisera föräldraförsäkringen för att främja jämställdhet"
-    ],
-    "title": "Socialförsäkringar och bidrag",
-    "url": "https://moderaterna.se/var-politik/socialforsakringar-och-bidrag/",
-    "fetchDate": "2025-05-25T06:30:54.532Z",
-    "party": "M",
-    "subject": "trygghetssystem-och-valfard"
-  },
   "https://moderaterna.se/var-politik/valfardsbrottslighet/": {
     "opinions": [
-      "Den nyinrättade utbetalningsmyndigheten ska fortsätta sitt uppdrag att upptäcka, förebygga och förhindra felaktiga utbetalningar",
-      "Förbättra folkbokföringen och ta fram en nationell lägesbild över vilka som befinner i Sverige",
-      "Stoppa oseriösa eller kriminella aktörer genom att bl.a. införa generell tillståndsplikt inom välfärdssektorn  ",
-      "Göra det lättare att dela information mellan myndigheter för att motverka bidragsbrottslighet",
-      "Skärpa straffen för bidragsbrott "
+      "Den kriminella ekonomin uppskattas omsätta omkring 100–150 miljarder kronor per år. Det är mer än hela reformutrymmet i budgeten för 2026.",
+      "2024 anmäldes 22 436 bidragsbrott, en minskning med ungefär 3 procent jämfört med 2023.",
+      "Det är fortfarande för få välfärdsbrott som klaras upp. De som behöver samhällets stöd allra mest ska få det, utan att det riskerar att hamna i kriminellas fickor.",
+      "Strypa den kriminella ekonomin genom att bland annat förhindra att företag används som brottsverktyg och beslagta fler brottsvinster.",
+      "Motverka kriminaliteten inom välfärdens verksamheter, bland annat genom att metodiskt och systematiskt arbeta mot otillåten påverkan från kriminella aktörer.",
+      "Se till att skarpare och effektivare sanktioner används för att göra konsekvenserna av att missbruka välfärdssystemen mer kännbara och omedelbara.",
+      "Varje år beräknas 15–20 miljarder kronor försvinna från välfärdens system på grund av felaktiga utbetalningar. ",
+      "Minst 79 000 personer är felaktigt folkbokförda i Sverige. Därutöver bedöms ungefär 116 000 personer vara folkbokförda på fel adress. Kriminella skriver sig på felaktiga adresser för att kunna begå systematiska bidragsbrott.",
+      "Välfärden är till för dem som behöver och har rätt till den. Vi ska värna om skattebetalarnas pengar. Alla välfärdsbrott ska bekämpas.",
+      "Säkerställa att utbetalande myndigheter ges goda förutsättningar att upptäcka, förebygga och förhindra felaktiga utbetalningar och brottslighet samt säkerställa efterlevnaden av den nya lagen om uppgiftsskyldighet. ",
+      "Göra det lättare att dela information mellan myndigheter i syfte att motverka, förebygga och hindra bidragsbrottslighet samt skärpa straffen för bidragsbrott. Regeringen har påbörjat arbetet med att införa en administrativ sanktionsavgift och bidragsspärr för dem som medvetet fuskar. Dessa föreslås enligt utredningen träda i kraft den 1 juli 2026. Det ska bli kännbart att fuska med identiteter, begå bidragsbrott och utnyttja systemen. ",
+      "Genomföra en nationell folkräkning. Det handlar om att ta reda på dels vilka som befinner sig i Sverige, dels vem som bor var. Skatteverket tar på uppdrag av regeringen årligen fram en nationell lägesbild över befolkningen och regeringen har förstärkt Skatteverkets folkbokföringsverksamhet.",
+      "De största assistansbolagen i Sverige har i snitt 22 anställda med kopplingar till organiserad brottslighet. Det är ofta personer som har anställning som personliga assistenter. Det medför att de som behöver samhällets stöd allra mest riskerar att utsättas för kriminella nätverk. ",
+      "Vidare har tillslag av Polismyndigheten, Skatteverket och IVO visat på misstänkt välfärdskriminalitet kopplad till flera vårdcentraler och vaccinkliniker. Misstankarna rör bland annat grova skattebrott och penningtvätt.",
+      "Alla patienter och anhöriga, elever och föräldrar, våldsutsatta kvinnor och barn har rätt att känna sig trygga med att verksamheterna bedrivs av seriösa utförare.",
+      "Införa generell tillståndsplikt, uppföljning och tillsyn inom alla välfärdens verksamheter för att säkerställa kvalitet, rättssäkerhet och förhindra oseriösa aktörer.",
+      "Införa en metodisk ägar- och ledningsprövning inom såväl privat drivna välfärdsverksamheter som offentliga, samt krav på att alla aktörer ska ha en långsiktig ekonomisk uthållighet.",
+      "Säkerställa att det genomförs en kartläggning av beslutskedjorna avseende välfärdsbrotten. Syftet är att kunna identifiera sårbara punkter samt se till att rätt åtgärder sätts in vid rätt tillfälle."
     ],
     "title": "Välfärdsbrottslighet",
     "url": "https://moderaterna.se/var-politik/valfardsbrottslighet/",
-    "fetchDate": "2025-05-25T06:30:54.387Z",
+    "fetchDate": "2026-02-01T13:56:11.254Z",
     "party": "M",
     "subject": "lag-och-ratt"
   },
-  "https://moderaterna.se/var-politik/aldreomsorg-och-aldrevard/": {
-    "opinions": [
-      "Stärka den medicinska kompetensen och kontinuiteten i bemanningen i äldreomsorgen",
-      "Ta fram och genomföra språkkrav inom äldreomsorg och äldrevård",
-      "Prioritera satsningar på vällagad mat inom äldreomsorg och äldrevård",
-      "Prioritera verksamhetsnära forskning som rör omvårdnad och omsorg av äldre och genomföra den utvecklade nationella demensstrategin",
-      "Stärka och utveckla den förebyggande äldrevården med ett särskilt fokus på prevention av fallolyckor     "
-    ],
-    "title": "Äldreomsorg och äldrevård",
-    "url": "https://moderaterna.se/var-politik/aldreomsorg-och-aldrevard/",
-    "fetchDate": "2025-05-25T06:30:54.429Z",
-    "party": "M",
-    "subject": "aldrepolitik"
-  },
-  "https://moderaterna.se/var-politik/socialtjanst-och-social-omsorg/": {
-    "opinions": [
-      "Barnens bästa ska prioriteras och synliggöras i lagstiftningen, och barnen ska vara egna rättighetsbärare",
-      "Implementera en ny socialtjänstlag med fokus på det förebyggande arbetet samt riva sekretesshinder mellan socialtjänst, skola och polis för att möjliggöra informationsutbyte",
-      "Reformera den statliga barn- och ungdomsvården så att barn och unga ges den vård och stöd som de behöver, och samtidigt införa ungdomsfängelser för dem som begått grova brott",
-      "Förstärka arbetet med att ta fram fler familjehem",
-      "Prioritera skolsociala team i syfte att bygga förtroende, öka tilliten till skolan och socialtjänsten samt säkerställa en trygg skolmiljö"
-    ],
-    "title": "Socialtjänst",
-    "url": "https://moderaterna.se/var-politik/socialtjanst-och-social-omsorg/",
-    "fetchDate": "2025-05-25T06:30:54.550Z",
-    "party": "M",
-    "subject": "vard-och-omsorg"
-  },
   "https://moderaterna.se/var-politik/integration/": {
     "opinions": [
-      "Införa kvalificering till välfärden för nyanlända– full tillgång till svenska bidrag och förmåner ska man bara få genom eget arbete eller permanent och laglig bosättning.",
-      "Aktivera de som står längst från arbetsmarknaden – genom språkstudier, praktik eller samhällsnyttiga insatser som för dem närmare ett jobb.",
-      "Införa språkkrav och obligatorisk samhällsorientering med godkänt prov för att få permanent uppehållstillstånd respektive medborgarskap",
-      "Begränsa rätten till betald tolk. Har man permanent uppehållstillstånd i Sverige ska rätten till tolk – med vissa undantag – upphöra",
-      "Införa bidragstak, så att det alltid lönar sig att gå från bidrag till jobb"
+      "Den kravlösa integrationspolitiken har resulterat i ett utbrett socioekonomiskt och värderingsmässigt utanförskap i form av arbetslöshet, bidragsberoende, kriminalitet, parallella samhällsstrukturer och hederskultur. Sveriges stora integrationsproblem påverkar hela samhället. ",
+      "Ungefär två tredjedelar av de långtidsarbetslösa är utrikes födda. Ca 175 000 utrikes födda saknar grundskolekompetens. ",
+      "För nyanlända som saknar gymnasieutbildning tar det väldigt många år att komma i arbete. Utanförskap går i arv till barn som aldrig ser sina föräldrar gå till jobbet och riskerar att orsaka problem för flera generationer.",
+      "Skärpa kraven och höja förväntningarna på de som invandrar till Sverige. Regeringens integrationspolitik förtydligar det egna ansvaret att bli en del av det svenska samhället. ",
+      "Att nyanlända ska underteckna ett Sverigekontrakt. Fullföljandet av Sverigekontraktet ska vara en förutsättning för ekonomiskt stöd, kvalificering till välfärden och beviljande av svenskt medborgarskap. Att inte fullfölja Sverigekontraktet ska kunna ligga till grund för återkallelse av uppehållstillstånd. ",
+      "Stärka arbetslinjen, eftersom arbete är den bästa vägen till integration. Vi fortsätter att sänka skatten på arbete och inför ett bidragstak så att det alltid ska löna sig mer att arbeta än att gå på bidrag. Vi inför även en kvalificering till välfärden i takt med att man arbetar, betalar skatt samt har permanent och laglig bosättning i Sverige. Därutöver inför vi krav på heltidsaktivering för personer med arbetsförmåga som uppbär försörjningsstöd.",
+      "Uppvärdera det svenska medborgarskapet genom att bland annat förlänga hemvistkravet till minst åtta år och införa krav på kunskaper i svenska språket, samhällskunskap och egen försörjning för att förvärva medborgarskap. De nya kraven föreslås träda i kraft den 1 juni 2026. ",
+      "Ungefär hälften av de som invandrat till Sverige har behov av tolk även efter 14 år i landet. Det offentliga Sverige lägger i dag ca två miljarder kronor per år på tolkning.",
+      "Alla ska kunna tillräckligt bra svenska. Det är grundläggande för att etablera sig på arbetsmarknaden, komma in i samhällsgemenskapen och för möjligheten att skapa sig ett bättre liv. ",
+      "Inrätta en tvåårig yrkesskola med fokus på yrkesämnen och svenska. ",
+      "Ställa högre krav på den som deltar i SFI-undervisningen. Om individuella kunskapsmål inte uppnås ska exempelvis bidrag kunna minskas. Regeringen har förstärkt SFI och föreslagit att den generella rätten till att delta i SFI begränsas till tre år. Begränsningen föreslås träda i kraft den 1 januari 2026. ",
+      "Att tolk som huvudregel inte ska bekostas av det allmänna efter tre år.",
+      "Att minderåriga barn inte ska användas som tolkar för sina vårdnadshavare."
     ],
     "title": "Integration",
     "url": "https://moderaterna.se/var-politik/integration/",
-    "fetchDate": "2025-05-25T06:30:54.529Z",
-    "party": "M",
-    "subject": "migration-och-integration"
-  },
-  "https://moderaterna.se/var-politik/migrationspolitik/": {
-    "opinions": [
-      "Anpassa det svenska regelverket för beviljande av asyl och asylförfarandet till EU-rättens miniminivå",
-      "Nyanlända ska kvalificera sig till välfärden genom att arbeta",
-      "Skärpa kraven för anhöriginvandring genom bland annat ett högre försörjningskrav ",
-      "Främja högkvalificerad arbetskraftsinvandring som Sverige är i behov av. Samtidigt höjer vi lönegolvet för arbetskraftsinvandring från länder utanför EU ",
-      "Öka möjligheterna att återkalla uppehållstillstånd, till exempel när en person har begått brott, har samröre med eller deltar i kriminella eller extremistiska organisationer eller har fått sitt uppehållstillstånd på falska grunder/uppgifter"
-    ],
-    "title": "Migration",
-    "url": "https://moderaterna.se/var-politik/migrationspolitik/",
-    "fetchDate": "2025-05-25T06:30:54.643Z",
+    "fetchDate": "2026-02-01T13:56:28.462Z",
     "party": "M",
     "subject": "migration-och-integration"
   },
   "https://moderaterna.se/var-politik/jamstalldhet/": {
     "opinions": [
-      "Skatter och bidrag ska utformas så att familjer inte förlorar på att kvinnor börjar arbeta",
-      "Modernisera socialförsäkringarna för att främja jämställdheten och värna flexibiliteten i föräldraförsäkringen",
-      "Minska det ofrivilliga deltidsarbetet, så att fler kvinnor kan stärka sin ekonomiska egenmakt",
-      "Straffskalorna med särskilt fokus på vålds- och sexualbrott ska återspegla brottens allvar",
-      "Införa obligatorisk häktning för grov kvinnofridskränkning",
-      "Skärpa straffen mot hedersrelaterat våld och förtryck och utvidga reseförbudet för barn och unga"
+      "Kvinnor äger, arbetar och tjänar mindre än män. Kvinnor är också i genomsnitt föräldralediga längre än män, vilket bidrar till att ojämställdheten består i vardag, inkomst och pension. ",
+      "Utrikesfödda kvinnor har en särskilt svag ställning på arbetsmarknaden. Arbetslösheten är tre gånger högre bland utrikesfödda kvinnor än bland inrikes födda kvinnor. ",
+      "Kvinnor är sjukskrivna i högre utsträckning än män. Skillnaden har ökat och är större i dag än i början av 1980-talet. Fler kvinnor än män lämnar också arbetslivet i förtid. ",
+      "Göra socialförsäkringarna mer moderna. Regeringen har därför utökat antalet dubbeldagar till 60 stycken och möjliggjort överlåtelse av upp till 90 föräldradagar till annan person. ",
+      "Skatter och bidrag ska utformas så att familjer inte förlorar på att kvinnor börjar arbeta. Moderaterna vill nu gå vidare och öka möjligheten att dela premiepensionen för sambos och personer med gemensamma barn.",
+      "I budgeten för 2026 ligger fokus fortsatt på att öka utrikes födda kvinnors etablering på arbetsmarknaden, förbättra språkkunskaper och främja självständighet genom arbete och utbildning. ",
+      "Ungefär 15 kvinnor mördas varje år av en befintlig eller tidigare partner. Var fjärde kvinna utsätts någon gång för psykiskt eller fysiskt våld i en nära relation.",
+      "Mäns våld mot kvinnor är ett fundamentalt angrepp på kvinnors självbestämmande och integritet. Detta våld ska bekämpas med samma kraft som gängkriminaliteten. Kvinnor och barn som utsätts ska få det skydd de behöver i tid. ",
+      "Hedersrelaterat våld och förtryck innebär en kränkning av mänskliga rättigheter. Ingen ska behöva utstå övergrepp för att upprätthålla familjens ”heder” och få sin frihet och sina livsmöjligheter begränsade. I Sverige ska ingen skolbänk stå tom efter sommarlovet för att barn har förts bort mot sig egen vilja av sina anhöriga. ",
+      "Skydda våldsutsatta. I april 2024 stärktes rättigheterna för vuxna och barn i skyddat boende, bland annat genom en tillståndsplikt för att säkra kvaliteten i dessa boenden där 4 700 barn vistas årligen. Våldsutsatta har nu även möjlighet att behålla sitt hem vid uppsägning och ta över hyreskontraktet.",
+      "Regeringen har tagit fram ett åtgärdsprogram för 2024–2026 med 132 konkreta åtgärder för att förebygga och bekämpa mäns våld mot kvinnor och våld i nära relationer. Programmet fokuserar på förebyggande arbete, återfallsprevention för våldsutövare, förbättrad upptäckt av våld samt starkare skydd och stöd till utsatta.",
+      "Införa en ny huvudregel i kontaktförbudslagen som innebär automatiskt kontaktförbud för den som döms för allvarliga brott mot närstående. Förbudet kan även omfatta en hel kommun. Polisen har fått utökade möjligheter att använda elektronisk fotboja och straffen har skärpts för grovt barnfridsbrott och för överträdelser av kontaktförbud. ",
+      "Skärpa straffen för hedersrelaterat våld och förtryck. Regeringen har gett ett stort antal myndigheter i uppdrag att arbeta med detta. Vi har utvidgat reseförbudet för barn och unga. "
     ],
     "title": "Jämställdhet",
     "url": "https://moderaterna.se/var-politik/jamstalldhet/",
-    "fetchDate": "2025-05-25T06:30:39.836Z",
+    "fetchDate": "2026-02-01T13:56:28.532Z",
     "party": "M",
     "subject": "jamstalldhet-och-diskriminering"
+  },
+  "https://moderaterna.se/var-politik/bostadspolitik/": {
+    "opinions": [
+      "I dag tar det nästan fem år att få alla tillstånd för en byggnation på plats, vilket gör en genomsnittlig lägenhet ungefär 100 000 kronor dyrare. Regelbördan behöver minska för att det ska byggas fler och billigare bostäder.",
+      "Sveriges kust- och strandlinjer motsvarar i längd över tio varv runt jorden. En stor andel omfattas av strandskyddet. Strandskyddet behöver begränsas till de verkligt skyddsvärda kust- och strandlinjerna om fler ska kunna bo nära vattnet.",
+      "Var fjärde detaljplan och vart annat bygglov överklagas, ofta av personer som inte ens bor i närheten. Det tar våra redan högbelastade domstolar i snitt åtta månader att fatta beslut om byggloven, vilket sinkar byggtakten. ",
+      "Att det ska bli enklare att bygga. Över 40 regelförenklingar i plan- och bygglagen genomförs för att bland annat göra det lättare för vanliga familjer att bygga och renovera sina hem. Ändringarna trädde i kraft den 1 december 2025. ",
+      "Att fler ska kunna bo nära vattnet. Regeringen har avskaffat strandskyddet för små och anlagda vattendrag och det utreds om kommunerna själva i stället kan peka ut vilka vattendrag som ska skyddas. Utredningen ska vara klar 30 juni 2026.",
+      "Att det ska gå snabbare att bygga. Regeringen utreder en begränsning av överklaganderätten samt möjligheten att införa en överklagandeavgift. Delredovisning av utredningen ska ske den 31 december 2025.",
+      "Sju av tio studenter bor på en studieort som inte kan erbjuda boende under den första terminen. Det motsvarar mer än hela Lunds och Norrköpings befolkning. Unga ska kunna läsa sin drömutbildning utan att bostadsmarknaden sätter stopp. ",
+      "I dag är nästan alla nybyggda studentbostäder tillgänglighetsanpassade. Det innebär att upp till en tredjedel av boytan tas upp av toaletten. Det går att säkerställa bra bostäder för studenterna med behov, samtidigt som det blir billigare att bygga. ",
+      "Sex av tio unga vuxna har inte råd att köpa en enrumslägenhet. I de större städerna är läget ännu värre. Det krossar både drömmar och gör det svårt för företag att rekrytera kompetent arbetskraft.",
+      "Bygga billigare studentbostäder. Regeringen har undantagit 80 procent av de nybyggda studentbostädernas tillgänglighetskrav, vilket sänker hyrorna med ca 10 procent. Samtidigt ska alla lägenheter fortsatt gå att hälsa på om man sitter i rullstol.",
+      "Att det ska bli lättare att spara ihop till kontantinsatsen. År 2025 är de första 150 000 kronorna på ett ISK skattebefriade, och 2026 ökas beloppet till 300 000 kronor. (Ingår i Tidöavtalet)",
+      "Att det ska bli lättare att få bolån. Regeringen har remitterat förslag om en höjning av bolånetaket från 85 till 90 procent och en sänkning av det högsta amorteringskravet från tre till två procent från och med den 1 april 2026.",
+      "Var fjärde person känner sig så pass otrygg att de undviker eller avstår från att gå ut sent på kvällen. Det är fler än vad som bor i hela Stockholms län. Alla ska känna sig trygga i och runt det egna hemmet.",
+      "Göra det lättare att vräka kriminella. Regeringen har infört möjligheten att vräka personer som begår brott och som därmed gör närområdet otryggt från sina hyresrätter. Samma möjlighet utreds nu för bostadsrätter. Utredningen ska redovisas den 2 december 2025.",
+      "Förbättra samverkan mellan det offentliga och bostadsbolagen genom obligatorisk områdessamverkan. Frågan utreds och har varit på remiss. "
+    ],
+    "title": "Bostadspolitik",
+    "url": "https://moderaterna.se/var-politik/bostadspolitik/",
+    "fetchDate": "2026-02-01T13:56:28.455Z",
+    "party": "M"
+  },
+  "https://moderaterna.se/var-politik/demokrati/": {
+    "opinions": [
+      "Utvecklingen gällande demokrati och rättsstatliga principer går åt fel håll i många delar av världen. Även i Sverige kan det demokratiska systemet över tid komma att utsättas för krafter som vill Sverige illa.",
+      "Fler än hälften av unga tror inte att politikerna kan lösa samhällsproblemen och tilltron till demokratin minskar. ",
+      "I Sverige behöver vi därför ett robust skydd för demokratin.",
+      "Införa ett högre skydd för att kunna ändra vår grundlag. Regeringen och riksdagen har under hösten fattat det första av två beslut så att det framöver krävs två tredjedelars majoritet i riksdagen för att kunna ändra en grundlag.",
+      "Att skattemedel inte ska betalas ut till organisationer som inte delar den svenska rättsstatens demokratiska principer. Regelverk för detta är nu på plats.",
+      "Förbjuda deltagande i kriminella gäng och våldsbejakande organisationer.",
+      "Myndigheter ska vara effektiva och arbeta i medborgarnas tjänst – annars tappar människor förtroendet för politiken och offentliga institutioner. ",
+      "Skärpa tjänstemannaansvaret för att höja kvaliteten i myndigheternas verksamhetsutövning. ",
+      "Att rätten till domstolsprövning ska ges en uttrycklig förankring i regeringsformen.  ",
+      "Minska antalet myndigheter för att uppnå en effektivare statsförvaltning. ",
+      "Öka den enskildas rätt till stöd och kostnadsersättning i förvaltningsmål. ",
+      "Många politiker och personal utsätts i sitt arbete för hot och otillåten påverkan. Det riskerar att påverka beslut och att färre vågar ta sig an dessa uppdrag.",
+      "Det ska inte finnas ens en misstanke om att politiken styr hur domstolar dömer.",
+      "Stärka skyddet mot våld och otillåten påverkan för förtroendevalda, enligt lagd proposition.",
+      "Att Brottsförebyggande rådet ska ta fram och sprida stödmaterial som kan användas för att förebygga och hantera otillåten påverkan.",
+      "Stärka domstolarnas oberoende, i enlighet med proposition som lagts."
+    ],
+    "title": "Demokrati, rättsstat och förvaltning",
+    "url": "https://moderaterna.se/var-politik/demokrati/",
+    "fetchDate": "2026-02-01T13:56:28.396Z",
+    "party": "M"
+  },
+  "https://moderaterna.se/var-politik/ekonomisk-politik-och-foretagande/": {
+    "opinions": [
+      "Sverige har nu det lägsta skattetrycket på 50 år. Det är rättvist att hårt arbetande svenskar får behålla mer av sina egna intjänade pengar. ",
+      "Det är orättvist att den som ställer klockan varje morgon och går till jobbet inte får mer pengar i plånboken än grannen som lever på bidrag. Att en fembarnsfamilj kan få 46 500 kronor i månaden efter skatt, utan att samtidigt göra allt de kan för att komma i arbete, är inte rimligt. ",
+      "I dag är 1,2 miljoner människor i Sverige inte självförsörjande. Utanförskapet och bidragsberoendet behöver minska – så att fler får känna tillhörighet och ha en lön att leva på.",
+      "Att hårt arbetande svenskar ska få behålla mer av sina egna intjänade pengar. Därför sänks skatten på arbete, mat och el i budgeten för 2026, vilket innebär att en vanlig familj får 1800 kronor mer i plånboken varje månad.",
+      "Fortsätta att sänka skatterna för vanliga hushåll. Regeringens skattesänkningar på bland annat sparande, el, bränsle och arbete har sammantaget gett en vanlig familj 5 000 kronor i sänkt skatt per månad sedan regeringsskiftet 2022.",
+      "Att marginalskatterna ska sänkas. Skiftarbetaren som tar storhelgerna och sjuksköterskan som jobbar natt ska inte behöva skatta bort den välförtjänta extra inkomsten i hög statlig skatt.",
+      "Företagen skapar och upprätthåller Sveriges välstånd. Företagande driver Sverige framåt, genom innovationer och värdeskapande företag får alla en högre levnadsstandard. ",
+      "Svenska företags export står för nästan 54 procent av BNP och 1,4 miljon arbetstillfällen är kopplade till exporten. ",
+      "Höga skatter, krångliga tillståndsprocesser och byråkrati sätter käppar i hjulet för innovation och tillväxt. Utan företagen stannar Sverige.   ",
+      "Göra det enklare och billigare att vara företagare i Sverige. Regeringen har instiftat ett Förenklingsråd som föreslår lagändringar för minskat regelkrångel, samt ett Implementeringsråd som arbetar med att förhindra överimplementering av EU-regler. Regeringen har genomfört flera regelförenklingar, bland annat avskaffat kvittokrånglet, slopat danstillståndet och lämnat förslag på nya 3:12-regler som innebär att den administrativa bördan av regelverket minskar med en tredjedel.",
+      "Reformera miljöbalken för att göra den mer flexibel, effektiv och förutsebar. Ett steg på vägen är förslaget om en central miljöprövningsmyndighet som ska ta över alla tillståndsprocesser från länsstyrelsernas mark-och miljödomstolar.",
+      "Sänka bolagsskatten med ambitionen att över tid ha en av EU:s mest konkurrenskraftiga skattesatser och sänka arbetsgivaravgiften så att fler kan etablera företag och anställa."
+    ],
+    "title": "Ekonomisk politik och företagande",
+    "url": "https://moderaterna.se/var-politik/ekonomisk-politik-och-foretagande/",
+    "fetchDate": "2026-02-01T13:56:28.555Z",
+    "party": "M"
+  },
+  "https://moderaterna.se/var-politik/forebyggande-arbete/": {
+    "opinions": [
+      "Forskning visar att de barn som begår brott tidigt, fortsätter begå fler och grövre brott i vuxen ålder. ",
+      "De ungdomar som varit i samhällsvård innan de fyllt 20 år, döms i tre till tio gånger högre utsträckning för brott innan de fyllt 25 år än andra ungdomar.",
+      "Alla samhällets aktörer ska bli bättre på att hjälpa till att bryta barns och ungas negativa utveckling – och det tidigare än i dag. ",
+      "Värna den nya Socialtjänstlagen med fokus är på förebyggande arbete, tidiga insatser och förenklat samarbete mellan socialtjänsten, skolan och polisen.",
+      "Införa ett så kallat mellantvång, för att säkerställa att både barn i riskzonen och deras föräldrar deltar i relevanta insatser – även när det saknas samtycke från föräldrarna. ",
+      "Steg för steg få ordning på barn- och ungdomsvården. SiS och HVB-vården behöver reformeras. ",
+      "170 000 barn växer upp i något av Sveriges 180 utanförskapsområden – med trångboddhet, kriminalitet, fattigdom och stort utanförskap som vardag.",
+      "Det är nästan var tionde barn, som ges dåliga framtidsutsikter. ",
+      "Alla barn förtjänar samma skydd och möjligheter oavsett var man växer upp.",
+      "Ge mödravården i uppdrag att genomföra regelbundna hembesök och erbjuda stöd till förstagångsföräldrar, särskilt socioekonomiskt utsatta familjer.",
+      "Identifiera barns behov tidigt genom att göra det första BVC-besöket obligatoriskt.",
+      "Fler familjecentraler ska etableras där MVC, BVC och socialtjänst har i uppdrag att arbeta samordnat med tidiga riktade insatser.",
+      "Stärka kvinnors situation i utsatta områden. Information om familjeplanering, sexuell och reproduktiv hälsa hos mödra- och barnhälsovården görs obligatoriskt.",
+      "Omkring 80 procent av dem som frihetsberövats i den kulminerade våldsvågen i Stockholm är under 18 år.",
+      "Ungefär tio barn i Sverige dör varje år på grund av våld, ofta i hemmet.",
+      "Alla barn ska vara egna rättighetsbärare. Barnets trygghet väger tyngre än vuxnas rätt att säga nej till hjälp. Föräldrar ska sätta gränser och stå för goda värderingar.",
+      "Betona föräldraansvaret. Forskning visar att engagerade föräldrar är en nyckel till att minska risken för att barn misslyckas i skolan eller hamnar i kriminalitet.",
+      "Satsa på skolsociala team och familjehem. Stöd ska sättas in tidigt för barn i förskolan som visar riskbeteende eller tecken på våld i hemmet.",
+      "Att alla förskolor och skolor ska ha etablerat samarbete med socialtjänsten."
+    ],
+    "title": "Förebyggande arbete",
+    "url": "https://moderaterna.se/var-politik/forebyggande-arbete/",
+    "fetchDate": "2026-02-01T13:56:27.051Z",
+    "party": "M"
+  },
+  "https://moderaterna.se/var-politik/forsvar-och-krisberedskap/": {
+    "opinions": [
+      "Vi har det mest allvarliga säkerhetsläget i Europa sedan andra världskriget med den ryska fullskaliga invasionen av Ukraina och där även Sverige, EU och Nato befinner sig i konfrontation med Ryssland. Miljoner ukrainare är på flykt, varav ca 50 000 ukrainare har sökt skydd i Sverige.",
+      "Det ryska krigsmaskineriet begår dagligen en mängd krigsbrott samtidigt som den ryska ledningen höjer tonläget mot Sverige och demokratierna i väst. Kärnvapenhotet är bara ett av hoten och vi ser att en mängd kontroversiella vapensystem också används på den ukrainska civilbefolkningen. Ryssland har ställt om till en krigsekonomi och blir samtidigt alltmer isolerat från västvärlden. I stället har Ryssland fördjupat sin relation med diktaturer som Iran och Nordkorea med betydande utbyte och utveckling av försvarsmateriel och soldater.",
+      "Prioritera försvar och krisberedskap med en snabb uppbyggnad som kan avskräcka och möta olika typer av hot. ",
+      "Öka anslagen till försvaret under 2026 med 26,6 miljarder kronor (tillsammans med tidigare budgeterade ökningar). Vi har även varit pådrivande i Europa för ett nytt och högre Nato-mål på minst 3,5 procent av BNP på militära utgifter, vilket Sverige ska nå 2030. ",
+      "Låna till försvarsuppbyggnaden för inte tränga ut satsningar på vår välfärd. Den föreslagna lånefinansierade satsningen innebär att uppemot 300 miljarder kronor kan frigöras till försvaret till 2034. En långsiktig finansiering ska införas successivt så att den offentliga sektorns sparande åter är i balans till 2035. ",
+      "Säkerställa att fler gör värn- och civilplikten. För att attrahera och behålla personal höjer vi bland annat ersättningar till värnpliktiga och försvarsmaktens personal.",
+      "Det civila försvaret har länge varit eftersatt och våra beredskapslager har sålts eller getts bort i form av bistånd. ",
+      "Skogsbränderna 2014 och 2018 samt covid-pandemin, med stängda gränser och handelsstopp av kritiska produkter blottade bristerna i vårt civila försvar. ",
+      "Det ökade cyberhotet med alla cyberattacker visar också på hur sårbart det svenska samhället är.",
+      "Bygga ut det civila försvaret så att det utvecklas i takt och omfattning med den militära förmågan. Av de lånefinansierade satsningarna öronmärker vi upp till 50 miljarder kronor för investeringar till det civila försvaret.",
+      "Vi har återinfört civilplikten inom fler specifika verksamheter, stärkt vår cybersäkerhet med bland annat en nationell cybersäkerhetsstrategi och tagit initiativ till att bygga upp våra beredskapslager. ",
+      "Ryssland visar ingen respekt för andra länders gränser eller mänskliga rättigheter.",
+      "Ukraina strider inte bara för sin överlevnad, utan också för hela Europa och demokratierna i väst. Vi är därför fast beslutna att ge vårt fulla stöd till Ukraina i sin kamp för frihet och demokrati. ",
+      "Det är mycket oroväckande andra demokratier vacklar i sitt stöd till Ukraina och ger efter för den ryska regimens påtryckningar.",
+      "Bistå Ukraina. Sedan krigsutbrottet har Sverige kontinuerligt bistått Ukraina med en lång rad civila och militära stödpaket till ett sammanlagt värde av 105 miljarder kronor (per 8 oktober 2025). Regeringen har även en ram för ett långsiktigt militärt stöd till Ukraina på 40 miljarder vardera för åren 2026 och 2027.",
+      "Fortsatt bistå Ukraina med modern militär utrustning, utbildning och stöd för att upprätthålla och underhålla krigsmateriel. Vi utesluter inga typer av framtida stöd för att Ukraina ska kunna försvara sin suveränitet. Vi har tagit flera viktiga steg med Ukraina om fördjupat militärt samarbete där inte minst JAS 39 Gripen ingår. ",
+      "Satsa på innovation och forskning som gör försvarsindustrin mer produktiv. Leveranser av svensk försvarsindustri blir allt viktigare i vårt stöd till Ukraina. ",
+      "Fatta EU-beslut om omfattande makroekonomiska stöd, samt ett flertal sanktionspaket mot Ryssland och de parter som Ryssland använder för att kringgå sanktionerna.",
+      "Aktivt delta i Ukrainas civila återuppbyggnad genom att bidra med stöd för reformer, demokratibyggande, cybersäkerhet och ansvarsutkrävande.",
+      "Genom Sveriges medlemskap i Nato stärker vi både vår egen säkerhet och stabiliteten i Östersjöområdet. ",
+      "Samarbetet med våra allierade gör att vi står starkare mot hot från både statliga och icke-statliga aktörer. ",
+      "Vår roll inom Nato innebär att vi bidrar till det kollektiva försvaret, och att vi drar nytta av gemensamma resurser och försvarsplanering.",
+      "Vara en aktiv och pådrivande part i Nato. Vi ska verka för att alla Natos medlemmar bidrar efter bästa förmåga och att vi själva ska vara ett föredöme i alliansen. ",
+      "Att Sverige ska vara en stark röst för att förstärka alliansens arbete med innovation och utbyggnad av försvarsindustrin.",
+      "Att Sverige ska bidra till att stärka Nato såväl internt som dess gränser med bland annat bidrag till Natos stående marina styrkor, markstridsförband och luftövervakning i vårt närområde."
+    ],
+    "title": "Försvar och krisberedskap",
+    "url": "https://moderaterna.se/var-politik/forsvar-och-krisberedskap/",
+    "fetchDate": "2026-02-01T13:56:11.241Z",
+    "party": "M"
+  },
+  "https://moderaterna.se/var-politik/grona-naringar-landsbygd-och-jakt/": {
+    "opinions": [
+      "Nästan två tredjedelar av Sveriges yta är täckt av skog. De senaste dryga hundra åren har Sveriges virkesförråd fördubblats.",
+      "Industrierna som är knutna till skogen har kunnat utveckla nya klimatsmarta produkter och lösningar som ersätter fossila alternativ. Den svenska skogen och produkter från skogen bidrar till klimatomställningen genom att fånga upp och binda stora mängder koldioxid. ",
+      "Äganderätten är en förutsättning för ett hållbart skogsbruk. Det man äger vårdar man. Egenansvar skapar de bästa förutsättningarna för en levande landsbygd. ",
+      "Säkerställa en hög skogsproduktion. Den totala arealen skog som är undantagen från skogsbruk ska inte öka. I dag är 25 procent av skogsmarken tagen ur produktion. Områden med mycket höga naturvärden ska skyddas, i samförstånd och med rätt ersättningar. Samtidigt bör skyddet tas bort för mark som inte har lika höga naturvärden. Vi vill också satsa på att bättre vårda redan skyddad skog. Anslaget för skötsel av värdefull natur ökas med 100 miljoner kronor per år under 2025–2027. ",
+      "Stärka skogsägarnas äganderätt. Det ska vara frivilligt för markägaren att formellt skydda sin skog. Ersättning ska utgå till markägare för mark som undantas från att brukas på grund av sådant skydd.",
+      "Se över reglerna för artskyddet så att orimliga krav tas bort samt tydliggöra att det är statens ansvar att utreda rådighetsinskränkningar, inte markägarens. ",
+      "De gröna näringarna är en tillgång för svensk tillväxt och en viktig del av både ekonomin och beredskapen. Vi behöver se och främja deras fulla potential. ",
+      "Dagens låga självförsörjningsgrad är ett hot mot Sveriges beredskap och särskilt allvarlig i ett läge där vi har ett krig i Europa. Endast hälften av de livsmedel som konsumeras i Sverige produceras här. År 1990 var motsvarande siffra 75 procent. ",
+      "Det är bra för landsbygden, klimatet och djurvälfärden om en större andel av världens livsmedel kommer från svenska gårdar.",
+      "Minska regelbördan och byråkratin för att stärka det svenska jordbrukets konkurrenskraft och öka livsmedelsproduktionen i Sverige. ",
+      "Säkerställa att Sverige kan producera tillräckligt med livsmedel för att klara av ett längre importstopp och upprätthålla självförsörjningsgraden i krislägen.",
+      "Utveckla och öka exporten av svenskproducerade livsmedel.",
+      "Inventeringsperioden 2023/2024 visar att det finns ca 374 vargar i Sverige. Vargen står i dag för fyra av fem dödliga attacker mot svensk boskap.",
+      "Viltvården ska ge goda förutsättningar för viltet och samtidigt ta hänsyn till de som lever nära och påverkas av viltstammarna, framför allt varg och vildsvin.",
+      "Antalet viltolyckor har ökat markant de senaste åren. 2023 genomfördes 68 630 trafikeftersök efter kollisioner på både väg och järnväg.",
+      "Minska vargstammen till 170 individer i enlighet med riksdagens beslut. Målet ska brytas ned geografiskt så att antalet vargar kan regleras på regional nivå. Licensjakt ska tillåtas och det behöver bli enklare och gå snabbare att få tillstånd för skyddsjakt. ",
+      "Värna det svenska självbestämmandet över rovdjurspolitiken i EU. Vi har drivit på i EU för att klassificera om vargen från strikt skyddad till förvaltningsbar i art- och habitatdirektivet, något som vi hoppas bli verklighet inom kort.",
+      "Höja ersättningen till jägare som eftersöker vilt som har skadats i trafikolyckor."
+    ],
+    "title": "Gröna näringar, landsbygd och jakt",
+    "url": "https://moderaterna.se/var-politik/grona-naringar-landsbygd-och-jakt/",
+    "fetchDate": "2026-02-01T13:56:10.197Z",
+    "party": "M"
+  },
+  "https://moderaterna.se/var-politik/halso-och-sjukvard-2/": {
+    "opinions": [
+      "För många patienter får inte sin operation utförd inom vårdgarantins 90-dagarsgräns. Även väntetiderna inom barn- och ungdomspsykiatrin (BUP) är alldeles för långa. ",
+      "Tidiga insatser spelar ofta stor roll för både behandling och livskvalitet. Snabb tillgång till vård är avgörande för att människor ska kunna återgå till arbetet och inte fastna i långvarig sjukskrivning eller arbetslöshet.",
+      "Vi ska ha en vård som fungerar och ger patienter hjälp inom rimlig tid. ",
+      "Skärpa vårdgarantin och ersättningsskyldigheten (Ny politik från Moderaternas stämma 2025) så att hemregionens drivkrafter att tillhandahålla vård i tid blir mycket tydligare än i dag. ",
+      "Införa en nationell vårdförmedling. Om väntetiden blir för lång i din hemregion ska du kunna få vård i en annan region där ledig kapacitet finns. (Ingår i Tidöavtalet)",
+      "Att samhället gemensamt tar ansvar för att genomföra en omfattande engångssatsning för att beta av vårdköerna. ",
+      "Andelen unga som upplever psykisk ohälsa har ökat kraftigt de senaste 15 åren. ",
+      "År 2023 uppgav sex av tio barn och unga att de besvärades av ängslan, oro eller ångest. Den främsta orsaken som lyfts fram är egna och andras krav och förväntningar.",
+      "Alla barn och unga med psykisk ohälsa ska få hjälp, stöd och vård i rätt tid av hög kvalitet.",
+      "Att alla barn och unga ska ha rätt till en lagstadgad vårdgaranti gällande besökstid och behandling hos BUP. ",
+      "Stärka första linjens psykiatri vilket bland annat kommer att avlasta trycket på BUP.",
+      "Höja åldersgränsen för BUP från 18 till 21 år och införa fast vårdkontakt för unga med svår psykisk sjukdom. ",
+      "Ofrivillig barnlöshet drabbar i dag 10 till 15 procent av befolkningen, med ett stort och tyst lidande som följd.",
+      "Även om de flesta förlossningsrelaterade skadorna har minskat över tid, drabbas fortfarande flera tusen kvinnor årligen av allvarliga bristningsskador. ",
+      "Att få barn är en stor och omvälvande händelse i livet. Det är centralt att kunna känna sig trygg och väl omhändertagen genom hela processen. ",
+      "Se över riktlinjerna för offentligt subventionerade fertilitetsbehandlingar. Antalet försök ska öka och syskonförsök ska inkluderas.",
+      "Inrätta ett nationellt program för eftervården, i likhet med det som finns för mödra- och barnhälsovården inför och efter förlossning.",
+      "Att kvinnor, i samråd med läkare och barnmorskor, ska vara mer delaktiga i planering och beslut avseende sin förlossning.  ",
+      "Sjukdomar som i huvudsak drabbar kvinnor och flickor har under många år fått alldeles för lite fokus och resurser, både inom forskningen och sjukvården. ",
+      "Kunskapsluckor och fördomar leder till att sjukdomar misstas, inte diagnostiseras eller behandlas. Exempelvis migrän, endometrios, lipödem, PCOS (polycystiskt ovarialsyndrom) och klimakteriebesvär får inte de resurser som sjukdomen kräver.",
+      "Kvinnor och flickor ska ha lika stor rätt till god hälso- och sjukvård av hög kvalitet som män och pojkar. Det är en grundläggande jämställdhetsfråga.",
+      "Att vårdens medarbetare ges bättre förutsättningar för att bedriva jämställd vård avseende kvinnors sjukdomar och hälsa.",
+      "Se över rutinerna för när diagnos och behandling ska ges vid endometrios och ta fram nationella riktlinjer om menstruell hälsa och smärta för elevhälsan.",
+      "Prioritera resurser för forskning om kvinnors sjukdomar och hälsa. Vården för sexuellt våldsutsatta barn och vuxna ska fortsatt stärkas."
+    ],
+    "title": "Hälso- och sjukvård",
+    "url": "https://moderaterna.se/var-politik/halso-och-sjukvard-2/",
+    "fetchDate": "2026-02-01T13:56:28.493Z",
+    "party": "M"
+  },
+  "https://moderaterna.se/var-politik/jobb-och-arbetsmarknad/": {
+    "opinions": [
+      "I dag lönar det sig inte alltid att arbeta jämfört med att leva på bidrag. Många familjer förlorar till och med disponibel inkomst på att gå från bidrag till arbete. Det är varken rätt eller rättvist.",
+      "Det råder stora utmaningar med kompetensförsörjning samtidigt som för många personer står utanför arbetsmarknaden. ",
+      "Matchningen mellan arbetsgivare och arbetssökande fungerar dåligt. I dag har tre av fyra företag svårt att hitta rätt kompetens. ",
+      "Återupprätta arbetslinjen genom att sänka skatten för alla som arbetar – framför allt för låg- och medelinkomsttagare. ",
+      "Möta behoven inom olika bristyrken genom ytterligare 72 000 platser inom yrkesvux och 53 000 platser inom yrkeshögskolan. ",
+      "Modernisera A-kassan med fokus på att ge både trygghet och tydliga incitament för att återgå till arbete.",
+      "Reformera Arbetsförmedlingen så att mer fokus läggs på matchning, kontroll och resultat, mindre på administration.",
+      "364 000 personer är inskrivna på Arbetsförmedlingen. Antalet har minskat under 2025, men är fortfarande högt. ",
+      "I stora lönegrupper är skillnaden mellan att jobba och leva på bidrag för liten.",
+      "Hushåll och företag har drabbats hårt av lågkonjunkturen.",
+      "Införa bidragstak. Det ska löna sig mer att arbeta än att leva på bidrag",
+      "Införa krav på heltidsaktiviteter för den som får försörjningsstöd.",
+      "Införa en jobbpremie som gör det mer lönsamt att gå från bidrag till anställning och egen försörjning."
+    ],
+    "title": "Jobb och arbetsmarknad",
+    "url": "https://moderaterna.se/var-politik/jobb-och-arbetsmarknad/",
+    "fetchDate": "2026-02-01T13:56:28.325Z",
+    "party": "M"
+  },
+  "https://moderaterna.se/var-politik/klimat-miljo-och-energi/": {
+    "opinions": [
+      "Sverige ska nå nettonollutsläpp senast år 2045 – samtidigt som vi hjälper andra länder att minska sina utsläpp. ",
+      "Klimatsatsningar ska göras där vi får ner utsläppen mest för varje spenderad krona. ",
+      "Sverige står för ca 0,1 procent av de globala utsläppen. Kina släpper ut mer koldioxid än EU och USA tillsammans.",
+      "Satsa på utbyggnad av anläggningar för infångning och lagring av koldioxid (CCS) genom exempelvis CCS-auktioner.",
+      "Premiera innovation och smarta lösningar genom bland annat Klimatklivet och Industriklivet. ",
+      "Satsa på åtgärder för ökad elektrifiering. I budgeten för 2026 föreslås därför att klimatpremien för lätta lastbilar förlängs och att klimatklivet förstärks för att bland annat finansiera laddinfrastruktur för bostadsinvesteringar och hyreshus. ",
+      "Förenkla ineffektiva miljöprövningar som skapar osäkerhet och höga kostnader för bland annat de industrier som ställer om. ",
+      "Stabil elförsörjning är en förutsättning för Sveriges välfärd och konkurrenskraft. Det finns inga rika lågenergiländer i världen. Elbehovet beräknas fördubblas till år 2045. ",
+      "Det tog decennier att bygga upp svenska kraftsystemet baserat på vatten- och kärnkraft, men några få år att montera ner den. Sex reaktorer har stängts ner i förtid. Södra Sverige har på grund av dessa nedläggningar tappat ca 3 800 megawatt i effekt. Det motsvarar nästan fem gånger Sveriges största vattenkraftverk.",
+      "Kraftsystemets bas ligger i vatten- och kärnkraft. Tillsammans med kraftvärme, vind- och solkraft blir systemet effektivare och elpriserna pressas. Under sina två första godkände regeringen mer än dubbelt så mycket havsbaserad vindkraft än vad förra regeringen gjorde på åtta år och avskaffat straffskatterna på kraftvärme. ",
+      "Se över elmarknaden så att planerbara kraftslag som kärn- och vattenkraft får betalt för sin tillgänglighet.",
+      "Möjliggöra ny kärnkraft. En reaktor kan producera ungefär lika mycket el under en timme som en svensk använder under sin livstid. Därför har regeringen i budgeten för 2026 presenterat en långsiktig finansieringsmodell med statliga lån för ny kärnkraft.",
+      "Öka satsningarna på investeringsstödet ”Kraftlyftet”, för att stärka lokal energiproduktion på kort sikt där behoven är som störst. ",
+      "Östersjön är ett av världens mest övergödda hav – fler än hälften av världens döda bottnar finns här.",
+      "Storskalig trålning och miljöföroreningar har lett till minskade fiskbestånd och förstörda ekosystem.",
+      "Mänsklig påverkan hotar både havsmiljön och framtiden för kustfisket.",
+      "Skydda haven på riktigt. Regeringen har beslutat att förbjuda bottentrålning i Sveriges marina skyddade områden från 1 juli 2026. Det är ett avgörande steg mot friskare hav och långsiktigt hållbart fiske.",
+      "Stärka det gemensamma Östersjöarbetet. Fortsätta arbetet mot övergödning, plast- och mikroplastföroreningar och utsläpp av farliga ämnen. Samarbetet mellan länderna runt Östersjön ska fördjupas och ge verkliga resultat för miljön.",
+      "Stoppa storskalig industritrålning i Östersjön. Fångster som i dag används till fiskmjöl ska inte ske på bekostnad av våra fiskbestånd. Moderaterna vill ge Östersjön en paus och säkra möjligheten till kustnära fiske för kommande generationer."
+    ],
+    "title": "Klimat, miljö och energi",
+    "url": "https://moderaterna.se/var-politik/klimat-miljo-och-energi/",
+    "fetchDate": "2026-02-01T13:56:28.642Z",
+    "party": "M"
+  },
+  "https://moderaterna.se/var-politik/lag-och-ordning-2/": {
+    "opinions": [
+      "Under 2024 hade Sverige totalt 296 antal skjutningar och 129 sprängningar.",
+      "Människor runt om i landet drabbas av ordningsstörningar som gradvis urholkar tryggheten i närmiljön. Maktlösheten förstärks av att polisen ofta känns långt borta.",
+      "Det behövs fler poliser och bättre verktyg för att ingripa, utreda och klara upp brott. I Sverige ska medborgarna kunna leva sina liv i frihet utan rädsla – oavsett om det gäller oron för gängvåld, våld i hemmet eller vardagsbrott i närområdet. ",
+      "Förstärka polisens resurser och öka polistillväxten. Mellan 2023 och 2027 beräknas anslaget till Polismyndigheten öka från 37 till 51,9 miljarder kronor, en ökning med 40 procent. Sedan 2022 har Sverige 1 118 fler uniformerade poliser (+12 procent), det är den största ökningen någonsin.",
+      "Polisen har fått bättre verktyg i form av vistelseförbud, säkerhetszoner, preventiva tvångsmedel, ökade möjligheter till kamerabevakning och en ny huvudregel i sekretesslagstiftningen som ger myndigheter bättre förutsättningar att samverka.",
+      "Ge kommunerna kraftigt utökade verktyg för att hantera ordningsstörningar, mängdbrott och lokal otrygghet samt införa en ny yrkeskategori, säkerhetsvakter, som kan komplettera polis och ordningsvakter. ",
+      "Nytorgsmannen dömdes 2021 för 35 sexualbrott varav sju våldtäkter. Han frigavs efter drygt tre år, vilket motsvarar ca en månad i fängelse per brott. En annan förövare våldtog kvinnor under tortyrliknande förhållanden och dömdes till fängelse. Han visade sig vara yngre än vad rätten först trott och var därför frihetsberövad för länge. Han fick 840 000 kronor i skadestånd, nästan fyra gånger mer än brottsoffret.",
+      "46 000 personer har obetalda skulder på över 10 miljarder kronor för brottsskadestånd hos Kronofogden. Den som utsatts för ett brott och får en fällande dom och skadestånd behöver själv försöka få ut pengarna från sin förövare. ",
+      "Skärpa straffen så att de speglar brottens allvar och flytta fokus från gärningsman till brottsoffer och samhällets behov av skydd. Regeringen arbetar intensivt med att få på plats de största reformerna av straffsystemet i modern tid. ",
+      "Stärka brottsoffrets ställning. Regeringen ser till att underlätta för brottsoffer att få sitt skadestånd (bl.a. genom ersättning direkt från staten som i sin tur får driva in pengarna från gärningspersonen), möjliggöra mer utmätning till förmån för brottsoffer, stärka rätten till kränkningsersättning för bl.a. poliser, stärka rätten till målsägandebiträde (särskilt för äldre och för våldsutsatta kvinnor) och att frågor om skadestånd till brottsoffer handläggs tillsammans med brottmålet. ",
+      "Införa en förverkandefond där förverkade brottsvinster används till stöd för brottsoffer och brottsförebyggande arbete. ",
+      "Ungefär 15 kvinnor mördas varje år av en befintlig eller tidigare partner. ",
+      "Var fjärde kvinna utsätts någon gång för psykiskt eller fysiskt våld i en nära relation.",
+      "Hundratusentals unga i Sverige lever under hedersförtryck. Särskilt flickor kontrolleras hårt av sina familjer och begränsas kraftigt i sin vardag och i sin rätt att utöva grundläggande friheter. ",
+      "Regeringen har skärpt straffen för sexualbrott och kraftigt skärpt kontaktförbudslagen. Automatiskt kontaktförbud gäller i fler fall och kan omfatta en hel kommun. Polisen har fått utökade möjligheter att använda elektronisk fotboja och kan lättare kontrollera om någon bryter mot förbudet. Straffen har skärpts för grovt barnfridsbrott och för överträdelser av kontaktförbud.",
+      "Kriminalisera ekonomiskt och psykiskt våld, förlänga maxtiden för kontaktförbud, införa preventiva kontaktförbud, införa brottet synnerligen grov våldtäkt med livstids fängelse i straffskalan, avskaffa patientavgiften för kvinnor som söker upp vård efter våldtäkt. Hedersrelaterat förtryck behöver tydligt särskiljas från våld i nära relationer genom egna rättsliga ramverk. ",
+      "Kriminalisera oskuldskontroller, intygande av sexuell oskuld samt oskuldsingrepp. Detsamma gäller underlåtenhet att avslöja eller förhindra brottet äktenskapstvång och barnäktenskapsbrott, det vill säga att det blir straffbart att inte avslöja eller förhindra pågående brott. Lagändringarna börjar gälla den 1 december 2025."
+    ],
+    "title": "Lag och ordning",
+    "url": "https://moderaterna.se/var-politik/lag-och-ordning-2/",
+    "fetchDate": "2026-02-01T13:56:28.501Z",
+    "party": "M"
+  },
+  "https://moderaterna.se/var-politik/migration/": {
+    "opinions": [
+      "Under de tolv åren innan den nuvarande regeringen tillträdde invandrade ca 1,2 miljoner utländska medborgare till Sverige, och över 700 000 svenska medborgarskap beviljades. ",
+      "Under de åtta år Socialdemokraterna styrde tog Sverige emot 320 000 asylsökande utan någon som helst plan. Sverige är bland de länder i Europa som tagit emot flest asylsökande sett till vår befolkningsstorlek. ",
+      "Antalet beviljade asylrelaterade uppehållstillstånd, inklusive anhöriga till asylsökande, var 2024 det lägsta sedan 1985.",
+      "Minska den asylrelaterade invandringen till Sverige genom att bland annat anpassa asyllagstiftningen till EU-rättens miniminivå. Få EU:s migrationspakt på plats i syfte att minska invandringen till EU. ",
+      "Göra en översyn av relevant EU-lagstiftning och konventioner i syfte att uppnå en minimal asylinvandring för att lyckas med integrationen.",
+      "Införa ett system med kvalificering till välfärden och uppvärdera det svenska medborgarskapet genom att införa krav på kunskaper i svenska och samhällskunskap, egen försörjning och att ha bott i Sverige en längre tid för att bli svensk medborgare. ",
+      "I Sverige finns ett betydande skuggsamhälle, det vill säga människor som bor och vistas i landet utan tillstånd. Det är omöjligt att slå fast hur många personer som befinner sig i Sverige utan giltiga tillstånd. ",
+      "Skuggsamhället präglas av utsatthet, kriminalitet och utnyttjande av människor. Inte minst barn riskerar att fara mycket illa.",
+      "Att ett ja ska vara ett ja och ett nej ska vara ett nej i migrationspolitiken. Ett uppehållstillstånd ska förenas med både goda möjligheter och krav på att integreras i det svenska samhället. Den som får avslag på sin asylansökan ska utan dröjsmål lämna landet.   ",
+      "Genomföra en folkräkning och införa mottagningscenter där asylsökande ska bo under hela asylprocessen. Folkräkningen pågår och Skatteverket tar årligen fram en nationell lägesbild över befolkningen. Mottagningscenter har införts och regeringen har genomfört första steget för att avskaffa EBO.",
+      "Säkerställa att fler människor som inte har rätt att vistas i Sverige lämnar landet genom att vidta flertalet åtgärder såsom fler inre utlänningskontroller, bruten sekretess mellan myndigheter och omprövningar av bistånd.",
+      "Framgångsrika företag och god svensk konkurrenskraft kräver att nyckelkompetens kan rekryteras från Sverige, EU och tredje land. ",
+      "I Sverige är nästan 400 000 personer inskrivna på Arbetsförmedlingen samtidigt som personer kommer hit från andra sidan jorden för att utföra lågkvalificerade jobb såsom att städa och diska.",
+      "Flera rapporter vittnar om utnyttjande av regler, fusk och kriminalitet kopplat till arbetskraftsinvandring, särskilt i yrken med lägre löner och inom assistansbranschen. ",
+      "Främja högkvalificerad arbetskraftsinvandring genom bland annat snabbare handläggning av arbetstillstånd. ",
+      "Höja försörjningskravet (lönekravet) för arbetskraftsinvandrare från länder utanför EU. I november 2023 höjdes det till 80 procent av medianlönen. Regeringen har föreslagit att från den 1 juni 2026 höja lönekravet ytterligare till 90 procent av medianlönen, motsvarande drygt 33 000 kronor.  ",
+      "Öka drivkrafterna för arbetslösa att komma i arbete genom att införa ett bidragstak, krav på heltidsaktivering för att få försörjningsstöd och kvalificering till välfärden."
+    ],
+    "title": "Migration",
+    "url": "https://moderaterna.se/var-politik/migration/",
+    "fetchDate": "2026-02-01T13:56:28.506Z",
+    "party": "M"
+  },
+  "https://moderaterna.se/var-politik/sjukforsakring-2/": {
+    "opinions": [
+      "Antalet långa sjukskrivningar ökar i Sverige. Nästan hälften av alla sjukskrivningar beror på psykisk ohälsa.",
+      "Ju längre någon är sjukskriven, desto större är risken att den sjukskrivne aldrig kommer tillbaka i arbete. ",
+      "Rehabiliteringsinsatserna behöver vara aktiva, sättas in tidigt och ha tydliga tidsgränser. Om aktörerna i rehabiliteringskedjan väntar för länge med att vidta viktiga åtgärder riskerar det att leda till fler långa sjukskrivningar.",
+      "Att sjukförsäkringen ska ha tydligt definierade avstämningstillfällen.",
+      "Att rehabiliteringskedjan ska fungera väl för den som är sjukskriven. Den 1 mars 2026 införs möjligheten för den som är sjukskriven på heltid att arbetspröva med bibehållen sjukpenning, med syftet att sänka trösklarna för återgång i arbete. ",
+      "Stärka anställdas möjligheter att få förebyggande behandling via arbetsgivaren."
+    ],
+    "title": "Sjukförsäkring",
+    "url": "https://moderaterna.se/var-politik/sjukforsakring-2/",
+    "fetchDate": "2026-02-01T13:56:28.424Z",
+    "party": "M"
+  },
+  "https://moderaterna.se/var-politik/skola-och-utbildning/": {
+    "opinions": [
+      "En av sex elever går ut grundskolan utan behörighet till gymnasiet. Det motsvarar 800 skolklasser – varje år.",
+      "Dagens abstrakta kurs- och ämnesplaner skapar destruktiv stress hos många barn och leder till olikvärdiga betyg.",
+      "Alla barn har rätt till en grundplåt med kunskap som de kan stå stadigt på under resten av livet.",
+      "Införa ett nytt betygssystem och nya betygskriterier som ger rättvisande betyg i hela landet. Regeringen avser införa detta 2028.",
+      "Införa nya kurs- och ämnesplaner med ett tydligt kunskapsfokus från höstterminen 2028.",
+      "Utöka antalet screeningar i lågstadiet för tidig identifiering av elever som behöver särskilt stöd i svenska och matematik. Skolor ska också få bättre förutsättningar för att erbjuda stödundervisning i mindre grupper, framförallt i lågstadiet.",
+      "Lärare lämnar yrket i hög grad. 35 000 utbildade lärare arbetar inte inom skolan. Samtidigt är nästan 30 procent av lärarna i grundskolan obehöriga.",
+      "Kvaliteten på lärarutbildningen är för låg. Exempelvis får inte lärarstudenter med sig någon konkret metod för att lära barn att läsa. Fyra av tio lärarstudenter tar inte examen samtidigt som antagningskraven för låga. ",
+      "En lärarstudent får i snitt bara åtta timmar lärarledd undervisning i veckan. Det är inte tillräckligt för att utbilda fler skickliga lärare till Sveriges elever.",
+      "Återinföra en reglering av lärares undervisningsskyldighet. Regeringen har avsatt medel i budgeten för 2026 för att införa detta från höstterminen 2027.",
+      "Erbjuda alla lågstadielärare fortbildning i evidensbaserad läsundervisning med särskilt fokus på avkodningsmetoden.",
+      "Reformera lärarutbildningen genom nytt adekvat innehåll och höjda antagningsgränser – så att de är rustade för utbildningen. Förslagen bereds nu i regeringskansliet.",
+      "I dag upplever både lärare och elever att regler för sällan efterlevs i skolan, vilket har skapat skolmiljöer där allvarliga fall av stök och bråk inte får några konsekvenser. Vartannat skolbarn i åldrarna 10–16 har utsatts för kränkningar eller mobbning i skolan eller på nätet. ",
+      "Skolan ska vara en trygg och säker plats – både för elever och skolpersonal. ",
+      "Var tredje lärare har utsatts för kränkningar, hot eller våld. Värst är det bland lärare på fritidshem där sex av tio utsatts – det motsvarar nästan 15 000 lärare. ",
+      "Att skollagen ska tydliggöra rektorers och lärares mandat att vidta de åtgärder som krävs för att säkerställa trygghet och studiero.",
+      "Införa krav på förväntansdokument på varje skola som tydliggör vilka skolregler som gäller och vad konsekvenserna blir när dessa överträds.",
+      "Att regelverket för tillfällig placering på annan skola och möjligheten att stänga av elever skärps. Att Sverige ska hämta inspiration från den framgångsrika skolmodellen ”No Excuses” med fokus på effektiv inlärning och ordning.",
+      "Inget annat OECD- eller EU-land har lika stora skillnader i läsförståelse mellan de elever som alltid pratar svenska hemma och de som sällan gör det. ",
+      "29 procent av grundskoleeleverna är berättigade till modersmålsundervisning – det motsvarar 319 000 elever. Samtidigt är forskning splittrad om undervisningen förbättrar kunskaper i svenska och andra ämnen.",
+      "En rapport visar samtidigt att på 20 av 30 förskolor pratade personalen så dålig svenska att det påverkade den pedagogiska verksamheten negativt. Alla barn förtjänar att mötas av en pedagog som kan prata svenska.",
+      "Avskaffa svenska som andraspråk och ersätta det med grundläggande språkundervisning för elever med stora språkliga behov. Betyget ska inte räknas in vid antagning till vidare studier.",
+      "Reformera modersmålsundervisningen genom tydligare regler för vilka elever som har rätt till den, införa krav på legitimerade lärare och ökad användning av fjärrundervisning.",
+      "Införa språk- och lämplighetstest vid anställning i förskola och skola samt ta fram ett omställningsprogram för personal med bristfälliga språkkunskaper."
+    ],
+    "title": "Skola och utbildning",
+    "url": "https://moderaterna.se/var-politik/skola-och-utbildning/",
+    "fetchDate": "2026-02-01T13:56:28.389Z",
+    "party": "M"
+  },
+  "https://moderaterna.se/var-politik/trafik-och-infrastruktur/": {
+    "opinions": [
+      "Hela Sverige ska fungera. Investeringar i ny infrastruktur ska fokusera på arbetspendling och godstrafik med effektivt genomförande och god kostnadskontroll.",
+      "Miljontals pendlare står dagligen inför förseningar på grund av eftersatt underhåll. Det är ett svek mot både människor och företag.",
+      "Bristande trafik och infrastruktur hotar tillväxt, konkurrenskraft och sammanhållning i hela landet.",
+      "Rekordsatsa på underhållet av befintliga stambanor och spår. 210 miljarder kronor tillförs under planperioden 2026–2037 för att minska järnvägsskulden. ",
+      "Bygga bort flaskhalsar som hindrar pendling och godstransporter, till exempel genom fler spår på sträckan Uppsala–Stockholm. ",
+      "Reformera Trafikverkets funktionssätt för att få ut mer av varje satsad krona.",
+      "Sverige är till ytan Europas tredje största land, och det längsta landet från norr till söder. ",
+      "Människor utanför storstäderna är beroende av bilen för att få vardagspusslet att gå ihop – för att ta sig till jobbet, handla mat eller skjutsa barnen till träningen. ",
+      "De senaste åren har 130 mil statlig väg fått sänkt hastighet till följd av bristande underhåll.",
+      "Tillföra 354 miljarder kronor för vägunderhåll i syfte att nolla underhållsskulden i det statliga vägnätet till år 2037. Öppna för alternativ finansiering av vägar, exempelvis för utbyggnaden av Östlig förbindelse. ",
+      "Bygga ut laddinfrastrukturen snabbt, samordnat och samhällsekonomiskt effektivt i hela landet.",
+      "Använda digitaliseringens möjligheter i syfte att bättre kunna planera såväl trafik- som vägarbeten. Väghållningen ska fungera året runt.",
+      "Flyget är avgörande för ett väl fungerande näringsliv, en stark arbetsmarknad och vår beredskap. 30 miljoner flygresor genomförs varje år. Sverige är för stort till ytan för att klara sig utan fungerande flygförbindelser",
+      "Sjöfarten är en outnyttjad resurs. 90 procent av svensk import och export går någon gång via sjöfart. Nästan 70 000 fartyg anlöper varje år till svenska hamnar och 160 miljoner ton varor lastas.",
+      "Ta fram en konkret plan för att göra inrikesflyget fossilfritt, med ökat fokus på elflyg och förnybara drivmedel. Öka stödet till regionala flygplatser och göra flera av dem till permanenta beredskapsflygplatser. ",
+      "Främja svenska rederiers konkurrenskraft och fortsätta öka antalet svenskflaggade fartyg. Regeringen har avskaffat stämpelskatten för inteckning av skepp, satsat på utveckling av en fossilfri sjöfart och ökat investeringarna i isbrytare. "
+    ],
+    "title": "Trafik och infrastruktur",
+    "url": "https://moderaterna.se/var-politik/trafik-och-infrastruktur/",
+    "fetchDate": "2026-02-01T13:56:28.213Z",
+    "party": "M"
+  },
+  "https://moderaterna.se/var-politik/utrikespolitik/": {
+    "opinions": [
+      "Stödet till Ukraina är Sveriges främsta utrikespolitiska uppgift och en oumbärlig investering i Europas och därmed vår egen säkerhet, självständighet och framtid. I budgeten för 2026 ökar vi det militära stödet till 60 miljarder kronor samtidigt som vi även ökar det civila till 10 miljarder kronor. ",
+      "Ryssland utgör det dimensionerande hotet mot Sverige, Europa och Nato. Det står också klart att den ryska statsledningen har en antagonistisk agenda med motiv som är mer långtgående än motstånd mot europeiska länders stöd till Ukraina. ",
+      "Ett försvagat Ukraina under direkt eller indirekt rysk kontroll skulle innebära kraftigt ökade risker för Sverige och Europa. Inte minst skulle det ge Ryssland utrymme och styrka att utöka sin militära närvaro i Sveriges närområde. Utgången av kriget påverkar därmed säkerheten i Europa för kommande generationer",
+      "Att Sverige och Europa utifrån dessa utgångspunkter ska fortsätta stödja Ukraina politiskt, ekonomiskt, militärt och humanitärt. EU kommer att behöva ta ett stort ansvar för Ukrainas uppbyggnad av såväl infrastruktur som institutioner. Det kan vi göra samtidigt som vi förstärker vårt eget försvar och ytterligare fördjupar samarbetet med våra grannländer.",
+      "Utöka och förstärka sanktionerna mot Ryssland. Kryphålen behöver täckas igen. Ansvariga för aggressionsbrottet mot Ukraina – ansvariga militärer, militära och politiska ledare samt tjänstemän – ska ställas inför rätta.",
+      "Stärka vår möjlighet att agera mot säkerhetshotande verksamhet. Vi kommer därför arbeta för att införa upprustningslagar för att snabbare nå ett kraftigt utbyggt försvar. Vi kommer också införa nya lagar för att kunna agera mot främmande makt genom att expropriera egendom där säkerhetshotande verksamhet bedrivs. ",
+      "Medan Europa, Nato, transatlantiska relationer och kriget i Ukraina kräver Sveriges omedelbara uppmärksamhet, förutsätter vår långsiktiga säkerhet och välstånd strategiskt engagemang bortom vårt närområde. ",
+      "För att trygga Sveriges intressen i ett föränderligt geopolitiskt landskap behövs globala samarbeten och långsiktiga strategier. ",
+      "Sveriges ställning som exportberoende land gör det viktigt att slå vakt om en fri, hållbar och regelbaserad handel, liksom en väl fungerande inre marknad i EU. Detta bidrar till vår konkurrens- och motståndskraft.",
+      "Utveckla våra relationer med likasinnade länder i alla delar av världen inom både handelspolitiken samt utrikes- och säkerhetspolitiken. ",
+      "Upprätthålla multilaterala organisationer samt inom dessa motverka auktoritära staters underminering av liberala principer. ",
+      "Genom regeringens utrikeshandelsstrategi lägga grunden för fortsatt engagemang inom frihandel. ",
+      "Stärka Sveriges ställning som global partner för grön och digital omställning. Svenska företag har ett starkt engagemang för hållbarhet, jämställdhet och socialt ansvarstagande."
+    ],
+    "title": "Utrikespolitik",
+    "url": "https://moderaterna.se/var-politik/utrikespolitik/",
+    "fetchDate": "2026-02-01T13:56:28.573Z",
+    "party": "M"
+  },
+  "https://moderaterna.se/var-politik/aldres-villkor-och-pensioner/": {
+    "opinions": [
+      "Socialdemokraternas bidragslinje har medfört att skillnaden i pension mellan de som har arbetat och de som inte har arbetat har blivit allt mindre.",
+      "De senaste åren har andelen pensionärer som får någon form av pensionsbidrag ökat från 30 till 70 procent. Ökningen beror på att den förra S-ledda regeringen höjde garantipensionen och att den därefter också kraftigt räknades upp till följd av den höga inflationen.",
+      "Den som arbetat och försörjt sig själv ska ha en pension som går att leva på. Vi lever allt längre, vilket också gör att pensionen också behöver räcka längre tid.",
+      "Värna arbetslinjen i pensionssystemet – det ska alltid löna sig bättre att ha arbetat och ansträngt sig än att inte ha gjort det. ",
+      "Stärka pensionärernas ekonomi, bland annat genom sänkt skatt. Ett pensionärspar (båda 75 år) med medelhöga pensioner får 2 200 kronor mer i plånboken per månad 2026 jämfört med 2022 till följd av regeringens budgetar. Pensionsgruppen har under Anna Tenjes ledning kommit överens om att införa en ”gas” i pensionssystemet från den 1 januari 2027. ",
+      "Göra det mer lönsamt att fortsätta arbeta längre upp i åldrarna. Den 1 januari 2025 infördes mer flexibla regler för uttag av tjänstepension.",
+      "Med stigande ålder ökar antalet sjukdomar och behovet av individuellt anpassade insatser, vilket ställer höga krav på en samordnad vård och kompetent personal.",
+      "Omkring åtta av tio svenskar som fyllt 65 år har minst en kronisk sjukdom. Det motsvarar över 1,6 miljoner människor. ",
+      "Vart fjärde fall av bröstcancer upptäcks hos kvinnor över 75 år.",
+      "Äldre ska kunna leva ett så friskt och aktivt liv som möjligt så länge som möjligt. När hälsan och förmågan sviktar ska samhället ta ansvar och erbjuda rätt stöd.",
+      "Införa ett vaccinationsprogram för äldre. Sverige har ett av världens bästa vaccinationsprogram för barn. Nu är det dags att ge de äldre samma skydd, oavsett plånbok.",
+      "Ta bort den övre åldersgränsen på 74 år för avgiftsfri bröstcancerscreening.",
+      "Att Sverige ska ha en ledande roll i utvecklingen av bättre läkemedelsbehandling och diagnostik för äldre.",
+      "År 2030 kommer antalet äldre som fyllt 80 år att ha ökat med nära 25 procent jämfört med i dag. Det medför ett ökat tryck på äldrevården och äldreomsorgen.",
+      "Hälften av dem som har äldreomsorg upplever besvär med ofrivillig ensamhet.",
+      "Alla äldre ska ha rätt till ett gott liv och självbestämmande, särskilt när man är i behov av hemtjänst och äldreomsorg. ",
+      "Införa språkkrav inom äldreomsorgen. Alla äldre ska kunna förstå och kommunicera med personalen.",
+      "Införa en skyldighet att genomföra bakgrundskontroller för både nyanställd och befintlig personal som arbetar inom äldreomsorgen.",
+      "Stärka den medicinska kompetensen och ledarskapet i äldreomsorgen. Demensvården ska också fortsätta stärkas och utvecklas. ",
+      "Utveckla anhörigstödet. Den ofrivilliga ensamheten bland äldre ska motverkas och åldersdiskriminering och ålderism ska bekämpas."
+    ],
+    "title": "Äldres villkor och pensioner",
+    "url": "https://moderaterna.se/var-politik/aldres-villkor-och-pensioner/",
+    "fetchDate": "2026-02-01T13:56:28.467Z",
+    "party": "M"
   }
 }

@@ -36,7 +36,7 @@ catalog:
   next: 16.1.6
   next-sitemap: 4.2.3
   next-themes: 0.4.6
-  pdfjs-dist: 5.4.530
+  pdfjs-dist: 5.4.624
   postcss: 8.5.6
   prettier: 3.8.1
   prettier-plugin-tailwindcss: 0.7.2
@@ -53,7 +53,7 @@ catalog:
   typed.js: 3.0.0
   typescript: 5.9.3
   typescript-eslint: 8.54.0
-  undici: 7.19.2
+  undici: 7.20.0
 
 catalogMode: strict
 

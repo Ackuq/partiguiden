@@ -7,7 +7,7 @@ import Scraper from "../scraper.ts";
 
 export default class CScraper extends Scraper {
   baseUrl = "https://www.centerpartiet.se";
-  listPath = "/var-politik/centerpartiets-politik-a-o";
+  listPath = "/centerpartiets-politik/centerpartiets-politik-a-o";
   listSelector = ".result-container .result-wrapper a";
   opinionTags = ["*[id^='h-Centerpartietvill'] + ul > li"];
   pathRegex = /\/[/.a-zA-Z0-9-]+/;

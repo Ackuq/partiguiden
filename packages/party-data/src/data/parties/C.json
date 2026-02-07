@@ -1237,19 +1237,6 @@
     "party": "C",
     "subject": "infrastruktur-och-trafik"
   },
-  "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/infrastruktur-och-transporter/flyg": {
-    "opinions": [
-      "Göra Sverige ledande på elflyg genom en nationell strategi för fossilfritt flyg.",
-      "Kräva mer förnybart bränsle i tanken för att snabbt minska utsläppen.",
-      "Säkra tillgången till flyg i hela landet genom en modern flygplatsstrategi och stötta de regionala flygplatserna runt om i landet.",
-      "Under förutsättning att det går att säkerställa beredskap och det samhällsviktiga flyget bör Bromma flygplats på sikt avvecklas"
-    ],
-    "title": "Flyg",
-    "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/infrastruktur-och-transporter/flyg",
-    "fetchDate": "2026-02-01T13:25:49.519Z",
-    "party": "C",
-    "subject": "infrastruktur-och-trafik"
-  },
   "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/infrastruktur-och-transporter/jarnvag": {
     "opinions": [
       "Genomföra ett Sverigelyft för att rusta upp och modernisera hela järnvägsnätet.",
@@ -1284,18 +1271,6 @@
     "title": "Körkort och trafiksäkerhet",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/infrastruktur-och-transporter/korkort-och-trafiksakerhet",
     "fetchDate": "2026-02-01T13:25:51.006Z",
-    "party": "C",
-    "subject": "infrastruktur-och-trafik"
-  },
-  "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/infrastruktur-och-transporter/lastbilar-och-tung-trafik": {
-    "opinions": [
-      "Göra transporterna klimatsmarta med längre lastbilar och snabbare elektrifiering.",
-      "Skapa rättvisa villkor och stoppa fusket som slår ut seriösa åkeriföretag.",
-      "Främja ett smart samspel mellan lastbil, tåg och båt för effektiva transporter."
-    ],
-    "title": "Lastbilar och tung trafik",
-    "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/infrastruktur-och-transporter/lastbilar-och-tung-trafik",
-    "fetchDate": "2026-02-01T13:25:50.418Z",
     "party": "C",
     "subject": "infrastruktur-och-trafik"
   },
@@ -1494,25 +1469,6 @@
     "title": "Varg och andra rovdjur",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/jordbruk-skog-jakt-och-fiske/varg-och-andra-rovdjur",
     "fetchDate": "2026-02-01T13:25:50.512Z",
-    "party": "C",
-    "subject": "jordbruk-jakt-och-fiske"
-  },
-  "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/jordbruk-skog-jakt-och-fiske/vattenbruk": {
-    "opinions": [
-      "Förenkla reglerna och korta tillståndstiderna för den som vill starta vattenbruk.",
-      "Främja odling av musslor och alger som fungerar som naturens egna reningsverk.",
-      "Stärka Sveriges livsmedelsförsörjning med mer hållbart odlad mat från våra vatten.",
-      "att vattenbruk ses som en lösning för att skapa jobb och tillväxt, särskilt i våra kust- och landsbygder.",
-      "att Sverige ska bli ledande på hållbar odling av fisk, skaldjur och alger.",
-      "att vattenbruket ska vara en viktig del av Sveriges livsmedelsstrategi och beredskap.",
-      "genomföra en total översyn av regelverken och skapa moderna, tydliga regler för vattenbruk.",
-      "införa en princip om \"en väg in\" för tillstånd och sätta fasta tidsgränser för myndigheternas handläggning.",
-      "underlätta och främja odling av musslor och alger som både blir till mat och biobränsle, samtidigt som de renar haven från övergödning.",
-      "satsa mer på forskning och innovation för att utveckla ett ännu mer hållbart vattenbruk."
-    ],
-    "title": "Vattenbruk",
-    "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/jordbruk-skog-jakt-och-fiske/vattenbruk",
-    "fetchDate": "2026-02-01T13:25:50.789Z",
     "party": "C",
     "subject": "jordbruk-jakt-och-fiske"
   },
@@ -2786,5 +2742,78 @@
     "fetchDate": "2026-02-01T13:25:50.249Z",
     "party": "C",
     "subject": "aldrepolitik"
+  },
+  "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/energi/grona-transporter-ev-sla-ihop": {
+    "opinions": [
+      "Praesent id placerat est. Praesent sollicitudin tincidunt ex, quis mattis lectus tristique in. Duis vel mi neque. Fusce id sapien in dui cursus facilisis.",
+      "Vivamus sit amet nisi et lacus ullamcorper fringilla. Vestibulum pellentesque varius velit, faucibus semper nunc feugiat at. Nunc a ultrices risus.",
+      "Praesent enim diam, aliquam sit amet neque vitae, laoreet molestie nisl."
+    ],
+    "title": "Gröna transporter (ev slå ihop)",
+    "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/energi/grona-transporter-ev-sla-ihop",
+    "fetchDate": "2026-02-07T06:50:31.209Z",
+    "party": "C"
+  },
+  "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/integration-och-migration": {
+    "opinions": [
+      "Värna asylrätten och barns rätt att återförenas med sina föräldrar.",
+      "Göra det enklare att komma till Sverige för att arbeta och bidra med sin kompetens.",
+      "Stärka integrationen genom att fokusera på att komma i arbete så snabbt som möjligt.",
+      "underlätta för företag att anställa arbetskraft från andra länder, både för hög- och lågkvalificerade jobb.",
+      "fokusera på snabbare vägar till jobb och självförsörjning för nyanlända.",
+      "säkerställa en rättssäker och effektiv asylprocess med korta handläggningstider."
+    ],
+    "title": "Integration och migration",
+    "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/integration-och-migration",
+    "fetchDate": "2026-02-07T06:50:27.929Z",
+    "party": "C"
+  },
+  "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/integration-och-migration/arbetskraftinvandring": {
+    "opinions": [
+      "Låta företag avgöra vilken kompetens de behöver anställa från hela världen.",
+      "Stoppa fusk och utnyttjande av arbetskraft",
+      "Göra Sverige mer attraktivt för internationella talanger, experter och entreprenörer.",
+      "värna och utveckla dagens system för arbetskraftsinvandring, inte ersätta det med krånglig myndighetsprövning.",
+      "stoppa utvisningar av arbetskraftsinvandrare på grund av obetydliga misstag från arbetsgivaren.",
+      "införa lagar som gör det möjligt att neka eller återkalla tillstånd om syftet uppenbart är fusk, inte arbete.",
+      "skapa ett särskilt uppehållstillstånd för internationella talanger och entreprenörer som vill starta företag i Sverige."
+    ],
+    "title": "Arbetskraftinvandring",
+    "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/integration-och-migration/arbetskraftinvandring",
+    "fetchDate": "2026-02-07T06:50:36.747Z",
+    "party": "C"
+  },
+  "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/integration-och-migration/asylprocessen": {
+    "opinions": [
+      "Skapa en snabb och rättssäker asylprocess för alla.",
+      "Förbättra mottagandet med tydlig information och stöd från dag ett.",
+      "Säkerställa ett effektivt återvändande för den som fått avslag.",
+      "att asylprocessen ska vara förutsägbar, effektiv och human från början till slut.",
+      "att mottagandet ska vara tryggt och ge asylsökande bra information om svenska lagar och samhället.",
+      "att den som får avslag ska få aktivt stöd för ett snabbt återvändande.",
+      "Fortsätta korta handläggningstiderna hos Migrationsverket och domstolarna.",
+      "Utöka och förbättra samhällsinformationen som ges tidigt i asylprocessen.",
+      "Införa avresecentrum som ger stöd och förbereder för ett ordnat återvändande.",
+      "Verkställa utvisningar snabbare och effektivare."
+    ],
+    "title": "Asylprocessen",
+    "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/integration-och-migration/asylprocessen",
+    "fetchDate": "2026-02-07T06:50:29.747Z",
+    "party": "C"
+  },
+  "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/integration-och-migration/integration": {
+    "opinions": [
+      "Satsa på jobb och språkkunskaper som den snabbaste vägen in i samhället.",
+      "Ersätta SFI med Jobbsvenska för att göra det enklare att komma i arbete snabbt",
+      "Införa ett nystartsår för alla som inte haft ett jobb på tre år i Sverige och som inte kan svenska.",
+      "Göra det enklare och billigare att anställa och att starta företag.",
+      "Införa jobbsvenska, för att fler ska snabbare kunna komma i arbete",
+      "utveckla ett nystartsår för alla som inte har jobbat på 3 år och inte kan svenska, som kombinerar intensiva språkstudier med praktiska moment för att bli anställningsbar",
+      "göra om etableringsbidraget till ett etableringslån, likt studielånet, för att stärka drivkraften till självförsörjning."
+    ],
+    "title": "Integration",
+    "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/integration-och-migration/integration",
+    "fetchDate": "2026-02-07T06:50:29.616Z",
+    "party": "C"
   }
 }

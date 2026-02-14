@@ -62,6 +62,35 @@ export default abstract class Scraper implements ScraperArgs {
     return href;
   }
 
+  protected async fetchPage(
+    input: Parameters<typeof fetch>[0],
+    opts: Parameters<typeof fetch>[1],
+    retryCount = 0,
+  ): Promise<Response> {
+    try {
+      const response = await fetch(input, opts);
+      if (!response.ok) {
+        throw new Error(`Failed to fetch page, status: ${response.status}`);
+      }
+      return response;
+    } catch (error) {
+      if (retryCount < 3) {
+        console.warn(
+          `Fetch failed with error: ${error as Error}. Retrying (${retryCount + 1}/3)...`,
+        );
+        await new Promise((resolve) =>
+          setTimeout(resolve, Math.floor(Math.random() * 2000)),
+        );
+        return this.fetchPage(input, opts, retryCount + 1);
+      } else {
+        console.error(
+          `Failed to fetch page after 3 attempts: ${error as Error}`,
+        );
+        throw error;
+      }
+    }
+  }
+
   protected async getStandpointPageData(
     $link: Cheerio<Element>,
   ): Promise<Omit<PartyDataWithoutPartyName, "opinions"> & { html: string }> {
@@ -92,7 +121,7 @@ export default abstract class Scraper implements ScraperArgs {
       setTimeout(resolve, Math.floor(Math.random() * 2000)),
     );
 
-    const response = await fetch(url, {
+    const response = await this.fetchPage(url, {
       headers: { "Content-Type": "text/plain; charset=UTF-8" },
     });
 
@@ -153,7 +182,7 @@ export default abstract class Scraper implements ScraperArgs {
   }
 
   async getPages(): Promise<PartyDataWithoutPartyName[]> {
-    const response = await fetch(this.baseUrl + this.listPath, {
+    const response = await this.fetchPage(this.baseUrl + this.listPath, {
       headers: { "Content-Type": "text/plain; charset=UTF-8" },
     });
     const html = await response.text();

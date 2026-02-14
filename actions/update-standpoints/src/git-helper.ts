@@ -1,5 +1,6 @@
 import * as core from "@actions/core";
-import { ExecOptions, getExecOutput } from "@actions/exec";
+import type { ExecOptions } from "@actions/exec";
+import { getExecOutput } from "@actions/exec";
 
 export async function setGitIdentity(name: string, email: string) {
   const command = ["config", "--local", "user.name", name];

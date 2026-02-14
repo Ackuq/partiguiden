@@ -2735,7 +2735,8 @@
     "title": "Migration",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/integration-och-migration",
     "fetchDate": "2026-02-14T10:55:27.146Z",
-    "party": "C"
+    "party": "C",
+    "subject": "migration-och-integration"
   },
   "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/integration-och-migration/arbetskraftinvandring": {
     "opinions": [
@@ -2750,7 +2751,8 @@
     "title": "Arbetskraftinvandring",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/integration-och-migration/arbetskraftinvandring",
     "fetchDate": "2026-02-07T06:50:36.747Z",
-    "party": "C"
+    "party": "C",
+    "subject": "migration-och-integration"
   },
   "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/integration-och-migration/asylprocessen": {
     "opinions": [
@@ -2768,7 +2770,8 @@
     "title": "Asylprocessen",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/integration-och-migration/asylprocessen",
     "fetchDate": "2026-02-07T06:50:29.747Z",
-    "party": "C"
+    "party": "C",
+    "subject": "migration-och-integration"
   },
   "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/integration-och-migration/integration": {
     "opinions": [
@@ -2783,7 +2786,8 @@
     "title": "Integration",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/integration-och-migration/integration",
     "fetchDate": "2026-02-07T06:50:29.616Z",
-    "party": "C"
+    "party": "C",
+    "subject": "migration-och-integration"
   },
   "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/digitalisering/bredband": {
     "opinions": [
@@ -2801,7 +2805,8 @@
     "title": "Bredband",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/digitalisering/bredband",
     "fetchDate": "2026-02-14T10:55:25.311Z",
-    "party": "C"
+    "party": "C",
+    "subject": "it-och-mobiltelefoni"
   },
   "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/digitalisering/mobiltackning": {
     "opinions": [
@@ -2819,14 +2824,16 @@
     "title": "Mobiltäckning",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/digitalisering/mobiltackning",
     "fetchDate": "2026-02-14T10:55:26.598Z",
-    "party": "C"
+    "party": "C",
+    "subject": "it-och-mobiltelefoni"
   },
   "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/diskriminering/funktionshindermanifest": {
     "opinions": [],
     "title": "Funktionshindermanifest",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/diskriminering/funktionshindermanifest",
     "fetchDate": "2026-02-14T10:55:27.712Z",
-    "party": "C"
+    "party": "C",
+    "subject": "jamstalldhet-och-diskriminering"
   },
   "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/jordbruk-skog-jakt-och-fiske/vattenbruk": {
     "opinions": [
@@ -2844,7 +2851,8 @@
     "title": "Vattenbruk",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/jordbruk-skog-jakt-och-fiske/vattenbruk",
     "fetchDate": "2026-02-14T10:55:28.232Z",
-    "party": "C"
+    "party": "C",
+    "subject": "jordbruk-jakt-och-fiske"
   },
   "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/kultur-media-och-idrott/folkbildning": {
     "opinions": [
@@ -2862,7 +2870,8 @@
     "title": "Folkbildning",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/kultur-media-och-idrott/folkbildning",
     "fetchDate": "2026-02-14T10:55:25.475Z",
-    "party": "C"
+    "party": "C",
+    "subject": "kultur-media-och-idrott"
   },
   "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/kultur-media-och-idrott/foreningsliv-och-civilsamhalle": {
     "opinions": [
@@ -2880,7 +2889,8 @@
     "title": "Föreningsliv och civilsamhälle",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/kultur-media-och-idrott/foreningsliv-och-civilsamhalle",
     "fetchDate": "2026-02-14T10:55:27.531Z",
-    "party": "C"
+    "party": "C",
+    "subject": "kultur-media-och-idrott"
   },
   "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/kultur-media-och-idrott/kultur": {
     "opinions": [
@@ -2898,7 +2908,8 @@
     "title": "Kultur",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/kultur-media-och-idrott/kultur",
     "fetchDate": "2026-02-14T10:55:25.288Z",
-    "party": "C"
+    "party": "C",
+    "subject": "kultur-media-och-idrott"
   },
   "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/kultur-media-och-idrott/media-och-public-service": {
     "opinions": [
@@ -2916,7 +2927,8 @@
     "title": "Media och public service",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/kultur-media-och-idrott/media-och-public-service",
     "fetchDate": "2026-02-14T10:55:25.425Z",
-    "party": "C"
+    "party": "C",
+    "subject": "kultur-media-och-idrott"
   },
   "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/infrastruktur-och-transporter/flyg": {
     "opinions": [
@@ -2928,7 +2940,8 @@
     "title": "Flyg",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/infrastruktur-och-transporter/flyg",
     "fetchDate": "2026-02-14T10:55:27.525Z",
-    "party": "C"
+    "party": "C",
+    "subject": "infrastruktur-och-trafik"
   },
   "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/infrastruktur-och-transporter/lastbilar-och-tung-trafik": {
     "opinions": [
@@ -2939,7 +2952,8 @@
     "title": "Lastbilar och tung trafik",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/infrastruktur-och-transporter/lastbilar-och-tung-trafik",
     "fetchDate": "2026-02-14T10:55:27.906Z",
-    "party": "C"
+    "party": "C",
+    "subject": "infrastruktur-och-trafik"
   },
   "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/integration-och-migration/anhoriginvandring": {
     "opinions": [
@@ -2956,6 +2970,7 @@
     "title": "Anhöriginvandring",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/integration-och-migration/anhoriginvandring",
     "fetchDate": "2026-02-14T10:55:27.929Z",
-    "party": "C"
+    "party": "C",
+    "subject": "migration-och-integration"
   }
 }

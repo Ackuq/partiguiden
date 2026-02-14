@@ -136,9 +136,9 @@
       "Snabba på omställningen till fossilfria transporter för att minska våra utsläpp och nå klimatmålen.",
       "Satsa på både upprustning av befintlig järnväg och bygget av nya banor för att öka kapaciteten i järnvägssystemet."
     ],
-    "title": "Infrastruktur och transporter",
+    "title": "Transporter",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/infrastruktur-och-transporter",
-    "fetchDate": "2026-02-01T12:57:25.079Z",
+    "fetchDate": "2026-02-14T10:55:25.866Z",
     "party": "C",
     "subject": "infrastruktur-och-trafik"
   },
@@ -171,9 +171,9 @@
       "stärka äganderätten och se till att skogsägare får full ersättning om staten begränsar deras möjligheter att bruka sin skog.",
       "främja ett hållbart fiske med regional förvaltning som tar hänsyn till lokala förhållanden och säkrar beståndens framtid."
     ],
-    "title": "Jordbruk, skog, jakt och fiske",
+    "title": "Skog",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/jordbruk-skog-jakt-och-fiske",
-    "fetchDate": "2026-02-01T12:57:24.619Z",
+    "fetchDate": "2026-02-14T10:55:25.415Z",
     "party": "C",
     "subject": "jordbruk-jakt-och-fiske"
   },
@@ -223,9 +223,9 @@
       "Säkra en fri press: Säkra ett teknikneutralt mediestöd som stärker journalistiken i hela landet och säkerställa en oberoende och långsiktig finansiering för public service.",
       "Stärka idrotten: Satsa på barn och ungas idrottande, bland annat i skolan och i utsatta områden."
     ],
-    "title": "Kultur, media och idrott",
+    "title": "Media",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/kultur-media-och-idrott",
-    "fetchDate": "2026-02-01T12:57:25.549Z",
+    "fetchDate": "2026-02-14T10:55:24.850Z",
     "party": "C",
     "subject": "kultur-media-och-idrott"
   },
@@ -364,9 +364,9 @@
       "sänka skatten för låg- och medelinkomsttagare, så att fler får mer kvar i plånboken efter att räkningarna är betalda.",
       "förenkla skattesystemet och regelverken för att göra det lättare att starta och driva företag i hela landet."
     ],
-    "title": "Ekonomi och skatter",
+    "title": "Skatt",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/ekonomi-och-skatter",
-    "fetchDate": "2026-02-01T12:57:24.105Z",
+    "fetchDate": "2026-02-14T10:55:24.917Z",
     "party": "C",
     "subject": "ekonomi-och-skatter"
   },
@@ -1576,26 +1576,6 @@
     "party": "C",
     "subject": "kultur-media-och-idrott"
   },
-  "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/lag-och-ratt/diskriminering": {
-    "opinions": [
-      "Stärka skyddet mot diskriminering med skarpa lagar och mer aktiva myndigheter.",
-      "Ge bättre stöd och upprättelse till de som drabbas av diskriminering och hatbrott.",
-      "Skärpa lagen så att fler skyddas från diskriminering och hatbrott.",
-      "Att skyddet mot diskriminering ska vara starkt i hela samhället, från arbetslivet till myndigheter.",
-      "Att lagstiftningen ska vara tydlig och modern för att skydda fler grupper.",
-      "Att de som utsätts för diskriminering ska få ett starkt stöd och verklig upprättelse.",
-      "Utöka grundlagens skydd mot diskriminering till att även omfatta könsuttryck, religion, ålder och funktionsnedsättning.",
-      "Lägga till kön och funktionsnedsättning som grunder för hatbrott i lagstiftningen, så att brott med sådana motiv straffas hårdare.",
-      "Revidera Diskrimineringsombudsmannens (DO) uppdrag för att mer aktivt utreda och agera mot diskriminering.",
-      "Höja ersättningen till de som utsatts för diskriminering.",
-      "Ge mer resurser till polisens hatbrottsenheter och till de organisationer i civilsamhället som stöttar brottsoffer."
-    ],
-    "title": "Diskriminering",
-    "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/lag-och-ratt/diskriminering",
-    "fetchDate": "2026-02-01T13:25:51.272Z",
-    "party": "C",
-    "subject": "lag-och-ratt"
-  },
   "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/lag-och-ratt/gangkriminalitet": {
     "opinions": [
       "Ge polisen vassare verktyg och skärpa straffen för gängrelaterade brott.",
@@ -2743,17 +2723,6 @@
     "party": "C",
     "subject": "aldrepolitik"
   },
-  "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/energi/grona-transporter-ev-sla-ihop": {
-    "opinions": [
-      "Praesent id placerat est. Praesent sollicitudin tincidunt ex, quis mattis lectus tristique in. Duis vel mi neque. Fusce id sapien in dui cursus facilisis.",
-      "Vivamus sit amet nisi et lacus ullamcorper fringilla. Vestibulum pellentesque varius velit, faucibus semper nunc feugiat at. Nunc a ultrices risus.",
-      "Praesent enim diam, aliquam sit amet neque vitae, laoreet molestie nisl."
-    ],
-    "title": "Gröna transporter (ev slå ihop)",
-    "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/energi/grona-transporter-ev-sla-ihop",
-    "fetchDate": "2026-02-07T06:50:31.209Z",
-    "party": "C"
-  },
   "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/integration-och-migration": {
     "opinions": [
       "Värna asylrätten och barns rätt att återförenas med sina föräldrar.",
@@ -2763,9 +2732,9 @@
       "fokusera på snabbare vägar till jobb och självförsörjning för nyanlända.",
       "säkerställa en rättssäker och effektiv asylprocess med korta handläggningstider."
     ],
-    "title": "Integration och migration",
+    "title": "Migration",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/integration-och-migration",
-    "fetchDate": "2026-02-07T06:50:27.929Z",
+    "fetchDate": "2026-02-14T10:55:27.146Z",
     "party": "C"
   },
   "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/integration-och-migration/arbetskraftinvandring": {
@@ -2814,6 +2783,179 @@
     "title": "Integration",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/integration-och-migration/integration",
     "fetchDate": "2026-02-07T06:50:29.616Z",
+    "party": "C"
+  },
+  "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/digitalisering/bredband": {
+    "opinions": [
+      "Säkra tillgången till snabbt bredband i hela landet genom ökade investeringar och minskad byråkrati.",
+      "Öka digitaliseringen inom den offentliga sektorn.",
+      "Utgå från principen att offentlig data och källkod ska vara öppen.",
+      "att staten tar ett större ansvar för att bygga ut bredband i hela landet, särskilt på landsbygden.",
+      "att digital politik ska fokusera på att skapa möjligheter, inte hinder, för människor och företag.",
+      "att öppenhet ska vara grundprincipen för data och källkod i offentlig sektor för att främja innovation.",
+      "öka de statliga investeringarna i bredbandsutbyggnad, med särskilt fokus på hushåll och företag på landsbygden.",
+      "införa tydligare krav på statliga myndigheter som Trafikverket och Svenska kraftnät att underlätta för bredbandsutbyggnad, till exempel genom samförläggning av fiber när annan infrastruktur byggs.",
+      "förenkla regelverken för att snabba på tillståndsprocesser för digital infrastruktur.",
+      "göra offentlig data och källkod öppen som standard för att stimulera innovation och nya digitala tjänster."
+    ],
+    "title": "Bredband",
+    "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/digitalisering/bredband",
+    "fetchDate": "2026-02-14T10:55:25.311Z",
+    "party": "C"
+  },
+  "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/digitalisering/mobiltackning": {
+    "opinions": [
+      "Bygga ut mobilnätet med fler master i hela landet.",
+      "Förbättra täckningen på tåg för att underlätta arbete och resor.",
+      "Säkerställa att ett fullgott alternativ finns på plats innan kopparnätet avvecklas.",
+      "att staten tar ansvar för täckning i områden där det inte är kommersiellt lönsamt för operatörerna att bygga.",
+      "att digital infrastruktur ska främja företagande och en levande landsbygd.",
+      "att alla ska känna trygghet i att kunna larma och få kontakt med det offentliga, oavsett var man befinner sig.",
+      "Bygga ut med samhällsmaster. Vi vill att staten, precis som i Norge, är med och finansierar master i områden där det inte är kommersiellt lönsamt.",
+      "Ställa krav vid nedmontering av kopparnät. Ett fullgott och fungerande alternativ måste finnas på plats innan operatörer väjer att avveckla det fasta telefonnätet.",
+      "Använda frekvensauktioner smartare. När staten säljer nya mobilfrekvenser ska det ingå krav på operatörerna att även bygga ut täckningen i glesbygd.",
+      "Förbättra täckningen på tåg. Vi vill att mobiloperatörerna ska få använda Trafikverkets befintliga infrastruktur längs järnvägen för att ge resenärerna bättre uppkoppling."
+    ],
+    "title": "Mobiltäckning",
+    "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/digitalisering/mobiltackning",
+    "fetchDate": "2026-02-14T10:55:26.598Z",
+    "party": "C"
+  },
+  "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/diskriminering/funktionshindermanifest": {
+    "opinions": [],
+    "title": "Funktionshindermanifest",
+    "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/diskriminering/funktionshindermanifest",
+    "fetchDate": "2026-02-14T10:55:27.712Z",
+    "party": "C"
+  },
+  "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/jordbruk-skog-jakt-och-fiske/vattenbruk": {
+    "opinions": [
+      "Förenkla reglerna och korta tillståndstiderna för den som vill starta vattenbruk.",
+      "Främja odling av musslor och alger som fungerar som naturens egna reningsverk.",
+      "Stärka Sveriges livsmedelsförsörjning med mer hållbart odlad mat från våra vatten.",
+      "att vattenbruk ses som en lösning för att skapa jobb och tillväxt, särskilt i våra kust- och landsbygder.",
+      "att Sverige ska bli ledande på hållbar odling av fisk, skaldjur och alger.",
+      "att vattenbruket ska vara en viktig del av Sveriges livsmedelsstrategi och beredskap.",
+      "genomföra en total översyn av regelverken och skapa moderna, tydliga regler för vattenbruk.",
+      "införa en princip om \"en väg in\" för tillstånd och sätta fasta tidsgränser för myndigheternas handläggning.",
+      "underlätta och främja odling av musslor och alger som både blir till mat och biobränsle, samtidigt som de renar haven från övergödning.",
+      "satsa mer på forskning och innovation för att utveckla ett ännu mer hållbart vattenbruk."
+    ],
+    "title": "Vattenbruk",
+    "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/jordbruk-skog-jakt-och-fiske/vattenbruk",
+    "fetchDate": "2026-02-14T10:55:28.232Z",
+    "party": "C"
+  },
+  "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/kultur-media-och-idrott/folkbildning": {
+    "opinions": [
+      "Värna folkbildningens frihet och frivillighet.",
+      "Säkerställa att folkhögskolor och studieförbund kan nå ut i hela landet.",
+      "Främja livslångt lärande och ge fler vägar till egenmakt och samhällsengagemang.",
+      "att folkbildningen ska vara en kraft för frihet, egenmakt och livslångt lärande.",
+      "att den ska stärka demokratins grund genom att främja samhällsengagemang och kritiskt tänkande.",
+      "lyfta folkbildningens bidrag till sammanhållning och förmåga att hantera kriser i en orolig omvärld.",
+      "Värna folkbildningens frihet och frivillighet: Säkerställa att folkbildningens verksamheter kan arbeta självständigt, utan detaljstyrning från staten.",
+      "Säkra folkbildningens breda uppdrag: Ge folkhögskolor och studieförbund stabila förutsättningar att fortsätta erbjuda bildningsverksamhet i hela landet, oavsett om det handlar om språkkurser, konst eller samhällsfrågor.",
+      "Stödja alternativa vägar till kunskap: Underlätta för att fler ska kunna skaffa sig gymnasiekompetens via allmän kurs på folkhögskola, och att studieförbunden kan erbjuda icke-formella utbildningar som tagits fram på lokal nivå.",
+      "Investera i folkbildningens samhällsroll: Erkänna folkbildningens stora betydelse för att bygga ett sammanhållet samhälle som kan hantera framtidens utmaningar och kriser."
+    ],
+    "title": "Folkbildning",
+    "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/kultur-media-och-idrott/folkbildning",
+    "fetchDate": "2026-02-14T10:55:25.475Z",
+    "party": "C"
+  },
+  "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/kultur-media-och-idrott/foreningsliv-och-civilsamhalle": {
+    "opinions": [
+      "Frigöra kraften i det ideella engagemanget i hela landet.",
+      "Göra det enklare att ge gåvor till föreningar.",
+      "Minska byråkratin för alla som driver en ideell verksamhet.",
+      "att politiken ska underlätta för, inte styra, det fria föreningslivet",
+      "att ideella krafter ska ses som en självklar och viktig del av både välfärden och demokratin",
+      "att engagemang och generositet ska uppmuntras",
+      "Utöka avdragsrätten för gåvor, så att fler organisationer, som idrottsföreningar och kulturverksamheter, kan omfattas.",
+      "Göra det enklare för ideella aktörer att driva vård, skola och omsorg som ett komplement till det offentliga och på så sätt öka valfriheten.",
+      "Ta tillvara ideella organisationers roll för integration, eftersom de ofta är bäst på att skapa möten och gemenskap på riktigt.",
+      "Förenkla regler och minska byråkratin för alla som driver en förening eller ideell verksamhet."
+    ],
+    "title": "Föreningsliv och civilsamhälle",
+    "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/kultur-media-och-idrott/foreningsliv-och-civilsamhalle",
+    "fetchDate": "2026-02-14T10:55:27.531Z",
+    "party": "C"
+  },
+  "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/kultur-media-och-idrott/kultur": {
+    "opinions": [
+      "Göra kulturen tillgänglig för alla, i hela Sverige.",
+      "Stärka barns och ungas rätt att både uppleva och skapa kultur.",
+      "Värna den fria kulturen, fri från politisk styrning.",
+      "att kulturen ska vara fri från politisk klåfingrighet, enligt principen om armlängds avstånd",
+      "att alla ska ha möjlighet att ta del av kultur, oavsett var man bor, bakgrund eller funktionsnedsättning",
+      "att kultur ska vara en naturlig och självklar del av barns och ungas uppväxt",
+      "Sprida den statliga kulturen: Se till att fler får ta del av de nationella museernas, teatrarnas och orkestrarnas verksamhet, även utanför storstäderna.",
+      "Stödja lokala mötesplatser: Satsa på samlingslokaler av olika slag som kan fungera som scener för lokala kulturupplevelser.",
+      "Ge alla barn tillgång till kultur: Säkerställa en tillgänglig kulturskola av och erbjuda kultur i den vanliga skolan.",
+      "Värna den konstnärliga friheten genom att säkerställa att beslut om kulturstöd fattas av sakkunniga, inte av politiker."
+    ],
+    "title": "Kultur",
+    "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/kultur-media-och-idrott/kultur",
+    "fetchDate": "2026-02-14T10:55:25.288Z",
+    "party": "C"
+  },
+  "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/kultur-media-och-idrott/media-och-public-service": {
+    "opinions": [
+      "Säkra en livskraftig och oberoende lokal journalistik i hela Sverige.",
+      "Värna ett oberoende och tillgängligt public service med ett brett uppdrag.",
+      "Garantera allas tillgång till information genom snabbt internet i hela landet.",
+      "att det ska finnas en mångfald av medier och röster i hela landet",
+      "att politiker ska hålla armlängds avstånd till mediernas innehåll",
+      "att public service har ett unikt ansvar att vara oberoende från både politiska och kommersiella intressen",
+      "att alla ska ha praktisk möjlighet att ta del av nyheter och information",
+      "Säkra ett mediestöd som stöttar oberoende journalistik i hela landet, oavsett om den publiceras på papper eller digitalt.",
+      "Säkra ett oberoende public service med ett brett utbud av nyheter, kultur och underhållning som speglar hela Sverige och är tillgängligt för alla.",
+      "Garantera en digital allemansrätt genom att bygga ut snabbt och stabilt internet i hela landet, så att alla kan ta del av digitala nyheter och tjänster."
+    ],
+    "title": "Media och public service",
+    "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/kultur-media-och-idrott/media-och-public-service",
+    "fetchDate": "2026-02-14T10:55:25.425Z",
+    "party": "C"
+  },
+  "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/infrastruktur-och-transporter/flyg": {
+    "opinions": [
+      "Göra Sverige ledande på elflyg genom en nationell strategi för fossilfritt flyg.",
+      "Kräva mer förnybart bränsle i tanken för att snabbt minska utsläppen.",
+      "Säkra tillgången till flyg i hela landet genom en modern flygplatsstrategi och stötta de regionala flygplatserna runt om i landet.",
+      "Under förutsättning att det går att säkerställa beredskap och det samhällsviktiga flyget bör Bromma flygplats på sikt avvecklas"
+    ],
+    "title": "Flyg",
+    "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/infrastruktur-och-transporter/flyg",
+    "fetchDate": "2026-02-14T10:55:27.525Z",
+    "party": "C"
+  },
+  "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/infrastruktur-och-transporter/lastbilar-och-tung-trafik": {
+    "opinions": [
+      "Göra transporterna klimatsmarta med längre lastbilar och snabbare elektrifiering.",
+      "Skapa rättvisa villkor och stoppa fusket som slår ut seriösa åkeriföretag.",
+      "Främja ett smart samspel mellan lastbil, tåg och båt för effektiva transporter."
+    ],
+    "title": "Lastbilar och tung trafik",
+    "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/infrastruktur-och-transporter/lastbilar-och-tung-trafik",
+    "fetchDate": "2026-02-14T10:55:27.906Z",
+    "party": "C"
+  },
+  "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/integration-och-migration/anhoriginvandring": {
+    "opinions": [
+      "Säkerställa att människor på flykt kan återförenas med sin familj.",
+      "Ha ett försörjningskrav som huvudregel",
+      "Skydda människor från att utnyttjas eller fara illa i en relation.",
+      "att försörjningskrav ska vara huvudregel, eftersom det stärker integrationen.",
+      "att tydliga undantag måste finnas för skyddsbehövande och utlandssvenskar.",
+      "att barnperspektivet alltid måste väga tungt – barn ska inte separeras från sina föräldrar.",
+      "Undanta flyktingar, alternativt skyddsbehövande och kvotflyktingar från försörjningskravet under de första tre månaderna, så att de snabbt kan återförenas med sin familj.",
+      "Undanta svenska medborgare som flyttar hem till Sverige med sin familj från försörjningskravet.",
+      "Stärka skyddet för personer som kommer till Sverige för en ny relation och riskerar att utsättas för våld eller utnyttjande, bland annat genom att se över lagstiftningen och överväga att informera om en partners våldshistorik. Läs mer i vår politik för jämställdhet."
+    ],
+    "title": "Anhöriginvandring",
+    "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/integration-och-migration/anhoriginvandring",
+    "fetchDate": "2026-02-14T10:55:27.929Z",
     "party": "C"
   }
 }

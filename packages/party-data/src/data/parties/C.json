@@ -113,7 +113,7 @@
   "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/forsvar": {
     "opinions": [
       "Bygga ett starkt försvar som kan försvara hela landet, från norr till söder.",
-      "Nå försvarsanslaget på två procent av BNP för att stärka vår militära förmåga.",
+      "Vi står bakom överenskommelsen med alla riksdagspartier om att nå 3,5 procent av BNP för att stärka vår militära förmåga.",
       "Stärka försvarsviljan och folkförankringen genom ett aktivt civilt försvar.",
       "att försvaret ska finnas i hela landet, med regementen och personal som kan verka i alla miljöer, från Skånes slätter till Norrlands skogar.",
       "att försvarsviljan är avgörande. Ett försvar är ingenting utan människor som är villiga att skydda det. Därför är folkförankring och frivillighet grunden för vår motståndskraft.",
@@ -126,7 +126,7 @@
     ],
     "title": "Försvar",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/forsvar",
-    "fetchDate": "2026-02-01T12:57:25.665Z",
+    "fetchDate": "2026-03-02T07:04:45.985Z",
     "party": "C",
     "subject": "forsvar"
   },
@@ -2972,5 +2972,23 @@
     "fetchDate": "2026-02-14T10:55:27.929Z",
     "party": "C",
     "subject": "migration-och-integration"
+  },
+  "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/energi/sveriges-elforsorjning": {
+    "opinions": [],
+    "title": "Sveriges elförsörjning",
+    "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/energi/sveriges-elforsorjning",
+    "fetchDate": "2026-03-02T07:04:57.465Z",
+    "party": "C"
+  },
+  "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/klimat/klimatpolitik-som-gynnar-din-planbok": {
+    "opinions": [
+      "Bredda det gröna avdraget och satsa på solel för att göra det billigare att värma huset, spara vatten och sälja egenproducerad el utan krångel eller dubbelbeskattning.",
+      "Införa en kraftfull miljöbilspremie som gör det möjligt för 100 000 personer årligen att byta till en ny eller begagnad miljöbil, oavsett inkomst eller bostadsort.",
+      "Ge en grön skatteåterbäring till alla vuxna svenskar från 2028, där de som bor på landsbygden får dubbel ersättning för att kompenseras för högre drivmedelspriser."
+    ],
+    "title": "Klimatpolitik som gynnar din plånbok",
+    "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/klimat/klimatpolitik-som-gynnar-din-planbok",
+    "fetchDate": "2026-03-02T07:04:47.712Z",
+    "party": "C"
   }
 }

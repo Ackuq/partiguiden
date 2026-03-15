@@ -31,9 +31,7 @@
   },
   "https://moderaterna.se/var-politik/hbtq/": {
     "opinions": [
-      "I dag avvisas kategoriskt friskt blod från män som har sex med män, samtidigt som det råder blodbrist i sjukvården. I snitt behövs en blodpåse i minuten samtidigt som endast 2–3 procent av Sveriges befolkning är aktiva blodgivare.  ",
       "Lagstiftningen har legat efter när det kommer till familjebildning. I dag hamnar många familjer som skaffar barn genom surrogatmoderskap utomlands i en rättsosäker situation, där både föräldrar och barn hamnar i kläm.",
-      "Ändra riktlinjerna för blodgivning så att sexuell läggning inte längre ska vara avgörande för vem som får donera blod. Regeringen har gett Socialstyrelsen uppdraget, som ska redovisas i mars 2026.",
       "Möjliggöra altruistiskt surrogatmödraskap i Sverige. Precis som vid adoptioner bör det föregås en omsorgsfull lämplighetsprövning.",
       "Vi riskerar att tappa viktiga framsteg som gjorts för hbtq-personers frihet på grund av bristande integration och ett ökat utanförskap.",
       "Det finns platser i Sverige där människor i dag inte tillåts hålla hand med vem man vill eller visa en regnbågsflagga.",
@@ -48,7 +46,7 @@
     ],
     "title": "HBTQ-frågor",
     "url": "https://moderaterna.se/var-politik/hbtq/",
-    "fetchDate": "2026-02-01T13:56:28.525Z",
+    "fetchDate": "2026-03-15T07:04:53.348Z",
     "party": "M",
     "subject": "jamstalldhet-och-diskriminering"
   },
@@ -194,31 +192,6 @@
     "fetchDate": "2026-02-01T13:56:28.455Z",
     "party": "M",
     "subject": "bostad"
-  },
-  "https://moderaterna.se/var-politik/demokrati/": {
-    "opinions": [
-      "Utvecklingen gällande demokrati och rättsstatliga principer går åt fel håll i många delar av världen. Även i Sverige kan det demokratiska systemet över tid komma att utsättas för krafter som vill Sverige illa.",
-      "Fler än hälften av unga tror inte att politikerna kan lösa samhällsproblemen och tilltron till demokratin minskar. ",
-      "I Sverige behöver vi därför ett robust skydd för demokratin.",
-      "Införa ett högre skydd för att kunna ändra vår grundlag. Regeringen och riksdagen har under hösten fattat det första av två beslut så att det framöver krävs två tredjedelars majoritet i riksdagen för att kunna ändra en grundlag.",
-      "Att skattemedel inte ska betalas ut till organisationer som inte delar den svenska rättsstatens demokratiska principer. Regelverk för detta är nu på plats.",
-      "Förbjuda deltagande i kriminella gäng och våldsbejakande organisationer.",
-      "Myndigheter ska vara effektiva och arbeta i medborgarnas tjänst – annars tappar människor förtroendet för politiken och offentliga institutioner. ",
-      "Skärpa tjänstemannaansvaret för att höja kvaliteten i myndigheternas verksamhetsutövning. ",
-      "Att rätten till domstolsprövning ska ges en uttrycklig förankring i regeringsformen.  ",
-      "Minska antalet myndigheter för att uppnå en effektivare statsförvaltning. ",
-      "Öka den enskildas rätt till stöd och kostnadsersättning i förvaltningsmål. ",
-      "Många politiker och personal utsätts i sitt arbete för hot och otillåten påverkan. Det riskerar att påverka beslut och att färre vågar ta sig an dessa uppdrag.",
-      "Det ska inte finnas ens en misstanke om att politiken styr hur domstolar dömer.",
-      "Stärka skyddet mot våld och otillåten påverkan för förtroendevalda, enligt lagd proposition.",
-      "Att Brottsförebyggande rådet ska ta fram och sprida stödmaterial som kan användas för att förebygga och hantera otillåten påverkan.",
-      "Stärka domstolarnas oberoende, i enlighet med proposition som lagts."
-    ],
-    "title": "Demokrati, rättsstat och förvaltning",
-    "url": "https://moderaterna.se/var-politik/demokrati/",
-    "fetchDate": "2026-02-01T13:56:28.396Z",
-    "party": "M",
-    "subject": "demokrati"
   },
   "https://moderaterna.se/var-politik/ekonomisk-politik-och-foretagande/": {
     "opinions": [
@@ -588,5 +561,53 @@
     "fetchDate": "2026-02-01T13:56:28.467Z",
     "party": "M",
     "subject": "aldrepolitik"
+  },
+  "https://moderaterna.se/var-politik/demokrati-rattsstat-forvaltning/": {
+    "opinions": [
+      "Utvecklingen gällande demokrati och rättsstatliga principer går åt fel håll i många delar av världen. Även i Sverige kan det demokratiska systemet över tid komma att utsättas för krafter som vill Sverige illa.",
+      "Fler än hälften av unga tror inte att politikerna kan lösa samhällsproblemen och tilltron till demokratin minskar. ",
+      "I Sverige behöver vi därför ett robust skydd för demokratin.",
+      "Införa ett högre skydd för att kunna ändra vår grundlag. Regeringen och riksdagen har under hösten fattat det första av två beslut så att det framöver krävs två tredjedelars majoritet i riksdagen för att kunna ändra en grundlag.",
+      "Att skattemedel inte ska betalas ut till organisationer som inte delar den svenska rättsstatens demokratiska principer. Regelverk för detta är nu på plats.",
+      "Förbjuda deltagande i kriminella gäng och våldsbejakande organisationer.",
+      "Myndigheter ska vara effektiva och arbeta i medborgarnas tjänst – annars tappar människor förtroendet för politiken och offentliga institutioner. ",
+      "Skärpa tjänstemannaansvaret för att höja kvaliteten i myndigheternas verksamhetsutövning. ",
+      "Att rätten till domstolsprövning ska ges en uttrycklig förankring i regeringsformen.  ",
+      "Minska antalet myndigheter för att uppnå en effektivare statsförvaltning. ",
+      "Öka den enskildas rätt till stöd och kostnadsersättning i förvaltningsmål. ",
+      "Många politiker och personal utsätts i sitt arbete för hot och otillåten påverkan. Det riskerar att påverka beslut och att färre vågar ta sig an dessa uppdrag.",
+      "Det ska inte finnas ens en misstanke om att politiken styr hur domstolar dömer.",
+      "Stärka skyddet mot våld och otillåten påverkan för förtroendevalda, enligt lagd proposition.",
+      "Att Brottsförebyggande rådet ska ta fram och sprida stödmaterial som kan användas för att förebygga och hantera otillåten påverkan.",
+      "Stärka domstolarnas oberoende, i enlighet med proposition som lagts."
+    ],
+    "title": "Demokrati, rättsstat och förvaltning",
+    "url": "https://moderaterna.se/var-politik/demokrati-rattsstat-forvaltning/",
+    "fetchDate": "2026-03-15T07:04:54.147Z",
+    "party": "M"
+  },
+  "https://moderaterna.se/var-politik/forskola/": {
+    "opinions": [
+      "Satsat på fler förskollärare för högre kvalitet. Genom en förstärkning av statsbidraget för kvalitetshöjande åtgärder har regeringen gjort det möjligt att anställa cirka 800 fler förskollärare. Fler förskollärare innebär mindre barngrupper och bättre förutsättningar för varje barn att utvecklas. ",
+      "Tagit bort kravet på skärmar i förskolan. Flera studier pekar på att analoga miljöer ger barn de bästa förutsättningarna att lära sig läsa och skriva. Mycket skärmanvändning kan dessutom leda till oro, sömnproblem och ångest. Regeringen har därför tagit bort kravet på förskolan att använda digitala lärverktyg och betonat att förskolan i huvudsak ska vara skärmfri.",
+      "Fler böcker till förskolan. För att fler barn ska kunna upptäcka läslusten och få en god språkutveckling har regeringen gjort flera satsningar på fler böcker i förskolan. Tidig läsning lägger grunden för framtida studier.",
+      "Satsat på fortbildning genom hela arbetslivet. Skickliga förskollärare är avgörande för att våra barn ska få en bra grund för sin fortsatta utbildning. Därför har regeringen gjort flera satsningar på förskollärares vidareutbildning och fortbildning så att de kan utvecklas i sitt yrke.",
+      "Sänker avgifterna i förskolan. Moderaterna står på hårt arbetande människors sida. Förskolan är inte bara en pedagogisk verksamhet utan även en förutsättning för att få ihop livspusslet. Därför sänker vi avgifterna i förskolan och fritidshemmet genom att införa ett fribelopp för inkomster inom ramen för maxtaxan, med särskilt fokus på dem som har lägre inkomster. ",
+      "Reformerar förskollärarutbildningen. Förskollärare ska vara rustade för att arbeta i förskolan. Vi reformerar därför utbildningen med bland annat högre antagningskrav och ett reformerat innehåll med större fokus på hur barn faktiskt lär sig, evidensbaserade metoder som verkligen fungerar. ",
+      "All personal ska tala god svenska. Alla barn förtjänar att mötas av pedagoger som kan prata svenska. Vi vill därför införa språkkrav för all pedagogisk personal i förskolan. Vid nyanställning ska språktester kunna genomföras, och befintlig personal med bristande kunskaper ska erbjudas obligatoriska utbildningsinsatser.",
+      "Karriärtjänster för förskollärare. De skickligaste förskollärarna ska kunna göra karriär och få bättre betalt. Vi vill att förskollärare ska inkluderas i karriärsstegsreformen, med särskilt fokus på förskolor i utsatta områden där utmaningarna är störst. ",
+      "Bättre möjligheter till vidareutbildning. Vi vill stärka möjligheterna för vidareutbildning av förskollärare och förbättra förutsättningarna för personer med utländska lärarexamina att bli behöriga lärare i Sverige.",
+      "Konkreta kunskapsmål för språkutveckling. Förskolan ska ha tydliga och mätbara kunskapsmål för barnens språkutveckling, precis som skolan har kunskapsmål. Detta höjer kvaliteten och ger förskollärare bättre verktyg att följa varje barns utveckling.",
+      "Obligatorisk språkförskola för barn som behöver det. Alla barn ska kunna svenska när de börjar skolan. Därför vill vi att kommunerna ska erbjuda språkförskola från tre års ålder för barn som visar en svag utveckling i svenska språket. ",
+      "Förskolan ska fokusera på svenska språket. Vi vill ta bort kravet på förskolan att medverka till att barn med annat modersmål än svenska ska utveckla sitt modersmål. Förskolan och skolan ska fokusera på det svenska språket – det är grunden för integration och framtida studier.",
+      "30 timmars avgiftsfri förskola för barn i utanförskap. Barn till föräldrar med långvarigt bidragsberoende ska få särskilt stöd genom 30 timmars avgiftsfri förskola från ett års ålder. Förskolan är särskilt viktig för de barn som får en sämre start i livet. ",
+      "Barnomsorg på obekväm arbetstid. För att underlätta för föräldrar som arbetar kvällar, nätter och helger vill vi att fler kommuner ska erbjuda barnomsorg även på obekväm arbetstid. Tiderna ska anpassas till föräldrarnas arbetstid.",
+      "Skolinspektionen ska ta över tillsynen av alla förskolor. I dag inspekterar Skolinspektionen bara kommunala förskolor, medan fristående förskolor inspekteras av kommunerna själva. Detta fungerar inte. Vi vill att Skolinspektionen ska få ansvar för tillståndsgivning och tillsyn av alla förskolor och all pedagogisk omsorg.",
+      "Systematisk screening av barns utveckling. Förskolan behöver ges verktyg för systematisk och kvalitetssäkrad screening av barnens utveckling, både språkligt och kognitivt. Detta gör det möjligt att sätta in stöd för de barn som behöver det – men också att säkerställa att alla barn får den stimulans och det lärande de har rätt till."
+    ],
+    "title": "Förskolan",
+    "url": "https://moderaterna.se/var-politik/forskola/",
+    "fetchDate": "2026-03-15T07:04:52.891Z",
+    "party": "M"
   }
 }

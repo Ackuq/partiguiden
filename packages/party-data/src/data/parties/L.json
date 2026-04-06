@@ -142,16 +142,30 @@
   },
   "https://www.liberalerna.se/politik/biologisk-mangfald": {
     "opinions": [
-      "Naturen och den biologiska mångfalden måste skyddas och bevaras. Det är viktigt för allt levande på jorden och för kommande generationer. Vi är beroende av naturen och den biologiska mångfalden för vår överlevnad. Samhället vilar på den biologiska mångfalden och de ekosystemtjänster den möjliggör. Vi har ett egenintresse av att skydda växter och djur.",
-      "Vi ska lämna välmående ekosystem och en värld i ekologisk balans till kommande generationer. Vårt samhälle vilar på ekosystemtjänster. Vi kan inte veta vad vi i framtiden kommer att behöva från naturen. Inte minst därför måste vi skydda mångfalden.",
-      "Den mest värdefulla naturen ska skyddas genom naturreservat och nationalparker. Särskilt hotade djur och växter ska vara fridlysta. Samtidigt måste miljöerna de är beroende av skyddas och restaureras. Klimatförändringarna sätter hård press på många ekosystem. Det gör att det behövs sammanhängande habitat med stor geografisk utsträckning. Arterna behöver kunna röra sig och sprida sig när klimatet förändras.",
-      "Det behövs också förändringar i det brukade landskapet. Skogen är viktig för svensk ekonomi. Den ger oss förnybara material, kemiska produkter, textilier och olika former av bränslen. Men där finns också majoriteten av de skyddade arterna. Skogsbruk går att kombinera med artskydd. Skonsamma bruknings- och avverkningsmetoder behöver tillämpas mer.",
-      "I jordbrukslandskapet behövs miljöer där pollinerande insekter, fåglar och andra kan hitta skydd och föda under den tid åkrarnas grödor inte blommar. Kantzoner och ekologiska öar i landskapet är ett sätt att åstadkomma detta.",
-      "Utsläppen av gifter och gödningsämnen i våra vattendrag, sjöar och hav måste minska. Värdefulla vattenområden ska skyddas som marina reservat."
+      "Till att börja med behöver vi slå fast att vårt samhälle vilar på ekosystemtjänster. Pollinering, vattenrening och bördig jord är exempel på funktioner som naturen tillhandahåller utan att vi alltid märker det. I själva verket kan vi inte veta vilka resurser eller genetiska egenskaper vi kommer att behöva i framtiden. Därför måste vi agera ansvarsfullt redan nu.",
+      "Vi har alltså ett egenintresse av att skydda växter och djur. Samtidigt har vi ett moraliskt ansvar att lämna över välmående ekosystem och ekologisk balans till kommande generationer.",
+      " ",
+      "Den mest skyddsvärda naturen ska vi bevara genom naturreservat och nationalparker. Särskilt hotade arter ska vi fridlysa. Detta innebär att både arterna och de livsmiljöer de är beroende av måste få ett långsiktigt skydd.",
+      "Klimatförändringarna sätter dessutom hård press på många ekosystem. Arter behöver kunna förflytta sig när temperatur och livsvillkor förändras. Därför krävs större och mer sammanhängande habitat med stor geografisk utbredning. På så sätt stärker vi motståndskraften i naturen.",
+      " ",
+      "Samtidigt som vi skyddar värdefulla områden måste vi utveckla det brukade landskapet. Skogen är viktig för svensk ekonomi eftersom den ger förnybara material, textilier, kemiska produkter och bränslen. I skogen finns emellertid också majoriteten av de hotade arterna.",
+      "Detta går att förena. Ett aktivt och hållbart skogsbruk kan kombineras med starkt artskydd, förutsatt att vi tar hänsyn till naturvärden och bevarar viktiga miljöer. En stark äganderätt är därför en förutsättning för långsiktigt ansvarstagande. När markägare har tydliga och stabila villkor ökar också incitamenten att vårda och utveckla naturvärden.",
+      " ",
+      "I jordbrukslandskapet behöver vi stärka den biologiska mångfalden mellan åkrarna. När grödorna inte blommar saknar pollinerande insekter, fåglar och andra arter föda och skydd. Därför bör fler kantzoner och ekologiska öar anläggas i landskapet.",
+      "Sådana inslag skapar livsutrymme för fler arter och bidrar samtidigt till ett mer motståndskraftigt jordbruk. På så sätt förenar vi livsmedelsproduktion med naturhänsyn.",
+      " ",
+      "Utsläppen av gifter och gödningsämnen i vattendrag, sjöar och hav måste minska. Övergödning och miljögifter hotar både arter och människors hälsa. Därför behöver vi stärka arbetet med att minska utsläppen vid källan.",
+      "Värdefulla vattenområden ska dessutom skyddas som marina reservat. Genom att skydda känsliga miljöer kan vi återuppbygga fiskbestånd och bevara unika ekosystem.",
+      " ",
+      " ",
+      "Varför är biologisk mångfald viktig för människor?\nDärför att vi är beroende av naturens ekosystemtjänster, såsom pollinering, rent vatten och bördig jord. Utan fungerande ekosystem hotas både vår ekonomi och vår livskvalitet.",
+      "Hur kan skogsbruk och artskydd fungera tillsammans?\nGenom att kombinera aktivt brukande med hänsyn till naturvärden, skydd av särskilt värdefulla områden och långsiktiga spelregler för markägare.",
+      "Varför behövs större sammanhängande naturområden?\nKlimatförändringarna gör att arter måste kunna röra sig och anpassa sig. Sammanhängande habitat ökar deras chanser att överleva.",
+      "Vad betyder stark äganderätt i detta sammanhang?\nDet innebär tydliga och stabila villkor för markägare, vilket skapar ansvar och incitament att förvalta naturen långsiktigt och hållbart."
     ],
     "title": "Biologisk mångfald",
     "url": "https://www.liberalerna.se/politik/biologisk-mangfald",
-    "fetchDate": "2023-09-17T17:52:44.584Z",
+    "fetchDate": "2026-04-06T13:36:52.367Z",
     "party": "L",
     "subject": "miljo-och-klimat"
   },
@@ -215,14 +229,16 @@
   },
   "https://www.liberalerna.se/politik/cirkular-ekonomi": {
     "opinions": [
-      "Cirkulär ekonomi handlar om att minska slöseriet med jordens resurser. Produkter ska vara tillverkade för att hålla. De ska kunna repareras och materialen de är tillverkade av ska gå att enkelt att återvinna. En effektivare användning av material gör det möjligt att leva rika liv inom planetens gränser. EU-samarbetet är mycket kraftfullt för att åstadkomma den förändring som krävs.",
-      "Cirkulär ekonomi handlar om att minska slöseriet med jordens resurser. Produkter ska vara tillverkade för att hålla. De ska kunna repareras och materialen de är tillverkade av ska gå att enkelt att återvinna. En effektivare användning av material gör det möjligt för oss att leva rika liv utan att föröda naturen.",
-      "Människor vill kunna minska och påverka sin egen resursförbrukning och sin klimatpåverkan. Man vill hellre laga, sälja eller skänka bort än slänga. Människor kräver i allt högre uträckning hållbara produkter. I inköpsögonblicket behövs tydlig information om produkters miljö- och klimatpåverkan, om hur de ska repareras och hur de ska återvinnas. Det ska framgå hur länge mjukvaror som behövs för att en produkt ska fungera kommer att underhållas och det ska framgå vilka reservdelar som finns att köpa och hur länge dessa kommer att tillhandahållas.",
-      "Vi kommer alltid att behöva gruvor, virke från skogen och andra resurser från naturen, inte minst krävs det för att vi ska lyckas fasa ut kol, olja och gas. Men vi måste bli mycket bättre på att använda de material vi utvunnit. EU:s arbete på det här området är mycket viktigt. Styrkan i att 27 länder har samma regler för produkter är enorm."
+      "Cirkulär ekonomi handlar om att skapa större värden ur mindre resurser. Samma strävan är grunden för varje välmående ekonomi. Vi ska leva rika liv på planetens villkor.",
+      "Hela tanken med en cirkulär ekonomi är att minska slöseriet med jordens resurser. Produkter ska vara tillverkade för att hålla och kunna bli reparerade. Materialen de är tillverkade av ska också enkelt gå att återvinna. En effektivare användning av material gör det möjligt att leva rika liv inom planetens gränser. Samtidigt är EU-samarbetet är ett mycket kraftfullt verktyg för att åstadkomma en sådan förändring.",
+      "Människor vill kunna minska och påverka sin egen resursförbrukning och sin klimatpåverkan. Man vill hellre laga, sälja eller skänka bort än slänga. Människor kräver i allt högre uträckning hållbara produkter. I inköpsögonblicket behöver tydlig information framgå om produkters miljö- och klimatpåverkan, om eventuella reparationer och återvinning. Därför ska det framgå hur länge mjukvaror som behövs för att en produkt ska fungera kommer att underhållas och det ska framgå vilka reservdelar som finns att köpa och hur länge dessa kommer att tillhandahållas.",
+      "Varor och aktörer som inte följer svenska och europeiska klimat- och miljöregler ska möta betydligt kraftigare motåtgärder och konsekvenser. Sverige och EU måste därför stärka lagstiftningen för att skydda konsumenter och begränsa skadliga affärsmodeller som “ultra fast fashion”, genom hårdare tull- och importregler, annonsförbud och starkare sanktioner och böter mot aktörer som bryter mot regelverken.",
+      " ",
+      ""
     ],
     "title": "Cirkulär ekonomi",
     "url": "https://www.liberalerna.se/politik/cirkular-ekonomi",
-    "fetchDate": "2023-09-17T17:52:37.006Z",
+    "fetchDate": "2026-04-06T13:36:52.504Z",
     "party": "L",
     "subject": "ekonomi-och-skatter"
   },
@@ -256,17 +272,28 @@
   },
   "https://www.liberalerna.se/politik/djurskydd": {
     "opinions": [
-      "Djurhållning innebär ett stort ansvar. Djuren ska ha möjlighet att utöva sitt naturliga beteende. All djurhållning måste garantera djuren ett värdigt liv och en anständig död. Transporter av djur ska minska. Minkfarmerna ska avvecklas.",
-      "Vi människor tar oss rätten att föda upp djur för att få mat, för att kunna bedriva viktig forskning och för att hålla dem som husdjur. Vi liberaler anser att vi kan ta oss den rätten. Men vi har också ett stort ansvar.",
-      "Djur ska ha möjlighet att utöva sitt naturliga beteende. Det kan handla om utevistelse eller tillgång till vatten att simma i och jord att böka i. Djur i sjöar och hav ska slippa övergivna fiskeredskap och annat skräp.",
-      "All djurhållning måste garantera djuren ett värdigt liv och en anständig död. Kontrollen av att lagar och EU-regler efterlevs måste skärpas. Sverige ska driva på för att stärka djurskyddet i hela Europa.",
-      "Djurtransporterna ska begränsas så mycket som möjligt. Transporter av kött är att föredra framför transporter av levande djur. Möjligheterna att använda mobila och mindre slakterier bör förbättras. Det ska finnas en tidsgräns vid djurtransporter som fastställs för varje djurart.",
-      "Användningen av antibiotika i djurhållningen måste minska. Utvecklingen av antibiotikaresistens är ett allvarligt hot mot folkhälsan. Sverige ska arbeta i EU och globalt för en ansvarsfull antibiotikaanvändning som baseras på medicinska bedömningar. Djur ska hållas så att de håller sig friska.",
-      "Den återstående minkuppfödningen i Sverige ska avvecklas."
+      "Vi människor föder upp djur för mat, forskning och sällskap. Vi anser att vi kan ta oss den rätten, men den förutsätter att vi tar fullt ansvar för djurens välfärd. Därför ska djur kunna leva så naturligt som möjligt, hålla sig friska och slippa onödigt lidande.",
+      " ",
+      "Djur mår bäst när de kan bete sig naturligt. Det innebär exempelvis att kor ska beta, grisar ska kunna böka och djur som lever i vatten ska ha tillgång till vatten att simma i. På samma sätt ska djur i sjöar och hav slippa övergivna fiskeredskap och annat skräp som orsakar skador.",
+      "Betesrätten för svenska mjölkkor är en kvalitetsstämpel för svenskt jordbruk. Liberalerna har därför försvarat beteskravet och kommer fortsatt att värna det. Att kor får vara ute och beta är en självklar del av ett gott djurskydd.",
+      " ",
+      "All djurhållning ska garantera djuren ett värdigt liv och en anständig död. För att säkerställa detta behöver ansvariga myndigheter följa upp och kontrollera att lagar och EU-regler efterlevs. Kontrollen ska därför skärpas.",
+      "Samtidigt ska Sverige driva på för att stärka djurskyddet i hela EU. När fler länder höjer sina krav, förbättrar detta djurens villkor, och konkurrensen mellan lantbrukare blir mer rättvis.",
+      " ",
+      "Djurtransporter innebär påfrestningar. Därför vill vi begränsa transporterna så långt som möjligt. I stället för att transportera levande djur bör man i större utsträckning transportera kött.",
+      "Vi vill också förbättra möjligheterna att använda mobila och mindre slakterier. På så sätt kan fler djur slaktas nära den plats där de föds upp. Dessutom ska man fastställa en tydlig tidsgräns för djurtransporter för varje djurart, så att djur inte blir utsatta för långa och plågsamma resor.",
+      " ",
+      "Användningen av antibiotika i djurhållningen måste minska. Utvecklingen av antibiotikaresistens utgör ett allvarligt hot mot folkhälsan. Därför ska antibiotika endast användas efter medicinsk bedömning.",
+      "Djurhållningen ska vara organiserad så att djuren håller sig friska genom god omsorg och bra miljöer. Sverige ska dessutom arbeta aktivt inom EU och globalt för en ansvarsfull antibiotikaanvändning.",
+      " ",
+      " ",
+      "Varför är beteskravet viktigt?\nBeteskravet säkerställer att mjölkkor får möjlighet att bete sig naturligt. Det stärker djurens välfärd och bidrar samtidigt till ett hållbart och kvalitativt jordbruk.",
+      "Varför vill Liberalerna begränsa djurtransporter?\nLånga transporter orsakar stress och lidande. Kortare transporter och fler lokala slakterier minskar påfrestningarna för djuren.",
+      "Varför ska Sverige driva frågan i EU?\nDjurskyddet skulle stäkas mest effektivt när flera länder höjer sina krav. Det förbättrar villkoren för djuren och skapar mer rättvisa konkurrensvillkor inom unionen."
     ],
     "title": "Djurskydd",
     "url": "https://www.liberalerna.se/politik/djurskydd",
-    "fetchDate": "2023-09-17T17:52:40.904Z",
+    "fetchDate": "2026-04-06T13:36:52.083Z",
     "party": "L",
     "subject": "jordbruk-jakt-och-fiske"
   },
@@ -284,20 +311,6 @@
     "fetchDate": "2025-05-25T06:30:38.057Z",
     "party": "L",
     "subject": "ekonomi-och-skatter"
-  },
-  "https://www.liberalerna.se/politik/eu-europeiska-unionen": {
-    "opinions": [
-      "I en orolig omvärld måste Europa hålla ihop för att lösa stora samhällsproblem. Ett starkt och enat EU är vårt viktigaste vapen mot Putins Ryssland, för att klara klimatomställningen och besegra gängen. För vår säkerhet, trygghet och frihet.",
-      "Europas liberala värderingar är hotade. Rysslands fullskaliga invasion av Ukraina är ett hot mot hela det fria Europa och partier både till höger och vänster vill försvaga Europasamarbetet. EU:s viktigaste uppgift just nu är att säkerställa att Ukraina vinner kriget och att Ryssland förlorar. Friheten måste försvaras, och vi liberaler går främst i ledet för ett starkare Europa. ",
-      "Det är bara tillsammans vi kan lösa de utmaningar som Europa står inför. Att klara klimatomställningen och att på allvar ta upp kampen mot den organiserade brottsligheten som har förgreningar långt utanför vårt eget land. Vi behöver satsa mer tillsammans på kunskap och forskning för att stärka Europas konkurrenskraft. Vi behöver jobba ihop i EU för att stärka vårt civila och militära försvar, och vi står tillsammans upp för global frihandel. På alla dessa områden är mer samarbete helt nödvändigt för att lösa stora samhällsproblem.",
-      "Ska vi lyckas med det behöver EU förändras, så att skattepengar används på bästa möjliga sätt, att det blir enklare att fatta beslut och att EU får större muskler på flera områden. Sanktionerna mot EU-länder som kränker pressfrihet, HBTQI-rättigheter och rättsstaten måste skärpas. Och vi vill att Sverige ska vara med i samarbetet fullt ut och införa euron som valuta. Med ett starkare Europa får vi ett starkare Sverige.",
-      "Liberalernas ledamot i Europaparlamentet, Karin Karlsbro, sitter i den liberala partigruppen Renew Europe."
-    ],
-    "title": "Europeiska unionen",
-    "url": "https://www.liberalerna.se/politik/eu-europeiska-unionen",
-    "fetchDate": "2025-05-31T06:30:41.867Z",
-    "party": "L",
-    "subject": "europa"
   },
   "https://www.liberalerna.se/politik/elevhalsa": {
     "opinions": [
@@ -398,32 +411,73 @@
   },
   "https://www.liberalerna.se/politik/familjepolitik": {
     "opinions": [
-      "Familjer kan se ut på många olika sätt och alla föräldrar ska ha möjlighet att kombinera jobb och föräldraskap. Vi vill se en modern familjepolitik för jämställdhet och valfrihet som uppmuntrar till arbete. Ett jämställt föräldraskap är bra för barnen, familjen och samhället. Vi vill se en ny modell för föräldraförsäkringen som bättre än idag uppnår våra liberala mål.",
-      "Liberalerna tog initiativet till den första öronmärkta månaden 1995, ”pappamånaden”, liksom införandet av en tredje öronmärkt månad 2014. Trots de öronmärkta månaderna är fortfarande uttaget av föräldraledighet inte jämställt. ",
-      "Vi vill införa en modell där familjen kan välja mellan en kortare föräldraförsäkring med fullt inkomstskydd eller en längre försäkring med lägre ersättning. Det skulle leda till att fler kvinnor går tillbaka tidigare till jobbet, vilket ökar jämställdheten. Vi vill även stimulera ett jämställt uttag av VAB-dagarna genom att höja ersättningen till föräldrapenningsnivå.",
-      "En fullt utbyggd förskola ska erbjuda barn en trygg omsorg som ska stimulera barns utveckling. Förskolans kompensatoriska uppdrag är viktigt och ska stärkas med språkförskolor och kunskapsfokus. Idag har barn till föräldralediga och arbetslösa rätt till 15 timmar i veckan på förskolan. Liberalerna vill att detta ökas till 30 timmar i veckan och möjlighet till omsorg på obekväm arbetstid för föräldrar som behöver det på grund av arbete.",
-      "Även om stora framsteg gjorts i arbetet för ett samhälle där alla människor oavsett sexuell läggning eller könsidentitet har samma rättigheter och möjligheter återstår viktiga förändringar av lagstiftningen. Familjer ser olika ut och det är viktigt att föräldraförsäkringen gäller även för regnbågsfamiljer och familjer där föräldrarna separerat och gått in i nya förhållanden. Vi har bidragit till att den överlåtbara föräldrapenningen nu kan ges till vårdnadshavarens make/maka, sambo eller registrerad partner som inte är vårdnadshavare.",
-      "För att förebygga våld mot barn måste det finnas ett föräldrastöd i alla kommuner och möjligheten till hembesök bör utökas. Vi vill ha familjecentraler i alla kommuner för en nära samverkan mellan öppen förskola, socialtjänsten och mödra- och barnhälsovården.",
-      " "
+      "Familjer ser olika ut – och politiken måste utgå från det. Oavsett familjeform ska föräldrar kunna förena arbete med ansvar för barnen. Ett jämställt föräldraskap är bra för barnen, för relationen mellan föräldrarna och för samhället i stort. Därför vill vi modernisera familjepolitiken så att den i större utsträckning uppmuntrar arbete, ansvar och egen försörjning.",
+      " ",
+      "Liberalerna har länge drivit på för öronmärkta månader i föräldraförsäkringen, exempelvis genom införandet av den första så kallade pappamånaden 1995 och den tredje öronmärkta månaden 2014. Trots detta tar kvinnor fortfarande ut en större del av föräldraledigheten än män.",
+      "Mot den bakgrunden vill vi införa en ny modell för föräldraförsäkringen. Familjen ska kunna välja mellan en kortare försäkring med fullt inkomstskydd eller en längre period med lägre ersättning. Detta innebär att fler kvinnor får starkare drivkrafter att tidigare återgå till arbetet, vilket i sin tur ökar jämställdheten och stärker kvinnors ekonomiska självständighet.",
+      "Dessutom vill vi förstärka jämställdhetsbonusen. För att stimulera ett mer jämställt uttag av VAB-dagar vill vi höja ersättningen, särskilt under de första fem dagarna då ersättningen ska uppgå till 90 procent av lönen. På så sätt skapar vi tydliga incitament för ett delat ansvar.",
+      "För att underlätta för fler föräldrar att engagera sig i barnens skolgång vill vi även införa rätt till två dagars betald ledighet per år för skolrelaterade tillfällen, såsom utvecklingssamtal.",
+      " ",
+      "Barnfamiljer behöver goda ekonomiska villkor. Därför vill vi införa ett barnavdrag på 10 000 kronor per barn och år. Ett sådant avdrag ger familjer större ekonomisk frihet och bättre möjligheter att forma sin vardag efter egna behov.",
+      "Sammantaget stärker detta arbetslinjen, eftersom politiken ska göra det mer lönsamt att arbeta och samtidigt underlätta familjelivet.",
+      " ",
+      "En fullt utbyggd och offentligt finansierad förskola ska erbjuda trygg omsorg och stimulera barns utveckling. Förskolan har dessutom ett viktigt kompensatoriskt uppdrag, särskilt när det gäller språkutveckling och tidiga kunskaper.",
+      "Därför vill vi stärka språkförskolor och öka kunskapsfokuset. I dag har barn till föräldralediga och arbetslösa rätt till 15 timmar förskola i veckan. Vi vill utöka denna rätt till 30 timmar per vecka, eftersom tidiga insatser gör skillnad för barns möjligheter längre fram i livet. Vidare ska föräldrar som arbetar på obekväm arbetstid kunna få tillgång till omsorg när de behöver det.",
+      " ",
+      "Familjer kan se ut på många olika sätt. Även om stora framsteg har skett återstår förändringar i lagstiftningen för att fullt ut säkerställa lika rättigheter oavsett sexuell läggning eller könsidentitet.",
+      "Föräldraförsäkringen ska fungera för regnbågsfamiljer och för familjer där föräldrar har separerat och bildat nya relationer. Liberalerna har bidragit till att den överlåtbara föräldrapenningen nu kan ges till vårdnadshavarens make, maka, sambo eller registrerade partner som inte är vårdnadshavare. Detta innebär att fler vuxna som faktiskt tar ansvar för barnet också får möjlighet att vara lediga.",
+      " ",
+      "För att förebygga våld mot barn behöver samhället ge stöd i tid. Därför vill vi att alla kommuner ska erbjuda föräldrastöd och utöka möjligheten till hembesök. Lika viktigt är att det finns familjecentraler i hela landet, där öppen förskola, socialtjänst samt mödra- och barnhälsovård samverkar nära varandra.",
+      "Tidiga insatser stärker både barnens trygghet och föräldrarnas förmåga att hantera svåra situationer.",
+      " ",
+      "I likhet med VAB ska den som vårdar en äldre förälder inte tvingas gå ner i arbetstid eller drabbas av försämrad ekonomi. Därför vill vi införa möjlighet att ta ut upp till 50 VAF-dagar när en förälder har fyllt 75 år, eller tidigare efter läkares bedömning.",
+      "Detta ger vuxna barn bättre förutsättningar att ta ansvar för sina anhöriga utan att behöva välja mellan arbete och omsorg.",
+      " ",
+      "• Införa en ny modell för föräldraförsäkringen med val mellan kortare tid med fullt inkomstskydd eller längre tid med lägre ersättning\n• Förstärka jämställdhetsbonusen\n• Höja ersättningen för VAB, med 90 procent av lönen de första fem dagarna\n• Införa rätt till två dagars betald ledighet för skolrelaterade tillfällen\n• Införa ett barnavdrag på 10 000 kronor per barn och år\n• Utöka rätten till förskola för barn till föräldralediga och arbetslösa till 30 timmar per vecka\n• Säkerställa att föräldraförsäkringen fungerar för alla familjetyper\n• Införa möjlighet till upp till 50 VAF-dagar för vård av äldre förälder\n• Säkerställa föräldrastöd och familjecentraler i alla kommuner",
+      " ",
+      "Varför vill Liberalerna förändra föräldraförsäkringen?\nEftersom uttaget fortfarande är ojämnt. En mer flexibel modell med tydliga incitament stärker jämställdheten och kvinnors ekonomiska självständighet.",
+      "Vad innebär barnavdraget?\nDet är ett skatteavdrag på 10 000 kronor per barn och år som ger barnfamiljer större ekonomiskt utrymme.",
+      "Varför vill ni utöka rätten till förskola?\nTidiga insatser, särskilt för språkutveckling och kunskap, stärker barns möjligheter längre fram i livet.",
+      "Vad är VAF?\nVAF innebär att vuxna barn kan ta ledigt för att vårda en äldre förälder, på liknande sätt som VAB fungerar för barn."
     ],
     "title": "Familjepolitik",
     "url": "https://www.liberalerna.se/politik/familjepolitik",
-    "fetchDate": "2025-05-25T06:30:37.152Z",
+    "fetchDate": "2026-04-06T13:36:52.193Z",
     "party": "L",
     "subject": "familjen"
   },
   "https://www.liberalerna.se/politik/fiske": {
     "opinions": [
-      "Fisket måste bedrivas långsiktigt hållbart. Fiskbestånden ska vara livskraftiga. Fisket måste begränsas till vad bestånden tål. Kvoter ska vila på vetenskaplig grund. När bedömningarna varit för optimistiska kan det behövas akuta fiskestopp. Småskaligt och kustnära fiske ska gynnas. Vi är kritiska till EU:s fiskeripolitik då vissa beslut inte tagit hänsyn till att situationen för många av bestånden fortfarande är allvarlig.",
-      "Grunden för en stabil och lönsam fiskenäring är att fisket sker inom biologiskt säkra gränser. Östersjöns ekosystem är skört och skyddet behöver stärkas. Fiskekvoter måste sättas utifrån vetenskapliga rekommendationer. Vi vill prioritera kustnära fiske och fritidsfiske då det skapar andra nyttor än bara fångsten som sådan. Vissa områden ska skyddas från fiske och då särskilt trålning.",
-      "De fiskemetoder som allvarligt skadar det marina livet och marina biotoper ska förbjudas på EU-nivå. Vi driver frågan om långsiktiga vitala fiskebestånd och strömmingens fortsatta överlevnad i Östersjön som en prioriterad fråga i vår gröna liberala Europapolitik.",
-      "Enkel och tydlig märkning, som visar att fisket sker på ett hållbart sätt vad gäller fiskebestånd och klimatpåverkan, förenklar för oss att köpa bra fisk.",
-      "Utsläppen i haven måste minska.  Arbetet för att minska övergödningen ska fortsätta. Plast och läkemedel måste förhindras att hamna i våra vatten. Kusten ska återkommande städas. Miljöanpassningar av vattenkraften och andra åtgärder för att gynna den biologiska mångfalden i vattendrag är viktiga och en förutsättning för sportfisket.",
-      "EU har länge tagit för stor hänsyn till fiskenäringens kortsiktiga intresse. Det har skadat miljön, fiskbestånden men också fiskets långsiktiga intressen. Politiken har förbättrats, men besluten om kvoter är vi kritiska till och mer behöver göras för att säkra bestånden."
+      "Grunden för en stabil och lönsam fiskenäring är att fisket sker inom biologiskt säkra gränser. Om uttaget överstiger vad bestånden tål minskar reproduktionen, vilket i sin tur hotar både ekosystemen och framtida fångster. Därför måste fisket begränsas till nivåer som forskningen bedömer som hållbara.",
+      "Fiskekvoter ska vila på vetenskaplig grund. När bedömningarna visar att läget är allvarligt behöver politiken agera snabbt. Om prognoserna tidigare varit för optimistiska kan det därför krävas akuta åtgärder, såsom tillfälliga fiskestopp. Detta innebär att vi sätter beståndens återhämtning före kortsiktiga ekonomiska intressen.",
+      " ",
+      "Östersjöns ekosystem är skört och påverkas av både överfiske och utsläpp. I ljuset av detta behöver skyddet stärkas. Vissa områden ska därför fredas från fiske, särskilt från bottentrålning som skadar bottnar och marina livsmiljöer.",
+      "Vi vill införa ett tillfälligt totalstopp för bottentrålning i Östersjön tills ekosystemet återhämtat sig. Samtidigt ska de fiskemetoder som allvarligt skadar det marina livet förbjudas på EU-nivå. På så sätt tar vi ansvar både nationellt och i det europeiska samarbetet.",
+      "Strömmingens fortsatta överlevnad i Östersjön är en prioriterad fråga i vår gröna liberala Europapolitik. Målet är att säkra långsiktigt vitala fiskebestånd, inte bara för dagens fiskare utan också för kommande generationer.",
+      " ",
+      "När det gäller fördelningen av resurser vill vi prioritera småskaligt och kustnära fiske samt fritidsfiske. Dessa verksamheter skapar, förutom livsmedel, levande kustsamhällen, arbetstillfällen och biologiska mervärden. Jämfört med storskalig industriell trålning är påverkan ofta mindre på ekosystemen.",
+      "Genom att gynna kustnära fiske stärker vi både den lokala ekonomin och den sociala hållbarheten. Detta går hand i hand med ambitionen att hålla uttaget inom hållbara gränser.",
+      " ",
+      "EU har under lång tid tagit för stor hänsyn till fiskenäringens kortsiktiga intressen. Följden har blivit att vissa kvotbeslut inte fullt ut tagit hänsyn till att flera bestånd fortfarande befinner sig i en allvarlig situation.",
+      "Vi är därför kritiska till beslut om kvoter som inte följer forskarnas rekommendationer. I stället vill vi att EU:s fiskeripolitik konsekvent ska utgå från vetenskapliga bedömningar. På så sätt säkrar vi både miljön och näringens långsiktiga villkor.",
+      " ",
+      "Ett hållbart fiske förutsätter friska hav. Utsläppen i haven måste minska, eftersom övergödning och föroreningar påverkar fiskbestånden negativt. Arbetet mot övergödning ska därför fortsätta och intensifieras.",
+      "Plast och läkemedelsrester ska hindras från att hamna i våra vatten. Dessutom behöver kusten städas återkommande. Detta medför förbättrade och stärkta livsmiljöer och ekosystem.",
+      "Miljöanpassningar av vattenkraften samt andra åtgärder för att gynna den biologiska mångfalden i vattendrag är också viktiga. De bidrar till starkare bestånd av bland annat vandrande fiskarter och är en förutsättning för ett livskraftigt sportfiske.",
+      " ",
+      "Konsumenter ska enkelt kunna välja hållbart fångad fisk. Därför vill vi se en enkel och tydlig märkning som visar att fisket sker på ett hållbart sätt, både när det gäller beståndens status och klimatpåverkan. Med andra ord ska det vara lätt att göra rätt.",
+      "Genom tydlig information stärker vi individens möjlighet att ta ansvar, samtidigt som det styr marknaden mot mer hållbara alternativ.",
+      " ",
+      " ",
+      "Varför vetenskapligt förankrade fiskekvoter så viktiga?\nDärför att fiskbeståndens återhämtning och långsiktiga överlevnad beror på att uttaget inte överstiger vad ekosystemen klarar. När politiken avviker från forskningen riskerar bestånden att minska kraftigt.",
+      "Varför vill Liberalerna stoppa bottentrålning i Östersjön?\nEftersom bottentrålning skadar bottnar och livsmiljöer i ett redan hårt belastat hav. Ett tillfälligt stopp ger ekosystemet möjlighet att återhämta sig.",
+      "Hur hänger utsläpp och fiske ihop?\nÖvergödning, plast och miljögifter försämrar livsvillkoren för fisk. Därför kräver ett hållbart fiske också ett brett miljöarbete för renare hav och vattendrag.",
+      "Varför prioritera småskaligt fiske?\nDärför att det bidrar till levande kustsamhällen och ofta har mindre påverkan på ekosystemen. På så sätt förenar vi miljöhänsyn med lokal utveckling.",
+      "Liberalernas handlar fiskeripolitik om ansvar, kunskap och långsiktighet. Genom att sätta vetenskapen först och stärka skyddet av våra hav säkrar vi både naturens värden och människors möjligheter – i dag och i framtiden."
     ],
     "title": "Fiske",
     "url": "https://www.liberalerna.se/politik/fiske",
-    "fetchDate": "2024-06-02T17:16:19.792Z",
+    "fetchDate": "2026-04-06T13:36:52.649Z",
     "party": "L",
     "subject": "jordbruk-jakt-och-fiske"
   },
@@ -504,33 +558,36 @@
   },
   "https://www.liberalerna.se/politik/forskolan": {
     "opinions": [
+      "Förskolan ska vara en trygg plats för lek och lärande med det svenska språket i fokus. Liberalerna vill att förskolan ska erbjuda fler barn en pedagogisk och trygg miljö.",
       "Inget är viktigare än en bra start. Det ger alla barn större chans att lyckas i livet och utjämnar livschanser mellan barn med olika bakgrund. Förskolans betydelse för barns utveckling är därför central. Av det skälet vill Liberalerna säkerställa att fler barn får bättre möjligheter och förutsättningar att delta i förskolans pedagogiska verksamhet.",
       "Grunden till barns senare läsvanor läggs redan innan de börjar skolan. Detta betyder särskilt mycket för barn till utrikesfödda. Deras språkutveckling går snabbare och de klarar grundskolan bättre om de går i förskolan. Liberalerna vill även att alla förskolegrupper ska ledas av en högskoleutbildad förskollärare, som i sin tur ska ha det pedagogiska ansvaret.",
-      "Både förskollärare och föräldrar larmar om att barngrupperna i förskolan vuxit till ohållbara nivåer. Det leder till stress hos barnen och en sämre arbetsmiljö för personalen. Liberalerna vill därför lagstifta om ett maxtak för barngrupper i förskolan, så att varje barn får det stöd och den uppmärksamhet det behöver för att utvecklas och lyckas.",
-      "Trots att de flesta barnen i Sverige går i förskolan, står alltför många barn i utanförskapsområden fortfarande utanför. Just där är behovet som störst – för en trygg start i livet och för att tidigt lära sig svenska. Liberalerna vill därför införa obligatorisk språkförskola från tre års ålder för de barn som behöver det för sin språkutveckling samt utöka den avgiftsfria förskolan till 30 timmar i veckan, så att alla barn får en jämlik chans från början.",
-      "Vi vill stärka förskolans uppdrag att lära barnen det svenska språket. Vi vill även genomföra kartläggningar av alla barns ordförråd, med särskilt fokus på utsatta områden. Vi vill att fler nyanlända barn och barn till nyanlända ska få gå i förskolan för att få träna svenska.",
-      "Om barnen ska lära sig svenska i förskolan, så är det helt avgörande att alla i den pedagogiska personalen behärskar svenska väl. Vi vill införa språkkrav för all personal och höja antagningskraven till förskollärarutbildningen, så att det krävs minst betyget C för att kunna utbilda sig till förskollärare.",
+      "Både förskollärare och föräldrar larmar om att barngrupperna i förskolan vuxit till ohållbara nivåer. Det leder till stress hos barnen och en sämre arbetsmiljö för personalen. Liberalerna vill därför lagstifta om ett maxtak för barngrupper i förskolan, så att varje barn får det stöd och den uppmärksamhet det behöver för utveckling.",
+      "Trots att de flesta barnen i Sverige går i förskolan, står alltför många barn i utanförskapsområden fortfarande utanför. Just där är behovet som störst – för en trygg start i livet och för att tidigt lära sig svenska. Liberalerna vill därför införa obligatorisk förskola från tre års ålder och utöka den avgiftsfria förskolan till 30 timmar i veckan, så att alla barn får en jämlik chans från början.",
+      "Vi vill även genomföra kartläggningar av alla barns ordförråd, med särskilt fokus på utsatta områden. Fler nyanlända barn och barn till nyanlända ska få gå i förskolan för att få träna svenska. Vi vill också inrätta en ny social stödfunktion i form av en barnhälsa som ska arbeta aktivt med att identifiera normbrytande beteende eller språksvårigheter, samt ha ett nära samarbete med socialtjänsten. Dessutom vill vi förbjuda religiösa förskolor, med undantag för nationella minoriteter. ",
+      "Om barnen ska lära sig svenska i förskolan, så är det helt avgörande att alla i den pedagogiska personalen behärskar svenska väl. Vi vill införa språkkrav för all personal och höja antagningskraven till förskollärarutbildningen, så att det krävs minst betyget C för att kunna utbilda sig till förskollärare. ",
       " "
     ],
     "title": "Förskolan",
     "url": "https://www.liberalerna.se/politik/forskolan",
-    "fetchDate": "2025-08-21T06:43:51.653Z",
+    "fetchDate": "2026-04-06T13:36:50.830Z",
     "party": "L",
     "subject": "utbildning"
   },
   "https://www.liberalerna.se/politik/forsvar": {
     "opinions": [
+      "Rysslands brutala anfallskrig mot Ukraina har kastat in Europa i den värsta säkerhetspolitiska krisen sedan andra världskriget. Samtidigt befinner sig Sveriges försvar i en historisk omställning.",
+      "Efter decennier av nedrustning behöver det svenska försvaret rustas upp i grunden – ett arbete som kräver både omfattande investeringar och politisk beslutsamhet. Vår frihet, demokrati och territoriella integritet måste vi kunna försvara försvara. Det kräver ett starkt och uthålligt totalförsvar.",
       "Liberalerna var först med att driva frågan om ett svenskt medlemskap i Nato. Det är därför en viktig seger att Sverige nu är fullvärdig medlem i världens mest kraftfulla försvarsallians. Men medlemskapet förpliktar. Vi ska kunna ge och ta emot stöd – snabbt och effektivt. Tillsammans med våra nordiska grannar och andra allierade bygger vi ett gemensamt försvar. ",
-      "Liberalerna var först med att driva frågan om ett svenskt medlemskap i Nato. Det är därför en viktig seger att Sverige nu är fullvärdig medlem i världens mest kraftfulla försvarsallians. Men medlemskapet förpliktar. Vi ska kunna ge och ta emot stöd – snabbt och effektivt. Tillsammans med våra nordiska grannar och andra allierade bygger vi ett gemensamt försvar. ",
-      "Det svenska militära försvaret behöver växa snabbt. Försvarsanslagen måste öka kraftigt, och Liberalerna har varit pådrivande i regeringen om att öka Sveriges försvarsbudget till 2,6 % år 2028. Vi behöver fler soldater, sjömän och officerare, men också investeringar i modern materiel, basstruktur, ledningssystem och försörjningskedjor. Försvaret måste vara avskräckande – trovärdigt nog att förhindra angrepp innan de sker. Det kräver inte bara numerär, utan också förmåga, samverkan och långsiktighet.",
+      "Det svenska militära försvaret behöver växa snabbt. Försvarsanslagen måste öka kraftigt, och Liberalerna har varit pådrivande i regeringen om att öka Sveriges försvarssatsningar till sammanlagt 5% av BNP – 3,5% till militära utgifter och 1,5% till försvarsrelaterade utgifter. ",
+      "Vi behöver fler soldater, sjömän och officerare, men också investeringar i modern materiel, basstruktur, ledningssystem och försörjningskedjor. Försvaret måste vara avskräckande – trovärdigt nog att förhindra angrepp innan de sker. Det kräver inte bara numerär, utan också förmåga, samverkan och långsiktighet.",
       "Samtidigt måste det civila försvaret återuppbyggas. Elförsörjning, sjukvård, transporter och livsmedelsförsörjning måste fungera även i krig. Civilplikten är ett viktigt steg. Liberalerna vill skapa system för krigsviktiga företag, återinföra beredskapslager och stärka samverkan med näringslivet. Kulturlivet och kulturarvet spelar också en roll i att bygga motståndskraft.",
-      "Försvaret av Sverige ska bygga på både frivillighet och plikt. Yrkesförsvaret ska utgöra grunden men värnplikten är viktig för beredskapen och rekryteringen. Båda delarna bör stärkas.",
+      "Försvaret av Sverige ska bygga på både frivillighet och plikt. Yrkesförsvaret ska utgöra grunden men värnplikten är viktig för beredskapen och rekryteringen. Vi behöver stärka båda delarna.",
       "Liberalerna vill dessutom att EU bygger en robust gemensam försvarspolitik som komplement till Nato. Här ingår att kraftigt växla upp produktionen av försvarsmateriel både för att kunna förse Ukraina med vapen och ammunition, och för att kunna stärka den egna försvarskapaciteten. En annan uppgift är gemensamma EU-upphandlingar av försvarsmateriel och utveckling av en gemensam politik för vapenexport.",
       "\n\n                            Ladda hem som PDF                    "
     ],
     "title": "Försvar",
     "url": "https://www.liberalerna.se/politik/forsvar",
-    "fetchDate": "2025-08-10T17:54:31.492Z",
+    "fetchDate": "2026-04-06T13:36:51.449Z",
     "party": "L",
     "subject": "forsvar"
   },
@@ -575,15 +632,17 @@
   },
   "https://www.liberalerna.se/politik/gangkriminalitet": {
     "opinions": [
-      "Inget annat land i Europa har sett en liknande ökning av skjutningar och sprängningar som Sverige. För att akut bromsa våldet krävs högre straff och fler verktyg för rättsväsendet i kampen mot de gängkriminella. Men om vi långsiktigt ska vända utvecklingen behövs tidiga insatser för att hindra att barn och unga dras in i kriminalitet.",
-      "Gängkriminaliteten är systemhotande. Det krävs kraftfulla och breda åtgärder för att stoppa den. Det handlar om att bryta våldsspiralen, strypa gängens ekonomi och förhindra att unga sugs in. Liberalerna har länge drivit på för skärpta straff och fler verktyg till polisen. Vi vill avskaffa mängdrabatten på brott, slopa den närmast automatiska frigivningen från fängelsestraff och skärpa straffen för flera brott. Avlyssning kan både förhindra och lösa brott. Kameraövervakning skapar trygghet i bostadsområden. ",
-      "Gängens rekrytering kryper allt längre ned i åldrarna. Gängledare agerar hänsynslöst och utnyttjar barn som knappt börjat högstadiet. Att rekrytera barn måste ge kännbara straff samtidigt som de barn som dras in måste få hjälp att bryta med kriminaliteten.",
-      "Det förebyggande arbetet måste börja tidigare. Uppsökande insatser och familjestöd behöver förstärkas. Socialtjänsten måste få rätt verktyg. Skolan är avgörande. En studentexamen är det bästa skyddet mot kriminalitet. Men idag har skolan blivit en brottsplats. Gäng rekryterar redan på skolgården. Det krävs därför tydliga åtgärder för att göra skolan tryggare. Unga som redan dragits in och vill lämna ska erbjudas stöd genom avhopparverksamhet.",
-      "De svenska gängen verkar långt utanför landets gränser. För att effektivt bekämpa dem krävs internationellt samarbete. Här är EU-samarbetet avgörande. Liberalerna vill därför se en europeisk polisstyrka och utvidgade befogenheter för EU:s åklagare."
+      "Gängkriminalitet stoppas med både en stålhandske och en lovikkavante. Vi liberaler vill se hårdare straff och skarpare verktyg för brottsbekämpning, men också ett starkare fokus på att rädda barn och unga i riskzonen från gängens klor.",
+      "Inget annat land i Europa har sett en liknande ökning av skjutningar och sprängningar som Sverige. För att akut bromsa våldet krävs högre straff och fler verktyg för rättsväsendet i kampen mot de gängkriminella. Många nödvändiga reformer är nu på plats. Men att långsiktigt vända utvecklingen kräver också tidiga insatser för att hindra att barn och unga att bli indragna i kriminalitet. Ett större fokus måste ligga där.",
+      "Stålhandske och lovikkavante",
+      "Gängkriminaliteten är systemhotande och kräver kraftfulla och breda åtgärder. Det handlar om att bryta våldsspiralen, strypa gängens ekonomi och förhindra att unga blir indragna i gängkriminalitet. Liberalerna har länge drivit på för skärpta straff och fler verktyg till polisen. Flera reformer är nu på plats eller på väg att bli implementerade, exempelvis avskaffandet av mängdrabatten på brott, slopandet av den närmast automatiska frigivningen från fängelsestraff och skärpta straff för flera brott. Därtill kommer nya verktyg för rättsväsendet, som möjligheten till avlyssning av misstänkta för att förhindra och lösa brott samt kameraövervakning som skapar trygghet i bostadsområden.",
+      "Samtidigt ser vi hur gängens rekrytering kryper allt längre ned i åldrarna. Gängledare agerar hänsynslöst och utnyttjar barn som knappt har börjat högstadiet. De barn som blir indragna måste få hjälp att bryta med kriminaliteten och kanske viktigast av allt: fler verktyg måste till för att förhindra att gängen kan sätta sina klor i barn och unga.",
+      "Det förebyggande arbetet måste börja tidigare. Uppsökande insatser och familjestöd behöver förstärkas, och socialtjänsten måste få fler verktyg. Skolan är avgörande. En studentexamen är det bästa skyddet mot kriminalitet.",
+      "De svenska gängen verkar långt utanför landets gränser. Effektiv brottsbekämpande arbete kräver också internationellt samarbete. Här är EU-samarbetet avgörande. Liberalerna vill därför se en europeisk polisstyrka och utvidgade befogenheter för EU:s åklagare."
     ],
     "title": "Gängkriminalitet",
     "url": "https://www.liberalerna.se/politik/gangkriminalitet",
-    "fetchDate": "2025-05-25T06:30:38.047Z",
+    "fetchDate": "2026-04-06T13:36:51.487Z",
     "party": "L",
     "subject": "lag-och-ratt"
   },
@@ -601,20 +660,6 @@
     "fetchDate": "2024-06-02T17:16:25.143Z",
     "party": "L",
     "subject": "jordbruk-jakt-och-fiske"
-  },
-  "https://www.liberalerna.se/politik/hbtqi-fragor": {
-    "opinions": [
-      "För oss liberaler är målet enkelt: Sverige ska vara det bästa landet i världen att leva i som hbtqi-person, och alla ska ha samma rättigheter oavsett kön, könsidentitet eller sexuell läggning. Sverige har kommit en bra bit på vägen. Men fortfarande vågar många hbtqi-personer inte leva öppet, och många utsätts för hatbrott och hedersförtryck. ",
-      "Vi liberaler har ofta gått i spetsen för reformer på hbtqi-området. Vi är stolta över att ha varit med och infört en ny modern könstillhörighetslag och könsneutral äktenskapslag och adoptionslagstiftning. Vi var det första parti som krävde att steriliseringstvånget för transsexuella skulle slopas. Det finns mycket kvar att göra. Vi är den liberala garanten för att arbetet för hbtqi-rättigheter fortsätter framåt.",
-      "Alla har rätt att bli bemötta på jämlika villkor i alla verksamheter. Därför behövs mer hbtqi-kompetens i offentlig verksamhet, och skolans sexualundervisning ska vara inkluderande. Arbetet mot diskriminering, hets, hatbrott och hedersrelaterat förtryck ska stärkas. Hbtqi-rättigheter är mänskliga rättigheter. Sverige ska aktivt arbeta för hbtqi-rättigheter i EU och FN och ge stöd till modiga hbtqi-aktivister i länder där förtryck, förföljelse och dödsstraff förekommer. Omvändelseförsök bör förbjudas i hela EU. ",
-      "Liberalerna vill att alla som vill donera blod ska bedömas utifrån individuell risk, inte sexuell läggning. Det är orimligt att friska homosexuella män i fasta relationer utesluts från att ge blod – särskilt när sjukvården har ett växande behov. Därför driver Liberalerna på för att diskriminerande regler tas bort och att bloddonation ska ske på lika villkor.",
-      "Alla familjer ska ha samma juridiska skydd. Vi vill att möjligheten att få skaffa barn i Sverige, exempelvis genom assisterad befruktning, adoption, embryodonation eller altruistiskt värdmödraskap, ska vara öppen för alla. Barn till svenska föräldrar som föds med hjälp av värdmoderskap utomlands ska ha samma rättigheter från födseln som barn födda i Sverige. "
-    ],
-    "title": "HBTQI-frågor",
-    "url": "https://www.liberalerna.se/politik/hbtqi-fragor",
-    "fetchDate": "2025-05-25T06:30:42.371Z",
-    "party": "L",
-    "subject": "jamstalldhet-och-diskriminering"
   },
   "https://www.liberalerna.se/politik/hedersrelaterat-vald-och-fortryck": {
     "opinions": [
@@ -760,20 +805,6 @@
     "party": "L",
     "subject": "jordbruk-jakt-och-fiske"
   },
-  "https://www.liberalerna.se/politik/jarnvagar": {
-    "opinions": [
-      "En effektiv persontrafik och godstransport på järnväg fyller en viktig funktion för att Sverige ska nå sina klimatmål och därför är det viktigt att säkerställa fortsatt väl fungerande järnvägstransporter i hela landet.  Vi har ifrågasatt de nya stambanorna genom södra Sverige då finansieringen är oklar och riskerar slå ut andra järnvägsinvesteringar och har i regeringen medverkat till en omprövning och utvärdering.",
-      "En väl fungerande järnväg är viktig för att Sverige ska nå sina klimatmål och upprätthålla en hög tillgänglighet av järnvägstransporter i hela landet.",
-      "Kaoset på järnvägen och alla förseningar är ett hårt slag mot de som är beroende av tåget. Behovet av järnvägsinvesteringar och underhåll är stora och måste öka. För att uppnå högre punktlighet behöver flaskhalsar byggas bort. Genom små åtgärder av befintliga system kan kapaciteten kostnadseffektivt öka genom bl.a. mötesstationer och strategiska förbispår.",
-      "Liberalerna har länge varit skeptiska till nya stambanor genom södra Sverige då det inte funnits en hållbar ekonomisk kalkyl och tillgängliga medel för underhåll och investeringar i det befintliga järnvägsnätet riskerats att trängas undan. Den förra regeringen valde att driva på projektet med mycket stora kostnader och bristande kontroll, som kritiserats av Riksrevisionen. En utvärdering och omprövning pågår som Liberalerna bejakar. ",
-      "Vi vill införa ett gemensamt biljettsystem för all kollektivtrafik i Sverige och göra det enklare att boka utlandsbiljetter för tågresor inom EU. De skandinaviska huvudstäderna ska knytas samman med goda järnvägsförbindelser. Vi vill se en fortsatt utbyggnad av järnvägen i norra Sverige och att byggandet av Norrbotniabanan fullföljs i den takt som finansieringen tillåter. Vi vill se en ytterligare fast järnvägs- och vägförbindelse över Öresund."
-    ],
-    "title": "Järnvägar",
-    "url": "https://www.liberalerna.se/politik/jarnvagar",
-    "fetchDate": "2024-06-02T17:16:22.491Z",
-    "party": "L",
-    "subject": "infrastruktur-och-trafik"
-  },
   "https://www.liberalerna.se/politik/jamstallda-loner": {
     "opinions": [
       "Den ekonomiska makten är ojämställt fördelad. Män tjänar mer, både på jobbet och på börsen. Det är inte bara resultatet av fria val, det är ett symptom på ojämställda strukturer. Vi vill att utbildning och erfarenhet ska synas i lönekuvertet för både kvinnor och män. Men det handlar också om att dela ansvaret för hem och barn. Först då kan lönegapet stängas.",
@@ -786,21 +817,6 @@
     "fetchDate": "2023-09-17T17:52:38.891Z",
     "party": "L",
     "subject": "jobb"
-  },
-  "https://www.liberalerna.se/politik/liberal-feminism": {
-    "opinions": [
-      "Liberal feminism är att varenda människa ska ha möjlighet att styra sitt liv. Och det har vi tagit strid för sedan liberaler slogs för kvinnors rösträtt. Vi är stolta över att Sverige har blivit ett av världens mest jämställda länder. Men fortfarande finns mycket kvar att göra.",
-      "Att känna vinden i håret, ta bussen till stan och träffa vänner – det är en frihet som de flesta i Sverige tar för självklar. Men mitt ibland oss lever unga människor under förtryck i hederns namn. Många nya svenskar har sökt sig hit av längtan efter jämställdhet och frihet, men andra tar med sig värderingar som inte har någon plats i ett modernt samhälle. Då måste det vara glasklart vad som gäller. Hederskulturen ska bekämpas av både skolan, socialtjänsten och polisen.",
-      "På skyddade boenden sover varje år kvinnor och barn 80.000 nätter på flykt. Det här är oacceptabelt. Vi vill ha resurser till mer förebyggande arbete, och att fler som förföljer sin expartner ska få elektronisk fotboja. Vi vill ge landets kvinnojourer långsiktiga och rimliga ekonomiska villkor",
-      "Förra året anmäldes 10 000 våldtäkter. I ett feministiskt land är det en skam att vi inte har rimligare straff vid upprepade grova sexualbrott. Vi vill skärpa straffen för sexualbrott, höja maxstraffet för våldtäkt och ta bort det strafftak som finns vid upprepad brottslighet.",
-      "Fortfarande tjänar en kvinna nästan 4 miljoner kronor mindre än en man under sitt yrkesliv. Lönerna måste upp i kvinnodominerade yrken, t.ex. genom karriärtjänster och fler arbetsgivare.",
-      "Jämställdheten börjar i barndomen. Omgivningens åsikter och gamla invanda könsroller får inte sätta stopp för friheten att bestämma över sitt eget liv. För varje kille och tjej som tror att de måste följa gamla spår ska skolan visa att man kan välja sin egen väg och bryta könsmönster."
-    ],
-    "title": "Jämställdhet och feminism",
-    "url": "https://www.liberalerna.se/politik/liberal-feminism",
-    "fetchDate": "2025-05-25T06:30:36.631Z",
-    "party": "L",
-    "subject": "jamstalldhet-och-diskriminering"
   },
   "https://www.liberalerna.se/politik/jordbruk": {
     "opinions": [
@@ -834,16 +850,18 @@
   },
   "https://www.liberalerna.se/politik/politikkriminalvard": {
     "opinions": [
-      "Kriminalvården måste få bättre förutsättningar att klara sitt uppdrag. Straffet ska avtjänas samtidigt som den dömde motiveras att bryta med kriminalitet. I dag friges nästan alla efter två tredjedelar av tiden, oavsett om de skött sig eller inte. Det måste förändras. Grovt kriminella ungdomar bör placeras på särskilda anstalter med specialutbildad personal för att säkerställa både behandling och säkerhet.",
-      "Kriminalvården ska inte bara verkställa straff – den ska också motivera till förändring. En fungerande kriminalvård är en nyckel i brottsförebyggande arbete. Den dömde måste få hjälp med missbruk, utbildning och vägen till ett arbete.",
-      "Fängelserna är i dag överbelagda. Därför måste utbyggnaden fortsätta. Behovet av platser är stort, och det krävs kapacitet för att kunna ge vård och rehabilitering.",
-      "Den modell som använts för unga med grov brottslighet har inte fungerat. Många återfaller i brott. Ansvaret för särskild ungdomsvård bör flyttas till Kriminalvården. Unga ska placeras på särskilda enheter med utbildad personal, inte blandas med vuxna, och avtjäna sina straff på ungdomsfängelser.",
-      "För att bryta med kriminalitet krävs mer än inlåsning. Utbildning spelar en avgörande roll. Kriminalvården måste kunna erbjuda skolverksamhet som ger unga kunskap, ansvar och framtidstro.",
-      "Villkorlig frigivning bör begränsas. Den ska inte vara en självklarhet utan ges efter individuell prövning, utifrån skötsamhet och rehabilitering."
+      "Kriminalvården har dubbla roller: den dömde ska avtjäna sitt straff, men också få hjälp att lämna brottsligheten bakom sig. En effektiv kriminalvård är avgörande för att förebygga framtida brott.",
+      "Kriminalvården ska ha förutsättningar att klara sitt uppdrag. Den dömde ska både avtjäna sitt straff och bli motiverad att bryta med kriminaliteten. Liberalerna har varit med och stramat upp den villkorliga frigivningen. Samtidigt är det viktigt att kriminalvårdens rehabiliterande uppdrag fortsätter att utvecklas. Detta gäller inte minst de unga som Kriminalvården nu får ett ökat ansvar för.",
+      "Kriminalvården ska inte bara verkställa straff. Den ska också motivera till förändring. Därför är en fungerande kriminalvård är nyckel i det brottsförebyggande arbetet. Den dömde måste få hjälp med missbruk, utbildning och vägen till arbete.",
+      "Fängelserna är i dag överbelagda. Därför måste utbyggnaden fortsätta. Behovet av platser är stort, och Kriminalvården behöver samtidigt tillräcklig kapacitet för att kunna ge vård och rehabilitering.</span>",
+      "Den nuvarande modellen för unga i grov brottslighet har inte fungerat. Många återfaller i brott. Kriminalvården ska därför ta över ansvaret för särskild ungdomsvård. Unga ska bli placerade på särskilda enheter med utbildad personal, inte tillsammans med vuxna, och avtjäna sina straff på ungdomsfängelser som möter ungas särskilda behov.</span>",
+      "Att bryta med kriminalitet kräver mer än inlåsning. Utbildning spelar en avgörande roll. Kriminalvården ska erbjuda skolverksamhet som ger unga kunskap, ansvar och framtidstro.",
+      "Villkorlig frigivning bör begränsas. Den ska inte vara en självklarhet, utan ges efter individuell prövning utifrån skötsamhet och rehabilitering.",
+      ""
     ],
     "title": "Kriminalvård",
     "url": "https://www.liberalerna.se/politik/politikkriminalvard",
-    "fetchDate": "2025-05-25T06:30:37.049Z",
+    "fetchDate": "2026-04-06T13:36:52.353Z",
     "party": "L",
     "subject": "vard-och-omsorg"
   },
@@ -877,29 +895,32 @@
   },
   "https://www.liberalerna.se/politik/koldioxidinfangning": {
     "opinions": [
+      "Det kommer att behövas storskalig koldioxidinfångning för att vi ska klara klimatarbetet. Sverige har goda möjligheter och bör snarast bygga upp stor kapacitet.",
       "Sverige tar inte vara på de goda möjligheterna att fånga in koldioxid (CCS) trots att det skulle bromsa klimatförändringarna. Liberalerna vill att vi 2030 fångar in 10 miljoner ton koldioxid (per år), motsvarande utsläppen från de drygt 5 miljoner bilarna i Sverige. 2035 ska vi fånga 20 miljoner ton.",
-      "Vi använder mycket biobränslen i Sverige, både i industrin och i fjärrvärmeverken. Träd som växer tar upp koldioxid. När veden eldas släpps koldioxiden ut igen i ett kretslopp. Men om vi fångar in koldioxiden vid skorstenen och lagrar den så kommer de växande träden att minska mängden koldioxid i atmosfären. På så sätt kan vi bromsa och på sikt vända klimatförändringarna.",
-      "Sådana här ”negativa utsläpp” kommer att behövas för att vi ska klara klimatomställningen, bland annat för att kompensera från klimatgasutsläpp i jordbruket och flygets höghöjdseffekter som vi inte helt kan bli av med.",
+      "Vi använder mycket biobränslen i Sverige, både i industrin och i fjärrvärmeverken. Träd som växer tar upp koldioxid. När vi eldar ved släpper detta ut koldioxid igen i ett kretslopp. Men om vi fångar in koldioxiden vid skorstenen och lagrar den så kommer de växande träden att minska mängden koldioxid i atmosfären. På så sätt kan vi bromsa och på sikt vända klimatförändringarna.",
+      "Sådana här ”negativa utsläpp” kommer behöver vi för att klara av klimatomställningen, bland annat för att kompensera från klimatgasutsläpp i jordbruket och flygets höghöjdseffekter som vi inte helt kan bli av med.",
       "Potentialen i Sverige är stor. Vi liberaler har satt upp målet att fånga in 10 miljoner ton koldioxid per år 2030. Det motsvarar utsläppen från alla bilar i Sverige. Till 2035 ska vi fånga in 20 miljoner ton. Kostnaden för att göra det här är lägre än koldioxidskatten. Den som släpper ut ska betala, men den som städar upp ska också få betalt.",
       "Liberalerna har genom förhandlingsframgångar fått igenom att den liberala borgerliga regeringen nu beslutat att Sverige ska införa ett system för infångning av CCS som en komponent för att minska utsläppen. Vi vill även införa ekonomiska styrmedel för infångning och långvarig lagring av växthusgaser inom EU."
     ],
     "title": "Koldioxidinfångning",
     "url": "https://www.liberalerna.se/politik/koldioxidinfangning",
-    "fetchDate": "2024-06-02T17:16:20.927Z",
+    "fetchDate": "2026-04-06T13:36:52.613Z",
     "party": "L",
     "subject": "miljo-och-klimat"
   },
   "https://www.liberalerna.se/politik/livsmedel": {
     "opinions": [
+      "Livsmedelsmärkningar och kontroller ska vara att lita på. Maten vi äter ska vara säker och hållbar. Men politiker ska inte pilla i maten i onödan, du vet bäst vad du vill äta.",
       "Sverige ska fortsätta ha en djuromsorg och miljöhänsyn i världsklass. Det gör att svenskproducerad mat går att köpa med gott samvete. Innehållsdeklarationer och märkningar ska gå att lita på, då kan vi alla utnyttja vår konsumentmakt. Jordbruket behöver bli ännu mer klimatsmart och utsläppen behöver minska. Mat som ändå blir avfall ska bli biogas.",
       "Sverige är en matnation. Vårt jordbruk producerar viktiga exportprodukter, såväl mat som dryck. För konsumenternas del är det viktigt att man kan göra aktiva val. Vi måste kunna lita på innehållsdeklarationer och märkningar. Livsmedel ska gå att spåra hela vägen, även på restauranger. EU:s veterinärmyndighet ska få muskler att genomföra täta kontroller för att stävja fusk.",
-      "Svensk mat är klimatsmart och produceras med god djuromsorg och miljöhänsyn. Det är en konkurrensfördel som måste värnas. Bra djurskydd leder också till att mindre antibiotika används.  För att svensk mat ska fortsätta vara klimatsmart måste vi äta upp mer av det vi producerar istället för att slänga det. Det avfall som trots allt blir kvar måste tas tillvara på bästa sätt, till exempel till biogasproduktion.",
-      "Vissa pekar på att ekologisk odling måste främjas för hälsans och miljöns skull. Vi menar att konventionellt jordbruk är effektivare och mer klimatsmart för att producera mycket mat vilket behövs för att mätta världens befolkning.  Vi ser gärna ekologisk mat, men vi vill att konsumenterna själva ska styra efterfrågan.",
-      "Liberalerna drev länge på för en svensk livsmedelsstrategi. Strategin finns nu och uppdateras, men vi är kritiska till strategins produktionsmål som slår fast hur mycket av jordbruksmarken som ska vara ekologisk. Det är planekonomi i stället för marknadsekonomi. För oss är det också viktigt att klargöra vilka principer som ska gälla för produktion och försörjning av livsmedel vid krig och kris, tex hur handelsvägar ska kunna hållas öppna."
+      "Svensk mat är klimatsmart och är producerad med god djuromsorg och miljöhänsyn. Vi måste värna denna konkurrensfördel. Bra djurskydd leder också till att mindre antibiotikaanvändning. För att svensk mat ska fortsätta vara klimatsmart måste vi äta upp mer av det vi producerar istället för att slänga det. Det avfall som trots allt blir kvar måste tas tillvara på bästa sätt, till exempel till biogasproduktion.",
+      "Vissa vill främja ekologisk odling för hälsans och miljöns skull. Samtidigt är det konventionella jordbruket effektivare och mer klimatsmart när det gäller att producera mycket mat för att mätta världens befolkning. Vi ser gärna ekologisk mat, men att konsumenterna själva ska styra dess efterfrågan. Att sätta mål för hur mycket ekologisk mat som ska produceras är planekonomi i stället för marknadsekonomi.",
+      "Det försämrade säkerhetsläget har tydliggjort hur avgörande det är att stärka livsmedelsberedskapen. Det kräver att principer för livsmedelsproduktion och försörjning vid krig och kris fastställs, samtidigt som viktiga handelsvägar hålls öppna för att trygga tillgången på mat.",
+      ""
     ],
     "title": "Livsmedel",
     "url": "https://www.liberalerna.se/politik/livsmedel",
-    "fetchDate": "2025-05-31T06:30:43.798Z",
+    "fetchDate": "2026-04-06T13:36:51.027Z",
     "party": "L",
     "subject": "jordbruk-jakt-och-fiske"
   },
@@ -1019,15 +1040,16 @@
   },
   "https://www.liberalerna.se/politik/nato": {
     "opinions": [
-      "I dag skapas trygghet i allianser, inte i allianslöshet. Sveriges säkerhet hänger på stabila samarbeten mellan likasinnade demokratiska länder, och det sker inom ramen för Nato och EU. Att delta i båda dessa samarbeten gör Sverige tryggare. Ensam är inte stark, bara ensam.",
-      "För oss liberaler är det självklart att Sveriges säkerhet tryggas bäst i samarbete med andra länder. Därför var Liberalerna det första riksdagspartiet som sade ja till svenskt Natomedlemskap redan 1999.",
-      "Säkerhetsläget i Östersjöområdet har försämrats markant under de senaste åren. Rysslands fullskaliga invasion av Ukraina visar än en gång att Ryssland ställer sig utanför den europeiska säkerhetsordningen. Det kräver ett tätt samarbete både inom Nato och EU. Med Natomedlemskapet stärks Sveriges säkerhet genom försvarsgarantierna. Samtidigt kommer Sverige och svenska förmågor i sin tur att göra viktiga bidrag till säkerheten för våra allierade.",
-      "Sverige ska vara en aktiv, solidarisk och ambitiös allierad i Nato som tar ansvar för vår egen och andras säkerhet. Det svenska medlemskapet är utan förbehåll. Det gör våra försvarssamarbeten djupare och förmågan till avskräckning mot en angripare större. Sverige ska som minst leva upp till Natos riktmärke om försvarsanslag som andel av BNP. Liberalerna har varit pådrivande i regeringen om att öka Sveriges försvarsbudget till 2,6 % år 2028. Det är nödvändigt om vi ska kunna bidra med trovärdig avskräckning inom Nato och hjälpa våra allierade i händelse av kris eller krig.",
-      "Liberalerna vill dessutom att EU bygger en robust gemensam försvarspolitik som komplement till Nato. Här ingår att kraftigt växla upp produktionen av försvarsmateriel både för att kunna förse Ukraina med vapen och ammunition, och för att kunna stärka den egna försvarskapaciteten. En annan uppgift är gemensamma EU-upphandlingar av försvarsmateriel och utveckling av en gemensam politik för vapenexport."
+      "Tillsammans med andra är vi tryggare. Liberalerna har arbetat för ett svenskt Natomedlemskap långt före andra partier. Nu är Sverige en fullvärdig medlem i alliansen, och det gör Sverige starkare och säkrare.",
+      "Allianser skapar trygghet. Sveriges säkerhet hänger på stabila samarbeten mellan likasinnade demokratiska länder, och det sker inom ramen för Nato och EU. Genom att delta i båda dessa samarbeten gör Sverige tryggare. Ensam är inte stark, bara ensam.",
+      "För oss liberaler är det självklart att Sveriges är som säkrast genom samarbete med andra länder. Därför var Liberalerna det första riksdagspartiet som sade ja till svenskt Natomedlemskap redan 1999.",
+      "Under de senaste åren har säkerhetsläget kring Östersjön blivit kraftigt försämrat. Rysslands fullskaliga invasion av Ukraina visar än en gång att Ryssland ställer sig utanför den europeiska säkerhetsordningen. Följden blir ett tätare samarbete både inom Nato och EU. Natomedlemskapet stärker Sveriges säkerhet genom försvarsgarantierna. Samtidigt kommer Sverige och svenska förmågor i sin tur att göra viktiga bidrag till säkerheten för våra allierade.",
+      "Sverige ska vara en aktiv, solidarisk och ambitiös allierad i Nato som tar ansvar för vår egen och andras säkerhet. Det svenska medlemskapet är utan förbehåll. Det gör våra försvarssamarbeten djupare och förmågan till avskräckning mot en angripare större. Sverige ska som minst leva upp till Natos riktmärke om försvarsanslag som andel av BNP. Liberalerna har varit pådrivande i regeringen om att öka Sveriges försvarssatsningar till sammanlagt 5% av BNP – 3,5% till militära utgifter och 1,5% till försvarsrelaterade utgifter. I slutändan handlar det om att vi ska kunna bidra med trovärdig avskräckning inom Nato och hjälpa våra allierade i händelse av kris eller krig.",
+      "Liberalerna vill dessutom att EU bygger en försvarsunion som komplement till Nato. Här ingår att kraftigt växla upp produktionen av försvarsmateriel både för att kunna förse Ukraina med vapen och ammunition, och för att kunna stärka den egna försvarskapaciteten. En annan uppgift är gemensamma EU-upphandlingar av försvarsmateriel och utveckling av en gemensam politik för vapenexport."
     ],
     "title": "Nato",
     "url": "https://www.liberalerna.se/politik/nato",
-    "fetchDate": "2025-05-25T06:30:36.900Z",
+    "fetchDate": "2026-04-06T13:36:51.049Z",
     "party": "L",
     "subject": "forsvar"
   },
@@ -1047,15 +1069,31 @@
   },
   "https://www.liberalerna.se/politik/polisen": {
     "opinions": [
-      "Jämfört med andra länder i Europa har Sverige få poliser i förhållande till vår folkmängd. Det är helt ohållbart. Varje gång polisen lägger ner en brottsutredning av tidsbrist är det ett svek mot brottsoffret. Utbyggnaden av polisen måste fortsätta så att vi på sikt kommer upp samma polistäthet som snittet i övriga Europa. Dessutom behöver vi kraftigt stärka polissamarbetet inom EU.",
-      "Utan polis och domstolar blir det den starke som vinner. Verklig frihet förutsätter också att alla kan leva i trygghet och att du vet att du får hjälp när det behövs. Rättsstaten är en liberal uppfinning. Men i dag är Sveriges poliskår alldeles för liten i förhållande till vår folkmängd och dagens grova brottslighet. Runt om i Sverige har det blivit sällsynt att se polisbilar, samtidigt som kriminella gäng är maktfaktorer i utsatta områden.",
-      "Liberalerna vill bygga ut polisen så att Sverige får samma polistäthet som resten av Europa. Utbyggnaden ska stärka polisens närvaro i hela Sverige.",
-      "För att fler ska drömma om att bli polis måste villkoren bli bättre och lönerna höjas ordentligt. Liberalerna vill öronmärka pengar för en särskild lönesatsning. Den interna byråkratin måste kapas och polisen få rätt verktyg för att kunna bekämpa den grova brottsligheten.",
-      "Skjutningar på öppen gata och sprängningar i bostadsområden är exempel på den eskalerande brottsutvecklingen i Sverige. Stöldligor och medborgare som utsätts för bedrägerier är två andra. Den gemensamma nämnaren är kriminella nätverk som verkar över nationsgränser och drar nytta av att EU-ländernas brottsbekämpande myndigheter inte samarbetar tillräckligt bra. Liberalerna vill därför utveckla Europol till en operativ polismyndighet som kan bedriva förundersökningar och utreda brott där flera länder är inblandade."
+      "Liberalerna vill bygga ut polisen så att Sverige når en polistäthet i nivå med övriga Europa. Målet är att varje människa, oavsett var i landet man bor, ska kunna lita på att samhället ingriper när brott begås.",
+      " ",
+      "Utan polis och domstolar blir det den starke som vinner. Verklig frihet förutsätter trygghet, nämligen att du vet att samhället skyddar dina rättigheter när någon kränker dem. Rättsstaten är en liberal idé och en grundbult i ett liberalt samhälle.",
+      "I dag är poliserna för få i förhållande till både befolkningens storlek och den organiserade brottslighetens utveckling. Runt om i landet ser människor alltmer sällan polisen i sitt närområde, medan kriminella nätverk, särskilt i utsatta områden, flyttar fram sina positioner. Detta leder till att brottsoffer sviks när utredningar läggs ned på grund av tidsbrist.",
+      "Regeringen har ökat antalet poliser, och polistätheten är högre än tidigare. Ändå räcker det inte. För att på allvar vända utvecklingen måste utbyggnaden fortsätta och förstärkas.",
+      " ",
+      "För det första behöver Sverige utbilda och anställa fler poliser. För det andra måste fler vilja stanna kvar i yrket. Anledningen är att kompetens och erfarenhet är avgörande i kampen mot grov brottslighet.",
+      "Därför vill Liberalerna höja lönerna och förbättra arbetsvillkoren. Vi vill öronmärka medel för en särskild lönesatsning. Dessutom måste den interna byråkratin minska så att poliser kan ägna mer tid åt kärnuppdraget – att förebygga, utreda och klara upp brott.",
+      "Samtidigt har polisen fått fler verktyg i arbetet mot gängen. Det offensiva reformarbetet måste fortsätta, eftersom brottsligheten förändras snabbt och kräver en rättsstat som ligger steget före.",
+      " ",
+      "När det gäller tryggheten i vardagen spelar den lokala polisen en avgörande roll. Synlig närvaro förebygger brott och stärker förtroendet mellan polis och medborgare. Därför vill vi stärka den lokala förankringen i hela landet – i storstäder, mindre kommuner och glesbygd.",
+      "Samtidigt kräver den organiserade brottsligheten nationell samordning. Skjutningar och sprängningar i bostadsområden, liksom omfattande bedrägerier och internationella stöldligor, visar att brottsnätverken verkar över gränser. Detta innebär att Sverige måste samarbeta tätare med andra länder.",
+      " ",
+      "Kriminella nätverk utnyttjar att EU-ländernas brottsbekämpande myndigheter inte samarbetar tillräckligt effektivt. I stället för att varje land arbetar var för sig behöver vi gemensam operativ förmåga.",
+      "Liberalerna vill därför utveckla Europol till en mer operativ polismyndighet som kan bedriva förundersökningar och utreda brott där flera länder är inblandade. På så sätt kan vi möta internationella brottsnätverk med samma styrka och samordning som de själva använder.",
+      " ",
+      " ",
+      "Varför behövs fler poliser?\nDärför att polistätheten i Sverige är lägre än i många andra europeiska länder, samtidigt som den grova och organiserade brottsligheten har ökat. Fler poliser ökar möjligheten att förebygga brott och klara upp fler ärenden.",
+      "Räcker det inte med nya lagar?\nNej. Lagstiftning är viktig, men utan tillräckligt många poliser som kan arbeta operativt får lagarna begränsad effekt. Resurser och befogenheter måste gå hand i hand.",
+      "Varför vill Liberalerna stärka Europol?\nDärför att många kriminella nätverk verkar över nationsgränser. Ett starkare europeiskt samarbete gör det möjligt att effektivare bekämpa gränsöverskridande brottslighet.",
+      "Hur hänger fler poliser ihop med liberal politik?\nTrygghet är en förutsättning för frihet. När staten upprätthåller lag och ordning kan människor leva sina liv, starta företag och röra sig fritt utan rädsla. Sammanfattningsvis är en stark rättsstat grunden för ett öppet och fritt samhälle."
     ],
     "title": "Polisen",
     "url": "https://www.liberalerna.se/politik/polisen",
-    "fetchDate": "2025-05-25T06:30:35.647Z",
+    "fetchDate": "2026-04-06T13:36:51.154Z",
     "party": "L",
     "subject": "lag-och-ratt"
   },
@@ -1227,15 +1265,29 @@
   },
   "https://www.liberalerna.se/politik/skogen": {
     "opinions": [
-      "För att skogspolitikens miljö- och produktionsmål båda ska nås krävs samförstånd. De rödgrönas politik har varit ensidig och har lett till hårda låsningar då den ignorerat skogsbrukets utveckling. Trots det är situationen för ekosystemen fortfarande bekymmersam. Miljövården har ställts mot behovet av produkter från skogen. Så får det inte fortsätta. Skogsbruket kan och ska vara effektivt och skonsamt.",
-      "Skogen ger oss friluftsliv, jakt och naturupplevelser. Den reglerar vatten, renar luften, motverkar klimatförändringar och är avgörande för den biologiska mångfalden. I skogen finns unika biotoper och ekosystem som är grunden för många arters överlevnad. Skogen är samtidigt central för vår industri, tillväxt och export.",
-      "Skogsindustrin är en av våra viktigare näringar. Den är avgörande för exporten. Så ska det fortsätta vara. Potentialen att producera förnybara material, kemiska produkter och textilier ska tas tillvara. Skogen kommer att bli ännu viktigare än idag.",
-      "Skogspolitiken vilar på två jämställda mål, produktionsmålet och miljömålet. De får inte ställas mot varandra. Både staten och skogsnäringen har ett stort ansvar att skydda skogens ekosystem, bevara den biologiska mångfalden och slå vakt om naturvård och miljöhänsyn. Alternativa bruknings- och avverkningsmetoder behöver användas och utvecklas mer. Skogsbruket ska vara effektivt och skonsamt.",
-      "Nationalparker, naturreservat och biotopskyddsområden är tillsammans med en fortsatt hög allmän hänsyn ryggraden i Liberalernas naturvårdspolitik. De kvarvarande naturskogarna, gammelskogarna, måste skyddas. Areal skyddad skog måste öka. Vi vill att 85 000 hektar av Sveaskogs innehav ska användas som inbyte för privatägd skyddsvärd skog. 200 000 hektar ska säljas till små skogsägare."
+      "Liberalerna vill därför förena dessa mål. Skogspolitiken ska alltså kombinera produktion och miljöhänsyn, inte ställa dem mot varandra. Målet är att skapa långsiktiga villkor där skogen både kan brukas och bevaras.",
+      "Till att börja med är skogen en ovärderlig resurs. Den ger oss friluftsliv, jakt och naturupplevelser. Dessutom reglerar den vatten, renar luften och motverkar klimatförändringar.",
+      "Samtidigt är skogen avgörande för den biologiska mångfalden. I skogen finns nämligen unika biotoper och ekosystem som många arter är beroende av.",
+      "Å andra sidan är skogen också central för Sveriges ekonomi. Skogsindustrin är en av våra viktigaste näringar och spelar en stor roll för exporten. Därför vill vi säkerställa att denna styrka består även i framtiden.",
+      "Skogspolitiken vilar på två jämställda mål: produktionsmålet och miljömålet. Dessa mål ska alltså samverka.",
+      "Detta innebär att både staten och skogsägare delar ansvaret. Å ena sidan ska biologisk mångfald och naturvård skyddas. Å andra sidan måste skogsägare ha rimliga möjligheter att bruka sin skog.",
+      "Därför behöver regelverken vara balanserade. De ska inte hindra ett effektivt och hållbart skogsbruk. I stället ska de skapa incitament för ansvarstagande och innovation.",
+      "För att klara klimatomställningen krävs ett aktivt skogsbruk. Skogen kan nämligen ersätta fossila material genom att producera förnybara alternativ, såsom byggmaterial, textilier och kemiska produkter.",
+      "Därför vill Liberalerna förbättra skattereglerna. Exempelvis bör möjligheten till skogskonto för naturvård utvecklas. Detta innebär att skogsägare får bättre förutsättningar att investera långsiktigt.",
+      "Dessutom behöver äganderätten stärkas. Det är nämligen en grundförutsättning för att fler ska vilja ta ansvar för skogens utveckling.",
+      "Samtidigt är det viktigt att skydda skogar med höga naturvärden. Nationalparker, naturreservat och biotopskyddsområden utgör därför grunden i naturvårdspolitiken.",
+      "Särskilt viktigt är att bevara naturskogar och gammelskogar. Dessa miljöer är nämligen avgörande för hotade arter.",
+      "Därför vill vi öka arealen skyddad skog. Exempelvis ska:",
+      "På så sätt kombinerar vi ökat skydd med stärkt ägande.",
+      "Den statligt ägda skogen ska dessutom ta ett särskilt ansvar. Detta gäller inte minst i relation till Sveriges åtaganden inom EU.",
+      "Mot den bakgrunden behöver staten gå före. Genom ett aktivt och ansvarsfullt brukande kan staten visa hur produktion och miljöhänsyn kan förenas i praktiken.",
+      "Varför är skogen viktig för klimatet?\nSkogen binder koldioxid och kan ersätta fossila material. Därför spelar den en central roll i klimatomställningen.",
+      "Varför ska skogsägare få större frihet?\nDärför att äganderätt och långsiktiga spelregler skapar incitament för hållbart brukande.",
+      "Varför skydda mer skog?\nFör att bevara biologisk mångfald och skydda hotade arter som är beroende av gamla skogsmiljöer."
     ],
     "title": "Skogen",
     "url": "https://www.liberalerna.se/politik/skogen",
-    "fetchDate": "2023-09-17T17:52:40.760Z",
+    "fetchDate": "2026-04-06T13:36:52.357Z",
     "party": "L",
     "subject": "jordbruk-jakt-och-fiske"
   },
@@ -1394,15 +1446,17 @@
   },
   "https://www.liberalerna.se/politik/trygghet-och-studiero": {
     "opinions": [
+      " ",
       "Alltför många elever blir utsatta i skolan eller störda på lektionerna. Liberalerna vill ta krafttag mot de elever som ger sig på sina klasskamrater eller förstör lektionerna genom att störa undervisningen. Skolan ska kunna flytta på mobbare och splittra gäng. Alla skolor ska arbeta förebyggande och ha åtgärdsprogram baserat på forskning och beprövad erfarenhet för att skydda utsatta elever.",
-      "Alla skolor ska enligt Skolverkets utvärdering kartlägga sina problem, se till att personal och elever är delaktiga i analys och planering, och ha tydliga rutiner för både de elever som blir utsatta för kränkningar eller trakasserier i skolan och för de elever som utför dem. Det ska även finnas personal som kan ägna sig åt att främja trygghet och studiero.",
-      "Skollagen ska skärpas så att det blir lättare att avhysa, stänga av och flytta förövare till en annan skola. Alla huvudmän ska ha en väl fungerande mottagningsorganisation så att en flytt kan ske snabbare. Liberalerna har i regering arbetat för att skolorna ska bli tryggare och lugnare. Lärare får fler befogenheter att ingripa mot stök, alla skolor ska ha ordningsregler och alla skolor ska vara mobilfria under hela skoldagen. ",
-      "Lärarnas mandat att agera mot stök och ordningssituationer i skolan ska stärkas. Ingen lärare ska känna sig rädd för att gripa in när undervisningen hindras eller elever utsätts för fara. På samma sätt ska ingen rektor tveka i sitt mandat att omplacera eller stänga av elever som hotar eller våldför sig på skolkamrater eller lärare. Alla skolor ska inrätta förväntansdokument som både eleven och föräldrarna ska underteckna, som beskriver de förväntningar, regler och konsekvenser för regelövertramp som gäller.",
+      "Alla skolor ska enligt Skolverkets utvärdering kartlägga sina problem och se till att personal och elever är delaktiga i analys och planering. Därför ska skolor ska ha tydliga rutiner för både de elever som blir utsatta för kränkningar eller trakasserier i skolan och för de elever som utför dem. Det ska även finnas personal som kan ägna sig åt att främja trygghet och studiero.",
+      "Vi vill skärpa skollagen så att det blir lättare att avhysa, stänga av och flytta förövare till en annan skola. Alla huvudmän ska ha en väl fungerande mottagningsorganisation så att en flytt kan ske snabbare. Liberalerna har i regering arbetat för att skolorna ska bli tryggare och lugnare. Lärare får fler befogenheter att ingripa mot stök, alla skolor ska ha ordningsregler och alla skolor ska vara mobilfria under hela skoldagen. ",
+      "Lärarnas mandat att agera mot stök och ordningssituationer i skolan ska stärkas. Ingen lärare ska känna sig rädd för att gripa in när undervisningen hindras eller elever utsätts för fara. På samma sätt ska ingen rektor tveka i sitt mandat att omplacera eller stänga av elever som hotar eller förstör. ",
+      "Alla skolor ska inrätta förväntansdokument som både eleven och föräldrarna ska underteckna. Förväntansdokumentet ska beskriva de förväntningar, regler och konsekvenser för regelövertramp som gäller.",
       "\n\n                            Ladda hem som PDF                    "
     ],
     "title": "Trygghet och studiero",
     "url": "https://www.liberalerna.se/politik/trygghet-och-studiero",
-    "fetchDate": "2025-05-25T06:30:38.230Z",
+    "fetchDate": "2026-04-06T13:36:51.144Z",
     "party": "L",
     "subject": "utbildning"
   },
@@ -1579,31 +1633,20 @@
     "party": "L",
     "subject": "aldrepolitik"
   },
-  "https://www.liberalerna.se/politik/aldre-i-arbetslivet": {
-    "opinions": [
-      "Äldre människors kunskap, kompetens och erfarenhet måste tas tillvara i arbetslivet. Fördomar och diskriminering måste bekämpas, och regler och avtal som hindrar äldre att arbeta om de vill ska tas bort. Synen på årsrika måste förändras. Ålder är ett dåligt mått på människors förmågor – både på arbetsmarknaden och i samhället.",
-      "I Sverige finns en utbredd åldersdiskriminering. Äldre som blir av med jobbet har svårt att hitta nya arbeten. Vi vill ha en förändrad syn på äldre, vi menar att ha levt länge ofta sammanfaller med erfarenhet och kompetens. Det ska inte ses som något negativt, det är snarare en merit.",
-      "Man ska ha rätt att få arbeta längre. För att uppmuntra fler att fortsätta jobba vill vi att alla över 63 ska få ett extra högt jobbskatteavdrag, och att den särskilda löneskatten i arbetsgivaravgiften för anställda över 65 år ska avskaffas. Den som arbetar och bidrar lite längre ska inte straffas med höga skatter.",
-      "Vi vill höja gränsen för hur länge man har rätt att vara kvar på arbetet från 67 till 71 år. Även stöd som har åldersgräns, som exempelvis bilstödet, måste anpassas när vi jobbar längre. Pensionsåldern och rätten att stanna kvar i arbetslivet ska knytas till medellivslängdens utveckling.",
-      "Det är en myt att äldre har svårt att lära sig nytt. Därför vill vi också förbättra möjligheten att vidareutbilda sig eller lära sig ett helt nytt yrke mitt i livet. Vi tycker att åldersgränsen för studiemedel ska höjas i takt med att vi arbetar längre."
-    ],
-    "title": "Äldre i arbetslivet",
-    "url": "https://www.liberalerna.se/politik/aldre-i-arbetslivet",
-    "fetchDate": "2023-09-17T17:52:39.791Z",
-    "party": "L",
-    "subject": "aldrepolitik"
-  },
   "https://www.liberalerna.se/politik/ostersjon": {
     "opinions": [
-      "Vi måste ta bättre hand om Östersjön. Fisket måste begränsas till vad bestånden tål. Näringsutsläppen måste börja minska igen. Det ska inte finnas döda bottnar. Ekosystemen ska blomstra. Havet ska må bra. Att klimatet snabbt förändras har gjort situationen för Östersjön mer akut. Det är ett underbetyg att Östersjön mår så dåligt trots Sveriges höga miljöambitioner.",
-      "Östersjön är särskilt känslig både för människors påverkan och för klimatförändringar. Samtidigt är sjöfarten är intensiv och alldeles för mycket näring når havet. Gamla tiders synder, då utsläpp av gifter skedde orenat, är fortfarande ett bekymmer.",
-      "Arbetet för att rädda Östersjön kräver att vi arbetar nationellt, tillsammans med våra grannländer och inom EU. Det mest akuta är att stoppa övergödningen som leder till döda bottnar och algblomning. Idag 96 procent av Östersjön övergödd. De döda bottnarna upptar en yta större än Danmark. Sverige släpper ut mer näring än vi åtagit oss och våra utsläpp har slutat minska.",
-      "Situationen för flera fiskbestånd i Östersjön är oroande. Fisket måste begränsas till vad bestånden tål. Akuta fiskestopp ska användas vid behov. Samarbetet inom EU har gett resultat men Sverige bör gå före.",
-      "Östersjöns kust och skärgårdar hör till de områden i Sverige där människor helst vill vistas. Människor trivs vid vatten. Samtidigt är de grunda vattnen längs stränderna viktiga för många av havets arter. Här kan fiskyngel och fågelungar finna skydd och växa till sig. Människor ska kunna uppleva orörda stränder och ekosystemen måste fungera. Samtidigt ska människor kunna bo och verka även i kustsamhällen och på skärgårdsöar."
+      "Tillståndet för Östersjön måste förbättras. Fisket kan behöva stoppas akut och näringsutsläppen från land måste åter börja minska.",
+      "Vi måste ta bättre hand om Östersjön. Fisket måste vara begränsat till vad bestånden tål. Näringsutsläppen måste börja minska igen. Det ska inte finnas döda bottnar. Ekosystemen ska blomstra. Havet ska må bra. Klimatförändringarna har gjort situationen för Östersjön mer akut",
+      "Östersjön – vårt älskade men hotade innanhav",
+      "Östersjön är särskilt känslig både för människors påverkan och för klimatförändringar. Samtidigt är sjöfarten intensiv och alldeles för mycket näring når havet. Gamla tiders synder, då utsläpp av gifter skedde orenat, är fortfarande ett bekymmer.",
+      "Arbetet för att rädda Östersjön kräver att vi arbetar både nationellt, tillsammans med våra grannländer och inom EU. Det mest akuta är att stoppa övergödningen som leder till döda bottnar och algblomning. Idag är 96 procent av Östersjön övergödd. De döda bottnarna upptar en yta större än Danmark. Sverige släpper ut mer näring än vi åtagit oss och våra utsläpp har slutat minska.",
+      "Situationen för flera fiskbestånd i Östersjön är oroande. Fisket måste vara begränsat till vad bestånden tål. Akuta fiskestopp kan bli aktuellt. Ett tillfälligt totalstopp för bottentrålning i Östersjön måste därför komma på plats.",
+      "Östersjöns kust och skärgårdar hör till de områden i Sverige där människor helst vill vistas. Människor trivs vid vatten. Samtidigt är de grunda vattnen längs stränderna viktiga för många av havets arter. Här kan fiskyngel och fågelungar finna skydd och växa till sig. Människor ska kunna uppleva orörda stränder och ekosystemen måste fungera. Samtidigt ska människor kunna bo och verka även i kustsamhällen och på skärgårdsöar.",
+      ""
     ],
     "title": "Östersjön",
     "url": "https://www.liberalerna.se/politik/ostersjon",
-    "fetchDate": "2023-09-17T17:52:43.907Z",
+    "fetchDate": "2026-04-06T13:36:52.430Z",
     "party": "L",
     "subject": "miljo-och-klimat"
   },
@@ -1622,16 +1665,33 @@
   },
   "https://www.liberalerna.se/politik/glesbygd": {
     "opinions": [
-      "Vår utgångspunkt är tron på människors makt över sin egen situation och möjligheten att skapa sin egen framtid. En liberal politik för hela Sverige skapar förutsättningar för den som vill bo, arbeta eller driva företag på landsbygden eller i mindre tätorter. Vi ska ta vara på de unika förutsättningar för individers utvecklingskraft och företags konkurrenskraft som finns.",
-      "Kommunerna måste ta ett större ansvar att förbättra företagsklimatet. Finansiering utgör det främsta hindren för bostadsproduktion i glesbygden, men även alltför detaljerade regelverk som till exempel strandskyddet. Vi vill se ett skattefritt bosparande för unga och en egnahemsrörelse för ökat bostadsbyggande i hela landet.",
-      "Det är viktigt att statlig service till medborgarna, som försvunnit från stora delar av landet, återupprättas. Friskolereformen har inneburit att by- och bygdeskolor kunnat leva vidare genom ett starkt lokalt engagemang och ska värnas.",
-      "För de som bor i glesbygd utan tillgång till kollektivtrafik är bilen avgörande för att få ihop livspusslet. Vi vill se ett höjt avdrag för resor med egen bil för glesbygdsbor, en fördubbling av fordonsskattens glesbygdsavdrag och att reduktionsplikten och utsläppsrätterna är så konstruerade att de inte i onödan driver upp drivmedelspriserna.",
-      "Utbyggnaden av vindkraft måste öka för att vi ska klara klimatmålen, men vi värnar det kommunala vetot vid etablering av vindkraftsparker. Kommunerna ska ha fullt bestämmande över markanvändningen i kommunen. Markägare bör kunna ges ekonomisk kompensation.",
-      "Vi vill se ett ökat vägunderhåll istället för sänkta hastigheter. Förstärkningen av broar och vägar, som är extra viktiga för industri- och skogsnäring, ska fullföljas. På så sätt kan längre och tyngre lastbilar tillåtas vilket minskar antalet transporter totalt. Finansieringen och skötseln av de enskilda vägarna bör se över, t ex upphandlingen av vinterväghållningen."
+      "Vår utgångspunkt är tron på människors makt över sin egen situation. En liberal politik för glesbygd innebär att staten undanröjer hinder, stärker företagsklimatet och säkerställer grundläggande service. Målet är att fler ska kunna forma sin egen framtid, oavsett bostadsort.",
+      " ",
+      "Till att börja med måste kommunerna ta ett större ansvar för företagsklimatet. Finansiering utgör nämligen ett av de främsta hindren för bostadsproduktion i glesbygd. Därtill kommer detaljerade regelverk, såsom strandskyddet, som i vissa fall försvårar byggande utan att tillföra motsvarande nytta.",
+      "Viktiga steg har tagits för att liberalisera strandskyddet, men arbetet är ännu inte klart. Av detta skäl vill vi fortsätta reformera regelverket, eftersom det är en viktig frihetsfråga. Vi vill dessutom införa ett skattefritt bosparande för unga samt främja en nya egnahemsrörelse. På så sätt kan fler bygga och äga sitt boende, även utanför storstäderna.",
+      " ",
+      "Statlig service har försvunnit från stora delar av landet. Detta leder till längre avstånd och sämre tillgänglighet. Därför vill vi återupprätta närvaron av grundläggande statlig service i hela Sverige.",
+      "När det gäller skolan ska kvaliteten vara hög oavsett var den ligger. Varje elev ska ges samma chans att lyckas. Kunskap ska stå i centrum, och staten ska säkerställa likvärdighet. I det långa loppet stärker detta både individens frihet och landsbygdens kompetensförsörjning.",
+      " ",
+      "För många som bor i glesbygd är bilen avgörande för att få vardagen att fungera. Kollektivtrafik saknas ofta, vilket innebär att människor annars får svårt att ta sig till arbete och service. Därför vill vi höja avdraget för resor med egen bil för glesbygdsbor samt fördubbla fordonsskattens glesbygdsavdrag.",
+      "Samtidigt måste klimatpolitiken vara effektiv utan att i onödan slå mot dem som saknar alternativ. Reduktionsplikten och systemet med utsläppsrätter ska därför utformas så att de inte driver upp drivmedelspriserna mer än nödvändigt. Målet är att förena klimatansvar med rimliga levnadsvillkor.",
+      " ",
+      "Utbyggnaden av vindkraft behöver öka för att Sverige ska nå klimatmålen. Samtidigt värnar vi det kommunala vetot vid etablering av vindkraftsparker. Kommunerna ska ha fullt inflytande över markanvändningen.",
+      "Markägare bör dessutom få ekonomisk kompensation vid etableringar. Detta innebär att den som upplåter mark också får del av värdet. På det sättet förenar vi klimatnytta med respekt för äganderätten.",
+      " ",
+      "Ett fungerande vägnät är avgörande för industri, skogsnäring och företagande i hela landet. I stället för att sänka hastigheter vill vi prioritera ökat vägunderhåll. Förstärkning av broar och vägar ska fullföljas, särskilt där näringslivet är beroende av tunga transporter.",
+      "När vägnätet håller hög standard kan längre och tyngre lastbilar tillåtas. Resultatet blir färre transporter totalt sett, vilket i sin tur minskar utsläppen. Vidare bör finansieringen och skötseln av enskilda vägar ses över, till exempel upphandlingen av vinterväghållning.",
+      " ",
+      " ",
+      "Varför vill Liberalerna reformera strandskyddet?\nDärför att dagens regler i vissa fall hindrar byggande och utveckling utan att ge motsvarande miljönytta. En mer flexibel tillämpning stärker friheten att bo och verka i hela landet.",
+      "Varför är bilen så viktig i glesbygd?\nI många områden saknas kollektivtrafik. Bilen blir då avgörande för arbete, studier och vardagsliv. Rimliga villkor för bilägande är därför en frihetsfråga.",
+      "Hur förenar ni vindkraft och lokalt självbestämmande?\nGenom att både öka utbyggnaden och samtidigt värna det kommunala vetot. Kommunerna ska besluta om markanvändning, och markägare ska få ersättning.",
+      "Varför prioritera vägunderhåll framför sänkta hastigheter?\nEtt väl underhållet vägnät ökar trafiksäkerheten och stärker näringslivets konkurrenskraft. Dessutom möjliggör starkare vägar effektivare transporter, vilket minskar utsläppen per ton gods.",
+      " "
     ],
     "title": "Glesbygd",
     "url": "https://www.liberalerna.se/politik/glesbygd",
-    "fetchDate": "2025-05-25T06:30:35.279Z",
+    "fetchDate": "2026-04-06T13:36:52.629Z",
     "party": "L",
     "subject": "landsbygd"
   },
@@ -1650,15 +1710,17 @@
   },
   "https://www.liberalerna.se/politik/konsumenters-rattigheter": {
     "opinions": [
-      "En liberal konsumentpolitik handlar om att stärka konsumenternas makt och möjlighet att göra aktiva val. Då behövs kunskap och en öppen debatt där marknadsaktörer granskas och oseriösa företag avslöjas. Staten ska ge konsumenterna goda möjligheter att göra val och vara medvetna om konsekvenserna av dem. Staten ska däremot inte ge pekpinnar och bestämma vilka val konsumenterna ska göra.",
-      "För att marknaden ska fungera behövs en stark konsumentlagstiftning. Utan rättigheter, tillgång till information och regler som garanterar produkternas säkerhet och innehåll försvagas konsumenternas makt. Men med det på plats ska konsumenter fritt få välja bland produkter – utan statliga pekpinnar.",
-      "Näthandeln ger stora möjligheter, men betyder också att du som konsumenter lämnar ifrån dig allt mer uppgifter om dig själv och dina köpvanor. Vi tycker att du ska få tydligare insyn i vilka uppgifter om dig själv som lagras, och hur den används. Det ska också vara lättare att få uppgifter raderade i samband med att kundrelationen upphör.",
+      "För oss liberaler handlar konsumenters rättigheter om makt och möjlighet att göra aktiva val. Du ska kunna känna dig trygg när du handlar. Mer kunskap ger dig möjligheten att både välja till och välja bort. ",
+      "Konsumentmakt låter dig göra aktiva val som påverkar samhället. Då behövs kunskap och en öppen debatt där marknadsaktörer granskas och oseriösa företag avslöjas. Staten ska ge konsumenterna goda möjligheter att göra val och vara medvetna om konsekvenserna av dem. Staten ska däremot inte ge pekpinnar och bestämma vilka val konsumenterna ska göra.",
+      "För att marknaden ska fungera behövs en stark konsumentlagstiftning. Utan rättigheter, brist på tillgång till information och regler som garanterar produkternas säkerhet och innehåll blir konsumenternas makt försvagad. Men med det på plats ska konsumenter fritt få välja bland produkter – utan statliga pekpinnar.",
+      "Näthandeln ger stora möjligheter, men betyder också att du som konsumenter lämnar ifrån dig allt mer uppgifter om dig själv och dina köpvanor. Vi tycker att du ska få tydligare insyn i vilka uppgifter om dig själv som blir lagrade och använda. Det ska också vara lättare att få uppgifter raderade i samband med att kundrelationen upphör.",
       "Vi vill att märkning av och innehållsdeklarationer för livsmedel ska vara tydliga. Maten ska vara säker i hela Europa. Den europeiska matproduktionen ska bygga på höga krav på djurskydd, miljö och hygien. De oberoende konsumentorganisationerna spelar en avgörande roll för att ta tillvara konsumenters intressen i samhället och på marknaden.",
+      "EU och Sverige måste stärka lagstiftningen för att skydda konsumenter och begränsa skadliga affärsmodeller som “ultra fast fashion”.",
       "Konsumenter med funktionsnedsättning har ofta sämre möjligheter än andra att utöva sin konsumentmakt. Det kan handla om bristande fysisk tillgänglighet i butikslokaler, som i allvarliga fall ska räknas som diskriminering. Det handlar även om att konsumentinformation inte är åtkomlig via kanaler som alla kan använda sig av. Statens konsumentupplysning ska ha ett särskilt fokus för att underlätta för denna grupp."
     ],
     "title": "Konsumenters rättigheter",
     "url": "https://www.liberalerna.se/politik/konsumenters-rattigheter",
-    "fetchDate": "2024-10-10T06:29:36.068Z",
+    "fetchDate": "2026-04-06T13:36:52.184Z",
     "party": "L",
     "subject": "konsumentpolitik"
   },
@@ -1690,22 +1752,6 @@
     "party": "L",
     "subject": "it-och-mobiltelefoni"
   },
-  "https://www.liberalerna.se/politik/politikbostader-2": {
-    "opinions": [
-      "Den svenska bostadsmarknaden saknar både bostäder och marknad. Det är mycket dyrare att bygga hus i Sverige än i våra grannländer och svårare att komma in på bostadsmarknaden. Det visar att systemet inte fungerar. Vi vill öppna bostadsmarknaden, förenkla reglerna och öka konkurrensen. Då kan fler känna friheten att ha ett eget hem.",
-      "Planprocessen tar för lång tid. Det beror på en övertung regelbörda kring handläggning och långa överklagandetider. För att korta processen från godkännande till byggstart vill vi att kravet på startbesked i plan- och bygglagen tas bort. Det finns betydande tidsvinster om vi ser över reglerna för överklagande utan att inskränka rätten att överklaga.",
-      "Vi behöver få billigare produktion och kostnadseffektivare processer. Det måste bli möjligt att en hustyp bara behöver prövas mot byggnormen en gång för att sedan vara godkänd. Då pressas byggkostnader och handläggningstiderna kortas. Det krävs en översyn med fokus på att alla grupper, studenter, äldre eller familjer, inte behöver samma sorts regler. ",
-      "De som har minst i plånboken är ofta de som bor i den dyrare boendeformen – hyresrätten. Utmärkande för utsatta och särskilt utsatta områden är bristen på privatägda bostäder. Det gör att den som vill äga sitt boende ofta lämnar området samtidigt som boendekostnaden i allmänhet blir högre för dem som bor kvar. Vi vill se en svensk modell för sociala bostäder, “behovsbostäder”, som ett komplement och som förmedlas utifrån sociala kriterier.",
-      "Vi vill se fri hyressättning vid nyproduktion och att hyressättningen i det befintliga beståndet i större utsträckning avspeglar efterfrågan. Läget behöver få ett betydligt större genomslag. Förändringar i bruksvärdessystemet ska kombineras med regler som ger hyresgäster långsiktigt förutsägbara villkor och mer att säga till om när det gäller standard och utrustning. ",
-      "För att byggandet i Sverige ska ligga på en hög nivå krävs långsiktighet. Kortvariga subventioner ger inget stabilt bostadsbyggande. Subventioner till renovering av fastigheter snedvrider förhållandena mellan de fastighetsägare som får subventioner och de fastighetsägare som renoverat med egna medel. Vi anser att det är fastighetsägaren som ska ta det ekonomiska ansvaret för att vårda och renovera sin fastighet, inte staten. ",
-      " "
-    ],
-    "title": "Bostad",
-    "url": "https://www.liberalerna.se/politik/politikbostader-2",
-    "fetchDate": "2025-05-25T06:30:36.845Z",
-    "party": "L",
-    "subject": "bostad"
-  },
   "https://www.liberalerna.se/politik/energi-2": {
     "opinions": [
       "Svenska elkunder har i decennier kunnat lita på att elen fungerar. Kostnaden har varit låg och priset har gått att förutse. Så är det inte längre. Kapaciteten att producera el, särskilt i söder, är för liten genom den förtida avvecklingen av kärnkraften. Vill vi öka tempot i elektrifieringen och producera mer el måste elskatten sänkas och Sverige bli ett enda elprisområde.",
@@ -1723,7 +1769,7 @@
   },
   "https://www.liberalerna.se/politik/forlossningsvard": {
     "opinions": [
-      "Sveriges förlossningsvård är en av de säkraste i världen, men även här finns problem.  Många kvinnor nekas möjligheten att föda med kejsarsnitt. Vi anser att kvinnan ska ha full makt att välja på vilket sätt hon föder barn. För att förbättra barnmorskornas arbetsmiljö vill vi genomföra långsiktiga satsningar på vårdplatser. ",
+      "Sveriges förlossningsvård är en av de säkraste i världen, men även här finns problem. Många kvinnor nekas möjligheten att föda med kejsarsnitt. Vi anser att kvinnan ska ha full makt att välja på vilket sätt hon föder barn. För att förbättra barnmorskornas arbetsmiljö vill vi genomföra långsiktiga satsningar på vårdplatser. ",
       "Många barnmorskor vittnar om personalbrist och ett alltför högt arbetstempo. Liberalerna vill göra en långsiktig satsning på vårdplatser för att barnmorskorna ska få fler kollegor och bättre löneutveckling. Fler ska kunna dela sin arbetstid mellan mödravårdens mottagningar och förlossningsavdelningar. ",
       "En stressig arbetsmiljö drabbar även de födande och deras familjer. Istället för att värna om kvinnans önskemål riskerar vården att bli alltför standardiserad snarare än individanpassad. Vårt mål är en barnmorska per födande kvinna, oavsett var i landet man bor. Det är oacceptabelt att mödradödligheten är högre bland utrikesfödda kvinnor. Mer behöver göras för att hantera kommunikationsproblem. ",
       "Idag kan kvinnor nekas möjligheten att föda med kejsarsnitt. Dessutom vittnar kvinnor om brist på stöd och otillräcklig delaktighet i sin egen vård. Liberalerna kommer alltid värna om den personliga autonomin och valfriheten. Om en kvinna efter samtal med barnmorska vill föda med kejsarsnitt ska hon kunna göra det.",
@@ -1731,7 +1777,7 @@
     ],
     "title": "Förlossningsvård",
     "url": "https://www.liberalerna.se/politik/forlossningsvard",
-    "fetchDate": "2025-05-25T06:30:37.715Z",
+    "fetchDate": "2026-04-06T13:36:50.808Z",
     "party": "L",
     "subject": "vard-och-omsorg"
   },
@@ -1747,5 +1793,131 @@
     "fetchDate": "2025-05-25T06:30:42.522Z",
     "party": "L",
     "subject": "utrikes--och-bistandsfragor"
+  },
+  "https://www.liberalerna.se/politik/bostad": {
+    "opinions": [
+      "Liberalerna vill reformera bostadsmarknaden i grunden, förenkla regler och öka konkurrensen. Fler ska känna friheten att ha ett eget hem.",
+      " ",
+      "Planprocesser tar i dag för lång tid. Långa handläggningstider och omfattande överklaganden försenar byggprojekt i åratal. Detta hämmar byggandet och driver upp priserna.",
+      "Vi vill därför korta processen från godkännande till byggstart genom att ta bort kravet på startbesked och se över överklagandereglerna utan att inskränka rättssäkerheten. Därför måste reglerna bli mer proportionerliga och mindre administrativt betungande.",
+      "Liberalerna vill förenkla byggreglerna. En hustyp ska kunna prövas en gång mot byggnormen och därefter vara godkänd. Exempelvis upprepas i dag prövningar i onödan, vilket ökar både kostnader och handläggningstider. Dessutom ska regler anpassas bättre efter olika målgrupper – studenter, äldre och barnfamiljer har olika behov.",
+      " ",
+      "De som har minst marginaler bor ofta i den dyraste boendeformen – hyresrätten. Samtidigt saknar många områden bostadsrätter, vilket minskar den sociala rörligheten.",
+      "Liberalerna vill införa fri hyressättning vid nyproduktion och låta hyror i större utsträckning spegla efterfrågan även i det befintliga beståndet. Samtidigt ska tydliga regelverk ge hyresgäster långsiktigt förutsägbara villkor och större inflytande över standard och utrustning.",
+      "Dessutom vill vi reformera bruksvärdessystemet för att skapa bättre rörlighet och ökad nyproduktion.",
+      " ",
+      "För att stärka tryggheten för dem som står längst från bostadsmarknaden vill vi införa en svensk modell för sociala bostäder – behovsbostäder. De ska fungera som ett komplement till den ordinarie bostadsmarknaden och vara förmedlade utifrån sociala kriterier.",
+      " ",
+      "Tillfälliga byggsubventioner skapar inte stabilitet. De snedvrider konkurrensen och ger kortsiktiga effekter. Bostadsbyggande på en hög och stabil nivå kräver långsiktiga spelregler.",
+      "Fastighetsägare ska ta ansvar för underhåll och renovering av sina fastigheter. Staten ska inte snedvrida marknaden genom tillfälliga stöd.",
+      " ",
+      "Här kan du läsa mer om Liberalernas bostadspolitik: Bostadspolitisk rapport",
+      " ",
+      "För att öka incitamenten att bygga nya hyresrätter – när investeringar blir mer lönsamma ökar byggandet och utbudet.",
+      "Ett komplement till den ordinarie bostadsmarknaden, förmedlade efter sociala behov.",
+      "Tillfälliga stöd ger kortsiktiga effekter och snedvrider konkurrensen. Kort sagt ger stabilare regler långsiktigt högre byggande.",
+      " "
+    ],
+    "title": "Bostad",
+    "url": "https://www.liberalerna.se/politik/bostad",
+    "fetchDate": "2026-04-06T13:36:51.865Z",
+    "party": "L"
+  },
+  "https://www.liberalerna.se/politik/europeiska-unionen": {
+    "opinions": [
+      "När världen blir osäkrare blir ett starkt EU viktigare. Liberalerna är det enda parti som tydligt tar ställning för att fördjupa frihetsprojektet EU. Vi vill se ett starkt, samlat EU där Sverige är fullvärdig medlem med euron som valuta.",
+      "I en orolig omvärld måste Europa hålla ihop för att lösa stora samhällsproblem. Ett starkt och enat EU är därför vårt viktigaste vapen mot Putins Ryssland, sköld mot Donald Trumps utfall, för att klara klimatomställningen och besegra gängen. För vår säkerhet, trygghet och frihet.",
+      "Europas liberala värderingar är hotade. Rysslands fullskaliga invasion av Ukraina är ett hot mot hela det fria Europa och partier både till höger och vänster vill försvaga Europasamarbetet. Det visar att EU:s viktigaste uppgift just nu är att säkerställa att Ukraina vinner kriget och att Ryssland förlorar. ",
+      "Friheten måste försvaras, och vi liberaler går främst i ledet för ett starkare Europa. När Donald Trump hotar Danmark om Grönland och vill införa tullar är det viktigt att EU står enat.",
+      "Det är bara tillsammans vi kan lösa de utmaningar som Europa står inför. Att klara klimatomställningen och att på allvar ta upp kampen mot den organiserade brottsligheten som har förgreningar långt utanför vårt eget land. Därför behöver vi tillsammans satsa mer på kunskap och forskning för att stärka.",
+      "Vi behöver jobba ihop för att stärka vårt civila och militära försvar, och vi står tillsammans upp för global frihandel. På alla dessa områden är mer samarbete – inte mindre – nödvändigt för att lösa stora samhällsproblem.",
+      "Ska vi lyckas med det behöver EU förändras, så att skattepengar används på bästa möjliga sätt, att det blir enklare att fatta beslut och att EU får större muskler på flera områden. Sanktionerna mot EU-länder som kränker pressfrihet, HBTQI-rättigheter och rättsstaten måste skärpas. ",
+      "Därför vill vi ta bort Ungerns vetorätt i utrikes- och säkerhetsfrågor och öka stödet till Ukraina. Dessutom vill vi att Sverige ska vara med i samarbetet fullt ut och införa euron som valuta.",
+      "I EU-parlamentet samarbetar vi med den liberala partigruppen Renew Europe.",
+      ""
+    ],
+    "title": "Europeiska unionen",
+    "url": "https://www.liberalerna.se/politik/europeiska-unionen",
+    "fetchDate": "2026-04-06T13:36:51.186Z",
+    "party": "L"
+  },
+  "https://www.liberalerna.se/politik/hbtqi": {
+    "opinions": [
+      "För oss är målet tydligt: alla ska ha samma rättigheter och möjligheter, oavsett kön, könsidentitet eller sexuell läggning. Hbtqi-rättigheter är mänskliga rättigheter – och de måste försvaras, utvecklas och stärkas.",
+      " ",
+      "Liberalerna har ofta gått i spetsen för reformer på hbtqi-området. Vi har bidragit till en modern könstillhörighetslag, könsneutral äktenskapslagstiftning och adoptionslagstiftning. Vi var också det första parti som krävde att steriliseringstvånget för transpersoner skulle avskaffas.",
+      "Samtidigt återstår mycket arbete. Trots lagändringar lever många i otrygghet. Hatbrott, hot och hedersrelaterat förtryck begränsar människors frihet. Därför fortsätter vi att driva på för nya reformer och stärkt skydd.",
+      " ",
+      "Alla har rätt att bli bemötta på jämlika villkor i samhällets alla verksamheter. Därför vill vi stärka hbtqi-kompetensen i offentlig sektor. Skolans sexualundervisning ska vara inkluderande och bygga på kunskap, respekt och öppenhet.",
+      "Arbetet mot diskriminering, hets och hatbrott måste intensifieras. Likaså ska samhället agera kraftfullt mot hedersrelaterat förtryck som drabbar hbtqi-personer. Friheten att forma sitt eget liv får aldrig begränsas av hot eller kontroll.",
+      "Sverige ska dessutom vara en stark röst internationellt. I EU och FN ska vi aktivt driva hbtqi-rättigheter och stödja modiga aktivister i länder där förföljelse och i vissa fall dödsstraff förekommer. Vi vill också att omvändelseförsök förbjuds i hela EU, eftersom sådana metoder kränker människors värdighet och självbestämmande.",
+      " ",
+      "När det gäller bloddonation ska varje person bli bedömd utifrån individuell risk, inte sexuell läggning. I dag blir friska homosexuella män i fasta relationer uteslutna genom generella regler. Det är orimligt, särskilt eftersom sjukvården har ett växande behov av blod.",
+      "Därför vill Liberalerna ta bort diskriminerande regler och säkerställa att bloddonation sker på lika villkor. På så sätt kombinerar vi medicinsk säkerhet med principen om likabehandling.",
+      " ",
+      "Alla familjer ska ha samma juridiska skydd. Möjligheten att skaffa barn i Sverige – exempelvis genom assisterad befruktning, adoption, embryodonation eller altruistiskt värdmödraskap – ska vara öppen för alla, oavsett sexuell läggning eller könsidentitet.",
+      "Barn till svenska föräldrar som föds genom värdmoderskap utomlands ska ha samma rättigheter från födseln som barn födda i Sverige. Rättssäkerheten för barnet måste alltid stå i centrum.",
+      " ",
+      " ",
+      "Vad innebär individuell riskbedömning vid bloddonation?\nDet innebär att varje person ska bli bedömd utifrån sin faktiska medicinska risk, inte utifrån sexuell läggning.",
+      "Vad betyder det att alla familjer ska ha samma juridiska skydd?\nDet betyder att lagstiftningen ska ge lika möjligheter att bilda familj och samma rättigheter för barn, oavsett hur familjen ser ut.",
+      " "
+    ],
+    "title": "HBTQI",
+    "url": "https://www.liberalerna.se/politik/hbtqi",
+    "fetchDate": "2026-04-06T13:36:52.140Z",
+    "party": "L"
+  },
+  "https://www.liberalerna.se/politik/jarnvag": {
+    "opinions": [
+      "Att resa med tåg är klimatsmart. Liberalerna bidrar nu till en upprusning av Sveriges järnvägar, ökad kapacitet och mer pålitliga tågresor i hela Sverige.",
+      "Efter år av eftersatt underhåll blir nu järnvägen upprustad på allvar. Viktiga stråk kommer bli prioriterade, kapaciteten öka – för en vardag som fungerar, ett starkare näringsliv och ett robust totalförsvar. Allt i enlighet med Liberalernas järnvägspolitik.",
+      "Sveriges järnväg har under lång tid varit präglad av eftersatt underhåll, förseningar och sårbarhet. Detta har drabbat resenärer, näringsliv och samhällsviktiga transporter. Därför tar nu Liberalerna och regeringen ett helhetsgrepp för att vända utvecklingen. Vi vill införa ett gemensamt biljettsystem för all kollektivtrafik i Sverige. Dessutom vill vi göra det enklare att boka utlandsbiljetter för tågresor inom EU. De skandinaviska huvudstäderna ska bli sammanknutna med goda järnvägsförbindelser.",
+      "Upprustningen sker på alla järnvägsflöden, med särskilt fokus på de mest trafikerade och strategiskt viktiga stråken: Stockholm–Göteborg, Stockholm/Hallsberg–Malmö/Köpenhamn, Hallsberg–Luleå och Luleå–Narvik. Samtidigt säkras bibehållen funktion och visst återtagande av underhåll även på övriga delar av järnvägsnätet.",
+      "Infrastrukturplanen som har klar liberal prägel innebär ett tydligt lyft för järnvägen. Eftersatt underhåll ska vara åtgärdad på ett par decennier, omkring 80 procent av nya investeringar går till järnväg och införandet av det nya signalsystemet ERTMS påskyndas. Genom utbyggnad, modernisering och smarta åtgärder som mötesspår, stationsåtgärder och bättre omledningsmöjligheter ökar både kapacitet och robusthet.",
+      "Detta handlar ytterst om vardagen för människor i hela landet – att komma i tid till jobbet, få varor levererade och kunna lita på samhällsviktiga transporter. En fungerande järnväg stärker konkurrenskraften, klimatomställningen och Sveriges totalförsvar. En väl fungerande järnväg är viktig för att Sverige ska nå sina klimatmål och upprätthålla en hög tillgänglighet av järnvägstransporter i hela landet."
+    ],
+    "title": "Järnväg",
+    "url": "https://www.liberalerna.se/politik/jarnvag",
+    "fetchDate": "2026-04-06T13:36:52.064Z",
+    "party": "L"
+  },
+  "https://www.liberalerna.se/politik/jamstalldhet": {
+    "opinions": [
+      "Det har vi kämpat för sedan liberaler drev igenom kvinnors rösträtt. Sverige har idag blivit ett av världens mest jämställda länder, men fortfarande finns mycket kvar att göra.",
+      "Att kunna känna vinden i håret, ta bussen till stan och träffa vänner är friheter som många tar för givna. Men mitt ibland oss lever unga människor under förtryck i hederns namn. Många som har kommit till Sverige söker jämställdhet och frihet, men andra tar med sig värderingar som inte hör hemma i ett modernt samhälle.",
+      "Därför måste det vara glasklart vad som gäller. Hederskulturen ska aktivt bekämpas av skola, socialtjänst och polis.",
+      " ",
+      "Årligen tillbringar kvinnor och barn sammanlagt 80 000 nätter på skyddade boenden på flykt. Detta är oacceptabelt. Vi vill därför satsa på mer förebyggande arbete och ge fler som förföljer sin expartner elektronisk fotboja. Dessutom vill vi ge landets kvinnojourer långsiktiga och rimliga ekonomiska villkor.",
+      "Förra året anmäldes 10 000 våldtäkter. Därför är det viktigt att rättsväsendet har rätt kompetens. Vi vill införa särskilda domartjänster för sexualbrott och våld i nära relationer, samt skärpa straffen och höja maxstraffet för våldtäkt.",
+      " ",
+      "Fortfarande tjänar kvinnor nästan 4 miljoner kronor mindre än män under ett yrkesliv. Lönerna måste öka i kvinnodominerade yrken, exempelvis genom karriärtjänster och fler arbetsgivare som tar ansvar för jämställd lönesättning.",
+      " ",
+      "Omgivningens åsikter och gamla könsroller får inte begränsa barns frihet. För varje pojke och flicka som tror att de måste följa gamla spår, ska skolan visa att det går att välja sin egen väg och bryta könsmönster. Jämställdhet handlar alltså inte bara om lagar och regler, utan om att forma en kultur där alla kan utvecklas på sina villkor.",
+      " ",
+      " ",
+      "Varför vill Liberalerna inrätta särskilda domartjänster för sexualbrott?\nFör att säkerställa rätt kompetens och snabbare handläggning av ärenden som rör våld i nära relationer och sexualbrott.",
+      "Hur bekämpar vi hederskultur?\nGenom samverkan mellan skola, socialtjänst och polis samt förebyggande insatser.",
+      "Vad gör Liberalerna för ekonomisk jämställdhet?\nVi vill höja löner i kvinnodominerade yrken och skapa karriärtjänster som gör att kvinnor kan tjäna lika mycket som män över ett yrkesliv.",
+      "Hur arbetar skolan för jämställdhet?\nSkolan ska visa alla barn att de kan bryta könsmönster och välja sin egen väg, utan att bli begränsade av gamla normer."
+    ],
+    "title": "Jämställdhet och feminism",
+    "url": "https://www.liberalerna.se/politik/jamstalldhet",
+    "fetchDate": "2026-04-06T13:36:52.016Z",
+    "party": "L"
+  },
+  "https://www.liberalerna.se/politik/alderism": {
+    "opinions": [
+      "Sverige slösar bort erfarenhet. Ålderism gör att arbetsgivare sorterar bort kompetenta människor trots arbetskraftsbrist. Det måste vi ändra på. Äldre som vill fortsätta arbeta ska få göra det.",
+      "Sverige är ett åldersfixerat land där arbetsgivare ofta väljer bort erfarenhet och kompetens, trots stor arbetskraftsbrist. När samhället förväntar sig att fler ska arbeta längre måste vi aktivt bekämpa ålderism i arbetslivet – med rättvisa regler, starkare skydd mot diskriminering och verkliga möjligheter till arbete och utveckling även högre upp i åldrarna.",
+      "Sverige står inför en växande arbetskraftsbrist samtidigt som människor lever längre och förväntas arbeta längre. Ändå präglas arbetsmarknaden av ett starkt åldersfokus. Arbetsgivare tar inte tillvara erfarenhet och kompetens, och de sorterar bort många långt innan dagens så kallade riktålder för pension. Ålder är ett dåligt mått på människors förmåga – både på arbetsmarknaden och i samhället.",
+      "Forskning visar att arbetsgivare minskar chansen att kalla sökande till intervju redan runt 40 års ålder. Många arbetsgivare låter också löneutvecklingen stanna av efter 55, och de anställer mer sällan personer över 60. Detta sker trots att både viljan och arbetsförmågan ofta finns kvar. Vi måste bekämpa fördomar och diskriminering, och vi måste ta bort regler och avtal som hindrar äldre från att arbeta om de vill.",
+      "Samtidigt har politiken ersatt pensionsåldern med en riktålder som höjs i takt med medellivslängden. Regering och riksdag har infört vissa ekonomiska incitament för att arbeta längre, men de räcker inte så länge ålderism präglar rekrytering, kompetensutveckling och arbetsvillkor.",
+      "Sverige behöver en samlad politik mot ålderism: vi bör höja åldersgränserna för studiemedel, anpassa skatte- och trygghetssystemen, ge människor möjlighet att trappa ned arbetstiden före pension. Vi vill också ge Diskrimineringsombudsmannen ett starkare uppdrag att motverka åldersdiskriminering. Sverige måste ta vara på erfarenhet – inte sortera bort den."
+    ],
+    "title": "Ålderism",
+    "url": "https://www.liberalerna.se/politik/alderism",
+    "fetchDate": "2026-04-06T13:36:52.280Z",
+    "party": "L"
   }
 }

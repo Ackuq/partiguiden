@@ -36,8 +36,13 @@ export default class CScraper extends Scraper {
   override async getStandpointPage(
     $link: cheerio.Cheerio<Element>,
   ): Promise<PartyDataWithoutPartyName[]> {
-    const { title, url, html, fetchDate, subject } =
-      await this.getStandpointPageData($link);
+    const data = await this.getStandpointPageData($link);
+
+    if (!data) {
+      return [];
+    }
+
+    const { title, url, html, fetchDate, subject } = data;
 
     const opinions = this.getOpinions(cheerio.load(html));
 

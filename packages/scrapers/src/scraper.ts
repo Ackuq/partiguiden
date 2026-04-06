@@ -39,13 +39,19 @@ export default abstract class Scraper implements ScraperArgs {
     for (const tag of this.opinionTags) {
       const $opinionElements = $(tag);
       if ($opinionElements.length > 0) {
-        return $opinionElements.toArray().map(($element) => $($element).text());
+        return $opinionElements
+          .toArray()
+          .map(($element) => $($element).text().trim())
+          .filter((text) => text !== "");
       }
     }
     return [];
   }
 
   protected getUrl(href: string) {
+    if (href.startsWith("#")) {
+      return;
+    }
     if (!this.absoluteUrls) {
       if (!this.pathRegex) {
         return this.baseUrl + href;
@@ -93,7 +99,9 @@ export default abstract class Scraper implements ScraperArgs {
 
   protected async getStandpointPageData(
     $link: Cheerio<Element>,
-  ): Promise<Omit<PartyDataWithoutPartyName, "opinions"> & { html: string }> {
+  ): Promise<
+    (Omit<PartyDataWithoutPartyName, "opinions"> & { html: string }) | undefined
+  > {
     let title = this.cleanText($link.text());
 
     if (title === "") {
@@ -103,17 +111,13 @@ export default abstract class Scraper implements ScraperArgs {
     const href = $link.attr("href");
 
     if (!href) {
-      throw new Error(
-        `Found no href attribute to be extracted from page ${title}`,
-      );
+      return;
     }
 
     const url = this.getUrl(href);
 
     if (!url) {
-      throw new Error(
-        `Failed to extract URL for page ${title}, got no path...`,
-      );
+      return;
     }
 
     // Sleep so we do not get rate limited
@@ -139,8 +143,11 @@ export default abstract class Scraper implements ScraperArgs {
   protected async getStandpointPage(
     $link: Cheerio<Element>,
   ): Promise<PartyDataWithoutPartyName[]> {
-    const { title, url, html, fetchDate, subject } =
-      await this.getStandpointPageData($link);
+    const data = await this.getStandpointPageData($link);
+    if (!data) {
+      return [];
+    }
+    const { title, url, html, fetchDate, subject } = data;
     const opinions = this.getOpinions(cheerio.load(html));
 
     return [

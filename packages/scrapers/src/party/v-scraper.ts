@@ -11,11 +11,14 @@ export default class VScraper extends Scraper {
   protected getOpinions($: CheerioAPI): string[] {
     const $main = $("main");
 
-    const $articleBody = $main.find("#template-s6_M7Q_F\\#0");
+    const $articleBody = $main.find(".vp-page");
 
-    const $listElements = $articleBody.find("li");
+    const $listElements = $articleBody.find("ul li");
     if ($listElements.length) {
-      return $listElements.toArray().map(($element) => $($element).text());
+      return $listElements
+        .toArray()
+        .map(($element) => $($element).text().trim())
+        .filter((text) => text !== "");
     }
 
     const $strongParagraphs = $articleBody.find("p strong");

@@ -8,16 +8,14 @@ import {
   ReferenceLine,
   ResponsiveContainer,
   Tooltip,
+  TooltipPayloadEntry,
   XAxis,
   YAxis,
 } from "recharts";
 
 import PartySymbolTick from "@components/charts/party-symbol-tick";
 import ReferenceLineLabel from "@components/charts/reference-line-label";
-import type {
-  CustomTooltipDetails,
-  CustomTooltipPayload,
-} from "@components/charts/tooltip";
+import type { CustomTooltipDetails } from "@components/charts/tooltip";
 import { useCustomTooltip } from "@components/charts/tooltip";
 import type { AveragePoll } from "@lib/api/polls/types";
 import { partyColors } from "@lib/colors/party";
@@ -28,7 +26,7 @@ interface Props {
   currentMonthAverage: AveragePoll;
 }
 
-interface BarItem extends CustomTooltipPayload {
+interface BarItem extends TooltipPayloadEntry {
   payload: AveragePoll[number] | undefined;
 }
 

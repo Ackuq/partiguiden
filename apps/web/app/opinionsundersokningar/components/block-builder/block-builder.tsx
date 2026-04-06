@@ -16,7 +16,7 @@ import {
 } from "recharts";
 
 import ReferenceLineLabel from "@components/charts/reference-line-label";
-import { useCustomTooltip } from "@components/charts/tooltip";
+import { type NameType, useCustomTooltip } from "@components/charts/tooltip";
 import type { AveragePoll } from "@lib/api/polls/types";
 import { partyLogo } from "@lib/assets";
 import { partyColors } from "@lib/colors/party";
@@ -66,8 +66,8 @@ export default function BlockBuilder({ currentMonthAverage }: Props) {
     [currentMonthAverage, included],
   );
 
-  const nameFormatter = (name: string) => {
-    return partyNames[name as Party] || name;
+  const nameFormatter = (name: NameType) => {
+    return partyNames[name as Party] || name.toString();
   };
 
   const CustomTooltip = useCustomTooltip({ nameFormatter });

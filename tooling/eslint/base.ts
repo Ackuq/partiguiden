@@ -1,5 +1,4 @@
 import eslint from "@eslint/js";
-import type { Linter } from "eslint";
 import importPlugin from "eslint-plugin-import";
 import turboPlugin from "eslint-plugin-turbo";
 import { defineConfig } from "eslint/config";
@@ -10,15 +9,16 @@ const baseConfig = defineConfig(
     files: ["**/*.js", "**/*.cjs", "**/*.mjs", "**/*.ts"],
     plugins: {
       import: importPlugin,
+      turbo: turboPlugin,
     },
     extends: [
       eslint.configs.recommended,
       tseslint.configs.recommended,
       tseslint.configs.recommendedTypeChecked,
       tseslint.configs.stylisticTypeChecked,
-      turboPlugin.configs?.["flat/recommended"] as Linter.Config,
     ],
     rules: {
+      "turbo/no-undeclared-env-vars": "error",
       "@typescript-eslint/no-unused-vars": [
         "error",
         { argsIgnorePattern: "^_", varsIgnorePattern: "^_" },

@@ -10,7 +10,7 @@ import {
   Tooltip,
 } from "recharts";
 
-import { useCustomTooltip } from "@components/charts/tooltip";
+import { type ValueType, useCustomTooltip } from "@components/charts/tooltip";
 import type {
   AveragePoll,
   BlockAverage,
@@ -42,7 +42,7 @@ function renderCustomLabel({ value }: PieLabelRenderProps) {
   return `${value}%"`;
 }
 
-function formatValue(value: string | number) {
+function formatValue(value: ValueType) {
   return typeof value === "number" ? `${value.toFixed(2)}%` : `${value}%"`;
 }
 

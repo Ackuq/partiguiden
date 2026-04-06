@@ -2978,7 +2978,8 @@
     "title": "Sveriges elförsörjning",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/energi/sveriges-elforsorjning",
     "fetchDate": "2026-04-06T13:42:25.458Z",
-    "party": "C"
+    "party": "C",
+    "subject": "energi"
   },
   "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/jobb/a-kassa-och-omstallningsforsakring": {
     "opinions": [
@@ -2992,7 +2993,8 @@
     "title": "A-kassa och omställningsförsäkring",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/jobb/a-kassa-och-omstallningsforsakring",
     "fetchDate": "2026-04-06T13:42:24.450Z",
-    "party": "C"
+    "party": "C",
+    "subject": "trygghetssystem-och-valfard"
   },
   "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/jobb/arbetsformedlingen": {
     "opinions": [
@@ -3007,7 +3009,8 @@
     "title": "Arbetsförmedlingen",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/jobb/arbetsformedlingen",
     "fetchDate": "2026-04-06T13:42:24.635Z",
-    "party": "C"
+    "party": "C",
+    "subject": "jobb"
   },
   "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/jobb/arbetsmiljo": {
     "opinions": [
@@ -3023,7 +3026,8 @@
     "title": "Arbetsmiljö",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/jobb/arbetsmiljo",
     "fetchDate": "2026-04-06T13:42:24.241Z",
-    "party": "C"
+    "party": "C",
+    "subject": "jobb"
   },
   "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/jobb/arbetsratt-och-fackforening": {
     "opinions": [
@@ -3039,7 +3043,8 @@
     "title": "Arbetsrätt och fackförening",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/jobb/arbetsratt-och-fackforening",
     "fetchDate": "2026-04-06T13:42:24.777Z",
-    "party": "C"
+    "party": "C",
+    "subject": "jobb"
   },
   "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/jobb/ingangsjobb": {
     "opinions": [
@@ -3053,7 +3058,8 @@
     "title": "Ingångsjobb",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/jobb/ingangsjobb",
     "fetchDate": "2026-04-06T13:42:24.981Z",
-    "party": "C"
+    "party": "C",
+    "subject": "jobb"
   },
   "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/jobb/langtidsarbetsloshet-och-etablering": {
     "opinions": [
@@ -3067,7 +3073,8 @@
     "title": "Långtidsarbetslöshet och etablering",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/jobb/langtidsarbetsloshet-och-etablering",
     "fetchDate": "2026-04-06T13:42:24.565Z",
-    "party": "C"
+    "party": "C",
+    "subject": "jobb"
   },
   "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/jobb/ungdomsarbetsloshet": {
     "opinions": [
@@ -3081,7 +3088,8 @@
     "title": "Ungdomsarbetslöshet",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/jobb/ungdomsarbetsloshet",
     "fetchDate": "2026-04-06T13:42:24.839Z",
-    "party": "C"
+    "party": "C",
+    "subject": "jobb"
   },
   "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/klimat/klimatpolitik-som-gynnar-din-planbok": {
     "opinions": [
@@ -3092,6 +3100,7 @@
     "title": "Klimatpolitik som gynnar din plånbok",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/klimat/klimatpolitik-som-gynnar-din-planbok",
     "fetchDate": "2026-04-06T13:42:22.138Z",
-    "party": "C"
+    "party": "C",
+    "subject": "miljo-och-klimat"
   }
 }

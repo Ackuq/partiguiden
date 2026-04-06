@@ -568,7 +568,8 @@
     "title": "Demokrati, rättsstat och förvaltning",
     "url": "https://moderaterna.se/var-politik/demokrati-rattsstat-forvaltning/",
     "fetchDate": "2026-04-06T13:42:22.465Z",
-    "party": "M"
+    "party": "M",
+    "subject": "demokrati"
   },
   "https://moderaterna.se/var-politik/forskola/": {
     "opinions": [
@@ -593,6 +594,7 @@
     "title": "Förskolan",
     "url": "https://moderaterna.se/var-politik/forskola/",
     "fetchDate": "2026-04-06T13:42:23.580Z",
-    "party": "M"
+    "party": "M",
+    "subject": "utbildning"
   }
 }

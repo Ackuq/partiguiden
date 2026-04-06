@@ -1021,7 +1021,8 @@
     "title": "Rovdjur",
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/rovdjur/",
     "fetchDate": "2026-04-06T14:01:33.867Z",
-    "party": "V"
+    "party": "V",
+    "subject": "jordbruk-jakt-och-fiske"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/telefonforsaljning/": {
     "opinions": [
@@ -1030,7 +1031,8 @@
     "title": "Telefonförsäljning",
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/telefonforsaljning/",
     "fetchDate": "2026-04-06T14:01:29.750Z",
-    "party": "V"
+    "party": "V",
+    "subject": "lag-och-ratt"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/ungas-ratt-till-inflytande-och-politisk-makt/": {
     "opinions": [
@@ -1039,7 +1041,8 @@
     "title": "Ungas rätt till inflytande och politisk makt",
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/ungas-ratt-till-inflytande-och-politisk-makt/",
     "fetchDate": "2026-04-06T14:01:30.934Z",
-    "party": "V"
+    "party": "V",
+    "subject": "demokrati"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/uranbrytning/": {
     "opinions": [
@@ -1048,7 +1051,8 @@
     "title": "Uranbrytning",
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/uranbrytning/",
     "fetchDate": "2026-04-06T14:01:34.116Z",
-    "party": "V"
+    "party": "V",
+    "subject": "miljo-och-klimat"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/veterinarpriser/": {
     "opinions": [
@@ -1057,6 +1061,7 @@
     "title": "Veterinärpriser",
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/veterinarpriser/",
     "fetchDate": "2026-04-06T14:01:31.211Z",
-    "party": "V"
+    "party": "V",
+    "subject": "vard-och-omsorg"
   }
 }

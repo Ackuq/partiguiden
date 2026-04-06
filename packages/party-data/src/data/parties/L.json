@@ -1821,7 +1821,8 @@
     "title": "Bostad",
     "url": "https://www.liberalerna.se/politik/bostad",
     "fetchDate": "2026-04-06T13:36:51.865Z",
-    "party": "L"
+    "party": "L",
+    "subject": "bostad"
   },
   "https://www.liberalerna.se/politik/europeiska-unionen": {
     "opinions": [
@@ -1839,7 +1840,8 @@
     "title": "Europeiska unionen",
     "url": "https://www.liberalerna.se/politik/europeiska-unionen",
     "fetchDate": "2026-04-06T13:36:51.186Z",
-    "party": "L"
+    "party": "L",
+    "subject": "europa"
   },
   "https://www.liberalerna.se/politik/hbtqi": {
     "opinions": [
@@ -1866,7 +1868,8 @@
     "title": "HBTQI",
     "url": "https://www.liberalerna.se/politik/hbtqi",
     "fetchDate": "2026-04-06T13:36:52.140Z",
-    "party": "L"
+    "party": "L",
+    "subject": "jamstalldhet-och-diskriminering"
   },
   "https://www.liberalerna.se/politik/jarnvag": {
     "opinions": [
@@ -1880,7 +1883,8 @@
     "title": "Järnväg",
     "url": "https://www.liberalerna.se/politik/jarnvag",
     "fetchDate": "2026-04-06T13:36:52.064Z",
-    "party": "L"
+    "party": "L",
+    "subject": "infrastruktur-och-trafik"
   },
   "https://www.liberalerna.se/politik/jamstalldhet": {
     "opinions": [
@@ -1904,7 +1908,8 @@
     "title": "Jämställdhet och feminism",
     "url": "https://www.liberalerna.se/politik/jamstalldhet",
     "fetchDate": "2026-04-06T13:36:52.016Z",
-    "party": "L"
+    "party": "L",
+    "subject": "infrastruktur-och-trafik"
   },
   "https://www.liberalerna.se/politik/alderism": {
     "opinions": [
@@ -1918,6 +1923,7 @@
     "title": "Ålderism",
     "url": "https://www.liberalerna.se/politik/alderism",
     "fetchDate": "2026-04-06T13:36:52.280Z",
-    "party": "L"
+    "party": "L",
+    "subject": "aldrepolitik"
   }
 }

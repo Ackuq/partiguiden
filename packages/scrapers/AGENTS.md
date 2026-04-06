@@ -12,11 +12,15 @@ This directory contains the party data scrapers for Partiguiden. When working in
 ## Common Workflows
 
 ### Debugging a Scraper
+
 To debug a specific scraper, use the `-p` flag with the `scrape` script:
+
 ```bash
 pnpm --filter @partiguiden/scrapers scrape -p [party_abbreviation]
 ```
+
 Replace `[party_abbreviation]` with the party's abbreviation (e.g., `s`, `c`, `kd`, `l`, `m`, `mp`, `sd`, `v`).
 
 ### Verifying Scraper Outputs
+
 After making changes to a scraper, always run it in isolation and check the resulting JSON data in `packages/party-data/src/data/parties/` to ensure the content is correctly extracted and formatted.

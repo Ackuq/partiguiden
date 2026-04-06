@@ -39,7 +39,10 @@ export default abstract class Scraper implements ScraperArgs {
     for (const tag of this.opinionTags) {
       const $opinionElements = $(tag);
       if ($opinionElements.length > 0) {
-        return $opinionElements.toArray().map(($element) => $($element).text());
+        return $opinionElements
+          .toArray()
+          .map(($element) => $($element).text().trim())
+          .filter((text) => text !== "");
       }
     }
     return [];

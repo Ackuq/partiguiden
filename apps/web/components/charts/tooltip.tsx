@@ -1,18 +1,22 @@
 import { useCallback } from "react";
-import type { TooltipContentProps } from "recharts";
+import type {
+  TooltipContentProps,
+  TooltipPayloadEntry,
+  TooltipValueType,
+} from "recharts";
 import { twMerge } from "tailwind-merge";
 
 import { Divider } from "@components/common/divider";
 
-type ValueType = string | number;
-type NameType = string;
+export type NameType = number | string;
+export type ValueType = TooltipValueType;
 
 interface EntryProps {
   name?: NameType;
   value?: ValueType;
   unit?: React.ReactNode;
-  nameFormatter?: (name: string) => string;
-  valueFormatter?: (value: string | number) => string;
+  nameFormatter?: (name: NameType) => string;
+  valueFormatter?: (value: ValueType) => string;
 }
 
 function Entry({
@@ -22,7 +26,7 @@ function Entry({
   nameFormatter,
   valueFormatter,
 }: EntryProps) {
-  if (!name || value === undefined) {
+  if (name === undefined || value === undefined) {
     return;
   }
 
@@ -37,27 +41,19 @@ function Entry({
   );
 }
 
-export interface CustomTooltipPayload {
-  name: string;
-  value: string | number;
-  unit?: string;
-}
-
-export type CustomTooltipDetails<T extends CustomTooltipPayload> =
+export type CustomTooltipDetails<T extends TooltipPayloadEntry> =
   React.ElementType<{
-    payload: readonly T[];
+    payload: ReadonlyArray<T>;
   }>;
 
-type CustomTooltipProps<T extends CustomTooltipPayload> = TooltipContentProps<
-  ValueType,
-  NameType
-> & {
+type CustomTooltipProps<T extends TooltipPayloadEntry> = TooltipContentProps & {
+  payload: ReadonlyArray<T>;
   Details?: CustomTooltipDetails<T>;
-  nameFormatter?: (name: string) => string;
-  valueFormatter?: (value: string | number) => string;
+  nameFormatter?: (name: NameType) => string;
+  valueFormatter?: (value: ValueType) => string;
 };
 
-export default function CustomTooltip<T extends CustomTooltipPayload>({
+export default function CustomTooltip<T extends TooltipPayloadEntry>({
   label,
   payload,
   labelFormatter,
@@ -92,18 +88,25 @@ export default function CustomTooltip<T extends CustomTooltipPayload>({
   );
 }
 
-type UseCustomToolTip<T extends CustomTooltipPayload> = Pick<
+type UseCustomToolTip<T extends TooltipPayloadEntry> = Pick<
   CustomTooltipProps<T>,
   "nameFormatter" | "valueFormatter" | "Details"
 >;
 
-export function useCustomTooltip<T extends CustomTooltipPayload>({
+type CustomToolTipContentProps<T extends TooltipPayloadEntry> = Omit<
+  TooltipContentProps,
+  "payload"
+> & {
+  payload: ReadonlyArray<T>;
+};
+
+export function useCustomTooltip<T extends TooltipPayloadEntry>({
   nameFormatter,
   valueFormatter,
   Details,
 }: UseCustomToolTip<T>) {
   const ToolTip = useCallback(
-    (props: TooltipContentProps<ValueType, NameType>) => (
+    (props: CustomToolTipContentProps<T>) => (
       <CustomTooltip
         {...props}
         nameFormatter={nameFormatter}
@@ -114,5 +117,5 @@ export function useCustomTooltip<T extends CustomTooltipPayload>({
     [nameFormatter, valueFormatter, Details],
   );
 
-  return ToolTip;
+  return ToolTip as (props: TooltipContentProps) => React.ReactNode;
 }

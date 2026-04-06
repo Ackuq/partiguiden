@@ -13,9 +13,11 @@ export function generateImageMetadata() {
 }
 
 interface Props {
-  id: Promise<number>;
+  id: Promise<string>;
 }
 
-export default async function Icon({ id: size }: Props) {
-  return PartiguidenIcon(await size);
+export default async function Icon({ id }: Props) {
+  const resolvedId = await id;
+  const size = parseInt(resolvedId, 10);
+  return PartiguidenIcon(size);
 }

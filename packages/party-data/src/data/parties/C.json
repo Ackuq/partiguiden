@@ -384,7 +384,7 @@
   },
   "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/bostader/bostadsbyggande": {
     "opinions": [
-      "Förenkla byggreglerna och korta tiden för överklaganden. ",
+      "Förenkla byggreglerna och korta tiden för överklaganden.",
       "Sänka trösklarna till bostadsmarknaden genom lägre amorteringskrav, rättvisare skatter och bättre förutsättningar för bosparande.",
       "Skapa fler hyresrätter genom att införa fri hyressättning i nyproduktion.",
       "Förenkla regelverken: Göra det möjligt att typgodkänna hus så att de kan byggas i hela landet, samt sätta en tidsgräns för hur lång tid överklaganden av bygglov får ta.",
@@ -393,7 +393,7 @@
     ],
     "title": "Bostadsbyggande",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/bostader/bostadsbyggande",
-    "fetchDate": "2026-02-01T13:25:50.833Z",
+    "fetchDate": "2026-04-08T07:42:02.246Z",
     "party": "C",
     "subject": "bostad"
   },
@@ -493,14 +493,14 @@
       "Värna möjligheterna för personer med olika sexuell läggning att bilda familj till exempel genom att tillåta fler än två vårdnadshavare och göra altruistiskt surrogatmödraskap lagligt.",
       "Stärka skyddet mot hatbrott och förbjuda omvändelseförsök.",
       "Att barn ska kunna behålla kontakten med en varaktig social förälder.",
-      "Modernisera föräldrabalken så att fler än två kan vara vårdnadshavare och göra altruistiskt surrogatmödraskap lagligt. ",
+      "Modernisera föräldrabalken så att fler än två kan vara vårdnadshavare och göra altruistiskt surrogatmödraskap lagligt.",
       "Utveckla könstillhörighetslagen som bygger på individens självbestämmande och utreda införandet av ett tredje juridiskt kön.",
       "Kriminalisera omvändelseförsök och skärpa straffen för hatbrott.",
       "Säkerställa att vården, skolan och andra myndigheter har hög kunskap om HBTQI-frågor för att garantera ett likvärdigt och respektfullt bemötande."
     ],
     "title": "HBTQI",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/diskriminering/hbtqi",
-    "fetchDate": "2026-02-01T13:25:50.800Z",
+    "fetchDate": "2026-04-08T07:42:06.940Z",
     "party": "C",
     "subject": "jamstalldhet-och-diskriminering"
   },
@@ -1684,7 +1684,7 @@
       "Införa ett lämna-program",
       "Skärpa straffen för våldsbrott i nära relationer och göra fotboja obligatoriskt vid kontaktförbud.",
       "Säkra ett långsiktigt och stabilt ekonomiskt stöd till tjej- och kvinnojourer i hela landet.",
-      " Stoppa våldet tidigt genom att kriminalisera kontrollerande och isolerande beteende.",
+      "Stoppa våldet tidigt genom att kriminalisera kontrollerande och isolerande beteende.",
       "Skärpa straffen för grov kvinnofridskränkning och sexualbrott.",
       "Göra elektronisk fotboja obligatorisk vid kontaktförbud som rör allvarligare brott, utan att förbudet först måste ha överträtts.",
       "Kriminalisera kontrollerande beteende för att kunna ingripa tidigt mot psykiskt våld och isolering.",
@@ -1694,7 +1694,7 @@
     ],
     "title": "Mäns våld mot kvinnor",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/lag-och-ratt/mans-vald-mot-kvinnor",
-    "fetchDate": "2026-02-01T13:25:51.435Z",
+    "fetchDate": "2026-04-08T07:42:02.759Z",
     "party": "C",
     "subject": "lag-och-ratt"
   },

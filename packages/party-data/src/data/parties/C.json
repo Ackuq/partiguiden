@@ -2778,14 +2778,15 @@
       "Satsa på jobb och språkkunskaper som den snabbaste vägen in i samhället.",
       "Ersätta SFI med Jobbsvenska för att göra det enklare att komma i arbete snabbt",
       "Införa ett nystartsår för alla som inte haft ett jobb på tre år i Sverige och som inte kan svenska.",
-      "Göra det enklare och billigare att anställa och att starta företag.",
+      "Sänka trösklarna till arbetsmarknaden, särskilt för dem som står långt ifrån arbete.",
       "Införa jobbsvenska, för att fler ska snabbare kunna komma i arbete",
       "utveckla ett nystartsår för alla som inte har jobbat på 3 år och inte kan svenska, som kombinerar intensiva språkstudier med praktiska moment för att bli anställningsbar",
+      "Ställa krav på språkkunskaper och samhällsorientering för att kunna bli medborgare",
       "göra om etableringsbidraget till ett etableringslån, likt studielånet, för att stärka drivkraften till självförsörjning."
     ],
     "title": "Integration",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/integration-och-migration/integration",
-    "fetchDate": "2026-02-07T06:50:29.616Z",
+    "fetchDate": "2026-04-29T08:25:25.290Z",
     "party": "C",
     "subject": "migration-och-integration"
   },
@@ -3102,5 +3103,37 @@
     "fetchDate": "2026-04-06T13:42:22.138Z",
     "party": "C",
     "subject": "miljo-och-klimat"
+  },
+  "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/barn-och-ungas-psykiska-halsa": {
+    "opinions": [
+      "Stoppa utslagningen i skolan med tidiga insatser och mer stöd.",
+      "Garantera unga snabb tillgång till trygg vård och samtalsstöd i hela landet.",
+      "Sänka trösklarna till det första jobbet för att bryta utanförskap och minska den ekonomiska stressen.",
+      "Stärka stöden till civilsamhälle, föreningsliv och idrott för att fler ska få en aktiv, inkluderande och meningsfull fritid.",
+      "Införa krav på tidiga stödinsatser i skolan, utan krav på diagnos.",
+      "Bygga ut elevhälsan och minska klasstorlekarna för en lugnare skolmiljö.",
+      "Stärka primärvården och första linjens psykiatri, för mer förebyggande vård och innan problemen växer sig stora.",
+      "Korta BUP-köerna genom mer resurser och rätt utbildad personal. Alla barn oavsett bostadsort ska få specialistvård i tid.",
+      "Bygga ut Ungdomsmottagningen till 25 år i hela landet. Ungdomsmottagningar ska finnas i hela landet och vara avgiftsfria, tillgängliga digitalt och dygnet runt. Det gör att fler söker hjälp i tid.",
+      "Införa en obligatorisk fast vårdkontakt för alla barn och unga upp till 25 år, för en trygg och sammanhållen vård.",
+      "Ge stöd under hela uppväxten. BVC ska byggas ut och ett sammanhållet nationellt hälsoprogram införas med hälsobesök, samtal och föräldrastöd upp till barnet fyller 20 år. Det skapar trygghet och bättre förutsättningar för barns utveckling.",
+      "Sänka trösklarna till första jobbet genom enklare regler och lägre kostnader för att anställa."
+    ],
+    "title": "Barn och ungas psykiska hälsa",
+    "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/barn-och-ungas-psykiska-halsa",
+    "fetchDate": "2026-04-29T08:25:22.545Z",
+    "party": "C"
+  },
+  "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/seniorer": {
+    "opinions": [
+      "Trygghet i vardagenStarkare stöd till anhöriga som vårdar en anhörig, högre trygghet för dem med lägst pensioner, och bekämpning av brott och bedrägerier som riktas mot äldre.",
+      "Ett friskt och aktivt livNationellt äldrehälsovårdsprogram med hälsosamtal, screening och vaccinationsprogram. Hemsjukvård av god kvalitet, och fast läkare och vårdkontakt som skapar kontinuitet.",
+      "Bostäder för hela livetÖka byggandet av trygghetsboenden med rätt för alla över 85 att flytta till ett sådant om de vill. Nya bostäder ska vara tillgängliga, trygga och anpassade för framtidens behov.",
+      "Motverka diskrimineringJobba för att motverka åldersdiskriminering, förbättra attityderna på arbetsmarknaden och gör det lättare att arbeta längre för den som vill."
+    ],
+    "title": "Seniorer",
+    "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/seniorer",
+    "fetchDate": "2026-04-29T08:25:20.860Z",
+    "party": "C"
   }
 }

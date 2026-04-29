@@ -524,11 +524,11 @@
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/kriminalitet-och-kriminalvard/": {
     "opinions": [
-      "Vänsterpartiet arbetar för ett samhälle där ingen har anledning att se kriminalitet som en lösning. Vi vill ge alla barn en uppväxt som ger dem möjligheter i livet, från förskolan till skolan och det första jobbet. Det är nödvändigt för att minska kriminaliteten och se till att så få som möjligt drabbas av brott."
+      "Det bästa brottsförebyggande arbetet börjar med en stark välfärd som skapar ett jämlikt samhälle, har resurser att fånga upp unga tidigt och som kan ge föräldrar det stöd de behöver. Men när människor begår brott måste samhället självklart sätta gränser i form av straff. Det är viktigt att straffen motsvarar brottens allvarlighet. Att stoppa nyrekryteringen av barn och unga in i kriminalitet är centralt. Narkotika och vapen måste stoppas redan vid landets gränser."
     ],
     "title": "Kriminalitet och kriminalvård",
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/kriminalitet-och-kriminalvard/",
-    "fetchDate": "2026-04-06T14:01:31.814Z",
+    "fetchDate": "2026-04-29T08:25:28.707Z",
     "party": "V",
     "subject": "lag-och-ratt"
   },
@@ -701,7 +701,7 @@
   "https://www.vansterpartiet.se/var-politik/politik-a-o/skattepolitik/": {
     "opinions": [
       "Oligopolskatt på bankernas övervinster",
-      "Nej till regeringens skattesänkningar för miljonärer, ingen som tjänar under 50 000 kr/månaden för höjd skatt med Vänsterpartiets förslag.",
+      "Nej till regeringens skattesänkningar för miljonärer, ingen som tjänar under 50 000 kr/månaden får höjd skatt med Vänsterpartiets förslag.",
       "Återinför principen om lika skatt på lika inkomst, vilket innebär sänkt skatt för sjuka, arbetslösa, sjukpensionärer m.fl.",
       "Skattereduktion för avgift till fackförening.",
       "Gör om dagens rotavdrag till ett grönt rotavdrag för energieffektivisering m.m.",
@@ -709,7 +709,7 @@
     ],
     "title": "Skattepolitik",
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/skattepolitik/",
-    "fetchDate": "2026-04-06T14:01:30.855Z",
+    "fetchDate": "2026-04-29T08:25:28.098Z",
     "party": "V",
     "subject": "ekonomi-och-skatter"
   },

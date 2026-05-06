@@ -402,16 +402,10 @@
     "subject": "jobb"
   },
   "https://www.mp.se/politik/jamstalldhet/": {
-    "opinions": [
-      "Få ett slut på mäns våld mot kvinnor.",
-      "Stoppa hedersrelaterat våld och förtryck.",
-      "Att kvinnor ska ha halva makten och hela lönen och pensionen.",
-      "Främja ett jämställt ansvar för hem och barn.",
-      "Fortsätta att föra en feministisk utrikespolitik för klimat, bistånd och fred."
-    ],
+    "opinions": [],
     "title": "Jämställdhet",
     "url": "https://www.mp.se/politik/jamstalldhet/",
-    "fetchDate": "2023-09-17T17:52:36.516Z",
+    "fetchDate": "2026-05-06T08:33:05.844Z",
     "party": "MP",
     "subject": "jamstalldhet-och-diskriminering"
   },
@@ -773,17 +767,10 @@
     "subject": "utrikes--och-bistandsfragor"
   },
   "https://www.mp.se/politik/vapenexport/": {
-    "opinions": [
-      "Att Sverige ska vara en stark aktör för fredsfrämjande arbete och verka för global nedrustning.",
-      "Att Sverige och EU är ledande i etiska krav på vår vapenexport.",
-      "Att Sverige ratificerar konventionen om kärnvapenförbud.",
-      "Att Sverige inför en lag som förbjuder kärnvapen på svensk mark.",
-      "Att Sverige verkar för ett globalt förbud mot dödliga autonoma vapen.",
-      "Att Sverige inom EU verkar för en gemensam försvarsmarknad, ökade materielsamarbeten och delade utvecklingskostnader med andra länder."
-    ],
+    "opinions": [],
     "title": "Vapenexport",
     "url": "https://www.mp.se/politik/vapenexport/",
-    "fetchDate": "2025-11-07T06:35:13.131Z",
+    "fetchDate": "2026-05-06T08:32:58.025Z",
     "party": "MP",
     "subject": "utrikes--och-bistandsfragor"
   },

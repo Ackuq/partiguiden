@@ -31,7 +31,7 @@ catalog:
   eslint-plugin-import: 2.32.0
   eslint-plugin-react: 7.37.5
   eslint-plugin-react-hooks: 7.0.1
-  eslint-plugin-turbo: 2.9.4
+  eslint-plugin-turbo: 2.9.14
   knip: 6.3.0
   next: 16.2.2
   next-sitemap: 4.2.3
@@ -49,7 +49,7 @@ catalog:
   strip-json-comments: 5.0.3
   tailwind-merge: 3.5.0
   tailwindcss: 4.2.2
-  turbo: 2.9.4
+  turbo: 2.9.14
   typed.js: 3.0.0
   typescript: 5.9.3
   typescript-eslint: 8.58.0

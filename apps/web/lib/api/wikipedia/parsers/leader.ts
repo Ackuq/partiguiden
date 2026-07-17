@@ -15,7 +15,7 @@ export default async function parseLeader(
     rdlstatus: "samtliga",
   });
 
-  if (member === null) {
+  if (member?.id === undefined) {
     console.error("Couldn't find member", { firstName, lastName, role });
     return null;
   }

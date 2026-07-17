@@ -24,6 +24,7 @@
   },
   "devDependencies": {
     "@partiguiden/tsconfig": "workspace:*",
-    "@types/node": "catalog:"
+    "@types/node": "catalog:",
+    "jiti": "catalog:"
   }
 }

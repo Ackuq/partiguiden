@@ -4,7 +4,6 @@ import { defineConfig, globalIgnores } from "eslint/config";
 
 const nextConfig = defineConfig(
   ...nextVitals,
-
   ...nextTs,
   // Override default ignores of eslint-config-next.
   globalIgnores([

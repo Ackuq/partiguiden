@@ -8,6 +8,7 @@ const withBundleAnalyzer = bundleAnalyzer({
 });
 
 const nextConfig = withBundleAnalyzer({
+  staticPageGenerationTimeout: 120,
   productionBrowserSourceMaps: true,
   reactCompiler: true,
   transpilePackages: ["@partiguiden/party-data"],

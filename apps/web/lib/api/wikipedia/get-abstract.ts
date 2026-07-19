@@ -8,6 +8,7 @@ import { wikipediaPartyMap } from "./utils/party-map";
 
 export default async function getWikipediaAbstract(
   party: Party,
+  n = 0,
 ): Promise<string> {
   const response = await fetch(
     `https://sv.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&exintro&redirects=1&titles=${encodeURIComponent(
@@ -18,8 +19,8 @@ export default async function getWikipediaAbstract(
     },
   );
   if (response.status === 429) {
-    await sleep(1000);
-    return getWikipediaAbstract(party);
+    await sleep(1000 * 2 ** n);
+    return getWikipediaAbstract(party, n + 1);
   }
   const data = await body<WikipediaAbstractResponse>(response);
 

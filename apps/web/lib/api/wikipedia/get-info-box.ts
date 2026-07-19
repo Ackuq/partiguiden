@@ -9,6 +9,7 @@ import { wikipediaPartyMap } from "./utils/party-map";
 
 export default async function getWikipediaInfoBox(
   party: Party,
+  n = 0,
 ): Promise<WikipediaInfoBox> {
   const response = await fetch(
     `https://sv.wikipedia.org/w/api.php?action=parse&format=json&section=0&prop=text&page=${encodeURIComponent(
@@ -19,8 +20,8 @@ export default async function getWikipediaInfoBox(
     },
   );
   if (response.status === 429) {
-    await sleep(1000);
-    return getWikipediaInfoBox(party);
+    await sleep(1000 * 2 ** n);
+    return getWikipediaInfoBox(party, n + 1);
   }
   const data = await body<WikipediaInfoBoxResponse>(response);
   return getInfoBoxAttr(data, party);

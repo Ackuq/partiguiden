@@ -23,7 +23,7 @@ catalog:
   "@actions/core": 3.0.1
   "@actions/exec": 3.0.0
   "@actions/github": 9.1.1
-  "@eslint/js": 9.21.0
+  "@eslint/js": 10.0.1
   "@google-analytics/data": 6.1.0
   "@heroicons/react": 2.2.0
   "@inquirer/prompts": 8.5.2
@@ -41,7 +41,7 @@ catalog:
   babel-plugin-react-compiler: 1.0.0
   cheerio: 1.2.0
   domhandler: 6.0.1
-  eslint: 9.39.2
+  eslint: 10.7.0
   eslint-config-next: 16.2.10
   eslint-plugin-import: 2.32.0
   eslint-plugin-react: 7.37.5
@@ -67,7 +67,7 @@ catalog:
   tailwindcss: 4.3.3
   turbo: 2.10.5
   typed.js: 3.0.0
-  typescript: 5.9.3
+  typescript: 7.0.2
   typescript-eslint: 8.64.0
   undici: 8.7.0
 

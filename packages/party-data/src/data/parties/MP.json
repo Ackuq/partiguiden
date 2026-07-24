@@ -1,821 +1,425 @@
 {
-  "https://www.mp.se/politik/abort/": {
-    "opinions": [
-      "Grundlagsskydda aborträtten.",
-      "Stärka kvinnors rättigheter i hela världen och att både män och kvinnor inser behovet av det.",
-      "Värna rätten till egen sexualitet, information och preventivmedel. Se till att alla kvinnor och flickor får den information de har rätt till.",
-      "Subventionera abort för även kvinnor som inte är svenska medborgare eller bosatta i Sverige.",
-      "Förenkla möjligheten till hemaborter."
-    ],
-    "title": "Abort",
-    "url": "https://www.mp.se/politik/abort/",
-    "fetchDate": "2023-09-17T17:52:38.649Z",
-    "party": "MP",
-    "subject": "vard-och-omsorg"
-  },
-  "https://www.mp.se/politik/arbetslivstrygghet/": {
-    "opinions": [
-      "Att den som är sjuk och därför inte kan arbeta ska ha rätt till ersättning från sjukförsäkringen.",
-      "På sikt slå samman a-kassan, sjukförsäkringen och försörjningsstödet till en gemensam trygghetsförsäkring som sköts av en och samma myndighet.",
-      "Se samma nivå på ersättningen vid sjukdom och arbetslöshet."
-    ],
-    "title": "Arbetslivstrygghet",
-    "url": "https://www.mp.se/politik/arbetslivstrygghet/",
-    "fetchDate": "2024-06-02T17:16:20.159Z",
-    "party": "MP",
-    "subject": "jobb"
-  },
   "https://www.mp.se/politik/barn-och-barnratt/": {
-    "opinions": [
-      "Att barnkonventionen ska få verkligt genomslag inom alla områden.",
-      "Att även  yngre barn ska få  rätt att få insatser från socialtjänsten, utan föräldrars medgivande.",
-      "Att barn ska få eget ombud vid alla rättsliga tvister mellan föräldrar.",
-      "Att rösträttsåldern ska sänkas till 16 år.",
-      "Att barn på flykt ska få permanent uppehållstillstånd.",
-      "Införa en klagorätt för barn och att barn ska kunna få stöd av oberoende barnombud.",
-      "Tillsätta en stark oberoende kommission som tar sig an barnfattigdomen, och som består av forskare och experter från myndigheter, kommuner och civilsamhälle. Även barn ska ha en stark röst i kommissionen.",
-      "Inflationssäkra bidrag och sociala stöd (som barnbidraget, bostadsbidraget och underhållsstödet).",
-      "Bibehålla den höjda nivån  av bostadsbidraget för barnfamiljer och stöd  organisationer som möter familjer som har det svårt.",
-      "Att FN:s barnkonvention genomförs i hela EU och att samtliga EU-länder inför ett förbud mot att slå barn."
-    ],
+    "opinions": [],
     "title": "Barnrätt",
     "url": "https://www.mp.se/politik/barn-och-barnratt/",
-    "fetchDate": "2024-06-02T17:16:18.631Z",
+    "fetchDate": "2026-07-24T08:32:52.659Z",
     "party": "MP",
     "subject": "familjen"
   },
   "https://www.mp.se/politik/bilar-och-bransle/": {
-    "opinions": [
-      "Göra det lättare att leva utan bil.",
-      "Att alla barn ska få växa upp med ren luft, även i våra städer.",
-      "Investera i laddstationer i hela landet — vägfordon ska kunna köra på el i hela Sverige.",
-      "Införa ett leasingstöd för elbilar riktat mot landsbygdsbilister upp till medianlönen.",
-      "Införa en skrotningspremie för att göra gamla bilar klimatsmarta.",
-      "Skärpa bonus-malus så fler har råd med elbil.",
-      "Utöka klimatpremierna så fler företag har råd med utsläppsfria fordon och arbetsmaskiner.",
-      "Inför konverteringspremie så fler gamla bilar kan köras med el och biogas.",
-      "Sänk momsen på bilpooler så fler kan dela bil.",
-      "Inför en vägslitageavgift för tung vägtrafik.",
-      "Att sista droppen fossilt bränsle till vägtrafiken ska säljas 2030."
-    ],
-    "title": "Bilar och bränsle",
+    "opinions": [],
+    "title": "Elbilar",
     "url": "https://www.mp.se/politik/bilar-och-bransle/",
-    "fetchDate": "2024-06-02T17:16:18.285Z",
+    "fetchDate": "2026-07-24T08:32:50.804Z",
     "party": "MP",
     "subject": "infrastruktur-och-trafik"
   },
-  "https://www.mp.se/politik/bistand/": {
-    "opinions": [
-      "Återinföra en biståndsram på minst en procent av BNI.",
-      "Använda biståndet till att påskynda utfasningen av fossil energi och möjliggöra att investeringar i förnybart också når de allra fattigaste.",
-      "Fortsätta driva en feministisk utvecklings- och utrikespolitik som sätter fokus på kvinnors rättigheter, politiskt deltagande, ekonomisk egenmakt, inflytande över fredsarbete, frihet från våld samt rätten till reproduktiv hälsa.",
-      "Att Sverige ska vara en ledande kraft för klimaträttvisa i den globala klimatomställningen och investera i klimat- och miljöarbete i fattiga länder.",
-      "Att Sverige ska fortsätta vara en ledande givare och partner för människor på flykt och som riskerar svält.",
-      "Stoppa skatteparadis och kapital- och skatteflykt från fattiga länder."
-    ],
-    "title": "Bistånd och global rättvisa",
-    "url": "https://www.mp.se/politik/bistand/",
-    "fetchDate": "2024-06-02T17:16:17.825Z",
-    "party": "MP",
-    "subject": "utrikes--och-bistandsfragor"
-  },
   "https://www.mp.se/politik/bostader/": {
-    "opinions": [
-      "Införa ett statligt investeringsstöd för fler hyresrätter och studentbostäder.",
-      "Utrota hemlösheten i Sverige genom en nationell bostadsstiftelse.",
-      "Bygga fler byggnader i trä.",
-      "Sänka utsläppen genom högre hållbarhetskrav på byggsektorn.",
-      "Bygga bort segregationen för ökad trygghet i samhället.",
-      "Göra fler områden attraktiva med utbyggd kollektivtrafik.",
-      "Införa förtur i bostadskön för utsatta kvinnor och barnfamiljer.",
-      "Skapa mer trygghet för hyresgäster genom att reglera hyresvärdarnas krav."
-    ],
+    "opinions": [],
     "title": "Bostäder",
     "url": "https://www.mp.se/politik/bostader/",
-    "fetchDate": "2024-06-02T17:16:20.209Z",
+    "fetchDate": "2026-07-24T08:32:52.482Z",
     "party": "MP",
     "subject": "bostad"
   },
   "https://www.mp.se/politik/civilt-forsvar-och-krisberedskap/": {
-    "opinions": [
-      "Stärka Sveriges cyberförsvar och psykologiska försvar.",
-      "Införa en civiltjänstgöring.",
-      "Avsätta mer pengar till underhållning av vatten- och avloppsnäten.",
-      "Stärka räddningstjänst, hälso- och sjukvård.",
-      "Förhindra radikalisering och rekrytering till våldsbejakande extremism."
-    ],
-    "title": "Civilt försvar och krisberedskap",
+    "opinions": [],
+    "title": "Krisberedskap",
     "url": "https://www.mp.se/politik/civilt-forsvar-och-krisberedskap/",
-    "fetchDate": "2023-09-17T17:52:35.416Z",
+    "fetchDate": "2026-07-24T08:32:51.770Z",
     "party": "MP",
     "subject": "forsvar"
   },
   "https://www.mp.se/politik/demokrati-och-mr/": {
-    "opinions": [
-      "Säkerställa alla människors fri- och rättigheter.",
-      "Skydda Sveriges grundlag mot snabba förändringar.",
-      "Stärka nationella minoriteters och urfolket samernas rättigheter och att Sverige ska förbinda sig att följa den internationella konventionen om  urfolks rättigheter (ILO 169).",
-      "Förstärka yttrandefriheten och stödja oberoende medier i hela landet.",
-      "Skydda ett oberoende public service i grundlagen.",
-      "Stoppa hot och hat mot förtroendevalda och opinionsbildare.",
-      "Införa ett system med nationella medborgarinitiativ (tex lagförslag från medborgare).",
-      "Främja öppenhet och insyn i alla offentliga verksamheter.",
-      "Involvera fler i demokratin och sänka rösträttsåldern till 16 år."
-    ],
-    "title": "Demokrati och mänskliga rättigheter",
+    "opinions": [],
+    "title": "Mänskliga rättigheter",
     "url": "https://www.mp.se/politik/demokrati-och-mr/",
-    "fetchDate": "2023-09-17T17:52:36.068Z",
+    "fetchDate": "2026-07-24T08:32:51.537Z",
     "party": "MP",
     "subject": "demokrati"
   },
-  "https://www.mp.se/politik/diskriminering/": {
-    "opinions": [
-      "Se ett samhället fritt från diskriminering.",
-      "Skärpa sanktionerna mot den som diskriminerar.",
-      "Att den som diskrimineras ska få hjälp och stöd från samhället.",
-      "Stärka polisens hatbrottsarbete.",
-      "Stärka arbetet mot antiziganism, antisemitism och islamofobi.",
-      "Se över om funktionsnedsättning och kön ska läggas till som grunder för hatbrott.",
-      "Stärk arbetet mot diskriminering av hbtqi-personer.",
-      "Stärka transpersoners rättigheter genom en ny könstillhörighetslag, och införa ett  tredje juridiskt kön.",
-      "Ta ett helhetsgrepp om funkofobin i Sverige.",
-      "Att alla ska få möjlighet att använda det språk de kan bäst i kontakten med svenska myndigheter.",
-      "Anpassa familjepolitiken så att den blir könsneutral och stärka rättigheterna för stjärnfamiljer, det vill säga alla olika typer av familjer.",
-      "Stärka och utveckla läsa-skriva-räkna-garantin för att fler barn med  funktionsnedsättning ska få insatser i tid.",
-      "Att lagen om stöd och service till vissa funktionshindrade (LSS) förtydligas och  statligt huvudmannaskap införs i den personliga assistansen så att människor får det  stöd de behöver och har rätt till."
-    ],
-    "title": "Diskriminering",
-    "url": "https://www.mp.se/politik/diskriminering/",
-    "fetchDate": "2023-09-17T17:52:36.181Z",
-    "party": "MP",
-    "subject": "jamstalldhet-och-diskriminering"
-  },
   "https://www.mp.se/politik/djur/": {
-    "opinions": [
-      "Att den svenska djurskyddslagens krav på rätt till naturligt beteende för djuren blir verklighet för djuren.",
-      "Att djurförsöken fasas ut och att pälsdjursindustrin, som minkfarmer, avskaffas i hela EU.",
-      "Att EU:s gemensamma jordbrukspolitik ska främja en förbättrad djurhållning och att EU-bidrag ska kunna dras tillbaka från dem som inte uppfyller kraven i EU:s djurskyddsdirektiv.",
-      "Intensifiera arbetet med en global FN-deklaration om djurvälfärd och införa bindande minimiregler för djurskydd inom både FN och WTO.",
-      "Arbeta för att få till stånd ett globalt regelverk mot rutinmässig användning av antibiotika i djurhållning.",
-      "Förbjuda burhållning av lantbruksdjur i hela EU, exempelvis höns.",
-      "Minimera djurs lidande vid transport och slakt. En maxgräns på 8 timmar för alla djurtransporter i EU måste införas och export av levande djur till länder utanför EU med sämre djurvälfärd måste förbjudas.",
-      "Införa krav på att samma standarder för djurvälfärd som vi har i EU ska gälla för länder som vill exportera kött till EU.",
-      "Minska användningen av antibiotika i djurhållningen och införa en skatt på kött som producerats med hög antibiotikaanvändning."
-    ],
+    "opinions": [],
     "title": "Djur",
     "url": "https://www.mp.se/politik/djur/",
-    "fetchDate": "2024-06-02T17:16:19.479Z",
+    "fetchDate": "2026-07-24T08:32:52.556Z",
     "party": "MP",
     "subject": "miljo-och-klimat"
   },
-  "https://www.mp.se/politik/ekonomi-och-skatter/": {
-    "opinions": [
-      "Ställa om till en fossilfri och cirkulär ekonomi inom planetens gränser.",
-      "Vända utvecklingen med ökande ekonomiska klyftor, bland annat genom en mer rättvis beskattning av stora kapitalinkomster.",
-      "Använda ekonomiska styrmedel för att gynna sådant som är bra för miljö och klimat.",
-      "Sänka kostnaderna för sånt som är bra för miljön, som reparationer och second hand.",
-      "Att de som har mest pengar ska bidra mer till välfärden.",
-      "Att omställningen till en fossilfri ekonomi ska vara rättvis.",
-      "Främja ekonomisk jämställdhet och jämlikhet.",
-      "Genomföra stora investeringar i de klimatvänliga alternativ som vi behöver för att skapa en fossilfri ekonomi."
-    ],
-    "title": "Ekonomi och skatter",
-    "url": "https://www.mp.se/politik/ekonomi-och-skatter/",
-    "fetchDate": "2024-06-02T17:16:21.370Z",
-    "party": "MP",
-    "subject": "ekonomi-och-skatter"
-  },
   "https://www.mp.se/politik/energi/": {
-    "opinions": [
-      "Satsa stort på att bygga ut  förnybar energiproduktion, framförallt den havsbaserade vindkraften.",
-      "Planera för en dubblering av elsystemet till 2035 och satsa på grön baskraft i form av smart elanvändning och energilagring i vätgas, värme och pumpkraft.",
-      "Ge kommuner ersättning för förnybar energiproduktion som vatten- och vindkraft och ge närboende till vindkraftverk ersättning samt möjlighet att bli delägare.",
-      "Införa ett teknikneutralt stöd för storskalig energilagring – grön baskraft – såsom pumpkraft, värmelagring och vätgaslagring.",
-      "Ge generösa stöd och rådgivning till alla företag, fastighetsägare och hushåll som vill effektivisera sin energianvändning, så att elen räcker till mer.",
-      "Fasa ut och sätta ett slutdatum för all fossil olja, kol och gas.",
-      "Halvera tiden för att bygga ut smarta elnät."
-    ],
-    "title": "Energi",
-    "url": "https://www.mp.se/politik/energi/",
-    "fetchDate": "2024-09-03T06:27:15.122Z",
-    "party": "MP",
-    "subject": "energi"
-  },
-  "https://www.mp.se/politik/energieffektivisering/": {
-    "opinions": [
-      "Att staten tar 60 procent av kostnaden för alla insatser som hushållen, fastighetsägarna eller företagen genomför för att effektivisera energianvändningen.",
-      "Fördubbla antalet energirådgivare i hela landet."
-    ],
+    "opinions": [],
     "title": "Energieffektivisering",
-    "url": "https://www.mp.se/politik/energieffektivisering/",
-    "fetchDate": "2024-06-02T17:16:17.938Z",
+    "url": "https://www.mp.se/politik/energi/",
+    "fetchDate": "2026-07-24T08:32:50.485Z",
     "party": "MP",
     "subject": "energi"
   },
   "https://www.mp.se/politik/eu/": {
-    "opinions": [
-      "Att EU ska driva en kraftfull och ambitiös klimat- och miljöpolitik.",
-      "Se ett öppet och humant Europa där människor kan söka asyl utan att riskera livet.",
-      "Stärka demokratin och det folkliga inflytandet i EU och reglera lobbyismen.",
-      "Stoppa all import av rysk energi till Sverige och EU."
-    ],
+    "opinions": [],
     "title": "EU",
     "url": "https://www.mp.se/politik/eu/",
-    "fetchDate": "2024-06-02T17:16:19.030Z",
+    "fetchDate": "2026-07-24T08:32:51.485Z",
     "party": "MP",
     "subject": "europa"
   },
-  "https://www.mp.se/politik/fred-och-forsvar/": {
-    "opinions": [
-      "Att Sverige ska stärka sin försvarsförmåga och ha en modern försvars- och säkerhetspolitik som förhåller sig till komplexiteten i hur olika hot är sammanlänkade (som cyberhot, terrorism, naturkatastrofer och beroende av olja, gas och uran).",
-      "Stå upp för att internationella lagar och regler efterföljs i konflikter.",
-      "Stärka det civila försvaret och krisberedskapen för att kunna möta hot som klimatförändringar, naturkatastrofer, cyberattacker och våldsbejakande extremism.",
-      "Stärka Sveriges roll i konfliktförebyggande och fredsfrämjande arbete.",
-      "Att Sverige antar lagstiftning som förbjuder införsel av kärnvapen i Sverige både i freds- och krigstid.ratificera konventionen om kärnvapenförbud och arbeta för ett totalförbud mot  att använda autonoma vapensystem."
-    ],
-    "title": "Fred och försvar",
-    "url": "https://www.mp.se/politik/fred-och-forsvar/",
-    "fetchDate": "2024-06-02T17:16:19.998Z",
-    "party": "MP",
-    "subject": "forsvar"
-  },
   "https://www.mp.se/politik/funktionsratt/": {
-    "opinions": [
-      "Att lagen om stöd och service till vissa funktionshindrade (LSS) förtydligas och statligt huvudmannaskap införs i den personliga assistansen så att människor får det  stöd de behöver och har rätt till.",
-      "Att hela samhället blir tillgängligt för personer med psykisk eller fysisk funktionsvariation.",
-      "Förbättra stödet för personer med funktionsnedsättning och sällsynta diagnoser oavsett var du bor i landet.",
-      "Stärka och utveckla läsa-skriva-räkna-garantin för att fler barn med funktionsnedsättning ska få insatser i tid.",
-      "Möjliggöra för studenter som p.g.a. funktionsnedsättning, sjukdom eller personlig omständighet ej haft möjlighet att fullgöra sina studier i skola och gymnasium att studera på Komvux och vid behov även läsa om Komvuxkurser.",
-      "Motverka diskrimineringen av personer med funktionsnedsättning på arbetsmarknaden.",
-      "Motverka funkofobi i samhället.",
-      "Ha hjälpmedel inom högkostnadsskyddet."
-    ],
+    "opinions": [],
     "title": "Funktionsrätt",
     "url": "https://www.mp.se/politik/funktionsratt/",
-    "fetchDate": "2024-06-02T17:16:20.382Z",
+    "fetchDate": "2026-07-24T08:32:52.029Z",
     "party": "MP",
     "subject": "jamstalldhet-och-diskriminering"
   },
-  "https://www.mp.se/politik/foreningsliv-folkbildning-och-idrott/": {
-    "opinions": [
-      "Genomför ett civilsamhälleslyft med 1 miljard i en permanent satsning på föreningslivet och civilsamhället.",
-      "Stärka friluftslivet.",
-      "Stärka idrottsrörelsen satsa på anläggningar och utemiljöer.",
-      "Gynna en mångfald av aktiviteter.",
-      "Säkra en trygg idrott och frihet fri från kränkningar och övergrepp.",
-      "Ge mer offentligt stöd till folkbildningen och studieförbunden,",
-      "Bryta civilsamhällets beroende av projektstöd.",
-      "Säkra att föreningslivets oberoende röst värnas.",
-      "Uppmuntra ungdomars engagemang och se till att det finns en jämlik och jämställd fördelning av resurserna."
-    ],
-    "title": "Föreningsliv, folkbildning och idrott",
-    "url": "https://www.mp.se/politik/foreningsliv-folkbildning-och-idrott/",
-    "fetchDate": "2024-06-02T17:16:20.219Z",
-    "party": "MP",
-    "subject": "kultur-media-och-idrott"
-  },
-  "https://www.mp.se/politik/foretagande/": {
-    "opinions": [
-      "Att det ska bli enklare att starta och driva företag.",
-      "Förbättra tryggheten och minska regelkrånglet för företagare.",
-      "Skapa fler gröna jobb genom att satsa på kompetensförsörjning till klimatomställningen.",
-      "Skapa bättre förutsättningar för arbetsintegrerande sociala företag att skapa jobb för människor som står långt från arbetsmarknaden.",
-      "Helt ta bort energiskatten för företag som producerar el för eget bruk.",
-      "Ersätta jordbrukets fossila subventioner med ett grönt avdrag som sänker skatten på jobb och företagande för jordbruket."
-    ],
-    "title": "Företagande",
-    "url": "https://www.mp.se/politik/foretagande/",
-    "fetchDate": "2024-06-02T17:16:19.884Z",
-    "party": "MP",
-    "subject": "naringsliv"
-  },
-  "https://www.mp.se/politik/barn-och-forskola/": {
-    "opinions": [
-      "Satsa 2 miljarder kronor per år för att stärka likvärdigheten i förskolan.",
-      "Att alla barn över tre år aktivt ska erbjudas en förskoleplats varje år.",
-      "Återinföra kommunernas ansvar att följa upp de barn som inte går i förskolan.",
-      "Ge alla barn rätt till fritids, oavsett vad deras föräldrar gör.",
-      "Stärka kvaliteten och likvärdigheten i fritidshemmet.",
-      "Att förskolor ska använda en genusmedveten pedagogik som ger barnen möjlighet att vara sig själva."
-    ],
-    "title": "Förskola och fritids",
-    "url": "https://www.mp.se/politik/barn-och-forskola/",
-    "fetchDate": "2024-06-02T17:16:19.128Z",
-    "party": "MP",
-    "subject": "utbildning"
-  },
   "https://www.mp.se/politik/gruvor-och-mineraler/": {
-    "opinions": [
-      "Intensifiera arbetet med återvinningen av kritiska metaller och mineraler.",
-      "Främja ett effektivt användande av alla ändliga resurser.",
-      "Genomföra SOU 2018:59 Statens gruvliga risker om tillräckliga ekonomiska säkerheter för efterbehandling vid gruvverksamhet.",
-      "Förbjuda brytning av mineral på platser där det riskerar att kraftigt skada närmiljö, såsom i alunskiffer.",
-      "Ratificera ILO:s konvention 169 för att garantera att svenska staten respekterar samers rättigheterna som urfolk.",
-      "Stoppa järnmalmsgruvan i Gállok.",
-      "Se till att samers åsikter hörs tidigt i processen, i syfte att nå en meningsfull dialog och komma överens, i enlighet med den nya konsultationsordningen.",
-      "Stimulera forsknings- och utvecklingsinsatser för förbättrad miljöhänsyn vid gruvdrift, hantering av utvinningsavfall och förbättrad utvinning av mineral ur utvinningsavfall",
-      "Ge mark- och miljödomstolarna, länsstyrelserna och Naturvårdsverket de resurser och den kompetens som krävs för att kunna fullgöra sina uppdrag inom miljöprövningen."
-    ],
+    "opinions": [],
     "title": "Gruvor och mineraler",
     "url": "https://www.mp.se/politik/gruvor-och-mineraler/",
-    "fetchDate": "2024-06-02T17:16:18.365Z",
+    "fetchDate": "2026-07-24T08:32:52.261Z",
     "party": "MP",
     "subject": "miljo-och-klimat"
   },
   "https://www.mp.se/politik/hav-vatten-och-fiske/": {
-    "opinions": [
-      "Införa en ny övergripande havslag för EU som styr mot ett friskt, levande och motståndskraftigt hav.",
-      "Inrätta fler, större och starkare skyddade områden i havet och i våra sjöar och vattendragstoppa överfisket och skärp EU:s gemensamma fiskeripolitik.",
-      "Förbjuda industrifiske i Östersjön och stoppa bottentrålning.",
-      "Stoppa övergödningen, fasa ut användningen av miljögifter, stoppa spridningen av mikroplast och plastskräp till våra hav, sjöar och vattendrag.",
-      "Stoppa gruvdrift och okontrollerad exploatering av våra havsbottnar.",
-      "Skärp skyddet av våra livsviktiga dricksvattentäkter.",
-      "Stödja fiskeförvaltning i utvecklingsländer.",
-      "Försvara allemansrätten,  bevara strandskyddet och återskapa förstörda miljöer i kustzoner.",
-      "Stärka skyddet av våra dricksvattentäkter och se till att det finns fungerande reservvattentäkter."
-    ],
-    "title": "Hav, vatten och fiske",
+    "opinions": [],
+    "title": "Hav och vatten",
     "url": "https://www.mp.se/politik/hav-vatten-och-fiske/",
-    "fetchDate": "2024-06-02T17:16:20.715Z",
+    "fetchDate": "2026-07-24T08:32:52.597Z",
     "party": "MP",
     "subject": "jordbruk-jakt-och-fiske"
   },
   "https://www.mp.se/politik/hbtq/": {
-    "opinions": [
-      "Ta krafttag mot diskriminering av hbtqi-personer.",
-      "Att omvändelseförsök ska kriminaliseras i Sverige.",
-      "Att den familjepolitiska lagstiftningen ska vara könsneutral och barn ska kunna ha fler vårdnadshavare än två personer.",
-      "Stärka asylrätten för hbtqi-personer.",
-      "Stärka transpersoners och intersexpersoners rättigheter.",
-      "Ändra könstillhörighetslagen så att du ska kunna ändra juridiskt könbaserat på självbestämmande och utan könsbekräftande vård.",
-      "Införa ett tredje juridiskt kön.",
-      "Förbättra hbtqi-kompetensen inom hälso- och sjukvården, skola, förskola och äldreomsorg."
-    ],
-    "title": "Hbtqi",
+    "opinions": [],
+    "title": "HBTQI",
     "url": "https://www.mp.se/politik/hbtq/",
-    "fetchDate": "2024-06-02T17:16:19.070Z",
+    "fetchDate": "2026-07-24T08:32:51.599Z",
     "party": "MP",
     "subject": "jamstalldhet-och-diskriminering"
   },
   "https://www.mp.se/politik/hogre-utbildning-och-forskning/": {
-    "opinions": [
-      "Skapa förutsättningar för utbildning av hög och likvärdig kvalitet över hela landet och göra det lättare för fler att plugga, oavsett bakgrund.",
-      "Att studenter ska få mer i plånboken och omfattas av a-kassan och sjukförsäkringen.",
-      "Införa fler lärarledda timmar och mer praktik.",
-      "Att lärare och forskare vid våra lärosäten ska få tryggare anställningsvillkor.",
-      "Främja det livslånga lärandet."
-    ],
+    "opinions": [],
     "title": "Högre utbildning och forskning",
     "url": "https://www.mp.se/politik/hogre-utbildning-och-forskning/",
-    "fetchDate": "2024-06-02T17:16:17.968Z",
+    "fetchDate": "2026-07-24T08:32:52.048Z",
     "party": "MP",
     "subject": "utbildning"
   },
-  "https://www.mp.se/politik/integration/": {
-    "opinions": [
-      "Införa ett jämlikhetskliv – en satsning om 11 miljarder kronor för att öka jämlikheten i Sverige",
-      "tillsätta en nationell kommission för bekämpning av barnfattigdom",
-      "Skapa ett mer enat samhälle genom att bekämpa boendesegregationen",
-      "motverka skolsegregationen genom att skapa ett fritt och rättvist skolval för alla, och förbjuda vinstjakten i skolan.",
-      "Återinföra permanenta uppehållstillstånd som huvudregel och underlätta för familjer att återförenas",
-      "Göra det lättare att få jobb på meriter från utlandet och bättre matcha nyanländas kompetens mot bristyrken.",
-      "Individanpassa etableringsprogrammet så att det bättre anpassas efter nyanländas olika förutsättningar",
-      "Motverka diskriminering och trakasserier på arbetsmarknaden"
-    ],
-    "title": "Integration",
-    "url": "https://www.mp.se/politik/integration/",
-    "fetchDate": "2023-09-17T17:52:37.452Z",
-    "party": "MP",
-    "subject": "migration-och-integration"
-  },
-  "https://www.mp.se/politik/jobb/": {
-    "opinions": [
-      "Att de som idag står långt från arbetsmarknaden ska få bättre stöd och insatser för att komma in i arbete.",
-      "Att människor ska få mer makt över sin tid, bland annat genom förkortad normalarbetstid.",
-      "Ha jämställda löner och karriärmöjligheter.",
-      "Lagstifta om könskvotering i bolagsstyrelser."
-    ],
-    "title": "Jobb",
-    "url": "https://www.mp.se/politik/jobb/",
-    "fetchDate": "2024-06-02T17:16:18.295Z",
-    "party": "MP",
-    "subject": "jobb"
-  },
   "https://www.mp.se/politik/jamstalldhet/": {
-    "opinions": [
-      "Få ett slut på mäns våld mot kvinnor.",
-      "Stoppa hedersrelaterat våld och förtryck.",
-      "Att kvinnor ska ha halva makten och hela lönen och pensionen.",
-      "Främja ett jämställt ansvar för hem och barn.",
-      "Fortsätta att föra en feministisk utrikespolitik för klimat, bistånd och fred."
-    ],
+    "opinions": [],
     "title": "Jämställdhet",
     "url": "https://www.mp.se/politik/jamstalldhet/",
-    "fetchDate": "2023-09-17T17:52:36.516Z",
+    "fetchDate": "2026-07-24T08:32:52.608Z",
     "party": "MP",
     "subject": "jamstalldhet-och-diskriminering"
   },
   "https://www.mp.se/politik/kemikalier/": {
-    "opinions": [
-      "Reformera och skärpa EU:s gemensamma kemikaliepolitik.",
-      "Omgående förbjuda alla PFAS-ämnen som grupp, och få till fler gruppvisa förbud på EU-nivåkraftfullt satsa på att byta ut farliga kemikalier mot bättre alternativ och fasa ut giftiga ämnen.",
-      "Omgående, speciellt i produkter för barn.",
-      "Höja skatten på skadliga bekämpningsmedel.",
-      "Förhindra spridning av mikroplaster.",
-      "Skapa en cirkulär samhällsekonomi där giftfrihet är en utgångspunkt."
-    ],
-    "title": "Kemikalier",
+    "opinions": [],
+    "title": "Gifter och kemikalier",
     "url": "https://www.mp.se/politik/kemikalier/",
-    "fetchDate": "2024-06-02T17:16:18.797Z",
+    "fetchDate": "2026-07-24T08:32:45.326Z",
     "party": "MP",
     "subject": "miljo-och-klimat"
   },
   "https://www.mp.se/politik/klimat/": {
-    "opinions": [
-      "Driva på och stötta och  klimatomställningen i alla delar av samhället, i alla branscher och i hela landet.",
-      "Upprätta en investeringsbudget för satsningar som bidrar till klimatomställningen – ju längre vi väntar desto dyrare blir det.",
-      "Avveckla alla fossila subventioner som bromsar omställningen och göder Putins krigskassa.",
-      "Klimatsäkra EU:s långtidsbudget och uppdatera all EU-lagstiftning till att vara i linje med Parisavtalet.",
-      "Ställa om svensk industri till fossilfritt senast 2030 genom storskalig utbyggnad av förnybar elproduktion och grön baskraft.",
-      "Skärpa Sveriges klimatmål utifrån bästa tillgängliga forskning och en princip om rättvisa, där utsläpp från svensk konsumtion också inkluderas.",
-      "Ta fram en vetenskapligt baserad utsläppsbudget.",
-      "Satsa på kollektivtrafik och tåg i hela Sverige, fler nattåg till Europa, och införa en europeisk tågunion för enklare tågresor i Europa.",
-      "Bryta bilberoendet i storstäderna och ge alla möjlighet att resa klimatsmart enligt devisen rätt lösning på rätt plats. Satsa på klimatsmart, ekologisk och närodlad mat.",
-      "Att de med mest pengar, som också orsakar störst utsläpp, ska bidra mer till omställningen och välfärden genom en progressiv beskattning av kapital.",
-      "Att de med minst resurser ska få mer samhällsservice, lägre skatt och mer stöd i omställningen.",
-      "Höja priset på utsläppsrätter i EU, inkludera utsläpp från flyg och sjöfart i systemet och införa klimattullar på varor från länder utanför EU."
-    ],
+    "opinions": [],
     "title": "Klimat",
     "url": "https://www.mp.se/politik/klimat/",
-    "fetchDate": "2024-08-13T06:27:13.675Z",
+    "fetchDate": "2026-07-24T08:32:52.627Z",
     "party": "MP",
     "subject": "miljo-och-klimat"
   },
   "https://www.mp.se/politik/kollektivtrafik/": {
-    "opinions": [
-      "Fördubbla kollektivtrafiken genom stadsmiljöavtal och minska behovet av bil.",
-      "Införa Sverigekortet som fungerar för all kollektivtrafik i hela Sverige.",
-      "Främja gång­, cykel­ och kollektivtrafik på bekostnad av biltrafiken.",
-      "Införa ett nationellt mål för minskad biltrafik i storstäder.",
-      "Säkra statlig finansiering för kollektivtrafiken i regionerna.",
-      "Fler miljözoner i städer.",
-      "Satsa på cykling i städer och på landsbygd."
-    ],
+    "opinions": [],
     "title": "Kollektivtrafik",
     "url": "https://www.mp.se/politik/kollektivtrafik/",
-    "fetchDate": "2024-06-02T17:16:19.953Z",
+    "fetchDate": "2026-07-24T08:32:50.495Z",
     "party": "MP",
     "subject": "infrastruktur-och-trafik"
   },
   "https://www.mp.se/politik/kultur/": {
-    "opinions": [
-      "att människor i alla åldrar ska kunna ta del av konst, kultur och litteratur i hela landet",
-      "stärka den ekonomiska och sociala tryggheten för konstnärer och kulturskapare",
-      "ge estetiska ämnen större plats i skolan",
-      "stärka journalistiken i hela landet",
-      "värna och vårda kulturarvet samtidigt som vi välkomnar nya kulturyttringar.",
-      "satsa på en bred återhämtningsplan för kulturlivet i hela landet, som omfattar både offentliga, fria, professionella och ideella aktörer.",
-      "stärka kulturskolan och inrätta en kulturskolelag.",
-      "satsa på barns kultur i skolan, med utbildad personal på alla skolbibliotek och estetiska ämnen i alla gymnasieprogram.",
-      "förbättra kulturskaparnas ekonomiska och sociala villkor och modernisera upphovsrätten så att kulturskaparnas rättigheter värnas.",
-      "stärka biblioteken i deras viktiga arbete för läsning och demokrati."
-    ],
+    "opinions": [],
     "title": "Kultur",
     "url": "https://www.mp.se/politik/kultur/",
-    "fetchDate": "2023-09-17T17:52:40.820Z",
+    "fetchDate": "2026-07-24T08:32:52.353Z",
     "party": "MP",
     "subject": "kultur-media-och-idrott"
   },
   "https://www.mp.se/politik/karnkraft/": {
-    "opinions": [
-      "Bygga ett förnybart energisystem på en stabil grund av grön baskraft.",
-      "Fasa ut all fossil energi och därefter kärnkraften allt eftersom att vi ökar vår produktion av förnybar energi och smartare energianvändning.",
-      "Satsa stort på att utöka vår förnyelsebara energiproduktion, framförallt den havsbaserade vindkraften.",
-      "Intensifiera arbetet med energieffektivisering."
-    ],
+    "opinions": [],
     "title": "Kärnkraft",
     "url": "https://www.mp.se/politik/karnkraft/",
-    "fetchDate": "2024-06-02T17:16:17.418Z",
+    "fetchDate": "2026-07-24T08:32:52.018Z",
     "party": "MP",
     "subject": "energi"
   },
-  "https://www.mp.se/politik/lag-och-ordning/": {
-    "opinions": [
-      "Ta krafttag mot gängkriminaliteten.",
-      "Arbeta förebyggande med tidiga insatser.",
-      "Höja vissa straff.",
-      "Göra det lättare att beslagta kriminellas vinster.",
-      "Klara upp fler brott och öka stödet till vittnen.",
-      "Intensifiera arbetet mot mäns våld mot kvinnor.",
-      "Skydda barn från sexuella övergrepp.",
-      "Ta krafttag mot hedersrelaterat våld och förtryck.",
-      "Ge brottsoffer bättre stöd och kraftigt höja ersättningen.",
-      "Storsatsa på det förebyggande arbetet i socioekonomiskt eftersatta områden.",
-      "Fler och bättre betalda poliser för att bekämpa den organiserade brottsligheten och för att motverka parallellsamhällen.",
-      "Höja maxtiden för sluten ungdomsvård och förstärka vårdinsatser och utbildning under tiden den unge är frihetsberövad, samt införa en utslussningsverksamhet när straffet är avtjänat.",
-      "Lätta på sekretessen mellan områdespoliser, skola, socialtjänst och stärka samarbetet med civilsamhälle så att inga barn faller mellan stolarna i det förebyggande arbetet.",
-      "Stoppa finansieringen av de kriminella gängen genom att stärka myndighetssamverkan så att myndigheterna kan slå till mot den organiserade brottslighetens företag från flera håll."
-    ],
-    "title": "Lag och ordning",
-    "url": "https://www.mp.se/politik/lag-och-ordning/",
-    "fetchDate": "2024-06-02T17:16:18.356Z",
-    "party": "MP",
-    "subject": "lag-och-ratt"
-  },
   "https://www.mp.se/politik/lands-och-glesbygd/": {
-    "opinions": [
-      "Bygga ut snabbt bredband i hela landet.",
-      "Säkra tillgängliga kommunikationer i hela landet.",
-      "Utveckla elladdning för fordon samt främja biogas, hållbara drivmedel och nya hållbara transportlösningar i hela landet.",
-      "Främja lokal ekonomisk utveckling och skapa bättre villkor för små och medelstora företag.",
-      "Stärka lokalproducerade ekologiska livsmedel och mathantverk.",
-      "Bygga ut och rusta upp järnvägsnätet för snabba tåg i hela landet och skynda på bygget av nya stambanor för höghastighetståg."
-    ],
+    "opinions": [],
     "title": "Lands- och glesbygd",
     "url": "https://www.mp.se/politik/lands-och-glesbygd/",
-    "fetchDate": "2024-06-02T17:16:19.784Z",
+    "fetchDate": "2026-07-24T08:32:51.610Z",
     "party": "MP",
     "subject": "landsbygd"
   },
   "https://www.mp.se/politik/mat-och-jordbruk/": {
-    "opinions": [
-      "Reformera EU:s jordbrukspolitik i grunden och verka för fler bönder i Europa, med mer stöd till exempelvis småskaligt, lokalt, fossilfritt och hållbart jordbruk, med bindande mål för andelen ekologisk produktion. EU:s pengar ska riktas mot de lantbrukare som bidrar till klimatmål och biologisk mångfald.",
-      "Gynna svenskt ekologiskt jordbruk så att hälften av jordbruksmarken brukas ekologiskt till år 2030.",
-      "Att användningen av bekämpningsmedel inom EU minskar kraftigt med hjälp av bindande mål och att bekämpningsmedel med stor miljöpåverkan förbjuds.",
-      "Att importerade livsmedel måste leva upp till samma krav som mat producerad inom EUgöra klimatsmart och ekologisk mat till standard i skola, vård och omsorg.",
-      "Kombinera stärkta djurskyddskrav och minskad antibiotikaanvändning med styrmedel för en minskad och mer medveten konsumtion av kött, och främja växtbaserade alternativstärka arbetet mot matsvinn i alla led – från jord till bord.",
-      "Skynda på omställningen till fossilfritt jordbruk, öka motståndskraften och fasa ut de fossila subventionerna.",
-      "Stärka det svenska jordbruket för ökad självförsörjning med baslivsmedel, och stödja övergången till ett ekologiskt och hållbart jordbruk med fossiloberoende arbetsmaskiner.",
-      "Ge mer stöd till lantbruket för omställning till ekologisk odling, återskapande av naturbetesmarker och andra miljöinsatser."
-    ],
-    "title": "Mat och jordbruk",
+    "opinions": [],
+    "title": "Jordbruk och matproduktion",
     "url": "https://www.mp.se/politik/mat-och-jordbruk/",
-    "fetchDate": "2024-06-02T17:16:20.023Z",
+    "fetchDate": "2026-07-24T08:32:50.125Z",
     "party": "MP",
     "subject": "jordbruk-jakt-och-fiske"
   },
   "https://www.mp.se/politik/migration-och-lika-ratt/": {
-    "opinions": [
-      "Stå upp för fred, rättvisa och klimatet så att färre tvingas fly.",
-      "Ge familjer full rätt och möjlighet att återförenas och återinför permanenta uppehållstillstånd, särskilt för barn.",
-      "Särskilt värna de som lever i stor utsatthet.",
-      "Försvara asylrätten och kvotflyktingsystemet.",
-      "Att fler familjer ska kunna återförenas i Sverige. Inga asylsökande barn ska kunna skiljas från sina föräldrar.",
-      "Stärka rättssäkerheten i asylprocessen och stödet för hbtqi­-flyktingar och andra sårbara grupper.",
-      "Höja dagersättningen för alla asylsökande.",
-      "Förlänga etableringsprogrammet för nyanlända till minst fyra år för att skapa bättre förutsättningar för etablering, så att fler kommer i arbete snabbare.",
-      "Korta handläggningstiderna för arbetstillstånd och asylbeslut så att det går fortare att komma in i samhället.",
-      "Avskaffa försörjningskravet.",
-      "Ha en öppen arbetskraftsinvandring och stärka tryggheten för arbetstagare.",
-      "Inget EU-medlemsland ska kunna köpa sig fritt från ansvar i den gemensamma migrationspolitiken.",
-      "Stärka asylrätten i EU och bekämpa smuggling och farliga vägar till EU genom att säkra fler och lagliga vägar.",
-      "Öka kapaciteten att utföra sök- och räddningsinsatser på Medelhavet. Ingen ska med våld stoppas från möjligheten att söka asyl."
-    ],
+    "opinions": [],
     "title": "Migration",
     "url": "https://www.mp.se/politik/migration-och-lika-ratt/",
-    "fetchDate": "2025-08-10T17:54:14.021Z",
+    "fetchDate": "2026-07-24T08:32:43.641Z",
     "party": "MP",
     "subject": "migration-och-integration"
   },
   "https://www.mp.se/politik/miljo/": {
-    "opinions": [
-      "Bygga ett resurssnålt och cirkulärt samhälle där det är lätt att leva miljövänligt.",
-      "Satsa på levande skogar med varsamt skogsbruk och skydda mer natur, utrotningshotade djur och växter.",
-      "Satsa på klimatsmart och ekologisk mat, en giftfri vardag och hållbar konsumtion.",
-      "Kämpa för friska hav och rent vatten istället för att pressa ekosystemen till bristningsgränsen."
-    ],
-    "title": "Miljö",
+    "opinions": [],
+    "title": "Natur",
     "url": "https://www.mp.se/politik/miljo/",
-    "fetchDate": "2024-06-02T17:16:19.989Z",
+    "fetchDate": "2026-07-24T08:32:52.990Z",
     "party": "MP",
     "subject": "miljo-och-klimat"
   },
-  "https://www.mp.se/politik/pensioner/": {
-    "opinions": [
-      "Höja pensionerna.",
-      "Göra pensionerna mer jämställda.",
-      "Investera pensionspengarna så att de bidrar till en hållbar utveckling.",
-      "Att människor som flytt till Sverige ska få en skälig pension.",
-      "Göra det billigare att åka buss och tåg, särskilt för unga och pensionärer.",
-      "Höja garantipensionen och reformera pensionssystemet med syfte att höja pensionerna, mest för de med de lägsta pensionerna.",
-      "Höja bostadstillägget för pensionärer."
-    ],
-    "title": "Pensioner",
-    "url": "https://www.mp.se/politik/pensioner/",
-    "fetchDate": "2024-06-02T17:16:18.892Z",
-    "party": "MP",
-    "subject": "aldrepolitik"
-  },
   "https://www.mp.se/politik/ratt-att-ma-bra/": {
-    "opinions": [
-      "Ha en köfri barn- och ungdomspsykiatri (BUP) med mer pengar och skärpt vårdgaranti.",
-      "Skapa ett samhälle där det är lättare att må bra.",
-      "Satsa på primärvården och öka tillgången till vård för psykisk ohälsa.",
-      "Korta köerna till behandling i hela landet.",
-      "Förstärka elevhälsan och satsa på fler skolsköterskor, specialpedagoger, psykologer och kuratorer i skolan."
-    ],
+    "opinions": [],
     "title": "Psykisk hälsa",
     "url": "https://www.mp.se/politik/ratt-att-ma-bra/",
-    "fetchDate": "2024-06-02T17:16:18.625Z",
+    "fetchDate": "2026-07-24T08:32:52.668Z",
     "party": "MP",
     "subject": "vard-och-omsorg"
   },
-  "https://www.mp.se/politik/sjukpenning/": {
-    "opinions": [
-      "Att människor måste kunna känna sig säkra på att få stöd från systemet, och Försäkringskassans roll behöver förändras.",
-      "Omvandla de hårda tidsgränserna som i dag finns i sjukförsäkringen till att istället bli avstämningspunkter för rätt till stöd.",
-      "Skapa större flexibilitet och individanpassning.",
-      "Göra det möjligt att bli sjukskriven och kunna återgå till arbete i den utsträckning som behövs, inte som i dag bara i fasta steg om 25, 50, 75 procent.",
-      "Att en person som är deltidssjukskriven måste kunna förlägga den på det sätt som passar bäst över veckan, för att underlätta rehabilitering och återgång i arbetet.",
-      "Att det ska bli lättare att kunna pröva på att studera för den som varit sjukskriven länge utan risken att förlora sin sjukpenning.",
-      "Förbättra regelverket för studenter som blir sjuka. Vi vill också stärka tryggheten för andra grupper som lätt hamnar utanför trygghetssystemen, till exempel kulturarbetare, egenföretagare och människor som arbetar med otrygga arbetsvillkor, till exempel inom den växande gig-ekonomin.",
-      "Att personer som har aktivitetsersättning eller sjukersättning måste enklare kunna pröva att arbeta utan att riskera förlora sin ersättning."
-    ],
-    "title": "Sjukpenning",
-    "url": "https://www.mp.se/politik/sjukpenning/",
-    "fetchDate": "2024-06-03T19:18:31.849Z",
-    "party": "MP",
-    "subject": "trygghetssystem-och-valfard"
-  },
   "https://www.mp.se/politik/halso-och-sjukvard/": {
-    "opinions": [
-      "Bryta trenden med en ökande psykisk ohälsa.",
-      "Korta vårdköerna och satsa på bättre kvalitet och tillgänglighet i vården.",
-      "Sätta hälsan i centrum och minska klyftorna i folkhälsan.",
-      "Utbilda fler läkare och specialistsjuksköterskor och skapa bättre arbetsvillkor för de som jobbar i vården.",
-      "Att den återhämtningsbonus som Miljöpartiet drivit fram ska återinrättas och fortsatt bidra till att pröva och utveckla nya och mer hållbara arbetssätt och modeller i vården utifrån personalens egna önskemål.",
-      "Att vård och omsorg inte ska bedrivas i vinstsyfte.",
-      "Höja lönerna och säkra en god arbetsmiljö i vården.",
-      "Förbättra förlossningsvården och satsa på barnmorskorna.",
-      "Förbättra vård och omsorg för äldre och stärka resurserna till hemsjukvården.",
-      "Att tandvården ska jämställas med övrig hälso­- och sjukvård, och ingå i samma högkostnadsskydd.",
-      "Att hjälpmedel ska ingå i högkostnadsskyddet.",
-      "Satsa på primärvården och öka tillgången till vård för psykisk ohälsa.",
-      "Korta köerna till behandling i hela landet.",
-      "Att preventivmedel ska vara avgiftsfritt upp till 26 år.",
-      "Förbättra stödet för personer med funktionsnedsättning och sällsynta diagnoser oavsett var du bor i landet. Den som har rätt till stöd ska inte behöva planera sitt liv flera veckor i förväg för att ha ett fullvärdigt liv.",
-      "Införa alternativa välfärdsmått i EU och verka för ett globalt avtal för minskad antibiotikaanvändning."
-    ],
-    "title": "Sjukvård och hälsa",
+    "opinions": [],
+    "title": "Sjukvård",
     "url": "https://www.mp.se/politik/halso-och-sjukvard/",
-    "fetchDate": "2024-06-03T19:18:30.486Z",
+    "fetchDate": "2026-07-24T08:32:43.167Z",
     "party": "MP",
     "subject": "vard-och-omsorg"
   },
   "https://www.mp.se/politik/skog-och-biologisk-mangfald/": {
-    "opinions": [
-      "Skydda 30 procent av land, hav och sjöar till 2030.",
-      "Återställ 30 procent av alla förstörda ekosystem över hela EU till 2030, och inför tuffa sanktioner mot de som inte lever upp till kraven.",
-      "Stoppa avverkningarna av Sveriges sista naturskogar.",
-      "Bruka jorden med hänsyn – styr mot en övergång till naturnära och hyggesfritt skogsbruk.",
-      "Statens markinnehav ska vara ett föredöme inom skogsbruket.",
-      "Rädda pollinerande insekter och stärk den biologiska mångfalden.",
-      "Återställa våtmarker som torrlagts i snabbare takt.",
-      "Att storskalig miljöförstörelse, så kallat Ekocid, ska erkännas som internationellt brott."
-    ],
-    "title": "Skog och biologisk mångfald",
+    "opinions": [],
+    "title": "Skog",
     "url": "https://www.mp.se/politik/skog-och-biologisk-mangfald/",
-    "fetchDate": "2025-05-25T06:30:38.083Z",
+    "fetchDate": "2026-07-24T08:32:52.864Z",
     "party": "MP",
     "subject": "miljo-och-klimat"
   },
   "https://www.mp.se/politik/skola/": {
-    "opinions": [
-      "Förbjuda vinstutdelande aktiebolag att driva skola.",
-      "Att staten tar ett större ansvar för skolans finansiering.",
-      "Att alla skolor ska ha bemannade skolbibliotek.",
-      "Bryta skolsegregationen och göra skolvalet fritt och rättvist för alla.",
-      "Förbättra arbetsmiljön och höja lönen för lärare för att öka attraktionskraften för fler att arbeta i yrket.",
-      "Förstärka elevhälsan och satsa på fler skolsköterskor, specialpedagoger, psykologer och kuratorer i skolan.",
-      "Gratis frukost och lunch i skolan"
-    ],
-    "title": "Skola",
+    "opinions": [],
+    "title": "Utbildning",
     "url": "https://www.mp.se/politik/skola/",
-    "fetchDate": "2024-06-02T17:16:19.666Z",
+    "fetchDate": "2026-07-24T08:32:52.059Z",
     "party": "MP",
     "subject": "utbildning"
   },
   "https://www.mp.se/politik/strandskydd/": {
-    "opinions": [
-      "skärpa strandskyddet i hårt exploaterade områden,",
-      "följa upp undantag från strandskyddet bättre – fusk och korruption ska aldrig accepteras,",
-      "göra strandskyddet mer träffsäkert, så att undantag kan ges där det inte skadar naturen eller hindrar allemansrätten."
-    ],
+    "opinions": [],
     "title": "Strandskydd",
     "url": "https://www.mp.se/politik/strandskydd/",
-    "fetchDate": "2023-09-17T17:52:38.780Z",
+    "fetchDate": "2026-07-24T08:32:51.558Z",
     "party": "MP",
     "subject": "miljo-och-klimat"
   },
   "https://www.mp.se/politik/tandvard/": {
-    "opinions": [
-      "Att tandvården ska jämställas med övrig hälso- och sjukvård.",
-      "Att tandvården ska  ingå i samma högkostnadsskydd som annan vård.",
-      "Förbättra tandvården för särskilt utsatta grupper."
-    ],
+    "opinions": [],
     "title": "Tandvård",
     "url": "https://www.mp.se/politik/tandvard/",
-    "fetchDate": "2023-09-17T17:52:35.632Z",
+    "fetchDate": "2026-07-24T08:32:52.697Z",
     "party": "MP",
     "subject": "vard-och-omsorg"
-  },
-  "https://www.mp.se/politik/tid-att-leva/": {
-    "opinions": [
-      "Sänka normalarbetstiden.",
-      "Göra det lättare att påverka sin arbetstid och sina arbetsvillkor."
-    ],
-    "title": "Tid att leva",
-    "url": "https://www.mp.se/politik/tid-att-leva/",
-    "fetchDate": "2024-06-05T06:24:54.983Z",
-    "party": "MP",
-    "subject": "vard-och-omsorg"
-  },
-  "https://www.mp.se/politik/trafik/": {
-    "opinions": [
-      "Höja flygskatten för minskade utsläpp och fördela pengar till järnvägen.",
-      "Sälj statens andel i SAS.",
-      "Flytta mer gods från vägtrafik till tåg och sjöfart",
-      "Minska antalet onödiga transporter.",
-      "Främja utvecklingen för elflyg och göra sjöfarten fossilfri."
-    ],
-    "title": "Trafik",
-    "url": "https://www.mp.se/politik/trafik/",
-    "fetchDate": "2024-06-05T06:24:55.416Z",
-    "party": "MP",
-    "subject": "infrastruktur-och-trafik"
-  },
-  "https://www.mp.se/politik/tag/": {
-    "opinions": [
-      "rusta upp spåren och bygga ut järnvägen i hela landet inklusive nya stambanor",
-      "uppnå Trafikverkets mål för tåg i tid",
-      "fler tåg på spåren och utveckla nattågen både i Sverige och ut i Europa",
-      "binda ihop Europa med tåg"
-    ],
-    "title": "Tåg",
-    "url": "https://www.mp.se/politik/tag/",
-    "fetchDate": "2025-09-16T06:33:52.812Z",
-    "party": "MP",
-    "subject": "infrastruktur-och-trafik"
   },
   "https://www.mp.se/politik/utrikespolitik-och-global-rattvisa/": {
-    "opinions": [
-      "Att Sverige och EU ska vara en stark internationell röst för jämställdhet, demokrati och mänskliga rättigheter",
-      "Att Sverige ska vara en ledande kraft i den globala klimatomställningen och investera resurser i klimat- och miljöarbete i fattiga länder",
-      "Att Sverige ska bedriva en rättvis och miljömässigt hållbar handel",
-      "Ställa skarpare krav och sätta hårdare villkor i Sveriges och EU:s utrikes- och handelspolitik för att driva på det globala klimatarbetet, bevara biologisk mångfald, främja demokrati och mänskliga rättigheter, stärka djurskyddet och minska de globala klyftorna.",
-      "Återinföra Sveriges feministiska utrikes- och utvecklingspolitik.",
-      "Att utvecklingssamarbetet ska bidra till att bekämpa fattigdom, förebygga och hantera klimatförändringarna, bevara och skapa fred, förebygga konflikter, bygga upp demokratiska samhällen och motverka korruption."
-    ],
+    "opinions": [],
     "title": "Utrikespolitik",
     "url": "https://www.mp.se/politik/utrikespolitik-och-global-rattvisa/",
-    "fetchDate": "2024-06-16T06:24:04.906Z",
+    "fetchDate": "2026-07-24T08:32:52.039Z",
     "party": "MP",
     "subject": "utrikes--och-bistandsfragor"
   },
   "https://www.mp.se/politik/vapenexport/": {
-    "opinions": [
-      "Att Sverige ska vara en stark aktör för fredsfrämjande arbete och verka för global nedrustning.",
-      "Att Sverige och EU är ledande i etiska krav på vår vapenexport.",
-      "Att Sverige ratificerar konventionen om kärnvapenförbud.",
-      "Att Sverige inför en lag som förbjuder kärnvapen på svensk mark.",
-      "Att Sverige verkar för ett globalt förbud mot dödliga autonoma vapen.",
-      "Att Sverige inom EU verkar för en gemensam försvarsmarknad, ökade materielsamarbeten och delade utvecklingskostnader med andra länder."
-    ],
+    "opinions": [],
     "title": "Vapenexport",
     "url": "https://www.mp.se/politik/vapenexport/",
-    "fetchDate": "2025-11-07T06:35:13.131Z",
+    "fetchDate": "2026-07-24T08:32:52.101Z",
     "party": "MP",
     "subject": "utrikes--och-bistandsfragor"
   },
   "https://www.mp.se/politik/vinster-i-valfarden/": {
-    "opinions": ["Att vinster i välfärden ska stanna i välfärden."],
+    "opinions": [],
     "title": "Vinster i välfärden",
     "url": "https://www.mp.se/politik/vinster-i-valfarden/",
-    "fetchDate": "2024-06-16T06:24:05.305Z",
+    "fetchDate": "2026-07-24T08:32:52.342Z",
     "party": "MP",
     "subject": "trygghetssystem-och-valfard"
   },
   "https://www.mp.se/politik/aldrepolitik/": {
-    "opinions": [
-      "Att äldre får fortsätta bestämma över sitt boende och hur man vill leva sitt liv.",
-      "Att äldre som behöver hjälp får trygg hjälp efter behov.",
-      "Se bättre arbetsvillkor för de som jobbar inom äldreomsorgen.",
-      "Att den som vill, kan och orkar ska ha möjlighet att jobba längre än till 67 år.",
-      "Förbättra vård och omsorg för äldre och stärka resurserna till hemsjukvården.",
-      "Anpassa äldreboenden, skolor och förskolor för att klara skyfall och hetta."
-    ],
-    "title": "Äldre",
+    "opinions": [],
+    "title": "Äldrepolitik",
     "url": "https://www.mp.se/politik/aldrepolitik/",
-    "fetchDate": "2024-06-16T06:23:59.850Z",
+    "fetchDate": "2026-07-24T08:32:52.250Z",
     "party": "MP",
     "subject": "aldrepolitik"
   },
-  "https://www.mp.se/politik/antirasism/": {
+  "https://www.mp.se/politik/ai-och-digitalisering/": {
     "opinions": [],
-    "title": "Antirasism",
-    "url": "https://www.mp.se/politik/antirasism/",
-    "fetchDate": "2024-09-18T06:28:48.554Z",
-    "party": "MP",
-    "subject": "jamstalldhet-och-diskriminering"
+    "title": "AI och digitalisering",
+    "url": "https://www.mp.se/politik/ai-och-digitalisering/",
+    "fetchDate": "2026-07-24T08:32:45.431Z",
+    "party": "MP"
+  },
+  "https://www.mp.se/politik/antidiskriminering-och-antirasism/": {
+    "opinions": [],
+    "title": "Antidiskriminering och antirasism",
+    "url": "https://www.mp.se/politik/antidiskriminering-och-antirasism/",
+    "fetchDate": "2026-07-24T08:32:50.795Z",
+    "party": "MP"
+  },
+  "https://www.mp.se/politik/arbetsmarknad-och-integration/": {
+    "opinions": [],
+    "title": "Arbetsmarknad",
+    "url": "https://www.mp.se/politik/arbetsmarknad-och-integration/",
+    "fetchDate": "2026-07-24T08:32:52.744Z",
+    "party": "MP"
+  },
+  "https://www.mp.se/politik/arbetstidsforkortning/": {
+    "opinions": [],
+    "title": "Arbetstidsförkortning",
+    "url": "https://www.mp.se/politik/arbetstidsforkortning/",
+    "fetchDate": "2026-07-24T08:32:50.547Z",
+    "party": "MP"
+  },
+  "https://www.mp.se/politik/biologisk-mangfald/": {
+    "opinions": [],
+    "title": "Biologisk mångfald",
+    "url": "https://www.mp.se/politik/biologisk-mangfald/",
+    "fetchDate": "2026-07-24T08:32:52.322Z",
+    "party": "MP"
+  },
+  "https://www.mp.se/politik/bistandochutrikespolitik/": {
+    "opinions": [],
+    "title": "Global rättvisa",
+    "url": "https://www.mp.se/politik/bistandochutrikespolitik/",
+    "fetchDate": "2026-07-24T08:32:52.617Z",
+    "party": "MP"
+  },
+  "https://www.mp.se/politik/brottsbekampning-och-forebyggande/": {
+    "opinions": [],
+    "title": "Brottsbekämpning och förebyggande",
+    "url": "https://www.mp.se/politik/brottsbekampning-och-forebyggande/",
+    "fetchDate": "2026-07-24T08:32:52.546Z",
+    "party": "MP"
+  },
+  "https://www.mp.se/politik/civilsamhalle-och-foreningsliv/": {
+    "opinions": [],
+    "title": "Föreningsliv",
+    "url": "https://www.mp.se/politik/civilsamhalle-och-foreningsliv/",
+    "fetchDate": "2026-07-24T08:32:43.968Z",
+    "party": "MP"
+  },
+  "https://www.mp.se/politik/gron-ekonomi/": {
+    "opinions": [],
+    "title": "Ekonomi",
+    "url": "https://www.mp.se/politik/gron-ekonomi/",
+    "fetchDate": "2026-07-24T08:32:51.427Z",
+    "party": "MP"
+  },
+  "https://www.mp.se/politik/socialforsakringar-och-ekonomisk-trygghet/": {
+    "opinions": [],
+    "title": "Socialförsäkringar",
+    "url": "https://www.mp.se/politik/socialforsakringar-och-ekonomisk-trygghet/",
+    "fetchDate": "2026-07-24T08:32:52.677Z",
+    "party": "MP"
+  },
+  "https://www.mp.se/politik/stod-till-smaforetag-hela-listan/": {
+    "opinions": [],
+    "title": "Näringsliv",
+    "url": "https://www.mp.se/politik/stod-till-smaforetag-hela-listan/",
+    "fetchDate": "2026-07-24T08:32:52.271Z",
+    "party": "MP"
+  },
+  "https://www.mp.se/politik/forskola-och-fritidshem/": {
+    "opinions": [],
+    "title": "Förskola och fritidshem",
+    "url": "https://www.mp.se/politik/forskola-och-fritidshem/",
+    "fetchDate": "2026-07-24T08:32:51.827Z",
+    "party": "MP"
+  },
+  "https://www.mp.se/politik/forsvar-och-sakerhet/": {
+    "opinions": [],
+    "title": "Säkerhet",
+    "url": "https://www.mp.se/politik/forsvar-och-sakerhet/",
+    "fetchDate": "2026-07-24T08:32:50.475Z",
+    "party": "MP"
+  },
+  "https://www.mp.se/politik/idrott/": {
+    "opinions": [],
+    "title": "Idrott",
+    "url": "https://www.mp.se/politik/idrott/",
+    "fetchDate": "2026-07-24T08:32:51.780Z",
+    "party": "MP"
+  },
+  "https://www.mp.se/politik/industripolitik/": {
+    "opinions": [],
+    "title": "Industripolitik",
+    "url": "https://www.mp.se/politik/industripolitik/",
+    "fetchDate": "2026-07-24T08:32:52.565Z",
+    "party": "MP"
+  },
+  "https://www.mp.se/politik/minskad-segregation/": {
+    "opinions": [],
+    "title": "Minskad Segregation",
+    "url": "https://www.mp.se/politik/minskad-segregation/",
+    "fetchDate": "2026-07-24T08:32:43.473Z",
+    "party": "MP"
+  },
+  "https://www.mp.se/politik/jamlikhet/": {
+    "opinions": [],
+    "title": "Jämlikhet",
+    "url": "https://www.mp.se/politik/jamlikhet/",
+    "fetchDate": "2026-07-24T08:32:52.687Z",
+    "party": "MP"
+  },
+  "https://www.mp.se/politik/nationella-minoriteter-och-samer/": {
+    "opinions": [],
+    "title": "Nationella minoriteter och samer",
+    "url": "https://www.mp.se/politik/nationella-minoriteter-och-samer/",
+    "fetchDate": "2026-07-24T08:32:52.069Z",
+    "party": "MP"
+  },
+  "https://www.mp.se/politik/studentpolitik/": {
+    "opinions": [],
+    "title": "Studentpolitik",
+    "url": "https://www.mp.se/politik/studentpolitik/",
+    "fetchDate": "2026-07-24T08:32:51.620Z",
+    "party": "MP"
+  },
+  "https://www.mp.se/politik/transporter/": {
+    "opinions": [],
+    "title": "Transporter",
+    "url": "https://www.mp.se/politik/transporter/",
+    "fetchDate": "2026-07-24T08:32:52.492Z",
+    "party": "MP"
+  },
+  "https://www.mp.se/politik/tag-och-jarnvag/": {
+    "opinions": [
+      "Åtgärda flaskhalsen Helsingborg–Maria på Västkustbanan",
+      "Underhålla och förstärka Malmbanan för att öka kapaciteten",
+      "Bygga dubbelspår mellan Hässleholm och Kristianstad",
+      "Rusta upp Stångådalsbanan"
+    ],
+    "title": "Tåg och järnväg",
+    "url": "https://www.mp.se/politik/tag-och-jarnvag/",
+    "fetchDate": "2026-07-24T08:32:52.281Z",
+    "party": "MP"
+  },
+  "https://www.mp.se/politik/aldreomsorg/": {
+    "opinions": [],
+    "title": "Äldreomsorg",
+    "url": "https://www.mp.se/politik/aldreomsorg/",
+    "fetchDate": "2026-07-24T08:32:51.228Z",
+    "party": "MP"
   }
 }

@@ -188,16 +188,20 @@ export default abstract class Scraper implements ScraperArgs {
     return resolved.flat();
   }
 
-  async getPages(): Promise<PartyDataWithoutPartyName[]> {
+  async getPages(limit?: number): Promise<PartyDataWithoutPartyName[]> {
     const response = await this.fetchPage(this.baseUrl + this.listPath, {
       headers: { "Content-Type": "text/plain; charset=UTF-8" },
     });
     const html = await response.text();
     const $ = cheerio.load(html);
-    const $elements = $<Element, string>(this.listSelector);
+    let elements = $<Element, string>(this.listSelector).toArray();
 
-    console.info(`Found ${$elements.length} list elements`);
+    if (limit) {
+      elements = elements.toSpliced(limit);
+    }
 
-    return this.handleLinks($, $elements.toArray());
+    console.info(`Found ${elements.length} list elements`);
+
+    return this.handleLinks($, elements);
   }
 }

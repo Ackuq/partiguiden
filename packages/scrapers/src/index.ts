@@ -16,18 +16,38 @@ setGlobalDispatcher(
 );
 
 const {
-  values: { party },
+  values: { party, limit: limitArg, dry },
 } = parseArgs({
   options: {
     party: {
       type: "string",
       short: "p",
     },
+    limit: {
+      type: "string",
+      short: "l",
+    },
+    dry: {
+      type: "boolean",
+      default: false,
+    },
   },
 });
 
+if (dry) {
+  console.log("Dry run mode");
+}
+
 if (!party) {
   throw new Error("Party is not set");
+}
+
+let limit: number | undefined = undefined;
+if (limitArg) {
+  limit = parseInt(limitArg);
+  if (Number.isNaN(limit)) {
+    throw new Error(`Invalid limit argument provided: ${limitArg}`);
+  }
 }
 
 const parties = party === "all" ? Object.keys(scrapers) : [party];
@@ -40,7 +60,7 @@ const promises = parties.map(async (abbreviation) => {
   const scraper =
     scrapers[abbreviation.toLocaleLowerCase() as keyof typeof scrapers];
 
-  const data = await scraper.getPages();
+  const data = await scraper.getPages(limit);
 
   console.log(`Number of entries: ${data.length}`);
   console.log(
@@ -48,6 +68,11 @@ const promises = parties.map(async (abbreviation) => {
       data.filter((entry) => entry.opinions.length === 0).length
     }`,
   );
+
+  if (dry) {
+    console.log(JSON.stringify(data, null, 2));
+    return;
+  }
 
   return writePartyData(abbreviation, data);
 });

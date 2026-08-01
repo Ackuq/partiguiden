@@ -193,23 +193,21 @@ export default abstract class Scraper implements ScraperArgs {
 
   protected async getStandpointPage(
     $link: Cheerio<Element>,
-  ): Promise<PartyDataWithoutPartyName[]> {
+  ): Promise<PartyDataWithoutPartyName | undefined> {
     const data = await this.getStandpointPageData($link);
     if (!data) {
-      return [];
+      return;
     }
     const { title, url, html, updateDate, subject } = data;
     const opinions = this.getOpinions(cheerio.load(html));
 
-    return [
-      {
-        opinions,
-        title,
-        url,
-        updateDate,
-        subject,
-      },
-    ];
+    return {
+      opinions,
+      title,
+      url,
+      updateDate,
+      subject,
+    };
   }
 
   protected async handleLinks(
@@ -219,6 +217,13 @@ export default abstract class Scraper implements ScraperArgs {
     const promises = elements.map((element) =>
       this.getStandpointPage($(element)),
     );
+
+    return this.handleStandpointPagePromises(promises);
+  }
+
+  protected async handleStandpointPagePromises(
+    promises: Promise<PartyDataWithoutPartyName | undefined>[],
+  ) {
     const result = await Promise.allSettled(promises);
     const failed = result.filter(
       (promiseResult): promiseResult is PromiseRejectedResult =>
@@ -231,12 +236,13 @@ export default abstract class Scraper implements ScraperArgs {
       .filter(
         (
           promiseResult,
-        ): promiseResult is PromiseFulfilledResult<PartyData[string][]> =>
-          promiseResult.status === "fulfilled",
+        ): promiseResult is PromiseFulfilledResult<PartyData[string]> =>
+          promiseResult.status === "fulfilled" &&
+          promiseResult.value !== undefined,
       )
       .map((fulfilled) => fulfilled.value);
 
-    return resolved.flat();
+    return resolved;
   }
 
   async getPages(limit?: number): Promise<PartyDataWithoutPartyName[]> {

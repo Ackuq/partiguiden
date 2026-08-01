@@ -21,6 +21,7 @@ export default abstract class Scraper implements ScraperArgs {
   abstract listPath: string;
   abstract listSelector: string;
   opinionTags?: string[];
+  opinionHeaders?: Record<string, string>;
   absoluteUrls = false;
   pathRegex?: RegExp;
 
@@ -45,7 +46,57 @@ export default abstract class Scraper implements ScraperArgs {
           .filter((text) => text !== "");
       }
     }
-    return [];
+
+    return this.extractOpinionHeaders($);
+  }
+
+  protected extractOpinionHeaders($: CheerioAPI): string[] {
+    if (!this.opinionHeaders) {
+      return [];
+    }
+
+    let opinions: string[] = [];
+
+    for (const [opinionHeader, stopSignal] of Object.entries(
+      this.opinionHeaders,
+    )) {
+      const extractedContent: string[] = [];
+      $(`h2:contains('${opinionHeader}')`).map((_i, el) =>
+        $(el)
+          .nextUntil(stopSignal, "p,ul")
+          .each((_j, node) => {
+            const $node = $(node);
+            if ($node.is("p")) {
+              // Filter out paragraphs that are purely <strong> tags or empty
+              const $p = $node.clone();
+              $p.find("strong").remove();
+
+              const text = $p.text().trim();
+              if (text.length > 0) {
+                extractedContent.push(text);
+              }
+            } else if ($node.is("ul")) {
+              $node.find("li").each((_k, li) => {
+                const $li = $(li).clone();
+
+                // Remove all nested lists inside it
+                $li.find("ul, ol").remove();
+
+                const liText = $li.text().trim();
+                if (liText.length > 0) {
+                  extractedContent.push(liText);
+                }
+              });
+            }
+          }),
+      );
+
+      if (extractedContent.length > 0) {
+        opinions = opinions.concat(extractedContent);
+      }
+    }
+
+    return opinions;
   }
 
   protected getUrl(href: string) {

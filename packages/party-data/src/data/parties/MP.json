@@ -1,821 +1,803 @@
 {
-  "https://www.mp.se/politik/abort/": {
-    "opinions": [
-      "Grundlagsskydda aborträtten.",
-      "Stärka kvinnors rättigheter i hela världen och att både män och kvinnor inser behovet av det.",
-      "Värna rätten till egen sexualitet, information och preventivmedel. Se till att alla kvinnor och flickor får den information de har rätt till.",
-      "Subventionera abort för även kvinnor som inte är svenska medborgare eller bosatta i Sverige.",
-      "Förenkla möjligheten till hemaborter."
-    ],
-    "title": "Abort",
-    "url": "https://www.mp.se/politik/abort/",
-    "updateDate": "2023-09-17T17:52:38.649Z",
-    "party": "MP",
-    "subject": "vard-och-omsorg"
-  },
-  "https://www.mp.se/politik/arbetslivstrygghet/": {
-    "opinions": [
-      "Att den som är sjuk och därför inte kan arbeta ska ha rätt till ersättning från sjukförsäkringen.",
-      "På sikt slå samman a-kassan, sjukförsäkringen och försörjningsstödet till en gemensam trygghetsförsäkring som sköts av en och samma myndighet.",
-      "Se samma nivå på ersättningen vid sjukdom och arbetslöshet."
-    ],
-    "title": "Arbetslivstrygghet",
-    "url": "https://www.mp.se/politik/arbetslivstrygghet/",
-    "updateDate": "2024-06-02T17:16:20.159Z",
-    "party": "MP",
-    "subject": "jobb"
-  },
   "https://www.mp.se/politik/barn-och-barnratt/": {
     "opinions": [
-      "Att barnkonventionen ska få verkligt genomslag inom alla områden.",
-      "Att även  yngre barn ska få  rätt att få insatser från socialtjänsten, utan föräldrars medgivande.",
-      "Att barn ska få eget ombud vid alla rättsliga tvister mellan föräldrar.",
-      "Att rösträttsåldern ska sänkas till 16 år.",
-      "Att barn på flykt ska få permanent uppehållstillstånd.",
-      "Införa en klagorätt för barn och att barn ska kunna få stöd av oberoende barnombud.",
-      "Tillsätta en stark oberoende kommission som tar sig an barnfattigdomen, och som består av forskare och experter från myndigheter, kommuner och civilsamhälle. Även barn ska ha en stark röst i kommissionen.",
-      "Inflationssäkra bidrag och sociala stöd (som barnbidraget, bostadsbidraget och underhållsstödet).",
-      "Bibehålla den höjda nivån  av bostadsbidraget för barnfamiljer och stöd  organisationer som möter familjer som har det svårt.",
-      "Att FN:s barnkonvention genomförs i hela EU och att samtliga EU-länder inför ett förbud mot att slå barn."
+      "Inget barn ska växa upp i fattigdom. Miljöpartiet vill höja barnbidraget, studiebidraget, bostadsbidraget och underhållsstödet för barnfamiljer. Vi vill också införa ett ensamförsörjartillägg för den förälder som ensam bär hela det ekonomiska ansvaret för sina barn. Genom att förbättra ekonomin för alla barnfamiljer minskar de ojämlika förutsättningarna för barn i Sverige. Det minskar också risken för att barn drabbas av ohälsa, sämre skolresultat och sårbarhet för till exempel kriminalitet och sexuell exploatering.",
+      "Barnets bästa måste väga tyngre i mål om umgänge, vårdnad och boende när vårdnadshavarna inte kan komma överens. Barn ska bli lyssnade på, ha rätt till eget juridiskt biträde och skyddas vid våld, vårdnadstvister och andra utsatta situationer. Skolan och socialtjänsten måste få bättre förutsättningar att kunna agera tidigt när barn behöver hjälp.",
+      "Alla barn ska ha rätt till en jämlik förskola och skola, läxhjälp, meningsfull fritid och möjlighet att delta i kultur, idrott och föreningsliv. Vi vill också införa en kulturell allemansrätt, med bättre tillgång till kulturskola och kulturupplevelser i hela landet.",
+      "Miljöpartiet vill stärka elevhälsan och BUP så att barn och ungdomar får reella möjligheter till en god hälsa tidigt i livet. Vi vill dessutom stärka övergången mellan BUP och vuxenpsykiatrin så att unga vuxna inte faller mellan stolarna i vårdsystemet. Miljöpartiet vill också öka personaltäten för skolkuratorer för att lägga grunden för en god psykisk hälsa hos barn och ungdomar.",
+      "Miljöpartiet vill stärka kvaliteten i familjehemsvården, reformera SiS från grunden, förbjuda isolering av barn och införa rätt till eftervård upp till 25 år så att den som lämnar samhällsvården får stöd i etableringen i samhället. Vinst i HVB-hem ska förbjudas och de offentliga återta kontrollen. Det är centralt att barn inom samhällsvården ska mötas av trygga och kompetenta vuxna och ges individanpassad vård och rehabilitering. Tvångsinsatser riktade mot barn är en allvarlig åtgärd och måste därför allt bygga på forskning och beprövad erfarenhet och kombineras med främjande insatser.",
+      "Om barn begår brott ska det få konsekvenser, men barn har särskilda rättigheter som skiljer sig från vuxna. Miljöpartiet säger nej till sänkt straffmyndighetsålder och ungdomsfängelser. Vi tror att SiS, även i fortsättningen, har bäst förutsättningar att möta barn som begått allvarliga brott. Vi vill reformera SiS, så att fler barn får rätt vård och rehabilitering, en likvärdig skolgång och möjligheter att lämna kriminaliteten. Miljöpartiet vill också stärka det långsiktiga förebyggande arbetet, med riktade insatser till barn i riskzon.",
+      "Barns rätt till trygghet ska inte bero på hur familjen ser ut. Miljöpartiet vill anpassa familjepolitiken så att den omfattar alla familjer, inklusive HBTQI-familjer, bland annat genom att införa en könsneutral föräldrabalk, ge möjlighet för barn att ha fler än två vårdnadshavare och ge ett brett erkännande av regnbågsfamiljer. Det stärker barns rättigheter och ökar jämlikheten i Sverige."
     ],
     "title": "Barnrätt",
     "url": "https://www.mp.se/politik/barn-och-barnratt/",
-    "updateDate": "2024-06-02T17:16:18.631Z",
+    "updateDate": "2026-08-01T14:47:15.021Z",
     "party": "MP",
     "subject": "familjen"
   },
   "https://www.mp.se/politik/bilar-och-bransle/": {
     "opinions": [
-      "Göra det lättare att leva utan bil.",
-      "Att alla barn ska få växa upp med ren luft, även i våra städer.",
-      "Investera i laddstationer i hela landet — vägfordon ska kunna köra på el i hela Sverige.",
-      "Införa ett leasingstöd för elbilar riktat mot landsbygdsbilister upp till medianlönen.",
-      "Införa en skrotningspremie för att göra gamla bilar klimatsmarta.",
-      "Skärpa bonus-malus så fler har råd med elbil.",
-      "Utöka klimatpremierna så fler företag har råd med utsläppsfria fordon och arbetsmaskiner.",
-      "Inför konverteringspremie så fler gamla bilar kan köras med el och biogas.",
-      "Sänk momsen på bilpooler så fler kan dela bil.",
-      "Inför en vägslitageavgift för tung vägtrafik.",
-      "Att sista droppen fossilt bränsle till vägtrafiken ska säljas 2030."
+      "Nya bilar ska inte fortsätta låsa fast Sverige i ett beroende av bensin och diesel. Därför vill Miljöpartiet skärpa fordonsskatten för nya fossilbilar och styra marknaden mot fordon som inte släpper ut koldioxid. Målet är en fossilfri fordonsflotta där elbil är förstahandsvalet vid köp eller leasing.",
+      "Miljöpartiet vill införa stöd för leasing av elbilar till låg- och medelinkomsttagare i landsbygder och områden med begränsad kollektivtrafik. Stödet ska göra det möjligt att köra fossilfritt där bilen är nödvändig i vardagen. Vi vill också införa en bred elbilsbonus där de billigaste bilarna får störst stöd.",
+      "För att fler ska kunna välja elbil krävs laddpunkter där människor behöver ladda. Miljöpartiet vill se nationella planer för laddinfrastruktur och bygga fler laddstationer längs större vägar och nära bostäder och arbetsplatser. Omställningen till eldrift ska fungera både i städer, mindre orter och på landsbygden.",
+      "Alla bilar kan inte bytas ut till elbilar direkt. Därför vill Miljöpartiet under en övergångsperiod öka andelen förnybara drivmedel i bensin och diesel genom en reduktionsplikt. Vi vill också införa produktionsstöd för avancerade biodrivmedel, så att utsläppen minskar och Sveriges självförsörjning stärks.",
+      "Sverige ska minska beroendet av importerad olja genom att öka den inhemska produktionen av avancerade biodrivmedel. Miljöpartiet vill införa ett produktionsstöd som sänker kostnaderna, stärker försörjningstryggheten och gör det lättare att ersätta fossila bränslen där elektrifiering ännu inte är på plats. Biodrivmedel ska användas resurseffektivt och framställas på ett sätt som värnar klimat, skog och biologisk mångfald.",
+      "Högre kostnader för fossila bränslen kan slå hårt mot människor som är beroende av bilen. Miljöpartiet vill därför att intäkter från höjd koldioxidskatt på fossila drivmedel ska gå tillbaka till hushåll på landsbygden, boende utanför städer och hushåll med små marginaler genom en grön återbäring.",
+      "Bilar och fossila drivmedel står för en tredjedel av Sveriges växthusgasutsläpp. Genom att byta från bensin och diesel till el och förnybara drivmedel kan utsläppen minska snabbt. Det ger också renare luft och minskar Sveriges beroende av importerad olja.",
+      "Miljöpartiet vill rikta stöd till dem som har störst behov av bil och minst ekonomiska marginaler. Det gäller särskilt låg- och medelinkomsttagare i landsbygder och områden där kollektivtrafiken är begränsad. Billigare elbilar ska prioriteras framför dyra och resurskrävande modeller.",
+      "Omställningen måste ske stegvis och rättvist. Därför vill Miljöpartiet öka andelen förnybara drivmedel under en övergångsperiod och samtidigt ge ekonomisk återbäring till hushåll som påverkas mest av högre drivmedelskostnader. Vi måste minska utsläppen utan att lämna människor i sticket.",
+      "Utan fler och mer tillgängliga laddplatser blir det svårt för många att välja elbil. Laddstationer ska finnas längs större vägar, nära bostäder och arbetsplatser i hela landet. En mer tillgänglig laddinfrastruktur gör omställningen praktiskt genomförbar i människors vardag.",
+      "Elbilar och förnybara drivmedel minskar klimatutsläppen, men de kräver resurser och måste användas klokt. Miljöpartiet vill prioritera resurssnåla fordon, cirkulära flöden av metaller och avancerade biodrivmedel. El ska vara huvudspåret, medan biodrivmedel kan användas där de gör störst nytta för att ersätta fossila bränslen."
     ],
-    "title": "Bilar och bränsle",
+    "title": "Elbilar",
     "url": "https://www.mp.se/politik/bilar-och-bransle/",
-    "updateDate": "2024-06-02T17:16:18.285Z",
+    "updateDate": "2026-08-01T14:47:15.366Z",
     "party": "MP",
     "subject": "infrastruktur-och-trafik"
   },
-  "https://www.mp.se/politik/bistand/": {
-    "opinions": [
-      "Återinföra en biståndsram på minst en procent av BNI.",
-      "Använda biståndet till att påskynda utfasningen av fossil energi och möjliggöra att investeringar i förnybart också når de allra fattigaste.",
-      "Fortsätta driva en feministisk utvecklings- och utrikespolitik som sätter fokus på kvinnors rättigheter, politiskt deltagande, ekonomisk egenmakt, inflytande över fredsarbete, frihet från våld samt rätten till reproduktiv hälsa.",
-      "Att Sverige ska vara en ledande kraft för klimaträttvisa i den globala klimatomställningen och investera i klimat- och miljöarbete i fattiga länder.",
-      "Att Sverige ska fortsätta vara en ledande givare och partner för människor på flykt och som riskerar svält.",
-      "Stoppa skatteparadis och kapital- och skatteflykt från fattiga länder."
-    ],
-    "title": "Bistånd och global rättvisa",
-    "url": "https://www.mp.se/politik/bistand/",
-    "updateDate": "2024-06-02T17:16:17.825Z",
-    "party": "MP",
-    "subject": "utrikes--och-bistandsfragor"
-  },
   "https://www.mp.se/politik/bostader/": {
     "opinions": [
-      "Införa ett statligt investeringsstöd för fler hyresrätter och studentbostäder.",
-      "Utrota hemlösheten i Sverige genom en nationell bostadsstiftelse.",
-      "Bygga fler byggnader i trä.",
-      "Sänka utsläppen genom högre hållbarhetskrav på byggsektorn.",
-      "Bygga bort segregationen för ökad trygghet i samhället.",
-      "Göra fler områden attraktiva med utbyggd kollektivtrafik.",
-      "Införa förtur i bostadskön för utsatta kvinnor och barnfamiljer.",
-      "Skapa mer trygghet för hyresgäster genom att reglera hyresvärdarnas krav."
+      "Miljöpartiet vill öka byggandet av hyresrätter, studentbostäder och bostäder för äldre. Statliga byggkrediter och stöd till ombyggnation gör det både lättare att bygga nytt och att använda befintliga lokaler bättre, till exempel genom att bygga om kontor till bostäder.",
+      "Alla människor har rätt till ett hem. Därför vill Miljöpartiet motverka hemlöshet, trångboddhet och vräkningar av exempelvis barnfamiljer och våldsutsatta kvinnor. Förtur i bostadsköer, höjda bostadsbidrag och en aktiv allmännytta ska hjälpa fler in på bostadsmarknaden.",
+      "Miljöpartiet säger nej till marknadshyror och fri hyressättning vid nyproduktion. Hyror ska vara rimliga och människor ska inte tvingas flytta när bostäder renoveras. Vi vill stärka hyresgästers ställning på hyresmarknaden och ge stöd till hållbar renovering som inte leder till kraftiga hyreshöjningar.",
+      "Byggnader använder mycket energi och byggsektorn står för en stor del av utsläppen. Miljöpartiet vill utveckla klimatdeklarationer, införa gränsvärden för klimatpåverkan och öka återanvändning av byggmaterial. Energieffektivisering sänker utsläppen och skyddar hushållen mot höga elkostnader.",
+      "Bostadsområden ska fungera för människor i olika livssituationer. Miljöpartiet vill underlätta för byggemenskaper och kollektiva boendelösningar. Mer natur och grönska i städerna bidrar till bättre hälsa, trivsel, biologisk mångfald och skydd mot värmeböljor och översvämningar."
     ],
     "title": "Bostäder",
     "url": "https://www.mp.se/politik/bostader/",
-    "updateDate": "2024-06-02T17:16:20.209Z",
+    "updateDate": "2026-08-01T14:47:15.081Z",
     "party": "MP",
     "subject": "bostad"
   },
   "https://www.mp.se/politik/civilt-forsvar-och-krisberedskap/": {
     "opinions": [
-      "Stärka Sveriges cyberförsvar och psykologiska försvar.",
-      "Införa en civiltjänstgöring.",
-      "Avsätta mer pengar till underhållning av vatten- och avloppsnäten.",
-      "Stärka räddningstjänst, hälso- och sjukvård.",
-      "Förhindra radikalisering och rekrytering till våldsbejakande extremism."
+      "Vi vill satsa på ett civilt försvar som både kan bistå det militära försvaret vid kris eller krig och öka samhällets motståndskraft mot andra kriser. Vi vet att vi kommer att se fler cyberattacker, pandemier och naturkatastrofer, och vi måste stå rustade att möta även dessa hot. Om tågen inte går i fredstid och vårdpersonalen redan går på knäna är vi illa rustade att klara en större kris eller ett krig.",
+      "Vård, järnväg, transporter, el, vatten, betalningar och digital uppkoppling måste fungera även under hård press. Sverige ska öka självförsörjningen och säkra lager av livsmedel, medicin och andra nödvändiga varor. Vi vill också stärka cybersäkerheten och bygga decentraliserade, förnybara energisystem som är robusta vid kris och krig. Vi vill också skydda kritisk infrastruktur från sårbara beroenden. Civilplikten ska byggas ut som komplement till värnplikten.",
+      "Klimatförändringarna är redan ett beredskapsproblem. Vårdinrättningar, äldreboenden, offentliga byggnader samt vatten- och avloppssystem behöver anpassas för ett varmare och blötare klimat. Staten behöver ta ett långsiktigt ansvar så att kommuner kan planera och finansiera klimatanpassning över tid.",
+      "Sverige behöver bättre förmåga att förebygga och hantera cyberangrepp, desinformation och påverkanskampanjer. Det kräver samverkan mellan myndigheter, offentlig sektor, företag och civilsamhälle, med respekt för den personliga integriteten. Medie- och informationskunnigheten hos befolkningen måste stärkas och public service skyddas i grundlagen.",
+      "Försvarsvilja byggs genom tillit, delaktighet och gemenskap. Frivilliga försvarsorganisationer, folkbildning, kultur och lokala föreningar kan mobilisera snabbt och nå människor som myndigheter ibland har svårt att nå. Vi vill att civilsamhället får en tydligare och mer långsiktig roll i krisberedskapen och det civila försvaret.",
+      "Det civila försvaret ska hålla samhället igång vid kris och krig, skydda befolkningen och kunna bistå det militära försvaret. Det handlar om att vård, transporter, el, vatten, livsmedel, digitala system och betalningar ska fungera även under hård press. Om dessa funktioner är sårbara i vardagen blir Sverige också mer sårbart i en allvarlig kris. Därför krävs långsiktiga satsningar på kommuner, regioner, infrastruktur, försörjningsberedskap och cybersäkerhet.",
+      "Vi vill öka Sveriges självförsörjning och bygga upp lager av viktiga varor som livsmedel, medicin, sjukvårdsmateriel, reservdelar och bränsle. Sverige behöver också stärka inhemsk och ekologisk produktion och minska vårt beroende av fossila bränslen och odemokratiska stater.",
+      "Klimatförändringarna ökar risken för skyfall, översvämningar, värmeböljor, bränder och förstörda skördar. Därför måste klimatanpassning vara en central del av beredskapen. Det handlar bland annat om att skydda vattenförsörjningen, göra livsmedelsproduktionen mer hållbar och klimatanpassa samhället så att vi bättre klarar naturkatastrofer som översvämningar och ras.",
+      "Föreningsliv, folkbildning och kultur bidrar till den tillit och sammanhållning som gör samhället mer motståndskraftigt. Organisationer är också nödvändiga i krisberedskapen, där de kan ge stöd, sprida information och snabbt mobilisera frivilliga när något händer.",
+      "Vi vill stärka cybersäkerheten, skydda public service, öka medie- och informationskunnigheten och bekämpa desinformation utan att inskränka yttrande- och pressfriheten. Ett öppet och demokratiskt samhälle är en styrka i kris, inte en svaghet."
     ],
-    "title": "Civilt försvar och krisberedskap",
+    "title": "Krisberedskap",
     "url": "https://www.mp.se/politik/civilt-forsvar-och-krisberedskap/",
-    "updateDate": "2023-09-17T17:52:35.416Z",
+    "updateDate": "2026-08-01T14:47:14.532Z",
     "party": "MP",
     "subject": "forsvar"
   },
   "https://www.mp.se/politik/demokrati-och-mr/": {
     "opinions": [
-      "Säkerställa alla människors fri- och rättigheter.",
-      "Skydda Sveriges grundlag mot snabba förändringar.",
-      "Stärka nationella minoriteters och urfolket samernas rättigheter och att Sverige ska förbinda sig att följa den internationella konventionen om  urfolks rättigheter (ILO 169).",
-      "Förstärka yttrandefriheten och stödja oberoende medier i hela landet.",
-      "Skydda ett oberoende public service i grundlagen.",
-      "Stoppa hot och hat mot förtroendevalda och opinionsbildare.",
-      "Införa ett system med nationella medborgarinitiativ (tex lagförslag från medborgare).",
-      "Främja öppenhet och insyn i alla offentliga verksamheter.",
-      "Involvera fler i demokratin och sänka rösträttsåldern till 16 år."
+      "Demokratin behöver stabila spelregler som inte kan ändras snabbt eller lättvindigt. Miljöpartiet vill göra det svårare att ändra grundlagen och säkerställa att all ny lagstiftning håller hög kvalitet genom att utredningar alltid ges tillräckligt med tid och resurser. Det är också viktigt att civilsamhället och andra relevanta aktörer får goda förutsättningar att granska och analysera förslag från utredningar. Ny lagstiftning behöver även genomgå en gedigen konsekvensanalys. Det stärker rättssäkerheten och skyddet för mänskliga rättigheter och demokratin.",
+      "Fler ska kunna påverka samhällsutvecklingen mellan valen. Miljöpartiet vill införa nationella medborgarinitiativ, ge länsstyrelserna ett demokratifrämjande uppdrag och stärka ungas inflytande, bland annat genom att sänka rösträttsåldern till 16 år. Det gör demokratin mer levande och tillgänglig. Det bidrar också till att stärka människors tillit till det demokratiska systemet.",
+      "Alla människor ska ha rätt att uttrycka sig, söka kunskap, organisera sig, demonstrera och på andra sätt delta i det demokratiska samtalet. Miljöpartiet vill värna mötes- och demonstrationsfriheten, stärka informationsfriheten och grundlagsskydda Institutet för mänskliga rättigheter för att säkra demokratin och fri- och rättigheternas existens på lång sikt.",
+      "Oberoende journalistik, public service och lokala medier är avgörande för att människor ska få tillgång till information, samhällsgranskning och olika perspektiv i samhällsdebatten. Miljöpartiet vill grundlagsskydda public service, stärka mediernas oberoende och säkerställa ett långsiktigt mediestöd som också når små redaktioner och lokala nyhetsförmedlare.",
+      "Desinformation, näthat, AI och beroendeframkallande algoritmer påverkar det demokratiska samtalet. Miljöpartiet vill ta fram en nationell strategi mot desinformation och näthat, stärka medie- och informationskunnigheten i skolan och ställa större krav på att techjättar ska motverka radikalisering och spridning av skadligt innehåll.",
+      "Barn och unga ska skyddas från grooming, trakasserier, skadligt innehåll och beroendeframkallande algoritmer, samtidigt som deras rätt att uttrycka sig, kommunicera och söka information ska värnas. Vi är öppna för att införa åldersgränser för plattformar utifrån deras risker och skadlighet. Miljöpartiet vill ge en utredning i uppdrag att noggrant analysera vilka effekter en eventuell åldersgräns skulle ha. En sådan utredning bör också bedöma om en åldersgräns är den mest ändamålsenliga vägen framåt, och i så fall vilken nivå som vore rimlig samt hur ett sådant system praktiskt skulle kunna utformas."
     ],
-    "title": "Demokrati och mänskliga rättigheter",
+    "title": "Mänskliga rättigheter",
     "url": "https://www.mp.se/politik/demokrati-och-mr/",
-    "updateDate": "2023-09-17T17:52:36.068Z",
+    "updateDate": "2026-08-01T14:47:14.832Z",
     "party": "MP",
     "subject": "demokrati"
   },
-  "https://www.mp.se/politik/diskriminering/": {
-    "opinions": [
-      "Se ett samhället fritt från diskriminering.",
-      "Skärpa sanktionerna mot den som diskriminerar.",
-      "Att den som diskrimineras ska få hjälp och stöd från samhället.",
-      "Stärka polisens hatbrottsarbete.",
-      "Stärka arbetet mot antiziganism, antisemitism och islamofobi.",
-      "Se över om funktionsnedsättning och kön ska läggas till som grunder för hatbrott.",
-      "Stärk arbetet mot diskriminering av hbtqi-personer.",
-      "Stärka transpersoners rättigheter genom en ny könstillhörighetslag, och införa ett  tredje juridiskt kön.",
-      "Ta ett helhetsgrepp om funkofobin i Sverige.",
-      "Att alla ska få möjlighet att använda det språk de kan bäst i kontakten med svenska myndigheter.",
-      "Anpassa familjepolitiken så att den blir könsneutral och stärka rättigheterna för stjärnfamiljer, det vill säga alla olika typer av familjer.",
-      "Stärka och utveckla läsa-skriva-räkna-garantin för att fler barn med  funktionsnedsättning ska få insatser i tid.",
-      "Att lagen om stöd och service till vissa funktionshindrade (LSS) förtydligas och  statligt huvudmannaskap införs i den personliga assistansen så att människor får det  stöd de behöver och har rätt till."
-    ],
-    "title": "Diskriminering",
-    "url": "https://www.mp.se/politik/diskriminering/",
-    "updateDate": "2023-09-17T17:52:36.181Z",
-    "party": "MP",
-    "subject": "jamstalldhet-och-diskriminering"
-  },
   "https://www.mp.se/politik/djur/": {
     "opinions": [
-      "Att den svenska djurskyddslagens krav på rätt till naturligt beteende för djuren blir verklighet för djuren.",
-      "Att djurförsöken fasas ut och att pälsdjursindustrin, som minkfarmer, avskaffas i hela EU.",
-      "Att EU:s gemensamma jordbrukspolitik ska främja en förbättrad djurhållning och att EU-bidrag ska kunna dras tillbaka från dem som inte uppfyller kraven i EU:s djurskyddsdirektiv.",
-      "Intensifiera arbetet med en global FN-deklaration om djurvälfärd och införa bindande minimiregler för djurskydd inom både FN och WTO.",
-      "Arbeta för att få till stånd ett globalt regelverk mot rutinmässig användning av antibiotika i djurhållning.",
-      "Förbjuda burhållning av lantbruksdjur i hela EU, exempelvis höns.",
-      "Minimera djurs lidande vid transport och slakt. En maxgräns på 8 timmar för alla djurtransporter i EU måste införas och export av levande djur till länder utanför EU med sämre djurvälfärd måste förbjudas.",
-      "Införa krav på att samma standarder för djurvälfärd som vi har i EU ska gälla för länder som vill exportera kött till EU.",
-      "Minska användningen av antibiotika i djurhållningen och införa en skatt på kött som producerats med hög antibiotikaanvändning."
+      "Dagens djurskyddslag säger att alla djur ska kunna utföra naturliga beteenden, men reglerna fungerar olika väl för olika arter. Naturliga beteenden är instinktiva beteenden som djuren är starkt motiverade att utföra, och som är centrala för djurens välbefinnande. Det kan handla om bete eller att böka i jord. Miljöpartiet vill se tydliga regler art för art, bättre tillsyn och tillräckliga resurser till myndigheter. Djurhållare som redan gör mer än vad lagen kräver ska stöttas.",
+      "Den snabba tillväxten hos så kallade turbokycklingar medför stort lidande för djuren. Miljöpartiet vill stoppa uppfödningen av turbokycklingar inom svensk livsmedelsproduktion och ställa om till långsamväxande raser. Vi vill också minimera djurtransporterna inom livsmedelsproduktionen, och fasa ut plågsamma bedövningsmetoder, som koldioxidbedövning, vid slakt. Djur ska behandlas väl även i livets slutskede.",
+      "Mycket forskning med djurförsök kan i dag ersättas av metoder som cellmodeller och datorsimuleringar. Sådana metoder minskar djurens lidande och kan ge mer träffsäkra forskningsresultat. Miljöpartiet vill ta fram en nationell plan för övergången till djurförsöksfri forskning och stötta satsningarna på alternativ.",
+      "Dagens industriella köttproduktion och överkonsumtion av kött är skadlig för klimatet, miljön och människors hälsa. Miljöpartiet vill att offentlig upphandling av animaliska produkter minst ska motsvara svensk djurskyddsnivå och att andelen ekologiska produkter ska öka. Vi vill också införa en antibiotikaskatt på importerat kött från djur som rutinmässigt behandlats med antibiotika och driva på för styrmedel inom EU för att minska köttkonsumtionens klimatpåverkan.",
+      "Tillgången till veterinärer är ojämn i landet, vilket påverkar både lantbruk, beredskap och vården av sällskapsdjur. Miljöpartiet vill utbilda fler veterinärer, göra yrket mer attraktivt och stärka arbetsmiljön. Vi vill också granska marknadsstrukturen och öka pristransparensen inom djursjukvården."
     ],
     "title": "Djur",
     "url": "https://www.mp.se/politik/djur/",
-    "updateDate": "2024-06-02T17:16:19.479Z",
+    "updateDate": "2026-08-01T14:47:14.279Z",
     "party": "MP",
     "subject": "miljo-och-klimat"
   },
-  "https://www.mp.se/politik/ekonomi-och-skatter/": {
-    "opinions": [
-      "Ställa om till en fossilfri och cirkulär ekonomi inom planetens gränser.",
-      "Vända utvecklingen med ökande ekonomiska klyftor, bland annat genom en mer rättvis beskattning av stora kapitalinkomster.",
-      "Använda ekonomiska styrmedel för att gynna sådant som är bra för miljö och klimat.",
-      "Sänka kostnaderna för sånt som är bra för miljön, som reparationer och second hand.",
-      "Att de som har mest pengar ska bidra mer till välfärden.",
-      "Att omställningen till en fossilfri ekonomi ska vara rättvis.",
-      "Främja ekonomisk jämställdhet och jämlikhet.",
-      "Genomföra stora investeringar i de klimatvänliga alternativ som vi behöver för att skapa en fossilfri ekonomi."
-    ],
-    "title": "Ekonomi och skatter",
-    "url": "https://www.mp.se/politik/ekonomi-och-skatter/",
-    "updateDate": "2024-06-02T17:16:21.370Z",
-    "party": "MP",
-    "subject": "ekonomi-och-skatter"
-  },
   "https://www.mp.se/politik/energi/": {
     "opinions": [
-      "Satsa stort på att bygga ut  förnybar energiproduktion, framförallt den havsbaserade vindkraften.",
-      "Planera för en dubblering av elsystemet till 2035 och satsa på grön baskraft i form av smart elanvändning och energilagring i vätgas, värme och pumpkraft.",
-      "Ge kommuner ersättning för förnybar energiproduktion som vatten- och vindkraft och ge närboende till vindkraftverk ersättning samt möjlighet att bli delägare.",
-      "Införa ett teknikneutralt stöd för storskalig energilagring – grön baskraft – såsom pumpkraft, värmelagring och vätgaslagring.",
-      "Ge generösa stöd och rådgivning till alla företag, fastighetsägare och hushåll som vill effektivisera sin energianvändning, så att elen räcker till mer.",
-      "Fasa ut och sätta ett slutdatum för all fossil olja, kol och gas.",
-      "Halvera tiden för att bygga ut smarta elnät."
-    ],
-    "title": "Energi",
-    "url": "https://www.mp.se/politik/energi/",
-    "updateDate": "2024-09-03T06:27:15.122Z",
-    "party": "MP",
-    "subject": "energi"
-  },
-  "https://www.mp.se/politik/energieffektivisering/": {
-    "opinions": [
-      "Att staten tar 60 procent av kostnaden för alla insatser som hushållen, fastighetsägarna eller företagen genomför för att effektivisera energianvändningen.",
-      "Fördubbla antalet energirådgivare i hela landet."
+      "Mer vindkraft och solkraft behövs för att klara klimatomställningen och hålla nere elpriserna. Miljöpartiet vill få fart på havsbaserad vindkraft genom att bygga ut stamnät till havs, göra vindkraftsprövningen mer rättssäker och ge kommuner och närboende bättre ersättning och kompensation. Vi vill också stärka solelen genom bättre skattevillkor och solceller på alla lämpliga offentliga byggnader.",
+      "Energieffektivisering är det snabbaste och billigaste sättet att tillgängliggöra mer el. Miljöpartiet vill återinföra stöd till energieffektivisering i flerbostadshus och industrier. Vi vill också införa långsiktiga styrmedel och stärka kommunernas energirådgivning så att det blir enklare för hushåll och företag att energieffektivisera.",
+      "Ett förnybart elsystem behöver kunna leverera effekt dygnet runt. Miljöpartiet vill införa ett planeringsmål för grön baskraft och investeringsstöd till exempelvis storskalig energilagring, höjd effekt i befintlig vattenkraft och kraftvärme, biogasturbiner och smart styrning av elsystemet. Det stärker leveranssäkerheten och minskar pristopparna. Miljöpartiet vill ha 10 GW grön baskraft på plats till 2030.",
+      "Staten behöver ta en mer aktiv roll i energiomställningen. Miljöpartiet vill att staten hjälper elproducenter och industriföretag att teckna elektrifieringsavtal, så att ny elproduktion byggs i takt med industrins efterfrågan. På så sätt kan hushållens elkostnader hållas nere."
     ],
     "title": "Energieffektivisering",
-    "url": "https://www.mp.se/politik/energieffektivisering/",
-    "updateDate": "2024-06-02T17:16:17.938Z",
+    "url": "https://www.mp.se/politik/energi/",
+    "updateDate": "2026-08-01T14:47:14.934Z",
     "party": "MP",
     "subject": "energi"
   },
   "https://www.mp.se/politik/eu/": {
     "opinions": [
-      "Att EU ska driva en kraftfull och ambitiös klimat- och miljöpolitik.",
-      "Se ett öppet och humant Europa där människor kan söka asyl utan att riskera livet.",
-      "Stärka demokratin och det folkliga inflytandet i EU och reglera lobbyismen.",
-      "Stoppa all import av rysk energi till Sverige och EU."
+      "EU ska skärpa sina klimatmål, fasa ut fossila subventioner och investera mer i förnybar energi, fossilfri industri och hållbara transporter. Miljöpartiet vill se en europeisk koldioxidbudget, skärpta regelverk för handel med utsläppsrätter, utökade klimattullar och fler nattåg som binder ihop Sverige med Europa.",
+      "EU:s jordbrukspolitik ska ställas om så att den gynnar ekologiskt, småskaligt och motståndskraftigt jordbruk fritt från konstgödsel och kemiska bekämpningsmedel. Livsmedelssystemet ska främja biologisk mångfald och en långsiktigt hållbar livsmedelsförsörjning. EU:s jordbruksstöd ska reformeras för att styra jordbrukssektorn mot omställning.",
+      "Miljöpartiet vill se till att minst 30 procent av land respektive sjö och marina områden får ett formellt skydd till 2030. Kalhyggesbruk inom skogsbruket måste minska och övergå i naturnära och hyggesfria metoder. Miljöpartiet driver även på för att EU ska ta ett tydligt ansvar för att stoppa utfiskningen av haven och utveckla ett hållbart och ekosystembaserat fiske. Vi tycker att bottentrålning ska förbjudas i hela EU.",
+      "EU ska agera tydligare när medlemsländer frångår demokratiska principer och bryter mot mänskliga rättigheter. Stöd ska kunna dras in till länder som inte lever upp till EU:s gemensamma värdegrund. Vi vill också reglera lobbyismen, stärka offentlighetsprincipen och skydda pressfrihet, civilsamhälle och personlig integritet i EU-länderna.",
+      "Människor på flykt ska få en rättssäker prövning och ett värdigt mottagande. EU behöver fler lagliga vägar för asyl, arbete och familjeåterförening. Vi vill också stärka skyddet i hela EU mot diskriminering, hat och våld mot minoriteter, hbtqi-personer och andra utsatta grupper.",
+      "EU ska stoppa importen av rysk energi, fortsätta stötta Ukraina och bli mindre beroende av USA och Kina. Säkerhetspolitiken ska bygga på bred beredskap, civil motståndskraft, diplomati, effektivt och träffsäkert bistånd och fredsarbete. Handelsavtal ska ha bindande krav på klimat, miljö, mänskliga rättigheter, djurvälfärd och fackliga rättigheter."
     ],
     "title": "EU",
     "url": "https://www.mp.se/politik/eu/",
-    "updateDate": "2024-06-02T17:16:19.030Z",
+    "updateDate": "2026-08-01T14:47:15.696Z",
     "party": "MP",
     "subject": "europa"
   },
-  "https://www.mp.se/politik/fred-och-forsvar/": {
-    "opinions": [
-      "Att Sverige ska stärka sin försvarsförmåga och ha en modern försvars- och säkerhetspolitik som förhåller sig till komplexiteten i hur olika hot är sammanlänkade (som cyberhot, terrorism, naturkatastrofer och beroende av olja, gas och uran).",
-      "Stå upp för att internationella lagar och regler efterföljs i konflikter.",
-      "Stärka det civila försvaret och krisberedskapen för att kunna möta hot som klimatförändringar, naturkatastrofer, cyberattacker och våldsbejakande extremism.",
-      "Stärka Sveriges roll i konfliktförebyggande och fredsfrämjande arbete.",
-      "Att Sverige antar lagstiftning som förbjuder införsel av kärnvapen i Sverige både i freds- och krigstid.ratificera konventionen om kärnvapenförbud och arbeta för ett totalförbud mot  att använda autonoma vapensystem."
-    ],
-    "title": "Fred och försvar",
-    "url": "https://www.mp.se/politik/fred-och-forsvar/",
-    "updateDate": "2024-06-02T17:16:19.998Z",
-    "party": "MP",
-    "subject": "forsvar"
-  },
   "https://www.mp.se/politik/funktionsratt/": {
     "opinions": [
-      "Att lagen om stöd och service till vissa funktionshindrade (LSS) förtydligas och statligt huvudmannaskap införs i den personliga assistansen så att människor får det  stöd de behöver och har rätt till.",
-      "Att hela samhället blir tillgängligt för personer med psykisk eller fysisk funktionsvariation.",
-      "Förbättra stödet för personer med funktionsnedsättning och sällsynta diagnoser oavsett var du bor i landet.",
-      "Stärka och utveckla läsa-skriva-räkna-garantin för att fler barn med funktionsnedsättning ska få insatser i tid.",
-      "Möjliggöra för studenter som p.g.a. funktionsnedsättning, sjukdom eller personlig omständighet ej haft möjlighet att fullgöra sina studier i skola och gymnasium att studera på Komvux och vid behov även läsa om Komvuxkurser.",
-      "Motverka diskrimineringen av personer med funktionsnedsättning på arbetsmarknaden.",
-      "Motverka funkofobi i samhället.",
-      "Ha hjälpmedel inom högkostnadsskyddet."
+      "Sverige behöver säkerställa att FN:s funktionsrättskonvention gäller i praktiken. När konventionen blir svensk lag stärks skyddet mot diskriminering och bristande tillgänglighet. Det blir också tydligare för myndigheter, kommuner och regioner vilket ansvar de har.",
+      "LSS ska utgå från människors hela livssituation inklusive psykiska och sociala aspekter, inte främst från kostnader. LSS ska förtydligas så att lagens intention garanteras i alla kommuner. En LSS-inspektion ska granska verksamheter och kommunens tillämpning av lagen samt stötta individer med LSS-insatser. Personligt ombud ska vara kostnadsfritt.",
+      "Personlig assistans ska utgå från individens helhetsbehov. Assistansanvändare ska inte leva med rädsla för att assistanstimmar ska försvinna. Försäkringskassan ska ha hela ansvaret för assistansen, assistansersättning ska indexeras och ett nödstopp för återkrav när bedrägeri eller medvetet fusk inte kan styrkas ska införas. Vi vill också se över 65-årsgränsen, korrigera föräldraavdraget och stärka stödet till anhöriga och syskon.",
+      "Många personer med funktionsnedsättning vill och kan arbeta, men möter hinder som bristande stöd, låga lönebidrag och svårigheter att få arbetshjälpmedel. Lönebidragen ska indexeras, arbetsintegrerande företag få rätt förutsättningar och Arbetsförmedlingen och Försäkringskassan ha krav på bättre stöd. Offentlig sektor ska gå före med att anställa fler personer med funktionsnedsättning. Personer som på grund av sin funktionsnedsättning inte kan arbeta heltid ska ha rätt till en ersättning som går att leva på.",
+      "Ledsagning och färdtjänst är avgörande för att människor ska kunna leva självständigt, studera, arbeta och delta i samhället. Vi vill stärka ledsagningen genom en egen lag och  säkerställa likvärdig och kostnadsfri tillgång i hela landet. Färdtjänstlagen behöver stärkas så att orienteringssvårigheter omfattas genom hela resan, och hjälpmedel ska omfattas av högkostnadsskydd.",
+      "Funkofobi är negativa attityder, rädsla, hat eller diskriminering mot personer med funktionsnedsättning. Sverige ska anta en nationell plan mot funkofobi och ge ett statsråd särskilt ansvar för frågan. Vi vill också stärka forskningen och ge föräldrar till barn med funktionsnedsättning tidig, rättvisande och mångfacetterad information."
     ],
     "title": "Funktionsrätt",
     "url": "https://www.mp.se/politik/funktionsratt/",
-    "updateDate": "2024-06-02T17:16:20.382Z",
+    "updateDate": "2026-08-01T14:47:15.661Z",
     "party": "MP",
     "subject": "jamstalldhet-och-diskriminering"
   },
-  "https://www.mp.se/politik/foreningsliv-folkbildning-och-idrott/": {
-    "opinions": [
-      "Genomför ett civilsamhälleslyft med 1 miljard i en permanent satsning på föreningslivet och civilsamhället.",
-      "Stärka friluftslivet.",
-      "Stärka idrottsrörelsen satsa på anläggningar och utemiljöer.",
-      "Gynna en mångfald av aktiviteter.",
-      "Säkra en trygg idrott och frihet fri från kränkningar och övergrepp.",
-      "Ge mer offentligt stöd till folkbildningen och studieförbunden,",
-      "Bryta civilsamhällets beroende av projektstöd.",
-      "Säkra att föreningslivets oberoende röst värnas.",
-      "Uppmuntra ungdomars engagemang och se till att det finns en jämlik och jämställd fördelning av resurserna."
-    ],
-    "title": "Föreningsliv, folkbildning och idrott",
-    "url": "https://www.mp.se/politik/foreningsliv-folkbildning-och-idrott/",
-    "updateDate": "2024-06-02T17:16:20.219Z",
-    "party": "MP",
-    "subject": "kultur-media-och-idrott"
-  },
-  "https://www.mp.se/politik/foretagande/": {
-    "opinions": [
-      "Att det ska bli enklare att starta och driva företag.",
-      "Förbättra tryggheten och minska regelkrånglet för företagare.",
-      "Skapa fler gröna jobb genom att satsa på kompetensförsörjning till klimatomställningen.",
-      "Skapa bättre förutsättningar för arbetsintegrerande sociala företag att skapa jobb för människor som står långt från arbetsmarknaden.",
-      "Helt ta bort energiskatten för företag som producerar el för eget bruk.",
-      "Ersätta jordbrukets fossila subventioner med ett grönt avdrag som sänker skatten på jobb och företagande för jordbruket."
-    ],
-    "title": "Företagande",
-    "url": "https://www.mp.se/politik/foretagande/",
-    "updateDate": "2024-06-02T17:16:19.884Z",
-    "party": "MP",
-    "subject": "naringsliv"
-  },
-  "https://www.mp.se/politik/barn-och-forskola/": {
-    "opinions": [
-      "Satsa 2 miljarder kronor per år för att stärka likvärdigheten i förskolan.",
-      "Att alla barn över tre år aktivt ska erbjudas en förskoleplats varje år.",
-      "Återinföra kommunernas ansvar att följa upp de barn som inte går i förskolan.",
-      "Ge alla barn rätt till fritids, oavsett vad deras föräldrar gör.",
-      "Stärka kvaliteten och likvärdigheten i fritidshemmet.",
-      "Att förskolor ska använda en genusmedveten pedagogik som ger barnen möjlighet att vara sig själva."
-    ],
-    "title": "Förskola och fritids",
-    "url": "https://www.mp.se/politik/barn-och-forskola/",
-    "updateDate": "2024-06-02T17:16:19.128Z",
-    "party": "MP",
-    "subject": "utbildning"
-  },
   "https://www.mp.se/politik/gruvor-och-mineraler/": {
     "opinions": [
-      "Intensifiera arbetet med återvinningen av kritiska metaller och mineraler.",
-      "Främja ett effektivt användande av alla ändliga resurser.",
-      "Genomföra SOU 2018:59 Statens gruvliga risker om tillräckliga ekonomiska säkerheter för efterbehandling vid gruvverksamhet.",
-      "Förbjuda brytning av mineral på platser där det riskerar att kraftigt skada närmiljö, såsom i alunskiffer.",
-      "Ratificera ILO:s konvention 169 för att garantera att svenska staten respekterar samers rättigheterna som urfolk.",
-      "Stoppa järnmalmsgruvan i Gállok.",
-      "Se till att samers åsikter hörs tidigt i processen, i syfte att nå en meningsfull dialog och komma överens, i enlighet med den nya konsultationsordningen.",
-      "Stimulera forsknings- och utvecklingsinsatser för förbättrad miljöhänsyn vid gruvdrift, hantering av utvinningsavfall och förbättrad utvinning av mineral ur utvinningsavfall",
-      "Ge mark- och miljödomstolarna, länsstyrelserna och Naturvårdsverket de resurser och den kompetens som krävs för att kunna fullgöra sina uppdrag inom miljöprövningen."
+      "Vi vill minska behovet av nya gruvor genom att ta vara på metaller och mineraler som redan finns i omlopp. Värdefulla råvaror finns i deponier, gruvavfall och redan befintliga produkter. Genom bättre insamling, återbruk och återvinning kan Sverige använda resurserna smartare och minska trycket på ytterligare exploatering av värdefull natur. Vi vill införa investeringsstöd för metall- och mineralåtervinning i stor skala och ställa krav på en ökad andel återvunnen råvara i nyproduktion och offentlig upphandling. På det sättet driver vi fram en mer cirkulär industri och minskar behovet av nya gruvor.",
+      "Vi vill säkerställa att gruvor prövas med höga krav på miljöskydd, mänskliga rättigheter, påverkan på vatten och samers rättigheter som urfolk. Nya gruvor kan behövas, men de ska inte öppnas på bekostnad av värdefull natur och lokalsamhällen. Prövningar ska bygga på tillförlitliga processer, meningsfulla samråd och strikt miljöprövning. Vi måste se till att mark- och miljödomstolarna, länsstyrelserna och Naturvårdsverket får de resurser som krävs för att kunna fullgöra sina uppdrag inom miljöprövningen.",
+      "Uranbrytning är en miljöfarlig verksamhet som medför stora risker för ekosystem och människors hälsa. Detsamma gäller alunskiffer, en bergart med avancerad sammansättning som riskerar att förorena dricksvatten och jordbruksområden med tungmetaller. Därför måste all uranbrytning och brytning i alunskiffer förbjudas.",
+      "Vi vill se till att gruvbolag betalar för den påverkan på miljö och natur som uppstår av gruvverksamheten. Miljöpartiet vill också införa en gruvskatt så att lokalsamhällen får ta del av de ekonomiska värden som skapas.",
+      "Vi vill höja kraven på produktionen av de metaller och mineraler som Sverige importerar. Klimatomställningen får inte bygga på råvaror som tagits fram genom dåliga arbetsvillkor, begränsad miljöhänsyn eller kränkningar av mänskliga rättigheter. Sverige ska driva på för högre sociala och miljömässiga krav på gruvverksamheter i de länder vi handlar med."
     ],
     "title": "Gruvor och mineraler",
     "url": "https://www.mp.se/politik/gruvor-och-mineraler/",
-    "updateDate": "2024-06-02T17:16:18.365Z",
+    "updateDate": "2026-08-01T14:47:14.780Z",
     "party": "MP",
     "subject": "miljo-och-klimat"
   },
   "https://www.mp.se/politik/hav-vatten-och-fiske/": {
     "opinions": [
-      "Införa en ny övergripande havslag för EU som styr mot ett friskt, levande och motståndskraftigt hav.",
-      "Inrätta fler, större och starkare skyddade områden i havet och i våra sjöar och vattendragstoppa överfisket och skärp EU:s gemensamma fiskeripolitik.",
-      "Förbjuda industrifiske i Östersjön och stoppa bottentrålning.",
-      "Stoppa övergödningen, fasa ut användningen av miljögifter, stoppa spridningen av mikroplast och plastskräp till våra hav, sjöar och vattendrag.",
-      "Stoppa gruvdrift och okontrollerad exploatering av våra havsbottnar.",
-      "Skärp skyddet av våra livsviktiga dricksvattentäkter.",
-      "Stödja fiskeförvaltning i utvecklingsländer.",
-      "Försvara allemansrätten,  bevara strandskyddet och återskapa förstörda miljöer i kustzoner.",
-      "Stärka skyddet av våra dricksvattentäkter och se till att det finns fungerande reservvattentäkter."
+      "Miljöpartiet vill införa en havsmiljölag som ska säkra ett brett arbete för att rädda havens ekosystem. Havsmiljölagen ska göra tydligt att målet om långsiktig återhämtning för haven måste sättas främst, och att ekosystemens gränser måste respekteras.",
+      "Miljöpartiet vill stoppa det storskaliga industrifisket och främja det kustnära, småskaliga fisket för humankonsumtion. Sverige ska använda alla tänkbara verktyg inom den nationella lagstiftningen för att främja skonsamt fiske och stoppa industriell trålning, exempelvis genom att ställa miljö- och beredskapskrav vid fördelningen av fiskekvoter. Bottentrålning, samt fiske och handel med akut hotade arter, däribland ål, ska förbjudas.",
+      "Sverige ska arbeta aktivt för att EU tar fram en långsiktig och lagligt bindande återhämtningsplan för Östersjön och Västerhavet, inklusive en ekosystembaserad, vetenskaplig fiskerådgivning. Det behövs för att bygga upp våra fiskbestånd till långsiktigt stabila nivåer.",
+      "Arbetet för renare vatten behöver stärkas hela vägen från källa till hav, och föroreningar och näringsläckage behöver stoppas redan vid källan. Kommuner ska få stöd för att kunna satsa på modern rening av avlopps- och dricksvatten. Industriers miljötillstånd ska uppdateras så att de stämmer överens med dagens miljölagstiftning. Dricksvattentäkter som Vättern måste få starkare skydd och det behövs mer satsningar på att identifiera förorenade områden och kartlägga spridningsvägar i miljön. Det behövs en kraftsamling i arbetet mot PFAS-föroreningar, i form av en finansierad nationell handlingsplan mot föroreningar i både mark och dricksvattentäkter.",
+      "Minst 30 procent av marina områden behöver skyddas för att Sverige ska leva upp till internationella löften och värna havens ekosystem. Miljöpartiet vill se fler fiskefria områden och mer omfattande skydd för arter. Kustområden, sjöar och vattendrag ska restaureras, och arbetet med att miljöanpassa vattenkraften komma igång och hålla en hög ambitionsnivå för att lax, ål och andra vandrande arter ska kunna överleva."
     ],
-    "title": "Hav, vatten och fiske",
+    "title": "Hav och vatten",
     "url": "https://www.mp.se/politik/hav-vatten-och-fiske/",
-    "updateDate": "2024-06-02T17:16:20.715Z",
+    "updateDate": "2026-08-01T14:47:14.541Z",
     "party": "MP",
     "subject": "jordbruk-jakt-och-fiske"
   },
   "https://www.mp.se/politik/hbtq/": {
     "opinions": [
-      "Ta krafttag mot diskriminering av hbtqi-personer.",
-      "Att omvändelseförsök ska kriminaliseras i Sverige.",
-      "Att den familjepolitiska lagstiftningen ska vara könsneutral och barn ska kunna ha fler vårdnadshavare än två personer.",
-      "Stärka asylrätten för hbtqi-personer.",
-      "Stärka transpersoners och intersexpersoners rättigheter.",
-      "Ändra könstillhörighetslagen så att du ska kunna ändra juridiskt könbaserat på självbestämmande och utan könsbekräftande vård.",
-      "Införa ett tredje juridiskt kön.",
-      "Förbättra hbtqi-kompetensen inom hälso- och sjukvården, skola, förskola och äldreomsorg."
+      "Transpersoners rättigheter ska stärkas för att minska diskrimineringen och garantera ett öppet demokratiskt samhälle där alla är lika mycket värda. Könstillhörighetslagen ska skyddas och utvecklas så att juridiskt kön ska kunna ändras genom självbestämmande utan kontakt med vården. Ett tredje juridiskt kön ska införas, diskrimineringsskyddet för transpersoner ska införas i grundlagen och ett förbud mot icke-medicinskt nödvändiga ingrepp på barn med intersexvariation ska utredas.",
+      "När regnbågsflaggor och sagostunder med dragqueens ifrågasätts samtidigt som hat, hot och våld mot hbtqi-personer ökar nationellt och globalt, då måste Sverige vara en tydlig röst för hbtqi-personers mänskliga rättigheter i världen. Hbtqi-rättigheter ska lyftas lokalt, nationellt och i internationella sammanhang. Ett starkt bistånd ska återupprättas och svensk närvaro i strategiskt viktiga länder ska värnas. Asylprövningar för hbtqi-personer ska vara rättssäkra, och ingen ska utvisas till förföljelse, tortyr eller död.",
+      "Hbtqi-personers hälsa och trygghet är sämre än övriga befolkningens och behöver därför stärkas genom bättre stöd, skydd och bemötande i hela välfärden. Personal i vård, omsorg, skola och socialtjänst ska ha grundläggande hbtqi-kompetens. Köerna till könsbekräftande vård ska kortas, hbtqi-personer ska synliggöras i suicidarbetet och mötesplatser för unga och äldre ska stärkas. Omvändelseförsök ska förbjudas i en egen lag och arbetet mot hatbrott, hedersförtryck och våld ska ha ett tydligt hbtqi-perspektiv.",
+      "Familjepolitiken ska utformas så att alla barn får samma trygghet, oavsett hur familjen ser ut. Föräldrabalken ska göras könsneutral och fungera bättre för regnbågsfamiljer. Barn ska kunna ha fler än två vårdnadshavare, fler familjekonstellationer ska få tillgång till fertilitetsbehandlingar till lägre kostnad och regnbågsfamiljer ska erkännas i hela EU."
     ],
-    "title": "Hbtqi",
+    "title": "HBTQI",
     "url": "https://www.mp.se/politik/hbtq/",
-    "updateDate": "2024-06-02T17:16:19.070Z",
+    "updateDate": "2026-08-01T14:47:14.608Z",
     "party": "MP",
     "subject": "jamstalldhet-och-diskriminering"
   },
   "https://www.mp.se/politik/hogre-utbildning-och-forskning/": {
     "opinions": [
-      "Skapa förutsättningar för utbildning av hög och likvärdig kvalitet över hela landet och göra det lättare för fler att plugga, oavsett bakgrund.",
-      "Att studenter ska få mer i plånboken och omfattas av a-kassan och sjukförsäkringen.",
-      "Införa fler lärarledda timmar och mer praktik.",
-      "Att lärare och forskare vid våra lärosäten ska få tryggare anställningsvillkor.",
-      "Främja det livslånga lärandet."
+      "Studenter behöver mer tid med lärare, handledare och forskare för att kunna fördjupa sina kunskaper och klara sina studier. Miljöpartiet vill rikta resurser till utbildningar där undervisningstiden är som lägst och se över systemet så att fler timmar går till undervisning och handledning.",
+      "Forskning och högre utbildning behöver stabil finansiering för att hålla hög kvalitet över tid. Starkare grundfinansiering gör att lärosäten kan fatta långsiktiga beslut, värna sin integritet och stå emot finansiering med villkor som riskerar att hota forskningens oberoende.",
+      "Produktivitetsavdraget bygger på att verksamheten hela tiden kan effektiviseras. I praktiken har det minskat resurserna till högskolor och universitet under lång tid. Miljöpartiet vill avskaffa avdraget så att utbildning och forskning får bättre ekonomiska förutsättningar.",
+      "Politiska och kortsiktiga intressen ska inte avgöra vad som får forskas om eller undervisas i. Akademisk frihet gäller både forskning, utbildning och lärosätenas organisering. Miljöpartiet vill stärka skyddet och införa akademisk frihet i grundlag.",
+      "Akademin behöver tydliga karriärvägar, bättre anställningstrygghet och goda villkor för dem som undervisar och forskar. Studenter behöver också bättre sociala villkor och fungerande trygghet vid exempelvis sjukdom. Vi vill höja studiestödet och se över reglerna för fribeloppet för att möjliggöra högre inkomster på sommaren för studenter. En trygg ekonomi är en förutsättning för att alla ska ha demokratisk tillgång till högre utbildning. Det stärker både kvaliteten och genomströmningen."
     ],
     "title": "Högre utbildning och forskning",
     "url": "https://www.mp.se/politik/hogre-utbildning-och-forskning/",
-    "updateDate": "2024-06-02T17:16:17.968Z",
+    "updateDate": "2026-08-01T14:47:14.384Z",
     "party": "MP",
     "subject": "utbildning"
   },
-  "https://www.mp.se/politik/integration/": {
-    "opinions": [
-      "Införa ett jämlikhetskliv – en satsning om 11 miljarder kronor för att öka jämlikheten i Sverige",
-      "tillsätta en nationell kommission för bekämpning av barnfattigdom",
-      "Skapa ett mer enat samhälle genom att bekämpa boendesegregationen",
-      "motverka skolsegregationen genom att skapa ett fritt och rättvist skolval för alla, och förbjuda vinstjakten i skolan.",
-      "Återinföra permanenta uppehållstillstånd som huvudregel och underlätta för familjer att återförenas",
-      "Göra det lättare att få jobb på meriter från utlandet och bättre matcha nyanländas kompetens mot bristyrken.",
-      "Individanpassa etableringsprogrammet så att det bättre anpassas efter nyanländas olika förutsättningar",
-      "Motverka diskriminering och trakasserier på arbetsmarknaden"
-    ],
-    "title": "Integration",
-    "url": "https://www.mp.se/politik/integration/",
-    "updateDate": "2023-09-17T17:52:37.452Z",
-    "party": "MP",
-    "subject": "migration-och-integration"
-  },
-  "https://www.mp.se/politik/jobb/": {
-    "opinions": [
-      "Att de som idag står långt från arbetsmarknaden ska få bättre stöd och insatser för att komma in i arbete.",
-      "Att människor ska få mer makt över sin tid, bland annat genom förkortad normalarbetstid.",
-      "Ha jämställda löner och karriärmöjligheter.",
-      "Lagstifta om könskvotering i bolagsstyrelser."
-    ],
-    "title": "Jobb",
-    "url": "https://www.mp.se/politik/jobb/",
-    "updateDate": "2024-06-02T17:16:18.295Z",
-    "party": "MP",
-    "subject": "jobb"
-  },
   "https://www.mp.se/politik/jamstalldhet/": {
     "opinions": [
-      "Få ett slut på mäns våld mot kvinnor.",
-      "Stoppa hedersrelaterat våld och förtryck.",
-      "Att kvinnor ska ha halva makten och hela lönen och pensionen.",
-      "Främja ett jämställt ansvar för hem och barn.",
-      "Fortsätta att föra en feministisk utrikespolitik för klimat, bistånd och fred."
+      "Kvinnodominerade yrken inom välfärden behöver högre löner och bättre arbetsvillkor. Vi vill stärka kommuner och regioner så att välfärden fungerar och arbetsmiljön förbättras. Skattesystemet ska bli mer jämställt. Det ska bli lättare för kvinnor att få tillgång till kapital för att starta och driva företag.",
+      "Vi vill höja bostadsbidraget och barnbidraget, införa fler öronmärkta dagar i föräldraförsäkringen och stärka insatser som gör att fler pappor tar ut mer föräldraledighet. Det ger barn bättre närvaro från båda föräldrarna och stärker kvinnors ställning på arbetsmarknaden. Barnomsorg ska finnas även på kvällar, nätter och helger för familjer som behöver det.",
+      "Kvinnor drabbas oftare av stressrelaterad ohälsa med sjukskrivningar som följd, bland annat på grund av arbetsmiljö och obetalt arbete i hemmet. Vi vill sänka arbetstiden med sikte på fyradagarsvecka, slopa karensdagen och stärka primärvårdens arbete med psykisk ohälsa. Vården ska ha bättre kunskap om endometrios, förlossningsskador, klimakteriebesvär och konsekvenserna av sexuella övergrepp.",
+      "Det ska vara förövarens frihet som begränsas, inte offrets. Vi vill stärka kvinnojourerna, säkra tillgången till skyddade boenden och ge den som lämnar våld en samlad väg in till stöd från samhället. Rättsväsendet, vården och socialtjänsten behöver arbeta mer förebyggande och uppsökande arbete för att förhindra våld, och fler förövare ska lagföras. Vård efter sexuella övergrepp ska vara kostnadsfri och likvärdig i hela landet.",
+      "Skola, socialtjänst och myndigheter behöver bättre kunskap och samverkan för att upptäcka hedersförtryck i tid. Barn och unga som riskerar att föras utomlands ska få ett starkare skydd, och unga som har blivit bortgifta ska lättare kunna komma hem. Omvändelseförsök ska kriminaliseras och ingen ska utvisas för att den har lämnat en relation som bygger på hedersförtryck."
     ],
     "title": "Jämställdhet",
     "url": "https://www.mp.se/politik/jamstalldhet/",
-    "updateDate": "2023-09-17T17:52:36.516Z",
+    "updateDate": "2026-08-01T14:47:14.323Z",
     "party": "MP",
     "subject": "jamstalldhet-och-diskriminering"
   },
   "https://www.mp.se/politik/kemikalier/": {
     "opinions": [
-      "Reformera och skärpa EU:s gemensamma kemikaliepolitik.",
-      "Omgående förbjuda alla PFAS-ämnen som grupp, och få till fler gruppvisa förbud på EU-nivåkraftfullt satsa på att byta ut farliga kemikalier mot bättre alternativ och fasa ut giftiga ämnen.",
-      "Omgående, speciellt i produkter för barn.",
-      "Höja skatten på skadliga bekämpningsmedel.",
-      "Förhindra spridning av mikroplaster.",
-      "Skapa en cirkulär samhällsekonomi där giftfrihet är en utgångspunkt."
+      "Farliga ämnen som PFAS måste förbjudas. PFAS är en grupp av ämnen som aldrig bryts ned, utan bara byggs upp mer och mer i naturen. Vi vill att Sverige ska driva på för att skärpa kemikalielagstiftningen inom EU och samtidigt använda nationella förbud när det går. Människor ska kunna lita på att kläder, leksaker, mat och dricksvatten inte innehåller ämnen som skadar människors hälsa eller naturen.",
+      "Gamla utsläpp och förorenade områden fortsätter att läcka ut gifter till jordbruksmarker, sjöar och ekosystem. De når oss människor via maten vi äter, vattnet vi dricker och luften vi andas. Spridningsvägarna för miljögifter behöver kartläggas bättre och saneringen av förorenad mark måste öka kraftigt.",
+      "Dricksvattentäkter ska skyddas mot föroreningar och exploatering. Det kräver starkare lagstadgat skydd. Kommunerna ska få stöd för att bedriva modern rening av både avloppsvatten och dricksvatten, så att gifter kan fångas upp innan de når människor och naturen.",
+      "Föroreningar och näringsläckage från jordbruk och industrier ska stoppas så tidigt som möjligt innan de sprider sig till vattendrag, sjöar och hav. Miljötillstånd behöver moderniseras så att industrier och andra verksamheter prövas enligt dagens miljökrav. Jordbrukssektorn ska få bättre stöd genom rådgivning, statliga investeringar och ekonomiska bidrag för att kunna använda ekologiska och kretsloppsbaserade metoder som minskar belastningen på vatten och natur.",
+      "Avfallshanteringen behöver kontrolleras bättre och lagstiftningen ska bli tydligare. Straffen för allvarliga miljöbrott måste skärpas. Det ska aldrig löna sig att dumpa avfall och förorena marker. Samhällskostnaderna för sådana miljöbrott är stora och påverkar många generationer framåt i tiden."
     ],
-    "title": "Kemikalier",
+    "title": "Gifter och kemikalier",
     "url": "https://www.mp.se/politik/kemikalier/",
-    "updateDate": "2024-06-02T17:16:18.797Z",
+    "updateDate": "2026-08-01T14:47:15.168Z",
     "party": "MP",
     "subject": "miljo-och-klimat"
   },
   "https://www.mp.se/politik/klimat/": {
     "opinions": [
-      "Driva på och stötta och  klimatomställningen i alla delar av samhället, i alla branscher och i hela landet.",
-      "Upprätta en investeringsbudget för satsningar som bidrar till klimatomställningen – ju längre vi väntar desto dyrare blir det.",
-      "Avveckla alla fossila subventioner som bromsar omställningen och göder Putins krigskassa.",
-      "Klimatsäkra EU:s långtidsbudget och uppdatera all EU-lagstiftning till att vara i linje med Parisavtalet.",
-      "Ställa om svensk industri till fossilfritt senast 2030 genom storskalig utbyggnad av förnybar elproduktion och grön baskraft.",
-      "Skärpa Sveriges klimatmål utifrån bästa tillgängliga forskning och en princip om rättvisa, där utsläpp från svensk konsumtion också inkluderas.",
-      "Ta fram en vetenskapligt baserad utsläppsbudget.",
-      "Satsa på kollektivtrafik och tåg i hela Sverige, fler nattåg till Europa, och införa en europeisk tågunion för enklare tågresor i Europa.",
-      "Bryta bilberoendet i storstäderna och ge alla möjlighet att resa klimatsmart enligt devisen rätt lösning på rätt plats. Satsa på klimatsmart, ekologisk och närodlad mat.",
-      "Att de med mest pengar, som också orsakar störst utsläpp, ska bidra mer till omställningen och välfärden genom en progressiv beskattning av kapital.",
-      "Att de med minst resurser ska få mer samhällsservice, lägre skatt och mer stöd i omställningen.",
-      "Höja priset på utsläppsrätter i EU, inkludera utsläpp från flyg och sjöfart i systemet och införa klimattullar på varor från länder utanför EU."
+      "Staten ska investera mer i sådant som minskar utsläppen och stärker samhället, till exempel förnybar energi, järnväg, återvinning, gröna industrier och klimatanpassning. Offentlig upphandling ska styras av skarpare klimatkrav, statliga bolag ska ha vetenskapligt baserade klimatmål och kommuner ska få bättre stöd i sitt klimatarbete.",
+      "Sverige behöver en klimatpolitik som är i linje med Parisavtalet och som omfattar alla utsläpp. Till skillnad från idag ska även utsläppen från konsumtion räknas in. Miljöpartiet vill införa en koldioxidbudget för att begränsa utsläppen och fördela en viss mängd koldioxidutsläpp per år. Sverige behöver anpassa all relevant lagstiftning för att mer effektivt styra mot klimatmålen. Vi behöver stoppa fossila subventioner så att förorenaren betalar.",
+      "Människor ska kunna resa klimatsmart både i städer och på landsbygden. Miljöpartiet vill införa rättvisa stöd för köp och leasing av nya och begagnade elbilar, ett Sverigekort för kollektivtrafik i hela landet under 500 kronor i månaden, satsningar på järnväg och cykelvägar. Miljöpartiet vill se till att hushåll med låga inkomster i lands- och glesbygd får en grön återbäring för ökade kostnader till följd av omställningen.",
+      "Industrin behöver tydliga och långsiktiga spelregler, fossilfri energi, kompetens och investeringsstöd för att kunna ställa om. Miljöpartiet vill stärka Klimatklivet och Industriklivet, införa ett Återvinningskliv för kritiska råvaror, stötta kommuner som växer genom gröna industrisatsningar och verka för starkare klimatkrav i EU:s handelspolitik. Fossilfritt Sverige ska få utökat uppdrag att samordna näringslivets omställning.",
+      "Sverige behöver bättre skydd mot skyfall, värmeböljor, torka, bränder och stigande havsnivåer. Miljöpartiet vill att staten ska ta större ansvar för klimatanpassning. Vi vill införa krav på klimatsäkrade nybyggnationer. Äldreboenden, förskolor och skolor ska förberedas för att klara långvariga värmeböljor. I städer behövs mer grönområden för att minska risken för översvämningar och reglera temperaturen under varma dagar.",
+      "Vi vill motverka vattenbrist och torka genom en nationell strategi. Vi vill skydda vattentäkter, anlägga våtmarker och plantera mer blandskog. Reningsverk och avloppssystem måste moderniseras för att förhindra att vattentäkter förorenas vid översvämningar. Även jordbruket måste klimatsäkras så att Sverige kan fortsätta att producera mat i ett förändrat klimat och en osäker omvärld. Därför vill vi främja investeringar i förebyggande åtgärder och satsa på rådgivning och klimatanpassning för lantbrukare och markägare."
     ],
     "title": "Klimat",
     "url": "https://www.mp.se/politik/klimat/",
-    "updateDate": "2024-08-13T06:27:13.675Z",
+    "updateDate": "2026-08-01T14:47:15.939Z",
     "party": "MP",
     "subject": "miljo-och-klimat"
   },
   "https://www.mp.se/politik/kollektivtrafik/": {
     "opinions": [
-      "Fördubbla kollektivtrafiken genom stadsmiljöavtal och minska behovet av bil.",
-      "Införa Sverigekortet som fungerar för all kollektivtrafik i hela Sverige.",
-      "Främja gång­, cykel­ och kollektivtrafik på bekostnad av biltrafiken.",
-      "Införa ett nationellt mål för minskad biltrafik i storstäder.",
-      "Säkra statlig finansiering för kollektivtrafiken i regionerna.",
-      "Fler miljözoner i städer.",
-      "Satsa på cykling i städer och på landsbygd."
+      "Sverigekortet ska vara en biljett som gäller i kommunal och regional kollektivtrafik i hela Sverige. Det ska kosta 499 kronor i månaden för vuxna och 249 kronor för ungdomar, studenter och pensionärer. En enskild biljett för hela landet gör det lättare att resa både inom och mellan kommuner och regioner.",
+      "Kommuner och regioner behöver bättre möjligheter att utöka busstrafik, spårtrafik och annan kollektivtrafik. Miljöpartiet vill återinföra stadsmiljöavtalen, så att staten kan stödja investeringar som gör kollektivtrafiken mer attraktiv och tillgänglig.",
+      "Tillgången till kollektivtrafik ser olika ut i landet. Miljöpartiet vill införa landsbygdsavtal genom vilka kommuner kan söka stöd för hållbara trafiklösningar, till exempel kollektivtrafik i glesbygd eller anropsstyrd kollektivtrafik där vanliga linjer inte räcker till.",
+      "Dagens regler gör inte alltid hållbara resor till det mest självklara valet. Miljöpartiet vill införa ett avståndsbaserat och färdmedelsneutralt reseavdrag. Vi vill också ta bort förmånsbeskattningen när arbetsgivare erbjuder anställda periodkort i kollektivtrafiken.",
+      "Kollektivtrafiken måste vara punktlig, trygg och smidig för att fungera i människors vardag. Därför behövs satsningar på kapacitet, underhåll och bättre samordning mellan olika trafikslag. Resenärer ska också ha tydliga rättigheter vid förseningar och inställda avgångar.",
+      "Sverigekortet är Miljöpartiets förslag om en gemensam biljett för kommunal och regional kollektivtrafik i hela landet. Målet är att göra det billigare och enklare att resa kollektivt, utan att behöva hantera många olika lokala biljettsystem. Sverigekortet ska kosta 499 kronor i månaden för vuxna och 249 kronor i månaden för ungdomar, studenter och pensionärer.",
+      "Priset påverkar människors möjlighet att resa hållbart. När kollektivtrafiken är billigare och enklare blir den ett mer realistiskt alternativ till bilen för fler. Det minskar både utsläpp och trängsel.",
+      "Miljöpartiet vill att landsbygdskommuner ska kunna få stöd för lösningar som passar lokala behov. Det kan handla om anropsstyrd kollektivtrafik, bättre regionala kopplingar och trafiklösningar som gör det lättare att ta sig till arbete, skola och service.",
+      "Fler ska kunna resa billigare, enklare och mer hållbart. Ett Sverigekort gör vardagsresor mer förutsägbara och bättre kollektivtrafik ger fler valmöjligheter. Rättvisare regler för arbetsresor gör att kollektivtrafiken inte missgynnas ekonomiskt."
     ],
     "title": "Kollektivtrafik",
     "url": "https://www.mp.se/politik/kollektivtrafik/",
-    "updateDate": "2024-06-02T17:16:19.953Z",
+    "updateDate": "2026-08-01T14:47:15.384Z",
     "party": "MP",
     "subject": "infrastruktur-och-trafik"
   },
   "https://www.mp.se/politik/kultur/": {
     "opinions": [
-      "att människor i alla åldrar ska kunna ta del av konst, kultur och litteratur i hela landet",
-      "stärka den ekonomiska och sociala tryggheten för konstnärer och kulturskapare",
-      "ge estetiska ämnen större plats i skolan",
-      "stärka journalistiken i hela landet",
-      "värna och vårda kulturarvet samtidigt som vi välkomnar nya kulturyttringar.",
-      "satsa på en bred återhämtningsplan för kulturlivet i hela landet, som omfattar både offentliga, fria, professionella och ideella aktörer.",
-      "stärka kulturskolan och inrätta en kulturskolelag.",
-      "satsa på barns kultur i skolan, med utbildad personal på alla skolbibliotek och estetiska ämnen i alla gymnasieprogram.",
-      "förbättra kulturskaparnas ekonomiska och sociala villkor och modernisera upphovsrätten så att kulturskaparnas rättigheter värnas.",
-      "stärka biblioteken i deras viktiga arbete för läsning och demokrati."
+      "Kulturen ska vara fri från politisk styrning av innehåll och uttryck. Miljöpartiet vill stärka principen om armlängds avstånd i bland annat bibliotekslagen och kultursamverkansmodellen. Kulturrådet ska få i uppdrag att stödja kommuner, regioner och kulturaktörer i hur principen används i praktiken.",
+      "Barns tillgång till kultur ska inte bero på familjens ekonomi eller bostadsort. Miljöpartiet vill ersätta Skapande skola med en statlig kulturgaranti, återinföra estetisk verksamhet på alla gymnasieprogram och stärka kultur och musik i förskollärarutbildningen. Kulturskolan ska få långsiktigt stöd genom en kulturskolelag och stärkt kulturskolebidrag.",
+      "Folkbildning, studieförbund, folkhögskolor och ideell kultur skapar mötesplatser, lärande och lokalt kulturliv. Miljöpartiet vill återställa och stärka stödet till studieförbunden, skapa fler folkhögskoleplatser, stärka kultursamverkansmodellen och utreda kulturljudzoner, där kommuner kan peka ut kulturkvarter där ljud från konserter och spelningar tillåts i högre grad än i vanliga bostadsområden. Kultur ska kunna upplevas och utövas i hela landet.",
+      "Ett starkt kulturliv kräver rimliga arbetsvillkor. Miljöpartiet vill stärka trygghetssystemen för konstnärer, göra stipendier tryggare i relation till sjukförsäkring och a-kassa samt säkra och utöka stödet till konstnärsallianserna. Upphovsrätten ska skyddas även när AI och digitala plattformar förändrar kultursektorn.",
+      "Svenska språket, minoritetsspråk, litteratur, museer, kulturarv och oberoende medier behöver långsiktiga villkor. Miljöpartiet vill stärka läsfrämjandet, bemannade skolbibliotek, minoritetsspråkens språkcentrum och digitaliseringen av kulturarvet. Public service och oberoende journalistik ska ha hållbar finansiering och starkt oberoende."
     ],
     "title": "Kultur",
     "url": "https://www.mp.se/politik/kultur/",
-    "updateDate": "2023-09-17T17:52:40.820Z",
+    "updateDate": "2026-08-01T14:47:14.738Z",
     "party": "MP",
     "subject": "kultur-media-och-idrott"
   },
   "https://www.mp.se/politik/karnkraft/": {
     "opinions": [
-      "Bygga ett förnybart energisystem på en stabil grund av grön baskraft.",
-      "Fasa ut all fossil energi och därefter kärnkraften allt eftersom att vi ökar vår produktion av förnybar energi och smartare energianvändning.",
-      "Satsa stort på att utöka vår förnyelsebara energiproduktion, framförallt den havsbaserade vindkraften.",
-      "Intensifiera arbetet med energieffektivisering."
+      "Grön baskraft kan stabilisera systemet och se till att el kan levereras dygnet runt, även när vinden inte blåser och solen inte skiner. Det innefattar satsningar på exempelvis storskalig energilagring, höjd effekt i befintlig vattenkraft och kraftvärme, gasturbiner drivna med förnybara bränslen, samt flexibilitet och smart styrning. Till skillnad från kärnkraft kan grön baskraft ge oss ett robust och hållbart energisystem till låga priser för hushåll och företag.",
+      "Ny kärnkraft innebär stora kostnader, långa byggtider och omfattande ekonomiska risker för skattebetalarna. Det bromsar också klimatomställningen. Dyra subventioner av kärnkraft som tar lång tid att bygga tränger ut investeringar i förnybart, vilket gör att mer koldioxid hinner släppas ut till atmosfären. Aktuella kärnkraftsprojekt i Europa har blivit kraftigt fördyrade och försenade. Att bygga ny kärnkraft innebär även stora risker kopplade till kärnkraftens radioaktiva avfall, uranutvinningen och det säkerhetspolitiska läget.",
+      "Miljöpartiets fokus är att fasa ut fossil energi och påskynda klimatomställningen. Därför vill vi inte se en politiskt beslutad snabbavveckling av befintliga reaktorer. En sådan avveckling skulle riskera att skapa höga kostnader och skadeståndskrav, utan att i sig lösa behovet av ny elproduktion."
     ],
     "title": "Kärnkraft",
     "url": "https://www.mp.se/politik/karnkraft/",
-    "updateDate": "2024-06-02T17:16:17.418Z",
+    "updateDate": "2026-08-01T14:47:14.991Z",
     "party": "MP",
     "subject": "energi"
   },
-  "https://www.mp.se/politik/lag-och-ordning/": {
-    "opinions": [
-      "Ta krafttag mot gängkriminaliteten.",
-      "Arbeta förebyggande med tidiga insatser.",
-      "Höja vissa straff.",
-      "Göra det lättare att beslagta kriminellas vinster.",
-      "Klara upp fler brott och öka stödet till vittnen.",
-      "Intensifiera arbetet mot mäns våld mot kvinnor.",
-      "Skydda barn från sexuella övergrepp.",
-      "Ta krafttag mot hedersrelaterat våld och förtryck.",
-      "Ge brottsoffer bättre stöd och kraftigt höja ersättningen.",
-      "Storsatsa på det förebyggande arbetet i socioekonomiskt eftersatta områden.",
-      "Fler och bättre betalda poliser för att bekämpa den organiserade brottsligheten och för att motverka parallellsamhällen.",
-      "Höja maxtiden för sluten ungdomsvård och förstärka vårdinsatser och utbildning under tiden den unge är frihetsberövad, samt införa en utslussningsverksamhet när straffet är avtjänat.",
-      "Lätta på sekretessen mellan områdespoliser, skola, socialtjänst och stärka samarbetet med civilsamhälle så att inga barn faller mellan stolarna i det förebyggande arbetet.",
-      "Stoppa finansieringen av de kriminella gängen genom att stärka myndighetssamverkan så att myndigheterna kan slå till mot den organiserade brottslighetens företag från flera håll."
-    ],
-    "title": "Lag och ordning",
-    "url": "https://www.mp.se/politik/lag-och-ordning/",
-    "updateDate": "2024-06-02T17:16:18.356Z",
-    "party": "MP",
-    "subject": "lag-och-ratt"
-  },
   "https://www.mp.se/politik/lands-och-glesbygd/": {
     "opinions": [
-      "Bygga ut snabbt bredband i hela landet.",
-      "Säkra tillgängliga kommunikationer i hela landet.",
-      "Utveckla elladdning för fordon samt främja biogas, hållbara drivmedel och nya hållbara transportlösningar i hela landet.",
-      "Främja lokal ekonomisk utveckling och skapa bättre villkor för små och medelstora företag.",
-      "Stärka lokalproducerade ekologiska livsmedel och mathantverk.",
-      "Bygga ut och rusta upp järnvägsnätet för snabba tåg i hela landet och skynda på bygget av nya stambanor för höghastighetståg."
+      "Staten ska ta ett större ansvar för en fungerande välfärd i hela landet. Vi vill öka den riktade statliga finansieringen, stärka resurserna till skolor och utveckla nära vård genom e-hälsa, ambulerande sjukvård och mindre vårdenheter på fler ställen. Det ska vara möjligt att få utbildning, omsorg och vård även där avstånden är stora.",
+      "Vi vill utveckla statliga servicekontor och införa landsbygdsavtal där kommuner, regioner och privata aktörer kan få statlig medfinansiering till utökad samhällsservice. Det kan handla om att starta post- och apoteksombud, grannskapskontor, erbjuda digital service och anropsstyrd kollektivtrafik. På så sätt blir vardagen enklare för fler och transportbehovet minskar.",
+      "Lokalsamhällen ska få större del av värden från energiproduktion och mineralutvinning genom återbäring från vind- och vattenkraft och gruvskatt. Miljöpartiet vill också förbättra digital infrastruktur, stärka Arbetsförmedlingens närvaro och göra det lättare för företag, lantbruk och föreningsdriven verksamhet att växa och anställa fler.",
+      "I landsbygder är bilen ofta nödvändig. Därför vill vi införa omfattande och rättvisa stöd för köp och leasing av nya och begagnade elbilar. Vi vill också stärka kollektivtrafiken genom landsbygdsavtal och genom att införa Sverigekortet, en biljett som gäller för regional och kommunal kollektivtrafik i hela landet till ett enhetligt och förmånligt pris.",
+      "Ett starkt civilsamhälle, lokala arrangörer och studieförbund är viktiga för levande landsbygder. Vi vill stärka kultursamverkansmodellen, öka den digitala tillgången till kultur och utveckla hållbar besöksnäring, naturturism och friluftsliv. Vi vill ge kommuner möjlighet att införa en turistavgift för underlätta för kommunala kostnader som uppstår av högt turisttryck. Allemansrätten och värdefull natur ska värnas så att landsbygder kan frodas utan att eploateras."
     ],
     "title": "Lands- och glesbygd",
     "url": "https://www.mp.se/politik/lands-och-glesbygd/",
-    "updateDate": "2024-06-02T17:16:19.784Z",
+    "updateDate": "2026-08-01T14:47:16.116Z",
     "party": "MP",
     "subject": "landsbygd"
   },
   "https://www.mp.se/politik/mat-och-jordbruk/": {
     "opinions": [
-      "Reformera EU:s jordbrukspolitik i grunden och verka för fler bönder i Europa, med mer stöd till exempelvis småskaligt, lokalt, fossilfritt och hållbart jordbruk, med bindande mål för andelen ekologisk produktion. EU:s pengar ska riktas mot de lantbrukare som bidrar till klimatmål och biologisk mångfald.",
-      "Gynna svenskt ekologiskt jordbruk så att hälften av jordbruksmarken brukas ekologiskt till år 2030.",
-      "Att användningen av bekämpningsmedel inom EU minskar kraftigt med hjälp av bindande mål och att bekämpningsmedel med stor miljöpåverkan förbjuds.",
-      "Att importerade livsmedel måste leva upp till samma krav som mat producerad inom EUgöra klimatsmart och ekologisk mat till standard i skola, vård och omsorg.",
-      "Kombinera stärkta djurskyddskrav och minskad antibiotikaanvändning med styrmedel för en minskad och mer medveten konsumtion av kött, och främja växtbaserade alternativstärka arbetet mot matsvinn i alla led – från jord till bord.",
-      "Skynda på omställningen till fossilfritt jordbruk, öka motståndskraften och fasa ut de fossila subventionerna.",
-      "Stärka det svenska jordbruket för ökad självförsörjning med baslivsmedel, och stödja övergången till ett ekologiskt och hållbart jordbruk med fossiloberoende arbetsmaskiner.",
-      "Ge mer stöd till lantbruket för omställning till ekologisk odling, återskapande av naturbetesmarker och andra miljöinsatser."
+      "Hela livsmedelskedjan behöver bli starkare, från jord till bord. Sverige behöver producera mer hållbara livsmedel, djurfoder och råvaror närmare de slutgiltiga konsumenterna. Små och medelstora lantbruk ska få bättre villkor, jordbruksmark ska skyddas mot exploatering och ökad produktion av frukt, grönsaker, baljväxter och djurfoder ska främjas.",
+      "Mer än var tredje lantbrukare är över 65 år. Fler unga behöver kunna ta över eller starta lantbruk för att Sveriges livsmedelsförsörjning ska bli långsiktigt uthållig. Miljöpartiet vill införa bättre ekonomiska villkor, startlån, rådgivning och utbildning för nya lantbrukare. Vi vill också minska regelkrångel genom samlad myndighetsservice och införa avbytartjänster så att lantbrukare kan vara lediga, sjuka eller hemma med barn.",
+      "Sverige behöver en strategi för fossiloberoende matproduktion. Sveriges lantbruk ska få bättre stöd för att kunna minska beroendet av fossil diesel och fossilproducerat konstgödsel. Miljöpartiet vill införa ett grönt jordbruksavdrag, ta bort skatterabatten på fossil diesel och införa en biopremie till de som går över till förnybara bränslen. Vi vill också stimulera till ökad produktion av biogas, hållbara biodrivmedel, solkraft och annan förnybar energi på gårdar. Det behövs både riktade satsningar och investeringsstöd.",
+      "Odlingslandskapet är en viktig livsmiljö för många av Sveriges djur- och växtarter, men trenden är idag att antalet arter minskar. Miljöpartiet vill fördubbla arealen naturbetesmarker, öka stöden för restaurering och hävd samt höja ersättningarna för ekologiska jordbruksmetoder utan naturfrämmande bekämpningsmedel och konstgödsel. Även konventionella jordbruk ska få bättre stöd för åtgärder som gynnar miljö och natur. Genom dessa åtgärder kan vi se till att den biologiska mångfalden ökar igen.",
+      "Alla lantbruksdjur ska kunna leva på ett sätt som bättre motsvarar deras naturliga beteenden. Miljöpartiet vill bevara och utveckla beteskravet, stimulera till längre betestid och införa djurvälfärdsersättningar för fler lantbruksdjur. Djurskyddslagens krav på naturligt beteende måste få större genomslag i praktiken. Djurägare som redan gör mer än vad lagen kräver ska få ersättning för det."
     ],
-    "title": "Mat och jordbruk",
+    "title": "Jordbruk och matproduktion",
     "url": "https://www.mp.se/politik/mat-och-jordbruk/",
-    "updateDate": "2024-06-02T17:16:20.023Z",
+    "updateDate": "2026-08-01T14:47:15.434Z",
     "party": "MP",
     "subject": "jordbruk-jakt-och-fiske"
   },
   "https://www.mp.se/politik/migration-och-lika-ratt/": {
     "opinions": [
-      "Stå upp för fred, rättvisa och klimatet så att färre tvingas fly.",
-      "Ge familjer full rätt och möjlighet att återförenas och återinför permanenta uppehållstillstånd, särskilt för barn.",
-      "Särskilt värna de som lever i stor utsatthet.",
-      "Försvara asylrätten och kvotflyktingsystemet.",
-      "Att fler familjer ska kunna återförenas i Sverige. Inga asylsökande barn ska kunna skiljas från sina föräldrar.",
-      "Stärka rättssäkerheten i asylprocessen och stödet för hbtqi­-flyktingar och andra sårbara grupper.",
-      "Höja dagersättningen för alla asylsökande.",
-      "Förlänga etableringsprogrammet för nyanlända till minst fyra år för att skapa bättre förutsättningar för etablering, så att fler kommer i arbete snabbare.",
-      "Korta handläggningstiderna för arbetstillstånd och asylbeslut så att det går fortare att komma in i samhället.",
-      "Avskaffa försörjningskravet.",
-      "Ha en öppen arbetskraftsinvandring och stärka tryggheten för arbetstagare.",
-      "Inget EU-medlemsland ska kunna köpa sig fritt från ansvar i den gemensamma migrationspolitiken.",
-      "Stärka asylrätten i EU och bekämpa smuggling och farliga vägar till EU genom att säkra fler och lagliga vägar.",
-      "Öka kapaciteten att utföra sök- och räddningsinsatser på Medelhavet. Ingen ska med våld stoppas från möjligheten att söka asyl."
+      "Asylrätten innebär att varje människa har rätt att få sina skyddsskäl prövade individuellt. Sverige ska ta internationellt ansvar och erbjuda trygga och lagliga vägar till skydd. Vi ska ta emot minst 5000 kvotflyktingar per år som FN:s flyktingorgan UNHCR bedömer är särskilt utsatta.",
+      "Den som söker skydd ska mötas av respekt och kunskap. Migrationsverket och rättsliga biträden behöver bättre förutsättningar att rättssäkert hantera asylärenden, särskilt ärenden som rör barn, hbtqi-personer, konvertiter och traumatiserade människor. Handläggningstiderna ska kortas utan att rättssäkerheten försämras.",
+      "Det är helt orimligt att unga som vuxit upp i Sverige, går i skolan, talar svenska och har sina liv här ska utvisas den dag de fyller 18 eller 21 år. Miljöpartiet vill återinföra “särskilt ömmande omständigheter” som grund för uppehållstillstånd och att unga ska beviljas uppehållstillstånd som anhörig till sina föräldrar upp till 21 års ålder. Människor som etablerat sig i Sverige med familj, jobb eller utbildning ska kunna stanna.",
+      "Den som arbetar, försörjer sig och är etablerad i Sverige ska kunna söka arbetstillstånd utan att först tvingas flytta härifrån. Lön i nivå med kollektivavtal och praxis inom branschen ska räcka för att stanna. Miljöpartiet vill stoppa fusk och missbruk på arbetsmarknaden genom starkare kontroll. Personer som gör rätt för sig ska skyddas.",
+      "Människor behöver trygghet för att kunna lära sig svenska, arbeta, studera och bygga en framtid i Sverige. Rätten till familjeåterförening ska stärkas så att fler kan leva tillsammans med sina närmaste i Sverige. Permanenta uppehållstillstånd ska vara huvudregel, och permanenta uppehållstillstånd ska aldrig kunna återkallas i efterhand."
     ],
     "title": "Migration",
     "url": "https://www.mp.se/politik/migration-och-lika-ratt/",
-    "updateDate": "2025-08-10T17:54:14.021Z",
+    "updateDate": "2026-08-01T14:47:15.652Z",
     "party": "MP",
     "subject": "migration-och-integration"
   },
   "https://www.mp.se/politik/miljo/": {
     "opinions": [
-      "Bygga ett resurssnålt och cirkulärt samhälle där det är lätt att leva miljövänligt.",
-      "Satsa på levande skogar med varsamt skogsbruk och skydda mer natur, utrotningshotade djur och växter.",
-      "Satsa på klimatsmart och ekologisk mat, en giftfri vardag och hållbar konsumtion.",
-      "Kämpa för friska hav och rent vatten istället för att pressa ekosystemen till bristningsgränsen."
+      "Sverige behöver ta ett helhetsgrepp för att stoppa förlusten av arter och ekosystem. Vi föreslår ett naturpolitiskt ramverk, likt det klimatpolitiska ramverket, som ska innehålla mål beslutade av riksdagen, en naturlag och en naturpolitisk handlingsplan, årlig uppföljning och ett naturpolitiskt råd. På så sätt kan  naturen få en central roll i alla politiska beslut, regeringen kan tydligt ställas till svars och naturpolitik förs in i alla politikområden.",
+      "De mest skyddsvärda land- och vattenområdena måste få ett formellt och långsiktigt skydd i linje med Sveriges åtaganden inom EU och FN. Det krävs för att alla våra hotade arter och naturtyper ska överleva långsiktigt.",
+      "Utdikade våtmarker, skadade vattendrag och kustmiljöer, igenvuxna ängar och betesmarker behöver restaureras så att naturen kan återhämta sig. Sverige ska ha en restaureringsplan med tillräcklig finansiering som möjliggör ett effektivt arbete med att återskapa natur. Arbetet behöver ske med utgångspunkt i vetenskap och bästa tillgängliga kunskap. Syftet med restaurering är att fler arter och ekosystem ska kunna överleva och bli livskraftiga",
+      "Allemansrätten som grund för människors fria naturvistelse måste värnas. Den förutsätter att tillgången till värdefulla naturmiljöer säkras långsiktigt. Det behövs fortsatta satsningar på skydd och skötsel av värdefull natur, på friluftslivet, och på den vardagsnära naturen, i och omkring tätorter.",
+      "Våra stränder är en fantastisk resurs för friluftslivet. Strandskyddet ger människor tillgång till stränder oavsett ekonomiska förutsättningar och skyddar viktiga livsmiljöer för djur och växter. Stränder fungerar som barnkammare och födosöksområden för arter på land och i vatten. Det generella strandskyddet måste bevaras och stärkas.",
+      "Skadliga ämnen som PFAS hotar både människors hälsa och naturen och måste förbjudas. PFAS är en grupp av ämnen som aldrig bryts ned, utan bara byggs upp mer och mer i naturen. Miljöpartiet vill införa fler förbud mot farliga kemikalier, driva på för skärpt kemikalielagstiftning på EU-nivå, sanera förorenad mark från miljögifter och stärka skyddet av dricksvattentäkter. Kommuner ska få bättre stöd för att rena vatten från gifter.",
+      "Vilt- och rovdjursförvaltningen ska utgå från ekosystemen och bygga på samexistens mellan människor, boskap och rovdjur. Licensjakt ska inte tillåtas på arter som inte är långsiktigt livskraftiga. Tamdjursägare ska få bättre stöd till förebyggande åtgärder, som stängsling och full ersättning för skadan som uppkommer av rovdjursangrepp. Det behövs satsningar och utveckling av smarta system för att skydda lantbrukets djur.",
+      "Människor mår bra av natur- och grönområden. För att främja livskvaliteten för människor och förbättra förutsättningarna för biologisk mångfald i städerna behöver naturen få en större plats i urbana miljöer. Skogsdungar och parker fungerar också som skydd mot översvämningar och värmeböljor. Dessutom blir luften renare och boendemiljöerna vackrare."
     ],
-    "title": "Miljö",
+    "title": "Natur",
     "url": "https://www.mp.se/politik/miljo/",
-    "updateDate": "2024-06-02T17:16:19.989Z",
+    "updateDate": "2026-08-01T14:47:15.742Z",
     "party": "MP",
     "subject": "miljo-och-klimat"
   },
-  "https://www.mp.se/politik/pensioner/": {
-    "opinions": [
-      "Höja pensionerna.",
-      "Göra pensionerna mer jämställda.",
-      "Investera pensionspengarna så att de bidrar till en hållbar utveckling.",
-      "Att människor som flytt till Sverige ska få en skälig pension.",
-      "Göra det billigare att åka buss och tåg, särskilt för unga och pensionärer.",
-      "Höja garantipensionen och reformera pensionssystemet med syfte att höja pensionerna, mest för de med de lägsta pensionerna.",
-      "Höja bostadstillägget för pensionärer."
-    ],
-    "title": "Pensioner",
-    "url": "https://www.mp.se/politik/pensioner/",
-    "updateDate": "2024-06-02T17:16:18.892Z",
-    "party": "MP",
-    "subject": "aldrepolitik"
-  },
   "https://www.mp.se/politik/ratt-att-ma-bra/": {
     "opinions": [
-      "Ha en köfri barn- och ungdomspsykiatri (BUP) med mer pengar och skärpt vårdgaranti.",
-      "Skapa ett samhälle där det är lättare att må bra.",
-      "Satsa på primärvården och öka tillgången till vård för psykisk ohälsa.",
-      "Korta köerna till behandling i hela landet.",
-      "Förstärka elevhälsan och satsa på fler skolsköterskor, specialpedagoger, psykologer och kuratorer i skolan."
+      "Vårdcentralerna ska kunna möta psykisk ohälsa med fler psykologer och kortare vägar in till stöd. Det förebyggande och hälsofrämjande arbetet ska byggas ut så att människor får rätt hjälp innan problemen växer.",
+      "Den som behöver psykiatrisk vård ska inte behöva vänta orimligt länge. Miljöpartiet vill stärka vårdkedjan, förverkliga ett köfritt BUP och göra vägen in i vården tydligare för barn, unga och vuxna.",
+      "Elevhälsan ska ha tillgängliga skolsköterskor, psykologer, kuratorer och specialpedagoger. Ungdomsmottagningar ska bli mer tillgängliga och nå fler grupper, inklusive killar och unga som i dag inte söker stöd. Det ska inte krävas diagnos för att få anpassningar i skolan. Psykisk hälsa ska också stärkas genom tillgängliga fritidsaktiviteter, sociala mötesplatser, kultur och natur för familjers olika ekonomiska förutsättningar.",
+      "Unga med psykisk ohälsa, NPF eller andra behov riskerar att förlora sitt stöd när de fyller 18 år. Vården behöver ta ett tydligare ansvar och ha rutiner för att fasa över patienter från BUP till vuxenvården. Unga vuxna som varken arbetar eller studerar ska kunna få särskilt riktat stöd.",
+      "Suicidprevention behöver vara långsiktig och ha en ansats att involvera hela samhället såsom skolan, vården, arbetsgivare, socialtjänst och civilsamhället. Suicidförsök ska utredas för att upptäcka var samhället brustit och förhindra fortsatt dåligt mående. Personal i primärvård, elevhälsa och idrottsrörelsen ska utbildas för att upptäcka ätstörningar tidigt. Miljöpartiet vill även att traumabehandling ska finnas för personer som utsatts för sexuellt våld eller andra trauman."
     ],
     "title": "Psykisk hälsa",
     "url": "https://www.mp.se/politik/ratt-att-ma-bra/",
-    "updateDate": "2024-06-02T17:16:18.625Z",
+    "updateDate": "2026-08-01T14:47:15.134Z",
     "party": "MP",
     "subject": "vard-och-omsorg"
   },
-  "https://www.mp.se/politik/sjukpenning/": {
-    "opinions": [
-      "Att människor måste kunna känna sig säkra på att få stöd från systemet, och Försäkringskassans roll behöver förändras.",
-      "Omvandla de hårda tidsgränserna som i dag finns i sjukförsäkringen till att istället bli avstämningspunkter för rätt till stöd.",
-      "Skapa större flexibilitet och individanpassning.",
-      "Göra det möjligt att bli sjukskriven och kunna återgå till arbete i den utsträckning som behövs, inte som i dag bara i fasta steg om 25, 50, 75 procent.",
-      "Att en person som är deltidssjukskriven måste kunna förlägga den på det sätt som passar bäst över veckan, för att underlätta rehabilitering och återgång i arbetet.",
-      "Att det ska bli lättare att kunna pröva på att studera för den som varit sjukskriven länge utan risken att förlora sin sjukpenning.",
-      "Förbättra regelverket för studenter som blir sjuka. Vi vill också stärka tryggheten för andra grupper som lätt hamnar utanför trygghetssystemen, till exempel kulturarbetare, egenföretagare och människor som arbetar med otrygga arbetsvillkor, till exempel inom den växande gig-ekonomin.",
-      "Att personer som har aktivitetsersättning eller sjukersättning måste enklare kunna pröva att arbeta utan att riskera förlora sin ersättning."
-    ],
-    "title": "Sjukpenning",
-    "url": "https://www.mp.se/politik/sjukpenning/",
-    "updateDate": "2024-06-03T19:18:31.849Z",
-    "party": "MP",
-    "subject": "trygghetssystem-och-valfard"
-  },
   "https://www.mp.se/politik/halso-och-sjukvard/": {
     "opinions": [
-      "Bryta trenden med en ökande psykisk ohälsa.",
-      "Korta vårdköerna och satsa på bättre kvalitet och tillgänglighet i vården.",
-      "Sätta hälsan i centrum och minska klyftorna i folkhälsan.",
-      "Utbilda fler läkare och specialistsjuksköterskor och skapa bättre arbetsvillkor för de som jobbar i vården.",
-      "Att den återhämtningsbonus som Miljöpartiet drivit fram ska återinrättas och fortsatt bidra till att pröva och utveckla nya och mer hållbara arbetssätt och modeller i vården utifrån personalens egna önskemål.",
-      "Att vård och omsorg inte ska bedrivas i vinstsyfte.",
-      "Höja lönerna och säkra en god arbetsmiljö i vården.",
-      "Förbättra förlossningsvården och satsa på barnmorskorna.",
-      "Förbättra vård och omsorg för äldre och stärka resurserna till hemsjukvården.",
-      "Att tandvården ska jämställas med övrig hälso­- och sjukvård, och ingå i samma högkostnadsskydd.",
-      "Att hjälpmedel ska ingå i högkostnadsskyddet.",
-      "Satsa på primärvården och öka tillgången till vård för psykisk ohälsa.",
-      "Korta köerna till behandling i hela landet.",
-      "Att preventivmedel ska vara avgiftsfritt upp till 26 år.",
-      "Förbättra stödet för personer med funktionsnedsättning och sällsynta diagnoser oavsett var du bor i landet. Den som har rätt till stöd ska inte behöva planera sitt liv flera veckor i förväg för att ha ett fullvärdigt liv.",
-      "Införa alternativa välfärdsmått i EU och verka för ett globalt avtal för minskad antibiotikaanvändning."
+      "Personalbristen är en av de viktigaste orsakerna till vårdköerna och stängda vårdplatser. Miljöpartiet vill genomföra ett arbetsmiljölyft, stärka bemanningen och ge personal och chefer större möjlighet att utveckla verksamheten. Kortare arbetstid, slopad karens, kompetensutveckling och fler betalda specialistutbildningar ska bidra till ett mer hållbart arbetsliv.",
+      "Vården behöver långsiktiga medel, inte kortsiktiga projektbidrag och detaljstyrning. Statsbidragen till kommuner och regioner ska höjas så att vården kan planera långsiktigt, anställa fler och utveckla verksamheten. Primärvården ska stärkas som navet i vården, så att fler får hjälp tidigt och kan ha en fast vårdkontakt.",
+      "Psykisk ohälsa ska mötas tidigare, särskilt hos barn och unga. Vårdcentraler, elevhälsa, ungdomsmottagningar ska stärkas så att människor tidigt får stöd, vet vart de ska vända sig och slipper falla mellan stolarna. Miljöpartiet vill korta köerna till BUP och psykiatrin och att stöd ska ges från dag ett, utan krav på diagnos. Suicidförsök ska alltid utredas. Stödet vid ätstörningar, trauma och självskadebeteende ska utvecklas.",
+      "Hälsa påverkas av ekonomi, utbildning, bostadsort, kön, funktionsnedsättning och bakgrund. Därför behöver vården arbeta mer systematiskt mot ojämlikhet, diskriminering och rasism. Miljöpartiet vill stärka folkhälsoarbetet, förebygga ofrivillig ensamhet och utveckla en mer jämställd vård, bland annat för kvinnosjukdomar, förlossningsvård och ge gratis vård efter sexuellt våld. Högkostnadsskyddet för läkemedel är avgörande för att personer med olika sjukdomstillstånd ska ha råd med sin medicin. Läkemedel kan förebygga försämrade sjukdomstillstånd och minska behovet av kostsam vård, därför måste det stärkas.",
+      "Sjukvård och medicinsk forskning har länge utgått från män som norm. Det har bidragit till att kvinnors symtom ibland tas på mindre allvar, att diagnoser ställs senare och att behandlingar inte alltid är anpassade efter kvinnors kroppar och livsvillkor. Kvinnor ska få vård som bygger på kunskap, jämlik behandling och trygghet genom hela livet. Arbetsvillkoren inom vården som är ett kvinnodominerat yrke ska förbättras. Miljöpartiet vill stärka kvinnors hälsa, förlossningsvården och vården efter sexuellt våld.",
+      "Skattepengar till vård och omsorg ska användas i verksamheten och eventuella överskott återinvesteras i verksamheten. Offentligt finansierad vård ska inte kombineras med privata sjukvårdsförsäkringar som ger förtur. Tandvården ska vara gratis upp till 23 år, högkostnadsskyddet ska utvecklas inom tandvården och de med störst behov ska prioriteras."
     ],
-    "title": "Sjukvård och hälsa",
+    "title": "Sjukvård",
     "url": "https://www.mp.se/politik/halso-och-sjukvard/",
-    "updateDate": "2024-06-03T19:18:30.486Z",
+    "updateDate": "2026-08-01T14:47:15.014Z",
     "party": "MP",
     "subject": "vard-och-omsorg"
   },
   "https://www.mp.se/politik/skog-och-biologisk-mangfald/": {
     "opinions": [
-      "Skydda 30 procent av land, hav och sjöar till 2030.",
-      "Återställ 30 procent av alla förstörda ekosystem över hela EU till 2030, och inför tuffa sanktioner mot de som inte lever upp till kraven.",
-      "Stoppa avverkningarna av Sveriges sista naturskogar.",
-      "Bruka jorden med hänsyn – styr mot en övergång till naturnära och hyggesfritt skogsbruk.",
-      "Statens markinnehav ska vara ett föredöme inom skogsbruket.",
-      "Rädda pollinerande insekter och stärk den biologiska mångfalden.",
-      "Återställa våtmarker som torrlagts i snabbare takt.",
-      "Att storskalig miljöförstörelse, så kallat Ekocid, ska erkännas som internationellt brott."
+      "Urskogar, naturskogar och andra skogar med höga naturvärden är avgörande för hotade arters överlevnad och för den biologiska mångfalden i hela skogslandskapet. Miljöpartiet vill skydda våra resterande ur- och naturskogar och andra skogar med höga naturvärden, som nyckelbiotoper.",
+      "Skogar ska kunna brukas, men det behöver ske på ett sätt som tar bättre hänsyn till djur- och växtlivet, och behovet av klimatanpassning. Hyggesfritt och mer varierat skogsbruk kan medföra mindre påverkan på biologisk mångfald, skapa bättre förutsättningar för motståndskraft mot klimatförändringarna och kan ge skogsägare fler affärsmöjligheter än ett ensidigt och storskaligt kalhyggesbruk.",
+      "Markägare behöver bättre stöd för att välja naturnära och långsiktigt hållbara metoder för att bruka sin skog. Miljöpartiet vill använda styrmedel som omställningsstöd, klimatavtal och bonus malus, samt satsa på oberoende rådgivning som alternativ till skogsindustrins rådgivning.",
+      "Skogsägare som har värdefull skog eller hotade arter på sin mark ska kunna få ersättning för sitt arbete med att bidra till att skydda naturen. Miljöpartiet vill öka budgeten för naturskydd och skapa bättre ersättningsmodeller.",
+      "Statliga aktörer som äger och förvaltar skog ska ta ett större ansvar i omställningen av Sveriges skogsförvaltning, och använda varierade, ekosystembaserade, naturnära metoder. Det skulle göra övergången från storskaliga kalhyggesmetoder mer effektiv, och generera större praktisk kunskap för hela skogssektorn."
     ],
-    "title": "Skog och biologisk mångfald",
+    "title": "Skog",
     "url": "https://www.mp.se/politik/skog-och-biologisk-mangfald/",
-    "updateDate": "2025-05-25T06:30:38.083Z",
+    "updateDate": "2026-08-01T14:47:14.504Z",
     "party": "MP",
     "subject": "miljo-och-klimat"
   },
   "https://www.mp.se/politik/skola/": {
     "opinions": [
-      "Förbjuda vinstutdelande aktiebolag att driva skola.",
-      "Att staten tar ett större ansvar för skolans finansiering.",
-      "Att alla skolor ska ha bemannade skolbibliotek.",
-      "Bryta skolsegregationen och göra skolvalet fritt och rättvist för alla.",
-      "Förbättra arbetsmiljön och höja lönen för lärare för att öka attraktionskraften för fler att arbeta i yrket.",
-      "Förstärka elevhälsan och satsa på fler skolsköterskor, specialpedagoger, psykologer och kuratorer i skolan.",
-      "Gratis frukost och lunch i skolan"
+      "Förskolan och fritidshemmen är viktiga för barns språk, utveckling och sociala trygghet. Därför vill vi lagstifta om mindre barngrupper i förskolan utifrån Skolverkets riktmärken och se till att resurserna räcker till fler vuxna. Vi vill också stärka personalens arbetsmiljö, tid för planering och möjligheter till kompetensutveckling.",
+      "Alla barn ska få möjlighet till lärande, gemenskap och en meningsfull fritid. Vi vill utöka den allmänna förskolan från 15 till 30 timmar i veckan, med ett första steg till 20 timmar. Barn som inte går i förskolan ska aktivt erbjudas plats, och kommunerna ska följa upp barn från två års ålder som inte deltar.",
+      "Elevers möjligheter ska inte avgöras av postnummer, kommunens ekonomi eller vilken skola de går i. Staten behöver ta ett större ansvar för likvärdigheten genom starkare finansiering och resurser efter behov. Skolor med större utmaningar ska få mer stöd, så att fler elever får rätt hjälp i tid och kan nå kunskapsmålen.",
+      "Det ska fortsatt gå att välja skola, men skattepengar ska stanna i skolan. Vi vill stoppa aktiebolag i skolan, införa full insyn i skattefinansierad skolverksamhet och ge kommuner möjlighet att säga nej till nyetableringar som försvårar en långsiktig skolplanering. Skolvalet ska vara rättvist och inte förstärka segregationen.",
+      "Kunskap kräver trygghet, studiero och tidigt stöd. Alla skolor ska ha tillgång till elevhälsa och specialpedagogiskt stöd, så att problem fångas upp innan de växer. Vi vill också förtydliga skolans demokratiuppdrag, stärka undervisningen i medie- och informationskunnighet och se till att barn inte går hungriga i skolan."
     ],
-    "title": "Skola",
+    "title": "Utbildning",
     "url": "https://www.mp.se/politik/skola/",
-    "updateDate": "2024-06-02T17:16:19.666Z",
+    "updateDate": "2026-08-01T14:47:14.898Z",
     "party": "MP",
     "subject": "utbildning"
   },
   "https://www.mp.se/politik/strandskydd/": {
     "opinions": [
-      "skärpa strandskyddet i hårt exploaterade områden,",
-      "följa upp undantag från strandskyddet bättre – fusk och korruption ska aldrig accepteras,",
-      "göra strandskyddet mer träffsäkert, så att undantag kan ges där det inte skadar naturen eller hindrar allemansrätten."
+      "Strandskyddet gör att stränder kan besökas av alla människor i Sverige, oavsett ekonomi och bostadsort. Strandskyddet är en viktig del av allemansrätten och möjliggör friluftsliv längs våra stränder. Miljöpartiet vill bevara det generella skyddet som grund i lagstiftningen.",
+      "Stränder är viktiga livsmiljöer för många arter. De fungerar som barnkammare, skydd och födosöksområden för både land- och vattenlevande djur. Ett starkt strandskydd bidrar därför till att bevara mångfalden av arter och deras ekosystem.",
+      "Strandskyddet har historiskt tjänat Sverige väl och har ett starkt stöd i befolkningen. När stränder exploateras är det svårt att återställa dem på ett sätt som gör att djur- och växtlivet fullt ut kan återhämta sig. Därför behöver stränderna omfattas av ett långsiktigt och robust skydd.",
+      "Företagande, bostäder och lokal utveckling är viktiga på landsbygden, men lösningen är inte att öppna upp för ytterligare breda undantag som försvagar strandskyddet. Möjligheter till omfattande undantag finns redan idag, och byggande vid vatten behöver prövas varsamt, utan att naturvärden eller allmänhetens tillgång till stränder trängs undan."
     ],
     "title": "Strandskydd",
     "url": "https://www.mp.se/politik/strandskydd/",
-    "updateDate": "2023-09-17T17:52:38.780Z",
+    "updateDate": "2026-08-01T14:47:14.431Z",
     "party": "MP",
     "subject": "miljo-och-klimat"
   },
   "https://www.mp.se/politik/tandvard/": {
     "opinions": [
-      "Att tandvården ska jämställas med övrig hälso- och sjukvård.",
-      "Att tandvården ska  ingå i samma högkostnadsskydd som annan vård.",
-      "Förbättra tandvården för särskilt utsatta grupper."
+      "Grunden för god munhälsa skapas tidigt i livet. När unga får regelbunden tandvård ökar chansen att problem upptäcks i tid och att goda vanor etableras. Miljöpartiet vill därför återinföra avgiftsfri tandvård för unga vuxna till och med 23 år.",
+      "Ingen ska behöva avstå från nödvändig tandvård på grund av kostnaden. Miljöpartiet vill stärka skyddet mot höga tandvårdskostnader så att tandvården närmar sig samma högkostnadsprinciper som övrig vård. Det gör tandvården tryggare och mer tillgänglig för fler.",
+      "Tandvården ska prioritera dem med störst behov, inte dem med bäst ekonomi. Skillnader i hälsa, inkomst och bostadsort påverkar i dag människors möjlighet att få tandvård. Miljöpartiet vill minska dessa skillnader så att tandvården blir mer jämlik.",
+      "Senaste tandvårdsreformen som ger äldre ett stärkt stöd är en utveckling i rätt riktning, men reformen behöver utvecklas. Den bör bättre nå särskilt utsatta grupper med stora tandvårdsbehov, unga och stärka det förebyggande arbetet. Tandvården ska inte bara reparera skador, utan också förebygga att de uppstår."
     ],
     "title": "Tandvård",
     "url": "https://www.mp.se/politik/tandvard/",
-    "updateDate": "2023-09-17T17:52:35.632Z",
+    "updateDate": "2026-08-01T14:47:14.842Z",
     "party": "MP",
     "subject": "vard-och-omsorg"
-  },
-  "https://www.mp.se/politik/tid-att-leva/": {
-    "opinions": [
-      "Sänka normalarbetstiden.",
-      "Göra det lättare att påverka sin arbetstid och sina arbetsvillkor."
-    ],
-    "title": "Tid att leva",
-    "url": "https://www.mp.se/politik/tid-att-leva/",
-    "updateDate": "2024-06-05T06:24:54.983Z",
-    "party": "MP",
-    "subject": "vard-och-omsorg"
-  },
-  "https://www.mp.se/politik/trafik/": {
-    "opinions": [
-      "Höja flygskatten för minskade utsläpp och fördela pengar till järnvägen.",
-      "Sälj statens andel i SAS.",
-      "Flytta mer gods från vägtrafik till tåg och sjöfart",
-      "Minska antalet onödiga transporter.",
-      "Främja utvecklingen för elflyg och göra sjöfarten fossilfri."
-    ],
-    "title": "Trafik",
-    "url": "https://www.mp.se/politik/trafik/",
-    "updateDate": "2024-06-05T06:24:55.416Z",
-    "party": "MP",
-    "subject": "infrastruktur-och-trafik"
-  },
-  "https://www.mp.se/politik/tag/": {
-    "opinions": [
-      "rusta upp spåren och bygga ut järnvägen i hela landet inklusive nya stambanor",
-      "uppnå Trafikverkets mål för tåg i tid",
-      "fler tåg på spåren och utveckla nattågen både i Sverige och ut i Europa",
-      "binda ihop Europa med tåg"
-    ],
-    "title": "Tåg",
-    "url": "https://www.mp.se/politik/tag/",
-    "updateDate": "2025-09-16T06:33:52.812Z",
-    "party": "MP",
-    "subject": "infrastruktur-och-trafik"
   },
   "https://www.mp.se/politik/utrikespolitik-och-global-rattvisa/": {
     "opinions": [
-      "Att Sverige och EU ska vara en stark internationell röst för jämställdhet, demokrati och mänskliga rättigheter",
-      "Att Sverige ska vara en ledande kraft i den globala klimatomställningen och investera resurser i klimat- och miljöarbete i fattiga länder",
-      "Att Sverige ska bedriva en rättvis och miljömässigt hållbar handel",
-      "Ställa skarpare krav och sätta hårdare villkor i Sveriges och EU:s utrikes- och handelspolitik för att driva på det globala klimatarbetet, bevara biologisk mångfald, främja demokrati och mänskliga rättigheter, stärka djurskyddet och minska de globala klyftorna.",
-      "Återinföra Sveriges feministiska utrikes- och utvecklingspolitik.",
-      "Att utvecklingssamarbetet ska bidra till att bekämpa fattigdom, förebygga och hantera klimatförändringarna, bevara och skapa fred, förebygga konflikter, bygga upp demokratiska samhällen och motverka korruption."
+      "Sverige ska vara en stark global aktör för fred och rättvisa. Vi vill stärka FN, internationella domstolar och fredsbyggande insatser. Sverige ska ge fortsatt stöd till Ukraina, verka för ett fritt Palestina och bidra till att ansvar utkrävs för krigsbrott, oavsett vem som begår dem.",
+      "Kvinnors och flickors rättigheter, representation och resurser ska vara centrala i svensk utrikespolitik. Det stärker demokratin, ökar jämlikheten och gör fredsprocesser mer hållbara. Sverige ska också stödja civilsamhälle, demokratikämpar, miljöförsvarare och journalister som är satta under hård press globalt.",
+      "Ett starkt bistånd är helt nödvändigt för att främja fred och säkerhet, bidra till klimatomställningen, stärka kvinnors rättigheter och rädda liv. Biståndet ska utgå från mänskliga rättigheter och effektiv fattigdomsbekämpning. Det ska inte styras av svenska inrikespolitiska intressen utan utgå från mottagarens behov.",
+      "Sverige ska både minska sina egna utsläpp och bidra mer till klimatarbete i utvecklingsländer. Minst hälften av klimatbiståndet ska gå till klimatanpassning så att samhällen är bättre rustade för att klara klimatkrisens effekter som torka och översvämningar . Vi vill också öka stödet till biologisk mångfald; vi ska skydda våra hav och skogar och stötta hållbara livsmedelssystem.",
+      "Sveriges handelsrelationer och EU:s handelsavtal ska ta hänsyn till miljö, mänskliga rättigheter och global rättvisa. Vi vill motverka skatteflykt och skatteparadis som dränerar utvecklingsländer på resurser. Orättfärdiga skulder som hindrar fattiga länders utveckling ska kunna skrivas av.",
+      "Krig, klimatkris och auktoritära krafter påverkar människors frihet och trygghet i hela världen. Miljöpartiet ser global solidaritet, folkrätt och klimaträttvisa som grundläggande för en säkrare och mer demokratisk värld. Genom att bidra till en mer fredlig och rättvis värld ökar vi också säkerheten och tryggheten här hemma.",
+      "Vi vill att Sverige ska vara tydligt i försvaret av folkrätten, mänskliga rättigheter och demokratisk utveckling. Det kräver starkare diplomati, mer fredsbyggande arbete och ett aktivt stöd till FN, internationella domstolar och civilsamhälle.",
+      "Det innebär att Sverige återgår till att ge en procent av vår bruttonationalprodukt (BNI) i bistånd. Pengarna ska gå till att minska fattigdom, stärka demokrati, bidra till klimatomställning, möta humanitära behov, öka den globala jämställdheten och försvara kvinnors rättigheter.",
+      "Klimatkrisen ökar risken för konflikter och naturkatastrofer, och slår hårdast mot människor som har bidragit minst till utsläppen. Därför vill Miljöpartiet att Sverige driver på för klimaträttvisa, klimatanpassning och skydd av natur och biologisk mångfald.",
+      "En utrikespolitik som förebygger konflikter, stärker demokrati och minskar klimatkrisens effekter gör världen tryggare. Det minskar orsakerna till krig, flykt och kris och stärker både människors säkerhet globalt och och ökar tryggheten här hemma."
     ],
     "title": "Utrikespolitik",
     "url": "https://www.mp.se/politik/utrikespolitik-och-global-rattvisa/",
-    "updateDate": "2024-06-16T06:24:04.906Z",
+    "updateDate": "2026-08-01T14:47:14.456Z",
     "party": "MP",
     "subject": "utrikes--och-bistandsfragor"
   },
   "https://www.mp.se/politik/vapenexport/": {
     "opinions": [
-      "Att Sverige ska vara en stark aktör för fredsfrämjande arbete och verka för global nedrustning.",
-      "Att Sverige och EU är ledande i etiska krav på vår vapenexport.",
-      "Att Sverige ratificerar konventionen om kärnvapenförbud.",
-      "Att Sverige inför en lag som förbjuder kärnvapen på svensk mark.",
-      "Att Sverige verkar för ett globalt förbud mot dödliga autonoma vapen.",
-      "Att Sverige inom EU verkar för en gemensam försvarsmarknad, ökade materielsamarbeten och delade utvecklingskostnader med andra länder."
+      "Svenska vapen ska inte säljas till diktaturer, krigförande länder eller stater som begår allvarliga och omfattande brott mot mänskliga rättigheter. Förbudet ska även omfatta följdleveranser, så att tidigare avtal inte används för att kringgå reglerna. Sverige ska samtidigt kunna bistå ett angripet land, som Ukraina, med vapen.",
+      "Sverige ska inte köpa vapen eller bygga försvarsberoenden till diktaturer eller länder som genomför grova kränkningar av mänskliga rättigheter. Därför vill vi ta fram en lagstiftning för import av krigsmateriel som motsvarar reglerna för export. Det skulle stärka Sveriges säkerhet och säkra att vår krigsmaterielimport är långsiktigt hållbar.",
+      "Äldre tillstånd om vapenexport och följdleveranser ska kunna omprövas när säkerhetsläget förändras eller brott mot folkrätten sker. Vi vill också stärka reglerna för produkter med dubbla användningsområden, särskilt teknik som AI, övervakningsutrustning och avancerad elektronik, så att de inte exporteras till militära slutanvändare eller stater som använder tekniken för att förtrycka sin egen befolkning."
     ],
     "title": "Vapenexport",
     "url": "https://www.mp.se/politik/vapenexport/",
-    "updateDate": "2025-11-07T06:35:13.131Z",
+    "updateDate": "2026-08-01T14:47:15.475Z",
     "party": "MP",
     "subject": "utrikes--och-bistandsfragor"
   },
   "https://www.mp.se/politik/vinster-i-valfarden/": {
-    "opinions": ["Att vinster i välfärden ska stanna i välfärden."],
+    "opinions": [
+      "Skolan ska ge alla barn samma möjligheter, oavsett bakgrund eller var de bor. Dagens marknadsstyrning bidrar till ökad segregation och större skillnader mellan skolor. Staten behöver ta ett större ansvar för finansieringen och resurserna ska fördelas efter elevernas behov, inte efter skolornas attraktionskraft eller ekonomiska förutsättningar.",
+      "Skattepengar som avsätts till vård, skola och omsorg ska användas för att utveckla verksamheterna och ge hög kvalitet. Välfärden är en gemensam samhällsinvestering och ska inte styras av kortsiktiga vinstintressen. Resurserna ska komma elever, patienter och brukare till del.",
+      "Välfärdens resurser ska fördelas där behoven är som störst, inte där verksamheten är mest lönsam. Det stärker kvaliteten, minskar ojämlikheten och gör att människor kan känna trygghet oavsett bostadsort eller livssituation.",
+      "Alla barn ska ha samma möjlighet att lyckas i skolan. Därför behöver resurserna fördelas efter elevernas behov och staten tar ett större ansvar för skolans finansiering. Skolan ska motverka segregation och ge jämlika livschanser.",
+      "Skillnaderna i hälsa mellan olika grupper och delar av landet är stora. Vårdens resurser ska därför fördelas efter behov och alla ska ha tillgång till vård av hög kvalitet. Ökad kunskap om olika gruppers behov stärker både patientsäkerheten och jämlikheten."
+    ],
     "title": "Vinster i välfärden",
     "url": "https://www.mp.se/politik/vinster-i-valfarden/",
-    "updateDate": "2024-06-16T06:24:05.305Z",
+    "updateDate": "2026-08-01T14:47:15.375Z",
     "party": "MP",
     "subject": "trygghetssystem-och-valfard"
   },
   "https://www.mp.se/politik/aldrepolitik/": {
     "opinions": [
-      "Att äldre får fortsätta bestämma över sitt boende och hur man vill leva sitt liv.",
-      "Att äldre som behöver hjälp får trygg hjälp efter behov.",
-      "Se bättre arbetsvillkor för de som jobbar inom äldreomsorgen.",
-      "Att den som vill, kan och orkar ska ha möjlighet att jobba längre än till 67 år.",
-      "Förbättra vård och omsorg för äldre och stärka resurserna till hemsjukvården.",
-      "Anpassa äldreboenden, skolor och förskolor för att klara skyfall och hetta."
+      "Många äldre har svårt att få pensionen att räcka till vardagens kostnader, särskilt kvinnor som ofta har lägre pensioner. Högre pensioner, höjt bostadstillägg och förbättrade stöd ska stärka den ekonomiska tryggheten. Det minskar risken för ekonomisk utsatthet och ger fler möjlighet att leva ett självständigt liv.",
+      "Många bor kvar i bostäder som inte längre fungerar när behoven förändras. Fler mellanboenden, servicehus och anpassade boendeformer ska göra det lättare att hitta ett boende som ger både trygghet och gemenskap. Det ökar livskvaliteten och underlättar ett självständigt liv längre upp i åren.",
+      "Ofrivillig ensamhet påverkar både den psykiska och fysiska hälsan. Fler mötesplatser, uppsökande verksamhet och förebyggande hembesök ska göra det lättare att få stöd i tid. Det stärker hälsan, ökar delaktigheten och minskar risken för isolering.",
+      "Äldre ska inte möta hinder på grund av sin ålder i arbetslivet, vården eller kontakten med myndigheter. Starkare tillsyn, utvecklad lagstiftning och en äldreombudsman ska säkerställa att äldres rättigheter tas tillvara. Det bidrar till ökad jämlikhet och större inflytande för äldre i samhället."
     ],
-    "title": "Äldre",
+    "title": "Äldrepolitik",
     "url": "https://www.mp.se/politik/aldrepolitik/",
-    "updateDate": "2024-06-16T06:23:59.850Z",
+    "updateDate": "2026-08-01T14:47:14.229Z",
     "party": "MP",
     "subject": "aldrepolitik"
   },
-  "https://www.mp.se/politik/antirasism/": {
-    "opinions": [],
-    "title": "Antirasism",
-    "url": "https://www.mp.se/politik/antirasism/",
-    "updateDate": "2024-09-18T06:28:48.554Z",
+  "https://www.mp.se/politik/ai-och-digitalisering/": {
+    "opinions": [
+      "Alla hushåll och företag ska ha tillgång till en säker, robust och effektiv uppkoppling. Det är en förutsättning för att hela Sverige ska kunna dra nytta av digitalisering och AI. Staten ska stötta utbyggnad där marknaden inte själv klarar att ge bra uppkoppling.",
+      "AI ska utvecklas och användas med respekt för mänskliga rättigheter, integritet och upphovsrätt. Det ska finnas tydliga krav på transparens kring hur AI-tjänster fungerar, när de används och vilken data de tränas på. Sverige ska vara aktivt i EU och internationellt för påverka AI-utvecklingen i rätt riktning.",
+      "Sverige och EU ska ha bättre kontroll över samhällsviktig data och digital infrastruktur. Det handlar om datasäkerhet, demokratisk styrning och möjlighet att använda AI utan att bli beroende av ett fåtal företag. Europeiska molntjänster och öppna standarder ska stärkas. Det är viktigt för att stärka vår beredskap.",
+      "Fler behöver förstå hur AI fungerar, hur tekniken kan användas och vilka risker den innebär. Offentlig sektor, företag och civilsamhälle behöver bättre kompetens för att använda AI på ett ansvarsfullt sätt. Det kunskapslyft Sverige gjorde när hemma-PC slog igenom behöver nu göras igen utifrån bred ökad kunskap om AI. Skolan och biblioteken spelar en viktig roll för källkritik och digital kunskap.",
+      "AI kan avlasta monotona uppgifter, förbättra beslutsstöd och ge snabbare service i offentlig sektor. Effektiviseringar ska komma människor till del, till exempel genom mer tid för möten i vård, omsorg och skola eller genom förkortad arbetstid. Tekniken ska vara ett stöd, inte ersätta människor i samhällsviktiga verksamheter."
+    ],
+    "title": "AI och digitalisering",
+    "url": "https://www.mp.se/politik/ai-och-digitalisering/",
+    "updateDate": "2026-08-01T14:47:14.925Z",
+    "party": "MP",
+    "subject": "it-och-mobiltelefoni"
+  },
+  "https://www.mp.se/politik/antidiskriminering-och-antirasism/": {
+    "opinions": [
+      "Diskrimineringslagen behöver ses över så den blir mer effektiv och tillsynen skarpare. Den som diskriminerar ska kunna mötas av tydligare konsekvenser, till exempel vite och skärpta sanktioner. Antidiskrimineringsbyråer ska få bättre möjligheter att driva ärenden och människor som utsatts ska lättare kunna få skadestånd.",
+      "Hatbrott måste tas på större allvar av hela rättsväsendet. Miljöpartiet vill se fler hatbrottsenheter hos Polisen, bättre utbildning för polis och andra aktörer och tätare samverkan med civilsamhället. Plattformar på nätet ska också ta större ansvar för att stoppa rasistiskt och diskriminerande innehåll.",
+      "Rasism behöver bekämpas både i vardagen och i samhällets institutioner. Arbetet ska omfatta olika former av rasism, bland annat antisemitism, antiziganism och rasism mot samer. Skolan ska ha bättre verktyg för att stärka kunskap, motverka fördomar och hindra att unga dras in i rasistiska och våldsbejakande miljöer."
+    ],
+    "title": "Antidiskriminering och antirasism",
+    "url": "https://www.mp.se/politik/antidiskriminering-och-antirasism/",
+    "updateDate": "2026-08-01T14:47:15.907Z",
     "party": "MP",
     "subject": "jamstalldhet-och-diskriminering"
+  },
+  "https://www.mp.se/politik/arbetsmarknad-och-integration/": {
+    "opinions": [
+      "Människor ska ha mer makt över sin tid och ett arbetsliv som håller längre. Vi vill genomföra sänkt arbetstid stegvis och ansvarsfullt, i dialog med arbetsmarknadens parter. Om parterna inte själva levererar är vi beredda att lagstifta om 35 timmar som ny norm för heltid, med sikte på fyradagarsvecka.",
+      "Sverige behöver en aktiv arbetsmarknadspolitik som hjälper människor in i arbete. Vi vill därför investera i åtgärder som stärker klimatomställning, infrastruktur och välfärd eftersom det skapar jobb i hela landet. Samtidigt behövs fler lokala jobbspår, praktikplatser, traineeprogram och arbetsmarknadsutbildningar som sänker trösklarna in på arbetsmarknaden.",
+      "Digitala tjänster är viktiga, men de kan inte ersätta mänskligt stöd. Vi vill säkra bemannade kontor, fasta mötestider eller mobila team i hela landet. Personlig service ska finnas för den som behöver stöd med matchning, praktik, utbildning, tolkservice eller kontakt med lokala arbetsgivare.",
+      "Den som blir arbetslös ska ha ekonomisk trygghet under omställningen till ett nytt jobb. Vi vill ta bort den branta nedtrappningen, slopa karensdagarna och se till att ersättningens värde inte urholkas över tid. A-kassan ska också omfatta fler med låga, otrygga eller ojämna inkomster.",
+      "Integration handlar om att människor snabbt ska kunna bidra, försörja sig och känna tillhörighet. Men alla nyanlända har olika erfarenheter, kunskaper och kompetenser. Etableringsinsatser ska därför anpassas efter individens erfarenhet, och nyanlända kvinnors väg in på arbetsmarknaden ska underlättas. Svenskundervisning ska starta tidigt och kunna kombineras med arbete, praktik, utbildning eller företagande."
+    ],
+    "title": "Arbetsmarknad",
+    "url": "https://www.mp.se/politik/arbetsmarknad-och-integration/",
+    "updateDate": "2026-08-01T14:47:15.072Z",
+    "party": "MP",
+    "subject": "jobb"
+  },
+  "https://www.mp.se/politik/arbetstidsforkortning/": {
+    "opinions": [
+      "35-timmarsvecka ska vara det första konkreta steget mot kortare arbetstid för alla. Reformen ska ge människor mer tid för återhämtning, familj, fritid och engagemang. Målet är ett arbetsliv där fler kan arbeta heltid utan att slitas ut.",
+      "Fyradagarsvecka är Miljöpartiets långsiktiga riktning för ett friare och mer hållbart arbetsliv. På många arbetsplatser kan kortare arbetsvecka kombineras med smartare arbetssätt, bättre fokus och minskad stress. Det handlar inte om att pressa in samma arbetsbörda på färre dagar, utan om att organisera arbetet bättre.",
+      "Arbetstidslagen sätter normen för hur mycket vi arbetar. Precis som när 40-timmarsveckan infördes behöver lagen kunna uppdateras när samhället förändras. En ny norm ska införas stegvis, med övergångstid och utrymme för olika lösningar i olika branscher.",
+      "Den svenska modellen ska användas, inte rundas. Fack och arbetsgivare ska ha en central roll i att ta fram lösningar för scheman, skiftgång, tidbanker och fyradagarsvecka där det passar. Staten ska sätta riktningen och bidra till att fler får del av utvecklingen.",
+      "Kortare arbetstid kan minska stress, sjukfrånvaro och personalomsättning. Det är särskilt viktigt i välfärden, handeln och andra yrken där många i dag slits ut eller går ner i tid för att arbetet är för tungt. Reformen ska genomföras klokt, med hänsyn till bemanning, ekonomi och verksamheternas behov."
+    ],
+    "title": "Arbetstidsförkortning",
+    "url": "https://www.mp.se/politik/arbetstidsforkortning/",
+    "updateDate": "2026-08-01T14:47:14.514Z",
+    "party": "MP",
+    "subject": "jobb"
+  },
+  "https://www.mp.se/politik/biologisk-mangfald/": {
+    "opinions": [
+      "Sverige behöver ta ett samlat grepp om naturpolitiken. Det behövs ett naturpolitiskt ramverk liknande det klimatpolitiska ramverket, med en naturlag, naturpolitiska mål och en naturpolitisk handlingsplan. Det behövs för att göra arbetet med biologisk mångfald långsiktigt, mätbart, och ge frågorna högre prioritet.",
+      "De mest skyddsvärda land- och vattenområdena måste få ett formellt och långsiktigt skydd i linje med Sveriges åtaganden inom EU och FN. Det krävs för att alla våra hotade arter och naturtyper ska överleva långsiktigt.",
+      "Utdikade våtmarker, skadade vattendrag och kustmiljöer, igenvuxna ängar och betesmarker behöver restaureras så att naturen kan återhämta sig. Sverige ska ha en restaureringsplan med tillräcklig finansiering som möjliggör ett effektivt arbete med att återskapa natur. Arbetet behöver ske med utgångspunkt i vetenskap och bästa tillgängliga kunskap. Syftet med restaurering är att fler arter och ekosystem ska kunna överleva och bli livskraftiga.",
+      "Många arter är beroende av naturbetesmarker och ängar. För att främja biologisk mångfald vill Miljöpartiet därför öka stöden för att ta hand om och restaurera dessa marker, stimulera ekologiska jordbruksmetoder och förbättra möjligheten till ekonomisk ersättning till lantbrukare som arbetar för att gynna pollinatörer, fåglar och andra viktiga arter som trivs i odlingslandskapen.",
+      "Många arter är beroende av de varierade livsmiljöer som framför allt finns i skogar som har stått orörda under lång tid, ur- och naturskogarna. De kvarvarande resterna av dessa skogar i Sverige vill vi i Miljöpartiet skydda. Men den biologiska mångfalden behöver också¨stärkas i hela skogslandskapet, även utanför skyddade områden. Med mer varierade skogsbruksmetoder som ekosystembaserade, naturnära och hyggesfria metoder, kan påverkan på biologisk mångfald minska, och skogarna kan bli mer motståndskraftiga mot klimatförändringar.",
+      "Allemansrätten som grund för människors fria naturvistelse måste värnas. Den förutsätter att tillgången till värdefulla naturmiljöer säkras långsiktigt. Det behövs fortsatta satsningar på skydd och skötsel av värdefull natur, på friluftslivet, och på den vardagsnära naturen, i och omkring tätorter. Våra stränder är en fantastisk resurs för friluftslivet, de är också viktiga livsmiljöer för djur och växter. Även den biologiska mångfalden och ekosystemen i stort är beroende av stränderna. Därför är det viktigt att bevara ett starkt strandskydd.",
+      "Miljöpartiet vill stoppa det storskaliga industrifisket och främja det kustnära småskaliga fisket för humankonsumtion. Restaurering av kustzoner är viktigt inte minst för fiskar som gädda, och Sverige måste aktivt driva på för att EU tar fram en långsiktig och lagligt bindande återhämtningsplan för Östersjön och Västerhavet. Takten i arbetet med miljöanpassning av vattenkraften måste öka för att rädda akut hotade arter som ål, lax och andra vandrande arter."
+    ],
+    "title": "Biologisk mångfald",
+    "url": "https://www.mp.se/politik/biologisk-mangfald/",
+    "updateDate": "2026-08-01T14:47:15.126Z",
+    "party": "MP",
+    "subject": "miljo-och-klimat"
+  },
+  "https://www.mp.se/politik/bistandochutrikespolitik/": {
+    "opinions": [
+      "Sverige ska vara en stark global aktör för fred och rättvisa. Vi vill stärka FN, internationella domstolar och fredsbyggande insatser. Sverige ska ge fortsatt stöd till Ukraina, verka för ett fritt Palestina och bidra till att ansvar utkrävs för krigsbrott, oavsett vem som begår dem.",
+      "Kvinnors och flickors rättigheter, representation och resurser ska vara centrala i svensk utrikespolitik. Det stärker demokratin, ökar jämlikheten och gör fredsprocesser mer hållbara. Sverige ska också stödja civilsamhället, demokratikämpar, miljöförsvarare och journalister som är satta under hård press globalt.",
+      "Ett starkt bistånd är helt nödvändigt för att främja fred och säkerhet, bidra till klimatomställningen, stärka kvinnors rättigheter och rädda liv. Biståndet ska utgå från mänskliga rättigheter och effektiv fattigdomsbekämpning. Det ska inte styras av svenska inrikespolitiska intressen utan utgå från mottagarnas behov.",
+      "Sverige ska både minska sina egna utsläpp och bidra mer till klimatarbete i utvecklingsländer. Minst hälften av klimatbiståndet ska gå till klimatanpassning så att samhällen är bättre rustade för att klara klimatkrisens effekter, som torka och översvämningar. Vi vill också öka stödet till biologisk mångfald. Vi ska skydda våra hav och skogar och stötta hållbara livsmedelssystem.",
+      "Sveriges handelsrelationer och EU:s handelsavtal ska ta hänsyn till miljö, mänskliga rättigheter och global rättvisa. Vi vill motverka skatteflykt och skatteparadis som dränerar utvecklingsländer på resurser. Orättfärdiga skulder som hindrar fattiga länders utveckling ska kunna skrivas av.",
+      "Krig, klimatkris och auktoritära krafter påverkar människors frihet och trygghet i hela världen. Miljöpartiet ser global solidaritet, folkrätt och klimaträttvisa som grundläggande för en säkrare och mer demokratisk värld. Genom att bidra till en mer fredlig och rättvis värld ökar vi också säkerheten och tryggheten här hemma.",
+      "Vi vill att Sverige ska vara tydligt i försvaret av folkrätten, mänskliga rättigheter och demokratisk utveckling. Det kräver starkare diplomati, mer fredsbyggande arbete och ett aktivt stöd till FN, internationella domstolar och civilsamhället.",
+      "Det innebär att Sverige återgår till att ge en procent av vår bruttonationalinkomst (BNI) i bistånd. Pengarna ska gå till att minska fattigdom, stärka demokrati, bidra till klimatomställning, möta humanitära behov, öka den globala jämställdheten och försvara kvinnors rättigheter.",
+      "Klimatkrisen ökar risken för konflikter och naturkatastrofer och slår hårdast mot människor som har bidragit minst till utsläppen. Därför vill Miljöpartiet att Sverige driver på för klimaträttvisa, klimatanpassning och skydd av natur och biologisk mångfald.",
+      "En utrikespolitik som förebygger konflikter, stärker demokrati och minskar klimatkrisens effekter gör världen tryggare. Det minskar orsakerna till krig, flykt och kris, stärker människors säkerhet globalt och ökar tryggheten här hemma."
+    ],
+    "title": "Global rättvisa",
+    "url": "https://www.mp.se/politik/bistandochutrikespolitik/",
+    "updateDate": "2026-08-01T14:47:14.291Z",
+    "party": "MP",
+    "subject": "utrikes--och-bistandsfragor"
+  },
+  "https://www.mp.se/politik/brottsbekampning-och-forebyggande/": {
+    "opinions": [
+      "För att stoppa våldsspiralen behövs ett nationellt helhetsgrepp om både brottsförebyggande åtgärder och ett agerande mot kriminalitet här och nu. Miljöpartiet vill skapa en bred politisk sammanslutning för att möjliggöra långsiktiga och brett förankrade åtgärder mot gängbrottsligheten.",
+      "Det mest effektiva sättet att bryta våldsspiralen är att agera tidigt. Skola, socialtjänst, fritidsverksamhet, vård och civilsamhälle behöver långsiktiga resurser för att kunna fånga upp barn och familjer i tid. Vi vill se särskilda insatser riktade mot barn i riskzon, där skola, polis och socialtjänst ger barn och deras familjer ett samordnat och långsiktigt stöd.",
+      "Gängen ska inte kunna finansiera sin verksamhet genom välfärdsbrott, bedrägerier eller exploatering av barn och unga. Miljöpartiet vill stärka myndigheternas arbete mot gängens ekonomi, stoppa smuggling av vapen och sprängmedel och göra det lättare att lämna kriminalitet genom fungerande avhopparverksamhet.",
+      "Polisen, åklagarna och domstolarna behöver resurser, kompetens och rätt verktyg för att bekämpa grov brottslighet. Miljöpartiet vill se fler välutbildade poliser, starkare lokal närvaro och bättre möjligheter att klara upp brott. Nya verktyg ska vara träffsäkra, proportionerliga och värna rättssäkerheten.",
+      "Insatserna hos SiS och HVB behöver reformeras i grunden så att barn och unga som begått brott eller är på väg in i kriminalitet får en ärlig chans till rehabilitering och möjligheter till en ny riktning i livet. Unga personer ska ha en lagstadgad rätt till eftervård upp till 25 års ålder så att ingen ung person lämnas ensam när en placering avslutas.",
+      "Stärka brottsoffers rättigheter för att fler ska få stöd, skydd och upprättelse.Den som utsätts för brott ska snabbt få hjälp och ett tryggt bemötande genom hela rättsprocessen. Miljöpartiet införa en brottsofferlag som gör brottsoffers rättigheter tydliga och lättare att tillämpa. Vi vill höja och snabba på den ekonomiska ersättningen till brottsoffer och se till att staten tar ett större ansvar för att driva in skadestånd. Stödet till brottsoffer ska särskilt stärkas för unga, våldsutsatta och offer för sexual- och hedersbrott.",
+      "Våld och kontroll ska förebyggas, upptäckas i tid och lagföras. Miljöpartiet vill stärka kvinnojourerna, skyddade boenden och stödet till personer som lämnar våldsamma relationer eller hederskontexter. Vården för personer som utsatts för sexuella övergrepp ska vara kostnadsfri och likvärdig i hela landet. Insatser och stöd gällande våld i ungas relationer ska stärkas särskilt."
+    ],
+    "title": "Brottsbekämpning och förebyggande",
+    "url": "https://www.mp.se/politik/brottsbekampning-och-forebyggande/",
+    "updateDate": "2026-08-01T14:47:15.545Z",
+    "party": "MP",
+    "subject": "lag-och-ratt"
+  },
+  "https://www.mp.se/politik/civilsamhalle-och-foreningsliv/": {
+    "opinions": [
+      "Satsningen ska stärka föreningslivet och civilsamhällets infrastruktur i hela landet. Den ska göra det lättare för organisationer att planera långsiktigt, ordna kulturarrangemang, få tillgång till samlingslokaler samt bidra till integration, hälsa och ge unga en meningsfull fritid. Stöden ska vara tydliga, långsiktiga och följas upp utan onödig byråkrati.",
+      "Många föreningar lägger för mycket tid på återkommande ansökningar och administration. Miljöpartiet vill se fler fleråriga verksamhetsstöd i stället för korta projektstöd, så att resurser kan användas till verksamhet. Samtidigt ska kontroll och uppföljning vara tydlig och rättssäker.",
+      "En förening utan bankkonto kan i praktiken inte ta emot stöd, betala ut ersättningar eller bedriva verksamhet. Det är viktigt att staten och bankerna motverkar penningtvätt och organiserad brottslighet. Men det får inte slå orimligt mot små föreningar och ungdomsorganisationer. Sverige bör därför snabbutreda förändringar av betaltjänstlagen, inspirerat av Danmark, så att även mindre verksamheter kan få grundläggande betalkonto och verka.",
+      "Studieförbund, folkhögskolor och ideella kulturorganisationer är viktiga för kultur, demokrati och föreningsliv i hela landet. Miljöpartiet vill avbryta nedskärningarna, återställa och stärka finansieringen samt kartlägga konsekvenserna av tidigare neddragningar. Myndigheten för kulturanalys bör också få i uppdrag att följa den ideella kulturens betydelse.",
+      "I dag har idrottsrörelsen bättre villkor än många frilufts- och ungdomsorganisationer när det gäller sociala avgifter för ledare. Miljöpartiet vill jämna ut skillnaderna så att fler organisationer kan engagera ledare och erbjuda aktiviteter för barn och unga. Det stärker fritiden, föreningslivet och möjligheten att delta oavsett bakgrund."
+    ],
+    "title": "Föreningsliv",
+    "url": "https://www.mp.se/politik/civilsamhalle-och-foreningsliv/",
+    "updateDate": "2026-08-01T14:47:15.953Z",
+    "party": "MP",
+    "subject": "naringsliv"
+  },
+  "https://www.mp.se/politik/gron-ekonomi/": {
+    "opinions": [
+      "Omställningen ska bygga på principen att förorenaren betalar. Därför vill vi införa nationell utsläppshandel för företag som säljer fossila bränslen, fasa ut fossila subventioner och göra det mer lönsamt att välja hållbart. Intäkter från klimatskatter ska gå tillbaka till hushållen genom stöd och grön återbäring.",
+      "Staten behöver ta större ansvar för investeringar som sänker utsläppen, stärker elnäten, bygger ut järnvägen och skapar en mer cirkulär ekonomi. Det är viktigt med sunda statsfinanser och ett finanspolitiskt ramverk. Miljöpartiet vill komplettera det finanspolitiska ramverket med ett investeringsmål på 1 procent av BNP per år, för att få utrymme till de investeringar som behövs för att stärka Sverige.",
+      "Kapitalinkomster och stora förmögenheter beskattas i dag för lågt, vilket ökar ojämlikheten och försvagar välfärdens finansiering. Miljöpartiet vill genomföra en bred skattereform där de som tjänar mest och äger mest bidrar mer. De med de allra största förmögenheterna behöver ta ett större ansvar.",
+      "Många hushåll har pressats ekonomiskt av höga matpriser och boendekostnader. Miljöpartiet vill höja barnbidraget med 350 kronor per barn och månad, införa ensamförsörjartillägg på 800 kronor per barn, och höja och indexera bostadsbidraget. Barns trygghet ska väga tungt i all ekonomisk politik.",
+      "Kommuner och regioner ska inte tvingas skära ned på skola, vård och omsorg när kostnaderna ökar. Miljöpartiet vill indexera statsbidragen, ha rättvisare skatter för långsiktig välfärdsfinansiering och stärka konkurrensen på marknader där hushåll betalar för mycket, till exempel mat och bolån."
+    ],
+    "title": "Ekonomi",
+    "url": "https://www.mp.se/politik/gron-ekonomi/",
+    "updateDate": "2026-08-01T14:47:15.000Z",
+    "party": "MP",
+    "subject": "ekonomi-och-skatter"
+  },
+  "https://www.mp.se/politik/socialforsakringar-och-ekonomisk-trygghet/": {
+    "opinions": [
+      "Ensamstående föräldrar har ofta ett större ekonomiskt ansvar och mindre marginaler. Miljöpartiet vill införa ett tillägg på 800 kronor per barn och månad för föräldrar som själva försörjer sina barn. Stödet ska gå till barnfamiljer där pengarna gör stor skillnad i vardagen.",
+      "Ingen planerar att bli sjuk, men alla kan behöva samhällets stöd. Miljöpartiet vill höja garantinivån i sjuk- och aktivitetsersättningen, slopa karensavdraget och ge långtidssjuka rätt till rehabilitering och regelbundna avstämningar. Människor ska inte falla mellan myndigheter eller pressas tillbaka i arbete för tidigt.",
+      "Barn ska inte växa upp i fattigdom eller riskera att vräkas på grund av familjens ekonomi. Miljöpartiet vill höja barnbidraget med 350 kronor per barn och månad och höja bostadsbidraget med upp till 2 250 kronor i månaden. Stöden ska också skyddas mot att urholkas av inflationen.",
+      "Välfärdens skyddsnät ska bygga på behov och rätt till trygghet, inte på misstänkliggörande eller exkludering. Försörjningsstödet ska spegla verkliga kostnader. Ingen ska behöva kvalificera sig till socialförsäkringar eller stängas av från ersättningar på grund av mänskliga misstag i ett krångligt system.",
+      "Socialförsäkringarna ska bygga på tillit, individuella bedömningar och allas lika rätt. Miljöpartiet vill stärka rättssäkerheten, öka myndigheters ansvar för felaktiga utbetalningar och begränsa sanktioner som slår oproportionerligt hårt mot utsatta grupper. Trygghetssystemen ska hjälpa människor vidare, inte fördjupa fattigdom."
+    ],
+    "title": "Socialförsäkringar",
+    "url": "https://www.mp.se/politik/socialforsakringar-och-ekonomisk-trygghet/",
+    "updateDate": "2026-08-01T14:47:15.518Z",
+    "party": "MP",
+    "subject": "trygghetssystem-och-valfard"
+  },
+  "https://www.mp.se/politik/stod-till-smaforetag-hela-listan/": {
+    "opinions": [
+      "Många små och medelstora företag lägger idag onödigt mycket tid på administration istället för att utveckla sin verksamhet. Enklare myndighetskontakter, minskat regelkrångel och bättre skydd mot höga sjuklönekostnader ska göra det lättare att anställa och investera. Det ger fler växande företag och fler jobb i hela landet.",
+      "Sverige behöver investeringar som både stärker konkurrenskraften och minskar utsläppen. Ökad tillgång till kapital och en grön investeringsbank ska göra det lättare för företag att utveckla ny teknik och hållbara lösningar. Det skapar jobb, innovationer och stärker Sveriges position på framtidens marknader.",
+      "Handel ska bidra till ekonomisk utveckling utan att ske på bekostnad av människor, djur eller miljö. Gemensamma krav på miljö, arbetsvillkor och mänskliga rättigheter ska säkerställa att företag konkurrerar på lika villkor. Det gynnar seriösa företag som investerar i hållbarhet, stärker konsumenternas förtroende och bidrar till en mer hållbar global ekonomi.",
+      "Företag och jobb behöver kunna växa i både städer, landsbygder och mindre orter. Satsningar på digital infrastruktur, konkurrenskraftiga gröna näringar och bättre villkor för lokalt företagande ska skapa fler möjligheter att starta, driva och utveckla verksamheter. Det stärker sysselsättningen, den regionala utvecklingen och hela Sveriges konkurrenskraft."
+    ],
+    "title": "Näringsliv",
+    "url": "https://www.mp.se/politik/stod-till-smaforetag-hela-listan/",
+    "updateDate": "2026-08-01T14:47:15.456Z",
+    "party": "MP",
+    "subject": "naringsliv"
+  },
+  "https://www.mp.se/politik/forskola-och-fritidshem/": {
+    "opinions": [
+      "Mindre grupper gör det lättare att se varje barn, skapa trygghet och ge stöd tidigt. Miljöpartiet vill lagstifta om barngruppers storlek i förskolan med Skolverkets riktmärken som grund. Det innebär 6–12 barn i grupper för 1–3-åringar och 9–15 barn i grupper för 4–5-åringar.",
+      "Barn behöver möta trygga vuxna som har tid, rätt utbildning och rimliga arbetsvillkor. Miljöpartiet vill förbättra arbetsmiljön, ge mer tid för planering och utveckling och stärka den långsiktiga kompetensförsörjningen. Det gör verksamheten bättre för både barn och personal.",
+      "Miljöpartiet vill på sikt utöka den allmänna förskolan från 15 till 30 timmar i veckan. Som första steg vill vi bygga ut den till 20 timmar. Vi vill också att alla barn som inte går i förskolan aktivt ska erbjudas en plats och att kommunerna följer upp barn från två års ålder.",
+      "I dag är rätten till fritidshem ofta kopplad till föräldrarnas arbete, vilket gör att barn som skulle ha stor nytta av fritids kan hamna utanför. Miljöpartiet vill att alla barn ska ha tillgång fritidshem. Samtidigt behöver kvaliteten stärkas så att fritids blir tryggt, stimulerande och utvecklande."
+    ],
+    "title": "Förskola och fritidshem",
+    "url": "https://www.mp.se/politik/forskola-och-fritidshem/",
+    "updateDate": "2026-08-01T14:47:14.596Z",
+    "party": "MP",
+    "subject": "utbildning"
+  },
+  "https://www.mp.se/politik/forsvar-och-sakerhet/": {
+    "opinions": [
+      "Sverige behöver ett starkt militärt och civilt försvar med robusta samhällsfunktioner. Det handlar om att vård, järnväg, elförsörjning, livsmedelsförsörjning, dricksvatten och kommunikationer ska fungera även vid kris. Vi vill också fördjupa samarbetet med demokratiska länder i Europa för att stärka Sveriges och Europas gemensamma säkerhet och försvarsförmåga. Upprustningen ska finansieras ansvarsfullt, bland annat genom en beredskapsskatt för de högsta inkomsterna, så att välfärden inte trängs undan.",
+      "Kommuner och regioner behöver mer resurser för krisberedskap, och civilplikten bör byggas ut som ett komplement till värnplikten. Sverige ska öka självförsörjningsgraden och säkra lager av livsmedel, läkemedel och andra nödvändiga varor. Vi vill också stärka cybersäkerheten och bygga decentraliserade, förnybara energisystem som är robusta vid kris och krig.",
+      "Ett trovärdigt försvar verkar krigsavhållande och stärker säkerheten i Sverige och i vårt närområde. Sverige ska fördjupa samarbetet med nordiska, baltiska och europeiska demokratiska länder, särskilt runt Östersjön. Vi vill satsa på luftvärn för att skydda civilbefolkningen och säkerställa att försvaret kan verka utan onödig skada på miljön.",
+      "Sverige ska stå upp för Ukrainas frihet och stötta Ukraina så mycket och så länge det behövs. I en tid när stormakter utmanar folkrätten behöver Sverige och EU vara tydliga röster för internationell rätt och internationellt samarbete. Säkerhet byggs också genom demokratistärkande insatser, fredsfrämjande arbete och förebyggande av klimatförändringar och resursbrist.",
+      "Miljöpartiet respekterar Sveriges medlemskap i Nato men vill driva på för större öppenhet kring organisationens verksamhet och tydligare demokratiska krav för medlemskap. Nato ska fokusera på försvaret av de allierade och tillämpa principen “no first use” – att inte som första part i en konflikt använda kärnvapen. Sverige ska lagstifta mot kärnvapen på svensk mark i både freds- och krigstid och verka för att världen återgår till ömsesidig kärnvapennedrustning.",
+      "Säkerhetsläget i Europa är allvarligt, och Sverige behöver kunna stå emot både militära hot och andra kriser. Ett starkt totalförsvar gör samhället tryggare och mer motståndskraftigt.",
+      "Säkerhet handlar inte bara om gränser och militär styrka, utan också om människors trygghet i vardagen. Cyberangrepp, pandemier, naturkatastrofer, klimatförändringar och brist på mat eller vatten är alla hot mot samhället som i värsta fall kan drabba oss samtidigt. Därför behöver Sverige rusta både för krig och för andra allvarliga kriser.",
+      "Miljöpartiet röstade nej till Nato, men respekterar riksdagens beslut och driver inte frågan om ett utträde. I stället vill vi att Sverige samarbetar med likasinnade länder för att stärka demokrati, transparens och ansvarstagande inom Nato. Sverige ska samtidigt fortsätta att föra en självständig utrikespolitik.",
+      "Kärnvapen skulle orsaka enormt humanitärt lidande och långvarig miljöförstörelse. Därför vill Miljöpartiet att Sverige lagstiftar mot kärnvapen på svensk mark i både freds- och krigstid. Sverige ska också verka internationellt för ömsesidig nedrustning och en kärnvapenfri värld.",
+      "Nej, vi tycker att personminor även fortsättningsvis ska vara förbjudna och vill inte att Sverige ska lämna Ottawakonventionen. Personminor är ett av de vapen som skadar flest civila, och skadorna fortsätter i flera decennier efter att kriget har tagit slut."
+    ],
+    "title": "Säkerhet",
+    "url": "https://www.mp.se/politik/forsvar-och-sakerhet/",
+    "updateDate": "2026-08-01T14:47:14.617Z",
+    "party": "MP",
+    "subject": "forsvar"
+  },
+  "https://www.mp.se/politik/idrott/": {
+    "opinions": [
+      "Barn och unga ska ha rättvisa möjligheter till idrott oavsett familjens ekonomi, bostadsort, kön eller bakgrund. Därför vill Miljöpartiet höja och långsiktigt säkra stödet till barn- och ungdomsorganisationer och idrottsrörelsen. Fler ska få möjlighet att låna utrustning på fritidsbanker. Särskilda insatser behövs för grupper som står längre ifrån idrotten.",
+      "Fler behöver få rörelse som en naturlig del av vardagen, särskilt barn och unga. Strategin ska samla stat, regioner, kommuner och myndigheter kring tydliga mål och konkreta insatser. Skola, fritidshem, föreningsliv och samhällsplanering behöver dra åt samma håll.",
+      "Brist på hallar, planer, badhus, motionsspår och andra miljöer begränsar människors möjlighet att röra på sig. Fonden ska stödja kommuner, föreningar och byggherrar och samtidigt fungera som kunskapsnod. Idrott och rörelse ska vara en självklar del av samhällsplaneringen.",
+      "Alla ska kunna delta i idrott på sina villkor. Miljöpartiet vill stärka stödet till parasporten, förbättra tillgängligheten i anläggningar och minska hinder i färdtjänst, assistans och information. Det ska vara lättare att veta var det går att träna och vilka lokaler som är tillgängliga.",
+      "Vi vill öka stödet till elitidrotten så att fler idrottare kan satsa på sin sport. Många unga elitidrottare lever med små marginaler och står helt eller delvis utanför trygghetssystemen. Därför behöver det bli lättare att kombinera elitidrott med studier eller arbete. Miljöpartiet vill också utreda hur ett socialt skyddsnät för idrottare kan utformas."
+    ],
+    "title": "Idrott",
+    "url": "https://www.mp.se/politik/idrott/",
+    "updateDate": "2026-08-01T14:47:14.983Z",
+    "party": "MP",
+    "subject": "kultur-media-och-idrott"
+  },
+  "https://www.mp.se/politik/industripolitik/": {
+    "opinions": [
+      "Omställningen av industri, energi och transporter kräver stora och långsiktiga investeringar som marknaden inte alltid klarar på egen hand. Genom en klimatfond och en grön investeringsbank kan staten bidra med kapital och riskdelning för att fler strategiska projekt ska bli verklighet. Det stärker Sveriges konkurrenskraft, skapar jobb och minskar utsläppen.",
+      "Industrins utsläpp behöver minska snabbare för att Sverige ska nå klimatmålen och behålla sin position som industrination. Ökat stöd till elektrifiering, energieffektivisering, cirkulära lösningar och ny klimatsmart teknik gör det lättare för företag att ställa om. Det minskar utsläppen samtidigt som nya affärsmöjligheter och exportmöjligheter skapas.",
+      "Företag som investerar i hållbara lösningar ska inte missgynnas av konkurrens från länder med lägre klimat- och miljökrav. Genom stärkta styrmedel och utvecklade klimattullar kan konkurrensen bli mer rättvis och hållbar. Det gynnar svenska företag som ligger långt fram i omställningen och bidrar till minskade globala utsläpp.",
+      "Stora industrietableringar skapar nya möjligheter men också ökade behov av bostäder, service och infrastruktur. Kommuner som tar ansvar för den gröna omställningen ska få bättre stöd från staten för att möta utvecklingen. Det skapar attraktiva lokalsamhällen och gör det lättare att genomföra framtida investeringar.",
+      "Tillgång till el, transporter, bostäder och annan samhällsviktig infrastruktur är avgörande för att nya företag ska kunna etablera sig och växa. Genom långsiktiga investeringar i energisystem, järnväg och samhällsbyggande kan industrins omställning underlättas. Det stärker tillväxten, ökar sysselsättningen och förbättrar Sveriges konkurrenskraft på lång sikt."
+    ],
+    "title": "Industripolitik",
+    "url": "https://www.mp.se/politik/industripolitik/",
+    "updateDate": "2026-08-01T14:47:15.260Z",
+    "party": "MP",
+    "subject": "naringsliv"
+  },
+  "https://www.mp.se/politik/minskad-segregation/": {
+    "opinions": [
+      "När människor med olika inkomster och bakgrund bor åtskilda ökar segregationen. Fler hyresrätter med rimliga hyror, blandade boendeformer och minskad trångboddhet ska göra det möjligt för fler att bo i samma område. Genom att låta integration, delaktighet och social sammanhållning väga tyngre i stadsplaneringen kan segregationen minska och tryggheten öka.",
+      "Många områden har under lång tid fått vara eftersatta, med för lite investeringar och modernisering. Satsningar på bostäder, offentlig service, föreningsliv och lokala mötesplatser ska stärka livsvillkoren där behoven är störst. Det bidrar till ökad trygghet, bättre framtidsmöjligheter och minskat utanförskap.",
+      "Ett fungerande mottagande är avgörande för att människor snabbt ska kunna komma i arbete, utbildning och bli delaktiga i samhället. Nyanlända ska erbjudas bättre möjligheter till bostad, etablering och långsiktig trygghet, samtidigt som mottagandet bidrar till mer blandade bostadsområden. Det stärker integrationen och gör det lättare att bygga en framtid i Sverige.",
+      "När skolor blir allt mer uppdelade ökar skillnaderna mellan barn och unga. Resurserna ska därför fördelas efter elevernas behov och skolan ska vara en plats där barn med olika bakgrund möts. Det ger mer jämlika förutsättningar och stärker sammanhållningen i samhället.",
+      "Segregation kan inte lösas av en enskild aktör. Kommuner, myndigheter, föreningsliv och lokala företag behöver arbeta långsiktigt tillsammans för att skapa fler mötesplatser för kultur, idrott och gemenskap. Det stärker tilliten mellan människor och ökar delaktigheten i samhället."
+    ],
+    "title": "Minskad Segregation",
+    "url": "https://www.mp.se/politik/minskad-segregation/",
+    "updateDate": "2026-08-01T14:47:15.220Z",
+    "party": "MP",
+    "subject": "jamstalldhet-och-diskriminering"
+  },
+  "https://www.mp.se/politik/jamlikhet/": {
+    "opinions": [
+      "Jämlikhet kräver en välfärd som fungerar oavsett bostadsort, bakgrund eller livssituation. Miljöpartiet vill öka finansieringen till en stark och tillgänglig välfärd och se till att samhällets stöd bygger på tillit och rättssäkerhet. Resurserna ska riktas dit behoven är störst, så att fler får hjälp i tid.",
+      "Skolan ska inte förstärka skillnader mellan barn, utan jämna ut dem. Miljöpartiet vill göra skolvalet mer rättvist och transparent, förändra kösystem som gynnar redan resursstarka familjer och fördela resurser efter elevers behov. Skolor med större utmaningar ska få mer stöd, och elever ska få bättre tillgång till lärare, skolmat och trygghet i skoldagen.",
+      "En kommun ska vara skyldig att lämna hyresgarantier för barnfamiljer där statligt bidrag utgår för garantin (i enlighet med förslaget i Sänk tröskeln till en god bostad SOU 2022:14). Vi ser ett behov av att även omfatta personer som utsätts eller utsatts för våld i nära relationer och är i akut behov av en bostad. Detta behöver skyndsamt utredas.",
+      "Vi vill reglera de krav som hyresvärdar får ställa på en ny hyresgäst för tecknande av hyresavtal. Dessa måste vara rimliga sett till den sökta lägenheten. I dag ställs i många fall långt högre krav än vad som är rimligt för den sökta lägenheten och detta minskar kraftigt utbudet av lägenheter för många bostadssökande.",
+      "Personer med funktionsnedsättning ska få det stöd de har rätt till, oavsett var i landet de bor. Miljöpartiet vill återupprätta intentionerna bakom LSS som rättighetslag, införa kostnadsfri ledsagning och säkra likvärdig tillgång till färdtjänst och hjälpmedel. Samhället ska undanröja hinder så att fler kan arbeta, studera och delta i gemenskapen.",
+      "Äldreomsorgen ska präglas av respekt, kontinuitet och mänsklig närvaro. Miljöpartiet vill stärka samverkan mellan hemtjänst, äldreboenden, vårdcentraler och sjukvård så att äldre inte hamnar mellan system. Vi vill också förebygga ofrivillig ensamhet, felmedicinering och våld i äldres nära relationer samt ge digitalt kunskapsstöd till dem som behöver.",
+      "Alla människor ska ha möjlighet att arbeta, utvecklas och vara delaktiga i samhället. Miljöpartiet vill stärka stödet till personer som står långt från arbetsmarknaden, särskilt personer med funktionsnedsättning. Det behövs bättre matchning, fler arbetshjälpmedel och starkare stöd från myndigheter för att fler ska kunna få och behålla ett arbete.",
+      "Fattigdomen har fördubblats de senaste fem åren. Ett av åtta barn lever i ekonomisk utsatthet. Kvinnor, särskilt ensamstående mammor, och personer med funktionsnedsättning är överrepresenterade bland dem med svag ekonomi. Miljöpartiet vill att barnkonventionen ska utgöra en tydlig utgångspunkt i den ekonomiska politiken. Barnfattigdom är ett av de största samhällsproblemen i Sverige och problemet är extra stort i socioekonomiskt utsatta områden. Flera viktiga stöd för barnfamiljer har urholkats. Barnbidraget, bostadsbidraget för barnfamiljer och underhållsstödet behöver höjas. Inget barn ska växa upp i hemlöshet. Vi vill införa en kriskommission mot barnfattigdom och den växande fattigdomen i Sverige."
+    ],
+    "title": "Jämlikhet",
+    "url": "https://www.mp.se/politik/jamlikhet/",
+    "updateDate": "2026-08-01T14:47:15.669Z",
+    "party": "MP",
+    "subject": "jamstalldhet-och-diskriminering"
+  },
+  "https://www.mp.se/politik/nationella-minoriteter-och-samer/": {
+    "opinions": [
+      "Staten behöver ta ett större ansvar för att säkerställa minoritetsspråkens och minoritetskulturernas utveckling och överlevnad. Miljöpartiet vill se stabil och långsiktig finansiering till minoritetsspråken, språkcentrum och kulturinstitutioner. Fler ska kunna lära sig, använda och återta sitt språk i vardagen, i skolan och i kontakt med myndigheter och andra samhällsinstitutioner.",
+      "Rättigheter på pappret måste fungera i praktiken. Miljöpartiet vill öka kunskapen om de nationella minoriteterna bland offentliganställda och i skolan. Möjligheterna att använda sitt minoritetsspråk i kontakt med myndigheter, äldreomsorg, skola och inom sjukvård måste stärkas. Vi vill utöka finansieringen till förvaltningsområdena och utreda förvaltningsområden för romani och jiddisch.",
+      "Sverige ska respektera samernas rättigheter som urfolk, i enlighet med den internationella urfolksrätten. Miljöpartiet vill att Sverige ratificerar ILO:s konvention 169 och stärker samernas rätt till mark och vatten. Samiskt deltagande och självbestämmande ska stärkas och respekteras i beslut som påverkar samiska livsvillkor, kultur och näringar.",
+      "Historiska övergrepp har skapat sår som än idag påverkar de nationella minoriteterna och deras möjligheter att använda sina språk och utöva sina kulturer. Miljöpartiet vill genomföra sannings- och försoningsarbete i nära samråd med berörda minoriteter. Arbetet ska bidra till erkännande, kunskap, stärkt tillit och bättre möjligheter att föra språk och kultur vidare.",
+      "Många som tillhör en nationell minoritet möter antisemitism, antiziganism och annan rasism.Miljöpartiet vill bland annat förbättra förutsättningarna för judar i Sverige, växla upp arbetet för romsk inkludering och motverka hat i skolan och annan offentlig verksamhet. Hatbrottsarbetet inom Polisen måste också stärkas, bland annat genom fler hatbrottsenheter och utökade kunskapssatsningar. Alla ska kunna leva öppet och tryggt oavsett bakgrund."
+    ],
+    "title": "Nationella minoriteter och samer",
+    "url": "https://www.mp.se/politik/nationella-minoriteter-och-samer/",
+    "updateDate": "2026-08-01T14:47:14.258Z",
+    "party": "MP",
+    "subject": "jamstalldhet-och-diskriminering"
+  },
+  "https://www.mp.se/politik/studentpolitik/": {
+    "opinions": [
+      "Många studenter har en ansträngd ekonomi som påverkar både studieresultat och hälsa. Högre studiestöd, bättre bostadsbidrag och mer flexibla regler för fribeloppet ska göra det lättare att kombinera studier med arbete utan att förlora ekonomisk trygghet. Förbättrade villkor i trygghetssystemen ska också ge bättre stöd vid exempelvis sjukdom. Det ger fler möjlighet att studera oavsett ekonomisk bakgrund.",
+      "Psykisk ohälsa är vanlig bland studenter och många behöver stöd tidigare än de får idag. Studenthälsan ska få bättre möjligheter att ge hjälp, remittera vidare vid behov och arbeta mer aktivt med förebyggande insatser och suicidprevention. Tidigare stöd och bättre samverkan med vården kan förbättra hälsan och öka möjligheten att fullfölja studierna.",
+      "Studentinflytande är en viktig del av kvaliteten i högre utbildning. Studentkårerna behöver långsiktiga resurser för att kunna företräda studenterna, bevaka deras rättigheter och bidra till utbildningarnas utveckling. Stärkt studentinflytande ger bättre utbildningar och stärker den demokratiska förankringen på universitet och högskolor.",
+      "Studenter som engagerar sig för demokrati och mänskliga rättigheter riskerar i många länder förföljelse, avstängning eller fängelse. Ett svenskt Students at Risk-program ska ge utsatta studentaktivister möjlighet att fortsätta sina studier i trygghet. Det stärker den akademiska friheten, det internationella samarbetet och Sveriges stöd för demokratiska rättigheter."
+    ],
+    "title": "Studentpolitik",
+    "url": "https://www.mp.se/politik/studentpolitik/",
+    "updateDate": "2026-08-01T14:47:15.722Z",
+    "party": "MP",
+    "subject": "utbildning"
+  },
+  "https://www.mp.se/politik/transporter/": {
+    "opinions": [
+      "Sverige behöver en historisk järnvägssatsning med nya stambanor, bättre regionala banor och fler nattåg till norra Sverige och Europa. Det eftersatta underhållet måste tas igen snabbare, så att förseningar och störningar minskar. Miljöpartiet vill också att gods ska kunna flyttas från väg till järnväg.",
+      "Miljöpartiet vill införa Sverigekortet, en nationell biljett för all kommunal och regional kollektivtrafik till ett lågt fast månadspris. Vi vill också återinföra stadsmiljöavtal och satsa på trygga cykelvägar och snabbcykelstråk. Det ska också bli lättare att ta med sig sin cykel på tåg och bussar.",
+      "Bilen kommer fortsatt att vara viktig för många, särskilt på landsbygden och där kollektivtrafiken är begränsad. Därför vill Miljöpartiet ge stöd till leasing för låg- och medelinkomsttagare. Vi vill även se ett elbilsstöd för köp av elbilar, nya som begagnade, som alla kan ta del av, där de billigaste elbilarna och boende i glesbygd får störst stöd. Vi vill bygga ut laddinfrastruktur och införa stöd för att konvertera fossilbilar till el-, biogas- eller biodrivmedelsdrivna bilar.",
+      "Miljöpartiet vill höja reduktionsplikten, vilket innebär mer förnybart och mindre fossilt i fordonsbränsle. Vi vill stödja produktion av avancerade biodrivmedel och elektrobränslen och ta bort subventioner som gynnar fossila bränslen. Intäkter från höjd koldioxidskatt ska gå tillbaka till hushåll på landsbygden och hushåll med små ekonomiska marginaler.",
+      "Flygresor behöver minska där det finns rimliga alternativ, samtidigt som kvarvarande flyg måste ställa om till hållbara bränslen och ny teknik. Miljöpartiet vill stoppa flyglinjer där tåget tar under tre timmar, reformera flygskatten och förbjuda privatjet."
+    ],
+    "title": "Transporter",
+    "url": "https://www.mp.se/politik/transporter/",
+    "updateDate": "2026-08-01T14:47:14.445Z",
+    "party": "MP",
+    "subject": "infrastruktur-och-trafik"
+  },
+  "https://www.mp.se/politik/tag-och-jarnvag/": {
+    "opinions": [
+      "Åtgärda flaskhalsen Helsingborg–Maria på Västkustbanan",
+      "Underhålla och förstärka Malmbanan för att öka kapaciteten",
+      "Bygga dubbelspår mellan Hässleholm och Kristianstad",
+      "Rusta upp Stångådalsbanan"
+    ],
+    "title": "Tåg och järnväg",
+    "url": "https://www.mp.se/politik/tag-och-jarnvag/",
+    "updateDate": "2026-08-01T14:43:56.217Z",
+    "party": "MP",
+    "subject": "infrastruktur-och-trafik"
+  },
+  "https://www.mp.se/politik/aldreomsorg/": {
+    "opinions": [
+      "Äldre ska inte ständigt behöva möta ny personal. Vi vill förbättra arbetsvillkoren, ge personal möjlighet att utbilda sig på betald arbetstid och införa ett arbetsmiljölyft för äldreomsorgen. God svenska är viktig för trygg omsorg, samtidigt som flerspråkighet ska tas till vara som en resurs.",
+      "Omsorg ska styras av människors behov, inte av minutplanering. Personalen ska få större möjlighet att använda sin kompetens, samtidigt som kvaliteten på omsorgen ska följas upp. Skattepengar till äldreomsorg ska gå till verksamheten, och eventuella överskott ska återinvesteras.",
+      "Hemtjänst, äldreboenden, vårdcentraler och sjukvård behöver samverka bättre. Vi vill förebygga felmedicinering genom regelbundna läkemedelsgenomgångar och stärka primärvårdens kunskapen om äldres psykisk ohälsa. Bättre anhörigstöd och ökade resurser till civilsamhället ska minska ofrivillig ensamhet tillsammans med andra insatser.",
+      "Fler boendeformer ska finnas för olika behov, till exempel mellanboenden, korttidsboenden och boenden för äldre hbtqi-personer. Äldre som bor i en bostad som inte längre fungerar ska kunna få flyttstöd. Utevistelse, social gemenskap, fysisk aktivitet och bra mat ska vara en självklar del av äldreomsorgen."
+    ],
+    "title": "Äldreomsorg",
+    "url": "https://www.mp.se/politik/aldreomsorg/",
+    "updateDate": "2026-08-01T14:47:14.373Z",
+    "party": "MP",
+    "subject": "aldrepolitik"
   }
 }

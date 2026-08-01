@@ -69,12 +69,12 @@ export default abstract class Scraper implements ScraperArgs {
   }
 
   protected async fetchPage(
-    input: Parameters<typeof fetch>[0],
+    url: string,
     opts: Parameters<typeof fetch>[1],
     retryCount = 0,
   ): Promise<Response> {
     try {
-      const response = await fetch(input, opts);
+      const response = await fetch(url, opts);
       if (!response.ok) {
         throw new Error(`Failed to fetch page, status: ${response.status}`);
       }
@@ -82,15 +82,15 @@ export default abstract class Scraper implements ScraperArgs {
     } catch (error) {
       if (retryCount < 3) {
         console.warn(
-          `Fetch failed with error: ${error as Error}. Retrying (${retryCount + 1}/3)...`,
+          `Fetch failed for URL ${url} with error: ${error as Error}. Retrying (${retryCount + 1}/3)...`,
         );
         await new Promise((resolve) =>
           setTimeout(resolve, Math.floor(Math.random() * 2000)),
         );
-        return this.fetchPage(input, opts, retryCount + 1);
+        return this.fetchPage(url, opts, retryCount + 1);
       } else {
         console.error(
-          `Failed to fetch page after 3 attempts: ${error as Error}`,
+          `Failed to fetch page ${url} after 3 attempts: ${error as Error}`,
         );
         throw error;
       }

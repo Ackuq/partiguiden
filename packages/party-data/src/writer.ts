@@ -66,7 +66,7 @@ export async function writePartyData(
     }
     result.opinions = incomingData.opinions;
     result.title = incomingData.title;
-    result.fetchDate = incomingData.fetchDate;
+    result.updateDate = incomingData.updateDate;
     storedData[link] = result;
   }
   await writeJSON(fileName, storedData);

@@ -10,5 +10,8 @@ export default class MPScraper extends Scraper {
     "p:contains('Vi vill också förändra nuvarande system genom att:') + ul li",
     "h3:contains('Miljöpartiet vill') + ul li",
   ];
+  opinionHeaders = {
+    "Miljöpartiet vill": "h2",
+  };
   absoluteUrls = true;
 }

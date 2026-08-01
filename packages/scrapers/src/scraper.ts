@@ -21,6 +21,7 @@ export default abstract class Scraper implements ScraperArgs {
   abstract listPath: string;
   abstract listSelector: string;
   opinionTags?: string[];
+  opinionHeaders?: Record<string, string>;
   absoluteUrls = false;
   pathRegex?: RegExp;
 
@@ -45,7 +46,57 @@ export default abstract class Scraper implements ScraperArgs {
           .filter((text) => text !== "");
       }
     }
-    return [];
+
+    return this.extractOpinionHeaders($);
+  }
+
+  protected extractOpinionHeaders($: CheerioAPI): string[] {
+    if (!this.opinionHeaders) {
+      return [];
+    }
+
+    let opinions: string[] = [];
+
+    for (const [opinionHeader, stopSignal] of Object.entries(
+      this.opinionHeaders,
+    )) {
+      const extractedContent: string[] = [];
+      $(`h2:contains('${opinionHeader}')`).map((_i, el) =>
+        $(el)
+          .nextUntil(stopSignal, "p,ul")
+          .each((_j, node) => {
+            const $node = $(node);
+            if ($node.is("p")) {
+              // Filter out paragraphs that are purely <strong> tags or empty
+              const $p = $node.clone();
+              $p.find("strong").remove();
+
+              const text = $p.text().trim();
+              if (text.length > 0) {
+                extractedContent.push(text);
+              }
+            } else if ($node.is("ul")) {
+              $node.find("li").each((_k, li) => {
+                const $li = $(li).clone();
+
+                // Remove all nested lists inside it
+                $li.find("ul, ol").remove();
+
+                const liText = $li.text().trim();
+                if (liText.length > 0) {
+                  extractedContent.push(liText);
+                }
+              });
+            }
+          }),
+      );
+
+      if (extractedContent.length > 0) {
+        opinions = opinions.concat(extractedContent);
+      }
+    }
+
+    return opinions;
   }
 
   protected getUrl(href: string) {
@@ -69,12 +120,12 @@ export default abstract class Scraper implements ScraperArgs {
   }
 
   protected async fetchPage(
-    input: Parameters<typeof fetch>[0],
+    url: string,
     opts: Parameters<typeof fetch>[1],
     retryCount = 0,
   ): Promise<Response> {
     try {
-      const response = await fetch(input, opts);
+      const response = await fetch(url, opts);
       if (!response.ok) {
         throw new Error(`Failed to fetch page, status: ${response.status}`);
       }
@@ -82,15 +133,15 @@ export default abstract class Scraper implements ScraperArgs {
     } catch (error) {
       if (retryCount < 3) {
         console.warn(
-          `Fetch failed with error: ${error as Error}. Retrying (${retryCount + 1}/3)...`,
+          `Fetch failed for URL ${url} with error: ${error as Error}. Retrying (${retryCount + 1}/3)...`,
         );
         await new Promise((resolve) =>
           setTimeout(resolve, Math.floor(Math.random() * 2000)),
         );
-        return this.fetchPage(input, opts, retryCount + 1);
+        return this.fetchPage(url, opts, retryCount + 1);
       } else {
         console.error(
-          `Failed to fetch page after 3 attempts: ${error as Error}`,
+          `Failed to fetch page ${url} after 3 attempts: ${error as Error}`,
         );
         throw error;
       }
@@ -134,7 +185,7 @@ export default abstract class Scraper implements ScraperArgs {
     return {
       title,
       url,
-      fetchDate: new Date().toISOString(),
+      updateDate: new Date().toISOString(),
       subject: undefined,
       html,
     };
@@ -147,7 +198,7 @@ export default abstract class Scraper implements ScraperArgs {
     if (!data) {
       return [];
     }
-    const { title, url, html, fetchDate, subject } = data;
+    const { title, url, html, updateDate, subject } = data;
     const opinions = this.getOpinions(cheerio.load(html));
 
     return [
@@ -155,7 +206,7 @@ export default abstract class Scraper implements ScraperArgs {
         opinions,
         title,
         url,
-        fetchDate,
+        updateDate,
         subject,
       },
     ];
@@ -168,6 +219,13 @@ export default abstract class Scraper implements ScraperArgs {
     const promises = elements.map((element) =>
       this.getStandpointPage($(element)),
     );
+
+    return this.handleStandpointPagePromises(promises);
+  }
+
+  protected async handleStandpointPagePromises(
+    promises: Promise<PartyDataWithoutPartyName[]>[],
+  ) {
     const result = await Promise.allSettled(promises);
     const failed = result.filter(
       (promiseResult): promiseResult is PromiseRejectedResult =>
@@ -188,16 +246,20 @@ export default abstract class Scraper implements ScraperArgs {
     return resolved.flat();
   }
 
-  async getPages(): Promise<PartyDataWithoutPartyName[]> {
+  async getPages(limit?: number): Promise<PartyDataWithoutPartyName[]> {
     const response = await this.fetchPage(this.baseUrl + this.listPath, {
       headers: { "Content-Type": "text/plain; charset=UTF-8" },
     });
     const html = await response.text();
     const $ = cheerio.load(html);
-    const $elements = $<Element, string>(this.listSelector);
+    let elements = $<Element, string>(this.listSelector).toArray();
 
-    console.info(`Found ${$elements.length} list elements`);
+    if (limit) {
+      elements = elements.toSpliced(limit);
+    }
 
-    return this.handleLinks($, $elements.toArray());
+    console.info(`Found ${elements.length} list elements`);
+
+    return this.handleLinks($, elements);
   }
 }

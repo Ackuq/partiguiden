@@ -87,7 +87,7 @@ export default class SDScraper extends Scraper {
             .split("•")
             .map((opinion) => opinion.trim())
             .filter((opinion) => opinion !== ""),
-          fetchDate: new Date().toISOString(),
+          updateDate: new Date().toISOString(),
           subject: undefined,
         };
       },

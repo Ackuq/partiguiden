@@ -42,7 +42,7 @@ export default class CScraper extends Scraper {
       return [];
     }
 
-    const { title, url, html, fetchDate, subject } = data;
+    const { title, url, html, updateDate, subject } = data;
 
     const opinions = this.getOpinions(cheerio.load(html));
 
@@ -53,7 +53,7 @@ export default class CScraper extends Scraper {
         opinions,
         title,
         url,
-        fetchDate,
+        updateDate,
         subject,
       },
       ...subPages,

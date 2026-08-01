@@ -15,7 +15,7 @@ export default class SScraper extends Scraper {
 
   async getStandpointPageFromUrl(
     url: string,
-  ): Promise<PartyDataWithoutPartyName | undefined> {
+  ): Promise<PartyDataWithoutPartyName[]> {
     const response = await this.fetchPage(url, {
       headers: { "Content-Type": "text/plain; charset=UTF-8" },
     });
@@ -24,13 +24,15 @@ export default class SScraper extends Scraper {
 
     const title = $("h1").first().text().trim();
 
-    return {
-      title,
-      url,
-      opinions: this.getOpinions($),
-      updateDate: new Date().toISOString(),
-      subject: undefined,
-    };
+    return [
+      {
+        title,
+        url,
+        opinions: this.getOpinions($),
+        updateDate: new Date().toISOString(),
+        subject: undefined,
+      },
+    ];
   }
 
   async getPages(limit?: number): Promise<PartyDataWithoutPartyName[]> {

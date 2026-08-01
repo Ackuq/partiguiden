@@ -65,7 +65,7 @@ const promises = parties.map(async (abbreviation) => {
   console.log(`Number of entries: ${data.length}`);
   console.log(
     `Number of entries without content: ${
-      data.filter((entry) => entry.opinions.length === 0).length
+      data.filter((entry) => entry.opinions?.length === 0).length
     }`,
   );
 

@@ -193,21 +193,23 @@ export default abstract class Scraper implements ScraperArgs {
 
   protected async getStandpointPage(
     $link: Cheerio<Element>,
-  ): Promise<PartyDataWithoutPartyName | undefined> {
+  ): Promise<PartyDataWithoutPartyName[]> {
     const data = await this.getStandpointPageData($link);
     if (!data) {
-      return;
+      return [];
     }
     const { title, url, html, updateDate, subject } = data;
     const opinions = this.getOpinions(cheerio.load(html));
 
-    return {
-      opinions,
-      title,
-      url,
-      updateDate,
-      subject,
-    };
+    return [
+      {
+        opinions,
+        title,
+        url,
+        updateDate,
+        subject,
+      },
+    ];
   }
 
   protected async handleLinks(
@@ -222,7 +224,7 @@ export default abstract class Scraper implements ScraperArgs {
   }
 
   protected async handleStandpointPagePromises(
-    promises: Promise<PartyDataWithoutPartyName | undefined>[],
+    promises: Promise<PartyDataWithoutPartyName[]>[],
   ) {
     const result = await Promise.allSettled(promises);
     const failed = result.filter(
@@ -236,13 +238,12 @@ export default abstract class Scraper implements ScraperArgs {
       .filter(
         (
           promiseResult,
-        ): promiseResult is PromiseFulfilledResult<PartyData[string]> =>
-          promiseResult.status === "fulfilled" &&
-          promiseResult.value !== undefined,
+        ): promiseResult is PromiseFulfilledResult<PartyData[string][]> =>
+          promiseResult.status === "fulfilled",
       )
       .map((fulfilled) => fulfilled.value);
 
-    return resolved;
+    return resolved.flat();
   }
 
   async getPages(limit?: number): Promise<PartyDataWithoutPartyName[]> {

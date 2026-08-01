@@ -9,7 +9,7 @@
     ],
     "title": "Abort",
     "url": "https://www.mp.se/politik/abort/",
-    "fetchDate": "2023-09-17T17:52:38.649Z",
+    "updateDate": "2023-09-17T17:52:38.649Z",
     "party": "MP",
     "subject": "vard-och-omsorg"
   },
@@ -21,7 +21,7 @@
     ],
     "title": "Arbetslivstrygghet",
     "url": "https://www.mp.se/politik/arbetslivstrygghet/",
-    "fetchDate": "2024-06-02T17:16:20.159Z",
+    "updateDate": "2024-06-02T17:16:20.159Z",
     "party": "MP",
     "subject": "jobb"
   },
@@ -40,7 +40,7 @@
     ],
     "title": "Barnrätt",
     "url": "https://www.mp.se/politik/barn-och-barnratt/",
-    "fetchDate": "2024-06-02T17:16:18.631Z",
+    "updateDate": "2024-06-02T17:16:18.631Z",
     "party": "MP",
     "subject": "familjen"
   },
@@ -60,7 +60,7 @@
     ],
     "title": "Bilar och bränsle",
     "url": "https://www.mp.se/politik/bilar-och-bransle/",
-    "fetchDate": "2024-06-02T17:16:18.285Z",
+    "updateDate": "2024-06-02T17:16:18.285Z",
     "party": "MP",
     "subject": "infrastruktur-och-trafik"
   },
@@ -75,7 +75,7 @@
     ],
     "title": "Bistånd och global rättvisa",
     "url": "https://www.mp.se/politik/bistand/",
-    "fetchDate": "2024-06-02T17:16:17.825Z",
+    "updateDate": "2024-06-02T17:16:17.825Z",
     "party": "MP",
     "subject": "utrikes--och-bistandsfragor"
   },
@@ -92,7 +92,7 @@
     ],
     "title": "Bostäder",
     "url": "https://www.mp.se/politik/bostader/",
-    "fetchDate": "2024-06-02T17:16:20.209Z",
+    "updateDate": "2024-06-02T17:16:20.209Z",
     "party": "MP",
     "subject": "bostad"
   },
@@ -106,7 +106,7 @@
     ],
     "title": "Civilt försvar och krisberedskap",
     "url": "https://www.mp.se/politik/civilt-forsvar-och-krisberedskap/",
-    "fetchDate": "2023-09-17T17:52:35.416Z",
+    "updateDate": "2023-09-17T17:52:35.416Z",
     "party": "MP",
     "subject": "forsvar"
   },
@@ -124,7 +124,7 @@
     ],
     "title": "Demokrati och mänskliga rättigheter",
     "url": "https://www.mp.se/politik/demokrati-och-mr/",
-    "fetchDate": "2023-09-17T17:52:36.068Z",
+    "updateDate": "2023-09-17T17:52:36.068Z",
     "party": "MP",
     "subject": "demokrati"
   },
@@ -146,7 +146,7 @@
     ],
     "title": "Diskriminering",
     "url": "https://www.mp.se/politik/diskriminering/",
-    "fetchDate": "2023-09-17T17:52:36.181Z",
+    "updateDate": "2023-09-17T17:52:36.181Z",
     "party": "MP",
     "subject": "jamstalldhet-och-diskriminering"
   },
@@ -164,7 +164,7 @@
     ],
     "title": "Djur",
     "url": "https://www.mp.se/politik/djur/",
-    "fetchDate": "2024-06-02T17:16:19.479Z",
+    "updateDate": "2024-06-02T17:16:19.479Z",
     "party": "MP",
     "subject": "miljo-och-klimat"
   },
@@ -181,7 +181,7 @@
     ],
     "title": "Ekonomi och skatter",
     "url": "https://www.mp.se/politik/ekonomi-och-skatter/",
-    "fetchDate": "2024-06-02T17:16:21.370Z",
+    "updateDate": "2024-06-02T17:16:21.370Z",
     "party": "MP",
     "subject": "ekonomi-och-skatter"
   },
@@ -197,7 +197,7 @@
     ],
     "title": "Energi",
     "url": "https://www.mp.se/politik/energi/",
-    "fetchDate": "2024-09-03T06:27:15.122Z",
+    "updateDate": "2024-09-03T06:27:15.122Z",
     "party": "MP",
     "subject": "energi"
   },
@@ -208,7 +208,7 @@
     ],
     "title": "Energieffektivisering",
     "url": "https://www.mp.se/politik/energieffektivisering/",
-    "fetchDate": "2024-06-02T17:16:17.938Z",
+    "updateDate": "2024-06-02T17:16:17.938Z",
     "party": "MP",
     "subject": "energi"
   },
@@ -221,7 +221,7 @@
     ],
     "title": "EU",
     "url": "https://www.mp.se/politik/eu/",
-    "fetchDate": "2024-06-02T17:16:19.030Z",
+    "updateDate": "2024-06-02T17:16:19.030Z",
     "party": "MP",
     "subject": "europa"
   },
@@ -235,7 +235,7 @@
     ],
     "title": "Fred och försvar",
     "url": "https://www.mp.se/politik/fred-och-forsvar/",
-    "fetchDate": "2024-06-02T17:16:19.998Z",
+    "updateDate": "2024-06-02T17:16:19.998Z",
     "party": "MP",
     "subject": "forsvar"
   },
@@ -252,7 +252,7 @@
     ],
     "title": "Funktionsrätt",
     "url": "https://www.mp.se/politik/funktionsratt/",
-    "fetchDate": "2024-06-02T17:16:20.382Z",
+    "updateDate": "2024-06-02T17:16:20.382Z",
     "party": "MP",
     "subject": "jamstalldhet-och-diskriminering"
   },
@@ -270,7 +270,7 @@
     ],
     "title": "Föreningsliv, folkbildning och idrott",
     "url": "https://www.mp.se/politik/foreningsliv-folkbildning-och-idrott/",
-    "fetchDate": "2024-06-02T17:16:20.219Z",
+    "updateDate": "2024-06-02T17:16:20.219Z",
     "party": "MP",
     "subject": "kultur-media-och-idrott"
   },
@@ -285,7 +285,7 @@
     ],
     "title": "Företagande",
     "url": "https://www.mp.se/politik/foretagande/",
-    "fetchDate": "2024-06-02T17:16:19.884Z",
+    "updateDate": "2024-06-02T17:16:19.884Z",
     "party": "MP",
     "subject": "naringsliv"
   },
@@ -300,7 +300,7 @@
     ],
     "title": "Förskola och fritids",
     "url": "https://www.mp.se/politik/barn-och-forskola/",
-    "fetchDate": "2024-06-02T17:16:19.128Z",
+    "updateDate": "2024-06-02T17:16:19.128Z",
     "party": "MP",
     "subject": "utbildning"
   },
@@ -318,7 +318,7 @@
     ],
     "title": "Gruvor och mineraler",
     "url": "https://www.mp.se/politik/gruvor-och-mineraler/",
-    "fetchDate": "2024-06-02T17:16:18.365Z",
+    "updateDate": "2024-06-02T17:16:18.365Z",
     "party": "MP",
     "subject": "miljo-och-klimat"
   },
@@ -336,7 +336,7 @@
     ],
     "title": "Hav, vatten och fiske",
     "url": "https://www.mp.se/politik/hav-vatten-och-fiske/",
-    "fetchDate": "2024-06-02T17:16:20.715Z",
+    "updateDate": "2024-06-02T17:16:20.715Z",
     "party": "MP",
     "subject": "jordbruk-jakt-och-fiske"
   },
@@ -353,7 +353,7 @@
     ],
     "title": "Hbtqi",
     "url": "https://www.mp.se/politik/hbtq/",
-    "fetchDate": "2024-06-02T17:16:19.070Z",
+    "updateDate": "2024-06-02T17:16:19.070Z",
     "party": "MP",
     "subject": "jamstalldhet-och-diskriminering"
   },
@@ -367,7 +367,7 @@
     ],
     "title": "Högre utbildning och forskning",
     "url": "https://www.mp.se/politik/hogre-utbildning-och-forskning/",
-    "fetchDate": "2024-06-02T17:16:17.968Z",
+    "updateDate": "2024-06-02T17:16:17.968Z",
     "party": "MP",
     "subject": "utbildning"
   },
@@ -384,7 +384,7 @@
     ],
     "title": "Integration",
     "url": "https://www.mp.se/politik/integration/",
-    "fetchDate": "2023-09-17T17:52:37.452Z",
+    "updateDate": "2023-09-17T17:52:37.452Z",
     "party": "MP",
     "subject": "migration-och-integration"
   },
@@ -397,7 +397,7 @@
     ],
     "title": "Jobb",
     "url": "https://www.mp.se/politik/jobb/",
-    "fetchDate": "2024-06-02T17:16:18.295Z",
+    "updateDate": "2024-06-02T17:16:18.295Z",
     "party": "MP",
     "subject": "jobb"
   },
@@ -411,7 +411,7 @@
     ],
     "title": "Jämställdhet",
     "url": "https://www.mp.se/politik/jamstalldhet/",
-    "fetchDate": "2023-09-17T17:52:36.516Z",
+    "updateDate": "2023-09-17T17:52:36.516Z",
     "party": "MP",
     "subject": "jamstalldhet-och-diskriminering"
   },
@@ -426,7 +426,7 @@
     ],
     "title": "Kemikalier",
     "url": "https://www.mp.se/politik/kemikalier/",
-    "fetchDate": "2024-06-02T17:16:18.797Z",
+    "updateDate": "2024-06-02T17:16:18.797Z",
     "party": "MP",
     "subject": "miljo-och-klimat"
   },
@@ -447,7 +447,7 @@
     ],
     "title": "Klimat",
     "url": "https://www.mp.se/politik/klimat/",
-    "fetchDate": "2024-08-13T06:27:13.675Z",
+    "updateDate": "2024-08-13T06:27:13.675Z",
     "party": "MP",
     "subject": "miljo-och-klimat"
   },
@@ -463,7 +463,7 @@
     ],
     "title": "Kollektivtrafik",
     "url": "https://www.mp.se/politik/kollektivtrafik/",
-    "fetchDate": "2024-06-02T17:16:19.953Z",
+    "updateDate": "2024-06-02T17:16:19.953Z",
     "party": "MP",
     "subject": "infrastruktur-och-trafik"
   },
@@ -482,7 +482,7 @@
     ],
     "title": "Kultur",
     "url": "https://www.mp.se/politik/kultur/",
-    "fetchDate": "2023-09-17T17:52:40.820Z",
+    "updateDate": "2023-09-17T17:52:40.820Z",
     "party": "MP",
     "subject": "kultur-media-och-idrott"
   },
@@ -495,7 +495,7 @@
     ],
     "title": "Kärnkraft",
     "url": "https://www.mp.se/politik/karnkraft/",
-    "fetchDate": "2024-06-02T17:16:17.418Z",
+    "updateDate": "2024-06-02T17:16:17.418Z",
     "party": "MP",
     "subject": "energi"
   },
@@ -518,7 +518,7 @@
     ],
     "title": "Lag och ordning",
     "url": "https://www.mp.se/politik/lag-och-ordning/",
-    "fetchDate": "2024-06-02T17:16:18.356Z",
+    "updateDate": "2024-06-02T17:16:18.356Z",
     "party": "MP",
     "subject": "lag-och-ratt"
   },
@@ -533,7 +533,7 @@
     ],
     "title": "Lands- och glesbygd",
     "url": "https://www.mp.se/politik/lands-och-glesbygd/",
-    "fetchDate": "2024-06-02T17:16:19.784Z",
+    "updateDate": "2024-06-02T17:16:19.784Z",
     "party": "MP",
     "subject": "landsbygd"
   },
@@ -550,7 +550,7 @@
     ],
     "title": "Mat och jordbruk",
     "url": "https://www.mp.se/politik/mat-och-jordbruk/",
-    "fetchDate": "2024-06-02T17:16:20.023Z",
+    "updateDate": "2024-06-02T17:16:20.023Z",
     "party": "MP",
     "subject": "jordbruk-jakt-och-fiske"
   },
@@ -573,7 +573,7 @@
     ],
     "title": "Migration",
     "url": "https://www.mp.se/politik/migration-och-lika-ratt/",
-    "fetchDate": "2025-08-10T17:54:14.021Z",
+    "updateDate": "2025-08-10T17:54:14.021Z",
     "party": "MP",
     "subject": "migration-och-integration"
   },
@@ -586,7 +586,7 @@
     ],
     "title": "Miljö",
     "url": "https://www.mp.se/politik/miljo/",
-    "fetchDate": "2024-06-02T17:16:19.989Z",
+    "updateDate": "2024-06-02T17:16:19.989Z",
     "party": "MP",
     "subject": "miljo-och-klimat"
   },
@@ -602,7 +602,7 @@
     ],
     "title": "Pensioner",
     "url": "https://www.mp.se/politik/pensioner/",
-    "fetchDate": "2024-06-02T17:16:18.892Z",
+    "updateDate": "2024-06-02T17:16:18.892Z",
     "party": "MP",
     "subject": "aldrepolitik"
   },
@@ -616,7 +616,7 @@
     ],
     "title": "Psykisk hälsa",
     "url": "https://www.mp.se/politik/ratt-att-ma-bra/",
-    "fetchDate": "2024-06-02T17:16:18.625Z",
+    "updateDate": "2024-06-02T17:16:18.625Z",
     "party": "MP",
     "subject": "vard-och-omsorg"
   },
@@ -633,7 +633,7 @@
     ],
     "title": "Sjukpenning",
     "url": "https://www.mp.se/politik/sjukpenning/",
-    "fetchDate": "2024-06-03T19:18:31.849Z",
+    "updateDate": "2024-06-03T19:18:31.849Z",
     "party": "MP",
     "subject": "trygghetssystem-och-valfard"
   },
@@ -658,7 +658,7 @@
     ],
     "title": "Sjukvård och hälsa",
     "url": "https://www.mp.se/politik/halso-och-sjukvard/",
-    "fetchDate": "2024-06-03T19:18:30.486Z",
+    "updateDate": "2024-06-03T19:18:30.486Z",
     "party": "MP",
     "subject": "vard-och-omsorg"
   },
@@ -675,7 +675,7 @@
     ],
     "title": "Skog och biologisk mångfald",
     "url": "https://www.mp.se/politik/skog-och-biologisk-mangfald/",
-    "fetchDate": "2025-05-25T06:30:38.083Z",
+    "updateDate": "2025-05-25T06:30:38.083Z",
     "party": "MP",
     "subject": "miljo-och-klimat"
   },
@@ -691,7 +691,7 @@
     ],
     "title": "Skola",
     "url": "https://www.mp.se/politik/skola/",
-    "fetchDate": "2024-06-02T17:16:19.666Z",
+    "updateDate": "2024-06-02T17:16:19.666Z",
     "party": "MP",
     "subject": "utbildning"
   },
@@ -703,7 +703,7 @@
     ],
     "title": "Strandskydd",
     "url": "https://www.mp.se/politik/strandskydd/",
-    "fetchDate": "2023-09-17T17:52:38.780Z",
+    "updateDate": "2023-09-17T17:52:38.780Z",
     "party": "MP",
     "subject": "miljo-och-klimat"
   },
@@ -715,7 +715,7 @@
     ],
     "title": "Tandvård",
     "url": "https://www.mp.se/politik/tandvard/",
-    "fetchDate": "2023-09-17T17:52:35.632Z",
+    "updateDate": "2023-09-17T17:52:35.632Z",
     "party": "MP",
     "subject": "vard-och-omsorg"
   },
@@ -726,7 +726,7 @@
     ],
     "title": "Tid att leva",
     "url": "https://www.mp.se/politik/tid-att-leva/",
-    "fetchDate": "2024-06-05T06:24:54.983Z",
+    "updateDate": "2024-06-05T06:24:54.983Z",
     "party": "MP",
     "subject": "vard-och-omsorg"
   },
@@ -740,7 +740,7 @@
     ],
     "title": "Trafik",
     "url": "https://www.mp.se/politik/trafik/",
-    "fetchDate": "2024-06-05T06:24:55.416Z",
+    "updateDate": "2024-06-05T06:24:55.416Z",
     "party": "MP",
     "subject": "infrastruktur-och-trafik"
   },
@@ -753,7 +753,7 @@
     ],
     "title": "Tåg",
     "url": "https://www.mp.se/politik/tag/",
-    "fetchDate": "2025-09-16T06:33:52.812Z",
+    "updateDate": "2025-09-16T06:33:52.812Z",
     "party": "MP",
     "subject": "infrastruktur-och-trafik"
   },
@@ -768,7 +768,7 @@
     ],
     "title": "Utrikespolitik",
     "url": "https://www.mp.se/politik/utrikespolitik-och-global-rattvisa/",
-    "fetchDate": "2024-06-16T06:24:04.906Z",
+    "updateDate": "2024-06-16T06:24:04.906Z",
     "party": "MP",
     "subject": "utrikes--och-bistandsfragor"
   },
@@ -783,7 +783,7 @@
     ],
     "title": "Vapenexport",
     "url": "https://www.mp.se/politik/vapenexport/",
-    "fetchDate": "2025-11-07T06:35:13.131Z",
+    "updateDate": "2025-11-07T06:35:13.131Z",
     "party": "MP",
     "subject": "utrikes--och-bistandsfragor"
   },
@@ -791,7 +791,7 @@
     "opinions": ["Att vinster i välfärden ska stanna i välfärden."],
     "title": "Vinster i välfärden",
     "url": "https://www.mp.se/politik/vinster-i-valfarden/",
-    "fetchDate": "2024-06-16T06:24:05.305Z",
+    "updateDate": "2024-06-16T06:24:05.305Z",
     "party": "MP",
     "subject": "trygghetssystem-och-valfard"
   },
@@ -806,7 +806,7 @@
     ],
     "title": "Äldre",
     "url": "https://www.mp.se/politik/aldrepolitik/",
-    "fetchDate": "2024-06-16T06:23:59.850Z",
+    "updateDate": "2024-06-16T06:23:59.850Z",
     "party": "MP",
     "subject": "aldrepolitik"
   },
@@ -814,7 +814,7 @@
     "opinions": [],
     "title": "Antirasism",
     "url": "https://www.mp.se/politik/antirasism/",
-    "fetchDate": "2024-09-18T06:28:48.554Z",
+    "updateDate": "2024-09-18T06:28:48.554Z",
     "party": "MP",
     "subject": "jamstalldhet-och-diskriminering"
   }

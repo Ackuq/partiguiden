@@ -25,7 +25,7 @@
     ],
     "title": "EU",
     "url": "https://moderaterna.se/var-politik/eu/",
-    "fetchDate": "2026-04-08T07:42:00.906Z",
+    "updateDate": "2026-04-08T07:42:00.906Z",
     "party": "M",
     "subject": "utrikes--och-bistandsfragor"
   },
@@ -46,7 +46,7 @@
     ],
     "title": "HBTQ-frågor",
     "url": "https://moderaterna.se/var-politik/hbtq/",
-    "fetchDate": "2026-04-08T07:42:05.349Z",
+    "updateDate": "2026-04-08T07:42:05.349Z",
     "party": "M",
     "subject": "jamstalldhet-och-diskriminering"
   },
@@ -67,7 +67,7 @@
     ],
     "title": "Idrott och friluftsliv",
     "url": "https://moderaterna.se/var-politik/idrott/",
-    "fetchDate": "2026-04-08T07:42:05.242Z",
+    "updateDate": "2026-04-08T07:42:05.242Z",
     "party": "M",
     "subject": "kultur-media-och-idrott"
   },
@@ -94,7 +94,7 @@
     ],
     "title": "Kultur",
     "url": "https://moderaterna.se/var-politik/kultur/",
-    "fetchDate": "2026-04-08T07:42:05.236Z",
+    "updateDate": "2026-04-08T07:42:05.236Z",
     "party": "M",
     "subject": "kultur-media-och-idrott"
   },
@@ -121,7 +121,7 @@
     ],
     "title": "Välfärdsbrottslighet",
     "url": "https://moderaterna.se/var-politik/valfardsbrottslighet/",
-    "fetchDate": "2026-04-08T07:42:05.335Z",
+    "updateDate": "2026-04-08T07:42:05.335Z",
     "party": "M",
     "subject": "lag-och-ratt"
   },
@@ -143,7 +143,7 @@
     ],
     "title": "Integration",
     "url": "https://moderaterna.se/var-politik/integration/",
-    "fetchDate": "2026-04-08T07:42:05.380Z",
+    "updateDate": "2026-04-08T07:42:05.380Z",
     "party": "M",
     "subject": "migration-och-integration"
   },
@@ -165,7 +165,7 @@
     ],
     "title": "Jämställdhet",
     "url": "https://moderaterna.se/var-politik/jamstalldhet/",
-    "fetchDate": "2026-04-08T07:42:05.385Z",
+    "updateDate": "2026-04-08T07:42:05.385Z",
     "party": "M",
     "subject": "jamstalldhet-och-diskriminering"
   },
@@ -189,7 +189,7 @@
     ],
     "title": "Bostadspolitik",
     "url": "https://moderaterna.se/var-politik/bostadspolitik/",
-    "fetchDate": "2026-04-08T07:42:00.140Z",
+    "updateDate": "2026-04-08T07:42:00.140Z",
     "party": "M",
     "subject": "bostad"
   },
@@ -210,7 +210,7 @@
     ],
     "title": "Ekonomisk politik och företagande",
     "url": "https://moderaterna.se/var-politik/ekonomisk-politik-och-foretagande/",
-    "fetchDate": "2026-04-08T07:42:05.325Z",
+    "updateDate": "2026-04-08T07:42:05.325Z",
     "party": "M",
     "subject": "ekonomi-och-skatter"
   },
@@ -238,7 +238,7 @@
     ],
     "title": "Förebyggande arbete",
     "url": "https://moderaterna.se/var-politik/forebyggande-arbete/",
-    "fetchDate": "2026-04-08T07:42:05.340Z",
+    "updateDate": "2026-04-08T07:42:05.340Z",
     "party": "M",
     "subject": "lag-och-ratt"
   },
@@ -256,7 +256,7 @@
     ],
     "title": "Försvar och krisberedskap",
     "url": "https://moderaterna.se/var-politik/forsvar-och-krisberedskap/",
-    "fetchDate": "2026-04-06T13:42:21.943Z",
+    "updateDate": "2026-04-06T13:42:21.943Z",
     "party": "M",
     "subject": "forsvar"
   },
@@ -283,7 +283,7 @@
     ],
     "title": "Gröna näringar, landsbygd och jakt",
     "url": "https://moderaterna.se/var-politik/grona-naringar-landsbygd-och-jakt/",
-    "fetchDate": "2026-04-08T07:42:05.321Z",
+    "updateDate": "2026-04-08T07:42:05.321Z",
     "party": "M",
     "subject": "jordbruk-jakt-och-fiske"
   },
@@ -316,7 +316,7 @@
     ],
     "title": "Hälso- och sjukvård",
     "url": "https://moderaterna.se/var-politik/halso-och-sjukvard-2/",
-    "fetchDate": "2026-04-08T07:42:05.248Z",
+    "updateDate": "2026-04-08T07:42:05.248Z",
     "party": "M",
     "subject": "vard-och-omsorg"
   },
@@ -338,7 +338,7 @@
     ],
     "title": "Jobb och arbetsmarknad",
     "url": "https://moderaterna.se/var-politik/jobb-och-arbetsmarknad/",
-    "fetchDate": "2026-04-08T07:42:05.344Z",
+    "updateDate": "2026-04-08T07:42:05.344Z",
     "party": "M",
     "subject": "jobb"
   },
@@ -366,7 +366,7 @@
     ],
     "title": "Klimat, miljö och energi",
     "url": "https://moderaterna.se/var-politik/klimat-miljo-och-energi/",
-    "fetchDate": "2026-04-08T07:42:00.666Z",
+    "updateDate": "2026-04-08T07:42:00.666Z",
     "party": "M",
     "subject": "miljo-och-klimat"
   },
@@ -392,7 +392,7 @@
     ],
     "title": "Lag och ordning",
     "url": "https://moderaterna.se/var-politik/lag-och-ordning-2/",
-    "fetchDate": "2026-04-08T07:42:05.253Z",
+    "updateDate": "2026-04-08T07:42:05.253Z",
     "party": "M",
     "subject": "lag-och-ratt"
   },
@@ -418,7 +418,7 @@
     ],
     "title": "Migration",
     "url": "https://moderaterna.se/var-politik/migration/",
-    "fetchDate": "2026-04-08T07:42:05.331Z",
+    "updateDate": "2026-04-08T07:42:05.331Z",
     "party": "M",
     "subject": "migration-och-integration"
   },
@@ -433,7 +433,7 @@
     ],
     "title": "Sjukförsäkring",
     "url": "https://moderaterna.se/var-politik/sjukforsakring-2/",
-    "fetchDate": "2026-04-08T07:42:00.528Z",
+    "updateDate": "2026-04-08T07:42:00.528Z",
     "party": "M",
     "subject": "vard-och-omsorg"
   },
@@ -466,7 +466,7 @@
     ],
     "title": "Skola och utbildning",
     "url": "https://moderaterna.se/var-politik/skola-och-utbildning/",
-    "fetchDate": "2026-04-08T07:42:00.232Z",
+    "updateDate": "2026-04-08T07:42:00.232Z",
     "party": "M",
     "subject": "utbildning"
   },
@@ -491,7 +491,7 @@
     ],
     "title": "Trafik och infrastruktur",
     "url": "https://moderaterna.se/var-politik/trafik-och-infrastruktur/",
-    "fetchDate": "2026-04-08T07:42:05.315Z",
+    "updateDate": "2026-04-08T07:42:05.315Z",
     "party": "M",
     "subject": "infrastruktur-och-trafik"
   },
@@ -513,7 +513,7 @@
     ],
     "title": "Utrikespolitik",
     "url": "https://moderaterna.se/var-politik/utrikespolitik/",
-    "fetchDate": "2026-04-08T07:42:05.260Z",
+    "updateDate": "2026-04-08T07:42:05.260Z",
     "party": "M",
     "subject": "utrikes--och-bistandsfragor"
   },
@@ -542,7 +542,7 @@
     ],
     "title": "Äldres villkor och pensioner",
     "url": "https://moderaterna.se/var-politik/aldres-villkor-och-pensioner/",
-    "fetchDate": "2026-04-08T07:42:00.744Z",
+    "updateDate": "2026-04-08T07:42:00.744Z",
     "party": "M",
     "subject": "aldrepolitik"
   },
@@ -567,7 +567,7 @@
     ],
     "title": "Demokrati, rättsstat och förvaltning",
     "url": "https://moderaterna.se/var-politik/demokrati-rattsstat-forvaltning/",
-    "fetchDate": "2026-04-08T07:42:05.310Z",
+    "updateDate": "2026-04-08T07:42:05.310Z",
     "party": "M",
     "subject": "demokrati"
   },
@@ -593,7 +593,7 @@
     ],
     "title": "Förskolan",
     "url": "https://moderaterna.se/var-politik/forskola/",
-    "fetchDate": "2026-04-08T07:42:05.390Z",
+    "updateDate": "2026-04-08T07:42:05.390Z",
     "party": "M",
     "subject": "utbildning"
   }

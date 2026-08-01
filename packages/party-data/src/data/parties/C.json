@@ -15,7 +15,7 @@
     ],
     "title": "Bostäder",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/bostader",
-    "fetchDate": "2026-02-01T12:57:24.281Z",
+    "updateDate": "2026-02-01T12:57:24.281Z",
     "party": "C",
     "subject": "bostad"
   },
@@ -31,7 +31,7 @@
     ],
     "title": "Demokrati",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/demokrati",
-    "fetchDate": "2026-02-01T12:57:24.963Z",
+    "updateDate": "2026-02-01T12:57:24.963Z",
     "party": "C",
     "subject": "demokrati"
   },
@@ -43,7 +43,7 @@
     ],
     "title": "Digitalisering",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/digitalisering",
-    "fetchDate": "2026-02-01T12:57:23.940Z",
+    "updateDate": "2026-02-01T12:57:23.940Z",
     "party": "C",
     "subject": "it-och-mobiltelefoni"
   },
@@ -63,7 +63,7 @@
     ],
     "title": "Diskriminering",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/diskriminering",
-    "fetchDate": "2026-02-01T12:57:25.271Z",
+    "updateDate": "2026-02-01T12:57:25.271Z",
     "party": "C",
     "subject": "jamstalldhet-och-diskriminering"
   },
@@ -75,7 +75,7 @@
     ],
     "title": "Energi",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/energi",
-    "fetchDate": "2026-02-01T12:57:25.150Z",
+    "updateDate": "2026-02-01T12:57:25.150Z",
     "party": "C",
     "subject": "energi"
   },
@@ -87,7 +87,7 @@
     ],
     "title": "Familj",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/familj",
-    "fetchDate": "2026-02-01T12:57:24.169Z",
+    "updateDate": "2026-02-01T12:57:24.169Z",
     "party": "C",
     "subject": "familjen"
   },
@@ -106,7 +106,7 @@
     ],
     "title": "Företagande",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/foretagande",
-    "fetchDate": "2026-02-01T12:57:25.488Z",
+    "updateDate": "2026-02-01T12:57:25.488Z",
     "party": "C",
     "subject": "naringsliv"
   },
@@ -126,7 +126,7 @@
     ],
     "title": "Försvar",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/forsvar",
-    "fetchDate": "2026-04-06T13:42:23.120Z",
+    "updateDate": "2026-04-06T13:42:23.120Z",
     "party": "C",
     "subject": "forsvar"
   },
@@ -138,7 +138,7 @@
     ],
     "title": "Transporter",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/infrastruktur-och-transporter",
-    "fetchDate": "2026-02-14T10:55:25.866Z",
+    "updateDate": "2026-02-14T10:55:25.866Z",
     "party": "C",
     "subject": "infrastruktur-och-trafik"
   },
@@ -154,7 +154,7 @@
     ],
     "title": "Jobb",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/jobb",
-    "fetchDate": "2026-02-01T12:57:25.713Z",
+    "updateDate": "2026-02-01T12:57:25.713Z",
     "party": "C",
     "subject": "jobb"
   },
@@ -173,7 +173,7 @@
     ],
     "title": "Skog",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/jordbruk-skog-jakt-och-fiske",
-    "fetchDate": "2026-02-14T10:55:25.415Z",
+    "updateDate": "2026-02-14T10:55:25.415Z",
     "party": "C",
     "subject": "jordbruk-jakt-och-fiske"
   },
@@ -185,7 +185,7 @@
     ],
     "title": "Jämställdhet",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/jamstalldhet",
-    "fetchDate": "2026-02-01T12:57:25.389Z",
+    "updateDate": "2026-02-01T12:57:25.389Z",
     "party": "C",
     "subject": "jamstalldhet-och-diskriminering"
   },
@@ -205,7 +205,7 @@
     ],
     "title": "Klimat",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/klimat",
-    "fetchDate": "2026-02-01T12:57:24.097Z",
+    "updateDate": "2026-02-01T12:57:24.097Z",
     "party": "C",
     "subject": "miljo-och-klimat"
   },
@@ -225,7 +225,7 @@
     ],
     "title": "Media",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/kultur-media-och-idrott",
-    "fetchDate": "2026-02-14T10:55:24.850Z",
+    "updateDate": "2026-02-14T10:55:24.850Z",
     "party": "C",
     "subject": "kultur-media-och-idrott"
   },
@@ -237,7 +237,7 @@
     ],
     "title": "Lag och rätt",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/lag-och-ratt",
-    "fetchDate": "2026-02-03T07:39:13.470Z",
+    "updateDate": "2026-02-03T07:39:13.470Z",
     "party": "C",
     "subject": "lag-och-ratt"
   },
@@ -253,7 +253,7 @@
     ],
     "title": "Landsbygd",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/landsbygd",
-    "fetchDate": "2026-02-01T12:57:24.462Z",
+    "updateDate": "2026-02-01T12:57:24.462Z",
     "party": "C",
     "subject": "landsbygd"
   },
@@ -271,7 +271,7 @@
     ],
     "title": "Mat och livsmedelsproduktion",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/mat-och-livsmedelsproduktion",
-    "fetchDate": "2026-02-01T12:57:25.392Z",
+    "updateDate": "2026-02-01T12:57:25.392Z",
     "party": "C",
     "subject": "jordbruk-jakt-och-fiske"
   },
@@ -291,7 +291,7 @@
     ],
     "title": "Miljö",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/miljo",
-    "fetchDate": "2026-02-01T12:57:25.854Z",
+    "updateDate": "2026-02-01T12:57:25.854Z",
     "party": "C",
     "subject": "miljo-och-klimat"
   },
@@ -303,7 +303,7 @@
     ],
     "title": "Trygghetssystem",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/trygghetssystem",
-    "fetchDate": "2026-02-03T07:39:13.216Z",
+    "updateDate": "2026-02-03T07:39:13.216Z",
     "party": "C",
     "subject": "trygghetssystem-och-valfard"
   },
@@ -316,7 +316,7 @@
     ],
     "title": "Utbildning",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/utbildning",
-    "fetchDate": "2026-02-01T12:57:24.770Z",
+    "updateDate": "2026-02-01T12:57:24.770Z",
     "party": "C",
     "subject": "utbildning"
   },
@@ -328,7 +328,7 @@
     ],
     "title": "Utrikes- och biståndsfrågor",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/utrikes--och-bistandsfragor",
-    "fetchDate": "2026-02-01T12:57:25.306Z",
+    "updateDate": "2026-02-01T12:57:25.306Z",
     "party": "C",
     "subject": "utrikes--och-bistandsfragor"
   },
@@ -347,7 +347,7 @@
     ],
     "title": "Vård och omsorg",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/vard-och-omsorg",
-    "fetchDate": "2026-02-01T12:57:25.195Z",
+    "updateDate": "2026-02-01T12:57:25.195Z",
     "party": "C",
     "subject": "vard-och-omsorg"
   },
@@ -366,7 +366,7 @@
     ],
     "title": "Skatt",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/ekonomi-och-skatter",
-    "fetchDate": "2026-02-14T10:55:24.917Z",
+    "updateDate": "2026-02-14T10:55:24.917Z",
     "party": "C",
     "subject": "ekonomi-och-skatter"
   },
@@ -378,7 +378,7 @@
     ],
     "title": "Europa och EU",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/europa-och-eu",
-    "fetchDate": "2026-02-01T12:57:25.200Z",
+    "updateDate": "2026-02-01T12:57:25.200Z",
     "party": "C",
     "subject": "europa"
   },
@@ -393,7 +393,7 @@
     ],
     "title": "Bostadsbyggande",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/bostader/bostadsbyggande",
-    "fetchDate": "2026-04-08T07:42:02.246Z",
+    "updateDate": "2026-04-08T07:42:02.246Z",
     "party": "C",
     "subject": "bostad"
   },
@@ -408,7 +408,7 @@
     ],
     "title": "Bostadsskatter",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/bostader/bostadsskatter",
-    "fetchDate": "2026-02-01T13:25:50.967Z",
+    "updateDate": "2026-02-01T13:25:50.967Z",
     "party": "C",
     "subject": "bostad"
   },
@@ -420,7 +420,7 @@
     ],
     "title": "Bostäder i hela landet",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/bostader/bostader-i-hela-landet",
-    "fetchDate": "2026-02-01T13:25:50.341Z",
+    "updateDate": "2026-02-01T13:25:50.341Z",
     "party": "C",
     "subject": "bostad"
   },
@@ -436,7 +436,7 @@
     ],
     "title": "Hyresrätter",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/bostader/hyresratter",
-    "fetchDate": "2026-02-01T13:25:50.122Z",
+    "updateDate": "2026-02-01T13:25:50.122Z",
     "party": "C",
     "subject": "bostad"
   },
@@ -452,7 +452,7 @@
     ],
     "title": "Hållbart byggande",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/bostader/hallbart-byggande",
-    "fetchDate": "2026-02-01T13:25:49.760Z",
+    "updateDate": "2026-02-01T13:25:49.760Z",
     "party": "C",
     "subject": "bostad"
   },
@@ -468,7 +468,7 @@
     ],
     "title": "Samhällsplanering",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/bostader/samhallsplanering",
-    "fetchDate": "2026-02-01T13:25:50.951Z",
+    "updateDate": "2026-02-01T13:25:50.951Z",
     "party": "C",
     "subject": "bostad"
   },
@@ -484,7 +484,7 @@
     ],
     "title": "Strandskydd",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/bostader/strandskydd",
-    "fetchDate": "2026-02-01T13:25:50.182Z",
+    "updateDate": "2026-02-01T13:25:50.182Z",
     "party": "C",
     "subject": "bostad"
   },
@@ -500,7 +500,7 @@
     ],
     "title": "HBTQI",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/diskriminering/hbtqi",
-    "fetchDate": "2026-04-08T07:42:06.940Z",
+    "updateDate": "2026-04-08T07:42:06.940Z",
     "party": "C",
     "subject": "jamstalldhet-och-diskriminering"
   },
@@ -514,7 +514,7 @@
     ],
     "title": "Monarki",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/demokrati/monarki",
-    "fetchDate": "2026-02-01T13:25:49.644Z",
+    "updateDate": "2026-02-01T13:25:49.644Z",
     "party": "C",
     "subject": "demokrati"
   },
@@ -528,7 +528,7 @@
     ],
     "title": "Artificiell intelligens (AI)",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/digitalisering/artificiell-intelligens-ai",
-    "fetchDate": "2026-02-01T13:25:51.294Z",
+    "updateDate": "2026-02-01T13:25:51.294Z",
     "party": "C",
     "subject": "it-och-mobiltelefoni"
   },
@@ -541,7 +541,7 @@
     ],
     "title": "Cybersäkerhet",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/digitalisering/cybersakerhet",
-    "fetchDate": "2026-02-01T13:25:49.671Z",
+    "updateDate": "2026-02-01T13:25:49.671Z",
     "party": "C",
     "subject": "it-och-mobiltelefoni"
   },
@@ -554,7 +554,7 @@
     ],
     "title": "Digital offentlig sektor och välfärd",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/digitalisering/digital-offentlig-sektor-och-valfard",
-    "fetchDate": "2026-02-01T13:25:51.134Z",
+    "updateDate": "2026-02-01T13:25:51.134Z",
     "party": "C",
     "subject": "it-och-mobiltelefoni"
   },
@@ -569,7 +569,7 @@
     ],
     "title": "Hållbar digitalisering",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/digitalisering/hallbar-digitalisering",
-    "fetchDate": "2026-02-01T13:25:50.370Z",
+    "updateDate": "2026-02-01T13:25:50.370Z",
     "party": "C",
     "subject": "it-och-mobiltelefoni"
   },
@@ -591,7 +591,7 @@
     ],
     "title": "Funktionsrätt",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/diskriminering/funktionsratt",
-    "fetchDate": "2026-02-01T13:25:49.376Z",
+    "updateDate": "2026-02-01T13:25:49.376Z",
     "party": "C",
     "subject": "vard-och-omsorg"
   },
@@ -610,7 +610,7 @@
     ],
     "title": "Kvotering",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/jamstalldhet/kvotering",
-    "fetchDate": "2026-02-01T13:25:50.969Z",
+    "updateDate": "2026-02-01T13:25:50.969Z",
     "party": "C",
     "subject": "jamstalldhet-och-diskriminering"
   },
@@ -628,7 +628,7 @@
     ],
     "title": "Det personliga ägandet i företag",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/ekonomi-och-skatter/det-personliga-agandet-i-foretag",
-    "fetchDate": "2026-02-01T13:25:49.707Z",
+    "updateDate": "2026-02-01T13:25:49.707Z",
     "party": "C",
     "subject": "naringsliv"
   },
@@ -647,7 +647,7 @@
     ],
     "title": "Ekonomisk politik",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/ekonomi-och-skatter/ekonomisk-politik",
-    "fetchDate": "2026-02-01T13:25:50.330Z",
+    "updateDate": "2026-02-01T13:25:50.330Z",
     "party": "C",
     "subject": "ekonomi-och-skatter"
   },
@@ -664,7 +664,7 @@
     ],
     "title": "Grön skatteväxling",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/ekonomi-och-skatter/gron-skattevaxling",
-    "fetchDate": "2026-02-01T13:25:49.527Z",
+    "updateDate": "2026-02-01T13:25:49.527Z",
     "party": "C",
     "subject": "ekonomi-och-skatter"
   },
@@ -680,7 +680,7 @@
     ],
     "title": "Inkomstskatt",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/ekonomi-och-skatter/inkomstskatt",
-    "fetchDate": "2026-02-01T13:25:49.547Z",
+    "updateDate": "2026-02-01T13:25:49.547Z",
     "party": "C",
     "subject": "ekonomi-och-skatter"
   },
@@ -696,7 +696,7 @@
     ],
     "title": "Kommunal skatteutjämning",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/ekonomi-och-skatter/kommunal-skatteutjamning",
-    "fetchDate": "2026-02-01T13:25:50.510Z",
+    "updateDate": "2026-02-01T13:25:50.510Z",
     "party": "C",
     "subject": "ekonomi-och-skatter"
   },
@@ -711,7 +711,7 @@
     ],
     "title": "Moms",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/ekonomi-och-skatter/moms",
-    "fetchDate": "2026-02-01T13:25:50.813Z",
+    "updateDate": "2026-02-01T13:25:50.813Z",
     "party": "C",
     "subject": "ekonomi-och-skatter"
   },
@@ -727,7 +727,7 @@
     ],
     "title": "Ordning och reda i statsfinanserna",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/ekonomi-och-skatter/ordning-och-reda-i-statsfinanserna",
-    "fetchDate": "2026-02-01T13:25:49.900Z",
+    "updateDate": "2026-02-01T13:25:49.900Z",
     "party": "C",
     "subject": "ekonomi-och-skatter"
   },
@@ -742,7 +742,7 @@
     ],
     "title": "Regionala skattebaser",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/ekonomi-och-skatter/regionala-skattebaser",
-    "fetchDate": "2026-02-01T13:25:50.652Z",
+    "updateDate": "2026-02-01T13:25:50.652Z",
     "party": "C",
     "subject": "ekonomi-och-skatter"
   },
@@ -759,7 +759,7 @@
     ],
     "title": "Bioenergi",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/energi/bioenergi",
-    "fetchDate": "2026-02-01T13:25:52.828Z",
+    "updateDate": "2026-02-01T13:25:52.828Z",
     "party": "C",
     "subject": "energi"
   },
@@ -771,7 +771,7 @@
     ],
     "title": "Elnät",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/energi/elnat",
-    "fetchDate": "2026-02-01T13:25:53.225Z",
+    "updateDate": "2026-02-01T13:25:53.225Z",
     "party": "C",
     "subject": "energi"
   },
@@ -789,7 +789,7 @@
     ],
     "title": "Energiöverenskommelsen",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/energi/energioverenskommelsen",
-    "fetchDate": "2026-02-01T13:25:51.730Z",
+    "updateDate": "2026-02-01T13:25:51.730Z",
     "party": "C",
     "subject": "energi"
   },
@@ -801,7 +801,7 @@
     ],
     "title": "Grön vätgas",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/energi/gron-vatgas",
-    "fetchDate": "2026-02-01T13:25:52.705Z",
+    "updateDate": "2026-02-01T13:25:52.705Z",
     "party": "C",
     "subject": "energi"
   },
@@ -816,7 +816,7 @@
     ],
     "title": "Kraftvärme",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/energi/kraftvarme",
-    "fetchDate": "2026-02-01T13:25:52.132Z",
+    "updateDate": "2026-02-01T13:25:52.132Z",
     "party": "C",
     "subject": "energi"
   },
@@ -830,7 +830,7 @@
     ],
     "title": "Kärnkraft",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/energi/karnkraft",
-    "fetchDate": "2026-02-01T13:25:51.620Z",
+    "updateDate": "2026-02-01T13:25:51.620Z",
     "party": "C",
     "subject": "energi"
   },
@@ -847,7 +847,7 @@
     ],
     "title": "Solenergi",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/energi/solenergi",
-    "fetchDate": "2026-02-01T13:25:52.391Z",
+    "updateDate": "2026-02-01T13:25:52.391Z",
     "party": "C",
     "subject": "energi"
   },
@@ -863,7 +863,7 @@
     ],
     "title": "Vattenkraft",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/energi/vattenkraft",
-    "fetchDate": "2026-02-01T13:25:53.363Z",
+    "updateDate": "2026-02-01T13:25:53.363Z",
     "party": "C",
     "subject": "energi"
   },
@@ -879,7 +879,7 @@
     ],
     "title": "Vindkraft",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/energi/vindkraft",
-    "fetchDate": "2026-02-01T13:25:51.578Z",
+    "updateDate": "2026-02-01T13:25:51.578Z",
     "party": "C",
     "subject": "energi"
   },
@@ -894,7 +894,7 @@
     ],
     "title": "Djurskyddet inom EU",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/europa-och-eu/djurskyddet-inom-eu",
-    "fetchDate": "2026-02-01T13:25:50.783Z",
+    "updateDate": "2026-02-01T13:25:50.783Z",
     "party": "C",
     "subject": "europa"
   },
@@ -908,7 +908,7 @@
     ],
     "title": "EU:s ekonomiska samarbete",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/europa-och-eu/eus-ekonomiska-samarbete",
-    "fetchDate": "2026-02-01T13:25:49.587Z",
+    "updateDate": "2026-02-01T13:25:49.587Z",
     "party": "C",
     "subject": "europa"
   },
@@ -924,7 +924,7 @@
     ],
     "title": "EU:s jordbrukspolitik",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/europa-och-eu/eus-jordbrukspolitik",
-    "fetchDate": "2026-02-01T13:25:49.725Z",
+    "updateDate": "2026-02-01T13:25:49.725Z",
     "party": "C",
     "subject": "europa"
   },
@@ -941,7 +941,7 @@
     ],
     "title": "Klimatpolitik i EU",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/europa-och-eu/klimatpolitik-i-eu",
-    "fetchDate": "2026-02-01T13:25:49.973Z",
+    "updateDate": "2026-02-01T13:25:49.973Z",
     "party": "C",
     "subject": "europa"
   },
@@ -953,7 +953,7 @@
     ],
     "title": "Adoption",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/familj/adoption",
-    "fetchDate": "2026-02-01T13:25:51.363Z",
+    "updateDate": "2026-02-01T13:25:51.363Z",
     "party": "C",
     "subject": "familjen"
   },
@@ -965,7 +965,7 @@
     ],
     "title": "Barnbidrag",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/familj/barnbidrag",
-    "fetchDate": "2026-02-01T13:25:51.050Z",
+    "updateDate": "2026-02-01T13:25:51.050Z",
     "party": "C",
     "subject": "familjen"
   },
@@ -985,7 +985,7 @@
     ],
     "title": "Föräldraförsäkring",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/familj/foraldraforsakring",
-    "fetchDate": "2026-02-01T13:25:50.490Z",
+    "updateDate": "2026-02-01T13:25:50.490Z",
     "party": "C",
     "subject": "familjen"
   },
@@ -1000,7 +1000,7 @@
     ],
     "title": "Ofrivillig barnlöshet",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/familj/ofrivillig-barnloshet",
-    "fetchDate": "2026-02-01T13:25:50.464Z",
+    "updateDate": "2026-02-01T13:25:50.464Z",
     "party": "C",
     "subject": "familjen"
   },
@@ -1012,7 +1012,7 @@
     ],
     "title": "Omhändertagande av barn",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/familj/omhandertagande-av-barn",
-    "fetchDate": "2026-02-01T13:25:50.145Z",
+    "updateDate": "2026-02-01T13:25:50.145Z",
     "party": "C",
     "subject": "familjen"
   },
@@ -1027,7 +1027,7 @@
     ],
     "title": "Skilsmässa och bodelning",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/familj/skilsmassa-och-bodelning",
-    "fetchDate": "2026-02-01T13:25:50.365Z",
+    "updateDate": "2026-02-01T13:25:50.365Z",
     "party": "C",
     "subject": "familjen"
   },
@@ -1043,7 +1043,7 @@
     ],
     "title": "Företagsklimat",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/foretagande/foretagsklimat",
-    "fetchDate": "2026-02-01T13:25:50.986Z",
+    "updateDate": "2026-02-01T13:25:50.986Z",
     "party": "C",
     "subject": "naringsliv"
   },
@@ -1059,7 +1059,7 @@
     ],
     "title": "Företagsskatter",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/foretagande/foretagsskatter",
-    "fetchDate": "2026-02-01T13:25:50.823Z",
+    "updateDate": "2026-02-01T13:25:50.823Z",
     "party": "C",
     "subject": "naringsliv"
   },
@@ -1075,7 +1075,7 @@
     ],
     "title": "Regelförenklingar för företag",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/foretagande/regelforenklingar-for-foretag",
-    "fetchDate": "2026-02-01T13:25:49.320Z",
+    "updateDate": "2026-02-01T13:25:49.320Z",
     "party": "C",
     "subject": "naringsliv"
   },
@@ -1083,7 +1083,7 @@
     "opinions": [],
     "title": "101 hinder för företagens tillväxt och jobbskapande",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/foretagande/regelforenklingar-for-foretag/101-hinder-for-foretagens-tillvaxt-och-jobbskapande",
-    "fetchDate": "2026-02-01T13:25:51.263Z",
+    "updateDate": "2026-02-01T13:25:51.263Z",
     "party": "C",
     "subject": "naringsliv"
   },
@@ -1098,7 +1098,7 @@
     ],
     "title": "Sänk kostnaden för att anställa",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/foretagande/sank-kostnaden-for-att-anstalla",
-    "fetchDate": "2026-02-01T13:25:50.830Z",
+    "updateDate": "2026-02-01T13:25:50.830Z",
     "party": "C",
     "subject": "naringsliv"
   },
@@ -1110,7 +1110,7 @@
     ],
     "title": "Internationella försvarssamarbeten",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/forsvar/internationella-forsvarssamarbeten",
-    "fetchDate": "2026-04-06T13:42:24.811Z",
+    "updateDate": "2026-04-06T13:42:24.811Z",
     "party": "C",
     "subject": "forsvar"
   },
@@ -1125,7 +1125,7 @@
     ],
     "title": "Internationella insatser",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/forsvar/internationella-insatser",
-    "fetchDate": "2026-02-01T13:25:51.040Z",
+    "updateDate": "2026-02-01T13:25:51.040Z",
     "party": "C",
     "subject": "forsvar"
   },
@@ -1137,7 +1137,7 @@
     ],
     "title": "Krisberedskap och civilt försvar",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/forsvar/krisberedskap-och-civilt-forsvar",
-    "fetchDate": "2026-02-01T13:25:50.012Z",
+    "updateDate": "2026-02-01T13:25:50.012Z",
     "party": "C",
     "subject": "forsvar"
   },
@@ -1153,7 +1153,7 @@
     ],
     "title": "Personalen i försvaret",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/forsvar/personalen-i-forsvaret",
-    "fetchDate": "2026-02-01T13:25:49.503Z",
+    "updateDate": "2026-02-01T13:25:49.503Z",
     "party": "C",
     "subject": "forsvar"
   },
@@ -1168,7 +1168,7 @@
     ],
     "title": "Räddningstjänst",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/forsvar/raddningstjanst",
-    "fetchDate": "2026-02-01T13:25:49.991Z",
+    "updateDate": "2026-02-01T13:25:49.991Z",
     "party": "C",
     "subject": "forsvar"
   },
@@ -1184,7 +1184,7 @@
     ],
     "title": "Terrorism",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/forsvar/terrorism",
-    "fetchDate": "2026-02-01T13:25:49.367Z",
+    "updateDate": "2026-02-01T13:25:49.367Z",
     "party": "C",
     "subject": "forsvar"
   },
@@ -1196,7 +1196,7 @@
     ],
     "title": "Bil",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/infrastruktur-och-transporter/bil",
-    "fetchDate": "2026-02-01T13:25:50.875Z",
+    "updateDate": "2026-02-01T13:25:50.875Z",
     "party": "C",
     "subject": "infrastruktur-och-trafik"
   },
@@ -1209,7 +1209,7 @@
     ],
     "title": "Cykel",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/infrastruktur-och-transporter/cykel",
-    "fetchDate": "2026-02-01T13:25:50.006Z",
+    "updateDate": "2026-02-01T13:25:50.006Z",
     "party": "C",
     "subject": "infrastruktur-och-trafik"
   },
@@ -1221,7 +1221,7 @@
     ],
     "title": "Dubbdäck och vinterdäck",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/infrastruktur-och-transporter/dubbdack-och-vinterdack",
-    "fetchDate": "2026-02-01T13:25:49.507Z",
+    "updateDate": "2026-02-01T13:25:49.507Z",
     "party": "C",
     "subject": "infrastruktur-och-trafik"
   },
@@ -1233,7 +1233,7 @@
     ],
     "title": "Elsparkcyklar",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/infrastruktur-och-transporter/elsparkcyklar",
-    "fetchDate": "2026-02-01T13:25:50.067Z",
+    "updateDate": "2026-02-01T13:25:50.067Z",
     "party": "C",
     "subject": "infrastruktur-och-trafik"
   },
@@ -1246,7 +1246,7 @@
     ],
     "title": "Järnväg",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/infrastruktur-och-transporter/jarnvag",
-    "fetchDate": "2026-02-01T13:25:50.752Z",
+    "updateDate": "2026-02-01T13:25:50.752Z",
     "party": "C",
     "subject": "infrastruktur-och-trafik"
   },
@@ -1258,7 +1258,7 @@
     ],
     "title": "Kollektivtrafik",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/infrastruktur-och-transporter/kollektivtrafik",
-    "fetchDate": "2026-02-01T13:25:50.729Z",
+    "updateDate": "2026-02-01T13:25:50.729Z",
     "party": "C",
     "subject": "infrastruktur-och-trafik"
   },
@@ -1270,7 +1270,7 @@
     ],
     "title": "Körkort och trafiksäkerhet",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/infrastruktur-och-transporter/korkort-och-trafiksakerhet",
-    "fetchDate": "2026-02-01T13:25:51.006Z",
+    "updateDate": "2026-02-01T13:25:51.006Z",
     "party": "C",
     "subject": "infrastruktur-och-trafik"
   },
@@ -1283,7 +1283,7 @@
     ],
     "title": "Sjöfart och hamnar",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/infrastruktur-och-transporter/sjofart-och-hamnar",
-    "fetchDate": "2026-02-01T13:25:50.806Z",
+    "updateDate": "2026-02-01T13:25:50.806Z",
     "party": "C",
     "subject": "infrastruktur-och-trafik"
   },
@@ -1295,7 +1295,7 @@
     ],
     "title": "Trängselskatt och miljözoner",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/infrastruktur-och-transporter/trangselskatt-och-miljozoner",
-    "fetchDate": "2026-02-01T13:25:50.738Z",
+    "updateDate": "2026-02-01T13:25:50.738Z",
     "party": "C",
     "subject": "infrastruktur-och-trafik"
   },
@@ -1307,7 +1307,7 @@
     ],
     "title": "Vägar och vägunderhåll",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/infrastruktur-och-transporter/vagar-och-vagunderhall",
-    "fetchDate": "2026-02-01T13:25:51.120Z",
+    "updateDate": "2026-02-01T13:25:51.120Z",
     "party": "C",
     "subject": "infrastruktur-och-trafik"
   },
@@ -1326,7 +1326,7 @@
     ],
     "title": "Djurskydd och djurhälsa",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/jordbruk-skog-jakt-och-fiske/djurskydd-och-djurhalsa",
-    "fetchDate": "2026-02-01T13:25:51.043Z",
+    "updateDate": "2026-02-01T13:25:51.043Z",
     "party": "C",
     "subject": "jordbruk-jakt-och-fiske"
   },
@@ -1342,7 +1342,7 @@
     ],
     "title": "Fiske",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/jordbruk-skog-jakt-och-fiske/fiske",
-    "fetchDate": "2026-02-01T13:25:50.462Z",
+    "updateDate": "2026-02-01T13:25:50.462Z",
     "party": "C",
     "subject": "jordbruk-jakt-och-fiske"
   },
@@ -1358,7 +1358,7 @@
     ],
     "title": "Hästnäringen",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/jordbruk-skog-jakt-och-fiske/hastnaringen",
-    "fetchDate": "2026-02-01T13:25:50.721Z",
+    "updateDate": "2026-02-01T13:25:50.721Z",
     "party": "C",
     "subject": "jordbruk-jakt-och-fiske"
   },
@@ -1374,7 +1374,7 @@
     ],
     "title": "Internationellt djurskydd",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/jordbruk-skog-jakt-och-fiske/internationellt-djurskydd",
-    "fetchDate": "2026-02-01T13:25:50.081Z",
+    "updateDate": "2026-02-01T13:25:50.081Z",
     "party": "C",
     "subject": "jordbruk-jakt-och-fiske"
   },
@@ -1390,7 +1390,7 @@
     ],
     "title": "Jakt och viltvård",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/jordbruk-skog-jakt-och-fiske/jakt-och-viltvard",
-    "fetchDate": "2026-02-01T13:25:49.916Z",
+    "updateDate": "2026-02-01T13:25:49.916Z",
     "party": "C",
     "subject": "jordbruk-jakt-och-fiske"
   },
@@ -1409,7 +1409,7 @@
     ],
     "title": "Jordbruk och livsmedel",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/jordbruk-skog-jakt-och-fiske/jordbruk-och-livsmedel",
-    "fetchDate": "2026-02-01T13:25:50.356Z",
+    "updateDate": "2026-02-01T13:25:50.356Z",
     "party": "C",
     "subject": "jordbruk-jakt-och-fiske"
   },
@@ -1428,7 +1428,7 @@
     ],
     "title": "Skog",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/jordbruk-skog-jakt-och-fiske/skog",
-    "fetchDate": "2026-02-01T13:25:50.755Z",
+    "updateDate": "2026-02-01T13:25:50.755Z",
     "party": "C",
     "subject": "jordbruk-jakt-och-fiske"
   },
@@ -1448,7 +1448,7 @@
     ],
     "title": "Vapen",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/jordbruk-skog-jakt-och-fiske/vapen",
-    "fetchDate": "2026-02-01T13:25:49.466Z",
+    "updateDate": "2026-02-01T13:25:49.466Z",
     "party": "C",
     "subject": "jordbruk-jakt-och-fiske"
   },
@@ -1468,7 +1468,7 @@
     ],
     "title": "Varg och andra rovdjur",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/jordbruk-skog-jakt-och-fiske/varg-och-andra-rovdjur",
-    "fetchDate": "2026-02-01T13:25:50.512Z",
+    "updateDate": "2026-02-01T13:25:50.512Z",
     "party": "C",
     "subject": "jordbruk-jakt-och-fiske"
   },
@@ -1484,7 +1484,7 @@
     ],
     "title": "Vildsvin",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/jordbruk-skog-jakt-och-fiske/vildsvin",
-    "fetchDate": "2026-02-01T13:25:51.297Z",
+    "updateDate": "2026-02-01T13:25:51.297Z",
     "party": "C",
     "subject": "jordbruk-jakt-och-fiske"
   },
@@ -1501,7 +1501,7 @@
     ],
     "title": "Abort",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/jamstalldhet/abort",
-    "fetchDate": "2026-02-01T13:25:50.567Z",
+    "updateDate": "2026-02-01T13:25:50.567Z",
     "party": "C",
     "subject": "jamstalldhet-och-diskriminering"
   },
@@ -1521,7 +1521,7 @@
     ],
     "title": "Ekonomisk jämställdhet",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/jamstalldhet/ekonomisk-jamstalldhet",
-    "fetchDate": "2026-02-01T13:25:49.738Z",
+    "updateDate": "2026-02-01T13:25:49.738Z",
     "party": "C",
     "subject": "jamstalldhet-och-diskriminering"
   },
@@ -1540,7 +1540,7 @@
     ],
     "title": "Klimatpolitik internationellt",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/klimat/klimatpolitik-internationellt",
-    "fetchDate": "2026-02-01T13:25:50.402Z",
+    "updateDate": "2026-02-01T13:25:50.402Z",
     "party": "C",
     "subject": "miljo-och-klimat"
   },
@@ -1560,7 +1560,7 @@
     ],
     "title": "Klimatpolitik i EU",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/klimat/klimatpolitik-i-eu",
-    "fetchDate": "2026-02-01T13:25:49.702Z",
+    "updateDate": "2026-02-01T13:25:49.702Z",
     "party": "C",
     "subject": "miljo-och-klimat"
   },
@@ -1572,7 +1572,7 @@
     ],
     "title": "Idrott",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/kultur-media-och-idrott/idrott",
-    "fetchDate": "2026-02-01T13:25:51.106Z",
+    "updateDate": "2026-02-01T13:25:51.106Z",
     "party": "C",
     "subject": "kultur-media-och-idrott"
   },
@@ -1584,7 +1584,7 @@
     ],
     "title": "Gängkriminalitet",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/lag-och-ratt/gangkriminalitet",
-    "fetchDate": "2026-02-01T13:25:51.393Z",
+    "updateDate": "2026-02-01T13:25:51.393Z",
     "party": "C",
     "subject": "lag-och-ratt"
   },
@@ -1603,7 +1603,7 @@
     ],
     "title": "Hedersrelaterat våld och förtryck",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/lag-och-ratt/hedersrelaterat-vald-och-fortryck",
-    "fetchDate": "2026-02-01T13:25:51.008Z",
+    "updateDate": "2026-02-01T13:25:51.008Z",
     "party": "C",
     "subject": "lag-och-ratt"
   },
@@ -1623,7 +1623,7 @@
     ],
     "title": "Konsumentpolitik",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/lag-och-ratt/konsumentpolitik",
-    "fetchDate": "2026-02-01T13:25:51.219Z",
+    "updateDate": "2026-02-01T13:25:51.219Z",
     "party": "C",
     "subject": "konsumentpolitik"
   },
@@ -1643,7 +1643,7 @@
     ],
     "title": "Kriminalvården",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/lag-och-ratt/kriminalvarden",
-    "fetchDate": "2026-02-01T13:25:51.305Z",
+    "updateDate": "2026-02-01T13:25:51.305Z",
     "party": "C",
     "subject": "lag-och-ratt"
   },
@@ -1658,7 +1658,7 @@
     ],
     "title": "Miljöbrott",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/lag-och-ratt/miljobrott",
-    "fetchDate": "2026-02-01T13:25:49.891Z",
+    "updateDate": "2026-02-01T13:25:49.891Z",
     "party": "C",
     "subject": "lag-och-ratt"
   },
@@ -1675,7 +1675,7 @@
     ],
     "title": "Människohandel",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/lag-och-ratt/manniskohandel",
-    "fetchDate": "2026-02-01T13:25:50.311Z",
+    "updateDate": "2026-02-01T13:25:50.311Z",
     "party": "C",
     "subject": "lag-och-ratt"
   },
@@ -1694,7 +1694,7 @@
     ],
     "title": "Mäns våld mot kvinnor",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/lag-och-ratt/mans-vald-mot-kvinnor",
-    "fetchDate": "2026-04-08T07:42:02.759Z",
+    "updateDate": "2026-04-08T07:42:02.759Z",
     "party": "C",
     "subject": "lag-och-ratt"
   },
@@ -1715,7 +1715,7 @@
     ],
     "title": "Polisen",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/lag-och-ratt/polisen",
-    "fetchDate": "2026-02-01T13:25:51.115Z",
+    "updateDate": "2026-02-01T13:25:51.115Z",
     "party": "C",
     "subject": "lag-och-ratt"
   },
@@ -1732,7 +1732,7 @@
     ],
     "title": "Prostitution",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/lag-och-ratt/prostitution",
-    "fetchDate": "2026-02-01T13:25:50.029Z",
+    "updateDate": "2026-02-01T13:25:50.029Z",
     "party": "C",
     "subject": "lag-och-ratt"
   },
@@ -1748,7 +1748,7 @@
     ],
     "title": "Rättssäkerhet",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/lag-och-ratt/rattssakerhet",
-    "fetchDate": "2026-02-01T13:25:50.959Z",
+    "updateDate": "2026-02-01T13:25:50.959Z",
     "party": "C",
     "subject": "lag-och-ratt"
   },
@@ -1765,7 +1765,7 @@
     ],
     "title": "Sexualbrott",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/lag-och-ratt/sexualbrott",
-    "fetchDate": "2026-02-01T13:25:51.209Z",
+    "updateDate": "2026-02-01T13:25:51.209Z",
     "party": "C",
     "subject": "lag-och-ratt"
   },
@@ -1784,7 +1784,7 @@
     ],
     "title": "Trygghet och brottsförebyggande arbete",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/lag-och-ratt/trygghet-och-brottsforebyggande-arbete",
-    "fetchDate": "2026-02-01T13:25:51.031Z",
+    "updateDate": "2026-02-01T13:25:51.031Z",
     "party": "C",
     "subject": "lag-och-ratt"
   },
@@ -1802,7 +1802,7 @@
     ],
     "title": "Antibiotika",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/mat-och-livsmedelsproduktion/antibiotika",
-    "fetchDate": "2026-02-01T13:25:49.936Z",
+    "updateDate": "2026-02-01T13:25:49.936Z",
     "party": "C",
     "subject": "jordbruk-jakt-och-fiske"
   },
@@ -1818,7 +1818,7 @@
     ],
     "title": "Djurvälfärd",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/mat-och-livsmedelsproduktion/djurvalfard",
-    "fetchDate": "2026-02-01T13:25:50.484Z",
+    "updateDate": "2026-02-01T13:25:50.484Z",
     "party": "C",
     "subject": "jordbruk-jakt-och-fiske"
   },
@@ -1834,7 +1834,7 @@
     ],
     "title": "Hållbar mat",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/mat-och-livsmedelsproduktion/hallbar-mat",
-    "fetchDate": "2026-02-01T13:25:49.500Z",
+    "updateDate": "2026-02-01T13:25:49.500Z",
     "party": "C",
     "subject": "jordbruk-jakt-och-fiske"
   },
@@ -1851,7 +1851,7 @@
     ],
     "title": "Livsmedelsproduktion",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/mat-och-livsmedelsproduktion/livsmedelsproduktion",
-    "fetchDate": "2026-02-01T13:25:50.665Z",
+    "updateDate": "2026-02-01T13:25:50.665Z",
     "party": "C",
     "subject": "jordbruk-jakt-och-fiske"
   },
@@ -1870,7 +1870,7 @@
     ],
     "title": "Biologisk mångfald",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/miljo/biologisk-mangfald",
-    "fetchDate": "2026-02-01T13:25:49.855Z",
+    "updateDate": "2026-02-01T13:25:49.855Z",
     "party": "C",
     "subject": "miljo-och-klimat"
   },
@@ -1891,7 +1891,7 @@
     ],
     "title": "Cirkulär ekonomi",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/miljo/cirkular-ekonomi",
-    "fetchDate": "2026-02-01T13:25:50.810Z",
+    "updateDate": "2026-02-01T13:25:50.810Z",
     "party": "C",
     "subject": "miljo-och-klimat"
   },
@@ -1912,7 +1912,7 @@
     ],
     "title": "Giftfri vardag",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/miljo/giftfri-vardag",
-    "fetchDate": "2026-02-01T13:25:50.698Z",
+    "updateDate": "2026-02-01T13:25:50.698Z",
     "party": "C",
     "subject": "miljo-och-klimat"
   },
@@ -1934,7 +1934,7 @@
     ],
     "title": "Havsmiljö",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/miljo/havsmiljo",
-    "fetchDate": "2026-02-01T13:25:49.655Z",
+    "updateDate": "2026-02-01T13:25:49.655Z",
     "party": "C",
     "subject": "miljo-och-klimat"
   },
@@ -1949,7 +1949,7 @@
     ],
     "title": "Hållbart skogsbruk",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/miljo/hallbart-skogsbruk",
-    "fetchDate": "2026-02-01T13:25:49.114Z",
+    "updateDate": "2026-02-01T13:25:49.114Z",
     "party": "C",
     "subject": "miljo-och-klimat"
   },
@@ -1971,7 +1971,7 @@
     ],
     "title": "Livsmedelspolitik och matsvinn",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/miljo/livsmedelspolitik-och-matsvinn",
-    "fetchDate": "2026-02-01T13:25:51.090Z",
+    "updateDate": "2026-02-01T13:25:51.090Z",
     "party": "C",
     "subject": "miljo-och-klimat"
   },
@@ -1991,7 +1991,7 @@
     ],
     "title": "Lokalt självbestämmande och miljö",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/miljo/lokalt-sjalvbestammande-och-miljo",
-    "fetchDate": "2026-02-01T13:25:50.988Z",
+    "updateDate": "2026-02-01T13:25:50.988Z",
     "party": "C",
     "subject": "miljo-och-klimat"
   },
@@ -2011,7 +2011,7 @@
     ],
     "title": "Miljölagstiftning",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/miljo/miljolagstiftning",
-    "fetchDate": "2026-02-01T13:25:49.885Z",
+    "updateDate": "2026-02-01T13:25:49.885Z",
     "party": "C",
     "subject": "miljo-och-klimat"
   },
@@ -2031,7 +2031,7 @@
     ],
     "title": "Nedskräpning",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/miljo/nedskrapning",
-    "fetchDate": "2026-02-01T13:25:50.441Z",
+    "updateDate": "2026-02-01T13:25:50.441Z",
     "party": "C",
     "subject": "miljo-och-klimat"
   },
@@ -2053,7 +2053,7 @@
     ],
     "title": "Offentlig sektor och klimatet",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/miljo/offentlig-sektor-och-klimatet",
-    "fetchDate": "2026-02-01T13:25:50.056Z",
+    "updateDate": "2026-02-01T13:25:50.056Z",
     "party": "C",
     "subject": "miljo-och-klimat"
   },
@@ -2077,7 +2077,7 @@
     ],
     "title": "Rent vatten till alla",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/miljo/rent-vatten-till-alla",
-    "fetchDate": "2026-02-01T13:25:49.324Z",
+    "updateDate": "2026-02-01T13:25:49.324Z",
     "party": "C",
     "subject": "miljo-och-klimat"
   },
@@ -2095,7 +2095,7 @@
     ],
     "title": "Ekonomiskt bistånd",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/trygghetssystem/ekonomiskt-bistand",
-    "fetchDate": "2026-02-01T13:25:51.013Z",
+    "updateDate": "2026-02-01T13:25:51.013Z",
     "party": "C",
     "subject": "trygghetssystem-och-valfard"
   },
@@ -2107,7 +2107,7 @@
     ],
     "title": "Pensioner",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/trygghetssystem/pensioner",
-    "fetchDate": "2026-02-01T13:25:50.688Z",
+    "updateDate": "2026-02-01T13:25:50.688Z",
     "party": "C",
     "subject": "trygghetssystem-och-valfard"
   },
@@ -2126,7 +2126,7 @@
     ],
     "title": "Sjukförsäkring",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/trygghetssystem/sjukforsakring",
-    "fetchDate": "2026-02-01T13:25:50.704Z",
+    "updateDate": "2026-02-01T13:25:50.704Z",
     "party": "C",
     "subject": "trygghetssystem-och-valfard"
   },
@@ -2144,7 +2144,7 @@
     ],
     "title": "Digitalisering och AI i skolan",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/utbildning/digitalisering-och-ai-i-skolan",
-    "fetchDate": "2026-02-01T13:25:49.913Z",
+    "updateDate": "2026-02-01T13:25:49.913Z",
     "party": "C",
     "subject": "utbildning"
   },
@@ -2159,7 +2159,7 @@
     ],
     "title": "Elevhälsa och mobbning",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/utbildning/elevhalsa-och-mobbning",
-    "fetchDate": "2026-02-01T13:25:49.996Z",
+    "updateDate": "2026-02-01T13:25:49.996Z",
     "party": "C",
     "subject": "utbildning"
   },
@@ -2179,7 +2179,7 @@
     ],
     "title": "Forskning",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/utbildning/forskning",
-    "fetchDate": "2026-02-01T13:25:51.086Z",
+    "updateDate": "2026-02-01T13:25:51.086Z",
     "party": "C",
     "subject": "utbildning"
   },
@@ -2196,7 +2196,7 @@
     ],
     "title": "Friskolor",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/utbildning/friskolor",
-    "fetchDate": "2026-02-01T13:25:51.260Z",
+    "updateDate": "2026-02-01T13:25:51.260Z",
     "party": "C",
     "subject": "utbildning"
   },
@@ -2208,7 +2208,7 @@
     ],
     "title": "Fritids",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/utbildning/fritids",
-    "fetchDate": "2026-02-01T13:25:50.843Z",
+    "updateDate": "2026-02-01T13:25:50.843Z",
     "party": "C",
     "subject": "utbildning"
   },
@@ -2220,7 +2220,7 @@
     ],
     "title": "Förskola",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/utbildning/forskola",
-    "fetchDate": "2026-02-01T13:25:50.540Z",
+    "updateDate": "2026-02-01T13:25:50.540Z",
     "party": "C",
     "subject": "utbildning"
   },
@@ -2235,7 +2235,7 @@
     ],
     "title": "Grundskola",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/utbildning/grundskola",
-    "fetchDate": "2026-02-01T13:25:50.962Z",
+    "updateDate": "2026-02-01T13:25:50.962Z",
     "party": "C",
     "subject": "utbildning"
   },
@@ -2247,7 +2247,7 @@
     ],
     "title": "Gymnasieskola",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/utbildning/gymnasieskola",
-    "fetchDate": "2026-02-01T13:25:50.582Z",
+    "updateDate": "2026-02-01T13:25:50.582Z",
     "party": "C",
     "subject": "utbildning"
   },
@@ -2262,7 +2262,7 @@
     ],
     "title": "Högre utbildning",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/utbildning/hogre-utbildning",
-    "fetchDate": "2026-02-01T13:25:51.408Z",
+    "updateDate": "2026-02-01T13:25:51.408Z",
     "party": "C",
     "subject": "utbildning"
   },
@@ -2277,7 +2277,7 @@
     ],
     "title": "Lärare och rektorer",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/utbildning/larare-och-rektorer",
-    "fetchDate": "2026-02-01T13:25:51.082Z",
+    "updateDate": "2026-02-01T13:25:51.082Z",
     "party": "C",
     "subject": "utbildning"
   },
@@ -2292,7 +2292,7 @@
     ],
     "title": "Skola som leder till jobb",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/utbildning/skola-som-leder-till-jobb",
-    "fetchDate": "2026-02-01T13:25:49.716Z",
+    "updateDate": "2026-02-01T13:25:49.716Z",
     "party": "C",
     "subject": "utbildning"
   },
@@ -2304,7 +2304,7 @@
     ],
     "title": "Studiemedel",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/utbildning/studiemedel",
-    "fetchDate": "2026-02-01T13:25:50.937Z",
+    "updateDate": "2026-02-01T13:25:50.937Z",
     "party": "C",
     "subject": "utbildning"
   },
@@ -2323,7 +2323,7 @@
     ],
     "title": "Utbildning för nyanlända elever",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/utbildning/utbildning-for-nyanlanda-elever",
-    "fetchDate": "2026-02-01T13:25:50.726Z",
+    "updateDate": "2026-02-01T13:25:50.726Z",
     "party": "C",
     "subject": "utbildning"
   },
@@ -2335,7 +2335,7 @@
     ],
     "title": "Vuxenutbildning",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/utbildning/vuxenutbildning",
-    "fetchDate": "2026-02-01T13:25:50.955Z",
+    "updateDate": "2026-02-01T13:25:50.955Z",
     "party": "C",
     "subject": "utbildning"
   },
@@ -2356,7 +2356,7 @@
     ],
     "title": "Bistånd",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/utrikes--och-bistandsfragor/bistand",
-    "fetchDate": "2026-02-01T13:25:49.453Z",
+    "updateDate": "2026-02-01T13:25:49.453Z",
     "party": "C",
     "subject": "utrikes--och-bistandsfragor"
   },
@@ -2374,7 +2374,7 @@
     ],
     "title": "FN",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/utrikes--och-bistandsfragor/fn",
-    "fetchDate": "2026-02-01T13:25:50.861Z",
+    "updateDate": "2026-02-01T13:25:50.861Z",
     "party": "C",
     "subject": "utrikes--och-bistandsfragor"
   },
@@ -2393,7 +2393,7 @@
     ],
     "title": "Handelspolitik",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/utrikes--och-bistandsfragor/handelspolitik",
-    "fetchDate": "2026-02-01T13:25:50.457Z",
+    "updateDate": "2026-02-01T13:25:50.457Z",
     "party": "C",
     "subject": "utrikes--och-bistandsfragor"
   },
@@ -2412,7 +2412,7 @@
     ],
     "title": "Kriget i Ukraina",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/utrikes--och-bistandsfragor/kriget-i-ukraina",
-    "fetchDate": "2026-02-01T13:25:51.390Z",
+    "updateDate": "2026-02-01T13:25:51.390Z",
     "party": "C",
     "subject": "utrikes--och-bistandsfragor"
   },
@@ -2432,7 +2432,7 @@
     ],
     "title": "Mellanöstern",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/utrikes--och-bistandsfragor/mellanostern",
-    "fetchDate": "2026-02-01T13:25:50.477Z",
+    "updateDate": "2026-02-01T13:25:50.477Z",
     "party": "C",
     "subject": "utrikes--och-bistandsfragor"
   },
@@ -2451,7 +2451,7 @@
     ],
     "title": "Nedrustning och kärnvapen",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/utrikes--och-bistandsfragor/nedrustning-och-karnvapen",
-    "fetchDate": "2026-04-06T13:42:23.832Z",
+    "updateDate": "2026-04-06T13:42:23.832Z",
     "party": "C",
     "subject": "utrikes--och-bistandsfragor"
   },
@@ -2470,7 +2470,7 @@
     ],
     "title": "Utrikespolitik",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/utrikes--och-bistandsfragor/utrikespolitik",
-    "fetchDate": "2026-02-01T13:25:50.762Z",
+    "updateDate": "2026-02-01T13:25:50.762Z",
     "party": "C",
     "subject": "utrikes--och-bistandsfragor"
   },
@@ -2489,7 +2489,7 @@
     ],
     "title": "Vapenexport",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/utrikes--och-bistandsfragor/vapenexport",
-    "fetchDate": "2026-02-01T13:25:50.765Z",
+    "updateDate": "2026-02-01T13:25:50.765Z",
     "party": "C",
     "subject": "utrikes--och-bistandsfragor"
   },
@@ -2501,7 +2501,7 @@
     ],
     "title": "Alkoholpolitik",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/vard-och-omsorg/alkoholpolitik",
-    "fetchDate": "2026-02-01T13:25:51.228Z",
+    "updateDate": "2026-02-01T13:25:51.228Z",
     "party": "C",
     "subject": "vard-och-omsorg"
   },
@@ -2516,7 +2516,7 @@
     ],
     "title": "Anhöriga",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/vard-och-omsorg/anhoriga",
-    "fetchDate": "2026-02-01T13:25:50.742Z",
+    "updateDate": "2026-02-01T13:25:50.742Z",
     "party": "C",
     "subject": "vard-och-omsorg"
   },
@@ -2528,7 +2528,7 @@
     ],
     "title": "Apotek",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/vard-och-omsorg/apotek",
-    "fetchDate": "2026-02-01T13:25:50.501Z",
+    "updateDate": "2026-02-01T13:25:50.501Z",
     "party": "C",
     "subject": "vard-och-omsorg"
   },
@@ -2543,7 +2543,7 @@
     ],
     "title": "Folkhälsa",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/vard-och-omsorg/folkhalsa",
-    "fetchDate": "2026-02-01T13:25:50.866Z",
+    "updateDate": "2026-02-01T13:25:50.866Z",
     "party": "C",
     "subject": "vard-och-omsorg"
   },
@@ -2555,7 +2555,7 @@
     ],
     "title": "Förlossningsvård",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/vard-och-omsorg/forlossningsvard",
-    "fetchDate": "2026-02-01T13:25:50.051Z",
+    "updateDate": "2026-02-01T13:25:50.051Z",
     "party": "C",
     "subject": "vard-och-omsorg"
   },
@@ -2567,7 +2567,7 @@
     ],
     "title": "Hemlöshet",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/vard-och-omsorg/hemloshet",
-    "fetchDate": "2026-02-01T13:25:49.579Z",
+    "updateDate": "2026-02-01T13:25:49.579Z",
     "party": "C",
     "subject": "vard-och-omsorg"
   },
@@ -2579,7 +2579,7 @@
     ],
     "title": "Jämställd vård",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/vard-och-omsorg/jamstalld-vard",
-    "fetchDate": "2026-02-01T13:25:51.320Z",
+    "updateDate": "2026-02-01T13:25:51.320Z",
     "party": "C",
     "subject": "vard-och-omsorg"
   },
@@ -2591,7 +2591,7 @@
     ],
     "title": "Missbruk",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/vard-och-omsorg/missbruk",
-    "fetchDate": "2026-02-01T13:25:50.469Z",
+    "updateDate": "2026-02-01T13:25:50.469Z",
     "party": "C",
     "subject": "vard-och-omsorg"
   },
@@ -2606,7 +2606,7 @@
     ],
     "title": "Primärvården",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/vard-och-omsorg/primarvarden",
-    "fetchDate": "2026-02-01T13:25:49.698Z",
+    "updateDate": "2026-02-01T13:25:49.698Z",
     "party": "C",
     "subject": "vard-och-omsorg"
   },
@@ -2618,7 +2618,7 @@
     ],
     "title": "Psykisk ohälsa",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/vard-och-omsorg/psykisk-ohalsa",
-    "fetchDate": "2026-02-01T13:25:50.335Z",
+    "updateDate": "2026-02-01T13:25:50.335Z",
     "party": "C",
     "subject": "vard-och-omsorg"
   },
@@ -2635,7 +2635,7 @@
     ],
     "title": "Sjukvård",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/vard-och-omsorg/sjukvard",
-    "fetchDate": "2026-02-01T13:25:50.537Z",
+    "updateDate": "2026-02-01T13:25:50.537Z",
     "party": "C",
     "subject": "vard-och-omsorg"
   },
@@ -2647,7 +2647,7 @@
     ],
     "title": "Socialtjänst",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/vard-och-omsorg/socialtjanst",
-    "fetchDate": "2026-02-01T13:25:50.023Z",
+    "updateDate": "2026-02-01T13:25:50.023Z",
     "party": "C",
     "subject": "vard-och-omsorg"
   },
@@ -2659,7 +2659,7 @@
     ],
     "title": "Tandvård",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/vard-och-omsorg/tandvard",
-    "fetchDate": "2026-02-01T13:25:51.101Z",
+    "updateDate": "2026-02-01T13:25:51.101Z",
     "party": "C",
     "subject": "vard-och-omsorg"
   },
@@ -2674,7 +2674,7 @@
     ],
     "title": "Valfrihet i välfärden",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/vard-och-omsorg/valfrihet-i-valfarden",
-    "fetchDate": "2026-02-01T13:25:50.020Z",
+    "updateDate": "2026-02-01T13:25:50.020Z",
     "party": "C",
     "subject": "vard-och-omsorg"
   },
@@ -2689,7 +2689,7 @@
     ],
     "title": "Vårdköer",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/vard-och-omsorg/vardkoer",
-    "fetchDate": "2026-02-01T13:25:50.550Z",
+    "updateDate": "2026-02-01T13:25:50.550Z",
     "party": "C",
     "subject": "vard-och-omsorg"
   },
@@ -2704,7 +2704,7 @@
     ],
     "title": "Vårdpersonalens villkor",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/vard-och-omsorg/vardpersonalens-villkor",
-    "fetchDate": "2026-02-01T13:25:50.769Z",
+    "updateDate": "2026-02-01T13:25:50.769Z",
     "party": "C",
     "subject": "vard-och-omsorg"
   },
@@ -2719,7 +2719,7 @@
     ],
     "title": "Äldreomsorg",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/vard-och-omsorg/aldreomsorg",
-    "fetchDate": "2026-02-01T13:25:50.249Z",
+    "updateDate": "2026-02-01T13:25:50.249Z",
     "party": "C",
     "subject": "aldrepolitik"
   },
@@ -2734,7 +2734,7 @@
     ],
     "title": "Migration",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/integration-och-migration",
-    "fetchDate": "2026-02-14T10:55:27.146Z",
+    "updateDate": "2026-02-14T10:55:27.146Z",
     "party": "C",
     "subject": "migration-och-integration"
   },
@@ -2750,7 +2750,7 @@
     ],
     "title": "Arbetskraftinvandring",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/integration-och-migration/arbetskraftinvandring",
-    "fetchDate": "2026-02-07T06:50:36.747Z",
+    "updateDate": "2026-02-07T06:50:36.747Z",
     "party": "C",
     "subject": "migration-och-integration"
   },
@@ -2769,7 +2769,7 @@
     ],
     "title": "Asylprocessen",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/integration-och-migration/asylprocessen",
-    "fetchDate": "2026-02-07T06:50:29.747Z",
+    "updateDate": "2026-02-07T06:50:29.747Z",
     "party": "C",
     "subject": "migration-och-integration"
   },
@@ -2785,7 +2785,7 @@
     ],
     "title": "Integration",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/integration-och-migration/integration",
-    "fetchDate": "2026-02-07T06:50:29.616Z",
+    "updateDate": "2026-02-07T06:50:29.616Z",
     "party": "C",
     "subject": "migration-och-integration"
   },
@@ -2804,7 +2804,7 @@
     ],
     "title": "Bredband",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/digitalisering/bredband",
-    "fetchDate": "2026-02-14T10:55:25.311Z",
+    "updateDate": "2026-02-14T10:55:25.311Z",
     "party": "C",
     "subject": "it-och-mobiltelefoni"
   },
@@ -2823,7 +2823,7 @@
     ],
     "title": "Mobiltäckning",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/digitalisering/mobiltackning",
-    "fetchDate": "2026-02-14T10:55:26.598Z",
+    "updateDate": "2026-02-14T10:55:26.598Z",
     "party": "C",
     "subject": "it-och-mobiltelefoni"
   },
@@ -2831,7 +2831,7 @@
     "opinions": [],
     "title": "Funktionshindermanifest",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/diskriminering/funktionshindermanifest",
-    "fetchDate": "2026-02-14T10:55:27.712Z",
+    "updateDate": "2026-02-14T10:55:27.712Z",
     "party": "C",
     "subject": "jamstalldhet-och-diskriminering"
   },
@@ -2850,7 +2850,7 @@
     ],
     "title": "Vattenbruk",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/jordbruk-skog-jakt-och-fiske/vattenbruk",
-    "fetchDate": "2026-02-14T10:55:28.232Z",
+    "updateDate": "2026-02-14T10:55:28.232Z",
     "party": "C",
     "subject": "jordbruk-jakt-och-fiske"
   },
@@ -2869,7 +2869,7 @@
     ],
     "title": "Folkbildning",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/kultur-media-och-idrott/folkbildning",
-    "fetchDate": "2026-02-14T10:55:25.475Z",
+    "updateDate": "2026-02-14T10:55:25.475Z",
     "party": "C",
     "subject": "kultur-media-och-idrott"
   },
@@ -2888,7 +2888,7 @@
     ],
     "title": "Föreningsliv och civilsamhälle",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/kultur-media-och-idrott/foreningsliv-och-civilsamhalle",
-    "fetchDate": "2026-02-14T10:55:27.531Z",
+    "updateDate": "2026-02-14T10:55:27.531Z",
     "party": "C",
     "subject": "kultur-media-och-idrott"
   },
@@ -2907,7 +2907,7 @@
     ],
     "title": "Kultur",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/kultur-media-och-idrott/kultur",
-    "fetchDate": "2026-02-14T10:55:25.288Z",
+    "updateDate": "2026-02-14T10:55:25.288Z",
     "party": "C",
     "subject": "kultur-media-och-idrott"
   },
@@ -2926,7 +2926,7 @@
     ],
     "title": "Media och public service",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/kultur-media-och-idrott/media-och-public-service",
-    "fetchDate": "2026-02-14T10:55:25.425Z",
+    "updateDate": "2026-02-14T10:55:25.425Z",
     "party": "C",
     "subject": "kultur-media-och-idrott"
   },
@@ -2939,7 +2939,7 @@
     ],
     "title": "Flyg",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/infrastruktur-och-transporter/flyg",
-    "fetchDate": "2026-02-14T10:55:27.525Z",
+    "updateDate": "2026-02-14T10:55:27.525Z",
     "party": "C",
     "subject": "infrastruktur-och-trafik"
   },
@@ -2951,7 +2951,7 @@
     ],
     "title": "Lastbilar och tung trafik",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/infrastruktur-och-transporter/lastbilar-och-tung-trafik",
-    "fetchDate": "2026-02-14T10:55:27.906Z",
+    "updateDate": "2026-02-14T10:55:27.906Z",
     "party": "C",
     "subject": "infrastruktur-och-trafik"
   },
@@ -2969,7 +2969,7 @@
     ],
     "title": "Anhöriginvandring",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/integration-och-migration/anhoriginvandring",
-    "fetchDate": "2026-02-14T10:55:27.929Z",
+    "updateDate": "2026-02-14T10:55:27.929Z",
     "party": "C",
     "subject": "migration-och-integration"
   },
@@ -2977,7 +2977,7 @@
     "opinions": [],
     "title": "Sveriges elförsörjning",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/energi/sveriges-elforsorjning",
-    "fetchDate": "2026-04-06T13:42:25.458Z",
+    "updateDate": "2026-04-06T13:42:25.458Z",
     "party": "C",
     "subject": "energi"
   },
@@ -2992,7 +2992,7 @@
     ],
     "title": "A-kassa och omställningsförsäkring",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/jobb/a-kassa-och-omstallningsforsakring",
-    "fetchDate": "2026-04-06T13:42:24.450Z",
+    "updateDate": "2026-04-06T13:42:24.450Z",
     "party": "C",
     "subject": "trygghetssystem-och-valfard"
   },
@@ -3008,7 +3008,7 @@
     ],
     "title": "Arbetsförmedlingen",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/jobb/arbetsformedlingen",
-    "fetchDate": "2026-04-06T13:42:24.635Z",
+    "updateDate": "2026-04-06T13:42:24.635Z",
     "party": "C",
     "subject": "jobb"
   },
@@ -3025,7 +3025,7 @@
     ],
     "title": "Arbetsmiljö",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/jobb/arbetsmiljo",
-    "fetchDate": "2026-04-06T13:42:24.241Z",
+    "updateDate": "2026-04-06T13:42:24.241Z",
     "party": "C",
     "subject": "jobb"
   },
@@ -3042,7 +3042,7 @@
     ],
     "title": "Arbetsrätt och fackförening",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/jobb/arbetsratt-och-fackforening",
-    "fetchDate": "2026-04-06T13:42:24.777Z",
+    "updateDate": "2026-04-06T13:42:24.777Z",
     "party": "C",
     "subject": "jobb"
   },
@@ -3057,7 +3057,7 @@
     ],
     "title": "Ingångsjobb",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/jobb/ingangsjobb",
-    "fetchDate": "2026-04-06T13:42:24.981Z",
+    "updateDate": "2026-04-06T13:42:24.981Z",
     "party": "C",
     "subject": "jobb"
   },
@@ -3072,7 +3072,7 @@
     ],
     "title": "Långtidsarbetslöshet och etablering",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/jobb/langtidsarbetsloshet-och-etablering",
-    "fetchDate": "2026-04-06T13:42:24.565Z",
+    "updateDate": "2026-04-06T13:42:24.565Z",
     "party": "C",
     "subject": "jobb"
   },
@@ -3087,7 +3087,7 @@
     ],
     "title": "Ungdomsarbetslöshet",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/jobb/ungdomsarbetsloshet",
-    "fetchDate": "2026-04-06T13:42:24.839Z",
+    "updateDate": "2026-04-06T13:42:24.839Z",
     "party": "C",
     "subject": "jobb"
   },
@@ -3099,7 +3099,7 @@
     ],
     "title": "Klimatpolitik som gynnar din plånbok",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/klimat/klimatpolitik-som-gynnar-din-planbok",
-    "fetchDate": "2026-04-06T13:42:22.138Z",
+    "updateDate": "2026-04-06T13:42:22.138Z",
     "party": "C",
     "subject": "miljo-och-klimat"
   }

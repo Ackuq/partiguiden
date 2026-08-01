@@ -134,7 +134,7 @@ export default abstract class Scraper implements ScraperArgs {
     return {
       title,
       url,
-      fetchDate: new Date().toISOString(),
+      updateDate: new Date().toISOString(),
       subject: undefined,
       html,
     };
@@ -147,7 +147,7 @@ export default abstract class Scraper implements ScraperArgs {
     if (!data) {
       return [];
     }
-    const { title, url, html, fetchDate, subject } = data;
+    const { title, url, html, updateDate, subject } = data;
     const opinions = this.getOpinions(cheerio.load(html));
 
     return [
@@ -155,7 +155,7 @@ export default abstract class Scraper implements ScraperArgs {
         opinions,
         title,
         url,
-        fetchDate,
+        updateDate,
         subject,
       },
     ];

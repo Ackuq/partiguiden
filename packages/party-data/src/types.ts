@@ -31,7 +31,7 @@ export interface Standpoint {
   title: string;
   url: string;
   opinions: string[];
-  fetchDate: string;
+  updateDate: string;
   party: string;
   subject?: string;
 }

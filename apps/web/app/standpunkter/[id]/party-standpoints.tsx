@@ -75,7 +75,7 @@ export default function PartyStandpoints({
                   Läs mer på partiets hemsida
                 </a>
                 <span className="ml-auto self-end whitespace-nowrap text-xs sm:text-sm">
-                  Datan hämtades {dateString(standpoint.fetchDate)}
+                  Datan uppdaterades {dateString(standpoint.updateDate)}
                 </span>
               </div>
             </Card>

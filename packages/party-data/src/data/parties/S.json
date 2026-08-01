@@ -3,7 +3,7 @@
     "opinions": [],
     "title": "Abort",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/abort",
-    "fetchDate": "2023-09-17T17:52:39.845Z",
+    "updateDate": "2023-09-17T17:52:39.845Z",
     "party": "S",
     "subject": "vard-och-omsorg"
   },
@@ -20,7 +20,7 @@
     ],
     "title": "A-kassan",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/a-kassan",
-    "fetchDate": "2024-06-02T17:16:21.654Z",
+    "updateDate": "2024-06-02T17:16:21.654Z",
     "party": "S",
     "subject": "trygghetssystem-och-valfard"
   },
@@ -37,7 +37,7 @@
     ],
     "title": "Alkohol",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/alkohol",
-    "fetchDate": "2023-09-17T17:52:38.147Z",
+    "updateDate": "2023-09-17T17:52:38.147Z",
     "party": "S",
     "subject": "konsumentpolitik"
   },
@@ -52,7 +52,7 @@
     ],
     "title": "Antirasism och främlingsfientlighet",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/antirasism-och-framlingsfientlighet",
-    "fetchDate": "2023-09-17T17:52:39.028Z",
+    "updateDate": "2023-09-17T17:52:39.028Z",
     "party": "S",
     "subject": "jamstalldhet-och-diskriminering"
   },
@@ -70,7 +70,7 @@
     ],
     "title": "Apotek",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/apotek",
-    "fetchDate": "2025-04-06T06:29:45.865Z",
+    "updateDate": "2025-04-06T06:29:45.865Z",
     "party": "S",
     "subject": "vard-och-omsorg"
   },
@@ -91,7 +91,7 @@
     ],
     "title": "Arbetsförmedlingen",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/arbetsformedlingen",
-    "fetchDate": "2024-06-02T17:16:20.616Z",
+    "updateDate": "2024-06-02T17:16:20.616Z",
     "party": "S",
     "subject": "jobb"
   },
@@ -113,7 +113,7 @@
     ],
     "title": "Arbetskraftsinvandring",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/arbetskraftsinvandring",
-    "fetchDate": "2023-09-17T17:52:39.377Z",
+    "updateDate": "2023-09-17T17:52:39.377Z",
     "party": "S",
     "subject": "migration-och-integration"
   },
@@ -136,7 +136,7 @@
     ],
     "title": "Arbetsmiljö",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/arbetsmiljo",
-    "fetchDate": "2024-06-02T17:16:20.347Z",
+    "updateDate": "2024-06-02T17:16:20.347Z",
     "party": "S",
     "subject": "jobb"
   },
@@ -157,7 +157,7 @@
     ],
     "title": "Arbetsrätt",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/arbetsratt",
-    "fetchDate": "2024-06-02T17:16:19.778Z",
+    "updateDate": "2024-06-02T17:16:19.778Z",
     "party": "S",
     "subject": "jobb"
   },
@@ -177,7 +177,7 @@
     ],
     "title": "Barn",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/barn",
-    "fetchDate": "2023-09-17T17:52:37.421Z",
+    "updateDate": "2023-09-17T17:52:37.421Z",
     "party": "S",
     "subject": "familjen"
   },
@@ -189,7 +189,7 @@
     ],
     "title": "Barnomsorg",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/barnomsorg",
-    "fetchDate": "2023-09-17T17:52:37.872Z",
+    "updateDate": "2023-09-17T17:52:37.872Z",
     "party": "S",
     "subject": "familjen"
   },
@@ -209,7 +209,7 @@
     ],
     "title": "Betyg",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/betyg",
-    "fetchDate": "2023-09-17T17:52:40.078Z",
+    "updateDate": "2023-09-17T17:52:40.078Z",
     "party": "S",
     "subject": "utbildning"
   },
@@ -225,7 +225,7 @@
     ],
     "title": "Bistånd",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/bistand",
-    "fetchDate": "2023-09-17T17:52:38.491Z",
+    "updateDate": "2023-09-17T17:52:38.491Z",
     "party": "S",
     "subject": "utrikes--och-bistandsfragor"
   },
@@ -256,7 +256,7 @@
     ],
     "title": "Bostad",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/bostad",
-    "fetchDate": "2023-09-17T17:52:37.244Z",
+    "updateDate": "2023-09-17T17:52:37.244Z",
     "party": "S",
     "subject": "bostad"
   },
@@ -273,7 +273,7 @@
     ],
     "title": "Bränslepriser",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/branslepriser",
-    "fetchDate": "2026-04-06T13:42:24.175Z",
+    "updateDate": "2026-04-06T13:42:24.175Z",
     "party": "S",
     "subject": "infrastruktur-och-trafik"
   },
@@ -298,7 +298,7 @@
     ],
     "title": "Digitalisering",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/digitalisering",
-    "fetchDate": "2023-09-17T17:52:38.156Z",
+    "updateDate": "2023-09-17T17:52:38.156Z",
     "party": "S",
     "subject": "it-och-mobiltelefoni"
   },
@@ -318,7 +318,7 @@
     ],
     "title": "Djurskydd",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/djurskydd",
-    "fetchDate": "2024-06-02T17:16:21.395Z",
+    "updateDate": "2024-06-02T17:16:21.395Z",
     "party": "S",
     "subject": "jordbruk-jakt-och-fiske"
   },
@@ -340,7 +340,7 @@
     ],
     "title": "Ekonomi",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/ekonomi",
-    "fetchDate": "2024-06-02T17:16:21.286Z",
+    "updateDate": "2024-06-02T17:16:21.286Z",
     "party": "S",
     "subject": "ekonomi-och-skatter"
   },
@@ -359,7 +359,7 @@
     ],
     "title": "Ekonomiskt bistånd",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/ekonomiskt-bistand",
-    "fetchDate": "2023-09-17T17:52:39.802Z",
+    "updateDate": "2023-09-17T17:52:39.802Z",
     "party": "S",
     "subject": "jobb"
   },
@@ -373,7 +373,7 @@
     ],
     "title": "Energipolitik",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/energipolitik",
-    "fetchDate": "2024-06-02T17:16:21.962Z",
+    "updateDate": "2024-06-02T17:16:21.962Z",
     "party": "S",
     "subject": "energi"
   },
@@ -392,7 +392,7 @@
     ],
     "title": "EU",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/eu",
-    "fetchDate": "2024-06-02T17:16:20.427Z",
+    "updateDate": "2024-06-02T17:16:20.427Z",
     "party": "S",
     "subject": "europa"
   },
@@ -409,7 +409,7 @@
     ],
     "title": "Export",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/export",
-    "fetchDate": "2023-09-17T17:52:39.190Z",
+    "updateDate": "2023-09-17T17:52:39.190Z",
     "party": "S",
     "subject": "utrikes--och-bistandsfragor"
   },
@@ -425,7 +425,7 @@
     ],
     "title": "Extratjänster",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/extratjanster",
-    "fetchDate": "2023-09-17T17:52:38.064Z",
+    "updateDate": "2023-09-17T17:52:38.064Z",
     "party": "S",
     "subject": "jobb"
   },
@@ -433,7 +433,7 @@
     "opinions": [],
     "title": "Familjevecka",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/familjevecka",
-    "fetchDate": "2023-09-17T17:52:38.500Z",
+    "updateDate": "2023-09-17T17:52:38.500Z",
     "party": "S",
     "subject": "familjen"
   },
@@ -453,7 +453,7 @@
     ],
     "title": "Feminism",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/feminism",
-    "fetchDate": "2023-09-17T17:52:38.230Z",
+    "updateDate": "2023-09-17T17:52:38.230Z",
     "party": "S",
     "subject": "jamstalldhet-och-diskriminering"
   },
@@ -471,7 +471,7 @@
     ],
     "title": "Feministisk utrikespolitik",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/feministisk-utrikespolitik",
-    "fetchDate": "2023-09-17T17:52:37.016Z",
+    "updateDate": "2023-09-17T17:52:37.016Z",
     "party": "S",
     "subject": "utrikes--och-bistandsfragor"
   },
@@ -484,7 +484,7 @@
     ],
     "title": "FN",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/fn",
-    "fetchDate": "2023-09-17T17:52:39.718Z",
+    "updateDate": "2023-09-17T17:52:39.718Z",
     "party": "S",
     "subject": "utrikes--och-bistandsfragor"
   },
@@ -499,7 +499,7 @@
     ],
     "title": "Folkbildning",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/folkbildning",
-    "fetchDate": "2023-09-17T17:52:39.829Z",
+    "updateDate": "2023-09-17T17:52:39.829Z",
     "party": "S",
     "subject": "utbildning"
   },
@@ -516,7 +516,7 @@
     ],
     "title": "Folkhögskola",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/folkhogskola",
-    "fetchDate": "2023-09-17T17:52:39.709Z",
+    "updateDate": "2023-09-17T17:52:39.709Z",
     "party": "S",
     "subject": "utbildning"
   },
@@ -536,7 +536,7 @@
     ],
     "title": "Folkrörelse och civilsamhälle",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/folkrorelse-och-civilsamhalle",
-    "fetchDate": "2025-09-04T06:32:41.908Z",
+    "updateDate": "2025-09-04T06:32:41.908Z",
     "party": "S",
     "subject": "kultur-media-och-idrott"
   },
@@ -559,7 +559,7 @@
     ],
     "title": "Forskning",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/forskning",
-    "fetchDate": "2023-09-17T17:52:39.367Z",
+    "updateDate": "2023-09-17T17:52:39.367Z",
     "party": "S",
     "subject": "utbildning"
   },
@@ -578,7 +578,7 @@
     ],
     "title": "Friskolor",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/friskolor",
-    "fetchDate": "2023-09-17T17:52:39.545Z",
+    "updateDate": "2023-09-17T17:52:39.545Z",
     "party": "S",
     "subject": "utbildning"
   },
@@ -599,7 +599,7 @@
     ],
     "title": "Fritidshem",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/fritidshem",
-    "fetchDate": "2026-04-08T07:42:04.765Z",
+    "updateDate": "2026-04-08T07:42:04.765Z",
     "party": "S",
     "subject": "kultur-media-och-idrott"
   },
@@ -617,7 +617,7 @@
     ],
     "title": "Funktionsnedsättning",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/funktionsnedsattning",
-    "fetchDate": "2023-09-17T17:52:37.981Z",
+    "updateDate": "2023-09-17T17:52:37.981Z",
     "party": "S",
     "subject": "vard-och-omsorg"
   },
@@ -634,7 +634,7 @@
     ],
     "title": "Företagande och entreprenörskap",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/foretagande-och-entreprenorskap",
-    "fetchDate": "2024-06-02T17:16:21.940Z",
+    "updateDate": "2024-06-02T17:16:21.940Z",
     "party": "S",
     "subject": "naringsliv"
   },
@@ -659,7 +659,7 @@
     ],
     "title": "Förskola",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/forskola",
-    "fetchDate": "2023-09-17T17:52:39.001Z",
+    "updateDate": "2023-09-17T17:52:39.001Z",
     "party": "S",
     "subject": "utbildning"
   },
@@ -678,7 +678,7 @@
     ],
     "title": "Förskoleklass",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/forskoleklass",
-    "fetchDate": "2023-09-17T17:52:37.897Z",
+    "updateDate": "2023-09-17T17:52:37.897Z",
     "party": "S",
     "subject": "utbildning"
   },
@@ -704,7 +704,7 @@
     ],
     "title": "Försvar och krisberedskap",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/forsvar-och-krisberedskap",
-    "fetchDate": "2023-09-17T17:52:38.797Z",
+    "updateDate": "2023-09-17T17:52:38.797Z",
     "party": "S",
     "subject": "forsvar"
   },
@@ -721,7 +721,7 @@
     ],
     "title": "Föräldraförsäkring",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/foraldraforsakring",
-    "fetchDate": "2023-09-17T17:52:39.225Z",
+    "updateDate": "2023-09-17T17:52:39.225Z",
     "party": "S",
     "subject": "familjen"
   },
@@ -743,7 +743,7 @@
     ],
     "title": "Gymnasieskola",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/gymnasieskola",
-    "fetchDate": "2023-09-17T17:52:38.071Z",
+    "updateDate": "2023-09-17T17:52:38.071Z",
     "party": "S",
     "subject": "utbildning"
   },
@@ -773,7 +773,7 @@
     ],
     "title": "Havsmiljö",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/havsmiljo",
-    "fetchDate": "2023-09-17T17:52:37.629Z",
+    "updateDate": "2023-09-17T17:52:37.629Z",
     "party": "S",
     "subject": "jordbruk-jakt-och-fiske"
   },
@@ -789,7 +789,7 @@
     ],
     "title": "HBTQ+frågor",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/hbtq-fragor",
-    "fetchDate": "2023-09-17T17:52:37.733Z",
+    "updateDate": "2023-09-17T17:52:37.733Z",
     "party": "S",
     "subject": "jamstalldhet-och-diskriminering"
   },
@@ -808,7 +808,7 @@
     ],
     "title": "Heltid och deltid",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/heltid-och-deltid",
-    "fetchDate": "2023-09-17T17:52:38.220Z",
+    "updateDate": "2023-09-17T17:52:38.220Z",
     "party": "S",
     "subject": "jobb"
   },
@@ -825,7 +825,7 @@
     ],
     "title": "Hemlöshet",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/hemloshet",
-    "fetchDate": "2023-09-17T17:52:37.430Z",
+    "updateDate": "2023-09-17T17:52:37.430Z",
     "party": "S",
     "subject": "bostad"
   },
@@ -850,7 +850,7 @@
     ],
     "title": "Högskola",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/hogskola",
-    "fetchDate": "2023-09-17T17:52:39.811Z",
+    "updateDate": "2023-09-17T17:52:39.811Z",
     "party": "S",
     "subject": "utbildning"
   },
@@ -868,7 +868,7 @@
     ],
     "title": "Idrott",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/idrott",
-    "fetchDate": "2025-09-04T06:32:41.164Z",
+    "updateDate": "2025-09-04T06:32:41.164Z",
     "party": "S",
     "subject": "kultur-media-och-idrott"
   },
@@ -887,7 +887,7 @@
     ],
     "title": "Industri",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/industri",
-    "fetchDate": "2024-06-02T17:16:21.726Z",
+    "updateDate": "2024-06-02T17:16:21.726Z",
     "party": "S",
     "subject": "naringsliv"
   },
@@ -908,7 +908,7 @@
     ],
     "title": "Infrastruktur",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/infrastruktur",
-    "fetchDate": "2023-09-17T17:52:37.813Z",
+    "updateDate": "2023-09-17T17:52:37.813Z",
     "party": "S",
     "subject": "infrastruktur-och-trafik"
   },
@@ -925,7 +925,7 @@
     ],
     "title": "Innovation",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/innovation",
-    "fetchDate": "2024-06-02T17:16:21.276Z",
+    "updateDate": "2024-06-02T17:16:21.276Z",
     "party": "S",
     "subject": "jobb"
   },
@@ -948,7 +948,7 @@
     ],
     "title": "Integration",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/integration",
-    "fetchDate": "2023-09-17T17:52:38.140Z",
+    "updateDate": "2023-09-17T17:52:38.140Z",
     "party": "S",
     "subject": "migration-och-integration"
   },
@@ -967,7 +967,7 @@
     ],
     "title": "Israel och Palestina",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/israel-och-palestina",
-    "fetchDate": "2024-06-02T17:16:20.565Z",
+    "updateDate": "2024-06-02T17:16:20.565Z",
     "party": "S",
     "subject": "utrikes--och-bistandsfragor"
   },
@@ -985,7 +985,7 @@
     ],
     "title": "Jakt och viltvård",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/jakt-och-viltvard",
-    "fetchDate": "2023-09-17T17:52:38.826Z",
+    "updateDate": "2023-09-17T17:52:38.826Z",
     "party": "S",
     "subject": "jordbruk-jakt-och-fiske"
   },
@@ -1016,7 +1016,7 @@
     ],
     "title": "Jobb",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/jobb",
-    "fetchDate": "2023-09-17T17:52:37.401Z",
+    "updateDate": "2023-09-17T17:52:37.401Z",
     "party": "S",
     "subject": "jobb"
   },
@@ -1032,7 +1032,7 @@
     ],
     "title": "Jordbruk",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/jordbruk",
-    "fetchDate": "2023-09-17T17:52:39.181Z",
+    "updateDate": "2023-09-17T17:52:39.181Z",
     "party": "S",
     "subject": "jordbruk-jakt-och-fiske"
   },
@@ -1053,7 +1053,7 @@
     ],
     "title": "Jämställdhet",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/jamstalldhet",
-    "fetchDate": "2023-09-17T17:52:39.210Z",
+    "updateDate": "2023-09-17T17:52:39.210Z",
     "party": "S",
     "subject": "jamstalldhet-och-diskriminering"
   },
@@ -1070,7 +1070,7 @@
     ],
     "title": "Järnväg",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/jarnvag",
-    "fetchDate": "2023-09-17T17:52:37.166Z",
+    "updateDate": "2023-09-17T17:52:37.166Z",
     "party": "S",
     "subject": "infrastruktur-och-trafik"
   },
@@ -1091,7 +1091,7 @@
     ],
     "title": "Kemikalier",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/kemikalier",
-    "fetchDate": "2025-02-12T21:11:58.183Z",
+    "updateDate": "2025-02-12T21:11:58.183Z",
     "party": "S",
     "subject": "miljo-och-klimat"
   },
@@ -1122,7 +1122,7 @@
     ],
     "title": "Klimat",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/klimat",
-    "fetchDate": "2026-04-08T07:42:01.892Z",
+    "updateDate": "2026-04-08T07:42:01.892Z",
     "party": "S",
     "subject": "miljo-och-klimat"
   },
@@ -1138,7 +1138,7 @@
     ],
     "title": "Kollektivavtal",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/kollektivavtal",
-    "fetchDate": "2023-09-17T17:52:37.887Z",
+    "updateDate": "2023-09-17T17:52:37.887Z",
     "party": "S",
     "subject": "trygghetssystem-och-valfard"
   },
@@ -1158,7 +1158,7 @@
     ],
     "title": "Kompetensförsörjning",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/kompetensforsorjning",
-    "fetchDate": "2023-09-17T17:52:38.080Z",
+    "updateDate": "2023-09-17T17:52:38.080Z",
     "party": "S",
     "subject": "utbildning"
   },
@@ -1178,7 +1178,7 @@
     ],
     "title": "Konsumentfrågor",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/konsumentfragor",
-    "fetchDate": "2023-09-17T17:52:39.010Z",
+    "updateDate": "2023-09-17T17:52:39.010Z",
     "party": "S",
     "subject": "konsumentpolitik"
   },
@@ -1201,7 +1201,7 @@
     ],
     "title": "Kultur",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/kultur",
-    "fetchDate": "2025-09-04T06:32:38.270Z",
+    "updateDate": "2025-09-04T06:32:38.270Z",
     "party": "S",
     "subject": "kultur-media-och-idrott"
   },
@@ -1217,7 +1217,7 @@
     ],
     "title": "Kyrkor och trossamfund",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/kyrkor-och-trossamfund",
-    "fetchDate": "2023-09-17T17:52:38.294Z",
+    "updateDate": "2023-09-17T17:52:38.294Z",
     "party": "S",
     "subject": "kultur-media-och-idrott"
   },
@@ -1232,7 +1232,7 @@
     ],
     "title": "Kärnkraft",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/karnkraft",
-    "fetchDate": "2026-04-08T07:42:00.216Z",
+    "updateDate": "2026-04-08T07:42:00.216Z",
     "party": "S",
     "subject": "energi"
   },
@@ -1252,7 +1252,7 @@
     ],
     "title": "Lag och ordning",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/lag-och-ordning",
-    "fetchDate": "2024-12-02T06:32:16.187Z",
+    "updateDate": "2024-12-02T06:32:16.187Z",
     "party": "S",
     "subject": "lag-och-ratt"
   },
@@ -1275,7 +1275,7 @@
     ],
     "title": "Landsbygdspolitik",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/landsbygdspolitik",
-    "fetchDate": "2023-09-17T17:52:37.293Z",
+    "updateDate": "2023-09-17T17:52:37.293Z",
     "party": "S",
     "subject": "landsbygd"
   },
@@ -1298,7 +1298,7 @@
     ],
     "title": "Lärare",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/larare",
-    "fetchDate": "2023-09-17T17:52:38.816Z",
+    "updateDate": "2023-09-17T17:52:38.816Z",
     "party": "S",
     "subject": "utbildning"
   },
@@ -1312,7 +1312,7 @@
     ],
     "title": "Läxor",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/laxor",
-    "fetchDate": "2023-09-17T17:52:37.344Z",
+    "updateDate": "2023-09-17T17:52:37.344Z",
     "party": "S",
     "subject": "utbildning"
   },
@@ -1334,7 +1334,7 @@
     ],
     "title": "Mat",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/mat",
-    "fetchDate": "2023-09-17T17:52:37.996Z",
+    "updateDate": "2023-09-17T17:52:37.996Z",
     "party": "S",
     "subject": "jordbruk-jakt-och-fiske"
   },
@@ -1351,7 +1351,7 @@
     ],
     "title": "Migration, asyl- och flyktingpolitik",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/migration-asyl--och-flyktingpolitik",
-    "fetchDate": "2023-09-17T17:52:39.219Z",
+    "updateDate": "2023-09-17T17:52:39.219Z",
     "party": "S",
     "subject": "migration-och-integration"
   },
@@ -1377,7 +1377,7 @@
     ],
     "title": "Miljö",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/miljo",
-    "fetchDate": "2024-06-02T17:16:20.692Z",
+    "updateDate": "2024-06-02T17:16:20.692Z",
     "party": "S",
     "subject": "miljo-och-klimat"
   },
@@ -1390,7 +1390,7 @@
     ],
     "title": "Mänskliga rättigheter",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/manskliga-rattigheter",
-    "fetchDate": "2023-09-17T17:52:37.546Z",
+    "updateDate": "2023-09-17T17:52:37.546Z",
     "party": "S",
     "subject": "lag-och-ratt"
   },
@@ -1410,7 +1410,7 @@
     ],
     "title": "Mäns våld mot kvinnor",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/mans-vald-mot-kvinnor",
-    "fetchDate": "2024-12-02T06:32:08.412Z",
+    "updateDate": "2024-12-02T06:32:08.412Z",
     "party": "S",
     "subject": "jamstalldhet-och-diskriminering"
   },
@@ -1425,7 +1425,7 @@
     ],
     "title": "Narkotika",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/narkotika",
-    "fetchDate": "2023-09-17T17:52:37.224Z",
+    "updateDate": "2023-09-17T17:52:37.224Z",
     "party": "S",
     "subject": "lag-och-ratt"
   },
@@ -1441,7 +1441,7 @@
     ],
     "title": "Nationella prov",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/nationella-prov",
-    "fetchDate": "2023-09-17T17:52:37.668Z",
+    "updateDate": "2023-09-17T17:52:37.668Z",
     "party": "S",
     "subject": "utbildning"
   },
@@ -1449,7 +1449,7 @@
     "opinions": [],
     "title": "Nato",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/nato",
-    "fetchDate": "2023-09-17T17:52:37.753Z",
+    "updateDate": "2023-09-17T17:52:37.753Z",
     "party": "S",
     "subject": "forsvar"
   },
@@ -1462,7 +1462,7 @@
     ],
     "title": "Nedrustning",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/nedrustning",
-    "fetchDate": "2023-09-17T17:52:38.909Z",
+    "updateDate": "2023-09-17T17:52:38.909Z",
     "party": "S",
     "subject": "forsvar"
   },
@@ -1481,7 +1481,7 @@
     ],
     "title": "Nyanlända elever",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/nyanlanda-elever",
-    "fetchDate": "2023-09-17T17:52:37.159Z",
+    "updateDate": "2023-09-17T17:52:37.159Z",
     "party": "S",
     "subject": "migration-och-integration"
   },
@@ -1500,7 +1500,7 @@
     ],
     "title": "Nyanländas etablering",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/nyanlandas-etablering",
-    "fetchDate": "2023-09-17T17:52:38.609Z",
+    "updateDate": "2023-09-17T17:52:38.609Z",
     "party": "S",
     "subject": "migration-och-integration"
   },
@@ -1513,7 +1513,7 @@
     ],
     "title": "Näringspolitik och konkurrenskraft",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/naringspolitik-och-konkurrenskraft",
-    "fetchDate": "2024-06-02T17:16:20.966Z",
+    "updateDate": "2024-06-02T17:16:20.966Z",
     "party": "S",
     "subject": "naringsliv"
   },
@@ -1531,7 +1531,7 @@
     ],
     "title": "Pension",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/pension",
-    "fetchDate": "2023-09-17T17:52:38.832Z",
+    "updateDate": "2023-09-17T17:52:38.832Z",
     "party": "S",
     "subject": "aldrepolitik"
   },
@@ -1544,7 +1544,7 @@
     ],
     "title": "Polisen",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/polisen",
-    "fetchDate": "2024-12-02T06:32:09.290Z",
+    "updateDate": "2024-12-02T06:32:09.290Z",
     "party": "S",
     "subject": "lag-och-ratt"
   },
@@ -1566,7 +1566,7 @@
     ],
     "title": "Psykiatri",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/psykiatri",
-    "fetchDate": "2023-09-17T17:52:38.747Z",
+    "updateDate": "2023-09-17T17:52:38.747Z",
     "party": "S",
     "subject": "vard-och-omsorg"
   },
@@ -1583,7 +1583,7 @@
     ],
     "title": "Public service och kommersiell media",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/public-service-och-kommersiell-media",
-    "fetchDate": "2024-06-02T17:16:21.221Z",
+    "updateDate": "2024-06-02T17:16:21.221Z",
     "party": "S",
     "subject": "kultur-media-och-idrott"
   },
@@ -1604,7 +1604,7 @@
     ],
     "title": "Rektorer",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/rektorer",
-    "fetchDate": "2023-09-17T17:52:39.133Z",
+    "updateDate": "2023-09-17T17:52:39.133Z",
     "party": "S",
     "subject": "utbildning"
   },
@@ -1622,7 +1622,7 @@
     ],
     "title": "Religiösa friskolor",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/religiosa-friskolor",
-    "fetchDate": "2023-09-17T17:52:39.836Z",
+    "updateDate": "2023-09-17T17:52:39.836Z",
     "party": "S",
     "subject": "utbildning"
   },
@@ -1665,7 +1665,7 @@
     ],
     "title": "Segregation",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/segregation",
-    "fetchDate": "2026-04-08T07:42:05.137Z",
+    "updateDate": "2026-04-08T07:42:05.137Z",
     "party": "S",
     "subject": "migration-och-integration"
   },
@@ -1683,7 +1683,7 @@
     ],
     "title": "Sjukförsäkringen",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/sjukforsakringen",
-    "fetchDate": "2023-09-17T17:52:39.200Z",
+    "updateDate": "2023-09-17T17:52:39.200Z",
     "party": "S",
     "subject": "trygghetssystem-och-valfard"
   },
@@ -1718,7 +1718,7 @@
     ],
     "title": "Sjukvård",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/sjukvard",
-    "fetchDate": "2023-09-17T17:52:37.535Z",
+    "updateDate": "2023-09-17T17:52:37.535Z",
     "party": "S",
     "subject": "vard-och-omsorg"
   },
@@ -1741,7 +1741,7 @@
     ],
     "title": "Skatter",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/skatter",
-    "fetchDate": "2024-06-02T17:16:20.841Z",
+    "updateDate": "2024-06-02T17:16:20.841Z",
     "party": "S",
     "subject": "ekonomi-och-skatter"
   },
@@ -1765,7 +1765,7 @@
     ],
     "title": "Skog",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/skog",
-    "fetchDate": "2023-09-17T17:52:38.660Z",
+    "updateDate": "2023-09-17T17:52:38.660Z",
     "party": "S",
     "subject": "jordbruk-jakt-och-fiske"
   },
@@ -1797,7 +1797,7 @@
     ],
     "title": "Skola",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/skola",
-    "fetchDate": "2025-02-12T21:11:58.930Z",
+    "updateDate": "2025-02-12T21:11:58.930Z",
     "party": "S",
     "subject": "utbildning"
   },
@@ -1814,7 +1814,7 @@
     ],
     "title": "Spelmissbruk",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/spelmissbruk",
-    "fetchDate": "2023-09-17T17:52:37.149Z",
+    "updateDate": "2023-09-17T17:52:37.149Z",
     "party": "S",
     "subject": "vard-och-omsorg"
   },
@@ -1834,7 +1834,7 @@
     ],
     "title": "Studiemedel",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/studiemedel",
-    "fetchDate": "2023-09-17T17:52:37.963Z",
+    "updateDate": "2023-09-17T17:52:37.963Z",
     "party": "S",
     "subject": "utbildning"
   },
@@ -1852,7 +1852,7 @@
     ],
     "title": "Säkerhetspolitik",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/sakerhetspolitik",
-    "fetchDate": "2024-06-02T17:16:21.306Z",
+    "updateDate": "2024-06-02T17:16:21.306Z",
     "party": "S",
     "subject": "lag-och-ratt"
   },
@@ -1868,7 +1868,7 @@
     ],
     "title": "Tandvård",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/tandvard",
-    "fetchDate": "2023-09-17T17:52:37.953Z",
+    "updateDate": "2023-09-17T17:52:37.953Z",
     "party": "S",
     "subject": "vard-och-omsorg"
   },
@@ -1883,7 +1883,7 @@
     ],
     "title": "Trygghet",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/trygghet",
-    "fetchDate": "2023-09-17T17:52:37.175Z",
+    "updateDate": "2023-09-17T17:52:37.175Z",
     "party": "S",
     "subject": "trygghetssystem-och-valfard"
   },
@@ -1900,7 +1900,7 @@
     ],
     "title": "Ungdomsarbetslöshet",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/ungdomsarbetsloshet",
-    "fetchDate": "2023-09-17T17:52:39.518Z",
+    "updateDate": "2023-09-17T17:52:39.518Z",
     "party": "S",
     "subject": "jobb"
   },
@@ -1924,7 +1924,7 @@
     ],
     "title": "Ungdomsrån",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/ungdomsran",
-    "fetchDate": "2023-09-17T17:52:39.535Z",
+    "updateDate": "2023-09-17T17:52:39.535Z",
     "party": "S",
     "subject": "lag-och-ratt"
   },
@@ -1947,7 +1947,7 @@
     ],
     "title": "Utbildning",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/utbildning",
-    "fetchDate": "2023-09-17T17:52:39.279Z",
+    "updateDate": "2023-09-17T17:52:39.279Z",
     "party": "S",
     "subject": "utbildning"
   },
@@ -1961,7 +1961,7 @@
     ],
     "title": "Vindkraft",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/vindkraft",
-    "fetchDate": "2024-06-02T17:16:21.184Z",
+    "updateDate": "2024-06-02T17:16:21.184Z",
     "party": "S",
     "subject": "energi"
   },
@@ -1985,7 +1985,7 @@
     ],
     "title": "Vinster i välfärden",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/vinster-i-valfarden",
-    "fetchDate": "2023-09-17T17:52:38.015Z",
+    "updateDate": "2023-09-17T17:52:38.015Z",
     "party": "S",
     "subject": "trygghetssystem-och-valfard"
   },
@@ -2009,7 +2009,7 @@
     ],
     "title": "Vuxenutbildning",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/vuxenutbildning",
-    "fetchDate": "2023-09-17T17:52:38.918Z",
+    "updateDate": "2023-09-17T17:52:38.918Z",
     "party": "S",
     "subject": "utbildning"
   },
@@ -2031,7 +2031,7 @@
     ],
     "title": "Välfärd",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/valfard",
-    "fetchDate": "2023-09-17T17:52:39.945Z",
+    "updateDate": "2023-09-17T17:52:39.945Z",
     "party": "S",
     "subject": "trygghetssystem-och-valfard"
   },
@@ -2050,7 +2050,7 @@
     ],
     "title": "Yrkesutbildning",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/yrkesutbildning",
-    "fetchDate": "2026-04-08T07:42:02.346Z",
+    "updateDate": "2026-04-08T07:42:02.346Z",
     "party": "S",
     "subject": "utbildning"
   },
@@ -2069,7 +2069,7 @@
     ],
     "title": "Äldre",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/aldre",
-    "fetchDate": "2023-09-17T17:52:40.069Z",
+    "updateDate": "2023-09-17T17:52:40.069Z",
     "party": "S",
     "subject": "aldrepolitik"
   },
@@ -2092,7 +2092,7 @@
     ],
     "title": "Äldreomsorg",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/aldreomsorg",
-    "fetchDate": "2023-09-17T17:52:38.986Z",
+    "updateDate": "2023-09-17T17:52:38.986Z",
     "party": "S",
     "subject": "aldrepolitik"
   },
@@ -2111,7 +2111,7 @@
     ],
     "title": "Kriget i Ukraina",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/kriget-i-ukraina",
-    "fetchDate": "2026-04-08T07:42:02.482Z",
+    "updateDate": "2026-04-08T07:42:02.482Z",
     "party": "S",
     "subject": "utrikes--och-bistandsfragor"
   },
@@ -2134,7 +2134,7 @@
     ],
     "title": "Brottsförebyggande",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/brottsforebyggande",
-    "fetchDate": "2026-02-01T13:56:24.321Z",
+    "updateDate": "2026-02-01T13:56:24.321Z",
     "party": "S",
     "subject": "lag-och-ratt"
   },
@@ -2154,7 +2154,7 @@
     ],
     "title": "Gängkriminalitet",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/gangkriminalitet",
-    "fetchDate": "2024-12-02T06:32:15.177Z",
+    "updateDate": "2024-12-02T06:32:15.177Z",
     "party": "S",
     "subject": "lag-och-ratt"
   }

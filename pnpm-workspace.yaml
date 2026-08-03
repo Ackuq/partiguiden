@@ -69,7 +69,7 @@ catalog:
   typed.js: 3.0.0
   typescript: 5.9.3
   typescript-eslint: 8.64.0
-  undici: 8.7.0
+  undici: 8.9.0
 
 catalogMode: strict
 

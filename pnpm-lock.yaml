@@ -154,8 +154,8 @@ catalogs:
       specifier: 8.64.0
       version: 8.64.0
     undici:
-      specifier: 8.7.0
-      version: 8.7.0
+      specifier: 8.9.0
+      version: 8.9.0
 
 importers:
 
@@ -346,7 +346,7 @@ importers:
         version: 6.1.200
       undici:
         specifier: 'catalog:'
-        version: 8.7.0
+        version: 8.9.0
     devDependencies:
       '@partiguiden/eslint-config':
         specifier: workspace:*
@@ -4393,8 +4393,8 @@ packages:
     resolution: {integrity: sha512-H/nlJ/h0ggGC+uRL3ovD+G0i4bqhvsDOpbDv7At5eFLlj2b41L8QliGbnl2H7SnDiYhENphh1tQFJZf+MyfLsQ==}
     engines: {node: '>=20.18.1'}
 
-  undici@8.7.0:
-    resolution: {integrity: sha512-N7iQtfyLhIMOFgQubvmLV26svHpO0bqKnAiWotTQCVKCmWrcGbBotPuW1x+xwYZ2VHdSTVUfPQQnlEt1/LouTQ==}
+  undici@8.9.0:
+    resolution: {integrity: sha512-aWZpUj7XoGonMClx4gdDRfgBjqeA+F473aDmROQQbM9n6PRfK/u1q/a0X4wMTgcHfT8H6fpbt98PFuDUwFg2YA==}
     engines: {node: '>=22.19.0'}
 
   universal-user-agent@7.0.3:
@@ -8616,7 +8616,7 @@ snapshots:
 
   undici@7.24.7: {}
 
-  undici@8.7.0: {}
+  undici@8.9.0: {}
 
   universal-user-agent@7.0.3: {}
 

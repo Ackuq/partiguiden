@@ -95,7 +95,7 @@
     "url": "https://www.mp.se/politik/djur/",
     "updateDate": "2026-08-01T14:47:14.279Z",
     "party": "MP",
-    "subject": "miljo-och-klimat"
+    "subject": "jordbruk-jakt-och-fiske"
   },
   "https://www.mp.se/politik/energi/": {
     "opinions": [
@@ -138,7 +138,7 @@
     "url": "https://www.mp.se/politik/funktionsratt/",
     "updateDate": "2026-08-01T14:47:15.661Z",
     "party": "MP",
-    "subject": "jamstalldhet-och-diskriminering"
+    "subject": "trygghetssystem-och-valfard"
   },
   "https://www.mp.se/politik/gruvor-och-mineraler/": {
     "opinions": [
@@ -599,7 +599,7 @@
     "url": "https://www.mp.se/politik/civilsamhalle-och-foreningsliv/",
     "updateDate": "2026-08-01T14:47:15.953Z",
     "party": "MP",
-    "subject": "naringsliv"
+    "subject": "kultur-media-och-idrott"
   },
   "https://www.mp.se/politik/gron-ekonomi/": {
     "opinions": [
@@ -714,7 +714,7 @@
     "url": "https://www.mp.se/politik/minskad-segregation/",
     "updateDate": "2026-08-01T14:47:15.220Z",
     "party": "MP",
-    "subject": "jamstalldhet-och-diskriminering"
+    "subject": "migration-och-integration"
   },
   "https://www.mp.se/politik/jamlikhet/": {
     "opinions": [

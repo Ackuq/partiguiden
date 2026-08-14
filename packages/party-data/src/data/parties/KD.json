@@ -181,7 +181,7 @@
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/barnfattigdom",
     "updateDate": "2026-08-01T12:48:24.668Z",
     "party": "KD",
-    "subject": "jamstalldhet-och-diskriminering"
+    "subject": "trygghetssystem-och-valfard"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/barnkonventionen": {
     "opinions": [
@@ -324,7 +324,7 @@
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/demokrati",
     "updateDate": "2025-02-12T21:11:51.853Z",
     "party": "KD",
-    "subject": "lag-och-ratt"
+    "subject": "demokrati"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/digitalisering": {
     "opinions": [
@@ -871,7 +871,7 @@
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/inkomstskatter",
     "updateDate": "2026-08-01T12:48:25.154Z",
     "party": "KD",
-    "subject": "jobb"
+    "subject": "ekonomi-och-skatter"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/innovation": {
     "opinions": [
@@ -1011,7 +1011,7 @@
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/kriminalvarden",
     "updateDate": "2026-08-01T12:48:23.940Z",
     "party": "KD",
-    "subject": "vard-och-omsorg"
+    "subject": "lag-och-ratt"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/kristdemokraterna": {
     "opinions": [
@@ -1021,7 +1021,7 @@
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/kristdemokraterna",
     "updateDate": "2023-09-17T17:52:40.834Z",
     "party": "KD",
-    "subject": "naringsliv"
+    "subject": "demokrati"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/kultur-och-media": {
     "opinions": [
@@ -1191,7 +1191,7 @@
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/nationella-prov",
     "updateDate": "2023-09-17T17:52:41.355Z",
     "party": "KD",
-    "subject": "forsvar"
+    "subject": "utbildning"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/nato": {
     "opinions": [
@@ -1262,7 +1262,7 @@
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/posten",
     "updateDate": "2026-08-01T12:48:23.038Z",
     "party": "KD",
-    "subject": "kultur-media-och-idrott"
+    "subject": "infrastruktur-och-trafik"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/premiepension": {
     "opinions": [
@@ -1543,7 +1543,7 @@
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/skuldavskrivningar",
     "updateDate": "2023-09-17T17:52:42.871Z",
     "party": "KD",
-    "subject": "konsumentpolitik"
+    "subject": "utrikes--och-bistandsfragor"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/skuldsanering": {
     "opinions": [
@@ -1713,7 +1713,7 @@
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/tullen",
     "updateDate": "2025-02-12T21:11:59.824Z",
     "party": "KD",
-    "subject": "ekonomi-och-skatter"
+    "subject": "lag-och-ratt"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/turism": {
     "opinions": [
@@ -2043,7 +2043,7 @@
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/eus-migrationspakt",
     "updateDate": "2025-03-12T06:30:19.273Z",
     "party": "KD",
-    "subject": "utrikes--och-bistandsfragor"
+    "subject": "migration-och-integration"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/frontex": {
     "opinions": [
@@ -2053,7 +2053,7 @@
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/frontex",
     "updateDate": "2026-08-01T12:48:22.039Z",
     "party": "KD",
-    "subject": "utrikes--och-bistandsfragor"
+    "subject": "migration-och-integration"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/kvotflyktingsystem": {
     "opinions": [

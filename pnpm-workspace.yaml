@@ -23,7 +23,7 @@ catalog:
   "@actions/core": 3.0.1
   "@actions/exec": 3.0.0
   "@actions/github": 9.1.1
-  "@eslint/js": 9.39.5
+  "@eslint/js": 10.0.1
   "@google-analytics/data": 7.0.0
   "@heroicons/react": 2.2.0
   "@inquirer/prompts": 8.5.2

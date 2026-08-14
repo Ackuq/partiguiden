@@ -50,7 +50,13 @@ export default function PartyStandpoints({
           {standpoints.map((standpoint) => (
             <Card key={standpoint.url} className="flex flex-col gap-5">
               <p className="text-2xl">{standpoint.title}</p>
-              {standpoint.opinions.length > 0 ? (
+              {standpoint.opinions.length === 0 && (
+                <p>Inga ståndpunkter hittades</p>
+              )}
+              {standpoint.opinions.length === 1 && (
+                <p>{standpoint.opinions[0]}</p>
+              )}
+              {standpoint.opinions.length > 1 && (
                 <ul
                   className={`${partyMarker[party]} ml-4 flex list-disc flex-col gap-3`}
                 >
@@ -58,8 +64,6 @@ export default function PartyStandpoints({
                     <li key={opinion}>{opinion}</li>
                   ))}
                 </ul>
-              ) : (
-                <p>Inga ståndpunkter hittades</p>
               )}
               <div className="flex flex-wrap">
                 <a

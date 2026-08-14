@@ -13,6 +13,11 @@
       "utrikes--och-bistandsfragor"
     ]
   },
+  "digitalisering-och-tech": {
+    "id": "digitalisering-och-tech",
+    "name": "Digitalisering, tech, och AI",
+    "relatedSubjects": []
+  },
   "ekonomi-och-skatter": {
     "id": "ekonomi-och-skatter",
     "name": "Ekonomi och Skatter",
@@ -28,7 +33,11 @@
   "energi": {
     "id": "energi",
     "name": "Energi",
-    "relatedSubjects": ["bostad", "ekonomi-och-skatter", "landsbygd"]
+    "relatedSubjects": [
+      "bostad",
+      "ekonomi-och-skatter",
+      "landsbygd-och-regional-utveckling"
+    ]
   },
   "europa": {
     "id": "europa",
@@ -40,19 +49,24 @@
     "name": "Familjen",
     "relatedSubjects": ["trygghetssystem-och-valfard", "utbildning"]
   },
-  "forsvar": {
-    "id": "forsvar",
-    "name": "Försvar",
+  "folkhalsa-och-psykiatri": {
+    "id": "folkhalsa-och-psykiatri",
+    "name": "Folkhlsa och psykiatri",
+    "relatedSubjects": ["vard-och-omsorg"]
+  },
+  "forskning-och-innovation": {
+    "id": "forskning-och-innovation",
+    "name": "Forskning och innovation",
+    "relatedSubjects": ["utbildning"]
+  },
+  "forsvar-och-krisberedskap": {
+    "id": "forsvar-och-krisberedskap",
+    "name": "Försvar och krisberedskap",
     "relatedSubjects": ["lag-och-ratt", "utrikes--och-bistandsfragor"]
   },
   "infrastruktur-och-trafik": {
     "id": "infrastruktur-och-trafik",
     "name": "Infrastruktur och Trafik",
-    "relatedSubjects": []
-  },
-  "it-och-mobiltelefoni": {
-    "id": "it-och-mobiltelefoni",
-    "name": "IT och Mobiltelefoni",
     "relatedSubjects": []
   },
   "jobb": {
@@ -67,7 +81,7 @@
   "jordbruk-jakt-och-fiske": {
     "id": "jordbruk-jakt-och-fiske",
     "name": "Jordbruk, Jakt och Fiske",
-    "relatedSubjects": ["landsbygd", "miljo-och-klimat"]
+    "relatedSubjects": ["landsbygd-och-regional-utveckling", "miljo-och-klimat"]
   },
   "jamstalldhet-och-diskriminering": {
     "id": "jamstalldhet-och-diskriminering",
@@ -94,15 +108,15 @@
     "relatedSubjects": [
       "demokrati",
       "ekonomi-och-skatter",
-      "forsvar",
+      "forsvar-och-krisberedskap",
       "jamstalldhet-och-diskriminering",
       "trygghetssystem-och-valfard",
       "utrikes--och-bistandsfragor"
     ]
   },
-  "landsbygd": {
-    "id": "landsbygd",
-    "name": "Landsbygd",
+  "landsbygd-och-regional-utveckling": {
+    "id": "landsbygd-och-regional-utveckling",
+    "name": "Landsbygd och regional utveckling",
     "relatedSubjects": ["energi", "jordbruk-jakt-och-fiske", "miljo-och-klimat"]
   },
   "migration-och-integration": {
@@ -113,7 +127,10 @@
   "miljo-och-klimat": {
     "id": "miljo-och-klimat",
     "name": "Miljö och klimat",
-    "relatedSubjects": ["jordbruk-jakt-och-fiske", "landsbygd"]
+    "relatedSubjects": [
+      "jordbruk-jakt-och-fiske",
+      "landsbygd-och-regional-utveckling"
+    ]
   },
   "naringsliv": {
     "id": "naringsliv",
@@ -142,17 +159,27 @@
   "utbildning": {
     "id": "utbildning",
     "name": "Utbildning",
-    "relatedSubjects": ["familjen", "migration-och-integration"]
+    "relatedSubjects": [
+      "familjen",
+      "forskning-och-innovation",
+      "migration-och-integration"
+    ]
   },
   "utrikes--och-bistandsfragor": {
     "id": "utrikes--och-bistandsfragor",
     "name": "Utrikes- och biståndsfrågor",
-    "relatedSubjects": ["demokrati", "europa", "forsvar", "lag-och-ratt"]
+    "relatedSubjects": [
+      "demokrati",
+      "europa",
+      "forsvar-och-krisberedskap",
+      "lag-och-ratt"
+    ]
   },
   "vard-och-omsorg": {
     "id": "vard-och-omsorg",
     "name": "Vård och Omsorg",
     "relatedSubjects": [
+      "folkhalsa-och-psykiatri",
       "jamstalldhet-och-diskriminering",
       "trygghetssystem-och-valfard",
       "aldrepolitik"

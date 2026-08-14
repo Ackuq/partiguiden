@@ -274,7 +274,7 @@
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/bredband",
     "updateDate": "2026-08-01T12:48:23.784Z",
     "party": "KD",
-    "subject": "it-och-mobiltelefoni"
+    "subject": "digitalisering-och-tech"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/brottsbekampning": {
     "opinions": [
@@ -334,7 +334,7 @@
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/digitalisering",
     "updateDate": "2026-08-01T12:48:25.005Z",
     "party": "KD",
-    "subject": "it-och-mobiltelefoni"
+    "subject": "digitalisering-och-tech"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/djurskydd": {
     "opinions": [
@@ -396,7 +396,7 @@
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/elevhalsa",
     "updateDate": "2026-08-01T12:48:25.282Z",
     "party": "KD",
-    "subject": "vard-och-omsorg"
+    "subject": "folkhalsa-och-psykiatri"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/emu-och-euron": {
     "opinions": [
@@ -446,7 +446,7 @@
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/enskilda-vagar",
     "updateDate": "2026-08-14T23:23:20.599Z",
     "party": "KD",
-    "subject": "landsbygd"
+    "subject": "landsbygd-och-regional-utveckling"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/eu": {
     "opinions": [
@@ -548,7 +548,7 @@
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/folkhalsa",
     "updateDate": "2023-09-17T17:52:42.986Z",
     "party": "KD",
-    "subject": "vard-och-omsorg"
+    "subject": "folkhalsa-och-psykiatri"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/folkhogskolor": {
     "opinions": [
@@ -679,7 +679,7 @@
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/forsvar",
     "updateDate": "2026-08-01T12:48:25.342Z",
     "party": "KD",
-    "subject": "forsvar"
+    "subject": "forsvar-och-krisberedskap"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/forsvarsmaterielexport": {
     "opinions": [
@@ -689,7 +689,7 @@
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/forsvarsmaterielexport",
     "updateDate": "2026-08-01T12:48:24.765Z",
     "party": "KD",
-    "subject": "forsvar"
+    "subject": "forsvar-och-krisberedskap"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/foraldraforsakring": {
     "opinions": [
@@ -872,7 +872,7 @@
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/innovation",
     "updateDate": "2026-08-01T12:48:22.909Z",
     "party": "KD",
-    "subject": "naringsliv"
+    "subject": "forskning-och-innovation"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/integration": {
     "opinions": [
@@ -1062,7 +1062,7 @@
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/landsbygd",
     "updateDate": "2023-09-17T17:52:43.304Z",
     "party": "KD",
-    "subject": "landsbygd"
+    "subject": "landsbygd-och-regional-utveckling"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/lov": {
     "opinions": [
@@ -1192,7 +1192,7 @@
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/nato",
     "updateDate": "2024-08-13T06:27:21.724Z",
     "party": "KD",
-    "subject": "forsvar"
+    "subject": "forsvar-och-krisberedskap"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/namndeman": {
     "opinions": [
@@ -1303,7 +1303,7 @@
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/psykiatri",
     "updateDate": "2025-02-12T21:11:49.223Z",
     "party": "KD",
-    "subject": "vard-och-omsorg"
+    "subject": "folkhalsa-och-psykiatri"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/psykisk-ohalsa-hos-unga": {
     "opinions": [
@@ -1313,7 +1313,7 @@
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/psykisk-ohalsa-hos-unga",
     "updateDate": "2025-02-12T21:11:57.629Z",
     "party": "KD",
-    "subject": "vard-och-omsorg"
+    "subject": "folkhalsa-och-psykiatri"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/public-service": {
     "opinions": [
@@ -1645,7 +1645,7 @@
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/sakerhetspolitik",
     "updateDate": "2026-08-01T12:48:24.995Z",
     "party": "KD",
-    "subject": "forsvar"
+    "subject": "forsvar-och-krisberedskap"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/tandvard": {
     "opinions": [
@@ -1665,7 +1665,7 @@
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/terrorbekampning",
     "updateDate": "2026-08-01T12:48:24.508Z",
     "party": "KD",
-    "subject": "forsvar"
+    "subject": "forsvar-och-krisberedskap"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/tiggeri": {
     "opinions": [
@@ -1878,7 +1878,7 @@
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/varnplikt",
     "updateDate": "2026-08-01T12:48:24.616Z",
     "party": "KD",
-    "subject": "forsvar"
+    "subject": "forsvar-och-krisberedskap"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/yrkesprogram": {
     "opinions": [
@@ -2074,7 +2074,7 @@
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/civilt-forsvar-och-beredskap",
     "updateDate": "2026-08-01T12:48:25.023Z",
     "party": "KD",
-    "subject": "forsvar"
+    "subject": "forsvar-och-krisberedskap"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/demonstrationsfrihet": {
     "opinions": [
@@ -2190,7 +2190,7 @@
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/skarmtid",
     "updateDate": "2026-08-01T12:48:23.737Z",
     "party": "KD",
-    "subject": "it-och-mobiltelefoni"
+    "subject": "digitalisering-och-tech"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/ukraina": {
     "opinions": [

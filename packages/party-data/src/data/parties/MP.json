@@ -66,7 +66,7 @@
     "url": "https://www.mp.se/politik/civilt-forsvar-och-krisberedskap/",
     "updateDate": "2026-08-01T14:47:14.532Z",
     "party": "MP",
-    "subject": "forsvar"
+    "subject": "forsvar-och-krisberedskap"
   },
   "https://www.mp.se/politik/demokrati-och-mr/": {
     "opinions": [
@@ -193,7 +193,7 @@
     "url": "https://www.mp.se/politik/hogre-utbildning-och-forskning/",
     "updateDate": "2026-08-01T14:47:14.384Z",
     "party": "MP",
-    "subject": "utbildning"
+    "subject": "forskning-och-innovation"
   },
   "https://www.mp.se/politik/jamstalldhet/": {
     "opinions": [
@@ -294,7 +294,7 @@
     "url": "https://www.mp.se/politik/lands-och-glesbygd/",
     "updateDate": "2026-08-01T14:47:16.116Z",
     "party": "MP",
-    "subject": "landsbygd"
+    "subject": "landsbygd-och-regional-utveckling"
   },
   "https://www.mp.se/politik/mat-och-jordbruk/": {
     "opinions": [
@@ -353,7 +353,7 @@
     "url": "https://www.mp.se/politik/ratt-att-ma-bra/",
     "updateDate": "2026-08-01T14:47:15.134Z",
     "party": "MP",
-    "subject": "vard-och-omsorg"
+    "subject": "folkhalsa-och-psykiatri"
   },
   "https://www.mp.se/politik/halso-och-sjukvard/": {
     "opinions": [
@@ -494,7 +494,7 @@
     "url": "https://www.mp.se/politik/ai-och-digitalisering/",
     "updateDate": "2026-08-01T14:47:14.925Z",
     "party": "MP",
-    "subject": "it-och-mobiltelefoni"
+    "subject": "digitalisering-och-tech"
   },
   "https://www.mp.se/politik/antidiskriminering-och-antirasism/": {
     "opinions": [
@@ -672,7 +672,7 @@
     "url": "https://www.mp.se/politik/forsvar-och-sakerhet/",
     "updateDate": "2026-08-01T14:47:14.617Z",
     "party": "MP",
-    "subject": "forsvar"
+    "subject": "forsvar-och-krisberedskap"
   },
   "https://www.mp.se/politik/idrott/": {
     "opinions": [

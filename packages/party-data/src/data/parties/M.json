@@ -556,25 +556,6 @@
     "party": "M",
     "subject": "miljo-och-klimat"
   },
-  "https://moderaterna.se/var-politik/hemtjanst/": {
-    "opinions": [
-      "Den moderatledda regeringen har tillsatt en utredning om att stärka ledarskapet i äldreomsorgen. Utredaren har i uppdrag att lämna förslag på en obligatorisk ledarskapsutbildning för chefer i äldreomsorgen, med syftet att säkerställa en trygg och säker vård och omsorg för äldre.",
-      "Den moderatledda regeringen har gett Socialstyrelsen i uppdrag att kartlägga undernäringen bland äldre och vilka hälsoekonomiska kostnader det ger. Socialstyrelsen ska också föreslå förebyggande åtgärder.",
-      "Moderaterna vill att äldre ska kunna välja kön på personalen. Huruvida valet ska vara begränsat till insatser som är kroppsnära eller berör den personliga integriteten ska utredas. De äldre ska också i högre utsträckning kunna välja bort personal, när det finns legitima skäl. Regeringen har tillsatt en utredning om detta som ska vara klar i juni 2027.",
-      "Moderaterna vill fortsätta stödja och främja utveckling och användning av välfärdsteknik inom hemtjänsten. Välfärdsteknik kan användas för att:",
-      "Automatisera rutinuppgifter och frigöra tid för personalen för mer kvalificerat omsorgsarbete",
-      "Minska behovet av fysiska ronderingar",
-      "Minska fysisk belastning på personalen",
-      "Öka äldres självständighet och aktivitet",
-      "Moderaterna vill prioritera förebyggande äldrevård med särskilt fokus på prevention av fallolyckor. Biståndsbedömningen för hemtjänst bör vidgas till att innefatta utrymme för social samvaro och aktivitet. Ibland kan det räcka med att någon har tid att prata en stund för att välmåendet ska öka väsentligt.",
-      "Valfrihet är viktigt inom hemtjänsten. Det ger både äldre och anhöriga inflytande och möjlighet att välja och välja bort vårdgivare. Enligt en undersökning från Svenskt Näringsliv från 2023 vill 80 procent av de äldre kunna välja hemtjänst. Trots att över 150 kommuner har valfrihetssystem saknas fristående hemtjänstutförare i över 70 kommuner."
-    ],
-    "title": "Hemtjänst",
-    "url": "https://moderaterna.se/var-politik/hemtjanst/",
-    "updateDate": "2026-08-01T14:32:13.608Z",
-    "party": "M",
-    "subject": "aldrepolitik"
-  },
   "https://moderaterna.se/var-politik/idrott-2/": {
     "opinions": [
       "Alla barn och unga ska ha möjlighet att delta i föreningsidrotten. Därför tycker vi att fritidskortet är så bra. Moderaterna vill se över regler som bromsar utvecklingen av nya multifunktionella idrottsanläggningar, exempelvis bullerregler, samt utreda en statlig investeringsfond för byggandet av fler idrottsanläggningar.",
@@ -1105,26 +1086,6 @@
     "party": "M",
     "subject": "utbildning"
   },
-  "https://moderaterna.se/var-politik/aldreomsorg/": {
-    "opinions": [
-      "Värna arbetslinjen i pensionssystemet – det ska alltid löna sig bättre att ha arbetat och ansträngt sig än att inte ha gjort det.",
-      "Stärka pensionärernas ekonomi, bland annat genom sänkt skatt. Ett pensionärspar (båda 75 år) med medelhöga pensioner får 2 200 kronor mer i plånboken per månad 2026 jämfört med 2022 till följd av den moderatledda regeringens budgetar. (Ingår i Tidöavtalet) Pensionsgruppen har under Anna Tenjes ledning kommit överens om att införa en ”gas” i pensionssystemet från den 1 januari 2027.",
-      "Göra det mer lönsamt att fortsätta arbeta längre upp i åldrarna. Den 1 januari 2025 infördes mer flexibla regler för uttag av tjänstepension.",
-      "Införa ett vaccinationsprogram för äldre. Sverige har ett av världens bästa vaccinationsprogram för barn. Nu är det dags att ge de äldre samma skydd, oavsett storlek på plånbok. (Ny politik från Moderaternas stämma 2025)",
-      "Ta bort den övre åldersgränsen på 74 år för avgiftsfri bröstcancerscreening. (Ny politik från Moderaternas stämma 2025)",
-      "Att Sverige ska ha en ledande roll i utvecklingen av bättre läkemedelsbehandling och diagnostik för äldre. (Ny politik från Moderaternas stämma 2025)",
-      "Införa språkkrav inom äldreomsorgen från den 1 juli 2026. Alla äldre ska kunna förstå och kommunicera med personalen. (Ingår i Tidöavtalet)",
-      "Bakgrundskontroller för nyanställda är genomfört och vi vill att det ska bli möjligt att göra bakgrundskontroller också för befintlig personal i äldreomsorgen. (Ny politik från Moderaternas stämma 2025)",
-      "Stärka den medicinska kompetensen och ledarskapet i äldreomsorgen. (Ny politik från Moderaternas stämma 2025)Demensvården ska också fortsätta stärkas och utvecklas.",
-      "Utveckla anhörigstödet. Den ofrivilliga ensamheten bland äldre ska motverkas och åldersdiskriminering och ålderism ska bekämpas. (Ingår i Tidöavtalet)",
-      "Säkerställa att äldre inom äldreomsorgen får näringsrik kost."
-    ],
-    "title": "Äldreomsorg",
-    "url": "https://moderaterna.se/var-politik/aldreomsorg/",
-    "updateDate": "2026-08-01T14:15:32.303Z",
-    "party": "M",
-    "subject": "aldrepolitik"
-  },
   "https://moderaterna.se/var-politik/ostersjon/": {
     "opinions": [
       "Moderaterna anser att det behövs en återhämtningsplan för Östersjön. Torsken och strömmingen behöver räddas. Vi vill att förvaltningsplanen för fisket i Östersjön förändras utifrån aktuell kunskap och att det storskaliga industriella trålfisket begränsas. En ny hållbar förvaltningsplan för Östersjöns torsk, skarpsill, sill och strömming måste tas fram.",
@@ -1150,5 +1111,71 @@
     "updateDate": "2026-08-01T14:29:41.798Z",
     "party": "M",
     "subject": "lag-och-ratt"
+  },
+  "https://moderaterna.se/var-politik/invandring/": {
+    "opinions": [
+      "Moderaterna vill att asylinvandringen till Sverige ska vara minimal och att den asylrelaterade migrationspolitiken ska följa EU:s minimumkrav. Sverige ska driva aktivt för att EU skärper sin gemensamma migrationspolitik och genomför en översyn av relevant EU-lagstiftning och konventioner för att uppnå målsättningen om minimal asylinvandring.",
+      "Samtidigt vill Moderaterna förbättra förutsättningarna för att rekrytera högkvalificerad arbetskraft. Det ska finnas möjlighet till undantag från de skärpta lönekraven för bristyrken, så att Sverige kan attrahera den kompetens som arbetsmarknaden behöver."
+    ],
+    "title": "Invandring",
+    "url": "https://moderaterna.se/var-politik/invandring/",
+    "updateDate": "2026-08-14T23:23:35.987Z",
+    "party": "M"
+  },
+  "https://moderaterna.se/var-politik/mangdrabatt/": {
+    "opinions": [
+      "Det ska inte löna sig att begå flera brott för att ju fler brott man begår desto mindre effekt får det på straffet. Tre våldtäkter ger i dag med mängdrabatten ett straff på ungefär fem år, i stället för nio år som straffet skulle bli om varje brott för sig skulle räknas. Vissa brott kan i praktiken därmed begås utan att det ger några som helst konsekvenser."
+    ],
+    "title": "Mängdrabatt",
+    "url": "https://moderaterna.se/var-politik/mangdrabatt/",
+    "updateDate": "2026-08-14T23:23:34.941Z",
+    "party": "M"
+  },
+  "https://moderaterna.se/var-politik/pensioner-2/": {
+    "opinions": [
+      "Det ska vara enkelt och lönsamt att komplettera sin pension med ett privat sparande. Skatteregler och sociala försäkringar ska anpassas så att den som väljer att fortsätta arbeta efter pensionsåldern inte missgynnas, utan att tvärtom uppmuntras.",
+      "Pensionssystemet ska vara enkelt och förutsägbart. Grundskyddet har med tiden blivit komplext och består av många olika stöd. Det bör därför reformeras i syfte att förenklas.",
+      "Moderaterna vill fortsätta att sänka skatten för alla som arbetar eller har arbetat."
+    ],
+    "title": "Pensioner",
+    "url": "https://moderaterna.se/var-politik/pensioner-2/",
+    "updateDate": "2026-08-14T23:23:34.185Z",
+    "party": "M"
+  },
+  "https://moderaterna.se/var-politik/socialforsakring/": {
+    "opinions": [
+      "Moderaterna vill dubbla antalet dubbeldagar igen från 60 till 120. Det är rätt och rättvist att föräldrar får bestämma mer över sina egna liv och vad som fungerar bäst för dem. Dubbeldagarna gör dessutom föräldraskapet mer jämställt. Det har visat sig leda till att fler pappor är föräldralediga även senare, barnet får knyta an till båda föräldrar och att mammors hälsa påverkas positivt."
+    ],
+    "title": "Socialförsäkring",
+    "url": "https://moderaterna.se/var-politik/socialforsakring/",
+    "updateDate": "2026-08-14T23:23:34.329Z",
+    "party": "M"
+  },
+  "https://moderaterna.se/var-politik/atervandring/": {
+    "opinions": [
+      "Moderaterna vill fortsätta att stödja frivillig återvandring som ett viktigt instrument för personer som inte lyckas eller önskar integreras i Sverige. Vi arbetar för att fler ska känna till möjligheten och att processen blir enkel och transparent."
+    ],
+    "title": "Återvandring",
+    "url": "https://moderaterna.se/var-politik/atervandring/",
+    "updateDate": "2026-08-14T23:23:34.417Z",
+    "party": "M"
+  },
+  "https://moderaterna.se/var-politik/aldreomsorg-2/": {
+    "opinions": [
+      "Den moderatledda regeringen har tillsatt en utredning om att stärka ledarskapet i äldreomsorgen. Utredaren har i uppdrag att lämna förslag på en obligatorisk ledarskapsutbildning för chefer i äldreomsorgen, med syftet att säkerställa en trygg och säker vård och omsorg för äldre.",
+      "Den moderatledda regeringen har gett Socialstyrelsen i uppdrag att kartlägga undernäringen bland äldre och vilka hälsoekonomiska kostnader det ger. Socialstyrelsen ska också föreslå förebyggande åtgärder.",
+      "Moderaterna vill att äldre ska kunna välja kön på personalen. Huruvida valet ska vara begränsat till insatser som är kroppsnära eller berör den personliga integriteten ska utredas. De äldre ska också i högre utsträckning kunna välja bort personal, när det finns legitima skäl. Regeringen har tillsatt en utredning om detta som ska vara klar i juni 2027.",
+      "Moderaterna vill fortsätta stödja och främja utveckling och användning av välfärdsteknik inom hemtjänsten. Välfärdsteknik kan användas för att:",
+      "Automatisera rutinuppgifter och frigöra tid för personalen för mer kvalificerat omsorgsarbete",
+      "Minska behovet av fysiska ronderingar",
+      "Minska fysisk belastning på personalen",
+      "Öka äldres självständighet och aktivitet",
+      "Moderaterna vill prioritera förebyggande äldrevård med särskilt fokus på prevention av fallolyckor. Biståndsbedömningen för hemtjänst bör vidgas till att innefatta utrymme för social samvaro och aktivitet. Ibland kan det räcka med att någon har tid att prata en stund för att välmåendet ska öka väsentligt.",
+      "Valfrihet är viktigt inom hemtjänsten. Det ger både äldre och anhöriga inflytande och möjlighet att välja och välja bort vårdgivare. Enligt en undersökning från Svenskt Näringsliv från 2023 vill 80 procent av de äldre kunna välja hemtjänst. Trots att över 150 kommuner har valfrihetssystem saknas fristående hemtjänstutförare i över 70 kommuner."
+    ],
+    "title": "Äldreomsorg",
+    "url": "https://moderaterna.se/var-politik/aldreomsorg-2/",
+    "updateDate": "2026-08-14T23:23:34.633Z",
+    "party": "M"
   }
 }

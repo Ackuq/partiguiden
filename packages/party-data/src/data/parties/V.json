@@ -147,7 +147,7 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/djurskydd/",
     "updateDate": "2026-04-06T14:01:33.401Z",
     "party": "V",
-    "subject": "miljo-och-klimat"
+    "subject": "jordbruk-jakt-och-fiske"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/drivmedelsbeskattning/": {
     "opinions": [
@@ -169,7 +169,7 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/ekonomisk-brottslighet-riktad-mot-valfarden/",
     "updateDate": "2026-04-06T14:01:33.453Z",
     "party": "V",
-    "subject": "trygghetssystem-och-valfard"
+    "subject": "lag-och-ratt"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/energi/": {
     "opinions": [
@@ -670,7 +670,7 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/sjukforsakringen/",
     "updateDate": "2026-04-06T14:01:31.569Z",
     "party": "V",
-    "subject": "ekonomi-och-skatter"
+    "subject": "trygghetssystem-och-valfard"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/sjukvard/": {
     "opinions": [
@@ -696,7 +696,7 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/skatteflykt/",
     "updateDate": "2026-04-06T14:01:32.416Z",
     "party": "V",
-    "subject": "lag-och-ratt"
+    "subject": "ekonomi-och-skatter"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/skattepolitik/": {
     "opinions": [
@@ -733,7 +733,7 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/socialpolitik/",
     "updateDate": "2026-04-06T14:01:33.895Z",
     "party": "V",
-    "subject": "jamstalldhet-och-diskriminering"
+    "subject": "trygghetssystem-och-valfard"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/sexuella-overgrepp-och-sexkop/": {
     "opinions": [
@@ -1032,7 +1032,7 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/telefonforsaljning/",
     "updateDate": "2026-04-06T14:01:29.750Z",
     "party": "V",
-    "subject": "lag-och-ratt"
+    "subject": "konsumentpolitik"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/ungas-ratt-till-inflytande-och-politisk-makt/": {
     "opinions": [
@@ -1062,7 +1062,7 @@
     "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/veterinarpriser/",
     "updateDate": "2026-04-06T14:01:31.211Z",
     "party": "V",
-    "subject": "vard-och-omsorg"
+    "subject": "jordbruk-jakt-och-fiske"
   },
   "https://www.vansterpartiet.se/var-politik/politik-a-o/klimatmalen/": {
     "opinions": [

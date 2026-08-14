@@ -169,7 +169,7 @@
     "url": "https://moderaterna.se/var-politik/forebyggande-arbete/",
     "updateDate": "2026-08-01T14:15:30.708Z",
     "party": "M",
-    "subject": "lag-och-ratt"
+    "subject": "trygghetssystem-och-valfard"
   },
   "https://moderaterna.se/var-politik/forsvar-och-krisberedskap/": {
     "opinions": [
@@ -309,7 +309,7 @@
     "url": "https://moderaterna.se/var-politik/sjukforsakring-2/",
     "updateDate": "2026-08-01T14:15:30.186Z",
     "party": "M",
-    "subject": "vard-och-omsorg"
+    "subject": "trygghetssystem-och-valfard"
   },
   "https://moderaterna.se/var-politik/skola-och-utbildning/": {
     "opinions": [
@@ -573,7 +573,7 @@
     "url": "https://moderaterna.se/var-politik/hemtjanst/",
     "updateDate": "2026-08-01T14:32:13.608Z",
     "party": "M",
-    "subject": "vard-och-omsorg"
+    "subject": "aldrepolitik"
   },
   "https://moderaterna.se/var-politik/idrott-2/": {
     "opinions": [
@@ -673,7 +673,7 @@
     "url": "https://moderaterna.se/var-politik/kriminalvarden/",
     "updateDate": "2026-08-01T14:29:42.064Z",
     "party": "M",
-    "subject": "vard-och-omsorg"
+    "subject": "lag-och-ratt"
   },
   "https://moderaterna.se/var-politik/karnkraft-2/": {
     "opinions": [
@@ -937,7 +937,7 @@
     "url": "https://moderaterna.se/var-politik/sveriges-konkurrenskraft/",
     "updateDate": "2026-08-01T14:15:30.047Z",
     "party": "M",
-    "subject": "jobb"
+    "subject": "naringsliv"
   },
   "https://moderaterna.se/var-politik/sakerhetspolitik/": {
     "opinions": [

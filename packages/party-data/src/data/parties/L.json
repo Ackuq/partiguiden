@@ -11,7 +11,7 @@
     "url": "https://www.liberalerna.se/politik/abort",
     "updateDate": "2026-08-01T13:27:43.054Z",
     "party": "L",
-    "subject": "trygghetssystem-och-valfard"
+    "subject": "vard-och-omsorg"
   },
   "https://www.liberalerna.se/politik/alkohol": {
     "opinions": [
@@ -208,7 +208,7 @@
     "url": "https://www.liberalerna.se/politik/cirkular-ekonomi",
     "updateDate": "2026-08-01T13:27:42.907Z",
     "party": "L",
-    "subject": "ekonomi-och-skatter"
+    "subject": "miljo-och-klimat"
   },
   "https://www.liberalerna.se/politik/demokrati": {
     "opinions": [
@@ -222,7 +222,7 @@
     "url": "https://www.liberalerna.se/politik/demokrati",
     "updateDate": "2026-08-01T13:28:16.864Z",
     "party": "L",
-    "subject": "lag-och-ratt"
+    "subject": "demokrati"
   },
   "https://www.liberalerna.se/politik/diskriminering": {
     "opinions": [
@@ -562,7 +562,7 @@
     "url": "https://www.liberalerna.se/politik/hav",
     "updateDate": "2026-08-01T13:28:16.163Z",
     "party": "L",
-    "subject": "jordbruk-jakt-och-fiske"
+    "subject": "miljo-och-klimat"
   },
   "https://www.liberalerna.se/politik/hedersrelaterat-vald-och-fortryck": {
     "opinions": [
@@ -603,7 +603,7 @@
     "url": "https://www.liberalerna.se/politik/hemtjanst",
     "updateDate": "2026-08-01T13:28:16.695Z",
     "party": "L",
-    "subject": "bostad"
+    "subject": "aldrepolitik"
   },
   "https://www.liberalerna.se/politik/hastpolitik": {
     "opinions": [
@@ -1339,7 +1339,7 @@
     "url": "https://www.liberalerna.se/politik/utsatta-omraden",
     "updateDate": "2026-08-01T13:28:17.325Z",
     "party": "L",
-    "subject": "jamstalldhet-och-diskriminering"
+    "subject": "migration-och-integration"
   },
   "https://www.liberalerna.se/politik/utlandssvenskar": {
     "opinions": [
@@ -1480,7 +1480,7 @@
     "url": "https://www.liberalerna.se/politik/bibliotek",
     "updateDate": "2026-08-01T13:28:15.991Z",
     "party": "L",
-    "subject": "utbildning"
+    "subject": "kultur-media-och-idrott"
   },
   "https://www.liberalerna.se/politik/glesbygd": {
     "opinions": [
@@ -1662,7 +1662,7 @@
     "url": "https://www.liberalerna.se/politik/jamstalldhet",
     "updateDate": "2026-08-01T13:27:43.574Z",
     "party": "L",
-    "subject": "infrastruktur-och-trafik"
+    "subject": "jamstalldhet-och-diskriminering"
   },
   "https://www.liberalerna.se/politik/alderism": {
     "opinions": [
@@ -1733,7 +1733,7 @@
     "url": "https://www.liberalerna.se/politik/kriminalvard",
     "updateDate": "2026-08-01T13:27:42.993Z",
     "party": "L",
-    "subject": "vard-och-omsorg"
+    "subject": "lag-och-ratt"
   },
   "https://www.liberalerna.se/politik/personlig-assistans": {
     "opinions": [
@@ -1761,7 +1761,7 @@
     "url": "https://www.liberalerna.se/politik/rut-och-rot-avdrag",
     "updateDate": "2026-08-01T13:27:44.031Z",
     "party": "L",
-    "subject": "bostad"
+    "subject": "ekonomi-och-skatter"
   },
   "https://www.liberalerna.se/politik/vinstintresset-i-skolan": {
     "opinions": [

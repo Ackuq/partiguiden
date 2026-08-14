@@ -14,6 +14,9 @@ const nextConfig = withBundleAnalyzer({
   transpilePackages: ["@partiguiden/party-data"],
   redirects,
   basePath: "",
+  experimental: {
+    useTypeScriptCli: false,
+  },
   images: {
     remotePatterns: [
       {

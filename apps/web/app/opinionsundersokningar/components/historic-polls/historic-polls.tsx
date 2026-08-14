@@ -53,7 +53,7 @@ export default function HistoricPolls({ historicPolls }: Props) {
           <XAxis type="category" dataKey="date" />
           <YAxis type="number" unit="%" width={35} />
           <Tooltip content={CustomTooltip} cursor={false} />
-          <Legend fill="#000" onClick={onClick} />
+          <Legend onClick={onClick} />
           {Object.values(parties).map((party) => (
             <Line
               key={party}

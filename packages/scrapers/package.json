@@ -13,7 +13,6 @@
   "dependencies": {
     "@partiguiden/party-data": "workspace:*",
     "cheerio": "catalog:",
-    "pdfjs-dist": "catalog:",
     "undici": "catalog:"
   },
   "devDependencies": {

@@ -420,7 +420,7 @@
     "url": "https://www.liberalerna.se/politik/forskning",
     "updateDate": "2026-08-01T13:28:16.971Z",
     "party": "L",
-    "subject": "utbildning"
+    "subject": "forskning-och-innovation"
   },
   "https://www.liberalerna.se/politik/frihandel": {
     "opinions": [
@@ -493,7 +493,7 @@
     "url": "https://www.liberalerna.se/politik/forsvar",
     "updateDate": "2026-08-01T13:27:43.755Z",
     "party": "L",
-    "subject": "forsvar"
+    "subject": "forsvar-och-krisberedskap"
   },
   "https://www.liberalerna.se/politik/grundlagen": {
     "opinions": [
@@ -901,7 +901,7 @@
     "url": "https://www.liberalerna.se/politik/narkotika",
     "updateDate": "2026-08-01T13:28:16.944Z",
     "party": "L",
-    "subject": "vard-och-omsorg"
+    "subject": "lag-och-ratt"
   },
   "https://www.liberalerna.se/politik/nato": {
     "opinions": [
@@ -913,7 +913,7 @@
     "url": "https://www.liberalerna.se/politik/nato",
     "updateDate": "2026-08-01T13:27:44.010Z",
     "party": "L",
-    "subject": "forsvar"
+    "subject": "forsvar-och-krisberedskap"
   },
   "https://www.liberalerna.se/politik/pensioner": {
     "opinions": [
@@ -969,7 +969,7 @@
     "url": "https://www.liberalerna.se/politik/psykiatri",
     "updateDate": "2026-08-01T13:28:17.703Z",
     "party": "L",
-    "subject": "vard-och-omsorg"
+    "subject": "folkhalsa-och-psykiatri"
   },
   "https://www.liberalerna.se/politik/lss": {
     "opinions": [
@@ -1026,7 +1026,7 @@
     "url": "https://www.liberalerna.se/politik/regional-utveckling",
     "updateDate": "2026-08-01T13:28:16.846Z",
     "party": "L",
-    "subject": "landsbygd"
+    "subject": "landsbygd-och-regional-utveckling"
   },
   "https://www.liberalerna.se/politik/religiosa-friskolor": {
     "opinions": [
@@ -1197,7 +1197,7 @@
     "url": "https://www.liberalerna.se/politik/spelmissbruk",
     "updateDate": "2026-08-01T13:28:17.006Z",
     "party": "L",
-    "subject": "vard-och-omsorg"
+    "subject": "folkhalsa-och-psykiatri"
   },
   "https://www.liberalerna.se/politik/solenergi": {
     "opinions": [
@@ -1296,7 +1296,7 @@
     "url": "https://www.liberalerna.se/politik/tobak",
     "updateDate": "2026-08-01T13:28:17.927Z",
     "party": "L",
-    "subject": "vard-och-omsorg"
+    "subject": "folkhalsa-och-psykiatri"
   },
   "https://www.liberalerna.se/politik/upphovsratten": {
     "opinions": [
@@ -1507,7 +1507,7 @@
     "url": "https://www.liberalerna.se/politik/glesbygd",
     "updateDate": "2026-08-01T13:27:44.311Z",
     "party": "L",
-    "subject": "landsbygd"
+    "subject": "landsbygd-och-regional-utveckling"
   },
   "https://www.liberalerna.se/politik/hogre-utbildning": {
     "opinions": [
@@ -1564,7 +1564,7 @@
     "url": "https://www.liberalerna.se/politik/ai",
     "updateDate": "2026-08-01T13:27:43.565Z",
     "party": "L",
-    "subject": "it-och-mobiltelefoni"
+    "subject": "digitalisering-tech-och-ai"
   },
   "https://www.liberalerna.se/politik/energi-2": {
     "opinions": [

@@ -187,7 +187,7 @@
     "url": "https://moderaterna.se/var-politik/forsvar-och-krisberedskap/",
     "updateDate": "2026-08-01T14:34:39.728Z",
     "party": "M",
-    "subject": "forsvar"
+    "subject": "forsvar-och-krisberedskap"
   },
   "https://moderaterna.se/var-politik/grona-naringar-landsbygd-och-jakt/": {
     "opinions": [
@@ -498,7 +498,7 @@
     "url": "https://moderaterna.se/var-politik/forskning/",
     "updateDate": "2026-08-01T14:15:29.797Z",
     "party": "M",
-    "subject": "utbildning"
+    "subject": "forskning-och-innovation"
   },
   "https://moderaterna.se/var-politik/forlossningsvard/": {
     "opinions": [
@@ -931,7 +931,7 @@
     "url": "https://moderaterna.se/var-politik/sakerhetspolitik/",
     "updateDate": "2026-08-01T14:15:30.444Z",
     "party": "M",
-    "subject": "forsvar"
+    "subject": "forsvar-och-krisberedskap"
   },
   "https://moderaterna.se/var-politik/tandvard/": {
     "opinions": [
@@ -1120,7 +1120,8 @@
     "title": "Invandring",
     "url": "https://moderaterna.se/var-politik/invandring/",
     "updateDate": "2026-08-14T23:23:35.987Z",
-    "party": "M"
+    "party": "M",
+    "subject": "migration-och-integration"
   },
   "https://moderaterna.se/var-politik/mangdrabatt/": {
     "opinions": [
@@ -1129,7 +1130,8 @@
     "title": "Mängdrabatt",
     "url": "https://moderaterna.se/var-politik/mangdrabatt/",
     "updateDate": "2026-08-14T23:23:34.941Z",
-    "party": "M"
+    "party": "M",
+    "subject": "lag-och-ratt"
   },
   "https://moderaterna.se/var-politik/pensioner-2/": {
     "opinions": [
@@ -1140,7 +1142,8 @@
     "title": "Pensioner",
     "url": "https://moderaterna.se/var-politik/pensioner-2/",
     "updateDate": "2026-08-14T23:23:34.185Z",
-    "party": "M"
+    "party": "M",
+    "subject": "aldrepolitik"
   },
   "https://moderaterna.se/var-politik/socialforsakring/": {
     "opinions": [
@@ -1149,7 +1152,8 @@
     "title": "Socialförsäkring",
     "url": "https://moderaterna.se/var-politik/socialforsakring/",
     "updateDate": "2026-08-14T23:23:34.329Z",
-    "party": "M"
+    "party": "M",
+    "subject": "trygghetssystem-och-valfard"
   },
   "https://moderaterna.se/var-politik/atervandring/": {
     "opinions": [
@@ -1158,7 +1162,8 @@
     "title": "Återvandring",
     "url": "https://moderaterna.se/var-politik/atervandring/",
     "updateDate": "2026-08-14T23:23:34.417Z",
-    "party": "M"
+    "party": "M",
+    "subject": "migration-och-integration"
   },
   "https://moderaterna.se/var-politik/aldreomsorg-2/": {
     "opinions": [
@@ -1176,6 +1181,7 @@
     "title": "Äldreomsorg",
     "url": "https://moderaterna.se/var-politik/aldreomsorg-2/",
     "updateDate": "2026-08-14T23:23:34.633Z",
-    "party": "M"
+    "party": "M",
+    "subject": "aldrepolitik"
   }
 }

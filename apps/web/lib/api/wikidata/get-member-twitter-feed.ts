@@ -19,6 +19,7 @@ export default async function getMemberTwitterFeed(memberId: string) {
 `;
 
   const query = new URLSearchParams({
+    maxlag: "5",
     query: sparqlQuery,
   });
 

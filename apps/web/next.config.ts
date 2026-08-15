@@ -16,6 +16,8 @@ const nextConfig = withBundleAnalyzer({
   basePath: "",
   experimental: {
     useTypeScriptCli: false,
+    // Some endpoints might rate-limit, keep to 1 to reduce risk of being continously rate-limited
+    staticGenerationMaxConcurrency: 1,
   },
   images: {
     remotePatterns: [

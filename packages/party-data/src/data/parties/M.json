@@ -1183,5 +1183,16 @@
     "updateDate": "2026-08-14T23:23:34.633Z",
     "party": "M",
     "subject": "aldrepolitik"
+  },
+  "https://moderaterna.se/var-politik/bolaneskatt/": {
+    "opinions": [
+      "Moderaterna vill att fler ska ha möjlighet att uppleva villadrömmen. Det kräver en ansvarsfull ekonomisk politik som gör att människors boendekostnader minskar och som ser till att det finns mer pengar kvar i plånboken i slutet av varje månad.",
+      "Vi moderater motsätter oss Socialdemokraternas så kallade ”bankskatt”. Högre skatt på bolån och en återinförd fastighetsskatt som gör människor fattigare skapar inte ett bättre Sverige.",
+      "Människor som går till jobbet och gör rätt för sig ska få mer pengar att röra sig med, därför vill vi se till att en vanlig tvåbarnsfamilj ska få 5 000 kronor mer i plånboken under kommande mandatperiod."
+    ],
+    "title": "Bolåneskatt",
+    "url": "https://moderaterna.se/var-politik/bolaneskatt/",
+    "updateDate": "2026-08-18T06:50:50.360Z",
+    "party": "M"
   }
 }

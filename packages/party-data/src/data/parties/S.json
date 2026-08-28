@@ -894,18 +894,21 @@
     "title": "Skatter",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/skatter",
     "opinions": [
-      "Inte införa en fastighetsskatt. Läs vårt officiella besked om fastighetsskatten här »",
+      "Inte införa en fastighetsskatt.",
+      "Läs vårt officiella besked om fastighetsskatten här »",
       "Genomföra en rättvis skattesänkning för vanligt folk, men säger nej till skattebonusar för de som tjänar allra mest.",
       "Läs mer om hur vi vill sänka skatten för vanligt folk >>",
       "Införa en tillfälligt sänkt matmoms till 6 procent för att ge hushållen lättnad under det tuffa kostnadsläget.",
-      "Att investeringssparkonton (ISK) ska vara skattefritt upp till 300 000 kr och att det införs en tredje beskattningsnivå för de med störst kapitalinnehav i ISK för att minska skatterabatten för stora kapital. Läs mer om vårt officiella besked om räntor >>",
-      "Införa en tillfällig skatt på bankernas övervinster som därefter betalas tillbaka till hushåll och välfärden, då bankerna har gjort stora vinster på krisen. Läs mer om vårt officiella besked om bankskatt >>",
+      "Att investeringssparkonton (ISK) ska vara skattefritt upp till 300 000 kr och att det införs en tredje beskattningsnivå för de med störst kapitalinnehav i ISK för att minska skatterabatten för stora kapital.",
+      "Läs mer om vårt officiella besked om räntor >>",
+      "Införa en tillfällig skatt på bankernas övervinster som därefter betalas tillbaka till hushåll och välfärden, då bankerna har gjort stora vinster på krisen.",
+      "Läs mer om vårt officiella besked om bankskatt >>",
       "Reformera ROT-avdraget för att ge högre subvention för energieffektiviserande åtgärder, som installation av solceller eller bergvärme.",
       "Utreda och införa en beredskapsskatt för att bidra till den långsiktiga och permanenta finansieringen av Sveriges försvarsutbyggnad.",
       "Stärka Skatteverket för att intensifiera arbetet mot skattefusk och svartarbete.",
       "Återinföra revisionsplikten för fler aktiebolag och höja kravet på aktiekapital för att försvåra användningen av bolag som brottsverktyg."
     ],
-    "updateDate": "2026-08-14T23:23:35.813Z",
+    "updateDate": "2026-08-27T17:29:45.444Z",
     "party": "S",
     "subject": "ekonomi-och-skatter"
   },
@@ -1892,11 +1895,11 @@
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/elpriser",
     "opinions": [
       "Införa Folkhemsel: Möjliggöra att privatkunder kan teckna långa kontrakt för elleverans till låga och stabila priser (cirka 60 procent av normalförbrukningen).",
-      "Bygga bort de fysiska begränsningarna i elnätet samt öka produktionen av fossilfri el inte minst i södra Sverige för att möjliggöra ett enhetligt svenskt elområde med ett lågt pris.",
+      "Bygga bort de fysiska begränsningarna i elnätet samt öka produktionen av fossilfri el inte minst i södra Sverige för att möjliggöra samma låga elpris i hela landet.",
       "att länder i EU ska få större frihet att använda flaskhalsintäkter, de pengar som uppstår när elpriser skiljer sig åt mellan regioner, så att de kan gå till att stötta elkunder när priserna stiger kraftigt.",
       "Anpassa det föreslagna högkostnadsskyddet för höga elpriser så att det utlöses vid lägre prisnivåer än regeringens föreslagna gräns på 1,50 kr/kWh och tar hänsyn till förekomst av ev. fastprisavtal."
     ],
-    "updateDate": "2026-08-01T15:47:42.911Z",
+    "updateDate": "2026-08-27T17:29:44.171Z",
     "party": "S",
     "subject": "energi"
   },

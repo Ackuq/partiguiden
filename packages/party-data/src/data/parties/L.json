@@ -257,13 +257,14 @@
     "opinions": [
       "Införa euron och stärka Sveriges konkurrenskraft i Europa",
       "Införa ett tydligt egenförsörjningsmål",
-      "Sänka skatten för alla som arbetar",
+      "Sänka skatten för alla som arbetar och halvera den statliga inkomstskatten",
+      "Gör de första 500 000 kronorna på investeringssparkonto (ISK) skattefria",
       "Förenkla regler för företag och entreprenörer",
       "Genomföra en bred skattereform"
     ],
     "title": "Ekonomi",
     "url": "https://www.liberalerna.se/politik/ekonomi",
-    "updateDate": "2026-08-01T13:27:43.812Z",
+    "updateDate": "2026-08-27T17:29:31.265Z",
     "party": "L",
     "subject": "ekonomi-och-skatter"
   },
@@ -1073,20 +1074,15 @@
   },
   "https://www.liberalerna.se/politik/skola": {
     "opinions": [
-      "Kunskap är grunden för frihet. Utbildning ger människor verktygen att tänka självständigt, göra genomtänkta livsval och göra klassresor. En välfungerande skola är därför den viktigaste investeringen Sverige kan göra. Den höjer och håller ihop det svenska samhället.",
-      "För många elever lämnar fortfarande grundskolan utan tillräckliga kunskaper i läsning och matematik. Samtidigt ökar skärmtiden och allt fler unga mår dåligt. Det duger inte. Svensk skola behöver mer studiero, tydligare vuxenansvar och större fokus på kunskap.",
-      "Liberalerna har i regering börjat återupprätta kunskapsskolan. Vi har infört mobilförbud under skoldagen, stärkt lärarnas befogenheter och flyttat tillbaka fokus till läsning, skrivning och matematik med riktiga böcker istället för skärmar.",
-      "Skolan ska präglas av ordning och reda och höga förväntningar på varje elev. Den som behöver stöd ska få det i tid, och lärarna ska få bättre villkor och större möjlighet att fokusera på undervisningen.",
-      "Men mycket återstår. Svensk skola behöver fortsätta reformeras. Sveriges elever och lärare förtjänar en skola som fungerar ännu bättre än idag.",
-      "Mindre klasser leder till ökad studiero och bättre skolresultat. Vi vill införa ett maxtak för antal elever per klass och fler mindre undervisningsgrupper med speciallärare så att alla elever får det stöd de behöver. Elever som återkommande stör undervisningen ska få stöd i separata hjälpklasser.",
-      "Skolan ska utmana de som vill gå före. Därför behöver elever som ligger långt framme eller är särskilt begåvade få möjlighet till mer krävande utmaningar. Vi vill se fler spetsklasser och avancerade grupper i grundskolan och gymnasiet.",
-      "Digitaliseringen i skolan har gått för långt. Elever lär sig bättre med böcker än med skärmar – därför ska alla ha rätt till riktiga läroböcker. I förskolan och lågstadiet ska läsplattor och elevdatorer tas bort och datorer ska alltid blockera sociala medier och datorspel.",
-      "Valfriheten i skolan ska finnas kvar, men barnens rätt till en bra utbildning måste alltid gå före koncernbolagens rätt till vinst. Vi vill fasa ut vinstintresset i friskolesektorn.",
-      "Lärare ska få ägna sin tid åt undervisning, inte onödig administration. Därför behövs tydliga befogenheter, fler lärarassistenter och starkare stöd från elevhälsan. Läraryrket ska vara ett attraktivt och välavlönat akademikeryrke med tydliga karriärvägar. Skickliga lärare ska ha hög lön och goda förutsättningar att göra sitt jobb."
+      "Införa tak på max 20 elever per klass. Mindre klasser leder till ökad studiero och bättre skolresultat. Kommuner och fristående huvudmän ska inte kunna spara in på skolan genom stora klasser.",
+      "​Ge varje elev en lärobok per ämne. Under mandatperioden har vi bytt ut skärmar mot läroböcker. Nu vill vi säkerställa att varje elev får en lärobok i varje ämne.",
+      "Fasa ut skärmar. Användandet av skärmar och mobiler i skolan har gått för långt, särskilt för de yngre barnen. Elever lär sig bättre med böcker än med skärmar, därför ska alla ha rätt till riktiga läroböcker. I förskolan och lågstadiet ska läsplattor och elevdatorer tas bort och datorer ska alltid blockera sociala medier och datorspel.",
+      "​Förstatliga skolan. Vi vill förstatliga de kommunala skolorna så att alla elever får en bra utbildning, oavsett var i landet de bor. Kommunpolitiker ska inte kunna nedprioritera skolan eller låta kvaliteten skilja sig för mycket mellan olika delar av Sverige. Därför vill vi flytta ansvaret från kommunerna till staten.",
+      "Införa fler spetsklasser. Skolan ska utmana de elever som vill och kan gå före. Därför behöver elever som ligger långt framme eller är särskilt begåvade få möjlighet till mer krävande utmaningar. Vi vill se fler spetsklasser och avancerade grupper i grundskolan och gymnasiet."
     ],
     "title": "Skola",
     "url": "https://www.liberalerna.se/politik/skola",
-    "updateDate": "2026-08-01T13:28:16.077Z",
+    "updateDate": "2026-08-27T17:29:32.711Z",
     "party": "L",
     "subject": "utbildning"
   },
@@ -1803,5 +1799,17 @@
     "updateDate": "2026-08-01T13:27:43.147Z",
     "party": "L",
     "subject": "aldrepolitik"
+  },
+  "https://www.liberalerna.se/politik/elv": {
+    "opinions": [
+      "Alla fordon av historiskt intresse ska undantas från ELV-reglerna",
+      "Äganderätten ska värnas och regelbördan får inte öka",
+      "ELV ska tvinga bilindustrin att ta ansvar för sitt avfall",
+      "ELV ska implementeras i Sverige med hänsyn till det rullande kulturarvet"
+    ],
+    "title": "ELV",
+    "url": "https://www.liberalerna.se/politik/elv",
+    "updateDate": "2026-08-27T17:29:31.981Z",
+    "party": "L"
   }
 }

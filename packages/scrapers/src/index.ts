@@ -50,7 +50,11 @@ if (limitArg) {
   }
 }
 
-const parties = party === "all" ? Object.keys(scrapers) : [party];
+const parties =
+  party === "all"
+    ? // TODO: V and M currently incorporates protection from bots and scrapers through Cloudflare, so scraping is not viable at the moment
+      Object.keys(scrapers).filter((key) => key !== "v" && key !== "m")
+    : [party];
 
 const promises = parties.map(async (abbreviation) => {
   if (!Object.keys(scrapers).includes(abbreviation.toLowerCase())) {

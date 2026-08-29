@@ -2059,14 +2059,16 @@
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/banker/rantor-och-bolan---sa-vill-s-pressa-rantekostnaderna",
     "opinions": [],
     "updateDate": "2026-08-14T23:23:28.834Z",
-    "party": "S"
+    "party": "S",
+    "subject": "ekonomi-och-skatter"
   },
   "https://www.socialdemokraterna.se/var-politik/a-till-o/brottsbekampning-och-trygghet/fragor-och-svar-om-mangdrabatt": {
     "title": "Frågor och svar om mängdrabatt",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/brottsbekampning-och-trygghet/fragor-och-svar-om-mangdrabatt",
     "opinions": [],
     "updateDate": "2026-08-14T23:23:28.841Z",
-    "party": "S"
+    "party": "S",
+    "subject": "lag-och-ratt"
   },
   "https://www.socialdemokraterna.se/var-politik/a-till-o/fritidshem": {
     "title": "Fritidshem",
@@ -2081,7 +2083,8 @@
       "Ge friskolor ett tydligare ansvar att erbjuda fritidshem vid eller i närheten av skolan."
     ],
     "updateDate": "2026-08-14T23:23:33.351Z",
-    "party": "S"
+    "party": "S",
+    "subject": "utbildning"
   },
   "https://www.socialdemokraterna.se/var-politik/a-till-o/foretagande-och-entreprenorskap": {
     "title": "Företagande och entreprenörskap",
@@ -2100,7 +2103,8 @@
       "Stärka Skatteverket och Bolagsverket för att strypa gängens finansiering och motverka att företag används som brottsverktyg."
     ],
     "updateDate": "2026-08-14T23:23:34.182Z",
-    "party": "S"
+    "party": "S",
+    "subject": "naringsliv"
   },
   "https://www.socialdemokraterna.se/var-politik/a-till-o/israel-och-palestina": {
     "title": "Israel och Palestina",
@@ -2116,7 +2120,8 @@
       "Att utländska journalister måste få omedelbart få tillträde till Gaza."
     ],
     "updateDate": "2026-08-14T23:23:34.270Z",
-    "party": "S"
+    "party": "S",
+    "subject": "utrikes--och-bistandsfragor"
   },
   "https://www.socialdemokraterna.se/var-politik/a-till-o/kollektivavtal": {
     "title": "Kollektivavtal",
@@ -2128,7 +2133,8 @@
       "Att svenska fackförbund alltid ska kunna kräva svenska kollektivavtal, ytterst med stöd av eventuella stridsåtgärder, dock med de begränsningar som följer av EU-rätten."
     ],
     "updateDate": "2026-08-14T23:23:34.481Z",
-    "party": "S"
+    "party": "S",
+    "subject": "jobb"
   },
   "https://www.socialdemokraterna.se/var-politik/a-till-o/kriget-i-ukraina": {
     "title": "Kriget i Ukraina",
@@ -2145,7 +2151,8 @@
       "Att Sverige ska stötta Ukraina i de reformer som krävs på väg mot EU-medlemskap."
     ],
     "updateDate": "2026-08-14T23:23:34.806Z",
-    "party": "S"
+    "party": "S",
+    "subject": "utrikes--och-bistandsfragor"
   },
   "https://www.socialdemokraterna.se/var-politik/a-till-o/karnkraft": {
     "title": "Kärnkraft",
@@ -2158,7 +2165,8 @@
       "Verka för att kraftverket i Oskarshamn får en svensk ägare, då reaktorn idag ägs ytterst av den tyska staten."
     ],
     "updateDate": "2026-08-14T23:23:35.233Z",
-    "party": "S"
+    "party": "S",
+    "subject": "energi"
   },
   "https://www.socialdemokraterna.se/var-politik/a-till-o/narkotika": {
     "title": "Narkotika",
@@ -2174,13 +2182,15 @@
       "Se ett samlat ansvar för personer med samsjuklighet, dvs för personer som samtidigt har ett missbruk/beroende och psykisk sjukdom/ohälsa."
     ],
     "updateDate": "2026-08-14T23:23:35.410Z",
-    "party": "S"
+    "party": "S",
+    "subject": "lag-och-ratt"
   },
   "https://www.socialdemokraterna.se/var-politik/a-till-o/skatter/fakta-om-s-politik-skattepolitik": {
     "title": "Fakta om Socialdemokraternas skattepolitik",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/skatter/fakta-om-s-politik-skattepolitik",
     "opinions": [],
     "updateDate": "2026-08-14T23:23:35.709Z",
-    "party": "S"
+    "party": "S",
+    "subject": "ekonomi-och-skatter"
   }
 }

@@ -1229,7 +1229,8 @@
     "title": "Bolåneskatt",
     "url": "https://moderaterna.se/var-politik/bolaneskatt/",
     "updateDate": "2026-08-18T06:50:50.360Z",
-    "party": "M"
+    "party": "M",
+    "subject": "ekonomi-och-skatter"
   },
   "https://moderaterna.se/var-politik/a-kassa-3/": {
     "opinions": [
@@ -1240,7 +1241,8 @@
     "title": "A-kassa",
     "url": "https://moderaterna.se/var-politik/a-kassa-3/",
     "updateDate": "2026-08-27T17:29:38.898Z",
-    "party": "M"
+    "party": "M",
+    "subject": "trygghetssystem-och-valfard"
   },
   "https://moderaterna.se/var-politik/bistand-2/": {
     "opinions": [
@@ -1251,7 +1253,8 @@
     "title": "Bistånd",
     "url": "https://moderaterna.se/var-politik/bistand-2/",
     "updateDate": "2026-08-27T17:29:38.937Z",
-    "party": "M"
+    "party": "M",
+    "subject": "utrikes--och-bistandsfragor"
   },
   "https://moderaterna.se/var-politik/bostadsbrist/": {
     "opinions": [
@@ -1261,7 +1264,8 @@
     "title": "Bostadsbrist",
     "url": "https://moderaterna.se/var-politik/bostadsbrist/",
     "updateDate": "2026-08-27T17:29:38.996Z",
-    "party": "M"
+    "party": "M",
+    "subject": "bostad"
   },
   "https://moderaterna.se/var-politik/frihandel/": {
     "opinions": [
@@ -1270,7 +1274,8 @@
     "title": "Frihandel",
     "url": "https://moderaterna.se/var-politik/frihandel/",
     "updateDate": "2026-08-27T17:29:43.420Z",
-    "party": "M"
+    "party": "M",
+    "subject": "utrikes--och-bistandsfragor"
   },
   "https://moderaterna.se/var-politik/frihet/": {
     "opinions": [
@@ -1282,7 +1287,8 @@
     "title": "Frihet",
     "url": "https://moderaterna.se/var-politik/frihet/",
     "updateDate": "2026-08-27T17:29:32.414Z",
-    "party": "M"
+    "party": "M",
+    "subject": "demokrati"
   },
   "https://moderaterna.se/var-politik/glesbygd/": {
     "opinions": [
@@ -1292,7 +1298,8 @@
     "title": "Glesbygd",
     "url": "https://moderaterna.se/var-politik/glesbygd/",
     "updateDate": "2026-08-27T17:29:39.039Z",
-    "party": "M"
+    "party": "M",
+    "subject": "landsbygd-och-regional-utveckling"
   },
   "https://moderaterna.se/var-politik/hemloshet/": {
     "opinions": [
@@ -1302,7 +1309,8 @@
     "title": "Hemlöshet",
     "url": "https://moderaterna.se/var-politik/hemloshet/",
     "updateDate": "2026-08-27T17:29:34.198Z",
-    "party": "M"
+    "party": "M",
+    "subject": "trygghetssystem-och-valfard"
   },
   "https://moderaterna.se/var-politik/ivf/": {
     "opinions": [
@@ -1313,7 +1321,8 @@
     "title": "IVF",
     "url": "https://moderaterna.se/var-politik/ivf/",
     "updateDate": "2026-08-27T17:29:33.492Z",
-    "party": "M"
+    "party": "M",
+    "subject": "vard-och-omsorg"
   },
   "https://moderaterna.se/var-politik/kvinnors-halsa/": {
     "opinions": [
@@ -1330,7 +1339,8 @@
     "title": "Kvinnors hälsa",
     "url": "https://moderaterna.se/var-politik/kvinnors-halsa/",
     "updateDate": "2026-08-27T17:29:39.734Z",
-    "party": "M"
+    "party": "M",
+    "subject": "vard-och-omsorg"
   },
   "https://moderaterna.se/var-politik/marknadshyror/": {
     "opinions": [
@@ -1341,7 +1351,8 @@
     "title": "Marknadshyror",
     "url": "https://moderaterna.se/var-politik/marknadshyror/",
     "updateDate": "2026-08-27T17:29:38.469Z",
-    "party": "M"
+    "party": "M",
+    "subject": "bostad"
   },
   "https://moderaterna.se/var-politik/medborgarskap-2/": {
     "opinions": [
@@ -1351,7 +1362,8 @@
     "title": "Medborgarskap",
     "url": "https://moderaterna.se/var-politik/medborgarskap-2/",
     "updateDate": "2026-08-27T17:29:43.403Z",
-    "party": "M"
+    "party": "M",
+    "subject": "migration-och-integration"
   },
   "https://moderaterna.se/var-politik/strandskydd/": {
     "opinions": [
@@ -1361,6 +1373,7 @@
     "title": "Strandskydd",
     "url": "https://moderaterna.se/var-politik/strandskydd/",
     "updateDate": "2026-08-27T17:29:39.757Z",
-    "party": "M"
+    "party": "M",
+    "subject": "bostad"
   }
 }

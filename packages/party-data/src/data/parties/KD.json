@@ -2187,7 +2187,8 @@
     "title": "AI",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/ai",
     "updateDate": "2026-08-27T17:29:41.539Z",
-    "party": "KD"
+    "party": "KD",
+    "subject": "digitalisering-tech-och-ai"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/biologisk-mangfald": {
     "opinions": [
@@ -2196,7 +2197,8 @@
     "title": "Biologisk mångfald",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/biologisk-mangfald",
     "updateDate": "2026-08-14T23:23:26.404Z",
-    "party": "KD"
+    "party": "KD",
+    "subject": "miljo-och-klimat"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/regionerna": {
     "opinions": [
@@ -2205,7 +2207,8 @@
     "title": "Regionerna",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/regionerna",
     "updateDate": "2026-08-14T23:23:32.581Z",
-    "party": "KD"
+    "party": "KD",
+    "subject": "landsbygd-och-regional-utveckling"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/tullar": {
     "opinions": [
@@ -2214,7 +2217,8 @@
     "title": "Tullar",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/tullar",
     "updateDate": "2026-08-18T06:50:51.283Z",
-    "party": "KD"
+    "party": "KD",
+    "subject": "ekonomi-och-skatter"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/antisemitism": {
     "opinions": [
@@ -2225,7 +2229,8 @@
     "title": "Antisemitism",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/antisemitism",
     "updateDate": "2026-08-27T17:29:33.570Z",
-    "party": "KD"
+    "party": "KD",
+    "subject": "jamstalldhet-och-diskriminering"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/bibliotek": {
     "opinions": [
@@ -2235,7 +2240,8 @@
     "title": "Bibliotek",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/bibliotek",
     "updateDate": "2026-08-27T17:29:46.043Z",
-    "party": "KD"
+    "party": "KD",
+    "subject": "kultur-media-och-idrott"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/elpriser": {
     "opinions": [
@@ -2245,7 +2251,8 @@
     "title": "Elpriser",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/elpriser",
     "updateDate": "2026-08-27T17:29:46.614Z",
-    "party": "KD"
+    "party": "KD",
+    "subject": "energi"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/energi": {
     "opinions": [
@@ -2254,7 +2261,8 @@
     "title": "Energi",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/energi",
     "updateDate": "2026-08-27T17:29:44.735Z",
-    "party": "KD"
+    "party": "KD",
+    "subject": "energi"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/gavoskatteavdrag": {
     "opinions": [
@@ -2263,7 +2271,8 @@
     "title": "Gåvoskatteavdrag",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/gavoskatteavdrag",
     "updateDate": "2026-08-27T17:29:46.238Z",
-    "party": "KD"
+    "party": "KD",
+    "subject": "ekonomi-och-skatter"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/kultur": {
     "opinions": [
@@ -2273,7 +2282,8 @@
     "title": "Kultur",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/kultur",
     "updateDate": "2026-08-27T17:29:34.682Z",
-    "party": "KD"
+    "party": "KD",
+    "subject": "kultur-media-och-idrott"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/kulturkanon": {
     "opinions": [
@@ -2283,7 +2293,8 @@
     "title": "Kulturkanon",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/kulturkanon",
     "updateDate": "2026-08-27T17:29:46.230Z",
-    "party": "KD"
+    "party": "KD",
+    "subject": "kultur-media-och-idrott"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/mammabonus-i-pensionen": {
     "opinions": [
@@ -2292,7 +2303,8 @@
     "title": "Mammabonus i pensionen",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/mammabonus-i-pensionen",
     "updateDate": "2026-08-27T17:29:47.086Z",
-    "party": "KD"
+    "party": "KD",
+    "subject": "aldrepolitik"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/samhallsgemenskap": {
     "opinions": [
@@ -2301,7 +2313,8 @@
     "title": "Samhällsgemenskap",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/samhallsgemenskap",
     "updateDate": "2026-08-27T17:29:46.155Z",
-    "party": "KD"
+    "party": "KD",
+    "subject": "kultur-media-och-idrott"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/sociala-medier": {
     "opinions": [
@@ -2311,7 +2324,8 @@
     "title": "Sociala medier",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/sociala-medier",
     "updateDate": "2026-08-27T17:29:46.970Z",
-    "party": "KD"
+    "party": "KD",
+    "subject": "digitalisering-tech-och-ai"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/straffmyndighetsalder": {
     "opinions": [
@@ -2320,7 +2334,8 @@
     "title": "Straffmyndighetsålder",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/straffmyndighetsalder",
     "updateDate": "2026-08-27T17:29:45.008Z",
-    "party": "KD"
+    "party": "KD",
+    "subject": "lag-och-ratt"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/studieforbund": {
     "opinions": [
@@ -2330,7 +2345,8 @@
     "title": "Studieförbund",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/studieforbund",
     "updateDate": "2026-08-27T17:29:45.670Z",
-    "party": "KD"
+    "party": "KD",
+    "subject": "utbildning"
   },
   "https://kristdemokraterna.se/var-politik/politik-a-till-o/tonarsutvisningar": {
     "opinions": [
@@ -2339,6 +2355,7 @@
     "title": "Tonårsutvisningar",
     "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o/tonarsutvisningar",
     "updateDate": "2026-08-27T17:29:46.177Z",
-    "party": "KD"
+    "party": "KD",
+    "subject": "lag-och-ratt"
   }
 }

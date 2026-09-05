@@ -372,11 +372,11 @@
     "title": "Karensavdrag",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/karensavdrag",
     "opinions": [
-      "Slopa karensavdraget i sjukförsäkringen från och med 1 juli 2026, vilket innebär att den som är sjuk får sjuklön från första dagen.",
+      "Slopa karensavdraget i sjukförsäkringen, vilket innebär att den som är sjuk får sjuklön från första dagen.",
       "Införa ett högkostnadsskydd mot höga sjuklönekostnader för små och medelstora företag med en avsättning på 500 miljoner kronor år 2026.",
       "Kontinuerligt stärka sjukförsäkringen så att den är generös, rättssäker och stark nog att hålla ihop samhället."
     ],
-    "updateDate": "2026-08-01T15:47:42.386Z",
+    "updateDate": "2026-09-05T10:17:17.715Z",
     "party": "S",
     "subject": "jobb"
   },
@@ -854,25 +854,36 @@
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/sjukvard-halsa-och-omvard",
     "opinions": [
       "Säkerställa att du får vård när du behöver den, oavsett din ekonomi.",
+      "Läs mer om vårt vallöfte här>>",
+      "Införa ett stegvis utvecklat högkostnadsskydd för tandvård för alla vuxna.",
+      "Läs mer om vår tandvårdsreformen här>>",
+      "Återinföra fri tandvård upp till 23 år och det förstärkta tandvårdsstödet upp till 29 år.",
+      "Läs mer om tandvårdsreformen här>>",
       "Anställa fler, förbättra villkoren och öka kapaciteten så att du får vård snabbare.",
+      "Läs mer om hur>>",
+      "Utveckla vården och säkerställa rätten till abort.",
+      "Läs mer om S vallöfte om kvinnovård>>",
+      "Stärka stödet, särskilt för barn och unga.",
+      "Läs mer om hur>>",
       "Skapa kontinuitet och trygghet genom en namngiven läkare på vårdcentralen.",
+      "Läs mer om hur>>",
       "Bygga ut vårdcentralerna i hela landet.",
       "Sätta stopp för marknadsmisslyckanden och oseriösa aktörer som sänker kvaliteten.",
+      "Läs mer om S vallöfte>>",
+      "Göra vården mer tillgänglig genom smarta digitala lösningar.",
+      "Läs mer om hur>>",
       "Stänga ute kriminella aktörer från vård och omsorg.",
-      "Se till att resurser används till patienter – inte till fusk eller övervinster.",
-      "Stärka stödet, särskilt för barn och unga.",
       "Fler anställda, bättre villkor och högre kvalitet för en trygg ålderdom.",
+      "Läs mer om hur>>",
+      "Se till att resurser används till patienter – inte till fusk eller övervinster.",
+      "Läs mer om hur>>",
       "Skapa trygghet och kontinuitet inom hemtjänsten.",
       "Säkerställa en trygg och rättssäker assistans och stärka LSS.",
-      "De finansiella trösklarna till tandvården ska sänkas genom ett stegvis utvecklat högkostnadsskydd liknande hälso- och sjukvårdens, med start för de äldre.",
-      "Återinföra fri tandvård upp till 23 år och det förstärkta tandvårdsstödet upp till 29 år.",
-      "Utveckla vården och säkerställa rätten till abort.",
-      "Göra vården mer tillgänglig genom smarta digitala lösningar.",
       "Se till att apotek och mediciner finns i hela landet.",
       "Satsa på tidiga insatser och tillgänglig vård för att bryta beroende.",
       "Fortsätta arbetet med vaccinationer."
     ],
-    "updateDate": "2026-08-01T15:47:42.764Z",
+    "updateDate": "2026-09-05T10:17:18.737Z",
     "party": "S",
     "subject": "vard-och-omsorg"
   },
@@ -901,14 +912,15 @@
       "Införa en tillfälligt sänkt matmoms till 6 procent för att ge hushållen lättnad under det tuffa kostnadsläget.",
       "Att investeringssparkonton (ISK) ska vara skattefritt upp till 300 000 kr och att det införs en tredje beskattningsnivå för de med störst kapitalinnehav i ISK för att minska skatterabatten för stora kapital.",
       "Läs mer om vårt officiella besked om räntor >>",
-      "Införa en tillfällig skatt på bankernas övervinster som därefter betalas tillbaka till hushåll och välfärden, då bankerna har gjort stora vinster på krisen.",
-      "Läs mer om vårt officiella besked om bankskatt >>",
+      "S har utarbetat ett program mot slöseri med skattemedel. Sverige står inför stora utmaningar och efter de senaste årens underskottspolitik har vi inte råd med ineffektivitet och slöseri. Som skattebetalare ska du vara trygg i att dina skattepengar går till rätt saker. Till skolan och sjukvården. Till ett stärkt försvar och bättre vägar. Till fler poliser och fler jobb. Till att du ska få en bättre vardag.",
+      "Läs mer här>>",
       "Reformera ROT-avdraget för att ge högre subvention för energieffektiviserande åtgärder, som installation av solceller eller bergvärme.",
-      "Utreda och införa en beredskapsskatt för att bidra till den långsiktiga och permanenta finansieringen av Sveriges försvarsutbyggnad.",
       "Stärka Skatteverket för att intensifiera arbetet mot skattefusk och svartarbete.",
-      "Återinföra revisionsplikten för fler aktiebolag och höja kravet på aktiekapital för att försvåra användningen av bolag som brottsverktyg."
+      "Återinföra revisionsplikten för fler aktiebolag och höja kravet på aktiekapital för att försvåra användningen av bolag som brottsverktyg.",
+      "Införa en tillfällig skatt på bankernas övervinster som därefter betalas tillbaka till hushåll och välfärden, då bankerna har gjort stora vinster på krisen. Syftet är att pressa bankerna att sänka dina räntekostnader.",
+      "Läs mer frågor och svar om hur vi vill pressa bankerna att sänka dina räntekostnader>>"
     ],
-    "updateDate": "2026-08-27T17:29:45.444Z",
+    "updateDate": "2026-09-05T10:17:18.709Z",
     "party": "S",
     "subject": "ekonomi-och-skatter"
   },
@@ -943,23 +955,22 @@
     "opinions": [
       "Säkerställa att skolans resurser går till elever som behöver dem mest – inte styrs av marknad eller vinst.",
       "Förbjud vinstuttag och se till att skattepengar går till undervisning, lärare och elever.",
-      "Gör om skolpengen så att friskolor inte överkompenseras och gör skolvalet rättvist.",
-      "Inför bindande regler för fler lärare på lågstadiet och säkerställ att alla tioåringar kan läsa och skriva.",
+      "Alla skolor ska fokusera på elevernas kunskap och utveckling, inte vinstjakt. Därför ska marknadsskolan avskaffas och vinstförbud införas i skola och förskola. Lagstiftning ska införas om att skolans pengar ska stanna i skolan genom ett totalförbud mot värdeöverföringar. Friskolorna ska inte ha separata köer, utan ett gemensamt skolval som införs. Sverige ska inte ha religiösa friskolor.",
+      "En bra skolstart är avgörande för att alla barn ska lyckas i skolan. Därför vill vi genomföra en småskolereform med små klasser för små barn. Bindande regler ska införas med maximalt 12 elever per lärare i de yngre årskurserna. Pengar som idag går till att överkompensera stora koncermer ska istället gå till fler lärare för små barn.",
       "Förbjuda religiösa friskolor och ställa högre krav på alla fristående skolor.",
-      "Minska klasstorlekarna med fler lärare, särskilt i de tidiga åren. Så att varje elev får rätt stöd.",
       "Anställa fler lärare och stärka lärarens roll som ledare.",
-      "Skapa trygga klassrum där elever kan fokusera och nå kunskapsmålen.",
+      "Stora klasser och stök leder idag till sämre skolresultat och dålig arbetsmiljö för skolpersonalen. Läraren ska vara klassrummets självklara chef. Fler lärare, mindre klasser och mobilförbud är förutsättningar för att svensk skola ska gå från stök till trygghet och studiero. Svenska språkets ställning ska stärkas. Böcker och utbildning ska få en tydligare plats i skolan och daglig läsning ska införas för de yngre barnen.",
       "Se till att fler elever får stöd i tid och inte halkar efter.",
       "Stoppa utslagningen från skolan och säkerställ rättvisa betyg.",
       "Yrkesutbildningar av hög kvalitet med stark koppling till arbetsmarknaden.",
       "Utveckla vuxenutbildningen så att fler kan byta bana mitt i livet.",
-      "Små barngrupper, mer personal och språkkrav för personalen.",
-      "Satsa på förskola och fritidshem för bättre stöd under hela skoldagen.",
+      "Förskolans pedagogiska verksamhet ska fortsätta förbättras och barngrupperna minska. Skärpta regler för barngruppernas storlek bör införas. Språkkrav ska införas och all förskolepersonal ska kunna prata svenska. Intensiv språkträning införs för de barn som har svaga språkkunskaper. Obligatorisk överlämning behöver säkerställas inför skolstart. Stödet till familjer med konstaterade eller möjliga NPF diagnoser måste bli bättre.",
+      "Satsa på förskola och fritidshem för bättre stöd under hela skoldagen. Alla barn i lågstadiet som behöver ska få rätt till fritids med tillgång till läxläsning och fritidsaktiviteter. Genom att förbättra samverkan mellan fritids och föreningsliv ska barn få ökad tillgång till idrott och friluftsliv samtidigt som föräldrarnas vardag underlättas.",
       "Utveckla universitet och högskolor i hela landet.",
       "Säkerställa att fler har råd att studera och ställa om.",
       "Öka tillgången till utbildning och bildning i hela landet."
     ],
-    "updateDate": "2026-08-14T23:23:21.142Z",
+    "updateDate": "2026-09-05T10:17:21.203Z",
     "party": "S",
     "subject": "utbildning"
   },
@@ -1077,7 +1088,7 @@
     "title": "Tandvård",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/tandvard",
     "opinions": [
-      "Införa ett stegvis utvecklat högkostnadsskydd för tandvård liknande hälso- och sjukvårdens, med start för de äldre.",
+      "Socialdemokraterna föreslår ett stegvis infört högkostnadsskydd för att sänka de ekonomiska trösklarna",
       "Återinföra tandvårdsstödet upp till 23 år och återställa det dubbla tandvårdsbidraget för personer i åldrarna 24–29 år.",
       "Införa tillståndsplikt för tandvårdsverksamheter för att styra upp oseriösa aktörer.",
       "Införa skyddad yrkestitel för tandskötare för att uppvärdera yrket och säkra kompetensen.",
@@ -1085,7 +1096,7 @@
       "Se till att tandvård för skador efter våld i nära relationer inte ska kosta mer än ett vanligt läkarbesök.",
       "Öka utbildningsmöjligheterna för tandläkare och göra dessa mer tillgängliga i hela landet."
     ],
-    "updateDate": "2026-08-01T15:47:42.617Z",
+    "updateDate": "2026-09-05T10:17:21.758Z",
     "party": "S",
     "subject": "vard-och-omsorg"
   },
@@ -1665,7 +1676,8 @@
     "title": "Brottsbekämpning och trygghet",
     "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/brottsbekampning-och-trygghet",
     "opinions": [
-      "Införa en svensk maffialag för att kunna lagföra hela kriminella nätverk och slå mot ledarskikten.",
+      "En svensk maffialag ska införas samtidigt som möjligheterna till begränsningsåtgärder mot gängkriminella utvidgas. De kriminellas egendom ska förverkas och fonderas till stöd för brottsutsatta områden och trygghetsskapande insatser. Ekobrottsmyndigheten förstärks till en Myndighet mot organiserad brottslighet (MOB).",
+      "Läs mer här>>",
       "Bryta inflödet till gängen genom tidiga insatser, punktmarkering och arbete i riskmiljöer.",
       "Anställa fler och ge bättre verktyg samt öka närvaron i hela landet, särskilt i utsatta områden.",
       "Vi vill slopa mängdrabatten för allvarliga brott och införa skärpningar av straff för barnpornografibrott, ekonomisk brottslighet och kvinnofridskränkning. Läs mer här >>",
@@ -1679,7 +1691,7 @@
       "Stärka rättsväsendets arbete mot sexualbrott och öka tryggheten för utsatta.",
       "Motverka fusk och kriminalitet som utnyttjar välfärdssystemen och snedvrider konkurrensen."
     ],
-    "updateDate": "2026-08-14T23:23:30.954Z",
+    "updateDate": "2026-09-05T10:17:17.101Z",
     "party": "S",
     "subject": "lag-och-ratt"
   },
@@ -2197,5 +2209,36 @@
     "updateDate": "2026-08-14T23:23:35.709Z",
     "party": "S",
     "subject": "ekonomi-och-skatter"
+  },
+  "https://www.socialdemokraterna.se/var-politik/a-till-o/jamlikhet-jamstalldhet-och-rattvisa": {
+    "title": "Jämlikhet, jämställdhet och rättvisa",
+    "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/jamlikhet-jamstalldhet-och-rattvisa",
+    "opinions": [
+      "Stärka insatserna i hela samhället med tydligare ansvar och skärpta åtgärder.",
+      "Arbeta förebyggande genom utbildning och rättsliga åtgärder.",
+      "Säkerställa att kvinnor och män har samma makt, möjligheter och villkor.",
+      "Öka kvinnors ekonomiska självständighet och trygghet i samhället.",
+      "Skydda och öka tryggheten för HBTQ+-personer i hela samhället.",
+      "Öka tryggheten för grupper som utsätts för hot och våld.",
+      "Utveckla arbetet både i Sverige och internationellt.",
+      "Se till att lagar och myndigheter skyddar alla lika och att diskriminering får konsekvenser."
+    ],
+    "updateDate": "2026-09-05T10:17:17.538Z",
+    "party": "S"
+  },
+  "https://www.socialdemokraterna.se/var-politik/a-till-o/socialforsakringar": {
+    "title": "Socialförsäkringar",
+    "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/socialforsakringar",
+    "opinions": [
+      "Ta bort det orättvisa avdraget som slår mot dem som inte kan arbeta hemifrån.",
+      "Se till att fler får rätt stöd och ersättning vid sjukdom.",
+      "Öka tryggheten så att ekonomin håller även när du är sjuk.",
+      "Förbättra reglerna så att ingen faller mellan stolarna i sjukförsäkringen.",
+      "Säkerställa att du kan vara hemma med sjukt barn utan att riskera ekonomin.",
+      "Ge bättre möjlighet att kombinera arbete och familjeliv.",
+      "Se till att socialförsäkringarna gäller lika för alla."
+    ],
+    "updateDate": "2026-09-05T10:17:21.195Z",
+    "party": "S"
   }
 }

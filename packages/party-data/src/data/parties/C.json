@@ -425,17 +425,17 @@
   },
   "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/bostader/hyresratter": {
     "opinions": [
-      "Skapa fler hyresrätter genom att införa friare hyressättning i nyproduktion.",
-      "Göra det enklare att hyra i andra hand och bygga fler och billigare studentbostäder.",
-      "Skydda hyresgäster med ett starkt besittningsskydd och trygghet mot chockhöjningar.",
-      "Införa fri hyressättning i nyproduktion: Det gör det mer lönsamt att bygga nya hyresrätter, vilket på sikt leder till fler bostäder och kortare köer.",
+      "Skapa fler hyresrätter genom att underlätta byggandet.",
+      "Göra det enklare att hyra i andra hand och bygga fler studentbostäder.",
+      "Göra det lättare för den med utsatt ekonomi att ta sig in på bostadsmarknaden.",
+      "Underlätta byggandet: Göra det mer lönsamt att bygga nya hyresrätter, vilket på sikt leder till fler bostäder och kortare köer.",
       "Stärka skyddet för boende: Bevara det starka besittningsskyddet (rätten att bo kvar) och införa skydd mot plötsliga chockhöjningar av hyran.",
       "Förenkla andrahandsuthyrning: Göra det enklare och mer förmånligt att hyra ut sin bostad i andra hand för att fler lägenheter ska bli tillgängliga.",
       "Bygga fler studentbostäder: Förenkla byggkraven för studentlägenheter och göra det möjligt för flera studenter att dela på ett hyreskontrakt för att få ner kostnaden."
     ],
     "title": "Hyresrätter",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/bostader/hyresratter",
-    "updateDate": "2026-02-01T13:25:50.122Z",
+    "updateDate": "2026-09-05T10:17:04.909Z",
     "party": "C",
     "subject": "bostad"
   },
@@ -571,28 +571,6 @@
     "updateDate": "2026-02-01T13:25:50.370Z",
     "party": "C",
     "subject": "digitalisering-tech-och-ai"
-  },
-  "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/diskriminering/funktionsratt": {
-    "opinions": [
-      "Stärka rätten till självbestämmande över stöd, service och personlig assistans.",
-      "Öppna vägen till jobb och företagande för personer med funktionsnedsättning.",
-      "Säkerställa att unga får det stöd som behövs för skola, studier och en väg in i arbetslivet.",
-      "att LSS ska vara en stark rättighetslag som skyddar individens möjlighet att leva som andra.",
-      "att samhället ska vara fullt tillgängligt, där bristande tillgänglighet är en form av diskriminering.",
-      "att stöd och service ska anpassas efter varje persons unika behov och önskemål, med stor valfrihet.",
-      "Värna och stärka LSS och rätten till personlig assistans med ökad valfrihet.",
-      "Ta ett samlat statligt ansvar för den personliga assistansen för att garantera likvärdighet och rättssäkerhet i hela landet.",
-      "Säkra rätten till fritidshjälpmedel och en tillgänglig färdtjänst som fungerar i vardagen, oavsett var du bor.",
-      "Räkna upp och indexera assistansersättningen, så bättre hänsyn tas till utförares faktiska kostnader.",
-      "Göra det enklare och billigare att anställa, bland annat genom sänkta arbetsgivaravgifter och en reformerad arbetsförmedling med specialiserade aktörer.",
-      "Förbättra möjligheterna att driva företag genom anpassat stöd, som färdtjänst och arbetsplatsanpassning.",
-      "Göra det möjligt att studera eller prova på att arbeta med bibehållen sjuk- eller aktivitetsersättning, för att sänka trösklarna till arbetslivet."
-    ],
-    "title": "Funktionsrätt",
-    "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/diskriminering/funktionsratt",
-    "updateDate": "2026-02-01T13:25:49.376Z",
-    "party": "C",
-    "subject": "jamstalldhet-och-diskriminering"
   },
   "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/jamstalldhet/kvotering": {
     "opinions": [
@@ -3117,40 +3095,25 @@
   },
   "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/funktionsratt": {
     "opinions": [
-      "stärka tillgängligheten i samhället och digitala tjänster",
-      "göra funktionsrättskonventionen till svensk lag",
-      "stärka skyddet mot diskriminering och funkofobi",
-      "förbättra färdtjänst, ledsagning och hjälpmedel",
-      "göra det lättare att arbeta och studera utifrån egen förmåga",
-      "stärka den personliga assistansen och tryggheten i LSS",
-      "skapa bättre stöd i skolan för elever med NPF och andra funktionsnedsättningar",
-      "säkerställa jämlik vård och bättre stöd vid sällsynta diagnoser",
-      "förbättra möjligheterna till kultur, idrott och fritid för alla"
+      "Stärka rätten till självbestämmande över stöd, service och personlig assistans.",
+      "Öppna vägen till jobb och företagande för personer med funktionsnedsättning.",
+      "Säkerställa att unga får det stöd som behövs för skola, studier och en väg in i arbetslivet.",
+      "att LSS ska vara en stark rättighetslag som skyddar individens möjlighet att leva som andra.",
+      "att samhället ska vara fullt tillgängligt, där bristande tillgänglighet är en form av diskriminering.",
+      "att stöd och service ska anpassas efter varje persons unika behov och önskemål, med stor valfrihet.",
+      "Värna och stärka LSS och rätten till personlig assistans med ökad valfrihet.",
+      "Ta ett samlat statligt ansvar för den personliga assistansen för att garantera likvärdighet och rättssäkerhet i hela landet.",
+      "Säkra rätten till fritidshjälpmedel och en tillgänglig färdtjänst som fungerar i vardagen, oavsett var du bor.",
+      "Räkna upp och indexera assistansersättningen, så bättre hänsyn tas till utförares faktiska kostnader.",
+      "Göra det enklare och billigare att anställa, bland annat genom sänkta arbetsgivaravgifter och en reformerad arbetsförmedling med specialiserade aktörer.",
+      "Förbättra möjligheterna att driva företag genom anpassat stöd, som färdtjänst och arbetsplatsanpassning.",
+      "Göra det möjligt att studera eller prova på att arbeta med bibehållen sjuk- eller aktivitetsersättning, för att sänka trösklarna till arbetslivet."
     ],
     "title": "Funktionsrätt",
     "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/funktionsratt",
-    "updateDate": "2026-08-01T12:43:46.640Z",
+    "updateDate": "2026-09-05T10:17:03.384Z",
     "party": "C",
     "subject": "trygghetssystem-och-valfard"
-  },
-  "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/jobb/skattefri-grundlon": {
-    "opinions": [
-      "Förenkla skattesystemet genom att införa en skattefri grundlön.",
-      "Göra det tydligare och mer lönsamt att gå från bidrag till jobb.",
-      "Sänka skatten för den som arbetar, särskilt för låg- och medelinkomsttagare.",
-      "att det alltid ska löna sig mer att arbeta än att leva på bidrag.",
-      "att skattesystemet är transparent och lätt att förstå för alla.",
-      "att skattetrycket på låga och medelstora inkomster sänks.",
-      "De första drygt 15 300 kronorna du tjänar varje månad blir helt skattefria.",
-      "Dagens två krångliga skattereduktioner (jobbskatteavdraget och förvärvsavdraget) ersätts med detta enda, tydliga avdrag.",
-      "Skatten sänks kraftigt för låg- och medelinkomsttagare. För en lön på 25 000 kr/mån blir skattesänkningen cirka 1 200 kr/mån.",
-      "Systemet blir mer rättvist i hela landet, eftersom avdraget blir lika för alla oavsett var du bor."
-    ],
-    "title": "Skattefri grundlön",
-    "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/jobb/skattefri-grundlon",
-    "updateDate": "2026-08-01T12:43:47.854Z",
-    "party": "C",
-    "subject": "ekonomi-och-skatter"
   },
   "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/landsbygd/polis-i-hela-landet": {
     "opinions": [
@@ -3220,5 +3183,23 @@
     "updateDate": "2026-08-27T17:29:41.388Z",
     "party": "C",
     "subject": "jobb"
+  },
+  "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/skattefri-grundlon": {
+    "opinions": [
+      "Förenkla skattesystemet genom att införa en skattefri grundlön.",
+      "Göra det tydligare och mer lönsamt att gå från bidrag till jobb.",
+      "Sänka skatten för den som arbetar, särskilt för låg- och medelinkomsttagare.",
+      "att det alltid ska löna sig mer att arbeta än att leva på bidrag.",
+      "att skattesystemet är transparent och lätt att förstå för alla.",
+      "att skattetrycket på låga och medelstora inkomster sänks.",
+      "De första drygt 15 300 kronorna du tjänar varje månad blir helt skattefria.",
+      "Dagens två krångliga skattereduktioner (jobbskatteavdraget och förvärvsavdraget) ersätts med detta enda, tydliga avdrag.",
+      "Skatten sänks kraftigt för låg- och medelinkomsttagare. För en lön på 25 000 kr/mån blir skattesänkningen cirka 1 200 kr/mån.",
+      "Systemet blir mer rättvist i hela landet, eftersom avdraget blir lika för alla oavsett var du bor."
+    ],
+    "title": "Skattefri grundlön",
+    "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/skattefri-grundlon",
+    "updateDate": "2026-09-05T10:17:01.609Z",
+    "party": "C"
   }
 }
